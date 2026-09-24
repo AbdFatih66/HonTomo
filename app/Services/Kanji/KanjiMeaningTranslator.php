@@ -18,7 +18,7 @@ namespace App\Services\Kanji;
  * guessing, so nothing wrong reaches the user unflagged. Extend the
  * glossary file as coverage needs grow instead of swapping in a live API.
  */
-class KanjiMeaningTranslator
+class KanjiMeaningTranslator implements MeaningTranslator
 {
     private array $glossary;
 

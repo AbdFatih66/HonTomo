@@ -18,6 +18,17 @@ return [
         'token' => env('POSTMARK_TOKEN'),
     ],
 
+    // API fallback for the kanji-meaning glossary, used only when the
+    // curated glossary has no entry — see
+    // App\Services\Kanji\Translation\ApiFallbackMeaningTranslator and
+    // docs/kanji-module.md section 3. Leaving DEEPL_API_KEY unset keeps
+    // the whole pipeline exactly as it was: glossary-only, offline,
+    // deterministic. Get a free-tier key at https://www.deepl.com/pro-api.
+    'deepl' => [
+        'key' => env('DEEPL_API_KEY'),
+        'api_url' => env('DEEPL_API_URL', 'https://api-free.deepl.com/v2/translate'),
+    ],
+
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
