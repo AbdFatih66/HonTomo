@@ -13,7 +13,8 @@
     "kana": "Hiragana & Katakana",
     "kanji": "Kanji",
     "lampiran": "Referensi Tata Bahasa",
-    "vocabulary": "Kosakata"
+    "vocabulary": "Kosakata",
+    "mondaishuu": "Mondaishuu"
   },
   "common": {
     "loading": "Memuat…",
@@ -429,5 +430,12 @@
     "col_hiragana": "Hiragana",
     "col_romaji": "Romaji",
     "col_meaning": "Arti"
+  },
+  "mondaishuu": {
+    "title": "Mondaishuu (Latihan Soal)",
+    "subtitle": "Latihan tertulis per pelajaran, 1–25, plus rangkuman — untuk melatih pola kalimat yang sudah dipelajari.",
+    "lesson_label": "Pelajaran {n}",
+    "show_answers": "Tampilkan Kunci Jawaban",
+    "hide_answers": "Sembunyikan Kunci Jawaban"
   }
 }

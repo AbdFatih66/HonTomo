@@ -17,6 +17,11 @@ export default [
     icon: { icon: 'tabler-notebook' },
   },
   {
+    title: 'nav.mondaishuu',
+    to: { name: 'mondaishuu' },
+    icon: { icon: 'tabler-pencil-check' },
+  },
+  {
     title: 'nav.kana',
     to: { name: 'kana' },
     icon: { icon: 'tabler-language-katakana' },

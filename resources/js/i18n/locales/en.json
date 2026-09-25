@@ -13,7 +13,8 @@
     "kana": "Hiragana & Katakana",
     "kanji": "Kanji",
     "lampiran": "Grammar Reference",
-    "vocabulary": "Vocabulary"
+    "vocabulary": "Vocabulary",
+    "mondaishuu": "Practice Book"
   },
   "common": {
     "loading": "Loading…",
@@ -429,5 +430,12 @@
     "col_hiragana": "Hiragana",
     "col_romaji": "Romaji",
     "col_meaning": "Meaning"
+  },
+  "mondaishuu": {
+    "title": "Mondaishuu (Practice Book)",
+    "subtitle": "Written practice per lesson, 1–25, plus review sets — to drill the sentence patterns you've learned.",
+    "lesson_label": "Lesson {n}",
+    "show_answers": "Show Answer Key",
+    "hide_answers": "Hide Answer Key"
   }
 }
