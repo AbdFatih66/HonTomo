@@ -7,12 +7,19 @@ definePage({
   },
 })
 
-const headers = [
-  { title: 'Name', key: 'name' },
-  { title: 'Email', key: 'email' },
-  { title: 'Role', key: 'role' },
-  { title: 'Actions', key: 'actions', sortable: false, align: 'end' },
-]
+const { t } = useI18n()
+
+const headers = computed(() => [
+  { title: t('admin.users.headers.name'), key: 'name' },
+  { title: t('admin.users.headers.email'), key: 'email' },
+  { title: t('admin.users.headers.role'), key: 'role' },
+  { title: t('admin.users.headers.actions'), key: 'actions', sortable: false, align: 'end' },
+])
+
+const roleOptions = computed(() => [
+  { title: t('admin.users.roles.user'), value: 'user' },
+  { title: t('admin.users.roles.admin'), value: 'admin' },
+])
 
 const users = ref([])
 const totalUsers = ref(0)
@@ -120,7 +127,7 @@ async function deleteUser() {
 </script>
 
 <template>
-  <VCard title="User Management">
+  <VCard :title="t('admin.users.title')">
     <VCardText>
       <VRow>
         <VCol
@@ -129,7 +136,7 @@ async function deleteUser() {
         >
           <AppTextField
             v-model="search"
-            placeholder="Search name or email"
+            :placeholder="t('admin.users.search_placeholder')"
             prepend-inner-icon="tabler-search"
           />
         </VCol>
@@ -142,7 +149,7 @@ async function deleteUser() {
             prepend-icon="tabler-plus"
             @click="openCreateDialog"
           >
-            Add User
+            {{ t('admin.users.add_user') }}
           </VBtn>
         </VCol>
       </VRow>
@@ -193,21 +200,21 @@ async function deleteUser() {
     v-model="isDialogOpen"
     max-width="500"
   >
-    <VCard :title="isEditing ? 'Edit User' : 'Add User'">
+    <VCard :title="isEditing ? t('admin.users.dialog.edit_title') : t('admin.users.dialog.create_title')">
       <VCardText>
         <VForm @submit.prevent="saveUser">
           <VRow>
             <VCol cols="12">
               <AppTextField
                 v-model="form.name"
-                label="Name"
+                :label="t('admin.users.dialog.name')"
                 :error-messages="formErrors.name"
               />
             </VCol>
             <VCol cols="12">
               <AppTextField
                 v-model="form.email"
-                label="Email"
+                :label="t('admin.users.dialog.email')"
                 type="email"
                 :error-messages="formErrors.email"
               />
@@ -215,17 +222,17 @@ async function deleteUser() {
             <VCol cols="12">
               <AppTextField
                 v-model="form.password"
-                label="Password"
+                :label="t('admin.users.dialog.password')"
                 type="password"
-                :placeholder="isEditing ? 'Leave blank to keep current password' : ''"
+                :placeholder="isEditing ? t('admin.users.dialog.password_placeholder_edit') : ''"
                 :error-messages="formErrors.password"
               />
             </VCol>
             <VCol cols="12">
-              <VSelect
+              <AppSelect
                 v-model="form.role"
-                label="Role"
-                :items="[{ title: 'User', value: 'user' }, { title: 'Admin', value: 'admin' }]"
+                :label="t('admin.users.dialog.role')"
+                :items="roleOptions"
                 :error-messages="formErrors.role"
               />
             </VCol>
@@ -238,13 +245,13 @@ async function deleteUser() {
           color="secondary"
           @click="isDialogOpen = false"
         >
-          Cancel
+          {{ t('common.cancel') }}
         </VBtn>
         <VBtn
           :loading="isSaving"
           @click="saveUser"
         >
-          Save
+          {{ t('common.save') }}
         </VBtn>
       </VCardText>
     </VCard>
@@ -255,9 +262,9 @@ async function deleteUser() {
     v-model="isDeleteDialogOpen"
     max-width="400"
   >
-    <VCard title="Delete User">
+    <VCard :title="t('admin.users.delete_dialog.title')">
       <VCardText>
-        Are you sure you want to delete <strong>{{ userToDelete?.name }}</strong>? This can't be undone.
+        {{ t('admin.users.delete_dialog.confirm', { name: userToDelete?.name }) }}
       </VCardText>
       <VCardText class="d-flex justify-end gap-3">
         <VBtn
@@ -265,14 +272,14 @@ async function deleteUser() {
           color="secondary"
           @click="isDeleteDialogOpen = false"
         >
-          Cancel
+          {{ t('common.cancel') }}
         </VBtn>
         <VBtn
           color="error"
           :loading="isDeleting"
           @click="deleteUser"
         >
-          Delete
+          {{ t('common.delete') }}
         </VBtn>
       </VCardText>
     </VCard>

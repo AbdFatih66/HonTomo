@@ -18,6 +18,7 @@ const props = defineProps({
   question: { type: Object, required: true },
   locked: { type: Boolean, default: false },
   isLast: { type: Boolean, default: false },
+
   // true when this card is the last step of the whole lesson (no quiz follows)
   studyOnly: { type: Boolean, default: false },
 })

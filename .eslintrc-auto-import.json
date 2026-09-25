@@ -371,6 +371,7 @@
     "listPasskeys": true,
     "loginWithPasskey": true,
     "registerPasskey": true,
-    "removePasskey": true
+    "removePasskey": true,
+    "useAutoNext": true
   }
 }

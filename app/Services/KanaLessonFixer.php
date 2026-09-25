@@ -17,15 +17,17 @@ use RuntimeException;
  * straight from the kana chart (the source of truth), so what is shown and
  * what counts as correct can never disagree.
  *
- * Six lessons, named like the chart sections:
+ * Ten lessons (5 per script), named like the chart sections:
  *
- *   Hiragana Dasar (Gojuuon) · Hiragana: Dakuten · Hiragana: Handakuten
- *   Katakana Dasar (Gojuuon) · Katakana: Dakuten · Katakana: Handakuten
+ *   Hiragana Dasar (Gojuuon) · Hiragana: Dakuten · Hiragana: Handakuten ·
+ *   Hiragana: Yoon · Hiragana: Yoon Dakuten
+ *   Katakana Dasar (Gojuuon) · Katakana: Dakuten · Katakana: Handakuten ·
+ *   Katakana: Yoon · Katakana: Yoon Dakuten
  *
- * Every lesson holds ONLY its own letters (46 / 20 / 5 per script), one
- * multiple-choice question per letter: the letter is shown, the learner picks
- * its reading. Nothing else is printed on the question (no reading), and the
- * three wrong options come from the same lesson only.
+ * Every lesson holds ONLY its own letters (per script: 46 / 20 / 5 / 21 / 15),
+ * one multiple-choice question per letter: the letter is shown, the learner
+ * picks its reading. Nothing else is printed on the question (no reading), and
+ * the three wrong options come from the same lesson only.
  *
  * The chart itself is re-synced first (every letter's type / reading / row is
  * set back to the seeder's canonical data and duplicate rows are removed), so
@@ -43,9 +45,13 @@ class KanaLessonFixer
         'hiragana.dasar' => ['hiragana', ['gojuon'], 'Hiragana Dasar (Gojuuon)'],
         'hiragana.dakuten' => ['hiragana', ['dakuten'], 'Hiragana: Dakuten'],
         'hiragana.handakuten' => ['hiragana', ['handakuten'], 'Hiragana: Handakuten'],
+        'hiragana.yoon' => ['hiragana', ['yoon'], 'Hiragana: Yoon'],
+        'hiragana.yoon_dakuten' => ['hiragana', ['yoon_dakuten'], 'Hiragana: Yoon Dakuten'],
         'katakana.dasar' => ['katakana', ['gojuon'], 'Katakana Dasar (Gojuuon)'],
         'katakana.dakuten' => ['katakana', ['dakuten'], 'Katakana: Dakuten'],
         'katakana.handakuten' => ['katakana', ['handakuten'], 'Katakana: Handakuten'],
+        'katakana.yoon' => ['katakana', ['yoon'], 'Katakana: Yoon'],
+        'katakana.yoon_dakuten' => ['katakana', ['yoon_dakuten'], 'Katakana: Yoon Dakuten'],
     ];
 
     /**
@@ -69,7 +75,7 @@ class KanaLessonFixer
                 $key = $this->keyForLesson($lesson);
 
                 if ($key === null) {
-                    $surplus->push($lesson); // e.g. "Gabungan (Youon)…": not part of this unit
+                    $surplus->push($lesson); // e.g. sokuon / chouon: not part of this unit
 
                     continue;
                 }
@@ -176,7 +182,11 @@ class KanaLessonFixer
         $script = str_contains($text, 'katakana') ? 'katakana' : 'hiragana';
 
         return match (true) {
-            (bool) preg_match('/gabungan|youon|sokuon|chouon|kombinasi/', $text) => null,
+            (bool) preg_match('/sokuon|chouon/', $text) => null,
+            // "Gabungan (Youon)" from older builds is reused as the plain Yoon lesson.
+            (bool) preg_match('/yoon|youon|gabungan|kombinasi/', $text) => preg_match('/dakuten|bersuara|voiced/', $text)
+                ? "$script.yoon_dakuten"
+                : "$script.yoon",
             (bool) preg_match('/handakuten/', $text) => "$script.handakuten",
             (bool) preg_match('/dakuten|tenten/', $text) => "$script.dakuten", // "Tenten & Maru" -> Dakuten
             (bool) preg_match('/\bmaru\b/', $text) => "$script.handakuten",
@@ -214,15 +224,28 @@ class KanaLessonFixer
         return $before->diff($after)->count() + max(0, $before->count() - $after->count());
     }
 
-    /** Refuse to build lessons from a chart that is still inconsistent. */
-    private function assertChartIsSane($chart): void
+    /** The chart type a letter must have, judged from the letter itself. */
+    private function expectedType(string $character): string
     {
         $dakuten = 'がぎぐげござじずぜぞだぢづでどばびぶべぼガギグゲゴザジズゼゾダヂヅデドバビブベボ';
         $handakuten = 'ぱぴぷぺぽパピプペポ';
 
+        // Yoon: a consonant+i kana followed by a small ya / yu / yo.
+        if (mb_strlen($character) === 2 && preg_match('/^[ゃゅょャュョ]$/u', mb_substr($character, 1, 1))) {
+            $first = mb_substr($character, 0, 1);
+
+            return str_contains($dakuten.$handakuten, $first) ? 'yoon_dakuten' : 'yoon';
+        }
+
+        return str_contains($handakuten, $character) ? 'handakuten'
+            : (str_contains($dakuten, $character) ? 'dakuten' : 'gojuon');
+    }
+
+    /** Refuse to build lessons from a chart that is still inconsistent. */
+    private function assertChartIsSane($chart): void
+    {
         foreach ($chart as $k) {
-            $expected = str_contains($handakuten, $k->character) ? 'handakuten'
-                : (str_contains($dakuten, $k->character) ? 'dakuten' : 'gojuon');
+            $expected = $this->expectedType($k->character);
 
             if ($k->type !== $expected) {
                 throw new RuntimeException("Kana chart still inconsistent: {$k->character} is '{$k->type}', expected '{$expected}'.");
@@ -230,10 +253,13 @@ class KanaLessonFixer
         }
 
         $counts = $chart->groupBy('script')->map(fn ($g) => $g->countBy('type')->all());
+        $expectedCounts = ['gojuon' => 46, 'dakuten' => 20, 'handakuten' => 5, 'yoon' => 21, 'yoon_dakuten' => 15];
 
         foreach (['hiragana', 'katakana'] as $script) {
-            if (($counts[$script]['gojuon'] ?? 0) !== 46 || ($counts[$script]['dakuten'] ?? 0) !== 20 || ($counts[$script]['handakuten'] ?? 0) !== 5) {
-                throw new RuntimeException("Kana chart for {$script} is not 46 / 20 / 5.");
+            foreach ($expectedCounts as $type => $n) {
+                if (($counts[$script][$type] ?? 0) !== $n) {
+                    throw new RuntimeException("Kana chart for {$script} is not 46 / 20 / 5 / 21 / 15 (gojuon / dakuten / handakuten / yoon / yoon_dakuten).");
+                }
             }
         }
     }

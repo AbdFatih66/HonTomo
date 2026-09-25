@@ -16,6 +16,7 @@ export function isWebAuthnSupported() {
   return (
     typeof window !== 'undefined'
     && typeof window.PublicKeyCredential !== 'undefined'
+
     // Older browsers have PublicKeyCredential but not the JSON helpers.
     && typeof window.PublicKeyCredential.parseCreationOptionsFromJSON === 'function'
     && typeof window.PublicKeyCredential.parseRequestOptionsFromJSON === 'function'

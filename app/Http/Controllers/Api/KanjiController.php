@@ -19,15 +19,19 @@ class KanjiController extends Controller
      *
      * `sort=curriculum` orders by earliest_lesson_order (kanji not yet
      * linked to any lesson sort last) instead of the plain JLPT `order`
-     * column, and `scope=learned` additionally restricts to kanji the
-     * requesting user has actually met so far (their furthest completed
-     * lesson's global order — see Lesson::globalOrderMap()). Both need
-     * `kanji:sync-lesson-order` to have been run at least once; before
-     * that, earliest_lesson_order is null for every kanji and these two
-     * params degrade to "nothing matches" rather than silently ignoring
-     * the request — the frontend should treat an empty result under
-     * scope=learned as "belum ada kanji yang tersambung ke pelajaranmu",
-     * not as a real error.
+     * column. `scope=learned` restricts to kanji the user has actually
+     * met so far — either of two independent signals, so the toggle
+     * isn't empty just because one of them hasn't been populated yet:
+     *   (a) direct practice: any UserKanjiProgress row for this kanji,
+     *       from the kanji quiz/writing-practice screens themselves; or
+     *   (b) curriculum: kanji linked (kanji_word_links) to a lesson the
+     *       user has completed (their furthest completed lesson's global
+     *       order — see Lesson::globalOrderMap()), which needs
+     *       `kanji:link-vocabulary` + `kanji:sync-lesson-order` to have
+     *       been run at least once — before that, earliest_lesson_order
+     *       is null for every kanji and only signal (a) applies.
+     * The frontend should treat an empty result under scope=learned as
+     * "belum ada kanji yang dipelajari sama sekali", not as a real error.
      * GET /api/kanji?jlpt_level=&grade=&search=&page=&per_page=&sort=&scope=
      */
     public function index(Request $request)
@@ -68,14 +72,25 @@ class KanjiController extends Controller
         if ($request->query('scope') === 'learned') {
             $threshold = $this->furthestCompletedLessonOrder($request->user()->id);
 
-            $query->whereNotNull('earliest_lesson_order');
-            $query->where('earliest_lesson_order', '<=', $threshold ?? -1);
+            $practicedKanjiIds = UserKanjiProgress::where('user_id', $request->user()->id)
+                ->pluck('kanji_id');
 
-            // Lets the frontend say WHY the list is empty: no kanji linked
-            // to lessons yet (kanji:link-vocabulary + kanji:sync-lesson-order
-            // not run), or the user hasn't completed any lesson yet.
+            $query->where(function ($q) use ($threshold, $practicedKanjiIds) {
+                $q->whereIn('id', $practicedKanjiIds);
+
+                if ($threshold !== null) {
+                    $q->orWhere(function ($q2) use ($threshold) {
+                        $q2->whereNotNull('earliest_lesson_order')
+                            ->where('earliest_lesson_order', '<=', $threshold);
+                    });
+                }
+            });
+
+            // Lets the frontend say WHY the list is empty: no progress of
+            // either kind yet, vs. progress exists but the other filters
+            // (level/grade/search) just don't match any of it.
             $learnedMeta = [
-                'has_progress' => $threshold !== null,
+                'has_progress' => $threshold !== null || $practicedKanjiIds->isNotEmpty(),
                 'linked_kanji' => Kanji::whereNotNull('earliest_lesson_order')->count(),
             ];
         }

@@ -562,6 +562,20 @@ $border: rgba(var(--v-border-color), var(--v-border-opacity));
     padding: 12px 16px;
     padding-block-end: max(12px, env(safe-area-inset-bottom));
     background-color: rgb(var(--v-theme-surface));
+
+    // Same correct/incorrect verdict bar as the lesson player's &__footer
+    // (.lp__footer) — the kana/kanji quiz screens use this shell instead of
+    // .lp, but should still look like the same "quiz mode" as the learning
+    // path.
+    &.is-correct {
+      background-image: linear-gradient(rgba(var(--v-theme-success), 0.16), rgba(var(--v-theme-success), 0.16));
+      border-color: rgb(var(--v-theme-success));
+    }
+
+    &.is-incorrect {
+      background-image: linear-gradient(rgba(var(--v-theme-error), 0.14), rgba(var(--v-theme-error), 0.14));
+      border-color: rgb(var(--v-theme-error));
+    }
   }
 
   &__footer-inner {
@@ -571,5 +585,10 @@ $border: rgba(var(--v-border-color), var(--v-border-opacity));
     gap: 16px;
     margin-inline: auto;
     max-inline-size: 960px;
+  }
+
+  &__footer.is-correct &__footer-inner,
+  &__footer.is-incorrect &__footer-inner {
+    justify-content: center;
   }
 }

@@ -176,11 +176,13 @@ async function sendSetPasswordLink() {
 
 // ---- Change password -------------------------------------------------------
 const passwordFormRef = ref()
+
 const passwordForm = ref({
   current_password: '',
   password: '',
   password_confirmation: '',
 })
+
 const isCurrentPasswordVisible = ref(false)
 const isNewPasswordVisible = ref(false)
 const isConfirmPasswordVisible = ref(false)

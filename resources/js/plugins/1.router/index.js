@@ -39,6 +39,7 @@ router.beforeEach(async to => {
   // session and land on /login with an explanation instead of a bare bounce.
   if (!isPublic && !authStore.isAuthenticated && authKickReason.value) {
     const reason = authKickReason.value
+
     authKickReason.value = null
     authStore.clearLocalSession?.()
 

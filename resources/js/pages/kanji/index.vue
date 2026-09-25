@@ -2,6 +2,7 @@
 import { $api } from '@/utils/api'
 import { useDebounceFn } from '@vueuse/core'
 import KanjiCharacterDetail from '@/components/kanji/KanjiCharacterDetail.vue'
+import { useAutoNext } from '@/composables/useAutoNext'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -9,6 +10,7 @@ const router = useRouter()
 const jlptLevel = ref('N5')
 const search = ref('')
 const page = ref(1)
+
 // 'level' = urutan bawaan per level JLPT (order column). 'curriculum' =
 // urutan sesuai kemunculan pertama di Pelajaran (earliest_lesson_order) —
 // lihat KanjiController::index() docblock.
@@ -28,6 +30,7 @@ const hasError = ref(false)
 // default N5 tab at the far right — sort here too so the UI never depends
 // on backend ordering.
 const LEVEL_ORDER = ['N5', 'N4', 'N3', 'N2', 'N1']
+
 const sortedLevels = computed(() => [...availableLevels.value].sort((a, b) => {
   const ia = LEVEL_ORDER.indexOf(a)
   const ib = LEVEL_ORDER.indexOf(b)
@@ -40,14 +43,18 @@ const sortOptions = [
   { value: 'curriculum', label: 'kanji.sort_curriculum', icon: 'tabler-book-2' },
 ]
 
-// "Only learned" can be empty for three different reasons — say which one,
-// instead of a generic "no kanji match" that looks like the filter is broken.
+// "Only learned" can be empty for two different reasons — say which one,
+// instead of a generic "no kanji match" that looks like the filter is
+// broken. `has_progress` is true as soon as EITHER signal exists (direct
+// kanji practice or a completed curriculum lesson) — see KanjiController::
+// index() — so it stays accurate even when only one of the two is set up.
 const emptyMessage = computed(() => {
   if (onlyLearned.value && learnedMeta.value) {
-    if (!learnedMeta.value.linked_kanji)
-      return t('kanji.empty_learned_unlinked')
-    if (!learnedMeta.value.has_progress)
-      return t('kanji.empty_learned_no_progress')
+    if (!learnedMeta.value.has_progress) {
+      return learnedMeta.value.linked_kanji
+        ? t('kanji.empty_learned_no_progress')
+        : t('kanji.empty_learned_unlinked')
+    }
 
     return t('kanji.empty_learned_level')
   }
@@ -60,6 +67,7 @@ const showDetail = ref(false)
 const currentId = ref(null)
 const justCompleted = ref(false)
 let autoAdvanceTimer = null
+const autoNext = useAutoNext()
 
 async function load() {
   isLoading.value = true
@@ -137,7 +145,9 @@ function onWritingComplete() {
   justCompleted.value = true
   clearAutoAdvance()
 
-  if (hasNext.value)
+  // With auto-next off the learner stays on the character (the Next button
+  // is highlighted instead) and moves on whenever they are ready.
+  if (autoNext.value && hasNext.value)
     autoAdvanceTimer = setTimeout(() => step(1), 700)
 }
 
@@ -151,6 +161,10 @@ function step(delta) {
 }
 
 onBeforeUnmount(clearAutoAdvance)
+watch(autoNext, on => {
+  if (!on)
+    clearAutoAdvance()
+})
 
 const detailProgressPercent = computed(() => {
   if (!items.value.length)
@@ -380,6 +394,14 @@ const detailProgressPercent = computed(() => {
               :style="{ inlineSize: `${detailProgressPercent}%` }"
             />
           </div>
+          <VSwitch
+            v-model="autoNext"
+            :label="t('kana.auto_next')"
+            color="primary"
+            density="compact"
+            hide-details
+            class="flex-shrink-0"
+          />
         </header>
 
         <main class="kana-fs__body">

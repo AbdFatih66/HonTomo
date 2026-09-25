@@ -8,6 +8,7 @@
 // Text without any marker is rendered unchanged, so old cards keep working.
 const props = defineProps({
   text: { type: String, default: '' },
+
   // when false the furigana is stripped instead of rendered (e.g. for a
   // "hide readings" toggle later on)
   showFurigana: { type: Boolean, default: true },

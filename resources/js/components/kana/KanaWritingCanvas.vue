@@ -36,6 +36,7 @@ function startQuiz() {
 
   writer.quiz({
     showHintAfterMisses: 3,
+
     // A safety net on top of the looser leniency above: if a stroke (most
     // often the handakuten ゜circle) still keeps failing after several
     // honest attempts, mark it correct and move on instead of trapping the
@@ -75,6 +76,7 @@ function createWriter() {
     drawingColor: '#6750a4',
     highlightColor: '#ffca28',
     charDataLoader,
+
     // Kana strokes are simple, but a couple of them (the handakuten ゜maru
     // circle, small loops in す/む/ぬ, etc.) are hard to trace as a
     // geometrically perfect shape on a phone touchscreen. HanziWriter's

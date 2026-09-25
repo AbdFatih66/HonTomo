@@ -9,13 +9,13 @@ definePage({
 
 const { t, locale } = useI18n()
 
-const headers = [
-  { title: 'Waktu', key: 'created_at' },
-  { title: 'Aksi', key: 'action' },
-  { title: 'User', key: 'user' },
-  { title: 'IP', key: 'ip_address' },
-  { title: 'Detail', key: 'meta', sortable: false },
-]
+const headers = computed(() => [
+  { title: t('admin.audit_logs.headers.created_at'), key: 'created_at' },
+  { title: t('admin.audit_logs.headers.action'), key: 'action' },
+  { title: t('admin.audit_logs.headers.user'), key: 'user' },
+  { title: t('admin.audit_logs.headers.ip'), key: 'ip_address' },
+  { title: t('admin.audit_logs.headers.meta'), key: 'meta', sortable: false },
+])
 
 const logs = ref([])
 const totalLogs = ref(0)
@@ -113,11 +113,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <VCard title="Audit Log">
+  <VCard :title="t('admin.audit_logs.title')">
     <VCardText>
       <p class="text-body-2 text-medium-emphasis mb-4">
-        Catatan aksi akun yang sensitif (login, reset password, hubung/putus Google, dan aksi admin).
-        Log ini hanya untuk dibaca, tidak bisa diubah atau dihapus.
+        {{ t('admin.audit_logs.description') }}
       </p>
 
       <VRow>
@@ -125,10 +124,10 @@ onMounted(() => {
           cols="12"
           md="3"
         >
-          <VSelect
+          <AppSelect
             v-model="actionFilter"
             :items="availableActions"
-            label="Filter aksi"
+            :label="t('admin.audit_logs.filter_action')"
             clearable
           />
         </VCol>
@@ -138,7 +137,7 @@ onMounted(() => {
         >
           <AppTextField
             v-model="emailFilter"
-            label="Cari email user"
+            :label="t('admin.audit_logs.search_email')"
             prepend-inner-icon="tabler-search"
           />
         </VCol>
@@ -148,7 +147,7 @@ onMounted(() => {
         >
           <AppDateTimePicker
             v-model="fromFilter"
-            label="Dari tanggal"
+            :label="t('admin.audit_logs.from_date')"
             :config="{ dateFormat: 'Y-m-d' }"
           />
         </VCol>
@@ -158,7 +157,7 @@ onMounted(() => {
         >
           <AppDateTimePicker
             v-model="toFilter"
-            label="Sampai tanggal"
+            :label="t('admin.audit_logs.to_date')"
             :config="{ dateFormat: 'Y-m-d' }"
           />
         </VCol>

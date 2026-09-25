@@ -32,7 +32,12 @@ class Kanji extends Model
 
     public function meaning(): string
     {
-        return app()->getLocale() === 'en' ? $this->meaning_en : $this->meaning_id;
+        $localized = app()->getLocale() === 'en' ? $this->meaning_en : $this->meaning_id;
+
+        // A kanji whose Indonesian meaning is still untranslated (meaning_id
+        // null) used to make this return null and crash the quiz endpoint
+        // with a TypeError — fall back to English, then to an empty string.
+        return (string) ($localized ?: $this->meaning_en);
     }
 
     public function strokeData(): HasOne

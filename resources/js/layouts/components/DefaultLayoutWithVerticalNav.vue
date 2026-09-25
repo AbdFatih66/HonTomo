@@ -1,5 +1,6 @@
 <script setup>
-import navItems from '@/navigation/vertical'
+import allNavItems from '@/navigation/vertical'
+import { useAuthStore } from '@/stores/auth'
 import { themeConfig } from '@themeConfig'
 
 // Components
@@ -14,6 +15,12 @@ import NavBarI18n from '@core/components/I18n.vue'
 
 // @layouts plugin
 import { VerticalNavLayout } from '@layouts'
+
+// The route guard and server middleware already block non-admins from the
+// admin pages themselves — this just keeps the links from showing in the
+// sidebar for users who can't open them.
+const authStore = useAuthStore()
+const navItems = computed(() => allNavItems.filter(item => !item.adminOnly || authStore.isAdmin))
 </script>
 
 <template>

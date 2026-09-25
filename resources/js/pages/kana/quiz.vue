@@ -33,6 +33,7 @@ const SCRIPT_OPTIONS = [
   { value: 'hiragana', glyph: 'あ' },
   { value: 'katakana', glyph: 'ア' },
 ]
+
 const TYPE_OPTIONS = ['gojuon', 'dakuten', 'handakuten', 'yoon', 'yoon_dakuten']
 
 function toggleType(type) {
@@ -54,6 +55,35 @@ const isAnswered = ref(false)
 
 const currentQuestion = computed(() => questions.value[currentIndex.value])
 const isLastQuestion = computed(() => currentIndex.value + 1 >= questions.value.length)
+
+// The right answer for whichever direction the current choice question
+// asks (character -> romaji, or romaji -> character).
+const correctChoiceAnswer = computed(() => {
+  const q = currentQuestion.value
+
+  return q?.prompt_character ? q.answer_romaji : q?.answer_character
+})
+
+// Bottom verdict bar state, same shape as the lesson player's `feedback`
+// (see pages/learn/[id].vue) so both quiz shells read the same way.
+const feedback = computed(() => {
+  if (currentQuestion.value?.mode === 'choice') {
+    if (!isAnswered.value)
+      return null
+
+    const correct = selectedOption.value === correctChoiceAnswer.value
+
+    return { correct, correctAnswer: correct ? null : correctChoiceAnswer.value }
+  }
+
+  if (!writingResult.value)
+    return null
+
+  return {
+    correct: writingResult.value.correct,
+    correctAnswer: writingResult.value.correct ? null : currentQuestion.value.answer_character,
+  }
+})
 
 const progressPercent = computed(() => {
   if (!questions.value.length)
@@ -337,7 +367,7 @@ onBeforeUnmount(clearAdvanceTimer)
             <template v-if="currentQuestion.mode === 'choice'">
               <div
                 v-if="currentQuestion.prompt_character"
-                class="kana-detail__character mb-2"
+                class="q-jp"
               >
                 {{ currentQuestion.prompt_character }}
               </div>
@@ -354,46 +384,35 @@ onBeforeUnmount(clearAdvanceTimer)
                 {{ t('kana.choice_prompt_character') }}
               </p>
 
-              <div class="kana-quiz__options">
-                <VBtn
-                  v-for="option in currentQuestion.options"
+              <div class="option-grid">
+                <button
+                  v-for="(option, i) in currentQuestion.options"
                   :key="option"
-                  size="large"
-                  class="kana-quiz__option"
-                  :class="[
-                    currentQuestion.prompt_character ? '' : 'kana-quiz__option--char',
-                  ]"
-                  :color="
-                    isAnswered
-                      ? option === (currentQuestion.prompt_character ? currentQuestion.answer_romaji : currentQuestion.answer_character)
-                        ? 'success'
-                        : (option === selectedOption ? 'error' : undefined)
-                      : undefined
-                  "
-                  :variant="isAnswered ? 'flat' : 'tonal'"
+                  type="button"
+                  class="option-card"
+                  :class="{
+                    'is-selected': !isAnswered && option === selectedOption,
+                    'is-correct': isAnswered && option === correctChoiceAnswer,
+                    'is-wrong': isAnswered && option === selectedOption && option !== correctChoiceAnswer,
+                  }"
                   :disabled="isAnswered"
                   @click="chooseOption(option)"
                 >
-                  {{ option }}
-                </VBtn>
-              </div>
-
-              <!-- Transient feedback only — no click needed, this fades into the
-                   next question on its own (see scheduleAdvance). -->
-              <div
-                class="kana-quiz__feedback"
-                :class="{ 'kana-quiz__feedback--visible': isAnswered }"
-              >
-                <VIcon
-                  :icon="selectedOption === (currentQuestion.prompt_character ? currentQuestion.answer_romaji : currentQuestion.answer_character) ? 'tabler-circle-check-filled' : 'tabler-circle-x-filled'"
-                  :color="selectedOption === (currentQuestion.prompt_character ? currentQuestion.answer_romaji : currentQuestion.answer_character) ? 'success' : 'error'"
-                />
-                {{ selectedOption === (currentQuestion.prompt_character ? currentQuestion.answer_romaji : currentQuestion.answer_character) ? t('kana.correct') : t('kana.the_answer_was', { answer: currentQuestion.prompt_character ? currentQuestion.answer_romaji : currentQuestion.answer_character }) }}
+                  <span class="option-card__key">{{ i + 1 }}</span>
+                  <span
+                    v-if="!currentQuestion.prompt_character"
+                    class="option-card__jp"
+                    lang="ja"
+                  >{{ option }}</span>
+                  <span v-else>{{ option }}</span>
+                </button>
               </div>
             </template>
 
-            <!-- Write it yourself: real stroke-by-stroke tracing, graded live —
-                 same writing widget and layout language as the practice screen. -->
+            <!--
+              Write it yourself: real stroke-by-stroke tracing, graded live —
+              same writing widget and layout language as the practice screen. 
+            -->
             <template v-else>
               <div class="d-flex flex-column align-center gap-2 mb-4">
                 <div class="text-h5">
@@ -415,19 +434,6 @@ onBeforeUnmount(clearAdvanceTimer)
                   :show-outline="false"
                   @complete="onWritingComplete"
                 />
-              </div>
-
-              <div
-                class="kana-quiz__feedback"
-                :class="{ 'kana-quiz__feedback--visible': !!writingResult }"
-              >
-                <template v-if="writingResult">
-                  <VIcon
-                    :icon="writingResult.correct ? 'tabler-circle-check-filled' : 'tabler-circle-x-filled'"
-                    :color="writingResult.correct ? 'success' : 'error'"
-                  />
-                  {{ writingResult.correct ? t('kana.correct') : t('kana.the_answer_was', { answer: currentQuestion.answer_character }) }}
-                </template>
               </div>
 
               <VBtn
@@ -475,11 +481,37 @@ onBeforeUnmount(clearAdvanceTimer)
         </VCard>
       </div>
     </main>
+
+    <footer
+      v-if="feedback"
+      class="kana-fs__footer"
+      :class="feedback.correct ? 'is-correct' : 'is-incorrect'"
+    >
+      <div class="kana-fs__footer-inner">
+        <div
+          class="lp__verdict"
+          :style="{ color: feedback.correct ? 'rgb(var(--v-theme-success))' : 'rgb(var(--v-theme-error))' }"
+        >
+          <VIcon
+            :icon="feedback.correct ? 'tabler-circle-check-filled' : 'tabler-circle-x-filled'"
+            size="36"
+          />
+          <div>
+            {{ feedback.correct ? t('kana.correct') : t('kana.incorrect') }}
+            <small v-if="feedback.correctAnswer">
+              {{ t('kana.the_answer_was', { answer: feedback.correctAnswer }) }}
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style scoped>
-/* Big, well-spaced pickers instead of a tight button toggle / chip row. */
+/* Setup-screen pickers only (script / type tiles) — the answer options and
+   feedback bar now reuse the global .option-grid/.option-card/.lp__verdict
+   classes from learning.scss, shared with the lesson player. */
 .kana-quiz__tiles {
   display: grid;
   gap: 16px;
@@ -541,43 +573,5 @@ onBeforeUnmount(clearAdvanceTimer)
 .kana-quiz__tile-label {
   font-size: 0.95rem;
   font-weight: 600;
-}
-
-.kana-detail__character {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 5rem;
-  line-height: 1;
-}
-
-.kana-quiz__feedback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  min-height: 2rem;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: rgba(var(--v-theme-on-surface), 0.8);
-  opacity: 0;
-  transition: opacity 0.15s ease;
-}
-
-.kana-quiz__feedback--visible {
-  opacity: 1;
-}
-
-.kana-quiz__options {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.kana-quiz__option {
-  min-block-size: 64px;
-}
-
-.kana-quiz__option--char {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.75rem;
 }
 </style>

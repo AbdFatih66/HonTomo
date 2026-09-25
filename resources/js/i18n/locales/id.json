@@ -11,7 +11,9 @@
     "learning": "Belajar",
     "admin": "Admin",
     "kana": "Hiragana & Katakana",
-    "kanji": "Kanji"
+    "kanji": "Kanji",
+    "lampiran": "Referensi Tata Bahasa",
+    "vocabulary": "Kosakata"
   },
   "common": {
     "loading": "Memuat…",
@@ -20,7 +22,10 @@
     "error": "Terjadi kesalahan. Silakan coba lagi.",
     "xp": "XP",
     "level": "Level",
-    "lessons": "pelajaran"
+    "lessons": "pelajaran",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "delete": "Hapus"
   },
   "lesson": {
     "question": "Soal",
@@ -135,6 +140,7 @@
     "skip": "Lewati",
     "prev_character": "Sebelumnya",
     "next_character": "Berikutnya",
+    "auto_next": "Lanjut otomatis",
     "character_of": "{current} / {total}",
     "finish_quiz": "Selesai",
     "quiz_result_title": "Hasil Kuis",
@@ -291,8 +297,8 @@
     "sort_curriculum": "Urutan Pelajaran",
     "only_learned": "Hanya yang sudah dipelajari",
     "total_count": "{n} kanji",
-    "empty_learned_unlinked": "Belum ada kanji yang tersambung ke pelajaran. Minta admin menjalankan kanji:link-vocabulary dan kanji:sync-lesson-order.",
-    "empty_learned_no_progress": "Kamu belum menyelesaikan pelajaran — kanji dari pelajaran yang selesai akan muncul di sini.",
+    "empty_learned_unlinked": "Kamu belum pernah berlatih kanji apa pun, dan belum ada kanji yang tersambung ke pelajaran. Coba latihan atau kuis kanji dulu.",
+    "empty_learned_no_progress": "Kamu belum berlatih kanji apa pun. Kanji yang pernah kamu kerjakan (lewat latihan/kuis) atau yang muncul di pelajaran yang sudah selesai akan tampil di sini.",
     "empty_learned_level": "Belum ada kanji di level JLPT ini yang muncul di pelajaran yang sudah kamu selesaikan. Coba level lain.",
     "show_all": "Tampilkan semua kanji",
     "level_caption": {
@@ -337,5 +343,91 @@
     "sources_kanjidic_used_for": "Sumber karakter, cara baca on'yomi/kun'yomi, arti (Bahasa Inggris), tingkat kelas sekolah, dan peringkat frekuensi.",
     "sources_jmdict_used_for": "Sumber kosakata contoh yang memakai setiap kanji, beserta cara baca dan artinya.",
     "sources_disclaimer": "Klasifikasi level JLPT (N5-N1) yang dipakai di sini disusun terpisah dari data di atas, karena Japan Foundation tidak lagi mempublikasikan daftar kanji resmi per level sejak 2010 — daftar yang dipakai adalah konsensus umum dari materi belajar JLPT."
+  },
+  "admin": {
+    "users": {
+      "title": "Manajemen User",
+      "search_placeholder": "Cari nama atau email",
+      "add_user": "Tambah User",
+      "headers": {
+        "name": "Nama",
+        "email": "Email",
+        "role": "Role",
+        "actions": "Aksi"
+      },
+      "roles": {
+        "user": "User",
+        "admin": "Admin"
+      },
+      "dialog": {
+        "edit_title": "Edit User",
+        "create_title": "Tambah User",
+        "name": "Nama",
+        "email": "Email",
+        "password": "Kata Sandi",
+        "password_placeholder_edit": "Kosongkan untuk tetap memakai kata sandi lama",
+        "role": "Role"
+      },
+      "delete_dialog": {
+        "title": "Hapus User",
+        "confirm": "Yakin ingin menghapus {name}? Tindakan ini tidak bisa dibatalkan."
+      }
+    },
+    "audit_logs": {
+      "title": "Log Audit",
+      "description": "Catatan aksi akun yang sensitif (login, reset password, hubung/putus Google, dan aksi admin). Log ini hanya untuk dibaca, tidak bisa diubah atau dihapus.",
+      "filter_action": "Filter aksi",
+      "search_email": "Cari email user",
+      "from_date": "Dari tanggal",
+      "to_date": "Sampai tanggal",
+      "headers": {
+        "created_at": "Waktu",
+        "action": "Aksi",
+        "user": "User",
+        "ip": "IP",
+        "meta": "Detail"
+      }
+    }
+  },
+  "lampiran": {
+    "title": "Referensi Tata Bahasa",
+    "subtitle": "Referensi angka, ungkapan waktu, kata bantu bilangan, konjugasi kata kerja, dan kata sifat.",
+    "section_numbers": "Kata Bilangan",
+    "section_time": "Ungkapan Waktu",
+    "section_clock": "Jam & Tanggal",
+    "section_counters": "Kata Bantu Bilangan",
+    "section_verbs": "Konjugasi Kata Kerja",
+    "big_numbers": "10.000 ke atas",
+    "decimal_fraction": "Desimal & Pecahan",
+    "relative_days": "Hari, Pagi, Malam",
+    "relative_periods": "Minggu, Bulan, Tahun",
+    "hours": "Jam",
+    "minutes": "Menit",
+    "days_of_week": "Hari dalam Seminggu",
+    "months": "Bulan",
+    "dates": "Tanggal",
+    "duration": "Jangka Waktu (…jam, …hari, dst.)",
+    "form_masu": "Bentuk ます",
+    "form_kamus": "Bentuk Kamus",
+    "form_te": "Bentuk て",
+    "form_nai": "Bentuk ない",
+    "form_ta": "Bentuk た",
+    "form_arti": "Arti",
+    "form_pelajaran": "Pelajaran",
+    "section_adjectives": "Kata Sifat",
+    "i_adjective_hint": "Negatif: 〜い → 〜くない",
+    "na_adjective_hint": "Negatif: 〜な → 〜じゃない"
+  },
+  "vocabulary": {
+    "title": "Kosakata per Bab",
+    "subtitle": "Seluruh kosakata di jalur belajar, dikelompokkan per bab 1–25.",
+    "chapter_label": "Bab {n}",
+    "word_count": "{n} kata",
+    "search_placeholder": "Cari kata...",
+    "empty": "Tidak ada kata yang cocok.",
+    "col_japanese": "Kanji/Kana",
+    "col_hiragana": "Hiragana",
+    "col_romaji": "Romaji",
+    "col_meaning": "Arti"
   }
 }

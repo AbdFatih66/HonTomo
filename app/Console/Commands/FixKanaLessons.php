@@ -9,7 +9,7 @@ class FixKanaLessons extends Command
 {
     protected $signature = 'kana:fix-lessons';
 
-    protected $description = 'Rebuild the Hiragana/Katakana lessons (Dasar, Dakuten, Handakuten) from the kana chart';
+    protected $description = 'Rebuild the Hiragana/Katakana lessons (Dasar, Dakuten, Handakuten, Yoon, Yoon Dakuten) from the kana chart';
 
     public function handle(KanaLessonFixer $fixer): int
     {

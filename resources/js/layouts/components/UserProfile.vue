@@ -20,9 +20,7 @@ async function logout() {
     bordered
     color="success"
   >
-    <UserAvatar
-      class="cursor-pointer"
-    >
+    <UserAvatar class="cursor-pointer">
       <!-- SECTION Menu -->
       <VMenu
         activator="parent"

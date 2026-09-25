@@ -45,6 +45,7 @@ const isLastGrammarCard = computed(() => grammarIndex.value + 1 >= grammarCards.
 const isStudyOnly = computed(() => grammarCards.value.length > 0 && !questions.value.length)
 const isFinishingStudy = ref(false)
 const currentGrammarCard = computed(() => grammarCards.value[grammarIndex.value])
+
 const grammarProgressPercent = computed(() => {
   if (!grammarCards.value.length)
     return 0
@@ -126,11 +127,14 @@ const AUTO_CHECK_TYPES = ['multiple_choice', 'listening']
 const showCheckButton = computed(() =>
   currentQuestion.value?.question_type !== 'flashcard'
   && !AUTO_CHECK_TYPES.includes(currentQuestion.value?.question_type))
+
+
 // A choice question that reached the player with no answer options can't be
 // answered; offer a way past it instead of leaving the learner stuck.
 const hasNoOptions = computed(() =>
   AUTO_CHECK_TYPES.includes(currentQuestion.value?.question_type)
   && !(currentQuestion.value?.options?.length))
+
 const canCheck = computed(() => answer.value !== null && answer.value !== '' && !isChecking.value)
 const autoAdvanceTimer = ref(null)
 const AUTO_ADVANCE_CORRECT_MS = 1100
@@ -184,6 +188,7 @@ async function load() {
 
 function onAnswerChange(value) {
   answer.value = value
+
   // Choice-based questions are unambiguous the moment an option is tapped —
   // grade immediately instead of waiting for a separate "Periksa" tap.
   if (AUTO_CHECK_TYPES.includes(currentQuestion.value?.question_type))
@@ -252,6 +257,7 @@ async function next() {
 }
 
 const passed = computed(() => ['completed', 'mastered'].includes(result.value?.status))
+
 const accuracy = computed(() => {
   if (!result.value?.total_questions)
     return 0
@@ -284,6 +290,7 @@ async function continueLearning() {
   try {
     const path = await $api('/learning-path')
     const lessons = (path?.units ?? []).flatMap(unit => unit.lessons ?? [])
+
     const isOpenable = lesson =>
       ['available', 'in_progress'].includes(lesson.status) && String(lesson.id) !== currentId
 

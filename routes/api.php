@@ -90,6 +90,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/user-lessons/{userLesson}/finish', [LessonController::class, 'finish']);
 
     Route::get('/vocabulary', [VocabularyController::class, 'index']);
+    Route::get('/vocabulary/chapters', [VocabularyController::class, 'chapters']);
     Route::get('/vocabulary/{vocabulary}', [VocabularyController::class, 'show']);
 
     Route::get('/kana', [KanaController::class, 'index']);

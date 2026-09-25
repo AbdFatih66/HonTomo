@@ -1,6 +1,7 @@
 <script setup>
 import { $api } from '@/utils/api'
 import KanaCharacterDetail from '@/components/kana/KanaCharacterDetail.vue'
+import { useAutoNext } from '@/composables/useAutoNext'
 
 const { t } = useI18n()
 const router = useRouter()
@@ -14,6 +15,7 @@ const showDetail = ref(false)
 const currentId = ref(null)
 const justCompleted = ref(false)
 let autoAdvanceTimer = null
+const autoNext = useAutoNext()
 
 // Gojuon rows in the traditional order, with the 5 columns (a/i/u/e/o) they
 // each occupy — used purely for chart layout, since や/わ rows skip columns.
@@ -30,6 +32,7 @@ const SCRIPT_OPTIONS = [
 // Which single section is shown below the selector — avoids stacking every
 // section (gojuon..yoon) and forcing a long scroll to reach the later ones.
 const section = ref('gojuon')
+
 const SECTION_OPTIONS = [
   { value: 'gojuon', label: 'kana.gojuon' },
   { value: 'dakuten', label: 'kana.dakuten' },
@@ -115,7 +118,9 @@ function onWritingComplete() {
   justCompleted.value = true
   clearAutoAdvance()
 
-  if (hasNext.value)
+  // With auto-next off the learner stays on the character (the Next button
+  // is highlighted instead) and moves on whenever they are ready.
+  if (autoNext.value && hasNext.value)
     autoAdvanceTimer = setTimeout(() => step(1), 700)
 }
 
@@ -129,6 +134,10 @@ function step(delta) {
 }
 
 onBeforeUnmount(clearAutoAdvance)
+watch(autoNext, on => {
+  if (!on)
+    clearAutoAdvance()
+})
 
 // Progress through the whole chart, shown in the full-screen header.
 const detailProgressPercent = computed(() => {
@@ -212,9 +221,11 @@ onMounted(load)
     </VAlert>
 
     <template v-else>
-      <!-- Section selector: only one group (gojuon/dakuten/.../yoon) is
-           rendered below at a time, so switching sections is a click
-           instead of scrolling past everything above it. -->
+      <!--
+        Section selector: only one group (gojuon/dakuten/.../yoon) is
+        rendered below at a time, so switching sections is a click
+        instead of scrolling past everything above it. 
+      -->
       <div
         class="kana-section-tabs mb-4"
         role="tablist"
@@ -363,8 +374,10 @@ onMounted(load)
       </VCard>
     </template>
 
-    <!-- Writing mode: full screen, same focus layout as the lesson player
-         (no page chrome, progress bar on top, navigation pinned at the bottom). -->
+    <!--
+      Writing mode: full screen, same focus layout as the lesson player
+      (no page chrome, progress bar on top, navigation pinned at the bottom). 
+    -->
     <VDialog
       v-model="showDetail"
       fullscreen
@@ -392,6 +405,14 @@ onMounted(load)
               :style="{ inlineSize: `${detailProgressPercent}%` }"
             />
           </div>
+          <VSwitch
+            v-model="autoNext"
+            :label="t('kana.auto_next')"
+            color="primary"
+            density="compact"
+            hide-details
+            class="flex-shrink-0"
+          />
         </header>
 
         <main class="kana-fs__body">

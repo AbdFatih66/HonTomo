@@ -187,12 +187,17 @@ class QuestionOptionRepair
 
         $types = [];
 
-        if (preg_match('/tenten|dakuten/', $text)) {
-            $types[] = 'dakuten';
+        if (preg_match('/yoon|youon/', $text)) {
+            $types[] = preg_match('/dakuten|bersuara|voiced/', $text) ? 'yoon_dakuten' : 'yoon';
         }
+        else {
+            if (preg_match('/tenten|dakuten/', $text)) {
+                $types[] = 'dakuten';
+            }
 
-        if (preg_match('/maru/', $text)) {
-            $types[] = 'handakuten';
+            if (preg_match('/maru/', $text)) {
+                $types[] = 'handakuten';
+            }
         }
 
         if ($types === []) {

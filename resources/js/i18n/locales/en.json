@@ -11,7 +11,9 @@
     "learning": "Learning",
     "admin": "Admin",
     "kana": "Hiragana & Katakana",
-    "kanji": "Kanji"
+    "kanji": "Kanji",
+    "lampiran": "Grammar Reference",
+    "vocabulary": "Vocabulary"
   },
   "common": {
     "loading": "Loading…",
@@ -20,7 +22,10 @@
     "error": "Something went wrong. Please try again.",
     "xp": "XP",
     "level": "Level",
-    "lessons": "lessons"
+    "lessons": "lessons",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete"
   },
   "lesson": {
     "question": "Question",
@@ -135,6 +140,7 @@
     "skip": "Skip",
     "prev_character": "Previous",
     "next_character": "Next",
+    "auto_next": "Auto next",
     "character_of": "{current} / {total}",
     "finish_quiz": "Finish",
     "quiz_result_title": "Quiz Results",
@@ -291,8 +297,8 @@
     "sort_curriculum": "Lesson Order",
     "only_learned": "Only kanji I've studied",
     "total_count": "{n} kanji",
-    "empty_learned_unlinked": "No kanji are linked to your lessons yet. Ask an admin to run kanji:link-vocabulary and kanji:sync-lesson-order.",
-    "empty_learned_no_progress": "You haven't completed a lesson yet — kanji from finished lessons will show up here.",
+    "empty_learned_unlinked": "You haven't practiced any kanji yet, and none are linked to a lesson yet either. Try the kanji quiz or writing practice first.",
+    "empty_learned_no_progress": "You haven't practiced any kanji yet. Kanji you've tried (via quiz/writing practice) or that appear in lessons you've completed will show up here.",
     "empty_learned_level": "No kanji at this JLPT level appear in the lessons you've completed. Try another level.",
     "show_all": "Show all kanji",
     "level_caption": {
@@ -337,5 +343,91 @@
     "sources_kanjidic_used_for": "Source of characters, on'yomi/kun'yomi readings, English meanings, school grade, and frequency rank.",
     "sources_jmdict_used_for": "Source of example vocabulary for each kanji, with readings and meanings.",
     "sources_disclaimer": "The JLPT level classification (N5-N1) used here is maintained separately from the data above, since the Japan Foundation has not published an official per-level kanji list since 2010 — the list used is a common consensus drawn from JLPT prep materials."
+  },
+  "admin": {
+    "users": {
+      "title": "User Management",
+      "search_placeholder": "Search name or email",
+      "add_user": "Add User",
+      "headers": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "actions": "Actions"
+      },
+      "roles": {
+        "user": "User",
+        "admin": "Admin"
+      },
+      "dialog": {
+        "edit_title": "Edit User",
+        "create_title": "Add User",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "password_placeholder_edit": "Leave blank to keep current password",
+        "role": "Role"
+      },
+      "delete_dialog": {
+        "title": "Delete User",
+        "confirm": "Are you sure you want to delete {name}? This can't be undone."
+      }
+    },
+    "audit_logs": {
+      "title": "Audit Log",
+      "description": "Log of sensitive account actions (login, password reset, linking/unlinking Google, and admin actions). This log is read-only and cannot be edited or deleted.",
+      "filter_action": "Filter action",
+      "search_email": "Search user email",
+      "from_date": "From date",
+      "to_date": "To date",
+      "headers": {
+        "created_at": "Time",
+        "action": "Action",
+        "user": "User",
+        "ip": "IP",
+        "meta": "Details"
+      }
+    }
+  },
+  "lampiran": {
+    "title": "Grammar Reference",
+    "subtitle": "Reference for numbers, time expressions, counters, verb conjugation, and adjectives.",
+    "section_numbers": "Numbers",
+    "section_time": "Time Expressions",
+    "section_clock": "Clock & Dates",
+    "section_counters": "Counters",
+    "section_verbs": "Verb Conjugation",
+    "big_numbers": "10,000 and above",
+    "decimal_fraction": "Decimals & Fractions",
+    "relative_days": "Day, Morning, Night",
+    "relative_periods": "Week, Month, Year",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "days_of_week": "Days of the Week",
+    "months": "Months",
+    "dates": "Dates",
+    "duration": "Duration (…hours, …days, etc.)",
+    "form_masu": "ます form",
+    "form_kamus": "Dictionary form",
+    "form_te": "て form",
+    "form_nai": "ない form",
+    "form_ta": "た form",
+    "form_arti": "Meaning",
+    "form_pelajaran": "Lesson",
+    "section_adjectives": "Adjectives",
+    "i_adjective_hint": "Negative: 〜い → 〜くない",
+    "na_adjective_hint": "Negative: 〜な → 〜じゃない"
+  },
+  "vocabulary": {
+    "title": "Vocabulary by Chapter",
+    "subtitle": "All vocabulary in the learning path, grouped by chapter 1–25.",
+    "chapter_label": "Chapter {n}",
+    "word_count": "{n} words",
+    "search_placeholder": "Search words...",
+    "empty": "No matching words.",
+    "col_japanese": "Kanji/Kana",
+    "col_hiragana": "Hiragana",
+    "col_romaji": "Romaji",
+    "col_meaning": "Meaning"
   }
 }

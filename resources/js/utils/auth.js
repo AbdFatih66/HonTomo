@@ -30,6 +30,7 @@ export function resolveAuthError(err) {
 
   if (status === 422) {
     const errors = err?.data?.errors ?? {}
+
     const fieldErrors = Object.fromEntries(
       Object.entries(errors).map(([field, msgs]) => [field, msgs]),
     )
@@ -49,8 +50,8 @@ export function resolveAuthError(err) {
 // Client-side rules (UX only — the server is the source of truth).
 export const rules = {
   required: v => (v !== null && v !== undefined && String(v).trim() !== '') || t('auth.validation.required'),
-  email: v => !v || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || t('auth.validation.email'),
+  email: v => !v || /^[^\s@]+@[^\s@][^\s.@]*\.[^\s@]+$/.test(v) || t('auth.validation.email'),
   minLength: n => v => !v || String(v).length >= n || t('auth.validation.min_length', { n }),
-  password: v => !v || (/[A-Za-z]/.test(v) && /\d/.test(v)) || t('auth.validation.password_strength'),
+  password: v => !v || (/[A-Z]/i.test(v) && /\d/.test(v)) || t('auth.validation.password_strength'),
   confirmed: other => v => v === other() || t('auth.validation.confirmed'),
 }

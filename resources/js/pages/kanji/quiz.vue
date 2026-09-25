@@ -25,6 +25,7 @@ const LEVEL_OPTIONS = ['N5', 'N4', 'N3', 'N2', 'N1', 'CURRICULUM']
 function levelLabel(level) {
   return level === 'CURRICULUM' ? t('kanji.quiz_scope_curriculum') : level
 }
+
 const TYPE_OPTIONS = [
   { value: 'meaning', label: 'kanji.quiz_type_meaning' },
   { value: 'reading', label: 'kanji.quiz_type_reading' },
@@ -145,9 +146,41 @@ function resetQuestionState() {
 // different option shape (a plain string, or {word, reading} for the
 // vocabulary type) — this resolves the right comparator/display value
 // once per question instead of repeating a switch in the template.
+// NOTE: must be null-safe — `selectedOption` is null until the learner
+// answers, and `typeof null === 'object'`, so reading `.word` off it threw
+// during the very first render of a question and blanked the whole page.
 function optionValue(option) {
+  if (option === null || option === undefined)
+    return null
+
   return typeof option === 'object' ? option.word : option
 }
+
+// Whether the option the learner picked is the right one (false until they pick).
+const isChoiceCorrect = computed(() =>
+  isAnswered.value
+  && optionValue(selectedOption.value) === currentQuestion.value?.answer)
+
+// Bottom verdict bar state, same shape as the lesson player's `feedback`
+// (see pages/learn/[id].vue) so both quiz shells read the same way.
+const feedback = computed(() => {
+  const q = currentQuestion.value
+
+  if (q?.mode === 'choice') {
+    if (!isAnswered.value)
+      return null
+
+    return { correct: isChoiceCorrect.value, correctAnswer: isChoiceCorrect.value ? null : q.answer }
+  }
+
+  if (!writingResult.value)
+    return null
+
+  return {
+    correct: writingResult.value.correct,
+    correctAnswer: writingResult.value.correct ? null : q.answer_character,
+  }
+})
 
 // Fire-and-forget: records this answer's outcome against the kanji's
 // persistent mastery tracking (Tahap 6). Never awaited/blocking — a slow
@@ -398,7 +431,7 @@ onBeforeUnmount(clearAdvanceTimer)
           <VCard class="pa-6 text-center">
             <!-- A) Kanji -> Arti -->
             <template v-if="currentQuestion.question_type === 'meaning'">
-              <div class="kanji-quiz__character mb-2">
+              <div class="q-jp mb-2">
                 {{ currentQuestion.prompt_character }}
               </div>
               <p class="text-body-2 text-medium-emphasis mb-4">
@@ -408,7 +441,7 @@ onBeforeUnmount(clearAdvanceTimer)
 
             <!-- B) Kanji -> Cara Baca (context: a whole word, never a bare kanji) -->
             <template v-else-if="currentQuestion.question_type === 'reading'">
-              <div class="kanji-quiz__character mb-1">
+              <div class="q-jp mb-1">
                 {{ currentQuestion.prompt_word }}
               </div>
               <p class="text-body-2 text-medium-emphasis mb-4">
@@ -418,7 +451,7 @@ onBeforeUnmount(clearAdvanceTimer)
 
             <!-- C) Hiragana -> Kanji -->
             <template v-else-if="currentQuestion.question_type === 'kanji_from_reading'">
-              <div class="text-h5 mb-1">
+              <div class="q-jp mb-1">
                 {{ currentQuestion.prompt_reading }}
               </div>
               <p class="text-body-2 text-medium-emphasis mb-4">
@@ -428,7 +461,7 @@ onBeforeUnmount(clearAdvanceTimer)
 
             <!-- D) Kanji -> Kosakata -->
             <template v-else-if="currentQuestion.question_type === 'vocabulary'">
-              <div class="kanji-quiz__character mb-1">
+              <div class="q-jp mb-1">
                 {{ currentQuestion.prompt_character }}
               </div>
               <p class="text-body-2 text-medium-emphasis mb-4">
@@ -439,47 +472,38 @@ onBeforeUnmount(clearAdvanceTimer)
             <!-- Choice options, shared by all 4 non-writing types above -->
             <div
               v-if="currentQuestion.mode === 'choice'"
-              class="kana-quiz__options"
+              class="option-grid"
             >
-              <VBtn
+              <button
                 v-for="(option, i) in currentQuestion.options"
                 :key="i"
-                size="large"
-                class="kana-quiz__option"
-                :class="[typeof option === 'object' || currentQuestion.question_type === 'meaning' ? '' : 'kana-quiz__option--char']"
-                :color="
-                  isAnswered
-                    ? optionValue(option) === currentQuestion.answer
-                      ? 'success'
-                      : (option === selectedOption ? 'error' : undefined)
-                    : undefined
-                "
-                :variant="isAnswered ? 'flat' : 'tonal'"
+                type="button"
+                class="option-card"
+                :class="{
+                  'is-selected': !isAnswered && optionValue(option) === optionValue(selectedOption),
+                  'is-correct': isAnswered && optionValue(option) === currentQuestion.answer,
+                  'is-wrong': isAnswered && optionValue(option) === optionValue(selectedOption) && optionValue(option) !== currentQuestion.answer,
+                }"
                 :disabled="isAnswered"
                 @click="chooseOption(option)"
               >
+                <span class="option-card__key">{{ i + 1 }}</span>
                 <template v-if="typeof option === 'object'">
                   <div class="d-flex flex-column">
-                    <span>{{ option.word }}</span>
+                    <span
+                      class="option-card__jp"
+                      lang="ja"
+                    >{{ option.word }}</span>
                     <span class="text-caption text-medium-emphasis">{{ option.reading }}</span>
                   </div>
                 </template>
-                <template v-else>
-                  {{ option }}
-                </template>
-              </VBtn>
-            </div>
-
-            <div
-              v-if="currentQuestion.mode === 'choice'"
-              class="kana-quiz__feedback"
-              :class="{ 'kana-quiz__feedback--visible': isAnswered }"
-            >
-              <VIcon
-                :icon="optionValue(selectedOption) === currentQuestion.answer ? 'tabler-circle-check-filled' : 'tabler-circle-x-filled'"
-                :color="optionValue(selectedOption) === currentQuestion.answer ? 'success' : 'error'"
-              />
-              {{ optionValue(selectedOption) === currentQuestion.answer ? t('kana.correct') : t('kana.the_answer_was', { answer: currentQuestion.answer }) }}
+                <span
+                  v-else-if="currentQuestion.question_type === 'kanji_from_reading'"
+                  class="option-card__jp"
+                  lang="ja"
+                >{{ option }}</span>
+                <span v-else>{{ option }}</span>
+              </button>
             </div>
 
             <!-- E) Writing quiz -->
@@ -505,19 +529,6 @@ onBeforeUnmount(clearAdvanceTimer)
                   :show-outline="false"
                   @complete="onWritingComplete"
                 />
-              </div>
-
-              <div
-                class="kana-quiz__feedback"
-                :class="{ 'kana-quiz__feedback--visible': !!writingResult }"
-              >
-                <template v-if="writingResult">
-                  <VIcon
-                    :icon="writingResult.correct ? 'tabler-circle-check-filled' : 'tabler-circle-x-filled'"
-                    :color="writingResult.correct ? 'success' : 'error'"
-                  />
-                  {{ writingResult.correct ? t('kana.correct') : t('kana.the_answer_was', { answer: currentQuestion.answer_character }) }}
-                </template>
               </div>
 
               <VBtn
@@ -565,15 +576,38 @@ onBeforeUnmount(clearAdvanceTimer)
         </VCard>
       </div>
     </main>
+
+    <footer
+      v-if="feedback"
+      class="kana-fs__footer"
+      :class="feedback.correct ? 'is-correct' : 'is-incorrect'"
+    >
+      <div class="kana-fs__footer-inner">
+        <div
+          class="lp__verdict"
+          :style="{ color: feedback.correct ? 'rgb(var(--v-theme-success))' : 'rgb(var(--v-theme-error))' }"
+        >
+          <VIcon
+            :icon="feedback.correct ? 'tabler-circle-check-filled' : 'tabler-circle-x-filled'"
+            size="36"
+          />
+          <div>
+            {{ feedback.correct ? t('kana.correct') : t('kana.incorrect') }}
+            <small v-if="feedback.correctAnswer">
+              {{ t('kana.the_answer_was', { answer: feedback.correctAnswer }) }}
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <style scoped>
-/* Copied from resources/js/pages/kana/quiz.vue's own scoped styles — these
-   classes are NOT global (unlike .kana-fs* / .lp__* in learning.scss), so
-   they must be duplicated here rather than just reused by class name. If
-   you tweak the look of one quiz's tiles/options/feedback, check whether
-   the other should match. */
+/* Setup-screen pickers only (mode / level tiles) — the answer options and
+   feedback bar now reuse the global .option-grid/.option-card/.lp__verdict
+   classes from learning.scss, shared with the lesson player and the Kana
+   quiz. */
 .kana-quiz__tiles {
   display: grid;
   gap: 16px;
@@ -621,45 +655,5 @@ onBeforeUnmount(clearAdvanceTimer)
 .kana-quiz__tile-label {
   font-size: 0.95rem;
   font-weight: 600;
-}
-
-.kana-quiz__feedback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(var(--v-theme-on-surface), 0.8);
-  font-size: 0.9rem;
-  gap: 0.4rem;
-  margin-block-start: 1rem;
-  min-block-size: 2rem;
-  opacity: 0;
-  transition: opacity 0.15s ease;
-}
-
-.kana-quiz__feedback--visible {
-  opacity: 1;
-}
-
-.kana-quiz__options {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.kana-quiz__option {
-  block-size: auto;
-  min-block-size: 64px;
-  padding-block: 8px;
-}
-
-.kana-quiz__option--char {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.75rem;
-}
-
-.kanji-quiz__character {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 4rem;
-  line-height: 1;
 }
 </style>

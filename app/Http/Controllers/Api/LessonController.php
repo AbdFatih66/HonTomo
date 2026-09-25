@@ -8,6 +8,7 @@ use App\Http\Resources\LessonResource;
 use App\Models\Lesson;
 use App\Models\UserLesson;
 use App\Services\LessonService;
+use App\Services\ProgressService;
 use App\Services\QuestionOptionRepair;
 use App\Services\QuestionService;
 use Illuminate\Http\Request;
@@ -19,10 +20,17 @@ class LessonController extends Controller
         private LessonService $lessonService,
         private QuestionService $questionService,
         private QuestionOptionRepair $optionRepair,
+        private ProgressService $progressService,
     ) {}
 
     public function show(Request $request, Lesson $lesson)
     {
+        // Same lock LessonService::start enforces. Without this, a locked
+        // lesson's questions (and answers, via LessonQuestionResource) could
+        // be read directly by id, and ensureForLesson() below would write
+        // repaired options for a lesson the user isn't supposed to reach yet.
+        abort_unless($this->progressService->isUnlocked($request->user(), $lesson), 403, 'Lesson is locked.');
+
         // Questions that arrive without usable answer options are rebuilt
         // before being sent, so the player never shows an unanswerable card.
         $this->optionRepair->ensureForLesson($lesson);

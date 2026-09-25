@@ -35,6 +35,6 @@ class KanjiVocabulary extends Model
     {
         $localized = app()->getLocale() === 'en' ? $this->meaning_en : $this->meaning_id;
 
-        return $localized ?: $this->meaning_en;
+        return (string) ($localized ?: $this->meaning_en);
     }
 }

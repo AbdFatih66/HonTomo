@@ -12,6 +12,11 @@ export default [
     icon: { icon: 'tabler-book' },
   },
   {
+    title: 'nav.vocabulary',
+    to: { name: 'kosakata' },
+    icon: { icon: 'tabler-notebook' },
+  },
+  {
     title: 'nav.kana',
     to: { name: 'kana' },
     icon: { icon: 'tabler-language-katakana' },
@@ -22,13 +27,20 @@ export default [
     icon: { icon: 'tabler-writing' },
   },
   {
+    title: 'nav.lampiran',
+    to: { name: 'lampiran' },
+    icon: { icon: 'tabler-clipboard-list' },
+  },
+  {
     title: 'nav.user_management',
     to: { name: 'admin-users' },
     icon: { icon: 'tabler-users' },
+    adminOnly: true,
   },
   {
     title: 'nav.audit_log',
     to: { name: 'admin-audit-logs' },
     icon: { icon: 'tabler-history' },
+    adminOnly: true,
   },
 ]
