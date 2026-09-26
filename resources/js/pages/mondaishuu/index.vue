@@ -40,7 +40,13 @@ const LESSONS = [
     { type: 'mc', q: 'これは 田中《たなか》さん＿＿＿ 傘《かさ》です。', choices: ['の', 'は', 'を', 'も'], answer: 0 },
     { type: 'mc', q: 'サントスさんは 学生《がくせい》ですか。…いいえ、学生《がくせい》＿＿＿。会社員《かいしゃいん》です。', choices: ['じゃありません', 'ですか', 'でした', 'も'], answer: 0 },
     { type: 'scramble', translate: 'Apakah Anda orang IMC?', words: ['IMC', 'の', '方《かた》', 'ですか'] },
-    { type: 'scramble', translate: 'Ini bukan payung saya.', words: ['これ', 'は', '私《わたし》', 'の', '傘《かさ》', 'じゃありません'] }
+    { type: 'scramble', translate: 'Ini bukan payung saya.', words: ['これ', 'は', '私《わたし》', 'の', '傘《かさ》', 'じゃありません'] },
+    { type: 'mc', q: '木村《きむら》：はじめまして。木村《きむら》です。\nリナ：はじめまして。リナです。＿＿＿。', choices: ['どうぞよろしく', 'いただきます', 'お帰《かえ》りなさい', 'かしこまりました'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：あの　方《かた》は　どなたですか。\nB：＿＿＿。ミラーさんです。', choices: ['山田《やまだ》さんです', 'はい、会社員《かいしゃいん》です', 'いいえ、学生《がくせい》です', '38歳《さい》です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'ワンさんも 学生《がくせい》ですか。…いいえ、ワンさん＿＿＿ 学生《がくせい》じゃありません。', choices: ['は', 'も', 'の', 'を'], answer: 0 },
+    { type: 'mc', q: 'グプタさんは IMC＿＿＿ 社員《しゃいん》です。', choices: ['の', 'は', 'を', 'に'], answer: 0 },
+    { type: 'scramble', translate: 'Apakah ini buku Anda?', words: ['これ', 'は', 'あなた', 'の', '本《ほん》', 'ですか'] },
+    { type: 'scramble', translate: 'Ya, saya karyawan perusahaan.', words: ['はい', '、', '会社員《かいしゃいん》', 'です'] },
   ] },
   { id: 2, focus: 'この・その・あの、ここ・そこ・あそこ、N の N', questions: [
     { type: 'mc', q: '＿＿＿ かばんは 私《わたし》のです。（自分《じぶん》に 近《ちか》い）', choices: ['この', 'その', 'あの', 'どの'], answer: 0, img: 'tabler-briefcase' },
@@ -54,7 +60,15 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tas ini bukan tas saya.', words: ['この', 'かばん', 'は', '私《わたし》', 'の', 'じゃありません'] },
     { type: 'mc', q: '＿＿＿ 建物《たてもの》は 何《なん》ですか。（少《すこ》し 遠《とお》い）', choices: ['この', 'その', 'あの', 'どの'], answer: 2 },
     { type: 'mc', q: 'この 傘《かさ》は＿＿＿の ですか。…あなたのです。', choices: ['だれ', 'なん', 'どこ', 'いつ'], answer: 0 },
-    { type: 'scramble', translate: 'Kamera itu buatan negara mana?', words: ['それ', 'は', 'どこ', 'の', 'カメラ', 'ですか'] }
+    { type: 'scramble', translate: 'Kamera itu buatan negara mana?', words: ['それ', 'は', 'どこ', 'の', 'カメラ', 'ですか'] },
+    { type: 'mc', q: 'A：すみません、受付《うけつけ》は　どちらですか。\nB：＿＿＿。', choices: ['あちらです', 'それはノートです', '3階《がい》です', 'わたしのです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：これは　何《なん》の　雑誌《ざっし》ですか。\nB：＿＿＿。', choices: ['車《くるま》の　雑誌《ざっし》です', 'はい、そうです', '3,800円《えん》です', 'わたしのです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '受付《うけつけ》は＿＿＿ですか。', choices: ['どちら', 'どなた', 'なん', 'いつ'], answer: 0 },
+    { type: 'mc', q: 'これは＿＿＿の CDですか。…日本語《にほんご》の CDです。', choices: ['なん', 'だれ', 'どこ', 'いつ'], answer: 0 },
+    { type: 'mc', q: 'あの 人《ひと》は＿＿＿ですか。…佐藤《さとう》さんです。', choices: ['だれ', 'どこ', 'なん', 'いつ'], answer: 0 },
+    { type: 'scramble', translate: 'Payung ini bukan milik Anda.', words: ['この', '傘《かさ》', 'は', 'あなた', 'の', 'じゃありません'] },
+    { type: 'scramble', translate: 'Toilet ada di sana.', words: ['トイレ', 'は', 'あそこ', 'です'] },
+    { type: 'scramble', translate: 'Ini adalah kamera buatan Jepang.', words: ['これ', 'は', '日本《にほん》', 'の', 'カメラ', 'です'] },
   ] },
   { id: 3, focus: '数字《すうじ》（値段《ねだん》）、この・その・あの、どこの', questions: [
     { type: 'mc', q: '¥5,300 の 読《よ》み方《かた》は？', choices: ['ごせんさんびゃくえん', 'ごまんさんぜんえん', 'ごひゃくさんじゅうえん', 'ごせんさんじゅうえん'], answer: 0, img: 'tabler-tag' },
@@ -68,7 +82,15 @@ const LESSONS = [
     { type: 'scramble', translate: 'Berapa harga tas ini?', words: ['この', 'かばん', 'は', 'いくら', 'ですか'] },
     { type: 'mc', q: '¥124,000 の 読《よ》み方《かた》は？', choices: ['じゅうにまんよんせんえん', 'いちまんにせんよんひゃくえん', 'じゅうにまんよんひゃくえん', 'ひゃくにじゅうよんまんえん'], answer: 0 },
     { type: 'mc', q: 'すみません。そのワイン＿＿＿ 見《み》せてください。', choices: ['を', 'は', 'に', 'の'], answer: 0 },
-    { type: 'scramble', translate: 'Kalau begitu, saya ambil yang ini.', words: ['じゃ', '、', 'これ', 'を', 'ください'] }
+    { type: 'scramble', translate: 'Kalau begitu, saya ambil yang ini.', words: ['じゃ', '、', 'これ', 'を', 'ください'] },
+    { type: 'mc', q: '店員《てんいん》：いらっしゃいませ。\n客《きゃく》：すみません、この　ネクタイは　いくらですか。\n店員《てんいん》：＿＿＿。', choices: ['6,400円《えん》です', 'どうぞ', 'かしこまりました', 'ちょっと'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：すみません、その　時計《とけい》を　見《み》せて　ください。\nB：＿＿＿。', choices: ['どうぞ', 'かしこまりました', 'いいえ、けっこうです', 'また今度《こんど》'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'これは どこ＿＿＿ワインですか。…イタリアのです。', choices: ['の', 'は', 'を', 'に'], answer: 0 },
+    { type: 'mc', q: '¥4,700,000 の 読《よ》み方《かた》は？', choices: ['よんひゃくななじゅうまんえん', 'よんじゅうななまんえん', 'よんせんななひゃくまんえん', 'よんひゃくまんななせんえん'], answer: 0 },
+    { type: 'mc', q: '松本《まつもと》さんの 車《くるま》は＿＿＿ですか。…あそこです。', choices: ['どこ', 'いくら', 'だれ', 'なん'], answer: 0 },
+    { type: 'scramble', translate: 'Ini adalah majalah tentang mobil.', words: ['これ', 'は', '車《くるま》', 'の', '雑誌《ざっし》', 'です'] },
+    { type: 'scramble', translate: 'Berapa harga komputer ini?', words: ['この', 'コンピューター', 'は', 'いくら', 'ですか'] },
+    { type: 'scramble', translate: 'Silakan berikan yang ini.', words: ['これ', 'を', 'ください'] },
   ] },
   { id: 4, focus: '時間《じかん》（〜時《じ》〜分《ふん》）、から・まで・に、休《やす》み', questions: [
     { type: 'mc', q: '3:15 の 読《よ》み方《かた》は？', choices: ['さんじじゅうごふん', 'さんじゅうごふん', 'さんじはん', 'じゅうごじさんぷん'], answer: 0, img: 'tabler-clock-hour-3' },
@@ -82,7 +104,15 @@ const LESSONS = [
     { type: 'scramble', translate: 'Perpustakaan buka dari jam 9 sampai jam 6.', words: ['図書館《としょかん》', 'は', '9時《くじ》', 'から', '6時《ろくじ》', 'まで', 'です'] },
     { type: 'mc', q: 'ニューヨークは 今《いま》 午前《ごぜん》4時《じ》＿＿＿です。', choices: ['×', 'に', 'で', 'の'], answer: 0 },
     { type: 'mc', q: 'きのうの 晩《ばん》8時《じ》＿＿＿10時《じ》＿＿＿ 勉強《べんきょう》しました。', choices: ['から／まで', 'まで／から', 'に／で', 'を／へ'], answer: 0 },
-    { type: 'scramble', translate: 'Toko itu buka dari jam 9 pagi sampai jam 8 malam.', words: ['あの', '店《みせ》', 'は', '朝《あさ》', '9時《くじ》', 'から', '夜《よる》', '8時《はちじ》', 'まで', 'です'] }
+    { type: 'scramble', translate: 'Toko itu buka dari jam 9 pagi sampai jam 8 malam.', words: ['あの', '店《みせ》', 'は', '朝《あさ》', '9時《くじ》', 'から', '夜《よる》', '8時《はちじ》', 'まで', 'です'] },
+    { type: 'mc', q: 'A：すみません、この　図書館《としょかん》は　何時《なんじ》までですか。\nB：＿＿＿。', choices: ['6時《じ》までです', '月曜日《げつようび》です', 'あそこです', 'わたしのです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：美術館《びじゅつかん》の　休《やす》みは　何曜日《なんようび》ですか。\nB：＿＿＿。', choices: ['水曜日《すいようび》です', '9時《じ》からです', 'あそこです', '3階《がい》です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'あさって＿＿＿ 日曜日《にちようび》です。', choices: ['は', 'に', 'を', 'で'], answer: 0 },
+    { type: 'mc', q: 'この 図書館《としょかん》は 土曜日《どようび》＿＿＿ 午後《ごご》 休《やす》みです。', choices: ['×', 'に', 'で', 'を'], answer: 0 },
+    { type: 'mc', q: '10:00 の 読《よ》み方《かた》は？', choices: ['じゅうじ', 'とおじ', 'じっじ', 'じゅっじ'], answer: 0 },
+    { type: 'scramble', translate: 'Perusahaan saya mulai jam 9 dan selesai jam 5.', words: ['わたし', 'の', '会社《かいしゃ》', 'は', '9時《くじ》', 'から', '5時《ごじ》', 'までです'] },
+    { type: 'scramble', translate: 'Bank tutup jam 3.', words: ['銀行《ぎんこう》', 'は', '3時《さんじ》', 'に', '終《お》わります'] },
+    { type: 'scramble', translate: 'Sekarang New York jam berapa?', words: ['ニューヨーク', 'は', '今《いま》', '何時《なんじ》', 'ですか'] },
   ] },
   { id: 5, focus: '日《ひ》にち、過去形《かこけい》、へ・と', questions: [
     { type: 'mc', q: '5月《がつ》14日《じゅうよっか》の 読《よ》み方《かた》は？', choices: ['ごがつじゅうよっか', 'ごがついちよんにち', 'ごつきじゅうよんにち', 'ごがつじゅうよんにち'], answer: 0, img: 'tabler-calendar' },
@@ -95,7 +125,16 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tahun lalu saya datang ke Jepang.', words: ['去年《きょねん》', '日本《にほん》', 'へ', '来《き》ました'] },
     { type: 'scramble', translate: 'Kapan Anda kembali ke negara Anda?', words: ['いつ', '国《くに》', 'へ', '帰《かえ》りますか'] },
     { type: 'mc', q: '先月《せんげつ》の 25日《にじゅうごにち》＿＿＿ 電車《でんしゃ》＿＿＿ カリナさん＿＿＿ うち＿＿＿ 行《い》きました。', choices: ['に／で／と／へ', 'で／に／と／を', 'に／を／で／へ', 'を／で／に／へ'], answer: 0 },
-    { type: 'scramble', translate: 'Minggu lalu hari Sabtu saya tidak pergi ke mana-mana.', words: ['先週《せんしゅう》', 'の', '土曜日《どようび》', 'どこも', '行《い》きませんでした'] }
+    { type: 'scramble', translate: 'Minggu lalu hari Sabtu saya tidak pergi ke mana-mana.', words: ['先週《せんしゅう》', 'の', '土曜日《どようび》', 'どこも', '行《い》きませんでした'] },
+    { type: 'mc', q: 'A：いつ　日本《にほん》へ　来《き》ましたか。\nB：＿＿＿。', choices: ['去年《きょねん》の　4月《がつ》に　来《き》ました', '新幹線《しんかんせん》で　来《き》ました', '友達《ともだち》と　来《き》ました', 'とても　楽《たの》しいです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：先週《せんしゅう》の　日曜日《にちようび》、どこか　行《い》きましたか。\nB：いいえ、＿＿＿。', choices: ['どこも　行《い》きませんでした', 'どこか　行《い》きました', 'だれも　いません', '何《なに》も　欲《ほ》しいです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '来年《らいねん》の 8月《がつ》に 国《くに》へ＿＿＿。', choices: ['帰《かえ》ります', '帰《かえ》りました', '帰《かえ》る', '帰《かえ》って'], answer: 0 },
+    { type: 'mc', q: '9月《がつ》9日《ここのか》の 読《よ》み方《かた》は？', choices: ['くがつここのか', 'きゅうがつくにち', 'くがつくにち', 'きゅうがつここのか'], answer: 0 },
+    { type: 'mc', q: '誕生日《たんじょうび》は＿＿＿ですか。…9月《がつ》15日《じゅうごにち》です。', choices: ['いつ', 'どこ', 'だれ', 'なん'], answer: 0 },
+    { type: 'scramble', translate: 'Bulan lalu saya pergi ke Jepang.', words: ['先月《せんげつ》', '日本《にほん》', 'へ', '行《い》きました'] },
+    { type: 'scramble', translate: 'Kemarin saya pulang jam 10.', words: ['きのう', '10時《じゅうじ》', 'に', 'うち', 'へ', '帰《かえ》りました'] },
+    { type: 'scramble', translate: 'Saya pergi seorang diri.', words: ['一人《ひとり》', 'で', '行《い》きました'] },
+    { type: 'scramble', translate: 'Besok pagi kereta apinya jam berapa?', words: ['あした', 'の', '朝《あさ》', '電車《でんしゃ》', 'は', '何時《なんじ》', 'ですか'] },
   ] },
   { id: 6, focus: '動詞《どうし》ます形《けい》、を・に・で・と', questions: [
     { type: 'mc', q: '毎日《まいにち》コーヒー＿＿＿ 飲《の》みます。', choices: ['を', 'に', 'で', 'と'], answer: 0 },
@@ -108,7 +147,16 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tidak, saya tidak merokok.', words: ['いいえ', '、', 'たばこ', 'を', '吸《す》いません'] },
     { type: 'scramble', translate: 'Ayo kita istirahat sebentar.', words: ['ちょっと', '、', '休《やす》みましょう'] },
     { type: 'mc', q: 'きのう 自転車《じてんしゃ》＿＿＿ スーパー＿＿＿ 行《い》きました。スーパー＿＿＿ 牛乳《ぎゅうにゅう》＿＿＿ 果物《くだもの》＿＿＿ 買《か》いました。', choices: ['で／へ／で／と／を', 'に／を／で／を／と', 'で／に／を／と／で', 'へ／で／に／を／と'], answer: 0 },
-    { type: 'scramble', translate: 'Setiap hari saya makan siang jam 12 di kantin.', words: ['毎日《まいにち》', '12時《じゅうにじ》', 'に', '食堂《しょくどう》', 'で', '昼《ひる》ごはん', 'を', '食《た》べます'] }
+    { type: 'scramble', translate: 'Setiap hari saya makan siang jam 12 di kantin.', words: ['毎日《まいにち》', '12時《じゅうにじ》', 'に', '食堂《しょくどう》', 'で', '昼《ひる》ごはん', 'を', '食《た》べます'] },
+    { type: 'mc', q: 'A：いっしょに　テニスを　しませんか。\nB：＿＿＿。', choices: ['ええ、しましょう', 'いいえ、しません', 'はい、そうです', 'どういたしまして'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：ちょっと　休《やす》みませんか。\nB：＿＿＿。', choices: ['ええ、休《やす》みましょう', 'いいえ、休《やす》みでした', 'はい、そうですか', 'すみません'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'きょう 3時《じ》に 教室《きょうしつ》で 日本語《にほんご》の 先生《せんせい》＿＿＿ 会《あ》います。', choices: ['に', 'を', 'で', 'と'], answer: 0 },
+    { type: 'mc', q: '毎朝《まいあさ》ロビー＿＿＿ 新聞《しんぶん》＿＿＿ 読《よ》みます。', choices: ['で／を', 'を／で', 'に／を', 'へ／を'], answer: 0 },
+    { type: 'mc', q: '「テニス（を）します」の 例《れい》で、＿＿＿を しますか。', choices: ['サッカー', 'コーヒー', 'たばこ', '手紙《てがみ》'], answer: 0, img: 'tabler-ball-football' },
+    { type: 'scramble', translate: 'Setiap hari saya minum kopi.', words: ['毎日《まいにち》', 'コーヒー', 'を', '飲《の》みます'] },
+    { type: 'scramble', translate: 'Kemarin malam saya menulis surat.', words: ['きのう', 'の', '晩《ばん》', '手紙《てがみ》', 'を', '書《か》きました'] },
+    { type: 'scramble', translate: 'Ayo kita berhenti sebentar.', words: ['ちょっと', '休《やす》みましょう'] },
+    { type: 'scramble', translate: 'Saya bertemu dengan guru bahasa Jepang.', words: ['日本語《にほんご》', 'の', '先生《せんせい》', 'に', '会《あ》います'] },
   ] },
   { id: 7, focus: 'で（道具《どうぐ》）、に（相手《あいて》）、あげます・もらいます', questions: [
     { type: 'mc', q: '箸《はし》＿＿＿ ご飯《はん》を 食《た》べます。', choices: ['を', 'で', 'に', 'と'], answer: 1 },
@@ -120,7 +168,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Sari menerima bunga dari saya.', words: ['サリさん', 'は', '私《わたし》', 'に', '花《はな》', 'を', 'もらいました'] },
     { type: 'scramble', translate: 'Apakah Anda sudah mengirim laporan?', words: ['もう', 'レポート', 'を', '送《おく》りましたか'] },
     { type: 'mc', q: '何《なに》で この 魚《さかな》を 切《き》りますか。…ナイフ＿＿＿ 切《き》ります。', choices: ['で', 'を', 'に', 'と'], answer: 0, img: 'tabler-fish' },
-    { type: 'scramble', translate: 'Saya mengirim foto keluarga ke Jepang.', words: ['家族《かぞく》', 'の', '写真《しゃしん》', 'を', '日本《にほん》', 'へ', '送《おく》りました'] }
+    { type: 'scramble', translate: 'Saya mengirim foto keluarga ke Jepang.', words: ['家族《かぞく》', 'の', '写真《しゃしん》', 'を', '日本《にほん》', 'へ', '送《おく》りました'] },
+    { type: 'mc', q: 'A：誕生日《たんじょうび》に　何《なに》を　もらいましたか。\nB：＿＿＿。', choices: ['友達《ともだち》に　時計《とけい》を　もらいました', '友達《ともだち》に　時計《とけい》を　あげました', '花《はな》が　好《す》きです', 'いいえ、けっこうです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：これ、お土産《みやげ》です。どうぞ。\nB：＿＿＿。', choices: ['ありがとうございます', 'いただきます', 'ごちそうさまでした', 'かしこまりました'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '田中《たなか》先生《せんせい》＿＿＿ 日本語《にほんご》＿＿＿ 習《なら》いました。', choices: ['に／を', 'を／に', 'で／を', 'に／で'], answer: 0 },
+    { type: 'mc', q: 'もう 荷物《にもつ》を＿＿＿か。…はい、もう 送《おく》りました。', choices: ['送《おく》りました', '送《おく》ります', '送《おく》る', '送《おく》って'], answer: 0 },
+    { type: 'mc', q: 'この魚《さかな》は 何《なに》で 切《き》りますか。…包丁《ほうちょう》＿＿＿ 切《き》ります。', choices: ['で', 'を', 'に', 'と'], answer: 0, img: 'tabler-fish' },
+    { type: 'scramble', translate: 'Saya menerima jam tangan dari ayah.', words: ['父《ちち》', 'に', '時計《とけい》', 'を', 'もらいました'] },
+    { type: 'scramble', translate: 'Apa bahasa Inggrisnya "terima kasih"?', words: ['「ありがとう」', 'は', '英語《えいご》', 'で', '何《なん》', 'ですか'] },
+    { type: 'scramble', translate: '"Good morning" bahasa Jepangnya apa?', words: ['"Good morning"', 'は', '日本語《にほんご》', 'で', '何《なん》', 'ですか'] },
+    { type: 'scramble', translate: 'Saya belajar bahasa Jepang di universitas di Tiongkok.', words: ['中国《ちゅうごく》', 'の', '大学《だいがく》', 'で', '日本語《にほんご》', 'を', '習《なら》いました'] },
+    { type: 'scramble', translate: 'Di mana Anda meminjam buku?', words: ['どこ', 'で', '本《ほん》', 'を', '借《か》りますか'] },
   ] },
   { id: 8, focus: 'い形容詞《けいようし》・な形容詞《けいようし》', questions: [
     { type: 'mc', q: '「新《あたら》しい」の 反対《はんたい》は？', choices: ['古《ふる》い', '安《やす》い', '大《おお》きい', '静《しず》か'], answer: 0 },
@@ -133,7 +191,16 @@ const LESSONS = [
     { type: 'scramble', translate: 'Saya membeli tas yang baru.', words: ['新《あたら》しい', 'かばん', 'を', '買《か》いました'] },
     { type: 'scramble', translate: 'Restoran ini kecil tapi terkenal.', words: ['この', 'レストラン', 'は', '小《ちい》さい', 'です', 'が', '、', '有名《ゆうめい》', 'です'] },
     { type: 'mc', q: '会社《かいしゃ》の 寮《りょう》は 古《ふる》いです＿＿＿、きれいです。', choices: ['が', 'に', 'を', 'の'], answer: 0 },
-    { type: 'scramble', translate: 'Apakah kehidupan di Jepang menyenangkan?', words: ['日本《にほん》', 'の', '生活《せいかつ》', 'は', '楽《たの》しいですか'] }
+    { type: 'scramble', translate: 'Apakah kehidupan di Jepang menyenangkan?', words: ['日本《にほん》', 'の', '生活《せいかつ》', 'は', '楽《たの》しいですか'] },
+    { type: 'mc', q: 'A：日本《にほん》の　生活《せいかつ》は　どうですか。\nB：＿＿＿。', choices: ['大変《たいへん》ですが、楽《たの》しいです', 'どうぞよろしく', 'かしこまりました', 'いただきます'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：日本語《にほんご》が　お上手《じょうず》ですね。\nB：＿＿＿。', choices: ['いいえ、まだまだです', 'ありがとうございました', 'ごちそうさまでした', 'そうしましょう'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '奈良《なら》は＿＿＿ 所《ところ》ですか。…いい 所《ところ》ですよ。', choices: ['どんな', 'なん', 'どこ', 'だれ'], answer: 0 },
+    { type: 'mc', q: 'シュミットさんは＿＿＿ 人《ひと》ですか。…すてきな 人《ひと》です。', choices: ['どんな', 'なんの', 'どこの', 'いつの'], answer: 0 },
+    { type: 'mc', q: '寮《りょう》の 部屋《へや》は＿＿＿ですか。…小《ちい》さいですが、きれいです。', choices: ['どう', 'どんな', 'なん', 'どこ'], answer: 0 },
+    { type: 'scramble', translate: 'Kamar tidur saya sempit.', words: ['わたし', 'の', '部屋《へや》', 'は', '狭《せま》い', 'です'] },
+    { type: 'scramble', translate: 'Bagaimana makanan Jepang?', words: ['日本《にほん》', 'の', '食《た》べ物《もの》', 'は', 'どう', 'ですか'] },
+    { type: 'scramble', translate: 'Apakah sekarang dingin?', words: ['いま', '寒《さむ》い', 'ですか'] },
+    { type: 'scramble', translate: 'Terima kasih atas kebaikan Anda.', words: ['ご', '親切《しんせつ》', 'に', 'ありがとうございます'] },
   ] },
   { id: 9, focus: '好《す》き・嫌《きら》い（が）、から（理由《りゆう》）', questions: [
     { type: 'mc', q: '私《わたし》は 魚《さかな》＿＿＿ 好《す》きです。', choices: ['が', 'を', 'に', 'は'], answer: 0, img: 'tabler-fish' },
@@ -145,7 +212,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Saya tidak begitu suka sayur.', words: ['野菜《やさい》', 'が', 'あまり', '好《す》き', 'じゃありません'] },
     { type: 'scramble', translate: 'Kenapa Anda tidak makan sarapan?', words: ['どうして', '朝《あさ》ごはん', 'を', '食《た》べませんでしたか'] },
     { type: 'mc', q: 'どんな スポーツ＿＿＿ 好《す》きですか。…野球《やきゅう》＿＿＿ 好《す》きです。', choices: ['が／が', 'を／を', 'に／に', 'は／を'], answer: 0, img: 'tabler-ball-baseball' },
-    { type: 'scramble', translate: 'Saya tidak begitu tidur semalam.', words: ['きのう', 'の', '晩《ばん》', 'あまり', '寝《ね》ませんでした'] }
+    { type: 'scramble', translate: 'Saya tidak begitu tidur semalam.', words: ['きのう', 'の', '晩《ばん》', 'あまり', '寝《ね》ませんでした'] },
+    { type: 'mc', q: '山田《やまだ》：あした　いっしょに　花見《はなみ》を　しませんか。\n木村《きむら》：すみません。あしたは　＿＿＿。友達《ともだち》と　約束《やくそく》が　ありますから。', choices: ['ちょっと……', 'いいですね', 'そうですか', 'どういたしまして'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：どうして　きのう　学校《がっこう》を　休《やす》みましたか。\nB：＿＿＿。', choices: ['頭《あたま》が　痛《いた》かったですから', '10時《じ》に　休《やす》みました', 'どこも　休《やす》みです', 'かぜです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '暑《あつ》いですから、冷《つめ》たい 飲《の》み物《もの》を＿＿＿。', choices: ['飲《の》みます', '飲《の》みたくないです', '飲《の》みません', '飲《の》みました'], answer: 0 },
+    { type: 'mc', q: '野菜《やさい》が 好《す》きじゃありませんから、＿＿＿。', choices: ['あまり食《た》べません', 'たくさん食《た》べます', '大好《だいす》きです', '毎日《まいにち》食《た》べます'], answer: 0 },
+    { type: 'mc', q: 'かたかなが＿＿＿ 分《わ》かります。（たくさん・全然《ぜんぜん》・だいたい）', choices: ['だいたい', '全然《ぜんぜん》', 'あまり', '少《すこ》し'], answer: 0 },
+    { type: 'scramble', translate: 'Karena tidak ada uang kecil, saya pinjam dari Sato.', words: ['細《こま》かい', 'お金《かね》', 'が', 'ありませんでしたから', '、', '佐藤《さとう》さん', 'に', '借《か》りました'] },
+    { type: 'scramble', translate: 'Mengapa Anda tidak melakukan dansa?', words: ['どうして', 'ダンス', 'を', 'しませんか'] },
+    { type: 'scramble', translate: 'Karena bahasa Jepang saya belum lancar.', words: ['日本語《にほんご》', 'が', 'まだ', '上手《じょうず》', 'じゃありませんから'] },
+    { type: 'scramble', translate: 'Saya bekerja karena bekerja di perusahaan Jepang.', words: ['日本《にほん》', 'の', '会社《かいしゃ》', 'で', '働《はたら》きますから'] },
+    { type: 'scramble', translate: 'Apakah kamu suka olahraga apa saja?', words: ['どんな', 'スポーツ', 'が', '好《す》きですか'] },
   ] },
   { id: 10, focus: 'あります・います、上《うえ》・下《した》・中《なか》', questions: [
     { type: 'mc', q: '机《つくえ》の 上《うえ》に 本《ほん》が ＿＿＿。', choices: ['あります', 'います', 'です', 'ました'], answer: 0, img: 'tabler-book' },
@@ -158,7 +235,16 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tidak ada siapa-siapa di taman.', words: ['庭《にわ》', 'に', 'だれも', 'いません'] },
     { type: 'scramble', translate: 'Anak kucing ada di bawah kursi.', words: ['猫《ねこ》', 'は', '椅子《いす》', 'の', '下《した》', 'に', 'います'] },
     { type: 'mc', q: 'このビル＿＿＿ 喫茶店《きっさてん》＿＿＿ ありますか。…はい、地下《ちか》1階《いっかい》＿＿＿ あります。', choices: ['に／が／に', 'は／を／で', 'で／が／を', 'に／を／で'], answer: 0 },
-    { type: 'scramble', translate: 'Saya bertemu dengan Yi di depan stasiun.', words: ['駅《えき》', 'の', '前《まえ》', 'で', 'イーさん', 'に', '会《あ》いました'] }
+    { type: 'scramble', translate: 'Saya bertemu dengan Yi di depan stasiun.', words: ['駅《えき》', 'の', '前《まえ》', 'で', 'イーさん', 'に', '会《あ》いました'] },
+    { type: 'mc', q: 'A：すみません、トイレは　どこですか。\nB：＿＿＿。', choices: ['あそこです', 'います', 'それです', 'どなたです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：事務所《じむしょ》に　だれか　いますか。\nB：いいえ、＿＿＿。', choices: ['だれも　いません', 'だれか　います', '何《なに》も　ありません', 'いいえ、あります'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '紅茶《こうちゃ》売《う》り場《ば》は＿＿＿に あります。', choices: ['地下《ちか》', '上《うえ》', '外《そと》', 'そば'], answer: 0 },
+    { type: 'mc', q: '箱《はこ》の 中《なか》に 何《なに》も＿＿＿。', choices: ['ありません', 'います', 'いません', 'です'], answer: 0 },
+    { type: 'mc', q: '木《き》の 下《した》に 犬《いぬ》が＿＿＿。', choices: ['います', 'あります', 'でした', 'ません'], answer: 0, img: 'tabler-dog' },
+    { type: 'scramble', translate: 'Susu ada di kulkas.', words: ['牛乳《ぎゅうにゅう》', 'は', '冷蔵庫《れいぞうこ》', 'に', 'あります'] },
+    { type: 'scramble', translate: 'Sato duduk di sebelah Miller.', words: ['佐藤《さとう》さん', 'は', 'ミラーさん', 'の', '隣《となり》', 'に', 'います'] },
+    { type: 'scramble', translate: 'Apakah ada bangunan tinggi di sana?', words: ['あそこ', 'に', '高《たか》い', 'ビル', 'が', 'ありますね'] },
+    { type: 'scramble', translate: 'Di dalam mobil tidak ada siapa-siapa.', words: ['車《くるま》', 'の', '中《なか》', 'に', 'だれも', 'いません'] },
   ] },
   { id: 11, focus: '助数詞《じょすうし》（〜つ・〜人《にん》・〜枚《まい》）', questions: [
     { type: 'mc', q: 'りんごを＿＿＿ ください。（4個《こ》）', choices: ['よっつ', 'よんつ', 'よにん', 'よんまい'], answer: 0 },
@@ -171,7 +257,16 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tolong berikan 5 lembar perangko 80 yen.', words: ['80円《えん》', 'の', '切手《きって》', 'を', '5枚《まい》', 'ください'] },
     { type: 'scramble', translate: 'Saya belajar bahasa Jepang di negara saya selama 6 bulan.', words: ['国《くに》', 'で', '6か月《ろっかげつ》', 'ぐらい', '日本語《にほんご》', 'を', '勉強《べんきょう》しました'] },
     { type: 'mc', q: 'この 荷物《にもつ》、航空便《こうくうびん》＿＿＿ お願《ねが》いします。', choices: ['で', 'を', 'に', 'が'], answer: 0, img: 'tabler-plane' },
-    { type: 'scramble', translate: 'Kakak laki-laki saya suka sepak bola.', words: ['兄《あに》', 'は', 'サッカー', 'が', '好《す》きです'] }
+    { type: 'scramble', translate: 'Kakak laki-laki saya suka sepak bola.', words: ['兄《あに》', 'は', 'サッカー', 'が', '好《す》きです'] },
+    { type: 'mc', q: '店員《てんいん》：いらっしゃいませ。\n客《きゃく》：すみません、80円《えん》の　切手《きって》を　5枚《まい》　ください。\n店員《てんいん》：＿＿＿。', choices: ['はい、かしこまりました', 'いいですね', 'どういたしまして', 'また今度《こんど》'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：ご家族《かぞく》は　何人《なんにん》ですか。\nB：＿＿＿。', choices: ['5人《にん》です', '5枚《まい》です', '5個《こ》です', '5台《だい》です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '1週間《しゅうかん》に 1回《かい》 両親《りょうしん》に 電話《でんわ》を＿＿＿。', choices: ['かけます', 'します', 'あります', 'います'], answer: 0 },
+    { type: 'mc', q: '先月《せんげつ》 1週間《しゅうかん》 会社《かいしゃ》を＿＿＿。', choices: ['休《やす》みました', '休《やす》みます', '休《やす》みません', '休《やす》みだ'], answer: 0 },
+    { type: 'mc', q: '妹《いもうと》＿＿＿ 2人《ふたり》＿＿＿ います。', choices: ['が／×', 'は／を', 'に／で', 'を／に'], answer: 0 },
+    { type: 'scramble', translate: 'Perjalanan dari Osaka ke Tokyo memakan waktu sekitar 2 jam setengah dengan shinkansen.', words: ['大阪《おおさか》', 'から', '東京《とうきょう》', 'まで', '新幹線《しんかんせん》', 'で', '2時間半《にじかんはん》', 'ぐらい', 'かかります'] },
+    { type: 'scramble', translate: 'Saya membeli 4 buah apel.', words: ['りんご', 'を', '4《よっ》つ', '買《か》いました'] },
+    { type: 'scramble', translate: 'Di depan toko ada sekitar 20 sepeda.', words: ['店《みせ》', 'の', '前《まえ》', 'に', '自転車《じてんしゃ》', 'が', '20台《にじゅうだい》', 'ぐらい', 'あります'] },
+    { type: 'scramble', translate: 'Tolong kirim barang ini lewat pos udara.', words: ['この', '荷物《にもつ》', '、', '航空便《こうくうびん》', 'で', 'お願《ねが》いします'] },
   ] },
   { id: 12, focus: '比較《ひかく》（より、の中《なか》で一番《いちばん》）', questions: [
     { type: 'mc', q: '地下鉄《ちかてつ》は バス＿＿＿ 速《はや》いです。', choices: ['より', 'から', 'まで', 'ほど'], answer: 0, img: 'tabler-train' },
@@ -183,7 +278,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tokyo lebih besar daripada Osaka.', words: ['東京《とうきょう》', 'は', '大阪《おおさか》', 'より', '大《おお》きい', 'です'] },
     { type: 'scramble', translate: 'Saya paling suka masakan Jepang.', words: ['日本《にほん》', '料理《りょうり》', 'が', 'いちばん', '好《す》きです'] },
     { type: 'mc', q: '松本《まつもと》さん＿＿＿ 山田《やまだ》さん＿＿＿ どちら＿＿＿ ダンス＿＿＿ 上手《じょうず》ですか。', choices: ['と／と／が／が', 'や／の／を／に', 'に／を／が／と', 'と／の／に／が'], answer: 0 },
-    { type: 'scramble', translate: 'Toko roti dekat stasiun lebih murah daripada department store.', words: ['駅《えき》', 'の', '前《まえ》', 'の', 'パン屋《や》', 'は', 'デパート', 'より', '安《やす》い', 'です'] }
+    { type: 'scramble', translate: 'Toko roti dekat stasiun lebih murah daripada department store.', words: ['駅《えき》', 'の', '前《まえ》', 'の', 'パン屋《や》', 'は', 'デパート', 'より', '安《やす》い', 'です'] },
+    { type: 'mc', q: 'A：日本《にほん》料理《りょうり》で　何《なに》が　いちばん　好《す》きですか。\nB：＿＿＿。', choices: ['すしが　いちばん　好《す》きです', 'すしより　好《す》きです', 'すしが　好《す》きじゃありません', 'すしが　嫌《きら》いです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：東京《とうきょう》と　大阪《おおさか》と　どちらが　好《す》きですか。\nB：＿＿＿。', choices: ['東京《とうきょう》の　ほうが　好《す》きです', '東京《とうきょう》が　嫌《きら》いです', 'どちらも　嫌《きら》いです', '大阪《おおさか》は　東京《とうきょう》です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '課長《かちょう》は＿＿＿と 言《い》いましたか。…あさって 名古屋《なごや》へ 出張《しゅっちょう》すると 言《い》いました。', choices: ['何《なん》', 'だれ', 'どこ', 'いつ'], answer: 0 },
+    { type: 'mc', q: '会社《かいしゃ》の 仕事《しごと》は＿＿＿ですか。…おもしろいです。', choices: ['どう', 'どんな', 'なん', 'いつ'], answer: 0 },
+    { type: 'mc', q: 'タイは＿＿＿ 国《くに》ですか。…暑《あつ》い 国《くに》です。', choices: ['どんな', 'どう', 'なん', 'どこ'], answer: 0 },
+    { type: 'scramble', translate: 'Fuji University lebih tua daripada Sakura University.', words: ['富士《ふじ》大学《だいがく》', 'は', 'さくら大学《だいがく》', 'より', '古《ふる》い', 'です'] },
+    { type: 'scramble', translate: 'Bunga sakura yang paling terkenal sebagai bunga Jepang.', words: ['桜《さくら》', 'が', '日本《にほん》', 'の', '花《はな》', 'で', 'いちばん', '有名《ゆうめい》', 'です'] },
+    { type: 'scramble', translate: 'Musim panas dan musim dingin, mana yang Anda sukai?', words: ['夏《なつ》', 'と', '冬《ふゆ》', 'と', 'どちら', 'が', '好《す》きですか'] },
+    { type: 'scramble', translate: 'Kamar dorm ini kecil tapi bersih.', words: ['この', '寮《りょう》', 'の', '部屋《へや》', 'は', '小《ちい》さい', 'です', 'が', '、', 'きれいです'] },
+    { type: 'scramble', translate: 'Di antara olahraga, sepak bola yang paling menarik.', words: ['スポーツ', 'で', 'サッカー', 'が', 'いちばん', 'おもしろい', 'です'] },
   ] },
   { id: 13, focus: '欲《ほ》しい、〜たい、〜に行《い》きます', questions: [
     { type: 'mc', q: '私《わたし》は 新《あたら》しい パソコン＿＿＿ 欲《ほ》しいです。', choices: ['が', 'を', 'に', 'は'], answer: 0, img: 'tabler-device-laptop' },
@@ -195,7 +300,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Saya ingin cepat bertemu keluarga.', words: ['早《はや》く', '家族《かぞく》', 'に', '会《あ》いたい', 'です'] },
     { type: 'scramble', translate: 'Minggu depan saya ingin pergi memancing.', words: ['来週《らいしゅう》', '釣《つ》り', 'に', '行《い》きたい', 'です'] },
     { type: 'mc', q: '夏休《なつやす》みに 北海道《ほっかいどう》＿＿＿ 旅行《りょこう》＿＿＿ 行《い》きます。', choices: ['へ／に', 'に／へ', 'で／を', 'を／に'], answer: 0, img: 'tabler-map' },
-    { type: 'scramble', translate: 'Waktu dan uang, mana yang lebih Anda inginkan?', words: ['時間《じかん》', 'と', 'お金《かね》', 'と', 'どちら', 'が', '欲《ほ》しいですか'] }
+    { type: 'scramble', translate: 'Waktu dan uang, mana yang lebih Anda inginkan?', words: ['時間《じかん》', 'と', 'お金《かね》', 'と', 'どちら', 'が', '欲《ほ》しいですか'] },
+    { type: 'mc', q: 'A：次《つぎ》の　日曜日《にちようび》は　何《なに》を　したいですか。\nB：＿＿＿。', choices: ['映画《えいが》を　見《み》たいです', '映画《えいが》を　見《み》ます', '映画《えいが》が　好《す》きです', '映画《えいが》を　見《み》に　行《い》きました'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：どこへ　行《い》きますか。\nB：＿＿＿。', choices: ['本《ほん》を　借《か》りに　図書館《としょかん》へ　行《い》きます', '本《ほん》を　借《か》りたいです', '本《ほん》が　欲《ほ》しいです', '本《ほん》を　借《か》りて　います'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '疲《つか》れましたから、どこも＿＿＿。', choices: ['行《い》きたくないです', '行《い》きたいです', '行《い》きます', '行《い》きました'], answer: 0 },
+    { type: 'mc', q: '彼女《かのじょ》の 誕生日《たんじょうび》に すてきな プレゼントを＿＿＿。', choices: ['あげたいです', '欲《ほ》しいです', 'もらいたいです', 'くれたいです'], answer: 0, img: 'tabler-gift' },
+    { type: 'mc', q: '日曜日《にちようび》は 何《なに》を＿＿＿たいですか。…何《なに》も したくないです。', choices: ['し', 'する', 'した', 'して'], answer: 0 },
+    { type: 'scramble', translate: 'Saya mau minum sesuatu karena haus.', words: ['のど', 'が', 'かわきました', 'から', '、', '何《なに》か', '飲《の》みたいです'] },
+    { type: 'scramble', translate: 'Saya sekarang tidak ingin apa-apa.', words: ['わたし', 'は', '今《いま》', '何《なに》も', '欲《ほ》しくないです'] },
+    { type: 'scramble', translate: 'Sekarang saya ingin sepatu yang ringan.', words: ['軽《かる》い', '靴《くつ》', 'が', '欲《ほ》しいです'] },
+    { type: 'scramble', translate: 'Akhir minggu saya pergi ke pantai untuk berenang.', words: ['週末《しゅうまつ》', '海《うみ》', 'へ', '泳《およ》ぎに', '行《い》きました'] },
+    { type: 'scramble', translate: 'Saya pergi ke restoran masakan Thailand untuk makan.', words: ['タイ料理《りょうり》', 'の', '店《みせ》', 'へ', '食事《しょくじ》', 'に', '行《い》きました'] },
   ] },
   { id: 14, focus: 'て形《けい》、〜てください', questions: [
     { type: 'mc', q: '「書《か》きます」の て形《けい》は？', choices: ['書《か》いて', '書《か》んで', '書《か》きて', '書《か》って'], answer: 0 },
@@ -208,7 +323,16 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tolong beritahu nomor telepon Matsumoto.', words: ['松本《まつもと》さん', 'の', '電話《でんわ》番号《ばんごう》', 'を', '教《おし》えて', 'ください'] },
     { type: 'scramble', translate: 'Boleh saya pinjam gunting ini?', words: ['この', 'はさみ', 'を', '貸《か》して', 'ください'] },
     { type: 'mc', q: '暑《あつ》いですから、エアコンを＿＿＿。（つけます）', choices: ['つけてください', 'つけます', 'つけました', 'つける'], answer: 0 },
-    { type: 'scramble', translate: 'Tolong kirimkan peta lewat email.', words: ['地図《ちず》', 'を', 'メール', 'で', '送《おく》って', 'ください'] }
+    { type: 'scramble', translate: 'Tolong kirimkan peta lewat email.', words: ['地図《ちず》', 'を', 'メール', 'で', '送《おく》って', 'ください'] },
+    { type: 'mc', q: 'A：すみませんが、ちょっと　手伝《てつだ》って　ください。\nB：＿＿＿。', choices: ['ええ、いいですよ', 'ええ、けっこうです', 'いいえ、まだです', 'どういたしまして'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：この　いす、座《すわ》っても　いいですか。\nB：＿＿＿。', choices: ['ええ、どうぞ', 'いいえ、まだです', 'かしこまりました', 'ごちそうさまでした'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '「開《あ》けます」の て形《けい》は？', choices: ['開《あ》けて', '開《あ》いて', '開《あ》けって', '開《あ》んで'], answer: 0 },
+    { type: 'mc', q: '「降《ふ》ります」の て形《けい》は？', choices: ['降《ふ》って', '降《ふ》りて', '降《ふ》んで', '降《ふ》いて'], answer: 0 },
+    { type: 'mc', q: 'ちょっと そのはさみを＿＿＿。（貸《か》します→〜てください）', choices: ['貸《か》してください', '貸《か》りてください', '貸《か》んでください', '貸《か》ってください'], answer: 0 },
+    { type: 'scramble', translate: 'Tolong tunjukkan paspornya sekali lagi.', words: ['パスポート', 'を', 'もう一度《いちど》', '見《み》せて', 'ください'] },
+    { type: 'scramble', translate: 'Sudah capek, jadi silakan istirahat di sini.', words: ['疲《つか》れました', '。', 'どうぞ', 'こちら', 'で', '休《やす》んで', 'ください'] },
+    { type: 'scramble', translate: 'Boleh tolong bantu saya sedikit?', words: ['ちょっと', '手伝《てつだ》って', 'ください'] },
+    { type: 'scramble', translate: 'Tolong tuliskan nama dan alamat dengan pulpen.', words: ['ボールペン', 'で', '住所《じゅうしょ》', 'と', '名前《なまえ》', 'を', '書《か》いて', 'ください'] },
   ] },
   { id: 15, focus: '〜ています（進行《しんこう》・状態《じょうたい》）', questions: [
     { type: 'mc', q: '今《いま》 新聞《しんぶん》を ＿＿＿。（読《よ》んでいます）', choices: ['読《よ》んでいます', '読《よ》みます', '読《よ》みました', '読《よ》む'], answer: 0, img: 'tabler-news' },
@@ -220,7 +344,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Apakah Anda punya kamus elektronik?', words: ['電子《でんし》辞書《じしょ》', 'を', '持《も》っていますか'] },
     { type: 'scramble', translate: 'Saya tidak tahu cara membuat tempura.', words: ['てんぷら', 'の', '作《つく》り方《かた》', 'を', '知《し》りません'] },
     { type: 'mc', q: '弟《おとうと》は 結婚《けっこん》して＿＿＿。独身《どくしん》です。', choices: ['いません', 'います', 'でした', 'ました'], answer: 0 },
-    { type: 'scramble', translate: 'Apakah Anda mengetahui alamat Santos?', words: ['サントスさん', 'の', '住所《じゅうしょ》', 'を', '知《し》っていますか'] }
+    { type: 'scramble', translate: 'Apakah Anda mengetahui alamat Santos?', words: ['サントスさん', 'の', '住所《じゅうしょ》', 'を', '知《し》っていますか'] },
+    { type: 'mc', q: 'A：カリナさんは　今《いま》　何《なに》を　して　いますか。\nB：＿＿＿。', choices: ['花《はな》を　見《み》て　います', '花《はな》を　見《み》ます', '花《はな》を　見《み》ました', '花《はな》が　好《す》きです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：今《いま》　どこに　住《す》んで　いますか。\nB：＿＿＿。', choices: ['バンドンに　住《す》んで　います', 'バンドンへ　行《い》きます', 'バンドンです', 'バンドンが　好《す》きです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'サントスさんの 趣味《しゅみ》は 日本《にほん》の 古《ふる》い 美術《びじゅつ》を＿＿＿ ことです。', choices: ['集《あつ》める', '集《あつ》めます', '集《あつ》めた', '集《あつ》めて'], answer: 0 },
+    { type: 'mc', q: 'テレーザちゃんは 自転車《じてんしゃ》を＿＿＿います。', choices: ['持《も》って', '持《も》んで', '持《も》きて', '持《も》いて'], answer: 0, img: 'tabler-bike' },
+    { type: 'mc', q: 'すみません、この カタログを＿＿＿もいいですか。', choices: ['もらって', 'もらう', 'もらった', 'もらい'], answer: 0 },
+    { type: 'scramble', translate: 'Adik laki-laki saya belum menikah, masih lajang.', words: ['弟《おとうと》', 'は', 'まだ', '結婚《けっこん》して', 'いません'] },
+    { type: 'scramble', translate: 'Apa yang sedang Anda kerjakan sekarang?', words: ['いま', '何《なに》', 'を', 'して', 'いますか'] },
+    { type: 'scramble', translate: 'Kakak laki-laki saya bekerja di perusahaan komputer.', words: ['兄《あに》', 'は', 'コンピューター', 'の', '会社《かいしゃ》', 'で', '働《はたら》いて', 'います'] },
+    { type: 'scramble', translate: 'Tidak boleh minum alkohol di kelas.', words: ['教室《きょうしつ》', 'で', 'お酒《さけ》', 'を', '飲《の》んでは', 'いけません'] },
+    { type: 'scramble', translate: 'Beliau tinggal sendirian.', words: ['一人《ひとり》', 'で', '住《す》んで', 'います'] },
   ] },
   { id: 16, focus: 'て形《けい》の 連続《れんぞく》（〜て、〜てから）', questions: [
     { type: 'mc', q: '大学《だいがく》を 出《で》て＿＿＿、会社《かいしゃ》に 入《はい》りました。', choices: ['から', 'まで', 'ので', 'し'], answer: 0 },
@@ -232,7 +366,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Tutup jendela, lalu keluar ruangan.', words: ['窓《まど》', 'を', '閉《し》めて', '、', '部屋《へや》', 'を', '出《で》ます'] },
     { type: 'scramble', translate: 'Kanji itu sulit cara membacanya.', words: ['漢字《かんじ》', 'は', '読《よ》み方《かた》', 'が', '難《むずか》しい', 'です'] },
     { type: 'mc', q: '地下鉄《ちかてつ》で 大阪《おおさか》まで＿＿＿、JRに 乗《の》り換《か》えてください。', choices: ['行《い》って', '行《い》きます', '行《い》った', '行《い》く'], answer: 0 },
-    { type: 'scramble', translate: 'Saya turun dari bus lalu berjalan ke rumah Tanaka.', words: ['バス', 'を', '降《お》りて', '、', '田中《たなか》さん', 'の', 'うち', 'まで', '歩《ある》いて', '行《い》きました'] }
+    { type: 'scramble', translate: 'Saya turun dari bus lalu berjalan ke rumah Tanaka.', words: ['バス', 'を', '降《お》りて', '、', '田中《たなか》さん', 'の', 'うち', 'まで', '歩《ある》いて', '行《い》きました'] },
+    { type: 'mc', q: 'A：毎朝《まいあさ》　どんな　順番《じゅんばん》で　準備《じゅんび》しますか。\nB：＿＿＿。', choices: ['顔《かお》を　洗《あら》って　から、朝《あさ》ごはんを　食《た》べます', '顔《かお》を　洗《あら》います', '朝《あさ》ごはんを　食《た》べました', '顔《かお》を　洗《あら》いたいです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：会議《かいぎ》の　まえに　何《なに》を　しますか。\nB：＿＿＿。', choices: ['資料《しりょう》を　集《あつ》めて、コピーします', '資料《しりょう》が　あります', '資料《しりょう》を　集《あつ》めたいです', '資料《しりょう》は　集《あつ》めません'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '「暗《くら》い」の 反対《はんたい》は？', choices: ['明《あか》るい', '狭《せま》い', '軽《かる》い', '短《みじか》い'], answer: 0 },
+    { type: 'mc', q: '「長《なが》い」の 反対《はんたい》は？', choices: ['短《みじか》い', '狭《せま》い', '遠《とお》い', '暗《くら》い'], answer: 0 },
+    { type: 'mc', q: 'バスを＿＿＿から、田中《たなか》さんの うちまで 歩《ある》いて 行《い》きました。（降《お》ります）', choices: ['降《お》りて', '降《お》りた', '降《お》りる', '降《お》りない'], answer: 0 },
+    { type: 'scramble', translate: 'Bandung terkenal karena banyak hijau dan tenang.', words: ['バンドン', 'は', '緑《みどり》', 'が', '多《おお》くて', '静《しず》か', 'です'] },
+    { type: 'scramble', translate: 'Masakan Thailand punya rasa pedas dan asam yang enak.', words: ['タイ料理《りょうり》', 'は', '辛《から》くて', '酸《す》っぱくて', 'おいしい', 'です'] },
+    { type: 'scramble', translate: 'Saya makan siang lalu tidur siang sebentar.', words: ['昼《ひる》ごはん', 'を', '食《た》べて', '、', '少《すこ》し', '昼寝《ひるね》', 'を', 'します'] },
+    { type: 'scramble', translate: 'Setelah keluar dari kantor, saya langsung pulang.', words: ['事務所《じむしょ》', 'を', '出《で》て', 'から', '、', 'すぐ', '帰《かえ》ります'] },
+    { type: 'scramble', translate: 'Guru Watt orang Inggris dan mengajar bahasa Inggris.', words: ['ワット先生《せんせい》', 'は', 'イギリス人《じん》', 'で', '、', '英語《えいご》', 'の', '先生《せんせい》', 'です'] },
   ] },
   { id: 17, focus: '〜なければなりません／〜なくてもいいです／〜ないでください', questions: [
     { type: 'mc', q: '明日《あした》は 早《はや》く 起《お》き＿＿＿。（義務《ぎむ》）', choices: ['なければなりません', 'なくてもいいです', 'ないでください', 'てください'], answer: 0 },
@@ -244,7 +388,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Apakah hari Minggu juga harus bangun pagi?', words: ['日曜日《にちようび》', 'も', '早《はや》く', '起《お》きなければ', 'なりませんか'] },
     { type: 'scramble', translate: 'Nomor telepon tidak perlu ditulis.', words: ['電話《でんわ》番号《ばんごう》', 'は', '書《か》かなくても', 'いいです'] },
     { type: 'mc', q: '両親《りょうしん》が 来《き》ますから、空港《くうこう》へ 迎《むか》えに＿＿＿。', choices: ['行《い》かなければなりません', '行《い》かなくてもいいです', '行《い》かないでください', '行《い》っています'], answer: 0 },
-    { type: 'scramble', translate: 'Karena ujian mudah, tidak perlu khawatir.', words: ['試験《しけん》', 'は', '簡単《かんたん》', 'です', 'から', '、', '心配《しんぱい》', 'しなくても', 'いいです'] }
+    { type: 'scramble', translate: 'Karena ujian mudah, tidak perlu khawatir.', words: ['試験《しけん》', 'は', '簡単《かんたん》', 'です', 'から', '、', '心配《しんぱい》', 'しなくても', 'いいです'] },
+    { type: 'mc', q: 'A：日曜日《にちようび》も　早《はや》く　起《お》きなければ　なりませんか。\nB：いいえ、＿＿＿。', choices: ['起《お》きなくても　いいです', '起《お》きなければ　なりません', '起《お》きないで　ください', '起《お》きて　います'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：ここで　写真《しゃしん》を　撮《と》っても　いいですか。\nB：すみません、＿＿＿。', choices: ['撮《と》らないで　ください', '撮《と》っても　いいです', '撮《と》らなくても　いいです', '撮《と》って　います'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '両親《りょうしん》が 病気《びょうき》ですから、早《はや》く＿＿＿。', choices: ['帰《かえ》らなければなりません', '帰《かえ》らなくてもいいです', '帰《かえ》らないでください', '帰《かえ》っています'], answer: 0 },
+    { type: 'mc', q: '子《こ》どもが 病気《びょうき》ですから、電話《でんわ》を＿＿＿。', choices: ['かけなければなりません', 'かけなくてもいいです', 'かけないでください', 'かけています'], answer: 0 },
+    { type: 'scramble', translate: 'Karena resep ini mudah, tidak perlu khawatir.', words: ['この', 'レシピ', 'は', '簡単《かんたん》', 'です', 'から', '、', '心配《しんぱい》', 'しなくても', 'いいです'] },
+    { type: 'scramble', translate: 'Ini penting, jangan sampai hilang.', words: ['これ', 'は', '大切《たいせつ》', 'です', 'から', '、', 'なくさないで', 'ください'] },
+    { type: 'scramble', translate: 'Karena punya banyak pekerjaan, saya harus lembur hari ini.', words: ['仕事《しごと》', 'が', 'たくさん', 'あります', 'から', '、', 'きょう', '残業《ざんぎょう》', 'しなければなりません'] },
+    { type: 'scramble', translate: 'Tolong lepas sepatu di sini.', words: ['ここ', 'で', '靴《くつ》', 'を', '脱《ぬ》いで', 'ください'] },
+    { type: 'scramble', translate: 'Nomor telepon tidak perlu ditulis di sana.', words: ['電話《でんわ》番号《ばんごう》', 'は', 'そこ', 'に', '書《か》かなくても', 'いいです'] },
+    { type: 'scramble', translate: 'Barang ini harus dikirim sebelum hari Jumat.', words: ['この', '荷物《にもつ》', 'は', '金曜日《きんようび》', 'までに', '送《おく》らなければ', 'なりません'] },
   ] },
   { id: 18, focus: '〜ことができます、辞書形《じしょけい》', questions: [
     { type: 'mc', q: '「食《た》べます」の 辞書《じしょ》形《けい》は？', choices: ['食《た》べる', '食《た》べて', '食《た》べます', '食《た》べた'], answer: 0 },
@@ -256,7 +410,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Hobi saya adalah memotret bunga.', words: ['私《わたし》', 'の', '趣味《しゅみ》', 'は', '花《はな》', 'の', '写真《しゃしん》', 'を', '撮《と》る', 'こと', 'です'] },
     { type: 'scramble', translate: 'Sebelum ke Jepang, apakah Anda belajar bahasa Jepang?', words: ['日本《にほん》', 'へ', '来《く》る', 'まえに', '、', '日本語《にほんご》', 'を', '勉強《べんきょう》しましたか'] },
     { type: 'mc', q: 'ここは 朝《あさ》10時《じ》から 見学《けんがく》する ＿＿＿ が できます。', choices: ['こと', 'もの', 'とき', 'ところ'], answer: 0 },
-    { type: 'scramble', translate: 'Sepuluh tahun lalu saya belajar bahasa Prancis, tapi sudah lupa.', words: ['10年《じゅうねん》', 'まえに', '、', 'フランス語《ご》', 'を', '習《なら》いましたが', '、', 'もう', '忘《わす》れました'] }
+    { type: 'scramble', translate: 'Sepuluh tahun lalu saya belajar bahasa Prancis, tapi sudah lupa.', words: ['10年《じゅうねん》', 'まえに', '、', 'フランス語《ご》', 'を', '習《なら》いましたが', '、', 'もう', '忘《わす》れました'] },
+    { type: 'mc', q: 'A：日本語《にほんご》で　歌《うた》を　歌《うた》う　ことが　できますか。\nB：＿＿＿。', choices: ['はい、できます', 'はい、します', 'はい、あります', 'はい、います'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：車《くるま》の　運転《うんてん》が　できますか。\nB：いいえ、＿＿＿。', choices: ['できません', 'しません', 'ありません', 'いません'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '妹《いもうと》は さくら大学《だいがく》に＿＿＿ ことが できました。', choices: ['入《はい》る', '入《はい》った', '入《はい》って', '入《はい》り'], answer: 0 },
+    { type: 'mc', q: '狭《せま》いですから、大《おお》きい 机《つくえ》を 置《お》く ことが＿＿＿。', choices: ['できません', 'しません', 'ありません', 'いません'], answer: 0 },
+    { type: 'mc', q: 'わたしの 趣味《しゅみ》は 外国《がいこく》の 切手《きって》を＿＿＿ ことです。', choices: ['集《あつ》める', '集《あつ》めます', '集《あつ》めた', '集《あつ》めて'], answer: 0 },
+    { type: 'scramble', translate: 'Karena mabuk, saya tidak bisa menyetir mobil.', words: ['お酒《さけ》', 'を', '飲《の》みました', 'から', '、', '車《くるま》', 'を', '運転《うんてん》する', 'こと', 'が', 'できません'] },
+    { type: 'scramble', translate: 'Apakah bisa memotret dengan ponsel?', words: ['ケータイ', 'で', '写真《しゃしん》', 'を', '撮《と》る', 'こと', 'が', 'できますか'] },
+    { type: 'scramble', translate: 'Sebelum tidur, saya selalu mandi.', words: ['寝《ね》る', 'まえに', '、', 'いつも', 'シャワー', 'を', '浴《あ》びます'] },
+    { type: 'scramble', translate: 'Berapa meter kamu bisa berenang?', words: ['何《なん》メートル', 'ぐらい', '泳《およ》ぐ', 'こと', 'が', 'できますか'] },
+    { type: 'scramble', translate: 'Apakah bisa memasak berbagai masakan negara?', words: ['いろいろな', '国《くに》', 'の', '料理《りょうり》', 'を', '作《つく》る', 'こと', 'が', 'できますか'] },
   ] },
   { id: 19, focus: '〜たことがあります（経験《けいけん》）、〜たり〜たり', questions: [
     { type: 'mc', q: '富士山《ふじさん》に 登《のぼ》った ＿＿＿ が あります。', choices: ['こと', 'もの', 'とき', 'ところ'], answer: 0, img: 'tabler-mountain' },
@@ -268,7 +432,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Apakah Anda pernah menulis surat dengan bahasa Jepang?', words: ['日本語《にほんご》', 'で', '手紙《てがみ》', 'を', '書《か》いた', 'こと', 'が', 'ありますか'] },
     { type: 'scramble', translate: 'Bahasa Jepang saya menjadi semakin lancar.', words: ['日本語《にほんご》', 'が', 'だんだん', '上手《じょうず》', 'に', 'なりました'] },
     { type: 'mc', q: '何《なん》回《かい》ぐらい ディズニーランドへ 行《い》った ことが＿＿＿か。', choices: ['あります', 'います', 'でした', 'ました'], answer: 0, img: 'tabler-ferris-wheel' },
-    { type: 'scramble', translate: 'Saya sudah pernah naik ke Gunung Fuji sekali.', words: ['富士山《ふじさん》', 'に', '一度《いちど》', '登《のぼ》った', 'こと', 'が', 'あります'] }
+    { type: 'scramble', translate: 'Saya sudah pernah naik ke Gunung Fuji sekali.', words: ['富士山《ふじさん》', 'に', '一度《いちど》', '登《のぼ》った', 'こと', 'が', 'あります'] },
+    { type: 'mc', q: 'A：富士山《ふじさん》に　登《のぼ》った　ことが　ありますか。\nB：いいえ、＿＿＿。ぜひ　登《のぼ》りたいです。', choices: ['一度《いちど》も　ありません', 'もう　一度《いちど》です', '一度《いちど》　あります', 'ときどき　あります'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：休《やす》みの　日《ひ》は　何《なに》を　しますか。\nB：＿＿＿。', choices: ['本《ほん》を　読《よ》んだり、テレビを　見《み》たり　します', '本《ほん》を　読《よ》んで、テレビを　見《み》ます', '本《ほん》が　好《す》きです', '本《ほん》を　読《よ》みたい　です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '国《くに》で 日本語《にほんご》の CDを＿＿＿り、漢字《かんじ》を＿＿＿り しなければ なりません。', choices: ['聞《き》いた／覚《おぼ》えた', '聞《き》く／覚《おぼ》える', '聞《き》いて／覚《おぼ》えて', '聞《き》き／覚《おぼ》え'], answer: 0 },
+    { type: 'mc', q: 'ドイツ語《ご》を＿＿＿ ことが ありますか。…ええ。でも、もう 忘《わす》れましたから、もう一度《いちど》＿＿＿たいです。', choices: ['習《なら》った／習《なら》い', '習《なら》う／習《なら》った', '習《なら》って／習《なら》う', '習《なら》い／習《なら》って'], answer: 0 },
+    { type: 'scramble', translate: 'Apakah Anda pernah menyanyikan lagu Jepang?', words: ['日本《にほん》', 'の', '歌《うた》', 'を', '歌《うた》った', 'こと', 'が', 'ありますか'] },
+    { type: 'scramble', translate: 'Bahasa Jepang saya belum menjadi lancar.', words: ['日本語《にほんご》', 'が', 'まだ', '上手《じょうず》', 'に', 'なりません'] },
+    { type: 'scramble', translate: 'Sudah bulan September, mulai jadi sejuk.', words: ['もう', '9月《くがつ》', 'です', 'ね', '。', 'これから', '涼《すず》しく', 'なりますよ'] },
+    { type: 'scramble', translate: 'Anak itu sudah menjadi besar ya, umur berapa sekarang?', words: ['あの', '子《こ》', 'は', '大《おお》きく', 'なりました', 'ね', '。', '何歳《なんさい》', 'ですか'] },
+    { type: 'scramble', translate: 'Apakah Anda pernah diet?', words: ['ダイエット', 'を', 'した', 'こと', 'が', 'ありますか'] },
+    { type: 'scramble', translate: 'Sudah pernah mendaki gunung di Jepang?', words: ['日本《にほん》', 'で', '山《やま》', 'に', '登《のぼ》った', 'こと', 'が', 'ありますか'] },
   ] },
   { id: 20, focus: '普通形《ふつうけい》（会話《かいわ》で使《つか》う形《かたち》）', questions: [
     { type: 'mc', q: '「分《わ》かりますか」の 普通《ふつう》形《けい》は？', choices: ['分《わ》かる？', '分《わ》かります？', '分《わ》かった？', '分《わ》かって？'], answer: 0 },
@@ -279,7 +453,18 @@ const LESSONS = [
     { type: 'scramble', translate: 'Apakah kamu tahu alamat Karina?', words: ['カリナさん', 'の', '住所《じゅうしょ》', 'を', '知《し》っている？'] },
     { type: 'scramble', translate: 'Cuaca kemarin bagus.', words: ['きのう', 'は', '天気《てんき》', 'が', 'よかった'] },
     { type: 'mc', q: '「便利《べんり》です」の 普通《ふつう》形《けい》は？', choices: ['便利《べんり》だ', '便利《べんり》い', '便利《べんり》じゃ', '便利《べんり》な'], answer: 0 },
-    { type: 'scramble', translate: 'Apakah kamu pergi berenang di laut Jepang?', words: ['日本《にほん》', 'の', '海《うみ》', 'で', '泳《およ》いだ', 'こと', 'が', 'ある？'] }
+    { type: 'scramble', translate: 'Apakah kamu pergi berenang di laut Jepang?', words: ['日本《にほん》', 'の', '海《うみ》', 'で', '泳《およ》いだ', 'こと', 'が', 'ある？'] },
+    { type: 'mc', q: 'A：あした　いっしょに　行《い》く？\nB：うん、＿＿＿。', choices: ['行《い》く', '行《い》きます', '行《い》った', '行《い》って'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：きのう、山田《やまだ》さんに　会《あ》った？\nB：ううん、＿＿＿。', choices: ['会《あ》わなかった', '会《あ》いません', '会《あ》います', '会《あ》って'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '「無理《むり》じゃありません」の 普通《ふつう》形《けい》は？', choices: ['無理《むり》じゃない', '無理《むり》だ', '無理《むり》くない', '無理《むり》じゃなかった'], answer: 0 },
+    { type: 'mc', q: '「修理《しゅうり》します」の 普通《ふつう》形《けい》は？', choices: ['修理《しゅうり》する', '修理《しゅうり》した', '修理《しゅうり》して', '修理《しゅうり》しない'], answer: 0 },
+    { type: 'mc', q: 'カリナさんの 住所《じゅうしょ》を 知《し》っている？…ううん、＿＿＿。', choices: ['知《し》らない', '知《し》っています', '知《し》る', '知《し》った'], answer: 0 },
+    { type: 'mc', q: 'ビザが 要《い》る？…ううん、＿＿＿。', choices: ['要《い》らない', '要《い》ります', '要《い》る', '要《い》った'], answer: 0 },
+    { type: 'scramble', translate: 'Apakah kamu bisa berbahasa Inggris?', words: ['英語《えいご》', 'が', 'わかる？'] },
+    { type: 'scramble', translate: 'Kemarin tidak hujan.', words: ['きのう', 'は', '雨《あめ》', 'が', '降《ふ》らなかった'] },
+    { type: 'scramble', translate: 'Aku tidak butuh apa-apa sekarang.', words: ['いま', '何《なに》も', '欲《ほ》しくない'] },
+    { type: 'scramble', translate: 'Apakah kamu tidak perlu membawa paspor?', words: ['パスポート', 'を', '持《も》って', '行《い》かなくても', 'いい？'] },
+    { type: 'scramble', translate: 'Kemarin itu bukan hari libur.', words: ['きのう', 'は', '休《やす》み', 'じゃなかった'] },
   ] },
   { id: 21, focus: '〜と思《おも》います、〜と言《い》いました、でしょう', questions: [
     { type: 'mc', q: '明日《あした》 雨《あめ》が 降《ふ》る＿＿＿ 思《おも》います。', choices: ['と', 'が', 'の', 'を'], answer: 0, img: 'tabler-cloud-rain' },
@@ -291,7 +476,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Apakah bank hari Minggu libur ya?', words: ['銀行《ぎんこう》', 'は', '日曜日《にちようび》', '休《やす》み', 'でしょう？'] },
     { type: 'scramble', translate: 'Saya rasa mungkin akan ada rapat minggu depan.', words: ['来週《らいしゅう》', '会議《かいぎ》', 'が', 'ある', 'と', '思《おも》います'] },
     { type: 'mc', q: '病気《びょうき》の 友達《ともだち》に 何《なん》＿＿＿ 言《い》いますか。', choices: ['と', 'が', 'を', 'の'], answer: 0 },
-    { type: 'scramble', translate: 'Saya rasa Iwan orang yang pandai.', words: ['イーさん', 'は', '頭《あたま》', 'が', 'いい', 'と', '思《おも》います'] }
+    { type: 'scramble', translate: 'Saya rasa Iwan orang yang pandai.', words: ['イーさん', 'は', '頭《あたま》', 'が', 'いい', 'と', '思《おも》います'] },
+    { type: 'mc', q: 'A：あした　雨《あめ》が　降《ふ》ると　思《おも》いますか。\nB：＿＿＿。', choices: ['ええ、降《ふ》ると　思《おも》います', 'ええ、降《ふ》りました', 'いいえ、降《ふ》ります', 'ええ、降《ふ》って　います'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '部長《ぶちょう》：来週《らいしゅう》　名古屋《なごや》へ　出張《しゅっちょう》します。\n木村《きむら》：部長《ぶちょう》は　＿＿＿。', choices: ['来週《らいしゅう》　名古屋《なごや》へ　出張《しゅっちょう》すると　言《い》いました', '来週《らいしゅう》　名古屋《なごや》へ　出張《しゅっちょう》しました', '来週《らいしゅう》　名古屋《なごや》が　好《す》きです', '来週《らいしゅう》　名古屋《なごや》へ　行《い》きたいです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'ミラーさんは 伊藤《いとう》さんを 知《し》って いますか。…いいえ、たぶん＿＿＿ 思《おも》います。', choices: ['知《し》らない', '知《し》っている', '知《し》った', '知《し》ります'], answer: 0 },
+    { type: 'mc', q: 'このカレーは 辛《から》いでしょう？…いいえ、そんなに＿＿＿。', choices: ['辛《から》くないです', '辛《から》いです', '辛《から》かったです', '辛《から》くて'], answer: 0 },
+    { type: 'mc', q: 'カリナさんは＿＿＿でしょう？…ええ、留学生《りゅうがくせい》です。', choices: ['留学生《りゅうがくせい》', '留学生《りゅうがくせい》です', '留学生《りゅうがくせい》な', '留学生《りゅうがくせい》の'], answer: 0 },
+    { type: 'scramble', translate: 'Saya pikir kartu telepon ini bisa dipakai.', words: ['この', 'テレホンカード', 'は', '使《つか》える', 'と', '思《おも》います'] },
+    { type: 'scramble', translate: 'D bilang akan membaca komik dan menonton anime.', words: ['Dさん', 'は', 'マンガ', 'を', '読《よ》んだり', '、', 'アニメ', 'を', '見《み》たり', 'すると', '言《い》いました'] },
+    { type: 'scramble', translate: 'E bilang harus menulis laporan.', words: ['Eさん', 'は', 'レポート', 'を', '書《か》かなければならないと', '言《い》いました'] },
+    { type: 'scramble', translate: 'Harga-harga di sini tidak begitu tinggi.', words: ['ここ', 'は', '物価《ぶっか》', 'が', 'そんなに', '高《たか》くないです'] },
+    { type: 'scramble', translate: 'Apakah besok pertandingan sepak bola akan menang menurutmu?', words: ['あした', 'の', 'サッカー', 'の', '試合《しあい》', 'は', '勝《か》つ', 'と', '思《おも》いますか'] },
   ] },
   { id: 22, focus: '名詞《めいし》を 修飾《しゅうしょく》する 文《ぶん》', questions: [
     { type: 'mc', q: '「赤《あか》い 帽子《ぼうし》を かぶっている 人《ひと》」の 意味《いみ》は？', choices: ['Orang yang memakai topi merah', 'Orang yang menjual topi merah', 'Topi merah orang itu', 'Orang yang membeli topi'], answer: 0, img: 'tabler-hat' },
@@ -303,7 +498,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Orang yang sedang membaca koran adalah Wang.', words: ['新聞《しんぶん》', 'を', '読《よ》んでいる', '人《ひと》', 'は', 'ワンさん', 'です'] },
     { type: 'scramble', translate: 'Apakah punya waktu untuk membaca koran tiap pagi?', words: ['朝《あさ》', '新聞《しんぶん》', 'を', '読《よ》む', '時間《じかん》', 'が', 'ありますか'] },
     { type: 'mc', q: '妹《いもうと》さんが＿＿＿部屋《へや》の 家賃《やちん》は＿＿＿ですか。（借《か》ります）', choices: ['借《か》りている／いくら', '借《か》りる／だれ', '借《か》りた／なに', '借《か》りて／どこ'], answer: 0 },
-    { type: 'scramble', translate: 'Orang yang membuat air enak ini adalah kakak saya.', words: ['おいしい', '水《みず》', 'を', '作《つく》っている', 'の', 'は', '兄《あに》', 'です'] }
+    { type: 'scramble', translate: 'Orang yang membuat air enak ini adalah kakak saya.', words: ['おいしい', '水《みず》', 'を', '作《つく》っている', 'の', 'は', '兄《あに》', 'です'] },
+    { type: 'mc', q: 'A：ミラーさんは　どの　人《ひと》ですか。\nB：＿＿＿。', choices: ['あの　新聞《しんぶん》を　読《よ》んで　いる　人《ひと》です', 'あの　人《ひと》は　新聞《しんぶん》です', '新聞《しんぶん》が　好《す》きな　人《ひと》です', '新聞《しんぶん》を　読《よ》みたい　人《ひと》です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：あなたが　生《う》まれた　所《ところ》は　どこですか。\nB：＿＿＿。', choices: ['横浜《よこはま》です', '横浜《よこはま》に　住《す》んで　います', '横浜《よこはま》が　好《す》きです', '横浜《よこはま》へ　行《い》きます'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '安《やす》い パソコンを＿＿＿店《みせ》を 知《し》っていますか。', choices: ['売《う》っている', '売《う》る', '売《う》った', '売《う》って'], answer: 0 },
+    { type: 'mc', q: '今《いま》 使《つか》っている 日本語《にほんご》の 本《ほん》は＿＿＿ですか。', choices: ['どう', 'どんな', 'なん', 'いつ'], answer: 0 },
+    { type: 'mc', q: '安《やす》いパソコンを 売《う》っている 店《みせ》を＿＿＿。', choices: ['知《し》っていますか', '知《し》りますか', '知《し》った', '知《し》って'], answer: 0 },
+    { type: 'scramble', translate: 'Kapan waktunya luang untuk pergi bermain?', words: ['遊《あそ》びに', '行《い》く', '時間《じかん》', 'が', 'ある', 'とき', '、', 'いつ', 'ですか'] },
+    { type: 'scramble', translate: 'Orang yang memakai kacamata itu guru saya.', words: ['眼鏡《めがね》', 'を', 'かけている', '人《ひと》', 'は', 'わたし', 'の', '先生《せんせい》', 'です'] },
+    { type: 'scramble', translate: 'Apakah ada yang berbicara bahasa Jepang di keluarga Anda?', words: ['家族《かぞく》', 'で', '日本語《にほんご》', 'を', '話《はな》す', '人《ひと》', 'が', 'いますか'] },
+    { type: 'scramble', translate: 'Bahasa asing pertama yang saya pelajari adalah bahasa Inggris.', words: ['初《はじ》めて', '習《なら》った', '外国語《がいこくご》', 'は', '英語《えいご》', 'です'] },
+    { type: 'scramble', translate: 'Hotel yang saya inapi di Nagoya bersih dan pelayanannya bagus.', words: ['名古屋《なごや》', 'で', '泊《と》まった', 'ホテル', 'は', 'きれいで', '、', 'サービス', 'が', 'よかったです'] },
   ] },
   { id: 23, focus: '〜とき（〜する時《とき》／〜した時《とき》）', questions: [
     { type: 'mc', q: '疲《つか》れた＿＿＿、休《やす》みます。', choices: ['とき', 'こと', 'もの', 'ので'], answer: 0 },
@@ -315,7 +520,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Waktu tidak tahu jalan, saya naik taksi.', words: ['道《みち》', 'が', 'わからない', 'とき', '、', 'タクシー', 'に', '乗《の》ります'] },
     { type: 'scramble', translate: 'Kalau menekan tombol ini, tiket akan keluar.', words: ['ここ', 'を', '押《お》すと', '、', '切符《きっぷ》', 'が', '出《で》ます'] },
     { type: 'mc', q: 'この 歌《うた》を＿＿＿と、家族《かぞく》を 思《おも》い出《だ》します。', choices: ['聞《き》く', '聞《き》いた', '聞《き》いて', '聞《き》き'], answer: 0 },
-    { type: 'scramble', translate: 'Waktu ke rumah sakit, bawalah kartu asuransi.', words: ['病院《びょういん》', 'へ', '行《い》くとき', '、', '保険証《ほけんしょう》', 'を', '持《も》って', '行《い》きます'] }
+    { type: 'scramble', translate: 'Waktu ke rumah sakit, bawalah kartu asuransi.', words: ['病院《びょういん》', 'へ', '行《い》くとき', '、', '保険証《ほけんしょう》', 'を', '持《も》って', '行《い》きます'] },
+    { type: 'mc', q: 'A：疲《つか》れた　とき、どう　しますか。\nB：＿＿＿。', choices: ['早《はや》く　休《やす》みます', '早《はや》く　休《やす》んで　います', '早《はや》く　休《やす》んだ　こと　が　あります', '早《はや》く　休《やす》みたい　です'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：日本語《にほんご》を　勉強《べんきょう》する　とき、辞書《じしょ》を　使《つか》いますか。\nB：＿＿＿。', choices: ['ええ、よく　使《つか》います', 'ええ、使《つか》いました', 'いいえ、使《つか》って　います', 'いいえ、使《つか》いたいです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'コピーのサイズを＿＿＿とき、ここを 押《お》してください。（変《か》えます）', choices: ['変《か》えたい', '変《か》えた', '変《か》えて', '変《か》える'], answer: 0 },
+    { type: 'mc', q: '暇《ひま》な＿＿＿、よく 美術館《びじゅつかん》へ 絵《え》を 見《み》に 行《い》きます。', choices: ['とき', 'こと', 'もの', 'ので'], answer: 0 },
+    { type: 'mc', q: '子《こ》どもの＿＿＿、医者《いしゃ》に なりたいと 思《おも》いました。', choices: ['とき', 'こと', 'もの', 'ので'], answer: 0 },
+    { type: 'scramble', translate: 'Waktu bus tidak datang, saya naik taksi.', words: ['バス', 'が', '来《こ》ない', 'とき', '、', 'タクシー', 'に', '乗《の》ります'] },
+    { type: 'scramble', translate: 'Waktu kesepian, saya selalu mendengarkan musik ini.', words: ['寂《さび》しい', 'とき', '、', 'いつも', 'この', '音楽《おんがく》', 'を', '聞《き》きます'] },
+    { type: 'scramble', translate: 'Belok kanan di persimpangan berikutnya, lalu ada perpustakaan di kiri.', words: ['次《つぎ》', 'の', '交差点《こうさてん》', 'を', '右《みぎ》', 'へ', '曲《ま》がると', '、', '左《ひだり》', 'に', '図書館《としょかん》', 'が', 'あります'] },
+    { type: 'scramble', translate: 'Waktu meninggalkan rumah, saya bilang "itte kimasu".', words: ['出《で》かける', 'とき', '、', '「行《い》ってきます」', 'と', '言《い》います'] },
+    { type: 'scramble', translate: 'Waktu menyeberang jalan, hati-hati dengan mobil.', words: ['道《みち》', 'を', '渡《わた》る', 'とき', '、', '車《くるま》', 'に', '気《き》を', 'つけて', 'ください'] },
   ] },
   { id: 24, focus: 'あげます・もらいます・くれます（人《ひと》のために）', questions: [
     { type: 'mc', q: '母《はは》は 私《わたし》に 傘《かさ》を ＿＿＿。（母《はは》→私《わたし》）', choices: ['くれました', 'あげました', 'もらいました', 'でした'], answer: 0, img: 'tabler-umbrella' },
@@ -326,7 +541,18 @@ const LESSONS = [
     { type: 'scramble', translate: 'Saya diberitahu (dibantu) oleh Sato tentang cara membuat sukiyaki.', words: ['佐藤《さとう》さん', 'に', 'すき焼《や》き', 'の', '作《つく》り方《かた》', 'を', '教《おし》えてもらいました'] },
     { type: 'scramble', translate: 'Guru Kobayashi mengajari saya bahasa Jepang.', words: ['小林《こばやし》先生《せんせい》', 'は', '日本語《にほんご》', 'を', '教《おし》えて', 'くれました'] },
     { type: 'mc', q: '一人《ひとり》で 病院《びょういん》へ 行《い》きましたか。…いいえ、山田《やまだ》さんに＿＿＿。', choices: ['いっしょに行《い》ってもらいました', 'いっしょに行《い》ってあげました', '行《い》きました', '行《い》っています'], answer: 0 },
-    { type: 'scramble', translate: 'Waktu ada teman asing datang, saya akan pandu tempat wisata di negara saya.', words: ['外国《がいこく》', 'から', '友達《ともだち》', 'が', '来《き》たとき', '、', '国《くに》', 'の', 'いい', '所《ところ》', 'を', '案内《あんない》してあげます'] }
+    { type: 'scramble', translate: 'Waktu ada teman asing datang, saya akan pandu tempat wisata di negara saya.', words: ['外国《がいこく》', 'から', '友達《ともだち》', 'が', '来《き》たとき', '、', '国《くに》', 'の', 'いい', '所《ところ》', 'を', '案内《あんない》してあげます'] },
+    { type: 'mc', q: 'A：すてきな　セーターですね。どこで　買《か》いましたか。\nB：＿＿＿。', choices: ['母《はは》が　作《つく》って　くれました', '母《はは》に　作《つく》って　あげました', '母《はは》が　作《つく》って　もらいました', '母《はは》の　セーターです'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：木村《きむら》さんの　電話《でんわ》番号《ばんごう》が　分《わ》かりましたか。\nB：ええ、＿＿＿。', choices: ['佐藤《さとう》さんに　教《おし》えて　もらいました', '佐藤《さとう》さんに　教《おし》えて　あげました', '佐藤《さとう》さんが　教《おし》えました', '佐藤《さとう》さんは　知《し》りません'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'すてきな セーターですね。母《はは》が＿＿＿。（送《おく》ります）', choices: ['送《おく》ってくれました', '送《おく》ってあげました', '送《おく》りました', '送《おく》っています'], answer: 0 },
+    { type: 'mc', q: 'あした 引《ひ》っ越《こ》しの 手伝《てつだ》いに 行《い》く 人《ひと》が いますか。…ええ、佐藤《さとう》さんと ミラーさんが＿＿＿。', choices: ['来《き》てくれます', '来《き》てあげます', '来《き》てもらいます', '来《き》ます'], answer: 0 },
+    { type: 'mc', q: 'ビールと ジュースと ワインを 買《か》いました。ほかに 何《なに》か 飲《の》み物《もの》が＿＿＿か。', choices: ['要《い》ります', '要《い》りません', 'あります', 'いります？'], answer: 0 },
+    { type: 'scramble', translate: 'Bibi saya membelikan saya sepeda.', words: ['おば', 'が', '自転車《じてんしゃ》', 'を', '買《か》って', 'くれました'] },
+    { type: 'scramble', translate: 'Saya meminta bantuan Karina karena tidak paham kanji.', words: ['漢字《かんじ》', 'が', 'わかりません', 'から', '、', 'カリナさん', 'に', '手伝《てつだ》って', 'もらいました'] },
+    { type: 'scramble', translate: 'Kapan pun teman dari luar negeri datang, saya akan memandunya keliling kota.', words: ['外国《がいこく》', 'の', '友達《ともだち》', 'が', '来《き》たら', '、', '町《まち》', 'を', '案内《あんない》してあげます'] },
+    { type: 'scramble', translate: 'Kobayashi sensei mengajari saya bahasa Jepang.', words: ['小林《こばやし》先生《せんせい》', 'は', '日本語《にほんご》', 'を', '教《おし》えて', 'くれました'] },
+    { type: 'scramble', translate: 'Saya membuatkan sukiyaki untuk Matsumoto.', words: ['松本《まつもと》さん', 'に', 'すき焼《や》き', 'を', '作《つく》って', 'あげました'] },
+    { type: 'scramble', translate: 'Waktu kecil, siapa yang membelikanmu hadiah ulang tahun?', words: ['子《こ》どもの', 'とき', '、', '誕生日《たんじょうび》', 'に', '何《なに》', 'を', '買《か》って', 'もらいましたか'] },
   ] },
   { id: 25, focus: '〜たら（条件《じょうけん》）、〜ても', questions: [
     { type: 'mc', q: '時間《じかん》が あっ＿＿＿、寄《よ》ってください。', choices: ['たら', 'ても', 'から', 'ので'], answer: 0 },
@@ -338,7 +564,17 @@ const LESSONS = [
     { type: 'scramble', translate: 'Kalau mendapat waktu libur, saya ingin bepergian.', words: ['休《やす》み', 'が', 'あったら', '、', '旅行《りょこう》', 'したい', 'です'] },
     { type: 'scramble', translate: 'Kalau tidak mengerti walau sudah dicari, tanyakan pada guru.', words: ['調《しら》べても', '、', '分《わ》からなかったら', '、', '先生《せんせい》', 'に', '聞《き》きます'] },
     { type: 'mc', q: '安《やす》くても、要《い》らない 物《もの》は＿＿＿。', choices: ['買《か》いません', '買《か》います', '買《か》った', '買《か》って'], answer: 0 },
-    { type: 'scramble', translate: 'Kalau sudah tua dan pensiun, saya ingin berkeliling dunia.', words: ['年《とし》', 'を', '取《と》って', '、', '仕事《しごと》', 'を', 'やめたら', '、', '世界《せかい》', 'を', '旅行《りょこう》したい', 'です'] }
+    { type: 'scramble', translate: 'Kalau sudah tua dan pensiun, saya ingin berkeliling dunia.', words: ['年《とし》', 'を', '取《と》って', '、', '仕事《しごと》', 'を', 'やめたら', '、', '世界《せかい》', 'を', '旅行《りょこう》したい', 'です'] },
+    { type: 'mc', q: 'A：もし、大学《だいがく》を　出《で》たら、何《なに》を　したいですか。\nB：＿＿＿。', choices: ['留学《りゅうがく》して、もう少《すこ》し　勉強《べんきょう》したいです', '留学《りゅうがく》しました', '留学《りゅうがく》が　好《す》きです', '留学《りゅうがく》を　したいと　思《おも》いました'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: 'A：時間《じかん》が　あったら、どう　しますか。\nB：＿＿＿。', choices: ['遊《あそ》びに　来《き》て　ください', '遊《あそ》びに　来《き》ます', '遊《あそ》びに　来《き》ました', '遊《あそ》びに　来《く》る　と　思《おも》います'], answer: 0, img: 'tabler-message-circle' },
+    { type: 'mc', q: '道《みち》が わからない＿＿＿、地図《ちず》を 見《み》ます。', choices: ['とき', 'たら', 'ても', 'から'], answer: 0 },
+    { type: 'mc', q: 'このパソコンは すぐ 故障《こしょう》します＿＿＿。（修理《しゅうり》しても）', choices: ['修理《しゅうり》しても', '修理《しゅうり》したら', '修理《しゅうり》すると', '修理《しゅうり》するので'], answer: 0 },
+    { type: 'mc', q: 'お酒《さけ》を 飲《の》んだら、車《くるま》を 運転《うんてん》しないで＿＿＿。', choices: ['ください', 'ください？', 'くれます', 'あげます'], answer: 0 },
+    { type: 'scramble', translate: 'Meskipun rumahnya lama, kalau sewanya murah saya mau menyewanya.', words: ['古《ふる》くても', '、', '家賃《やちん》', 'が', '安《やす》かったら', '、', '借《か》りたい', 'です'] },
+    { type: 'scramble', translate: 'Kalau sudah punya waktu senggang, saya ingin mendaki Gunung Fuji.', words: ['暇《ひま》', 'が', 'あったら', '、', '富士山《ふじさん》', 'に', '登《のぼ》りたい', 'です'] },
+    { type: 'scramble', translate: 'Meski sudah mencari, tidak ketemu.', words: ['探《さが》しても', '、', '見《み》つかりませんでした'] },
+    { type: 'scramble', translate: 'Kalau seandainya bisa lahir sekali lagi, kamu mau jadi laki-laki atau perempuan?', words: ['もし', '、', 'もう一度《いちど》', '生《う》まれる', 'こと', 'が', 'できたら', '、', '男《おとこ》の人《ひと》', 'が', 'いいですか'] },
+    { type: 'scramble', translate: 'Kalau tiba jam 3 sore di Kyoto, saya akan jemput.', words: ['3時《さんじ》', 'ごろ', '京都《きょうと》', 'に', '着《つ》いたら', '、', '迎《むか》えに', '行《い》きます'] },
   ] },
 ]
 
@@ -421,8 +657,13 @@ const scrambleBank = ref([])
 const scrambleBuilt = ref([])
 const isCorrect = ref(false)
 
-const currentQuestion = computed(() => active.value?.ref.questions?.[qIndex.value] ?? null)
-const totalQuestions = computed(() => active.value?.ref.questions?.length ?? 0)
+// The active lesson/rangkuman's questions, shuffled into a fresh random
+// order every time a quiz is (re)started — so opening the same lesson
+// twice in a row won't show the same sequence.
+const shuffledQuestions = ref([])
+
+const currentQuestion = computed(() => shuffledQuestions.value?.[qIndex.value] ?? null)
+const totalQuestions = computed(() => shuffledQuestions.value?.length ?? 0)
 
 const progressPercent = computed(() => {
   if (!totalQuestions.value)
@@ -501,6 +742,7 @@ function startTab(key) {
   activeKey.value = key
   qIndex.value = 0
   score.value = 0
+  shuffledQuestions.value = shuffle(ALL_TABS.find(x => x.key === key)?.ref.questions ?? [])
   setupQuestion()
   stage.value = STAGE_QUIZ
 }
@@ -557,6 +799,7 @@ function restartQuiz() {
   clearAdvanceTimer()
   qIndex.value = 0
   score.value = 0
+  shuffledQuestions.value = shuffle(active.value?.ref.questions ?? [])
   setupQuestion()
   stage.value = STAGE_QUIZ
 }
@@ -702,7 +945,10 @@ onBeforeUnmount(clearAdvanceTimer)
             </div>
 
             <template v-if="currentQuestion.type === 'mc'">
-              <p class="text-h6 mb-4 text-center">
+              <p
+                class="text-h6 mb-4 text-center"
+                style="white-space: pre-line"
+              >
                 <RubyText :text="currentQuestion.q" />
               </p>
               <div class="d-flex flex-column ga-2">
