@@ -7,7 +7,7 @@ const { t } = useI18n()
 
 const section = ref('numbers')
 const SECTIONS = [
-  { value: 'numbers', label: 'lampiran.section_numbers', icon: 'tabler-123' },
+  { value: 'numbers', label: 'lampiran.section_numbers', icon: 'tabler-numbers' },
   { value: 'time', label: 'lampiran.section_time', icon: 'tabler-calendar-time' },
   { value: 'clock', label: 'lampiran.section_clock', icon: 'tabler-clock' },
   { value: 'counters', label: 'lampiran.section_counters', icon: 'tabler-list-numbers' },
@@ -759,7 +759,6 @@ const naAdjectives = [
 .lampiran-section-tabs__btn {
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px;
   border: 0;
   border-radius: 9px;
   background: transparent;
@@ -767,8 +766,10 @@ const naAdjectives = [
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 500;
-  white-space: nowrap;
+  padding-block: 8px;
+  padding-inline: 16px;
   transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
 }
 
 .lampiran-section-tabs__btn:hover {

@@ -144,6 +144,7 @@
     "auto_next": "Auto next",
     "character_of": "{current} / {total}",
     "finish_quiz": "Finish",
+    "next": "Next",
     "quiz_result_title": "Quiz Results",
     "quiz_result_score": "Score: {correct} / {total}",
     "quiz_retry": "Retry Quiz",
@@ -432,10 +433,26 @@
     "col_meaning": "Meaning"
   },
   "mondaishuu": {
-    "title": "Mondaishuu (Practice Book)",
-    "subtitle": "Written practice per lesson, 1–25, plus review sets — to drill the sentence patterns you've learned.",
+    "title": "Mondaishuu (Practice Quiz)",
+    "subtitle": "A practice quiz per lesson, 1–25, plus review sets — multiple choice and sentence building, using kanji with furigana.",
+    "lessons_label": "Choose a Lesson",
+    "reviews_label": "Review Sets",
     "lesson_label": "Lesson {n}",
-    "show_answers": "Show Answer Key",
-    "hide_answers": "Hide Answer Key"
+    "score": "Score: {score}/{total}",
+    "quiz_back": "Back",
+    "question_of": "Question {n}/{total}",
+    "type_mc": "Multiple Choice",
+    "type_scramble": "Sentence Building",
+    "arrange_prompt": "Arrange the words below into the correct sentence:",
+    "tap_words_hint": "Tap the words below to build the sentence",
+    "check": "Check Answer",
+    "correct_order": "Correct order:",
+    "correct": "Correct!",
+    "incorrect": "Not quite.",
+    "next": "Next Question",
+    "finish": "Finish",
+    "done_title": "Practice complete!",
+    "retry": "Retry This Set",
+    "next_lesson": "Continue to Lesson {n}"
   }
 }

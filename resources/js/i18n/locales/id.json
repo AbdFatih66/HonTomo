@@ -144,6 +144,7 @@
     "auto_next": "Lanjut otomatis",
     "character_of": "{current} / {total}",
     "finish_quiz": "Selesai",
+    "next": "Lanjut",
     "quiz_result_title": "Hasil Kuis",
     "quiz_result_score": "Skor: {correct} / {total}",
     "quiz_retry": "Ulangi Kuis",
@@ -433,9 +434,25 @@
   },
   "mondaishuu": {
     "title": "Mondaishuu (Latihan Soal)",
-    "subtitle": "Latihan tertulis per pelajaran, 1–25, plus rangkuman — untuk melatih pola kalimat yang sudah dipelajari.",
+    "subtitle": "Kuis latihan per pelajaran, 1–25, plus rangkuman — pilihan ganda dan susun kalimat, memakai kanji dengan furigana.",
+    "lessons_label": "Pilih Pelajaran",
+    "reviews_label": "Set Rangkuman",
     "lesson_label": "Pelajaran {n}",
-    "show_answers": "Tampilkan Kunci Jawaban",
-    "hide_answers": "Sembunyikan Kunci Jawaban"
+    "score": "Skor: {score}/{total}",
+    "quiz_back": "Kembali",
+    "question_of": "Soal {n}/{total}",
+    "type_mc": "Pilihan Ganda",
+    "type_scramble": "Susun Kalimat",
+    "arrange_prompt": "Susun kata-kata di bawah menjadi kalimat yang tepat:",
+    "tap_words_hint": "Ketuk kata di bawah untuk menyusun kalimat",
+    "check": "Periksa Jawaban",
+    "correct_order": "Urutan yang benar:",
+    "correct": "Benar! 正解です。",
+    "incorrect": "Kurang tepat.",
+    "next": "Soal Berikutnya",
+    "finish": "Selesai",
+    "done_title": "Latihan selesai!",
+    "retry": "Ulangi Latihan Ini",
+    "next_lesson": "Lanjut ke Pelajaran {n}"
   }
 }

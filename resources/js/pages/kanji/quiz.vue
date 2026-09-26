@@ -1,6 +1,7 @@
 <script setup>
 import KanjiWritingCanvas from '@/components/kanji/KanjiWritingCanvas.vue'
 import { $api } from '@/utils/api'
+import { useAutoNext } from '@/composables/useAutoNext'
 
 // Focus mode, same as the lesson player and the Kana quiz: no sidebar/navbar.
 definePage({ meta: { layout: 'blank' } })
@@ -11,6 +12,7 @@ const WRITING_MISTAKE_TOLERANCE = 2
 
 const { t } = useI18n()
 const router = useRouter()
+const autoNext = useAutoNext()
 
 const STAGE_SETUP = 'setup'
 const STAGE_QUIZ = 'quiz'
@@ -132,9 +134,17 @@ function clearAdvanceTimer() {
 }
 
 function scheduleAdvance(correct) {
+  if (!autoNext.value)
+    return
+
   clearAdvanceTimer()
   advanceTimer = setTimeout(advance, correct ? ADVANCE_DELAY_CORRECT : ADVANCE_DELAY_INCORRECT)
 }
+
+watch(autoNext, on => {
+  if (!on)
+    clearAdvanceTimer()
+})
 
 function resetQuestionState() {
   selectedOption.value = null
@@ -288,6 +298,16 @@ onBeforeUnmount(clearAdvanceTimer)
       >
         {{ t('kanji.quiz_title') }}
       </h5>
+
+      <VSwitch
+        v-if="stage === STAGE_QUIZ"
+        v-model="autoNext"
+        :label="t('kana.auto_next')"
+        color="primary"
+        density="compact"
+        hide-details
+        class="flex-shrink-0"
+      />
     </header>
 
     <main class="kana-fs__body">
@@ -598,6 +618,15 @@ onBeforeUnmount(clearAdvanceTimer)
             </small>
           </div>
         </div>
+
+        <VBtn
+          v-if="!autoNext"
+          color="primary"
+          append-icon="tabler-arrow-right"
+          @click="advance"
+        >
+          {{ isLastQuestion ? t('kana.finish_quiz') : t('kana.next') }}
+        </VBtn>
       </div>
     </footer>
   </div>
