@@ -14,7 +14,8 @@
     "kanji": "Kanji",
     "lampiran": "Referensi Tata Bahasa",
     "vocabulary": "Kosakata",
-    "mondaishuu": "Mondaishuu"
+    "mondaishuu": "Mondaishuu",
+    "kaite_oboeru": "Kaite Oboeru"
   },
   "common": {
     "loading": "Memuat…",
@@ -454,5 +455,20 @@
     "done_title": "Latihan selesai!",
     "retry": "Ulangi Latihan Ini",
     "next_lesson": "Lanjut ke Pelajaran {n}"
+  },
+  "kaite_oboeru": {
+    "title": "Kaite Oboeru (書いて覚える)",
+    "subtitle": "Latihan menulis tangan dari Minna no Nihongo I Sentence Pattern Workbook — tulis jawabannya sendiri di bawah, lalu cocokkan dengan kunci jawaban.",
+    "question_count": "{n} soal",
+    "quiz_back": "Kembali",
+    "score": "Skor: {score}/{total}",
+    "question_of": "Soal {n}/{total}",
+    "skip": "Lewati / tidak tahu",
+    "correct": "Benar! よくできました。",
+    "incorrect": "Belum tepat, yuk tulis ulang lain kali.",
+    "next": "Soal Berikutnya",
+    "finish": "Selesai",
+    "done_title": "Latihan selesai!",
+    "retry": "Ulangi Latihan Ini"
   }
 }

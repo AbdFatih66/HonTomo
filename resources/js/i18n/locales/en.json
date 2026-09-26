@@ -14,7 +14,8 @@
     "kanji": "Kanji",
     "lampiran": "Grammar Reference",
     "vocabulary": "Vocabulary",
-    "mondaishuu": "Practice Book"
+    "mondaishuu": "Practice Book",
+    "kaite_oboeru": "Kaite Oboeru"
   },
   "common": {
     "loading": "Loading…",
@@ -454,5 +455,20 @@
     "done_title": "Practice complete!",
     "retry": "Retry This Set",
     "next_lesson": "Continue to Lesson {n}"
+  },
+  "kaite_oboeru": {
+    "title": "Kaite Oboeru (Write to Remember)",
+    "subtitle": "Handwriting practice from the Minna no Nihongo I Sentence Pattern Workbook — write your own answer below, then check it against the key.",
+    "question_count": "{n} questions",
+    "quiz_back": "Back",
+    "score": "Score: {score}/{total}",
+    "question_of": "Question {n}/{total}",
+    "skip": "Skip / I don't know",
+    "correct": "Correct! Well done.",
+    "incorrect": "Not quite — try writing it again next time.",
+    "next": "Next Question",
+    "finish": "Finish",
+    "done_title": "Practice complete!",
+    "retry": "Retry This Set"
   }
 }

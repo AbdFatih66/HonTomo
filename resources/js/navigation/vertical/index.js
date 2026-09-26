@@ -22,6 +22,11 @@ export default [
     icon: { icon: 'tabler-pencil-check' },
   },
   {
+    title: 'nav.kaite_oboeru',
+    to: { name: 'kaite-oboeru' },
+    icon: { icon: 'tabler-writing-sign' },
+  },
+  {
     title: 'nav.kana',
     to: { name: 'kana' },
     icon: { icon: 'tabler-language-katakana' },
