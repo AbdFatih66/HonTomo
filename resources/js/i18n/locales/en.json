@@ -14,10 +14,10 @@
     "kanji": "Kanji",
     "lampiran": "Grammar Reference",
     "vocabulary": "Vocabulary",
-    "mondaishuu": "Practice Book",
-    "chokai": "Chokai Mondai",
+    "mondaishuu": "Practice Questions",
+    "chokai": "Listening Practice",
     "jlpt_test": "JLPT Test",
-    "kaite_oboeru": "Kaite Oboeru"
+    "kaite_oboeru": "Writing Practice"
   },
   "common": {
     "loading": "Loading…",
@@ -436,7 +436,7 @@
     "col_meaning": "Meaning"
   },
   "mondaishuu": {
-    "title": "Mondaishuu (Practice Quiz)",
+    "title": "Practice Questions",
     "subtitle": "A practice quiz per lesson, 1–25, plus review sets — multiple choice and sentence building, using kanji with furigana.",
     "lessons_label": "Choose a Lesson",
     "reviews_label": "Review Sets",
@@ -719,7 +719,7 @@
     "transcript": "Transcript"
   },
   "chokai": {
-    "title": "Chokai Mondai",
+    "title": "Listening Practice",
     "subtitle": "Listening practice (chōkai) per lesson — listen to the audio, then answer the question.",
     "lesson_label": "Lesson {n}",
     "coming_soon": "Coming soon",
@@ -729,7 +729,7 @@
     "kaiwa_transcript": "Transcript",
     "kaiwa_continue": "Continue",
     "kaiwa_skip": "Skip",
-    "start_mondai": "Start Mondai",
+    "start_mondai": "Start Practice",
     "play": "Play audio",
     "playing": "Playing…",
     "replay": "Replay",
@@ -741,7 +741,7 @@
     "meaning": "Meaning",
     "next": "Next",
     "finish": "Finish",
-    "done_title": "Chokai finished!",
+    "done_title": "Listening practice finished!",
     "crown_earned": "Perfect! You earned a crown 👑",
     "crown_hint": "Finish with zero mistakes to earn a crown.",
     "retry": "Retry",
@@ -754,7 +754,7 @@
     "load_error": "Couldn't load the lesson. Please try again."
   },
   "kaite_oboeru": {
-    "title": "Kaite Oboeru (Write to Remember)",
+    "title": "Writing Practice",
     "subtitle": "Handwriting practice — write your own answer below, then check it against the key.",
     "question_count": "{n} questions",
     "lesson_badge": "Chapter {n}",

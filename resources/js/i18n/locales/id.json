@@ -14,10 +14,10 @@
     "kanji": "Kanji",
     "lampiran": "Referensi Tata Bahasa",
     "vocabulary": "Kosakata",
-    "mondaishuu": "Mondaishuu",
-    "chokai": "Chokai Mondai",
+    "mondaishuu": "Latihan Soal",
+    "chokai": "Latihan Menyimak",
     "jlpt_test": "Tes JLPT",
-    "kaite_oboeru": "Kaite Oboeru"
+    "kaite_oboeru": "Latihan Menulis"
   },
   "common": {
     "loading": "Memuat…",
@@ -436,7 +436,7 @@
     "col_meaning": "Arti"
   },
   "mondaishuu": {
-    "title": "Mondaishuu (Latihan Soal)",
+    "title": "Latihan Soal",
     "subtitle": "Kuis latihan per pelajaran, 1–25, plus rangkuman — pilihan ganda dan susun kalimat, memakai kanji dengan furigana.",
     "lessons_label": "Pilih Pelajaran",
     "reviews_label": "Set Rangkuman",
@@ -719,7 +719,7 @@
     "transcript": "Transkrip"
   },
   "chokai": {
-    "title": "Chokai Mondai",
+    "title": "Latihan Menyimak",
     "subtitle": "Latihan menyimak (chōkai) per pelajaran — dengarkan audio, lalu jawab pertanyaannya.",
     "lesson_label": "Pelajaran {n}",
     "coming_soon": "Segera hadir",
@@ -729,7 +729,7 @@
     "kaiwa_transcript": "Transkrip",
     "kaiwa_continue": "Lanjut",
     "kaiwa_skip": "Lewati",
-    "start_mondai": "Mulai Mondai",
+    "start_mondai": "Mulai Latihan",
     "play": "Putar audio",
     "playing": "Memutar…",
     "replay": "Putar ulang",
@@ -741,7 +741,7 @@
     "meaning": "Arti",
     "next": "Lanjut",
     "finish": "Selesai",
-    "done_title": "Chokai selesai!",
+    "done_title": "Latihan menyimak selesai!",
     "crown_earned": "Sempurna! Kamu dapat mahkota 👑",
     "crown_hint": "Selesaikan tanpa kesalahan untuk dapat mahkota.",
     "retry": "Ulangi",
@@ -754,7 +754,7 @@
     "load_error": "Gagal memuat pelajaran. Coba lagi sebentar."
   },
   "kaite_oboeru": {
-    "title": "Kaite Oboeru (書いて覚える)",
+    "title": "Latihan Menulis",
     "subtitle": "Latihan menulis tangan — tulis jawabannya sendiri di bawah, lalu cocokkan dengan kunci jawaban.",
     "question_count": "{n} soal",
     "lesson_badge": "Bab {n}",

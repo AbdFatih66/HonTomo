@@ -48,9 +48,6 @@ async function logout() {
             <VListItemTitle class="font-weight-semibold">
               {{ authStore.user?.name }}
             </VListItemTitle>
-            <VListItemSubtitle class="text-capitalize">
-              {{ authStore.user?.role }}
-            </VListItemSubtitle>
           </VListItem>
 
           <VDivider class="my-2" />
@@ -66,45 +63,6 @@ async function logout() {
             </template>
 
             <VListItemTitle>Profile</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 Settings -->
-          <VListItem link>
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-settings"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Settings</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 Pricing -->
-          <VListItem link>
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-currency-dollar"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Pricing</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 FAQ -->
-          <VListItem link>
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-help"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>FAQ</VListItemTitle>
           </VListItem>
 
           <!-- Divider -->

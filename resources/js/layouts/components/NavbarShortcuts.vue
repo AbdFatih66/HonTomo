@@ -25,6 +25,7 @@ const catalogByKey = computed(() => Object.fromEntries(catalog.value.map(item =>
 // daftar statis. `order` = urutan tampil, diatur dengan menggeser (drag).
 const order = ref([]) // array of page_key, in display order
 const isLoading = ref(false)
+const isMenuOpen = ref(false)
 const isPickerOpen = ref(false)
 const draggedKey = ref(null)
 
@@ -108,18 +109,30 @@ function onDrop(targetKey) {
 }
 
 function openShortcut(shortcut) {
+  isMenuOpen.value = false
   router.push(shortcut.to)
 }
+
+// Saat menu ditutup, kembali ke tampilan daftar pintasan (bukan pemilih).
+watch(isMenuOpen, open => {
+  if (!open)
+    isPickerOpen.value = false
+})
 </script>
 
 <template>
   <IconBtn>
     <VIcon icon="tabler-layout-grid-add" />
 
+    <!-- close-on-content-click=false: default Vuetify menutup menu setiap ada
+         klik di dalam konten, jadi ikon "+" / "kembali" ikut menutup modal.
+         Penutupan saat membuka halaman diatur manual lewat openShortcut(). -->
     <VMenu
+      v-model="isMenuOpen"
       activator="parent"
       offset="12px"
       location="bottom end"
+      :close-on-content-click="false"
     >
       <VCard
         :width="$vuetify.display.smAndDown ? 330 : 380"
@@ -181,20 +194,21 @@ function openShortcut(shortcut) {
 
         <!-- 👉 Pintasan yang sudah ditambahkan — bisa digeser urutannya -->
         <template v-else>
+          <p
+            v-if="shortcuts.length"
+            class="text-caption text-medium-emphasis px-4 py-2 mb-0 shortcut-hint"
+          >
+            {{ t('shortcuts.drag_hint') }}
+          </p>
+
           <PerfectScrollbar :options="{ wheelPropagation: false }">
-            <p
-              v-if="shortcuts.length"
-              class="text-caption text-medium-emphasis px-4 pt-2 mb-0"
-            >
-              {{ t('shortcuts.drag_hint') }}
-            </p>
             <p
               v-if="!isLoading && !shortcuts.length"
               class="text-body-2 text-medium-emphasis text-center pa-6 mb-0"
             >
               {{ t('shortcuts.empty') }}
             </p>
-            <VRow class="ma-0 mt-n1">
+            <VRow class="ma-0">
               <VCol
                 v-for="(shortcut, index) in shortcuts"
                 :key="shortcut.key"
@@ -249,6 +263,11 @@ function openShortcut(shortcut) {
   .shortcut-icon__remove {
     opacity: 1;
   }
+}
+
+.shortcut-hint {
+  flex-shrink: 0;
+  line-height: 1.4;
 }
 
 .shortcut-icon.is-dragging {
