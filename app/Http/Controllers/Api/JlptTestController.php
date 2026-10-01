@@ -46,7 +46,7 @@ class JlptTestController extends Controller
     /** DELETE /api/jlpt-test/packs/{pack}/attempts/current — batalkan tes yang berjalan. */
     public function abandon(Request $request, string $pack)
     {
-        $this->service->assertPackEnabled($pack);
+        $this->service->assertPackAccessible($request->user(), $pack);
 
         $attempt = $this->service->currentAttempt($request->user(), $pack);
         if ($attempt)

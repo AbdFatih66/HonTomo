@@ -58,6 +58,7 @@ class JlptTestTest extends TestCase
     {
         parent::setUp();
         config([
+            'jlpt.packs.private.enabled' => true,
             'jlpt.levels.N5.sections.bunpou_dokkai.enabled' => false,
             'jlpt.levels.N5.sections.chokai.enabled' => false,
         ]);
@@ -77,6 +78,15 @@ class JlptTestTest extends TestCase
     {
         Carbon::setTestNow();
         parent::tearDown();
+    }
+
+    /**
+     * Test di berkas ini memakai pack 'private' (soal asli) yang khusus admin,
+     * jadi pesertanya dibuat sebagai admin. Akses non-admin diuji di JlptPackAccessTest.
+     */
+    private function makeUser(): User
+    {
+        return User::factory()->create(['role' => 'admin']);
     }
 
     private function asToken(User $user): static
@@ -122,7 +132,7 @@ class JlptTestTest extends TestCase
 
     private function startMojigoi(User $user): int
     {
-        $state = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->assertOk()->json();
+        $state = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->assertOk()->json();
         $attempt = $state['attempt_id'];
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/start")->assertOk();
 
@@ -131,19 +141,20 @@ class JlptTestTest extends TestCase
 
     public function test_endpoints_require_authentication(): void
     {
-        $this->getJson('/api/jlpt-test/N5')->assertUnauthorized();
-        $this->postJson('/api/jlpt-test/N5/attempts')->assertUnauthorized();
+        $this->getJson('/api/jlpt-test/packs')->assertUnauthorized();
+        $this->getJson('/api/jlpt-test/packs/private')->assertUnauthorized();
+        $this->postJson('/api/jlpt-test/packs/private/attempts')->assertUnauthorized();
     }
 
-    public function test_unknown_level_is_404(): void
+    public function test_unknown_pack_is_404(): void
     {
-        $this->asToken(User::factory()->create())->getJson('/api/jlpt-test/N9')->assertNotFound();
+        $this->asToken($this->makeUser())->getJson('/api/jlpt-test/packs/nope')->assertNotFound();
     }
 
     public function test_state_never_exposes_the_answer_key(): void
     {
-        $user = User::factory()->create();
-        $json = $this->asToken($user)->getJson('/api/jlpt-test/N5')->assertOk()->getContent();
+        $user = $this->makeUser();
+        $json = $this->asToken($user)->getJson('/api/jlpt-test/packs/private')->assertOk()->getContent();
 
         $this->assertStringNotContainsString('answers', $json);
         $this->assertStringContainsString('mojigoi', $json);
@@ -227,11 +238,11 @@ class JlptTestTest extends TestCase
 
     public function test_section_payload_has_the_questions_but_never_the_key(): void
     {
-        $user = User::factory()->create();
-        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $user = $this->makeUser();
+        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
         // Sebelum sesi dimulai, soal belum dikirim sama sekali.
-        $this->assertStringNotContainsString('questions', $this->asToken($user)->getJson('/api/jlpt-test/N5')->getContent());
+        $this->assertStringNotContainsString('questions', $this->asToken($user)->getJson('/api/jlpt-test/packs/private')->getContent());
 
         $start = $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/start")->assertOk();
         $resume = $this->asToken($user)->getJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi")->assertOk();
@@ -256,8 +267,8 @@ class JlptTestTest extends TestCase
 
     public function test_only_available_sections_can_be_started_and_in_order(): void
     {
-        $user = User::factory()->create();
-        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $user = $this->makeUser();
+        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/bunpou_dokkai/start")
             ->assertStatus(422);
@@ -267,11 +278,11 @@ class JlptTestTest extends TestCase
 
     public function test_starting_twice_returns_the_same_attempt_and_does_not_reset_the_timer(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         Carbon::setTestNow('2026-09-30 10:00:00');
 
         $a = $this->startMojigoi($user);
-        $b = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $b = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
         $this->assertSame($a, $b);
 
         Carbon::setTestNow('2026-09-30 10:10:00'); // 10 menit berlalu
@@ -282,7 +293,7 @@ class JlptTestTest extends TestCase
 
     public function test_submit_grades_on_the_server_without_leaking_the_score(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
 
         $res = $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/submit", [
@@ -296,7 +307,7 @@ class JlptTestTest extends TestCase
 
     public function test_recap_scores_and_is_provisional_while_sections_are_missing(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
 
         // benar semua kecuali no. 1 (salah) dan no. 2 (kosong)
@@ -319,7 +330,7 @@ class JlptTestTest extends TestCase
 
     public function test_recap_is_locked_until_the_test_is_finished(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
 
         $this->asToken($user)->getJson("/api/jlpt-test/attempts/{$attempt}/recap")->assertStatus(409);
@@ -327,7 +338,7 @@ class JlptTestTest extends TestCase
 
     public function test_a_submitted_section_cannot_be_redone_or_resubmitted(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/submit", ['answers' => $this->key()])->assertOk();
 
@@ -338,7 +349,7 @@ class JlptTestTest extends TestCase
 
     public function test_answers_sent_long_after_time_is_up_are_ignored_in_favour_of_the_autosave(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         Carbon::setTestNow('2026-09-30 10:00:00');
         $attempt = $this->startMojigoi($user);
 
@@ -361,7 +372,7 @@ class JlptTestTest extends TestCase
 
     public function test_submit_within_the_grace_window_still_counts(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         Carbon::setTestNow('2026-09-30 10:00:00');
         $attempt = $this->startMojigoi($user);
 
@@ -374,7 +385,7 @@ class JlptTestTest extends TestCase
 
     public function test_answer_values_outside_1_to_4_are_rejected(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
 
         foreach ([9, 0, 'abc'] as $bad) {
@@ -390,7 +401,7 @@ class JlptTestTest extends TestCase
 
     public function test_unknown_question_ids_and_empty_answers_are_dropped(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
 
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/submit", [
@@ -403,17 +414,17 @@ class JlptTestTest extends TestCase
 
     public function test_another_users_attempt_is_not_reachable(): void
     {
-        $owner = User::factory()->create();
-        $intruder = User::factory()->create();
+        $owner = $this->makeUser();
+        $intruder = $this->makeUser();
         $attempt = $this->startMojigoi($owner);
 
         $this->asToken($intruder)->getJson("/api/jlpt-test/attempts/{$attempt}/recap")->assertNotFound();
         $this->asToken($intruder)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/submit", ['answers' => []])->assertNotFound();
     }
 
-    public function test_xp_is_awarded_only_the_first_time_a_section_is_finished(): void
+    public function test_xp_is_awarded_only_the_first_time_the_pack_is_finished(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
 
         $first = $this->startMojigoi($user);
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$first}/sections/mojigoi/submit", ['answers' => $this->key()])->assertOk();
@@ -421,17 +432,17 @@ class JlptTestTest extends TestCase
         $second = $this->startMojigoi($user);
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$second}/sections/mojigoi/submit", ['answers' => $this->key()])->assertOk();
 
-        $this->assertSame(1, UserXp::where('user_id', $user->id)->where('source', 'jlpt_section_completed')->count());
+        $this->assertSame(1, UserXp::where('user_id', $user->id)->where('source', 'jlpt_test_completed')->count());
     }
 
     public function test_abandoning_lets_the_user_start_over(): void
     {
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $first = $this->startMojigoi($user);
 
-        $this->asToken($user)->deleteJson('/api/jlpt-test/N5/attempts/current')->assertOk()->assertJsonPath('attempt_id', null);
+        $this->asToken($user)->deleteJson('/api/jlpt-test/packs/private/attempts/current')->assertOk()->assertJsonPath('attempt_id', null);
 
-        $second = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $second = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
         $this->assertNotSame($first, $second);
     }
 
@@ -439,8 +450,8 @@ class JlptTestTest extends TestCase
     {
         // Simulasi: semua sesi aktif dan benar semua → lulus 180/180.
         $keys = $this->useFullBanks();
-        $user = User::factory()->create();
-        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $user = $this->makeUser();
+        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
         foreach (['mojigoi', 'bunpou_dokkai', 'chokai'] as $section) {
             $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/{$section}/start")->assertOk();
@@ -463,8 +474,8 @@ class JlptTestTest extends TestCase
     public function test_a_group_below_its_minimum_fails_even_with_a_passing_total(): void
     {
         $keys = $this->useFullBanks();
-        $user = User::factory()->create();
-        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $user = $this->makeUser();
+        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
         // Bahasa & membaca sempurna (120), menyimak kosong (0) → total 120 ≥ 80 tapi
         // menyimak < 19 → tidak lulus.
@@ -484,7 +495,7 @@ class JlptTestTest extends TestCase
     public function test_bunpou_payload_ships_passages_but_never_the_key(): void
     {
         $this->enableBunpou();
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/submit", ['answers' => $this->key()])->assertOk();
 
@@ -508,8 +519,8 @@ class JlptTestTest extends TestCase
     public function test_bunpou_needs_mojigoi_first_and_two_sections_finish_the_test(): void
     {
         $this->enableBunpou();
-        $user = User::factory()->create();
-        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $user = $this->makeUser();
+        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
         // Urutan ujian dijaga: bunpou tidak bisa dimulai sebelum moji-goi dikirim.
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/bunpou_dokkai/start")->assertStatus(422);
@@ -539,7 +550,7 @@ class JlptTestTest extends TestCase
     public function test_bunpou_scores_only_correct_answers(): void
     {
         $this->enableBunpou();
-        $user = User::factory()->create();
+        $user = $this->makeUser();
         $attempt = $this->startMojigoi($user);
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/mojigoi/submit", ['answers' => $this->key()])->assertOk();
         $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/bunpou_dokkai/start")->assertOk();
@@ -618,7 +629,7 @@ class JlptTestTest extends TestCase
         mkdir($dir, 0777, true);
         foreach ($files as $name)
             file_put_contents("{$dir}/{$name}", '');
-        config(['jlpt.audio_path' => "/{$root}"]);
+        config(['jlpt.packs.private.audio_path' => "/{$root}"]);
 
         return public_path($root);
     }
@@ -639,12 +650,12 @@ class JlptTestTest extends TestCase
         try {
             $service = app(\App\Services\JlptTestService::class);
 
-            $this->assertSame('04-modai1－1bun.mp3', $service->resolveAudio('N5', 4));
-            $this->assertSame('19-chotto-yasumimashou.mp3', $service->resolveAudio('N5', 19));
-            $this->assertNull($service->resolveAudio('N5', 5), 'trek 5 tidak ada');
-            $this->assertNull($service->resolveAudio('N5', 40), '"04-" tidak boleh cocok dengan 40');
-            $this->assertSame('02-mondai1－setsumei.mp3', $service->resolveAudio('N5', '02-mondai1－setsumei.mp3'));
-            $this->assertNull($service->resolveAudio('N5', 'tidak-ada.mp3'));
+            $this->assertSame('04-modai1－1bun.mp3', $service->resolveAudio('private', 4));
+            $this->assertSame('19-chotto-yasumimashou.mp3', $service->resolveAudio('private', 19));
+            $this->assertNull($service->resolveAudio('private', 5), 'trek 5 tidak ada');
+            $this->assertNull($service->resolveAudio('private', 40), '"04-" tidak boleh cocok dengan 40');
+            $this->assertSame('02-mondai1－setsumei.mp3', $service->resolveAudio('private', '02-mondai1－setsumei.mp3'));
+            $this->assertNull($service->resolveAudio('private', 'tidak-ada.mp3'));
         }
         finally {
             $this->removeFolder($root);
@@ -657,8 +668,8 @@ class JlptTestTest extends TestCase
         $root = $this->fakeAudioFolder(['04-modai1－1bun.mp3', '35-owari.mp3']);
 
         try {
-            $user = User::factory()->create();
-            $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+            $user = $this->makeUser();
+            $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
             foreach (['mojigoi', 'bunpou_dokkai'] as $section) {
                 $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/{$section}/start")->assertOk();
@@ -667,7 +678,7 @@ class JlptTestTest extends TestCase
 
             $start = $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/chokai/start")->assertOk();
             $resume = $this->asToken($user)->getJson("/api/jlpt-test/attempts/{$attempt}/sections/chokai")->assertOk();
-            $base = config('jlpt.audio_path').'/n5/';
+            $base = config('jlpt.packs.private.audio_path').'/n5/';
 
             foreach ([$start, $resume] as $res) {
                 $this->assertSame(30, $res->json('minutes'));
@@ -704,8 +715,8 @@ class JlptTestTest extends TestCase
     public function test_chokai_grades_string_question_ids_and_reports_per_mondai(): void
     {
         $keys = $this->useFullBanks();
-        $user = User::factory()->create();
-        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/N5/attempts')->json('attempt_id');
+        $user = $this->makeUser();
+        $attempt = $this->asToken($user)->postJson('/api/jlpt-test/packs/private/attempts')->json('attempt_id');
 
         foreach (['mojigoi', 'bunpou_dokkai'] as $section) {
             $this->asToken($user)->postJson("/api/jlpt-test/attempts/{$attempt}/sections/{$section}/start")->assertOk();
@@ -745,7 +756,7 @@ class JlptTestTest extends TestCase
             $tracks[] = $q['audio'];
 
         $service = app(\App\Services\JlptTestService::class);
-        $missing = array_values(array_filter($tracks, fn (int $n) => $service->resolveAudio('N5', $n) === null));
+        $missing = array_values(array_filter($tracks, fn (int $n) => $service->resolveAudio('private', $n) === null));
         sort($missing);
 
         $this->assertSame([], $missing, 'Nomor trek audio tanpa berkas di public/audio/jlpt/n5 (berawalan "NN-"): '.implode(', ', array_map(fn ($n) => sprintf('%02d', $n), $missing)));

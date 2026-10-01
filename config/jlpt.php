@@ -52,11 +52,16 @@ return [
 
     // Pack = satu paket soal. `enabled` pack 'private' dibaca dari env supaya
     // build komersil bisa mematikannya (JLPT_PRIVATE_PACK=false): pack yang mati
-    // tidak muncul di API dan tidak bisa dimulai.
+    // tidak muncul di API dan tidak bisa dimulai. `admin_only` = hanya admin
+    // (User::isAdmin) yang boleh mengaksesnya.
     'packs' => [
-        // Bank soal asli (salinan) — HANYA untuk pemakaian pribadi.
+        // Bank soal asli (salinan) — HANYA untuk pemakaian pribadi, jadi `admin_only`:
+        // hanya user ber-role admin yang bisa melihat/memulai/membuka paket ini
+        // (non-admin mendapat 404, seolah paketnya tidak ada). Berlaku juga untuk
+        // attempt lama milik user yang kini bukan admin.
         'private' => [
             'enabled' => (bool) env('JLPT_PRIVATE_PACK', true),
+            'admin_only' => true,
             'level' => 'N5',
             'format' => 'classic',
             'data_dir' => 'jlpt/n5',

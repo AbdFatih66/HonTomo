@@ -605,7 +605,9 @@
       "meta": "{level} · {minutes} min · {total} questions",
       "in_progress": "In progress ({mode})",
       "best": "Best: {score}/{max}",
-      "back": "All packs"
+      "back": "All packs",
+      "admin_only": "Admin only",
+      "admin_only_notice": "This pack contains the original questions and is only available to admins."
     },
     "practice": {
       "correct": "Correct!",

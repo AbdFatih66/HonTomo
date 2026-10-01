@@ -76,6 +76,24 @@ class JlptTestService
         return $cfg;
     }
 
+    /** Pack `admin_only` (soal asli) hanya boleh dilihat/dipakai admin. */
+    public function canAccessPack(User $user, array $packConfig): bool
+    {
+        return ! ($packConfig['admin_only'] ?? false) || $user->isAdmin();
+    }
+
+    /**
+     * Pack harus aktif DAN boleh diakses user ini. Pack khusus admin dijawab 404
+     * untuk non-admin (sama seperti pack yang tidak ada) supaya keberadaannya tidak bocor.
+     */
+    public function assertPackAccessible(User $user, string $pack): array
+    {
+        $cfg = $this->assertPackEnabled($pack);
+        abort_unless($this->canAccessPack($user, $cfg), 404, 'Paket tidak tersedia.');
+
+        return $cfg;
+    }
+
     private function sectionConfig(string $level, string $section): array
     {
         $cfg = $this->levelConfig($level)['sections'][$section] ?? null;
@@ -368,7 +386,7 @@ class JlptTestService
     public function startAttempt(User $user, string $pack, string $mode = self::MODE_STRICT): UserJlptTestAttempt
     {
         abort_unless(in_array($mode, [self::MODE_STRICT, self::MODE_PRACTICE], true), 422, 'Mode tidak dikenal.');
-        $p = $this->assertPackEnabled($pack);
+        $p = $this->assertPackAccessible($user, $pack);
         $this->levelConfig($p['level']);
 
         $current = $this->currentAttempt($user, $pack);
@@ -637,7 +655,7 @@ class JlptTestService
         $out = [];
 
         foreach (config('jlpt.packs', []) as $key => $p) {
-            if (! ($p['enabled'] ?? false))
+            if (! ($p['enabled'] ?? false) || ! $this->canAccessPack($user, $p))
                 continue;
 
             $attempt = $this->currentAttempt($user, $key);
@@ -659,6 +677,7 @@ class JlptTestService
                 'level' => $p['level'],
                 'format' => $p['format'] ?? 'classic',
                 'title' => $p['title'],
+                'admin_only' => (bool) ($p['admin_only'] ?? false),
                 'sections' => $this->sectionSummaries($key),
                 'in_progress' => $attempt ? ['attempt_id' => $attempt->id, 'mode' => $attempt->mode] : null,
                 'attempts' => $completed->count(),
@@ -690,7 +709,7 @@ class JlptTestService
     /** Status tes untuk halaman utama sebuah pack (tanpa skor sesi yang belum selesai & tanpa kunci). */
     public function state(User $user, string $pack): array
     {
-        $p = $this->assertPackEnabled($pack);
+        $p = $this->assertPackAccessible($user, $pack);
         $level = $p['level'];
         $cfg = $this->levelConfig($level);
         $attempt = $this->currentAttempt($user, $pack);
@@ -714,8 +733,10 @@ class JlptTestService
                 'total' => $this->totalQuestions($pack, $key),
                 'enabled' => $s['enabled'],
                 'status' => $status,
-                // sesi 'ready' baru boleh dimulai bila sesi sebelumnya beres
-                'can_start' => $attempt !== null && $s['enabled'] && $status === 'ready' && $previousDone,
+                // sesi 'ready' baru boleh dimulai bila sesi sebelumnya beres; sesi 'running'
+                // harus selalu bisa DILANJUTKAN (user keluar/refresh di tengah ujian) —
+                // startSection() mengembalikan sesi berjalan apa adanya, timer tidak direset.
+                'can_start' => $attempt !== null && $s['enabled'] && in_array($status, ['ready', 'running'], true) && $previousDone,
                 'remaining_seconds' => $status === 'running' && ! $practice ? $this->remaining($row, $s) : null,
             ];
 
@@ -728,6 +749,7 @@ class JlptTestService
             'level' => $level,
             'format' => $p['format'] ?? 'classic',
             'title' => $p['title'],
+            'admin_only' => (bool) ($p['admin_only'] ?? false),
             'pass_total' => $cfg['pass_total'],
             'all_sections_available' => $this->allSectionsEnabled($level),
             'attempt_id' => $attempt?->id,
@@ -936,6 +958,12 @@ class JlptTestService
 
     public function findOwned(User $user, int $attemptId): UserJlptTestAttempt
     {
-        return UserJlptTestAttempt::where('user_id', $user->id)->findOrFail($attemptId);
+        $attempt = UserJlptTestAttempt::where('user_id', $user->id)->findOrFail($attemptId);
+
+        // Attempt pada pack khusus admin tidak boleh diakses lagi bila user bukan (lagi) admin.
+        $pack = config("jlpt.packs.{$attempt->pack}");
+        abort_if($pack !== null && ! $this->canAccessPack($user, $pack), 404);
+
+        return $attempt;
     }
 }

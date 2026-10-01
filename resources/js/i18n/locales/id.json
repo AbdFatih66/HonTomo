@@ -605,7 +605,9 @@
       "meta": "{level} · {minutes} menit · {total} soal",
       "in_progress": "Berjalan ({mode})",
       "best": "Terbaik: {score}/{max}",
-      "back": "Semua paket"
+      "back": "Semua paket",
+      "admin_only": "Khusus admin",
+      "admin_only_notice": "Paket ini berisi soal asli dan hanya dapat diakses oleh admin."
     },
     "practice": {
       "correct": "Benar!",

@@ -195,6 +195,15 @@ onMounted(load)
             </div>
 
             <VChip
+              v-if="p.admin_only"
+              color="info"
+              size="small"
+              variant="tonal"
+              prepend-icon="tabler-shield-lock"
+            >
+              {{ t('jlptTest.packs.admin_only') }}
+            </VChip>
+            <VChip
               v-if="p.in_progress"
               color="warning"
               size="small"
@@ -226,6 +235,17 @@ onMounted(load)
       >
         {{ t('jlptTest.packs.back') }}
       </VBtn>
+
+      <VAlert
+        v-if="state.admin_only"
+        type="info"
+        variant="tonal"
+        density="compact"
+        class="mb-6"
+        icon="tabler-shield-lock"
+      >
+        {{ t('jlptTest.packs.admin_only_notice') }}
+      </VAlert>
 
       <VAlert
         v-if="justDone"
