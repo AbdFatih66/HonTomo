@@ -58,4 +58,12 @@ return [
         ],
     ],
 
+    // Used by App\Services\GoogleTextToSpeechService and the
+    // `chokai:generate-audio` artisan command. Get a key from
+    // https://console.cloud.google.com/apis/credentials after enabling
+    // "Cloud Text-to-Speech API" on a Google Cloud project.
+    'google_tts' => [
+        'key' => env('GOOGLE_TTS_API_KEY'),
+    ],
+
 ];

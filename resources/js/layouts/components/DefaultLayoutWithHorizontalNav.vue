@@ -1,5 +1,6 @@
 <script setup>
 import navItems from '@/navigation/horizontal'
+import { useAuthStore } from '@/stores/auth'
 import { themeConfig } from '@themeConfig'
 
 // Components
@@ -13,10 +14,15 @@ import UserProfile from '@/layouts/components/UserProfile.vue'
 import NavBarI18n from '@core/components/I18n.vue'
 import { HorizontalNavLayout } from '@layouts'
 import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
+
+// Same rule as the sidebar: admin-only links (user management, audit log)
+// stay out of the horizontal menu entirely for non-admins.
+const authStore = useAuthStore()
+const filteredNavItems = computed(() => navItems.filter(item => !item.adminOnly || authStore.isAdmin))
 </script>
 
 <template>
-  <HorizontalNavLayout :nav-items="navItems">
+  <HorizontalNavLayout :nav-items="filteredNavItems">
     <!-- 👉 navbar -->
     <template #navbar>
       <RouterLink

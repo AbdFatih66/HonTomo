@@ -1,0 +1,309 @@
+{
+    "id": 24,
+    "focus": "Memberi dan menerima kebaikan — くれます、〜てあげます・〜てもらいます・〜てくれます",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、そのかばん、すてきですね。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。姉が誕生日にくれました。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいですね。わたしは、友達に日本語を教えてもらいます。"
+            },
+            {
+                "speaker": "female",
+                "text": "どんなことを教えてくれますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "漢字を教えてくれます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-24/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l24-kq1",
+                "prompt": "田口《たぐち》さんの　かばんは、だれが　くれましたか。",
+                "choices": [
+                    "お姉《ねえ》さん",
+                    "お母《かあ》さん",
+                    "友達《ともだち》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Tas Taguchi diberi oleh kakak perempuannya.",
+                    "en": "Taguchi's bag was given by her older sister."
+                },
+                "audio": null
+            },
+            {
+                "id": "l24-kq2",
+                "prompt": "男《おとこ》の　人《ひと》は、友達《ともだち》に　何《なに》を　教《おし》えてもらいますか。",
+                "choices": [
+                    "漢字《かんじ》",
+                    "料理《りょうり》",
+                    "歌《うた》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Laki-laki itu diajari kanji oleh temannya.",
+                    "en": "The man is being taught kanji by a friend."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l24-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "誕生日に、何をもらいましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達が、きれいな傘をくれました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q1.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　誕生日《たんじょうび》に　何《なに》を　もらいましたか。",
+            "choices": [
+                "時計《とけい》",
+                "靴《くつ》",
+                "傘《かさ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Ia menerima payung dari teman saat ulang tahun.",
+                "en": "He got an umbrella from a friend for his birthday."
+            }
+        },
+        {
+            "id": "l24-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "リナさんは、あした、どうやって空港へ行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達が車で送ってくれます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q2.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どうやって　空港《くうこう》へ　行《い》きますか。",
+            "choices": [
+                "友達《ともだち》が　車《くるま》で　送《おく》ってくれます。",
+                "一人《ひとり》で　バスで　行《い》きます。",
+                "兄《あに》が　電車《でんしゃ》で　連《つ》れて　行《い》ってくれます。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Temannya mengantar dengan mobil.",
+                "en": "A friend will drive him to the airport."
+            }
+        },
+        {
+            "id": "l24-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日曜日、何をしましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "友達に日本語を教えてあげました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q3.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　日曜日《にちようび》　何《なに》を　しましたか。",
+            "choices": [
+                "友達《ともだち》に　日本語《にほんご》を　教《おし》えてあげました。",
+                "友達《ともだち》に　本《ほん》を　貸《か》してあげました。",
+                "友達《ともだち》に　料理《りょうり》を　作《つく》ってあげました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hari Minggu ia mengajari temannya bahasa Jepang.",
+                "en": "On Sunday she taught her friend Japanese."
+            }
+        },
+        {
+            "id": "l24-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "そのかばん、新しいですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、姉に買ってもらいました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　だれに　かばんを　買《か》ってもらいましたか。",
+            "choices": [
+                "友達《ともだち》",
+                "お姉《ねえ》さん",
+                "お母《かあ》さん"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Tasnya dibelikan kakak perempuannya.",
+                "en": "His older sister bought him the bag."
+            }
+        },
+        {
+            "id": "l24-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "病院は、どうやって行きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わからなかったですから、友達に地図をかいてもらいました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　友達《ともだち》に　何《なに》を　してもらいましたか。",
+            "choices": [
+                "地図《ちず》を　かいてもらいました。",
+                "電話《でんわ》を　かけてもらいました。",
+                "車《くるま》で　送《おく》ってもらいました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Temannya menggambarkan peta untuknya.",
+                "en": "A friend drew him a map."
+            }
+        },
+        {
+            "id": "l24-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ブディさんは、日本語の勉強、どうしていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "友達が、毎晩、教えてくれます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　友達《ともだち》に　日本語《にほんご》を　教《おし》えてあげます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Temannya yang mengajarinya. Jawaban: Salah (×).",
+                "en": "A friend teaches her; she doesn't teach the friend. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l24-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "これ、おいしいですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "わたしが好きな料理です。母が作ってくれました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q7.mp3",
+            "prompt": "この　料理《りょうり》は　女《おんな》の　人《ひと》の　お母《かあ》さんが　作《つく》りました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ibunya yang memasak. Jawaban: Benar (○).",
+                "en": "Her mother made this dish. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l24-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "その荷物、持ってあげましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとう。でも、軽いですから、大丈夫です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　女《おんな》の　人《ひと》の　荷物《にもつ》を　持《も》ってあげました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia menawarkan tetapi ditolak. Jawaban: Salah (×).",
+                "en": "He offered, but she declined. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l24-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きのう、ハンさんに、傘を貸してあげました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。ハンさんは、雨のとき、いつも傘を忘れますね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q9.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　ハンさんに　傘《かさ》を　貸《か》しました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia meminjamkan payung pada Han. Jawaban: Benar (○).",
+                "en": "She lent an umbrella to Han. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l24-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ニコさんは、お金がありませんでしたから、ラニさんに、五千円貸してもらいました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-24/l24-q10.mp3",
+            "prompt": "ニコさんは　ラニさんに　お金《かね》を　借《か》りました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Nico meminjam uang dari Rani. Jawaban: Benar (○).",
+                "en": "Nico borrowed money from Rani. Answer: True (○)."
+            }
+        }
+    ]
+}

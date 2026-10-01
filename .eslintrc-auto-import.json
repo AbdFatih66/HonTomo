@@ -372,6 +372,12 @@
     "loginWithPasskey": true,
     "registerPasskey": true,
     "removePasskey": true,
-    "useAutoNext": true
+    "useAutoNext": true,
+    "buildListeningSteps": true,
+    "countCorrect": true,
+    "estimateScore": true,
+    "formatClock": true,
+    "mondaiBreakdown": true,
+    "sectionQuestions": true
   }
 }

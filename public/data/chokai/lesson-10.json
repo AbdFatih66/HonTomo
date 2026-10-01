@@ -1,0 +1,334 @@
+{
+    "id": 10,
+    "focus": "Ada dan letak — あります・います、〜に あります、上・下・前・後ろ・中・隣・近く、〜や〜",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "すみません。この近くに、スーパーがありますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ええ、あの銀行の隣にあります。"
+            },
+            {
+                "speaker": "female",
+                "text": "銀行の隣ですね。公園も、ありますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ええ、スーパーの後ろに、公園があります。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-10/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l10-kq1",
+                "prompt": "スーパーは　どこに　ありますか。",
+                "choices": [
+                    "銀行《ぎんこう》の　隣《となり》",
+                    "公園《こうえん》の　中《なか》",
+                    "駅《えき》の　前《まえ》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Supermarket ada di sebelah bank itu. Jawaban: sebelah bank.",
+                    "en": "The supermarket is next to that bank. Answer: next to the bank."
+                }
+            },
+            {
+                "id": "l10-kq2",
+                "prompt": "公園《こうえん》は　どこに　ありますか。",
+                "choices": [
+                    "スーパーの　後《うし》ろ",
+                    "銀行《ぎんこう》の　隣《となり》",
+                    "駅《えき》の　前《まえ》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Taman ada di belakang supermarket. Jawaban: belakang supermarket.",
+                    "en": "The park is behind the supermarket. Answer: behind the supermarket."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l10-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさん、いま、うちにだれがいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "母と友達がいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q1.mp3",
+            "prompt": "ハンさんの　うちに　だれが　いますか。",
+            "choices": [
+                "父《ちち》と　友達《ともだち》",
+                "母《はは》と　先生《せんせい》",
+                "母《はは》と　友達《ともだち》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Han, sekarang di rumah ada siapa?' 'Ada ibu dan teman.' Jawaban: ibu dan teman.",
+                "en": "Audio: 'Han, who is at your home now?' 'My mother and a friend.' Answer: mother and a friend."
+            }
+        },
+        {
+            "id": "l10-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あのう、わたしのかばんは、どこにありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "つくえの上にありますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q2.mp3",
+            "prompt": "かばんは　どこに　ありますか。",
+            "choices": [
+                "つくえの　下《した》",
+                "つくえの　上《うえ》",
+                "つくえの　隣《となり》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Tas saya di mana?' 'Ada di atas meja.' Jawaban: di atas meja.",
+                "en": "Audio: 'Where is my bag?' 'It is on the desk.' Answer: on the desk."
+            }
+        },
+        {
+            "id": "l10-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "駅の前に、何がありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "郵便局と銀行があります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q3.mp3",
+            "prompt": "駅《えき》の　前《まえ》に　何《なに》が　ありますか。",
+            "choices": [
+                "郵便局《ゆうびんきょく》と　本屋《ほんや》",
+                "銀行《ぎんこう》と　喫茶店《きっさてん》",
+                "郵便局《ゆうびんきょく》と　銀行《ぎんこう》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Di depan stasiun ada apa?' 'Ada kantor pos dan bank.' Jawaban: kantor pos dan bank.",
+                "en": "Audio: 'What is in front of the station?' 'There is a post office and a bank.' Answer: a post office and a bank."
+            }
+        },
+        {
+            "id": "l10-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、スーパーは、どこにありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あのビルの中にあります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q4.mp3",
+            "prompt": "スーパーは　どこに　ありますか。",
+            "choices": [
+                "ビルの　前《まえ》",
+                "ビルの　後《うし》ろ",
+                "ビルの　中《なか》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Maaf, supermarket di mana?' 'Ada di dalam gedung itu.' Jawaban: di dalam gedung.",
+                "en": "Audio: 'Excuse me, where is the supermarket?' 'It is inside that building.' Answer: inside the building."
+            }
+        },
+        {
+            "id": "l10-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "猫は、どこにいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いすの上にいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q5.mp3",
+            "prompt": "猫《ねこ》は　どこに　いますか。",
+            "choices": [
+                "つくえの　下《した》",
+                "ドアの　前《まえ》",
+                "いすの　上《うえ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Kucingnya di mana?' 'Ada di atas kursi.' Jawaban: di atas kursi.",
+                "en": "Audio: 'Where is the cat?' 'It is on the chair.' Answer: on the chair."
+            }
+        },
+        {
+            "id": "l10-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、かさは、どこにありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いすの上です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "え？ありませんよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あ、すみません。ドアの隣です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q6.mp3",
+            "prompt": "かさは　どこに　ありますか。",
+            "choices": [
+                "いすの　上《うえ》",
+                "つくえの　下《した》",
+                "ドアの　隣《となり》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Payung ada di mana? Jawaban: di sebelah pintu (setelah dikoreksi).",
+                "en": "Where is the umbrella? Answer: next to the door (after the correction)."
+            }
+        },
+        {
+            "id": "l10-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、ヌルさんは、どこにいますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "学校の前にいます。友達といっしょです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q7.mp3",
+            "prompt": "ヌルさんは　どこに　いますか。",
+            "choices": [
+                "駅《えき》の　前《まえ》",
+                "学校《がっこう》の　中《なか》",
+                "学校《がっこう》の　前《まえ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Nur ada di mana? Jawaban: di depan sekolah.",
+                "en": "Where is Nur? Answer: in front of the school."
+            }
+        },
+        {
+            "id": "l10-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "公園の中に、何がありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "木や花があります。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "犬もいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、犬もいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q8.mp3",
+            "prompt": "公園《こうえん》の　中《なか》に　何《なに》が　ありますか。",
+            "choices": [
+                "木《き》と　花《はな》",
+                "木《き》と　犬《いぬ》",
+                "花《はな》と　いす"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Di dalam taman ada apa (benda)? Jawaban: pohon dan bunga (anjing 'ada' dengan います).",
+                "en": "What things are in the park? Answer: trees and flowers (the dog is listed with います)."
+            }
+        },
+        {
+            "id": "l10-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この近くに、銀行がありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、銀行はありません。郵便局があります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q9.mp3",
+            "prompt": "この　近《ちか》くに　銀行《ぎんこう》が　あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Di dekat sini ada bank. Jawaban: Salah (×) — hanya ada kantor pos.",
+                "en": "There is a bank nearby. Answer: False (×) — only a post office."
+            }
+        },
+        {
+            "id": "l10-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヌルさんのうちに、だれがいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "父と母がいます。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "犬もいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、犬はいません。猫がいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-10/l10-q10.mp3",
+            "prompt": "ヌルさんの　うちに　猫《ねこ》が　います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Di rumah Nur ada kucing. Jawaban: Benar (○).",
+                "en": "There is a cat at Nur's house. Answer: True (○)."
+            }
+        }
+    ]
+}

@@ -26,7 +26,10 @@ return new class extends Migration
 
             $table->index('jlpt_level');
             $table->index('category_id');
-            $table->fullText(['japanese', 'hiragana', 'romaji', 'meaning_id', 'meaning_en'], 'vocabularies_fulltext');
+            // SQLite (database test) tidak mendukung fulltext index; MySQL produksi tetap memakainya.
+            if (Schema::getConnection()->getDriverName() !== 'sqlite') {
+                $table->fullText(['japanese', 'hiragana', 'romaji', 'meaning_id', 'meaning_en'], 'vocabularies_fulltext');
+            }
         });
     }
 

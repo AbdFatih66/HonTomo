@@ -1,0 +1,331 @@
+{
+    "id": 13,
+    "focus": "Keinginan dan tujuan — 〜が欲しい、〜たいです、〜に行きます・来ます（tujuan）、何か・どこか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、日曜日は、何をしたいですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "友達と、サッカーをしに行きたいです。田口さんは。"
+            },
+            {
+                "speaker": "female",
+                "text": "わたしは、うちで寝たいです。"
+            },
+            {
+                "speaker": "male",
+                "text": "そうですか。何か、欲しい物が、ありますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "新しいかさが欲しいです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-13/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l13-kq1",
+                "prompt": "田口《たぐち》さんは　日曜日《にちようび》　何《なに》を　したいですか。",
+                "choices": [
+                    "海《うみ》へ泳《およ》ぎに行《い》きたいです",
+                    "うちで寝《ね》たいです",
+                    "自転車《じてんしゃ》を買《か》いたいです"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Taguchi bilang ingin tidur di rumah pada hari Minggu (Budi yang ingin ke laut). Jawaban: tidur di rumah.",
+                    "en": "Taguchi says she wants to sleep at home on Sunday (it's Budi who wants to go swim in the sea). Answer: sleep at home."
+                }
+            },
+            {
+                "id": "l13-kq2",
+                "prompt": "ブディさんは　日曜日《にちようび》　何《なに》を　したいですか。",
+                "choices": [
+                    "友達《ともだち》とサッカーをしに行《い》きたいです",
+                    "うちで寝《ね》たいです",
+                    "買《か》い物《もの》に行《い》きたいです"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi ingin pergi main sepak bola dengan teman hari Minggu. Jawaban: main sepak bola dengan teman.",
+                    "en": "Budi wants to go play soccer with friends on Sunday. Answer: play soccer with friends."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l13-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さん、来月の誕生日に、何が欲しいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "新しいかばんが欲しいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q1.mp3",
+            "prompt": "田口《たぐち》さんは　何《なに》が　欲《ほ》しいですか。",
+            "choices": [
+                "くつ",
+                "時計《とけい》",
+                "かばん"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Bu Taguchi, untuk ulang tahun bulan depan ingin apa?' 'Saya ingin tas baru.' Jawaban: tas.",
+                "en": "Audio: 'Ms. Taguchi, what do you want for your birthday next month?' 'I want a new bag.' Answer: a bag."
+            }
+        },
+        {
+            "id": "l13-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、あした、何をしたいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "サッカーをしたいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q2.mp3",
+            "prompt": "ブディさんは　あした　何《なに》を　したいですか。",
+            "choices": [
+                "テニス",
+                "買《か》い物《もの》",
+                "サッカー"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Budi, besok ingin melakukan apa?' 'Ingin main sepak bola.' Jawaban: sepak bola.",
+                "en": "Audio: 'Budi, what do you want to do tomorrow?' 'I want to play soccer.' Answer: play soccer."
+            }
+        },
+        {
+            "id": "l13-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、どこへ、何をしに行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "図書館へ、本を借りに行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q3.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　図書館《としょかん》へ　何《なに》を　しに　行《い》きますか。",
+            "choices": [
+                "勉強《べんきょう》しに",
+                "本《ほん》を　借《か》りに",
+                "友達《ともだち》に　会《あ》いに"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Hanna, pergi ke mana dan untuk apa?' 'Ke perpustakaan untuk meminjam buku.' Jawaban: meminjam buku.",
+                "en": "Audio: 'Hanna, where are you going and what for?' 'To the library, to borrow a book.' Answer: to borrow a book."
+            }
+        },
+        {
+            "id": "l13-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "休みに、どこへ行きたいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "京都へ行きたいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　休《やす》みに　どこへ　行《い》きたいですか。",
+            "choices": [
+                "大阪《おおさか》",
+                "京都《きょうと》",
+                "名古屋《なごや》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Saat libur, ingin pergi ke mana?' 'Ingin pergi ke Kyoto.' Jawaban: Kyoto.",
+                "en": "Audio: 'Where do you want to go during the holiday?' 'I want to go to Kyoto.' Answer: Kyoto."
+            }
+        },
+        {
+            "id": "l13-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "おなかがすきましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、すしが食べたいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　何《なに》が　食《た》べたいですか。",
+            "choices": [
+                "パン",
+                "すし",
+                "ケーキ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Apakah kamu lapar?' 'Ya, saya ingin makan sushi.' Jawaban: sushi.",
+                "en": "Audio: 'Are you hungry?' 'Yes, I want to eat sushi.' Answer: sushi."
+            }
+        },
+        {
+            "id": "l13-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヨンさん、何が欲しいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "車が欲しいです。でも、高いですから、自転車を買います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q6.mp3",
+            "prompt": "ヨンさんは　車《くるま》を　買《か》います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Yong akan membeli mobil. Jawaban: Salah (×) — mahal, jadi dia membeli sepeda.",
+                "en": "Yong will buy a car. Answer: False (×) — it is expensive, so he buys a bicycle."
+            }
+        },
+        {
+            "id": "l13-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日曜日、いっしょに映画を見に行きませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません。日曜日は、友達に会いに行きますから。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうですか。じゃ、月曜日は。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "月曜日は、時間があります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　日曜日《にちようび》　友達《ともだち》に　会《あ》いに　行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Si laki-laki pergi menemui teman pada hari Minggu. Jawaban: Benar (○).",
+                "en": "The man goes to meet a friend on Sunday. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l13-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさん、来月、国へ帰りますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、家族に会いに帰ります。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "何日ぐらいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "とおかぐらいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q8.mp3",
+            "prompt": "ハンさんは　家族《かぞく》に　会《あ》いに　国《くに》へ　帰《かえ》ります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Han pulang ke negaranya untuk menemui keluarga. Jawaban: Benar (○).",
+                "en": "Han goes back to his country to see his family. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l13-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ダニさんは、日本へ、何をしに来ましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "仕事をしに来ました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どんな仕事ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "車の会社で働きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q9.mp3",
+            "prompt": "ダニさんは　日本《にほん》へ　勉強《べんきょう》に　来《き》ました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Dani datang ke Jepang untuk belajar. Jawaban: Salah (×) — untuk bekerja.",
+                "en": "Dani came to Japan to study. Answer: False (×) — to work."
+            }
+        },
+        {
+            "id": "l13-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日曜日、どこか行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、デパートへ、くつを買いに行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-13/l13-q10.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　デパートへ　時計《とけい》を　買《か》いに　行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Si laki-laki pergi ke toserba untuk membeli jam. Jawaban: Salah (×) — untuk membeli sepatu.",
+                "en": "The man goes to the department store to buy a watch. Answer: False (×) — to buy shoes."
+            }
+        }
+    ]
+}

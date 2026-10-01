@@ -1,160 +1,56 @@
 <script setup>
 import Shepherd from 'shepherd.js'
-import { withQuery } from 'ufo'
+import verticalNavItems from '@/navigation/vertical'
+import { useAuthStore } from '@/stores/auth'
 import { useConfigStore } from '@core/stores/config'
 
 defineOptions({
   inheritAttrs: false,
 })
 
+const { t } = useI18n()
 const configStore = useConfigStore()
-const isAppSearchBarVisible = ref(false)
-const isLoading = ref(false)
-
-// 👉 Default suggestions
-const suggestionGroups = [
-  {
-    title: 'Popular Searches',
-    content: [
-      {
-        icon: 'tabler-chart-bar',
-        title: 'Analytics',
-        url: { name: 'dashboards-analytics' },
-      },
-      {
-        icon: 'tabler-chart-donut-3',
-        title: 'CRM',
-        url: { name: 'dashboards-crm' },
-      },
-      {
-        icon: 'tabler-shopping-cart',
-        title: 'eCommerce',
-        url: { name: 'dashboards-ecommerce' },
-      },
-      {
-        icon: 'tabler-truck',
-        title: 'Logistics',
-        url: { name: 'dashboards-logistics' },
-      },
-    ],
-  },
-  {
-    title: 'Apps & Pages',
-    content: [
-      {
-        icon: 'tabler-calendar',
-        title: 'Calendar',
-        url: { name: 'apps-calendar' },
-      },
-      {
-        icon: 'tabler-lock',
-        title: 'Roles & Permissions',
-        url: { name: 'apps-roles' },
-      },
-      {
-        icon: 'tabler-settings',
-        title: 'Account Settings',
-        url: {
-          name: 'pages-account-settings-tab',
-          params: { tab: 'account' },
-        },
-      },
-      {
-        icon: 'tabler-copy',
-        title: 'Dialog Examples',
-        url: { name: 'pages-dialog-examples' },
-      },
-    ],
-  },
-  {
-    title: 'User Interface',
-    content: [
-      {
-        icon: 'tabler-typography',
-        title: 'Typography',
-        url: { name: 'pages-typography' },
-      },
-      {
-        icon: 'tabler-menu-2',
-        title: 'Accordion',
-        url: { name: 'components-expansion-panel' },
-      },
-      {
-        icon: 'tabler-info-triangle',
-        title: 'Alert',
-        url: { name: 'components-alert' },
-      },
-      {
-        icon: 'tabler-checkbox',
-        title: 'Cards',
-        url: { name: 'pages-cards-card-basic' },
-      },
-    ],
-  },
-  {
-    title: 'Forms & Tables',
-    content: [
-      {
-        icon: 'tabler-circle-dot',
-        title: 'Radio',
-        url: { name: 'forms-radio' },
-      },
-      {
-        icon: 'tabler-file-invoice',
-        title: 'Form Layouts',
-        url: { name: 'forms-form-layouts' },
-      },
-      {
-        icon: 'tabler-table',
-        title: 'Table',
-        url: { name: 'tables-data-table' },
-      },
-      {
-        icon: 'tabler-edit',
-        title: 'Editor',
-        url: { name: 'forms-editors' },
-      },
-    ],
-  },
-]
-
-// 👉 No Data suggestion
-const noDataSuggestions = [
-  {
-    title: 'Analytics',
-    icon: 'tabler-chart-bar',
-    url: { name: 'dashboards-analytics' },
-  },
-  {
-    title: 'CRM',
-    icon: 'tabler-chart-donut-3',
-    url: { name: 'dashboards-crm' },
-  },
-  {
-    title: 'eCommerce',
-    icon: 'tabler-shopping-cart',
-    url: { name: 'dashboards-ecommerce' },
-  },
-]
-
-const searchQuery = ref('')
+const authStore = useAuthStore()
 const router = useRouter()
-const searchResult = ref([])
 
-const fetchResults = async () => {
-  isLoading.value = true
+const isAppSearchBarVisible = ref(false)
+const searchQuery = ref('')
 
-  const { data } = await useApi(withQuery('/app-bar/search', { q: searchQuery.value }))
+// 👉 Semua halaman nyata di aplikasi ini — sama persis dengan menu di sidebar
+// (dan menu horizontal, yang sekarang menggunakan daftar yang sama), jadi
+// pencarian selalu mengarah ke halaman yang benar-benar ada.
+const pages = computed(() => verticalNavItems
+  .filter(item => !item.adminOnly || authStore.isAdmin)
+  .map(item => ({
+    icon: item.icon?.icon ?? 'tabler-point',
+    title: t(item.title),
+    url: item.to,
+  })))
 
-  searchResult.value = data.value
+// 👉 Suggestion ditampilkan sebelum mengetik apa pun.
+const suggestionGroups = computed(() => [
+  {
+    title: t('search.pages'),
+    content: pages.value,
+  },
+])
 
-  // ℹ️ simulate loading: we have used setTimeout for better user experience your can remove it
-  setTimeout(() => {
-    isLoading.value = false
-  }, 500)
-}
+// 👉 Ditampilkan waktu tidak ada hasil pencarian sama sekali.
+const noDataSuggestions = computed(() => pages.value.slice(0, 3))
 
-watch(searchQuery, fetchResults)
+// 👉 Pencarian di sisi klien: cocokkan judul halaman (sudah diterjemahkan)
+// dengan kata kunci — tidak perlu memanggil API sama sekali.
+const searchResult = computed(() => {
+  const query = searchQuery.value.trim().toLowerCase()
+  if (!query)
+    return []
+
+  const matches = pages.value.filter(page => page.title.toLowerCase().includes(query))
+  if (!matches.length)
+    return []
+
+  return [{ title: t('search.pages'), children: matches }]
+})
 
 const closeSearchBar = () => {
   isAppSearchBarVisible.value = false
@@ -187,7 +83,7 @@ const LazyAppBarSearch = defineAsyncComponent(() => import('@core/components/App
       class="d-none d-md-flex align-center text-disabled ms-2"
       @click="Shepherd.activeTour?.cancel()"
     >
-      <span class="me-2">Search</span>
+      <span class="me-2">{{ t('search.trigger') }}</span>
       <span class="meta-key">&#8984;K</span>
     </span>
   </div>
@@ -196,10 +92,10 @@ const LazyAppBarSearch = defineAsyncComponent(() => import('@core/components/App
   <LazyAppBarSearch
     v-model:is-dialog-visible="isAppSearchBarVisible"
     :search-results="searchResult"
-    :is-loading="isLoading"
+    :is-loading="false"
     @search="searchQuery = $event"
   >
-    <!-- suggestion -->
+    <!-- suggestion: seluruh halaman aplikasi, sebelum mengetik apa pun -->
     <template #suggestions>
       <VCardText class="app-bar-search-suggestions pa-12">
         <VRow v-if="suggestionGroups">
@@ -207,7 +103,6 @@ const LazyAppBarSearch = defineAsyncComponent(() => import('@core/components/App
             v-for="suggestion in suggestionGroups"
             :key="suggestion.title"
             cols="12"
-            sm="6"
           >
             <p
               class="custom-letter-spacing text-disabled text-uppercase py-2 px-4 mb-0"
@@ -240,7 +135,7 @@ const LazyAppBarSearch = defineAsyncComponent(() => import('@core/components/App
     <!-- no data suggestion -->
     <template #noDataSuggestion>
       <div class="mt-9">
-        <span class="d-flex justify-center text-disabled mb-2">Try searching for</span>
+        <span class="d-flex justify-center text-disabled mb-2">{{ t('search.try_searching') }}</span>
         <h6
           v-for="suggestion in noDataSuggestions"
           :key="suggestion.title"

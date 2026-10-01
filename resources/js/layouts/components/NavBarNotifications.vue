@@ -1,79 +1,82 @@
 <script setup>
-import avatar3 from '@images/avatars/avatar-3.png'
-import avatar4 from '@images/avatars/avatar-4.png'
-import avatar5 from '@images/avatars/avatar-5.png'
-import paypal from '@images/cards/paypal-rounded.png'
+const { t, locale } = useI18n()
 
-const notifications = ref([
-  {
-    id: 1,
-    img: avatar4,
-    title: 'Congratulation Flora! 🎉',
-    subtitle: 'Won the monthly best seller badge',
-    time: 'Today',
-    isSeen: true,
-  },
-  {
-    id: 2,
-    text: 'Tom Holland',
-    title: 'New user registered.',
-    subtitle: '5 hours ago',
-    time: 'Yesterday',
-    isSeen: false,
-  },
-  {
-    id: 3,
-    img: avatar5,
-    title: 'New message received 👋🏻',
-    subtitle: 'You have 10 unread messages',
-    time: '11 Aug',
-    isSeen: true,
-  },
-  {
-    id: 4,
-    img: paypal,
-    title: 'PayPal',
-    subtitle: 'Received Payment',
-    time: '25 May',
-    isSeen: false,
-    color: 'error',
-  },
-  {
-    id: 5,
-    img: avatar3,
-    title: 'Received Order 📦',
-    subtitle: 'New order received from john',
-    time: '19 Mar',
-    isSeen: true,
-  },
-])
+// 👉 Notifikasi nyata dari backend (tabel user_notifications) — dibuat oleh
+// NotificationService setiap kali pengguna benar-benar mencapai sesuatu
+// (pelajaran selesai/sempurna, milestone streak). Tidak ada lagi data demo
+// (PayPal, "Tom Holland", dst).
+const rawNotifications = ref([])
 
-const removeNotification = notificationId => {
-  notifications.value.forEach((item, index) => {
-    if (notificationId === item.id)
-      notifications.value.splice(index, 1)
-  })
+function relativeTime(dateString) {
+  const date = new Date(dateString)
+  const diffSeconds = Math.round((date.getTime() - Date.now()) / 1000)
+  const rtf = new Intl.RelativeTimeFormat(locale.value === 'id' ? 'id' : 'en', { numeric: 'auto' })
+
+  const ranges = [
+    ['year', 60 * 60 * 24 * 365],
+    ['month', 60 * 60 * 24 * 30],
+    ['day', 60 * 60 * 24],
+    ['hour', 60 * 60],
+    ['minute', 60],
+  ]
+
+  for (const [unit, secondsInUnit] of ranges) {
+    if (Math.abs(diffSeconds) >= secondsInUnit)
+      return rtf.format(Math.round(diffSeconds / secondsInUnit), unit)
+  }
+
+  return rtf.format(diffSeconds, 'second')
 }
 
-const markRead = notificationId => {
-  notifications.value.forEach(item => {
-    notificationId.forEach(id => {
-      if (id === item.id)
-        item.isSeen = true
-    })
-  })
+// 👉 Bentuk yang dipahami komponen generik @core/components/Notifications.vue.
+// `title`/`subtitle` disimpan sebagai i18n key di server supaya tetap
+// diterjemahkan sesuai bahasa UI saat ini, bukan bahasa waktu kejadiannya.
+const notifications = computed(() => rawNotifications.value.map(n => ({
+  id: n.id,
+  icon: n.icon,
+  color: n.color,
+  title: t(n.title),
+  subtitle: n.subtitle?.key ? t(n.subtitle.key, n.subtitle) : '',
+  time: relativeTime(n.created_at),
+  isSeen: n.is_read,
+})))
+
+async function loadNotifications() {
+  try {
+    const res = await $api('/notifications')
+
+    rawNotifications.value = res.notifications ?? []
+  }
+  catch {
+    // Gagal memuat (mis. offline) — biarkan lonceng tampil kosong daripada
+    // menampilkan data palsu.
+  }
 }
 
-const markUnRead = notificationId => {
-  notifications.value.forEach(item => {
-    notificationId.forEach(id => {
-      if (id === item.id)
-        item.isSeen = false
-    })
-  })
+loadNotifications()
+
+function removeNotification(notificationId) {
+  rawNotifications.value = rawNotifications.value.filter(item => item.id !== notificationId)
+  $api(`/notifications/${notificationId}`, { method: 'DELETE' }).catch(() => {})
 }
 
-const handleNotificationClick = notification => {
+function markRead(ids) {
+  rawNotifications.value.forEach(item => {
+    if (ids.includes(item.id))
+      item.is_read = true
+  })
+  $api('/notifications/read', { method: 'PATCH', body: { ids } }).catch(() => {})
+}
+
+function markUnread(ids) {
+  rawNotifications.value.forEach(item => {
+    if (ids.includes(item.id))
+      item.is_read = false
+  })
+  $api('/notifications/unread', { method: 'PATCH', body: { ids } }).catch(() => {})
+}
+
+function handleNotificationClick(notification) {
   if (!notification.isSeen)
     markRead([notification.id])
 }
@@ -84,7 +87,7 @@ const handleNotificationClick = notification => {
     :notifications="notifications"
     @remove="removeNotification"
     @read="markRead"
-    @unread="markUnRead"
+    @unread="markUnread"
     @click:notification="handleNotificationClick"
   />
 </template>

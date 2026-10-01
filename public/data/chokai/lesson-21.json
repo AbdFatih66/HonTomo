@@ -1,0 +1,305 @@
+{
+    "id": 21,
+    "focus": "Pendapat dan kutipan — 〜と思います、〜と言います、〜でしょう？、〜について",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "あしたは、天気がいいと思いますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、雨が降ると思います。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですか。じゃ、傘を持って行きます。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしも持って行きます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-21/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l21-kq1",
+                "prompt": "男《おとこ》の　人《ひと》は、あしたの　天気《てんき》について、どう　思《おも》っていますか。",
+                "choices": [
+                    "雨《あめ》が　降《ふ》ると　思《おも》っています。",
+                    "晴《は》れると　思《おも》っています。",
+                    "わからないと　言《い》っています。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Laki-laki itu pikir besok akan hujan.",
+                    "en": "The man thinks it will rain tomorrow."
+                },
+                "audio": null
+            },
+            {
+                "id": "l21-kq2",
+                "prompt": "女《おんな》の　人《ひと》は、あした　何《なに》を　持《も》って　行《い》きますか。",
+                "choices": [
+                    "傘《かさ》",
+                    "地図《ちず》",
+                    "カメラ"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Perempuan itu akan membawa payung besok.",
+                    "en": "The woman will bring an umbrella tomorrow."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l21-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あしたのテストは、難しいと思いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、あまり難しくないと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q1.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　あしたの　テストを　どう　思《おも》っていますか。",
+            "choices": [
+                "あまり　難《むずか》しくないと　思《おも》います。",
+                "とても　簡単《かんたん》だと　思《おも》います。",
+                "とても　難《むずか》しいと　思《おも》います。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia pikir tesnya tidak terlalu sulit.",
+                "en": "He thinks the test is not very difficult."
+            }
+        },
+        {
+            "id": "l21-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日本の食べ物について、どう思いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "おいしいですが、ちょっと高いと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q2.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　日本《にほん》の　食《た》べ物《もの》を　どう　思《おも》いますか。",
+            "choices": [
+                "おいしくないですが、安《やす》いと　思《おも》います。",
+                "おいしいですが、高《たか》いと　思《おも》います。",
+                "おいしいですが、少《すこ》ないと　思《おも》います。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia pikir makanan Jepang enak tetapi mahal.",
+                "en": "She thinks Japanese food is tasty but expensive."
+            }
+        },
+        {
+            "id": "l21-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先生は、何と言いましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あしたは、テストがないと言いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q3.mp3",
+            "prompt": "先生《せんせい》は　何《なん》と　言《い》いましたか。",
+            "choices": [
+                "テストが　あると　言《い》いました。",
+                "テストが　ないと　言《い》いました。",
+                "休《やす》みだと　言《い》いました。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Guru bilang besok tidak ada tes.",
+                "en": "The teacher said there is no test tomorrow."
+            }
+        },
+        {
+            "id": "l21-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この店のケーキは、おいしいでしょう？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、とても。わたしは、チョコレートケーキが好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どんな　ケーキが　好《す》きですか。",
+            "choices": [
+                "チーズケーキ",
+                "バナナケーキ",
+                "チョコレートケーキ"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Ia suka kue cokelat.",
+                "en": "He likes chocolate cake."
+            }
+        },
+        {
+            "id": "l21-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "新しい駅について、どう思いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "きれいで便利だと思います。でも、人が多いと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　新《あたら》しい　駅《えき》を　どう　思《おも》っていますか。",
+            "choices": [
+                "古《ふる》くて　暗《くら》いですが、人《ひと》が　少《すく》ない。",
+                "きれいで　便利《べんり》ですが、人《ひと》が　多《おお》い。",
+                "きれいですが、遠《とお》い。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia pikir stasiun baru bersih dan praktis, tetapi ramai.",
+                "en": "He thinks the new station is clean and convenient but crowded."
+            }
+        },
+        {
+            "id": "l21-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あしたの会議は、何時からですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "十時からだと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　会議《かいぎ》が　十時《じゅうじ》からだと　思《おも》っています。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia mengira rapat mulai jam 10. Jawaban: Benar (○).",
+                "en": "She thinks the meeting starts at 10. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l21-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あの映画は、おもしろいと思いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、あまりおもしろくないと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　あの　映画《えいが》が　おもしろいと　思《おも》っています。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia menganggapnya kurang menarik. Jawaban: Salah (×).",
+                "en": "He thinks the film is not very interesting. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l21-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの人は、先生でしょう？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、学生ですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q8.mp3",
+            "prompt": "あの　人《ひと》は　先生《せんせい》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Orang itu mahasiswa. Jawaban: Salah (×).",
+                "en": "That person is a student. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l21-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さんは、あした来ますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "来ないと思います。あしたは休みですから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q9.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　田口《たぐち》さんが　来《こ》ないと　思《おも》っています。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia mengira Taguchi tidak datang. Jawaban: Benar (○).",
+                "en": "She thinks Taguchi will not come. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l21-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの店のカレーについて、どう思いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "とてもおいしいと思います。でも、安くないと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-21/l21-q10.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　あの　店《みせ》の　カレーが　安《やす》いと　思《おも》っています。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia mengira kari itu tidak murah. Jawaban: Salah (×).",
+                "en": "She thinks the curry is not cheap. Answer: False (×)."
+            }
+        }
+    ]
+}

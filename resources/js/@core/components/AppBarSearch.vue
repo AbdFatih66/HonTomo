@@ -25,6 +25,9 @@ const emit = defineEmits([
   'search',
 ])
 
+const { t } = useI18n()
+
+
 
 // 👉 Hotkey
 
@@ -193,7 +196,7 @@ watch(() => props.isDialogVisible, () => {
                     icon="tabler-file-alert"
                   />
                   <div class="d-flex align-center flex-wrap justify-center gap-2 text-h5 mt-3">
-                    <span>No Result For </span>
+                    <span>{{ t('search.no_result') }} </span>
                     <span>"{{ searchQueryLocal }}"</span>
                   </div>
 

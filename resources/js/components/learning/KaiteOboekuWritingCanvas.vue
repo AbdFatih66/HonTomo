@@ -8,6 +8,7 @@
 // move on. No outline, no character shown beforehand: nothing here hints at
 // what the glyph looks like.
 import HanziWriter from 'hanzi-writer'
+import { staticPrimaryColor } from '@/plugins/vuetify/theme'
 import kanaStrokes from '@/data/kana-strokes.json'
 
 const props = defineProps({
@@ -61,7 +62,7 @@ function createWriter() {
     drawingWidth: boldStrokeWidth,
     strokeColor: '#3d3d3d',
     outlineColor: '#dddddd',
-    drawingColor: '#6750a4',
+    drawingColor: staticPrimaryColor,
     highlightColor: '#ffca28',
     charDataLoader,
 

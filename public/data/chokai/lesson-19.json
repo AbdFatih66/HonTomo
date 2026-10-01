@@ -1,0 +1,292 @@
+{
+    "id": 19,
+    "focus": "Pengalaman, contoh kegiatan, perubahan — 〜たことがあります、〜たり〜たりします、〜くなります・〜になります",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさんは、富士山に登ったことがありますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、ありません。田口さんは。"
+            },
+            {
+                "speaker": "female",
+                "text": "去年、一回登りました。とてもきれいでしたよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいですね。わたしも、登りたいです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-19/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l19-kq1",
+                "prompt": "ブディさんは、富士山《ふじさん》に　登《のぼ》ったことが　ありますか。",
+                "choices": [
+                    "いいえ、ありません。",
+                    "はい、一回《いっかい》あります。",
+                    "はい、二回《にかい》あります。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi belum pernah mendaki Gunung Fuji.",
+                    "en": "Budi has never climbed Mt. Fuji."
+                },
+                "audio": null
+            },
+            {
+                "id": "l19-kq2",
+                "prompt": "田口《たぐち》さんは、富士山《ふじさん》に　何回《なんかい》　登《のぼ》ったことが　ありますか。",
+                "choices": [
+                    "一回《いっかい》",
+                    "二回《にかい》",
+                    "三回《さんかい》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Taguchi pernah mendaki Gunung Fuji satu kali.",
+                    "en": "Taguchi has climbed Mt. Fuji once."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l19-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさんは、日本で、どこへ行ったことがありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "京都と奈良へ行ったことがあります。北海道は、まだありません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q1.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　どこへ　行《い》ったことが　ありますか。",
+            "choices": [
+                "京都《きょうと》と　奈良《なら》",
+                "奈良《なら》と　北海道《ほっかいどう》",
+                "京都《きょうと》と　北海道《ほっかいどう》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia pernah ke Kyoto dan Nara (belum ke Hokkaido).",
+                "en": "She has been to Kyoto and Nara, not yet Hokkaido."
+            }
+        },
+        {
+            "id": "l19-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日曜日は、いつも何をしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達と会って、買い物をしたり、映画を見たりします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q2.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　日曜日《にちようび》　何《なに》を　しますか。",
+            "choices": [
+                "料理《りょうり》を　作《つく》ったり、映画《えいが》を　見《み》たり　します。",
+                "買《か》い物《もの》を　したり、テニスを　したり　します。",
+                "買《か》い物《もの》を　したり、映画《えいが》を　見《み》たり　します。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Hari Minggu ia berbelanja, menonton film, dan sebagainya.",
+                "en": "On Sundays he goes shopping, watches movies, and so on."
+            }
+        },
+        {
+            "id": "l19-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "六月になりましたね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、だんだん暑くなりましたね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q3.mp3",
+            "prompt": "天気《てんき》は　どう　なりましたか。",
+            "choices": [
+                "暗《くら》く　なりました。",
+                "寒《さむ》く　なりました。",
+                "暑《あつ》く　なりました。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Cuaca menjadi panas.",
+                "en": "The weather has become hot."
+            }
+        },
+        {
+            "id": "l19-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヨンさんは、来年の四月に、何になりますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あおぞら大学の学生になります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　来年《らいねん》の　四月《しがつ》に　何《なに》に　なりますか。",
+            "choices": [
+                "大学《だいがく》の　学生《がくせい》",
+                "先生《せんせい》",
+                "会社員《かいしゃいん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "April tahun depan ia menjadi mahasiswa universitas.",
+                "en": "Next April he will become a university student."
+            }
+        },
+        {
+            "id": "l19-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "スミスさん、京都へ行ったことがありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、二回あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　京都《きょうと》へ　行《い》ったことが　あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia pernah ke Kyoto dua kali. Jawaban: Benar (○).",
+                "en": "She has been to Kyoto twice. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l19-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ゲイリーさん、元気がありませんね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、ゆうべ、あまり寝ませんでしたから、眠いです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q6.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　あまり　眠《ねむ》くないです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia mengantuk. Jawaban: Salah (×).",
+                "en": "He is sleepy. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l19-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "おもしろい写真ですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、この写真は、去年、北海道で撮りました。雪が多かったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　北海道《ほっかいどう》へ　行《い》ったことが　あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia pernah ke Hokkaido. Jawaban: Benar (○).",
+                "en": "She has been to Hokkaido. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l19-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あのレストランのカレーを、食べたことがありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、ありません。でも、友達は食べたことがあります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　そのカレーを　食《た》べたことが　あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Yang pernah makan adalah temannya. Jawaban: Salah (×).",
+                "en": "It is his friend who has eaten it. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l19-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "このシャツ、いくらですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "一つ、二千円です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "もう少し安くなりませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃ、二つで、三千円。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "じゃ、二つください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-19/l19-q9.mp3",
+            "prompt": "シャツは　一《ひと》つ　二千円《にせんえん》に　なりました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Setelah ditawar, dua kaos 3.000 yen (1.500 per buah). Jawaban: Salah (×).",
+                "en": "After bargaining, two shirts cost 3,000 yen. Answer: False (×)."
+            }
+        }
+    ]
+}

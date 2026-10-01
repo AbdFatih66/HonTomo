@@ -22,6 +22,16 @@ export default [
     icon: { icon: 'tabler-pencil-check' },
   },
   {
+    title: 'nav.jlpt_test',
+    to: { name: 'jlpt-test' },
+    icon: { icon: 'tabler-certificate' },
+  },
+  {
+    title: 'nav.chokai',
+    to: { name: 'chokai' },
+    icon: { icon: 'tabler-headphones' },
+  },
+  {
     title: 'nav.kaite_oboeru',
     to: { name: 'kaite-oboeru' },
     icon: { icon: 'tabler-writing-sign' },

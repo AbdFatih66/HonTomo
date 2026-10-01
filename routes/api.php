@@ -10,8 +10,14 @@ use App\Http\Controllers\Api\KanjiController;
 use App\Http\Controllers\Api\LessonController;
 use App\Http\Controllers\Api\LevelController;
 use App\Http\Controllers\Api\LocaleController;
+use App\Http\Controllers\Api\ChokaiController;
+use App\Http\Controllers\Api\JlptTestController;
+use App\Http\Controllers\Api\MondaishuuController;
+use App\Http\Controllers\Api\NotificationController;
+use App\Http\Controllers\Api\KaiteOboeruController;
 use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\SessionController;
+use App\Http\Controllers\Api\ShortcutController;
 use App\Http\Controllers\Api\AuditLogController;
 use App\Http\Controllers\Api\UserManagementController;
 use App\Http\Controllers\Api\WebAuthnController;
@@ -103,10 +109,48 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/kanji/{kanji}/strokes', [KanjiController::class, 'strokes']);
     Route::post('/kanji/{kanji}/progress', [KanjiController::class, 'recordProgress']);
 
+    Route::get('/mondaishuu/progress', [MondaishuuController::class, 'index']);
+    Route::post('/mondaishuu/progress/{setKey}', [MondaishuuController::class, 'store']);
+
+    Route::get('/chokai/progress', [ChokaiController::class, 'index']);
+    Route::post('/chokai/progress/{setKey}', [ChokaiController::class, 'store']);
+
+    Route::get('/kaite-oboeru/progress', [KaiteOboeruController::class, 'index']);
+    Route::post('/kaite-oboeru/progress/{setKey}', [KaiteOboeruController::class, 'store']);
+
+    // Tes JLPT (simulasi ujian per PAKET soal; satu-satunya fitur ujian JLPT — Simulasi JLPT
+    // yang dulu terpisah sudah digabung ke sini). Mode strict: timer server-side, tanpa umpan
+    // balik. Mode practice: tanpa timer, umpan balik per soal lewat /check.
+    Route::prefix('jlpt-test')->group(function () {
+        Route::get('/packs', [JlptTestController::class, 'packs']);
+        Route::get('/packs/{pack}', [JlptTestController::class, 'show']);
+        Route::post('/packs/{pack}/attempts', [JlptTestController::class, 'start'])->middleware('throttle:20,1');
+        Route::delete('/packs/{pack}/attempts/current', [JlptTestController::class, 'abandon']);
+
+        Route::get('/attempts/{attempt}/recap', [JlptTestController::class, 'recap'])->whereNumber('attempt');
+        Route::get('/attempts/{attempt}/review', [JlptTestController::class, 'review'])->whereNumber('attempt');
+        Route::get('/attempts/{attempt}/sections/{section}', [JlptTestController::class, 'section'])->whereNumber('attempt');
+        Route::post('/attempts/{attempt}/sections/{section}/start', [JlptTestController::class, 'startSection'])->whereNumber('attempt');
+        Route::put('/attempts/{attempt}/sections/{section}/answers', [JlptTestController::class, 'saveAnswers'])->whereNumber('attempt');
+        Route::post('/attempts/{attempt}/sections/{section}/check', [JlptTestController::class, 'check'])->whereNumber('attempt')->middleware('throttle:240,1');
+        Route::post('/attempts/{attempt}/sections/{section}/submit', [JlptTestController::class, 'submit'])->whereNumber('attempt');
+    });
+
     Route::get('/review/due', [ReviewController::class, 'due']);
     Route::post('/review/submit', [ReviewController::class, 'submit']);
 
     Route::post('/locale', [LocaleController::class, 'update']);
+
+    // Navbar: shortcuts (reorderable, per account) and notifications feed
+    Route::get('/shortcuts', [ShortcutController::class, 'index']);
+    Route::post('/shortcuts', [ShortcutController::class, 'store']);
+    Route::put('/shortcuts/reorder', [ShortcutController::class, 'reorder']);
+    Route::delete('/shortcuts/{pageKey}', [ShortcutController::class, 'destroy']);
+
+    Route::get('/notifications', [NotificationController::class, 'index']);
+    Route::patch('/notifications/read', [NotificationController::class, 'markRead']);
+    Route::patch('/notifications/unread', [NotificationController::class, 'markUnread']);
+    Route::delete('/notifications/{id}', [NotificationController::class, 'destroy'])->whereNumber('id');
 
     // ==========================================
     // USER MANAGEMENT (admin only)

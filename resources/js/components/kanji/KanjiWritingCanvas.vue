@@ -5,6 +5,7 @@
 // import (see KanjiStrokeAnimation.vue for why this is a separate
 // component rather than a shared one).
 import HanziWriter from 'hanzi-writer'
+import { staticPrimaryColor } from '@/plugins/vuetify/theme'
 import { $api } from '@/utils/api'
 
 const props = defineProps({
@@ -71,7 +72,7 @@ function createWriter() {
     drawingWidth: boldStrokeWidth,
     strokeColor: '#3d3d3d',
     outlineColor: '#dddddd',
-    drawingColor: '#6750a4',
+    drawingColor: staticPrimaryColor,
     highlightColor: '#ffca28',
     charDataLoader,
   })

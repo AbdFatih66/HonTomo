@@ -15,6 +15,7 @@ class LessonService
         private XpService $xpService,
         private StreakService $streakService,
         private ProgressService $progressService,
+        private NotificationService $notificationService,
     ) {}
 
     public function start(User $user, Lesson $lesson): UserLesson
@@ -161,6 +162,16 @@ class LessonService
                     $userLesson->xp_earned += $xp;
 
                     $this->xpService->award($user, $xp, 'lesson_completed', $lesson->id);
+
+                    // Only notify the FIRST time this lesson is finished —
+                    // replaying an already-completed lesson for review
+                    // shouldn't spam the bell again.
+                    if (! $alreadyDone) {
+                        if ($userLesson->status === UserLesson::STATUS_MASTERED)
+                            $this->notificationService->lessonMastered($user, $lesson, $xp);
+                        else
+                            $this->notificationService->lessonCompleted($user, $lesson, $xp);
+                    }
                 }
 
                 $this->streakService->recordActivity($user);
