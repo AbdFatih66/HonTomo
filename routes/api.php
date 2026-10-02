@@ -85,6 +85,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('/auth/google', [SocialAuthController::class, 'unlink']);
 
     Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::put('/dashboard/preferences', [DashboardController::class, 'updatePreferences']);
 
     Route::get('/learning-path', [LevelController::class, 'path']);
     Route::get('/levels', [LevelController::class, 'index']);

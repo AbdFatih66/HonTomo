@@ -3,10 +3,13 @@
 // dimuat), tampil kotak pengganti berisi deskripsi (alt) supaya ujian tetap
 // bisa dikerjakan. `arrow` = {x, y} dalam persen: tanda panah (➡ di ujian
 // asli, Mondai 3 Chokai) digambar oleh aplikasi di atas gambar.
+// `marks` = [{x, y, text}] (persen): nomor kecil yang digambar aplikasi di atas
+// gambar (mis. nomor 1–4 pada rak tas Chokai 1-3), supaya tidak perlu ada teks di PNG.
 const props = defineProps({
   src: { type: String, default: '' },
   alt: { type: String, default: '' },
   arrow: { type: Object, default: null },
+  marks: { type: Array, default: null },
 })
 
 const { t } = useI18n()
@@ -37,6 +40,13 @@ watch(() => props.src, () => { failed.value = false })
       <span class="text-caption d-block">{{ t('jlptMock.image_missing') }}</span>
       <span class="text-body-2 d-block mt-1">{{ alt }}</span>
     </div>
+
+    <span
+      v-for="(m, i) in marks ?? []"
+      :key="i"
+      class="jlpt-img__mark"
+      :style="{ insetInlineStart: `${m.x}%`, insetBlockStart: `${m.y}%` }"
+    >{{ m.text }}</span>
 
     <svg
       v-if="arrow"
@@ -86,6 +96,22 @@ watch(() => props.src, () => { failed.value = false })
   background: rgba(var(--v-theme-on-surface), 0.04);
   color: rgba(var(--v-theme-on-surface), 0.7);
   text-align: center;
+}
+
+.jlpt-img__mark {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+  background: #fff;
+  block-size: 22px;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  inline-size: 22px;
+  transform: translateX(-50%);
 }
 
 .jlpt-img__arrow {

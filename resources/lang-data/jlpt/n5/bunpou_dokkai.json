@@ -472,14 +472,25 @@
       "mondai": 4,
       "stem": "今《いま》の へやは どれですか。",
       "choices": [
-        "1",
-        "2",
-        "3",
-        "4"
+        {
+          "image": "/images/jlpt/n5/rd-m4-q28-c1.png",
+          "alt": "Kamar: meja dengan dua kursi + rak tinggi + rak rendah berisi buku rapi"
+        },
+        {
+          "image": "/images/jlpt/n5/rd-m4-q28-c2.png",
+          "alt": "Kamar: meja dengan dua kursi + rak rendah dengan buku berserakan + satu rak rendah lain"
+        },
+        {
+          "image": "/images/jlpt/n5/rd-m4-q28-c3.png",
+          "alt": "Kamar: meja dengan dua kursi + SATU rak rendah dengan buku berserakan"
+        },
+        {
+          "image": "/images/jlpt/n5/rd-m4-q28-c4.png",
+          "alt": "Kamar: meja dengan dua kursi + hanya satu rak tinggi"
+        }
       ],
       "answer": 3,
-      "passage": "m4-2",
-      "choice_art": "room"
+      "passage": "m4-2"
     },
     {
       "id": 29,

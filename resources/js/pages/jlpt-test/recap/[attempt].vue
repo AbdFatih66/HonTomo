@@ -1,7 +1,7 @@
 <script setup>
 // Rekap nilai Tes JLPT — satu-satunya tempat skor & keputusan lulus muncul.
-import { $api } from '@/utils/api'
 import JlptCertificate from '@/components/jlpt/JlptCertificate.vue'
+import { $api } from '@/utils/api'
 
 const route = useRoute()
 const router = useRouter()
@@ -148,7 +148,7 @@ onMounted(load)
           prepend-icon="tabler-certificate"
           @click="showCertificate = true"
         >
-          {{ t('jlptTest.certificate.show') }}
+          {{ t('Show Certificate') }}
         </VBtn>
         <JlptCertificate
           v-else

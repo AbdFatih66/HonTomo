@@ -88,7 +88,282 @@
     "progress": "Your progress",
     "all_done": "You've finished every available lesson. Great job!",
     "level_progress": "{xp} / 100 XP to next level",
-    "goal_progress": "{done} / {target} XP today"
+    "goal_progress": "{done} / {target} XP today",
+    "hello_morning": "Good morning, {name}!",
+    "hello_afternoon": "Good afternoon, {name}!",
+    "hello_evening": "Good evening, {name}!",
+    "hello_night": "Good evening, {name}!",
+    "streak_safe": "Today's streak is safe. Keep it going!",
+    "streak_at_risk": "Your {n}-day streak is waiting — study a little today so it doesn't break.",
+    "longest_streak": "Longest: {n} days",
+    "xp_to_next": "{xp} XP to the next level",
+    "crowns": "Crowns",
+    "crowns_hint": "Practice finished with no mistakes",
+    "review_cta": "Review {n} words",
+    "review_due": "Words to review",
+    "goal_reached": "Goal reached!",
+    "goal_remaining": "Only {xp} XP to go",
+    "roadmap_title": "Learning Roadmap",
+    "roadmap_sub": "Follow the path from the basics to exam-ready. Tap a stage to see its details and open it.",
+    "overall": "Overall",
+    "state_done": "Done",
+    "state_current": "Now",
+    "open_stage": "Open this stage",
+    "stage_desc": {
+      "kana": "Learn Hiragana & Katakana — the foundation for every later stage.",
+      "learn": "A step-by-step lesson path: vocabulary and grammar per chapter.",
+      "vocabulary": "Grow your word bank and review it regularly until it sticks.",
+      "kanji": "Study kanji shapes, meanings, readings, and stroke order.",
+      "mondaishuu": "Practice quizzes per lesson to test your understanding.",
+      "chokai": "Train your ear: listen to the audio, then answer the question.",
+      "kaite_oboeru": "Write answers by hand so the words stick in memory.",
+      "lampiran": "Quick reference: numbers, time, counters, conjugation.",
+      "jlpt_test": "A full JLPT exam simulation with timers and a score recap."
+    },
+    "stage_unit": {
+      "kana": "",
+      "learn": "{done} of {total} lessons completed",
+      "vocabulary": "{done} of {total} words mastered",
+      "kanji": "{done} of {total} kanji mastered",
+      "mondaishuu": "{done} of {total} practice sets completed",
+      "chokai": "{done} of {total} listening sets completed",
+      "kaite_oboeru": "{done} of {total} writing chapters completed",
+      "lampiran": "",
+      "jlpt_test": "{done} tests completed"
+    },
+    "week_title": "7-Day Activity",
+    "week_sub": "{xp} XP this week · active {days} of 7 days",
+    "recent_title": "Recent Activity",
+    "recent_empty": "No activity yet. Finish a lesson to get started!",
+    "source": {
+      "lesson_completed": "Lesson completed",
+      "mondaishuu_completed": "Practice questions completed",
+      "chokai_completed": "Listening practice completed",
+      "kaite_oboeru_completed": "Writing practice completed",
+      "jlpt_test_completed": "JLPT test completed",
+      "other": "XP earned"
+    },
+    "just_now": "Just now",
+    "minutes_ago": "{n} min ago",
+    "hours_ago": "{n} hr ago",
+    "days_ago": "{n} days ago",
+    "next": "Next",
+    "suggest_title": "Suggested for today",
+    "sg_review_title": "Review {n} words",
+    "sg_review_body": "A quick review keeps vocabulary fresh.",
+    "sg_streak_title": "Save your streak",
+    "sg_streak_body": "Study a little so your {n}-day streak doesn't break.",
+    "sg_goal_title": "Reach your goal: {xp} XP to go",
+    "sg_goal_body": "One practice set gets you close to the target.",
+    "sg_stage_title": "Continue with {stage}",
+    "sg_stage_body": "This stage is the best fit for you right now.",
+    "sg_exam_title": "Try an exam simulation",
+    "sg_exam_body": "You've come far. Measure yourself with a JLPT test.",
+    "tip_study_title": "Study Tips",
+    "tip_study": {
+      "kana": {
+        "title": "Master kana first",
+        "body": "Hiragana and Katakana are the foundation of everything. Spend a few days until you can read them without romaji.",
+        "cta": "Practice Kana"
+      },
+      "short": {
+        "title": "A little, every day",
+        "body": "15 minutes daily beats 3 hours once a week. Protect your streak to build the habit.",
+        "cta": "Keep Learning"
+      },
+      "spaced": {
+        "title": "Review before you forget",
+        "body": "New words fade fastest within 1–2 days. Review vocabulary regularly to move it into long-term memory.",
+        "cta": "Open Vocabulary"
+      },
+      "kanji": {
+        "title": "Learn kanji in context",
+        "body": "Don't memorize kanji in isolation. Learn them with the words that use them, and follow the correct stroke order.",
+        "cta": "Open Kanji"
+      },
+      "write": {
+        "title": "Write by hand",
+        "body": "Writing answers yourself makes your brain work harder than picking an option, so words last longer.",
+        "cta": "Writing Practice"
+      },
+      "listen": {
+        "title": "Train your ear",
+        "body": "Replay the audio many times, even casually. Listening only improves with exposure.",
+        "cta": "Listening Practice"
+      },
+      "quiz": {
+        "title": "Test after you study",
+        "body": "Right after finishing a lesson, do its practice questions. Recalling beats re-reading.",
+        "cta": "Practice Questions"
+      }
+    },
+    "tip_jlpt_title": "Tips to Pass {level}",
+    "tip_jlpt_sub": "Practical steps, straight to the features that help.",
+    "ready_starting": "Just starting",
+    "ready_growing": "Growing",
+    "ready_almost": "Almost ready",
+    "ready_ready": "Exam ready",
+    "tip_jlpt": {
+      "format": {
+        "title": "Know the exam format",
+        "body": "JLPT has Moji-Goi, Bunpou-Dokkai, and Chokai sections. Take one full test to learn the question types and pacing.",
+        "cta": "See JLPT Test"
+      },
+      "vocab": {
+        "title": "Strengthen vocabulary & kanji",
+        "body": "Most questions test vocabulary and kanji. Review regularly until words are mastered, then check frequent kanji.",
+        "cta": "Review Vocabulary"
+      },
+      "grammar": {
+        "title": "Understand grammar patterns",
+        "body": "Memorize sentence patterns with their examples. Use the reference when unsure, and don't just memorize meanings.",
+        "cta": "Open Reference"
+      },
+      "listening": {
+        "title": "Train listening daily",
+        "body": "The Chokai section often decides pass or fail. Start with short audio, then move to longer conversations.",
+        "cta": "Listening Practice"
+      },
+      "time": {
+        "title": "Practice time management",
+        "body": "Take tests in strict mode with the timer to get used to it. Skip stuck questions and return at the end.",
+        "cta": "Try Strict Mode"
+      },
+      "review": {
+        "title": "Learn from your mistakes",
+        "body": "After a test, open the review and note your error patterns. That's where your score improves fastest.",
+        "cta": "See Test History"
+      },
+      "final_week": {
+        "title": "Tidy up the final week",
+        "body": "Review weak material, do not start new topics the day before, sleep well, and never leave an answer blank on exam day.",
+        "cta": "Open reference"
+      }
+    },
+    "cd_title": "JLPT {level} Countdown",
+    "cd_official": "Official date",
+    "cd_custom": "Your date",
+    "cd_days": "days left",
+    "cd_weeks": "{w} wk {d} d",
+    "cd_msg_far": "Plenty of time. Build the foundation: kana, vocabulary, and kanji first, one step a day.",
+    "cd_msg_mid": "Start doing more practice and listening, then take one mock test to see where you stand.",
+    "cd_msg_near": "Focus on vocabulary review and mock tests. Study the explanation for every mistake.",
+    "cd_msg_last": "Final week: light review, enough rest, and no brand-new material.",
+    "cd_msg_today": "It's exam day. Take a breath, you're ready. Good luck!",
+    "cd_cta": "Mock test",
+    "cd_set": "Set exam date",
+    "cd_pick": "Exam date",
+    "cd_dialog_hint": "Use this if the schedule in your city differs. Saved to your account.",
+    "cd_reset": "Use official date",
+    "cd_note": "The schedule in your city may differ.",
+    "cd_check": "Check the official schedule",
+    "badges_title": "Achievement Badges",
+    "badges_sub": "{n} of {total} badges unlocked",
+    "f_all": "All",
+    "f_unlocked": "Unlocked",
+    "f_locked": "Locked",
+    "badges_empty": "No badges in this category yet.",
+    "badge_next": "Next badge:",
+    "badge_unlocked": "Unlocked",
+    "badge_go": "Go earn it",
+    "badge_new": "New badge: {name}!",
+    "badge": {
+      "first_step": {
+        "title": "First Step",
+        "desc": "Complete 1 lesson."
+      },
+      "lessons_5": {
+        "title": "Diligent Learner",
+        "desc": "Complete 5 lessons."
+      },
+      "lessons_15": {
+        "title": "Star Student",
+        "desc": "Complete 15 lessons."
+      },
+      "streak_3": {
+        "title": "Getting Consistent",
+        "desc": "Study 3 days in a row."
+      },
+      "streak_7": {
+        "title": "A Full Week",
+        "desc": "Study 7 days in a row."
+      },
+      "streak_30": {
+        "title": "Unbroken Month",
+        "desc": "Study 30 days in a row."
+      },
+      "xp_100": {
+        "title": "100 XP",
+        "desc": "Earn 100 XP."
+      },
+      "xp_500": {
+        "title": "500 XP",
+        "desc": "Earn 500 XP."
+      },
+      "xp_1000": {
+        "title": "1,000 XP",
+        "desc": "Earn 1,000 XP."
+      },
+      "vocab_10": {
+        "title": "Word Hunter",
+        "desc": "Master 10 vocabulary words."
+      },
+      "vocab_50": {
+        "title": "Walking Dictionary",
+        "desc": "Master 50 vocabulary words."
+      },
+      "kanji_10": {
+        "title": "Kanji Writer",
+        "desc": "Master 10 kanji."
+      },
+      "crown_1": {
+        "title": "First Crown",
+        "desc": "Finish a practice with no mistakes."
+      },
+      "crown_10": {
+        "title": "Practice King",
+        "desc": "Earn 10 crowns."
+      },
+      "jlpt_1": {
+        "title": "Test Taker",
+        "desc": "Complete 1 JLPT mock test."
+      }
+    },
+    "cd_save_error": "Couldn't save the exam date. Please try again.",
+    "jlpt_pass": {
+      "title": "JLPT {level} passing requirements",
+      "sub": "Know the rules, then check your test results.",
+      "total": "At least {pass} of {max} points overall",
+      "language": "Language Knowledge and Reading (minimum)",
+      "listening": "Listening (minimum)",
+      "note": "Both the overall score and the minimum in each part must be met together. Scores in this app are estimates, not official JLPT scores.",
+      "best": "Best score {score} of {max}",
+      "attempts": "{n} tests",
+      "passed": "Passed",
+      "not_passed": "Not passed yet",
+      "none": "No completed test yet",
+      "empty": "Simulations will appear here once they are available for your account.",
+      "resume": "Resume test"
+    },
+    "ready_parts": {
+      "title": "Readiness by section",
+      "sub": "Estimated from your study progress. Click the weakest section to practice it right away.",
+      "moji": "Moji-Goi (script & vocabulary)",
+      "bunpou": "Bunpou (grammar)",
+      "chokai": "Chokai (listening)",
+      "weakest": "Focus next: {part}"
+    },
+    "cd_plan_weeks": "About {n} weeks left to prepare.",
+    "cd_plan_pace": "{left} lessons left: do about {pace} a week to finish before the exam.",
+    "cd_plan_pace_done": "Every lesson is done. Use the remaining time for practice sets and simulations.",
+    "kanji_day": {
+      "title": "Kanji of the day",
+      "another": "Another kanji",
+      "open": "Open Kanji",
+      "strokes": "{n} strokes",
+      "on": "On:",
+      "kun": "Kun:"
+    }
   },
   "path": {
     "title": "Learning Path",
@@ -617,6 +892,21 @@
     "review": {
       "open": "View explanations",
       "back": "Back to recap"
+    },
+    "certificate": {
+      "issuer": "HonTomo",
+      "title": "JLPT Mock Test Certificate",
+      "jp_title": "日本語能力試験 模擬テスト 合格証",
+      "awarded_to": "Awarded to",
+      "statement": "has PASSED the JLPT {level} mock test at HonTomo with the following results.",
+      "language": "Language Knowledge",
+      "listening": "Listening (聴解)",
+      "total": "Total Score",
+      "test_date": "Test Date",
+      "cert_no": "Certificate No.",
+      "seal": "MOCK",
+      "disclaimer": "A HonTomo mock certificate for practice. It is not an official JLPT certificate and is not issued by The Japan Foundation or JEES.",
+      "print": "Print / Save as PDF"
     }
   },
   "jlptMock": {

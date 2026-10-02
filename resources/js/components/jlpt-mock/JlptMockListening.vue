@@ -280,7 +280,11 @@ onBeforeUnmount(stopAudio)
         </VChip>
       </div>
 
-      <p class="mb-4">
+      <!-- Petunjuk もんだい hanya tampil di langkah petunjuk & contoh (例); soal sungguhan hanya didengar -->
+      <p
+        v-if="step.kind === 'intro' || step.example"
+        class="mb-4"
+      >
         <JlptMockText
           :text="step.mondai.instruction"
           :show-furigana="furigana"
@@ -292,12 +296,12 @@ onBeforeUnmount(stopAudio)
         :color="audioProblem ? 'warning' : 'primary'"
         class="mb-4"
       >
-        <VCardText class="d-flex align-center gap-3">
+        <VCardText class="jl-status">
           <VIcon
             :icon="stepStatus === 'playing' ? 'tabler-volume' : 'tabler-hourglass'"
             size="28"
           />
-          <div class="flex-grow-1">
+          <div class="jl-status__text">
             <div class="font-weight-medium">
               <template v-if="audioProblem">
                 {{ t('jlptMock.audio_missing') }}
@@ -323,36 +327,41 @@ onBeforeUnmount(stopAudio)
             </div>
           </div>
 
-          <VBtn
-            v-if="needsTap"
-            color="primary"
-            @click="tapToPlay"
+          <div
+            v-if="needsTap || practice"
+            class="jl-status__actions"
           >
-            {{ t('jlptMock.play') }}
-          </VBtn>
-          <template v-else-if="practice">
             <VBtn
-              variant="text"
-              prepend-icon="tabler-rotate"
-              @click="replay"
-            >
-              {{ t('jlptMock.replay') }}
-            </VBtn>
-            <VBtn
+              v-if="needsTap"
               color="primary"
-              :disabled="stepStatus === 'playing'"
-              @click="nextStep"
+              @click="tapToPlay"
             >
-              {{ t('jlptMock.next') }}
+              {{ t('jlptMock.play') }}
             </VBtn>
-          </template>
+            <template v-else>
+              <VBtn
+                variant="text"
+                prepend-icon="tabler-rotate"
+                @click="replay"
+              >
+                {{ t('jlptMock.replay') }}
+              </VBtn>
+              <VBtn
+                color="primary"
+                :disabled="stepStatus === 'playing'"
+                @click="nextStep"
+              >
+                {{ t('jlptMock.next') }}
+              </VBtn>
+            </template>
+          </div>
         </VCardText>
       </VCard>
 
       <JlptMockQuestion
         v-if="step.kind === 'item'"
         :key="step.key"
-        :q="step.q"
+        :q="step.example ? { ...step.q, answer: step.q.answer - 1 } : step.q"
         :model-value="step.example ? step.q.answer - 1 : (answers[step.q.id] ? answers[step.q.id] - 1 : null)"
         :show-furigana="furigana"
         :reveal="step.example"
@@ -386,14 +395,45 @@ onBeforeUnmount(stopAudio)
 <style scoped>
 .jlpt-mondai {
   display: flex;
-  align-items: baseline;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 12px;
 }
 
 .jlpt-mondai__label {
   font-size: 1.15rem;
   font-weight: 700;
+}
+
+.jl-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.jl-status__text {
+  flex: 1 1 200px;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.jl-status__actions {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 599px) {
+  .jl-status__actions {
+    flex: 1 1 100%;
+  }
+
+  .jl-status__actions :deep(.v-btn) {
+    flex: 1 1 0;
+    min-inline-size: 0;
+  }
 }
 
 .jlpt-rules {

@@ -33,6 +33,8 @@ class User extends Authenticatable implements MustVerifyEmail, PasskeyUser
         'hearts_refill_at',
         'daily_goal_date',
         'daily_goal_target',
+        'jlpt_exam_date',
+        'seen_badges',
     ];
 
     protected $hidden = [
@@ -47,6 +49,8 @@ class User extends Authenticatable implements MustVerifyEmail, PasskeyUser
             'password' => 'hashed',
             'hearts_refill_at' => 'datetime',
             'daily_goal_date' => 'date',
+            'jlpt_exam_date' => 'date',
+            'seen_badges' => 'array',
         ];
     }
 

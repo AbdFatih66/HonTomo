@@ -8,23 +8,18 @@
 // Soal datang dari server setelah sesi dimulai (tanpa kunci jawaban), bukan
 // dari bundle JS. Skor & keputusan lulus hanya ada di rekap akhir (halaman recap).
 //
-// Dua format soal, satu halaman:
-//  - classic : bank soal asli — satu halaman panjang + daftar soal (navigator).
-//  - mock    : paket orisinal — satu もんだい per layar, Lembar Jawaban (OMR),
-//              toggle furigana; chokai lewat JlptMockListening.
+// Satu tata letak untuk SEMUA paket soal (soal asli maupun paket HonTomo): halaman
+// panjang + daftar soal (navigator); chokai lewat pemutar rekaman berurutan.
 import { useDebounceFn, useStorage } from '@vueuse/core'
-import JlptAnswerSheet from '@/components/jlpt/JlptAnswerSheet.vue'
 import JlptQuestionFeedback from '@/components/jlpt/JlptQuestionFeedback.vue'
-import JlptMockListening from '@/components/jlpt-mock/JlptMockListening.vue'
-import JlptMockSection from '@/components/jlpt-mock/JlptMockSection.vue'
 import JlptIllustration from '@/components/jlpt/JlptIllustration.vue'
+import JlptMockImage from '@/components/jlpt-mock/JlptMockImage.vue'
 import JlptListeningExam from '@/components/jlpt/JlptListeningExam.vue'
 import JlptPassage from '@/components/jlpt/JlptPassage.vue'
 import JlptRoomScene from '@/components/jlpt/JlptRoomScene.vue'
 import JlptText from '@/components/jlpt/JlptText.vue'
 import { plainLength } from '@/data/jlpt'
 import { $api } from '@/utils/api'
-import { sectionQuestions } from '@/utils/jlptMock'
 
 definePage({ meta: { layout: 'blank' } })
 
@@ -38,13 +33,14 @@ const sectionKey = computed(() => route.params.section)
 //   questions: [...] } dari server
 const section = ref(null)
 const mode = ref('strict')
-const format = ref('classic')
 const level = ref('N5')
 const packKey = ref(null)
 const homeRoute = computed(() => ({ name: 'jlpt-test', query: packKey.value ? { pack: packKey.value } : {} }))
 const isPractice = computed(() => mode.value === 'practice')
-const isMock = computed(() => format.value === 'mock')
+
+// Toggle furigana (disimpan di perangkat); dibaca semua JlptText lewat provide/inject.
 const furigana = useStorage('jlptTest:furigana', false)
+provide('jlptFurigana', furigana)
 
 const isLoading = ref(true)
 const loadError = ref(false)
@@ -56,20 +52,14 @@ const confirmSubmit = ref(false)
 const confirmExit = ref(false)
 const showNavigator = ref(false)
 const timeUp = ref(false)
-const flags = reactive({}) // soal yang ditandai (hanya di klien)
 const feedback = reactive({}) // hasil /check per soal (hanya mode latihan)
-const sheetDialog = ref(false)
-const mondaiIdx = ref(0)
 
 // Sesi menyimak (聴解) punya tampilan sendiri: audio diputar berurutan oleh
 // JlptListeningExam; tombol kirim baru muncul setelah rekaman selesai.
 const isListening = computed(() => sectionKey.value === 'chokai')
 const listeningDone = ref(false)
 
-// Format classic: soal datar. Format mock: diratakan dari mondai → groups → questions
-// (id bisa teks, mis. "v1-1"; `no` = nomor tampil).
-const mockQuestions = computed(() => (isMock.value && section.value ? sectionQuestions(section.value) : []))
-const questions = computed(() => (isMock.value ? mockQuestions.value : (section.value?.questions ?? [])))
+const questions = computed(() => section.value?.questions ?? [])
 // Per もんだい: daftar { q, passage }. `passage` terisi hanya pada soal pertama
 // yang memakai bacaan itu, jadi bacaan tampil sekali di atas soal-soalnya
 // (mis. bacaan (1) untuk no. 22–23, bacaan (2) untuk no. 24–26).
@@ -91,23 +81,7 @@ const groups = computed(() => {
   return [...byMondai.entries()].map(([mondai, items]) => ({ mondai, items }))
 })
 
-const currentMondai = computed(() => (isMock.value && !isListening.value ? (section.value?.mondai?.[mondaiIdx.value] ?? null) : null))
-const isLastMondai = computed(() => !!section.value && isMock.value && mondaiIdx.value >= section.value.mondai.length - 1)
-const sectionTitle = computed(() => (isMock.value ? (section.value?.jp ?? section.value?.title?.id ?? '') : section.value?.title))
-
-// Daftar untuk Lembar Jawaban: dikelompokkan per もんだい.
-const sheetGroups = computed(() => {
-  if (!isMock.value || !section.value)
-    return []
-
-  return section.value.mondai.map(m => ({
-    key: m.id,
-    label: m.label,
-    items: mockQuestions.value
-      .filter(q => q.mondaiId === m.id)
-      .map(q => ({ id: q.id, no: q.no, count: q.choices?.length ?? 4, mondaiId: m.id })),
-  }))
-})
+const sectionTitle = computed(() => section.value?.title ?? '')
 
 const answeredCount = computed(() => questions.value.filter(q => answers[q.id]).length)
 const unansweredCount = computed(() => questions.value.length - answeredCount.value)
@@ -163,7 +137,6 @@ async function load() {
     section.value = data.test
     mode.value = data.mode ?? 'strict'
     packKey.value = data.pack ?? null
-    format.value = data.format ?? data.test.format ?? 'classic'
     Object.assign(answers, data.answers ?? {})
     if (!isPractice.value) {
       syncTimer(data.remaining_seconds)
@@ -227,43 +200,6 @@ async function checkAnswer(qid, n) {
   catch { delete feedback[qid] /* umpan balik hanya bonus; jawaban tetap tersimpan */ }
 }
 
-function toggleFlag(q) {
-  flags[q.id] = !flags[q.id]
-}
-
-// ── Navigasi format mock ─────────────────────────────────────────────
-function scrollTop() {
-  nextTick(() => document.querySelector('.kana-fs__body')?.scrollTo({ top: 0 }))
-}
-
-function goMondai(i) {
-  mondaiIdx.value = Math.min(Math.max(i, 0), (section.value?.mondai?.length ?? 1) - 1)
-  scrollTop()
-}
-
-function jumpTo(item) {
-  sheetDialog.value = false
-  const target = section.value.mondai.findIndex(m => m.id === item.mondaiId)
-
-  mondaiIdx.value = Math.max(target, 0)
-  nextTick(() => document.getElementById(`jlpt-q-${item.id}`)?.scrollIntoView({ block: 'center' }))
-}
-
-function sheetAnswer(item, n) {
-  choose(item.id, n)
-}
-
-function sheetFinish() {
-  sheetDialog.value = false
-  confirmSubmit.value = true
-}
-
-// Sesi menyimak format mock selesai → langsung dikirim (tanpa tombol kirim).
-function onMockListeningDone() {
-  listeningDone.value = true
-  submit(false)
-}
-
 async function submit(auto = false) {
   if (isSubmitting.value)
     return
@@ -322,8 +258,17 @@ function onVisibility() {
     saveNow()
 }
 
+// Pilihan bisa berupa teks atau gambar { image, alt } (paket HonTomo, mis. soal 28).
+function isImageChoice(c) {
+  return typeof c === 'object' && c !== null && !!c.image
+}
+
+function hasImageChoices(q) {
+  return q.choices.some(isImageChoice)
+}
+
 function isLongChoices(q) {
-  return q.choices.some(c => plainLength(c) > 14)
+  return !hasImageChoices(q) && q.choices.some(c => typeof c === 'string' && plainLength(c) > 14)
 }
 
 onMounted(() => {
@@ -392,7 +337,6 @@ onBeforeUnmount(() => {
       </VChip>
 
       <VSwitch
-        v-if="isMock"
         v-model="furigana"
         :label="t('jlptMock.furigana_short')"
         color="primary"
@@ -402,7 +346,7 @@ onBeforeUnmount(() => {
       />
 
       <VBtn
-        v-if="!isListening && !isMock"
+        v-if="!isListening"
         icon="tabler-layout-grid"
         variant="tonal"
         color="secondary"
@@ -448,48 +392,8 @@ onBeforeUnmount(() => {
             {{ t('jlptTest.exam.time_up') }}
           </VAlert>
 
-          <JlptMockListening
-            v-if="isMock && isListening"
-            :section="section"
-            :answers="answers"
-            :feedback="feedback"
-            :practice="isPractice"
-            :furigana="furigana"
-            :stopped="timeUp"
-            :storage-key="`jlpt-chokai-${attemptId}`"
-            class="mb-8"
-            @choose="(q, n) => choose(q.id, n)"
-            @done="onMockListeningDone"
-          />
-
-          <!-- Format mock, sesi membaca: satu もんだい per layar -->
-          <template v-else-if="isMock && currentMondai">
-            <div class="jlpt-tabs mb-4">
-              <VBtn
-                v-for="(m, i) in section.mondai"
-                :key="m.id"
-                size="small"
-                :variant="i === mondaiIdx ? 'flat' : 'tonal'"
-                :color="i === mondaiIdx ? 'primary' : 'secondary'"
-                @click="goMondai(i)"
-              >
-                {{ m.label }}
-              </VBtn>
-            </div>
-
-            <JlptMockSection
-              :mondai="currentMondai"
-              :answers="answers"
-              :flags="flags"
-              :feedback="feedback"
-              :furigana="furigana"
-              @choose="(q, n) => choose(q.id, n)"
-              @flag="toggleFlag"
-            />
-          </template>
-
           <JlptListeningExam
-            v-else-if="isListening"
+            v-if="isListening"
             :test="section"
             :answers="answers"
             :stopped="timeUp"
@@ -499,7 +403,7 @@ onBeforeUnmount(() => {
             @done="listeningDone = true"
           />
 
-          <template v-else-if="!isMock">
+          <template v-else>
             <section
               v-for="g in groups"
               :key="g.mondai"
@@ -591,7 +495,7 @@ onBeforeUnmount(() => {
                   :class="{ 'jlpt-q--answered': answers[q.id] }"
                 >
                   <div class="jlpt-q__stem">
-                    <span class="jlpt-q__no">{{ q.id }}</span>
+                    <span class="jlpt-q__no">{{ q.no ?? q.id }}</span>
                     <span
                       v-if="q.stem"
                       class="jlpt-q__text"
@@ -610,7 +514,7 @@ onBeforeUnmount(() => {
                     class="jlpt-choices"
                     :class="{
                       'jlpt-choices--long': isLongChoices(q),
-                      'jlpt-choices--art': q.choice_art,
+                      'jlpt-choices--art': q.choice_art || hasImageChoices(q),
                     }"
                     role="radiogroup"
                     :aria-label="`${t('jlptTest.exam.question')} ${q.id}`"
@@ -620,15 +524,20 @@ onBeforeUnmount(() => {
                       :key="ci"
                       type="button"
                       class="jlpt-choice"
-                      :class="{ 'is-selected': answers[q.id] === ci + 1, 'jlpt-choice--art': q.choice_art }"
+                      :class="{ 'is-selected': answers[q.id] === ci + 1, 'jlpt-choice--art': q.choice_art || isImageChoice(c) }"
                       role="radio"
                       :aria-checked="answers[q.id] === ci + 1"
-                      :aria-label="q.choice_art ? String(ci + 1) : undefined"
+                      :aria-label="q.choice_art || isImageChoice(c) ? String(ci + 1) : undefined"
                       @click="choose(q.id, ci + 1)"
                     >
                       <span class="jlpt-choice__bubble">{{ ci + 1 }}</span>
+                      <JlptMockImage
+                        v-if="isImageChoice(c)"
+                        :src="c.image"
+                        :alt="c.alt"
+                      />
                       <JlptRoomScene
-                        v-if="q.choice_art === 'room'"
+                        v-else-if="q.choice_art === 'room'"
                         :variant="ci + 1"
                       />
                       <span
@@ -648,7 +557,7 @@ onBeforeUnmount(() => {
           </template>
 
           <div
-            v-if="!isMock && (!isListening || listeningDone)"
+            v-if="!isListening || listeningDone"
             class="text-center pb-8"
           >
             <VAlert
@@ -671,61 +580,6 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </main>
-
-    <!-- Format mock, sesi membaca: navigasi もんだい + Lembar Jawaban -->
-    <footer
-      v-if="isMock && currentMondai && !isLoading"
-      class="kana-fs__footer"
-    >
-      <div class="kana-fs__footer-inner">
-        <VBtn
-          variant="tonal"
-          color="secondary"
-          prepend-icon="tabler-chevron-left"
-          :disabled="mondaiIdx === 0"
-          @click="goMondai(mondaiIdx - 1)"
-        >
-          {{ t('jlptMock.prev') }}
-        </VBtn>
-
-        <VBtn
-          variant="tonal"
-          prepend-icon="tabler-layout-grid"
-          @click="sheetDialog = true"
-        >
-          {{ t('jlptMock.answer_sheet') }} ({{ answeredCount }}/{{ questions.length }})
-        </VBtn>
-
-        <VBtn
-          v-if="!isLastMondai"
-          color="primary"
-          append-icon="tabler-chevron-right"
-          @click="goMondai(mondaiIdx + 1)"
-        >
-          {{ t('jlptMock.next') }}
-        </VBtn>
-        <VBtn
-          v-else
-          color="success"
-          append-icon="tabler-check"
-          :loading="isSubmitting"
-          @click="confirmSubmit = true"
-        >
-          {{ t('jlptTest.exam.finish') }}
-        </VBtn>
-      </div>
-    </footer>
-
-    <JlptAnswerSheet
-      v-if="isMock"
-      v-model="sheetDialog"
-      :groups="sheetGroups"
-      :answers="answers"
-      :flags="flags"
-      @jump="jumpTo"
-      @answer="sheetAnswer"
-      @finish="sheetFinish"
-    />
 
     <!-- Daftar soal -->
     <VNavigationDrawer
@@ -750,7 +604,7 @@ onBeforeUnmount(() => {
             :class="{ 'is-answered': answers[q.id] }"
             @click="scrollToQuestion(q.id)"
           >
-            {{ q.id }}
+            {{ q.no ?? q.id }}
           </button>
         </div>
       </div>

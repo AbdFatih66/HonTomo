@@ -83,6 +83,80 @@ class LearningRegressionTest extends TestCase
         $this->as($token)->getJson('/api/review/due')->assertOk();
     }
 
+    public function test_the_dashboard_exposes_roadmap_week_and_recent_activity(): void
+    {
+        [, $token] = $this->register();
+
+        $json = $this->as($token)->getJson('/api/dashboard')
+            ->assertOk()
+            ->assertJsonStructure([
+                'longest_streak', 'streak_active_today', 'review_due', 'crowns', 'recent',
+                'roadmap' => [['key', 'route', 'icon', 'done', 'total', 'percent', 'state']],
+                'week' => [['date', 'weekday', 'xp', 'is_today']],
+            ])
+            ->assertJsonCount(7, 'week')
+            ->assertJsonCount(9, 'roadmap')
+            ->json();
+
+        // Urutan roadmap = urutan menu samping.
+        $this->assertSame(
+            ['kana', 'learn', 'vocabulary', 'kanji', 'mondaishuu', 'chokai', 'kaite_oboeru', 'lampiran', 'jlpt_test'],
+            array_column($json['roadmap'], 'key'),
+        );
+
+        // Tepat satu tahap berstatus "current" dan tidak pernah Referensi.
+        $current = array_values(array_filter($json['roadmap'], fn ($s) => $s['state'] === 'current'));
+        $this->assertCount(1, $current);
+        $this->assertNotSame('lampiran', $current[0]['key']);
+    }
+
+    public function test_dashboard_preferences_persist_the_exam_date_and_seen_badges(): void
+    {
+        [, $token] = $this->register();
+        $date = now()->addDays(40)->toDateString();
+
+        // Pengguna baru: belum ada tanggal ujian, lencana belum pernah dicatat (null).
+        $this->as($token)->getJson('/api/dashboard')
+            ->assertOk()
+            ->assertJsonPath('jlpt_exam_date', null)
+            ->assertJsonPath('seen_badges', null);
+
+        $this->as($token)->putJson('/api/dashboard/preferences', ['jlpt_exam_date' => $date])
+            ->assertOk()->assertJsonPath('jlpt_exam_date', $date);
+
+        $this->as($token)->getJson('/api/dashboard')->assertJsonPath('jlpt_exam_date', $date);
+
+        // seen_badges digabung, bukan ditimpa; field lain tidak ikut berubah.
+        $this->as($token)->putJson('/api/dashboard/preferences', ['seen_badges' => ['first_step']])->assertOk();
+        $this->as($token)->putJson('/api/dashboard/preferences', ['seen_badges' => ['xp_100', 'first_step']])
+            ->assertOk()
+            ->assertJsonPath('seen_badges', ['first_step', 'xp_100'])
+            ->assertJsonPath('jlpt_exam_date', $date);
+
+        // null mengembalikan ke jadwal resmi.
+        $this->as($token)->putJson('/api/dashboard/preferences', ['jlpt_exam_date' => null])
+            ->assertOk()->assertJsonPath('jlpt_exam_date', null);
+    }
+
+    public function test_dashboard_preferences_reject_past_or_malformed_dates(): void
+    {
+        [, $token] = $this->register();
+
+        $this->as($token)->putJson('/api/dashboard/preferences', ['jlpt_exam_date' => now()->subDays(3)->toDateString()])
+            ->assertStatus(422)->assertJsonValidationErrors('jlpt_exam_date');
+
+        $this->as($token)->putJson('/api/dashboard/preferences', ['jlpt_exam_date' => '06-12-2026'])
+            ->assertStatus(422);
+
+        $this->as($token)->putJson('/api/dashboard/preferences', ['seen_badges' => 'bukan-array'])
+            ->assertStatus(422)->assertJsonValidationErrors('seen_badges');
+    }
+
+    public function test_dashboard_preferences_require_authentication(): void
+    {
+        $this->putJson('/api/dashboard/preferences', ['jlpt_exam_date' => null])->assertUnauthorized();
+    }
+
     // ------------------------------------------------- lesson + quiz flow
 
     public function test_a_lesson_can_be_played_from_start_to_finish(): void

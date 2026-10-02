@@ -104,40 +104,41 @@ function print() {
   --cert-accent: #b4232a;
   --cert-paper: #fffdf7;
 
-  max-inline-size: 1000px;
-  margin-inline: auto;
-  aspect-ratio: 297 / 210;
   padding: 14px;
-  background: var(--cert-paper);
   border: 2px solid var(--cert-ink);
+  aspect-ratio: 297 / 210;
+  background: var(--cert-paper);
   color: var(--cert-ink);
   container-type: inline-size;
+  margin-inline: auto;
+  max-inline-size: 1000px;
 }
 
 .jlpt-cert__frame {
   display: flex;
   flex-direction: column;
   align-items: center;
-  block-size: 100%;
-  padding: 2.2cqw 4cqw;
   border: 1px solid var(--cert-accent);
+  block-size: 100%;
+  padding-block: 2.2cqw;
+  padding-inline: 4cqw;
   text-align: center;
 }
 
 .jlpt-cert__brand { font-size: 2cqw; letter-spacing: 0.4em; text-transform: uppercase; }
-.jlpt-cert__level { font-size: 7cqw; font-weight: 700; line-height: 1; color: var(--cert-accent); }
-.jlpt-cert__title { font-size: 3cqw; font-weight: 700; margin-block: 0.6cqw 0; }
-.jlpt-cert__jp { font-size: 1.7cqw; opacity: 0.75; margin-block-end: 2cqw; }
-.jlpt-cert__label { font-size: 1.4cqw; text-transform: uppercase; letter-spacing: 0.2em; opacity: 0.7; }
-.jlpt-cert__name { font-size: 4cqw; font-weight: 600; margin-block: 0.4cqw 1cqw; padding-inline: 4cqw; border-block-end: 1px solid var(--cert-ink); }
-.jlpt-cert__statement { font-size: 1.6cqw; max-inline-size: 70cqw; margin-block: 1.2cqw 1.6cqw; }
+.jlpt-cert__level { color: var(--cert-accent); font-size: 7cqw; font-weight: 700; line-height: 1; }
+.jlpt-cert__title { color: var(--cert-ink); font-size: 3cqw; font-weight: 700; margin-block: 0.6cqw 0; }
+.jlpt-cert__jp { font-size: 1.7cqw; margin-block-end: 2cqw; opacity: 0.75; }
+.jlpt-cert__label { font-size: 1.4cqw; letter-spacing: 0.2em; opacity: 0.7; text-transform: uppercase; }
+.jlpt-cert__name { border-block-end: 1px solid var(--cert-ink); font-size: 4cqw; font-weight: 600; margin-block: 0.4cqw 1cqw; padding-inline: 4cqw; }
+.jlpt-cert__statement { font-size: 1.6cqw; margin-block: 1.2cqw 1.6cqw; max-inline-size: 70cqw; }
 
-.jlpt-cert__scores { display: flex; margin-block: auto; gap: 3cqw; justify-content: center; font-size: 1.4cqw; }
+.jlpt-cert__scores { display: flex; justify-content: center; font-size: 1.4cqw; gap: 3cqw; margin-block: auto; }
 .jlpt-cert__scores > div { display: flex; flex-direction: column; gap: 0.3cqw; }
 .jlpt-cert__scores strong { font-size: 2.2cqw; }
 .jlpt-cert__total strong { color: var(--cert-accent); font-size: 2.8cqw; }
 
-.jlpt-cert__meta { display: flex; align-items: flex-end; justify-content: space-between; inline-size: 100%; margin-block-start: auto; font-size: 1.3cqw; }
+.jlpt-cert__meta { display: flex; align-items: flex-end; justify-content: space-between; font-size: 1.3cqw; inline-size: 100%; margin-block-start: auto; }
 .jlpt-cert__meta > div { display: flex; flex-direction: column; gap: 0.2cqw; min-inline-size: 22cqw; }
 .jlpt-cert__meta span { opacity: 0.7; }
 .jlpt-cert__meta strong { font-size: 1.6cqw; }
@@ -145,34 +146,48 @@ function print() {
 .jlpt-cert__seal {
   align-items: center;
   justify-content: center;
-  inline-size: 9cqw;
-  block-size: 9cqw;
-  min-inline-size: 0 !important;
   border: 0.3cqw double var(--cert-accent);
   border-radius: 50%;
+  block-size: 9cqw;
   color: var(--cert-accent);
+  inline-size: 9cqw;
+  min-inline-size: 0 !important;
 }
 .jlpt-cert__seal span { font-size: 3cqw; font-weight: 700; opacity: 1; }
-.jlpt-cert__seal small { font-size: 0.9cqw; letter-spacing: 0.15em; }
+.jlpt-cert__seal small { font-size: 0.9cqw; letter-spacing: 0.1em; opacity: 1; }
 
-.jlpt-cert__disclaimer { font-size: 1.05cqw; opacity: 0.7; max-inline-size: 80cqw; margin-block: 1.4cqw 0; }
+.jlpt-cert__disclaimer { font-size: 1.05cqw; margin-block: 1.4cqw 0; max-inline-size: 80cqw; opacity: 0.7; }
 </style>
 
 <style>
 @media print {
-  @page { size: A4 landscape; margin: 0; }
+  @page { margin: 0; size: a4 landscape; }
+
+  /* Elemen lain hanya disembunyikan (visibility) tetapi tetap memakai ruang,
+     sehingga dokumen terbagi jadi beberapa halaman dan sertifikat (position:
+     fixed) tercetak ulang di tiap halaman. Kunci tinggi dokumen = 1 halaman. */
+  html,
+ body {
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    block-size: 100vh !important;
+  }
 
   body * { visibility: hidden !important; }
 
-  .jlpt-cert, .jlpt-cert * { visibility: visible !important; }
+  .jlpt-cert,
+ .jlpt-cert * { visibility: visible !important; }
 
   .jlpt-cert {
     position: fixed;
-    inset: 0;
-    inline-size: 100vw !important;
-    max-inline-size: none !important;
-    block-size: 100vh;
     aspect-ratio: auto !important;
+    block-size: 100vh;
+    break-inside: avoid;
+    inline-size: 100vw !important;
+    inset: 0;
+    max-inline-size: none !important;
+    page-break-inside: avoid;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }

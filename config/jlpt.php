@@ -8,10 +8,11 @@
  * (field `answer` tiap soal; `script`/`transcript`/`audio_text` = naskah audio
  * chokai, juga hanya untuk server).
  *
- * Dua format bank (field `format` pada pack):
- *   - classic : soal datar + markup ⟦…⟧ (bank soal asli, dirender JlptText dkk.)
- *   - mock    : soal bersarang mondai→groups→questions (paket orisinal HonTomo,
- *               hasil scripts/jlpt-mock-to-bank.py; dirender JlptMock*)
+ * Format bank: SEMUA pack memakai `classic` (soal datar + markup ⟦…⟧, dirender
+ * JlptText dkk.), sehingga tampilan ujian sama untuk soal asli dan paket HonTomo.
+ * Paket orisinal ditulis dulu dalam format sumber (docs/jlpt-mock.md), lalu diubah
+ * dengan scripts/jlpt-mock-to-bank.py → scripts/jlpt-mock-to-classic.py.
+ * (Kode untuk format `mock` masih dikenali server, tetapi tidak dipakai lagi.)
  * Kunci di KEDUA format 1-based (1..4), sama dengan jawaban user.
  * Berkas itu hanya dibaca server: soal dikirim ke browser SETELAH sesi
  * dimulai dan field `answer` selalu dibuang (JlptTestService::publicTest).
@@ -78,7 +79,7 @@ return [
         'n5-test-1' => [
             'enabled' => true,
             'level' => 'N5',
-            'format' => 'mock',
+            'format' => 'classic',
             'data_dir' => 'jlpt/packs/n5-test-1',
             // audio/gambar pack ini memakai path absolut di dalam bank soalnya
             'audio_path' => null,

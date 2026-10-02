@@ -216,8 +216,13 @@ class JlptTestTest extends TestCase
             if (isset($q['passage']))
                 $this->assertArrayHasKey($q['passage'], $bank['passages'], "soal {$id}");
 
-            if (isset($q['choice_art']))
-                $this->assertSame('room', $q['choice_art'], "soal {$id}");
+            // Gambar pilihan = berkas PNG { image, alt } di public/images/jlpt/n5 (bukan SVG bawaan).
+            if ($id === 28) {
+                foreach ($q['choices'] as $c) {
+                    $this->assertMatchesRegularExpression('#^/images/jlpt/n5/rd-m4-q28-c[1-4]\.png$#', $c['image'], "soal {$id}");
+                    $this->assertNotEmpty($c['alt'], "soal {$id}");
+                }
+            }
 
             // もんだい 2 (★): tiga kolom kosong + satu kolom ★ pada tiap soal.
             if ($q['mondai'] === 2) {
@@ -612,8 +617,21 @@ class JlptTestTest extends TestCase
             $this->assertLessThanOrEqual($count, $q['answer'], $id);
             $this->assertGreaterThanOrEqual(1, $q['answer'], $id);
 
-            foreach (array_filter([$q['image'] ?? null, isset($q['choice_art']) ? $q['choice_art'].'-1' : null]) as $art)
-                $this->assertMatchesRegularExpression('/^(bags|talk-[1-5]|socks-\d|items-\d|acts-\d|food-\d)$/', $art, $id);
+            // gambar = berkas PNG { image, alt } (soal asli tidak lagi memakai SVG bawaan)
+            $pics = [];
+            if (isset($q['image']))
+                $pics[] = $q['image'];
+            foreach ($q['choices'] ?? [] as $c) {
+                if (is_array($c))
+                    $pics[] = $c;
+            }
+            $this->assertArrayNotHasKey('choice_art', $q, $id);
+            foreach ($pics as $pic) {
+                $this->assertMatchesRegularExpression('#^/images/jlpt/n5/(l1-\d(-c[1-4])?|l3-[1-5])\.png$#', $pic['image'], $id);
+                $this->assertNotEmpty($pic['alt'], $id);
+            }
+            if (str_starts_with($id, '3-'))
+                $this->assertSame(['x' => 50, 'y' => 9], $q['arrow'], "{$id} arrow");
         }
 
         // Nomor trek = nomor awalan berkas audio 01–35, urutan putar rekaman: tiap nomor dipakai tepat sekali.

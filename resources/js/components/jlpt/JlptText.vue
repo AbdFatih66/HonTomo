@@ -7,6 +7,11 @@ import { parseStem } from '@/data/jlpt'
 defineProps({
   text: { type: String, default: '' },
 })
+
+// Halaman ujian menyediakan toggle furigana lewat provide('jlptFurigana', ref).
+// Tanpa provider (mis. halaman review) furigana tetap tampil seperti biasa.
+const furiganaOn = inject('jlptFurigana', null)
+const showFurigana = computed(() => (furiganaOn ? !!unref(furiganaOn) : true))
 </script>
 
 <template>
@@ -27,10 +32,14 @@ defineProps({
         class="jlpt-text__blank"
         :class="{ 'jlpt-text__blank--star': seg.star }"
       >{{ seg.star ? '★' : '' }}</span>
-      <u v-else-if="seg.underline"><RubyText :text="seg.text" /></u>
+      <u v-else-if="seg.underline"><RubyText
+        :text="seg.text"
+        :show-furigana="showFurigana"
+      /></u>
       <RubyText
         v-else
         :text="seg.text"
+        :show-furigana="showFurigana"
       />
     </template>
   </span>

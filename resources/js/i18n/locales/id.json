@@ -88,7 +88,282 @@
     "progress": "Kemajuanmu",
     "all_done": "Kamu sudah menyelesaikan semua pelajaran yang tersedia. Kerja bagus!",
     "level_progress": "{xp} / 100 XP menuju level berikutnya",
-    "goal_progress": "{done} / {target} XP hari ini"
+    "goal_progress": "{done} / {target} XP hari ini",
+    "hello_morning": "Selamat pagi, {name}!",
+    "hello_afternoon": "Selamat siang, {name}!",
+    "hello_evening": "Selamat sore, {name}!",
+    "hello_night": "Selamat malam, {name}!",
+    "streak_safe": "Streak hari ini aman. Terus pertahankan!",
+    "streak_at_risk": "Streak {n} harinya menunggu — belajar sebentar hari ini supaya tidak putus.",
+    "longest_streak": "Terpanjang: {n} hari",
+    "xp_to_next": "{xp} XP lagi ke level berikutnya",
+    "crowns": "Mahkota",
+    "crowns_hint": "Latihan selesai tanpa salah",
+    "review_cta": "Ulas {n} kata",
+    "review_due": "Kata perlu diulang",
+    "goal_reached": "Target tercapai!",
+    "goal_remaining": "Tinggal {xp} XP lagi",
+    "roadmap_title": "Roadmap Belajar",
+    "roadmap_sub": "Ikuti urutan dari dasar sampai siap ujian. Ketuk sebuah tahap untuk melihat detail dan membukanya.",
+    "overall": "Keseluruhan",
+    "state_done": "Selesai",
+    "state_current": "Sekarang",
+    "open_stage": "Buka tahap ini",
+    "stage_desc": {
+      "kana": "Kenali Hiragana & Katakana — fondasi untuk semua tahap berikutnya.",
+      "learn": "Jalur pelajaran bertahap: kosakata dan tata bahasa per bab.",
+      "vocabulary": "Perbanyak kosakata dan ulangi secara berkala sampai hafal.",
+      "kanji": "Pelajari bentuk, arti, bacaan, dan urutan goresan kanji.",
+      "mondaishuu": "Kuis latihan per pelajaran untuk menguji pemahaman.",
+      "chokai": "Latih telinga: dengarkan audio lalu jawab pertanyaannya.",
+      "kaite_oboeru": "Tulis jawaban dengan tangan agar kata melekat di ingatan.",
+      "lampiran": "Rujukan cepat: bilangan, waktu, kata bantu bilangan, konjugasi.",
+      "jlpt_test": "Simulasi ujian JLPT lengkap dengan timer dan rekap nilai."
+    },
+    "stage_unit": {
+      "kana": "",
+      "learn": "{done} dari {total} pelajaran selesai",
+      "vocabulary": "{done} dari {total} kata dikuasai",
+      "kanji": "{done} dari {total} kanji dikuasai",
+      "mondaishuu": "{done} dari {total} set latihan selesai",
+      "chokai": "{done} dari {total} set menyimak selesai",
+      "kaite_oboeru": "{done} dari {total} bab menulis selesai",
+      "lampiran": "",
+      "jlpt_test": "{done} tes sudah diselesaikan"
+    },
+    "week_title": "Aktivitas 7 Hari",
+    "week_sub": "{xp} XP dalam seminggu · aktif {days} dari 7 hari",
+    "recent_title": "Aktivitas Terbaru",
+    "recent_empty": "Belum ada aktivitas. Selesaikan satu pelajaran untuk mulai!",
+    "source": {
+      "lesson_completed": "Pelajaran selesai",
+      "mondaishuu_completed": "Latihan soal selesai",
+      "chokai_completed": "Latihan menyimak selesai",
+      "kaite_oboeru_completed": "Latihan menulis selesai",
+      "jlpt_test_completed": "Tes JLPT selesai",
+      "other": "XP diperoleh"
+    },
+    "just_now": "Baru saja",
+    "minutes_ago": "{n} menit lalu",
+    "hours_ago": "{n} jam lalu",
+    "days_ago": "{n} hari lalu",
+    "next": "Berikutnya",
+    "suggest_title": "Saran untuk hari ini",
+    "sg_review_title": "Ulas {n} kata",
+    "sg_review_body": "Ulangan singkat menjaga kosakata tetap melekat.",
+    "sg_streak_title": "Selamatkan streak-mu",
+    "sg_streak_body": "Belajar sebentar agar streak {n} harimu tidak putus.",
+    "sg_goal_title": "Kejar target: {xp} XP lagi",
+    "sg_goal_body": "Satu set latihan soal cukup untuk mendekati target.",
+    "sg_stage_title": "Lanjut ke {stage}",
+    "sg_stage_body": "Tahap ini yang paling pas untukmu sekarang.",
+    "sg_exam_title": "Coba simulasi ujian",
+    "sg_exam_body": "Progresmu sudah cukup jauh. Ukur kemampuan lewat Tes JLPT.",
+    "tip_study_title": "Tips Belajar",
+    "tip_study": {
+      "kana": {
+        "title": "Kuasai kana lebih dulu",
+        "body": "Hiragana dan Katakana adalah fondasi semua materi. Luangkan beberapa hari sampai bisa membacanya tanpa melihat romaji.",
+        "cta": "Latihan Kana"
+      },
+      "short": {
+        "title": "Sedikit tapi tiap hari",
+        "body": "15 menit setiap hari jauh lebih efektif daripada 3 jam sekali seminggu. Jaga streak-mu agar kebiasaan terbentuk.",
+        "cta": "Lanjut Belajar"
+      },
+      "spaced": {
+        "title": "Ulangi sebelum lupa",
+        "body": "Kata baru paling cepat terlupa dalam 1–2 hari. Ulas kosakata secara berkala supaya pindah ke ingatan jangka panjang.",
+        "cta": "Buka Kosakata"
+      },
+      "kanji": {
+        "title": "Pelajari kanji dengan konteks",
+        "body": "Jangan hafal kanji sendirian. Pelajari bersama kata yang memakainya, lalu ikuti urutan goresan yang benar.",
+        "cta": "Buka Kanji"
+      },
+      "write": {
+        "title": "Tulis dengan tangan",
+        "body": "Menulis jawaban sendiri membuat otak bekerja lebih keras daripada sekadar memilih. Hasilnya, kata lebih awet diingat.",
+        "cta": "Latihan Menulis"
+      },
+      "listen": {
+        "title": "Biasakan telinga",
+        "body": "Dengarkan audio berulang kali, bahkan sambil santai. Kemampuan menyimak hanya naik lewat jam terbang.",
+        "cta": "Latihan Menyimak"
+      },
+      "quiz": {
+        "title": "Uji setelah belajar",
+        "body": "Setelah menyelesaikan satu pelajaran, langsung kerjakan latihan soalnya. Mengingat kembali jauh lebih kuat daripada membaca ulang.",
+        "cta": "Latihan Soal"
+      }
+    },
+    "tip_jlpt_title": "Tips Lulus {level}",
+    "tip_jlpt_sub": "Langkah praktis, langsung ke fitur yang membantu.",
+    "ready_starting": "Baru mulai",
+    "ready_growing": "Berkembang",
+    "ready_almost": "Hampir siap",
+    "ready_ready": "Siap ujian",
+    "tip_jlpt": {
+      "format": {
+        "title": "Kenali format ujian",
+        "body": "JLPT terdiri dari Moji-Goi, Bunpou-Dokkai, dan Chokai. Kerjakan satu paket tes agar tahu bentuk soal dan alur waktunya.",
+        "cta": "Lihat Tes JLPT"
+      },
+      "vocab": {
+        "title": "Perkuat kosakata & kanji",
+        "body": "Sebagian besar soal menguji kosakata dan kanji. Ulas rutin sampai kata dikuasai, lalu cek kanji yang sering muncul.",
+        "cta": "Ulas Kosakata"
+      },
+      "grammar": {
+        "title": "Pahami pola tata bahasa",
+        "body": "Hafal pola kalimat beserta contohnya. Gunakan referensi saat ragu, jangan hanya menghafal artinya.",
+        "cta": "Buka Referensi"
+      },
+      "listening": {
+        "title": "Latih menyimak tiap hari",
+        "body": "Bagian Chokai sering menjadi penentu kelulusan. Mulai dari audio pendek, lalu naikkan ke percakapan yang lebih panjang.",
+        "cta": "Latihan Menyimak"
+      },
+      "time": {
+        "title": "Latih manajemen waktu",
+        "body": "Kerjakan dalam mode ketat dengan timer agar terbiasa. Lewati soal yang buntu, lalu kembali di akhir.",
+        "cta": "Coba Mode Ketat"
+      },
+      "review": {
+        "title": "Pelajari kesalahanmu",
+        "body": "Setelah tes, buka pembahasan dan catat pola kesalahan. Di sinilah nilaimu naik paling cepat.",
+        "cta": "Lihat Riwayat Tes"
+      },
+      "final_week": {
+        "title": "Rapikan minggu terakhir",
+        "body": "Ulang materi yang masih lemah, jangan mulai topik baru sehari sebelum ujian, tidur cukup, dan jangan biarkan ada jawaban kosong saat ujian.",
+        "cta": "Buka Referensi"
+      }
+    },
+    "cd_title": "Hitung Mundur JLPT {level}",
+    "cd_official": "Jadwal resmi",
+    "cd_custom": "Tanggal kamu",
+    "cd_days": "hari lagi",
+    "cd_weeks": "{w} pekan {d} hari",
+    "cd_msg_far": "Waktu masih panjang. Bangun fondasi: kana, kosakata, dan kanji dulu, satu langkah tiap hari.",
+    "cd_msg_mid": "Mulai perbanyak latihan soal dan menyimak, lalu coba satu simulasi tes untuk melihat posisimu.",
+    "cd_msg_near": "Fokus ulas kosakata dan kerjakan simulasi tes. Pelajari pembahasan tiap kesalahan.",
+    "cd_msg_last": "Pekan terakhir: ulas ringan, istirahat cukup, dan jangan belajar materi baru.",
+    "cd_msg_today": "Hari ini hari ujian. Tarik napas, kamu sudah siap. Semangat!",
+    "cd_cta": "Simulasi tes",
+    "cd_set": "Atur tanggal ujian",
+    "cd_pick": "Tanggal ujian",
+    "cd_dialog_hint": "Dipakai bila jadwal di kotamu berbeda. Tersimpan di akunmu.",
+    "cd_reset": "Pakai jadwal resmi",
+    "cd_note": "Jadwal di kotamu bisa berbeda.",
+    "cd_check": "Cek jadwal resmi",
+    "badges_title": "Lencana Pencapaian",
+    "badges_sub": "{n} dari {total} lencana terbuka",
+    "f_all": "Semua",
+    "f_unlocked": "Terbuka",
+    "f_locked": "Terkunci",
+    "badges_empty": "Belum ada lencana di kategori ini.",
+    "badge_next": "Lencana berikutnya:",
+    "badge_unlocked": "Terbuka",
+    "badge_go": "Kejar lencana",
+    "badge_new": "Lencana baru: {name}!",
+    "badge": {
+      "first_step": {
+        "title": "Langkah Pertama",
+        "desc": "Selesaikan 1 pelajaran."
+      },
+      "lessons_5": {
+        "title": "Rajin Belajar",
+        "desc": "Selesaikan 5 pelajaran."
+      },
+      "lessons_15": {
+        "title": "Murid Teladan",
+        "desc": "Selesaikan 15 pelajaran."
+      },
+      "streak_3": {
+        "title": "Mulai Konsisten",
+        "desc": "Belajar 3 hari berturut-turut."
+      },
+      "streak_7": {
+        "title": "Sepekan Penuh",
+        "desc": "Belajar 7 hari berturut-turut."
+      },
+      "streak_30": {
+        "title": "Sebulan Tanpa Putus",
+        "desc": "Belajar 30 hari berturut-turut."
+      },
+      "xp_100": {
+        "title": "100 XP",
+        "desc": "Kumpulkan 100 XP."
+      },
+      "xp_500": {
+        "title": "500 XP",
+        "desc": "Kumpulkan 500 XP."
+      },
+      "xp_1000": {
+        "title": "1.000 XP",
+        "desc": "Kumpulkan 1.000 XP."
+      },
+      "vocab_10": {
+        "title": "Pemburu Kata",
+        "desc": "Kuasai 10 kosakata."
+      },
+      "vocab_50": {
+        "title": "Kamus Berjalan",
+        "desc": "Kuasai 50 kosakata."
+      },
+      "kanji_10": {
+        "title": "Penulis Kanji",
+        "desc": "Kuasai 10 kanji."
+      },
+      "crown_1": {
+        "title": "Mahkota Pertama",
+        "desc": "Selesaikan satu latihan tanpa salah."
+      },
+      "crown_10": {
+        "title": "Raja Latihan",
+        "desc": "Raih 10 mahkota."
+      },
+      "jlpt_1": {
+        "title": "Peserta Ujian",
+        "desc": "Selesaikan 1 simulasi Tes JLPT."
+      }
+    },
+    "cd_save_error": "Gagal menyimpan tanggal ujian. Coba lagi.",
+    "jlpt_pass": {
+      "title": "Syarat lulus JLPT {level}",
+      "sub": "Pahami aturan mainnya, lalu cek hasil tesmu.",
+      "total": "Total minimal {pass} dari {max} poin",
+      "language": "Pengetahuan Bahasa dan Membaca (minimal)",
+      "listening": "Menyimak (minimal)",
+      "note": "Total skor dan batas minimal di kedua bagian harus terpenuhi sekaligus. Skor di aplikasi ini adalah estimasi, bukan skor resmi JLPT.",
+      "best": "Skor terbaik {score} dari {max}",
+      "attempts": "{n} kali tes",
+      "passed": "Lulus",
+      "not_passed": "Belum lulus",
+      "none": "Belum ada tes selesai",
+      "empty": "Simulasi akan muncul di sini setelah tersedia untuk akunmu.",
+      "resume": "Lanjutkan tes"
+    },
+    "ready_parts": {
+      "title": "Kesiapan per bagian",
+      "sub": "Estimasi dari progres belajarmu. Klik bagian yang paling lemah untuk langsung melatihnya.",
+      "moji": "Moji-Goi (huruf & kosakata)",
+      "bunpou": "Bunpou (tata bahasa)",
+      "chokai": "Chokai (menyimak)",
+      "weakest": "Fokus berikutnya: {part}"
+    },
+    "cd_plan_weeks": "Sekitar {n} minggu lagi untuk bersiap.",
+    "cd_plan_pace": "Sisa {left} pelajaran: kerjakan sekitar {pace} per minggu agar selesai sebelum ujian.",
+    "cd_plan_pace_done": "Semua pelajaran sudah selesai. Pakai sisa waktu untuk latihan soal dan simulasi.",
+    "kanji_day": {
+      "title": "Kanji hari ini",
+      "another": "Kanji lain",
+      "open": "Buka Kanji",
+      "strokes": "{n} goresan",
+      "on": "On:",
+      "kun": "Kun:"
+    }
   },
   "path": {
     "title": "Jalur Belajar",
@@ -617,6 +892,21 @@
     "review": {
       "open": "Lihat pembahasan",
       "back": "Kembali ke rekap"
+    },
+    "certificate": {
+      "issuer": "HonTomo",
+      "title": "Sertifikat Simulasi JLPT",
+      "jp_title": "日本語能力試験 模擬テスト 合格証",
+      "awarded_to": "Diberikan kepada",
+      "statement": "telah dinyatakan LULUS simulasi tes JLPT level {level} di HonTomo dengan hasil sebagai berikut.",
+      "language": "Pengetahuan Bahasa",
+      "listening": "Menyimak (聴解)",
+      "total": "Skor Total",
+      "test_date": "Tanggal Tes",
+      "cert_no": "No. Sertifikat",
+      "seal": "SIMULASI",
+      "disclaimer": "Sertifikat simulasi HonTomo untuk latihan. Bukan sertifikat resmi JLPT dan tidak diterbitkan oleh The Japan Foundation maupun JEES.",
+      "print": "Cetak / Simpan PDF"
     }
   },
   "jlptMock": {

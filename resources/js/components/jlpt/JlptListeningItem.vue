@@ -4,8 +4,13 @@
 //   choice_art N  → tiap pilihan berupa gambar (JlptChokaiArt "N-1".."N-n")
 //   choices []    → pilihan bertulis (tercetak di lembar soal)
 //   (keduanya tidak ada) → hanya bulatan 1..choice_count, pilihan hanya terdengar
-//   image         → satu gambar di atas pilihan (mis. rak tas, adegan ➡)
+//   image         → satu gambar di atas pilihan (mis. rak tas, adegan ➡). Bisa nama
+//                   gambar bawaan (string) atau { image, alt } berkas gambar (paket HonTomo),
+//                   dengan `arrow` {x, y} untuk tanda ➡ (Mondai 3) dan `marks` [{x, y, text}]
+//                   untuk nomor yang digambar aplikasi di atas gambar (rak tas, Mondai 1 no. 3).
+//   choices[i] = { image, alt } → pilihan berupa gambar berkas.
 import JlptChokaiArt from '@/components/jlpt/JlptChokaiArt.vue'
+import JlptMockImage from '@/components/jlpt-mock/JlptMockImage.vue'
 import JlptText from '@/components/jlpt/JlptText.vue'
 
 const props = defineProps({
@@ -17,7 +22,8 @@ const props = defineProps({
 const emit = defineEmits(['pick'])
 
 const count = computed(() => props.item.choices?.length ?? props.item.choice_count ?? 4)
-const long = computed(() => (props.item.choices ?? []).some(c => c.length > 12))
+const imageChoices = computed(() => (props.item.choices ?? []).some(c => typeof c === 'object' && c?.image))
+const long = computed(() => !imageChoices.value && (props.item.choices ?? []).some(c => typeof c === 'string' && c.length > 12))
 
 function pick(n) {
   if (!props.readonly)
@@ -27,8 +33,16 @@ function pick(n) {
 
 <template>
   <div class="jli">
+    <JlptMockImage
+      v-if="item.image && typeof item.image === 'object'"
+      :src="item.image.image"
+      :alt="item.image.alt"
+      :arrow="item.arrow ?? null"
+      :marks="item.marks ?? null"
+      class="jli__image"
+    />
     <JlptChokaiArt
-      v-if="item.image"
+      v-else-if="item.image"
       :name="item.image"
       class="jli__image"
     />
@@ -36,7 +50,7 @@ function pick(n) {
     <div
       class="jli__choices"
       :class="{
-        'jli__choices--art': item.choice_art,
+        'jli__choices--art': item.choice_art || imageChoices,
         'jli__choices--long': long,
         'jli__choices--bare': !item.choices && !item.choice_art,
       }"
@@ -58,6 +72,11 @@ function pick(n) {
         <JlptChokaiArt
           v-if="item.choice_art"
           :name="`${item.choice_art}-${n}`"
+        />
+        <JlptMockImage
+          v-else-if="imageChoices"
+          :src="item.choices[n - 1]?.image"
+          :alt="item.choices[n - 1]?.alt"
         />
         <span
           v-else-if="item.choices"

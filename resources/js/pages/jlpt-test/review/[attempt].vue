@@ -4,6 +4,7 @@
 //  - mock    : JlptMockQuestion mode review + pembahasan + transkrip + putar ulang audio
 //  - classic : stem + pilihan dengan jawaban Anda/kunci ditandai (+ pembahasan bila ada)
 // Jawaban 1-based dari server; JlptMockQuestion 0-based → dikonversi di sini.
+import JlptMockImage from '@/components/jlpt-mock/JlptMockImage.vue'
 import JlptMockPassage from '@/components/jlpt-mock/JlptMockPassage.vue'
 import JlptMockQuestion from '@/components/jlpt-mock/JlptMockQuestion.vue'
 import JlptMockText from '@/components/jlpt-mock/JlptMockText.vue'
@@ -305,7 +306,7 @@ onMounted(load)
               >
                 <VCardText>
                   <div class="jlpt-q__stem">
-                    <span class="jlpt-q__no">{{ q.id }}</span>
+                    <span class="jlpt-q__no">{{ q.no ?? q.id }}</span>
                     <span v-if="q.stem"><JlptText :text="q.stem" /></span>
                   </div>
                   <div
@@ -317,7 +318,17 @@ onMounted(load)
                       :key="ci"
                       class="jlpt-rchoice"
                       :class="choiceState(s, q, ci + 1)"
-                    >{{ ci + 1 }} <JlptText :text="String(c)" /></span>
+                    >{{ ci + 1 }}
+                      <JlptMockImage
+                        v-if="c && typeof c === 'object' && c.image"
+                        :src="c.image"
+                        :alt="c.alt"
+                      />
+                      <JlptText
+                        v-else
+                        :text="String(c)"
+                      />
+                    </span>
                   </div>
                   <div
                     v-else

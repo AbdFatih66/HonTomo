@@ -42,11 +42,18 @@
       "audio": 20,
       "answer_seconds": 6,
       "example": {
-        "image": "talk-ex",
+        "image": {
+          "image": "/images/jlpt/n5/l3-ex.png",
+          "alt": "Restoran: pelanggan memanggil pelayan"
+        },
         "choice_count": 3,
         "answer": 3,
         "audio": 21,
-        "script": "レストランでお店の人を呼びます。何と言いますか。\nF：1．いらっしゃいませ。\n　　2．失礼しました。\n　　3．すみません。"
+        "script": "レストランでお店の人を呼びます。何と言いますか。\nF：1．いらっしゃいませ。\n　　2．失礼しました。\n　　3．すみません。",
+        "arrow": {
+          "x": 50,
+          "y": 9
+        }
       }
     },
     "4": {
@@ -69,9 +76,25 @@
       "no": 1,
       "audio": 4,
       "answer": 2,
-      "choice_art": "socks",
-      "choice_count": 4,
-      "script": "靴下の店で、女の人と店の人が話しています。女の人は、どの靴下を買いますか。\nF：子供の靴下、ありますか。\nM：はい。長いのですか、短いのですか。\nF：長いのです。\nM：はい。果物の絵と動物の絵があります。どちらがいいですか。\nF：そうですね、動物のを下さい。\n女の人は、どの靴下を買いますか。"
+      "script": "靴下の店で、女の人と店の人が話しています。女の人は、どの靴下を買いますか。\nF：子供の靴下、ありますか。\nM：はい。長いのですか、短いのですか。\nF：長いのです。\nM：はい。果物の絵と動物の絵があります。どちらがいいですか。\nF：そうですね、動物のを下さい。\n女の人は、どの靴下を買いますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-1-c1.png",
+          "alt": "Kaus kaki PANJANG dengan gambar buah"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-1-c2.png",
+          "alt": "Kaus kaki PANJANG dengan gambar hewan (kucing dan anjing)"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-1-c3.png",
+          "alt": "Kaus kaki PENDEK dengan gambar buah"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-1-c4.png",
+          "alt": "Kaus kaki PENDEK dengan gambar hewan (kucing dan anjing)"
+        }
+      ]
     },
     {
       "id": "1-2",
@@ -93,9 +116,34 @@
       "no": 3,
       "audio": 6,
       "answer": 3,
-      "image": "bags",
+      "image": {
+        "image": "/images/jlpt/n5/l1-3.png",
+        "alt": "Rak toko tas: empat tas bergantung berjajar (1 kecil terang, 2 besar terang, 3 besar hitam di atas, 4 kecil hitam di bawah)"
+      },
       "choice_count": 4,
-      "script": "デパートで、女の人と店の人が話しています。店の人は、どのかばんを取りますか。\nF：すみません、その上の黒いかばんを取ってください。\nM：どちらですか。この小さいのですか。\nF：いいえ。大きいのです。\nM：はい。\n店の人は、どのかばんを取りますか。"
+      "script": "デパートで、女の人と店の人が話しています。店の人は、どのかばんを取りますか。\nF：すみません、その上の黒いかばんを取ってください。\nM：どちらですか。この小さいのですか。\nF：いいえ。大きいのです。\nM：はい。\n店の人は、どのかばんを取りますか。",
+      "marks": [
+        {
+          "x": 19,
+          "y": 7,
+          "text": "1"
+        },
+        {
+          "x": 42,
+          "y": 7,
+          "text": "2"
+        },
+        {
+          "x": 63,
+          "y": 7,
+          "text": "3"
+        },
+        {
+          "x": 85,
+          "y": 7,
+          "text": "4"
+        }
+      ]
     },
     {
       "id": "1-4",
@@ -103,9 +151,25 @@
       "no": 4,
       "audio": 7,
       "answer": 3,
-      "choice_art": "items",
-      "choice_count": 4,
-      "script": "教室で、先生が話しています。学生は、机の上に何を置きますか。\nM：今からテストをします。このテストでは、辞書を使う問題がありますから、机の上に辞書を出してください。鉛筆と消しゴムも出してください。時計は、かばんの中に入れてください。\nF：先生、ノートはどうしますか。\nM：ノートもかばんの中に入れてください。\n学生は、机の上に何を置きますか。"
+      "script": "教室で、先生が話しています。学生は、机の上に何を置きますか。\nM：今からテストをします。このテストでは、辞書を使う問題がありますから、机の上に辞書を出してください。鉛筆と消しゴムも出してください。時計は、かばんの中に入れてください。\nF：先生、ノートはどうしますか。\nM：ノートもかばんの中に入れてください。\n学生は、机の上に何を置きますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-4-c1.png",
+          "alt": "Hanya dua pensil dan satu penghapus di atas meja"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-4-c2.png",
+          "alt": "Buku catatan + dua pensil + penghapus"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-4-c3.png",
+          "alt": "Kamus tebal + dua pensil + penghapus"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-4-c4.png",
+          "alt": "Jam tangan + dua pensil + penghapus"
+        }
+      ]
     },
     {
       "id": "1-5",
@@ -113,9 +177,25 @@
       "no": 5,
       "audio": 8,
       "answer": 1,
-      "choice_art": "acts",
-      "choice_count": 4,
-      "script": "バスの中で、旅行会社の人が学生に話しています。学生は、始めに何をしますか。\nF：皆さん、ホテルに着きました。今から1階のレストランで晩ご飯を食べます。晩ご飯は7時からです。今6時50分ですから、すぐに行ってください。皆さんの荷物は、ホテルの人が部屋に持っていきます。晩ご飯のあとは、テレビを見たり、買い物をしたりしてください。\n学生は、始めに何をしますか。"
+      "script": "バスの中で、旅行会社の人が学生に話しています。学生は、始めに何をしますか。\nF：皆さん、ホテルに着きました。今から1階のレストランで晩ご飯を食べます。晩ご飯は7時からです。今6時50分ですから、すぐに行ってください。皆さんの荷物は、ホテルの人が部屋に持っていきます。晩ご飯のあとは、テレビを見たり、買い物をしたりしてください。\n学生は、始めに何をしますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-5-c1.png",
+          "alt": "Dua orang makan malam di meja restoran"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-5-c2.png",
+          "alt": "Seorang wanita membawa koper masuk ke pintu kamar hotel"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-5-c3.png",
+          "alt": "Dua orang duduk di sofa menonton TV"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-5-c4.png",
+          "alt": "Seorang wanita berbelanja di toko oleh-oleh"
+        }
+      ]
     },
     {
       "id": "1-6",
@@ -123,9 +203,25 @@
       "no": 6,
       "audio": 9,
       "answer": 4,
-      "choice_art": "food",
-      "choice_count": 4,
-      "script": "男の人と女の人が話しています。男の人は、何を持っていきますか。\nM：来週の日曜日、海へ行きますね。何を持っていきましょうか。\nF：私はおにぎりを持っていきます。\nM：じゃあ僕は。\nF：飲み物とお菓子をお願いします。\nM：はい。飲み物とお菓子ですね。\nF：あ、飲み物は重いですね。海に着いてから買いましょう。\nM：そうですね。\n男の人は、何を持っていきますか。"
+      "script": "男の人と女の人が話しています。男の人は、何を持っていきますか。\nM：来週の日曜日、海へ行きますね。何を持っていきましょうか。\nF：私はおにぎりを持っていきます。\nM：じゃあ僕は。\nF：飲み物とお菓子をお願いします。\nM：はい。飲み物とお菓子ですね。\nF：あ、飲み物は重いですね。海に着いてから買いましょう。\nM：そうですね。\n男の人は、何を持っていきますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-6-c1.png",
+          "alt": "Empat onigiri"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-6-c2.png",
+          "alt": "Tiga botol minuman"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-6-c3.png",
+          "alt": "Minuman + camilan"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-6-c4.png",
+          "alt": "Camilan saja (tanpa minuman)"
+        }
+      ]
     },
     {
       "id": "1-7",
@@ -231,9 +327,16 @@
       "no": 1,
       "audio": 22,
       "answer": 1,
-      "image": "talk-1",
+      "image": {
+        "image": "/images/jlpt/n5/l3-1.png",
+        "alt": "Dua orang di meja makan setelah selesai makan"
+      },
       "choice_count": 3,
-      "script": "ご飯を食べました。何と言いますか。\nF：1．ごちそうさまでした。\n　　2．いただきます。\n　　3．どういたしまして。"
+      "script": "ご飯を食べました。何と言いますか。\nF：1．ごちそうさまでした。\n　　2．いただきます。\n　　3．どういたしまして。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
     },
     {
       "id": "3-2",
@@ -241,9 +344,16 @@
       "no": 2,
       "audio": 23,
       "answer": 3,
-      "image": "talk-2",
+      "image": {
+        "image": "/images/jlpt/n5/l3-2.png",
+        "alt": "Di kereta: orang duduk, seorang wanita berdiri di depannya"
+      },
       "choice_count": 3,
-      "script": "電車の中です。女の人が来ました。何と言いますか。\nM：1．どうもありがとう。\n　　2．初めまして。\n　　3．ここ、どうぞ。"
+      "script": "電車の中です。女の人が来ました。何と言いますか。\nM：1．どうもありがとう。\n　　2．初めまして。\n　　3．ここ、どうぞ。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
     },
     {
       "id": "3-3",
@@ -251,9 +361,16 @@
       "no": 3,
       "audio": 24,
       "answer": 2,
-      "image": "talk-3",
+      "image": {
+        "image": "/images/jlpt/n5/l3-3.png",
+        "alt": "Siswa di gerbang sekolah hendak pulang, melambai ke teman"
+      },
       "choice_count": 3,
-      "script": "家へ帰ります。友達に何と言いますか。\nM：1．いってきます。\n　　2．じゃ、また。\n　　3．ただいま。"
+      "script": "家へ帰ります。友達に何と言いますか。\nM：1．いってきます。\n　　2．じゃ、また。\n　　3．ただいま。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
     },
     {
       "id": "3-4",
@@ -261,9 +378,16 @@
       "no": 4,
       "audio": 25,
       "answer": 3,
-      "image": "talk-4",
+      "image": {
+        "image": "/images/jlpt/n5/l3-4.png",
+        "alt": "Di kantor pos: pelanggan di depan loket petugas"
+      },
       "choice_count": 3,
-      "script": "郵便局で切手を買います。何と言いますか。\nM：1．切手を買いませんか。\n　　2．切手をどうぞ。\n　　3．切手を下さい。"
+      "script": "郵便局で切手を買います。何と言いますか。\nM：1．切手を買いませんか。\n　　2．切手をどうぞ。\n　　3．切手を下さい。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
     },
     {
       "id": "3-5",
@@ -271,9 +395,16 @@
       "no": 5,
       "audio": 26,
       "answer": 2,
-      "image": "talk-5",
+      "image": {
+        "image": "/images/jlpt/n5/l3-5.png",
+        "alt": "Dua siswa di bangku; teman tidak punya pensil"
+      },
       "choice_count": 3,
-      "script": "友達は鉛筆がありません。友達に何と言いますか。\nF：1．鉛筆、借りましょうか。\n　　2．鉛筆、使いますか。\n　　3．鉛筆、貸してください。"
+      "script": "友達は鉛筆がありません。友達に何と言いますか。\nF：1．鉛筆、借りましょうか。\n　　2．鉛筆、使いますか。\n　　3．鉛筆、貸してください。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
     },
     {
       "id": "4-1",
