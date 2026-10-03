@@ -1,0 +1,547 @@
+{
+  "level": "N4",
+  "section": "chokai",
+  "title": "聴解",
+  "minutes": 35,
+  "mondai": {
+    "1": {
+      "instruction": "もんだい1では、まず しつもんを 聞《き》いて ください。それから 話《はなし》を 聞《き》いて、もんだいようしの 1から4の 中《なか》から、いちばん いい ものを 一《ひと》つ えらんで ください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n4-test-1/l1-ex.mp3",
+        "answer": 2,
+        "choices": [
+          "しりょうを コピーする",
+          "にもつを 二階《にかい》へ 運《はこ》ぶ",
+          "かいぎに 出《で》る",
+          "へやを そうじする"
+        ],
+        "script": "れい。おとこの ひとと おんなの ひとが はなしています。おとこの ひとは、このあと なにを しますか。\nF：すみません、この にもつ、にかいへ はこんで もらえませんか。\nM：いいですよ。あ、でも、さきに かいぎの しりょうを コピーしてきますね。\nF：しりょうは わたしが やっておきます。\nM：そうですか。じゃ、さきに はこびます。\nおとこの ひとは、このあと なにを しますか。"
+      }
+    },
+    "2": {
+      "instruction": "もんだい2では、まず しつもんを 聞《き》いて ください。そのあと、もんだいようしを 見《み》て ください。読《よ》む 時間《じかん》が あります。それから 話《はなし》を 聞《き》いて、もんだいようしの 1から4の 中《なか》から、いちばん いい ものを 一《ひと》つ えらんで ください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n4-test-1/l2-ex.mp3",
+        "answer": 3,
+        "choices": [
+          "かぜを ひいたから",
+          "しごとが あるから",
+          "子《こ》どもの 学校《がっこう》へ 行《い》くから",
+          "りょこうに 行《い》くから"
+        ],
+        "script": "れい。おんなの ひとと おとこの ひとが はなしています。おんなの ひとは、どうして あしたの かいを やすみますか。\nM：あしたの かい、くるよね。\nF：ごめん、やすむの。しごとは だいじょうぶなんだけど、こどもの がっこうに いかなきゃ いけなくて。\nM：そうなんだ。わかった。\nおんなの ひとは、どうして あしたの かいを やすみますか。"
+      }
+    },
+    "3": {
+      "instruction": "もんだい3では、えを 見《み》ながら しつもんを 聞《き》いて ください。やじるし（➡）の 人《ひと》は なんと いいますか。1から3の 中《なか》から、いちばん いい ものを 一《ひと》つ えらんで ください。",
+      "answer_seconds": 6,
+      "audio_before": "/audio/jlpt-mock/n4-test-1/l3-break.mp3",
+      "audio": "/audio/jlpt-mock/n4-test-1/l3-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n4-test-1/l3-ex.mp3",
+        "answer": 3,
+        "choice_count": 3,
+        "image": {
+          "image": "/images/jlpt-mock/n4/l3-ex.png",
+          "alt": "Kantor sore hari: wanita membawa tas berdiri di tengah, rekan masih bekerja di meja"
+        },
+        "arrow": {
+          "x": 50,
+          "y": 9
+        },
+        "script": "れい。しごとが おわりました。まだ のこっている ひとに、なんと いいますか。\nF：1。おじゃまします。\nF：2。いってらっしゃい。\nF：3。おさきに しつれいします。"
+      }
+    },
+    "4": {
+      "instruction": "もんだい4は、えなどが ありません。まず 文《ぶん》を 聞《き》いて ください。それから、それに 対《たい》する へんじを 聞《き》いて、1から3の 中《なか》から、いちばん いい ものを 一《ひと》つ えらんで ください。",
+      "answer_seconds": 6,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-intro.mp3",
+      "memo": true,
+      "example": {
+        "audio": "/audio/jlpt-mock/n4-test-1/l4-ex.mp3",
+        "answer": 1,
+        "choice_count": 3,
+        "script": "れい。\nF：おなまえは なんと いいますか。\nM：1。たなかです。\nM：2。じゅうごさいです。\nM：3。にほんじんです。"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "l1-1",
+      "no": 1,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-1.mp3",
+      "answer": 3,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n4/l1-1-c1.png",
+          "alt": "Bolpoin TEBAL dengan tutup (kap)"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-1-c2.png",
+          "alt": "Bolpoin TIPIS dengan tutup (kap)"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-1-c3.png",
+          "alt": "Bolpoin TIPIS model tekan (klik) tanpa tutup"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-1-c4.png",
+          "alt": "Bolpoin TEBAL model tekan (klik) tanpa tutup"
+        }
+      ],
+      "script": "いちばん。おとこの ひとは、どの ペンを かいますか。\nM：すみません、くろい ボールペンを さがしているんですが。\nF：はい。ほそいのと ふといのが ありますよ。\nM：ほそいほうが いいです。\nF：キャップを つけるのと、うえを おして つかうのが ありますが。\nM：ポケットに いれるので、おして つかうのに します。\nおとこの ひとは、どの ペンを かいますか。",
+      "exp": "Pilih yang tipis (ほそい) dan model tekan (おして つかう) → bolpoin tipis model klik."
+    },
+    {
+      "id": "l1-2",
+      "no": 2,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-2.mp3",
+      "answer": 1,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n4/l1-2-c1.png",
+          "alt": "Membersihkan jendela"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-2-c2.png",
+          "alt": "Bermain tenis"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-2-c3.png",
+          "alt": "Belanja di supermarket dengan troli"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-2-c4.png",
+          "alt": "Memasak di dapur"
+        }
+      ],
+      "script": "にばん。おとこの ひとは、にちようびに なにを しますか。\nF：にちようび、かいものに いかない？\nM：にちようびは テニスの やくそくが あるんだ。\nF：でも、テレビで にちようびは あめって いってたよ。\nM：えっ、じゃあ テニスは むりだね。\nF：かいものは どようびに したから、にちようびは まどを ふいてくれる？\nM：いいよ。\nおとこの ひとは、にちようびに なにを しますか。",
+      "exp": "Tenis batal karena hujan, belanja sudah dilakukan Sabtu → hari Minggu membersihkan jendela."
+    },
+    {
+      "id": "l1-3",
+      "no": 3,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-3.mp3",
+      "answer": 1,
+      "choices": [
+        "タオルだけ",
+        "タオルと ぼうし",
+        "タオルと おべんとう",
+        "おべんとうと のみもの"
+      ],
+      "script": "さんばん。おんなの ひとは、なにを もって いきますか。\nF：あした、やまのぼりですね。なにを もって いけば いいですか。\nM：おべんとうは わたしが つくります。のみものも かって おきます。\nF：タオルは いりますか。\nM：はい、てんきが いいので、タオルは もって きてください。ぼうしは わたしが ふたつ もっているので、かします。\nF：わかりました。\nおんなの ひとは、なにを もって いきますか。",
+      "exp": "Bekal & minuman disiapkan pria, topi dipinjamkan → hanya handuk (タオル)."
+    },
+    {
+      "id": "l1-4",
+      "no": 4,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-4.mp3",
+      "answer": 3,
+      "choices": [
+        "アイ",
+        "アウ",
+        "イウ",
+        "イエ"
+      ],
+      "image": {
+        "image": "/images/jlpt-mock/n4/l1-4.png",
+        "alt": "Empat poster dalam kotak 2x2: ア bunga sakura, イ gunung berpuncak salju, ウ laut dan ombak, エ kucing"
+      },
+      "marks": [
+        {
+          "x": 6,
+          "y": 3,
+          "text": "ア"
+        },
+        {
+          "x": 94,
+          "y": 3,
+          "text": "イ"
+        },
+        {
+          "x": 6,
+          "y": 89,
+          "text": "ウ"
+        },
+        {
+          "x": 94,
+          "y": 89,
+          "text": "エ"
+        }
+      ],
+      "script": "よんばん。おんなの ひとは、どの ポスターを はりますか。\nF：ぶしつの かべに ポスターを にまい はりたいんだけど、どれが いいと おもう？\nM：ねこの ポスターは かわいいけど、ぶしつには あわないね。\nF：じゃあ、さくらは？\nM：さくらは はるだけだから、いまは ちょっと…。\nF：そうか。じゃあ、やまと うみに しよう。\nおんなの ひとは、どの ポスターを はりますか。",
+      "exp": "Kucing & sakura ditolak → gunung (イ) dan laut (ウ)."
+    },
+    {
+      "id": "l1-5",
+      "no": 5,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-5.mp3",
+      "answer": 2,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n4/l1-5-c1.png",
+          "alt": "Wanita berambut PANJANG berkacamata"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-5-c2.png",
+          "alt": "Wanita berambut PENDEK berkacamata"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-5-c3.png",
+          "alt": "Wanita berambut PANJANG tanpa kacamata"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-5-c4.png",
+          "alt": "Wanita berambut PENDEK tanpa kacamata"
+        }
+      ],
+      "script": "ごばん。やまださんは、どの ひとですか。\nM：えきで やまださんを さがしているんですが、どの ひとですか。\nF：えっと、かみは みじかいです。\nM：めがねは かけていますか。\nF：はい、かけています。\nやまださんは、どの ひとですか。",
+      "exp": "Rambut pendek (みじかい) dan berkacamata (めがね) → wanita berambut pendek berkacamata."
+    },
+    {
+      "id": "l1-6",
+      "no": 6,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-6.mp3",
+      "answer": 3,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n4/l1-6-c1.png",
+          "alt": "Denah: sofa tepat di bawah jendela"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-6-c2.png",
+          "alt": "Denah: sofa di depan pintu"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-6-c3.png",
+          "alt": "Denah: sofa menghadap TV dari tengah ruangan"
+        },
+        {
+          "image": "/images/jlpt-mock/n4/l1-6-c4.png",
+          "alt": "Denah: sofa di samping TV, menghadap ke dinding"
+        }
+      ],
+      "script": "ろくばん。ソファーは、どこに おきますか。\nF：ソファーは どこに おこうか。\nM：まどの したは？\nF：ひが あたって あつく なるから、いやだな。\nM：じゃあ、ドアの まえは？\nF：ひとが とおるから、じゃまだよ。テレビの すぐ よこも、がめんが みにくいし。\nM：そうだね。じゃあ、テレビに むかって ゆっくり みられる ところに しよう。\nソファーは、どこに おきますか。",
+      "exp": "Bukan di bawah jendela, depan pintu, atau samping TV → posisi menghadap TV."
+    },
+    {
+      "id": "l1-7",
+      "no": 7,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-7.mp3",
+      "answer": 1,
+      "choices": [
+        "3時《さんじ》",
+        "2時半《にじはん》",
+        "3時半《さんじはん》",
+        "4時《よじ》"
+      ],
+      "script": "ななばん。かいぎは なんじから ですか。\nF：ごごの かいぎ、にじからでしたよね。\nM：それが、かちょうが しゅっちょうから もどるのが おくれて、さんじゅっぷん おそく なりました。\nF：じゃあ、にじはんですか。\nM：あ、いま れんらくが あって、さらに さんじゅっぷん おそく なるそうです。\nかいぎは なんじから ですか。",
+      "exp": "14.00 → 14.30 → mundur 30 menit lagi = 15.00 (3時)."
+    },
+    {
+      "id": "l1-8",
+      "no": 8,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n4-test-1/l1-8.mp3",
+      "answer": 4,
+      "choices": [
+        "メールで 送《おく》る",
+        "先生《せんせい》に 直接《ちょくせつ》わたす",
+        "事務室《じむしつ》の 人《ひと》に わたす",
+        "研究室《けんきゅうしつ》の 前《まえ》の はこに 入《い》れる"
+      ],
+      "script": "はちばん。がくせいは、レポートを どうやって だしますか。\nF：レポートは げつようびまでに だして ください。メールでは おくらないで、かみで だして くださいね。\nM：せんせいに ちょくせつ わたせば いいですか。\nF：いいえ、わたしは がいしゅつが おおいので、けんきゅうしつの まえの はこに いれて ください。\nM：じむしつの ひとに わたしても いいですか。\nF：それも だめです。はこに いれて ください。\nがくせいは、レポートを どうやって だしますか。",
+      "exp": "Tidak lewat email, guru, atau kantor → masukkan ke kotak di depan ruang riset."
+    },
+    {
+      "id": "l2-1",
+      "no": 1,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-1.mp3",
+      "answer": 2,
+      "choices": [
+        "電車《でんしゃ》が じこで とまったから",
+        "駅《えき》で ぐあいが わるい 人《ひと》を たすけたから",
+        "ねぼうしたから",
+        "かさを わすれて とりに もどったから"
+      ],
+      "script": "いちばん。おんなの がくせいは、どうして おくれましたか。\nM：やまださん、どうしたんですか。じゅぎょう、はじまっていますよ。\nF：すみません。でんしゃが とまって…。\nM：じこですか。\nF：いえ、えきで ぐあいが わるく なった ひとが いて、その ひとを たすけていたら おそく なったんです。\nおんなの がくせいは、どうして おくれましたか。",
+      "exp": "Alasan terlambat: menolong orang yang sakit di stasiun."
+    },
+    {
+      "id": "l2-2",
+      "no": 2,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-2.mp3",
+      "answer": 4,
+      "choices": [
+        "10時30分《じゅうじ さんじゅっぷん》",
+        "10時40分《じゅうじ よんじゅっぷん》",
+        "11時《じゅういちじ》",
+        "10時50分《じゅうじ ごじゅっぷん》"
+      ],
+      "script": "にばん。おとこの ひとは、なんじの でんしゃに のりますか。\nF：やくそくは じゅういちじですよね。でんしゃは なんじに のりますか。\nM：じゅうじ よんじゅっぷんと じゅうじ ごじゅっぷんが あります。\nF：よんじゅっぷんのは いつも こんで いますよ。\nM：じゃあ、ゆっくり すわれる ほうに します。\nおとこの ひとは、なんじの でんしゃに のりますか。",
+      "exp": "Kereta 10.40 selalu penuh → naik yang 10.50."
+    },
+    {
+      "id": "l2-3",
+      "no": 3,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-3.mp3",
+      "answer": 1,
+      "choices": [
+        "安《やす》くて、店《みせ》の 人《ひと》が しんせつだから",
+        "家《いえ》から 近《ちか》いから",
+        "りょうりが おいしいから",
+        "ひろくて しずかだから"
+      ],
+      "script": "さんばん。おんなの ひとは、どうして この レストランが すきですか。\nM：この レストラン、よく きますね。りょうりが おいしいからですか。\nF：りょうりは ふつうですよ。\nM：じゃあ、いえから ちかいから？\nF：ううん、ちょっと とおいんです。でも、やすいし、みせの ひとが しんせつなので。\nおんなの ひとは、どうして この レストランが すきですか。",
+      "exp": "Masakan biasa saja & jauh; alasannya murah dan pelayannya ramah."
+    },
+    {
+      "id": "l2-4",
+      "no": 4,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-4.mp3",
+      "answer": 4,
+      "choices": [
+        "じてんしゃ",
+        "バス",
+        "くるま",
+        "地下鉄《ちかてつ》"
+      ],
+      "script": "よんばん。おとこの ひとは、きょう なにで かいしゃへ いきますか。\nF：いつもは じてんしゃですか。\nM：ええ。でも きょうは あめだから、バスで いこうと おもって。\nF：バスは あめの ひは おくれますよ。\nM：そうですか。じゃあ、ちかてつに します。\nおとこの ひとは、きょう なにで かいしゃへ いきますか。",
+      "exp": "Biasanya sepeda; hari ini hujan, bus terlambat → kereta bawah tanah."
+    },
+    {
+      "id": "l2-5",
+      "no": 5,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-5.mp3",
+      "answer": 2,
+      "choices": [
+        "てんきが わるいから",
+        "しごとが いそがしく なったから",
+        "おかねが ないから",
+        "びょうきに なったから"
+      ],
+      "script": "ごばん。おんなの ひとは、どうして りょこうを やめましたか。\nM：らいしゅうの ほっかいどう りょこう、たのしみですね。\nF：それが、やめたんです。\nM：てんきが わるいんですか。\nF：いいえ。しごとが ふえて、やすめなく なって。\nおんなの ひとは、どうして りょこうを やめましたか。",
+      "exp": "Cuaca bukan alasan; pekerjaan bertambah sehingga tidak bisa libur."
+    },
+    {
+      "id": "l2-6",
+      "no": 6,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-6.mp3",
+      "answer": 4,
+      "choices": [
+        "20分《にじゅっぷん》",
+        "30分《さんじゅっぷん》",
+        "35分《さんじゅうごふん》",
+        "40分《よんじゅっぷん》"
+      ],
+      "script": "ろくばん。おとこの ひとの いえから かいしゃまで、ぜんぶで なんぷん かかりますか。\nF：かいしゃまで、どのくらい かかりますか。\nM：えきまで バスで じゅうごふん、でんしゃで にじゅっぷん、えきから かいしゃまで あるいて ごふんです。\nF：ぜんぶで けっこう かかりますね。\nおとこの ひとの いえから かいしゃまで、ぜんぶで なんぷん かかりますか。",
+      "exp": "15 + 20 + 5 = 40 menit."
+    },
+    {
+      "id": "l2-7",
+      "no": 7,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n4-test-1/l2-7.mp3",
+      "answer": 1,
+      "choices": [
+        "南口《みなみぐち》の コンビニの 前《まえ》",
+        "北口《きたぐち》",
+        "改札《かいさつ》の 前《まえ》",
+        "駅《えき》の 中《なか》の カフェ"
+      ],
+      "script": "ななばん。ふたりは、どこで あいますか。\nM：えきの きたぐちで まちあわせしましょうか。\nF：きたぐちは こうじちゅうで、はいれませんよ。\nM：じゃあ、かいさつの まえは？\nF：かいさつは ひとが おおいから、みなみぐちの コンビニの まえは どうですか。\nM：いいですね。そこに しましょう。\nふたりは、どこで あいますか。",
+      "exp": "Pintu utara ditutup, gerbang tiket ramai → depan minimarket di pintu selatan."
+    },
+    {
+      "id": "l3-1",
+      "no": 1,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n4-test-1/l3-1.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n4/l3-1.png",
+        "alt": "Wanita muda di tengah dengan kardus berat; senior pria membawa kardus itu"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "いちばん。せんぱいに おもい にもつを もって もらいました。なんと いいますか。\nF：1。おねがいします。\nF：2。ありがとうございました。たすかりました。\nF：3。かまいませんよ。",
+      "exp": "Berterima kasih setelah dibantu: ありがとうございました、たすかりました."
+    },
+    {
+      "id": "l3-2",
+      "no": 2,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n4-test-1/l3-2.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n4/l3-2.png",
+        "alt": "Dua teman mengobrol di kafe ramai; pria di tengah mendekatkan telinga"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "にばん。ともだちの はなしが よく きこえませんでした。なんと いいますか。\nM：1。ごめん、もう いちど いって くれる？\nM：2。ごめん、そんなに いわないで。\nM：3。ごめん、よく わかるよ。",
+      "exp": "Meminta pengulangan: もう いちど いって くれる？"
+    },
+    {
+      "id": "l3-3",
+      "no": 3,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n4-test-1/l3-3.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n4/l3-3.png",
+        "alt": "Toko pakaian: wanita di tengah mencoba jaket yang kekecilan, pelayan di kanan"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "さんばん。みせで ふくを きて みましたが、ちいさかったです。なんと いいますか。\nF：1。ちょっと ちいさく してください。\nF：2。これを いただきます。\nF：3。もう すこし おおきいのは ありますか。",
+      "exp": "Meminta ukuran lebih besar: もう すこし おおきいのは ありますか."
+    },
+    {
+      "id": "l3-4",
+      "no": 4,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n4-test-1/l3-4.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n4/l3-4.png",
+        "alt": "Ruang guru: siswa pria di tengah menyerahkan buku ke guru wanita yang duduk di meja"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "よんばん。せんせいから かりた ほんを かえします。なんと いいますか。\nM：1。まだ つかいます。\nM：2。ながい あいだ かりて、すみませんでした。\nM：3。かして ください。",
+      "exp": "Mengembalikan pinjaman: ながい あいだ かりて、すみませんでした."
+    },
+    {
+      "id": "l3-5",
+      "no": 5,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n4-test-1/l3-5.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n4/l3-5.png",
+        "alt": "Kereta: wanita muda duduk di tengah menoleh ke lansia yang berdiri di dekatnya"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "ごばん。でんしゃで おとしよりが たっています。なんと いいますか。\nF：1。すみません、おりますか。\nF：2。しつれいですが、どちらまで？\nF：3。よかったら、ここに すわって ください。",
+      "exp": "Menawarkan tempat duduk: よかったら、ここに すわって ください."
+    },
+    {
+      "id": "l4-1",
+      "no": 1,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-1.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "いちばん。\nF：ここに すわっても いいですか。\nM：1。はい、いま すわりました。\nM：2。ええ、どうぞ。\nM：3。いいえ、すわって ください。",
+      "exp": "Meminta izin duduk → ええ、どうぞ."
+    },
+    {
+      "id": "l4-2",
+      "no": 2,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-2.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "にばん。\nM：きのうの パーティーは どうでしたか。\nF：1。とても たのしかったです。\nF：2。パーティーは あしたです。\nF：3。いっしょに いきませんか。",
+      "exp": "Ditanya kesan → とても たのしかったです."
+    },
+    {
+      "id": "l4-3",
+      "no": 3,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-3.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "さんばん。\nF：ちょっと てつだって もらえませんか。\nM：1。はい、てつだって もらいます。\nM：2。てつだって ください。\nM：3。いいですよ。なにを しますか。",
+      "exp": "Diminta bantuan → いいですよ。なにを しますか."
+    },
+    {
+      "id": "l4-4",
+      "no": 4,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-4.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "よんばん。\nM：この ほん、おもしろいですよ。よかったら かしましょうか。\nF：1。ええ、いつも かして います。\nF：2。いいんですか。ありがとうございます。\nF：3。いえ、わたしが かします。",
+      "exp": "Ditawari pinjaman → いいんですか。ありがとうございます."
+    },
+    {
+      "id": "l4-5",
+      "no": 5,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-5.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "ごばん。\nF：どうして おくれたんですか。\nM：1。バスが こなかったんです。\nM：2。あしたは はやく きます。\nM：3。じゅっぷんぐらいです。",
+      "exp": "Ditanya alasan → バスが こなかったんです."
+    },
+    {
+      "id": "l4-6",
+      "no": 6,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-6.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "ろくばん。\nM：さいきん、いそがしそうですね。\nF：1。ええ、とても ひまです。\nF：2。いいえ、いそがしいでしょう。\nF：3。ええ、しごとが おおくて たいへんです。",
+      "exp": "Dibilang sibuk → ええ、しごとが おおくて たいへんです."
+    },
+    {
+      "id": "l4-7",
+      "no": 7,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-7.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "ななばん。\nF：かぜの ぐあいは どうですか。\nM：1。かぜは ひきません。\nM：2。おかげさまで、もう よく なりました。\nM：3。くすりを のんで ください。",
+      "exp": "Ditanya kondisi flu → おかげさまで、もう よく なりました."
+    },
+    {
+      "id": "l4-8",
+      "no": 8,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n4-test-1/l4-8.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "はちばん。\nM：にちようび、いっしょに テニスを しませんか。\nF：1。はい、しませんでした。\nF：2。いいえ、テニスは すきです。\nF：3。すみません、にちようびは ようじが あるんです。",
+      "exp": "Diajak tenis dan menolak sopan → すみません、にちようびは ようじが あるんです."
+    }
+  ],
+  "audio": {
+    "intro": "/audio/jlpt-mock/n4-test-1/l-intro.mp3",
+    "outro": "/audio/jlpt-mock/n4-test-1/l-outro.mp3"
+  }
+}

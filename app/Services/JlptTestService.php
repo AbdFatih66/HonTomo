@@ -773,6 +773,7 @@ class JlptTestService
         return [
             'attempt_id' => $attempt->id,
             'pack' => $attempt->pack,
+            'level' => $attempt->level,
             'mode' => $attempt->mode,
             'format' => $this->format($attempt->pack),
             'section' => $row->section,

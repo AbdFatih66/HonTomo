@@ -11,9 +11,11 @@ use Illuminate\Support\Facades\File;
  * Text-to-Speech — same idea as chokai:generate-audio, but the scripts
  * have three kinds of speaker (narrator / male / female) and short pauses.
  *
- * Reads the server-side bank resources/lang-data/jlpt/packs/{test}/chokai.json
- * (the file is never served publicly), finds every node that has an
- * "audio_text" (mondai intro, example and each listening question),
+ * Reads the server-side script source resources/lang-data/jlpt/sources/{test}.json
+ * (preferred, keeps "audio_text" after the bank is converted to the classic format)
+ * or, for older packs, resources/lang-data/jlpt/packs/{test}/chokai.json (never served
+ * publicly), finds every node that has an "id" + "audio_text" anywhere in the file
+ * (overall intro/outro, mondai intro, break, example and each listening question),
  * writes public/audio/jlpt-mock/{test}/{id}.mp3 and stores the path in the
  * node's "audio" field. Idempotent: an existing MP3 is skipped unless
  * --force is passed.
@@ -48,20 +50,28 @@ class JlptMockGenerateAudio extends Command
 
     public function handle(GoogleTextToSpeechService $tts): int
     {
-        // Bank soal SERVER (bukan lagi public/data/jlpt-mock): hanya sesi chokai yang punya audio_text.
-        $dataDir = rtrim((string) config('jlpt.data_path'), '/').'/jlpt/packs';
+        // Sumber naskah SERVER (bukan lagi public/data/jlpt-mock). Prioritas:
+        //  1) jlpt/sources/{id}.json — sumber format mock (masih punya audio_text);
+        //  2) jlpt/packs/{id}/chokai.json — pack lama yang belum punya sumber.
+        $root = rtrim((string) config('jlpt.data_path'), '/').'/jlpt';
+        $dataDir = "{$root}/packs";
 
-        if (! File::isDirectory($dataDir)) {
+        if (! File::isDirectory($dataDir) && ! File::isDirectory("{$root}/sources")) {
             $this->error("No such directory: {$dataDir}");
 
             return self::FAILURE;
         }
 
         $only = $this->option('test');
-        $files = collect(File::directories($dataDir))
+        $sources = collect(File::isDirectory("{$root}/sources") ? File::files("{$root}/sources") : [])
+            ->filter(fn ($f) => $f->getExtension() === 'json')
+            ->keyBy(fn ($f) => $f->getFilenameWithoutExtension());
+        $packs = collect(File::isDirectory($dataDir) ? File::directories($dataDir) : [])
             ->filter(fn ($d) => File::exists("{$d}/chokai.json"))
-            ->when($only, fn ($c) => $c->filter(fn ($d) => basename($d) === $only))
+            ->keyBy(fn ($d) => basename($d))
             ->map(fn ($d) => new \SplFileInfo("{$d}/chokai.json"));
+        $files = $packs->merge($sources) // sumber menimpa pack dengan id sama
+            ->when($only, fn ($c) => $c->filter(fn ($f, $id) => $id === $only));
 
         if ($files->isEmpty()) {
             $this->warn('No matching test JSON files found.');
@@ -91,13 +101,15 @@ class JlptMockGenerateAudio extends Command
                 continue;
             }
 
-            // id paket = nama folder pack (…/packs/<id>/chokai.json)
-            $testId = basename(dirname($file->getPathname()));
+            // id paket = nama berkas sumber (…/sources/<id>.json) atau nama folder pack
+            $testId = str_contains(str_replace('\\', '/', $file->getPathname()), '/jlpt/sources/')
+                ? $file->getBasename('.json')
+                : basename(dirname($file->getPathname()));
             $dir = public_path("audio/jlpt-mock/{$testId}");
             File::ensureDirectoryExists($dir);
             $this->info("Test {$testId}");
 
-            $json['mondai'] = $this->walk($json['mondai'] ?? [], function (array $node) use ($tts, $voices, $rates, $force, $dry, $dir, $testId) {
+            $json = $this->walk($json, function (array $node) use ($tts, $voices, $rates, $force, $dry, $dir, $testId) {
                 $id = $node['id'];
                 $mp3 = "{$dir}/{$id}.mp3";
                 $public = "/audio/jlpt-mock/{$testId}/{$id}.mp3";

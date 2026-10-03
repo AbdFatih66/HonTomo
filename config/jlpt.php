@@ -74,6 +74,22 @@ return [
             ],
         ],
 
+        // Bank soal asli JLPT N4 (salinan) — sama seperti 'private' (N5): HANYA admin.
+        // Bank soal: resources/lang-data/jlpt/n4/. Audio chokai N4:
+        // public/audio/jlpt/n4/NN-….mp3. Ikut dimatikan oleh JLPT_PRIVATE_PACK=false.
+        'private-n4' => [
+            'enabled' => (bool) env('JLPT_PRIVATE_PACK', true),
+            'admin_only' => true,
+            'level' => 'N4',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/n4',
+            'audio_path' => '/audio/jlpt',
+            'title' => [
+                'id' => 'Tes JLPT N4 (soal asli)',
+                'en' => 'JLPT N4 Test (original questions)',
+            ],
+        ],
+
         // Paket orisinal HonTomo (dulu "Simulasi JLPT"). Tambah paket baru dengan
         // menjalankan scripts/jlpt-mock-to-bank.py lalu menambah entri seperti ini.
         'n5-test-1' => [
@@ -86,6 +102,24 @@ return [
             'title' => [
                 'id' => 'Simulasi JLPT N5 — Paket 1',
                 'en' => 'JLPT N5 Mock Test — Set 1',
+            ],
+        ],
+
+        // Paket orisinal HonTomo N4 — ketiga sesi sudah ada (bank:
+        // resources/lang-data/jlpt/packs/n4-test-1/{mojigoi,bunpou_dokkai,chokai}.json, sumber naskah:
+        // resources/lang-data/jlpt/sources/n4-test-1.json, gambar: public/images/jlpt-mock/n4/,
+        // audio TTS: public/audio/jlpt-mock/n4-test-1/). Level N4 mewajibkan ketiga sesi aktif;
+        // set `false` bila audio/gambar belum ada di server (test JlptMockN4ChokaiTest menjaga
+        // agar pack aktif selalu punya semua bank-nya). Panduan: docs/jlpt-mock-n4.md.
+        'n4-test-1' => [
+            'enabled' => true,
+            'level' => 'N4',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/packs/n4-test-1',
+            'audio_path' => null,
+            'title' => [
+                'id' => 'Simulasi JLPT N4 — Paket 1',
+                'en' => 'JLPT N4 Mock Test — Set 1',
             ],
         ],
     ],
@@ -139,6 +173,60 @@ return [
                     'enabled' => true,
                     'minutes' => 30,
                     'questions' => 24,
+                    'file' => 'chokai.json',
+                ],
+            ],
+        ],
+        // JLPT N4 — total 0–180, lulus ≥ 90; batas minimal bahasa 38/120 dan
+        // mendengarkan 19/60 (jlpt.jp/e/guideline/results.html). Sama seperti N5,
+        // nilai grup di sini proporsional (ESTIMASI). Ketiga sesi (mojigoi,
+        // bunpou_dokkai, chokai) aktif, jadi rekap langsung memberi keputusan
+        // lulus/tidak. Audio chokai: public/audio/jlpt/n4/NN-….mp3 (39 trek, termasuk istirahat trek 21),
+        // gambar: public/images/jlpt/n4/ — lihat docs/jlpt-real-images-n4.md.
+        'N4' => [
+            'pass_total' => 90,
+            'total_max' => 180,
+
+            'groups' => [
+                'language_knowledge' => [
+                    'max' => 120,
+                    'min' => 38,
+                    'sections' => ['mojigoi', 'bunpou_dokkai'],
+                ],
+                'listening' => [
+                    'max' => 60,
+                    'min' => 19,
+                    'sections' => ['chokai'],
+                ],
+            ],
+
+            'sections' => [
+                // 言語知識（文字・語彙）— 30 menit (sesuai sampul soal), 34 soal
+                'mojigoi' => [
+                    'order' => 1,
+                    'enabled' => true,
+                    'minutes' => 30,
+                    'questions' => 34,
+                    'file' => 'mojigoi.json',
+                ],
+
+                // 言語知識（文法）・読解 — 60 menit (sesuai sampul soal), 35 soal
+                'bunpou_dokkai' => [
+                    'order' => 2,
+                    'enabled' => true,
+                    'minutes' => 60,
+                    'questions' => 35,
+                    'file' => 'bunpou_dokkai.json',
+                ],
+
+                // 聴解 — 35 menit (sesuai sampul soal), 28 soal (8 + 7 + 5 + 8);
+                // id soal "{mondai}-{no}", diputar berurutan (39 trek, trek 21 = istirahat) oleh
+                // JlptListeningExam.vue.
+                'chokai' => [
+                    'order' => 3,
+                    'enabled' => true,
+                    'minutes' => 35,
+                    'questions' => 28,
                     'file' => 'chokai.json',
                 ],
             ],

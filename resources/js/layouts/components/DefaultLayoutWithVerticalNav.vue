@@ -64,6 +64,6 @@ const navItems = computed(() => allNavItems.filter(item => !item.adminOnly || au
     </template>
 
     <!-- 👉 Customizer -->
-    <TheCustomizer />
+    <!--<TheCustomizer />-->
   </VerticalNavLayout>
 </template>

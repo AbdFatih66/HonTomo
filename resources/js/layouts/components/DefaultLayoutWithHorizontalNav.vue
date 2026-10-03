@@ -60,6 +60,6 @@ const filteredNavItems = computed(() => navItems.filter(item => !item.adminOnly 
     </template>
 
     <!-- 👉 Customizer -->
-    <TheCustomizer />
+    <!--<TheCustomizer />-->
   </HorizontalNavLayout>
 </template>

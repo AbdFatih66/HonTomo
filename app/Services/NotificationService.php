@@ -145,9 +145,11 @@ class NotificationService
         }
 
         if ($module === 'jlpt_test') {
-            // Pack bank soal asli.
-            if ($setKey === 'private') {
-                return $isEnglish ? 'JLPT N5 Test' : 'Tes JLPT N5';
+            // Pack bank soal asli: 'private' (N5) dan 'private-n4' (N4) — levelnya dari config.
+            if (str_starts_with($setKey, 'private')) {
+                $level = (string) config("jlpt.packs.{$setKey}.level", 'N5');
+
+                return $isEnglish ? "JLPT {$level} Test" : "Tes JLPT {$level}";
             }
 
             // Paket orisinal: pack key looks like 'n5-test-1'.

@@ -51,14 +51,39 @@ def convert_passage(p, label, boxed):
     if kind == 'flyer':
         return convert_flyer(p, label)
     if kind == 'memo':
-        return {
+        out = {
             'kind': 'note',
             'label': label,
             'to': mark(p.get('to', '')),
             'lines': [mark(x) for x in p.get('text', '').split('\n') if x.strip()],
             'from': mark(p.get('from', '')),
         }
-    return {'kind': 'text', 'boxed': boxed, 'label': label, 'body': mark(p.get('text', ''))}
+        if p.get('lead'):
+            out['lead'] = mark(p['lead'])
+        if p.get('variant'):  # 'mail' = email (N4)
+            out['variant'] = p['variant']
+        return out
+    if kind == 'notice':  # papan pengumuman: judul + butir ◆ (+ sub-butir ・) (N4)
+        out = {
+            'kind': 'notice',
+            'label': label,
+            'title': mark(p.get('title', '')),
+            'items': [
+                {k: ([mark(x) for x in v] if k == 'sub' else mark(v)) for k, v in it.items()}
+                for it in p.get('items', [])
+            ],
+        }
+        if p.get('lead'):
+            out['lead'] = mark(p['lead'])
+        return out
+    if kind == 'poster':  # pengumuman bertabel (N4 もんだい 6); `data` dipakai apa adanya
+        return {'kind': 'poster', 'label': label, 'data': p.get('data', {})}
+    out = {'kind': 'text', 'boxed': p.get('boxed', boxed), 'label': label, 'body': mark(p.get('text', ''))}
+    if 'label' in p:  # label eksplisit => `title` (tengah) & `author` (rata kanan) ikut tampil di bacaan (N4)
+        for k in ('title', 'author'):
+            if p.get(k):
+                out[k] = mark(p[k])
+    return out
 
 
 def plain_script(turns):
@@ -84,6 +109,23 @@ def convert_reading(bank):
     for mi, m in enumerate(bank['mondai']):
         no = mondai_number(mi)
         out['mondai'][no] = {'instruction': mark(m['instruction'])}
+        if m.get('lead'):  # kalimat pengantar sebelum bacaan (N4 もんだい 3)
+            out['mondai'][no]['lead'] = mark(m['lead'])
+        if m.get('example'):  # れい (N4): tampil di bawah petunjuk, kunci ikut ditampilkan
+            e = m['example']
+            if e.get('type') == 'star':
+                ex_stem = f"{e.get('prefix', '')}⟦　⟧ ⟦　⟧ ⟦★⟧ ⟦　⟧{e.get('suffix', '')}"
+            else:
+                ex_stem = mark(e.get('stem', ''))
+            out['mondai'][no]['example'] = {
+                'stem': ex_stem,
+                'choices': [mark(c) for c in e['choices']],
+                'answer': e['answer'],
+            }
+            if e.get('label'):
+                out['mondai'][no]['example']['label'] = e['label']
+            if e.get('howto'):  # cara menjawab ★ (petunjuk bergambar di lembar soal)
+                out['mondai'][no]['example']['howto'] = e['howto']
         n_passages = sum(1 for g in m['groups'] if g.get('passage'))
 
         for gi, g in enumerate(m['groups']):
@@ -91,7 +133,9 @@ def convert_reading(bank):
             p = g.get('passage')
             if p:
                 pkey = f"{m['id']}-{gi + 1}"
-                if p.get('title'):
+                if 'label' in p:  # label eksplisit (boleh kosong) mengalahkan aturan di bawah
+                    label = p['label']
+                elif p.get('title') and p.get('kind') in (None, 'text', 'memo'):
                     label = f"({gi + 1}) {p['title']}"
                 elif n_passages > 1:
                     label = f'({gi + 1})'
@@ -133,6 +177,11 @@ def convert_listening(bank):
         'questions': [],
     }
 
+    # penjelasan umum & penutup rekaman (opsional; N4)
+    audio = {k: bank[k]['audio'] for k in ('intro', 'outro') if bank.get(k, {}).get('audio')}
+    if audio:
+        out['audio'] = audio
+
     def item_fields(q, with_key):
         f = {}
         if q.get('audio'):
@@ -147,6 +196,8 @@ def convert_listening(bank):
             f['image'] = q['image']
         if q.get('arrow'):
             f['arrow'] = q['arrow']
+        if q.get('marks'):
+            f['marks'] = q['marks']  # label ア・イ・ウ・エ di atas satu gambar (N4)
         script = plain_script(q.get('transcript') or q.get('audio_text'))
         if script:
             f['script'] = script
@@ -160,8 +211,12 @@ def convert_listening(bank):
             'instruction': m['instruction'],
             'answer_seconds': m.get('gap', 8),
         }
+        if m.get('before', {}).get('audio'):
+            entry['audio_before'] = m['before']['audio']  # trek istirahat sebelum もんだい (N4: sebelum 3)
         if m.get('intro', {}).get('audio'):
             entry['audio'] = m['intro']['audio']
+        if m.get('memo'):
+            entry['memo'] = True  # kolom memo (もんだい 4)
         if m.get('example'):
             entry['example'] = item_fields(m['example'], with_key=False)
         out['mondai'][no] = entry
@@ -179,6 +234,9 @@ def main(folder):
     folder = Path(folder)
     for name in ('mojigoi', 'bunpou_dokkai', 'chokai'):
         path = folder / f'{name}.json'
+        if not path.exists():
+            print(f'lewati {path} (tidak ada; pack ini belum punya sesi tsb)')
+            continue
         bank = json.loads(path.read_text(encoding='utf-8'))
         if bank.get('format') != 'mock':
             print(f'lewati {path} (sudah classic)')

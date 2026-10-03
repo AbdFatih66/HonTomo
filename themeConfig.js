@@ -10,9 +10,9 @@ export const { themeConfig, layoutConfig } = defineThemeConfig({
   app: {
     title: 'HonTomo',
     logo: h('img', { src: logo, alt: 'HonTomo', class: 'app-logo-img' }),
-    contentWidth: ContentWidth.Boxed,
+    contentWidth: ContentWidth.Fluid,  // ℹ️  ContentWidth options: Fluid | Boxed
     contentLayoutNav: AppContentLayoutNav.Vertical,
-    overlayNavFromBreakpoint: breakpointsVuetifyV3.lg - 1, // 1 for matching with vuetify breakpoint. Docs: https://next.vuetifyjs.com/en/features/display-and-platform/
+    overlayNavFromBreakpoint: breakpointsVuetifyV3.lg - 1,     
     i18n: {
       enable: true,
       defaultLocale: 'id',
@@ -29,7 +29,7 @@ export const { themeConfig, layoutConfig } = defineThemeConfig({
         },
       ],
     },
-    theme: 'system',
+    theme: 'light',
     skin: Skins.Default,
     iconRenderer: VIcon,
   },

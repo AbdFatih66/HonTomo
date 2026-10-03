@@ -137,6 +137,7 @@ async function load() {
     section.value = data.test
     mode.value = data.mode ?? 'strict'
     packKey.value = data.pack ?? null
+    level.value = data.level ?? level.value
     Object.assign(answers, data.answers ?? {})
     if (!isPractice.value) {
       syncTimer(data.remaining_seconds)
@@ -452,7 +453,9 @@ onBeforeUnmount(() => {
                       <div class="jlpt-howto__order">
                         <JlptText :text="section.mondai[g.mondai].example.howto.figure.order" />
                       </div>
-                      <div><JlptText :text="section.mondai[g.mondai].example.howto.figure.reply" /></div>
+                      <div v-if="section.mondai[g.mondai].example.howto.figure.reply">
+                        <JlptText :text="section.mondai[g.mondai].example.howto.figure.reply" />
+                      </div>
                     </div>
                     <div><JlptText :text="section.mondai[g.mondai].example.howto.step2" /></div>
                   </div>

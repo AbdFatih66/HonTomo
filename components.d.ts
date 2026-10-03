@@ -63,6 +63,7 @@ declare module 'vue' {
     JlptMockSection: typeof import('./resources/js/components/jlpt-mock/JlptMockSection.vue')['default']
     JlptMockText: typeof import('./resources/js/components/jlpt-mock/JlptMockText.vue')['default']
     JlptPassage: typeof import('./resources/js/components/jlpt/JlptPassage.vue')['default']
+    JlptPoster: typeof import('./resources/js/components/jlpt/JlptPoster.vue')['default']
     JlptQuestionFeedback: typeof import('./resources/js/components/jlpt/JlptQuestionFeedback.vue')['default']
     JlptRoomScene: typeof import('./resources/js/components/jlpt/JlptRoomScene.vue')['default']
     JlptText: typeof import('./resources/js/components/jlpt/JlptText.vue')['default']
