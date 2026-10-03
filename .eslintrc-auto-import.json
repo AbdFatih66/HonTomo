@@ -378,6 +378,8 @@
     "estimateScore": true,
     "formatClock": true,
     "mondaiBreakdown": true,
-    "sectionQuestions": true
+    "sectionQuestions": true,
+    "playChime": true,
+    "unlockChime": true
   }
 }

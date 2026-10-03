@@ -14,6 +14,7 @@ import JlptMockQuestion from '@/components/jlpt-mock/JlptMockQuestion.vue'
 import JlptMockText from '@/components/jlpt-mock/JlptMockText.vue'
 import JlptQuestionFeedback from '@/components/jlpt/JlptQuestionFeedback.vue'
 import { buildListeningSteps } from '@/utils/jlptMock'
+import { defineEmits, defineProps, } from 'vue'
 
 const props = defineProps({
   section: { type: Object, required: true },

@@ -14,6 +14,8 @@
 // mengulang dari awal (soal yang sedang berjalan diputar lagi dari awal).
 import JlptListeningItem from '@/components/jlpt/JlptListeningItem.vue'
 import JlptText from '@/components/jlpt/JlptText.vue'
+import { playChime, unlockChime } from '@/utils/jlptChime'
+import { defineEmits, defineProps, } from 'vue'
 
 const props = defineProps({
   test: { type: Object, required: true }, // { mondai, questions } dari server
@@ -68,11 +70,14 @@ const manual = ref(false) // tidak pindah otomatis (audio hilang / tanpa audio)
 const progress = ref(0)
 const countdown = ref(0)
 const memo = ref('')
+const belling = ref(false) // bel awal soal sedang berbunyi
 
 const step = computed(() => steps.value[idx.value] ?? null)
 const answeredIndex = computed(() => props.test.questions.findIndex(q => q.id === step.value?.q?.id) + 1)
 
 let audioEl = null
+let bellDone = false // bel れい sudah dibunyikan untuk langkah ini
+let bellToken = 0 // membatalkan bel yang tertunda bila langkah berganti / dihentikan
 let queue = []
 let timer = null
 
@@ -95,12 +100,15 @@ function cleanupAudio() {
 }
 
 function cleanup() {
+  bellToken++
+  belling.value = false
   clearTimer()
   cleanupAudio()
 }
 
 function startStep() {
   cleanup()
+  bellDone = false
   audioError.value = ''
   blocked.value = false
   manual.value = false
@@ -114,11 +122,45 @@ function startStep() {
 
     return
   }
+
+  // Bel di awal tiap soal (kind 'question'), baru rekaman moderator.
+  if (step.value?.kind === 'question') {
+    const token = ++bellToken
+
+    belling.value = true
+    playChime().then(() => {
+      if (gone || token !== bellToken)
+        return
+      belling.value = false
+      playNext()
+    })
+
+    return
+  }
   playNext()
 }
 
 function playNext() {
   const src = queue.shift()
+
+  // Bel sebelum moderator mengucapkan れい (audio contoh di langkah petunjuk).
+  const ex = step.value?.kind === 'intro' ? step.value.m?.example?.audio : null
+
+  if (ex && src === ex && !bellDone) {
+    const token = ++bellToken
+
+    queue.unshift(src)
+    bellDone = true
+    belling.value = true
+    playChime().then(() => {
+      if (gone || token !== bellToken)
+        return
+      belling.value = false
+      playNext()
+    })
+
+    return
+  }
 
   cleanupAudio()
   audioEl = new Audio(src)
@@ -167,6 +209,8 @@ function audioFinished() {
   }, 1000)
 }
 
+let gone = false
+
 function next() {
   cleanup()
   if (idx.value + 1 >= steps.value.length) {
@@ -181,6 +225,7 @@ function next() {
 }
 
 function begin() {
+  unlockChime() // dari klik pengguna, supaya browser mengizinkan bel
   startStep()
 }
 
@@ -221,7 +266,10 @@ onMounted(() => {
   }
 })
 
-onBeforeUnmount(cleanup)
+onBeforeUnmount(() => {
+  gone = true
+  cleanup()
+})
 </script>
 
 <template>
@@ -252,6 +300,8 @@ onBeforeUnmount(cleanup)
         size="large"
         color="primary"
         prepend-icon="tabler-player-play"
+        :disabled="belling"
+        :loading="belling"
         @click="begin"
       >
         {{ resumed ? t('jlptTest.listen.resume') : t('jlptTest.listen.start') }}
@@ -464,11 +514,12 @@ onBeforeUnmount(cleanup)
 
 <style scoped>
 .jl-card {
-  max-inline-size: 560px;
-  padding: 28px 24px;
   border: 1px solid rgba(var(--v-theme-on-surface), 0.16);
   border-radius: 12px;
   margin-inline: auto;
+  max-inline-size: 560px;
+  padding-block: 28px;
+  padding-inline: 24px;
 }
 
 .jl-rules { padding-inline-start: 1.4em; }
@@ -481,7 +532,7 @@ onBeforeUnmount(cleanup)
   margin-block-end: 8px;
 }
 
-.jl-status__left { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.jl-status__left { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 
 .jl-eq { display: inline-flex; align-items: flex-end; block-size: 18px; gap: 2px; }
 .jl-eq i { display: block; border-radius: 1px; background: rgb(var(--v-theme-primary)); block-size: 5px; inline-size: 3px; opacity: 0.45; }
@@ -491,34 +542,37 @@ onBeforeUnmount(cleanup)
 .jl-eq--on i:nth-child(4) { animation-delay: 0.45s; }
 
 @keyframes jl-bounce {
-  0%, 100% { block-size: 4px; }
+  0%,
+ 100% { block-size: 4px; }
   50% { block-size: 18px; }
 }
 
 .jl-paper {
-  padding: 20px 24px 24px;
   border: 1px solid rgba(var(--v-theme-on-surface), 0.16);
   border-radius: 10px;
   background: rgb(var(--v-theme-surface));
+  padding-block: 20px 24px;
+  padding-inline: 24px;
 }
 
-.jl-mondai { display: flex; align-items: baseline; gap: 12px; font-weight: 700; line-height: 1.9; }
+.jl-mondai { display: flex; align-items: baseline; font-weight: 700; gap: 12px; line-height: 1.9; }
 .jl-mondai__tag { flex: none; }
 .jl-mondai__text { min-inline-size: 0; }
 
 .jl-example {
-  padding-block-start: 12px;
   border-block-start: 1px solid rgba(var(--v-theme-on-surface), 0.25);
+  padding-block-start: 12px;
 }
 
 .jl-qno {
   display: inline-block;
-  padding: 2px 12px;
   border: 1.5px solid currentcolor;
   border-radius: 4px;
   font-size: 1.2rem;
   font-weight: 700;
   margin-block-end: 12px;
+  padding-block: 2px;
+  padding-inline: 12px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -526,7 +580,7 @@ onBeforeUnmount(cleanup)
 }
 
 @media (max-width: 599px) {
-  .jl-paper { padding: 14px 12px 18px; }
-  .jl-card { padding: 20px 14px; }
+  .jl-paper { padding-block: 14px 18px; padding-inline: 12px; }
+  .jl-card { padding-block: 20px; padding-inline: 14px; }
 }
 </style>
