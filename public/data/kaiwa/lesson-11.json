@@ -268,7 +268,7 @@
                 {
                     "id": "l11-s3-t5",
                     "who": "partner",
-                    "ja": "映画《えいが》は 一か月《いっかげつ》に 何回《なんかい》 見《み》ますか。",
+                    "ja": "映画《えいが》は 一《いっ》か月《げつ》に 何回《なんかい》 見《み》ますか。",
                     "speak": "えいがは いっかげつに なんかい みますか。",
                     "id_text": "Film, sebulan berapa kali kamu menonton?",
                     "en_text": "How many times a month do you watch movies?",
@@ -277,7 +277,7 @@
                 {
                     "id": "l11-s3-t6",
                     "who": "you",
-                    "ja": "一か月《いっかげつ》に 一回《いっかい》 見《み》ます。",
+                    "ja": "一《いっ》か月《げつ》に 一回《いっかい》 見《み》ます。",
                     "speak": "いっかげつに いっかい みます。",
                     "id_text": "Sebulan sekali aku menonton.",
                     "accept": [

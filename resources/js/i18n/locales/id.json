@@ -1139,6 +1139,10 @@
     "hidden_text": "teks disembunyikan",
     "lesson_n": "Pelajaran {n}",
     "locked_hint": "Selesaikan semua skenario Pelajaran {n} dulu untuk membuka Pelajaran {next}.",
+    "choose_lesson": "Pilih pelajaran",
+    "continue": "Lanjut",
+    "scenarios_done": "{done}/{total} skenario",
+    "overall": "{done}/{total} skenario selesai",
     "xp_earned": "+{xp} XP"
   }
 }

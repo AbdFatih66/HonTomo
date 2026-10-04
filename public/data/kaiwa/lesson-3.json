@@ -311,7 +311,7 @@
                 {
                     "id": "l3-s4-t2",
                     "who": "you",
-                    "ja": "すみません、靴《くつ》の 売り場《うりば》は どこですか。",
+                    "ja": "すみません、靴《くつ》の 売《う》り場《ば》は どこですか。",
                     "speak": "すみません、くつの うりばは どこですか。",
                     "id_text": "Permisi, bagian sepatu di mana?",
                     "accept": [
@@ -323,7 +323,7 @@
                 {
                     "id": "l3-s4-t3",
                     "who": "partner",
-                    "ja": "靴《くつ》の 売り場《うりば》は 二階《にかい》です。",
+                    "ja": "靴《くつ》の 売《う》り場《ば》は 二階《にかい》です。",
                     "speak": "くつの うりばは にかいです。",
                     "id_text": "Bagian sepatu ada di lantai dua.",
                     "en_text": "The shoe department is on the 2nd floor.",
@@ -332,7 +332,7 @@
                 {
                     "id": "l3-s4-t4",
                     "who": "you",
-                    "ja": "ありがとうございます。ネクタイの 売り場《うりば》も 二階《にかい》ですか。",
+                    "ja": "ありがとうございます。ネクタイの 売《う》り場《ば》も 二階《にかい》ですか。",
                     "speak": "ありがとうございます。ネクタイの うりばも にかいですか。",
                     "id_text": "Terima kasih. Apakah bagian dasi juga di lantai dua?",
                     "accept": [
@@ -345,7 +345,7 @@
                 {
                     "id": "l3-s4-t5",
                     "who": "partner",
-                    "ja": "いいえ、ネクタイの 売り場《うりば》は 一階《いっかい》です。",
+                    "ja": "いいえ、ネクタイの 売《う》り場《ば》は 一階《いっかい》です。",
                     "speak": "いいえ、ネクタイの うりばは いっかいです。",
                     "id_text": "Bukan, bagian dasi ada di lantai satu.",
                     "en_text": "No, the tie department is on the 1st floor.",

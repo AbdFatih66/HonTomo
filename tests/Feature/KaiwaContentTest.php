@@ -62,6 +62,16 @@ class KaiwaContentTest extends TestCase
 
                     if ($turn['who'] === 'you')
                         $this->assertIsArray($turn['accept'], $turn['id']);
+
+                    // furigana dipasang per rentetan kanji (売《う》り場《ば》, bukan 売り場《うりば》):
+                    // RubyText dan registerReadings() hanya mengenali kanji murni sebelum 《
+                    $bare = preg_replace('/\p{Han}+《[^》]*》/u', '', $turn['ja']);
+                    $this->assertDoesNotMatchRegularExpression('/\p{Han}/u', $bare, "kanji tanpa furigana / furigana salah bentuk: {$turn['id']}");
+
+                    // `speak` harus sama dengan `ja` yang dibaca lewat furigana (abaikan spasi, … dan tanda baca 、。)
+                    $reading = preg_replace('/\p{Han}+《([^》]*)》/u', '$1', $turn['ja']);
+                    $strip = fn (string $s) => preg_replace('/[\s…、。]/u', '', $s);
+                    $this->assertSame($strip($turn['speak']), $strip($reading), "speak tidak cocok dengan furigana ja: {$turn['id']}");
                 }
             }
         }

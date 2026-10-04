@@ -25,7 +25,7 @@
 import RubyText from '@/components/learning/RubyText.vue'
 import { useAuthStore } from '@/stores/auth'
 import { $api } from '@/utils/api'
-import { PASS_SCORE, registerReadings, scoreSpeech, stripRuby } from '@/utils/kaiwaMatch'
+import { PASS_SCORE, registerReadings, scoreSpeech } from '@/utils/kaiwaMatch'
 
 const MAX_TRIES_BEFORE_SKIP = 2
 // Dipakai bila index.json belum ada (pemasangan lama): hanya Pelajaran 1.
@@ -49,6 +49,8 @@ const progress = reactive({})
 // Kunci pelajaran: Pelajaran n+1 terbuka hanya bila SEMUA skenario Pelajaran n (dan sebelumnya)
 // sudah selesai (progress.done). Daftar id skenario tiap pelajaran dimuat dari berkas materi.
 const lessonScenarioIds = reactive({}) // { [id pelajaran]: [id skenario] }
+const lockNotice = ref('') // pesan saat kartu terkunci diketuk
+const listEl = ref(null) // daftar skenario (di-scroll ke sini setelah memilih pelajaran di layar kecil)
 const gateReady = ref(false) // false sampai materi + progres termuat → semua pelajaran selain pertama terkunci
 const earnedXp = ref(0)
 
@@ -120,25 +122,67 @@ function blockerOf(id) {
 
 const isLocked = id => blockerOf(id) !== null
 
-// Petunjuk di bawah chip: pelajaran terkunci pertama + pelajaran yang harus diselesaikan.
-const lockHint = computed(() => {
-  for (const m of manifest.value) {
-    const b = blockerOf(m.id)
+// ── Kartu pemilih pelajaran ──────────────────────────────────────────────────
+// Gaya sama dengan grid kartu Kanji: kartu ringkas, angka pelajaran besar di tengah, aksen status di tepi atas,
+// mahkota/centang/kunci di pojok. Tanpa keterangan (topik/jumlah skenario) — itu sudah ada di materi kaiwa.
 
-    if (b !== null)
-      return t('kaiwa.locked_hint', { n: b, next: m.id })
+const lessonCards = computed(() => manifest.value.map((m) => {
+  const ids = lessonScenarioIds[m.id] ?? []
+  const done = ids.filter(k => progress[k]?.done).length
+  const crowns = ids.filter(k => progress[k]?.crown).length
+  const locked = isLocked(m.id)
+  const full = ids.length > 0 && done === ids.length
+  const status = locked ? 'locked' : full && crowns === ids.length ? 'mastered' : full ? 'completed' : done > 0 ? 'progress' : 'open'
+
+  return {
+    id: m.id,
+    done,
+    total: ids.length,
+    percent: ids.length ? Math.round((done / ids.length) * 100) : 0,
+    status,
+    locked,
+    active: m.id === lessonId.value,
   }
+}))
 
-  return ''
+// Pelajaran terbuka pertama yang belum tuntas → ditandai "Lanjut" dan dipilih otomatis saat halaman dibuka.
+const nextLessonId = computed(() => (gateReady.value
+  ? lessonCards.value.find(c => !c.locked && c.status !== 'completed' && c.status !== 'mastered')?.id ?? null
+  : null))
+
+const overall = computed(() => {
+  const all = Object.values(lessonScenarioIds).flat()
+
+  return { done: all.filter(k => progress[k]?.done).length, total: all.length }
 })
+
+async function pickLesson(card) {
+  if (card.locked) {
+    lockNotice.value = t('kaiwa.locked_hint', { n: blockerOf(card.id), next: card.id })
+
+    return
+  }
+  lockNotice.value = ''
+  await selectLesson(card.id)
+  await nextTick()
+
+  // Grid 25 kartu membuat daftar skenario jauh di bawah di layar kecil → bawa ke sana.
+  const el = listEl.value
+
+  if (el && el.getBoundingClientRect().top > window.innerHeight * 0.5)
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 async function loadLessonIds() {
   await Promise.all(manifest.value.map(async (m) => {
     try {
       const res = await fetch(`/data/kaiwa/${m.file}`, { cache: 'no-cache' })
 
-      if (res.ok)
-        lessonScenarioIds[m.id] = ((await res.json()).scenarios ?? []).map(sc => sc.id)
+      if (res.ok) {
+        const json = await res.json()
+
+        lessonScenarioIds[m.id] = (json.scenarios ?? []).map(sc => sc.id)
+      }
     }
     catch { /* gagal muat: pelajaran ini tidak dianggap menghalangi */ }
   }))
@@ -218,6 +262,8 @@ onMounted(async () => {
   await selectLesson(manifest.value[0]?.id)
   await Promise.all([loadLessonIds(), loadProgress()])
   gateReady.value = true
+  if (nextLessonId.value && nextLessonId.value !== lessonId.value)
+    await selectLesson(nextLessonId.value)
 
   // Peringatan suara: opsional. Bila gagal dimuat, peringatan hanya berupa teks.
   try {
@@ -695,36 +741,76 @@ const stars = computed(() => {
     :class="scenario && 'kaiwa--chat'"
   >
     <template v-if="!scenario">
-      <h4 class="text-h4 mb-3">
-        {{ t('kaiwa.title') }}
-      </h4>
-      <div
-        v-if="manifest.length > 1"
-        class="d-flex flex-wrap gap-2 mb-4"
-      >
+      <div class="d-flex align-center justify-space-between mb-1 flex-wrap gap-2">
+        <h4 class="text-h4 mb-0">
+          {{ t('kaiwa.title') }}
+        </h4>
         <VChip
-          v-for="m in manifest"
-          :key="m.id"
-          :color="m.id === lessonId ? 'primary' : undefined"
-          :variant="m.id === lessonId ? 'flat' : 'tonal'"
-          :disabled="isLocked(m.id)"
-          :prepend-icon="isLocked(m.id) ? 'tabler-lock' : undefined"
-          @click="selectLesson(m.id)"
+          v-if="overall.total"
+          color="primary"
+          variant="tonal"
+          prepend-icon="tabler-messages"
         >
-          {{ t('kaiwa.lesson_n', { n: m.id }) }}
+          {{ t('kaiwa.overall', { done: overall.done, total: overall.total }) }}
         </VChip>
       </div>
-      <p
-        v-if="manifest.length > 1 && lockHint"
-        class="text-caption text-medium-emphasis mb-4"
+      <div
+        v-if="manifest.length > 1"
+        class="kaiwa-levels mt-4 mb-5"
+        role="tablist"
+        :aria-label="t('kaiwa.title')"
       >
-        <VIcon
-          icon="tabler-lock"
-          size="14"
-          class="me-1"
-        />
-        {{ lockHint }}
-      </p>
+        <button
+          v-for="c in lessonCards"
+          :key="c.id"
+          type="button"
+          role="tab"
+          class="kaiwa-level"
+          :class="[`kaiwa-level--${c.status}`, { 'kaiwa-level--active': c.active }]"
+          :aria-selected="c.active"
+          @click="pickLesson(c)"
+        >
+          <span class="kaiwa-level__head">
+            <span class="kaiwa-level__code">{{ t('kaiwa.lesson_n', { n: c.id }) }}</span>
+            <VIcon
+              v-if="c.status === 'locked'"
+              icon="tabler-lock"
+              size="14"
+              class="kaiwa-level__badge"
+            />
+            <VIcon
+              v-else-if="c.status === 'mastered'"
+              icon="tabler-crown"
+              size="16"
+              class="kaiwa-level__badge kaiwa-level__badge--crown"
+            />
+            <VIcon
+              v-else-if="c.status === 'completed'"
+              icon="tabler-circle-check-filled"
+              size="14"
+              color="success"
+              class="kaiwa-level__badge"
+            />
+          </span>
+          <span
+            v-if="c.status !== 'locked' && c.total"
+            class="kaiwa-level__bar"
+          ><span :style="{ inlineSize: `${c.percent}%` }" /></span>
+        </button>
+      </div>
+
+      <VAlert
+        v-if="lockNotice"
+        type="info"
+        variant="tonal"
+        density="compact"
+        closable
+        icon="tabler-lock"
+        class="mb-4"
+        @click:close="lockNotice = ''"
+      >
+        {{ lockNotice }}
+      </VAlert>
     </template>
 
     <div
@@ -744,6 +830,10 @@ const stars = computed(() => {
 
     <!-- ── Daftar skenario ─────────────────────────────────────────── -->
     <template v-else-if="!scenario">
+      <div
+        ref="listEl"
+        class="kaiwa-list-anchor"
+      />
       <p class="text-body-1 text-medium-emphasis mb-6">
         {{ t('kaiwa.subtitle', { lesson: tr(lesson, 'title'), level: lesson.level }) }}
       </p>
@@ -1118,16 +1208,114 @@ const stars = computed(() => {
 </template>
 
 <style scoped>
+/* ---------- pemilih pelajaran — gaya sama dengan pemilih level (N5…N1) di Kanji ---------- */
+.kaiwa-levels {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+}
+
+.kaiwa-level {
+  --lv: var(--v-theme-primary);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(var(--v-theme-on-surface), 0.12);
+  border-radius: 12px;
+  background: rgb(var(--v-theme-surface));
+  cursor: pointer;
+  gap: 6px;
+  padding-block: 12px 10px;
+  padding-inline: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.kaiwa-level--completed { --lv: var(--v-theme-success); }
+.kaiwa-level--mastered { --lv: var(--v-theme-warning); }
+
+.kaiwa-level__head {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.kaiwa-level__bar {
+  overflow: hidden;
+  border-radius: 99px;
+  background: rgba(var(--v-theme-on-surface), 0.1);
+  block-size: 4px;
+  inline-size: 70%;
+}
+
+.kaiwa-level__bar > span {
+  display: block;
+  border-radius: 99px;
+  background: rgb(var(--v-theme-primary));
+  block-size: 100%;
+}
+
+.kaiwa-level--completed .kaiwa-level__bar > span { background: rgb(var(--v-theme-success)); }
+.kaiwa-level--mastered .kaiwa-level__bar > span { background: rgb(var(--v-theme-warning)); }
+
+.kaiwa-level__code {
+  color: rgba(var(--v-theme-on-surface), 0.85);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.kaiwa-level:hover {
+  border-color: rgba(var(--lv), 0.6);
+  transform: translateY(-2px);
+}
+
+.kaiwa-level:focus-visible {
+  outline: 2px solid rgb(var(--lv));
+  outline-offset: 2px;
+}
+
+.kaiwa-level--active {
+  border-color: rgb(var(--v-theme-primary));
+  background: rgba(var(--v-theme-primary), 0.12);
+  box-shadow: 0 6px 14px -6px rgba(var(--v-theme-primary), 0.55);
+}
+
+.kaiwa-level--active .kaiwa-level__code { color: rgb(var(--v-theme-primary)); }
+
+.kaiwa-level--locked { opacity: 0.5; }
+
+.kaiwa-level--locked:hover {
+  border-color: rgba(var(--v-theme-on-surface), 0.12);
+  transform: none;
+}
+
+.kaiwa-level__badge--crown { color: rgb(var(--v-theme-warning)); }
+
+.kaiwa-list-anchor { scroll-margin-block-start: 72px; }
+
+@media (max-width: 599px) {
+  .kaiwa-levels { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kaiwa-level { transition: none; }
+  .kaiwa-level:hover { transform: none; }
+}
+
 .kaiwa-chat {
   display: flex;
   flex-direction: column;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(var(--v-theme-on-surface), 0.04);
   gap: 12px;
   max-block-size: 55vh;
   min-block-size: 200px;
   overflow-y: auto;
-  padding: 12px;
-  border-radius: 12px;
-  background: rgba(var(--v-theme-on-surface), 0.04);
 }
 
 .kaiwa-row {
@@ -1152,14 +1340,15 @@ const stars = computed(() => {
 }
 
 .kaiwa-bubble {
-  padding: 10px 14px;
   border-radius: 16px;
   overflow-wrap: anywhere;
+  padding-block: 10px;
+  padding-inline: 14px;
 }
 
 .kaiwa-bubble--partner {
-  background: rgb(var(--v-theme-surface));
   border: 1px solid rgba(var(--v-border-color), var(--v-border-opacity));
+  background: rgb(var(--v-theme-surface));
   border-end-start-radius: 4px;
 }
 
@@ -1170,8 +1359,8 @@ const stars = computed(() => {
 }
 
 .kaiwa-bubble--pending {
-  background: transparent;
   border: 2px dashed rgb(var(--v-theme-primary));
+  background: transparent;
   color: rgb(var(--v-theme-primary));
 }
 

@@ -1139,6 +1139,10 @@
     "hidden_text": "text hidden",
     "lesson_n": "Lesson {n}",
     "locked_hint": "Finish every scenario in Lesson {n} first to unlock Lesson {next}.",
+    "choose_lesson": "Choose a lesson",
+    "continue": "Next",
+    "scenarios_done": "{done}/{total} scenarios",
+    "overall": "{done}/{total} scenarios done",
     "xp_earned": "+{xp} XP"
   }
 }

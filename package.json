@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . -c .eslintrc.cjs --fix --ext .ts,.js,.cjs,.vue,.tsx,.jsx",
+    "test:kaiwa": "node --test tests/js/kaiwaMatch.test.mjs",
     "build:icons": "tsx resources/js/plugins/iconify/build-icons.js",
     "msw:init": "msw init public/ --save",
     "postinstall": "npm run build:icons && npm run msw:init"

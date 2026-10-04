@@ -155,8 +155,13 @@ export function numbersToKana(s) {
 
 /** Daftarkan pasangan kanji→bacaan dari teks bertanda furigana, mis. 起《お》きます. */
 export function registerReadings(text) {
-  for (const m of String(text ?? '').matchAll(/([一-龥々]+)《([^》]+)》/g))
+  for (const m of String(text ?? '').matchAll(/([一-龥々]+)《([^》]+)》/g)) {
+    // Angka murni (一《いっ》か月, 二《ふた》つ) ditangani numbersToKana bersama pencacahnya. Bila didaftarkan,
+    // 一 → いっ akan merusak kata lain yang memuat 一 (一番, 一緒) dan saling menimpa antar pelajaran.
+    if (/^[〇零一二三四五六七八九十百千]+$/.test(m[1]))
+      continue
     KANJI_KANA.set(m[1], m[2])
+  }
   kanjiOrder = null
 }
 
