@@ -13,8 +13,8 @@
 import JlptMockQuestion from '@/components/jlpt-mock/JlptMockQuestion.vue'
 import JlptMockText from '@/components/jlpt-mock/JlptMockText.vue'
 import JlptQuestionFeedback from '@/components/jlpt/JlptQuestionFeedback.vue'
+import { playChime, unlockChime } from '@/utils/jlptChime'
 import { buildListeningSteps } from '@/utils/jlptMock'
-import { defineEmits, defineProps, } from 'vue'
 
 const props = defineProps({
   section: { type: Object, required: true },
@@ -203,19 +203,35 @@ function replay() {
   startStep()
 }
 
-function begin() {
+// Bel pembuka (sebelum petunjuk pertama) dan bel penutup (sesudah soal terakhir),
+// seperti rekaman JLPT asli. Bel pembuka dilewati bila sesi dilanjutkan di tengah.
+let gone = false
+
+async function begin() {
+  const fresh = stepIdx.value === 0
+
   started.value = true
+  unlockChime()
+  if (fresh) {
+    stepStatus.value = 'playing'
+    await playChime()
+  }
+  if (gone || props.stopped)
+    return
   nextTick(startStep)
 }
 
-function finish() {
+async function finish() {
   stopAudio()
   try {
     if (props.storageKey)
       sessionStorage.removeItem(props.storageKey)
   }
   catch { /* abaikan */ }
-  emit('done')
+  if (!props.stopped)
+    await playChime()
+  if (!gone)
+    emit('done')
 }
 
 function choose(q, n) {
@@ -228,7 +244,10 @@ watch(() => props.stopped, v => {
 })
 
 onMounted(loadProgress)
-onBeforeUnmount(stopAudio)
+onBeforeUnmount(() => {
+  gone = true
+  stopAudio()
+})
 </script>
 
 <template>

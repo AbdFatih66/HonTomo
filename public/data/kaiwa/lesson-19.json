@@ -1,0 +1,398 @@
+{
+    "id": 19,
+    "level": "N5",
+    "title_id": "Pelajaran 19 — Pengalaman & Perubahan",
+    "title_en": "Lesson 19 — Experiences & Changes",
+    "scenarios": [
+        {
+            "id": "l19-s1",
+            "title_id": "Pernah mendaki gunung?",
+            "title_en": "Have you climbed a mountain?",
+            "setting_id": "Rekan kerja bertanya apakah kamu pernah naik Gunung Fuji.",
+            "setting_en": "A colleague asks whether you have ever climbed Mt. Fuji.",
+            "goal_id": "Memakai 〜たことがあります／ありません (pengalaman).",
+            "goal_en": "Use ~ta koto ga arimasu / arimasen (experience).",
+            "patterns": [
+                "Vたことが あります",
+                "一度も Vたことが ありません",
+                "Vたいです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l19-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、富士山《ふじさん》に 登《のぼ》った ことが ありますか。",
+                    "speak": "ブディさん、ふじさんに のぼった ことが ありますか。",
+                    "id_text": "Budi, pernahkah kamu mendaki Gunung Fuji?",
+                    "en_text": "Budi, have you ever climbed Mt. Fuji?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t1.mp3"
+                },
+                {
+                    "id": "l19-s1-t2",
+                    "who": "you",
+                    "ja": "いいえ、一度《いちど》も 登《のぼ》った ことが ありません。たなかさんは ありますか。",
+                    "speak": "いいえ、いちども のぼった ことが ありません。たなかさんは ありますか。",
+                    "id_text": "Belum, sekali pun belum pernah. Pak Tanaka pernah?",
+                    "accept": [
+                        "いいえ、一度も 登った ことが ありません。たなかさんは ありますか。",
+                        "いいえ、一度も登ったことがありません。たなかさんはありますか。"
+                    ],
+                    "en_text": "No, I've never climbed it. Have you, Mr. Tanaka?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t2.mp3"
+                },
+                {
+                    "id": "l19-s1-t3",
+                    "who": "partner",
+                    "ja": "ええ、二回《にかい》 登《のぼ》った ことが あります。",
+                    "speak": "ええ、にかい のぼった ことが あります。",
+                    "id_text": "Ya, saya pernah mendaki dua kali.",
+                    "en_text": "Yes, I've climbed it twice.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t3.mp3"
+                },
+                {
+                    "id": "l19-s1-t4",
+                    "who": "you",
+                    "ja": "すごいですね。寒《さむ》かったですか。",
+                    "speak": "すごいですね。さむかったですか。",
+                    "id_text": "Hebat. Apakah dingin?",
+                    "accept": [
+                        "すごいですね。寒かったですか。"
+                    ],
+                    "en_text": "That's amazing. Was it cold?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t4.mp3"
+                },
+                {
+                    "id": "l19-s1-t5",
+                    "who": "partner",
+                    "ja": "ええ、とても 寒《さむ》かったです。でも、山《やま》は きれいでした。",
+                    "speak": "ええ、とても さむかったです。でも、やまは きれいでした。",
+                    "id_text": "Ya, sangat dingin. Tapi gunungnya indah.",
+                    "en_text": "Yes, very cold. But the mountain was beautiful.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t5.mp3"
+                },
+                {
+                    "id": "l19-s1-t6",
+                    "who": "you",
+                    "ja": "私《わたし》も 登《のぼ》りたいです。来年《らいねん》、行《い》きませんか。",
+                    "speak": "わたしも のぼりたいです。らいねん、いきませんか。",
+                    "id_text": "Saya juga ingin mendaki. Tahun depan mau pergi?",
+                    "accept": [
+                        "私も 登りたいです。来年、行きませんか。",
+                        "私も登りたいです。来年、行きませんか。"
+                    ],
+                    "en_text": "I want to climb it too. Shall we go next year?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t6.mp3"
+                },
+                {
+                    "id": "l19-s1-t7",
+                    "who": "partner",
+                    "ja": "いいですね。ぜひ 行《い》きましょう。",
+                    "speak": "いいですね。ぜひ いきましょう。",
+                    "id_text": "Bagus. Mari kita pergi.",
+                    "en_text": "Sounds good. Let's definitely go.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l19-s2",
+            "title_id": "Sumo dan golf",
+            "title_en": "Sumo and golf",
+            "setting_id": "Teman sekantor menanyakan pengalaman olahraga dan budayamu.",
+            "setting_en": "A coworker asks about your experiences with sports and culture.",
+            "goal_id": "Memakai 〜たことがありますか dan jawaban pendek.",
+            "goal_en": "Use ~ta koto ga arimasu ka and short answers.",
+            "patterns": [
+                "Vたことが ありますか",
+                "Vたことが あります／ありません",
+                "Vましょうか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l19-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、相撲《すもう》を 見《み》た ことが ありますか。",
+                    "speak": "ブディさん、すもうを みた ことが ありますか。",
+                    "id_text": "Budi, pernahkah kamu menonton sumo?",
+                    "en_text": "Budi, have you ever watched sumo?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t1.mp3"
+                },
+                {
+                    "id": "l19-s2-t2",
+                    "who": "you",
+                    "ja": "はい、一度《いちど》 見《み》た ことが あります。大《おお》きかったです。",
+                    "speak": "はい、いちど みた ことが あります。おおきかったです。",
+                    "id_text": "Ya, pernah sekali. Mereka besar-besar.",
+                    "accept": [
+                        "はい、一度 見た ことが あります。大きかったです。",
+                        "はい、一度見たことがあります。大きかったです。"
+                    ],
+                    "en_text": "Yes, I've seen it once. They were huge.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t2.mp3"
+                },
+                {
+                    "id": "l19-s2-t3",
+                    "who": "partner",
+                    "ja": "そうですか。ゴルフを した ことが ありますか。",
+                    "speak": "そうですか。ゴルフを した ことが ありますか。",
+                    "id_text": "Begitu ya. Pernahkah bermain golf?",
+                    "en_text": "I see. Have you ever played golf?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t3.mp3"
+                },
+                {
+                    "id": "l19-s2-t4",
+                    "who": "you",
+                    "ja": "いいえ、一度《いちど》も した ことが ありません。難《むずか》しいですか。",
+                    "speak": "いいえ、いちども した ことが ありません。むずかしいですか。",
+                    "id_text": "Belum, sekali pun belum pernah. Apakah sulit?",
+                    "accept": [
+                        "いいえ、一度も した ことが ありません。難しいですか。",
+                        "いいえ、一度もしたことがありません。難しいですか。"
+                    ],
+                    "en_text": "No, never. Is it difficult?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t4.mp3"
+                },
+                {
+                    "id": "l19-s2-t5",
+                    "who": "partner",
+                    "ja": "ええ、少《すこ》し 難《むずか》しいです。でも、私《わたし》が 教《おし》えましょうか。",
+                    "speak": "ええ、すこし むずかしいです。でも、わたしが おしえましょうか。",
+                    "id_text": "Ya, agak sulit. Tapi mau saya ajari?",
+                    "en_text": "Yes, it's a little difficult. Shall I teach you?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t5.mp3"
+                },
+                {
+                    "id": "l19-s2-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。ぜひ お願《ねが》いします。",
+                    "speak": "ありがとうございます。ぜひ おねがいします。",
+                    "id_text": "Terima kasih. Mohon bantuannya.",
+                    "accept": [
+                        "ありがとうございます。ぜひ お願いします。",
+                        "ありがとうございます。ぜひお願いします。"
+                    ],
+                    "en_text": "Thank you. Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t6.mp3"
+                },
+                {
+                    "id": "l19-s2-t7",
+                    "who": "partner",
+                    "ja": "来週《らいしゅう》の 日曜日《にちようび》に 行《い》きましょう。",
+                    "speak": "らいしゅうの にちようびに いきましょう。",
+                    "id_text": "Mari pergi hari Minggu minggu depan.",
+                    "en_text": "Let's go next Sunday.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l19-s3",
+            "title_id": "Kegiatan hari Minggu",
+            "title_en": "Sunday activities",
+            "setting_id": "Rekan kerja bertanya apa yang biasa kamu lakukan di hari Minggu.",
+            "setting_en": "A colleague asks what you usually do on Sundays.",
+            "goal_id": "Memakai 〜たり、〜たりします untuk daftar kegiatan.",
+            "goal_en": "Use ~tari, ~tari shimasu to list activities.",
+            "patterns": [
+                "Vたり、Vたり します",
+                "Nを Vたり"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l19-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、日曜日《にちようび》は いつも 何《なに》を しますか。",
+                    "speak": "ブディさん、にちようびは いつも なにを しますか。",
+                    "id_text": "Budi, hari Minggu biasanya melakukan apa?",
+                    "en_text": "Budi, what do you usually do on Sundays?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t1.mp3"
+                },
+                {
+                    "id": "l19-s3-t2",
+                    "who": "you",
+                    "ja": "掃除《そうじ》を したり、洗濯《せんたく》を したり します。",
+                    "speak": "そうじを したり、せんたくを したり します。",
+                    "id_text": "Saya membersihkan rumah, mencuci pakaian, dan sebagainya.",
+                    "accept": [
+                        "掃除を したり、洗濯を したり します。",
+                        "掃除をしたり、洗濯をしたりします。"
+                    ],
+                    "en_text": "I do things like cleaning and laundry.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t2.mp3"
+                },
+                {
+                    "id": "l19-s3-t3",
+                    "who": "partner",
+                    "ja": "大変《たいへん》ですね。午後《ごご》は 何《なに》を しますか。",
+                    "speak": "たいへんですね。ごごは なにを しますか。",
+                    "id_text": "Repot ya. Siangnya melakukan apa?",
+                    "en_text": "That's a lot. What do you do in the afternoon?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t3.mp3"
+                },
+                {
+                    "id": "l19-s3-t4",
+                    "who": "you",
+                    "ja": "友達《ともだち》と 映画《えいが》を 見《み》に 行《い》ったり、買《か》い物《もの》を したり します。",
+                    "speak": "ともだちと えいがを みに いったり、かいものを したり します。",
+                    "id_text": "Pergi menonton film dengan teman, berbelanja, dan sebagainya.",
+                    "accept": [
+                        "友達と 映画を 見に 行ったり、買い物を したり します。",
+                        "友達と映画を見に行ったり、買い物をしたりします。"
+                    ],
+                    "en_text": "I go to movies with friends, go shopping, and so on.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t4.mp3"
+                },
+                {
+                    "id": "l19-s3-t5",
+                    "who": "partner",
+                    "ja": "いいですね。私《わたし》は うちで 音楽《おんがく》を 聞《き》いたり、本《ほん》を 読《よ》んだり します。",
+                    "speak": "いいですね。わたしは うちで おんがくを きいたり、ほんを よんだり します。",
+                    "id_text": "Bagus. Saya di rumah mendengarkan musik, membaca buku, dan sebagainya.",
+                    "en_text": "Nice. At home I listen to music, read books, and so on.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t5.mp3"
+                },
+                {
+                    "id": "l19-s3-t6",
+                    "who": "you",
+                    "ja": "私《わたし》も 音楽《おんがく》を 聞《き》いたり、歌《うた》を 歌《うた》ったり します。",
+                    "speak": "わたしも おんがくを きいたり、うたを うたったり します。",
+                    "id_text": "Saya juga mendengarkan musik, menyanyi, dan sebagainya.",
+                    "accept": [
+                        "私も 音楽を 聞いたり、歌を 歌ったり します。",
+                        "私も音楽を聞いたり、歌を歌ったりします。"
+                    ],
+                    "en_text": "I also listen to music and sing songs.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t6.mp3"
+                },
+                {
+                    "id": "l19-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。いっしょに カラオケへ 行《い》きませんか。",
+                    "speak": "そうですか。いっしょに カラオケへ いきませんか。",
+                    "id_text": "Begitu ya. Mau pergi karaoke bersama?",
+                    "en_text": "Really? Shall we go to karaoke together?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l19-s4",
+            "title_id": "Kabar dan perubahan",
+            "title_en": "News and changes",
+            "setting_id": "Teman menanyakan kabarmu dan kamu bercerita tentang perubahan.",
+            "setting_en": "A friend asks how you are and you talk about changes.",
+            "goal_id": "Memakai 〜く／〜に なります dan だんだん.",
+            "goal_en": "Use ~ku / ~ni narimasu and dandan.",
+            "patterns": [
+                "Adj(い)〜く なります",
+                "Adj(な)／N〜に なります",
+                "だんだん"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l19-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、調子《ちょうし》は どうですか。",
+                    "speak": "ブディさん、ちょうしは どうですか。",
+                    "id_text": "Budi, bagaimana kabarnya/kondisinya?",
+                    "en_text": "Budi, how are you doing?",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t1.mp3"
+                },
+                {
+                    "id": "l19-s4-t2",
+                    "who": "you",
+                    "ja": "おかげさまで、だんだん 元気《げんき》に なりました。",
+                    "speak": "おかげさまで、だんだん げんきに なりました。",
+                    "id_text": "Berkat Anda, saya berangsur-angsur sehat kembali.",
+                    "accept": [
+                        "おかげさまで、だんだん 元気に なりました。",
+                        "おかげさまで、だんだん元気になりました。"
+                    ],
+                    "en_text": "Thanks to you, I've been getting better little by little.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t2.mp3"
+                },
+                {
+                    "id": "l19-s4-t3",
+                    "who": "partner",
+                    "ja": "よかったですね。日本語《にほんご》も 上手《じょうず》に なりましたね。",
+                    "speak": "よかったですね。にほんごも じょうずに なりましたね。",
+                    "id_text": "Syukurlah. Bahasa Jepangmu juga jadi pandai.",
+                    "en_text": "That's good. Your Japanese has gotten good too.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t3.mp3"
+                },
+                {
+                    "id": "l19-s4-t4",
+                    "who": "you",
+                    "ja": "ありがとうございます。でも、漢字《かんじ》は まだ 難《むずか》しいです。",
+                    "speak": "ありがとうございます。でも、かんじは まだ むずかしいです。",
+                    "id_text": "Terima kasih. Tapi kanji masih sulit.",
+                    "accept": [
+                        "ありがとうございます。でも、漢字は まだ 難しいです。",
+                        "ありがとうございます。でも、漢字はまだ難しいです。"
+                    ],
+                    "en_text": "Thank you. But kanji are still difficult.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t4.mp3"
+                },
+                {
+                    "id": "l19-s4-t5",
+                    "who": "partner",
+                    "ja": "暑《あつ》く なりましたね。もうすぐ 夏《なつ》です。",
+                    "speak": "あつく なりましたね。もうすぐ なつです。",
+                    "id_text": "Sudah panas ya. Sebentar lagi musim panas.",
+                    "en_text": "It's gotten hot. Summer will be here soon.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t5.mp3"
+                },
+                {
+                    "id": "l19-s4-t6",
+                    "who": "you",
+                    "ja": "ええ。夏《なつ》は 暑《あつ》いですから、冷《つめ》たい ジュースが 飲《の》みたいです。",
+                    "speak": "ええ。なつは あついですから、つめたい ジュースが のみたいです。",
+                    "id_text": "Ya. Karena musim panas itu panas, saya ingin minum jus dingin.",
+                    "accept": [
+                        "ええ。夏は 暑いですから、冷たい ジュースが 飲みたいです。",
+                        "ええ。夏は暑いですから、冷たいジュースが飲みたいです。"
+                    ],
+                    "en_text": "Yes. Summer is hot, so I want a cold juice.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t6.mp3"
+                },
+                {
+                    "id": "l19-s4-t7",
+                    "who": "partner",
+                    "ja": "いいですね。ビールで 乾杯《かんぱい》しましょう。",
+                    "speak": "いいですね。ビールで かんぱいしましょう。",
+                    "id_text": "Bagus. Mari bersulang dengan bir.",
+                    "en_text": "Sounds good. Let's toast with beer.",
+                    "audio": "/audio/kaiwa/lesson-19/l19-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

@@ -83,6 +83,16 @@ class NotificationService
         return $this->practiceNotification($user, 'chokai', $setKey, $xp, mastered: true);
     }
 
+    public function kaiwaCompleted(User $user, string $setKey, int $xp): UserNotification
+    {
+        return $this->practiceNotification($user, 'kaiwa', $setKey, $xp, mastered: false);
+    }
+
+    public function kaiwaMastered(User $user, string $setKey, int $xp): UserNotification
+    {
+        return $this->practiceNotification($user, 'kaiwa', $setKey, $xp, mastered: true);
+    }
+
     /** $pack = kunci pack Tes JLPT ('private', 'n5-test-1', …). */
     public function jlptTestCompleted(User $user, string $pack, int $xp): UserNotification
     {
@@ -142,6 +152,14 @@ class NotificationService
             $n = substr($setKey, 1);
 
             return $isEnglish ? "Lesson {$n}" : "Pelajaran {$n}";
+        }
+
+        if ($module === 'kaiwa') {
+            // set_key = id skenario: 'l{pelajaran}-s{urut}' (jalur pelajaran) atau kunci jalur situasi.
+            if (preg_match('/^l(\d+)-s(\d+)$/', $setKey, $m))
+                return $isEnglish ? "Lesson {$m[1]} · Scenario {$m[2]}" : "Pelajaran {$m[1]} · Skenario {$m[2]}";
+
+            return $isEnglish ? 'Conversation practice' : 'Latihan percakapan';
         }
 
         if ($module === 'jlpt_test') {

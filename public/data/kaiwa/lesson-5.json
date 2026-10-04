@@ -1,0 +1,396 @@
+{
+    "id": 5,
+    "level": "N5",
+    "title_id": "Bepergian & Tanggal",
+    "title_en": "Getting Around & Dates",
+    "scenarios": [
+        {
+            "id": "l5-s1",
+            "title_id": "Hari Minggu",
+            "title_en": "Sunday plans",
+            "setting_id": "Rekan kerja bertanya rencanamu hari Minggu.",
+            "setting_en": "A colleague asks about your plans for Sunday.",
+            "goal_id": "Menyebut tujuan dengan 〜へ 行きます, teman dengan 〜と, dan kendaraan dengan 〜で.",
+            "goal_en": "State a destination with ~e ikimasu, a companion with ~to, and transport with ~de.",
+            "patterns": [
+                "(場所)へ 行きます",
+                "(人)と 行きます",
+                "(乗り物)で 行きます"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l5-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、日曜日《にちようび》は どこへ 行《い》きますか。",
+                    "speak": "ブディさん、にちようびは どこへ いきますか。",
+                    "id_text": "Budi, hari Minggu kamu pergi ke mana?",
+                    "en_text": "Budi, where are you going on Sunday?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t1.mp3"
+                },
+                {
+                    "id": "l5-s1-t2",
+                    "who": "you",
+                    "ja": "デパートへ 行《い》きます。",
+                    "speak": "デパートへ いきます。",
+                    "id_text": "Aku pergi ke toserba.",
+                    "en_text": "I am going to the department store.",
+                    "accept": [
+                        "デパートへ行きます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t2.mp3"
+                },
+                {
+                    "id": "l5-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。だれと 行《い》きますか。",
+                    "speak": "そうですか。だれと いきますか。",
+                    "id_text": "Oh begitu. Pergi dengan siapa?",
+                    "en_text": "I see. Who are you going with?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t3.mp3"
+                },
+                {
+                    "id": "l5-s1-t4",
+                    "who": "you",
+                    "ja": "友達《ともだち》と 行《い》きます。",
+                    "speak": "ともだちと いきます。",
+                    "id_text": "Aku pergi dengan teman.",
+                    "en_text": "I am going with a friend.",
+                    "accept": [
+                        "友達と行きます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t4.mp3"
+                },
+                {
+                    "id": "l5-s1-t5",
+                    "who": "partner",
+                    "ja": "電車《でんしゃ》で 行《い》きますか、バスで 行《い》きますか。",
+                    "speak": "でんしゃで いきますか、バスで いきますか。",
+                    "id_text": "Naik kereta atau naik bus?",
+                    "en_text": "Will you go by train or by bus?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t5.mp3"
+                },
+                {
+                    "id": "l5-s1-t6",
+                    "who": "you",
+                    "ja": "バスで 行《い》きます。",
+                    "speak": "バスで いきます。",
+                    "id_text": "Aku naik bus.",
+                    "en_text": "I will go by bus.",
+                    "accept": [
+                        "バスで行きます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t6.mp3"
+                },
+                {
+                    "id": "l5-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l5-s2",
+            "title_id": "Tidak ke mana-mana",
+            "title_en": "Nowhere",
+            "setting_id": "Teman bertanya ke mana kamu pergi kemarin dan kapan kamu pulang besok.",
+            "setting_en": "A friend asks where you went yesterday and when you will go home tomorrow.",
+            "goal_id": "Memakai どこへも 行きません, 来ます／帰ります, dan 一人で.",
+            "goal_en": "Use doko e mo ikimasen, kimasu / kaerimasu, and hitori de.",
+            "patterns": [
+                "どこ[へ]も 行きません",
+                "(場所)へ 来ます・帰ります",
+                "一人で"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l5-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きのう どこへ 行《い》きましたか。",
+                    "speak": "ブディさん、きのう どこへ いきましたか。",
+                    "id_text": "Budi, kemarin kamu pergi ke mana?",
+                    "en_text": "Budi, where did you go yesterday?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t1.mp3"
+                },
+                {
+                    "id": "l5-s2-t2",
+                    "who": "you",
+                    "ja": "どこへも 行《い》きませんでした。",
+                    "speak": "どこへも いきませんでした。",
+                    "id_text": "Aku tidak pergi ke mana-mana.",
+                    "en_text": "I did not go anywhere.",
+                    "accept": [
+                        "どこへも行きませんでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t2.mp3"
+                },
+                {
+                    "id": "l5-s2-t3",
+                    "who": "partner",
+                    "ja": "そうですか。あしたは 学校《がっこう》へ 来《き》ますか。",
+                    "speak": "そうですか。あしたは がっこうへ きますか。",
+                    "id_text": "Oh begitu. Besok kamu datang ke sekolah?",
+                    "en_text": "I see. Will you come to school tomorrow?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t3.mp3"
+                },
+                {
+                    "id": "l5-s2-t4",
+                    "who": "you",
+                    "ja": "はい、来《き》ます。",
+                    "speak": "はい、きます。",
+                    "id_text": "Ya, aku datang.",
+                    "en_text": "Yes, I will.",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t4.mp3"
+                },
+                {
+                    "id": "l5-s2-t5",
+                    "who": "partner",
+                    "ja": "何時《なんじ》に 帰《かえ》りますか。",
+                    "speak": "なんじに かえりますか。",
+                    "id_text": "Pulang jam berapa?",
+                    "en_text": "What time will you go home?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t5.mp3"
+                },
+                {
+                    "id": "l5-s2-t6",
+                    "who": "you",
+                    "ja": "五時《ごじ》に 帰《かえ》ります。一人《ひとり》で 帰《かえ》ります。",
+                    "speak": "ごじに かえります。ひとりで かえります。",
+                    "id_text": "Aku pulang jam 5. Aku pulang sendirian.",
+                    "en_text": "I will go home at 5. I will go home alone.",
+                    "accept": [
+                        "5時に 帰ります。1人で 帰ります。",
+                        "五時に帰ります。一人で帰ります。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t6.mp3"
+                },
+                {
+                    "id": "l5-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l5-s3",
+            "title_id": "Hari ulang tahun",
+            "title_en": "Birthdays",
+            "setting_id": "Teman mengobrol tentang hari ulang tahun.",
+            "setting_en": "A friend chats with you about birthdays.",
+            "goal_id": "Menanyakan tanggal dengan いつ／何日, serta memakai 〜ですよ dan 〜ですね.",
+            "goal_en": "Ask about dates with itsu / nannichi, and use ~desu yo and ~desu ne.",
+            "patterns": [
+                "いつ 〜ですか",
+                "〜ですよ。",
+                "〜ですね。"
+            ],
+            "partner": {
+                "name": "ミラー",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l5-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、誕生日《たんじょうび》は いつですか。",
+                    "speak": "ブディさん、たんじょうびは いつですか。",
+                    "id_text": "Budi, ulang tahunmu kapan?",
+                    "en_text": "Budi, when is your birthday?",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t1.mp3"
+                },
+                {
+                    "id": "l5-s3-t2",
+                    "who": "you",
+                    "ja": "三月《さんがつ》 十日《とおか》です。",
+                    "speak": "さんがつ とおかです。",
+                    "id_text": "Tanggal 10 Maret.",
+                    "en_text": "It is March 10th.",
+                    "accept": [
+                        "3月 10日です。",
+                        "三月十日です。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t2.mp3"
+                },
+                {
+                    "id": "l5-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。わたしの 誕生日《たんじょうび》は 来月《らいげつ》ですよ。",
+                    "speak": "そうですか。わたしの たんじょうびは らいげつですよ。",
+                    "id_text": "Oh begitu. Ulang tahunku bulan depan, lho.",
+                    "en_text": "I see. My birthday is next month.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t3.mp3"
+                },
+                {
+                    "id": "l5-s3-t4",
+                    "who": "you",
+                    "ja": "えっ、来月《らいげつ》ですか。何日《なんにち》ですか。",
+                    "speak": "えっ、らいげつですか。なんにちですか。",
+                    "id_text": "Eh, bulan depan? Tanggal berapa?",
+                    "en_text": "Oh, next month? What day?",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t4.mp3"
+                },
+                {
+                    "id": "l5-s3-t5",
+                    "who": "partner",
+                    "ja": "十五日《じゅうごにち》です。",
+                    "speak": "じゅうごにちです。",
+                    "id_text": "Tanggal 15.",
+                    "en_text": "The 15th.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t5.mp3"
+                },
+                {
+                    "id": "l5-s3-t6",
+                    "who": "you",
+                    "ja": "そうですか。来月《らいげつ》ですね。",
+                    "speak": "そうですか。らいげつですね。",
+                    "id_text": "Oh begitu. Bulan depan, ya.",
+                    "en_text": "I see. Next month, then.",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t6.mp3"
+                },
+                {
+                    "id": "l5-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですよ。",
+                    "speak": "そうですよ。",
+                    "id_text": "Betul, lho.",
+                    "en_text": "That is right.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l5-s4",
+            "title_id": "Di stasiun",
+            "title_en": "At the station",
+            "setting_id": "Di stasiun, kamu bertanya jalur dan jenis kereta pada petugas.",
+            "setting_en": "At the station you ask a staff member about the platform and the type of train.",
+            "goal_id": "Menanyakan jalur dengan 何番線 dan memakai 次の, 普通／急行, serta どういたしまして.",
+            "goal_en": "Ask for the platform with nanbansen and use tsugi no, futsuu / kyuukou, and douitashimashite.",
+            "patterns": [
+                "〜は 何番線ですか",
+                "(場所)へ 行きます",
+                "どういたしまして"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l5-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、甲子園《こうしえん》は 何番線《なんばんせん》ですか。",
+                    "speak": "すみません、こうしえんは なんばんせんですか。",
+                    "id_text": "Permisi, ke Koshien jalur berapa?",
+                    "en_text": "Excuse me, which platform is it for Koshien?",
+                    "accept": [
+                        "すみません、甲子園は何番線ですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t1.mp3"
+                },
+                {
+                    "id": "l5-s4-t2",
+                    "who": "partner",
+                    "ja": "甲子園《こうしえん》は 五番線《ごばんせん》です。",
+                    "speak": "こうしえんは ごばんせんです。",
+                    "id_text": "Koshien jalur 5.",
+                    "en_text": "For Koshien it is platform 5.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t2.mp3"
+                },
+                {
+                    "id": "l5-s4-t3",
+                    "who": "you",
+                    "ja": "次《つぎ》の 電車《でんしゃ》は 普通《ふつう》ですか、急行《きゅうこう》ですか。",
+                    "speak": "つぎの でんしゃは ふつうですか、きゅうこうですか。",
+                    "id_text": "Kereta berikutnya kereta biasa atau ekspres?",
+                    "en_text": "Is the next train a local or an express?",
+                    "accept": [
+                        "次の電車は普通ですか、急行ですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t3.mp3"
+                },
+                {
+                    "id": "l5-s4-t4",
+                    "who": "partner",
+                    "ja": "次《つぎ》は 急行《きゅうこう》です。",
+                    "speak": "つぎは きゅうこうです。",
+                    "id_text": "Berikutnya ekspres.",
+                    "en_text": "The next one is an express.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t4.mp3"
+                },
+                {
+                    "id": "l5-s4-t5",
+                    "who": "you",
+                    "ja": "この 電車《でんしゃ》は 甲子園《こうしえん》へ 行《い》きますか。",
+                    "speak": "この でんしゃは こうしえんへ いきますか。",
+                    "id_text": "Apakah kereta ini pergi ke Koshien?",
+                    "en_text": "Does this train go to Koshien?",
+                    "accept": [
+                        "この電車は甲子園へ行きますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t5.mp3"
+                },
+                {
+                    "id": "l5-s4-t6",
+                    "who": "partner",
+                    "ja": "はい、行《い》きますよ。",
+                    "speak": "はい、いきますよ。",
+                    "id_text": "Ya, pergi, lho.",
+                    "en_text": "Yes, it does.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t6.mp3"
+                },
+                {
+                    "id": "l5-s4-t7",
+                    "who": "you",
+                    "ja": "どうも ありがとうございました。",
+                    "speak": "どうも ありがとうございました。",
+                    "id_text": "Terima kasih banyak.",
+                    "en_text": "Thank you very much.",
+                    "accept": [
+                        "ありがとうございました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t7.mp3"
+                },
+                {
+                    "id": "l5-s4-t8",
+                    "who": "partner",
+                    "ja": "どういたしまして。",
+                    "speak": "どういたしまして。",
+                    "id_text": "Sama-sama.",
+                    "en_text": "You are welcome.",
+                    "audio": "/audio/kaiwa/lesson-5/l5-s4-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

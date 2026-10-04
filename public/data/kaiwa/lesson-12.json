@@ -1,0 +1,394 @@
+{
+    "id": 12,
+    "level": "N5",
+    "title_id": "Pelajaran 12 — Cuaca & Perbandingan",
+    "title_en": "Lesson 12 — Weather & Comparisons",
+    "scenarios": [
+        {
+            "id": "l12-s1",
+            "title_id": "Cuaca akhir pekan",
+            "title_en": "Weekend weather",
+            "setting_id": "Tanaka bertanya tentang liburan akhir pekanmu.",
+            "setting_en": "Tanaka asks about your weekend break.",
+            "goal_id": "Memakai bentuk lampau 〜でした／〜かったです／〜くなかったです.",
+            "goal_en": "Use the past forms ~deshita / ~katta desu / ~kunakatta desu.",
+            "patterns": [
+                "Nでした",
+                "い形容詞→〜かったです",
+                "〜くなかったです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l12-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きのうは 休《やす》みでしたか。",
+                    "speak": "ブディさん、きのうは やすみでしたか。",
+                    "id_text": "Budi, kemarin libur?",
+                    "en_text": "Budi, was yesterday a day off?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t1.mp3"
+                },
+                {
+                    "id": "l12-s1-t2",
+                    "who": "you",
+                    "ja": "はい、休《やす》みでした。",
+                    "speak": "はい、やすみでした。",
+                    "id_text": "Ya, libur.",
+                    "accept": [
+                        "はい、休みでした。"
+                    ],
+                    "en_text": "Yes, it was a day off.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t2.mp3"
+                },
+                {
+                    "id": "l12-s1-t3",
+                    "who": "partner",
+                    "ja": "天気《てんき》は どうでしたか。",
+                    "speak": "てんきは どうでしたか。",
+                    "id_text": "Cuacanya bagaimana?",
+                    "en_text": "How was the weather?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t3.mp3"
+                },
+                {
+                    "id": "l12-s1-t4",
+                    "who": "you",
+                    "ja": "雨《あめ》でした。寒《さむ》かったです。",
+                    "speak": "あめでした。さむかったです。",
+                    "id_text": "Hujan. Dingin.",
+                    "accept": [
+                        "雨でした。寒かったです。",
+                        "雨でした。さむかったです。"
+                    ],
+                    "en_text": "It was rainy. It was cold.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t4.mp3"
+                },
+                {
+                    "id": "l12-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですか。映画《えいが》は どうでしたか。",
+                    "speak": "そうですか。えいがは どうでしたか。",
+                    "id_text": "Oh begitu. Filmnya bagaimana?",
+                    "en_text": "I see. How was the movie?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t5.mp3"
+                },
+                {
+                    "id": "l12-s1-t6",
+                    "who": "you",
+                    "ja": "とても 面白《おもしろ》かったです。",
+                    "speak": "とても おもしろかったです。",
+                    "id_text": "Sangat menarik.",
+                    "accept": [
+                        "とても 面白かったです。",
+                        "とても面白かったです。"
+                    ],
+                    "en_text": "It was very interesting.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t6.mp3"
+                },
+                {
+                    "id": "l12-s1-t7",
+                    "who": "partner",
+                    "ja": "よかったですね。",
+                    "speak": "よかったですね。",
+                    "id_text": "Bagus ya.",
+                    "en_text": "That's good.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l12-s2",
+            "title_id": "Musim favorit",
+            "title_en": "Favorite season",
+            "setting_id": "Suzuki bertanya musim apa yang kamu sukai.",
+            "setting_en": "Suzuki asks which season you like.",
+            "goal_id": "Memakai AとBと どちらが 〜ですか dan 〜が いちばん 〜です.",
+            "goal_en": "Use A to B to dochira ga ~ desu ka and ~ga ichiban ~ desu.",
+            "patterns": [
+                "AとBと どちらが 〜",
+                "〜の ほうが 〜です",
+                "〜が いちばん 〜です"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l12-s2-t1",
+                    "who": "partner",
+                    "ja": "春《はる》と 秋《あき》と どちらが 好《す》きですか。",
+                    "speak": "はると あきと どちらが すきですか。",
+                    "id_text": "Musim semi dan musim gugur, mana yang kamu suka?",
+                    "en_text": "Which do you like better, spring or autumn?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t1.mp3"
+                },
+                {
+                    "id": "l12-s2-t2",
+                    "who": "you",
+                    "ja": "秋《あき》の ほうが 好《す》きです。",
+                    "speak": "あきの ほうが すきです。",
+                    "id_text": "Aku lebih suka musim gugur.",
+                    "accept": [
+                        "秋の ほうが 好きです。",
+                        "秋のほうが好きです。"
+                    ],
+                    "en_text": "I like autumn better.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t2.mp3"
+                },
+                {
+                    "id": "l12-s2-t3",
+                    "who": "partner",
+                    "ja": "どうして ですか。",
+                    "speak": "どうして ですか。",
+                    "id_text": "Kenapa?",
+                    "en_text": "Why?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t3.mp3"
+                },
+                {
+                    "id": "l12-s2-t4",
+                    "who": "you",
+                    "ja": "涼《すず》しいですから。",
+                    "speak": "すずしいですから。",
+                    "id_text": "Karena sejuk.",
+                    "accept": [
+                        "涼しいですから。"
+                    ],
+                    "en_text": "Because it is cool.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t4.mp3"
+                },
+                {
+                    "id": "l12-s2-t5",
+                    "who": "partner",
+                    "ja": "一年《いちねん》で いつが いちばん 好《す》きですか。",
+                    "speak": "いちねんで いつが いちばん すきですか。",
+                    "id_text": "Dalam setahun, kapan yang paling kamu suka?",
+                    "en_text": "Which season of the year do you like the most?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t5.mp3"
+                },
+                {
+                    "id": "l12-s2-t6",
+                    "who": "you",
+                    "ja": "冬《ふゆ》が いちばん 好《す》きです。",
+                    "speak": "ふゆが いちばん すきです。",
+                    "id_text": "Aku paling suka musim dingin.",
+                    "accept": [
+                        "冬が いちばん 好きです。",
+                        "冬がいちばん好きです。"
+                    ],
+                    "en_text": "I like winter the most.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t6.mp3"
+                },
+                {
+                    "id": "l12-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l12-s3",
+            "title_id": "Kereta atau bus?",
+            "title_en": "Train or bus?",
+            "setting_id": "Tanaka bertanya alat transportasi mana yang lebih baik.",
+            "setting_en": "Tanaka asks which kind of transport is better.",
+            "goal_id": "Memakai AはBより 〜です dan どちらが.",
+            "goal_en": "Use A wa B yori ~ desu and dochira ga.",
+            "patterns": [
+                "AはBより 〜です",
+                "どちらが 〜ですか"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l12-s3-t1",
+                    "who": "partner",
+                    "ja": "新幹線《しんかんせん》と バスと どちらが 速《はや》いですか。",
+                    "speak": "しんかんせんと バスと どちらが はやいですか。",
+                    "id_text": "Shinkansen dan bus, mana yang lebih cepat?",
+                    "en_text": "Which is faster, the Shinkansen or the bus?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t1.mp3"
+                },
+                {
+                    "id": "l12-s3-t2",
+                    "who": "you",
+                    "ja": "新幹線《しんかんせん》の ほうが 速《はや》いです。",
+                    "speak": "しんかんせんの ほうが はやいです。",
+                    "id_text": "Shinkansen lebih cepat.",
+                    "accept": [
+                        "新幹線の ほうが 速いです。",
+                        "新幹線のほうが速いです。"
+                    ],
+                    "en_text": "The Shinkansen is faster.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t2.mp3"
+                },
+                {
+                    "id": "l12-s3-t3",
+                    "who": "partner",
+                    "ja": "どちらが 安《やす》いですか。",
+                    "speak": "どちらが やすいですか。",
+                    "id_text": "Mana yang lebih murah?",
+                    "en_text": "Which is cheaper?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t3.mp3"
+                },
+                {
+                    "id": "l12-s3-t4",
+                    "who": "you",
+                    "ja": "バスは 新幹線《しんかんせん》より 安《やす》いです。",
+                    "speak": "バスは しんかんせんより やすいです。",
+                    "id_text": "Bus lebih murah daripada Shinkansen.",
+                    "accept": [
+                        "バスは 新幹線より 安いです。",
+                        "バスは新幹線より安いです。"
+                    ],
+                    "en_text": "The bus is cheaper than the Shinkansen.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t4.mp3"
+                },
+                {
+                    "id": "l12-s3-t5",
+                    "who": "partner",
+                    "ja": "飛行機《ひこうき》は どうですか。",
+                    "speak": "ひこうきは どうですか。",
+                    "id_text": "Kalau pesawat?",
+                    "en_text": "What about the airplane?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t5.mp3"
+                },
+                {
+                    "id": "l12-s3-t6",
+                    "who": "you",
+                    "ja": "飛行機《ひこうき》は 新幹線《しんかんせん》より 高《たか》いです。",
+                    "speak": "ひこうきは しんかんせんより たかいです。",
+                    "id_text": "Pesawat lebih mahal daripada Shinkansen.",
+                    "accept": [
+                        "飛行機は 新幹線より 高いです。",
+                        "飛行機は新幹線より高いです。"
+                    ],
+                    "en_text": "The airplane is more expensive than the Shinkansen.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t6.mp3"
+                },
+                {
+                    "id": "l12-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですね。",
+                    "speak": "そうですね。",
+                    "id_text": "Benar ya.",
+                    "en_text": "That's right.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l12-s4",
+            "title_id": "Pesta kemarin",
+            "title_en": "Yesterday's party",
+            "setting_id": "Suzuki bertanya tentang pesta yang kamu hadiri kemarin.",
+            "setting_en": "Suzuki asks about the party you attended yesterday.",
+            "goal_id": "Memakai bentuk lampau な-kata sifat (〜でした) dan い-kata sifat (〜かったです).",
+            "goal_en": "Use past forms of na-adjectives (~deshita) and i-adjectives (~katta desu).",
+            "patterns": [
+                "Aな→〜でした",
+                "Aい→〜かったです",
+                "〜くなかったです"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l12-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きのうの パーティーは どうでしたか。",
+                    "speak": "ブディさん、きのうの パーティーは どうでしたか。",
+                    "id_text": "Budi, pestanya kemarin bagaimana?",
+                    "en_text": "Budi, how was the party yesterday?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t1.mp3"
+                },
+                {
+                    "id": "l12-s4-t2",
+                    "who": "you",
+                    "ja": "とても にぎやかでした。",
+                    "speak": "とても にぎやかでした。",
+                    "id_text": "Sangat ramai.",
+                    "accept": [],
+                    "en_text": "It was very lively.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t2.mp3"
+                },
+                {
+                    "id": "l12-s4-t3",
+                    "who": "partner",
+                    "ja": "料理《りょうり》は どうでしたか。",
+                    "speak": "りょうりは どうでしたか。",
+                    "id_text": "Masakannya bagaimana?",
+                    "en_text": "How was the food?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t3.mp3"
+                },
+                {
+                    "id": "l12-s4-t4",
+                    "who": "you",
+                    "ja": "おいしかったです。でも、ちょっと 辛《から》かったです。",
+                    "speak": "おいしかったです。でも、ちょっと からかったです。",
+                    "id_text": "Enak. Tetapi agak pedas.",
+                    "accept": [
+                        "おいしかったです。でも、ちょっと 辛かったです。",
+                        "おいしかったです。でも、ちょっと辛かったです。"
+                    ],
+                    "en_text": "It was delicious. But it was a bit spicy.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t4.mp3"
+                },
+                {
+                    "id": "l12-s4-t5",
+                    "who": "partner",
+                    "ja": "人《ひと》は 多《おお》かったですか。",
+                    "speak": "ひとは おおかったですか。",
+                    "id_text": "Apakah orangnya banyak?",
+                    "en_text": "Were there many people?",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t5.mp3"
+                },
+                {
+                    "id": "l12-s4-t6",
+                    "who": "you",
+                    "ja": "いいえ、あまり 多《おお》くなかったです。",
+                    "speak": "いいえ、あまり おおくなかったです。",
+                    "id_text": "Tidak, tidak terlalu banyak.",
+                    "accept": [
+                        "いいえ、あまり 多くなかったです。",
+                        "いいえ、あまり多くなかったです。"
+                    ],
+                    "en_text": "No, there were not very many.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t6.mp3"
+                },
+                {
+                    "id": "l12-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。楽《たの》しかったですね。",
+                    "speak": "そうですか。たのしかったですね。",
+                    "id_text": "Oh begitu. Menyenangkan ya.",
+                    "en_text": "I see. It sounds fun.",
+                    "audio": "/audio/kaiwa/lesson-12/l12-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

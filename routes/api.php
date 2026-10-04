@@ -11,6 +11,7 @@ use App\Http\Controllers\Api\LessonController;
 use App\Http\Controllers\Api\LevelController;
 use App\Http\Controllers\Api\LocaleController;
 use App\Http\Controllers\Api\ChokaiController;
+use App\Http\Controllers\Api\KaiwaController;
 use App\Http\Controllers\Api\JlptTestController;
 use App\Http\Controllers\Api\MondaishuuController;
 use App\Http\Controllers\Api\NotificationController;
@@ -115,6 +116,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('/chokai/progress', [ChokaiController::class, 'index']);
     Route::post('/chokai/progress/{setKey}', [ChokaiController::class, 'store']);
+
+    // set_key = id skenario kaiwa (mis. 'l2-s1'); format dibatasi supaya tidak ada kunci sembarang.
+    Route::get('/kaiwa/progress', [KaiwaController::class, 'index']);
+    Route::post('/kaiwa/progress/{setKey}', [KaiwaController::class, 'store'])
+        ->where('setKey', '[a-z0-9]+(-[a-z0-9]+)*');
 
     Route::get('/kaite-oboeru/progress', [KaiteOboeruController::class, 'index']);
     Route::post('/kaite-oboeru/progress/{setKey}', [KaiteOboeruController::class, 'store']);

@@ -43,6 +43,11 @@ export default [
     icon: { icon: 'tabler-headphones' },
   },
   {
+    title: 'nav.kaiwa',
+    to: { name: 'kaiwa' },
+    icon: { icon: 'tabler-messages' },
+  },
+  {
     title: 'nav.kaite_oboeru',
     to: { name: 'kaite-oboeru' },
     icon: { icon: 'tabler-writing-sign' },

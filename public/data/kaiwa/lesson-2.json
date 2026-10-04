@@ -1,0 +1,383 @@
+{
+    "id": 2,
+    "level": "N5",
+    "title_id": "Benda di Sekitar Kita",
+    "title_en": "Things Around Us",
+    "scenarios": [
+        {
+            "id": "l2-s1",
+            "title_id": "Itu apa?",
+            "title_en": "What is that?",
+            "setting_id": "Di kantor, rekan kerja menanyakan barang-barang di mejamu.",
+            "setting_en": "At the office, a colleague asks about the things on your desk.",
+            "goal_id": "Menanyakan dan menyebut nama benda dengan これ・それ・あれ.",
+            "goal_en": "Ask about and name objects with kore / sore / are.",
+            "patterns": [
+                "これ・それ・あれは 〜ですか",
+                "〜は 何ですか",
+                "KB1ですか、KB2ですか"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l2-s1-t1",
+                    "who": "partner",
+                    "ja": "それは 何《なん》ですか。",
+                    "speak": "それは なんですか。",
+                    "id_text": "Itu apa?",
+                    "en_text": "What is that?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t1.mp3"
+                },
+                {
+                    "id": "l2-s1-t2",
+                    "who": "you",
+                    "ja": "これは 辞書《じしょ》です。",
+                    "speak": "これは じしょです。",
+                    "id_text": "Ini kamus.",
+                    "en_text": "This is a dictionary.",
+                    "accept": [
+                        "じしょです。",
+                        "辞書です。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t2.mp3"
+                },
+                {
+                    "id": "l2-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。あれは ラジオですか、テレビですか。",
+                    "speak": "そうですか。あれは ラジオですか、テレビですか。",
+                    "id_text": "Oh begitu. Itu radio atau televisi?",
+                    "en_text": "I see. Is that a radio or a TV?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t3.mp3"
+                },
+                {
+                    "id": "l2-s1-t4",
+                    "who": "you",
+                    "ja": "あれは テレビです。",
+                    "speak": "あれは テレビです。",
+                    "id_text": "Itu televisi.",
+                    "en_text": "That is a TV.",
+                    "accept": [
+                        "テレビです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t4.mp3"
+                },
+                {
+                    "id": "l2-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですか。その 傘《かさ》は あなたのですか。",
+                    "speak": "そうですか。その かさは あなたのですか。",
+                    "id_text": "Oh begitu. Payung itu milikmu?",
+                    "en_text": "I see. Is that umbrella yours?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t5.mp3"
+                },
+                {
+                    "id": "l2-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ、私《わたし》のじゃ ありません。",
+                    "speak": "いいえ、わたしのじゃ ありません。",
+                    "id_text": "Bukan, itu bukan milikku.",
+                    "en_text": "No, it is not mine.",
+                    "accept": [
+                        "いいえ、私のではありません。",
+                        "いいえ、わたしのではありません。",
+                        "いいえ、違います。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t6.mp3"
+                },
+                {
+                    "id": "l2-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですか。どうも。",
+                    "speak": "そうですか。どうも。",
+                    "id_text": "Oh begitu. Terima kasih.",
+                    "en_text": "I see. Thanks.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l2-s2",
+            "title_id": "Oleh-oleh",
+            "title_en": "A souvenir",
+            "setting_id": "Rekan kerja memberimu oleh-oleh.",
+            "setting_en": "A colleague gives you a souvenir.",
+            "goal_id": "Berterima kasih dan bertanya tentang benda dengan この・その + benda, serta 〜も.",
+            "goal_en": "Say thanks and ask about things with kono / sono + noun, and 〜mo.",
+            "patterns": [
+                "この・その・あの＋KB",
+                "KB1の KB2",
+                "Ａも Ｂです"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l2-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、これは お土産《みやげ》です。どうぞ。",
+                    "speak": "ブディさん、これは おみやげです。どうぞ。",
+                    "id_text": "Budi, ini oleh-oleh. Silakan.",
+                    "en_text": "Budi, this is a souvenir. Please, take it.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s2-t1.mp3"
+                },
+                {
+                    "id": "l2-s2-t2",
+                    "who": "you",
+                    "ja": "どうも ありがとうございます。",
+                    "speak": "どうも ありがとうございます。",
+                    "id_text": "Terima kasih banyak.",
+                    "en_text": "Thank you very much.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s2-t2.mp3"
+                },
+                {
+                    "id": "l2-s2-t3",
+                    "who": "partner",
+                    "ja": "それは 日本語《にほんご》の 雑誌《ざっし》です。",
+                    "speak": "それは にほんごの ざっしです。",
+                    "id_text": "Itu majalah berbahasa Jepang.",
+                    "en_text": "That is a Japanese-language magazine.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s2-t3.mp3"
+                },
+                {
+                    "id": "l2-s2-t4",
+                    "who": "you",
+                    "ja": "そうですか。この 本《ほん》も 日本語《にほんご》ですか。",
+                    "speak": "そうですか。この ほんも にほんごですか。",
+                    "id_text": "Oh begitu. Buku ini juga berbahasa Jepang?",
+                    "en_text": "I see. Is this book in Japanese too?",
+                    "accept": [
+                        "そうですか。この本も日本語ですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s2-t4.mp3"
+                },
+                {
+                    "id": "l2-s2-t5",
+                    "who": "partner",
+                    "ja": "いいえ、それは 英語《えいご》の 本《ほん》です。",
+                    "speak": "いいえ、それは えいごの ほんです。",
+                    "id_text": "Bukan, itu buku berbahasa Inggris.",
+                    "en_text": "No, that is an English book.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s2-t5.mp3"
+                },
+                {
+                    "id": "l2-s2-t6",
+                    "who": "you",
+                    "ja": "そうですか。どうも ありがとうございます。",
+                    "speak": "そうですか。どうも ありがとうございます。",
+                    "id_text": "Oh begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "accept": [
+                        "そうですか。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l2-s3",
+            "title_id": "Barang tertinggal",
+            "title_en": "Lost property",
+            "setting_id": "Di kantor ada beberapa barang tertinggal. Rekan kerja bertanya siapa pemiliknya.",
+            "setting_en": "Some items were left in the office. A colleague asks whose they are.",
+            "goal_id": "Menanyakan pemilik dengan だれの dan menjawab はい、そうです／いいえ、そうじゃ ありません.",
+            "goal_en": "Ask whose something is with dare no, and answer hai, sou desu / iie, sou ja arimasen.",
+            "patterns": [
+                "KB1の KB2",
+                "〜は だれのですか",
+                "はい、そうです。／ いいえ、そうじゃ ありません。"
+            ],
+            "partner": {
+                "name": "ミラー",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l2-s3-t1",
+                    "who": "partner",
+                    "ja": "あの 鞄《かばん》は 誰《だれ》のですか。",
+                    "speak": "あの かばんは だれのですか。",
+                    "id_text": "Tas itu milik siapa?",
+                    "en_text": "Whose bag is that?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t1.mp3"
+                },
+                {
+                    "id": "l2-s3-t2",
+                    "who": "you",
+                    "ja": "あの 鞄《かばん》は すずきさんのです。",
+                    "speak": "あの かばんは すずきさんのです。",
+                    "id_text": "Tas itu milik Suzuki.",
+                    "en_text": "That bag is Suzuki's.",
+                    "accept": [
+                        "あの鞄はすずきさんのです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t2.mp3"
+                },
+                {
+                    "id": "l2-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。この 時計《とけい》は ブディさんのですか。",
+                    "speak": "そうですか。この とけいは ブディさんのですか。",
+                    "id_text": "Oh begitu. Jam ini milik Budi?",
+                    "en_text": "I see. Is this watch yours, Budi?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t3.mp3"
+                },
+                {
+                    "id": "l2-s3-t4",
+                    "who": "you",
+                    "ja": "はい、そうです。私《わたし》のです。",
+                    "speak": "はい、そうです。わたしのです。",
+                    "id_text": "Ya, benar. Itu milikku.",
+                    "en_text": "Yes, it is. It is mine.",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t4.mp3"
+                },
+                {
+                    "id": "l2-s3-t5",
+                    "who": "partner",
+                    "ja": "この 鍵《かぎ》も ブディさんのですか。",
+                    "speak": "この かぎも ブディさんのですか。",
+                    "id_text": "Kunci ini juga milik Budi?",
+                    "en_text": "Is this key yours too?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t5.mp3"
+                },
+                {
+                    "id": "l2-s3-t6",
+                    "who": "you",
+                    "ja": "いいえ、そうじゃ ありません。それは たなかさんのです。",
+                    "speak": "いいえ、そうじゃ ありません。それは たなかさんのです。",
+                    "id_text": "Bukan. Itu milik Tanaka.",
+                    "en_text": "No, it is not. That is Tanaka's.",
+                    "accept": [
+                        "いいえ、そうではありません。それはたなかさんのです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t6.mp3"
+                },
+                {
+                    "id": "l2-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。どうも ありがとうございます。",
+                    "speak": "そうですか。どうも ありがとうございます。",
+                    "id_text": "Oh begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l2-s4",
+            "title_id": "Alat tulis siapa?",
+            "title_en": "Whose stationery?",
+            "setting_id": "Di ruang rapat, Tanaka menanyakan alat tulis yang ada di meja.",
+            "setting_en": "In the meeting room, Tanaka asks about the stationery on the table.",
+            "goal_id": "Memilih dengan 〜ですか、〜ですか dan menanyakan pemilik dengan だれの.",
+            "goal_en": "Choose with ~desu ka, ~desu ka and ask the owner with dare no.",
+            "patterns": [
+                "KB1ですか、KB2ですか",
+                "この・その・あの＋KB",
+                "〜は だれのですか"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l2-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、それは ボールペンですか、えんぴつですか。",
+                    "speak": "ブディさん、それは ボールペンですか、えんぴつですか。",
+                    "id_text": "Budi, itu bolpoin atau pensil?",
+                    "en_text": "Budi, is that a ballpoint pen or a pencil?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t1.mp3"
+                },
+                {
+                    "id": "l2-s4-t2",
+                    "who": "you",
+                    "ja": "これは ボールペンです。",
+                    "speak": "これは ボールペンです。",
+                    "id_text": "Ini bolpoin.",
+                    "accept": [
+                        "ボールペンです。"
+                    ],
+                    "en_text": "This is a ballpoint pen.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t2.mp3"
+                },
+                {
+                    "id": "l2-s4-t3",
+                    "who": "partner",
+                    "ja": "その ノートも ブディさんのですか。",
+                    "speak": "その ノートも ブディさんのですか。",
+                    "id_text": "Apakah buku catatan itu juga milik Budi?",
+                    "en_text": "Is that notebook yours too, Budi?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t3.mp3"
+                },
+                {
+                    "id": "l2-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ、わたしのじゃ ありません。すずきさんのです。",
+                    "speak": "いいえ、わたしのじゃ ありません。すずきさんのです。",
+                    "id_text": "Bukan, itu bukan milikku. Itu milik Suzuki.",
+                    "accept": [
+                        "いいえ、私のではありません。すずきさんのです。",
+                        "いいえ、わたしのではありません。すずきさんのです。"
+                    ],
+                    "en_text": "No, it is not mine. It is Suzuki's.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t4.mp3"
+                },
+                {
+                    "id": "l2-s4-t5",
+                    "who": "partner",
+                    "ja": "この 手帳《てちょう》は だれのですか。",
+                    "speak": "この てちょうは だれのですか。",
+                    "id_text": "Agenda ini milik siapa?",
+                    "en_text": "Whose planner is this?",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t5.mp3"
+                },
+                {
+                    "id": "l2-s4-t6",
+                    "who": "you",
+                    "ja": "それは わたしのです。",
+                    "speak": "それは わたしのです。",
+                    "id_text": "Itu milikku.",
+                    "accept": [
+                        "それは私のです。",
+                        "私のです。",
+                        "わたしのです。"
+                    ],
+                    "en_text": "That is mine.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t6.mp3"
+                },
+                {
+                    "id": "l2-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。どうも ありがとうございます。",
+                    "speak": "そうですか。どうも ありがとうございます。",
+                    "id_text": "Oh begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-2/l2-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

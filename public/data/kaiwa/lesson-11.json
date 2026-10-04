@@ -1,0 +1,401 @@
+{
+    "id": 11,
+    "level": "N5",
+    "title_id": "Pelajaran 11 — Bilangan",
+    "title_en": "Lesson 11 — Counting",
+    "scenarios": [
+        {
+            "id": "l11-s1",
+            "title_id": "Membeli perangko",
+            "title_en": "Buying stamps",
+            "setting_id": "Di kantor pos, kamu membeli perangko dan kartu pos.",
+            "setting_en": "At the post office, you buy stamps and postcards.",
+            "goal_id": "Memakai kata bantu bilangan 〜枚 dan 〜つ dengan ください, serta いくつ.",
+            "goal_en": "Use counters ~mai and ~tsu with kudasai, and ikutsu.",
+            "patterns": [
+                "KBを 数量 ください",
+                "いくつ",
+                "〜枚"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l11-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t1.mp3"
+                },
+                {
+                    "id": "l11-s1-t2",
+                    "who": "you",
+                    "ja": "切手《きって》を 五枚《ごまい》 ください。",
+                    "speak": "きってを ごまい ください。",
+                    "id_text": "Tolong beri saya lima lembar perangko.",
+                    "accept": [
+                        "切手を 5枚 ください。",
+                        "切手を五枚ください。"
+                    ],
+                    "en_text": "Five stamps, please.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t2.mp3"
+                },
+                {
+                    "id": "l11-s1-t3",
+                    "who": "partner",
+                    "ja": "はがきは いくつ ですか。",
+                    "speak": "はがきは いくつ ですか。",
+                    "id_text": "Kartu posnya berapa?",
+                    "en_text": "How many postcards?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t3.mp3"
+                },
+                {
+                    "id": "l11-s1-t4",
+                    "who": "you",
+                    "ja": "はがきは 三枚《さんまい》 ください。",
+                    "speak": "はがきは さんまい ください。",
+                    "id_text": "Kartu posnya tiga lembar.",
+                    "accept": [
+                        "はがきは 3枚 ください。",
+                        "はがきは三枚ください。"
+                    ],
+                    "en_text": "Three postcards, please.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t4.mp3"
+                },
+                {
+                    "id": "l11-s1-t5",
+                    "who": "partner",
+                    "ja": "封筒《ふうとう》も ありますが、いかがですか。",
+                    "speak": "ふうとうも ありますが、いかがですか。",
+                    "id_text": "Amplop juga ada, bagaimana?",
+                    "en_text": "We also have envelopes. Would you like some?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t5.mp3"
+                },
+                {
+                    "id": "l11-s1-t6",
+                    "who": "you",
+                    "ja": "封筒《ふうとう》は 二枚《にまい》 ください。",
+                    "speak": "ふうとうは にまい ください。",
+                    "id_text": "Amplopnya dua lembar.",
+                    "accept": [
+                        "封筒は 2枚 ください。",
+                        "封筒は二枚ください。"
+                    ],
+                    "en_text": "Two envelopes, please.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t6.mp3"
+                },
+                {
+                    "id": "l11-s1-t7",
+                    "who": "partner",
+                    "ja": "全部《ぜんぶ》で 四百円《よんひゃくえん》です。",
+                    "speak": "ぜんぶで よんひゃくえんです。",
+                    "id_text": "Semuanya empat ratus yen.",
+                    "en_text": "That is 400 yen in all.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l11-s2",
+            "title_id": "Keluarga dan saudara",
+            "title_en": "Family and siblings",
+            "setting_id": "Suzuki bertanya tentang keluargamu.",
+            "setting_en": "Suzuki asks about your family.",
+            "goal_id": "Memakai 何人 dan 〜人 untuk jumlah orang.",
+            "goal_en": "Use nannin and ~nin for number of people.",
+            "patterns": [
+                "何人",
+                "〜人",
+                "KBが 〜人 います"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l11-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの 家族《かぞく》は 何人《なんにん》ですか。",
+                    "speak": "ブディさんの かぞくは なんにんですか。",
+                    "id_text": "Budi, keluargamu berapa orang?",
+                    "en_text": "Budi, how many people are in your family?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t1.mp3"
+                },
+                {
+                    "id": "l11-s2-t2",
+                    "who": "you",
+                    "ja": "五人《ごにん》です。",
+                    "speak": "ごにんです。",
+                    "id_text": "Lima orang.",
+                    "accept": [
+                        "5人です。",
+                        "五人です。"
+                    ],
+                    "en_text": "Five people.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t2.mp3"
+                },
+                {
+                    "id": "l11-s2-t3",
+                    "who": "partner",
+                    "ja": "兄弟《きょうだい》は 何人《なんにん》ですか。",
+                    "speak": "きょうだいは なんにんですか。",
+                    "id_text": "Saudaramu berapa orang?",
+                    "en_text": "How many brothers and sisters do you have?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t3.mp3"
+                },
+                {
+                    "id": "l11-s2-t4",
+                    "who": "you",
+                    "ja": "三人《さんにん》です。兄《あに》が 一人《ひとり》、妹《いもうと》が 二人《ふたり》 います。",
+                    "speak": "さんにんです。あにが ひとり、いもうとが ふたり います。",
+                    "id_text": "Tiga orang. Satu kakak laki-laki, dua adik perempuan.",
+                    "accept": [
+                        "3人です。兄が 1人、妹が 2人 います。",
+                        "三人です。兄が一人、妹が二人います。"
+                    ],
+                    "en_text": "Three. I have one older brother and two younger sisters.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t4.mp3"
+                },
+                {
+                    "id": "l11-s2-t5",
+                    "who": "partner",
+                    "ja": "妹《いもうと》さんは 学生《がくせい》ですか。",
+                    "speak": "いもうとさんは がくせいですか。",
+                    "id_text": "Apakah adik perempuanmu pelajar?",
+                    "en_text": "Are your sisters students?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t5.mp3"
+                },
+                {
+                    "id": "l11-s2-t6",
+                    "who": "you",
+                    "ja": "はい、二人《ふたり》とも 学生《がくせい》です。",
+                    "speak": "はい、ふたりとも がくせいです。",
+                    "id_text": "Ya, keduanya pelajar.",
+                    "accept": [
+                        "はい、2人とも 学生です。",
+                        "はい、二人とも学生です。"
+                    ],
+                    "en_text": "Yes, both of them are students.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t6.mp3"
+                },
+                {
+                    "id": "l11-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l11-s3",
+            "title_id": "Seberapa sering belajar?",
+            "title_en": "How often do you study?",
+            "setting_id": "Tanaka bertanya seberapa sering kamu belajar dan berolahraga.",
+            "setting_en": "Tanaka asks how often you study and exercise.",
+            "goal_id": "Memakai 〜に 〜回 untuk frekuensi dan 〜週間.",
+            "goal_en": "Use ~ni ~kai for frequency and ~shuukan.",
+            "patterns": [
+                "期間に 〜回",
+                "何回",
+                "〜週間"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l11-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 一週間《いっしゅうかん》に 何回《なんかい》 日本語《にほんご》を 勉強《べんきょう》しますか。",
+                    "speak": "ブディさんは いっしゅうかんに なんかい にほんごを べんきょうしますか。",
+                    "id_text": "Budi, dalam seminggu berapa kali kamu belajar bahasa Jepang?",
+                    "en_text": "Budi, how many times a week do you study Japanese?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t1.mp3"
+                },
+                {
+                    "id": "l11-s3-t2",
+                    "who": "you",
+                    "ja": "一週間《いっしゅうかん》に 四回《よんかい》 勉強《べんきょう》します。",
+                    "speak": "いっしゅうかんに よんかい べんきょうします。",
+                    "id_text": "Seminggu aku belajar empat kali.",
+                    "accept": [
+                        "一週間に 4回 勉強します。",
+                        "一週間に四回勉強します。"
+                    ],
+                    "en_text": "I study four times a week.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t2.mp3"
+                },
+                {
+                    "id": "l11-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。スポーツは しますか。",
+                    "speak": "そうですか。スポーツは しますか。",
+                    "id_text": "Oh begitu. Apakah kamu berolahraga?",
+                    "en_text": "I see. Do you play sports?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t3.mp3"
+                },
+                {
+                    "id": "l11-s3-t4",
+                    "who": "you",
+                    "ja": "はい、一週間《いっしゅうかん》に 二回《にかい》 サッカーを します。",
+                    "speak": "はい、いっしゅうかんに にかい サッカーを します。",
+                    "id_text": "Ya, seminggu dua kali aku main sepak bola.",
+                    "accept": [
+                        "はい、一週間に 2回 サッカーを します。",
+                        "はい、一週間に二回サッカーをします。"
+                    ],
+                    "en_text": "Yes, I play soccer twice a week.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t4.mp3"
+                },
+                {
+                    "id": "l11-s3-t5",
+                    "who": "partner",
+                    "ja": "映画《えいが》は 一か月《いっかげつ》に 何回《なんかい》 見《み》ますか。",
+                    "speak": "えいがは いっかげつに なんかい みますか。",
+                    "id_text": "Film, sebulan berapa kali kamu menonton?",
+                    "en_text": "How many times a month do you watch movies?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t5.mp3"
+                },
+                {
+                    "id": "l11-s3-t6",
+                    "who": "you",
+                    "ja": "一か月《いっかげつ》に 一回《いっかい》 見《み》ます。",
+                    "speak": "いっかげつに いっかい みます。",
+                    "id_text": "Sebulan sekali aku menonton.",
+                    "accept": [
+                        "一か月に 1回 見ます。",
+                        "1か月に1回見ます。",
+                        "一か月に一回見ます。"
+                    ],
+                    "en_text": "I watch one movie a month.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t6.mp3"
+                },
+                {
+                    "id": "l11-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。いいですね。",
+                    "speak": "そうですか。いいですね。",
+                    "id_text": "Oh begitu. Bagus ya.",
+                    "en_text": "I see. That's nice.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l11-s4",
+            "title_id": "Berapa lama perjalanannya?",
+            "title_en": "How long does it take?",
+            "setting_id": "Suzuki bertanya berapa lama waktu yang dibutuhkan dari rumahmu ke kantor.",
+            "setting_en": "Suzuki asks how long it takes from your home to the office.",
+            "goal_id": "Memakai かかります dengan どのくらい dan 〜時間／〜分／ぐらい.",
+            "goal_en": "Use kakarimasu with donokurai and ~jikan / ~fun / gurai.",
+            "patterns": [
+                "どのくらい かかりますか",
+                "〜時間 かかります",
+                "〜ぐらい"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l11-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの うちから 会社《かいしゃ》まで どのくらい かかりますか。",
+                    "speak": "ブディさんの うちから かいしゃまで どのくらい かかりますか。",
+                    "id_text": "Dari rumah Budi ke kantor butuh waktu berapa lama?",
+                    "en_text": "How long does it take from your home to the office?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t1.mp3"
+                },
+                {
+                    "id": "l11-s4-t2",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》で 一時間《いちじかん》ぐらい かかります。",
+                    "speak": "でんしゃで いちじかんぐらい かかります。",
+                    "id_text": "Naik kereta sekitar satu jam.",
+                    "accept": [
+                        "電車で 1時間ぐらい かかります。",
+                        "電車で一時間ぐらいかかります。"
+                    ],
+                    "en_text": "It takes about an hour by train.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t2.mp3"
+                },
+                {
+                    "id": "l11-s4-t3",
+                    "who": "partner",
+                    "ja": "バスは どうですか。",
+                    "speak": "バスは どうですか。",
+                    "id_text": "Kalau naik bus?",
+                    "en_text": "What about by bus?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t3.mp3"
+                },
+                {
+                    "id": "l11-s4-t4",
+                    "who": "you",
+                    "ja": "バスは 二時間《にじかん》ぐらい かかります。",
+                    "speak": "バスは にじかんぐらい かかります。",
+                    "id_text": "Naik bus sekitar dua jam.",
+                    "accept": [
+                        "バスは 2時間ぐらい かかります。",
+                        "バスは二時間ぐらいかかります。"
+                    ],
+                    "en_text": "By bus it takes about two hours.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t4.mp3"
+                },
+                {
+                    "id": "l11-s4-t5",
+                    "who": "partner",
+                    "ja": "駅《えき》まで 歩《ある》いて 何分《なんぷん》ですか。",
+                    "speak": "えきまで あるいて なんぷんですか。",
+                    "id_text": "Berjalan kaki ke stasiun berapa menit?",
+                    "en_text": "How many minutes is it to the station on foot?",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t5.mp3"
+                },
+                {
+                    "id": "l11-s4-t6",
+                    "who": "you",
+                    "ja": "歩《ある》いて 十分《じゅっぷん》です。",
+                    "speak": "あるいて じゅっぷんです。",
+                    "id_text": "Berjalan kaki sepuluh menit.",
+                    "accept": [
+                        "歩いて 10分です。",
+                        "歩いて十分です。"
+                    ],
+                    "en_text": "It is ten minutes on foot.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t6.mp3"
+                },
+                {
+                    "id": "l11-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。大変《たいへん》ですね。",
+                    "speak": "そうですか。たいへんですね。",
+                    "id_text": "Oh begitu. Berat ya.",
+                    "en_text": "I see. That sounds hard.",
+                    "audio": "/audio/kaiwa/lesson-11/l11-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

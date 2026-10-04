@@ -380,6 +380,14 @@
     "mondaiBreakdown": true,
     "sectionQuestions": true,
     "playChime": true,
-    "unlockChime": true
+    "unlockChime": true,
+    "PASS_SCORE": true,
+    "normalize": true,
+    "scoreSpeech": true,
+    "similarity": true,
+    "stripRuby": true,
+    "targetsOf": true,
+    "registerReadings": true,
+    "numbersToKana": true
   }
 }

@@ -1,0 +1,397 @@
+{
+    "id": 15,
+    "level": "N5",
+    "title_id": "Pelajaran 15 — Izin & Keadaan",
+    "title_en": "Lesson 15 — Permission & States",
+    "scenarios": [
+        {
+            "id": "l15-s1",
+            "title_id": "Di museum",
+            "title_en": "At the museum",
+            "setting_id": "Di museum seni, kamu bertanya apa yang boleh dilakukan.",
+            "setting_en": "At the art museum, you ask what is allowed.",
+            "goal_id": "Memakai 〜てもいいですか dan 〜てはいけません.",
+            "goal_en": "Use ~temo ii desu ka and ~te wa ikemasen.",
+            "patterns": [
+                "〜ても いいですか",
+                "〜ては いけません",
+                "いいですよ"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l15-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t1.mp3"
+                },
+                {
+                    "id": "l15-s1-t2",
+                    "who": "you",
+                    "ja": "すみません、写真《しゃしん》を 撮《と》っても いいですか。",
+                    "speak": "すみません、しゃしんを とっても いいですか。",
+                    "id_text": "Maaf, bolehkah saya mengambil foto?",
+                    "accept": [
+                        "すみません、写真を 撮っても いいですか。",
+                        "すみません、写真を撮ってもいいですか。"
+                    ],
+                    "en_text": "Excuse me, may I take photos?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t2.mp3"
+                },
+                {
+                    "id": "l15-s1-t3",
+                    "who": "partner",
+                    "ja": "すみません、ここでは 撮《と》ってはいけません。",
+                    "speak": "すみません、ここでは とってはいけません。",
+                    "id_text": "Maaf, di sini tidak boleh memotret.",
+                    "en_text": "I'm sorry, you may not take photos here.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t3.mp3"
+                },
+                {
+                    "id": "l15-s1-t4",
+                    "who": "you",
+                    "ja": "わかりました。ここで 休《やす》んでも いいですか。",
+                    "speak": "わかりました。ここで やすんでも いいですか。",
+                    "id_text": "Baik. Bolehkah saya beristirahat di sini?",
+                    "accept": [
+                        "わかりました。ここで 休んでも いいですか。",
+                        "わかりました。ここで休んでもいいですか。"
+                    ],
+                    "en_text": "I see. May I rest here?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t4.mp3"
+                },
+                {
+                    "id": "l15-s1-t5",
+                    "who": "partner",
+                    "ja": "ええ、いいですよ。",
+                    "speak": "ええ、いいですよ。",
+                    "id_text": "Ya, boleh.",
+                    "en_text": "Yes, you may.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t5.mp3"
+                },
+                {
+                    "id": "l15-s1-t6",
+                    "who": "you",
+                    "ja": "水《みず》を 飲《の》んでも いいですか。",
+                    "speak": "みずを のんでも いいですか。",
+                    "id_text": "Bolehkah saya minum air?",
+                    "accept": [
+                        "水を 飲んでも いいですか。",
+                        "水を飲んでもいいですか。"
+                    ],
+                    "en_text": "May I drink water?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t6.mp3"
+                },
+                {
+                    "id": "l15-s1-t7",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。",
+                    "speak": "はい、どうぞ。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, go ahead.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l15-s2",
+            "title_id": "Tempat tinggal",
+            "title_en": "Where you live",
+            "setting_id": "Tanaka bertanya di mana kamu dan keluargamu tinggal.",
+            "setting_en": "Tanaka asks where you and your family live.",
+            "goal_id": "Memakai 〜に 住んでいます.",
+            "goal_en": "Use ~ni sunde imasu.",
+            "patterns": [
+                "(場所)に 住んでいます",
+                "〜は 〜に 住んでいます"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l15-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは どこに 住《す》んでいますか。",
+                    "speak": "ブディさんは どこに すんでいますか。",
+                    "id_text": "Budi, kamu tinggal di mana?",
+                    "en_text": "Budi, where do you live?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t1.mp3"
+                },
+                {
+                    "id": "l15-s2-t2",
+                    "who": "you",
+                    "ja": "大阪《おおさか》に 住《す》んでいます。",
+                    "speak": "おおさかに すんでいます。",
+                    "id_text": "Aku tinggal di Osaka.",
+                    "accept": [
+                        "大阪に 住んでいます。",
+                        "大阪に住んでいます。"
+                    ],
+                    "en_text": "I live in Osaka.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t2.mp3"
+                },
+                {
+                    "id": "l15-s2-t3",
+                    "who": "partner",
+                    "ja": "ご家族《かぞく》も 大阪《おおさか》に 住《す》んでいますか。",
+                    "speak": "ごかぞくも おおさかに すんでいますか。",
+                    "id_text": "Apakah keluargamu juga tinggal di Osaka?",
+                    "en_text": "Does your family live in Osaka too?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t3.mp3"
+                },
+                {
+                    "id": "l15-s2-t4",
+                    "who": "you",
+                    "ja": "いいえ、両親《りょうしん》は インドネシアに 住《す》んでいます。",
+                    "speak": "いいえ、りょうしんは インドネシアに すんでいます。",
+                    "id_text": "Bukan, orang tuaku tinggal di Indonesia.",
+                    "accept": [
+                        "いいえ、両親は インドネシアに 住んでいます。",
+                        "いいえ、両親はインドネシアに住んでいます。"
+                    ],
+                    "en_text": "No, my parents live in Indonesia.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t4.mp3"
+                },
+                {
+                    "id": "l15-s2-t5",
+                    "who": "partner",
+                    "ja": "兄弟《きょうだい》は どこに 住《す》んでいますか。",
+                    "speak": "きょうだいは どこに すんでいますか。",
+                    "id_text": "Saudaramu tinggal di mana?",
+                    "en_text": "Where do your brothers and sisters live?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t5.mp3"
+                },
+                {
+                    "id": "l15-s2-t6",
+                    "who": "you",
+                    "ja": "兄《あに》は ジャカルタに 住《す》んでいます。",
+                    "speak": "あには ジャカルタに すんでいます。",
+                    "id_text": "Kakakku tinggal di Jakarta.",
+                    "accept": [
+                        "兄は ジャカルタに 住んでいます。",
+                        "兄はジャカルタに住んでいます。"
+                    ],
+                    "en_text": "My older brother lives in Jakarta.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t6.mp3"
+                },
+                {
+                    "id": "l15-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l15-s3",
+            "title_id": "Pekerjaan dan status",
+            "title_en": "Work and marital status",
+            "setting_id": "Suzuki bertanya tentang pekerjaanmu dan kehidupan pribadimu.",
+            "setting_en": "Suzuki asks about your job and personal life.",
+            "goal_id": "Memakai 〜で 働いています dan 結婚しています.",
+            "goal_en": "Use ~de hataraite imasu and kekkon shite imasu.",
+            "patterns": [
+                "(場所)で 働いています",
+                "結婚しています",
+                "独身です"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l15-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは どこで 働《はたら》いていますか。",
+                    "speak": "ブディさんは どこで はたらいていますか。",
+                    "id_text": "Budi, kamu bekerja di mana?",
+                    "en_text": "Budi, where do you work?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t1.mp3"
+                },
+                {
+                    "id": "l15-s3-t2",
+                    "who": "you",
+                    "ja": "大阪《おおさか》の 会社《かいしゃ》で 働《はたら》いています。",
+                    "speak": "おおさかの かいしゃで はたらいています。",
+                    "id_text": "Aku bekerja di sebuah perusahaan di Osaka.",
+                    "accept": [
+                        "大阪の 会社で 働いています。",
+                        "大阪の会社で働いています。"
+                    ],
+                    "en_text": "I work at a company in Osaka.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t2.mp3"
+                },
+                {
+                    "id": "l15-s3-t3",
+                    "who": "partner",
+                    "ja": "ミラーさんは 大学《だいがく》で 働《はたら》いていますか。",
+                    "speak": "ミラーさんは だいがくで はたらいていますか。",
+                    "id_text": "Apakah Pak Miller bekerja di universitas?",
+                    "en_text": "Does Mr. Miller work at a university?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t3.mp3"
+                },
+                {
+                    "id": "l15-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、市役所《しやくしょ》で 働《はたら》いています。",
+                    "speak": "いいえ、しやくしょで はたらいています。",
+                    "id_text": "Bukan, dia bekerja di balai kota.",
+                    "accept": [
+                        "いいえ、市役所で 働いています。",
+                        "いいえ、市役所で働いています。"
+                    ],
+                    "en_text": "No, he works at city hall.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t4.mp3"
+                },
+                {
+                    "id": "l15-s3-t5",
+                    "who": "partner",
+                    "ja": "ブディさんは 結婚《けっこん》していますか。",
+                    "speak": "ブディさんは けっこんしていますか。",
+                    "id_text": "Apakah Budi sudah menikah?",
+                    "en_text": "Are you married, Budi?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t5.mp3"
+                },
+                {
+                    "id": "l15-s3-t6",
+                    "who": "you",
+                    "ja": "いいえ、結婚《けっこん》していません。独身《どくしん》です。",
+                    "speak": "いいえ、けっこんしていません。どくしんです。",
+                    "id_text": "Belum. Aku masih lajang.",
+                    "accept": [
+                        "いいえ、結婚していません。独身です。",
+                        "いいえ、結婚していません。どくしんです。"
+                    ],
+                    "en_text": "No, I am not married. I am single.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t6.mp3"
+                },
+                {
+                    "id": "l15-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l15-s4",
+            "title_id": "Apakah kamu tahu?",
+            "title_en": "Do you know?",
+            "setting_id": "Suzuki bertanya apakah kamu tahu beberapa hal tentang kota.",
+            "setting_en": "Suzuki asks whether you know some things about the city.",
+            "goal_id": "Memakai 知っています／知りません.",
+            "goal_en": "Use shitte imasu / shirimasen.",
+            "patterns": [
+                "〜を 知っています",
+                "いいえ、知りません"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l15-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 市役所《しやくしょ》を 知《し》っていますか。",
+                    "speak": "ブディさんは しやくしょを しっていますか。",
+                    "id_text": "Budi, apakah kamu tahu balai kota?",
+                    "en_text": "Budi, do you know city hall?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t1.mp3"
+                },
+                {
+                    "id": "l15-s4-t2",
+                    "who": "you",
+                    "ja": "はい、知《し》っています。駅《えき》の 近《ちか》くに あります。",
+                    "speak": "はい、しっています。えきの ちかくに あります。",
+                    "id_text": "Ya, aku tahu. Ada di dekat stasiun.",
+                    "accept": [
+                        "はい、知っています。駅の 近くに あります。",
+                        "はい、知っています。駅の近くにあります。"
+                    ],
+                    "en_text": "Yes, I know it. It is near the station.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t2.mp3"
+                },
+                {
+                    "id": "l15-s4-t3",
+                    "who": "partner",
+                    "ja": "じゃ、郵便局《ゆうびんきょく》は 知《し》っていますか。",
+                    "speak": "じゃ、ゆうびんきょくは しっていますか。",
+                    "id_text": "Kalau kantor pos, apakah kamu tahu?",
+                    "en_text": "Then do you know the post office?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t3.mp3"
+                },
+                {
+                    "id": "l15-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ、知《し》りません。",
+                    "speak": "いいえ、しりません。",
+                    "id_text": "Tidak, aku tidak tahu.",
+                    "accept": [
+                        "いいえ、知りません"
+                    ],
+                    "en_text": "No, I do not know it.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t4.mp3"
+                },
+                {
+                    "id": "l15-s4-t5",
+                    "who": "partner",
+                    "ja": "電話番号《でんわばんごう》は 知《し》っていますか。",
+                    "speak": "でんわばんごうは しっていますか。",
+                    "id_text": "Apakah kamu tahu nomor teleponnya?",
+                    "en_text": "Do you know the phone number?",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t5.mp3"
+                },
+                {
+                    "id": "l15-s4-t6",
+                    "who": "you",
+                    "ja": "いいえ、知《し》りません。たなかさんに 聞《き》いてください。",
+                    "speak": "いいえ、しりません。たなかさんに きいてください。",
+                    "id_text": "Tidak tahu. Tolong tanya Tanaka.",
+                    "accept": [
+                        "いいえ、知りません。たなかさんに 聞いてください。",
+                        "いいえ、知りません。たなかさんに聞いてください。"
+                    ],
+                    "en_text": "No, I do not. Please ask Tanaka.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t6.mp3"
+                },
+                {
+                    "id": "l15-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。ありがとう。",
+                    "speak": "そうですか。ありがとう。",
+                    "id_text": "Oh begitu. Terima kasih.",
+                    "en_text": "I see. Thanks.",
+                    "audio": "/audio/kaiwa/lesson-15/l15-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

@@ -15,7 +15,6 @@
 import JlptListeningItem from '@/components/jlpt/JlptListeningItem.vue'
 import JlptText from '@/components/jlpt/JlptText.vue'
 import { playChime, unlockChime } from '@/utils/jlptChime'
-import { defineEmits, defineProps, } from 'vue'
 
 const props = defineProps({
   test: { type: Object, required: true }, // { mondai, questions } dari server
@@ -514,12 +513,11 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .jl-card {
+  max-inline-size: 560px;
+  padding: 28px 24px;
   border: 1px solid rgba(var(--v-theme-on-surface), 0.16);
   border-radius: 12px;
   margin-inline: auto;
-  max-inline-size: 560px;
-  padding-block: 28px;
-  padding-inline: 24px;
 }
 
 .jl-rules { padding-inline-start: 1.4em; }
@@ -532,7 +530,7 @@ onBeforeUnmount(() => {
   margin-block-end: 8px;
 }
 
-.jl-status__left { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.jl-status__left { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
 
 .jl-eq { display: inline-flex; align-items: flex-end; block-size: 18px; gap: 2px; }
 .jl-eq i { display: block; border-radius: 1px; background: rgb(var(--v-theme-primary)); block-size: 5px; inline-size: 3px; opacity: 0.45; }
@@ -542,37 +540,34 @@ onBeforeUnmount(() => {
 .jl-eq--on i:nth-child(4) { animation-delay: 0.45s; }
 
 @keyframes jl-bounce {
-  0%,
- 100% { block-size: 4px; }
+  0%, 100% { block-size: 4px; }
   50% { block-size: 18px; }
 }
 
 .jl-paper {
+  padding: 20px 24px 24px;
   border: 1px solid rgba(var(--v-theme-on-surface), 0.16);
   border-radius: 10px;
   background: rgb(var(--v-theme-surface));
-  padding-block: 20px 24px;
-  padding-inline: 24px;
 }
 
-.jl-mondai { display: flex; align-items: baseline; font-weight: 700; gap: 12px; line-height: 1.9; }
+.jl-mondai { display: flex; align-items: baseline; gap: 12px; font-weight: 700; line-height: 1.9; }
 .jl-mondai__tag { flex: none; }
 .jl-mondai__text { min-inline-size: 0; }
 
 .jl-example {
-  border-block-start: 1px solid rgba(var(--v-theme-on-surface), 0.25);
   padding-block-start: 12px;
+  border-block-start: 1px solid rgba(var(--v-theme-on-surface), 0.25);
 }
 
 .jl-qno {
   display: inline-block;
+  padding: 2px 12px;
   border: 1.5px solid currentcolor;
   border-radius: 4px;
   font-size: 1.2rem;
   font-weight: 700;
   margin-block-end: 12px;
-  padding-block: 2px;
-  padding-inline: 12px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -580,7 +575,7 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 599px) {
-  .jl-paper { padding-block: 14px 18px; padding-inline: 12px; }
-  .jl-card { padding-block: 20px; padding-inline: 14px; }
+  .jl-paper { padding: 14px 12px 18px; }
+  .jl-card { padding: 20px 14px; }
 }
 </style>

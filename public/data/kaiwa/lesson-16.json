@@ -1,0 +1,400 @@
+{
+    "id": 16,
+    "level": "N5",
+    "title_id": "Pelajaran 16 — Urutan & Cara",
+    "title_en": "Lesson 16 — Sequences & How-to",
+    "scenarios": [
+        {
+            "id": "l16-s1",
+            "title_id": "Memakai ATM",
+            "title_en": "Using the ATM",
+            "setting_id": "Di bank, kamu minta diajari cara memakai ATM.",
+            "setting_en": "At the bank, you ask how to use the ATM.",
+            "goal_id": "Menyambung langkah dengan 〜て、〜て、〜 dan まず／次に.",
+            "goal_en": "Chain steps with ~te, ~te, ~ and mazu / tsugi ni.",
+            "patterns": [
+                "Vて、Vて、V",
+                "まず／次に",
+                "〜方を 教えてください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l16-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、お金《かね》を 下《お》ろしますか。",
+                    "speak": "ブディさん、おかねを おろしますか。",
+                    "id_text": "Budi, mau menarik uang?",
+                    "en_text": "Budi, are you withdrawing money?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t1.mp3"
+                },
+                {
+                    "id": "l16-s1-t2",
+                    "who": "you",
+                    "ja": "はい。ATMの 使《つか》い方《かた》を 教《おし》えてください。",
+                    "speak": "はい。ATMの つかいかたを おしえてください。",
+                    "id_text": "Ya. Tolong ajari saya cara memakai ATM.",
+                    "accept": [
+                        "はい。ATMの 使い方を 教えてください。",
+                        "はい。ATMの使い方を教えてください。",
+                        "はい。エーティーエムの 使い方を 教えてください。",
+                        "はい。エーティーエムの使い方を教えてください。"
+                    ],
+                    "en_text": "Yes. Please teach me how to use the ATM.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t2.mp3"
+                },
+                {
+                    "id": "l16-s1-t3",
+                    "who": "partner",
+                    "ja": "まず、カードを 入《い》れて、暗証番号《あんしょうばんごう》を 押《お》してください。",
+                    "speak": "まず、カードを いれて、あんしょうばんごうを おしてください。",
+                    "id_text": "Pertama, masukkan kartu, lalu tekan PIN.",
+                    "en_text": "First, put in the card and enter your PIN.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t3.mp3"
+                },
+                {
+                    "id": "l16-s1-t4",
+                    "who": "you",
+                    "ja": "次《つぎ》に、金額《きんがく》を 入《い》れて、ボタンを 押《お》しますか。",
+                    "speak": "つぎに、きんがくを いれて、ボタンを おしますか。",
+                    "id_text": "Berikutnya, memasukkan jumlah uang lalu menekan tombol?",
+                    "accept": [
+                        "次に、金額を 入れて、ボタンを 押しますか。",
+                        "次に、金額を入れて、ボタンを押しますか。"
+                    ],
+                    "en_text": "Next, do I enter the amount and press the button?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t4.mp3"
+                },
+                {
+                    "id": "l16-s1-t5",
+                    "who": "partner",
+                    "ja": "はい。そして、お金《かね》と カードを 取《と》ってください。",
+                    "speak": "はい。そして、おかねと カードを とってください。",
+                    "id_text": "Ya. Lalu ambil uang dan kartunya.",
+                    "en_text": "Yes. Then take the money and the card.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t5.mp3"
+                },
+                {
+                    "id": "l16-s1-t6",
+                    "who": "you",
+                    "ja": "わかりました。カードを 入《い》れて、暗証番号《あんしょうばんごう》を 押《お》して、金額《きんがく》を 入《い》れます。",
+                    "speak": "わかりました。カードを いれて、あんしょうばんごうを おして、きんがくを いれます。",
+                    "id_text": "Baik. Saya masukkan kartu, tekan PIN, lalu masukkan jumlahnya.",
+                    "accept": [
+                        "わかりました。カードを 入れて、暗証番号を 押して、金額を 入れます。",
+                        "わかりました。カードを入れて、暗証番号を押して、金額を入れます。"
+                    ],
+                    "en_text": "I see. I put in the card, enter the PIN, and enter the amount.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t6.mp3"
+                },
+                {
+                    "id": "l16-s1-t7",
+                    "who": "partner",
+                    "ja": "はい、そうです。すごいですね。",
+                    "speak": "はい、そうです。すごいですね。",
+                    "id_text": "Ya, benar. Hebat!",
+                    "en_text": "Yes, that's right. Great!",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l16-s2",
+            "title_id": "Bertanya cara pergi",
+            "title_en": "Asking how to get there",
+            "setting_id": "Rekan kerja bertanya bagaimana kamu pergi ke kuil hari Minggu.",
+            "setting_en": "A colleague asks how you will get to the temple on Sunday.",
+            "goal_id": "Memakai どうやって dan を (titik turun) dengan 降ります.",
+            "goal_en": "Use douyatte and the particle wo with oriru (getting off).",
+            "patterns": [
+                "どうやって 〜",
+                "Vて、Vて、V",
+                "Nを 降ります"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l16-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、日曜日《にちようび》に お寺《てら》へ 行《い》きますか。",
+                    "speak": "ブディさん、にちようびに おてらへ いきますか。",
+                    "id_text": "Budi, hari Minggu pergi ke kuil?",
+                    "en_text": "Budi, are you going to the temple on Sunday?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t1.mp3"
+                },
+                {
+                    "id": "l16-s2-t2",
+                    "who": "you",
+                    "ja": "はい、行《い》きます。",
+                    "speak": "はい、いきます。",
+                    "id_text": "Ya, saya pergi.",
+                    "accept": [
+                        "はい、行きます。"
+                    ],
+                    "en_text": "Yes, I am.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t2.mp3"
+                },
+                {
+                    "id": "l16-s2-t3",
+                    "who": "partner",
+                    "ja": "お寺《てら》へ どうやって 行《い》きますか。",
+                    "speak": "おてらへ どうやって いきますか。",
+                    "id_text": "Pergi ke kuil dengan cara bagaimana?",
+                    "en_text": "How will you get to the temple?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t3.mp3"
+                },
+                {
+                    "id": "l16-s2-t4",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》に 乗《の》って、さくら駅《えき》で 電車《でんしゃ》を 降《お》りて、歩《ある》いて 行《い》きます。",
+                    "speak": "でんしゃに のって、さくらえきで でんしゃを おりて、あるいて いきます。",
+                    "id_text": "Naik kereta, turun kereta di Stasiun Sakura, lalu berjalan kaki.",
+                    "accept": [
+                        "電車に 乗って、さくら駅で 電車を 降りて、歩いて 行きます。",
+                        "電車に乗って、さくら駅で電車を降りて、歩いて行きます。"
+                    ],
+                    "en_text": "I take the train, get off at Sakura Station, and walk.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t4.mp3"
+                },
+                {
+                    "id": "l16-s2-t5",
+                    "who": "partner",
+                    "ja": "遠《とお》いですか。",
+                    "speak": "とおいですか。",
+                    "id_text": "Jauh?",
+                    "en_text": "Is it far?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t5.mp3"
+                },
+                {
+                    "id": "l16-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、あまり 遠《とお》くないです。駅《えき》から 二十分《にじゅっぷん》ぐらいです。",
+                    "speak": "いいえ、あまり とおくないです。えきから にじゅっぷんぐらいです。",
+                    "id_text": "Tidak, tidak terlalu jauh. Dari stasiun sekitar dua puluh menit.",
+                    "accept": [
+                        "いいえ、あまり 遠くないです。駅から 二十分ぐらいです。",
+                        "いいえ、あまり遠くないです。駅から二十分ぐらいです。"
+                    ],
+                    "en_text": "No, it's not very far. About twenty minutes from the station.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t6.mp3"
+                },
+                {
+                    "id": "l16-s2-t7",
+                    "who": "partner",
+                    "ja": "二十分《にじゅっぷん》ですか。いい 散歩《さんぽ》ですね。",
+                    "speak": "にじゅっぷんですか。いい さんぽですね。",
+                    "id_text": "Dua puluh menit? Jalan-jalan yang menyenangkan ya.",
+                    "en_text": "Twenty minutes? That's a nice walk.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l16-s3",
+            "title_id": "Kegiatan di pagi hari",
+            "title_en": "Morning routine",
+            "setting_id": "Rekan kerja bertanya apa yang kamu lakukan setiap pagi.",
+            "setting_en": "A colleague asks what you do every morning.",
+            "goal_id": "Memakai 〜てから untuk urutan kegiatan.",
+            "goal_en": "Use ~te kara for the order of activities.",
+            "patterns": [
+                "Vてから、V",
+                "Vて、V"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l16-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 毎朝《まいあさ》 何《なに》を しますか。",
+                    "speak": "ブディさんは まいあさ なにを しますか。",
+                    "id_text": "Budi, setiap pagi kamu melakukan apa?",
+                    "en_text": "Budi, what do you do every morning?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t1.mp3"
+                },
+                {
+                    "id": "l16-s3-t2",
+                    "who": "you",
+                    "ja": "六時《ろくじ》に 起《お》きて、ジョギングを します。",
+                    "speak": "ろくじに おきて、ジョギングを します。",
+                    "id_text": "Jam enam bangun, lalu joging.",
+                    "accept": [
+                        "六時に 起きて、ジョギングを します。",
+                        "六時に起きて、ジョギングをします。"
+                    ],
+                    "en_text": "I get up at six and go jogging.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t2.mp3"
+                },
+                {
+                    "id": "l16-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。ジョギングを してから、何《なに》を しますか。",
+                    "speak": "そうですか。ジョギングを してから、なにを しますか。",
+                    "id_text": "Begitu ya. Setelah joging, melakukan apa?",
+                    "en_text": "I see. What do you do after jogging?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t3.mp3"
+                },
+                {
+                    "id": "l16-s3-t4",
+                    "who": "you",
+                    "ja": "シャワーを 浴《あ》びてから、朝《あさ》ごはんを 食《た》べます。",
+                    "speak": "シャワーを あびてから、あさごはんを たべます。",
+                    "id_text": "Setelah mandi (shower), saya sarapan.",
+                    "accept": [
+                        "シャワーを 浴びてから、朝ごはんを 食べます。",
+                        "シャワーを浴びてから、朝ごはんを食べます。"
+                    ],
+                    "en_text": "After taking a shower, I eat breakfast.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t4.mp3"
+                },
+                {
+                    "id": "l16-s3-t5",
+                    "who": "partner",
+                    "ja": "朝《あさ》ごはんを 食《た》べて、会社《かいしゃ》へ 行《い》きますか。",
+                    "speak": "あさごはんを たべて、かいしゃへ いきますか。",
+                    "id_text": "Sarapan lalu pergi ke kantor?",
+                    "en_text": "You eat breakfast and then go to the office?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t5.mp3"
+                },
+                {
+                    "id": "l16-s3-t6",
+                    "who": "you",
+                    "ja": "はい。朝《あさ》ごはんを 食《た》べてから、電車《でんしゃ》で 会社《かいしゃ》へ 行《い》きます。",
+                    "speak": "はい。あさごはんを たべてから、でんしゃで かいしゃへ いきます。",
+                    "id_text": "Ya. Setelah sarapan, saya pergi ke kantor naik kereta.",
+                    "accept": [
+                        "はい。朝ごはんを 食べてから、電車で 会社へ 行きます。",
+                        "はい。朝ごはんを食べてから、電車で会社へ行きます。"
+                    ],
+                    "en_text": "Yes. After breakfast I go to the office by train.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t6.mp3"
+                },
+                {
+                    "id": "l16-s3-t7",
+                    "who": "partner",
+                    "ja": "ブディさんは 毎朝《まいあさ》 忙《いそが》しいですね。",
+                    "speak": "ブディさんは まいあさ いそがしいですね。",
+                    "id_text": "Budi, setiap pagi sibuk ya.",
+                    "en_text": "Budi, you're busy every morning.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l16-s4",
+            "title_id": "Mencari Pak Miller",
+            "title_en": "Looking for Mr. Miller",
+            "setting_id": "Tanaka memintamu menjemput Miller di stasiun dan kamu bertanya ciri-cirinya.",
+            "setting_en": "Tanaka asks you to meet Miller at the station and you ask what he looks like.",
+            "goal_id": "Memakai どの／どれ dan 〜は 〜が (ciri-ciri).",
+            "goal_en": "Use dono / dore and ~wa ~ga to describe features.",
+            "patterns": [
+                "どの 人ですか",
+                "KB1は KB2が Adj",
+                "Adj(〜くて)、Adj"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l16-s4-t1",
+                    "who": "partner",
+                    "ja": "あした ミラーさんが 来《き》ます。ブディさん、駅《えき》へ 迎《むか》えに 行《い》ってください。",
+                    "speak": "あした ミラーさんが きます。ブディさん、えきへ むかえに いってください。",
+                    "id_text": "Besok Pak Miller datang. Budi, tolong jemput di stasiun.",
+                    "en_text": "Mr. Miller is coming tomorrow. Budi, please go meet him at the station.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t1.mp3"
+                },
+                {
+                    "id": "l16-s4-t2",
+                    "who": "you",
+                    "ja": "はい。ミラーさんは どの 人《ひと》ですか。",
+                    "speak": "はい。ミラーさんは どの ひとですか。",
+                    "id_text": "Baik. Pak Miller yang mana orangnya?",
+                    "accept": [
+                        "はい。ミラーさんは どの 人ですか。",
+                        "はい。ミラーさんはどの人ですか。"
+                    ],
+                    "en_text": "Okay. Which person is Mr. Miller?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t2.mp3"
+                },
+                {
+                    "id": "l16-s4-t3",
+                    "who": "partner",
+                    "ja": "髪《かみ》が 短《みじか》くて、背《せ》が 高《たか》い 人《ひと》です。",
+                    "speak": "かみが みじかくて、せが たかい ひとです。",
+                    "id_text": "Orang yang rambutnya pendek dan tinggi.",
+                    "en_text": "He has short hair and is tall.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t3.mp3"
+                },
+                {
+                    "id": "l16-s4-t4",
+                    "who": "you",
+                    "ja": "若《わか》い 人《ひと》ですか。",
+                    "speak": "わかい ひとですか。",
+                    "id_text": "Orang yang masih muda?",
+                    "accept": [
+                        "若い 人ですか。",
+                        "若い人ですか。"
+                    ],
+                    "en_text": "Is he a young person?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t4.mp3"
+                },
+                {
+                    "id": "l16-s4-t5",
+                    "who": "partner",
+                    "ja": "はい、若《わか》くて、親切《しんせつ》な 人《ひと》です。",
+                    "speak": "はい、わかくて、しんせつな ひとです。",
+                    "id_text": "Ya, muda dan orang yang ramah.",
+                    "en_text": "Yes, he's young and a kind person.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t5.mp3"
+                },
+                {
+                    "id": "l16-s4-t6",
+                    "who": "you",
+                    "ja": "わかりました。ミラーさんの 荷物《にもつ》は どれですか。",
+                    "speak": "わかりました。ミラーさんの にもつは どれですか。",
+                    "id_text": "Baik. Barang bawaan Pak Miller yang mana?",
+                    "accept": [
+                        "わかりました。ミラーさんの 荷物は どれですか。",
+                        "わかりました。ミラーさんの荷物はどれですか。"
+                    ],
+                    "en_text": "I see. Which one is Mr. Miller's luggage?",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t6.mp3"
+                },
+                {
+                    "id": "l16-s4-t7",
+                    "who": "partner",
+                    "ja": "大《おお》きい 黒《くろ》い かばんです。",
+                    "speak": "おおきい くろい かばんです。",
+                    "id_text": "Tas hitam yang besar.",
+                    "en_text": "It's the big black bag.",
+                    "audio": "/audio/kaiwa/lesson-16/l16-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}
