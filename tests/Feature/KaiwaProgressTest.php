@@ -203,4 +203,53 @@ class KaiwaProgressTest extends TestCase
             ->assertOk()
             ->assertJson(['done' => true, 'crown' => true, 'xp' => 5]);
     }
+
+    public function test_situation_scenario_gives_xp_without_any_lesson_unlocked(): void
+    {
+        $user = User::factory()->create();
+
+        $this->actingAsToken($user)
+            ->postJson('/api/kaiwa/progress/mensetsu-s1', ['perfect' => true])
+            ->assertOk()
+            ->assertJson(['set_key' => 'mensetsu-s1', 'done' => true, 'crown' => true, 'xp' => 15]);
+
+        $this->assertEquals(15, $user->xpLedger()->sum('amount'));
+
+        $progress = $this->actingAsToken($user)->getJson('/api/kaiwa/progress')->assertOk()->json('progress');
+        $this->assertSame(['mensetsu-s1' => ['done' => true, 'crown' => true]], $progress);
+    }
+
+    public function test_situation_notification_label_names_the_set_and_scenario(): void
+    {
+        $user = User::factory()->create();
+
+        $this->actingAsToken($user)->postJson('/api/kaiwa/progress/mensetsu-s3', ['perfect' => false])->assertOk();
+
+        $subtitle = json_decode(UserNotification::where('user_id', $user->id)->firstOrFail()->subtitle, true);
+
+        $this->assertSame('Mensetsu (wawancara kerja) · Skenario 3', $subtitle['lesson']);
+    }
+
+    public function test_unknown_situation_ids_are_rejected(): void
+    {
+        $user = User::factory()->create();
+        $client = $this->actingAsToken($user);
+
+        $client->postJson('/api/kaiwa/progress/mensetsu-s999', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/karangan-s1', ['perfect' => true])->assertNotFound();
+
+        $this->assertSame(0, UserKaiwaProgress::where('user_id', $user->id)->count());
+        $this->assertEquals(0, $user->xpLedger()->sum('amount'));
+    }
+
+    public function test_situation_progress_does_not_count_toward_the_lesson_lock(): void
+    {
+        $user = User::factory()->create();
+        $client = $this->actingAsToken($user);
+
+        $client->postJson('/api/kaiwa/progress/mensetsu-s1', ['perfect' => false])->assertOk();
+
+        // menamatkan situasi tidak membuka Pelajaran 2
+        $client->postJson('/api/kaiwa/progress/l2-s1', ['perfect' => false])->assertForbidden();
+    }
 }

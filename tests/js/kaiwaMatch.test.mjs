@@ -4,7 +4,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
-import { describe, test } from 'node:test'
+import { before, describe, test } from 'node:test'
 import { fileURLToPath } from 'node:url'
 
 import {
@@ -58,6 +58,15 @@ describe('numbersToKana', () => {
     ['8000円', 'はっせんえん'],
     ['四百円', 'よんひゃくえん'],
     ['1階', 'いっかい'],
+    ['3年', 'さんねん'],
+    ['三年', 'さんねん'],
+    ['4年', 'よねん'],
+    ['7年', 'しちねん'],
+    ['9年', 'くねん'],
+    ['10年', 'じゅうねん'],
+    ['4年間', 'よねんかん'],
+    ['三年間', 'さんねんかん'],
+    ['6年前', 'ろくねん前'],
     ['2階', 'にかい'],
     ['3階', 'さんがい'],
     ['1人', 'ひとり'],
@@ -188,5 +197,111 @@ describe('materi kaiwa (public/data/kaiwa) × penilai', () => {
     }
 
     assert.deepEqual(failures, [])
+  })
+})
+
+describe('paket situasi (situations di index.json) × penilai', () => {
+  const index = loadJson('index.json')
+  const packs = (index.situations ?? []).map(m => loadJson(m.file))
+
+  // Di dalam before() (bukan saat koleksi): registerReadings mengubah peta global, jadi jangan sampai
+  // mempengaruhi tes registerReadings di atas (mis. 一番 yang sengaja tidak terdaftar di sana).
+  before(() => {
+    for (const pack of packs) {
+      for (const sc of pack.scenarios) {
+        for (const t of sc.turns)
+          registerReadings(t.ja)
+      }
+    }
+  })
+
+  test('ada minimal satu paket situasi dan setiap entri punya berkas', () => {
+    assert.ok(packs.length >= 1)
+    for (const [i, m] of (index.situations ?? []).entries())
+      assert.equal(packs[i].id, m.id)
+  })
+
+  test('setiap giliran (kedua peran) cocok dengan dirinya sendiri (speak, ja, accept)', () => {
+    const failures = []
+
+    for (const pack of packs) {
+      for (const sc of pack.scenarios) {
+        for (const t of sc.turns) {
+          for (const f of [t.speak, stripRuby(t.ja), ...(t.accept ?? [])]) {
+            const score = scoreSpeech([f], t)
+
+            if (score < 0.97)
+              failures.push(`${t.id}: "${f}" → ${score.toFixed(2)}`)
+          }
+        }
+      }
+    }
+
+    assert.deepEqual(failures, [])
+  })
+
+  test('bentuk digit dari ucapan (mis. 25歳, 4年間, 5分前) tetap lolos', () => {
+    const t = loadJson('situation-mensetsu.json').scenarios.flatMap(sc => sc.turns)
+    const byId = Object.fromEntries(t.map(x => [x.id, x]))
+
+    assert.ok(scoreSpeech(['はい。ブディと申します。25歳です。インドネシアのジャカルタから来ました。'], byId['mensetsu-s2-t2']) >= 0.97)
+    assert.ok(scoreSpeech(['工場で4年間働きました。機械を使って、部品を作りました。'], byId['mensetsu-s2-t4']) >= 0.97)
+    assert.ok(scoreSpeech(['6年前に工業高校を卒業しました。'], byId['mensetsu-s4-t2']) >= 0.97)
+    assert.ok(scoreSpeech(['5人です。父と母と兄と妹と私です。'], byId['mensetsu-s3-t2']) >= 0.97)
+    assert.ok(scoreSpeech(['はい、できます。毎日5分前に会社に着きます。'], byId['mensetsu-s14-t6']) >= 0.9)
+  })
+
+  test('jawaban yang jelas salah tidak lolos (mis. 短所 diganti 長所)', () => {
+    const t = loadJson('situation-mensetsu.json').scenarios.flatMap(sc => sc.turns).find(x => x.id === 'mensetsu-s8-t2')
+
+    assert.ok(scoreSpeech(['私の長所はまじめなことです'], t) < PASS_SCORE)
+  })
+
+  test('jawaban untuk pertanyaan lain dalam skenario yang sama tidak saling meloloskan', () => {
+    // Pengguna harus membedakan "alasan melamar" dari "kelebihan", dst.: dua jawaban berbeda dalam satu
+    // skenario tidak boleh saling meloloskan pada ambang PASS_SCORE.
+    const clashes = []
+
+    for (const pack of packs) {
+      for (const sc of pack.scenarios) {
+        const mine = sc.turns.filter(t => t.who === 'you')
+
+        for (const a of mine) {
+          for (const b of mine) {
+            if (a.id !== b.id && a.speak !== b.speak && scoreSpeech([b.speak], a) >= PASS_SCORE)
+              clashes.push(`${a.id} ← ${b.id}`)
+          }
+        }
+      }
+    }
+    assert.deepEqual(clashes, [])
+  })
+
+  test('jawaban panjang tetap lolos dengan satu-dua salah dengar kecil', () => {
+    const t = loadJson('situation-mensetsu.json').scenarios.flatMap(sc => sc.turns).find(x => x.id === 'mensetsu-s16-t6')
+    // "とても" didengar "とって" dan "のんで" didengar "のって"
+    const heard = t.speak.replace('とても', 'とって').replace('のんで', 'のって')
+
+    assert.notEqual(heard, t.speak)
+    assert.ok(scoreSpeech([heard], t) >= PASS_SCORE)
+  })
+
+  test('struktur: id unik, 6–10 giliran, minimal 3 giliran user, speak tanpa kanji', () => {
+    const seen = new Set()
+
+    for (const pack of packs) {
+      for (const sc of pack.scenarios) {
+        assert.match(sc.id, new RegExp(`^${pack.id}-s\\d+$`))
+        assert.ok(sc.turns.length >= 6 && sc.turns.length <= 10, sc.id)
+        const you = sc.turns.filter(x => x.who === 'you').length
+
+        assert.ok(you >= 3, sc.id)
+        for (const t of sc.turns) {
+          assert.ok(!seen.has(t.id), `id ganda ${t.id}`)
+          seen.add(t.id)
+          assert.doesNotMatch(t.speak, /\p{Script=Han}|《/u, t.id)
+        }
+      }
+    }
   })
 })

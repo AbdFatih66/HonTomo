@@ -150,5 +150,18 @@
       "track": "lesson",
       "level": "N5"
     }
+  ],
+  "situations": [
+    {
+      "id": "mensetsu",
+      "file": "situation-mensetsu.json",
+      "track": "situation",
+      "icon": "tabler-briefcase",
+      "level": "N4–N5",
+      "title_id": "Mensetsu",
+      "title_en": "Mensetsu",
+      "desc_id": "Wawancara kerja di Jepang, 19 skenario: salam, perkenalan diri, keluarga, alasan melamar, kelebihan & kekurangan, kesehatan, lembur, asrama, sampai penutup dan simulasi singkat.",
+      "desc_en": "Job interview in Japan, 19 scenarios: greeting, self-introduction, family, motivation, strengths & weaknesses, health, overtime, dormitory, closing and a mini mock interview."
+    }
   ]
 }

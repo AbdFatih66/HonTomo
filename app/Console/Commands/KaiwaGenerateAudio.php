@@ -9,14 +9,14 @@ use Illuminate\Support\Facades\File;
 /**
  * Membuat audio kaiwa (percakapan) lewat Google Cloud Text-to-Speech.
  *
- * Membaca public/data/kaiwa/lesson-*.json. Tiap giliran (`turns[]`) punya `speak`
+ * Membaca public/data/kaiwa/lesson-*.json dan situation-*.json (jalur situasi). Tiap giliran (`turns[]`) punya `speak`
  * (teks yang dibacakan) dan `who` ("partner" | "you"):
  *  - giliran lawan bicara dibacakan dengan suara `scenario.partner.voice`
  *    ("male" / "female");
  *  - giliran user (contoh yang bisa didengar sebelum ditirukan) dibacakan
  *    dengan suara lawan jenis, supaya mudah dibedakan.
  *
- * MP3 disimpan di public/audio/kaiwa/lesson-{n}/{turn-id}.mp3 dan path-nya ditulis
+ * MP3 disimpan di public/audio/kaiwa/{lesson-n | situation-nama}/{turn-id}.mp3 dan path-nya ditulis
  * ke field `audio` pada JSON. Idempoten: MP3 yang sudah ada dilewati kecuali --force.
  *
  * Peringatan suara berbahasa Jepang (alerts.json) ikut dibuat saat perintah dijalankan tanpa --lesson.
@@ -24,11 +24,13 @@ use Illuminate\Support\Facades\File;
  * Contoh:
  *   php artisan kaiwa:generate-audio
  *   php artisan kaiwa:generate-audio --lesson=1 --force
+ *   php artisan kaiwa:generate-audio --situation=mensetsu
  */
 class KaiwaGenerateAudio extends Command
 {
     protected $signature = 'kaiwa:generate-audio
         {--lesson= : Hanya satu pelajaran, mis. --lesson=1}
+        {--situation= : Hanya satu paket situasi, mis. --situation=mensetsu}
         {--voice-male=ja-JP-Wavenet-C : Suara "male"}
         {--voice-female=ja-JP-Wavenet-B : Suara "female"}
         {--rate=0.9 : Kecepatan bicara (0.25 - 4.0)}
@@ -50,11 +52,15 @@ class KaiwaGenerateAudio extends Command
         $voices = ['male' => $this->option('voice-male'), 'female' => $this->option('voice-female')];
         $rate = (float) $this->option('rate');
         $force = (bool) $this->option('force');
-        $only = $this->option('lesson');
+        $lessonOnly = $this->option('lesson');
+        $situationOnly = $this->option('situation');
+        $only = $lessonOnly || $situationOnly;
 
         $files = collect(File::files($dataDir))
-            ->filter(fn ($f) => str_starts_with($f->getFilename(), 'lesson-') && $f->getExtension() === 'json')
-            ->when($only, fn ($c) => $c->filter(fn ($f) => $f->getFilename() === "lesson-{$only}.json"));
+            ->filter(fn ($f) => $f->getExtension() === 'json'
+                && (str_starts_with($f->getFilename(), 'lesson-') || str_starts_with($f->getFilename(), 'situation-')))
+            ->when($only, fn ($c) => $c->filter(fn ($f) => $f->getFilename() === "lesson-{$lessonOnly}.json"
+                || $f->getFilename() === "situation-{$situationOnly}.json"));
 
         if ($files->isEmpty()) {
             $this->warn('Tidak ada berkas pelajaran yang cocok.');
@@ -74,10 +80,11 @@ class KaiwaGenerateAudio extends Command
                 continue;
             }
 
-            $lessonId = $json['id'];
-            $dir = "{$audioBase}/lesson-{$lessonId}";
+            // 'lesson-2.json' → folder 'lesson-2'; 'situation-mensetsu.json' → 'situation-mensetsu'.
+            $setDir = $file->getBasename('.json');
+            $dir = "{$audioBase}/{$setDir}";
             File::ensureDirectoryExists($dir);
-            $this->info("Pelajaran {$lessonId}");
+            $this->info($setDir);
 
             foreach ($json['scenarios'] ?? [] as $si => $scenario) {
                 $partnerVoice = ($scenario['partner']['voice'] ?? 'male') === 'female' ? 'female' : 'male';
@@ -86,7 +93,7 @@ class KaiwaGenerateAudio extends Command
                 foreach ($scenario['turns'] ?? [] as $ti => $turn) {
                     $id = $turn['id'];
                     $mp3 = "{$dir}/{$id}.mp3";
-                    $public = "/audio/kaiwa/lesson-{$lessonId}/{$id}.mp3";
+                    $public = "/audio/kaiwa/{$setDir}/{$id}.mp3";
 
                     if (! $force && File::exists($mp3)) {
                         $json['scenarios'][$si]['turns'][$ti]['audio'] = $public;

@@ -1143,6 +1143,11 @@
     "continue": "Lanjut",
     "scenarios_done": "{done}/{total} skenario",
     "overall": "{done}/{total} skenario selesai",
+    "track_lesson": "Pelajaran",
+    "track_situation": "Situasi",
+    "tips_title": "Tips & kata penting",
+    "key_words": "Kata penting",
+    "similar_questions": "Pertanyaan serupa yang mungkin ditanyakan",
     "xp_earned": "+{xp} XP"
   }
 }

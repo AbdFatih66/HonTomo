@@ -1,0 +1,3013 @@
+{
+    "id": "mensetsu",
+    "track": "situation",
+    "level": "N4–N5",
+    "rounds": 1,
+    "title_id": "Mensetsu — wawancara kerja di Jepang",
+    "title_en": "Mensetsu — job interview in Japan",
+    "note_id": "Peran: kamu menjawab, pewawancara bertanya (tanpa tukar peran). Jawaban contoh memakai tokoh Budi (25 tahun, Jakarta, lulusan SMK, 4 tahun di pabrik) — setelah hafal, ganti nama, umur, kota, dan pengalaman dengan datamu sendiri. Buka \"Tips & kata penting\" di tiap skenario.",
+    "note_en": "Role: you answer and the interviewer asks (no role swap). The sample answers use the character Budi (25, Jakarta, vocational-school graduate, 4 years in a factory) — once memorised, replace the name, age, city and experience with your own. Open “Tips & key words” in each scenario.",
+    "scenarios": [
+        {
+            "id": "mensetsu-s1",
+            "title_id": "Masuk ruangan & salam",
+            "title_en": "Entering the room and greeting",
+            "setting_id": "Giliranmu tiba. Kamu mengetuk pintu ruang wawancara lalu masuk.",
+            "setting_en": "It's your turn. You knock on the interview room door and walk in.",
+            "goal_id": "Mengucapkan 失礼します saat masuk dan duduk, lalu menyebut nama dengan sopan (〜と申します).",
+            "goal_en": "Say 失礼します when entering and sitting, then state your name politely (〜と申します).",
+            "patterns": [
+                "失礼します",
+                "よろしく お願いします",
+                "〜と 申します"
+            ],
+            "tips_id": [
+                "Ketuk pintu 3 kali, masuk, tutup pintu pelan, bungkuk sedikit lalu ucapkan 失礼します. Duduk hanya setelah dipersilakan; tas diletakkan di samping kursi. Kesan pertama terbentuk dalam 10 detik: senyum dan suara jelas sejak kalimat pertama.",
+                "Ketuk pintu tiga kali dengan pelan, tunggu dipersilakan, baru masuk.",
+                "Ucapkan 失礼します saat membuka pintu, lalu bungkuk sedikit ketika menutupnya.",
+                "Jangan duduk sebelum dipersilakan (おかけください). Setelah duduk, ucapkan 失礼します lagi."
+            ],
+            "tips_en": [
+                "Knock three times, enter, close the door gently, bow slightly and say 失礼します. Sit only after being invited; put your bag beside the chair. First impressions form within seconds: smile and speak clearly from the very first sentence.",
+                "Knock three times gently and wait to be invited in.",
+                "Say 失礼します as you open the door and bow slightly as you close it.",
+                "Do not sit until you are invited to (おかけください). After sitting, say 失礼します again."
+            ],
+            "words": [
+                {
+                    "ja": "失礼《しつれい》します",
+                    "id": "permisi (saat masuk/duduk)",
+                    "en": "excuse me (entering/sitting)"
+                },
+                {
+                    "ja": "お願《ねが》いします",
+                    "id": "mohon / tolong",
+                    "en": "please / I ask of you"
+                },
+                {
+                    "ja": "お名前《なまえ》",
+                    "id": "nama Anda (sopan)",
+                    "en": "your name (polite)"
+                },
+                {
+                    "ja": "おかけください",
+                    "id": "silakan duduk (sopan)",
+                    "en": "please sit (polite)"
+                },
+                {
+                    "ja": "面接《めんせつ》",
+                    "id": "wawancara",
+                    "en": "interview"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "お名前《なまえ》を 教《おし》えてください。",
+                    "id": "Tolong sebutkan nama Anda.",
+                    "en": "Please tell me your name."
+                },
+                {
+                    "ja": "どうぞ、おかけください。",
+                    "id": "Silakan duduk.",
+                    "en": "Please have a seat."
+                },
+                {
+                    "ja": "今日《きょう》は どうやって 来《き》ましたか。",
+                    "id": "Hari ini datang dengan apa?",
+                    "en": "How did you get here today?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s1-t1",
+                    "who": "partner",
+                    "ja": "どうぞ、お入《はい》りください。",
+                    "speak": "どうぞ、おはいりください。",
+                    "id_text": "Silakan masuk.",
+                    "en_text": "Please come in.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s1-t2",
+                    "who": "you",
+                    "ja": "失礼《しつれい》します。",
+                    "speak": "しつれいします。",
+                    "id_text": "Permisi (saya masuk).",
+                    "accept": [
+                        "失礼します。"
+                    ],
+                    "en_text": "Excuse me. (I'm coming in.)",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s1-t3",
+                    "who": "partner",
+                    "ja": "どうぞ、おかけください。",
+                    "speak": "どうぞ、おかけください。",
+                    "id_text": "Silakan duduk.",
+                    "en_text": "Please have a seat.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s1-t4",
+                    "who": "you",
+                    "ja": "失礼《しつれい》します。よろしく お願《ねが》いします。",
+                    "speak": "しつれいします。よろしく おねがいします。",
+                    "id_text": "Permisi (saya duduk). Mohon bantuannya.",
+                    "accept": [
+                        "失礼します。よろしく お願いします。",
+                        "失礼します。よろしくお願いします。"
+                    ],
+                    "en_text": "Excuse me. Pleased to meet you.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s1-t5",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》を お願《ねが》いします。",
+                    "speak": "おなまえを おねがいします。",
+                    "id_text": "Tolong sebutkan nama Anda.",
+                    "en_text": "Your name, please.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s1-t6",
+                    "who": "you",
+                    "ja": "ブディと 申《もう》します。どうぞ よろしく お願《ねが》いします。",
+                    "speak": "ブディと もうします。どうぞ よろしく おねがいします。",
+                    "id_text": "Nama saya Budi. Mohon bantuannya.",
+                    "accept": [
+                        "ブディと 申します。どうぞ よろしく お願いします。",
+                        "ブディと申します。どうぞよろしくお願いします。"
+                    ],
+                    "en_text": "My name is Budi. Pleased to meet you.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s1-t7",
+                    "who": "partner",
+                    "ja": "ブディさんですね。緊張《きんちょう》しなくても いいですよ。",
+                    "speak": "ブディさんですね。きんちょうしなくても いいですよ。",
+                    "id_text": "Budi, ya. Tidak perlu tegang, kok.",
+                    "en_text": "You're Budi. You don't need to be nervous.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s2",
+            "title_id": "Perkenalan diri (自己紹介)",
+            "title_en": "Self-introduction (自己紹介)",
+            "setting_id": "Wawancara dimulai. Pewawancara memintamu memperkenalkan diri.",
+            "setting_en": "The interview begins. The interviewer asks you to introduce yourself.",
+            "goal_id": "Memperkenalkan diri dengan urutan nama → umur → asal → pengalaman singkat → tekad.",
+            "goal_en": "Introduce yourself in order: name → age → hometown → brief experience → determination.",
+            "patterns": [
+                "〜と 申します",
+                "〜から 来ました",
+                "一生懸命 がんばります"
+            ],
+            "tips_id": [
+                "Urutan aman 自己紹介: ① nama ② umur ③ asal ④ pengalaman singkat ⑤ tekad + よろしくお願いします. Cukup 30–60 detik. Ganti umur, kota, dan pengalaman dengan datamu sendiri. Jangan terdengar seperti hafalan: lihat mata pewawancara.",
+                "Mulai dengan nama, lalu umur dan asal. Tutup dengan よろしく お願いします bila belum diucapkan.",
+                "Kalimat pendek lebih baik daripada kalimat panjang yang salah. Satu kalimat = satu informasi.",
+                "Hobi: sebut satu hal dan satu kalimat tambahan (kapan / dengan siapa)."
+            ],
+            "tips_en": [
+                "A safe order: ① name ② age ③ hometown ④ brief experience ⑤ determination + よろしくお願いします. 30–60 seconds is enough. Replace the age, city and experience with your own. Don't sound memorized: make eye contact.",
+                "Start with your name, then your age and where you are from.",
+                "Short sentences beat long ones with mistakes. One sentence = one piece of information.",
+                "Hobby: name one thing and add one sentence (when / with whom)."
+            ],
+            "words": [
+                {
+                    "ja": "自己紹介《じこしょうかい》",
+                    "id": "perkenalan diri",
+                    "en": "self-introduction"
+                },
+                {
+                    "ja": "家族《かぞく》",
+                    "id": "keluarga",
+                    "en": "family"
+                },
+                {
+                    "ja": "趣味《しゅみ》",
+                    "id": "hobi",
+                    "en": "hobby"
+                },
+                {
+                    "ja": "出身《しゅっしん》",
+                    "id": "asal / kampung halaman",
+                    "en": "hometown"
+                },
+                {
+                    "ja": "毎週《まいしゅう》",
+                    "id": "setiap minggu",
+                    "en": "every week"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "出身《しゅっしん》は どこですか。",
+                    "id": "Asalnya dari mana?",
+                    "en": "Where are you from?"
+                },
+                {
+                    "ja": "ご家族《かぞく》の ことを 教《おし》えてください。",
+                    "id": "Ceritakan tentang keluarga Anda.",
+                    "en": "Please tell me about your family."
+                },
+                {
+                    "ja": "休《やす》みの 日《ひ》は 何《なに》を しますか。",
+                    "id": "Hari libur melakukan apa?",
+                    "en": "What do you do on your days off?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s2-t1",
+                    "who": "partner",
+                    "ja": "では、自己紹介《じこしょうかい》を お願《ねが》いします。",
+                    "speak": "では、じこしょうかいを おねがいします。",
+                    "id_text": "Silakan perkenalkan diri.",
+                    "en_text": "Please introduce yourself.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s2-t2",
+                    "who": "you",
+                    "ja": "はい。ブディと 申《もう》します。二十五歳《にじゅうごさい》です。インドネシアの ジャカルタから 来《き》ました。",
+                    "speak": "はい。ブディと もうします。にじゅうごさいです。インドネシアの ジャカルタから きました。",
+                    "id_text": "Baik. Nama saya Budi. Umur saya 25 tahun. Saya datang dari Jakarta, Indonesia.",
+                    "accept": [
+                        "はい。ブディと 申します。二十五歳です。インドネシアの ジャカルタから 来ました。",
+                        "はい。ブディと申します。二十五歳です。インドネシアのジャカルタから来ました。"
+                    ],
+                    "en_text": "Yes. My name is Budi. I'm 25 years old. I came from Jakarta, Indonesia.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s2-t3",
+                    "who": "partner",
+                    "ja": "前《まえ》の 仕事《しごと》を 教《おし》えてください。",
+                    "speak": "まえの しごとを おしえてください。",
+                    "id_text": "Tolong ceritakan pekerjaan Anda sebelumnya.",
+                    "en_text": "Please tell me about your previous job.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s2-t4",
+                    "who": "you",
+                    "ja": "工場《こうじょう》で 四年間《よねんかん》 働《はたら》きました。機械《きかい》を 使《つか》って、部品《ぶひん》を 作《つく》りました。",
+                    "speak": "こうじょうで よねんかん はたらきました。きかいを つかって、ぶひんを つくりました。",
+                    "id_text": "Saya bekerja di pabrik selama empat tahun. Saya memakai mesin untuk membuat komponen.",
+                    "accept": [
+                        "工場で 四年間 働きました。機械を 使って、部品を 作りました。",
+                        "工場で四年間働きました。機械を使って、部品を作りました。"
+                    ],
+                    "en_text": "I worked at a factory for four years. I used machines to make parts.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s2-t5",
+                    "who": "partner",
+                    "ja": "そうですか。最後《さいご》に、一言《ひとこと》 お願《ねが》いします。",
+                    "speak": "そうですか。さいごに、ひとこと おねがいします。",
+                    "id_text": "Begitu. Terakhir, tolong sampaikan satu pesan.",
+                    "en_text": "I see. Lastly, please say a few words.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s2-t6",
+                    "who": "you",
+                    "ja": "日本《にほん》で 一生懸命《いっしょうけんめい》 働《はたら》きます。よろしく お願《ねが》いします。",
+                    "speak": "にほんで いっしょうけんめい はたらきます。よろしく おねがいします。",
+                    "id_text": "Saya akan bekerja sungguh-sungguh di Jepang. Mohon bantuannya.",
+                    "accept": [
+                        "日本で 一生懸命 働きます。よろしく お願いします。",
+                        "日本で一生懸命働きます。よろしくお願いします。"
+                    ],
+                    "en_text": "I will work hard in Japan. Thank you for your consideration.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s2-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。よく 分《わ》かりました。",
+                    "speak": "ありがとうございます。よく わかりました。",
+                    "id_text": "Terima kasih. Saya sudah paham.",
+                    "en_text": "Thank you. I understand well.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s3",
+            "title_id": "Keluarga",
+            "title_en": "Your family",
+            "setting_id": "Pewawancara menanyakan keluargamu dan apakah mereka setuju kamu bekerja di Jepang.",
+            "setting_en": "The interviewer asks about your family and whether they support you working in Japan.",
+            "goal_id": "Menyebut jumlah dan anggota keluarga, serta menegaskan bahwa keluarga tahu dan mendukung.",
+            "goal_en": "State the number and members of your family, and confirm that they know and support you.",
+            "patterns": [
+                "〜人です",
+                "Ａと Ｂと Ｃです",
+                "賛成しています"
+            ],
+            "tips_id": [
+                "Pewawancara ingin memastikan keluargamu mendukung, supaya kamu tidak pulang di tengah kontrak. Jawab pasti: keluarga tahu dan setuju. Sebut pekerjaan orang tua dengan singkat dan jujur.",
+                "Persetujuan keluarga hampir selalu ditanyakan. Pastikan kamu benar-benar sudah membicarakannya dengan keluarga.",
+                "Belum pernah ke Jepang? Jawab はじめてです + antusiasme (楽しみです).",
+                "Saat ditanya cara menghadapi kesulitan, sebut konsultasi ke orang di kantor/asrama."
+            ],
+            "tips_en": [
+                "The interviewer wants to be sure your family supports you so you won't quit midway. Answer firmly: your family knows and agrees. Mention your parents' jobs briefly and honestly.",
+                "Family approval is almost always asked. Make sure you have really discussed it with your family.",
+                "Never been to Japan? Answer はじめてです plus enthusiasm (楽しみです).",
+                "When asked how you handle difficulties, mention consulting people at work or in the dormitory."
+            ],
+            "words": [
+                {
+                    "ja": "文化《ぶんか》",
+                    "id": "budaya",
+                    "en": "culture"
+                },
+                {
+                    "ja": "料理《りょうり》",
+                    "id": "masakan",
+                    "en": "cuisine / dish"
+                },
+                {
+                    "ja": "賛成《さんせい》",
+                    "id": "setuju",
+                    "en": "agree / approve"
+                },
+                {
+                    "ja": "応援《おうえん》",
+                    "id": "mendukung",
+                    "en": "to support / cheer on"
+                },
+                {
+                    "ja": "相談《そうだん》",
+                    "id": "berkonsultasi",
+                    "en": "to consult"
+                },
+                {
+                    "ja": "楽《たの》しみ",
+                    "id": "menantikan / menyenangkan",
+                    "en": "looking forward to"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "日本《にほん》に 友達《ともだち》や 家族《かぞく》が いますか。",
+                    "id": "Apakah ada teman atau keluarga di Jepang?",
+                    "en": "Do you have friends or family in Japan?"
+                },
+                {
+                    "ja": "日本《にほん》の ことを 調《しら》べましたか。",
+                    "id": "Apakah Anda sudah mencari tahu tentang Jepang?",
+                    "en": "Have you looked into Japan?"
+                },
+                {
+                    "ja": "日本《にほん》の 好《す》きな ところは どこですか。",
+                    "id": "Apa yang Anda sukai dari Jepang?",
+                    "en": "What do you like about Japan?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s3-t1",
+                    "who": "partner",
+                    "ja": "ご家族《かぞく》は 何人《なんにん》ですか。",
+                    "speak": "ごかぞくは なんにんですか。",
+                    "id_text": "Berapa orang anggota keluarga Anda?",
+                    "en_text": "How many people are in your family?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s3-t2",
+                    "who": "you",
+                    "ja": "五人《ごにん》です。父《ちち》と 母《はは》と 兄《あに》と 妹《いもうと》と わたしです。",
+                    "speak": "ごにんです。ちちと ははと あにと いもうとと わたしです。",
+                    "id_text": "Lima orang. Ayah, ibu, kakak laki-laki, adik perempuan, dan saya.",
+                    "accept": [
+                        "五人です。父と 母と 兄と 妹と わたしです。",
+                        "五人です。父と母と兄と妹とわたしです。"
+                    ],
+                    "en_text": "Five. My father, mother, older brother, younger sister and me.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s3-t3",
+                    "who": "partner",
+                    "ja": "日本《にほん》で 働《はたら》く ことを、ご家族《かぞく》は 知《し》って いますか。",
+                    "speak": "にほんで はたらく ことを、ごかぞくは しって いますか。",
+                    "id_text": "Apakah keluarga Anda tahu Anda akan bekerja di Jepang?",
+                    "en_text": "Does your family know you will work in Japan?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s3-t4",
+                    "who": "you",
+                    "ja": "はい、知《し》って います。家族《かぞく》も 賛成《さんせい》して います。",
+                    "speak": "はい、しって います。かぞくも さんせいして います。",
+                    "id_text": "Ya, mereka tahu. Keluarga saya juga setuju.",
+                    "accept": [
+                        "はい、知って います。家族も 賛成して います。",
+                        "はい、知っています。家族も賛成しています。"
+                    ],
+                    "en_text": "Yes, they know. My family agrees too.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s3-t5",
+                    "who": "partner",
+                    "ja": "お父《とう》さんの お仕事《しごと》は 何《なん》ですか。",
+                    "speak": "おとうさんの おしごとは なんですか。",
+                    "id_text": "Apa pekerjaan ayah Anda?",
+                    "en_text": "What does your father do?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s3-t6",
+                    "who": "you",
+                    "ja": "父《ちち》は 会社員《かいしゃいん》です。母《はは》は 店《みせ》で 働《はたら》いて います。",
+                    "speak": "ちちは かいしゃいんです。ははは みせで はたらいて います。",
+                    "id_text": "Ayah saya karyawan perusahaan. Ibu saya bekerja di toko.",
+                    "accept": [
+                        "父は 会社員です。母は 店で 働いて います。",
+                        "父は会社員です。母は店で働いています。"
+                    ],
+                    "en_text": "My father is a company employee. My mother works at a shop.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。ご家族《かぞく》は 応援《おうえん》して くれて いますね。",
+                    "speak": "そうですか。ごかぞくは おうえんして くれて いますね。",
+                    "id_text": "Begitu. Keluarga Anda mendukung Anda, ya.",
+                    "en_text": "I see. Your family is supporting you.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s4",
+            "title_id": "Pendidikan & pengalaman kerja",
+            "title_en": "Education and work experience",
+            "setting_id": "Pewawancara menanyakan pendidikan dan pengalaman kerjamu.",
+            "setting_en": "The interviewer asks about your education and work experience.",
+            "goal_id": "Menyebut pendidikan terakhir dan pengalaman kerja secara runtut: waktu → tempat → isi pekerjaan → kekuatan.",
+            "goal_en": "Describe your education and work history in order: when → where → what you did → what you're good at.",
+            "patterns": [
+                "〜を 卒業しました",
+                "卒業してから、〜",
+                "〜年間 働きました"
+            ],
+            "tips_id": [
+                "Sebut fakta: sekolah, tahun, tempat kerja, isi pekerjaan, berapa lama. Jangan ada jeda riwayat tanpa penjelasan. Jika belum punya pengalaman, ceritakan pelatihan atau hal yang sudah kamu pelajari.",
+                "Sebut: di mana, berapa lama, dan apa yang dikerjakan. Angka membuat jawaban meyakinkan.",
+                "Belum punya pengalaman? Katakan jujur: まだ 仕事の 経験は ありませんが、一生懸命 勉強します。",
+                "Saat ditanya kesulitan, sebut kesulitan nyata dan bagaimana kamu mengatasinya."
+            ],
+            "tips_en": [
+                "State facts: school, year, workplace, duties, how long. Don't leave unexplained gaps. If you have no experience, talk about training or things you have learned.",
+                "Say where, how long, and what you did. Numbers make your answer convincing.",
+                "No experience yet? Say so honestly: まだ 仕事の 経験は ありませんが、一生懸命 勉強します。",
+                "When asked about difficulties, name a real one and how you handled it."
+            ],
+            "words": [
+                {
+                    "ja": "工場《こうじょう》",
+                    "id": "pabrik",
+                    "en": "factory"
+                },
+                {
+                    "ja": "機械《きかい》",
+                    "id": "mesin",
+                    "en": "machine"
+                },
+                {
+                    "ja": "部品《ぶひん》",
+                    "id": "komponen",
+                    "en": "part / component"
+                },
+                {
+                    "ja": "経験《けいけん》",
+                    "id": "pengalaman",
+                    "en": "experience"
+                },
+                {
+                    "ja": "役《やく》に立《た》つ",
+                    "id": "berguna",
+                    "en": "to be useful"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "前《まえ》の 仕事《しごと》を どうして やめましたか。",
+                    "id": "Mengapa Anda berhenti dari pekerjaan sebelumnya?",
+                    "en": "Why did you leave your previous job?"
+                },
+                {
+                    "ja": "どんな 機械《きかい》を 使《つか》った ことが ありますか。",
+                    "id": "Mesin apa yang pernah Anda gunakan?",
+                    "en": "What machines have you used?"
+                },
+                {
+                    "ja": "仕事《しごと》で 失敗《しっぱい》した ことが ありますか。",
+                    "id": "Pernahkah Anda gagal/berbuat salah dalam pekerjaan?",
+                    "en": "Have you ever made a mistake at work?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s4-t1",
+                    "who": "partner",
+                    "ja": "どこの 学校《がっこう》を 卒業《そつぎょう》しましたか。",
+                    "speak": "どこの がっこうを そつぎょうしましたか。",
+                    "id_text": "Anda lulusan sekolah mana?",
+                    "en_text": "Which school did you graduate from?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s4-t2",
+                    "who": "you",
+                    "ja": "六年《ろくねん》前《まえ》に 工業高校《こうぎょうこうこう》を 卒業《そつぎょう》しました。",
+                    "speak": "ろくねんまえに こうぎょうこうこうを そつぎょうしました。",
+                    "id_text": "Enam tahun lalu saya lulus sekolah teknik (SMK).",
+                    "accept": [
+                        "六年前に 工業高校を 卒業しました。",
+                        "六年前に工業高校を卒業しました。"
+                    ],
+                    "en_text": "I graduated from a technical high school six years ago.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s4-t3",
+                    "who": "partner",
+                    "ja": "卒業《そつぎょう》してから、どんな 仕事《しごと》を しましたか。",
+                    "speak": "そつぎょうしてから、どんな しごとを しましたか。",
+                    "id_text": "Setelah lulus, pekerjaan apa yang Anda lakukan?",
+                    "en_text": "After graduating, what kind of work did you do?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s4-t4",
+                    "who": "you",
+                    "ja": "工場《こうじょう》で 四年間《よねんかん》 働《はたら》きました。機械《きかい》を 使《つか》う 仕事《しごと》です。",
+                    "speak": "こうじょうで よねんかん はたらきました。きかいを つかう しごとです。",
+                    "id_text": "Saya bekerja di pabrik selama empat tahun. Pekerjaannya memakai mesin.",
+                    "accept": [
+                        "工場で 四年間 働きました。機械を 使う 仕事です。",
+                        "工場で四年間働きました。機械を使う仕事です。"
+                    ],
+                    "en_text": "I worked at a factory for four years. It was work using machines.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s4-t5",
+                    "who": "partner",
+                    "ja": "工場《こうじょう》の 仕事《しごと》で 何《なに》が 得意《とくい》ですか。",
+                    "speak": "こうじょうの しごとで なにが とくいですか。",
+                    "id_text": "Dalam pekerjaan pabrik, apa keahlian Anda?",
+                    "en_text": "What are you good at in factory work?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s4-t6",
+                    "who": "you",
+                    "ja": "同《おな》じ 部品《ぶひん》を たくさん 作《つく》る 仕事《しごと》が 得意《とくい》です。間違《まちが》いが 少《すく》ないです。",
+                    "speak": "おなじ ぶひんを たくさん つくる しごとが とくいです。まちがいが すくないです。",
+                    "id_text": "Saya ahli membuat komponen yang sama dalam jumlah banyak. Kesalahan saya sedikit.",
+                    "accept": [
+                        "同じ 部品を たくさん 作る 仕事が 得意です。間違いが 少ないです。",
+                        "同じ部品をたくさん作る仕事が得意です。間違いが少ないです。"
+                    ],
+                    "en_text": "I'm good at making lots of the same part. I make few mistakes.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。経験《けいけん》が ありますね。",
+                    "speak": "そうですか。けいけんが ありますね。",
+                    "id_text": "Begitu. Anda berpengalaman ya.",
+                    "en_text": "I see. You have experience.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s4-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s5",
+            "title_id": "Alasan ingin bekerja di Jepang (志望動機①)",
+            "title_en": "Why you want to work in Japan",
+            "setting_id": "Pertanyaan terpenting: mengapa kamu ingin bekerja di Jepang?",
+            "setting_en": "The most important question: why do you want to work in Japan?",
+            "goal_id": "Menjawab alasan dengan pola: ingin belajar → hal yang dikagumi → tekad (〜たいです／〜からです).",
+            "goal_en": "Answer with the pattern: want to learn → what you admire → determination (〜たいです / 〜からです).",
+            "patterns": [
+                "〜たいです",
+                "〜からです",
+                "〜て、〜たいです"
+            ],
+            "tips_id": [
+                "Jujur tapi positif. Tekankan belajar teknologi dan disiplin Jepang serta masa depan keluarga, bukan hanya uang. Jika menyebut penghasilan, kaitkan dengan keluarga atau tabungan di kalimat berikutnya. Struktur: alasan 1 → alasan 2 → tekad.",
+                "Ini pertanyaan paling penting. Siapkan satu alasan utama + satu contoh konkret.",
+                "Jangan hanya menjawab \"gaji besar\". Uang boleh disebut, tetapi utamakan belajar keterampilan dan membantu keluarga.",
+                "Jawab jujur. Pewawancara sering menanyakan hal yang sama dengan kata berbeda untuk mengecek konsistensi."
+            ],
+            "tips_en": [
+                "Be honest but positive. Stress learning Japanese technology and discipline and your family's future, not just money. If you mention income, tie it to family or savings in the next sentence. Structure: reason 1 → reason 2 → determination.",
+                "This is the most important question. Prepare one main reason and one concrete example.",
+                "Do not answer only \"a high salary\". Money may be mentioned, but lead with learning skills and supporting your family.",
+                "Be honest. Interviewers often ask the same thing in different words to check consistency."
+            ],
+            "words": [
+                {
+                    "ja": "志望動機《しぼうどうき》",
+                    "id": "alasan melamar",
+                    "en": "motivation for applying"
+                },
+                {
+                    "ja": "技術《ぎじゅつ》",
+                    "id": "teknologi / keterampilan teknis",
+                    "en": "technology / technical skill"
+                },
+                {
+                    "ja": "製品《せいひん》",
+                    "id": "produk",
+                    "en": "product"
+                },
+                {
+                    "ja": "選《えら》ぶ",
+                    "id": "memilih",
+                    "en": "to choose"
+                },
+                {
+                    "ja": "助《たす》ける",
+                    "id": "menolong / membantu",
+                    "en": "to help"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "日本《にほん》で 働《はたら》きたい 理由《りゆう》を 教《おし》えてください。",
+                    "id": "Tolong jelaskan alasan ingin bekerja di Jepang.",
+                    "en": "Please tell me why you want to work in Japan."
+                },
+                {
+                    "ja": "どうして 日本《にほん》を 選《えら》びましたか。",
+                    "id": "Mengapa memilih Jepang?",
+                    "en": "Why did you choose Japan?"
+                },
+                {
+                    "ja": "うちの 会社《かいしゃ》を 知《し》っていますか。",
+                    "id": "Apakah Anda tahu perusahaan kami?",
+                    "en": "Do you know our company?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s5-t1",
+                    "who": "partner",
+                    "ja": "どうして 日本《にほん》で 働《はたら》きたいですか。",
+                    "speak": "どうして にほんで はたらきたいですか。",
+                    "id_text": "Mengapa Anda ingin bekerja di Jepang?",
+                    "en_text": "Why do you want to work in Japan?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s5-t2",
+                    "who": "you",
+                    "ja": "日本《にほん》の 技術《ぎじゅつ》を 勉強《べんきょう》したいからです。",
+                    "speak": "にほんの ぎじゅつを べんきょうしたいからです。",
+                    "id_text": "Karena saya ingin mempelajari teknologi Jepang.",
+                    "accept": [
+                        "日本の 技術を 勉強したいからです。",
+                        "日本の技術を勉強したいからです。"
+                    ],
+                    "en_text": "Because I want to learn Japanese technology.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s5-t3",
+                    "who": "partner",
+                    "ja": "ほかにも 理由《りゆう》が ありますか。",
+                    "speak": "ほかにも りゆうが ありますか。",
+                    "id_text": "Apakah ada alasan lain?",
+                    "en_text": "Is there another reason?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s5-t4",
+                    "who": "you",
+                    "ja": "はい。日本《にほん》の 人《ひと》は 時間《じかん》を 守《まも》ります。私《わたし》も そう なりたいです。",
+                    "speak": "はい。にほんの ひとは じかんを まもります。わたしも そう なりたいです。",
+                    "id_text": "Ya. Orang Jepang menepati waktu. Saya juga ingin seperti itu.",
+                    "accept": [
+                        "はい。日本の 人は 時間を 守ります。私も そう なりたいです。",
+                        "はい。日本の人は時間を守ります。私もそうなりたいです。"
+                    ],
+                    "en_text": "Yes. Japanese people keep to time. I want to be like that too.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s5-t5",
+                    "who": "partner",
+                    "ja": "日本《にほん》で 働《はたら》いて、何《なに》を したいですか。",
+                    "speak": "にほんで はたらいて、なにを したいですか。",
+                    "id_text": "Setelah bekerja di Jepang, apa yang ingin Anda lakukan?",
+                    "en_text": "After working in Japan, what do you want to do?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s5-t6",
+                    "who": "you",
+                    "ja": "たくさん 勉強《べんきょう》して、国《くに》の 家族《かぞく》を 助《たす》けたいです。",
+                    "speak": "たくさん べんきょうして、くにの かぞくを たすけたいです。",
+                    "id_text": "Saya ingin belajar banyak dan membantu keluarga di negara saya.",
+                    "accept": [
+                        "たくさん 勉強して、国の 家族を 助けたいです。",
+                        "たくさん勉強して、国の家族を助けたいです。"
+                    ],
+                    "en_text": "I want to study a lot and help my family back home.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s5-t7",
+                    "who": "partner",
+                    "ja": "なるほど。しっかり 考《かんが》えて いますね。",
+                    "speak": "なるほど。しっかり かんがえて いますね。",
+                    "id_text": "Begitu. Anda sudah memikirkannya dengan matang.",
+                    "en_text": "I see. You've thought it through well.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s5-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s6",
+            "title_id": "Alasan memilih perusahaan ini (志望動機②)",
+            "title_en": "Why this company",
+            "setting_id": "Pewawancara menanyakan mengapa kamu memilih perusahaan dan pekerjaan ini.",
+            "setting_en": "The interviewer asks why you chose this company and this job.",
+            "goal_id": "Menjawab: pengalamanmu cocok, kamu sudah tahu perusahaannya, dan ingin berkembang di sini.",
+            "goal_en": "Answer: your experience fits, you know about the company, and you want to grow here.",
+            "patterns": [
+                "〜からです",
+                "〜と 聞きました",
+                "〜たいです"
+            ],
+            "tips_id": [
+                "Pelajari sedikit tentang perusahaan sebelum wawancara (produk, lokasi, jenis pekerjaan) dan ganti kalimat contoh dengan fakta nyata. Hubungkan pengalamanmu dengan pekerjaan di sini. Satu fakta spesifik membuat jawabanmu terasa tulus.",
+                "Sebut satu hal konkret tentang perusahaan (produk, lokasi, atau jenis pekerjaan), bukan pujian umum.",
+                "Hubungkan pengalamanmu dengan pekerjaan di perusahaan itu (mesin, komponen, perakitan).",
+                "Jangan menjelekkan tempat kerja sebelumnya; fokus pada apa yang ingin kamu pelajari di sini."
+            ],
+            "tips_en": [
+                "Learn a little about the company beforehand (products, location, type of work) and replace the sample sentence with real facts. Link your experience to the job. One specific fact makes your answer sound sincere.",
+                "Mention one concrete thing about the company (a product, location or type of work), not general praise.",
+                "Link your experience to the work done there (machines, parts, assembly).",
+                "Do not criticise your previous workplace; focus on what you want to learn here."
+            ],
+            "words": [
+                {
+                    "ja": "会社《かいしゃ》",
+                    "id": "perusahaan",
+                    "en": "company"
+                },
+                {
+                    "ja": "選《えら》ぶ",
+                    "id": "memilih",
+                    "en": "to choose"
+                },
+                {
+                    "ja": "製品《せいひん》",
+                    "id": "produk",
+                    "en": "product"
+                },
+                {
+                    "ja": "経験《けいけん》",
+                    "id": "pengalaman",
+                    "en": "experience"
+                },
+                {
+                    "ja": "期待《きたい》",
+                    "id": "harapan",
+                    "en": "expectation"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この 会社《かいしゃ》に 興味《きょうみ》を 持《も》った 理由《りゆう》を 教《おし》えてください。",
+                    "id": "Ceritakan alasan Anda tertarik pada perusahaan ini.",
+                    "en": "Please tell me why you are interested in this company."
+                },
+                {
+                    "ja": "うちの 製品《せいひん》を 知《し》っていますか。",
+                    "id": "Apakah Anda tahu produk kami?",
+                    "en": "Do you know our products?"
+                },
+                {
+                    "ja": "どうして この 仕事《しごと》を 選《えら》びましたか。",
+                    "id": "Mengapa Anda memilih pekerjaan ini?",
+                    "en": "Why did you choose this job?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s6-t1",
+                    "who": "partner",
+                    "ja": "どうして この 会社《かいしゃ》を 選《えら》びましたか。",
+                    "speak": "どうして この かいしゃを えらびましたか。",
+                    "id_text": "Mengapa Anda memilih perusahaan ini?",
+                    "en_text": "Why did you choose this company?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s6-t2",
+                    "who": "you",
+                    "ja": "工場《こうじょう》の 仕事《しごと》の 経験《けいけん》が あるからです。",
+                    "speak": "こうじょうの しごとの けいけんが あるからです。",
+                    "id_text": "Karena saya punya pengalaman kerja di pabrik.",
+                    "accept": [
+                        "工場の 仕事の 経験が あるからです。",
+                        "工場の仕事の経験があるからです。"
+                    ],
+                    "en_text": "Because I have factory work experience.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s6-t3",
+                    "who": "partner",
+                    "ja": "この 会社《かいしゃ》の ことを 知《し》って いますか。",
+                    "speak": "この かいしゃの ことを しって いますか。",
+                    "id_text": "Apakah Anda tahu tentang perusahaan ini?",
+                    "en_text": "Do you know about this company?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s6-t4",
+                    "who": "you",
+                    "ja": "はい。車《くるま》の 部品《ぶひん》を 作《つく》って いる 会社《かいしゃ》だと 聞《き》きました。",
+                    "speak": "はい。くるまの ぶひんを つくって いる かいしゃだと ききました。",
+                    "id_text": "Ya. Saya dengar ini perusahaan yang membuat komponen mobil.",
+                    "accept": [
+                        "はい。車の 部品を 作って いる 会社だと 聞きました。",
+                        "はい。車の部品を作っている会社だと聞きました。"
+                    ],
+                    "en_text": "Yes. I heard it's a company that makes car parts.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s6-t5",
+                    "who": "partner",
+                    "ja": "どんな 仕事《しごと》を したいですか。",
+                    "speak": "どんな しごとを したいですか。",
+                    "id_text": "Pekerjaan seperti apa yang ingin Anda lakukan?",
+                    "en_text": "What kind of work do you want to do?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s6-t6",
+                    "who": "you",
+                    "ja": "機械《きかい》を 使《つか》う 仕事《しごと》を したいです。新《あたら》しい ことも 勉強《べんきょう》したいです。",
+                    "speak": "きかいを つかう しごとを したいです。あたらしい ことも べんきょうしたいです。",
+                    "id_text": "Saya ingin pekerjaan yang memakai mesin. Saya juga ingin belajar hal-hal baru.",
+                    "accept": [
+                        "機械を 使う 仕事を したいです。新しい ことも 勉強したいです。",
+                        "機械を使う仕事をしたいです。新しいことも勉強したいです。"
+                    ],
+                    "en_text": "I want to do work using machines. I also want to learn new things.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s6-t7",
+                    "who": "partner",
+                    "ja": "頑張《がんば》って ください。期待《きたい》して います。",
+                    "speak": "がんばって ください。きたいして います。",
+                    "id_text": "Semangat ya. Kami menaruh harapan.",
+                    "en_text": "Do your best. We're counting on you.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s6-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s7",
+            "title_id": "Kelebihan (長所)",
+            "title_en": "Your strengths (長所)",
+            "setting_id": "Pewawancara ingin tahu kelebihanmu.",
+            "setting_en": "The interviewer wants to know your strengths.",
+            "goal_id": "Menyebut kelebihan, lalu memberi bukti nyata singkat, dan menyebut hal yang kamu anggap penting dalam bekerja.",
+            "goal_en": "State a strength, back it with a short real example, and say what you think matters at work.",
+            "patterns": [
+                "長所は 〜ことです",
+                "〜ことが ありません",
+                "〜ことと、〜ことです"
+            ],
+            "tips_id": [
+                "Struktur: kelebihan → bukti nyata → manfaat bagi perusahaan. Pilih kelebihan yang relevan di pabrik: sungguh-sungguh (まじめ), tepat waktu, teliti, tahan banting, mau bekerja sama. Dua kelebihan cukup; jangan menyombongkan diri.",
+                "Kelebihan: kaitkan dengan pekerjaan, misalnya disiplin, rajin, teliti.",
+                "Kekurangan: pilih yang nyata tetapi tidak fatal, lalu tambahkan usaha memperbaikinya (pola: 短所 + でも、〜ています)."
+            ],
+            "tips_en": [
+                "Structure: strength → real proof → benefit to the company. Pick strengths relevant to a factory: diligence (まじめ), punctuality, accuracy, stamina, teamwork. Two strengths are enough; don't boast.",
+                "Strength: connect it to the job, e.g. discipline, diligence, carefulness.",
+                "Weakness: pick a real but not fatal one, then add how you are improving (pattern: weakness + でも、〜ています)."
+            ],
+            "words": [
+                {
+                    "ja": "長所《ちょうしょ》",
+                    "id": "kelebihan",
+                    "en": "strength"
+                },
+                {
+                    "ja": "短所《たんしょ》",
+                    "id": "kekurangan",
+                    "en": "weakness"
+                },
+                {
+                    "ja": "守《まも》る",
+                    "id": "menaati / menjaga",
+                    "en": "to keep / obey"
+                },
+                {
+                    "ja": "気《き》を つける",
+                    "id": "berhati-hati",
+                    "en": "to be careful"
+                },
+                {
+                    "ja": "困《こま》る",
+                    "id": "kesulitan",
+                    "en": "to be in trouble"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ご自分《じぶん》の 性格《せいかく》を 教《おし》えてください。",
+                    "id": "Ceritakan sifat Anda.",
+                    "en": "Tell me about your personality."
+                },
+                {
+                    "ja": "得意《とくい》な ことは 何《なん》ですか。",
+                    "id": "Apa keahlian Anda?",
+                    "en": "What are you good at?"
+                },
+                {
+                    "ja": "苦手《にがて》な ことは 何《なん》ですか。",
+                    "id": "Apa yang kurang Anda kuasai?",
+                    "en": "What are you not good at?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s7-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの 長所《ちょうしょ》を 教《おし》えてください。",
+                    "speak": "ブディさんの ちょうしょを おしえてください。",
+                    "id_text": "Tolong sebutkan kelebihan Anda, Budi.",
+                    "en_text": "Please tell me your strengths, Budi.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s7-t2",
+                    "who": "you",
+                    "ja": "わたしの 長所《ちょうしょ》は まじめな ことです。毎日《まいにち》 同《おな》じ 時間《じかん》に 仕事《しごと》を 始《はじ》めます。",
+                    "speak": "わたしの ちょうしょは まじめな ことです。まいにち おなじ じかんに しごとを はじめます。",
+                    "id_text": "Kelebihan saya adalah sungguh-sungguh. Setiap hari saya mulai kerja pada jam yang sama.",
+                    "accept": [
+                        "わたしの 長所は まじめな ことです。毎日 同じ 時間に 仕事を 始めます。",
+                        "わたしの長所はまじめなことです。毎日同じ時間に仕事を始めます。"
+                    ],
+                    "en_text": "My strength is being serious about my work. I start work at the same time every day.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s7-t3",
+                    "who": "partner",
+                    "ja": "ほかに ありますか。",
+                    "speak": "ほかに ありますか。",
+                    "id_text": "Ada yang lain?",
+                    "en_text": "Anything else?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s7-t4",
+                    "who": "you",
+                    "ja": "はい。体《からだ》が 丈夫《じょうぶ》です。四年間《よねんかん》、会社《かいしゃ》を 休《やす》んだ ことが ありません。",
+                    "speak": "はい。からだが じょうぶです。よねんかん、かいしゃを やすんだ ことが ありません。",
+                    "id_text": "Ya. Badan saya kuat. Selama empat tahun, saya tidak pernah absen dari kerja.",
+                    "accept": [
+                        "はい。体が 丈夫です。四年間、会社を 休んだ ことが ありません。",
+                        "はい。体が丈夫です。四年間、会社を休んだことがありません。"
+                    ],
+                    "en_text": "Yes. I'm physically strong. For four years I never took a day off work.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s7-t5",
+                    "who": "partner",
+                    "ja": "仕事《しごと》で 一番《いちばん》 大切《たいせつ》な ことは 何《なん》ですか。",
+                    "speak": "しごとで いちばん たいせつな ことは なんですか。",
+                    "id_text": "Menurut Anda, apa yang paling penting dalam bekerja?",
+                    "en_text": "What do you think is the most important thing at work?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s7-t6",
+                    "who": "you",
+                    "ja": "時間《じかん》を 守《まも》る ことと、安全《あんぜん》に 気《き》を つける ことです。",
+                    "speak": "じかんを まもる ことと、あんぜんに きを つける ことです。",
+                    "id_text": "Menepati waktu dan memperhatikan keselamatan.",
+                    "accept": [
+                        "時間を 守る ことと、安全に 気を つける ことです。",
+                        "時間を守ることと、安全に気をつけることです。"
+                    ],
+                    "en_text": "Keeping to time and paying attention to safety.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s7-t7",
+                    "who": "partner",
+                    "ja": "大切《たいせつ》な ことですね。いいと 思《おも》います。",
+                    "speak": "たいせつな ことですね。いいと おもいます。",
+                    "id_text": "Itu hal yang penting. Saya rasa itu bagus.",
+                    "en_text": "That's important. I think that's good.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s7-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s8",
+            "title_id": "Kekurangan (短所)",
+            "title_en": "Your weaknesses (短所)",
+            "setting_id": "Pertanyaan yang sering membuat gugup: apa kekuranganmu?",
+            "setting_en": "A question that often makes people nervous: what are your weaknesses?",
+            "goal_id": "Menyebut kekurangan yang jujur dan tidak fatal, lalu langsung menyebut usaha memperbaikinya (でも、〜ています).",
+            "goal_en": "Name an honest, non-fatal weakness, then immediately describe how you are improving it (でも、〜ています).",
+            "patterns": [
+                "短所は 〜ことです",
+                "でも、〜て います",
+                "〜の 勉強は どう して いますか"
+            ],
+            "tips_id": [
+                "Jangan bilang tidak punya kekurangan. Pilih yang nyata tapi tidak fatal (bahasa Jepang belum lancar, mudah gugup) dan SELALU lanjutkan dengan usaha memperbaikinya. Hindari: malas, sering terlambat, tidak suka bekerja sama.",
+                "Kekurangan: pilih yang nyata tetapi tidak fatal, lalu tambahkan usaha memperbaikinya (pola: 短所 + でも、〜ています).",
+                "Jangan menjawab \"tidak ada kekurangan\" dan jangan menyebut hal fatal seperti malas atau sering terlambat.",
+                "Contoh kekurangan yang aman: bahasa Jepang belum lancar, terlalu khawatir, gugup di depan orang."
+            ],
+            "tips_en": [
+                "Don't say you have none. Pick a real but non-fatal one (Japanese not fluent yet, easily nervous) and ALWAYS follow with what you do to improve. Avoid: lazy, often late, dislikes teamwork.",
+                "Weakness: pick a real but not fatal one, then add how you are improving (pattern: weakness + でも、〜ています).",
+                "Do not say \"I have no weaknesses\" and do not name fatal ones such as laziness or being late.",
+                "Safe weaknesses: Japanese not fluent yet, worrying too much, being nervous in front of people."
+            ],
+            "words": [
+                {
+                    "ja": "長所《ちょうしょ》",
+                    "id": "kelebihan",
+                    "en": "strength"
+                },
+                {
+                    "ja": "短所《たんしょ》",
+                    "id": "kekurangan",
+                    "en": "weakness"
+                },
+                {
+                    "ja": "守《まも》る",
+                    "id": "menaati / menjaga",
+                    "en": "to keep / obey"
+                },
+                {
+                    "ja": "気《き》を つける",
+                    "id": "berhati-hati",
+                    "en": "to be careful"
+                },
+                {
+                    "ja": "困《こま》る",
+                    "id": "kesulitan",
+                    "en": "to be in trouble"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ご自分《じぶん》の 性格《せいかく》を 教《おし》えてください。",
+                    "id": "Ceritakan sifat Anda.",
+                    "en": "Tell me about your personality."
+                },
+                {
+                    "ja": "得意《とくい》な ことは 何《なん》ですか。",
+                    "id": "Apa keahlian Anda?",
+                    "en": "What are you good at?"
+                },
+                {
+                    "ja": "苦手《にがて》な ことは 何《なん》ですか。",
+                    "id": "Apa yang kurang Anda kuasai?",
+                    "en": "What are you not good at?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s8-t1",
+                    "who": "partner",
+                    "ja": "短所《たんしょ》は 何《なん》ですか。",
+                    "speak": "たんしょは なんですか。",
+                    "id_text": "Apa kekurangan Anda?",
+                    "en_text": "What are your weaknesses?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s8-t2",
+                    "who": "you",
+                    "ja": "わたしの 短所《たんしょ》は、日本語《にほんご》が まだ 上手《じょうず》じゃ ない ことです。",
+                    "speak": "わたしの たんしょは、にほんごが まだ じょうずじゃ ない ことです。",
+                    "id_text": "Kekurangan saya adalah bahasa Jepang saya belum bagus.",
+                    "accept": [
+                        "わたしの 短所は、日本語が まだ 上手じゃ ない ことです。",
+                        "わたしの短所は、日本語がまだ上手じゃないことです。"
+                    ],
+                    "en_text": "My weakness is that my Japanese is not good yet.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s8-t3",
+                    "who": "partner",
+                    "ja": "日本語《にほんご》の 勉強《べんきょう》は どう して いますか。",
+                    "speak": "にほんごの べんきょうは どう して いますか。",
+                    "id_text": "Bagaimana Anda belajar bahasa Jepang?",
+                    "en_text": "How are you studying Japanese?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s8-t4",
+                    "who": "you",
+                    "ja": "毎日《まいにち》 一時間《いちじかん》 勉強《べんきょう》して います。仕事《しごと》の 言葉《ことば》も 覚《おぼ》えて います。",
+                    "speak": "まいにち いちじかん べんきょうして います。しごとの ことばも おぼえて います。",
+                    "id_text": "Setiap hari saya belajar satu jam. Saya juga menghafal kosakata pekerjaan.",
+                    "accept": [
+                        "毎日 一時間 勉強して います。仕事の 言葉も 覚えて います。",
+                        "毎日一時間勉強しています。仕事の言葉も覚えています。"
+                    ],
+                    "en_text": "I study for one hour every day. I'm also memorizing work vocabulary.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s8-t5",
+                    "who": "partner",
+                    "ja": "ほかにも ありますか。",
+                    "speak": "ほかにも ありますか。",
+                    "id_text": "Apakah ada yang lain?",
+                    "en_text": "Is there anything else?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s8-t6",
+                    "who": "you",
+                    "ja": "少《すこ》し 緊張《きんちょう》します。でも、先《さき》に よく 準備《じゅんび》を します。",
+                    "speak": "すこし きんちょうします。でも、さきに よく じゅんびを します。",
+                    "id_text": "Saya agak mudah gugup. Tapi saya mempersiapkan diri dengan baik lebih dulu.",
+                    "accept": [
+                        "少し 緊張します。でも、先に よく 準備を します。",
+                        "少し緊張します。でも、先によく準備をします。"
+                    ],
+                    "en_text": "I get a little nervous. But I prepare well in advance.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s8-t7",
+                    "who": "partner",
+                    "ja": "正直《しょうじき》に 答《こた》えて くれて、ありがとうございます。",
+                    "speak": "しょうじきに こたえて くれて、ありがとうございます。",
+                    "id_text": "Terima kasih sudah menjawab dengan jujur.",
+                    "en_text": "Thank you for answering honestly.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s8-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s9",
+            "title_id": "Belajar bahasa Jepang",
+            "title_en": "Studying Japanese",
+            "setting_id": "Pewawancara menanyakan kemampuan dan cara belajar bahasa Jepang-mu.",
+            "setting_en": "The interviewer asks about your Japanese ability and how you study.",
+            "goal_id": "Menjelaskan lama belajar, cara belajar, dan hal yang sudah bisa dengan jujur (〜ことが できます).",
+            "goal_en": "Explain how long you've studied, how you study, and what you can do honestly (〜ことが できます).",
+            "patterns": [
+                "〜ぐらい 勉強して います",
+                "どうやって 〜",
+                "〜ことが できます"
+            ],
+            "tips_id": [
+                "Jangan melebih-lebihkan: pewawancara bisa langsung mengujimu. Sebut lama belajar, cara belajar yang konkret (aplikasi, buku, latihan bicara), dan hal yang sudah bisa. Tunjukkan semangat belajar terus di Jepang.",
+                "Tunjukkan bahwa kamu sudah belajar dan terus belajar: sebut lama belajar dan kebiasaan harian.",
+                "Kekhawatiran: sebut hal kecil yang wajar (dingin, makanan), lalu tutup dengan tekad."
+            ],
+            "tips_en": [
+                "Don't exaggerate: the interviewer can test you on the spot. Mention how long, concrete methods (app, books, speaking practice) and what you can do. Show you'll keep studying in Japan.",
+                "Show that you have studied and keep studying: give the length and a daily habit.",
+                "Worries: mention a small, natural one (cold, food), then finish with determination."
+            ],
+            "words": [
+                {
+                    "ja": "寮《りょう》",
+                    "id": "asrama",
+                    "en": "dormitory"
+                },
+                {
+                    "ja": "一緒《いっしょ》に",
+                    "id": "bersama-sama",
+                    "en": "together"
+                },
+                {
+                    "ja": "住《す》む",
+                    "id": "tinggal",
+                    "en": "to live"
+                },
+                {
+                    "ja": "仲良《なかよ》く",
+                    "id": "akur / rukun",
+                    "en": "on good terms"
+                },
+                {
+                    "ja": "心配《しんぱい》",
+                    "id": "khawatir",
+                    "en": "worry"
+                },
+                {
+                    "ja": "練習《れんしゅう》",
+                    "id": "latihan",
+                    "en": "practice"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "日本語《にほんご》の 勉強《べんきょう》は どうやって していますか。",
+                    "id": "Bagaimana cara Anda belajar bahasa Jepang?",
+                    "en": "How do you study Japanese?"
+                },
+                {
+                    "ja": "一人《ひとり》で 生活《せいかつ》した ことが ありますか。",
+                    "id": "Pernahkah Anda hidup sendiri?",
+                    "en": "Have you ever lived on your own?"
+                },
+                {
+                    "ja": "日本《にほん》の 食《た》べ物《もの》は 食《た》べられますか。",
+                    "id": "Apakah Anda bisa makan makanan Jepang?",
+                    "en": "Can you eat Japanese food?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s9-t1",
+                    "who": "partner",
+                    "ja": "日本語《にほんご》は どのぐらい 勉強《べんきょう》しましたか。",
+                    "speak": "にほんごは どのぐらい べんきょうしましたか。",
+                    "id_text": "Sudah berapa lama Anda belajar bahasa Jepang?",
+                    "en_text": "How long have you studied Japanese?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s9-t2",
+                    "who": "you",
+                    "ja": "一年《いちねん》ぐらい 勉強《べんきょう》して います。",
+                    "speak": "いちねんぐらい べんきょうして います。",
+                    "id_text": "Sekitar satu tahun.",
+                    "accept": [
+                        "一年ぐらい 勉強して います。",
+                        "一年ぐらい勉強しています。"
+                    ],
+                    "en_text": "About one year.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s9-t3",
+                    "who": "partner",
+                    "ja": "どうやって 勉強《べんきょう》して いますか。",
+                    "speak": "どうやって べんきょうして いますか。",
+                    "id_text": "Bagaimana cara Anda belajar?",
+                    "en_text": "How do you study?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s9-t4",
+                    "who": "you",
+                    "ja": "アプリと 本《ほん》で 勉強《べんきょう》して います。毎晩《まいばん》、大《おお》きい 声《こえ》で 練習《れんしゅう》して います。",
+                    "speak": "アプリと ほんで べんきょうして います。まいばん、おおきい こえで れんしゅうして います。",
+                    "id_text": "Dengan aplikasi dan buku. Setiap malam saya berlatih dengan suara keras.",
+                    "accept": [
+                        "アプリと 本で 勉強して います。毎晩、大きい 声で 練習して います。",
+                        "アプリと本で勉強しています。毎晩、大きい声で練習しています。"
+                    ],
+                    "en_text": "With an app and books. Every night I practice out loud.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s9-t5",
+                    "who": "partner",
+                    "ja": "今《いま》、日本語《にほんご》で 何《なに》が できますか。",
+                    "speak": "いま、にほんごで なにが できますか。",
+                    "id_text": "Sekarang, apa yang bisa Anda lakukan dalam bahasa Jepang?",
+                    "en_text": "What can you do in Japanese now?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s9-t6",
+                    "who": "you",
+                    "ja": "自己紹介《じこしょうかい》と、簡単《かんたん》な 会話《かいわ》が できます。仕事《しごと》の 指示《しじ》も 少《すこ》し 分《わ》かります。",
+                    "speak": "じこしょうかいと、かんたんな かいわが できます。しごとの しじも すこし わかります。",
+                    "id_text": "Saya bisa memperkenalkan diri dan percakapan sederhana. Saya juga sedikit paham instruksi kerja.",
+                    "accept": [
+                        "自己紹介と、簡単な 会話が できます。仕事の 指示も 少し 分かります。",
+                        "自己紹介と、簡単な会話ができます。仕事の指示も少し分かります。"
+                    ],
+                    "en_text": "I can introduce myself and have simple conversations. I also understand a little of work instructions.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s9-t7",
+                    "who": "partner",
+                    "ja": "いいですね。日本《にほん》でも 続《つづ》けて ください。",
+                    "speak": "いいですね。にほんでも つづけて ください。",
+                    "id_text": "Bagus. Teruskan juga di Jepang.",
+                    "en_text": "Good. Please keep it up in Japan too.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s9-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s10",
+            "title_id": "Kesehatan & stamina",
+            "title_en": "Health and stamina",
+            "setting_id": "Pewawancara memastikan kamu sehat dan kuat untuk pekerjaan pabrik.",
+            "setting_en": "The interviewer makes sure you are healthy and strong enough for factory work.",
+            "goal_id": "Menjawab soal kesehatan, berdiri lama, dan mengangkat barang berat dengan yakin (大丈夫です／〜ことが できます).",
+            "goal_en": "Answer about health, standing for long hours and lifting heavy things with confidence (大丈夫です / 〜ことが できます).",
+            "patterns": [
+                "元気です",
+                "大丈夫です",
+                "〜ことが できます"
+            ],
+            "tips_id": [
+                "Jawab jelas dan percaya diri: pabrik membutuhkan stamina. Jika punya kondisi kesehatan tertentu, bicarakan jujur dengan lembaga pengirim/perusahaan sebelum wawancara; jangan disembunyikan. Sebut rutinitas yang menjaga staminamu (olahraga, tidur cukup).",
+                "Jawab jujur. Jangan mengaku sanggup bila memang tidak; masalah akan muncul setelah bekerja.",
+                "Bila ada kondisi kesehatan yang relevan, jelaskan singkat dan tenang, dan sebutkan bahwa sudah ditangani. Ikuti arahan lembaga/penyalur resmi."
+            ],
+            "tips_en": [
+                "Answer clearly and confidently: factories need stamina. If you have a health condition, discuss it honestly with your sending organization/company before the interview; don't hide it. Mention routines that keep you fit (exercise, enough sleep).",
+                "Be honest. Do not claim you can do something you cannot; problems will appear once you start work.",
+                "If a relevant health condition exists, explain it briefly and calmly and say it is under control. Follow your official sending agency’s guidance."
+            ],
+            "words": [
+                {
+                    "ja": "健康《けんこう》",
+                    "id": "sehat / kesehatan",
+                    "en": "healthy / health"
+                },
+                {
+                    "ja": "体力《たいりょく》",
+                    "id": "stamina / kekuatan fisik",
+                    "en": "physical strength"
+                },
+                {
+                    "ja": "自信《じしん》",
+                    "id": "percaya diri",
+                    "en": "confidence"
+                },
+                {
+                    "ja": "残業《ざんぎょう》",
+                    "id": "lembur",
+                    "en": "overtime"
+                },
+                {
+                    "ja": "夜勤《やきん》",
+                    "id": "shift malam",
+                    "en": "night shift"
+                },
+                {
+                    "ja": "立《た》ち仕事《しごと》",
+                    "id": "pekerjaan berdiri",
+                    "en": "standing work"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "病気《びょうき》や けがは ありませんか。",
+                    "id": "Apakah Anda sedang sakit atau cedera?",
+                    "en": "Do you have any illness or injury?"
+                },
+                {
+                    "ja": "休《やす》みの 日《ひ》も 働《はたら》く ことが ありますが、いいですか。",
+                    "id": "Kadang bekerja di hari libur, tidak apa-apa?",
+                    "en": "You may sometimes work on days off. Is that okay?"
+                },
+                {
+                    "ja": "暑《あつ》い 場所《ばしょ》や 寒《さむ》い 場所《ばしょ》で 働《はたら》けますか。",
+                    "id": "Bisakah bekerja di tempat panas atau dingin?",
+                    "en": "Can you work in hot or cold places?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s10-t1",
+                    "who": "partner",
+                    "ja": "体《からだ》は 元気《げんき》ですか。",
+                    "speak": "からだは げんきですか。",
+                    "id_text": "Apakah badan Anda sehat?",
+                    "en_text": "Are you in good health?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s10-t2",
+                    "who": "you",
+                    "ja": "はい、元気《げんき》です。毎朝《まいあさ》 運動《うんどう》して います。",
+                    "speak": "はい、げんきです。まいあさ うんどうして います。",
+                    "id_text": "Ya, sehat. Setiap pagi saya berolahraga.",
+                    "accept": [
+                        "はい、元気です。毎朝 運動して います。",
+                        "はい、元気です。毎朝運動しています。"
+                    ],
+                    "en_text": "Yes, I'm healthy. I exercise every morning.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s10-t3",
+                    "who": "partner",
+                    "ja": "立《た》ち仕事《しごと》が 多《おお》いですが、大丈夫《だいじょうぶ》ですか。",
+                    "speak": "たちしごとが おおいですが、だいじょうぶですか。",
+                    "id_text": "Banyak pekerjaan sambil berdiri, apakah tidak masalah?",
+                    "en_text": "There's a lot of standing work. Is that okay?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s10-t4",
+                    "who": "you",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。前《まえ》の 工場《こうじょう》でも、一日《いちにち》 八時間《はちじかん》 立《た》って 働《はたら》いて いました。",
+                    "speak": "はい、だいじょうぶです。まえの こうじょうでも、いちにち はちじかん たって はたらいて いました。",
+                    "id_text": "Ya, tidak masalah. Di pabrik sebelumnya pun saya bekerja berdiri delapan jam sehari.",
+                    "accept": [
+                        "はい、大丈夫です。前の 工場でも、一日 八時間 立って 働いて いました。",
+                        "はい、大丈夫です。前の工場でも、一日八時間立って働いていました。"
+                    ],
+                    "en_text": "Yes, that's fine. At my previous factory I also worked standing eight hours a day.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s10-t5",
+                    "who": "partner",
+                    "ja": "重《おも》い 物《もの》を 持《も》つ ことが できますか。",
+                    "speak": "おもい ものを もつ ことが できますか。",
+                    "id_text": "Apakah Anda bisa mengangkat barang berat?",
+                    "en_text": "Can you carry heavy things?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s10-t6",
+                    "who": "you",
+                    "ja": "はい、できます。前《まえ》の 工場《こうじょう》で、重《おも》い 荷物《にもつ》を 毎日《まいにち》 運《はこ》んで いました。",
+                    "speak": "はい、できます。まえの こうじょうで、おもい にもつを まいにち はこんで いました。",
+                    "id_text": "Ya, bisa. Di pabrik sebelumnya saya mengangkut barang berat setiap hari.",
+                    "accept": [
+                        "はい、できます。前の 工場で、重い 荷物を 毎日 運んで いました。",
+                        "はい、できます。前の工場で、重い荷物を毎日運んでいました。"
+                    ],
+                    "en_text": "Yes, I can. At my previous factory I carried heavy loads every day.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s10-t7",
+                    "who": "partner",
+                    "ja": "体力《たいりょく》が ありますね。",
+                    "speak": "たいりょくが ありますね。",
+                    "id_text": "Anda punya stamina yang bagus.",
+                    "en_text": "You have good stamina.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s10-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s11",
+            "title_id": "Lembur, shift malam, hari libur",
+            "title_en": "Overtime, night shifts, days off",
+            "setting_id": "Pewawancara memeriksa kesediaanmu soal lembur, shift malam, dan bekerja di hari libur.",
+            "setting_en": "The interviewer checks your willingness to work overtime, night shifts and on days off.",
+            "goal_id": "Menyatakan kesediaan dengan jelas dan sopan (大丈夫です／〜ときは〜／〜に 合わせます).",
+            "goal_en": "State your willingness clearly and politely (大丈夫です / 〜ときは〜 / 〜に 合わせます).",
+            "patterns": [
+                "残業は 大丈夫です",
+                "〜ときは、〜",
+                "〜ても、大丈夫です"
+            ],
+            "tips_id": [
+                "Jawab 'bisa' jika memang bisa. Jika ada batasan nyata, sebut dengan sopan dan jelas. Jangan langsung menanyakan gaji lembur; tanyakan nanti di sesi tanya jawab atau lewat lembaga pengirim.",
+                "Setelah はい、できます, tambahkan satu kalimat yang menunjukkan persiapan (istirahat cukup, olahraga).",
+                "Pertanyaan tentang jam kerja panjang: tunjukkan kesiapan tetapi tetap wajar."
+            ],
+            "tips_en": [
+                "Answer 'yes' if you truly can. If you have a real limit, state it politely and clearly. Don't ask about overtime pay right away; ask during the Q&A or through your sending organization.",
+                "After はい、できます, add one sentence showing preparation (rest, exercise).",
+                "About long hours: show readiness but stay realistic."
+            ],
+            "words": [
+                {
+                    "ja": "健康《けんこう》",
+                    "id": "sehat / kesehatan",
+                    "en": "healthy / health"
+                },
+                {
+                    "ja": "体力《たいりょく》",
+                    "id": "stamina / kekuatan fisik",
+                    "en": "physical strength"
+                },
+                {
+                    "ja": "自信《じしん》",
+                    "id": "percaya diri",
+                    "en": "confidence"
+                },
+                {
+                    "ja": "残業《ざんぎょう》",
+                    "id": "lembur",
+                    "en": "overtime"
+                },
+                {
+                    "ja": "夜勤《やきん》",
+                    "id": "shift malam",
+                    "en": "night shift"
+                },
+                {
+                    "ja": "立《た》ち仕事《しごと》",
+                    "id": "pekerjaan berdiri",
+                    "en": "standing work"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "病気《びょうき》や けがは ありませんか。",
+                    "id": "Apakah Anda sedang sakit atau cedera?",
+                    "en": "Do you have any illness or injury?"
+                },
+                {
+                    "ja": "休《やす》みの 日《ひ》も 働《はたら》く ことが ありますが、いいですか。",
+                    "id": "Kadang bekerja di hari libur, tidak apa-apa?",
+                    "en": "You may sometimes work on days off. Is that okay?"
+                },
+                {
+                    "ja": "暑《あつ》い 場所《ばしょ》や 寒《さむ》い 場所《ばしょ》で 働《はたら》けますか。",
+                    "id": "Bisakah bekerja di tempat panas atau dingin?",
+                    "en": "Can you work in hot or cold places?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s11-t1",
+                    "who": "partner",
+                    "ja": "残業《ざんぎょう》を する ことが ありますが、大丈夫《だいじょうぶ》ですか。",
+                    "speak": "ざんぎょうを する ことが ありますが、だいじょうぶですか。",
+                    "id_text": "Kadang ada lembur, apakah tidak masalah?",
+                    "en_text": "There is sometimes overtime. Is that okay?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s11-t2",
+                    "who": "you",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。必要《ひつよう》な ときは、残業《ざんぎょう》を します。",
+                    "speak": "はい、だいじょうぶです。ひつような ときは、ざんぎょうを します。",
+                    "id_text": "Ya, tidak masalah. Bila diperlukan, saya lembur.",
+                    "accept": [
+                        "はい、大丈夫です。必要な ときは、残業を します。",
+                        "はい、大丈夫です。必要なときは、残業をします。"
+                    ],
+                    "en_text": "Yes, that's fine. When necessary, I'll work overtime.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s11-t3",
+                    "who": "partner",
+                    "ja": "夜勤《やきん》も ありますが、できますか。",
+                    "speak": "やきんも ありますが、できますか。",
+                    "id_text": "Ada juga shift malam, apakah bisa?",
+                    "en_text": "There are night shifts too. Can you do them?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s11-t4",
+                    "who": "you",
+                    "ja": "はい、できます。昼《ひる》に しっかり 寝《ね》て、体《からだ》に 気《き》を つけます。",
+                    "speak": "はい、できます。ひるに しっかり ねて、からだに きを つけます。",
+                    "id_text": "Ya, bisa. Saya tidur cukup di siang hari dan menjaga kesehatan.",
+                    "accept": [
+                        "はい、できます。昼に しっかり 寝て、体に 気を つけます。",
+                        "はい、できます。昼にしっかり寝て、体に気をつけます。"
+                    ],
+                    "en_text": "Yes, I can. I'll sleep well during the day and take care of my health.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s11-t5",
+                    "who": "partner",
+                    "ja": "休《やす》みの 日《ひ》に 仕事《しごと》が あっても、大丈夫《だいじょうぶ》ですか。",
+                    "speak": "やすみの ひに しごとが あっても、だいじょうぶですか。",
+                    "id_text": "Kalau ada pekerjaan di hari libur, apakah tidak masalah?",
+                    "en_text": "Even if there is work on a day off, is that okay?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s11-t6",
+                    "who": "you",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。会社《かいしゃ》の 予定《よてい》に 合《あ》わせます。",
+                    "speak": "はい、だいじょうぶです。かいしゃの よていに あわせます。",
+                    "id_text": "Ya, tidak masalah. Saya menyesuaikan dengan jadwal perusahaan.",
+                    "accept": [
+                        "はい、大丈夫です。会社の 予定に 合わせます。",
+                        "はい、大丈夫です。会社の予定に合わせます。"
+                    ],
+                    "en_text": "Yes, that's fine. I'll adjust to the company's schedule.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s11-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。助《たす》かります。",
+                    "speak": "ありがとうございます。たすかります。",
+                    "id_text": "Terima kasih. Itu sangat membantu.",
+                    "en_text": "Thank you. That helps.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s11-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s12",
+            "title_id": "Hidup di Jepang & asrama",
+            "title_en": "Life in Japan and the dormitory",
+            "setting_id": "Pewawancara menanyakan kesiapanmu tinggal di asrama dan hidup di Jepang.",
+            "setting_en": "The interviewer asks if you're ready to live in the dormitory and in Japan.",
+            "goal_id": "Menyatakan siap tinggal bersama orang lain, mematuhi aturan, dan menyebut kekhawatiran beserta solusinya.",
+            "goal_en": "Say you're ready to live with others, follow the rules, and state a worry together with your solution.",
+            "patterns": [
+                "寮に 住みます",
+                "〜ことが できます",
+                "心配な ことは 〜です"
+            ],
+            "tips_id": [
+                "Tunjukkan kamu bisa hidup rukun: patuhi aturan (sampah dipilah, tenang di malam hari, jaga kebersihan). Jika menyebut kekhawatiran, pilih yang wajar (musim dingin, bahasa) dan langsung sebut solusinya.",
+                "Hidup di asrama: tekankan aturan, kebersihan, dan kerja sama.",
+                "Kekhawatiran: sebut hal kecil yang wajar (dingin, makanan), lalu tutup dengan tekad.",
+                "Hindari menjawab \"tidak ada kekhawatiran sama sekali\" atau mengeluh panjang."
+            ],
+            "tips_en": [
+                "Show you can live harmoniously: follow the rules (sorting garbage, quiet at night, keeping things clean). If you mention a worry, pick a reasonable one (winter, language) and give your solution right away.",
+                "Dormitory life: stress rules, cleanliness and cooperation.",
+                "Worries: mention a small, natural one (cold, food), then finish with determination.",
+                "Avoid \"I have no worries at all\" or long complaints."
+            ],
+            "words": [
+                {
+                    "ja": "寮《りょう》",
+                    "id": "asrama",
+                    "en": "dormitory"
+                },
+                {
+                    "ja": "一緒《いっしょ》に",
+                    "id": "bersama-sama",
+                    "en": "together"
+                },
+                {
+                    "ja": "住《す》む",
+                    "id": "tinggal",
+                    "en": "to live"
+                },
+                {
+                    "ja": "仲良《なかよ》く",
+                    "id": "akur / rukun",
+                    "en": "on good terms"
+                },
+                {
+                    "ja": "心配《しんぱい》",
+                    "id": "khawatir",
+                    "en": "worry"
+                },
+                {
+                    "ja": "練習《れんしゅう》",
+                    "id": "latihan",
+                    "en": "practice"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "日本語《にほんご》の 勉強《べんきょう》は どうやって していますか。",
+                    "id": "Bagaimana cara Anda belajar bahasa Jepang?",
+                    "en": "How do you study Japanese?"
+                },
+                {
+                    "ja": "一人《ひとり》で 生活《せいかつ》した ことが ありますか。",
+                    "id": "Pernahkah Anda hidup sendiri?",
+                    "en": "Have you ever lived on your own?"
+                },
+                {
+                    "ja": "日本《にほん》の 食《た》べ物《もの》は 食《た》べられますか。",
+                    "id": "Apakah Anda bisa makan makanan Jepang?",
+                    "en": "Can you eat Japanese food?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s12-t1",
+                    "who": "partner",
+                    "ja": "寮《りょう》では 他《ほか》の 人《ひと》と いっしょに 住《す》みます。大丈夫《だいじょうぶ》ですか。",
+                    "speak": "りょうでは ほかの ひとと いっしょに すみます。だいじょうぶですか。",
+                    "id_text": "Di asrama Anda tinggal bersama orang lain. Apakah tidak masalah?",
+                    "en_text": "In the dormitory you'll live with other people. Is that okay?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s12-t2",
+                    "who": "you",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。みんなで 仲良《なかよ》く 住《す》みたいです。",
+                    "speak": "はい、だいじょうぶです。みんなで なかよく すみたいです。",
+                    "id_text": "Ya, tidak masalah. Saya ingin tinggal dengan akrab bersama semua orang.",
+                    "accept": [
+                        "はい、大丈夫です。みんなで 仲良く 住みたいです。",
+                        "はい、大丈夫です。みんなで仲良く住みたいです。"
+                    ],
+                    "en_text": "Yes, that's fine. I want to live together with everyone on good terms.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s12-t3",
+                    "who": "partner",
+                    "ja": "寮《りょう》には ルールが あります。守《まも》る ことが できますか。",
+                    "speak": "りょうには ルールが あります。まもる ことが できますか。",
+                    "id_text": "Asrama punya aturan. Apakah Anda bisa mematuhinya?",
+                    "en_text": "The dormitory has rules. Can you follow them?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s12-t4",
+                    "who": "you",
+                    "ja": "はい、守《まも》る ことが できます。ゴミも 分《わ》けて 捨《す》てます。",
+                    "speak": "はい、まもる ことが できます。ゴミも わけて すてます。",
+                    "id_text": "Ya, bisa. Sampah pun saya pilah lalu buang.",
+                    "accept": [
+                        "はい、守る ことが できます。ゴミも 分けて 捨てます。",
+                        "はい、守ることができます。ゴミも分けて捨てます。"
+                    ],
+                    "en_text": "Yes, I can. I'll also sort and throw away the garbage.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s12-t5",
+                    "who": "partner",
+                    "ja": "日本《にほん》の 生活《せいかつ》で 心配《しんぱい》な ことは ありますか。",
+                    "speak": "にほんの せいかつで しんぱいな ことは ありますか。",
+                    "id_text": "Apakah ada yang Anda khawatirkan tentang hidup di Jepang?",
+                    "en_text": "Is there anything you're worried about in life in Japan?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s12-t6",
+                    "who": "you",
+                    "ja": "冬《ふゆ》の 寒《さむ》さが 少《すこ》し 心配《しんぱい》です。でも、暖《あたた》かい 服《ふく》を 準備《じゅんび》します。",
+                    "speak": "ふゆの さむさが すこし しんぱいです。でも、あたたかい ふくを じゅんびします。",
+                    "id_text": "Saya sedikit khawatir dinginnya musim dingin. Tapi saya akan menyiapkan pakaian hangat.",
+                    "accept": [
+                        "冬の 寒さが 少し 心配です。でも、暖かい 服を 準備します。",
+                        "冬の寒さが少し心配です。でも、暖かい服を準備します。"
+                    ],
+                    "en_text": "I'm a little worried about the cold in winter. But I'll prepare warm clothes.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s12-t7",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》ですよ。みんな 最初《さいしょ》は 同《おな》じです。",
+                    "speak": "だいじょうぶですよ。みんな さいしょは おなじです。",
+                    "id_text": "Tidak apa-apa. Semua orang di awal sama saja.",
+                    "en_text": "It's fine. Everyone is the same at first.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s12-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s13",
+            "title_id": "Rencana masa depan",
+            "title_en": "Future goals",
+            "setting_id": "Pewawancara bertanya rencana masa depanmu.",
+            "setting_en": "The interviewer asks about your plans for the future.",
+            "goal_id": "Menyebut lama bekerja, hal yang ingin dipelajari, dan rencana setelah pulang ke Indonesia.",
+            "goal_en": "State how long you want to work, what you want to learn, and your plans after going home.",
+            "patterns": [
+                "〜年 働きたいです",
+                "〜たいです",
+                "帰ってから、〜"
+            ],
+            "tips_id": [
+                "Pewawancara mencari orang yang bertahan dan berkembang. Sebut masa kerja yang realistis (sesuai kontrak), keterampilan yang ingin dikuasai, dan rencana setelah pulang. Hindari terdengar hanya ingin cepat kaya atau cepat pindah kerja.",
+                "Lama bekerja harus sesuai kontrak/visa dan konsisten dengan dokumenmu.",
+                "Gaji: boleh jujur menyebut kirim uang ke keluarga dan menabung. Hindari kesan hanya mengejar uang.",
+                "Rencana setelah pulang: kaitkan dengan keterampilan yang dipelajari di Jepang.",
+                "Impian harus realistis dan spesifik; kalimat pendek lebih meyakinkan."
+            ],
+            "tips_en": [
+                "Interviewers look for people who stay and grow. Give a realistic duration (matching the contract), skills you want to master, and plans after returning. Avoid sounding like you only want quick money or to switch jobs soon.",
+                "The length you state must match your contract/visa and your documents.",
+                "Salary: it is fine to say you will send money to family and save. Avoid sounding as if money is all that matters.",
+                "Plans after returning: link them to the skills you learn in Japan.",
+                "Dreams should be realistic and specific; short sentences are more convincing."
+            ],
+            "words": [
+                {
+                    "ja": "将来《しょうらい》",
+                    "id": "masa depan",
+                    "en": "future"
+                },
+                {
+                    "ja": "給料《きゅうりょう》",
+                    "id": "gaji",
+                    "en": "salary"
+                },
+                {
+                    "ja": "貯金《ちょきん》",
+                    "id": "tabungan / menabung",
+                    "en": "savings / to save"
+                },
+                {
+                    "ja": "半分《はんぶん》",
+                    "id": "setengah",
+                    "en": "half"
+                },
+                {
+                    "ja": "残《のこ》り",
+                    "id": "sisa",
+                    "en": "the rest"
+                },
+                {
+                    "ja": "夢《ゆめ》",
+                    "id": "impian",
+                    "en": "dream"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "日本《にほん》の 後《あと》は 何《なに》を したいですか。",
+                    "id": "Setelah dari Jepang, apa yang ingin Anda lakukan?",
+                    "en": "What do you want to do after Japan?"
+                },
+                {
+                    "ja": "もっと 長《なが》く 日本《にほん》で 働《はたら》きたいですか。",
+                    "id": "Apakah ingin bekerja lebih lama di Jepang?",
+                    "en": "Do you want to work in Japan longer?"
+                },
+                {
+                    "ja": "お金《かね》の 使《つか》い方《かた》に ついて 教《おし》えてください。",
+                    "id": "Ceritakan bagaimana Anda akan menggunakan uang.",
+                    "en": "Tell me how you will use your money."
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s13-t1",
+                    "who": "partner",
+                    "ja": "日本《にほん》で 何年《なんねん》 働《はたら》きたいですか。",
+                    "speak": "にほんで なんねん はたらきたいですか。",
+                    "id_text": "Berapa tahun Anda ingin bekerja di Jepang?",
+                    "en_text": "How many years do you want to work in Japan?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s13-t2",
+                    "who": "you",
+                    "ja": "五年《ごねん》 働《はたら》きたいです。長《なが》く 働《はたら》いて、技術《ぎじゅつ》を 覚《おぼ》えたいです。",
+                    "speak": "ごねん はたらきたいです。ながく はたらいて、ぎじゅつを おぼえたいです。",
+                    "id_text": "Saya ingin bekerja lima tahun. Saya ingin bekerja lama dan menguasai keterampilan.",
+                    "accept": [
+                        "五年 働きたいです。長く 働いて、技術を 覚えたいです。",
+                        "五年働きたいです。長く働いて、技術を覚えたいです。"
+                    ],
+                    "en_text": "I want to work for five years. I want to work for a long time and learn skills.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s13-t3",
+                    "who": "partner",
+                    "ja": "日本《にほん》で 何《なに》を 勉強《べんきょう》したいですか。",
+                    "speak": "にほんで なにを べんきょうしたいですか。",
+                    "id_text": "Apa yang ingin Anda pelajari di Jepang?",
+                    "en_text": "What do you want to learn in Japan?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s13-t4",
+                    "who": "you",
+                    "ja": "機械《きかい》の 使《つか》い方《かた》と、安全《あんぜん》な 仕事《しごと》の 仕方《しかた》を 勉強《べんきょう》したいです。",
+                    "speak": "きかいの つかいかたと、あんぜんな しごとの しかたを べんきょうしたいです。",
+                    "id_text": "Saya ingin belajar cara memakai mesin dan cara bekerja yang aman.",
+                    "accept": [
+                        "機械の 使い方と、安全な 仕事の 仕方を 勉強したいです。",
+                        "機械の使い方と、安全な仕事の仕方を勉強したいです。"
+                    ],
+                    "en_text": "I want to learn how to use machines and how to work safely.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s13-t5",
+                    "who": "partner",
+                    "ja": "国《くに》へ 帰《かえ》ってから、どう しますか。",
+                    "speak": "くにへ かえってから、どう しますか。",
+                    "id_text": "Setelah pulang ke negara Anda, apa rencana Anda?",
+                    "en_text": "What will you do after you go back to your country?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s13-t6",
+                    "who": "you",
+                    "ja": "日本《にほん》で 習《なら》った ことを、国《くに》の 仕事《しごと》で 使《つか》いたいです。",
+                    "speak": "にほんで ならった ことを、くにの しごとで つかいたいです。",
+                    "id_text": "Saya ingin memakai apa yang saya pelajari di Jepang dalam pekerjaan di negara saya.",
+                    "accept": [
+                        "日本で 習った ことを、国の 仕事で 使いたいです。",
+                        "日本で習ったことを、国の仕事で使いたいです。"
+                    ],
+                    "en_text": "I want to use what I learned in Japan in my work back home.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s13-t7",
+                    "who": "partner",
+                    "ja": "立派《りっぱ》な 目標《もくひょう》ですね。",
+                    "speak": "りっぱな もくひょうですね。",
+                    "id_text": "Itu cita-cita yang hebat.",
+                    "en_text": "That's an admirable goal.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s13-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s14",
+            "title_id": "Saat salah atau tidak paham (報告・連絡・相談)",
+            "title_en": "Mistakes and not understanding (報連相)",
+            "setting_id": "Pewawancara ingin tahu sikapmu saat berbuat salah atau tidak mengerti di tempat kerja.",
+            "setting_en": "The interviewer wants to know how you act when you make a mistake or don't understand at work.",
+            "goal_id": "Menjawab bahwa kamu akan segera melapor dan bertanya, serta menepati waktu dan aturan.",
+            "goal_en": "Answer that you'll report and ask right away, and that you keep to time and rules.",
+            "patterns": [
+                "すぐに 報告します",
+                "〜ときは、〜",
+                "〜ことが できます"
+            ],
+            "tips_id": [
+                "Di Jepang, melapor cepat saat salah dinilai positif; menyembunyikan kesalahan itu fatal. Katakan kamu akan segera memberi tahu atasan (報告・連絡・相談) dan bertanya jika tidak paham. Tunjukkan kamu tepat waktu dan taat aturan.",
+                "Inti budaya kerja Jepang adalah 報連相: lapor, kabari, konsultasi. Jawablah dengan 「すぐに」(segera).",
+                "Soal kesalahan: akui, laporkan segera, lalu perbaiki. Jangan menyembunyikan atau menyalahkan orang lain.",
+                "Datang 5–10 menit lebih awal dianggap normal dan sopan.",
+                "Menjawab \"bertanya kepada senior atau atasan\" lebih aman daripada \"mencoba sendiri\"."
+            ],
+            "tips_en": [
+                "In Japan, reporting a mistake quickly is valued; hiding it is fatal. Say you'll tell your supervisor right away (報告・連絡・相談) and ask when you don't understand. Show that you are punctual and follow rules.",
+                "The core of Japanese workplace culture is 報連相: report, inform, consult. Answer with 「すぐに」 (right away).",
+                "About mistakes: admit it, report it immediately, then fix it. Never hide it or blame others.",
+                "Arriving 5–10 minutes early is normal and polite.",
+                "Answering \"I ask my senior or boss\" is safer than \"I try on my own\"."
+            ],
+            "words": [
+                {
+                    "ja": "時間《じかん》",
+                    "id": "waktu",
+                    "en": "time"
+                },
+                {
+                    "ja": "大切《たいせつ》",
+                    "id": "penting",
+                    "en": "important"
+                },
+                {
+                    "ja": "先輩《せんぱい》",
+                    "id": "senior",
+                    "en": "senior colleague"
+                },
+                {
+                    "ja": "上司《じょうし》",
+                    "id": "atasan",
+                    "en": "boss / superior"
+                },
+                {
+                    "ja": "安全《あんぜん》",
+                    "id": "keselamatan / aman",
+                    "en": "safety / safe"
+                },
+                {
+                    "ja": "ミス",
+                    "id": "kesalahan",
+                    "en": "mistake"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "会社《かいしゃ》の ルールが 分《わ》からない ときは どうしますか。",
+                    "id": "Kalau tidak paham aturan perusahaan, apa yang Anda lakukan?",
+                    "en": "What will you do if you do not understand a company rule?"
+                },
+                {
+                    "ja": "遅《おそ》れそうな ときは どうしますか。",
+                    "id": "Kalau akan terlambat, apa yang Anda lakukan?",
+                    "en": "What will you do if you are going to be late?"
+                },
+                {
+                    "ja": "仕事《しごと》を 休《やす》む ときは どうしますか。",
+                    "id": "Kalau harus izin tidak masuk, apa yang Anda lakukan?",
+                    "en": "What will you do if you need to take a day off?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s14-t1",
+                    "who": "partner",
+                    "ja": "仕事《しごと》で 失敗《しっぱい》したら、どう しますか。",
+                    "speak": "しごとで しっぱいしたら、どう しますか。",
+                    "id_text": "Kalau Anda berbuat salah dalam pekerjaan, apa yang Anda lakukan?",
+                    "en_text": "If you make a mistake at work, what will you do?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s14-t2",
+                    "who": "you",
+                    "ja": "すぐに 上司《じょうし》に 報告《ほうこく》します。そして、次《つぎ》は 気《き》を つけます。",
+                    "speak": "すぐに じょうしに ほうこくします。そして、つぎは きを つけます。",
+                    "id_text": "Saya segera melapor ke atasan. Lalu lain kali saya lebih hati-hati.",
+                    "accept": [
+                        "すぐに 上司に 報告します。そして、次は 気を つけます。",
+                        "すぐに上司に報告します。そして、次は気をつけます。"
+                    ],
+                    "en_text": "I'll report to my supervisor right away. And I'll be careful next time.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s14-t3",
+                    "who": "partner",
+                    "ja": "仕事《しごと》の 説明《せつめい》が 分《わ》からない ときは どう しますか。",
+                    "speak": "しごとの せつめいが わからない ときは どう しますか。",
+                    "id_text": "Kalau Anda tidak paham penjelasan pekerjaan, apa yang Anda lakukan?",
+                    "en_text": "What will you do when you don't understand the work instructions?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s14-t4",
+                    "who": "you",
+                    "ja": "分《わ》からない ときは、すぐに 聞《き》きます。大切《たいせつ》な ことは メモを します。",
+                    "speak": "わからない ときは、すぐに ききます。たいせつな ことは メモを します。",
+                    "id_text": "Kalau tidak paham, saya segera bertanya. Hal penting saya catat.",
+                    "accept": [
+                        "分からない ときは、すぐに 聞きます。大切な ことは メモを します。",
+                        "分からないときは、すぐに聞きます。大切なことはメモをします。"
+                    ],
+                    "en_text": "When I don't understand, I ask right away. I take notes of important things.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s14-t5",
+                    "who": "partner",
+                    "ja": "時間《じかん》や ルールを 守《まも》る ことが できますか。",
+                    "speak": "じかんや ルールを まもる ことが できますか。",
+                    "id_text": "Apakah Anda bisa menepati waktu dan aturan?",
+                    "en_text": "Can you keep to time and rules?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s14-t6",
+                    "who": "you",
+                    "ja": "はい、できます。毎日《まいにち》 五分前《ごふんまえ》に 会社《かいしゃ》に 着《つ》きます。",
+                    "speak": "はい、できます。まいにち ごふんまえに かいしゃに つきます。",
+                    "id_text": "Ya, bisa. Setiap hari saya tiba di perusahaan lima menit lebih awal.",
+                    "accept": [
+                        "はい、できます。毎日 五分前に 会社に 着きます。",
+                        "はい、できます。毎日五分前に会社に着きます。"
+                    ],
+                    "en_text": "Yes, I can. Every day I arrive at the company five minutes early.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s14-t7",
+                    "who": "partner",
+                    "ja": "それが 一番《いちばん》 大切《たいせつ》ですよ。",
+                    "speak": "それが いちばん たいせつですよ。",
+                    "id_text": "Itulah yang paling penting.",
+                    "en_text": "That's the most important thing.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s14-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s15",
+            "title_id": "Hobi & hari libur",
+            "title_en": "Hobbies and days off",
+            "setting_id": "Pewawancara mencairkan suasana dengan pertanyaan ringan tentang hobi.",
+            "setting_en": "The interviewer lightens the mood with easy questions about your hobbies.",
+            "goal_id": "Menyebut hobi dan kegiatan hari libur dengan kalimat sederhana ditambah satu alasan.",
+            "goal_en": "Talk about your hobby and days off in simple sentences with one reason.",
+            "patterns": [
+                "趣味は 〜ことです",
+                "〜たり 〜たり します",
+                "〜からです"
+            ],
+            "tips_id": [
+                "Pertanyaan ringan ini menilai kepribadian: pilih hobi yang positif dan menunjukkan sikap kerja sama atau disiplin (olahraga, memasak, belajar). Tambahkan satu kalimat alasan agar percakapan hidup.",
+                "Pilih hobi yang positif dan tunjukkan sikap yang baik (kerja sama, disiplin, kesehatan).",
+                "Satu hobi + satu alasan + satu kalimat tambahan sudah cukup.",
+                "Hindari hobi yang bisa terkesan negatif, misalnya judi atau begadang."
+            ],
+            "tips_en": [
+                "This casual question judges personality: pick a positive hobby that shows teamwork or discipline (sports, cooking, studying). Add one sentence of reason to keep the conversation alive.",
+                "Choose a positive hobby and show a good attitude (teamwork, discipline, health).",
+                "One hobby + one reason + one extra sentence is enough.",
+                "Avoid hobbies that may sound negative, such as gambling or staying up all night."
+            ],
+            "words": [
+                {
+                    "ja": "趣味《しゅみ》",
+                    "id": "hobi",
+                    "en": "hobby"
+                },
+                {
+                    "ja": "休《やす》みの 日《ひ》",
+                    "id": "hari libur",
+                    "en": "day off"
+                },
+                {
+                    "ja": "料理《りょうり》",
+                    "id": "memasak / masakan",
+                    "en": "cooking"
+                },
+                {
+                    "ja": "協力《きょうりょく》",
+                    "id": "kerja sama",
+                    "en": "cooperation"
+                },
+                {
+                    "ja": "楽《たの》しむ",
+                    "id": "menikmati",
+                    "en": "to enjoy"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "休《やす》みの 日《ひ》は 何《なに》を しますか。",
+                    "id": "Hari libur melakukan apa?",
+                    "en": "What do you do on your days off?"
+                },
+                {
+                    "ja": "好《す》きな スポーツは 何《なん》ですか。",
+                    "id": "Olahraga apa yang Anda sukai?",
+                    "en": "What sports do you like?"
+                },
+                {
+                    "ja": "日本《にほん》で やってみたい ことは ありますか。",
+                    "id": "Adakah hal yang ingin Anda coba di Jepang?",
+                    "en": "Is there anything you want to try in Japan?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s15-t1",
+                    "who": "partner",
+                    "ja": "趣味《しゅみ》は 何《なん》ですか。",
+                    "speak": "しゅみは なんですか。",
+                    "id_text": "Apa hobi Anda?",
+                    "en_text": "What is your hobby?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s15-t2",
+                    "who": "you",
+                    "ja": "趣味《しゅみ》は サッカーを する ことです。友達《ともだち》と 毎週《まいしゅう》 日曜日《にちようび》に します。",
+                    "speak": "しゅみは サッカーを する ことです。ともだちと まいしゅう にちようびに します。",
+                    "id_text": "Hobi saya bermain sepak bola. Saya bermain dengan teman setiap hari Minggu.",
+                    "accept": [
+                        "趣味は サッカーを する ことです。友達と 毎週 日曜日に します。",
+                        "趣味はサッカーをすることです。友達と毎週日曜日にします。"
+                    ],
+                    "en_text": "My hobby is playing soccer. I play with friends every Sunday.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s15-t3",
+                    "who": "partner",
+                    "ja": "どうして サッカーが 好《す》きですか。",
+                    "speak": "どうして サッカーが すきですか。",
+                    "id_text": "Mengapa Anda suka sepak bola?",
+                    "en_text": "Why do you like soccer?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s15-t4",
+                    "who": "you",
+                    "ja": "みんなで 協力《きょうりょく》して 試合《しあい》を する ことが 楽《たの》しいからです。",
+                    "speak": "みんなで きょうりょくして しあいを する ことが たのしいからです。",
+                    "id_text": "Karena menyenangkan bekerja sama dan bertanding bersama semua orang.",
+                    "accept": [
+                        "みんなで 協力して 試合を する ことが 楽しいからです。",
+                        "みんなで協力して試合をすることが楽しいからです。"
+                    ],
+                    "en_text": "Because it's fun to cooperate and play matches together.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s15-t5",
+                    "who": "partner",
+                    "ja": "休《やす》みの 日《ひ》は ほかに 何《なに》を しますか。",
+                    "speak": "やすみの ひは ほかに なにを しますか。",
+                    "id_text": "Di hari libur, apa lagi yang Anda lakukan?",
+                    "en_text": "What else do you do on your days off?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s15-t6",
+                    "who": "you",
+                    "ja": "家《いえ》で 料理《りょうり》を したり、日本語《にほんご》を 勉強《べんきょう》したり します。",
+                    "speak": "いえで りょうりを したり、にほんごを べんきょうしたり します。",
+                    "id_text": "Saya memasak di rumah dan belajar bahasa Jepang.",
+                    "accept": [
+                        "家で 料理を したり、日本語を 勉強したり します。",
+                        "家で料理をしたり、日本語を勉強したりします。"
+                    ],
+                    "en_text": "I cook at home and study Japanese.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s15-t7",
+                    "who": "partner",
+                    "ja": "いいですね。日本《にほん》でも 楽《たの》しんで ください。",
+                    "speak": "いいですね。にほんでも たのしんで ください。",
+                    "id_text": "Bagus. Nikmati juga di Jepang.",
+                    "en_text": "Nice. Please enjoy yourself in Japan too.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s15-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s16",
+            "title_id": "Saat tidak menangkap pertanyaan",
+            "title_en": "When you don't catch a question",
+            "setting_id": "Pewawancara bertanya agak cepat dan kamu tidak menangkap pertanyaannya.",
+            "setting_en": "The interviewer asks a bit quickly and you don't catch the question.",
+            "goal_id": "Meminta pengulangan dengan sopan (もう一度、ゆっくり お願いします), mengonfirmasi pemahaman, lalu menjawab.",
+            "goal_en": "Politely ask for repetition (もう一度、ゆっくり お願いします), confirm your understanding, then answer.",
+            "patterns": [
+                "もう一度、ゆっくり お願いします",
+                "〜ですね",
+                "〜でも、〜ました"
+            ],
+            "tips_id": [
+                "Diam atau menebak adalah kesalahan terbesar. Minta ulang tanpa malu: pewawancara tahu kamu pelajar bahasa. Setelah paham, ulangi inti pertanyaan untuk memastikan, baru jawab.",
+                "Minta ulang satu kali dengan sopan. Bila masih belum paham, tanyakan artinya: 〜は どういう 意味ですか。",
+                "Setelah paham, ulangi kata kuncinya sebelum menjawab (misalnya: 大変《たいへん》だった ことですね)。",
+                "Jawab dengan kalimat pendek; jangan diam lama dan jangan menebak."
+            ],
+            "tips_en": [
+                "Staying silent or guessing is the biggest mistake. Ask for a repeat without embarrassment: interviewers know you're a language learner. After understanding, restate the core of the question to confirm, then answer.",
+                "Ask once, politely, for a repeat. If you still do not understand, ask the meaning: 〜は どういう 意味ですか。",
+                "Once you understand, repeat the key word before answering (e.g. 大変だった ことですね).",
+                "Answer in short sentences; do not stay silent for long and do not guess."
+            ],
+            "words": [
+                {
+                    "ja": "もう 一度《いちど》",
+                    "id": "sekali lagi",
+                    "en": "once more"
+                },
+                {
+                    "ja": "ゆっくり",
+                    "id": "pelan-pelan",
+                    "en": "slowly"
+                },
+                {
+                    "ja": "分《わ》かりません",
+                    "id": "tidak mengerti",
+                    "en": "I do not understand"
+                },
+                {
+                    "ja": "大変《たいへん》",
+                    "id": "berat / sulit",
+                    "en": "hard / tough"
+                },
+                {
+                    "ja": "意味《いみ》",
+                    "id": "arti",
+                    "en": "meaning"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "もう 一度《いちど》 お願《ねが》いします。",
+                    "id": "Mohon diulang sekali lagi.",
+                    "en": "One more time, please."
+                },
+                {
+                    "ja": "ゆっくり お願《ねが》いします。",
+                    "id": "Mohon pelan-pelan.",
+                    "en": "Slowly, please."
+                },
+                {
+                    "ja": "すみません、意味《いみ》が 分《わ》かりません。",
+                    "id": "Maaf, saya tidak mengerti artinya.",
+                    "en": "Sorry, I do not understand the meaning."
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s16-t1",
+                    "who": "partner",
+                    "ja": "仕事《しごと》で 一番《いちばん》 大変《たいへん》だった ことを 教《おし》えてください。",
+                    "speak": "しごとで いちばん たいへんだった ことを おしえてください。",
+                    "id_text": "Tolong ceritakan hal yang paling berat dalam pekerjaan Anda.",
+                    "en_text": "Please tell me the hardest thing about your work.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s16-t2",
+                    "who": "you",
+                    "ja": "すみません、もう 一度《いちど》、ゆっくり お願《ねが》いします。",
+                    "speak": "すみません、もう いちど、ゆっくり おねがいします。",
+                    "id_text": "Maaf, tolong ulangi sekali lagi, pelan-pelan.",
+                    "accept": [
+                        "すみません、もう 一度、ゆっくり お願いします。",
+                        "すみません、もう一度、ゆっくりお願いします。"
+                    ],
+                    "en_text": "Sorry, once more, slowly please.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s16-t3",
+                    "who": "partner",
+                    "ja": "仕事《しごと》で、一番《いちばん》 大変《たいへん》だった こと。何《なん》ですか。",
+                    "speak": "しごとで、いちばん たいへんだった こと。なんですか。",
+                    "id_text": "Dalam pekerjaan, hal yang paling berat. Apa itu?",
+                    "en_text": "In your work, the hardest thing. What was it?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s16-t4",
+                    "who": "you",
+                    "ja": "大変《たいへん》だった ことですね。分《わ》かりました。",
+                    "speak": "たいへんだった ことですね。わかりました。",
+                    "id_text": "Hal yang paling berat, ya. Saya mengerti.",
+                    "accept": [
+                        "大変だった ことですね。分かりました。",
+                        "大変だったことですね。分かりました。"
+                    ],
+                    "en_text": "The hardest thing, I see. I understand.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s16-t5",
+                    "who": "partner",
+                    "ja": "はい、そうです。お願《ねが》いします。",
+                    "speak": "はい、そうです。おねがいします。",
+                    "id_text": "Ya, betul. Silakan.",
+                    "en_text": "Yes, that's right. Go ahead.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s16-t6",
+                    "who": "you",
+                    "ja": "はい。夏《なつ》の 工場《こうじょう》が とても 暑《あつ》かったです。でも、水《みず》を たくさん 飲《の》んで、頑張《がんば》りました。",
+                    "speak": "はい。なつの こうじょうが とても あつかったです。でも、みずを たくさん のんで、がんばりました。",
+                    "id_text": "Ya. Pabrik di musim panas sangat panas. Tapi saya banyak minum air dan berusaha keras.",
+                    "accept": [
+                        "はい。夏の 工場が とても 暑かったです。でも、水を たくさん 飲んで、頑張りました。",
+                        "はい。夏の工場がとても暑かったです。でも、水をたくさん飲んで、頑張りました。"
+                    ],
+                    "en_text": "Yes. The factory in summer was very hot. But I drank lots of water and did my best.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s16-t7",
+                    "who": "partner",
+                    "ja": "大変《たいへん》でしたね。ありがとうございます。",
+                    "speak": "たいへんでしたね。ありがとうございます。",
+                    "id_text": "Itu berat ya. Terima kasih.",
+                    "en_text": "That must have been hard. Thank you.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s16-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s17",
+            "title_id": "Bertanya & menutup wawancara",
+            "title_en": "Questions and closing the interview",
+            "setting_id": "Wawancara hampir selesai. Pewawancara memberimu kesempatan bertanya.",
+            "setting_en": "The interview is nearly over. The interviewer gives you a chance to ask questions.",
+            "goal_id": "Mengajukan satu pertanyaan yang baik lalu menutup dengan salam sopan (ありがとうございました、失礼します).",
+            "goal_en": "Ask one good question, then close with a polite farewell (ありがとうございました、失礼します).",
+            "patterns": [
+                "質問が あります",
+                "〜てから、〜",
+                "ありがとうございました"
+            ],
+            "tips_id": [
+                "Selalu siapkan 1 pertanyaan; tidak bertanya terkesan tidak tertarik. Tanyakan hal tentang pekerjaan, pelatihan, atau belajar bahasa, bukan gaji dan libur. Tutup dengan berdiri, membungkuk, ありがとうございました, lalu 失礼します di pintu.",
+                "Siapkan 1–2 pertanyaan. Menjawab \"tidak ada\" terkesan kurang berminat.",
+                "Pertanyaan yang baik: pelatihan awal, alur kerja, dukungan belajar bahasa. Tunda pertanyaan tentang gaji dan libur kecuali ditanya.",
+                "Kalimat penutup: tekad singkat + よろしく お願いします.",
+                "Saat keluar: ありがとうございました, bungkuk, 失礼します, tutup pintu pelan-pelan."
+            ],
+            "tips_en": [
+                "Always prepare one question; asking none looks uninterested. Ask about the work, training or language study, not salary or holidays. Close by standing, bowing, saying ありがとうございました, then 失礼します at the door.",
+                "Prepare one or two questions. Saying \"none\" can look uninterested.",
+                "Good questions: initial training, workflow, language support. Hold off on salary and holidays unless asked.",
+                "Closing line: a short resolve + よろしく お願いします.",
+                "On leaving: ありがとうございました, bow, 失礼します, close the door quietly."
+            ],
+            "words": [
+                {
+                    "ja": "質問《しつもん》",
+                    "id": "pertanyaan",
+                    "en": "question"
+                },
+                {
+                    "ja": "研修《けんしゅう》",
+                    "id": "pelatihan",
+                    "en": "training"
+                },
+                {
+                    "ja": "最初《さいしょ》",
+                    "id": "awal / pertama",
+                    "en": "first / beginning"
+                },
+                {
+                    "ja": "一言《ひとこと》",
+                    "id": "sepatah kata",
+                    "en": "a few words"
+                },
+                {
+                    "ja": "一生懸命《いっしょうけんめい》",
+                    "id": "sekuat tenaga",
+                    "en": "with all one’s effort"
+                },
+                {
+                    "ja": "以上《いじょう》",
+                    "id": "sekian",
+                    "en": "that is all"
+                },
+                {
+                    "ja": "お疲《つか》れ様《さま》でした",
+                    "id": "terima kasih atas usahanya",
+                    "en": "thank you for your effort"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "何《なに》か 聞《き》きたい ことは ありますか。",
+                    "id": "Adakah yang ingin Anda tanyakan?",
+                    "en": "Is there anything you would like to ask?"
+                },
+                {
+                    "ja": "最後《さいご》に 言《い》いたい ことは ありますか。",
+                    "id": "Adakah yang ingin Anda sampaikan terakhir?",
+                    "en": "Is there anything you would like to say at the end?"
+                },
+                {
+                    "ja": "いつから 働《はたら》けますか。",
+                    "id": "Kapan Anda bisa mulai bekerja?",
+                    "en": "When can you start working?"
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s17-t1",
+                    "who": "partner",
+                    "ja": "では、ブディさんから 何《なに》か 質問《しつもん》は ありますか。",
+                    "speak": "では、ブディさんから なにか しつもんは ありますか。",
+                    "id_text": "Nah, apakah Budi ada pertanyaan?",
+                    "en_text": "Now, do you have any questions, Budi?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s17-t2",
+                    "who": "you",
+                    "ja": "はい。仕事《しごと》を 始《はじ》めてから、日本語《にほんご》の 勉強《べんきょう》を する 時間《じかん》は ありますか。",
+                    "speak": "はい。しごとを はじめてから、にほんごの べんきょうを する じかんは ありますか。",
+                    "id_text": "Ya. Setelah mulai bekerja, apakah ada waktu untuk belajar bahasa Jepang?",
+                    "accept": [
+                        "はい。仕事を 始めてから、日本語の 勉強を する 時間は ありますか。",
+                        "はい。仕事を始めてから、日本語の勉強をする時間はありますか。"
+                    ],
+                    "en_text": "Yes. After I start work, is there time to study Japanese?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s17-t3",
+                    "who": "partner",
+                    "ja": "はい。週《しゅう》に 二回《にかい》、日本語《にほんご》の 授業《じゅぎょう》が あります。",
+                    "speak": "はい。しゅうに にかい、にほんごの じゅぎょうが あります。",
+                    "id_text": "Ya. Seminggu dua kali ada kelas bahasa Jepang.",
+                    "en_text": "Yes. There is a Japanese class twice a week.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s17-t4",
+                    "who": "you",
+                    "ja": "そうですか。ありがとうございます。頑張《がんば》って 勉強《べんきょう》します。",
+                    "speak": "そうですか。ありがとうございます。がんばって べんきょうします。",
+                    "id_text": "Begitu. Terima kasih. Saya akan belajar dengan giat.",
+                    "accept": [
+                        "そうですか。ありがとうございます。頑張って 勉強します。",
+                        "そうですか。ありがとうございます。頑張って勉強します。"
+                    ],
+                    "en_text": "I see. Thank you. I'll study hard.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s17-t5",
+                    "who": "partner",
+                    "ja": "では、これで 面接《めんせつ》を 終《お》わります。今日《きょう》は ありがとうございました。",
+                    "speak": "では、これで めんせつを おわります。きょうは ありがとうございました。",
+                    "id_text": "Baik, wawancara kita akhiri di sini. Terima kasih untuk hari ini.",
+                    "en_text": "Well then, that concludes the interview. Thank you for today.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s17-t6",
+                    "who": "you",
+                    "ja": "ありがとうございました。失礼《しつれい》します。",
+                    "speak": "ありがとうございました。しつれいします。",
+                    "id_text": "Terima kasih banyak. Permisi (saya pamit).",
+                    "accept": [
+                        "ありがとうございました。失礼します。"
+                    ],
+                    "en_text": "Thank you very much. Excuse me. (I'll be leaving.)",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s17-t7",
+                    "who": "partner",
+                    "ja": "気《き》を つけて 帰《かえ》って ください。",
+                    "speak": "きを つけて かえって ください。",
+                    "id_text": "Hati-hati di jalan pulang.",
+                    "en_text": "Please be careful on your way home.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s17-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s18",
+            "title_id": "(Opsional) Makanan & ibadah",
+            "title_en": "(Optional) Food and prayer",
+            "setting_id": "Pewawancara menanyakan pantangan makanan atau kebutuhan ibadah yang perlu dipertimbangkan. Lewati skenario ini jika tidak berlaku bagimu.",
+            "setting_en": "The interviewer asks about food restrictions or worship needs to take into account. Skip this scenario if it doesn't apply to you.",
+            "goal_id": "Menjelaskan pantangan makanan dan kebutuhan ibadah dengan jelas, tenang, dan sopan, serta menawarkan solusi.",
+            "goal_en": "Explain food restrictions and worship needs clearly, calmly and politely, and offer solutions.",
+            "patterns": [
+                "〜を 食べません",
+                "〜ても いいですか",
+                "〜ことが できます"
+            ],
+            "tips_id": [
+                "Opsional: pakai hanya bila sesuai keyakinan/kebutuhanmu, dan ganti isinya sesuai dirimu. Jelaskan fakta dengan tenang dan tawarkan solusi (masak sendiri, ibadah singkat saat istirahat). Tanyakan fasilitas yang tersedia kepada lembaga pengirim sebelum wawancara.",
+                "Sampaikan sejak wawancara supaya tidak ada salah paham setelah mulai bekerja.",
+                "Pakai kalimat positif dan sopan: 〜ても いいですか (bolehkah saya …).",
+                "Pertanyaan ini opsional: pakai hanya bila memang sesuai kebutuhanmu."
+            ],
+            "tips_en": [
+                "Optional: use only if it fits your beliefs/needs, and adapt the content to yourself. State the facts calmly and offer solutions (cook for yourself, short prayer during breaks). Ask your sending organization about available facilities before the interview.",
+                "Say it during the interview so there are no misunderstandings after you start work.",
+                "Use polite, positive phrasing: 〜ても いいですか (may I …).",
+                "This scenario is optional: use it only if it fits your needs."
+            ],
+            "words": [
+                {
+                    "ja": "豚肉《ぶたにく》",
+                    "id": "daging babi",
+                    "en": "pork"
+                },
+                {
+                    "ja": "お祈《いの》り",
+                    "id": "berdoa / salat",
+                    "en": "prayer"
+                },
+                {
+                    "ja": "キッチン",
+                    "id": "dapur",
+                    "en": "kitchen"
+                },
+                {
+                    "ja": "相談《そうだん》",
+                    "id": "konsultasi",
+                    "en": "consultation"
+                },
+                {
+                    "ja": "時間《じかん》",
+                    "id": "waktu",
+                    "en": "time"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "食《た》べられない ものは ありますか。",
+                    "id": "Adakah makanan yang tidak bisa Anda makan?",
+                    "en": "Is there any food you cannot eat?"
+                },
+                {
+                    "ja": "お祈《いの》りの 時間《じかん》が 必要《ひつよう》ですか。",
+                    "id": "Apakah Anda perlu waktu untuk berdoa?",
+                    "en": "Do you need time to pray?"
+                },
+                {
+                    "ja": "寮《りょう》で 自分《じぶん》で 料理《りょうり》しても いいですか。",
+                    "id": "Bolehkah memasak sendiri di asrama?",
+                    "en": "May I cook for myself in the dormitory?"
+                }
+            ],
+            "partner": {
+                "name": "さとう（めんせつかん）",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s18-t1",
+                    "who": "partner",
+                    "ja": "食《た》べない ものは ありますか。",
+                    "speak": "たべない ものは ありますか。",
+                    "id_text": "Apakah ada makanan yang tidak Anda makan?",
+                    "en_text": "Is there anything you don't eat?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s18-t2",
+                    "who": "you",
+                    "ja": "はい、豚肉《ぶたにく》を 食《た》べません。寮《りょう》で 自分《じぶん》で 料理《りょうり》しても いいですか。",
+                    "speak": "はい、ぶたにくを たべません。りょうで じぶんで りょうりしても いいですか。",
+                    "id_text": "Ya, saya tidak makan daging babi. Bolehkah saya memasak sendiri di asrama?",
+                    "accept": [
+                        "はい、豚肉を 食べません。寮で 自分で 料理しても いいですか。",
+                        "はい、豚肉を食べません。寮で自分で料理してもいいですか。"
+                    ],
+                    "en_text": "Yes, I don't eat pork. May I cook for myself in the dormitory?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s18-t3",
+                    "who": "partner",
+                    "ja": "はい、寮《りょう》の キッチンを 使《つか》っても いいですよ。",
+                    "speak": "はい、りょうの キッチンを つかっても いいですよ。",
+                    "id_text": "Ya, Anda boleh memakai dapur asrama.",
+                    "en_text": "Yes, you may use the dormitory kitchen."
+                },
+                {
+                    "id": "mensetsu-s18-t4",
+                    "who": "you",
+                    "ja": "ありがとうございます。それから、一日《いちにち》に 五回《ごかい》、お祈《いの》りを します。",
+                    "speak": "ありがとうございます。それから、いちにちに ごかい、おいのりを します。",
+                    "id_text": "Terima kasih. Lalu, saya berdoa (salat) lima kali sehari.",
+                    "accept": [
+                        "ありがとうございます。それから、一日に 五回、お祈りを します。",
+                        "ありがとうございます。それから、一日に五回、お祈りをします。"
+                    ],
+                    "en_text": "Thank you. Also, I pray five times a day.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s18-t5",
+                    "who": "partner",
+                    "ja": "お祈《いの》りは 休《やす》みの 時間《じかん》に できますか。",
+                    "speak": "おいのりは やすみの じかんに できますか。",
+                    "id_text": "Apakah ibadah bisa dilakukan saat waktu istirahat?",
+                    "en_text": "Can you pray during your break time?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s18-t6",
+                    "who": "you",
+                    "ja": "はい、できます。短《みじか》い 時間《じかん》で 大丈夫《だいじょうぶ》です。仕事《しごと》は ちゃんと します。",
+                    "speak": "はい、できます。みじかい じかんで だいじょうぶです。しごとは ちゃんと します。",
+                    "id_text": "Ya, bisa. Waktu singkat sudah cukup. Pekerjaan tetap saya lakukan dengan baik.",
+                    "accept": [
+                        "はい、できます。短い 時間で 大丈夫です。仕事は ちゃんと します。",
+                        "はい、できます。短い時間で大丈夫です。仕事はちゃんとします。"
+                    ],
+                    "en_text": "Yes, I can. A short time is fine. I'll do my work properly.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s18-t7",
+                    "who": "partner",
+                    "ja": "分《わ》かりました。会社《かいしゃ》で 相談《そうだん》します。",
+                    "speak": "わかりました。かいしゃで そうだんします。",
+                    "id_text": "Baik, saya mengerti. Kami akan membicarakannya di perusahaan.",
+                    "en_text": "I understand. We'll discuss it within the company.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "mensetsu-s19",
+            "title_id": "Simulasi wawancara singkat",
+            "title_en": "Mini mock interview",
+            "setting_id": "Wawancara singkat dari awal sampai akhir. Pertanyaannya memakai kata-kata yang berbeda dari latihan sebelumnya.",
+            "setting_en": "A short interview from start to finish. The questions use different wording from the earlier drills.",
+            "goal_id": "Menjawab inti pertanyaan walau kalimat tanyanya berbeda: 〜を 教えてください, 〜は 大丈夫ですか.",
+            "goal_en": "Answer the core of the question even when it is worded differently: 〜を 教えてください, 〜は 大丈夫ですか.",
+            "patterns": [
+                "〜を 教えてください",
+                "〜は 大丈夫ですか",
+                "一言 お願いします"
+            ],
+            "tips_id": [
+                "Pertanyaan memakai kata yang berbeda dari latihan sebelumnya: tangkap kata kuncinya (理由, いい ところ, 夜勤) lalu jawab intinya.",
+                "Bila tidak mengerti, katakan: もう 一度 お願いします。 Itu jauh lebih baik daripada menebak.",
+                "Selesaikan dengan tenang: jawab → berhenti → tunggu pertanyaan berikutnya.",
+                "Setelah lancar, coba jawab dengan kata-katamu sendiri dan rekam suaramu."
+            ],
+            "tips_en": [
+                "The questions use different wording from earlier practice: catch the key word (理由, いい ところ, 夜勤) and answer the point.",
+                "If you do not understand, say: もう 一度 お願いします。 That is far better than guessing.",
+                "Stay calm: answer, stop, and wait for the next question.",
+                "Once fluent, try answering in your own words and record yourself."
+            ],
+            "words": [
+                {
+                    "ja": "教《おし》えてください",
+                    "id": "tolong beritahu",
+                    "en": "please tell me"
+                },
+                {
+                    "ja": "理由《りゆう》",
+                    "id": "alasan",
+                    "en": "reason"
+                },
+                {
+                    "ja": "もう 一度《いちど》",
+                    "id": "sekali lagi",
+                    "en": "once more"
+                },
+                {
+                    "ja": "夜勤《やきん》",
+                    "id": "shift malam",
+                    "en": "night shift"
+                },
+                {
+                    "ja": "残業《ざんぎょう》",
+                    "id": "lembur",
+                    "en": "overtime"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "もう 一度《いちど》 お願《ねが》いします。",
+                    "id": "Tolong ulangi sekali lagi.",
+                    "en": "Could you say that once more, please?"
+                },
+                {
+                    "ja": "ゆっくり お願《ねが》いします。",
+                    "id": "Tolong bicara pelan-pelan.",
+                    "en": "Please speak slowly."
+                },
+                {
+                    "ja": "すみません、分《わ》かりません。",
+                    "id": "Maaf, saya tidak mengerti.",
+                    "en": "I am sorry, I do not understand."
+                }
+            ],
+            "partner": {
+                "name": "やまだ（めんせつかん）",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "mensetsu-s19-t1",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》と 国《くに》を 教《おし》えてください。",
+                    "speak": "おなまえと くにを おしえてください。",
+                    "id_text": "Tolong sebutkan nama dan negara Anda.",
+                    "en_text": "Please tell me your name and country.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t1.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t2",
+                    "who": "you",
+                    "ja": "ブディです。インドネシアから 来《き》ました。",
+                    "speak": "ブディです。インドネシアから きました。",
+                    "id_text": "Saya Budi, dari Indonesia.",
+                    "en_text": "I am Budi. I am from Indonesia.",
+                    "accept": [
+                        "ブディです。インドネシアから 来ました。",
+                        "ブディです。インドネシアから来ました。"
+                    ],
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t2.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t3",
+                    "who": "partner",
+                    "ja": "日本《にほん》で 働《はたら》く 理由《りゆう》を 教《おし》えてください。",
+                    "speak": "にほんで はたらく りゆうを おしえてください。",
+                    "id_text": "Tolong jelaskan alasan Anda bekerja di Jepang.",
+                    "en_text": "Please tell me why you want to work in Japan.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t3.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t4",
+                    "who": "you",
+                    "ja": "日本《にほん》の 技術《ぎじゅつ》を 勉強《べんきょう》して、家族《かぞく》を 助《たす》けたいです。",
+                    "speak": "にほんの ぎじゅつを べんきょうして、かぞくを たすけたいです。",
+                    "id_text": "Saya ingin belajar teknologi Jepang dan membantu keluarga.",
+                    "en_text": "I want to learn Japanese technology and help my family.",
+                    "accept": [
+                        "日本の 技術を 勉強して、家族を 助けたいです。",
+                        "日本の技術を勉強して、家族を助けたいです。"
+                    ],
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t4.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t5",
+                    "who": "partner",
+                    "ja": "ご自分《じぶん》の いい ところを 教《おし》えてください。",
+                    "speak": "ごじぶんの いい ところを おしえてください。",
+                    "id_text": "Tolong sebutkan kelebihan Anda.",
+                    "en_text": "Please tell me your good points.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t5.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t6",
+                    "who": "you",
+                    "ja": "まじめで、最後《さいご》まで 頑張《がんば》ります。",
+                    "speak": "まじめで、さいごまで がんばります。",
+                    "id_text": "Saya tekun dan berusaha sampai akhir.",
+                    "en_text": "I am serious and I do my best to the end.",
+                    "accept": [
+                        "まじめで、最後まで 頑張ります。",
+                        "まじめで、最後まで頑張ります。"
+                    ],
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t6.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t7",
+                    "who": "partner",
+                    "ja": "夜勤《やきん》や 残業《ざんぎょう》は 大丈夫《だいじょうぶ》ですか。",
+                    "speak": "やきんや ざんぎょうは だいじょうぶですか。",
+                    "id_text": "Apakah shift malam dan lembur tidak masalah?",
+                    "en_text": "Are night shifts and overtime okay?",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t7.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t8",
+                    "who": "you",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。体力《たいりょく》には 自信《じしん》が あります。",
+                    "speak": "はい、だいじょうぶです。たいりょくには じしんが あります。",
+                    "id_text": "Ya, tidak masalah. Saya percaya diri dengan stamina saya.",
+                    "en_text": "Yes, that is fine. I am confident in my stamina.",
+                    "accept": [
+                        "はい、大丈夫です。体力には 自信が あります。",
+                        "はい、大丈夫です。体力には自信があります。"
+                    ],
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t8.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t9",
+                    "who": "partner",
+                    "ja": "最後《さいご》に 一言《ひとこと》 お願《ねが》いします。",
+                    "speak": "さいごに ひとこと おねがいします。",
+                    "id_text": "Terakhir, sepatah kata, silakan.",
+                    "en_text": "Lastly, please say a few words.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t9.mp3"
+                },
+                {
+                    "id": "mensetsu-s19-t10",
+                    "who": "you",
+                    "ja": "一生懸命《いっしょうけんめい》 頑張《がんば》ります。よろしく お願《ねが》いします。",
+                    "speak": "いっしょうけんめい がんばります。よろしく おねがいします。",
+                    "id_text": "Saya akan berusaha sekuat tenaga. Mohon bantuannya.",
+                    "en_text": "I will do my best. Thank you for your consideration.",
+                    "accept": [
+                        "一生懸命 頑張ります。よろしく お願いします。",
+                        "一生懸命頑張ります。よろしくお願いします。"
+                    ],
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s19-t10.mp3"
+                }
+            ]
+        }
+    ]
+}

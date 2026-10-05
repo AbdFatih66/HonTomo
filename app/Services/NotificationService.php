@@ -159,6 +159,14 @@ class NotificationService
             if (preg_match('/^l(\d+)-s(\d+)$/', $setKey, $m))
                 return $isEnglish ? "Lesson {$m[1]} · Scenario {$m[2]}" : "Pelajaran {$m[1]} · Skenario {$m[2]}";
 
+            // Paket situasi: '{paket}-s{urut}', mis. 'mensetsu-s3' (index.json → situations).
+            if (preg_match('/^([a-z0-9]+(?:-[a-z0-9]+)*)-s(\d+)$/', $setKey, $m)) {
+                $packs = ['mensetsu' => ['Mensetsu (wawancara kerja)', 'Job interview (mensetsu)']];
+                [$labelId, $labelEn] = $packs[$m[1]] ?? [ucfirst($m[1]), ucfirst($m[1])];
+
+                return $isEnglish ? "{$labelEn} · Scenario {$m[2]}" : "{$labelId} · Skenario {$m[2]}";
+            }
+
             return $isEnglish ? 'Conversation practice' : 'Latihan percakapan';
         }
 

@@ -1143,6 +1143,11 @@
     "continue": "Next",
     "scenarios_done": "{done}/{total} scenarios",
     "overall": "{done}/{total} scenarios done",
+    "track_lesson": "Lessons",
+    "track_situation": "Situations",
+    "tips_title": "Tips & key words",
+    "key_words": "Key words",
+    "similar_questions": "Similar questions you may be asked",
     "xp_earned": "+{xp} XP"
   }
 }

@@ -37,8 +37,12 @@ const authStore = useAuthStore()
 // Field data dwibahasa: `x_en` bila locale en dan tersedia, selain itu `x_id`/`x`.
 const tr = (o, key) => (locale.value === 'en' && o[`${key}_en`]) || o[`${key}_id`] || o[key] || ''
 
-const manifest = ref([]) // pelajaran yang tersedia (index.json)
-const lessonId = ref(null) // pelajaran yang sedang dipilih
+const manifest = ref([]) // pelajaran yang tersedia (index.json → lessons)
+const situations = ref([]) // paket situasi (index.json → situations), mis. mensetsu
+const track = ref('lesson') // 'lesson' | 'situation'
+const lastLessonId = ref(null) // pelajaran terakhir dibuka (dipulihkan saat kembali ke tab Pelajaran)
+const lastSituationId = ref(null)
+const lessonId = ref(null) // pelajaran / paket situasi yang sedang dibuka
 const lesson = ref(null)
 const loading = ref(true)
 const loadError = ref(false)
@@ -57,7 +61,8 @@ const earnedXp = ref(0)
 const scenario = ref(null) // skenario yang sedang dimainkan
 const messages = ref([]) // gelembung chat yang sudah muncul
 const turnIdx = ref(0)
-const TOTAL_ROUNDS = 2 // wajib: skenario baru tamat setelah kedua peran dimainkan
+// Jalur pelajaran: wajib 2 putaran (tukar peran). Paket situasi dapat memakai `rounds: 1` (mis. Mensetsu: user hanya menjawab).
+const totalRounds = computed(() => (lesson.value?.rounds === 1 ? 1 : 2))
 const round = ref(1) // putaran: 1 = user menjawab, 2 = peran dibalik (user jadi penanya)
 const phase = ref('idle') // idle | partner | you | listening | result | swap | finished
 const tries = ref(0)
@@ -151,10 +156,53 @@ const nextLessonId = computed(() => (gateReady.value
   : null))
 
 const overall = computed(() => {
-  const all = Object.values(lessonScenarioIds).flat()
+  const sets = track.value === 'situation' ? situations.value : manifest.value
+  const all = sets.flatMap(m => lessonScenarioIds[m.id] ?? [])
 
   return { done: all.filter(k => progress[k]?.done).length, total: all.length }
 })
+
+// ── Kartu paket situasi (tab "Situasi") ──────────────────────────────────────
+const situationCards = computed(() => situations.value.map((m) => {
+  const ids = lessonScenarioIds[m.id] ?? []
+  const done = ids.filter(k => progress[k]?.done).length
+  const crowns = ids.filter(k => progress[k]?.crown).length
+  const full = ids.length > 0 && done === ids.length
+
+  return {
+    id: m.id,
+    icon: m.icon || 'tabler-messages',
+    title: tr(m, 'title'),
+    desc: tr(m, 'desc'),
+    level: m.level,
+    done,
+    total: ids.length,
+    percent: ids.length ? Math.round((done / ids.length) * 100) : 0,
+    status: full && crowns === ids.length ? 'mastered' : full ? 'completed' : done > 0 ? 'progress' : 'open',
+    active: m.id === lessonId.value,
+  }
+}))
+
+async function setTrack(value) {
+  if (value === track.value)
+    return
+  track.value = value
+  lockNotice.value = ''
+  if (value === 'situation')
+    await selectSituation(lastSituationId.value ?? situations.value[0]?.id)
+  else
+    await selectLesson(lastLessonId.value ?? nextLessonId.value ?? manifest.value[0]?.id)
+}
+
+async function pickSituation(card) {
+  await selectSituation(card.id)
+  await nextTick()
+
+  const el = listEl.value
+
+  if (el && el.getBoundingClientRect().top > window.innerHeight * 0.5)
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 async function pickLesson(card) {
   if (card.locked) {
@@ -174,7 +222,8 @@ async function pickLesson(card) {
 }
 
 async function loadLessonIds() {
-  await Promise.all(manifest.value.map(async (m) => {
+  // Pelajaran dan paket situasi memakai peta yang sama; id pelajaran angka, id situasi string (tidak bentrok).
+  await Promise.all([...manifest.value, ...situations.value].map(async (m) => {
     try {
       const res = await fetch(`/data/kaiwa/${m.file}`, { cache: 'no-cache' })
 
@@ -188,12 +237,7 @@ async function loadLessonIds() {
   }))
 }
 
-async function selectLesson(id) {
-  if (isLocked(id))
-    return
-
-  const entry = manifest.value.find(x => x.id === id) ?? manifest.value[0]
-
+async function loadSet(entry) {
   loading.value = true
   loadError.value = false
   try {
@@ -210,12 +254,27 @@ async function selectLesson(id) {
         registerReadings(tn.ja)
     }
     lessonId.value = entry.id
+    if (entry.track === 'situation')
+      lastSituationId.value = entry.id
+    else
+      lastLessonId.value = entry.id
   }
   catch {
     lessonId.value = entry?.id ?? null
     loadError.value = true
   }
   loading.value = false
+}
+
+async function selectLesson(id) {
+  if (isLocked(id))
+    return
+
+  await loadSet(manifest.value.find(x => x.id === id) ?? manifest.value[0])
+}
+
+async function selectSituation(id) {
+  await loadSet(situations.value.find(x => x.id === id) ?? situations.value[0])
 }
 
 async function loadProgress() {
@@ -254,7 +313,10 @@ onMounted(async () => {
 
     if (!res.ok)
       throw new Error(`HTTP ${res.status}`)
-    manifest.value = (await res.json()).lessons ?? FALLBACK_MANIFEST
+    const json = await res.json()
+
+    manifest.value = json.lessons ?? FALLBACK_MANIFEST
+    situations.value = (json.situations ?? []).map(x => ({ ...x, track: 'situation' }))
   }
   catch {
     manifest.value = FALLBACK_MANIFEST
@@ -477,8 +539,11 @@ function start(sc) {
   round.value = 1
   earnedXp.value = 0
 
-  // SEMUA giliran dibicarakan user satu kali: putaran 1 = baris `you`, putaran 2 = baris `partner`.
-  Object.assign(stats, { passedFirst: 0, passed: 0, skipped: 0, total: sc.turns.length })
+  // Dua putaran: SEMUA giliran dibicarakan user satu kali (putaran 1 = baris `you`, putaran 2 = baris `partner`).
+  // Satu putaran (paket situasi): hanya baris `you`.
+  const total = totalRounds.value === 1 ? sc.turns.filter(x => x.who === 'you').length : sc.turns.length
+
+  Object.assign(stats, { passedFirst: 0, passed: 0, skipped: 0, total })
   runTurn()
 }
 
@@ -501,7 +566,7 @@ function runTurn() {
   const t = turn.value
 
   if (!t) {
-    if (round.value < TOTAL_ROUNDS) {
+    if (round.value < totalRounds.value) {
       // putaran 1 selesai -> tunggu user siap untuk gantian peran
       phase.value = 'swap'
       scrollDown()
@@ -726,6 +791,11 @@ function selfRated() {
   pass(tries.value === 1)
 }
 
+// Tips, kata penting, dan pertanyaan serupa per skenario (opsional; dipakai paket situasi seperti Mensetsu).
+const tipsOf = computed(() => (locale.value === 'en' && scenario.value?.tips_en?.length ? scenario.value.tips_en : scenario.value?.tips_id) ?? [])
+const meaningOf = o => (locale.value === 'en' && o.en) || o.id || ''
+const hasExtras = computed(() => tipsOf.value.length > 0 || scenario.value?.words?.length > 0 || scenario.value?.related?.length > 0)
+
 const manualOnly = computed(() => !canRecognize || hardError.value)
 const canSkip = computed(() => tries.value >= MAX_TRIES_BEFORE_SKIP)
 const stars = computed(() => {
@@ -754,8 +824,78 @@ const stars = computed(() => {
           {{ t('kaiwa.overall', { done: overall.done, total: overall.total }) }}
         </VChip>
       </div>
+
+      <VTabs
+        v-if="situations.length"
+        :model-value="track"
+        class="mt-2"
+        @update:model-value="setTrack"
+      >
+        <VTab
+          value="lesson"
+          prepend-icon="tabler-book-2"
+        >
+          {{ t('kaiwa.track_lesson') }}
+        </VTab>
+        <VTab
+          value="situation"
+          prepend-icon="tabler-briefcase"
+        >
+          {{ t('kaiwa.track_situation') }}
+        </VTab>
+      </VTabs>
+
       <div
-        v-if="manifest.length > 1"
+        v-if="track === 'situation'"
+        class="kaiwa-sets mt-4 mb-5"
+        role="tablist"
+        :aria-label="t('kaiwa.track_situation')"
+      >
+        <button
+          v-for="c in situationCards"
+          :key="c.id"
+          type="button"
+          role="tab"
+          class="kaiwa-set"
+          :class="[`kaiwa-set--${c.status}`, { 'kaiwa-set--active': c.active }]"
+          :aria-selected="c.active"
+          @click="pickSituation(c)"
+        >
+          <span class="kaiwa-set__head">
+            <VIcon
+              :icon="c.icon"
+              size="22"
+              class="kaiwa-set__icon"
+            />
+            <span class="kaiwa-set__title">{{ c.title }}</span>
+            <VChip
+              v-if="c.level"
+              size="x-small"
+              variant="tonal"
+            >
+              {{ c.level }}
+            </VChip>
+            <VIcon
+              v-if="c.status === 'mastered'"
+              icon="tabler-crown"
+              size="16"
+              class="kaiwa-set__crown"
+            />
+            <VIcon
+              v-else-if="c.status === 'completed'"
+              icon="tabler-circle-check-filled"
+              size="16"
+              color="success"
+            />
+          </span>
+          <span class="kaiwa-set__desc">{{ c.desc }}</span>
+          <span class="kaiwa-level__bar"><span :style="{ inlineSize: `${c.percent}%` }" /></span>
+          <span class="kaiwa-set__meta">{{ t('kaiwa.scenarios_done', { done: c.done, total: c.total }) }}</span>
+        </button>
+      </div>
+
+      <div
+        v-if="track === 'lesson' && manifest.length > 1"
         class="kaiwa-levels mt-4 mb-5"
         role="tablist"
         :aria-label="t('kaiwa.title')"
@@ -839,6 +979,17 @@ const stars = computed(() => {
       </p>
 
       <VAlert
+        v-if="tr(lesson, 'note')"
+        variant="tonal"
+        color="primary"
+        density="compact"
+        icon="tabler-info-circle"
+        class="mb-6"
+      >
+        {{ tr(lesson, 'note') }}
+      </VAlert>
+
+      <VAlert
         v-if="!canRecognize"
         type="info"
         variant="tonal"
@@ -916,11 +1067,12 @@ const stars = computed(() => {
           </div>
         </div>
         <VChip
+          v-if="totalRounds > 1"
           size="small"
           color="primary"
           variant="tonal"
         >
-          {{ t('kaiwa.round_n', { n: round, total: TOTAL_ROUNDS }) }}
+          {{ t('kaiwa.round_n', { n: round, total: totalRounds }) }}
         </VChip>
       </div>
 
@@ -932,6 +1084,76 @@ const stars = computed(() => {
       >
         {{ tr(scenario, 'setting') }}
       </VAlert>
+
+      <VExpansionPanels
+        v-if="hasExtras"
+        variant="accordion"
+        class="mb-3"
+      >
+        <VExpansionPanel>
+          <VExpansionPanelTitle>
+            <VIcon
+              icon="tabler-bulb"
+              size="20"
+              class="me-2"
+            />
+            {{ t('kaiwa.tips_title') }}
+          </VExpansionPanelTitle>
+          <VExpansionPanelText>
+            <ul
+              v-if="tipsOf.length"
+              class="ps-4 mb-3"
+            >
+              <li
+                v-for="(tip, i) in tipsOf"
+                :key="i"
+                class="text-body-2 mb-1"
+              >
+                {{ tip }}
+              </li>
+            </ul>
+
+            <template v-if="scenario.words?.length">
+              <div class="text-subtitle-2 mb-1">
+                {{ t('kaiwa.key_words') }}
+              </div>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <VChip
+                  v-for="w in scenario.words"
+                  :key="w.ja"
+                  size="small"
+                  variant="tonal"
+                >
+                  <RubyText
+                    :text="w.ja"
+                    :show-furigana="showFurigana"
+                  />
+                  <span class="ms-1 text-medium-emphasis">· {{ meaningOf(w) }}</span>
+                </VChip>
+              </div>
+            </template>
+
+            <template v-if="scenario.related?.length">
+              <div class="text-subtitle-2 mb-1">
+                {{ t('kaiwa.similar_questions') }}
+              </div>
+              <ul class="ps-4">
+                <li
+                  v-for="q in scenario.related"
+                  :key="q.ja"
+                  class="text-body-2 mb-1"
+                >
+                  <RubyText
+                    :text="q.ja"
+                    :show-furigana="showFurigana"
+                  />
+                  <span class="text-medium-emphasis"> — {{ meaningOf(q) }}</span>
+                </li>
+              </ul>
+            </template>
+          </VExpansionPanelText>
+        </VExpansionPanel>
+      </VExpansionPanels>
 
       <div class="d-flex flex-wrap gap-4 mb-3">
         <VSwitch
@@ -1208,6 +1430,85 @@ const stars = computed(() => {
 </template>
 
 <style scoped>
+/* ---------- paket situasi (tab Situasi) — kartu lebar dengan ikon, deskripsi, dan progres ---------- */
+.kaiwa-sets {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.kaiwa-set {
+  --lv: var(--v-theme-primary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgba(var(--v-theme-on-surface), 0.12);
+  border-radius: 14px;
+  background: rgb(var(--v-theme-surface));
+  color: rgb(var(--v-theme-on-surface));
+  cursor: pointer;
+  gap: 8px;
+  padding: 16px;
+  text-align: start;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.kaiwa-set--completed { --lv: var(--v-theme-success); }
+.kaiwa-set--mastered { --lv: var(--v-theme-warning); }
+
+.kaiwa-set:hover {
+  border-color: rgba(var(--v-theme-primary), 0.6);
+  box-shadow: 0 10px 20px -10px rgba(var(--v-theme-primary), 0.5);
+  transform: translateY(-2px);
+}
+
+.kaiwa-set:focus-visible {
+  outline: 2px solid rgb(var(--v-theme-primary));
+  outline-offset: 2px;
+}
+
+.kaiwa-set--active {
+  border-color: rgb(var(--lv));
+  box-shadow: 0 0 0 2px rgba(var(--lv), 0.3);
+}
+
+.kaiwa-set__head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  inline-size: 100%;
+}
+
+.kaiwa-set__icon { color: rgb(var(--lv)); }
+.kaiwa-set__crown { color: rgb(var(--v-theme-warning)); }
+
+.kaiwa-set__title {
+  flex-grow: 1;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.kaiwa-set__desc {
+  color: rgba(var(--v-theme-on-surface), 0.7);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.kaiwa-set__meta {
+  color: rgba(var(--v-theme-on-surface), 0.6);
+  font-size: 0.72rem;
+}
+
+.kaiwa-set .kaiwa-level__bar { inline-size: 100%; }
+.kaiwa-set--completed .kaiwa-level__bar > span { background: rgb(var(--v-theme-success)); }
+.kaiwa-set--mastered .kaiwa-level__bar > span { background: rgb(var(--v-theme-warning)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .kaiwa-set { transition: none; }
+  .kaiwa-set:hover { transform: none; }
+}
+
 /* ---------- pemilih pelajaran — gaya sama dengan pemilih level (N5…N1) di Kanji ---------- */
 .kaiwa-levels {
   display: grid;

@@ -46,9 +46,11 @@ class KaiwaController extends Controller
 
         // Hanya id skenario yang benar-benar ada di materi; tanpa ini format `l99-s1`
         // yang valid menurut regex route bisa dipakai menimbun XP dengan kunci karangan.
+        // Dua sumber sah: pelajaran (index.json → lessons, berkunci) dan paket situasi
+        // (index.json → situations, mis. `mensetsu-s3`, bebas kunci).
         $lessons = $this->lessonScenarioIds();
         $lessonId = $this->lessonOf($setKey, $lessons);
-        abort_if($lessonId === null, 404);
+        abort_if($lessonId === null && ! in_array($setKey, $this->situationScenarioIds(), true), 404);
 
         $user = $request->user();
 
@@ -56,7 +58,7 @@ class KaiwaController extends Controller
         // skenario pelajaran sebelumnya (urutan manifest) sudah done. Admin dikecualikan. Skenario yang
         // sudah pernah tamat boleh diulang, supaya skenario baru di pelajaran lama tidak mengunci
         // ulang pemain yang sudah lebih maju.
-        if (! $user->isAdmin()) {
+        if ($lessonId !== null && ! $user->isAdmin()) {
             $done = UserKaiwaProgress::where('user_id', $user->id)->where('done', true)->pluck('set_key')->all();
 
             if (! in_array($setKey, $done, true)) {
@@ -133,6 +135,28 @@ class KaiwaController extends Controller
         }
 
         return $lessons;
+    }
+
+    /**
+     * Id semua skenario paket situasi (index.json → situations), mis. ['mensetsu-s1', ...].
+     * Paket situasi tidak berkunci, jadi cukup daftar datar untuk memeriksa keabsahan id.
+     *
+     * @return list<string>
+     */
+    private function situationScenarioIds(): array
+    {
+        $dir = public_path('data/kaiwa');
+        $manifest = json_decode((string) @file_get_contents("{$dir}/index.json"), true);
+        $ids = [];
+
+        foreach ($manifest['situations'] ?? [] as $entry) {
+            $pack = json_decode((string) @file_get_contents("{$dir}/".basename((string) ($entry['file'] ?? ''))), true);
+
+            foreach ($pack['scenarios'] ?? [] as $scenario)
+                $ids[] = (string) ($scenario['id'] ?? '');
+        }
+
+        return $ids;
     }
 
     /** @param array<int, list<string>> $lessons */

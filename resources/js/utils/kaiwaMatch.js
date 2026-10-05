@@ -29,6 +29,7 @@ let kanjiOrder = null
 // Pengenal suara menulis angka sebagai digit/kanji ("私も25歳です", "二十五歳", "9時半"),
 // padahal target ditulis kana ("にじゅうごさい"). Angka + 歳/時/分/円 diubah ke bacaan kana
 // di KEDUA sisi sebelum dibandingkan. Cakupan: 0–9999 (cukup untuk umur, jam, menit, harga).
+// 年 / 年間 (三年, 四年間, 6年前) ditambahkan untuk paket situasi Mensetsu (lama kerja, masa belajar).
 const KANJI_DIGIT = { 〇: 0, 零: 0, 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 }
 const DIGIT_KANA = ['', 'いち', 'に', 'さん', 'よん', 'ご', 'ろく', 'なな', 'はち', 'きゅう']
 
@@ -138,11 +139,17 @@ function counterReading(n, counter) {
 
     return `${intToKana(n - last)}${last === 4 ? 'よ' : DIGIT_KANA[last]}えん`
   }
+  if (counter === '年' || counter === '年間') {
+    const last = n % 10
+    const tail = { 4: 'よ', 7: 'しち', 9: 'く' }[last] ?? DIGIT_KANA[last]
+
+    return `${intToKana(n - last)}${tail}${counter === '年' ? 'ねん' : 'ねんかん'}`
+  }
 
   return intToKana(n)
 }
 
-const NUM_COUNTER = /(\d{1,4}|[〇零一二三四五六七八九十百千]+)(歳|才|時間|時|分|円|階|人|枚|台|回|週間|か月|ヶ月|ヵ月|つ|さい|じ|ふん|ぷん|えん|かい|がい)/g
+const NUM_COUNTER = /(\d{1,4}|[〇零一二三四五六七八九十百千]+)(歳|才|時間|時|分|円|階|人|枚|台|回|週間|か月|ヶ月|ヵ月|年間|年|つ|さい|じ|ふん|ぷん|えん|かい|がい)/g
 const KANA_COUNTER = { さい: '歳', じ: '時', ふん: '分', ぷん: '分', えん: '円', かい: '階', がい: '階', ヶ月: 'か月', ヵ月: 'か月' }
 
 export function numbersToKana(s) {
