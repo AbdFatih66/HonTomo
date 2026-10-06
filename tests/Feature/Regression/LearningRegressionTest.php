@@ -95,12 +95,12 @@ class LearningRegressionTest extends TestCase
                 'week' => [['date', 'weekday', 'xp', 'is_today']],
             ])
             ->assertJsonCount(7, 'week')
-            ->assertJsonCount(9, 'roadmap')
+            ->assertJsonCount(10, 'roadmap')
             ->json();
 
         // Urutan roadmap = urutan menu samping.
         $this->assertSame(
-            ['kana', 'learn', 'vocabulary', 'kanji', 'mondaishuu', 'chokai', 'kaite_oboeru', 'lampiran', 'jlpt_test'],
+            ['kana', 'learn', 'vocabulary', 'kanji', 'mondaishuu', 'chokai', 'kaiwa', 'kaite_oboeru', 'lampiran', 'jlpt_test'],
             array_column($json['roadmap'], 'key'),
         );
 

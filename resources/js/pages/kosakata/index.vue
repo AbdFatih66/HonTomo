@@ -44,9 +44,16 @@ async function loadWords() {
 }
 
 const currentChapter = computed(() => chapters.value.find(c => c.order === selectedChapter.value))
-const chapterTitle = computed(() => currentChapter.value
-  ? (locale.value === 'en' ? currentChapter.value.title_en : currentChapter.value.title_id)
-  : '')
+// Judul unit dari server sudah berawalan "Pelajaran 1: …" — buang awalan itu
+// supaya tidak dobel dengan label "Pelajaran {n}" di judul kartu.
+const chapterTitle = computed(() => {
+  if (!currentChapter.value)
+    return ''
+
+  const raw = locale.value === 'en' ? currentChapter.value.title_en : currentChapter.value.title_id
+
+  return (raw ?? '').replace(/^\s*(?:Pelajaran|Lesson|Bab|Chapter)\s*\d+\s*[:：\-–—]?\s*/i, '').trim()
+})
 
 const filteredWords = computed(() => {
   if (!search.value.trim())

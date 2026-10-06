@@ -117,6 +117,7 @@
       "kanji": "Pelajari bentuk, arti, bacaan, dan urutan goresan kanji.",
       "mondaishuu": "Kuis latihan per pelajaran untuk menguji pemahaman.",
       "chokai": "Latih telinga: dengarkan audio lalu jawab pertanyaannya.",
+      "kaiwa": "Berlatih bercakap: simulasi dialog situasi nyata dengan lawan bicara.",
       "kaite_oboeru": "Tulis jawaban dengan tangan agar kata melekat di ingatan.",
       "lampiran": "Rujukan cepat: bilangan, waktu, kata bantu bilangan, konjugasi.",
       "jlpt_test": "Simulasi ujian JLPT lengkap dengan timer dan rekap nilai."
@@ -128,6 +129,7 @@
       "kanji": "{done} dari {total} kanji dikuasai",
       "mondaishuu": "{done} dari {total} set latihan selesai",
       "chokai": "{done} dari {total} set menyimak selesai",
+      "kaiwa": "{done} dari {total} skenario percakapan selesai",
       "kaite_oboeru": "{done} dari {total} pelajaran menulis selesai",
       "lampiran": "",
       "jlpt_test": "{done} tes sudah diselesaikan"
@@ -192,6 +194,11 @@
         "title": "Biasakan telinga",
         "body": "Dengarkan audio berulang kali, bahkan sambil santai. Kemampuan menyimak hanya naik lewat jam terbang.",
         "cta": "Latihan Menyimak"
+      },
+      "speak": {
+        "title": "Ucapkan, jangan hanya dibaca",
+        "body": "Bicara keras-keras melatih lidah dan telinga sekaligus. Ulangi skenario percakapan sampai lancar tanpa melihat teks.",
+        "cta": "Latihan Percakapan"
       },
       "quiz": {
         "title": "Uji setelah belajar",
@@ -741,7 +748,9 @@
     "crown_hint": "Masih ada jawaban yang salah — selesaikan tanpa kesalahan untuk dapat mahkota.",
     "done_title": "Latihan selesai!",
     "retry": "Ulangi Latihan Ini",
-    "next_lesson": "Lanjut ke Pelajaran {n}"
+    "next_lesson": "Lanjut ke Pelajaran {n}",
+    "locked_hint": "Selesaikan Pelajaran {n} dulu untuk membuka Pelajaran {next}.",
+    "locked_review_hint": "Selesaikan Pelajaran {from}–{to} dulu untuk membuka rangkuman ini."
   },
   "jlptTest": {
     "title": "Tes JLPT",
@@ -1077,8 +1086,6 @@
     "retry": "Ulangi",
     "next_lesson": "Lanjut ke Pelajaran {n}",
     "locked_hint": "Selesaikan Pelajaran {n} dulu untuk membuka Pelajaran {next}.",
-    "locked_hint": "Selesaikan Pelajaran {n} dulu untuk membuka Pelajaran {next}.",
-    "locked_review_hint": "Selesaikan Pelajaran {from}–{to} dulu untuk membuka rangkuman ini.",
     "quiz_back": "Kembali",
     "hearts": "Nyawa",
     "out_of_hearts": "Nyawa habis",

@@ -117,6 +117,7 @@
       "kanji": "Study kanji shapes, meanings, readings, and stroke order.",
       "mondaishuu": "Practice quizzes per lesson to test your understanding.",
       "chokai": "Train your ear: listen to the audio, then answer the question.",
+      "kaiwa": "Practise speaking: simulated real-life dialogues with a conversation partner.",
       "kaite_oboeru": "Write answers by hand so the words stick in memory.",
       "lampiran": "Quick reference: numbers, time, counters, conjugation.",
       "jlpt_test": "A full JLPT exam simulation with timers and a score recap."
@@ -128,6 +129,7 @@
       "kanji": "{done} of {total} kanji mastered",
       "mondaishuu": "{done} of {total} practice sets completed",
       "chokai": "{done} of {total} listening sets completed",
+      "kaiwa": "{done} of {total} conversation scenarios completed",
       "kaite_oboeru": "{done} of {total} writing lessons completed",
       "lampiran": "",
       "jlpt_test": "{done} tests completed"
@@ -192,6 +194,11 @@
         "title": "Train your ear",
         "body": "Replay the audio many times, even casually. Listening only improves with exposure.",
         "cta": "Listening Practice"
+      },
+      "speak": {
+        "title": "Say it out loud",
+        "body": "Speaking aloud trains your tongue and your ear at once. Repeat conversation scenarios until you can do them without looking at the text.",
+        "cta": "Conversation Practice"
       },
       "quiz": {
         "title": "Test after you study",
@@ -741,7 +748,9 @@
     "crown_hint": "There were still some wrong answers — finish with none wrong to earn the crown.",
     "done_title": "Practice complete!",
     "retry": "Retry This Set",
-    "next_lesson": "Continue to Lesson {n}"
+    "next_lesson": "Continue to Lesson {n}",
+    "locked_hint": "Finish Lesson {n} first to unlock Lesson {next}.",
+    "locked_review_hint": "Finish Lessons {from}–{to} first to unlock this review."
   },
   "jlptTest": {
     "title": "JLPT Test",
@@ -1077,8 +1086,6 @@
     "retry": "Retry",
     "next_lesson": "Continue to Lesson {n}",
     "locked_hint": "Finish Lesson {n} first to unlock Lesson {next}.",
-    "locked_hint": "Finish Lesson {n} first to unlock Lesson {next}.",
-    "locked_review_hint": "Finish Lessons {from}–{to} first to unlock this review.",
     "quiz_back": "Back",
     "hearts": "Hearts",
     "out_of_hearts": "Out of hearts",

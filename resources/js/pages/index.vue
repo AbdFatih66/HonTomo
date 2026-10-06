@@ -213,6 +213,7 @@ const STUDY_TIPS = [
   { key: 'spaced', icon: 'tabler-repeat', route: 'kosakata' },
   { key: 'kanji', icon: 'tabler-writing', route: 'kanji' },
   { key: 'write', icon: 'tabler-writing-sign', route: 'kaite-oboeru' },
+  { key: 'speak', icon: 'tabler-messages', route: 'kaiwa' },
   { key: 'listen', icon: 'tabler-headphones', route: 'chokai' },
   { key: 'quiz', icon: 'tabler-pencil-check', route: 'mondaishuu' },
 ]

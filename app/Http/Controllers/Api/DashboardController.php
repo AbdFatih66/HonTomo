@@ -11,6 +11,7 @@ use App\Models\User;
 use App\Models\UserChokaiProgress;
 use App\Models\UserJlptTestAttempt;
 use App\Models\UserKaiteOboeruProgress;
+use App\Models\UserKaiwaProgress;
 use App\Models\UserKanjiProgress;
 use App\Models\UserMondaishuuProgress;
 use App\Models\UserVocabulary;
@@ -113,7 +114,7 @@ class DashboardController extends Controller
     /**
      * Roadmap belajar — urutannya SAMA dengan menu samping:
      * Kana → Belajar → Kosakata → Kanji → Latihan Soal → Latihan Menyimak
-     * → Latihan Menulis → Referensi Tata Bahasa → Tes JLPT.
+     * → Latihan Percakapan → Latihan Menulis → Referensi Tata Bahasa → Tes JLPT.
      *
      * Tiap tahap: `done`/`total` (null bila tahap itu tidak punya ukuran
      * progres, mis. Kana & Referensi), `percent`, dan `state`:
@@ -135,6 +136,13 @@ class DashboardController extends Controller
         $kanjiMastered = UserKanjiProgress::where('user_id', $user->id)
             ->where('status', UserKanjiProgress::STATUS_MASTERED)->count();
 
+        // Kaiwa: materinya di public/data/kaiwa (bukan database), jadi total diambil dari
+        // manifest. Yang dihitung hanya skenario jalur pelajaran; paket situasi (mis. Mensetsu)
+        // bersifat tambahan dan tidak ikut roadmap.
+        $kaiwaIds = $this->kaiwaLessonScenarioIds();
+        $kaiwaDone = $kaiwaIds === [] ? 0 : UserKaiwaProgress::where('user_id', $user->id)
+            ->where('done', true)->whereIn('set_key', $kaiwaIds)->count();
+
         $jlptDone = UserJlptTestAttempt::where('user_id', $user->id)
             ->where('status', UserJlptTestAttempt::STATUS_COMPLETED)->count();
 
@@ -147,6 +155,7 @@ class DashboardController extends Controller
                 'done' => UserMondaishuuProgress::where('user_id', $user->id)->where('done', true)->count(), 'total' => self::MONDAISHUU_SETS],
             ['key' => 'chokai', 'route' => 'chokai', 'icon' => 'tabler-headphones',
                 'done' => UserChokaiProgress::where('user_id', $user->id)->where('done', true)->count(), 'total' => self::CHOKAI_SETS],
+            ['key' => 'kaiwa', 'route' => 'kaiwa', 'icon' => 'tabler-messages', 'done' => $kaiwaDone, 'total' => count($kaiwaIds)],
             ['key' => 'kaite_oboeru', 'route' => 'kaite-oboeru', 'icon' => 'tabler-writing-sign',
                 'done' => UserKaiteOboeruProgress::where('user_id', $user->id)->where('done', true)->count(), 'total' => self::KAITE_OBOERU_SETS],
             ['key' => 'lampiran', 'route' => 'lampiran', 'icon' => 'tabler-clipboard-list', 'done' => null, 'total' => null],
@@ -167,8 +176,9 @@ class DashboardController extends Controller
                 default => false, // Referensi: bahan rujukan, tidak pernah "selesai"
             };
 
-            // Referensi tidak menghalangi tahap lain menjadi "current".
-            $skippable = $s['key'] === 'lampiran';
+            // Referensi tidak menghalangi tahap lain menjadi "current"; begitu pula Kaiwa
+            // bila materinya belum terpasang (total 0), supaya tidak macet di tahap kosong.
+            $skippable = $s['key'] === 'lampiran' || ($s['key'] === 'kaiwa' && ! $hasMeter);
 
             $state = 'upcoming';
             if ($isDone)
@@ -218,7 +228,32 @@ class DashboardController extends Controller
     {
         return UserMondaishuuProgress::where('user_id', $user->id)->where('crown', true)->count()
             + UserChokaiProgress::where('user_id', $user->id)->where('crown', true)->count()
+            + UserKaiwaProgress::where('user_id', $user->id)->where('crown', true)->count()
             + UserKaiteOboeruProgress::where('user_id', $user->id)->where('crown', true)->count();
+    }
+
+    /**
+     * Id semua skenario jalur pelajaran Kaiwa (index.json → lessons → lesson-{n}.json).
+     * Kosong bila materi belum terpasang, jadi tahap Kaiwa tampil tanpa meter.
+     *
+     * @return list<string>
+     */
+    private function kaiwaLessonScenarioIds(): array
+    {
+        $dir = public_path('data/kaiwa');
+        $manifest = json_decode((string) @file_get_contents("{$dir}/index.json"), true);
+        $ids = [];
+
+        foreach ($manifest['lessons'] ?? [] as $entry) {
+            $lesson = json_decode((string) @file_get_contents("{$dir}/".basename((string) ($entry['file'] ?? ''))), true);
+
+            foreach ($lesson['scenarios'] ?? [] as $scenario) {
+                if (! empty($scenario['id']))
+                    $ids[] = (string) $scenario['id'];
+            }
+        }
+
+        return $ids;
     }
 
     /** 5 perolehan XP terbaru. `source` dipetakan ke teks di frontend. */
