@@ -1,0 +1,1957 @@
+{
+    "id": "pabrik",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Pabrik (Tempat Kerja)",
+    "title_en": "Factory (Workplace)",
+    "note_id": "Kalimat atasan dibuat sederhana tetapi nyata. Nama, jam, dan alasan di jawaban contoh hanya contoh: ganti dengan keadaanmu sendiri saat benar-benar menghubungi atasan.",
+    "note_en": "The supervisor lines are kept simple but realistic. Names, times and reasons in the sample answers are examples: replace them with your own situation when you really contact a supervisor.",
+    "scenarios": [
+        {
+            "id": "pabrik-s1",
+            "title_id": "Pagi hari & 朝礼",
+            "title_en": "Morning start and assembly",
+            "setting_id": "Kamu tiba di pabrik, menyapa atasan, dan mendengar tugas hari ini.",
+            "setting_en": "You arrive at the factory, greet your supervisor, and hear today's tasks.",
+            "goal_id": "Menyapa dengan おはようございます, memahami tugas hari ini, dan melapor bahwa alat pelindung sudah dipakai.",
+            "goal_en": "Greet with おはようございます, understand today's tasks, and report that your protective gear is on.",
+            "patterns": [
+                "〜を して ください",
+                "〜ましたか",
+                "〜に 気を つけます"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pagi: おはようございます, 今日も よろしく お願いします. Tersenyum dan bersuara jelas membuat kesan baik.",
+                "Ulangi tugas dengan kata-katamu sendiri (〜ですね) agar atasan tahu kamu paham.",
+                "Alat pelindung (ヘルメット, 手袋, 安全靴) harus dipakai sebelum masuk area kerja."
+            ],
+            "tips_en": [
+                "Morning: おはようございます, 今日も よろしく お願いします. A smile and a clear voice make a good impression.",
+                "Repeat the task in your own words (〜ですね) so your supervisor knows you understood.",
+                "Protective gear (ヘルメット, 手袋, 安全靴) must be on before entering the work area."
+            ],
+            "words": [
+                {
+                    "ja": "朝礼《ちょうれい》",
+                    "id": "apel pagi",
+                    "en": "morning assembly"
+                },
+                {
+                    "ja": "検査《けんさ》",
+                    "id": "inspeksi",
+                    "en": "inspection"
+                },
+                {
+                    "ja": "手袋《てぶくろ》",
+                    "id": "sarung tangan",
+                    "en": "gloves"
+                },
+                {
+                    "ja": "安全《あんぜん》",
+                    "id": "keselamatan",
+                    "en": "safety"
+                },
+                {
+                    "ja": "部品《ぶひん》",
+                    "id": "komponen",
+                    "en": "parts"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "今日《きょう》の 仕事《しごと》は 何《なん》ですか。",
+                    "id": "Apa pekerjaan hari ini?",
+                    "en": "What is today's work?"
+                },
+                {
+                    "ja": "安全《あんぜん》靴《ぐつ》は 履《は》きました。",
+                    "id": "Sepatu keselamatan sudah saya pakai.",
+                    "en": "I have put on my safety shoes."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s1-t1",
+                    "who": "partner",
+                    "ja": "おはようございます。今日《きょう》も よろしく お願《ねが》いします。",
+                    "speak": "おはようございます。きょうも よろしく おねがいします。",
+                    "id_text": "Selamat pagi. Mohon kerja samanya hari ini juga.",
+                    "en_text": "Good morning. Let's do well today too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t2",
+                    "who": "you",
+                    "ja": "おはようございます。今日《きょう》も よろしく お願《ねが》いします。",
+                    "speak": "おはようございます。きょうも よろしく おねがいします。",
+                    "id_text": "Selamat pagi. Mohon kerja samanya hari ini juga.",
+                    "accept": [
+                        "おはようございます。今日も よろしく お願いします。",
+                        "おはようございます。今日もよろしくお願いします。"
+                    ],
+                    "en_text": "Good morning. I look forward to working with you today too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t3",
+                    "who": "partner",
+                    "ja": "今日《きょう》は ラインで 部品《ぶひん》の 検査《けんさ》を して ください。",
+                    "speak": "きょうは ラインで ぶひんの けんさを して ください。",
+                    "id_text": "Hari ini tolong periksa komponen di lini.",
+                    "en_text": "Today, please inspect the parts on the line.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t4",
+                    "who": "you",
+                    "ja": "はい、部品《ぶひん》の 検査《けんさ》ですね。分《わ》かりました。",
+                    "speak": "はい、ぶひんの けんさですね。わかりました。",
+                    "id_text": "Baik, memeriksa komponen ya. Saya mengerti.",
+                    "accept": [
+                        "はい、部品の 検査ですね。分かりました。",
+                        "はい、部品の検査ですね。分かりました。"
+                    ],
+                    "en_text": "Yes, inspecting parts. Understood.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t5",
+                    "who": "partner",
+                    "ja": "ヘルメットと 手袋《てぶくろ》は つけましたか。",
+                    "speak": "ヘルメットと てぶくろは つけましたか。",
+                    "id_text": "Helm dan sarung tangan sudah dipakai?",
+                    "en_text": "Have you put on your helmet and gloves?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t6",
+                    "who": "you",
+                    "ja": "はい、ヘルメットも 手袋《てぶくろ》も つけました。",
+                    "speak": "はい、ヘルメットも てぶくろも つけました。",
+                    "id_text": "Ya, helm dan sarung tangan sudah saya pakai.",
+                    "accept": [
+                        "はい、ヘルメットも 手袋も つけました。",
+                        "はい、ヘルメットも手袋もつけました。"
+                    ],
+                    "en_text": "Yes, I have both my helmet and gloves on.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t7",
+                    "who": "partner",
+                    "ja": "体《からだ》の 調子《ちょうし》は どうですか。",
+                    "speak": "からだの ちょうしは どうですか。",
+                    "id_text": "Kondisi badan bagaimana?",
+                    "en_text": "How are you feeling?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s1-t8",
+                    "who": "you",
+                    "ja": "元気《げんき》です。安全《あんぜん》に 気《き》を つけて 働《はたら》きます。",
+                    "speak": "げんきです。あんぜんに きを つけて はたらきます。",
+                    "id_text": "Saya sehat. Saya akan bekerja dengan memperhatikan keselamatan.",
+                    "accept": [
+                        "元気です。安全に 気を つけて 働きます。",
+                        "元気です。安全に気をつけて働きます。"
+                    ],
+                    "en_text": "I am fine. I will work carefully and safely.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s2",
+            "title_id": "Memahami cara kerja & minta ulang",
+            "title_en": "Understanding the procedure and asking for repetition",
+            "setting_id": "Seorang senior menjelaskan prosedur baru dengan cepat. Kamu meminta pengulangan dan mencobanya.",
+            "setting_en": "A senior explains a new procedure quickly. You ask for repetition and try it.",
+            "goal_id": "Meminta ulang dengan もう一度 ゆっくり お願いします, mengonfirmasi urutan, dan meminta contoh dengan 見せて ください.",
+            "goal_en": "Ask for repetition with もう一度 ゆっくり お願いします, confirm the order, and ask for a demonstration with 見せて ください.",
+            "patterns": [
+                "もう一度 ゆっくり お願いします",
+                "〜て、〜て、〜ます",
+                "〜て みます"
+            ],
+            "partner": {
+                "name": "せんぱい",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tidak mengerti itu wajar; menebak-nebak berbahaya. Minta ulang lebih baik daripada salah kerja.",
+                "Ulangi urutan dengan 〜て、〜て、〜ます untuk memastikan.",
+                "Minta contoh langsung: 一回 見せて ください, lalu やって みます."
+            ],
+            "tips_en": [
+                "Not understanding is normal; guessing is dangerous. Asking again is better than doing it wrong.",
+                "Repeat the order using 〜て、〜て、〜ます to confirm.",
+                "Ask for a live example: 一回 見せて ください, then やって みます."
+            ],
+            "words": [
+                {
+                    "ja": "説明《せつめい》",
+                    "id": "penjelasan",
+                    "en": "explanation"
+                },
+                {
+                    "ja": "手順《てじゅん》",
+                    "id": "prosedur",
+                    "en": "procedure"
+                },
+                {
+                    "ja": "ボタン",
+                    "id": "tombol",
+                    "en": "button"
+                },
+                {
+                    "ja": "箱《はこ》",
+                    "id": "kotak",
+                    "en": "box"
+                },
+                {
+                    "ja": "やって みる",
+                    "id": "mencoba melakukan",
+                    "en": "to try doing"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "もう少《すこ》し ゆっくり お願《ねが》いします。",
+                    "id": "Tolong sedikit lebih pelan.",
+                    "en": "A little more slowly, please."
+                },
+                {
+                    "ja": "分《わ》からない 言葉《ことば》が あります。",
+                    "id": "Ada kata yang tidak saya mengerti.",
+                    "en": "There is a word I do not understand."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s2-t1",
+                    "who": "partner",
+                    "ja": "この 部品《ぶひん》は、機械《きかい》に 入《い》れて、ボタンを 押《お》して、箱《はこ》に 入《い》れます。",
+                    "speak": "この ぶひんは、きかいに いれて、ボタンを おして、はこに いれます。",
+                    "id_text": "Komponen ini dimasukkan ke mesin, tekan tombol, lalu masukkan ke kotak.",
+                    "en_text": "Put this part in the machine, press the button, then put it in the box.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t2",
+                    "who": "you",
+                    "ja": "すみません、もう一度《いちど》 ゆっくり お願《ねが》いします。",
+                    "speak": "すみません、もういちど ゆっくり おねがいします。",
+                    "id_text": "Maaf, tolong ulangi sekali lagi dengan pelan.",
+                    "accept": [
+                        "すみません、もう一度 ゆっくり お願いします。",
+                        "すみません、もう一度ゆっくりお願いします。"
+                    ],
+                    "en_text": "Sorry, once more, slowly please.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t3",
+                    "who": "partner",
+                    "ja": "はい。まず、機械《きかい》に 入《い》れます。次《つぎ》に ボタンを 押《お》します。",
+                    "speak": "はい。まず、きかいに いれます。つぎに ボタンを おします。",
+                    "id_text": "Baik. Pertama masukkan ke mesin. Lalu tekan tombol.",
+                    "en_text": "Yes. First put it in the machine. Next press the button.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t4",
+                    "who": "you",
+                    "ja": "機械《きかい》に 入《い》れて、ボタンを 押《お》します。それから 箱《はこ》ですね。",
+                    "speak": "きかいに いれて、ボタンを おします。それから はこですね。",
+                    "id_text": "Masukkan ke mesin, tekan tombol. Setelah itu kotak, ya.",
+                    "accept": [
+                        "機械に 入れて、ボタンを 押します。それから 箱ですね。",
+                        "機械に入れて、ボタンを押します。それから箱ですね。"
+                    ],
+                    "en_text": "Put it in the machine and press the button. Then the box, right?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t5",
+                    "who": "partner",
+                    "ja": "そうです。最後《さいご》に 箱《はこ》に 入《い》れます。",
+                    "speak": "そうです。さいごに はこに いれます。",
+                    "id_text": "Benar. Terakhir masukkan ke kotak.",
+                    "en_text": "That is right. Finally put it in the box.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t6",
+                    "who": "you",
+                    "ja": "一回《いっかい》 見《み》せて ください。私《わたし》も やって みます。",
+                    "speak": "いっかい みせて ください。わたしも やって みます。",
+                    "id_text": "Tolong tunjukkan sekali. Saya juga akan mencoba.",
+                    "accept": [
+                        "一回 見せて ください。私も やって みます。",
+                        "一回見せてください。私もやってみます。"
+                    ],
+                    "en_text": "Please show me once. I will try too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t7",
+                    "who": "partner",
+                    "ja": "いいですよ。…はい、どうぞ。やって みて ください。",
+                    "speak": "いいですよ。…はい、どうぞ。やって みて ください。",
+                    "id_text": "Boleh. ... Silakan, coba lakukan.",
+                    "en_text": "Sure. ... There you go. Please try it.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t8",
+                    "who": "you",
+                    "ja": "やって みました。これで いいですか。",
+                    "speak": "やって みました。これで いいですか。",
+                    "id_text": "Sudah saya coba. Apakah begini sudah benar?",
+                    "accept": [
+                        "やって みました。これで いいですか。",
+                        "やってみました。これでいいですか。"
+                    ],
+                    "en_text": "I tried it. Is this OK?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t8.mp3"
+                },
+                {
+                    "id": "pabrik-s2-t9",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。よく できました。",
+                    "speak": "はい、だいじょうぶです。よく できました。",
+                    "id_text": "Ya, sudah benar. Bagus sekali.",
+                    "en_text": "Yes, that is fine. Well done.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s2-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s3",
+            "title_id": "Aturan keselamatan (安全)",
+            "title_en": "Safety rules",
+            "setting_id": "Atasan mengingatkan aturan keselamatan dan menunjuk lantai yang basah.",
+            "setting_en": "Your supervisor reminds you of safety rules and points out a wet floor.",
+            "goal_id": "Memahami larangan 〜ないで ください dan perintah 〜て ください, lalu menjawab dengan 〜ます / 〜ません.",
+            "goal_en": "Understand prohibitions 〜ないで ください and instructions 〜て ください, and reply with 〜ます / 〜ません.",
+            "patterns": [
+                "〜ないで ください",
+                "〜てから、〜ます",
+                "〜は どこに ありますか"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "〜ないで ください = \"tolong jangan ...\". Jawab dengan はい、〜ません.",
+                "Keselamatan nomor satu: mesin berhenti dulu (止めてから) baru dibersihkan atau diperbaiki.",
+                "Lantai basah atau berminyak: segera bersihkan dan laporkan."
+            ],
+            "tips_en": [
+                "〜ないで ください = \"please do not ...\". Answer with はい、〜ません.",
+                "Safety first: stop the machine (止めてから) before cleaning or repairing.",
+                "A wet or oily floor: clean it up at once and report it."
+            ],
+            "words": [
+                {
+                    "ja": "保護《ほご》メガネ",
+                    "id": "kacamata pelindung",
+                    "en": "safety glasses"
+                },
+                {
+                    "ja": "掃除《そうじ》",
+                    "id": "membersihkan",
+                    "en": "cleaning"
+                },
+                {
+                    "ja": "床《ゆか》",
+                    "id": "lantai",
+                    "en": "floor"
+                },
+                {
+                    "ja": "滑《すべ》る",
+                    "id": "tergelincir",
+                    "en": "to slip"
+                },
+                {
+                    "ja": "雑巾《ぞうきん》",
+                    "id": "kain pel/lap",
+                    "en": "cleaning cloth"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "走《はし》らないで ください。",
+                    "id": "Tolong jangan berlari.",
+                    "en": "Please do not run."
+                },
+                {
+                    "ja": "危《あぶ》ないですから、気《き》を つけて ください。",
+                    "id": "Berbahaya, jadi hati-hati.",
+                    "en": "It is dangerous, so be careful."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s3-t1",
+                    "who": "partner",
+                    "ja": "機械《きかい》が 動《うご》いて いる とき、手《て》を 入《い》れないで ください。",
+                    "speak": "きかいが うごいて いる とき、てを いれないで ください。",
+                    "id_text": "Saat mesin berjalan, jangan masukkan tangan.",
+                    "en_text": "While the machine is running, do not put your hands in.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t2",
+                    "who": "you",
+                    "ja": "はい、入《い》れません。止《と》めてから 掃除《そうじ》します。",
+                    "speak": "はい、いれません。とめてから そうじします。",
+                    "id_text": "Baik, tidak akan. Saya bersihkan setelah dihentikan.",
+                    "accept": [
+                        "はい、入れません。止めてから 掃除します。",
+                        "はい、入れません。止めてから掃除します。"
+                    ],
+                    "en_text": "Yes, I will not. I clean it after stopping it.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t3",
+                    "who": "partner",
+                    "ja": "保護《ほご》メガネも 必《かなら》ず つけて ください。",
+                    "speak": "ほごメガネも かならず つけて ください。",
+                    "id_text": "Kacamata pelindung juga harus dipakai.",
+                    "en_text": "Please always wear your safety glasses too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t4",
+                    "who": "you",
+                    "ja": "はい、必《かなら》ず つけます。もし 忘《わす》れたら、教《おし》えて ください。",
+                    "speak": "はい、かならず つけます。もし わすれたら、おしえて ください。",
+                    "id_text": "Baik, pasti saya pakai. Kalau saya lupa, tolong ingatkan.",
+                    "accept": [
+                        "はい、必ず つけます。もし 忘れたら、教えて ください。",
+                        "はい、必ずつけます。もし忘れたら、教えてください。"
+                    ],
+                    "en_text": "Yes, I always will. If I forget, please tell me.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t5",
+                    "who": "partner",
+                    "ja": "床《ゆか》に 水《みず》が こぼれて います。滑《すべ》るから、危《あぶ》ないです。",
+                    "speak": "ゆかに みずが こぼれて います。すべるから、あぶないです。",
+                    "id_text": "Ada air tumpah di lantai. Licin, berbahaya.",
+                    "en_text": "Water is spilled on the floor. It is slippery and dangerous.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t6",
+                    "who": "you",
+                    "ja": "すぐ 拭《ふ》きます。雑巾《ぞうきん》は どこに ありますか。",
+                    "speak": "すぐ ふきます。ぞうきんは どこに ありますか。",
+                    "id_text": "Segera saya lap. Kain lapnya di mana?",
+                    "accept": [
+                        "すぐ 拭きます。雑巾は どこに ありますか。",
+                        "すぐ拭きます。雑巾はどこにありますか。"
+                    ],
+                    "en_text": "I will wipe it right away. Where is the cloth?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t7",
+                    "who": "partner",
+                    "ja": "雑巾《ぞうきん》は 入口《いりぐち》の 横《よこ》に あります。",
+                    "speak": "ぞうきんは いりぐちの よこに あります。",
+                    "id_text": "Kain lap ada di samping pintu masuk.",
+                    "en_text": "The cloth is beside the entrance.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s3-t8",
+                    "who": "you",
+                    "ja": "ありました。拭《ふ》きました。ほかに 危《あぶ》ない ところは ありますか。",
+                    "speak": "ありました。ふきました。ほかに あぶない ところは ありますか。",
+                    "id_text": "Ketemu. Sudah saya lap. Adakah tempat berbahaya yang lain?",
+                    "accept": [
+                        "ありました。拭きました。ほかに 危ない ところは ありますか。",
+                        "ありました。拭きました。ほかに危ないところはありますか。"
+                    ],
+                    "en_text": "Found it. I wiped it up. Is there anywhere else dangerous?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s4",
+            "title_id": "Menemukan barang cacat (不良品)",
+            "title_en": "Finding a defective item",
+            "setting_id": "Saat memeriksa komponen kamu menemukan yang cacat dan melapor ke senior.",
+            "setting_en": "While inspecting parts you find defective ones and report to your senior.",
+            "goal_id": "Melapor dengan 〜を 見つけました, menjawab di mana dan berapa banyak, lalu mengikuti perintah untuk menghentikan mesin.",
+            "goal_en": "Report with 〜を 見つけました, answer where and how many, then follow the order to stop the machine.",
+            "patterns": [
+                "〜を 見つけました",
+                "どこで 〜ましたか",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "せんぱい",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Lapor segera (報告) begitu menemukan barang cacat; jangan menyembunyikannya atau meneruskannya.",
+                "Sebut tiga hal: di mana (ライン), berapa banyak (〜個), apa masalahnya (傷, 割れ, 汚れ).",
+                "Hentikan mesin bila perlu sebelum memanggil atasan."
+            ],
+            "tips_en": [
+                "Report (報告) immediately when you find a defect; never hide it or let it pass.",
+                "State three things: where (ライン), how many (〜個), what the problem is (傷, 割れ, 汚れ).",
+                "Stop the machine if needed before calling your supervisor."
+            ],
+            "words": [
+                {
+                    "ja": "不良品《ふりょうひん》",
+                    "id": "barang cacat",
+                    "en": "defective item"
+                },
+                {
+                    "ja": "傷《きず》",
+                    "id": "goresan",
+                    "en": "scratch"
+                },
+                {
+                    "ja": "報告《ほうこく》",
+                    "id": "laporan",
+                    "en": "report"
+                },
+                {
+                    "ja": "班長《はんちょう》",
+                    "id": "ketua regu",
+                    "en": "team leader"
+                },
+                {
+                    "ja": "止《と》める",
+                    "id": "menghentikan",
+                    "en": "to stop"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "割《わ》れて います。",
+                    "id": "Ada yang retak.",
+                    "en": "It is cracked."
+                },
+                {
+                    "ja": "汚《よご》れが ついて います。",
+                    "id": "Ada kotoran menempel.",
+                    "en": "There is dirt on it."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、不良品《ふりょうひん》を 見《み》つけました。",
+                    "speak": "すみません、ふりょうひんを みつけました。",
+                    "id_text": "Permisi, saya menemukan barang cacat.",
+                    "accept": [
+                        "すみません、不良品を 見つけました。",
+                        "すみません、不良品を見つけました。"
+                    ],
+                    "en_text": "Excuse me, I found a defective item.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t2",
+                    "who": "partner",
+                    "ja": "どこで 見《み》つけましたか。",
+                    "speak": "どこで みつけましたか。",
+                    "id_text": "Ditemukan di mana?",
+                    "en_text": "Where did you find it?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t3",
+                    "who": "you",
+                    "ja": "三番《さんばん》の ラインです。傷《きず》が あります。",
+                    "speak": "さんばんの ラインです。きずが あります。",
+                    "id_text": "Di lini nomor tiga. Ada goresan.",
+                    "accept": [
+                        "三番の ラインです。傷が あります。",
+                        "三番のラインです。傷があります。"
+                    ],
+                    "en_text": "On line number three. There is a scratch.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t4",
+                    "who": "partner",
+                    "ja": "何個《なんこ》ぐらい ありますか。",
+                    "speak": "なんこぐらい ありますか。",
+                    "id_text": "Kira-kira berapa buah?",
+                    "en_text": "About how many are there?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t5",
+                    "who": "you",
+                    "ja": "今《いま》、三個《さんこ》 見《み》つけました。",
+                    "speak": "いま、さんこ みつけました。",
+                    "id_text": "Sekarang saya temukan tiga buah.",
+                    "accept": [
+                        "今、三個 見つけました。",
+                        "今、三個見つけました。"
+                    ],
+                    "en_text": "I have found three so far.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t6",
+                    "who": "partner",
+                    "ja": "すぐ 機械《きかい》を 止《と》めて、班長《はんちょう》に 報告《ほうこく》して ください。",
+                    "speak": "すぐ きかいを とめて、はんちょうに ほうこくして ください。",
+                    "id_text": "Segera hentikan mesin dan lapor ke ketua regu.",
+                    "en_text": "Stop the machine right away and report to the team leader.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t7",
+                    "who": "you",
+                    "ja": "はい、機械《きかい》を 止《と》めました。班長《はんちょう》を 呼《よ》んで きます。",
+                    "speak": "はい、きかいを とめました。はんちょうを よんで きます。",
+                    "id_text": "Baik, mesin sudah saya hentikan. Saya panggil ketua regu.",
+                    "accept": [
+                        "はい、機械を 止めました。班長を 呼んで きます。",
+                        "はい、機械を止めました。班長を呼んできます。"
+                    ],
+                    "en_text": "Yes, I stopped the machine. I will call the team leader.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s4-t8",
+                    "who": "partner",
+                    "ja": "ありがとう。すぐ 報告《ほうこく》して くれて、助《たす》かります。",
+                    "speak": "ありがとう。すぐ ほうこくして くれて、たすかります。",
+                    "id_text": "Terima kasih. Kamu langsung lapor, itu sangat membantu.",
+                    "en_text": "Thank you. It helps that you reported right away.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s4-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s5",
+            "title_id": "Mesin berbunyi aneh (異常)",
+            "title_en": "A machine making a strange noise",
+            "setting_id": "Mesin mengeluarkan bunyi tidak biasa. Kamu segera memberi tahu atasan.",
+            "setting_en": "A machine makes an unusual noise. You tell your supervisor right away.",
+            "goal_id": "Melaporkan gejala dengan 〜が します / 〜て います, menghentikan mesin, dan menanyakan langkah berikutnya.",
+            "goal_en": "Report symptoms with 〜が します / 〜て います, stop the machine, and ask what to do next.",
+            "patterns": [
+                "〜が します",
+                "〜て います",
+                "〜ば いいですか"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Bunyi atau bau aneh = tanda bahaya. Hentikan mesin lalu laporkan; jangan mencoba memperbaiki sendiri.",
+                "Pola: 〜から 変な 音が します (dari ... terdengar bunyi aneh).",
+                "Setelah melapor, tanyakan: どう すれば いいですか."
+            ],
+            "tips_en": [
+                "A strange noise or smell is a warning. Stop the machine and report; do not try to fix it yourself.",
+                "Pattern: 〜から 変な 音が します (a strange noise comes from ...).",
+                "After reporting, ask: どう すれば いいですか."
+            ],
+            "words": [
+                {
+                    "ja": "異常《いじょう》",
+                    "id": "kelainan",
+                    "en": "abnormality"
+                },
+                {
+                    "ja": "音《おと》",
+                    "id": "bunyi",
+                    "en": "noise"
+                },
+                {
+                    "ja": "触《さわ》る",
+                    "id": "menyentuh",
+                    "en": "to touch"
+                },
+                {
+                    "ja": "呼《よ》ぶ",
+                    "id": "memanggil",
+                    "en": "to call"
+                },
+                {
+                    "ja": "知《し》らせる",
+                    "id": "memberi tahu",
+                    "en": "to notify"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "変《へん》な 匂《にお》いが します。",
+                    "id": "Ada bau aneh.",
+                    "en": "There is a strange smell."
+                },
+                {
+                    "ja": "煙《けむり》が 出《で》て います。",
+                    "id": "Ada asap keluar.",
+                    "en": "Smoke is coming out."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s5-t1",
+                    "who": "you",
+                    "ja": "すみません、機械《きかい》から 変《へん》な 音《おと》が します。",
+                    "speak": "すみません、きかいから へんな おとが します。",
+                    "id_text": "Permisi, dari mesin terdengar bunyi aneh.",
+                    "accept": [
+                        "すみません、機械から 変な 音が します。",
+                        "すみません、機械から変な音がします。"
+                    ],
+                    "en_text": "Excuse me, the machine is making a strange noise.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t2",
+                    "who": "partner",
+                    "ja": "どんな 音《おと》ですか。",
+                    "speak": "どんな おとですか。",
+                    "id_text": "Bunyinya seperti apa?",
+                    "en_text": "What kind of noise?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t3",
+                    "who": "you",
+                    "ja": "ガタガタ という 音《おと》です。さっきから 聞《き》こえて います。",
+                    "speak": "ガタガタ という おとです。さっきから きこえて います。",
+                    "id_text": "Bunyi gatagata. Sudah terdengar sejak tadi.",
+                    "accept": [
+                        "ガタガタ という 音です。さっきから 聞こえて います。",
+                        "ガタガタという音です。さっきから聞こえています。"
+                    ],
+                    "en_text": "A rattling noise. I have been hearing it since a moment ago.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t4",
+                    "who": "partner",
+                    "ja": "すぐ 止《と》めて ください。触《さわ》らないで ください。",
+                    "speak": "すぐ とめて ください。さわらないで ください。",
+                    "id_text": "Segera hentikan. Jangan disentuh.",
+                    "en_text": "Stop it at once. Do not touch it.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t5",
+                    "who": "you",
+                    "ja": "止《と》めました。私《わたし》は どう すれば いいですか。",
+                    "speak": "とめました。わたしは どう すれば いいですか。",
+                    "id_text": "Sudah saya hentikan. Saya harus bagaimana?",
+                    "accept": [
+                        "止めました。私は どう すれば いいですか。",
+                        "止めました。私はどうすればいいですか。"
+                    ],
+                    "en_text": "I stopped it. What should I do?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t6",
+                    "who": "partner",
+                    "ja": "班長《はんちょう》を 呼《よ》んで ください。近《ちか》くに 人《ひと》が いたら、知《し》らせて ください。",
+                    "speak": "はんちょうを よんで ください。ちかくに ひとが いたら、しらせて ください。",
+                    "id_text": "Panggil ketua regu. Kalau ada orang di dekat, beri tahu mereka.",
+                    "en_text": "Please call the team leader. If anyone is nearby, let them know.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t7",
+                    "who": "you",
+                    "ja": "はい、班長《はんちょう》を 呼《よ》びます。みんなに 知《し》らせます。",
+                    "speak": "はい、はんちょうを よびます。みんなに しらせます。",
+                    "id_text": "Baik, saya panggil ketua regu. Saya beri tahu semuanya.",
+                    "accept": [
+                        "はい、班長を 呼びます。みんなに 知らせます。",
+                        "はい、班長を呼びます。みんなに知らせます。"
+                    ],
+                    "en_text": "Yes, I will call the team leader. I will tell everyone.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s5-t8",
+                    "who": "partner",
+                    "ja": "ありがとう。助《たす》かりました。",
+                    "speak": "ありがとう。たすかりました。",
+                    "id_text": "Terima kasih. Sangat membantu.",
+                    "en_text": "Thank you. That helped.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s5-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s6",
+            "title_id": "Menelepon: tidak masuk kerja (欠勤)",
+            "title_en": "Calling in absent",
+            "setting_id": "Pagi hari kamu sakit dan tidak bisa masuk. Kamu menelepon atasan sebelum jam kerja.",
+            "setting_en": "You are ill in the morning and cannot go to work. You phone your supervisor before work starts.",
+            "goal_id": "Menelepon dengan もしもし dan menjelaskan alasan (〜ので、休みたいです), gejala, rencana ke dokter, dan kapan menghubungi lagi.",
+            "goal_en": "Phone with もしもし and explain the reason (〜ので、休みたいです), symptoms, plan to see a doctor and when you will call again.",
+            "patterns": [
+                "〜ので、休みたいです",
+                "〜ています",
+                "〜に 電話します"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Hubungi atasan SEBELUM jam kerja, lewat telepon (bukan hanya pesan), dan sebutkan nama dahulu.",
+                "Pola: 熱が あるので、休みたいです. Sampaikan gejala singkat dan rencana (病院へ 行きます).",
+                "Tutup dengan permintaan maaf: ご迷惑を おかけして、すみません."
+            ],
+            "tips_en": [
+                "Contact your supervisor BEFORE work starts, by phone (not only a message), and say your name first.",
+                "Pattern: 熱が あるので、休みたいです. Give brief symptoms and a plan (病院へ 行きます).",
+                "Close with an apology: ご迷惑を おかけして、すみません."
+            ],
+            "words": [
+                {
+                    "ja": "欠勤《けっきん》",
+                    "id": "tidak masuk kerja",
+                    "en": "absence from work"
+                },
+                {
+                    "ja": "熱《ねつ》",
+                    "id": "demam",
+                    "en": "fever"
+                },
+                {
+                    "ja": "病院《びょういん》",
+                    "id": "rumah sakit/klinik",
+                    "en": "hospital/clinic"
+                },
+                {
+                    "ja": "薬《くすり》",
+                    "id": "obat",
+                    "en": "medicine"
+                },
+                {
+                    "ja": "迷惑《めいわく》",
+                    "id": "merepotkan",
+                    "en": "trouble"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "風邪《かぜ》を ひきました。",
+                    "id": "Saya masuk angin/flu.",
+                    "en": "I caught a cold."
+                },
+                {
+                    "ja": "明日《あした》は 行《い》けると 思《おも》います。",
+                    "id": "Besok kira-kira saya bisa masuk.",
+                    "en": "I think I can come tomorrow."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s6-t1",
+                    "who": "you",
+                    "ja": "もしもし、ブディです。今日《きょう》は 熱《ねつ》が あるので、休《やす》みたいです。",
+                    "speak": "もしもし、ブディです。きょうは ねつが あるので、やすみたいです。",
+                    "id_text": "Halo, saya Budi. Hari ini saya demam jadi ingin izin.",
+                    "accept": [
+                        "もしもし、ブディです。今日は 熱が あるので、休みたいです。",
+                        "もしもし、ブディです。今日は熱があるので、休みたいです。"
+                    ],
+                    "en_text": "Hello, this is Budi. I have a fever today, so I would like to take the day off.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t2",
+                    "who": "partner",
+                    "ja": "熱《ねつ》は 何度《なんど》ですか。",
+                    "speak": "ねつは なんどですか。",
+                    "id_text": "Demamnya berapa derajat?",
+                    "en_text": "How high is your fever?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t3",
+                    "who": "you",
+                    "ja": "三十八度《さんじゅうはちど》です。頭《あたま》も 痛《いた》いです。",
+                    "speak": "さんじゅうはちどです。あたまも いたいです。",
+                    "id_text": "Tiga puluh delapan derajat. Kepala saya juga sakit.",
+                    "accept": [
+                        "三十八度です。頭も 痛いです。",
+                        "三十八度です。頭も痛いです。"
+                    ],
+                    "en_text": "It is 38 degrees. I have a headache too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t4",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。病院《びょういん》へ 行《い》って ください。",
+                    "speak": "それは たいへんですね。びょういんへ いって ください。",
+                    "id_text": "Wah, itu repot. Pergilah ke dokter.",
+                    "en_text": "That sounds rough. Please go to the doctor.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t5",
+                    "who": "you",
+                    "ja": "はい、今日《きょう》は 病院《びょういん》へ 行《い》って、薬《くすり》を もらいます。",
+                    "speak": "はい、きょうは びょういんへ いって、くすりを もらいます。",
+                    "id_text": "Baik, hari ini saya ke dokter dan mengambil obat.",
+                    "accept": [
+                        "はい、今日は 病院へ 行って、薬を もらいます。",
+                        "はい、今日は病院へ行って、薬をもらいます。"
+                    ],
+                    "en_text": "Yes, I will go to the clinic today and get medicine.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t6",
+                    "who": "partner",
+                    "ja": "明日《あした》は どう しますか。",
+                    "speak": "あしたは どう しますか。",
+                    "id_text": "Besok bagaimana?",
+                    "en_text": "What about tomorrow?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t7",
+                    "who": "you",
+                    "ja": "明日《あした》の 朝《あさ》、また 電話《でんわ》します。ご迷惑《めいわく》を おかけして、すみません。",
+                    "speak": "あしたの あさ、また でんわします。ごめいわくを おかけして、すみません。",
+                    "id_text": "Besok pagi saya telepon lagi. Maaf merepotkan.",
+                    "accept": [
+                        "明日の 朝、また 電話します。ご迷惑を おかけして、すみません。",
+                        "明日の朝、また電話します。ご迷惑をおかけして、すみません。"
+                    ],
+                    "en_text": "I will call again tomorrow morning. I am sorry for the trouble.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s6-t8",
+                    "who": "partner",
+                    "ja": "分《わ》かりました。お大事《だいじ》に。",
+                    "speak": "わかりました。おだいじに。",
+                    "id_text": "Baik. Semoga lekas sembuh.",
+                    "en_text": "Understood. Take care of yourself.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s6-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s7",
+            "title_id": "Menelepon: terlambat (遅刻)",
+            "title_en": "Calling about being late",
+            "setting_id": "Kereta berhenti dan kamu akan terlambat. Kamu menelepon atasan dari stasiun.",
+            "setting_en": "Your train stopped and you will be late. You phone your supervisor from the station.",
+            "goal_id": "Memberi tahu keterlambatan dengan 〜て、〜に 遅れます, menyebut perkiraan waktu tiba, dan meminta maaf.",
+            "goal_en": "Report lateness with 〜て、〜に 遅れます, give an estimated arrival time, and apologise.",
+            "patterns": [
+                "〜に 遅れます",
+                "〜ごろに 着きます",
+                "申し訳ありません"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Telepon begitu kamu tahu akan terlambat; jangan menunggu sampai lewat jam masuk.",
+                "Sebut penyebab singkat dan perkiraan tiba: 九時半ごろに 着きます.",
+                "Ambil 遅延証明書 di stasiun (lihat paket Kereta) bila penyebabnya kereta."
+            ],
+            "tips_en": [
+                "Phone as soon as you know you will be late; do not wait until after start time.",
+                "Give a short reason and estimated arrival: 九時半ごろに 着きます.",
+                "Take a 遅延証明書 at the station (see the Trains pack) if the cause is the train."
+            ],
+            "words": [
+                {
+                    "ja": "遅刻《ちこく》",
+                    "id": "terlambat masuk",
+                    "en": "being late"
+                },
+                {
+                    "ja": "着《つ》く",
+                    "id": "tiba",
+                    "en": "to arrive"
+                },
+                {
+                    "ja": "申《もう》し訳《わけ》ありません",
+                    "id": "mohon maaf",
+                    "en": "I am very sorry"
+                },
+                {
+                    "ja": "急《いそ》ぐ",
+                    "id": "bergegas",
+                    "en": "to hurry"
+                },
+                {
+                    "ja": "見《み》せる",
+                    "id": "menunjukkan",
+                    "en": "to show"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "十分《じゅっぷん》ぐらい 遅《おく》れます。",
+                    "id": "Saya terlambat sekitar sepuluh menit.",
+                    "en": "I will be about ten minutes late."
+                },
+                {
+                    "ja": "連絡《れんらく》が 遅《おそ》く なって、すみません。",
+                    "id": "Maaf terlambat memberi kabar.",
+                    "en": "I am sorry for contacting you late."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s7-t1",
+                    "who": "you",
+                    "ja": "もしもし、ブディです。電車《でんしゃ》が 遅《おく》れて いて、会社《かいしゃ》に 遅《おく》れます。",
+                    "speak": "もしもし、ブディです。でんしゃが おくれて いて、かいしゃに おくれます。",
+                    "id_text": "Halo, saya Budi. Kereta terlambat, jadi saya akan terlambat ke kantor.",
+                    "accept": [
+                        "もしもし、ブディです。電車が 遅れて いて、会社に 遅れます。",
+                        "もしもし、ブディです。電車が遅れていて、会社に遅れます。"
+                    ],
+                    "en_text": "Hello, this is Budi. My train is delayed, so I will be late to work.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t2",
+                    "who": "partner",
+                    "ja": "何分《なんぷん》ぐらい 遅《おく》れますか。",
+                    "speak": "なんぷんぐらい おくれますか。",
+                    "id_text": "Terlambat sekitar berapa menit?",
+                    "en_text": "About how many minutes late will you be?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t3",
+                    "who": "you",
+                    "ja": "三十分《さんじゅっぷん》ぐらいです。九時半《くじはん》ごろに 着《つ》きます。",
+                    "speak": "さんじゅっぷんぐらいです。くじはんごろに つきます。",
+                    "id_text": "Sekitar tiga puluh menit. Saya tiba kira-kira jam setengah sepuluh.",
+                    "accept": [
+                        "三十分ぐらいです。九時半ごろに 着きます。",
+                        "三十分ぐらいです。九時半ごろに着きます。"
+                    ],
+                    "en_text": "About thirty minutes. I will arrive around 9:30.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t4",
+                    "who": "partner",
+                    "ja": "分《わ》かりました。気《き》を つけて 来《き》て ください。",
+                    "speak": "わかりました。きを つけて きて ください。",
+                    "id_text": "Baik. Hati-hati di jalan.",
+                    "en_text": "Understood. Please come safely.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t5",
+                    "who": "you",
+                    "ja": "ありがとうございます。遅延証明書《ちえんしょうめいしょ》を もらって 行《い》きます。",
+                    "speak": "ありがとうございます。ちえんしょうめいしょを もらって いきます。",
+                    "id_text": "Terima kasih. Saya akan mengambil surat keterangan terlambat dulu.",
+                    "accept": [
+                        "ありがとうございます。遅延証明書を もらって 行きます。",
+                        "ありがとうございます。遅延証明書をもらって行きます。"
+                    ],
+                    "en_text": "Thank you. I will pick up a delay certificate on the way.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t6",
+                    "who": "partner",
+                    "ja": "はい。会社《かいしゃ》に 着《つ》いたら、私《わたし》に 見《み》せて ください。",
+                    "speak": "はい。かいしゃに ついたら、わたしに みせて ください。",
+                    "id_text": "Ya. Setelah tiba di kantor, tunjukkan kepada saya.",
+                    "en_text": "Yes. When you arrive at the company, please show it to me.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t7",
+                    "who": "you",
+                    "ja": "わかりました。申《もう》し訳《わけ》ありません。",
+                    "speak": "わかりました。もうしわけありません。",
+                    "id_text": "Saya mengerti. Mohon maaf.",
+                    "accept": [
+                        "わかりました。申し訳ありません。"
+                    ],
+                    "en_text": "Understood. I am very sorry.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s7-t8",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》です。急《いそ》がなくても いいですよ。",
+                    "speak": "だいじょうぶです。いそがなくても いいですよ。",
+                    "id_text": "Tidak apa-apa. Tidak perlu terburu-buru.",
+                    "en_text": "It is all right. You do not need to rush.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s7-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s8",
+            "title_id": "Izin pulang lebih awal",
+            "title_en": "Asking to leave early",
+            "setting_id": "Kamu harus mengurus keperluan di kantor pemerintah dan meminta izin pulang lebih awal.",
+            "setting_en": "You have to take care of something at the government office and ask permission to leave early.",
+            "goal_id": "Meminta izin dengan 〜ても いいですか, menyebut alasan dan jam, serta memastikan serah terima pekerjaan.",
+            "goal_en": "Ask permission with 〜ても いいですか, give a reason and time, and make sure the work is handed over.",
+            "patterns": [
+                "〜ても いいですか",
+                "〜なければ なりません",
+                "〜までに 終わらせます"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Minta izin SEJAK awal (kalau bisa sehari sebelumnya), sebut alasan dan jam, lalu tawarkan menyelesaikan pekerjaan dulu.",
+                "〜なければ なりません = \"harus ...\". Alasan resmi (市役所, 入国管理局, 病院) umumnya mudah diterima.",
+                "Pastikan pekerjaan yang belum selesai diserahkan kepada rekan (引き継ぎ)."
+            ],
+            "tips_en": [
+                "Ask EARLY (a day before if possible), state the reason and time, and offer to finish your work first.",
+                "〜なければ なりません = \"must ...\". Official reasons (市役所, immigration office, hospital) are usually accepted.",
+                "Make sure unfinished work is handed over to a colleague (引き継ぎ)."
+            ],
+            "words": [
+                {
+                    "ja": "用事《ようじ》",
+                    "id": "urusan/keperluan",
+                    "en": "errand"
+                },
+                {
+                    "ja": "市役所《しやくしょ》",
+                    "id": "kantor pemerintah kota",
+                    "en": "city hall"
+                },
+                {
+                    "ja": "作業《さぎょう》",
+                    "id": "pekerjaan/tugas",
+                    "en": "task"
+                },
+                {
+                    "ja": "引《ひ》き継《つ》ぎ",
+                    "id": "serah terima",
+                    "en": "handover"
+                },
+                {
+                    "ja": "終《お》わらせる",
+                    "id": "menyelesaikan",
+                    "en": "to finish"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "用事《ようじ》が あるので、先《さき》に 帰《かえ》ります。",
+                    "id": "Karena ada urusan, saya pulang duluan.",
+                    "en": "I have an errand, so I will leave first."
+                },
+                {
+                    "ja": "明日《あした》は 早《はや》く 来《き》ます。",
+                    "id": "Besok saya datang lebih awal.",
+                    "en": "I will come early tomorrow."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s8-t1",
+                    "who": "you",
+                    "ja": "すみません、今日《きょう》は 用事《ようじ》が あるので、早《はや》く 帰《かえ》っても いいですか。",
+                    "speak": "すみません、きょうは ようじが あるので、はやく かえっても いいですか。",
+                    "id_text": "Permisi, hari ini ada urusan, bolehkah saya pulang lebih awal?",
+                    "accept": [
+                        "すみません、今日は 用事が あるので、早く 帰っても いいですか。",
+                        "すみません、今日は用事があるので、早く帰ってもいいですか。"
+                    ],
+                    "en_text": "Excuse me, I have an errand today. May I leave early?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t2",
+                    "who": "partner",
+                    "ja": "何時《なんじ》に 帰《かえ》りたいですか。",
+                    "speak": "なんじに かえりたいですか。",
+                    "id_text": "Ingin pulang jam berapa?",
+                    "en_text": "What time do you want to leave?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t3",
+                    "who": "you",
+                    "ja": "四時《よじ》に 帰《かえ》りたいです。市役所《しやくしょ》へ 行《い》かなければ なりません。",
+                    "speak": "よじに かえりたいです。しやくしょへ いかなければ なりません。",
+                    "id_text": "Saya ingin pulang jam empat. Saya harus pergi ke kantor kota.",
+                    "accept": [
+                        "四時に 帰りたいです。市役所へ 行かなければ なりません。",
+                        "四時に帰りたいです。市役所へ行かなければなりません。"
+                    ],
+                    "en_text": "I would like to leave at four. I have to go to city hall.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t4",
+                    "who": "partner",
+                    "ja": "分《わ》かりました。仕事《しごと》を 終《お》わらせて 帰《かえ》って ください。",
+                    "speak": "わかりました。しごとを おわらせて かえって ください。",
+                    "id_text": "Baik. Selesaikan pekerjaan dulu lalu pulang.",
+                    "en_text": "All right. Please finish your work before you go.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t5",
+                    "who": "you",
+                    "ja": "はい、今《いま》の 作業《さぎょう》を 三時半《さんじはん》までに 終《お》わらせます。",
+                    "speak": "はい、いまの さぎょうを さんじはんまでに おわらせます。",
+                    "id_text": "Baik, tugas sekarang saya selesaikan sebelum jam tiga setengah.",
+                    "accept": [
+                        "はい、今の 作業を 三時半までに 終わらせます。",
+                        "はい、今の作業を三時半までに終わらせます。"
+                    ],
+                    "en_text": "Yes, I will finish the current task by 3:30.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t6",
+                    "who": "partner",
+                    "ja": "引《ひ》き継《つ》ぎは 田中《たなか》さんに お願《ねが》いします。",
+                    "speak": "ひきつぎは たなかさんに おねがいします。",
+                    "id_text": "Serah terimanya tolong ke Pak Tanaka.",
+                    "en_text": "Please hand it over to Mr. Tanaka.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t7",
+                    "who": "you",
+                    "ja": "はい、田中《たなか》さんに 説明《せつめい》して 帰《かえ》ります。",
+                    "speak": "はい、たなかさんに せつめいして かえります。",
+                    "id_text": "Baik, saya jelaskan ke Pak Tanaka lalu pulang.",
+                    "accept": [
+                        "はい、田中さんに 説明して 帰ります。",
+                        "はい、田中さんに説明して帰ります。"
+                    ],
+                    "en_text": "Yes, I will explain it to Mr. Tanaka before I leave.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s8-t8",
+                    "who": "partner",
+                    "ja": "では、気《き》を つけて。",
+                    "speak": "では、きを つけて。",
+                    "id_text": "Baik, hati-hati.",
+                    "en_text": "All right, take care.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s8-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s9",
+            "title_id": "Mengajukan cuti (休暇申請)",
+            "title_en": "Applying for leave",
+            "setting_id": "Keluargamu akan datang dari Indonesia. Kamu mengajukan cuti kepada bagian administrasi.",
+            "setting_en": "Your family is coming from Indonesia. You apply for leave at the administration office.",
+            "goal_id": "Mengajukan cuti dengan 〜を 取りたいんですが, menyebut alasan, dan menanyakan tenggat formulir.",
+            "goal_en": "Apply for leave with 〜を 取りたいんですが, state the reason, and ask for the form deadline.",
+            "patterns": [
+                "休みを 取りたいんですが",
+                "〜までに 出して ください",
+                "〜て いただけますか"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Ajukan cuti jauh-jauh hari lewat formulir (申請書) ke atasan atau bagian administrasi.",
+                "Alasan pribadi seperti keluarga datang umumnya wajar; sebutkan dengan singkat.",
+                "Tanyakan tenggat: いつまでに 出せば いいですか."
+            ],
+            "tips_en": [
+                "Apply well ahead with the form (申請書) to your supervisor or administration.",
+                "Personal reasons such as family visiting are usually fine; state them briefly.",
+                "Ask for the deadline: いつまでに 出せば いいですか."
+            ],
+            "words": [
+                {
+                    "ja": "休《やす》みを 取《と》る",
+                    "id": "mengambil cuti",
+                    "en": "to take time off"
+                },
+                {
+                    "ja": "申請書《しんせいしょ》",
+                    "id": "formulir pengajuan",
+                    "en": "application form"
+                },
+                {
+                    "ja": "理由《りゆう》",
+                    "id": "alasan",
+                    "en": "reason"
+                },
+                {
+                    "ja": "空港《くうこう》",
+                    "id": "bandara",
+                    "en": "airport"
+                },
+                {
+                    "ja": "迎《むか》える",
+                    "id": "menjemput",
+                    "en": "to pick up"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "有給《ゆうきゅう》を 使《つか》いたいです。",
+                    "id": "Saya ingin memakai cuti berbayar.",
+                    "en": "I would like to use paid leave."
+                },
+                {
+                    "ja": "何日《なんにち》まで 休《やす》めますか。",
+                    "id": "Bisa libur sampai berapa hari?",
+                    "en": "How many days can I take?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s9-t1",
+                    "who": "you",
+                    "ja": "来週《らいしゅう》の 金曜日《きんようび》に 休《やす》みを 取《と》りたいんですが、いいですか。",
+                    "speak": "らいしゅうの きんようびに やすみを とりたいんですが、いいですか。",
+                    "id_text": "Saya ingin cuti Jumat depan, bolehkah?",
+                    "accept": [
+                        "来週の 金曜日に 休みを 取りたいんですが、いいですか。",
+                        "来週の金曜日に休みを取りたいんですが、いいですか。"
+                    ],
+                    "en_text": "I would like to take next Friday off. Is that all right?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t2",
+                    "who": "partner",
+                    "ja": "理由《りゆう》は 何《なん》ですか。",
+                    "speak": "りゆうは なんですか。",
+                    "id_text": "Apa alasannya?",
+                    "en_text": "What is the reason?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t3",
+                    "who": "you",
+                    "ja": "国《くに》から 家族《かぞく》が 来《き》ます。空港《くうこう》へ 迎《むか》えに 行《い》きたいです。",
+                    "speak": "くにから かぞくが きます。くうこうへ むかえに いきたいです。",
+                    "id_text": "Keluarga saya datang dari negara saya. Saya ingin menjemput di bandara.",
+                    "accept": [
+                        "国から 家族が 来ます。空港へ 迎えに 行きたいです。",
+                        "国から家族が来ます。空港へ迎えに行きたいです。"
+                    ],
+                    "en_text": "My family is coming from my country. I would like to pick them up at the airport.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t4",
+                    "who": "partner",
+                    "ja": "そうですか。では、申請書《しんせいしょ》を 書《か》いて ください。",
+                    "speak": "そうですか。では、しんせいしょを かいて ください。",
+                    "id_text": "Begitu. Kalau begitu, tolong tulis formulir pengajuannya.",
+                    "en_text": "I see. Then please fill in the application form.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t5",
+                    "who": "you",
+                    "ja": "はい、書《か》きます。いつまでに 出《だ》せば いいですか。",
+                    "speak": "はい、かきます。いつまでに だせば いいですか。",
+                    "id_text": "Baik, saya tulis. Paling lambat kapan harus diserahkan?",
+                    "accept": [
+                        "はい、書きます。いつまでに 出せば いいですか。",
+                        "はい、書きます。いつまでに出せばいいですか。"
+                    ],
+                    "en_text": "Yes, I will. By when should I hand it in?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t6",
+                    "who": "partner",
+                    "ja": "明日《あした》までに お願《ねが》いします。",
+                    "speak": "あしたまでに おねがいします。",
+                    "id_text": "Tolong sampai besok.",
+                    "en_text": "By tomorrow, please.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t7",
+                    "who": "you",
+                    "ja": "わかりました。仕事《しごと》の 予定《よてい》は 大丈夫《だいじょうぶ》ですか。",
+                    "speak": "わかりました。しごとの よていは だいじょうぶですか。",
+                    "id_text": "Saya mengerti. Apakah jadwal kerja tidak bermasalah?",
+                    "accept": [
+                        "わかりました。仕事の 予定は 大丈夫ですか。",
+                        "わかりました。仕事の予定は大丈夫ですか。"
+                    ],
+                    "en_text": "Understood. Is the work schedule all right?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s9-t8",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》です。楽《たの》しんで ください。",
+                    "speak": "だいじょうぶです。たのしんで ください。",
+                    "id_text": "Tidak masalah. Nikmati waktunya.",
+                    "en_text": "It is fine. Enjoy it.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s9-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s10",
+            "title_id": "Selesai kerja (お疲れ様でした)",
+            "title_en": "Finishing work",
+            "setting_id": "Pekerjaan hampir selesai. Kamu melapor, merapikan, dan pulang dengan salam yang tepat.",
+            "setting_en": "The work is nearly done. You report, tidy up and go home with the proper greeting.",
+            "goal_id": "Melapor selesai dengan 〜ました, dan memakai お疲れ様でした / お先に 失礼します.",
+            "goal_en": "Report completion with 〜ました and use お疲れ様でした / お先に 失礼します.",
+            "patterns": [
+                "〜ましたか",
+                "〜ました",
+                "お先に 失礼します"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "お疲れ様でした dipakai sesama rekan saat selesai kerja; お先に 失礼します saat kamu pulang lebih dulu.",
+                "Laporkan sebelum pulang: 作業は 終わりました, 検査も しました.",
+                "Matikan mesin dan bersihkan area sebelum pulang."
+            ],
+            "tips_en": [
+                "お疲れ様でした is used between colleagues at the end of work; お先に 失礼します when you leave before others.",
+                "Report before leaving: 作業は 終わりました, 検査も しました.",
+                "Switch off the machine and clean your area before you leave."
+            ],
+            "words": [
+                {
+                    "ja": "お疲《つか》れ様《さま》",
+                    "id": "terima kasih atas kerja kerasnya",
+                    "en": "good work today"
+                },
+                {
+                    "ja": "電源《でんげん》",
+                    "id": "sakelar daya",
+                    "en": "power"
+                },
+                {
+                    "ja": "切《き》る",
+                    "id": "mematikan",
+                    "en": "to turn off"
+                },
+                {
+                    "ja": "お先《さき》に 失礼《しつれい》します",
+                    "id": "permisi, saya pulang duluan",
+                    "en": "excuse me for leaving first"
+                },
+                {
+                    "ja": "明日《あした》",
+                    "id": "besok",
+                    "en": "tomorrow"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "今日《きょう》は これで 終《お》わります。",
+                    "id": "Hari ini selesai sampai di sini.",
+                    "en": "That is all for today."
+                },
+                {
+                    "ja": "お疲《つか》れ様《さま》でした。また 明日《あした》。",
+                    "id": "Terima kasih atas kerja kerasnya. Sampai besok.",
+                    "en": "Good work today. See you tomorrow."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s10-t1",
+                    "who": "partner",
+                    "ja": "作業《さぎょう》は 終《お》わりましたか。",
+                    "speak": "さぎょうは おわりましたか。",
+                    "id_text": "Pekerjaannya sudah selesai?",
+                    "en_text": "Have you finished your task?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t2",
+                    "who": "you",
+                    "ja": "はい、終《お》わりました。検査《けんさ》も しました。",
+                    "speak": "はい、おわりました。けんさも しました。",
+                    "id_text": "Ya, sudah selesai. Inspeksi juga sudah saya lakukan.",
+                    "accept": [
+                        "はい、終わりました。検査も しました。",
+                        "はい、終わりました。検査もしました。"
+                    ],
+                    "en_text": "Yes, I have finished. I did the inspection too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t3",
+                    "who": "partner",
+                    "ja": "機械《きかい》の 電源《でんげん》は 切《き》りましたか。",
+                    "speak": "きかいの でんげんは きりましたか。",
+                    "id_text": "Sakelar mesin sudah dimatikan?",
+                    "en_text": "Did you turn off the machine's power?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t4",
+                    "who": "you",
+                    "ja": "はい、切《き》りました。掃除《そうじ》も 終《お》わりました。",
+                    "speak": "はい、きりました。そうじも おわりました。",
+                    "id_text": "Ya, sudah dimatikan. Pembersihan juga sudah selesai.",
+                    "accept": [
+                        "はい、切りました。掃除も 終わりました。",
+                        "はい、切りました。掃除も終わりました。"
+                    ],
+                    "en_text": "Yes, I turned it off. The cleaning is also done.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t5",
+                    "who": "partner",
+                    "ja": "では、今日《きょう》は これで 終《お》わりです。お疲《つか》れ様《さま》でした。",
+                    "speak": "では、きょうは これで おわりです。おつかれさまでした。",
+                    "id_text": "Baik, hari ini selesai sampai di sini. Terima kasih atas kerja kerasnya.",
+                    "en_text": "Well then, that is all for today. Good work.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t6",
+                    "who": "you",
+                    "ja": "お疲《つか》れ様《さま》でした。お先《さき》に 失礼《しつれい》します。",
+                    "speak": "おつかれさまでした。おさきに しつれいします。",
+                    "id_text": "Terima kasih atas kerja kerasnya. Saya pulang duluan.",
+                    "accept": [
+                        "お疲れ様でした。お先に 失礼します。",
+                        "お疲れ様でした。お先に失礼します。"
+                    ],
+                    "en_text": "Good work today. Excuse me, I will be leaving.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t7",
+                    "who": "partner",
+                    "ja": "明日《あした》も よろしく。",
+                    "speak": "あしたも よろしく。",
+                    "id_text": "Besok juga mohon kerja samanya.",
+                    "en_text": "See you tomorrow, too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s10-t8",
+                    "who": "you",
+                    "ja": "はい、明日《あした》も よろしく お願《ねが》いします。",
+                    "speak": "はい、あしたも よろしく おねがいします。",
+                    "id_text": "Baik, besok juga mohon kerja samanya.",
+                    "accept": [
+                        "はい、明日も よろしく お願いします。",
+                        "はい、明日もよろしくお願いします。"
+                    ],
+                    "en_text": "Yes, I look forward to it tomorrow too.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s10-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s11",
+            "title_id": "Gempa di pabrik (地震)",
+            "title_en": "Earthquake at the factory",
+            "setting_id": "Gempa terjadi saat kamu bekerja. Atasan memberi perintah: hentikan mesin, lindungi kepala, lalu evakuasi ke titik kumpul.",
+            "setting_en": "An earthquake hits while you work. Your supervisor tells you to stop the machine, protect your head, then evacuate to the assembly point.",
+            "goal_id": "Menanggapi perintah darurat (〜て ください / 〜ないで ください), bertanya titik kumpul, dan melapor \"tidak terluka\" saat absen.",
+            "goal_en": "Respond to emergency instructions (〜て ください / 〜ないで ください), ask for the assembly point, and report \"I am not hurt\" at roll call.",
+            "patterns": [
+                "〜て ください",
+                "〜ないで ください",
+                "〜に 入ります",
+                "〜は どこですか"
+            ],
+            "partner": {
+                "name": "はんちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Saat gempa: hentikan mesin, masuk ke bawah meja, lindungi kepala (机の 下に 入る、頭を 守る). Jangan lari keluar saat masih berguncang.",
+                "Setelah guncangan berhenti: jangan pakai lift (エレベーターは 使わないで), turun lewat tangga ke titik kumpul.",
+                "Di titik kumpul ada absen (点呼). Jawab singkat: ここに います。けがは ありません。"
+            ],
+            "tips_en": [
+                "During a quake: stop the machine, get under the desk, protect your head (机の 下に 入る、頭を 守る). Do not run outside while it is still shaking.",
+                "After the shaking stops: do not use the elevator (エレベーターは 使わないで); take the stairs to the assembly point.",
+                "There is a roll call (点呼) at the assembly point. Answer briefly: ここに います。けがは ありません。"
+            ],
+            "words": [
+                {
+                    "ja": "地震《じしん》",
+                    "id": "gempa bumi",
+                    "en": "earthquake"
+                },
+                {
+                    "ja": "揺《ゆ》れ",
+                    "id": "guncangan",
+                    "en": "shaking"
+                },
+                {
+                    "ja": "避難《ひなん》",
+                    "id": "evakuasi",
+                    "en": "evacuation"
+                },
+                {
+                    "ja": "集合場所《しゅうごうばしょ》",
+                    "id": "titik kumpul",
+                    "en": "assembly point"
+                },
+                {
+                    "ja": "点呼《てんこ》",
+                    "id": "absen / cek kehadiran",
+                    "en": "roll call"
+                },
+                {
+                    "ja": "駐車場《ちゅうしゃじょう》",
+                    "id": "tempat parkir",
+                    "en": "parking lot"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "火《ひ》を 消《け》して ください。",
+                    "id": "Tolong matikan api/kompor.",
+                    "en": "Please turn off the fire."
+                },
+                {
+                    "ja": "落《お》ち着《つ》いて ください。",
+                    "id": "Tolong tenang.",
+                    "en": "Please stay calm."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s11-t1",
+                    "who": "partner",
+                    "ja": "地震《じしん》です！機械《きかい》を 止《と》めて ください。",
+                    "speak": "じしんです！きかいを とめて ください。",
+                    "id_text": "Gempa! Tolong hentikan mesinnya.",
+                    "en_text": "Earthquake! Please stop the machine.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t2",
+                    "who": "you",
+                    "ja": "はい、止《と》めました。どう しますか。",
+                    "speak": "はい、とめました。どう しますか。",
+                    "id_text": "Baik, sudah saya hentikan. Apa yang harus saya lakukan?",
+                    "accept": [
+                        "はい、止めました。どう しますか。",
+                        "はい、止めました。どうしますか。"
+                    ],
+                    "en_text": "Yes, I stopped it. What should I do?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t3",
+                    "who": "partner",
+                    "ja": "机《つくえ》の 下《した》に はいって、頭《あたま》を 守《まも》って ください。",
+                    "speak": "つくえの したに はいって、あたまを まもって ください。",
+                    "id_text": "Masuk ke bawah meja dan lindungi kepala.",
+                    "en_text": "Get under the desk and protect your head.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t4",
+                    "who": "you",
+                    "ja": "はい、机《つくえ》の 下《した》に はいります。頭《あたま》を 守《まも》ります。",
+                    "speak": "はい、つくえの したに はいります。あたまを まもります。",
+                    "id_text": "Baik, saya masuk ke bawah meja. Saya lindungi kepala.",
+                    "accept": [
+                        "はい、机の 下に はいります。頭を 守ります。",
+                        "はい、机の下にはいります。頭を守ります。"
+                    ],
+                    "en_text": "Yes, I will get under the desk. I will protect my head.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t5",
+                    "who": "partner",
+                    "ja": "揺《ゆ》れが 止《と》まりました。エレベーターは 使《つか》わないで、階段《かいだん》で 外《そと》へ 出《で》て ください。",
+                    "speak": "ゆれが とまりました。エレベーターは つかわないで、かいだんで そとへ でて ください。",
+                    "id_text": "Guncangan berhenti. Jangan pakai lift, keluar lewat tangga.",
+                    "en_text": "The shaking has stopped. Do not use the elevator; go outside by the stairs.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t6",
+                    "who": "you",
+                    "ja": "はい、階段《かいだん》で 行《い》きます。集合場所《しゅうごうばしょ》は どこですか。",
+                    "speak": "はい、かいだんで いきます。しゅうごうばしょは どこですか。",
+                    "id_text": "Baik, saya lewat tangga. Titik kumpulnya di mana?",
+                    "accept": [
+                        "はい、階段で 行きます。集合場所は どこですか。",
+                        "はい、階段で行きます。集合場所はどこですか。"
+                    ],
+                    "en_text": "Yes, I will take the stairs. Where is the assembly point?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t7",
+                    "who": "partner",
+                    "ja": "駐車場《ちゅうしゃじょう》です。そこで 点呼《てんこ》を します。ブディさん、けがは ありませんか。",
+                    "speak": "ちゅうしゃじょうです。そこで てんこを します。ブディさん、けがは ありませんか。",
+                    "id_text": "Di tempat parkir. Di sana kita absen. Budi, apakah kamu terluka?",
+                    "en_text": "The parking lot. We will take roll call there. Budi, are you hurt?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s11-t8",
+                    "who": "you",
+                    "ja": "はい、ここに います。けがは ありません。大丈夫《だいじょうぶ》です。",
+                    "speak": "はい、ここに います。けがは ありません。だいじょうぶです。",
+                    "id_text": "Ya, saya di sini. Tidak terluka. Saya baik-baik saja.",
+                    "accept": [
+                        "はい、ここに います。けがは ありません。大丈夫です。",
+                        "はい、ここにいます。けがはありません。大丈夫です。"
+                    ],
+                    "en_text": "Yes, I am here. I am not hurt. I am fine.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s11-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pabrik-s12",
+            "title_id": "Tempat aman & tempat pengungsian (避難所)",
+            "title_en": "Safe places & the evacuation shelter (避難所)",
+            "setting_id": "Setelah gempa, rekan kerja menanyakan kabar asramamu. Kamu bertanya tempat yang aman dan di mana 避難所 (tempat pengungsian) berada.",
+            "setting_en": "After the quake a coworker asks about your dorm. You ask where is safe and where the evacuation shelter (避難所) is.",
+            "goal_id": "Bertanya tempat aman dan lokasi 避難所 (どこが 安全ですか / 〜から どのぐらいですか), lalu mengikuti petunjuk 〜て ください.",
+            "goal_en": "Ask where is safe and where the shelter is (どこが 安全ですか / 〜から どのぐらいですか), then follow instructions with 〜て ください.",
+            "patterns": [
+                "どこが 安全ですか",
+                "〜たら",
+                "〜から どのぐらいですか",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "避難場所 = tempat berkumpul sementara (lapangan, taman); 避難所 = tempat tinggal sementara (mis. sekolah/balai). Tanyakan keduanya ke kantor atau pengelola asrama.",
+                "Pola bertanya: どこが 安全ですか。/ 避難所は どこですか。/ 〜から どのぐらいですか。",
+                "Siapkan tas darurat: paspor, ponsel, air. Lihat peta evakuasi (ハザードマップ) kota dan cari rutenya sebelum gempa terjadi."
+            ],
+            "tips_en": [
+                "避難場所 = temporary gathering place (open field, park); 避難所 = place to stay for a while (e.g. a school or hall). Ask your company or dorm manager about both.",
+                "Question patterns: どこが 安全ですか。/ 避難所は どこですか。/ 〜から どのぐらいですか。",
+                "Prepare an emergency bag: passport, phone, water. Check your city hazard map (ハザードマップ) and find the route before an earthquake happens."
+            ],
+            "words": [
+                {
+                    "ja": "避難所《ひなんじょ》",
+                    "id": "tempat pengungsian",
+                    "en": "evacuation shelter"
+                },
+                {
+                    "ja": "安全《あんぜん》",
+                    "id": "aman",
+                    "en": "safe"
+                },
+                {
+                    "ja": "小学校《しょうがっこう》",
+                    "id": "sekolah dasar",
+                    "en": "elementary school"
+                },
+                {
+                    "ja": "地図《ちず》",
+                    "id": "peta",
+                    "en": "map"
+                },
+                {
+                    "ja": "携帯電話《けいたいでんわ》",
+                    "id": "ponsel",
+                    "en": "mobile phone"
+                },
+                {
+                    "ja": "袋《ふくろ》",
+                    "id": "tas / kantong",
+                    "en": "bag"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ここは 安全《あんぜん》ですか。",
+                    "id": "Apakah di sini aman?",
+                    "en": "Is it safe here?"
+                },
+                {
+                    "ja": "どこへ 逃《に》げますか。",
+                    "id": "Lari/mengungsi ke mana?",
+                    "en": "Where do we run to?"
+                },
+                {
+                    "ja": "この 近《ちか》くに 避難所《ひなんじょ》は ありますか。",
+                    "id": "Adakah tempat pengungsian di dekat sini?",
+                    "en": "Is there an evacuation shelter near here?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pabrik-s12-t1",
+                    "who": "partner",
+                    "ja": "さっきの 地震《じしん》は 大《おお》きかったですね。ブディさんの 寮《りょう》は 大丈夫《だいじょうぶ》ですか。",
+                    "speak": "さっきの じしんは おおきかったですね。ブディさんの りょうは だいじょうぶですか。",
+                    "id_text": "Gempa tadi besar, ya. Apakah asramamu baik-baik saja?",
+                    "en_text": "That earthquake was big. Is your dormitory all right?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t1.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t2",
+                    "who": "you",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。でも、また 地震《じしん》が 来《き》たら、どこが 安全《あんぜん》ですか。",
+                    "speak": "はい、だいじょうぶです。でも、また じしんが きたら、どこが あんぜんですか。",
+                    "id_text": "Ya, baik-baik saja. Tapi kalau gempa datang lagi, di mana yang aman?",
+                    "accept": [
+                        "はい、大丈夫です。でも、また 地震が 来たら、どこが 安全ですか。",
+                        "はい、大丈夫です。でも、また地震が来たら、どこが安全ですか。"
+                    ],
+                    "en_text": "Yes, it is fine. But if another earthquake comes, where is safe?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t2.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t3",
+                    "who": "partner",
+                    "ja": "寮《りょう》の 外《そと》の 広《ひろ》い ところが 安全《あんぜん》です。そして、近《ちか》くの 小学校《しょうがっこう》が 避難所《ひなんじょ》です。",
+                    "speak": "りょうの そとの ひろい ところが あんぜんです。そして、ちかくの しょうがっこうが ひなんじょです。",
+                    "id_text": "Tempat luas di luar asrama itu aman. Dan sekolah dasar di dekat sini adalah tempat pengungsian.",
+                    "en_text": "The wide open area outside the dorm is safe. And the nearby elementary school is the evacuation shelter.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t3.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t4",
+                    "who": "you",
+                    "ja": "避難所《ひなんじょ》は 寮《りょう》から どのぐらいですか。",
+                    "speak": "ひなんじょは りょうから どのぐらいですか。",
+                    "id_text": "Tempat pengungsian itu berapa jauh dari asrama?",
+                    "accept": [
+                        "避難所は 寮から どのぐらいですか。",
+                        "避難所は寮からどのぐらいですか。"
+                    ],
+                    "en_text": "How far is the shelter from the dorm?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t4.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t5",
+                    "who": "partner",
+                    "ja": "歩《ある》いて 十五分《じゅうごふん》ぐらいです。地図《ちず》を 見《み》ましたか。",
+                    "speak": "あるいて じゅうごふんぐらいです。ちずを みましたか。",
+                    "id_text": "Jalan kaki sekitar lima belas menit. Sudah lihat peta?",
+                    "en_text": "About fifteen minutes on foot. Have you looked at the map?",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t5.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t6",
+                    "who": "you",
+                    "ja": "いいえ、まだ 見《み》て いません。地図《ちず》を 見《み》せて ください。",
+                    "speak": "いいえ、まだ みて いません。ちずを みせて ください。",
+                    "id_text": "Belum, saya belum lihat. Tolong tunjukkan petanya.",
+                    "accept": [
+                        "いいえ、まだ 見て いません。地図を 見せて ください。",
+                        "いいえ、まだ見ていません。地図を見せてください。"
+                    ],
+                    "en_text": "No, not yet. Please show me the map.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t6.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t7",
+                    "who": "partner",
+                    "ja": "これです。地震《じしん》の 前《まえ》に、パスポートと 携帯電話《けいたいでんわ》と 水《みず》を 一《ひと》つの 袋《ふくろ》に 入《い》れて ください。",
+                    "speak": "これです。じしんの まえに、パスポートと けいたいでんわと みずを ひとつの ふくろに いれて ください。",
+                    "id_text": "Ini. Sebelum gempa, masukkan paspor, ponsel, dan air ke satu tas.",
+                    "en_text": "Here it is. Before an earthquake, put your passport, phone and water in one bag.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t7.mp3"
+                },
+                {
+                    "id": "pabrik-s12-t8",
+                    "who": "you",
+                    "ja": "はい、今日《きょう》、袋《ふくろ》に 入《い》れます。ありがとうございました。",
+                    "speak": "はい、きょう、ふくろに いれます。ありがとうございました。",
+                    "id_text": "Baik, hari ini saya masukkan ke tas. Terima kasih.",
+                    "accept": [
+                        "はい、今日、袋に 入れます。ありがとうございました。",
+                        "はい、今日、袋に入れます。ありがとうございました。"
+                    ],
+                    "en_text": "Yes, I will put them in a bag today. Thank you.",
+                    "audio": "/audio/kaiwa/situation-pabrik/pabrik-s12-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

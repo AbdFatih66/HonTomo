@@ -746,10 +746,10 @@ const LESSONS = [
 ]
 
 // ---------------------------------------------------------------------
-// Progres belajar per bab — disimpan di server lewat GET/POST
+// Progres belajar per pelajaran — disimpan di server lewat GET/POST
 // /api/kaite-oboeru/progress (tabel user_kaite_oboeru_progress), sama
 // persis polanya dengan Mondaishuu. `crown: true` cuma didapat kalau satu
-// bab diselesaikan tanpa satupun jawaban salah (nyawa penuh sampai
+// pelajaran diselesaikan tanpa satupun jawaban salah (nyawa penuh sampai
 // akhir). `done: true` tapi tanpa crown berarti sudah pernah selesai
 // tapi masih ada kesalahan — tetap tercatat, cuma belum dapat mahkota.
 // ---------------------------------------------------------------------
@@ -764,7 +764,7 @@ async function loadProgress() {
   }
   catch {
     // Kalau gagal (mis. offline), lanjut saja dengan progress kosong —
-    // status tiap bab akan tampil 'available', bukan memblokir halaman.
+    // status tiap pelajaran akan tampil 'available', bukan memblokir halaman.
   }
   finally {
     progressLoaded.value = true
@@ -790,9 +790,9 @@ function markProgress(key, perfect) {
   })
 }
 
-// Sama seperti Jalur Belajar/Mondaishuu: bab berikutnya terkunci sampai
-// bab sebelumnya diselesaikan (status `done`). Admin bebas dari penguncian
-// ini supaya bisa memeriksa/menguji bab mana saja.
+// Sama seperti Jalur Belajar/Mondaishuu: pelajaran berikutnya terkunci sampai
+// pelajaran sebelumnya diselesaikan (status `done`). Admin bebas dari penguncian
+// ini supaya bisa memeriksa/menguji pelajaran mana saja.
 function isLocked(key) {
   if (authStore.isAdmin)
     return false

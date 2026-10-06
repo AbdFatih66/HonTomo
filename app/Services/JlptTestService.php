@@ -316,7 +316,9 @@ class JlptTestService
      *  - int    → NOMOR TREK: berkas yang namanya diawali "NN-" (mis. 4 → "04-….mp3").
      *             Pola ini sengaja longgar: sisa nama berkas bebas (ejaan, tanda
      *             pisah) dan urutan nomor = urutan putar rekaman.
-     *  - string → nama berkas persis.
+     *  - string → nama berkas persis. Bila string TANPA ekstensi (mis. "N2-chokai-1" —
+     *             satu rekaman utuh per もんだい, N2), dicari berkas bernama itu dengan
+     *             ekstensi mp3, m4a, wav, ogg, aac (urutan itu).
      *
      * @return ?string nama berkas (basename), null bila tidak ada
      */
@@ -328,8 +330,18 @@ class JlptTestService
 
         $dir = public_path(trim((string) $p['audio_path'], '/').'/'.strtolower($p['level']));
 
-        if (is_string($ref))
-            return is_file("{$dir}/{$ref}") ? $ref : null;
+        if (is_string($ref)) {
+            if (is_file("{$dir}/{$ref}"))
+                return $ref;
+            if (pathinfo($ref, PATHINFO_EXTENSION) === '') {
+                foreach (['mp3', 'm4a', 'wav', 'ogg', 'aac'] as $ext) {
+                    if (is_file("{$dir}/{$ref}.{$ext}"))
+                        return "{$ref}.{$ext}";
+                }
+            }
+
+            return null;
+        }
 
         // scandir (bukan glob) supaya aman untuk path Windows/Laragon; hasilnya terurut
         // abjad sehingga bila ada dua berkas berawalan sama yang dipakai selalu yang sama.
@@ -361,7 +373,9 @@ class JlptTestService
 
         $base = rtrim((string) $p['audio_path'], '/').'/'.strtolower($p['level']).'/';
         $file = $this->resolveAudio($pack, $ref)
-            ?? (is_int($ref) ? sprintf('%02d-tidak-ditemukan.mp3', $ref) : $ref);
+            ?? (is_int($ref)
+                ? sprintf('%02d-tidak-ditemukan.mp3', $ref)
+                : (pathinfo($ref, PATHINFO_EXTENSION) === '' ? "{$ref}.mp3" : $ref));
 
         return $base.rawurlencode($file);
     }

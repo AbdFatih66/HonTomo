@@ -790,8 +790,8 @@ function statusFor(key) {
 
 // Ditampilkan di layar setup sebagai jalur belajar (seperti halaman
 // "Jalur Belajar" utama) — satu jalur untuk pelajaran 1–25, satu lagi
-// untuk set rangkuman. Semua node bisa langsung dibuka (tidak dikunci),
-// statusnya saja yang berubah: belum pernah dikerjakan / selesai / mahkota.
+// untuk set rangkuman. Kartu yang terkunci tampil dengan gembok dan,
+// kalau diketuk, memunculkan pemberitahuan (lihat `lockToast`).
 const REVIEW_FOCUS = {
   'r1-8': 'Campuran soal Pelajaran 1–8',
   'r9-17': 'Campuran soal Pelajaran 9–17',
@@ -879,9 +879,29 @@ const pathUnits = computed(() => [
   },
 ])
 
+// Pemberitahuan saat kartu terkunci diketuk — snackbar (bukan alert di
+// atas daftar) supaya tetap terlihat walau kartunya ada jauh di bawah.
+const lockToast = reactive({ show: false, text: '' })
+
+function lockMessage(key) {
+  if (key.startsWith('l')) {
+    const n = Number(key.slice(1))
+
+    return t('mondaishuu.locked_hint', { n: n - 1, next: n })
+  }
+
+  const [from, to] = REVIEW_RANGES[key] ?? [1, 25]
+
+  return t('mondaishuu.locked_review_hint', { from, to })
+}
+
 function openPathLesson(lesson) {
-  if (isLocked(lesson.id))
+  if (isLocked(lesson.id)) {
+    lockToast.text = lockMessage(lesson.id)
+    lockToast.show = true
+
     return
+  }
 
   startTab(lesson.id)
 }
@@ -1140,10 +1160,17 @@ onBeforeUnmount(clearAdvanceTimer)
           type="button"
           class="mondaishuu-card"
           :class="`mondaishuu-card--${lesson.status}`"
+          :aria-disabled="lesson.status === 'locked'"
           @click="openPathLesson(lesson)"
         >
           <VIcon
-            v-if="lesson.status === 'mastered'"
+            v-if="lesson.status === 'locked'"
+            icon="tabler-lock"
+            size="16"
+            class="mondaishuu-card__badge mondaishuu-card__badge--lock"
+          />
+          <VIcon
+            v-else-if="lesson.status === 'mastered'"
             icon="tabler-crown"
             size="18"
             class="mondaishuu-card__badge mondaishuu-card__badge--crown"
@@ -1167,6 +1194,19 @@ onBeforeUnmount(clearAdvanceTimer)
         </button>
       </div>
     </div>
+
+    <VSnackbar
+      v-model="lockToast.show"
+      color="warning"
+      location="bottom"
+      :timeout="4000"
+    >
+      <VIcon
+        icon="tabler-lock"
+        class="me-2"
+      />
+      {{ lockToast.text }}
+    </VSnackbar>
   </div>
 
   <!-- QUIZ / RESULT: same distraction-free full-screen shell as the
@@ -1529,6 +1569,13 @@ onBeforeUnmount(clearAdvanceTimer)
 .mondaishuu-card--completed::before { background: rgb(var(--v-theme-success)); }
 .mondaishuu-card--completed { background: rgba(var(--v-theme-success), 0.06); }
 
+.mondaishuu-card--locked { opacity: 0.55; }
+.mondaishuu-card.mondaishuu-card--locked:hover {
+  border-color: rgba(var(--v-theme-on-surface), 0.12);
+  box-shadow: none;
+  transform: none;
+}
+.mondaishuu-card__badge--lock { color: rgba(var(--v-theme-on-surface), 0.6); }
 .mondaishuu-card--mastered::before { background: rgb(var(--v-theme-warning)); }
 
 .mondaishuu-card--mastered {

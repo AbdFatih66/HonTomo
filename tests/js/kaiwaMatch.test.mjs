@@ -58,6 +58,19 @@ describe('numbersToKana', () => {
     ['8000円', 'はっせんえん'],
     ['四百円', 'よんひゃくえん'],
     ['1階', 'いっかい'],
+    ['5個', 'ごこ'],
+    ['1個', 'いっこ'],
+    ['10個', 'じゅっこ'],
+    ['2本', 'にほん'],
+    ['3本', 'さんぼん'],
+    ['6本', 'ろっぽん'],
+    ['10本', 'じゅっぽん'],
+    ['1膳', 'いちぜん'],
+    ['38度', 'さんじゅうはちど'],
+    ['もう1度', 'もういちど'],
+    ['3番線', 'さんばんせん'],
+    ['3番', 'さんばん'],
+    ['3番の ライン', 'さんばんの ライン'],
     ['3年', 'さんねん'],
     ['三年', 'さんねん'],
     ['4年', 'よねん'],
@@ -96,7 +109,7 @@ describe('numbersToKana', () => {
 
   test('kalimat utuh dan batas cakupan', () => {
     assert.equal(numbersToKana('私も25歳です'), '私もにじゅうごさいです')
-    assert.equal(numbersToKana('10000円'), '10000円') // > 9999 tidak diubah
+    assert.equal(numbersToKana('10000円'), 'いちまんえん') // 万 didukung (paket Bank); sampai 8 digit
     assert.equal(numbersToKana('0歳'), '0歳')
     assert.equal(numbersToKana('123'), '123') // tanpa pencacah tidak diubah
   })
@@ -303,5 +316,183 @@ describe('paket situasi (situations di index.json) × penilai', () => {
         }
       }
     }
+  })
+})
+
+describe('paket situasi harian (kereta, konbini, pabrik, restoran, rumahsakit, telepon, supermarket, pakaian, gaji, keitai, bank, kelurahan, tetangga) × penilai', () => {
+  const index = loadJson('index.json')
+  const daily = ['kereta', 'konbini', 'pabrik', 'restoran', 'rumahsakit', 'telepon', 'supermarket', 'pakaian', 'gaji', 'keitai', 'bank', 'kelurahan', 'tetangga'].filter(id => (index.situations ?? []).some(m => m.id === id))
+  const packs = daily.map(id => loadJson(`situation-${id}.json`))
+  const turnsOf = id => packs.find(p => p.id === id).scenarios.flatMap(sc => sc.turns)
+
+  before(() => {
+    for (const pack of packs) {
+      for (const sc of pack.scenarios) {
+        for (const t of sc.turns)
+          registerReadings(t.ja)
+      }
+    }
+  })
+
+  // Pengenal suara (Chrome) hampir selalu menulis angka sebagai digit: 5個, 38度, 3番, 2本, 1度.
+  // Sapuan otomatis: ubah semua angka kanji + pencacah di tiap giliran menjadi digit, lalu nilai.
+  const KNUM = { 〇: 0, 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 }
+  const parseKanji = (str) => {
+    let sec = 0
+    let cur = 0
+
+    for (const ch of str) {
+      if (ch in KNUM)
+        cur = KNUM[ch]
+      else if (ch === '十' || ch === '百' || ch === '千') {
+        sec += (cur || 1) * { 十: 10, 百: 100, 千: 1000 }[ch]
+        cur = 0
+      }
+    }
+
+    return sec + cur
+  }
+  const toDigits = str => str.replace(/([〇一二三四五六七八九十百千]+)(?=[時分円個枚本度番人年日月歳膳つ階])/g, m => String(parseKanji(m)))
+
+  test('semua giliran user tetap lolos bila angkanya didengar sebagai digit', () => {
+    const failures = []
+    let tested = 0
+
+    for (const pack of packs) {
+      for (const t of pack.scenarios.flatMap(sc => sc.turns).filter(x => x.who === 'you')) {
+        const kanji = stripRuby(t.ja)
+        const digits = toDigits(kanji)
+
+        if (digits === kanji)
+          continue
+        tested++
+        const score = scoreSpeech([digits], t)
+
+        if (score < 0.9)
+          failures.push(`${t.id}: ${score.toFixed(2)} ${digits}`)
+      }
+    }
+
+    assert.ok(tested > 10)
+    assert.deepEqual(failures, [])
+  })
+
+  test('kasus tetap: 5個, 38度, 2本, 1膳, 5枚, 3番', () => {
+    const ok = (id, heard) => assert.ok(scoreSpeech([heard], turnsOf(id.split('-s')[0]).find(x => x.id === id)) >= PASS_SCORE, `${id}: ${heard}`)
+
+    ok('konbini-s8-t1', 'すみません、からあげを5個ください')
+    ok('pabrik-s6-t3', '38度です。頭も痛いです')
+    ok('konbini-s3-t5', '単三を2本お願いします')
+    ok('konbini-s1-t4', 'はい、1膳お願いします')
+    ok('konbini-s4-t3', '白黒で5枚コピーしたいです')
+    ok('pabrik-s4-t3', '3番のラインです。傷があります')
+  })
+
+  test('restoran: jumlah orang dan nomor dalam bentuk digit tetap lolos, jawaban salah tidak', () => {
+    const t = turnsOf('restoran').find(x => x.id === 'restoran-s1-t2')
+    const seven = turnsOf('restoran').find(x => x.id === 'restoran-s7-t4')
+
+    assert.ok(scoreSpeech(['2人です'], t) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['明日の夜7時に3人です'], seven) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['三人です'], t) < PASS_SCORE + 0.3 && scoreSpeech(['カードは使えますか'], t) < PASS_SCORE)
+  })
+
+  test('rumah sakit: 3日前, 38度, 1回 dalam bentuk digit tetap lolos; gejala lain tidak', () => {
+    const fever = turnsOf('rumahsakit').find(x => x.id === 'rumahsakit-s2-t4')
+    const temp = turnsOf('rumahsakit').find(x => x.id === 'rumahsakit-s2-t6')
+
+    assert.ok(scoreSpeech(['3日前からです'], fever) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['昨日は38度でした'], temp) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['お腹が痛いです'], fever) < PASS_SCORE)
+  })
+
+  test('telepon: jam, menit, dan 8時 dalam bentuk digit tetap lolos; jawaban skenario lain tidak', () => {
+    const late = turnsOf('telepon').find(x => x.id === 'telepon-s7-t6')
+    const meet = turnsOf('telepon').find(x => x.id === 'telepon-s8-t8')
+    const bad = turnsOf('telepon').find(x => x.id === 'telepon-s8-t2')
+
+    assert.ok(scoreSpeech(['15分ぐらいです'], late) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['明日の朝8時に駅ですね。わかりました'], meet) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['明日の朝8時に駅ですね。わかりました'], bad) < PASS_SCORE)
+  })
+
+  test('digit 日: 3日→みっか, 2日→ふつか, 10日→とおか; 3月3日 dan 日曜日 tidak berubah', () => {
+    assert.equal(normalize('3日前'), normalize('みっか前'))
+    assert.equal(normalize('2日'), 'ふつか')
+    assert.equal(normalize('10日'), 'とおか')
+    assert.equal(normalize('日曜日'), normalize('日曜日'))
+    assert.ok(!normalize('3月3日').includes('みっか'))
+  })
+
+  test('jawaban untuk skenario lain tidak meloloskan (kereta vs konbini)', () => {
+    const t = turnsOf('konbini').find(x => x.id === 'konbini-s1-t2')
+
+    assert.ok(scoreSpeech(['横浜まで大人一枚お願いします'], t) < PASS_SCORE)
+  })
+
+  test('supermarket & pakaian: harga/ukuran digit tetap lolos; jawaban skenario lain tidak', () => {
+    const size = turnsOf('pakaian').find(x => x.id === 'pakaian-s7-t3')
+    const ask = turnsOf('pakaian').find(x => x.id === 'pakaian-s2-t1')
+    const pay = turnsOf('supermarket').find(x => x.id === 'supermarket-s3-t4')
+
+    assert.ok(scoreSpeech(['26センチです'], size) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['すみません、このシャツのMサイズはありますか'], ask) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['魚もほしいです。これを2切れください'], pay) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['26センチです'], ask) < PASS_SCORE)
+  })
+
+  test('gaji: jam lembur, 二十五日, dan 千五百円 dalam bentuk digit tetap lolos; jawaban skenario lain tidak', () => {
+    const hours = turnsOf('gaji').find(x => x.id === 'gaji-s5-t3')
+    const price = turnsOf('gaji').find(x => x.id === 'gaji-s3-t5')
+    const other = turnsOf('gaji').find(x => x.id === 'gaji-s6-t1')
+
+    assert.ok(scoreSpeech(['残業が10時間と書いてあります。でも、わたしのメモでは12時間です'], hours) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['1時間の残業代はいくらですか'], price) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['残業が10時間と書いてあります。でも、わたしのメモでは12時間です'], other) < PASS_SCORE)
+  })
+
+  test('bank: 万円 (3万円, 10万円, 4万5000円, 50000円) dibaca benar; 万 di kata lain tidak rusak', () => {
+    assert.equal(normalize('3万円'), normalize('さんまんえん'))
+    assert.equal(normalize('10万円'), normalize('じゅうまんえん'))
+    assert.equal(normalize('十万円'), normalize('じゅうまんえん'))
+    assert.equal(normalize('1万円'), normalize('いちまんえん'))
+    assert.equal(normalize('4万5000円'), normalize('よんまんごせんえん'))
+    assert.equal(normalize('50,000円'), normalize('ごまんえん'))
+    assert.equal(normalize('120000円'), normalize('じゅうにまんえん'))
+    assert.equal(normalize('万年筆'), normalize('万年筆'))
+    assert.ok(!normalize('万年筆').includes('まん'))
+  })
+
+  test('bank: jumlah dalam bentuk digit tetap lolos; jawaban skenario lain tidak', () => {
+    const atm = turnsOf('bank').find(x => x.id === 'bank-s3-t6')
+    const send = turnsOf('bank').find(x => x.id === 'bank-s4-t4')
+    const lost = turnsOf('bank').find(x => x.id === 'bank-s7-t2')
+
+    assert.ok(scoreSpeech(['3万円を引き出したいです'], atm) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['家族に10万円を送ります'], send) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['家族に10万円を送ります'], atm) < PASS_SCORE)
+    assert.ok(scoreSpeech(['キャッシュカードをなくしました。すぐ止めてください'], lost) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['キャッシュカードをなくしました。すぐ止めてください'], send) < PASS_SCORE)
+  })
+
+  test('kelurahan: 2枚, 14日, 3年 dalam bentuk digit tetap lolos; jawaban skenario lain tidak', () => {
+    const copies = turnsOf('kelurahan').find(x => x.id === 'kelurahan-s3-t8')
+    const days = turnsOf('kelurahan').find(x => x.id === 'kelurahan-s5-t8')
+    const years = turnsOf('kelurahan').find(x => x.id === 'kelurahan-s8-t8')
+    const sign = turnsOf('kelurahan').find(x => x.id === 'kelurahan-s10-t10')
+
+    assert.ok(scoreSpeech(['2枚お願いします'], copies) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['はい、14日以内ですね。受理番号をメモします。ありがとうございます'], days) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['はい、確認しました。在留期間は3年ですね'], years) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['2枚お願いします'], sign) < PASS_SCORE)
+  })
+
+  test('tetangga: 8時 dalam bentuk digit tetap lolos; jawaban skenario lain tidak', () => {
+    const put = turnsOf('tetangga').find(x => x.id === 'tetangga-s2-t8')
+    const sorry = turnsOf('tetangga').find(x => x.id === 'tetangga-s4-t6')
+
+    assert.ok(scoreSpeech(['わかりました。朝8時までに出します'], put) >= PASS_SCORE)
+    assert.ok(scoreSpeech(['わかりました。朝8時までに出します'], sorry) < PASS_SCORE)
+    assert.ok(scoreSpeech(['鍵を無くしました'], turnsOf('tetangga').find(x => x.id === 'tetangga-s6-t2')) >= PASS_SCORE)
   })
 })

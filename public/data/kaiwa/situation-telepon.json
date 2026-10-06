@@ -1,0 +1,1373 @@
+{
+    "id": "telepon",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Telepon",
+    "title_en": "Telephone",
+    "note_id": "Nama, jam, dan alasan di jawaban contoh hanya contoh: ganti dengan keadaanmu sendiri saat benar-benar menelepon. Di telepon tidak ada wajah dan gerak tubuh, jadi bicaralah pelan dan jelas; minta ulang tanpa ragu (もう 一度 お願いします).",
+    "note_en": "Names, times and reasons in the sample answers are examples: replace them with your own situation on a real call. There are no faces or gestures on the phone, so speak slowly and clearly and do not hesitate to ask for a repeat (もう 一度 お願いします).",
+    "scenarios": [
+        {
+            "id": "telepon-s1",
+            "title_id": "Menelepon perusahaan",
+            "title_en": "Calling a company",
+            "setting_id": "Kamu menelepon perusahaan penyalurmu untuk berbicara dengan Pak Yamada tentang pelatihan minggu depan.",
+            "setting_en": "You phone your placement company to speak with Mr. Yamada about next week's training.",
+            "goal_id": "Menyebut nama dengan 〜と 申します, meminta disambungkan dengan 〜さんを お願いします, dan menyampaikan keperluan.",
+            "goal_en": "State your name with 〜と 申します, ask to be connected with 〜さんを お願いします, and give your reason for calling.",
+            "patterns": [
+                "〜と 申します",
+                "〜さんを お願いします",
+                "〜の ことで 電話しました"
+            ],
+            "partner": {
+                "name": "うけつけ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Urutan menelepon: もしもし → nama (〜と 申します) → orang yang dituju (〜さんを お願いします).",
+                "Resepsionis berkata 少々 お待ちください (mohon tunggu sebentar). Cukup tunggu; orangnya akan menyapa.",
+                "Sebut alasan dengan 〜の ことで 電話しました (saya menelepon soal 〜). Sapaan umum: いつも お世話に なって います."
+            ],
+            "tips_en": [
+                "Order of a call: もしもし → name (〜と 申します) → the person you want (〜さんを お願いします).",
+                "The receptionist says 少々 お待ちください (please wait a moment). Just wait; the person will greet you.",
+                "Give the reason with 〜の ことで 電話しました (I am calling about 〜). Common greeting: いつも お世話に なって います."
+            ],
+            "words": [
+                {
+                    "ja": "お世話《せわ》に なる",
+                    "id": "berutang budi / dibantu",
+                    "en": "to be indebted / looked after"
+                },
+                {
+                    "ja": "研修《けんしゅう》",
+                    "id": "pelatihan",
+                    "en": "training"
+                },
+                {
+                    "ja": "少々《しょうしょう》",
+                    "id": "sebentar (sopan)",
+                    "en": "a moment (polite)"
+                },
+                {
+                    "ja": "来週《らいしゅう》",
+                    "id": "minggu depan",
+                    "en": "next week"
+                },
+                {
+                    "ja": "申《もう》す",
+                    "id": "bernama (sopan)",
+                    "en": "to be called (humble)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "山田《やまだ》さんは いますか。",
+                    "id": "Apakah Pak Yamada ada?",
+                    "en": "Is Mr. Yamada in?"
+                },
+                {
+                    "ja": "また あとで 電話《でんわ》します。",
+                    "id": "Saya telepon lagi nanti.",
+                    "en": "I will call again later."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s1-t1",
+                    "who": "partner",
+                    "ja": "はい、さくら工業《こうぎょう》です。",
+                    "speak": "はい、さくらこうぎょうです。",
+                    "id_text": "Ya, Sakura Kogyo.",
+                    "en_text": "Hello, Sakura Kogyo.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t1.mp3"
+                },
+                {
+                    "id": "telepon-s1-t2",
+                    "who": "you",
+                    "ja": "もしもし、ブディと 申《もう》します。山田《やまだ》さんを お願《ねが》いします。",
+                    "speak": "もしもし、ブディと もうします。やまださんを おねがいします。",
+                    "id_text": "Halo, nama saya Budi. Tolong sambungkan ke Pak Yamada.",
+                    "accept": [
+                        "もしもし、ブディと 申します。山田さんを お願いします。",
+                        "もしもし、ブディと申します。山田さんをお願いします。"
+                    ],
+                    "en_text": "Hello, my name is Budi. May I speak to Mr. Yamada?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t2.mp3"
+                },
+                {
+                    "id": "telepon-s1-t3",
+                    "who": "partner",
+                    "ja": "山田《やまだ》ですね。少々《しょうしょう》 お待《ま》ちください。お待《ま》たせしました。山田《やまだ》です。",
+                    "speak": "やまだですね。しょうしょう おまちください。おまたせしました。やまだです。",
+                    "id_text": "Pak Yamada ya. Mohon tunggu sebentar. Maaf menunggu. Yamada di sini.",
+                    "en_text": "Mr. Yamada. One moment, please. Sorry to keep you waiting. This is Yamada.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t3.mp3"
+                },
+                {
+                    "id": "telepon-s1-t4",
+                    "who": "you",
+                    "ja": "ブディです。いつも お世話《せわ》に なって います。",
+                    "speak": "ブディです。いつも おせわに なって います。",
+                    "id_text": "Saya Budi. Terima kasih atas bantuan Bapak selama ini.",
+                    "accept": [
+                        "ブディです。いつも お世話に なって います。",
+                        "ブディです。いつもお世話になっています。"
+                    ],
+                    "en_text": "This is Budi. Thank you for always looking after me.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t4.mp3"
+                },
+                {
+                    "id": "telepon-s1-t5",
+                    "who": "partner",
+                    "ja": "ああ、ブディさん。どうしましたか。",
+                    "speak": "ああ、ブディさん。どうしましたか。",
+                    "id_text": "Oh, Budi. Ada apa?",
+                    "en_text": "Oh, Budi. What is it?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t5.mp3"
+                },
+                {
+                    "id": "telepon-s1-t6",
+                    "who": "you",
+                    "ja": "来週《らいしゅう》の 研修《けんしゅう》の ことで 電話《でんわ》しました。",
+                    "speak": "らいしゅうの けんしゅうの ことで でんわしました。",
+                    "id_text": "Saya menelepon soal pelatihan minggu depan.",
+                    "accept": [
+                        "来週の 研修の ことで 電話しました。",
+                        "来週の研修のことで電話しました。"
+                    ],
+                    "en_text": "I am calling about next week's training.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t6.mp3"
+                },
+                {
+                    "id": "telepon-s1-t7",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。",
+                    "speak": "はい、どうぞ。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, go ahead.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t7.mp3"
+                },
+                {
+                    "id": "telepon-s1-t8",
+                    "who": "you",
+                    "ja": "研修《けんしゅう》は 何時《なんじ》からですか。",
+                    "speak": "けんしゅうは なんじからですか。",
+                    "id_text": "Pelatihan mulai jam berapa?",
+                    "accept": [
+                        "研修は 何時からですか。",
+                        "研修は何時からですか。"
+                    ],
+                    "en_text": "What time does the training start?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t8.mp3"
+                },
+                {
+                    "id": "telepon-s1-t9",
+                    "who": "partner",
+                    "ja": "九時《くじ》からです。会社《かいしゃ》の 前《まえ》に 来《き》て ください。",
+                    "speak": "くじからです。かいしゃの まえに きて ください。",
+                    "id_text": "Mulai jam sembilan. Silakan datang ke depan kantor.",
+                    "en_text": "From nine. Please come to the front of the company.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t9.mp3"
+                },
+                {
+                    "id": "telepon-s1-t10",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Mengerti. Terima kasih.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "en_text": "Understood. Thank you.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s1-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s2",
+            "title_id": "Meninggalkan pesan",
+            "title_en": "Leaving a message",
+            "setting_id": "Orang yang kamu cari sedang tidak di tempat. Kamu menitipkan pesan.",
+            "setting_en": "The person you want is away from their desk. You leave a message.",
+            "goal_id": "Memakai 席を はずして います, 〜ごろ 戻ります, dan 伝言を お願いします.",
+            "goal_en": "Use 席を はずして います, 〜ごろ 戻ります, and 伝言を お願いします.",
+            "patterns": [
+                "席を はずして います",
+                "伝言を お願いします",
+                "〜と 伝えて ください"
+            ],
+            "partner": {
+                "name": "うけつけ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "席を はずして います = sedang tidak di mejanya. Tanya kapan kembali: 何時ごろ 戻りますか.",
+                "Menitipkan pesan: 伝言を お願いします. Isi pesan lalu ditutup dengan 〜と 伝えて ください.",
+                "Penutup telepon yang sopan: よろしく お願いします。失礼します。"
+            ],
+            "tips_en": [
+                "席を はずして います = is away from their desk. Ask when they return: 何時ごろ 戻りますか.",
+                "Leaving a message: 伝言を お願いします. State it, then close with 〜と 伝えて ください.",
+                "Polite ending: よろしく お願いします。失礼します。"
+            ],
+            "words": [
+                {
+                    "ja": "伝言《でんごん》",
+                    "id": "pesan titipan",
+                    "en": "message"
+                },
+                {
+                    "ja": "席《せき》を はずす",
+                    "id": "sedang tidak di tempat",
+                    "en": "to be away from one's desk"
+                },
+                {
+                    "ja": "戻《もど》る",
+                    "id": "kembali",
+                    "en": "to return"
+                },
+                {
+                    "ja": "会議《かいぎ》",
+                    "id": "rapat",
+                    "en": "meeting"
+                },
+                {
+                    "ja": "失礼《しつれい》します",
+                    "id": "permisi / sampai jumpa (sopan)",
+                    "en": "goodbye (polite)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "折《お》り返《かえ》し 電話《でんわ》を お願《ねが》いします。",
+                    "id": "Mohon dihubungi kembali.",
+                    "en": "Please call me back."
+                },
+                {
+                    "ja": "また あとで かけます。",
+                    "id": "Saya telepon lagi nanti.",
+                    "en": "I will call again later."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s2-t1",
+                    "who": "partner",
+                    "ja": "はい、あおぞら商事《しょうじ》です。",
+                    "speak": "はい、あおぞらしょうじです。",
+                    "id_text": "Ya, Aozora Shoji.",
+                    "en_text": "Hello, Aozora Shoji.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t1.mp3"
+                },
+                {
+                    "id": "telepon-s2-t2",
+                    "who": "you",
+                    "ja": "もしもし、ブディと 申《もう》します。鈴木《すずき》さんを お願《ねが》いします。",
+                    "speak": "もしもし、ブディと もうします。すずきさんを おねがいします。",
+                    "id_text": "Halo, nama saya Budi. Tolong Pak Suzuki.",
+                    "accept": [
+                        "もしもし、ブディと 申します。鈴木さんを お願いします。",
+                        "もしもし、ブディと申します。鈴木さんをお願いします。"
+                    ],
+                    "en_text": "Hello, my name is Budi. Mr. Suzuki, please.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t2.mp3"
+                },
+                {
+                    "id": "telepon-s2-t3",
+                    "who": "partner",
+                    "ja": "すみません、鈴木《すずき》は 今《いま》 席《せき》を はずして います。",
+                    "speak": "すみません、すずきは いま せきを はずして います。",
+                    "id_text": "Maaf, Suzuki sedang tidak di mejanya.",
+                    "en_text": "I am sorry, Suzuki is away from his desk.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t3.mp3"
+                },
+                {
+                    "id": "telepon-s2-t4",
+                    "who": "you",
+                    "ja": "何時《なんじ》ごろ 戻《もど》りますか。",
+                    "speak": "なんじごろ もどりますか。",
+                    "id_text": "Kira-kira jam berapa kembali?",
+                    "accept": [
+                        "何時ごろ 戻りますか。",
+                        "何時ごろ戻りますか。"
+                    ],
+                    "en_text": "About what time will he be back?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t4.mp3"
+                },
+                {
+                    "id": "telepon-s2-t5",
+                    "who": "partner",
+                    "ja": "三時《さんじ》ごろ 戻《もど》ります。",
+                    "speak": "さんじごろ もどります。",
+                    "id_text": "Sekitar jam tiga.",
+                    "en_text": "Around three.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t5.mp3"
+                },
+                {
+                    "id": "telepon-s2-t6",
+                    "who": "you",
+                    "ja": "では、伝言《でんごん》を お願《ねが》いします。",
+                    "speak": "では、でんごんを おねがいします。",
+                    "id_text": "Kalau begitu, tolong sampaikan pesan.",
+                    "accept": [
+                        "では、伝言を お願いします。",
+                        "では、伝言をお願いします。"
+                    ],
+                    "en_text": "Then, please take a message.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t6.mp3"
+                },
+                {
+                    "id": "telepon-s2-t7",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。",
+                    "speak": "はい、どうぞ。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, go ahead.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t7.mp3"
+                },
+                {
+                    "id": "telepon-s2-t8",
+                    "who": "you",
+                    "ja": "明日《あした》の 会議《かいぎ》は 十時《じゅうじ》からです。そう 伝《つた》えて ください。",
+                    "speak": "あしたの かいぎは じゅうじからです。そう つたえて ください。",
+                    "id_text": "Rapat besok mulai jam sepuluh. Tolong sampaikan itu.",
+                    "accept": [
+                        "明日の 会議は 十時からです。そう 伝えて ください。",
+                        "明日の会議は十時からです。そう伝えてください。"
+                    ],
+                    "en_text": "Tomorrow's meeting is from ten. Please tell him that.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t8.mp3"
+                },
+                {
+                    "id": "telepon-s2-t9",
+                    "who": "partner",
+                    "ja": "明日《あした》の 会議《かいぎ》は 十時《じゅうじ》からですね。伝《つた》えます。",
+                    "speak": "あしたの かいぎは じゅうじからですね。つたえます。",
+                    "id_text": "Rapat besok jam sepuluh ya. Akan saya sampaikan.",
+                    "en_text": "Tomorrow's meeting is from ten. I will tell him.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t9.mp3"
+                },
+                {
+                    "id": "telepon-s2-t10",
+                    "who": "you",
+                    "ja": "よろしく お願《ねが》いします。失礼《しつれい》します。",
+                    "speak": "よろしく おねがいします。しつれいします。",
+                    "id_text": "Mohon bantuannya. Permisi.",
+                    "accept": [
+                        "よろしく お願いします。失礼します。",
+                        "よろしくお願いします。失礼します。"
+                    ],
+                    "en_text": "Thank you. Goodbye.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s2-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s3",
+            "title_id": "Salah sambung",
+            "title_en": "Wrong number",
+            "setting_id": "Kamu menelepon seorang teman, tetapi yang mengangkat orang lain.",
+            "setting_en": "You call a friend, but someone else answers.",
+            "goal_id": "Memakai 〜の お宅ですか, 間違えました, dan 失礼しました.",
+            "goal_en": "Use 〜の お宅ですか, 間違えました, and 失礼しました.",
+            "patterns": [
+                "〜の お宅ですか",
+                "間違えました",
+                "失礼しました"
+            ],
+            "partner": {
+                "name": "かいしゃのひと",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Memastikan nomor: 鈴木さんの お宅ですか (apakah ini rumah Pak Suzuki?).",
+                "Bila salah: すみません、間違えました。失礼しました. Jangan langsung menutup tanpa minta maaf.",
+                "電話番号を 確かめて、もう 一度 かけて みます = periksa nomornya, lalu coba telepon lagi."
+            ],
+            "tips_en": [
+                "Check the number: 鈴木さんの お宅ですか (is this Mr. Suzuki's home?).",
+                "If it is wrong: すみません、間違えました。失礼しました. Do not hang up without apologising.",
+                "電話番号を 確かめて、もう 一度 かけて みます = check the number and try again."
+            ],
+            "words": [
+                {
+                    "ja": "お宅《たく》",
+                    "id": "rumah (sopan)",
+                    "en": "home (polite)"
+                },
+                {
+                    "ja": "間違《まちが》える",
+                    "id": "keliru",
+                    "en": "to make a mistake"
+                },
+                {
+                    "ja": "電話番号《でんわばんごう》",
+                    "id": "nomor telepon",
+                    "en": "phone number"
+                },
+                {
+                    "ja": "確《たし》かめる",
+                    "id": "memastikan",
+                    "en": "to check"
+                },
+                {
+                    "ja": "かけて みる",
+                    "id": "mencoba menelepon",
+                    "en": "to try calling"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "電話番号《でんわばんごう》を 間違《まちが》えました。",
+                    "id": "Saya salah nomor.",
+                    "en": "I got the wrong number."
+                },
+                {
+                    "ja": "そちらは 山本《やまもと》さんですか。",
+                    "id": "Apakah ini Pak Yamamoto?",
+                    "en": "Is this Mr. Yamamoto?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s3-t1",
+                    "who": "partner",
+                    "ja": "はい、山本《やまもと》です。",
+                    "speak": "はい、やまもとです。",
+                    "id_text": "Ya, Yamamoto.",
+                    "en_text": "Hello, Yamamoto speaking.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s3-t1.mp3"
+                },
+                {
+                    "id": "telepon-s3-t2",
+                    "who": "you",
+                    "ja": "もしもし、鈴木《すずき》さんの お宅《たく》ですか。",
+                    "speak": "もしもし、すずきさんの おたくですか。",
+                    "id_text": "Halo, apakah ini rumah Pak Suzuki?",
+                    "accept": [
+                        "もしもし、鈴木さんの お宅ですか。",
+                        "もしもし、鈴木さんのお宅ですか。"
+                    ],
+                    "en_text": "Hello, is this Mr. Suzuki's home?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s3-t2.mp3"
+                },
+                {
+                    "id": "telepon-s3-t3",
+                    "who": "partner",
+                    "ja": "いいえ、違《ちが》います。こちらは 山本《やまもと》です。",
+                    "speak": "いいえ、ちがいます。こちらは やまもとです。",
+                    "id_text": "Bukan. Ini rumah Yamamoto.",
+                    "en_text": "No, it is not. This is the Yamamoto home.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s3-t3.mp3"
+                },
+                {
+                    "id": "telepon-s3-t4",
+                    "who": "you",
+                    "ja": "あっ、すみません。電話番号《でんわばんごう》を 間違《まちが》えました。",
+                    "speak": "あっ、すみません。でんわばんごうを まちがえました。",
+                    "id_text": "Oh, maaf. Saya salah nomor.",
+                    "accept": [
+                        "あっ、すみません。電話番号を 間違えました。",
+                        "あっ、すみません。電話番号を間違えました。"
+                    ],
+                    "en_text": "Oh, sorry. I dialed the wrong number.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s3-t4.mp3"
+                },
+                {
+                    "id": "telepon-s3-t5",
+                    "who": "partner",
+                    "ja": "いいえ、大丈夫《だいじょうぶ》ですよ。",
+                    "speak": "いいえ、だいじょうぶですよ。",
+                    "id_text": "Tidak apa-apa.",
+                    "en_text": "That is all right.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s3-t5.mp3"
+                },
+                {
+                    "id": "telepon-s3-t6",
+                    "who": "you",
+                    "ja": "失礼《しつれい》しました。もう 一度《いちど》 かけて みます。",
+                    "speak": "しつれいしました。もう いちど かけて みます。",
+                    "id_text": "Maaf mengganggu. Saya coba telepon sekali lagi.",
+                    "accept": [
+                        "失礼しました。もう 一度 かけて みます。",
+                        "失礼しました。もう一度かけてみます。"
+                    ],
+                    "en_text": "Sorry to bother you. I will try again.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s4",
+            "title_id": "Menerima telepon",
+            "title_en": "Answering a call",
+            "setting_id": "Telepon berdering di asrama. Kamu mengangkatnya dan orang yang dicari tidak ada.",
+            "setting_en": "The phone rings at the dormitory. You answer and the person is out.",
+            "goal_id": "Menjawab telepon dan memakai 〜は いません, 〜ごろ 帰ります, 伝えます.",
+            "goal_en": "Answer a call and use 〜は いません, 〜ごろ 帰ります, 伝えます.",
+            "patterns": [
+                "はい、〜です",
+                "〜は 今 いません",
+                "伝えます"
+            ],
+            "partner": {
+                "name": "かいしゃのひと",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Mengangkat telepon: もしもし atau はい、〜です (sebut namamu).",
+                "Orang yang dicari tidak ada: すみません、〜さんは 今 いません. Katakan kapan pulang: 〜ごろ 帰ります.",
+                "Tawarkan pesan: 伝えます (akan saya sampaikan). Tutup dengan 失礼します."
+            ],
+            "tips_en": [
+                "Answering: もしもし or はい、〜です (say your name).",
+                "If the person is out: すみません、〜さんは 今 いません. Say when they return: 〜ごろ 帰ります.",
+                "Offer to pass on a message: 伝えます (I will tell them). Close with 失礼します."
+            ],
+            "words": [
+                {
+                    "ja": "帰《かえ》る",
+                    "id": "pulang",
+                    "en": "to return home"
+                },
+                {
+                    "ja": "伝《つた》える",
+                    "id": "menyampaikan",
+                    "en": "to convey"
+                },
+                {
+                    "ja": "寮《りょう》",
+                    "id": "asrama",
+                    "en": "dormitory"
+                },
+                {
+                    "ja": "あとで",
+                    "id": "nanti",
+                    "en": "later"
+                },
+                {
+                    "ja": "もう 一度《いちど》",
+                    "id": "sekali lagi",
+                    "en": "once more"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "あとで かけ直《なお》して ください。",
+                    "id": "Tolong telepon lagi nanti.",
+                    "en": "Please call back later."
+                },
+                {
+                    "ja": "お名前《なまえ》を 教《おし》えて ください。",
+                    "id": "Tolong beri tahu nama Anda.",
+                    "en": "Please tell me your name."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s4-t1",
+                    "who": "partner",
+                    "ja": "もしもし。",
+                    "speak": "もしもし。",
+                    "id_text": "Halo.",
+                    "en_text": "Hello.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t1.mp3"
+                },
+                {
+                    "id": "telepon-s4-t2",
+                    "who": "you",
+                    "ja": "はい、ブディです。",
+                    "speak": "はい、ブディです。",
+                    "id_text": "Ya, Budi di sini.",
+                    "accept": [
+                        "はい、ブディです。"
+                    ],
+                    "en_text": "Yes, this is Budi.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t2.mp3"
+                },
+                {
+                    "id": "telepon-s4-t3",
+                    "who": "partner",
+                    "ja": "田中《たなか》と 申《もう》します。山田《やまだ》さんは いますか。",
+                    "speak": "たなかと もうします。やまださんは いますか。",
+                    "id_text": "Saya Tanaka. Apakah Yamada ada?",
+                    "en_text": "This is Tanaka. Is Yamada there?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t3.mp3"
+                },
+                {
+                    "id": "telepon-s4-t4",
+                    "who": "you",
+                    "ja": "すみません、山田《やまだ》さんは 今《いま》 いません。",
+                    "speak": "すみません、やまださんは いま いません。",
+                    "id_text": "Maaf, Yamada sedang tidak ada.",
+                    "accept": [
+                        "すみません、山田さんは 今 いません。",
+                        "すみません、山田さんは今いません。"
+                    ],
+                    "en_text": "Sorry, Yamada is out right now.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t4.mp3"
+                },
+                {
+                    "id": "telepon-s4-t5",
+                    "who": "partner",
+                    "ja": "いつ 帰《かえ》りますか。",
+                    "speak": "いつ かえりますか。",
+                    "id_text": "Kapan dia pulang?",
+                    "en_text": "When will he be back?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t5.mp3"
+                },
+                {
+                    "id": "telepon-s4-t6",
+                    "who": "you",
+                    "ja": "五時《ごじ》ごろ 帰《かえ》ります。",
+                    "speak": "ごじごろ かえります。",
+                    "id_text": "Sekitar jam lima.",
+                    "accept": [
+                        "五時ごろ 帰ります。",
+                        "五時ごろ帰ります。"
+                    ],
+                    "en_text": "Around five.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t6.mp3"
+                },
+                {
+                    "id": "telepon-s4-t7",
+                    "who": "partner",
+                    "ja": "では、また 電話《でんわ》します。",
+                    "speak": "では、また でんわします。",
+                    "id_text": "Kalau begitu, saya telepon lagi.",
+                    "en_text": "Then I will call again.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t7.mp3"
+                },
+                {
+                    "id": "telepon-s4-t8",
+                    "who": "you",
+                    "ja": "はい、伝《つた》えます。失礼《しつれい》します。",
+                    "speak": "はい、つたえます。しつれいします。",
+                    "id_text": "Baik, akan saya sampaikan. Permisi.",
+                    "accept": [
+                        "はい、伝えます。失礼します。"
+                    ],
+                    "en_text": "Yes, I will tell him. Goodbye.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s4-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s5",
+            "title_id": "Pengiriman ulang paket",
+            "title_en": "Re-delivery of a parcel",
+            "setting_id": "Kamu tidak di rumah saat kurir datang. Kamu menelepon untuk meminta pengiriman ulang.",
+            "setting_en": "You were out when the courier came. You phone to ask for re-delivery.",
+            "goal_id": "Meminta 再配達を お願いします, menyebut waktu dengan 〜ごろが いいです, dan menanyakan サイン.",
+            "goal_en": "Ask for 再配達を お願いします, give a time with 〜ごろが いいです, and ask about サイン.",
+            "patterns": [
+                "再配達を お願いします",
+                "〜ごろが いいです",
+                "〜でも いいですか"
+            ],
+            "partner": {
+                "name": "はいたつ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Kartu 不在票 = pemberitahuan kurir saat kamu tidak ada. Telepon nomor di kartu: 再配達を お願いします.",
+                "Sebut waktu yang cocok: 今日の 夜 七時ごろが いいです.",
+                "Penerimaan paket biasanya perlu tanda tangan. Tanya: サインでも いいですか (boleh tanda tangan saja?)."
+            ],
+            "tips_en": [
+                "不在票 = the note a courier leaves when you are out. Call the number on it: 再配達を お願いします.",
+                "Give a good time: 今日の 夜 七時ごろが いいです.",
+                "Receiving a parcel usually needs a signature. Ask: サインでも いいですか (is a signature OK?)."
+            ],
+            "words": [
+                {
+                    "ja": "荷物《にもつ》",
+                    "id": "paket / barang",
+                    "en": "parcel"
+                },
+                {
+                    "ja": "再配達《さいはいたつ》",
+                    "id": "pengiriman ulang",
+                    "en": "re-delivery"
+                },
+                {
+                    "ja": "不在票《ふざいひょう》",
+                    "id": "kartu pemberitahuan tidak ada di tempat",
+                    "en": "missed-delivery slip"
+                },
+                {
+                    "ja": "お届《とど》け先《さき》",
+                    "id": "alamat tujuan",
+                    "en": "delivery address"
+                },
+                {
+                    "ja": "サイン",
+                    "id": "tanda tangan",
+                    "en": "signature"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "明日《あした》の 午前《ごぜん》が いいです。",
+                    "id": "Besok pagi cocok.",
+                    "en": "Tomorrow morning is good."
+                },
+                {
+                    "ja": "荷物《にもつ》は どこに ありますか。",
+                    "id": "Di mana paket saya?",
+                    "en": "Where is my parcel?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s5-t1",
+                    "who": "partner",
+                    "ja": "はい、さくら運送《うんそう》です。",
+                    "speak": "はい、さくらうんそうです。",
+                    "id_text": "Ya, Sakura Unsou.",
+                    "en_text": "Hello, Sakura Transport.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t1.mp3"
+                },
+                {
+                    "id": "telepon-s5-t2",
+                    "who": "you",
+                    "ja": "もしもし、荷物《にもつ》の 再配達《さいはいたつ》を お願《ねが》いします。",
+                    "speak": "もしもし、にもつの さいはいたつを おねがいします。",
+                    "id_text": "Halo, tolong kirim ulang paket saya.",
+                    "accept": [
+                        "もしもし、荷物の 再配達を お願いします。",
+                        "もしもし、荷物の再配達をお願いします。"
+                    ],
+                    "en_text": "Hello, I would like re-delivery of my parcel.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t2.mp3"
+                },
+                {
+                    "id": "telepon-s5-t3",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》と お届《とど》け先《さき》を お願《ねが》いします。",
+                    "speak": "おなまえと おとどけさきを おねがいします。",
+                    "id_text": "Mohon nama dan alamat tujuan.",
+                    "en_text": "Your name and delivery address, please.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t3.mp3"
+                },
+                {
+                    "id": "telepon-s5-t4",
+                    "who": "you",
+                    "ja": "ブディです。さくら寮《りょう》に 住《す》んで います。",
+                    "speak": "ブディです。さくらりょうに すんで います。",
+                    "id_text": "Saya Budi. Saya tinggal di asrama Sakura.",
+                    "accept": [
+                        "ブディです。さくら寮に 住んで います。",
+                        "ブディです。さくら寮に住んでいます。"
+                    ],
+                    "en_text": "I am Budi. I live at Sakura Dormitory.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t4.mp3"
+                },
+                {
+                    "id": "telepon-s5-t5",
+                    "who": "partner",
+                    "ja": "何時《なんじ》ごろが いいですか。",
+                    "speak": "なんじごろが いいですか。",
+                    "id_text": "Jam berapa yang cocok?",
+                    "en_text": "What time would suit you?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t5.mp3"
+                },
+                {
+                    "id": "telepon-s5-t6",
+                    "who": "you",
+                    "ja": "今日《きょう》の 夜《よる》 七時《しちじ》ごろが いいです。",
+                    "speak": "きょうの よる しちじごろが いいです。",
+                    "id_text": "Malam ini sekitar jam tujuh.",
+                    "accept": [
+                        "今日の 夜 七時ごろが いいです。",
+                        "今日の夜七時ごろがいいです。"
+                    ],
+                    "en_text": "Around seven tonight is good.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t6.mp3"
+                },
+                {
+                    "id": "telepon-s5-t7",
+                    "who": "partner",
+                    "ja": "わかりました。七時《しちじ》ごろ 持《も》って 行《い》きます。",
+                    "speak": "わかりました。しちじごろ もって いきます。",
+                    "id_text": "Baik. Sekitar jam tujuh akan kami antar.",
+                    "en_text": "All right. We will bring it around seven.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t7.mp3"
+                },
+                {
+                    "id": "telepon-s5-t8",
+                    "who": "you",
+                    "ja": "サインでも いいですか。",
+                    "speak": "サインでも いいですか。",
+                    "id_text": "Bolehkah dengan tanda tangan saja?",
+                    "accept": [
+                        "サインでも いいですか。",
+                        "サインでもいいですか。"
+                    ],
+                    "en_text": "Is a signature OK?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t8.mp3"
+                },
+                {
+                    "id": "telepon-s5-t9",
+                    "who": "partner",
+                    "ja": "はい、サインで 大丈夫《だいじょうぶ》です。",
+                    "speak": "はい、サインで だいじょうぶです。",
+                    "id_text": "Ya, tanda tangan saja cukup.",
+                    "en_text": "Yes, a signature is fine.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t9.mp3"
+                },
+                {
+                    "id": "telepon-s5-t10",
+                    "who": "you",
+                    "ja": "では、お願《ねが》いします。",
+                    "speak": "では、おねがいします。",
+                    "id_text": "Kalau begitu, tolong ya.",
+                    "accept": [
+                        "では、お願いします。"
+                    ],
+                    "en_text": "Then, please.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s5-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s6",
+            "title_id": "Menelepon pengelola asrama",
+            "title_en": "Calling the dorm manager",
+            "setting_id": "Air panas di kamarmu tidak keluar. Kamu menelepon pengelola asrama.",
+            "setting_en": "There is no hot water in your room. You phone the dormitory manager.",
+            "goal_id": "Menjelaskan masalah dengan 〜が 出ません dan menanyakan jam kedatangan dengan 何時ごろに 来ますか.",
+            "goal_en": "Explain a problem with 〜が 出ません and ask the arrival time with 何時ごろに 来ますか.",
+            "patterns": [
+                "〜が 出ません",
+                "いつからですか",
+                "何時ごろに 来ますか"
+            ],
+            "partner": {
+                "name": "かんりにん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Masalah umum: お湯が 出ません (air panas tidak keluar), 電気が つきません (lampu tidak menyala), エアコンが 動きません.",
+                "Pengelola akan bertanya いつからですか: jawab 今朝からです / 昨日からです.",
+                "Tanyakan jam kedatangan: 何時ごろに 来ますか. Siapkan jawaban: 部屋で 待って います."
+            ],
+            "tips_en": [
+                "Common problems: お湯が 出ません (no hot water), 電気が つきません (the light will not turn on), エアコンが 動きません (the AC does not work).",
+                "The manager will ask いつからですか: answer 今朝からです / 昨日からです.",
+                "Ask the arrival time: 何時ごろに 来ますか. Prepare a reply: 部屋で 待っています."
+            ],
+            "words": [
+                {
+                    "ja": "管理人《かんりにん》",
+                    "id": "pengelola",
+                    "en": "manager / superintendent"
+                },
+                {
+                    "ja": "お湯《ゆ》",
+                    "id": "air panas",
+                    "en": "hot water"
+                },
+                {
+                    "ja": "修理《しゅうり》",
+                    "id": "perbaikan",
+                    "en": "repair"
+                },
+                {
+                    "ja": "部屋《へや》",
+                    "id": "kamar",
+                    "en": "room"
+                },
+                {
+                    "ja": "見《み》に 行《い》く",
+                    "id": "datang memeriksa",
+                    "en": "to go and look"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "電気《でんき》が つきません。",
+                    "id": "Lampunya tidak menyala.",
+                    "en": "The light does not turn on."
+                },
+                {
+                    "ja": "エアコンが 動《うご》きません。",
+                    "id": "AC-nya tidak jalan.",
+                    "en": "The air conditioner does not work."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s6-t1",
+                    "who": "partner",
+                    "ja": "はい、さくら管理《かんり》です。",
+                    "speak": "はい、さくらかんりです。",
+                    "id_text": "Ya, pengelola Sakura.",
+                    "en_text": "Hello, Sakura Management.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t1.mp3"
+                },
+                {
+                    "id": "telepon-s6-t2",
+                    "who": "you",
+                    "ja": "もしもし、さくら寮《りょう》の ブディです。",
+                    "speak": "もしもし、さくらりょうの ブディです。",
+                    "id_text": "Halo, saya Budi dari asrama Sakura.",
+                    "accept": [
+                        "もしもし、さくら寮の ブディです。",
+                        "もしもし、さくら寮のブディです。"
+                    ],
+                    "en_text": "Hello, this is Budi from Sakura Dormitory.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t2.mp3"
+                },
+                {
+                    "id": "telepon-s6-t3",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What is the problem?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t3.mp3"
+                },
+                {
+                    "id": "telepon-s6-t4",
+                    "who": "you",
+                    "ja": "お湯《ゆ》が 出《で》ません。",
+                    "speak": "おゆが でません。",
+                    "id_text": "Air panasnya tidak keluar.",
+                    "accept": [
+                        "お湯が 出ません。",
+                        "お湯が出ません。"
+                    ],
+                    "en_text": "There is no hot water.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t4.mp3"
+                },
+                {
+                    "id": "telepon-s6-t5",
+                    "who": "partner",
+                    "ja": "いつからですか。",
+                    "speak": "いつからですか。",
+                    "id_text": "Sejak kapan?",
+                    "en_text": "Since when?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t5.mp3"
+                },
+                {
+                    "id": "telepon-s6-t6",
+                    "who": "you",
+                    "ja": "今朝《けさ》からです。",
+                    "speak": "けさからです。",
+                    "id_text": "Sejak pagi tadi.",
+                    "accept": [
+                        "今朝からです。"
+                    ],
+                    "en_text": "Since this morning.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t6.mp3"
+                },
+                {
+                    "id": "telepon-s6-t7",
+                    "who": "partner",
+                    "ja": "わかりました。今日《きょう》の 午後《ごご》 見《み》に 行《い》きます。",
+                    "speak": "わかりました。きょうの ごご みに いきます。",
+                    "id_text": "Baik. Sore ini saya datang memeriksa.",
+                    "en_text": "All right. I will come and look this afternoon.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t7.mp3"
+                },
+                {
+                    "id": "telepon-s6-t8",
+                    "who": "you",
+                    "ja": "何時《なんじ》ごろに 来《き》ますか。",
+                    "speak": "なんじごろに きますか。",
+                    "id_text": "Kira-kira jam berapa datang?",
+                    "accept": [
+                        "何時ごろに 来ますか。",
+                        "何時ごろに来ますか。"
+                    ],
+                    "en_text": "About what time will you come?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t8.mp3"
+                },
+                {
+                    "id": "telepon-s6-t9",
+                    "who": "partner",
+                    "ja": "二時《にじ》から 四時《よじ》の 間《あいだ》に 行《い》きます。",
+                    "speak": "にじから よじの あいだに いきます。",
+                    "id_text": "Antara jam dua dan jam empat.",
+                    "en_text": "Between two and four.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t9.mp3"
+                },
+                {
+                    "id": "telepon-s6-t10",
+                    "who": "you",
+                    "ja": "では、部屋《へや》で 待《ま》って います。",
+                    "speak": "では、へやで まって います。",
+                    "id_text": "Kalau begitu, saya tunggu di kamar.",
+                    "accept": [
+                        "では、部屋で 待って います。",
+                        "では、部屋で待っています。"
+                    ],
+                    "en_text": "Then I will wait in my room.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s6-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s7",
+            "title_id": "Terlambat ke tempat janji",
+            "title_en": "Running late",
+            "setting_id": "Kamu janji bertemu temanmu di stasiun, tetapi keretamu terhenti. Kamu menelepon untuk memberi tahu.",
+            "setting_en": "You are meeting a friend at the station but your train has stopped. You phone to let them know.",
+            "goal_id": "Memakai 遅れます, 〜ぐらい, dan また 電話します.",
+            "goal_en": "Use 遅れます, 〜ぐらい, and また 電話します.",
+            "patterns": [
+                "少し 遅れます",
+                "電車が 止まって います",
+                "着いたら 電話します"
+            ],
+            "partner": {
+                "name": "ともだち",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Kabari secepatnya: すみません、少し 遅れます. Beri tahu alasannya: 電車が 止まって います.",
+                "Perkirakan lamanya: 十五分ぐらいです (sekitar lima belas menit).",
+                "Janjikan kabar lagi: 着いたら、また 電話します (saya telepon lagi kalau sudah sampai)."
+            ],
+            "tips_en": [
+                "Tell them early: すみません、少し 遅れます. Give the reason: 電車が 止まって います.",
+                "Estimate the delay: 十五分ぐらいです (about fifteen minutes).",
+                "Promise another call: 着いたら、また 電話します (I will call again when I arrive)."
+            ],
+            "words": [
+                {
+                    "ja": "遅《おく》れる",
+                    "id": "terlambat",
+                    "en": "to be late"
+                },
+                {
+                    "ja": "止《と》まる",
+                    "id": "berhenti",
+                    "en": "to stop"
+                },
+                {
+                    "ja": "着《つ》く",
+                    "id": "tiba",
+                    "en": "to arrive"
+                },
+                {
+                    "ja": "待《ま》つ",
+                    "id": "menunggu",
+                    "en": "to wait"
+                },
+                {
+                    "ja": "駅《えき》",
+                    "id": "stasiun",
+                    "en": "station"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "今《いま》 電車《でんしゃ》の 中《なか》です。",
+                    "id": "Saya sekarang di dalam kereta.",
+                    "en": "I am on the train now."
+                },
+                {
+                    "ja": "先《さき》に 行《い》って ください。",
+                    "id": "Silakan pergi duluan.",
+                    "en": "Please go ahead without me."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s7-t1",
+                    "who": "partner",
+                    "ja": "もしもし、たなかです。",
+                    "speak": "もしもし、たなかです。",
+                    "id_text": "Halo, Tanaka di sini.",
+                    "en_text": "Hello, this is Tanaka.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t1.mp3"
+                },
+                {
+                    "id": "telepon-s7-t2",
+                    "who": "you",
+                    "ja": "もしもし、ブディです。すみません、少《すこ》し 遅《おく》れます。",
+                    "speak": "もしもし、ブディです。すみません、すこし おくれます。",
+                    "id_text": "Halo, Budi di sini. Maaf, saya agak terlambat.",
+                    "accept": [
+                        "もしもし、ブディです。すみません、少し 遅れます。",
+                        "もしもし、ブディです。すみません、少し遅れます。"
+                    ],
+                    "en_text": "Hello, this is Budi. Sorry, I will be a little late.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t2.mp3"
+                },
+                {
+                    "id": "telepon-s7-t3",
+                    "who": "partner",
+                    "ja": "そうですか。どうしましたか。",
+                    "speak": "そうですか。どうしましたか。",
+                    "id_text": "Begitu. Ada apa?",
+                    "en_text": "I see. What happened?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t3.mp3"
+                },
+                {
+                    "id": "telepon-s7-t4",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》が 止《と》まって います。",
+                    "speak": "でんしゃが とまって います。",
+                    "id_text": "Keretanya berhenti.",
+                    "accept": [
+                        "電車が 止まって います。",
+                        "電車が止まっています。"
+                    ],
+                    "en_text": "The train has stopped.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t4.mp3"
+                },
+                {
+                    "id": "telepon-s7-t5",
+                    "who": "partner",
+                    "ja": "何分《なんぷん》ぐらい 遅《おく》れますか。",
+                    "speak": "なんぷんぐらい おくれますか。",
+                    "id_text": "Kira-kira terlambat berapa menit?",
+                    "en_text": "About how many minutes late will you be?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t5.mp3"
+                },
+                {
+                    "id": "telepon-s7-t6",
+                    "who": "you",
+                    "ja": "十五分《じゅうごふん》ぐらいです。",
+                    "speak": "じゅうごふんぐらいです。",
+                    "id_text": "Sekitar lima belas menit.",
+                    "accept": [
+                        "十五分ぐらいです。"
+                    ],
+                    "en_text": "About fifteen minutes.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t6.mp3"
+                },
+                {
+                    "id": "telepon-s7-t7",
+                    "who": "partner",
+                    "ja": "わかりました。駅《えき》の 前《まえ》で 待《ま》って います。",
+                    "speak": "わかりました。えきの まえで まって います。",
+                    "id_text": "Mengerti. Saya tunggu di depan stasiun.",
+                    "en_text": "All right. I will wait in front of the station.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t7.mp3"
+                },
+                {
+                    "id": "telepon-s7-t8",
+                    "who": "you",
+                    "ja": "着《つ》いたら、また 電話《でんわ》します。",
+                    "speak": "ついたら、また でんわします。",
+                    "id_text": "Kalau sudah sampai, saya telepon lagi.",
+                    "accept": [
+                        "着いたら、また 電話します。",
+                        "着いたら、また電話します。"
+                    ],
+                    "en_text": "I will call again when I arrive.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s7-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "telepon-s8",
+            "title_id": "Suara tidak jelas",
+            "title_en": "A bad connection",
+            "setting_id": "Suara di telepon kecil dan sulit didengar. Kamu meminta lawan bicara mengulang.",
+            "setting_en": "The voice on the phone is faint and hard to hear. You ask the other person to repeat.",
+            "goal_id": "Memakai 聞こえません, ゆっくり 話して ください, もう 一度 お願いします, dan mengulang isi.",
+            "goal_en": "Use 聞こえません, ゆっくり 話して ください, もう 一度 お願いします, and repeat the content back.",
+            "patterns": [
+                "聞こえません",
+                "ゆっくり 話して ください",
+                "もう 一度 お願いします"
+            ],
+            "partner": {
+                "name": "かいしゃのひと",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Suara kurang jelas: すみません、声が 小さくて 聞こえません (suaranya kecil, tidak terdengar).",
+                "Terlalu cepat: ゆっくり 話して ください. Tidak menangkap: もう 一度 お願いします.",
+                "Setelah paham, ulangi untuk memastikan: 明日の 朝 八時に 駅ですね (besok pagi jam delapan di stasiun, ya)."
+            ],
+            "tips_en": [
+                "Poor audio: すみません、声が 小さくて 聞こえません (your voice is faint, I cannot hear).",
+                "Too fast: ゆっくり 話して ください. Did not catch it: もう 一度 お願いします.",
+                "Once you understand, repeat it to confirm: 明日の 朝 八時に 駅ですね."
+            ],
+            "words": [
+                {
+                    "ja": "声《こえ》",
+                    "id": "suara",
+                    "en": "voice"
+                },
+                {
+                    "ja": "聞《き》こえる",
+                    "id": "terdengar",
+                    "en": "can be heard"
+                },
+                {
+                    "ja": "ゆっくり",
+                    "id": "pelan-pelan",
+                    "en": "slowly"
+                },
+                {
+                    "ja": "集合《しゅうごう》",
+                    "id": "berkumpul",
+                    "en": "assembly / meeting up"
+                },
+                {
+                    "ja": "もう 少《すこ》し",
+                    "id": "sedikit lagi",
+                    "en": "a little more"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "もう 少《すこ》し 大《おお》きい 声《こえ》で お願《ねが》いします。",
+                    "id": "Mohon dengan suara lebih keras.",
+                    "en": "A little louder, please."
+                },
+                {
+                    "ja": "もう 一度《いちど》 言《い》って ください。",
+                    "id": "Tolong katakan sekali lagi.",
+                    "en": "Please say it once more."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "telepon-s8-t1",
+                    "who": "partner",
+                    "ja": "もしもし、ミラーです。",
+                    "speak": "もしもし、ミラーです。",
+                    "id_text": "Halo, Miller di sini.",
+                    "en_text": "Hello, this is Miller.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t1.mp3"
+                },
+                {
+                    "id": "telepon-s8-t2",
+                    "who": "you",
+                    "ja": "もしもし、ブディです。すみません、声《こえ》が 小《ちい》さくて 聞《き》こえません。",
+                    "speak": "もしもし、ブディです。すみません、こえが ちいさくて きこえません。",
+                    "id_text": "Halo, Budi di sini. Maaf, suaranya kecil, tidak terdengar.",
+                    "accept": [
+                        "もしもし、ブディです。すみません、声が 小さくて 聞こえません。",
+                        "もしもし、ブディです。すみません、声が小さくて聞こえません。"
+                    ],
+                    "en_text": "Hello, this is Budi. Sorry, your voice is faint and I cannot hear.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t2.mp3"
+                },
+                {
+                    "id": "telepon-s8-t3",
+                    "who": "partner",
+                    "ja": "すみません。これで どうですか。",
+                    "speak": "すみません。これで どうですか。",
+                    "id_text": "Maaf. Bagaimana kalau begini?",
+                    "en_text": "Sorry. How is this?",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t3.mp3"
+                },
+                {
+                    "id": "telepon-s8-t4",
+                    "who": "you",
+                    "ja": "はい、聞《き》こえます。もう 少《すこ》し ゆっくり 話《はな》して ください。",
+                    "speak": "はい、きこえます。もう すこし ゆっくり はなして ください。",
+                    "id_text": "Ya, terdengar. Tolong bicara lebih pelan sedikit.",
+                    "accept": [
+                        "はい、聞こえます。もう 少し ゆっくり 話して ください。",
+                        "はい、聞こえます。もう少しゆっくり話してください。"
+                    ],
+                    "en_text": "Yes, I can hear you. Please speak a little more slowly.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t4.mp3"
+                },
+                {
+                    "id": "telepon-s8-t5",
+                    "who": "partner",
+                    "ja": "はい。明日《あした》の 集合《しゅうごう》は 朝《あさ》 八時《はちじ》です。",
+                    "speak": "はい。あしたの しゅうごうは あさ はちじです。",
+                    "id_text": "Baik. Berkumpul besok pagi jam delapan.",
+                    "en_text": "Yes. The meeting time tomorrow is eight in the morning.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t5.mp3"
+                },
+                {
+                    "id": "telepon-s8-t6",
+                    "who": "you",
+                    "ja": "すみません、もう 一度《いちど》 お願《ねが》いします。",
+                    "speak": "すみません、もう いちど おねがいします。",
+                    "id_text": "Maaf, tolong sekali lagi.",
+                    "accept": [
+                        "すみません、もう 一度 お願いします。",
+                        "すみません、もう一度お願いします。"
+                    ],
+                    "en_text": "Sorry, once more, please.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t6.mp3"
+                },
+                {
+                    "id": "telepon-s8-t7",
+                    "who": "partner",
+                    "ja": "明日《あした》、朝《あさ》 八時《はちじ》に 駅《えき》に 来《き》て ください。",
+                    "speak": "あした、あさ はちじに えきに きて ください。",
+                    "id_text": "Besok pagi jam delapan, datanglah ke stasiun.",
+                    "en_text": "Please come to the station at eight tomorrow morning.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t7.mp3"
+                },
+                {
+                    "id": "telepon-s8-t8",
+                    "who": "you",
+                    "ja": "明日《あした》の 朝《あさ》 八時《はちじ》に 駅《えき》ですね。わかりました。",
+                    "speak": "あしたの あさ はちじに えきですね。わかりました。",
+                    "id_text": "Besok pagi jam delapan di stasiun ya. Mengerti.",
+                    "accept": [
+                        "明日の 朝 八時に 駅ですね。わかりました。",
+                        "明日の朝八時に駅ですね。わかりました。"
+                    ],
+                    "en_text": "Eight tomorrow morning at the station. Understood.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t8.mp3"
+                },
+                {
+                    "id": "telepon-s8-t9",
+                    "who": "partner",
+                    "ja": "そうです。では、また 明日《あした》。",
+                    "speak": "そうです。では、また あした。",
+                    "id_text": "Benar. Sampai besok.",
+                    "en_text": "That is right. See you tomorrow.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t9.mp3"
+                },
+                {
+                    "id": "telepon-s8-t10",
+                    "who": "you",
+                    "ja": "はい、失礼《しつれい》します。",
+                    "speak": "はい、しつれいします。",
+                    "id_text": "Ya, permisi.",
+                    "accept": [
+                        "はい、失礼します。"
+                    ],
+                    "en_text": "Yes, goodbye.",
+                    "audio": "/audio/kaiwa/situation-telepon/telepon-s8-t10.mp3"
+                }
+            ]
+        }
+    ]
+}

@@ -11,10 +11,12 @@
 // masing-masing) — tinggal diisi begitu transkrip/kunci jawabannya ada.
 import RubyText from '@/components/learning/RubyText.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
+import { useAuthStore } from '@/stores/auth'
 import { $api } from '@/utils/api'
 
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
+const authStore = useAuthStore()
 
 // Some fields are plain Indonesian strings and some are { id, en } — same
 // convention as Mondaishuu, so this can be filled in gradually.
@@ -89,7 +91,40 @@ function markProgress(key, perfect) {
   })
 }
 
+// Sama seperti Mondaishuu/Jalur Belajar: pelajaran berikutnya terkunci
+// sampai pelajaran sebelumnya diselesaikan (status `done`, boleh tanpa
+// mahkota). Admin bebas dari penguncian supaya bisa menguji materi mana saja.
+function isLocked(key) {
+  if (authStore.isAdmin)
+    return false
+
+  const n = Number(key.slice(1))
+
+  return n > 1 && !progress[`l${n - 1}`]?.done
+}
+
+// Pemberitahuan saat kartu terkunci diketuk — snackbar supaya tetap
+// terlihat walau kartunya ada jauh di bawah.
+const lockToast = reactive({ show: false, text: '' })
+
+function openLesson(lesson) {
+  if (!lesson.ready)
+    return
+
+  if (lesson.status === 'locked') {
+    lockToast.text = t('chokai.locked_hint', { n: lesson.n - 1, next: lesson.n })
+    lockToast.show = true
+
+    return
+  }
+
+  startTab(lesson.id)
+}
+
 function statusFor(key) {
+  if (isLocked(key))
+    return 'locked'
+
   const p = progress[key]
   if (p?.crown)
     return 'mastered'
@@ -464,10 +499,17 @@ onBeforeUnmount(clearAdvanceTimer)
         class="chokai-card"
         :class="[`chokai-card--${lesson.status}`, { 'chokai-card--disabled': !lesson.ready }]"
         :disabled="!lesson.ready"
-        @click="lesson.ready && startTab(lesson.id)"
+        :aria-disabled="lesson.status === 'locked'"
+        @click="openLesson(lesson)"
       >
         <VIcon
-          v-if="lesson.status === 'mastered'"
+          v-if="lesson.status === 'locked'"
+          icon="tabler-lock"
+          size="16"
+          class="chokai-card__badge chokai-card__badge--lock"
+        />
+        <VIcon
+          v-else-if="lesson.status === 'mastered'"
           icon="tabler-crown"
           size="18"
           class="chokai-card__badge chokai-card__badge--crown"
@@ -485,6 +527,19 @@ onBeforeUnmount(clearAdvanceTimer)
         </span>
       </button>
     </div>
+
+    <VSnackbar
+      v-model="lockToast.show"
+      color="warning"
+      location="bottom"
+      :timeout="4000"
+    >
+      <VIcon
+        icon="tabler-lock"
+        class="me-2"
+      />
+      {{ lockToast.text }}
+    </VSnackbar>
   </div>
 
   <!-- QUIZ / RESULT: shell full-layar sama dengan Mondaishuu/Kana/Kanji. -->
@@ -887,6 +942,13 @@ onBeforeUnmount(clearAdvanceTimer)
 
 .chokai-card--completed::before { background: rgb(var(--v-theme-success)); }
 .chokai-card--completed { background: rgba(var(--v-theme-success), 0.06); }
+.chokai-card--locked { opacity: 0.55; }
+.chokai-card.chokai-card--locked:hover {
+  border-color: rgba(var(--v-theme-on-surface), 0.12);
+  box-shadow: none;
+  transform: none;
+}
+.chokai-card__badge--lock { color: rgba(var(--v-theme-on-surface), 0.6); }
 .chokai-card--mastered::before { background: rgb(var(--v-theme-warning)); }
 .chokai-card--mastered { background: rgba(var(--v-theme-warning), 0.08); }
 

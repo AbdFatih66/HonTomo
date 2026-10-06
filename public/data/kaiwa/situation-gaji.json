@@ -1,0 +1,1170 @@
+{
+    "id": "gaji",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Gaji & Slip Gaji",
+    "title_en": "Pay & Payslip",
+    "note_id": "Topik ini sensitif. Angka, tanggal, jam, dan nama di jawaban contoh hanyalah contoh; aturan gaji, lembur, dan potongan berbeda tiap perusahaan. Pakai skenario ini untuk berlatih bertanya dengan sopan, lalu selalu cocokkan dengan kontrak kerja (雇用契約書) dan penjelasan resmi perusahaan atau penyalur. Isi paket ini belum ditinjau penutur asli/pengajar.",
+    "note_en": "This topic is sensitive. Numbers, dates, times and names in the sample answers are only examples; pay, overtime and deduction rules differ by company. Use these scenarios to practise asking politely, and always check against your employment contract (雇用契約書) and the official explanation from your company or sending organisation. This pack has not yet been reviewed by a native speaker/teacher.",
+    "scenarios": [
+        {
+            "id": "gaji-s1",
+            "title_id": "Hari gajian & rekening",
+            "title_en": "Payday & bank account",
+            "setting_id": "Kamu baru bekerja dan bertanya kepada staf 総務 (bagian umum/administrasi) kapan gaji dibayar dan masuk ke rekening mana.",
+            "setting_en": "You have just started work and ask the 総務 (general affairs) staff when you are paid and into which bank account.",
+            "goal_id": "Bertanya hari gajian dengan 〜は いつですか, dan menanyakan rekening serta cara menggantinya dengan 〜ときは.",
+            "goal_en": "Ask the payday with 〜は いつですか, and ask about the account and how to change it with 〜ときは.",
+            "patterns": [
+                "〜は いつですか",
+                "〜ときは、〜",
+                "〜たい ときは、どう しますか"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tanyakan hari gajian dan rekening penerima SEBELUM gajian pertama, supaya tidak panik kalau ada yang belum masuk.",
+                "Hari gajian di kontrak kerja (雇用契約書) adalah acuan resmi; contoh \"tanggal 25\" di sini hanya contoh. Kalau jatuh di hari libur, bank biasanya memproses hari kerja sebelum atau sesudahnya, tergantung perusahaan — tanyakan.",
+                "Nomor rekening dan data pribadi dituliskan di kertas resmi perusahaan, jangan disebutkan keras-keras di tempat ramai."
+            ],
+            "tips_en": [
+                "Ask about payday and the receiving account BEFORE your first payday so you are not caught off guard.",
+                "The payday in your contract (雇用契約書) is the official reference; \"the 25th\" here is only an example. If it falls on a holiday, banks usually pay on the day before or after depending on the company — ask.",
+                "Account numbers and personal data go on the company's official paper; do not say them aloud in a crowded place."
+            ],
+            "words": [
+                {
+                    "ja": "総務《そうむ》",
+                    "id": "bagian umum/administrasi perusahaan",
+                    "en": "general affairs department"
+                },
+                {
+                    "ja": "給料日《きゅうりょうび》",
+                    "id": "hari gajian",
+                    "en": "payday"
+                },
+                {
+                    "ja": "振《ふ》り込《こ》む",
+                    "id": "mentransfer (ke rekening)",
+                    "en": "to transfer (to an account)"
+                },
+                {
+                    "ja": "口座《こうざ》",
+                    "id": "rekening bank",
+                    "en": "bank account"
+                },
+                {
+                    "ja": "変《か》える",
+                    "id": "mengganti, mengubah",
+                    "en": "to change"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "給料《きゅうりょう》は 何日《なんにち》に 入《はい》りますか。",
+                    "id": "Gaji masuk tanggal berapa?",
+                    "en": "On what day does my pay come in?"
+                },
+                {
+                    "ja": "口座《こうざ》の 名前《なまえ》を 変《か》えたいです。",
+                    "id": "Saya ingin mengganti nama rekening.",
+                    "en": "I want to change the name on my account."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s1-t1",
+                    "who": "you",
+                    "ja": "すみません、給料日《きゅうりょうび》は いつですか。",
+                    "speak": "すみません、きゅうりょうびは いつですか。",
+                    "id_text": "Permisi, hari gajiannya kapan?",
+                    "accept": [
+                        "すみません、給料日は いつですか。",
+                        "すみません、給料日はいつですか。"
+                    ],
+                    "en_text": "Excuse me, when is payday?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t1.mp3"
+                },
+                {
+                    "id": "gaji-s1-t2",
+                    "who": "partner",
+                    "ja": "毎月《まいつき》 二十五日《にじゅうごにち》です。銀行《ぎんこう》に 振《ふ》り込《こ》みます。",
+                    "speak": "まいつき にじゅうごにちです。ぎんこうに ふりこみます。",
+                    "id_text": "Setiap bulan tanggal 25. Kami transfer ke bank.",
+                    "en_text": "It is the 25th of every month. We transfer it to your bank.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t2.mp3"
+                },
+                {
+                    "id": "gaji-s1-t3",
+                    "who": "you",
+                    "ja": "二十五日《にじゅうごにち》が 休《やす》みの ときは、いつ 入《はい》りますか。",
+                    "speak": "にじゅうごにちが やすみの ときは、いつ はいりますか。",
+                    "id_text": "Kalau tanggal 25 hari libur, kapan masuknya?",
+                    "accept": [
+                        "二十五日が 休みの ときは、いつ 入りますか。",
+                        "二十五日が休みのときは、いつ入りますか。"
+                    ],
+                    "en_text": "When the 25th is a day off, when does it come in?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t3.mp3"
+                },
+                {
+                    "id": "gaji-s1-t4",
+                    "who": "partner",
+                    "ja": "その ときは、前《まえ》の 日《ひ》に 入《はい》ります。",
+                    "speak": "その ときは、まえの ひに はいります。",
+                    "id_text": "Dalam hal itu, masuk di hari sebelumnya.",
+                    "en_text": "In that case, it comes in the day before.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t4.mp3"
+                },
+                {
+                    "id": "gaji-s1-t5",
+                    "who": "you",
+                    "ja": "給料《きゅうりょう》は どの 口座《こうざ》に 入《はい》りますか。",
+                    "speak": "きゅうりょうは どの こうざに はいりますか。",
+                    "id_text": "Gajinya masuk ke rekening yang mana?",
+                    "accept": [
+                        "給料は どの 口座に 入りますか。",
+                        "給料はどの口座に入りますか。"
+                    ],
+                    "en_text": "Which account does my pay go into?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t5.mp3"
+                },
+                {
+                    "id": "gaji-s1-t6",
+                    "who": "partner",
+                    "ja": "ブディさんが 書《か》いた 紙《かみ》の 口座《こうざ》です。",
+                    "speak": "ブディさんが かいた かみの こうざです。",
+                    "id_text": "Rekening yang ada di kertas yang kamu tulis.",
+                    "en_text": "It is the account on the paper you filled in.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t6.mp3"
+                },
+                {
+                    "id": "gaji-s1-t7",
+                    "who": "you",
+                    "ja": "口座《こうざ》を 変《か》えたい ときは、どう しますか。",
+                    "speak": "こうざを かえたい ときは、どう しますか。",
+                    "id_text": "Kalau ingin mengganti rekening, bagaimana?",
+                    "accept": [
+                        "口座を 変えたい ときは、どう しますか。",
+                        "口座を変えたいときは、どうしますか。"
+                    ],
+                    "en_text": "What should I do when I want to change my account?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t7.mp3"
+                },
+                {
+                    "id": "gaji-s1-t8",
+                    "who": "partner",
+                    "ja": "その ときは、わたしに 言《い》って ください。新《あたら》しい 紙《かみ》を 書《か》いて もらいます。",
+                    "speak": "その ときは、わたしに いって ください。あたらしい かみを かいて もらいます。",
+                    "id_text": "Kalau begitu, bilang ke saya. Kamu akan menulis kertas yang baru.",
+                    "en_text": "In that case, tell me. I will have you fill in a new form.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "gaji-s2",
+            "title_id": "Menerima slip gaji (給料明細)",
+            "title_en": "Receiving your payslip (給料明細)",
+            "setting_id": "Kamu menerima 給料明細 untuk pertama kali dan meminta staf 総務 menjelaskan cara membacanya.",
+            "setting_en": "You receive your 給料明細 for the first time and ask the 総務 staff how to read it.",
+            "goal_id": "Meminta penjelasan dengan 〜を 教えて ください, bertanya letak bagian penting dengan 〜は どこですか.",
+            "goal_en": "Ask for an explanation with 〜を 教えて ください and ask where key items are with 〜は どこですか.",
+            "patterns": [
+                "〜を 教えて ください",
+                "〜は どこですか",
+                "〜ても いいですか"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tiga angka penting di slip: 総支給額 (jumlah kotor sebelum potongan), 控除 (total potongan), dan 差引支給額 (jumlah yang benar-benar ditransfer ke rekening).",
+                "Nama kolom bisa berbeda tiap perusahaan. Kalau ragu, tunjuk bagian kertasnya sambil bertanya: ここは 何ですか。",
+                "Simpan slip gaji (kertas atau PDF) dengan aman; slip dipakai untuk memeriksa lembur dan potongan, dan kadang diminta saat mengurus dokumen resmi."
+            ],
+            "tips_en": [
+                "Three key numbers: 総支給額 (gross pay before deductions), 控除 (total deductions) and 差引支給額 (the amount actually transferred to your account).",
+                "Column names differ between companies. If unsure, point at the part of the paper and ask: ここは 何ですか。",
+                "Keep your payslip (paper or PDF) safe; you use it to check overtime and deductions, and it is sometimes needed for official paperwork."
+            ],
+            "words": [
+                {
+                    "ja": "給料明細《きゅうりょうめいさい》",
+                    "id": "slip gaji",
+                    "en": "payslip"
+                },
+                {
+                    "ja": "総支給額《そうしきゅうがく》",
+                    "id": "jumlah gaji kotor",
+                    "en": "gross pay"
+                },
+                {
+                    "ja": "基本給《きほんきゅう》",
+                    "id": "gaji pokok",
+                    "en": "base salary"
+                },
+                {
+                    "ja": "差引支給額《さしひきしきゅうがく》",
+                    "id": "jumlah yang ditransfer (bersih)",
+                    "en": "net amount paid"
+                },
+                {
+                    "ja": "計算《けいさん》",
+                    "id": "perhitungan",
+                    "en": "calculation"
+                },
+                {
+                    "ja": "大切《たいせつ》",
+                    "id": "penting, berharga",
+                    "en": "important, valuable"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この 数字《すうじ》は 何《なん》ですか。",
+                    "id": "Angka ini apa?",
+                    "en": "What is this number?"
+                },
+                {
+                    "ja": "日本語《にほんご》の 説明《せつめい》を お願《ねが》いします。",
+                    "id": "Mohon penjelasan dalam bahasa Jepang (yang mudah).",
+                    "en": "Please explain in Japanese (simply)."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s2-t1",
+                    "who": "partner",
+                    "ja": "給料明細《きゅうりょうめいさい》です。確認《かくにん》して ください。",
+                    "speak": "きゅうりょうめいさいです。かくにんして ください。",
+                    "id_text": "Ini slip gajinya. Tolong diperiksa.",
+                    "en_text": "Here is your payslip. Please check it.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t1.mp3"
+                },
+                {
+                    "id": "gaji-s2-t2",
+                    "who": "you",
+                    "ja": "ありがとうございます。すみません、この 紙《かみ》の 見《み》かたを 教《おし》えて ください。",
+                    "speak": "ありがとうございます。すみません、この かみの みかたを おしえて ください。",
+                    "id_text": "Terima kasih. Maaf, tolong ajari saya cara membaca kertas ini.",
+                    "accept": [
+                        "ありがとうございます。すみません、この 紙の 見かたを 教えて ください。",
+                        "ありがとうございます。すみません、この紙の見かたを教えてください。"
+                    ],
+                    "en_text": "Thank you. Excuse me, please teach me how to read this paper.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t2.mp3"
+                },
+                {
+                    "id": "gaji-s2-t3",
+                    "who": "partner",
+                    "ja": "いちばん 上《うえ》が 総支給額《そうしきゅうがく》です。引《ひ》く 前《まえ》の お金《かね》です。",
+                    "speak": "いちばん うえが そうしきゅうがくです。ひく まえの おかねです。",
+                    "id_text": "Yang paling atas adalah jumlah kotor, uang sebelum dipotong.",
+                    "en_text": "The top one is the gross pay: the money before deductions.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t3.mp3"
+                },
+                {
+                    "id": "gaji-s2-t4",
+                    "who": "you",
+                    "ja": "基本給《きほんきゅう》は どこですか。",
+                    "speak": "きほんきゅうは どこですか。",
+                    "id_text": "Gaji pokok yang mana?",
+                    "accept": [
+                        "基本給は どこですか。",
+                        "基本給はどこですか。"
+                    ],
+                    "en_text": "Where is the base salary?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t4.mp3"
+                },
+                {
+                    "id": "gaji-s2-t5",
+                    "who": "partner",
+                    "ja": "ここです。その 下《した》が 残業代《ざんぎょうだい》です。",
+                    "speak": "ここです。その したが ざんぎょうだいです。",
+                    "id_text": "Ini. Di bawahnya adalah uang lembur.",
+                    "en_text": "Here. Below it is the overtime pay.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t5.mp3"
+                },
+                {
+                    "id": "gaji-s2-t6",
+                    "who": "you",
+                    "ja": "銀行《ぎんこう》に 入《はい》る お金《かね》は どこですか。",
+                    "speak": "ぎんこうに はいる おかねは どこですか。",
+                    "id_text": "Uang yang masuk ke bank yang mana?",
+                    "accept": [
+                        "銀行に 入る お金は どこですか。",
+                        "銀行に入るお金はどこですか。"
+                    ],
+                    "en_text": "Where is the money that goes into my bank account?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t6.mp3"
+                },
+                {
+                    "id": "gaji-s2-t7",
+                    "who": "partner",
+                    "ja": "いちばん 下《した》の 差引支給額《さしひきしきゅうがく》です。",
+                    "speak": "いちばん したの さしひきしきゅうがくです。",
+                    "id_text": "Yang paling bawah, jumlah bersih yang dibayarkan.",
+                    "en_text": "The one at the very bottom, the net amount paid.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t7.mp3"
+                },
+                {
+                    "id": "gaji-s2-t8",
+                    "who": "you",
+                    "ja": "計算《けいさん》が 分《わ》からない ところが あります。後《あと》で 聞《き》いても いいですか。",
+                    "speak": "けいさんが わからない ところが あります。あとで きいても いいですか。",
+                    "id_text": "Ada bagian perhitungan yang saya tidak mengerti. Bolehkah saya bertanya nanti?",
+                    "accept": [
+                        "計算が 分からない ところが あります。後で 聞いても いいですか。",
+                        "計算が分からないところがあります。後で聞いてもいいですか。"
+                    ],
+                    "en_text": "There is a part of the calculation I do not understand. May I ask later?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t8.mp3"
+                },
+                {
+                    "id": "gaji-s2-t9",
+                    "who": "partner",
+                    "ja": "はい、いつでも どうぞ。大切《たいせつ》な 紙《かみ》ですから、なくさないで ください。",
+                    "speak": "はい、いつでも どうぞ。たいせつな かみですから、なくさないで ください。",
+                    "id_text": "Ya, silakan kapan saja. Karena kertas ini penting, jangan sampai hilang.",
+                    "en_text": "Yes, anytime. It is an important paper, so please do not lose it.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s2-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "gaji-s3",
+            "title_id": "Menanyakan uang lembur (残業代)",
+            "title_en": "Asking about overtime pay (残業代)",
+            "setting_id": "Bulan lalu kamu banyak lembur dan ingin memastikan 残業代 sudah masuk dan bagaimana dihitung.",
+            "setting_en": "You worked a lot of overtime last month and want to confirm the 残業代 is included and how it is calculated.",
+            "goal_id": "Menanyakan jam lembur dan upah per jam dengan 〜は 何時間ですか / いくらですか, membandingkan dengan 〜より.",
+            "goal_en": "Ask about overtime hours and the hourly rate with 〜は 何時間ですか / いくらですか and compare with 〜より.",
+            "patterns": [
+                "〜は 何時間ですか",
+                "〜は いくらですか",
+                "AよりBが 高いです",
+                "〜ときも、同じですか"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "残業代 biasanya = jam lembur × upah per jam + tambahan (割増). Karena itu upah per jam lembur umumnya lebih tinggi dari upah biasa. Persentase dan aturan pastinya berbeda tiap perusahaan; tanyakan ke 総務 dan cocokkan dengan kontrak.",
+                "Catat sendiri jam lemburmu (tanggal, jam mulai-selesai) di memo. Catatan ini berguna kalau angka di slip tampak berbeda (lihat skenario 5).",
+                "Kerja malam dan kerja di hari libur sering punya tambahan tersendiri (深夜手当, 休日手当). Tanyakan kalau ada pada slipmu."
+            ],
+            "tips_en": [
+                "残業代 is usually overtime hours × hourly rate + a premium (割増), so the overtime hourly rate is generally higher than the normal rate. The exact percentage and rules differ by company; ask 総務 and compare with your contract.",
+                "Keep your own record of overtime (date, start and end time) in a memo. It helps when the slip looks different (see scenario 5).",
+                "Night work and holiday work often have their own extra pay (深夜手当, 休日手当). Ask if it appears on your slip."
+            ],
+            "words": [
+                {
+                    "ja": "残業代《ざんぎょうだい》",
+                    "id": "uang lembur",
+                    "en": "overtime pay"
+                },
+                {
+                    "ja": "時給《じきゅう》",
+                    "id": "upah per jam",
+                    "en": "hourly wage"
+                },
+                {
+                    "ja": "先月《せんげつ》",
+                    "id": "bulan lalu",
+                    "en": "last month"
+                },
+                {
+                    "ja": "同《おな》じ",
+                    "id": "sama",
+                    "en": "same"
+                },
+                {
+                    "ja": "夜《よる》",
+                    "id": "malam",
+                    "en": "night"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "夜勤手当《やきんてあて》は ありますか。",
+                    "id": "Apakah ada tunjangan kerja malam?",
+                    "en": "Is there a night-shift allowance?"
+                },
+                {
+                    "ja": "休《やす》みの 日《ひ》に 働《はたら》いた 分《ぶん》も 入《はい》って いますか。",
+                    "id": "Apakah bagian kerja di hari libur juga masuk?",
+                    "en": "Is the work I did on my day off included too?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s3-t1",
+                    "who": "you",
+                    "ja": "すみません、先月《せんげつ》の 残業代《ざんぎょうだい》は 入《はい》って いますか。",
+                    "speak": "すみません、せんげつの ざんぎょうだいは はいって いますか。",
+                    "id_text": "Permisi, apakah uang lembur bulan lalu sudah masuk?",
+                    "accept": [
+                        "すみません、先月の 残業代は 入って いますか。",
+                        "すみません、先月の残業代は入っていますか。"
+                    ],
+                    "en_text": "Excuse me, is last month's overtime pay included?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t1.mp3"
+                },
+                {
+                    "id": "gaji-s3-t2",
+                    "who": "partner",
+                    "ja": "はい、入《はい》って います。ここです。",
+                    "speak": "はい、はいって います。ここです。",
+                    "id_text": "Ya, sudah masuk. Ini.",
+                    "en_text": "Yes, it is included. Here.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t2.mp3"
+                },
+                {
+                    "id": "gaji-s3-t3",
+                    "who": "you",
+                    "ja": "残業《ざんぎょう》は 何時間《なんじかん》で 計算《けいさん》しましたか。",
+                    "speak": "ざんぎょうは なんじかんで けいさんしましたか。",
+                    "id_text": "Lemburnya dihitung berapa jam?",
+                    "accept": [
+                        "残業は 何時間で 計算しましたか。",
+                        "残業は何時間で計算しましたか。"
+                    ],
+                    "en_text": "How many hours of overtime did you calculate?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t3.mp3"
+                },
+                {
+                    "id": "gaji-s3-t4",
+                    "who": "partner",
+                    "ja": "先月《せんげつ》は 十二時間《じゅうにじかん》です。",
+                    "speak": "せんげつは じゅうにじかんです。",
+                    "id_text": "Bulan lalu 12 jam.",
+                    "en_text": "Last month it was twelve hours.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t4.mp3"
+                },
+                {
+                    "id": "gaji-s3-t5",
+                    "who": "you",
+                    "ja": "一時間《いちじかん》の 残業代《ざんぎょうだい》は いくらですか。",
+                    "speak": "いちじかんの ざんぎょうだいは いくらですか。",
+                    "id_text": "Uang lembur per satu jam berapa?",
+                    "accept": [
+                        "一時間の 残業代は いくらですか。",
+                        "一時間の残業代はいくらですか。"
+                    ],
+                    "en_text": "How much is the overtime pay for one hour?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t5.mp3"
+                },
+                {
+                    "id": "gaji-s3-t6",
+                    "who": "partner",
+                    "ja": "千五百円《せんごひゃくえん》です。ふつうの 時給《じきゅう》より 高《たか》いです。",
+                    "speak": "せんごひゃくえんです。ふつうの じきゅうより たかいです。",
+                    "id_text": "1.500 yen. Lebih tinggi dari upah per jam biasa.",
+                    "en_text": "It is 1,500 yen. It is higher than the normal hourly wage.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t6.mp3"
+                },
+                {
+                    "id": "gaji-s3-t7",
+                    "who": "you",
+                    "ja": "夜《よる》に 働《はたら》く ときも、同《おな》じですか。",
+                    "speak": "よるに はたらく ときも、おなじですか。",
+                    "id_text": "Kalau kerja malam, apakah sama juga?",
+                    "accept": [
+                        "夜に 働く ときも、同じですか。",
+                        "夜に働くときも、同じですか。"
+                    ],
+                    "en_text": "Is it the same when I work at night?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t7.mp3"
+                },
+                {
+                    "id": "gaji-s3-t8",
+                    "who": "partner",
+                    "ja": "夜《よる》は もっと 高《たか》く なります。詳《くわ》しい ことは、わたしに 聞《き》いて ください。",
+                    "speak": "よるは もっと たかく なります。くわしい ことは、わたしに きいて ください。",
+                    "id_text": "Kalau malam jadi lebih tinggi lagi. Untuk detailnya, tanya saya.",
+                    "en_text": "At night it becomes even higher. For the details, please ask me.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "gaji-s4",
+            "title_id": "Memahami potongan gaji (控除)",
+            "title_en": "Understanding deductions (控除)",
+            "setting_id": "Di slip gaji ada beberapa uang yang dipotong dan kamu ingin tahu artinya satu per satu.",
+            "setting_en": "Several amounts are deducted on your payslip and you want to understand each one.",
+            "goal_id": "Bertanya arti potongan dengan 〜は 何ですか, 〜は 毎月 同じですか, dan memastikan di kontrak dengan 〜を 見て ください.",
+            "goal_en": "Ask what each deduction is with 〜は 何ですか and 〜は 毎月 同じですか, and confirm with the contract using 〜を 見て ください.",
+            "patterns": [
+                "〜は 何ですか",
+                "〜は 毎月 同じですか",
+                "〜を 見て ください",
+                "たとえば、〜と 〜です"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Potongan umum di Jepang: 健康保険 (asuransi kesehatan), 年金 (iuran pensiun), 雇用保険 (asuransi tenaga kerja), 所得税 (pajak penghasilan), 住民税 (pajak daerah; biasanya mulai dipotong setelah tahun kerja pertama), dan biaya yang disepakati seperti 寮費 (sewa asrama).",
+                "Biaya asrama, makan, atau seragam hanya boleh dipotong sesuai kesepakatan tertulis. Cocokkan dengan 雇用契約書; kalau ada potongan yang tidak kamu kenal, tanyakan sopan dan jangan menuduh.",
+                "Jenis dan jumlah potongan bisa berbeda tiap orang dan tiap perusahaan; jawaban di skenario ini hanya contoh."
+            ],
+            "tips_en": [
+                "Common deductions in Japan: 健康保険 (health insurance), 年金 (pension contribution), 雇用保険 (employment insurance), 所得税 (income tax), 住民税 (resident tax; usually starts after the first working year) and agreed costs such as 寮費 (dormitory fee).",
+                "Dorm, meal or uniform costs may only be deducted according to a written agreement. Check your 雇用契約書; if you do not recognise a deduction, ask politely and do not accuse.",
+                "Types and amounts differ by person and company; the answers in this scenario are only examples."
+            ],
+            "words": [
+                {
+                    "ja": "控除《こうじょ》",
+                    "id": "potongan (pada slip gaji)",
+                    "en": "deductions (on a payslip)"
+                },
+                {
+                    "ja": "健康保険《けんこうほけん》",
+                    "id": "asuransi kesehatan",
+                    "en": "health insurance"
+                },
+                {
+                    "ja": "税金《ぜいきん》",
+                    "id": "pajak",
+                    "en": "tax"
+                },
+                {
+                    "ja": "寮費《りょうひ》",
+                    "id": "biaya asrama",
+                    "en": "dormitory fee"
+                },
+                {
+                    "ja": "契約書《けいやくしょ》",
+                    "id": "surat kontrak",
+                    "en": "contract document"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "給料《きゅうりょう》から 引《ひ》く お金《かね》は ぜんぶで いくらですか。",
+                    "id": "Total uang yang dipotong dari gaji semuanya berapa?",
+                    "en": "How much is deducted from my pay in total?"
+                },
+                {
+                    "ja": "この 保険《ほけん》は 病院《びょういん》で 使《つか》えますか。",
+                    "id": "Apakah asuransi ini bisa dipakai di rumah sakit?",
+                    "en": "Can I use this insurance at a hospital?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、この 控除《こうじょ》は 何《なん》ですか。",
+                    "speak": "すみません、この こうじょは なんですか。",
+                    "id_text": "Permisi, potongan ini apa?",
+                    "accept": [
+                        "すみません、この 控除は 何ですか。",
+                        "すみません、この控除は何ですか。"
+                    ],
+                    "en_text": "Excuse me, what are these deductions?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t1.mp3"
+                },
+                {
+                    "id": "gaji-s4-t2",
+                    "who": "partner",
+                    "ja": "給料《きゅうりょう》から 引《ひ》く お金《かね》です。たとえば、保険《ほけん》と 税金《ぜいきん》と 寮費《りょうひ》です。",
+                    "speak": "きゅうりょうから ひく おかねです。たとえば、ほけんと ぜいきんと りょうひです。",
+                    "id_text": "Uang yang dipotong dari gaji. Contohnya asuransi, pajak, dan biaya asrama.",
+                    "en_text": "It is money taken out of your pay. For example, insurance, tax and the dormitory fee.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t2.mp3"
+                },
+                {
+                    "id": "gaji-s4-t3",
+                    "who": "you",
+                    "ja": "保険《ほけん》は 病気《びょうき》の ときに 使《つか》いますか。",
+                    "speak": "ほけんは びょうきの ときに つかいますか。",
+                    "id_text": "Apakah asuransinya dipakai saat sakit?",
+                    "accept": [
+                        "保険は 病気の ときに 使いますか。",
+                        "保険は病気のときに使いますか。"
+                    ],
+                    "en_text": "Do I use the insurance when I am sick?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t3.mp3"
+                },
+                {
+                    "id": "gaji-s4-t4",
+                    "who": "partner",
+                    "ja": "はい、健康保険《けんこうほけん》です。病院《びょういん》で 使《つか》います。",
+                    "speak": "はい、けんこうほけんです。びょういんで つかいます。",
+                    "id_text": "Ya, itu asuransi kesehatan. Dipakai di rumah sakit.",
+                    "en_text": "Yes, it is health insurance. You use it at the hospital.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t4.mp3"
+                },
+                {
+                    "id": "gaji-s4-t5",
+                    "who": "you",
+                    "ja": "税金《ぜいきん》は 毎月《まいつき》 同《おな》じですか。",
+                    "speak": "ぜいきんは まいつき おなじですか。",
+                    "id_text": "Apakah pajaknya sama setiap bulan?",
+                    "accept": [
+                        "税金は 毎月 同じですか。",
+                        "税金は毎月同じですか。"
+                    ],
+                    "en_text": "Is the tax the same every month?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t5.mp3"
+                },
+                {
+                    "id": "gaji-s4-t6",
+                    "who": "partner",
+                    "ja": "いいえ、少《すこ》し 違《ちが》います。給料《きゅうりょう》が 変《か》わりますから。",
+                    "speak": "いいえ、すこし ちがいます。きゅうりょうが かわりますから。",
+                    "id_text": "Tidak, sedikit berbeda. Karena gajinya berubah.",
+                    "en_text": "No, it differs a little, because your pay changes.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t6.mp3"
+                },
+                {
+                    "id": "gaji-s4-t7",
+                    "who": "you",
+                    "ja": "寮費《りょうひ》も 給料《きゅうりょう》から 引《ひ》きますか。",
+                    "speak": "りょうひも きゅうりょうから ひきますか。",
+                    "id_text": "Apakah biaya asrama juga dipotong dari gaji?",
+                    "accept": [
+                        "寮費も 給料から 引きますか。",
+                        "寮費も給料から引きますか。"
+                    ],
+                    "en_text": "Is the dormitory fee also taken out of my pay?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t7.mp3"
+                },
+                {
+                    "id": "gaji-s4-t8",
+                    "who": "partner",
+                    "ja": "はい、毎月《まいつき》 引《ひ》きます。契約書《けいやくしょ》を 見《み》て ください。",
+                    "speak": "はい、まいつき ひきます。けいやくしょを みて ください。",
+                    "id_text": "Ya, dipotong setiap bulan. Silakan lihat surat kontraknya.",
+                    "en_text": "Yes, we take it out every month. Please look at your contract.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t8.mp3"
+                },
+                {
+                    "id": "gaji-s4-t9",
+                    "who": "you",
+                    "ja": "分《わ》かりました。契約書《けいやくしょ》を 見《み》ます。ありがとうございます。",
+                    "speak": "わかりました。けいやくしょを みます。ありがとうございます。",
+                    "id_text": "Saya mengerti. Saya akan melihat kontraknya. Terima kasih.",
+                    "accept": [
+                        "分かりました。契約書を 見ます。ありがとうございます。",
+                        "分かりました。契約書を見ます。ありがとうございます。"
+                    ],
+                    "en_text": "I understand. I will look at the contract. Thank you.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s4-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "gaji-s5",
+            "title_id": "Koreksi: jam lembur kurang",
+            "title_en": "Correction: missing overtime hours",
+            "setting_id": "Jam lembur di slip gajimu lebih sedikit daripada catatanmu sendiri. Kamu menyampaikannya dengan sopan kepada staf 総務.",
+            "setting_en": "The overtime hours on your payslip are fewer than in your own notes. You raise it politely with the 総務 staff.",
+            "goal_id": "Menyampaikan perbedaan dengan 〜と 書いて あります。でも、〜です, dan meminta pengecekan dengan 〜て ください.",
+            "goal_en": "Point out a difference with 〜と 書いて あります。でも、〜です and ask for a check with 〜て ください.",
+            "patterns": [
+                "〜の ことで、少し いいですか",
+                "〜と 書いて あります。でも、〜です",
+                "〜と 思います",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Buka dengan netral: 「〜の ことで、少し いいですか。」 Jangan langsung bilang \"salah\"; sampaikan fakta (slip tertulis 10 jam, catatan saya 12 jam), lalu minta dicek.",
+                "Bawa bukti: memo jam lembur atau foto kartu absen sendiri. Sebut hari yang berbeda secara spesifik supaya mudah diperiksa.",
+                "Kalau perusahaan mengaku salah, tanyakan KAPAN selisihnya dibayar. Cek slip bulan depan untuk memastikan.",
+                "Kalau masalah tidak selesai, bicarakan dengan penyalur/pendamping (監理団体・支援機関) atau konsultasi resmi; jangan menyimpan sendiri."
+            ],
+            "tips_en": [
+                "Open neutrally: 「〜の ことで、少し いいですか。」 Do not say \"wrong\" straight away; state the facts (slip says 10 hours, my notes say 12) and ask for a check.",
+                "Bring evidence: your overtime memo or a photo of your own time record. Name the specific days that differ so they are easy to check.",
+                "If the company admits a mistake, ask WHEN the difference will be paid. Check next month's slip to confirm.",
+                "If it is not solved, talk to your sending/supporting organisation (監理団体・支援機関) or an official consultation service; do not keep it to yourself."
+            ],
+            "words": [
+                {
+                    "ja": "〜の ことで",
+                    "id": "tentang ~ / mengenai ~",
+                    "en": "regarding ~"
+                },
+                {
+                    "ja": "足《た》りない",
+                    "id": "kurang",
+                    "en": "not enough"
+                },
+                {
+                    "ja": "先週《せんしゅう》",
+                    "id": "minggu lalu",
+                    "en": "last week"
+                },
+                {
+                    "ja": "来月《らいげつ》",
+                    "id": "bulan depan",
+                    "en": "next month"
+                },
+                {
+                    "ja": "確認《かくにん》",
+                    "id": "pengecekan, konfirmasi",
+                    "en": "check, confirmation"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "計算《けいさん》が 違《ちが》うと 思《おも》います。",
+                    "id": "Saya rasa perhitungannya berbeda.",
+                    "en": "I think the calculation is different."
+                },
+                {
+                    "ja": "もう 一度《いちど》 確認《かくにん》して ください。",
+                    "id": "Tolong cek sekali lagi.",
+                    "en": "Please check once more."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s5-t1",
+                    "who": "you",
+                    "ja": "すみません、給料明細《きゅうりょうめいさい》の ことで、少《すこ》し いいですか。",
+                    "speak": "すみません、きゅうりょうめいさいの ことで、すこし いいですか。",
+                    "id_text": "Permisi, soal slip gaji, boleh minta waktu sebentar?",
+                    "accept": [
+                        "すみません、給料明細の ことで、少し いいですか。",
+                        "すみません、給料明細のことで、少しいいですか。"
+                    ],
+                    "en_text": "Excuse me, about my payslip, do you have a moment?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t1.mp3"
+                },
+                {
+                    "id": "gaji-s5-t2",
+                    "who": "partner",
+                    "ja": "はい、どうしましたか。",
+                    "speak": "はい、どうしましたか。",
+                    "id_text": "Ya, ada apa?",
+                    "en_text": "Yes, what is it?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t2.mp3"
+                },
+                {
+                    "id": "gaji-s5-t3",
+                    "who": "you",
+                    "ja": "残業《ざんぎょう》が 十時間《じゅうじかん》と 書《か》いて あります。でも、わたしの メモでは 十二時間《じゅうにじかん》です。",
+                    "speak": "ざんぎょうが じゅうじかんと かいて あります。でも、わたしの メモでは じゅうにじかんです。",
+                    "id_text": "Lembur tertulis 10 jam. Tetapi di catatan saya 12 jam.",
+                    "accept": [
+                        "残業が 十時間と 書いて あります。でも、わたしの メモでは 十二時間です。",
+                        "残業が十時間と書いてあります。でも、わたしのメモでは十二時間です。"
+                    ],
+                    "en_text": "It says ten hours of overtime. But in my notes it is twelve hours.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t3.mp3"
+                },
+                {
+                    "id": "gaji-s5-t4",
+                    "who": "partner",
+                    "ja": "そうですか。タイムカードを 見《み》ますから、少《すこ》し 待《ま》って ください。",
+                    "speak": "そうですか。タイムカードを みますから、すこし まって ください。",
+                    "id_text": "Begitu ya. Saya akan melihat kartu absen, tolong tunggu sebentar.",
+                    "en_text": "I see. I will look at the time card, so please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t4.mp3"
+                },
+                {
+                    "id": "gaji-s5-t5",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。先週《せんしゅう》の 火曜日《かようび》と 木曜日《もくようび》の 残業《ざんぎょう》が 足《た》りないと 思《おも》います。",
+                    "speak": "はい、おねがいします。せんしゅうの かようびと もくようびの ざんぎょうが たりないと おもいます。",
+                    "id_text": "Ya, mohon bantuannya. Saya rasa lembur hari Selasa dan Kamis minggu lalu kurang.",
+                    "accept": [
+                        "はい、お願いします。先週の 火曜日と 木曜日の 残業が 足りないと 思います。",
+                        "はい、お願いします。先週の火曜日と木曜日の残業が足りないと思います。"
+                    ],
+                    "en_text": "Yes, please. I think the overtime on Tuesday and Thursday last week is missing.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t5.mp3"
+                },
+                {
+                    "id": "gaji-s5-t6",
+                    "who": "partner",
+                    "ja": "ああ、本当《ほんとう》ですね。木曜日《もくようび》の 二時間《にじかん》が 入《はい》って いませんでした。すみません。",
+                    "speak": "ああ、ほんとうですね。もくようびの にじかんが はいって いませんでした。すみません。",
+                    "id_text": "Ah, benar. Dua jam hari Kamis belum dimasukkan. Maaf.",
+                    "en_text": "Ah, you are right. The two hours on Thursday were not included. I am sorry.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t6.mp3"
+                },
+                {
+                    "id": "gaji-s5-t7",
+                    "who": "you",
+                    "ja": "その 二時間《にじかん》の 残業代《ざんぎょうだい》は、いつ 入《はい》りますか。",
+                    "speak": "その にじかんの ざんぎょうだいは、いつ はいりますか。",
+                    "id_text": "Uang lembur dua jam itu kapan masuknya?",
+                    "accept": [
+                        "その 二時間の 残業代は、いつ 入りますか。",
+                        "その二時間の残業代は、いつ入りますか。"
+                    ],
+                    "en_text": "When will the overtime pay for those two hours come in?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t7.mp3"
+                },
+                {
+                    "id": "gaji-s5-t8",
+                    "who": "partner",
+                    "ja": "来月《らいげつ》の 給料《きゅうりょう》に いれます。来月《らいげつ》の 給料明細《きゅうりょうめいさい》を 見《み》て ください。",
+                    "speak": "らいげつの きゅうりょうに いれます。らいげつの きゅうりょうめいさいを みて ください。",
+                    "id_text": "Kami masukkan ke gaji bulan depan. Tolong lihat slip gaji bulan depan.",
+                    "en_text": "We will add it to next month's pay. Please look at next month's payslip.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t8.mp3"
+                },
+                {
+                    "id": "gaji-s5-t9",
+                    "who": "you",
+                    "ja": "ありがとうございます。来月《らいげつ》、確認《かくにん》します。",
+                    "speak": "ありがとうございます。らいげつ、かくにんします。",
+                    "id_text": "Terima kasih. Bulan depan saya akan cek.",
+                    "accept": [
+                        "ありがとうございます。来月、確認します。"
+                    ],
+                    "en_text": "Thank you. I will check next month.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s5-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "gaji-s6",
+            "title_id": "Koreksi: biaya asrama tercatat dua kali",
+            "title_en": "Correction: dormitory fee listed twice",
+            "setting_id": "Di slip gajimu biaya asrama (寮費) tercantum dua kali. Kamu menyampaikannya kepada staf bagian keuangan.",
+            "setting_en": "The dormitory fee (寮費) appears twice on your payslip. You tell the accounting staff.",
+            "goal_id": "Menunjukkan kesalahan dengan 〜が 二回 書いて あります, meminta cek dengan 〜て ください, dan menanyakan penyelesaiannya.",
+            "goal_en": "Point out a mistake with 〜が 二回 書いて あります, ask for a check with 〜て ください and ask how it will be settled.",
+            "patterns": [
+                "〜が 二回 書いて あります",
+                "〜ても いいですか",
+                "〜た お金",
+                "〜ときは、また 〜て ください"
+            ],
+            "partner": {
+                "name": "やまだ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tunjukkan slip sambil menunjuk barisnya: これです。 Dengan begitu staf langsung melihat bagian yang kamu maksud.",
+                "間違い (kesalahan) tidak selalu kesalahan sengaja. Pakai nada tenang: 「二回 書いて あります」 sudah cukup jelas dan sopan.",
+                "Tanyakan cara penyelesaian: dikembalikan lewat gaji bulan depan (給料で 返します) atau cara lain. Minta supaya dicek di slip berikutnya.",
+                "Kalau perusahaan menolak mengoreksi atau terus berulang, bicarakan dengan penyalur/pendamping atau layanan konsultasi resmi."
+            ],
+            "tips_en": [
+                "Show the slip and point at the line: これです。 Then the staff immediately sees what you mean.",
+                "間違い (a mistake) is not always on purpose. Stay calm: 「二回 書いて あります」 is clear and polite enough.",
+                "Ask how it will be settled: returned in next month's pay (給料で 返します) or another way. Ask to check it on the next slip.",
+                "If the company refuses to correct it or it keeps happening, talk to your supporting organisation or an official consultation service."
+            ],
+            "words": [
+                {
+                    "ja": "二回《にかい》",
+                    "id": "dua kali",
+                    "en": "twice"
+                },
+                {
+                    "ja": "間違《まちが》い",
+                    "id": "kesalahan",
+                    "en": "mistake"
+                },
+                {
+                    "ja": "すぐ",
+                    "id": "segera",
+                    "en": "right away"
+                },
+                {
+                    "ja": "返《かえ》す",
+                    "id": "mengembalikan",
+                    "en": "to return, to give back"
+                },
+                {
+                    "ja": "引《ひ》く",
+                    "id": "memotong, mengurangi",
+                    "en": "to deduct"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "すみません、ここが 分《わ》かりません。",
+                    "id": "Maaf, bagian ini saya tidak mengerti.",
+                    "en": "Sorry, I do not understand this part."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s6-t1",
+                    "who": "you",
+                    "ja": "すみません、給料明細《きゅうりょうめいさい》を 見《み》ましたが、寮費《りょうひ》が 二回《にかい》、書《か》いて あります。",
+                    "speak": "すみません、きゅうりょうめいさいを みましたが、りょうひが にかい、かいて あります。",
+                    "id_text": "Permisi, saya melihat slip gaji, dan biaya asrama tertulis dua kali.",
+                    "accept": [
+                        "すみません、給料明細を 見ましたが、寮費が 二回、書いて あります。",
+                        "すみません、給料明細を見ましたが、寮費が二回、書いてあります。"
+                    ],
+                    "en_text": "Excuse me, I looked at my payslip, and the dormitory fee is written twice.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t1.mp3"
+                },
+                {
+                    "id": "gaji-s6-t2",
+                    "who": "partner",
+                    "ja": "二回《にかい》ですか。見《み》せて ください。",
+                    "speak": "にかいですか。みせて ください。",
+                    "id_text": "Dua kali? Tolong perlihatkan.",
+                    "en_text": "Twice? Please show me.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t2.mp3"
+                },
+                {
+                    "id": "gaji-s6-t3",
+                    "who": "you",
+                    "ja": "はい、これです。同《おな》じ 寮費《りょうひ》が 二《ふた》つ あります。",
+                    "speak": "はい、これです。おなじ りょうひが ふたつ あります。",
+                    "id_text": "Ya, ini. Ada dua biaya asrama yang sama.",
+                    "accept": [
+                        "はい、これです。同じ 寮費が 二つ あります。",
+                        "はい、これです。同じ寮費が二つあります。"
+                    ],
+                    "en_text": "Yes, this one. There are two of the same dormitory fee.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t3.mp3"
+                },
+                {
+                    "id": "gaji-s6-t4",
+                    "who": "partner",
+                    "ja": "ほんとうですね。間違《まちが》いです。すぐ 確認《かくにん》します。",
+                    "speak": "ほんとうですね。まちがいです。すぐ かくにんします。",
+                    "id_text": "Benar. Ini kesalahan. Segera saya cek.",
+                    "en_text": "You are right. It is a mistake. I will check right away.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t4.mp3"
+                },
+                {
+                    "id": "gaji-s6-t5",
+                    "who": "you",
+                    "ja": "間違《まちが》って 引《ひ》いた お金《かね》は、どう なりますか。",
+                    "speak": "まちがって ひいた おかねは、どう なりますか。",
+                    "id_text": "Uang yang salah dipotong itu bagaimana?",
+                    "accept": [
+                        "間違って 引いた お金は、どう なりますか。",
+                        "間違って引いたお金は、どうなりますか。"
+                    ],
+                    "en_text": "What happens to the money that was deducted by mistake?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t5.mp3"
+                },
+                {
+                    "id": "gaji-s6-t6",
+                    "who": "partner",
+                    "ja": "来月《らいげつ》の 給料《きゅうりょう》で 返《かえ》します。",
+                    "speak": "らいげつの きゅうりょうで かえします。",
+                    "id_text": "Kami kembalikan lewat gaji bulan depan.",
+                    "en_text": "We will give it back with next month's pay.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t6.mp3"
+                },
+                {
+                    "id": "gaji-s6-t7",
+                    "who": "you",
+                    "ja": "来月《らいげつ》の 給料明細《きゅうりょうめいさい》で 確認《かくにん》しても いいですか。",
+                    "speak": "らいげつの きゅうりょうめいさいで かくにんしても いいですか。",
+                    "id_text": "Bolehkah saya mengeceknya di slip gaji bulan depan?",
+                    "accept": [
+                        "来月の 給料明細で 確認しても いいですか。",
+                        "来月の給料明細で確認してもいいですか。"
+                    ],
+                    "en_text": "May I check it on next month's payslip?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t7.mp3"
+                },
+                {
+                    "id": "gaji-s6-t8",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。分《わ》からない ときは、また 聞《き》いて ください。",
+                    "speak": "はい、どうぞ。わからない ときは、また きいて ください。",
+                    "id_text": "Ya, silakan. Kalau ada yang tidak jelas, tanyakan lagi.",
+                    "en_text": "Yes, please do. When something is unclear, ask again.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s6-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "gaji-s7",
+            "title_id": "Gaji belum masuk rekening",
+            "title_en": "Pay has not arrived",
+            "setting_id": "Kemarin hari gajian, tetapi rekening bank belum bertambah. Kamu bertanya kepada staf 総務.",
+            "setting_en": "Yesterday was payday, but your bank account has not changed. You ask the 総務 staff.",
+            "goal_id": "Melaporkan masalah dengan まだ 〜て いません, memeriksa rekening, dan bertanya 〜たら、〜ても いいですか.",
+            "goal_en": "Report a problem with まだ 〜て いません, check the account details, and ask 〜たら、〜ても いいですか.",
+            "patterns": [
+                "まだ 〜て いません",
+                "〜と 思います",
+                "もし 〜なかったら、〜ても いいですか",
+                "〜は 間違って いませんか"
+            ],
+            "partner": {
+                "name": "さとう",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Sebelum bertanya, cek dulu: apakah sudah lewat jam proses bank, dan apakah rekening yang didaftarkan benar. Transfer bisa tiba agak siang atau hari kerja berikutnya.",
+                "Sebut fakta: hari gajian, bank, dan bahwa bulan lalu sudah masuk. Hindari nada marah; cukup 「まだ 入って いません」.",
+                "Tanyakan kapan akan dicek lagi dan kepada siapa harus kembali. Kalau uang tetap tidak masuk beberapa hari, hubungi penyalur/pendamping atau layanan konsultasi resmi."
+            ],
+            "tips_en": [
+                "Check first: has the bank's processing time passed, and is the registered account correct? A transfer may arrive in the afternoon or on the next business day.",
+                "State the facts: payday, the bank, and that last month it arrived. Avoid an angry tone; 「まだ 入って いません」 is enough.",
+                "Ask when it will be checked again and who to come back to. If the money still does not arrive after a few days, contact your supporting organisation or an official consultation service."
+            ],
+            "words": [
+                {
+                    "ja": "まだ",
+                    "id": "belum",
+                    "en": "not yet"
+                },
+                {
+                    "ja": "確認《かくにん》する",
+                    "id": "memeriksa",
+                    "en": "to check"
+                },
+                {
+                    "ja": "名前《なまえ》",
+                    "id": "nama",
+                    "en": "name"
+                },
+                {
+                    "ja": "間違《まちが》う",
+                    "id": "salah",
+                    "en": "to be wrong"
+                },
+                {
+                    "ja": "午後《ごご》",
+                    "id": "sore, siang hari (setelah tengah hari)",
+                    "en": "afternoon"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "今朝《けさ》 銀行《ぎんこう》を 見《み》ましたが、入《はい》って いませんでした。",
+                    "id": "Pagi ini saya cek bank, belum masuk.",
+                    "en": "I looked at the bank this morning, but it had not come in."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "gaji-s7-t1",
+                    "who": "you",
+                    "ja": "すみません、昨日《きのう》は 給料日《きゅうりょうび》でしたが、まだ 銀行《ぎんこう》に 入《はい》って いません。",
+                    "speak": "すみません、きのうは きゅうりょうびでしたが、まだ ぎんこうに はいって いません。",
+                    "id_text": "Permisi, kemarin hari gajian, tetapi belum masuk ke bank.",
+                    "accept": [
+                        "すみません、昨日は 給料日でしたが、まだ 銀行に 入って いません。",
+                        "すみません、昨日は給料日でしたが、まだ銀行に入っていません。"
+                    ],
+                    "en_text": "Excuse me, yesterday was payday, but it has not come into my bank yet.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t1.mp3"
+                },
+                {
+                    "id": "gaji-s7-t2",
+                    "who": "partner",
+                    "ja": "入《はい》って いませんか。どの 銀行《ぎんこう》ですか。",
+                    "speak": "はいって いませんか。どの ぎんこうですか。",
+                    "id_text": "Belum masuk? Bank yang mana?",
+                    "en_text": "It has not come in? Which bank is it?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t2.mp3"
+                },
+                {
+                    "id": "gaji-s7-t3",
+                    "who": "you",
+                    "ja": "先月《せんげつ》と 同《おな》じ 銀行《ぎんこう》です。先月《せんげつ》は 二十五日《にじゅうごにち》に 入《はい》りました。",
+                    "speak": "せんげつと おなじ ぎんこうです。せんげつは にじゅうごにちに はいりました。",
+                    "id_text": "Bank yang sama dengan bulan lalu. Bulan lalu masuk tanggal 25.",
+                    "accept": [
+                        "先月と 同じ 銀行です。先月は 二十五日に 入りました。",
+                        "先月と同じ銀行です。先月は二十五日に入りました。"
+                    ],
+                    "en_text": "It is the same bank as last month. Last month it came in on the 25th.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t3.mp3"
+                },
+                {
+                    "id": "gaji-s7-t4",
+                    "who": "partner",
+                    "ja": "今《いま》、確認《かくにん》しますね。少《すこ》し 待《ま》って ください。",
+                    "speak": "いま、かくにんしますね。すこし まって ください。",
+                    "id_text": "Saya cek sekarang. Tolong tunggu sebentar.",
+                    "en_text": "I will check now. Please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t4.mp3"
+                },
+                {
+                    "id": "gaji-s7-t5",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。口座《こうざ》の 名前《なまえ》は、間違《まちが》って いませんか。",
+                    "speak": "はい、おねがいします。こうざの なまえは、まちがって いませんか。",
+                    "id_text": "Ya, mohon bantuannya. Apakah nama rekeningnya tidak salah?",
+                    "accept": [
+                        "はい、お願いします。口座の 名前は、間違って いませんか。",
+                        "はい、お願いします。口座の名前は、間違っていませんか。"
+                    ],
+                    "en_text": "Yes, please. Is the name on the account not wrong?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t5.mp3"
+                },
+                {
+                    "id": "gaji-s7-t6",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》です。今日《きょう》の 午後《ごご》に 入《はい》ると 思《おも》います。",
+                    "speak": "だいじょうぶです。きょうの ごごに はいると おもいます。",
+                    "id_text": "Tidak apa-apa (benar). Saya rasa masuk siang ini.",
+                    "en_text": "It is fine. I think it will come in this afternoon.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t6.mp3"
+                },
+                {
+                    "id": "gaji-s7-t7",
+                    "who": "you",
+                    "ja": "もし 入《はい》らなかったら、また 来《き》ても いいですか。",
+                    "speak": "もし はいらなかったら、また きても いいですか。",
+                    "id_text": "Kalau tetap tidak masuk, bolehkah saya datang lagi?",
+                    "accept": [
+                        "もし 入らなかったら、また 来ても いいですか。",
+                        "もし入らなかったら、また来てもいいですか。"
+                    ],
+                    "en_text": "If it does not come in, may I come again?",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t7.mp3"
+                },
+                {
+                    "id": "gaji-s7-t8",
+                    "who": "partner",
+                    "ja": "はい、いつでも 来《き》て ください。",
+                    "speak": "はい、いつでも きて ください。",
+                    "id_text": "Ya, silakan datang kapan saja.",
+                    "en_text": "Yes, please come anytime.",
+                    "audio": "/audio/kaiwa/situation-gaji/gaji-s7-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

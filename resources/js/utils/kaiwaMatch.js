@@ -145,15 +145,79 @@ function counterReading(n, counter) {
 
     return `${intToKana(n - last)}${tail}${counter === '年' ? 'ねん' : 'ねんかん'}`
   }
+  // Paket situasi harian (Kereta, Konbini, Pabrik): 個 本 膳 度 (dan 番/番線 untuk digit, lihat DIGIT_BAN)
+  if (counter === '個') {
+    const last = n % 10
+    const tail = { 1: 'いっ', 6: 'ろっ', 8: 'はっ' }[last] ?? DIGIT_KANA[last]
+
+    return last === 0 ? `${intToKana(n).replace(/じゅう$/, 'じゅっ')}こ` : `${intToKana(n - last)}${tail}こ`
+  }
+  if (counter === '本') {
+    const last = n % 10
+    const tail = { 1: 'いっぽん', 2: 'にほん', 3: 'さんぼん', 4: 'よんほん', 5: 'ごほん', 6: 'ろっぽん', 7: 'ななほん', 8: 'はっぽん', 9: 'きゅうほん' }[last]
+
+    return last === 0 ? `${intToKana(n).replace(/じゅう$/, 'じゅっ')}ぽん` : `${intToKana(n - last)}${tail}`
+  }
+  if (counter === '膳' || counter === '度')
+    return `${intToKana(n)}${{ 膳: 'ぜん', 度: 'ど' }[counter]}`
 
   return intToKana(n)
 }
 
-const NUM_COUNTER = /(\d{1,4}|[〇零一二三四五六七八九十百千]+)(歳|才|時間|時|分|円|階|人|枚|台|回|週間|か月|ヶ月|ヵ月|年間|年|つ|さい|じ|ふん|ぷん|えん|かい|がい)/g
+const NUM_COUNTER = /(\d{1,4}|[〇零一二三四五六七八九十百千]+)(歳|才|時間|時|分|円|階|人|枚|台|個|本|膳|度|回|週間|か月|ヶ月|ヵ月|年間|年|つ|さい|じ|ふん|ぷん|えん|かい|がい)/g
 const KANA_COUNTER = { さい: '歳', じ: '時', ふん: '分', ぷん: '分', えん: '円', かい: '階', がい: '階', ヶ月: 'か月', ヵ月: 'か月' }
 
+// 番 / 番線 hanya untuk angka DIGIT (3番線, 5番の ライン): angka kanji dibiarkan agar kata seperti 一番 ("paling") tidak berubah.
+const DIGIT_BAN = /(\d{1,4})(番線|番)/g
+
+// 日 (tanggal / lama hari) hanya untuk angka DIGIT 1–31 (`3日前`, `2日`): angka kanji dibiarkan karena
+// bacaannya sudah didaftarkan dari furigana (三日《みっか》) dan kata seperti 一日中 tidak boleh rusak.
+const DIGIT_DAY = /(?<![\d月])(\d{1,2})日(?!曜|本|間|中|分)/g
+const DAY_KANA = { 1: 'いちにち', 2: 'ふつか', 3: 'みっか', 4: 'よっか', 5: 'いつか', 6: 'むいか', 7: 'なのか', 8: 'ようか', 9: 'ここのか', 10: 'とおか', 14: 'じゅうよっか', 20: 'はつか', 24: 'にじゅうよっか' }
+
+function dayReading(n) {
+  if (n < 1 || n > 31)
+    return null
+  if (DAY_KANA[n])
+    return DAY_KANA[n]
+  const last = n % 10
+
+  return `${intToKana(n - last)}${last === 7 ? 'しち' : last === 9 ? 'く' : DIGIT_KANA[last]}にち`
+}
+
+// 万 (paket situasi Bank & Kirim Uang): `10万円`, `十万円`, `4万5000円`, `100万ルピア`; angka ≥ 10000 tanpa 万
+// (`50000円`, `50,000円`) juga dibaca ごまんえん. 万 hanya diubah bila diikuti 円 / ルピア / ドル / angka, supaya kata
+// lain yang memuat 万 (万年筆, 万歳) tidak rusak. Sisa angka sesudah 万 (`5000円`) ditangani NUM_COUNTER.
+const MAN = /(\d{1,4}|[〇零一二三四五六七八九十百千]+)万(円)?/g
+const BIG_YEN = /(?<!\d)(\d{5,8})円/g
+
+function manReading(s) {
+  return s
+    .replace(/(?<=\d),(?=\d{3}(?!\d))/g, '')
+    .replace(BIG_YEN, (m, num) => {
+      const n = Number.parseInt(num, 10)
+      const hi = Math.floor(n / 10000)
+      const lo = n % 10000
+
+      return hi < 1 || hi > 9999 ? m : `${intToKana(hi)}まん${lo ? counterReading(lo, '円') : 'えん'}`
+    })
+    .replace(MAN, (m, num, yen, offset, whole) => {
+      const next = whole[offset + m.length] ?? ''
+
+      if (!yen && !/[ルド\d一二三四五六七八九十百千]/.test(next))
+        return m
+      const n = /^\d+$/.test(num) ? Number.parseInt(num, 10) : kanjiNumToInt(num)
+
+      return n < 1 ? m : `${intToKana(n)}まん${yen ? 'えん' : ''}`
+    })
+}
+
 export function numbersToKana(s) {
-  return s.replace(NUM_COUNTER, (_, num, counter) => {
+  return manReading(s).replace(DIGIT_BAN, (_, num, c) => {
+    const n = Number.parseInt(num, 10)
+
+    return n < 1 ? _ : `${intToKana(n)}${c === '番' ? 'ばん' : 'ばんせん'}`
+  }).replace(DIGIT_DAY, (m, num) => dayReading(Number.parseInt(num, 10)) ?? m).replace(NUM_COUNTER, (_, num, counter) => {
     const n = /^\d+$/.test(num) ? Number.parseInt(num, 10) : kanjiNumToInt(num)
 
     return n < 1 || n > 9999 ? _ : (counterReading(n, KANA_COUNTER[counter] ?? counter) || _)

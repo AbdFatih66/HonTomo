@@ -2772,7 +2772,8 @@
                     "ja": "はい、寮《りょう》の キッチンを 使《つか》っても いいですよ。",
                     "speak": "はい、りょうの キッチンを つかっても いいですよ。",
                     "id_text": "Ya, Anda boleh memakai dapur asrama.",
-                    "en_text": "Yes, you may use the dormitory kitchen."
+                    "en_text": "Yes, you may use the dormitory kitchen.",
+                    "audio": "/audio/kaiwa/situation-mensetsu/mensetsu-s18-t3.mp3"
                 },
                 {
                     "id": "mensetsu-s18-t4",

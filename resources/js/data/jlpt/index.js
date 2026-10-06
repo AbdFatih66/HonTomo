@@ -6,9 +6,9 @@
 //   ⟦kata⟧   → kata bergaris bawah
 //   ⟦　⟧     → kolom kosong bergaris (soal ★ / もんだい 2)
 //   ⟦★⟧      → kolom kosong bergaris yang bertanda ★
-//   {{22}}   → kotak bernomor (nomor kolom kosong di bacaan, もんだい 3)
+//   {{22}}   → kotak bernomor (boleh {{43-a}} / {{43-b}} untuk kotak bersuffiks, N1 もんだい 7) (nomor kolom kosong di bacaan, もんだい 3)
 
-const TOKEN = /⟦([^⟧]*)⟧|\{\{(\d+)\}\}/g
+const TOKEN = /⟦([^⟧]*)⟧|\{\{(\d+(?:-[a-z])?)\}\}/g
 
 // teks → [{ text, underline, blank, star, box }]
 export function parseStem(stem) {

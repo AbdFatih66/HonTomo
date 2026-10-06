@@ -219,6 +219,49 @@ class KaiwaProgressTest extends TestCase
         $this->assertSame(['mensetsu-s1' => ['done' => true, 'crown' => true]], $progress);
     }
 
+    public function test_daily_life_situation_packs_are_valid_unlocked_and_labelled(): void
+    {
+        $user = User::factory()->create();
+        $client = $this->actingAsToken($user);
+
+        // paket harian (kereta/konbini/pabrik/restoran/rumahsakit/telepon/supermarket/pakaian/gaji/keitai/bank/kelurahan/tetangga) = situasi tanpa kunci; id dari berkas di index.json → situations
+        foreach (['kereta-s2' => 'Kereta & Stasiun · Skenario 2', 'konbini-s8' => 'Konbini · Skenario 8', 'pabrik-s10' => 'Pabrik (tempat kerja) · Skenario 10', 'pabrik-s12' => 'Pabrik (tempat kerja) · Skenario 12', 'restoran-s8' => 'Restoran · Skenario 8', 'rumahsakit-s7' => 'Rumah Sakit · Skenario 7', 'telepon-s8' => 'Telepon · Skenario 8', 'supermarket-s8' => 'Supermarket · Skenario 8', 'pakaian-s4' => 'Belanja Pakaian · Skenario 4', 'gaji-s7' => 'Gaji & Slip Gaji · Skenario 7', 'keitai-s8' => 'Ponsel & Internet · Skenario 8', 'bank-s8' => 'Bank & Kirim Uang · Skenario 8', 'kelurahan-s10' => 'Kelurahan & Imigrasi · Skenario 10', 'tetangga-s6' => 'Tetangga & Asrama · Skenario 6'] as $key => $label) {
+            $client->postJson("/api/kaiwa/progress/{$key}", ['perfect' => false])
+                ->assertOk()
+                ->assertJson(['set_key' => $key, 'done' => true, 'xp' => 10]);
+        }
+
+        $labels = UserNotification::where('user_id', $user->id)->get()->map(fn ($n) => json_decode($n->subtitle, true)['lesson'])->all();
+        $this->assertContains('Kereta & Stasiun · Skenario 2', $labels);
+        $this->assertContains('Konbini · Skenario 8', $labels);
+        $this->assertContains('Pabrik (tempat kerja) · Skenario 10', $labels);
+        $this->assertContains('Pabrik (tempat kerja) · Skenario 12', $labels);
+        $this->assertContains('Restoran · Skenario 8', $labels);
+        $this->assertContains('Rumah Sakit · Skenario 7', $labels);
+        $this->assertContains('Telepon · Skenario 8', $labels);
+        $this->assertContains('Supermarket · Skenario 8', $labels);
+        $this->assertContains('Belanja Pakaian · Skenario 4', $labels);
+        $this->assertContains('Gaji & Slip Gaji · Skenario 7', $labels);
+        $this->assertContains('Ponsel & Internet · Skenario 8', $labels);
+        $this->assertContains('Bank & Kirim Uang · Skenario 8', $labels);
+        $this->assertContains('Kelurahan & Imigrasi · Skenario 10', $labels);
+        $this->assertContains('Tetangga & Asrama · Skenario 6', $labels);
+
+        $client->postJson('/api/kaiwa/progress/kereta-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/konbini-s0', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/pabrik-s13', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/restoran-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/rumahsakit-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/telepon-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/supermarket-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/pakaian-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/gaji-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/keitai-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/bank-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/kelurahan-s99', ['perfect' => true])->assertNotFound();
+        $client->postJson('/api/kaiwa/progress/tetangga-s99', ['perfect' => true])->assertNotFound();
+    }
+
     public function test_situation_notification_label_names_the_set_and_scenario(): void
     {
         $user = User::factory()->create();

@@ -7,7 +7,8 @@ use Illuminate\Console\Command;
 
 /**
  * Memeriksa berkas audio Tes JLPT (sesi chokai) pada pack bergaya classic: tiap
- * nomor trek yang dipakai bank soal harus punya berkas berawalan "NN-" di
+ * nomor trek yang dipakai bank soal harus punya berkas berawalan "NN-" (atau, untuk N2,
+ * berkas bernama persis seperti di bank, mis. "N2-chokai-1" + ekstensi) di
  * public/<pack.audio_path>/<level>. Juga menampilkan berkas di folder yang TIDAK
  * dipakai. (Pack bergaya mock memakai MP3 per soal; periksa dengan
  * `php artisan jlpt-mock:generate-audio --dry-run`.)
@@ -56,11 +57,12 @@ class JlptAudioCheck extends Command
         foreach ($bank['mondai'] as $no => $m) {
             if (isset($m['audio_before']))
                 $refs["もんだい {$no} — istirahat"] = $m['audio_before'];
-            $refs["もんだい {$no} — petunjuk"] = $m['audio'] ?? null;
+            // satu rekaman utuh per もんだい (N2): petunjuk + れい + semua soal ada di satu berkas
+            $refs["もんだい {$no} — ".(! empty($m['whole_audio']) ? 'rekaman utuh' : 'petunjuk')] = $m['audio'] ?? null;
             $refs["もんだい {$no} — れい"] = $m['example']['audio'] ?? null;
             foreach ($bank['questions'] as $q) {
                 if ((int) $q['mondai'] === (int) $no)
-                    $refs["もんだい {$no} — {$q['no']}番"] = $q['audio'] ?? null;
+                    $refs["もんだい {$no} — ".($q['label'] ?? "{$q['no']}番")] = $q['audio'] ?? null;
             }
         }
         $refs['Penutup'] = $bank['audio']['outro'] ?? null;
@@ -91,7 +93,7 @@ class JlptAudioCheck extends Command
 
         $this->newLine();
         if ($missing > 0) {
-            $this->error("{$missing} trek belum punya berkas. Pastikan nama berkas berawalan nomor trek (mis. 04-….mp3).");
+            $this->error("{$missing} trek belum punya berkas. Pastikan nama berkas berawalan nomor trek (mis. 04-….mp3) atau sama dengan nama di bank soal (mis. N2-chokai-1.mp3).");
 
             return self::FAILURE;
         }

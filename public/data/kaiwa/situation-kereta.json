@@ -1,0 +1,1230 @@
+{
+    "id": "kereta",
+    "track": "situation",
+    "level": "N5",
+    "rounds": 1,
+    "title_id": "Kereta & Stasiun",
+    "title_en": "Trains & Stations",
+    "note_id": "Jawaban contoh memakai tujuan dan angka tertentu (mis. Yokohama, 320 yen, peron 3). Saat dipakai sungguhan tujuan dan angkanya berbeda: latih polanya, bukan hafalan angkanya.",
+    "note_en": "The sample answers use specific destinations and numbers (e.g. Yokohama, 320 yen, platform 3). In real life these will differ: practise the patterns, not the numbers.",
+    "scenarios": [
+        {
+            "id": "kereta-s1",
+            "title_id": "Membeli tiket di loket",
+            "title_en": "Buying a ticket at the counter",
+            "setting_id": "Kamu ingin pergi ke Yokohama dan membeli tiket di loket stasiun.",
+            "setting_en": "You want to go to Yokohama and buy a ticket at the station counter.",
+            "goal_id": "Membeli tiket dengan 〜まで 〜枚 お願いします, memilih 片道/往復, lalu membayar.",
+            "goal_en": "Buy a ticket with 〜まで 〜枚 お願いします, choose 片道/往復, and pay.",
+            "patterns": [
+                "〜まで 一枚 お願いします",
+                "片道ですか、往復ですか",
+                "〜円で お願いします"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pola inti: 〜まで (大人) 〜枚 お願いします. 大人 = dewasa, 子ども = anak.",
+                "Petugas hampir selalu menanyakan 片道 (sekali jalan) atau 往復 (pulang-pergi): jawab dengan satu kata.",
+                "Tiket jarak dekat umumnya dibeli di mesin; loket dipakai bila bingung."
+            ],
+            "tips_en": [
+                "Core pattern: 〜まで (大人) 〜枚 お願いします. 大人 = adult, 子ども = child.",
+                "Staff almost always ask 片道 (one way) or 往復 (round trip): answer with one word.",
+                "Short-distance tickets are usually bought from machines; use the counter if unsure."
+            ],
+            "words": [
+                {
+                    "ja": "切符《きっぷ》",
+                    "id": "tiket",
+                    "en": "ticket"
+                },
+                {
+                    "ja": "片道《かたみち》",
+                    "id": "sekali jalan",
+                    "en": "one way"
+                },
+                {
+                    "ja": "往復《おうふく》",
+                    "id": "pulang-pergi",
+                    "en": "round trip"
+                },
+                {
+                    "ja": "お釣《つ》り",
+                    "id": "uang kembalian",
+                    "en": "change"
+                },
+                {
+                    "ja": "大人《おとな》",
+                    "id": "dewasa",
+                    "en": "adult"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "大阪《おおさか》まで 子《こ》ども 一枚《いちまい》 お願《ねが》いします。",
+                    "id": "Satu tiket anak ke Osaka, tolong.",
+                    "en": "One child ticket to Osaka, please."
+                },
+                {
+                    "ja": "往復《おうふく》で お願《ねが》いします。",
+                    "id": "Pulang-pergi, tolong.",
+                    "en": "Round trip, please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。どちらまで ですか。",
+                    "speak": "いらっしゃいませ。どちらまで ですか。",
+                    "id_text": "Selamat datang. Mau ke mana?",
+                    "en_text": "Welcome. Where to?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t1.mp3"
+                },
+                {
+                    "id": "kereta-s1-t2",
+                    "who": "you",
+                    "ja": "横浜《よこはま》まで 大人《おとな》 一枚《いちまい》 お願《ねが》いします。",
+                    "speak": "よこはままで おとな いちまい おねがいします。",
+                    "id_text": "Satu tiket dewasa ke Yokohama, tolong.",
+                    "accept": [
+                        "横浜まで 大人 一枚 お願いします。",
+                        "横浜まで大人一枚お願いします。"
+                    ],
+                    "en_text": "One adult ticket to Yokohama, please.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t2.mp3"
+                },
+                {
+                    "id": "kereta-s1-t3",
+                    "who": "partner",
+                    "ja": "片道《かたみち》ですか、往復《おうふく》ですか。",
+                    "speak": "かたみちですか、おうふくですか。",
+                    "id_text": "Sekali jalan atau pulang-pergi?",
+                    "en_text": "One way or round trip?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t3.mp3"
+                },
+                {
+                    "id": "kereta-s1-t4",
+                    "who": "you",
+                    "ja": "片道《かたみち》です。",
+                    "speak": "かたみちです。",
+                    "id_text": "Sekali jalan.",
+                    "accept": [
+                        "片道です。"
+                    ],
+                    "en_text": "One way.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t4.mp3"
+                },
+                {
+                    "id": "kereta-s1-t5",
+                    "who": "partner",
+                    "ja": "三百二十円《さんびゃくにじゅうえん》です。",
+                    "speak": "さんびゃくにじゅうえんです。",
+                    "id_text": "Tiga ratus dua puluh yen.",
+                    "en_text": "That is 320 yen.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t5.mp3"
+                },
+                {
+                    "id": "kereta-s1-t6",
+                    "who": "you",
+                    "ja": "はい、千円《せんえん》で お願《ねが》いします。",
+                    "speak": "はい、せんえんで おねがいします。",
+                    "id_text": "Ya, saya bayar dengan seribu yen.",
+                    "accept": [
+                        "はい、千円で お願いします。",
+                        "はい、千円でお願いします。"
+                    ],
+                    "en_text": "Yes, here is 1,000 yen.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t6.mp3"
+                },
+                {
+                    "id": "kereta-s1-t7",
+                    "who": "partner",
+                    "ja": "六百八十円《ろっぴゃくはちじゅうえん》の お釣《つ》りです。どうぞ。",
+                    "speak": "ろっぴゃくはちじゅうえんの おつりです。どうぞ。",
+                    "id_text": "Kembaliannya enam ratus delapan puluh yen. Silakan.",
+                    "en_text": "Here is your change, 680 yen.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t7.mp3"
+                },
+                {
+                    "id": "kereta-s1-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。この 切符《きっぷ》で 横浜《よこはま》まで 行《い》けますか。",
+                    "speak": "ありがとうございます。この きっぷで よこはままで いけますか。",
+                    "id_text": "Terima kasih. Apakah dengan tiket ini bisa sampai Yokohama?",
+                    "accept": [
+                        "ありがとうございます。この 切符で 横浜まで 行けますか。",
+                        "ありがとうございます。この切符で横浜まで行けますか。"
+                    ],
+                    "en_text": "Thank you. Can I get to Yokohama with this ticket?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t8.mp3"
+                },
+                {
+                    "id": "kereta-s1-t9",
+                    "who": "partner",
+                    "ja": "はい、行《い》けますよ。気《き》を つけて。",
+                    "speak": "はい、いけますよ。きを つけて。",
+                    "id_text": "Ya, bisa. Hati-hati.",
+                    "en_text": "Yes, you can. Take care.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s1-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s2",
+            "title_id": "Menanyakan peron & jam kereta",
+            "title_en": "Asking for the platform and train time",
+            "setting_id": "Kamu ingin ke Shinjuku tetapi tidak tahu naik dari peron berapa.",
+            "setting_en": "You want to go to Shinjuku but do not know which platform to use.",
+            "goal_id": "Menanyakan peron dengan 何番線 dan jam kereta berikutnya dengan 次の 電車は 何時ですか.",
+            "goal_en": "Ask the platform with 何番線 and the next train with 次の 電車は 何時ですか.",
+            "patterns": [
+                "〜は 何番線ですか",
+                "次の 電車は 何時ですか",
+                "〜番線です"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "番線 = nomor peron; ucapkan angkanya jelas: 三番線 (さんばんせん).",
+                "Papan elektronik menunjukkan tujuan, jam, dan peron; tanya petugas bila ragu.",
+                "Dengarkan angka: 十時十五分 = jam 10.15."
+            ],
+            "tips_en": [
+                "番線 = platform number; say the number clearly: 三番線 (さんばんせん).",
+                "Electronic boards show destination, time and platform; ask staff if unsure.",
+                "Listen for numbers: 十時十五分 = 10:15."
+            ],
+            "words": [
+                {
+                    "ja": "番線《ばんせん》",
+                    "id": "nomor peron",
+                    "en": "platform number"
+                },
+                {
+                    "ja": "次《つぎ》の 電車《でんしゃ》",
+                    "id": "kereta berikutnya",
+                    "en": "next train"
+                },
+                {
+                    "ja": "行《い》き",
+                    "id": "tujuan ke ...",
+                    "en": "bound for ..."
+                },
+                {
+                    "ja": "時刻表《じこくひょう》",
+                    "id": "jadwal",
+                    "en": "timetable"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "東京《とうきょう》行《い》きは 何番線《なんばんせん》ですか。",
+                    "id": "Peron berapa untuk tujuan Tokyo?",
+                    "en": "Which platform is for Tokyo?"
+                },
+                {
+                    "ja": "電車《でんしゃ》は 何分《なんぷん》に 来《き》ますか。",
+                    "id": "Kereta datang menit berapa?",
+                    "en": "What minute does the train come?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s2-t1",
+                    "who": "you",
+                    "ja": "すみません、新宿《しんじゅく》行《い》きの 電車《でんしゃ》は 何番線《なんばんせん》ですか。",
+                    "speak": "すみません、しんじゅくいきの でんしゃは なんばんせんですか。",
+                    "id_text": "Permisi, kereta tujuan Shinjuku di peron berapa?",
+                    "accept": [
+                        "すみません、新宿行きの 電車は 何番線ですか。",
+                        "すみません、新宿行きの電車は何番線ですか。"
+                    ],
+                    "en_text": "Excuse me, which platform is the train for Shinjuku?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t1.mp3"
+                },
+                {
+                    "id": "kereta-s2-t2",
+                    "who": "partner",
+                    "ja": "新宿《しんじゅく》行《い》きは 三番線《さんばんせん》です。あの 階段《かいだん》を 上《のぼ》って ください。",
+                    "speak": "しんじゅくいきは さんばんせんです。あの かいだんを のぼって ください。",
+                    "id_text": "Tujuan Shinjuku di peron 3. Silakan naik tangga itu.",
+                    "en_text": "Trains for Shinjuku leave from platform 3. Please go up those stairs.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t2.mp3"
+                },
+                {
+                    "id": "kereta-s2-t3",
+                    "who": "you",
+                    "ja": "ありがとうございます。次《つぎ》の 電車《でんしゃ》は 何時《なんじ》ですか。",
+                    "speak": "ありがとうございます。つぎの でんしゃは なんじですか。",
+                    "id_text": "Terima kasih. Kereta berikutnya jam berapa?",
+                    "accept": [
+                        "ありがとうございます。次の 電車は 何時ですか。",
+                        "ありがとうございます。次の電車は何時ですか。"
+                    ],
+                    "en_text": "Thank you. What time is the next train?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t3.mp3"
+                },
+                {
+                    "id": "kereta-s2-t4",
+                    "who": "partner",
+                    "ja": "十時十五分《じゅうじじゅうごふん》です。あと 五分《ごふん》ですよ。",
+                    "speak": "じゅうじじゅうごふんです。あと ごふんですよ。",
+                    "id_text": "Jam 10.15. Lima menit lagi.",
+                    "en_text": "At 10:15. In five minutes.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t4.mp3"
+                },
+                {
+                    "id": "kereta-s2-t5",
+                    "who": "you",
+                    "ja": "何分《なんぷん》ぐらい かかりますか。",
+                    "speak": "なんぷんぐらい かかりますか。",
+                    "id_text": "Kira-kira berapa menit sampai?",
+                    "accept": [
+                        "何分ぐらい かかりますか。",
+                        "何分ぐらいかかりますか。"
+                    ],
+                    "en_text": "About how many minutes does it take?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t5.mp3"
+                },
+                {
+                    "id": "kereta-s2-t6",
+                    "who": "partner",
+                    "ja": "新宿《しんじゅく》まで 二十分《にじゅっぷん》ぐらいです。",
+                    "speak": "しんじゅくまで にじゅっぷんぐらいです。",
+                    "id_text": "Sampai Shinjuku sekitar dua puluh menit.",
+                    "en_text": "About twenty minutes to Shinjuku.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t6.mp3"
+                },
+                {
+                    "id": "kereta-s2-t7",
+                    "who": "you",
+                    "ja": "わかりました。どうも ありがとうございました。",
+                    "speak": "わかりました。どうも ありがとうございました。",
+                    "id_text": "Saya mengerti. Terima kasih banyak.",
+                    "accept": [
+                        "わかりました。どうも ありがとうございました。",
+                        "わかりました。どうもありがとうございました。"
+                    ],
+                    "en_text": "I understand. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s3",
+            "title_id": "Kereta ini berhenti di sana?",
+            "title_en": "Does this train stop there?",
+            "setting_id": "Di peron, kamu ragu apakah kereta yang datang berhenti di Shibuya.",
+            "setting_en": "On the platform you are not sure whether the arriving train stops at Shibuya.",
+            "goal_id": "Memastikan kereta dengan この 電車は 〜に 止まりますか dan memahami 各駅停車 / 快速.",
+            "goal_en": "Confirm a train with この 電車は 〜に 止まりますか and understand 各駅停車 / 快速.",
+            "patterns": [
+                "この 電車は 〜に 止まりますか",
+                "〜に 乗ります",
+                "〜ですね"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Satu jalur bisa punya kereta lokal (各駅停車, berhenti di tiap stasiun) dan ekspres (快速/急行, melewati beberapa stasiun).",
+                "Selalu pastikan: この 電車は 〜に 止まりますか. Salah naik ekspres adalah kesalahan paling umum.",
+                "Jika salah naik, turun di stasiun berikut dan tanya petugas: jangan panik."
+            ],
+            "tips_en": [
+                "One line can have local trains (各駅停車, stop at every station) and express trains (快速/急行, skip stations).",
+                "Always check: この 電車は 〜に 止まりますか. Boarding the wrong express is the most common mistake.",
+                "If you boarded wrong, get off at the next station and ask staff: do not panic."
+            ],
+            "words": [
+                {
+                    "ja": "止《と》まる",
+                    "id": "berhenti",
+                    "en": "to stop"
+                },
+                {
+                    "ja": "各駅停車《かくえきていしゃ》",
+                    "id": "kereta lokal",
+                    "en": "local train"
+                },
+                {
+                    "ja": "快速《かいそく》",
+                    "id": "kereta cepat",
+                    "en": "rapid train"
+                },
+                {
+                    "ja": "乗《の》る",
+                    "id": "naik",
+                    "en": "to board"
+                },
+                {
+                    "ja": "向《む》かい",
+                    "id": "seberang",
+                    "en": "opposite"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この 電車《でんしゃ》は 東京《とうきょう》まで 行《い》きますか。",
+                    "id": "Apakah kereta ini sampai Tokyo?",
+                    "en": "Does this train go as far as Tokyo?"
+                },
+                {
+                    "ja": "次《つぎ》の 駅《えき》は どこですか。",
+                    "id": "Stasiun berikutnya apa?",
+                    "en": "What is the next station?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s3-t1",
+                    "who": "you",
+                    "ja": "すみません、この 電車《でんしゃ》は 渋谷《しぶや》に 止《と》まりますか。",
+                    "speak": "すみません、この でんしゃは しぶやに とまりますか。",
+                    "id_text": "Permisi, apakah kereta ini berhenti di Shibuya?",
+                    "accept": [
+                        "すみません、この 電車は 渋谷に 止まりますか。",
+                        "すみません、この電車は渋谷に止まりますか。"
+                    ],
+                    "en_text": "Excuse me, does this train stop at Shibuya?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t1.mp3"
+                },
+                {
+                    "id": "kereta-s3-t2",
+                    "who": "partner",
+                    "ja": "いいえ、この 電車《でんしゃ》は 快速《かいそく》ですから、止《と》まりません。",
+                    "speak": "いいえ、この でんしゃは かいそくですから、とまりません。",
+                    "id_text": "Tidak, kereta ini kereta cepat jadi tidak berhenti.",
+                    "en_text": "No, this is a rapid train, so it does not stop there.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t2.mp3"
+                },
+                {
+                    "id": "kereta-s3-t3",
+                    "who": "you",
+                    "ja": "そうですか。どの 電車《でんしゃ》に 乗《の》れば いいですか。",
+                    "speak": "そうですか。どの でんしゃに のれば いいですか。",
+                    "id_text": "Begitu. Saya sebaiknya naik kereta yang mana?",
+                    "accept": [
+                        "そうですか。どの 電車に 乗れば いいですか。",
+                        "そうですか。どの電車に乗ればいいですか。"
+                    ],
+                    "en_text": "I see. Which train should I take?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t3.mp3"
+                },
+                {
+                    "id": "kereta-s3-t4",
+                    "who": "partner",
+                    "ja": "各駅停車《かくえきていしゃ》に 乗《の》って ください。向《む》かいの 電車《でんしゃ》です。",
+                    "speak": "かくえきていしゃに のって ください。むかいの でんしゃです。",
+                    "id_text": "Naiklah kereta lokal. Itu kereta di seberang.",
+                    "en_text": "Please take a local train. It is the one on the opposite side.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t4.mp3"
+                },
+                {
+                    "id": "kereta-s3-t5",
+                    "who": "you",
+                    "ja": "あの 電車《でんしゃ》ですね。渋谷《しぶや》まで 何分《なんぷん》ぐらい ですか。",
+                    "speak": "あの でんしゃですね。しぶやまで なんぷんぐらい ですか。",
+                    "id_text": "Kereta itu, ya. Sampai Shibuya sekitar berapa menit?",
+                    "accept": [
+                        "あの 電車ですね。渋谷まで 何分ぐらい ですか。",
+                        "あの電車ですね。渋谷まで何分ぐらいですか。"
+                    ],
+                    "en_text": "That train, right. About how many minutes to Shibuya?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t5.mp3"
+                },
+                {
+                    "id": "kereta-s3-t6",
+                    "who": "partner",
+                    "ja": "十五分《じゅうごふん》ぐらいです。急《いそ》いで ください。もうすぐ 出《で》ます。",
+                    "speak": "じゅうごふんぐらいです。いそいで ください。もうすぐ でます。",
+                    "id_text": "Sekitar lima belas menit. Cepatlah, sebentar lagi berangkat.",
+                    "en_text": "About fifteen minutes. Hurry, it leaves soon.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t6.mp3"
+                },
+                {
+                    "id": "kereta-s3-t7",
+                    "who": "you",
+                    "ja": "ありがとうございます。行《い》って きます。",
+                    "speak": "ありがとうございます。いって きます。",
+                    "id_text": "Terima kasih. Saya berangkat.",
+                    "accept": [
+                        "ありがとうございます。行って きます。",
+                        "ありがとうございます。行ってきます。"
+                    ],
+                    "en_text": "Thank you. I will go now.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s4",
+            "title_id": "Ke kantor: rute & transfer",
+            "title_en": "Getting to the office: route and transfer",
+            "setting_id": "Kamu baru pindah dan bertanya cara ke kantor kepada petugas stasiun.",
+            "setting_en": "You have just moved and ask station staff how to get to your office.",
+            "goal_id": "Menanyakan rute dengan 〜へ 行きたいんですが dan memahami 乗り換え (transfer) dan 〜つ目.",
+            "goal_en": "Ask a route with 〜へ 行きたいんですが and understand 乗り換え (transfer) and 〜つ目.",
+            "patterns": [
+                "〜へ 行きたいんですが",
+                "〜で 乗り換えます",
+                "〜つ目の 駅"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Sopan membuka pertanyaan: 〜へ 行きたいんですが、どう 行けば いいですか.",
+                "乗り換え = transfer; 〜つ目の 駅 = stasiun ke-〜 (mis. 三つ目 = ketiga).",
+                "Catat nama stasiun transfer dan nomor peron di HP agar tidak salah."
+            ],
+            "tips_en": [
+                "Politely open with: 〜へ 行きたいんですが、どう 行けば いいですか.",
+                "乗り換え = transfer; 〜つ目の 駅 = the 〜th station (三つ目 = third).",
+                "Note the transfer station and platform number on your phone to avoid mistakes."
+            ],
+            "words": [
+                {
+                    "ja": "乗《の》り換《か》え",
+                    "id": "transfer",
+                    "en": "transfer"
+                },
+                {
+                    "ja": "降《お》りる",
+                    "id": "turun",
+                    "en": "to get off"
+                },
+                {
+                    "ja": "三《みっ》つ目《め》",
+                    "id": "yang ketiga",
+                    "en": "the third"
+                },
+                {
+                    "ja": "改札《かいさつ》",
+                    "id": "gerbang tiket",
+                    "en": "ticket gate"
+                },
+                {
+                    "ja": "出口《でぐち》",
+                    "id": "pintu keluar",
+                    "en": "exit"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "会社《かいしゃ》へ 行《い》きたいんですが、どう 行《い》けば いいですか。",
+                    "id": "Saya mau ke kantor, bagaimana caranya?",
+                    "en": "I want to get to my office; how should I go?"
+                },
+                {
+                    "ja": "乗《の》り換《か》えは どこですか。",
+                    "id": "Transfernya di mana?",
+                    "en": "Where do I transfer?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、工場《こうじょう》へ 行《い》きたいんですが、どう 行《い》けば いいですか。",
+                    "speak": "すみません、こうじょうへ いきたいんですが、どう いけば いいですか。",
+                    "id_text": "Permisi, saya mau ke pabrik, bagaimana caranya?",
+                    "accept": [
+                        "すみません、工場へ 行きたいんですが、どう 行けば いいですか。",
+                        "すみません、工場へ行きたいんですが、どう行けばいいですか。"
+                    ],
+                    "en_text": "Excuse me, I want to go to the factory. How should I go?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t1.mp3"
+                },
+                {
+                    "id": "kereta-s4-t2",
+                    "who": "partner",
+                    "ja": "この 線《せん》で 三《みっ》つ目《め》の 駅《えき》まで 行《い》って ください。そこで 乗《の》り換《か》えます。",
+                    "speak": "この せんで みっつめの えきまで いって ください。そこで のりかえます。",
+                    "id_text": "Naiklah jalur ini sampai stasiun ketiga. Transfer di sana.",
+                    "en_text": "Take this line to the third station. Transfer there.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t2.mp3"
+                },
+                {
+                    "id": "kereta-s4-t3",
+                    "who": "you",
+                    "ja": "三《みっ》つ目《め》の 駅《えき》ですね。乗《の》り換《か》えは 何番線《なんばんせん》ですか。",
+                    "speak": "みっつめの えきですね。のりかえは なんばんせんですか。",
+                    "id_text": "Stasiun ketiga, ya. Transfernya peron berapa?",
+                    "accept": [
+                        "三つ目の 駅ですね。乗り換えは 何番線ですか。",
+                        "三つ目の駅ですね。乗り換えは何番線ですか。"
+                    ],
+                    "en_text": "The third station, right. Which platform do I transfer to?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t3.mp3"
+                },
+                {
+                    "id": "kereta-s4-t4",
+                    "who": "partner",
+                    "ja": "五番線《ごばんせん》です。青《あお》い 電車《でんしゃ》に 乗《の》って ください。",
+                    "speak": "ごばんせんです。あおい でんしゃに のって ください。",
+                    "id_text": "Peron 5. Naiklah kereta yang berwarna biru.",
+                    "en_text": "Platform 5. Take the blue train.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t4.mp3"
+                },
+                {
+                    "id": "kereta-s4-t5",
+                    "who": "you",
+                    "ja": "青《あお》い 電車《でんしゃ》ですね。工場《こうじょう》の 駅《えき》は いくつ 目《め》ですか。",
+                    "speak": "あおい でんしゃですね。こうじょうの えきは いくつ めですか。",
+                    "id_text": "Kereta biru, ya. Stasiun pabrik itu yang ke berapa?",
+                    "accept": [
+                        "青い 電車ですね。工場の 駅は いくつ 目ですか。",
+                        "青い電車ですね。工場の駅はいくつ目ですか。"
+                    ],
+                    "en_text": "The blue train, right. Which station is the factory station?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t5.mp3"
+                },
+                {
+                    "id": "kereta-s4-t6",
+                    "who": "partner",
+                    "ja": "二《ふた》つ目《め》です。降《お》りたら、東口《ひがしぐち》から 出《で》て ください。",
+                    "speak": "ふたつめです。おりたら、ひがしぐちから でて ください。",
+                    "id_text": "Yang kedua. Setelah turun, keluarlah lewat pintu timur.",
+                    "en_text": "The second one. After you get off, leave by the east exit.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t6.mp3"
+                },
+                {
+                    "id": "kereta-s4-t7",
+                    "who": "you",
+                    "ja": "わかりました。親切《しんせつ》に 教《おし》えて くださって、ありがとうございます。",
+                    "speak": "わかりました。しんせつに おしえて くださって、ありがとうございます。",
+                    "id_text": "Saya mengerti. Terima kasih sudah menjelaskan dengan ramah.",
+                    "accept": [
+                        "わかりました。親切に 教えて くださって、ありがとうございます。",
+                        "わかりました。親切に教えてくださって、ありがとうございます。"
+                    ],
+                    "en_text": "I understand. Thank you for explaining so kindly.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s4-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s5",
+            "title_id": "Kartu IC: isi saldo",
+            "title_en": "IC card: adding balance",
+            "setting_id": "Saat melewati gerbang tiket, kartu IC-mu ditolak. Kamu bertanya pada petugas.",
+            "setting_en": "Your IC card is rejected at the ticket gate. You ask the station staff.",
+            "goal_id": "Menjelaskan masalah (〜が 足りません), meminta チャージ, dan memahami instruksi petugas.",
+            "goal_en": "Explain the problem (〜が 足りません), ask for a recharge (チャージ), and follow staff instructions.",
+            "patterns": [
+                "〜が 足りません",
+                "チャージを したいんですが",
+                "〜を 押して ください"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Gerbang berbunyi dan menutup = saldo kurang. Bukan salahmu; hampiri petugas atau mesin isi ulang.",
+                "Pola: チャージを したいんですが、どう すれば いいですか.",
+                "Isi ulang di mesin: letakkan kartu, tekan jumlah (千円/二千円), masukkan uang."
+            ],
+            "tips_en": [
+                "A beeping, closing gate means insufficient balance. Not your fault; go to staff or a charging machine.",
+                "Pattern: チャージを したいんですが、どう すれば いいですか.",
+                "At the machine: place the card, choose an amount (千円/二千円), insert the money."
+            ],
+            "words": [
+                {
+                    "ja": "残高《ざんだか》",
+                    "id": "saldo",
+                    "en": "balance"
+                },
+                {
+                    "ja": "チャージ",
+                    "id": "isi ulang saldo",
+                    "en": "recharge"
+                },
+                {
+                    "ja": "足《た》りない",
+                    "id": "kurang",
+                    "en": "to be insufficient"
+                },
+                {
+                    "ja": "機械《きかい》",
+                    "id": "mesin",
+                    "en": "machine"
+                },
+                {
+                    "ja": "押《お》す",
+                    "id": "menekan",
+                    "en": "to press"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "残高《ざんだか》は いくらですか。",
+                    "id": "Berapa saldonya?",
+                    "en": "How much is the balance?"
+                },
+                {
+                    "ja": "カードが 使《つか》えません。",
+                    "id": "Kartunya tidak bisa dipakai.",
+                    "en": "The card does not work."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s5-t1",
+                    "who": "you",
+                    "ja": "すみません、改札《かいさつ》で カードが 止《と》まりました。どうして ですか。",
+                    "speak": "すみません、かいさつで カードが とまりました。どうして ですか。",
+                    "id_text": "Permisi, kartu saya tertahan di gerbang. Kenapa ya?",
+                    "accept": [
+                        "すみません、改札で カードが 止まりました。どうして ですか。",
+                        "すみません、改札でカードが止まりました。どうしてですか。"
+                    ],
+                    "en_text": "Excuse me, my card was stopped at the gate. Why?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t1.mp3"
+                },
+                {
+                    "id": "kereta-s5-t2",
+                    "who": "partner",
+                    "ja": "カードを 見《み》せて ください。ああ、残高《ざんだか》が 足《た》りません。",
+                    "speak": "カードを みせて ください。ああ、ざんだかが たりません。",
+                    "id_text": "Coba lihat kartunya. Oh, saldonya kurang.",
+                    "en_text": "Let me see your card. Ah, the balance is not enough.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t2.mp3"
+                },
+                {
+                    "id": "kereta-s5-t3",
+                    "who": "you",
+                    "ja": "チャージを したいんですが、どこで できますか。",
+                    "speak": "チャージを したいんですが、どこで できますか。",
+                    "id_text": "Saya mau mengisi saldo, bisa di mana?",
+                    "accept": [
+                        "チャージを したいんですが、どこで できますか。",
+                        "チャージをしたいんですが、どこでできますか。"
+                    ],
+                    "en_text": "I would like to recharge it. Where can I do that?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t3.mp3"
+                },
+                {
+                    "id": "kereta-s5-t4",
+                    "who": "partner",
+                    "ja": "あの 機械《きかい》で できます。カードを ここに 置《お》いて ください。",
+                    "speak": "あの きかいで できます。カードを ここに おいて ください。",
+                    "id_text": "Bisa di mesin itu. Letakkan kartu di sini.",
+                    "en_text": "You can do it at that machine. Please put your card here.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t4.mp3"
+                },
+                {
+                    "id": "kereta-s5-t5",
+                    "who": "you",
+                    "ja": "はい。千円《せんえん》を 押《お》しても いいですか。",
+                    "speak": "はい。せんえんを おしても いいですか。",
+                    "id_text": "Baik. Boleh saya tekan seribu yen?",
+                    "accept": [
+                        "はい。千円を 押しても いいですか。",
+                        "はい。千円を押してもいいですか。"
+                    ],
+                    "en_text": "OK. May I press 1,000 yen?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t5.mp3"
+                },
+                {
+                    "id": "kereta-s5-t6",
+                    "who": "partner",
+                    "ja": "はい、千円《せんえん》を 押《お》して、お金《かね》を 入《い》れて ください。",
+                    "speak": "はい、せんえんを おして、おかねを いれて ください。",
+                    "id_text": "Ya, tekan seribu yen lalu masukkan uangnya.",
+                    "en_text": "Yes, press 1,000 yen and insert the money.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t6.mp3"
+                },
+                {
+                    "id": "kereta-s5-t7",
+                    "who": "you",
+                    "ja": "できました。ありがとうございました。",
+                    "speak": "できました。ありがとうございました。",
+                    "id_text": "Sudah selesai. Terima kasih banyak.",
+                    "accept": [
+                        "できました。ありがとうございました。"
+                    ],
+                    "en_text": "It is done. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s5-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s6",
+            "title_id": "Barang tertinggal di kereta",
+            "title_en": "Lost item on the train",
+            "setting_id": "Kamu meninggalkan tas di kereta dan melapor ke kantor stasiun.",
+            "setting_en": "You left your bag on the train and report it at the station office.",
+            "goal_id": "Melaporkan 忘れ物 dengan 〜を 忘れました, menjelaskan ciri, waktu, dan tempat duduk.",
+            "goal_en": "Report a lost item with 〜を 忘れました, describing it, the time and where you sat.",
+            "patterns": [
+                "〜を 忘れました",
+                "どんな 〜ですか",
+                "〜ごろ 乗りました"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Segera lapor ke kantor stasiun (駅員) sebelum meninggalkan area; sebut jalur dan jam naik.",
+                "Ciri barang: warna (黒い), ukuran (大きい/小さい), isi (財布, 傘, 書類).",
+                "Barang di Jepang sering ditemukan; bawa kartu identitas/Zairyu card saat mengambil."
+            ],
+            "tips_en": [
+                "Report right away to station staff (駅員) before leaving; give the line and boarding time.",
+                "Describe it: colour (黒い), size (大きい/小さい), contents (財布, 傘, 書類).",
+                "Items are often found in Japan; bring ID/residence card when you collect it."
+            ],
+            "words": [
+                {
+                    "ja": "忘《わす》れ物《もの》",
+                    "id": "barang tertinggal",
+                    "en": "lost property"
+                },
+                {
+                    "ja": "鞄《かばん》",
+                    "id": "tas",
+                    "en": "bag"
+                },
+                {
+                    "ja": "黒《くろ》い",
+                    "id": "hitam",
+                    "en": "black"
+                },
+                {
+                    "ja": "座《すわ》る",
+                    "id": "duduk",
+                    "en": "to sit"
+                },
+                {
+                    "ja": "調《しら》べる",
+                    "id": "memeriksa",
+                    "en": "to check"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "財布《さいふ》を 忘《わす》れました。",
+                    "id": "Dompet saya tertinggal.",
+                    "en": "I left my wallet."
+                },
+                {
+                    "ja": "傘《かさ》を 電車《でんしゃ》に 忘《わす》れました。",
+                    "id": "Payung saya tertinggal di kereta.",
+                    "en": "I left my umbrella on the train."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s6-t1",
+                    "who": "you",
+                    "ja": "すみません、電車《でんしゃ》に 鞄《かばん》を 忘《わす》れました。",
+                    "speak": "すみません、でんしゃに かばんを わすれました。",
+                    "id_text": "Permisi, tas saya tertinggal di kereta.",
+                    "accept": [
+                        "すみません、電車に 鞄を 忘れました。",
+                        "すみません、電車に鞄を忘れました。"
+                    ],
+                    "en_text": "Excuse me, I left my bag on the train.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t1.mp3"
+                },
+                {
+                    "id": "kereta-s6-t2",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。どんな 鞄《かばん》ですか。",
+                    "speak": "それは たいへんですね。どんな かばんですか。",
+                    "id_text": "Wah, itu repot. Tasnya seperti apa?",
+                    "en_text": "Oh dear. What kind of bag is it?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t2.mp3"
+                },
+                {
+                    "id": "kereta-s6-t3",
+                    "who": "you",
+                    "ja": "黒《くろ》くて 大《おお》きい 鞄《かばん》です。中《なか》に 傘《かさ》が 入《はい》って います。",
+                    "speak": "くろくて おおきい かばんです。なかに かさが はいって います。",
+                    "id_text": "Tas hitam yang besar. Di dalamnya ada payung.",
+                    "accept": [
+                        "黒くて 大きい 鞄です。中に 傘が 入って います。",
+                        "黒くて大きい鞄です。中に傘が入っています。"
+                    ],
+                    "en_text": "It is a big black bag. There is an umbrella inside.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t3.mp3"
+                },
+                {
+                    "id": "kereta-s6-t4",
+                    "who": "partner",
+                    "ja": "何時《なんじ》ごろ 乗《の》りましたか。どこに 座《すわ》りましたか。",
+                    "speak": "なんじごろ のりましたか。どこに すわりましたか。",
+                    "id_text": "Naik jam berapa kira-kira? Duduk di mana?",
+                    "en_text": "About what time did you board? Where did you sit?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t4.mp3"
+                },
+                {
+                    "id": "kereta-s6-t5",
+                    "who": "you",
+                    "ja": "八時《はちじ》ごろです。一番前《いちばんまえ》の 車両《しゃりょう》の 右《みぎ》に 座《すわ》りました。",
+                    "speak": "はちじごろです。いちばんまえの しゃりょうの みぎに すわりました。",
+                    "id_text": "Sekitar jam delapan. Saya duduk di sebelah kanan gerbong paling depan.",
+                    "accept": [
+                        "八時ごろです。一番前の 車両の 右に 座りました。",
+                        "八時ごろです。一番前の車両の右に座りました。"
+                    ],
+                    "en_text": "Around eight. I sat on the right side of the front car.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t5.mp3"
+                },
+                {
+                    "id": "kereta-s6-t6",
+                    "who": "partner",
+                    "ja": "調《しら》べますから、少《すこ》し 待《ま》って ください。…ありました。",
+                    "speak": "しらべますから、すこし まって ください。…ありました。",
+                    "id_text": "Saya periksa dulu, tolong tunggu sebentar. ... Ada.",
+                    "en_text": "I will check, so please wait a moment. ... We found it.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t6.mp3"
+                },
+                {
+                    "id": "kereta-s6-t7",
+                    "who": "you",
+                    "ja": "本当《ほんとう》ですか。ありがとうございます。いつ 取《と》りに 来《き》ても いいですか。",
+                    "speak": "ほんとうですか。ありがとうございます。いつ とりに きても いいですか。",
+                    "id_text": "Sungguh? Terima kasih. Kapan saya boleh mengambilnya?",
+                    "accept": [
+                        "本当ですか。ありがとうございます。いつ 取りに 来ても いいですか。",
+                        "本当ですか。ありがとうございます。いつ取りに来てもいいですか。"
+                    ],
+                    "en_text": "Really? Thank you. When may I come to pick it up?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s6-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s7",
+            "title_id": "Kereta terlambat: minta surat keterangan",
+            "title_en": "Delayed train: asking for a delay certificate",
+            "setting_id": "Kereta terlambat dan kamu bisa terlambat masuk kerja. Kamu meminta 遅延証明書 di gerbang tiket.",
+            "setting_en": "The train is delayed and you may be late for work. You ask for a 遅延証明書 at the gate.",
+            "goal_id": "Meminta 遅延証明書 dengan 〜を ください dan menyebut jalur serta waktu dengan jelas.",
+            "goal_en": "Ask for a 遅延証明書 with 〜を ください and state the line and time clearly.",
+            "patterns": [
+                "遅延証明書を ください",
+                "〜線です",
+                "〜分 遅れました"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "遅延証明書 = surat keterangan keterlambatan kereta; atasan di Jepang biasanya memintanya sebagai bukti.",
+                "Hubungi atasan secepatnya (lihat paket Pabrik) lalu ambil suratnya di gerbang tiket atau unduh dari situs perusahaan kereta.",
+                "Sebut jalur dan jam naik agar petugas mudah mencatat."
+            ],
+            "tips_en": [
+                "遅延証明書 = delay certificate; supervisors in Japan often ask for it as proof.",
+                "Contact your supervisor first (see the Factory pack), then take the certificate at the gate or download it from the railway site.",
+                "State the line and boarding time so staff can record it."
+            ],
+            "words": [
+                {
+                    "ja": "遅延《ちえん》証明書《しょうめいしょ》",
+                    "id": "surat keterangan kereta terlambat",
+                    "en": "delay certificate"
+                },
+                {
+                    "ja": "遅《おく》れる",
+                    "id": "terlambat",
+                    "en": "to be late"
+                },
+                {
+                    "ja": "路線《ろせん》",
+                    "id": "jalur kereta",
+                    "en": "railway line"
+                },
+                {
+                    "ja": "事故《じこ》",
+                    "id": "kecelakaan/gangguan",
+                    "en": "accident/incident"
+                },
+                {
+                    "ja": "運転《うんてん》見合《みあ》わせ",
+                    "id": "operasi dihentikan sementara",
+                    "en": "service suspended"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "何分《なんぷん》ぐらい 遅《おく》れて いますか。",
+                    "id": "Kira-kira terlambat berapa menit?",
+                    "en": "About how many minutes is it delayed?"
+                },
+                {
+                    "ja": "会社《かいしゃ》に 出《だ》したいんです。",
+                    "id": "Saya perlu menyerahkannya ke perusahaan.",
+                    "en": "I need to hand it in to my company."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s7-t1",
+                    "who": "you",
+                    "ja": "すみません、電車《でんしゃ》が 遅《おく》れて、会社《かいしゃ》に 遅《おく》れます。遅延証明書《ちえんしょうめいしょ》を ください。",
+                    "speak": "すみません、でんしゃが おくれて、かいしゃに おくれます。ちえんしょうめいしょを ください。",
+                    "id_text": "Permisi, kereta terlambat dan saya akan terlambat ke kantor. Tolong beri saya surat keterangan keterlambatan.",
+                    "accept": [
+                        "すみません、電車が 遅れて、会社に 遅れます。遅延証明書を ください。",
+                        "すみません、電車が遅れて、会社に遅れます。遅延証明書をください。"
+                    ],
+                    "en_text": "Excuse me, my train was delayed and I will be late for work. Please give me a delay certificate.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t1.mp3"
+                },
+                {
+                    "id": "kereta-s7-t2",
+                    "who": "partner",
+                    "ja": "はい。どの 線《せん》に 乗《の》りましたか。",
+                    "speak": "はい。どの せんに のりましたか。",
+                    "id_text": "Baik. Anda naik jalur yang mana?",
+                    "en_text": "Certainly. Which line did you take?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t2.mp3"
+                },
+                {
+                    "id": "kereta-s7-t3",
+                    "who": "you",
+                    "ja": "青《あお》い 線《せん》です。七時三十分《しちじさんじゅっぷん》の 電車《でんしゃ》です。",
+                    "speak": "あおい せんです。しちじさんじゅっぷんの でんしゃです。",
+                    "id_text": "Jalur biru. Kereta jam tujuh tiga puluh.",
+                    "accept": [
+                        "青い 線です。七時三十分の 電車です。",
+                        "青い線です。七時三十分の電車です。"
+                    ],
+                    "en_text": "The blue line. The 7:30 train.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t3.mp3"
+                },
+                {
+                    "id": "kereta-s7-t4",
+                    "who": "partner",
+                    "ja": "二十分《にじゅっぷん》ぐらい 遅《おく》れました。これが 証明書《しょうめいしょ》です。どうぞ。",
+                    "speak": "にじゅっぷんぐらい おくれました。これが しょうめいしょです。どうぞ。",
+                    "id_text": "Terlambat sekitar dua puluh menit. Ini suratnya. Silakan.",
+                    "en_text": "It was about twenty minutes late. Here is the certificate.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t4.mp3"
+                },
+                {
+                    "id": "kereta-s7-t5",
+                    "who": "you",
+                    "ja": "ありがとうございます。会社《かいしゃ》の 人《ひと》に 見《み》せます。",
+                    "speak": "ありがとうございます。かいしゃの ひとに みせます。",
+                    "id_text": "Terima kasih. Saya akan menunjukkannya ke orang kantor.",
+                    "accept": [
+                        "ありがとうございます。会社の 人に 見せます。",
+                        "ありがとうございます。会社の人に見せます。"
+                    ],
+                    "en_text": "Thank you. I will show it to the people at my company.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t5.mp3"
+                },
+                {
+                    "id": "kereta-s7-t6",
+                    "who": "partner",
+                    "ja": "お急《いそ》ぎの ところ、申《もう》し訳《わけ》ありません。",
+                    "speak": "おいそぎの ところ、もうしわけありません。",
+                    "id_text": "Mohon maaf atas ketergesaan Anda.",
+                    "en_text": "We apologize for the inconvenience when you are in a hurry.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t6.mp3"
+                },
+                {
+                    "id": "kereta-s7-t7",
+                    "who": "you",
+                    "ja": "いいえ、大丈夫《だいじょうぶ》です。失礼《しつれい》します。",
+                    "speak": "いいえ、だいじょうぶです。しつれいします。",
+                    "id_text": "Tidak apa-apa. Permisi.",
+                    "accept": [
+                        "いいえ、大丈夫です。失礼します。"
+                    ],
+                    "en_text": "No, it is fine. Excuse me.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s7-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kereta-s8",
+            "title_id": "Memberi tempat duduk",
+            "title_en": "Offering your seat",
+            "setting_id": "Di kereta yang penuh, seorang nenek berdiri di depanmu. Kamu menawarkan tempat dudukmu.",
+            "setting_en": "On a crowded train an elderly woman stands in front of you. You offer your seat.",
+            "goal_id": "Menawarkan tempat duduk dengan どうぞ 座って ください dan menanggapi penolakan yang sopan.",
+            "goal_en": "Offer a seat with どうぞ 座って ください and react to a polite refusal.",
+            "patterns": [
+                "どうぞ 座って ください",
+                "〜ですから、大丈夫です",
+                "〜ても いいですか"
+            ],
+            "partner": {
+                "name": "おばあさん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Menawarkan kursi itu sopan di Jepang, tetapi banyak orang tua menolak halus: 大丈夫ですよ. Terima dengan senyum.",
+                "Pola: すみません、どうぞ 座って ください.",
+                "Jika menolak, jawab: そうですか、わかりました. Jangan memaksa."
+            ],
+            "tips_en": [
+                "Offering a seat is polite in Japan, but many elderly people refuse gently: 大丈夫ですよ. Accept with a smile.",
+                "Pattern: すみません、どうぞ 座って ください.",
+                "If refused, answer: そうですか、わかりました. Do not insist."
+            ],
+            "words": [
+                {
+                    "ja": "席《せき》",
+                    "id": "tempat duduk",
+                    "en": "seat"
+                },
+                {
+                    "ja": "譲《ゆず》る",
+                    "id": "memberikan (tempat)",
+                    "en": "to give up (a seat)"
+                },
+                {
+                    "ja": "降《お》りる",
+                    "id": "turun",
+                    "en": "to get off"
+                },
+                {
+                    "ja": "立《た》つ",
+                    "id": "berdiri",
+                    "en": "to stand"
+                },
+                {
+                    "ja": "優先席《ゆうせんせき》",
+                    "id": "kursi prioritas",
+                    "en": "priority seat"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この 席《せき》、どうぞ。",
+                    "id": "Silakan kursi ini.",
+                    "en": "Please take this seat."
+                },
+                {
+                    "ja": "次《つぎ》の 駅《えき》で 降《お》ります。",
+                    "id": "Saya turun di stasiun berikutnya.",
+                    "en": "I am getting off at the next station."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kereta-s8-t1",
+                    "who": "you",
+                    "ja": "あの、すみません。どうぞ 座《すわ》って ください。",
+                    "speak": "あの、すみません。どうぞ すわって ください。",
+                    "id_text": "Permisi. Silakan duduk.",
+                    "accept": [
+                        "あの、すみません。どうぞ 座って ください。",
+                        "あの、すみません。どうぞ座ってください。"
+                    ],
+                    "en_text": "Excuse me. Please sit down.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t1.mp3"
+                },
+                {
+                    "id": "kereta-s8-t2",
+                    "who": "partner",
+                    "ja": "あら、ありがとう。でも、次《つぎ》の 駅《えき》で 降《お》りますから、大丈夫《だいじょうぶ》ですよ。",
+                    "speak": "あら、ありがとう。でも、つぎの えきで おりますから、だいじょうぶですよ。",
+                    "id_text": "Oh, terima kasih. Tapi saya turun di stasiun berikutnya, jadi tidak apa-apa.",
+                    "en_text": "Oh, thank you. But I am getting off at the next station, so I am fine.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t2.mp3"
+                },
+                {
+                    "id": "kereta-s8-t3",
+                    "who": "you",
+                    "ja": "そうですか。わかりました。混《こ》んで いますね。",
+                    "speak": "そうですか。わかりました。こんで いますね。",
+                    "id_text": "Begitu. Saya mengerti. Ramai ya.",
+                    "accept": [
+                        "そうですか。わかりました。混んで いますね。",
+                        "そうですか。わかりました。混んでいますね。"
+                    ],
+                    "en_text": "I see. Understood. It is crowded, isn't it?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t3.mp3"
+                },
+                {
+                    "id": "kereta-s8-t4",
+                    "who": "partner",
+                    "ja": "ええ、朝《あさ》は いつも 混《こ》んで います。日本《にほん》の 人《ひと》ですか。",
+                    "speak": "ええ、あさは いつも こんで います。にほんの ひとですか。",
+                    "id_text": "Ya, pagi hari selalu ramai. Apakah Anda orang Jepang?",
+                    "en_text": "Yes, mornings are always crowded. Are you Japanese?",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t4.mp3"
+                },
+                {
+                    "id": "kereta-s8-t5",
+                    "who": "you",
+                    "ja": "いいえ、インドネシアから 来《き》ました。工場《こうじょう》で 働《はたら》いて います。",
+                    "speak": "いいえ、インドネシアから きました。こうじょうで はたらいて います。",
+                    "id_text": "Bukan, saya datang dari Indonesia. Saya bekerja di pabrik.",
+                    "accept": [
+                        "いいえ、インドネシアから 来ました。工場で 働いて います。",
+                        "いいえ、インドネシアから来ました。工場で働いています。"
+                    ],
+                    "en_text": "No, I came from Indonesia. I work at a factory.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t5.mp3"
+                },
+                {
+                    "id": "kereta-s8-t6",
+                    "who": "partner",
+                    "ja": "そうですか。頑張《がんば》って ください。",
+                    "speak": "そうですか。がんばって ください。",
+                    "id_text": "Begitu. Semangat ya.",
+                    "en_text": "I see. Do your best.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t6.mp3"
+                },
+                {
+                    "id": "kereta-s8-t7",
+                    "who": "you",
+                    "ja": "ありがとうございます。気《き》を つけて ください。",
+                    "speak": "ありがとうございます。きを つけて ください。",
+                    "id_text": "Terima kasih. Hati-hati ya.",
+                    "accept": [
+                        "ありがとうございます。気を つけて ください。",
+                        "ありがとうございます。気をつけてください。"
+                    ],
+                    "en_text": "Thank you. Please take care.",
+                    "audio": "/audio/kaiwa/situation-kereta/kereta-s8-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

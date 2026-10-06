@@ -306,7 +306,7 @@ onMounted(load)
               >
                 <VCardText>
                   <div class="jlpt-q__stem">
-                    <span class="jlpt-q__no">{{ q.no ?? q.id }}</span>
+                    <span class="jlpt-q__no">{{ q.label ?? q.no ?? q.id }}</span>
                     <span v-if="q.stem"><JlptText :text="q.stem" /></span>
                   </div>
                   <div

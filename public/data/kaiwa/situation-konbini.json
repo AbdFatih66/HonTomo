@@ -1,0 +1,1254 @@
+{
+    "id": "konbini",
+    "track": "situation",
+    "level": "N5",
+    "rounds": 1,
+    "title_id": "Konbini (Toserba 24 Jam)",
+    "title_en": "Convenience Store (Konbini)",
+    "note_id": "Kalimat kasir memakai bahasa sopan toko (mis. お箸は おつけしますか). Kamu cukup mengerti dan menjawab sederhana. Harga dan jumlah di jawaban contoh hanya contoh.",
+    "note_en": "Cashier lines use polite shop language (e.g. お箸は おつけしますか). You only need to understand and answer simply. Prices and quantities in the sample answers are examples.",
+    "scenarios": [
+        {
+            "id": "konbini-s1",
+            "title_id": "Membeli bento",
+            "title_en": "Buying a bento",
+            "setting_id": "Kamu membeli bento dan teh di konbini dekat tempat kerja.",
+            "setting_en": "You buy a bento and tea at the konbini near work.",
+            "goal_id": "Menjawab pertanyaan kasir: 温めますか, お箸, 袋, dan メモ: 〜を お願いします / 大丈夫です.",
+            "goal_en": "Answer the cashier: 温めますか, chopsticks, bag: 〜を お願いします / 大丈夫です.",
+            "patterns": [
+                "温めますか",
+                "お願いします",
+                "大丈夫です"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tiga pertanyaan standar di kasir: dipanaskan? sumpit? kantong? Jawab: お願いします (ya) atau 大丈夫です (tidak perlu).",
+                "大丈夫です = \"tidak perlu / cukup\" di konteks menolak; di konteks lain bisa berarti \"tidak apa-apa\".",
+                "Kantong plastik berbayar: katakan 袋は いりません bila bawa tas sendiri."
+            ],
+            "tips_en": [
+                "Three standard cashier questions: heat it? chopsticks? bag? Answer お願いします (yes) or 大丈夫です (no need).",
+                "大丈夫です here means \"no need / that's enough\"; in other contexts it means \"it's fine\".",
+                "Plastic bags cost extra: say 袋は いりません if you bring your own bag."
+            ],
+            "words": [
+                {
+                    "ja": "お弁当《べんとう》",
+                    "id": "bento",
+                    "en": "bento"
+                },
+                {
+                    "ja": "温《あたた》める",
+                    "id": "memanaskan",
+                    "en": "to heat"
+                },
+                {
+                    "ja": "お箸《はし》",
+                    "id": "sumpit",
+                    "en": "chopsticks"
+                },
+                {
+                    "ja": "袋《ふくろ》",
+                    "id": "kantong",
+                    "en": "bag"
+                },
+                {
+                    "ja": "いりません",
+                    "id": "tidak perlu",
+                    "en": "not needed"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "スプーンも ください。",
+                    "id": "Tolong sendok juga.",
+                    "en": "A spoon too, please."
+                },
+                {
+                    "ja": "袋《ふくろ》は いりません。",
+                    "id": "Saya tidak perlu kantong.",
+                    "en": "I do not need a bag."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。お弁当《べんとう》は 温《あたた》めますか。",
+                    "speak": "いらっしゃいませ。おべんとうは あたためますか。",
+                    "id_text": "Selamat datang. Bentonya dipanaskan?",
+                    "en_text": "Welcome. Shall I heat the bento?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t1.mp3"
+                },
+                {
+                    "id": "konbini-s1-t2",
+                    "who": "you",
+                    "ja": "はい、温《あたた》めて お願《ねが》いします。",
+                    "speak": "はい、あたためて おねがいします。",
+                    "id_text": "Ya, tolong dipanaskan.",
+                    "accept": [
+                        "はい、温めて お願いします。",
+                        "はい、温めてお願いします。"
+                    ],
+                    "en_text": "Yes, please heat it.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t2.mp3"
+                },
+                {
+                    "id": "konbini-s1-t3",
+                    "who": "partner",
+                    "ja": "お箸《はし》は おつけしますか。",
+                    "speak": "おはしは おつけしますか。",
+                    "id_text": "Sumpitnya saya sertakan?",
+                    "en_text": "Would you like chopsticks?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t3.mp3"
+                },
+                {
+                    "id": "konbini-s1-t4",
+                    "who": "you",
+                    "ja": "はい、一膳《いちぜん》 お願《ねが》いします。",
+                    "speak": "はい、いちぜん おねがいします。",
+                    "id_text": "Ya, satu pasang, tolong.",
+                    "accept": [
+                        "はい、一膳 お願いします。",
+                        "はい、一膳お願いします。"
+                    ],
+                    "en_text": "Yes, one pair, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t4.mp3"
+                },
+                {
+                    "id": "konbini-s1-t5",
+                    "who": "partner",
+                    "ja": "袋《ふくろ》は いりますか。",
+                    "speak": "ふくろは いりますか。",
+                    "id_text": "Perlu kantong?",
+                    "en_text": "Do you need a bag?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t5.mp3"
+                },
+                {
+                    "id": "konbini-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ、大丈夫《だいじょうぶ》です。鞄《かばん》に 入《い》れます。",
+                    "speak": "いいえ、だいじょうぶです。かばんに いれます。",
+                    "id_text": "Tidak, tidak perlu. Saya masukkan ke tas.",
+                    "accept": [
+                        "いいえ、大丈夫です。鞄に 入れます。",
+                        "いいえ、大丈夫です。鞄に入れます。"
+                    ],
+                    "en_text": "No, I am fine. I will put it in my bag.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t6.mp3"
+                },
+                {
+                    "id": "konbini-s1-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。全部《ぜんぶ》で 六百五十円《ろっぴゃくごじゅうえん》です。",
+                    "speak": "ありがとうございます。ぜんぶで ろっぴゃくごじゅうえんです。",
+                    "id_text": "Terima kasih. Totalnya enam ratus lima puluh yen.",
+                    "en_text": "Thank you. That is 650 yen in total.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t7.mp3"
+                },
+                {
+                    "id": "konbini-s1-t8",
+                    "who": "you",
+                    "ja": "千円《せんえん》を 出《だ》します。お釣《つ》りを ください。",
+                    "speak": "せんえんを だします。おつりを ください。",
+                    "id_text": "Saya bayar seribu yen. Tolong kembaliannya.",
+                    "accept": [
+                        "千円を 出します。お釣りを ください。",
+                        "千円を出します。お釣りをください。"
+                    ],
+                    "en_text": "Here is 1,000 yen. My change, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s2",
+            "title_id": "Cara membayar & kartu poin",
+            "title_en": "Payment methods and point cards",
+            "setting_id": "Kamu membayar belanjaan; kasir menanyakan kartu poin dan cara bayar.",
+            "setting_en": "You pay for your purchases; the cashier asks about a point card and payment method.",
+            "goal_id": "Menjawab ポイントカードは お持ちですか dan memilih 現金 / カード / ICカード / QRコード.",
+            "goal_en": "Answer ポイントカードは お持ちですか and choose cash / card / IC card / QR code.",
+            "patterns": [
+                "ポイントカードは ありません",
+                "〜で お願いします",
+                "〜は 使えますか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Kasir menanyakan kartu poin di hampir semua toko: jawab ありません atau 持っていません bila tidak punya.",
+                "Cara bayar: 現金 (tunai), カード (kartu), ICカード (Suica dll.), QRコード (PayPay dll.).",
+                "Mau tahu apakah metode tertentu bisa dipakai: 〜は 使えますか."
+            ],
+            "tips_en": [
+                "Cashiers in most shops ask about a point card: answer ありません or 持っていません if you do not have one.",
+                "Methods: 現金 (cash), カード (card), ICカード (Suica etc.), QRコード (PayPay etc.).",
+                "To check a method: 〜は 使えますか."
+            ],
+            "words": [
+                {
+                    "ja": "ポイントカード",
+                    "id": "kartu poin",
+                    "en": "point card"
+                },
+                {
+                    "ja": "現金《げんきん》",
+                    "id": "tunai",
+                    "en": "cash"
+                },
+                {
+                    "ja": "支払《しはら》い",
+                    "id": "pembayaran",
+                    "en": "payment"
+                },
+                {
+                    "ja": "領収書《りょうしゅうしょ》",
+                    "id": "kuitansi",
+                    "en": "receipt (invoice)"
+                },
+                {
+                    "ja": "レシート",
+                    "id": "struk",
+                    "en": "receipt"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "カードは 使《つか》えますか。",
+                    "id": "Apakah bisa pakai kartu?",
+                    "en": "Can I use a card?"
+                },
+                {
+                    "ja": "領収書《りょうしゅうしょ》を お願《ねが》いします。",
+                    "id": "Tolong kuitansi.",
+                    "en": "A receipt (invoice), please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s2-t1",
+                    "who": "partner",
+                    "ja": "ポイントカードは お持《も》ちですか。",
+                    "speak": "ポイントカードは おもちですか。",
+                    "id_text": "Apakah Anda punya kartu poin?",
+                    "en_text": "Do you have a point card?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t1.mp3"
+                },
+                {
+                    "id": "konbini-s2-t2",
+                    "who": "you",
+                    "ja": "いいえ、ポイントカードは ありません。",
+                    "speak": "いいえ、ポイントカードは ありません。",
+                    "id_text": "Tidak, saya tidak punya kartu poin.",
+                    "accept": [
+                        "いいえ、ポイントカードは ありません。",
+                        "いいえ、ポイントカードはありません。"
+                    ],
+                    "en_text": "No, I do not have a point card.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t2.mp3"
+                },
+                {
+                    "id": "konbini-s2-t3",
+                    "who": "partner",
+                    "ja": "お支払《しはら》いは どう なさいますか。",
+                    "speak": "おしはらいは どう なさいますか。",
+                    "id_text": "Pembayarannya bagaimana?",
+                    "en_text": "How would you like to pay?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t3.mp3"
+                },
+                {
+                    "id": "konbini-s2-t4",
+                    "who": "you",
+                    "ja": "ICカードは 使《つか》えますか。",
+                    "speak": "ICカードは つかえますか。",
+                    "id_text": "Apakah bisa pakai kartu IC?",
+                    "accept": [
+                        "ICカードは 使えますか。",
+                        "ICカードは使えますか。"
+                    ],
+                    "en_text": "Can I use an IC card?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t4.mp3"
+                },
+                {
+                    "id": "konbini-s2-t5",
+                    "who": "partner",
+                    "ja": "はい、使《つか》えます。この 機械《きかい》に タッチして ください。",
+                    "speak": "はい、つかえます。この きかいに タッチして ください。",
+                    "id_text": "Ya, bisa. Tempelkan pada mesin ini.",
+                    "en_text": "Yes, you can. Please touch it on this machine.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t5.mp3"
+                },
+                {
+                    "id": "konbini-s2-t6",
+                    "who": "you",
+                    "ja": "はい、タッチしました。これで いいですか。",
+                    "speak": "はい、タッチしました。これで いいですか。",
+                    "id_text": "Ya, sudah saya tempelkan. Apakah sudah begini?",
+                    "accept": [
+                        "はい、タッチしました。これで いいですか。",
+                        "はい、タッチしました。これでいいですか。"
+                    ],
+                    "en_text": "Yes, I touched it. Is that OK?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t6.mp3"
+                },
+                {
+                    "id": "konbini-s2-t7",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。レシートは いりますか。",
+                    "speak": "はい、だいじょうぶです。レシートは いりますか。",
+                    "id_text": "Ya, sudah. Perlu struk?",
+                    "en_text": "Yes, that is fine. Do you need the receipt?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t7.mp3"
+                },
+                {
+                    "id": "konbini-s2-t8",
+                    "who": "you",
+                    "ja": "はい、レシートを お願《ねが》いします。",
+                    "speak": "はい、レシートを おねがいします。",
+                    "id_text": "Ya, tolong struknya.",
+                    "accept": [
+                        "はい、レシートを お願いします。",
+                        "はい、レシートをお願いします。"
+                    ],
+                    "en_text": "Yes, the receipt, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s3",
+            "title_id": "Mencari barang di toko",
+            "title_en": "Finding items in the store",
+            "setting_id": "Kamu mencari onigiri, air mineral, dan baterai tetapi tidak tahu letaknya.",
+            "setting_en": "You are looking for onigiri, water and batteries but do not know where they are.",
+            "goal_id": "Menanyakan letak dengan 〜は どこですか dan memahami あちら / 奥 / 右 / 左.",
+            "goal_en": "Ask where things are with 〜は どこですか and understand あちら / 奥 / 右 / 左.",
+            "patterns": [
+                "〜は どこですか",
+                "〜は ありますか",
+                "〜に あります"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tanya satu barang dulu, lalu satu lagi: lebih mudah dipahami daripada sekaligus.",
+                "Petunjuk arah: 右 (kanan), 左 (kiri), 奥 (bagian dalam), まっすぐ (lurus).",
+                "Barang habis: 売り切れです. Tanyakan: いつ 入りますか."
+            ],
+            "tips_en": [
+                "Ask for one item at a time: easier to understand than several at once.",
+                "Directions: 右 (right), 左 (left), 奥 (back), まっすぐ (straight).",
+                "Out of stock: 売り切れです. Ask: いつ 入りますか."
+            ],
+            "words": [
+                {
+                    "ja": "おにぎり",
+                    "id": "onigiri",
+                    "en": "rice ball"
+                },
+                {
+                    "ja": "飲《の》み物《もの》",
+                    "id": "minuman",
+                    "en": "drink"
+                },
+                {
+                    "ja": "電池《でんち》",
+                    "id": "baterai",
+                    "en": "battery"
+                },
+                {
+                    "ja": "奥《おく》",
+                    "id": "bagian dalam",
+                    "en": "back / far end"
+                },
+                {
+                    "ja": "売《う》り切《き》れ",
+                    "id": "habis terjual",
+                    "en": "sold out"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "水《みず》は どこですか。",
+                    "id": "Air mineral di mana?",
+                    "en": "Where is the water?"
+                },
+                {
+                    "ja": "傘《かさ》は ありますか。",
+                    "id": "Apakah ada payung?",
+                    "en": "Do you have umbrellas?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s3-t1",
+                    "who": "you",
+                    "ja": "すみません、おにぎりは どこですか。",
+                    "speak": "すみません、おにぎりは どこですか。",
+                    "id_text": "Permisi, onigiri di mana?",
+                    "accept": [
+                        "すみません、おにぎりは どこですか。",
+                        "すみません、おにぎりはどこですか。"
+                    ],
+                    "en_text": "Excuse me, where are the onigiri?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t1.mp3"
+                },
+                {
+                    "id": "konbini-s3-t2",
+                    "who": "partner",
+                    "ja": "おにぎりは あちらの 冷蔵庫《れいぞうこ》です。右《みぎ》の 棚《たな》の 奥《おく》に あります。",
+                    "speak": "おにぎりは あちらの れいぞうこです。みぎの たなの おくに あります。",
+                    "id_text": "Onigiri ada di lemari pendingin sana, di rak kanan bagian dalam.",
+                    "en_text": "The onigiri are in the fridge over there, at the back of the right shelf.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t2.mp3"
+                },
+                {
+                    "id": "konbini-s3-t3",
+                    "who": "you",
+                    "ja": "ありがとうございます。電池《でんち》は ありますか。",
+                    "speak": "ありがとうございます。でんちは ありますか。",
+                    "id_text": "Terima kasih. Apakah ada baterai?",
+                    "accept": [
+                        "ありがとうございます。電池は ありますか。",
+                        "ありがとうございます。電池はありますか。"
+                    ],
+                    "en_text": "Thank you. Do you have batteries?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t3.mp3"
+                },
+                {
+                    "id": "konbini-s3-t4",
+                    "who": "partner",
+                    "ja": "電池《でんち》は レジの 後《うし》ろです。取《と》りますから、ちょっと 待《ま》って ください。",
+                    "speak": "でんちは レジの うしろです。とりますから、ちょっと まって ください。",
+                    "id_text": "Baterai ada di belakang kasir. Saya ambilkan, tunggu sebentar.",
+                    "en_text": "Batteries are behind the register. I will get them, please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t4.mp3"
+                },
+                {
+                    "id": "konbini-s3-t5",
+                    "who": "you",
+                    "ja": "単三《たんさん》を 二本《にほん》 お願《ねが》いします。",
+                    "speak": "たんさんを にほん おねがいします。",
+                    "id_text": "Baterai AA dua buah, tolong.",
+                    "accept": [
+                        "単三を 二本 お願いします。",
+                        "単三を二本お願いします。"
+                    ],
+                    "en_text": "Two AA batteries, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t5.mp3"
+                },
+                {
+                    "id": "konbini-s3-t6",
+                    "who": "partner",
+                    "ja": "はい。飲《の》み物《もの》は よろしいですか。",
+                    "speak": "はい。のみものは よろしいですか。",
+                    "id_text": "Baik. Minumannya tidak sekalian?",
+                    "en_text": "Certainly. Would you like any drinks?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t6.mp3"
+                },
+                {
+                    "id": "konbini-s3-t7",
+                    "who": "you",
+                    "ja": "お水《みず》も ほしいです。水《みず》は どこに ありますか。",
+                    "speak": "おみずも ほしいです。みずは どこに ありますか。",
+                    "id_text": "Saya juga mau air. Air ada di mana?",
+                    "accept": [
+                        "お水も ほしいです。水は どこに ありますか。",
+                        "お水もほしいです。水はどこにありますか。"
+                    ],
+                    "en_text": "I would like some water too. Where is the water?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t7.mp3"
+                },
+                {
+                    "id": "konbini-s3-t8",
+                    "who": "partner",
+                    "ja": "水《みず》は まっすぐ 行《い》って、左《ひだり》です。",
+                    "speak": "みずは まっすぐ いって、ひだりです。",
+                    "id_text": "Air: jalan lurus, lalu di kiri.",
+                    "en_text": "The water is straight ahead and on the left.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s4",
+            "title_id": "Fotokopi di mesin",
+            "title_en": "Photocopying",
+            "setting_id": "Kamu perlu menyalin dokumen kerja dan bertanya cara memakai mesin fotokopi.",
+            "setting_en": "You need to copy a work document and ask how to use the copier.",
+            "goal_id": "Meminta bantuan dengan 〜たいんですが dan memahami 白黒 / カラー, 〜枚, 〜円.",
+            "goal_en": "Ask for help with 〜たいんですが and understand 白黒 / カラー, 〜枚, 〜円.",
+            "patterns": [
+                "コピーを したいんですが",
+                "〜枚 お願いします",
+                "一枚 〜円です"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Mesin fotokopi di konbini berbayar: 白黒 (hitam-putih) biasanya 10 yen per lembar, カラー lebih mahal.",
+                "Taruh dokumen menghadap ke bawah, pilih ukuran (A4), jumlah, lalu masukkan koin dulu.",
+                "Jangan lupa ambil aslinya setelah selesai! (原本を 忘れないで ください)"
+            ],
+            "tips_en": [
+                "Konbini copiers are pay-per-copy: 白黒 (black-and-white) is usually 10 yen a sheet; カラー costs more.",
+                "Place the document face down, choose size (A4) and number of copies, insert coins first.",
+                "Do not forget your original afterwards! (原本を 忘れないで ください)"
+            ],
+            "words": [
+                {
+                    "ja": "コピー",
+                    "id": "fotokopi",
+                    "en": "photocopy"
+                },
+                {
+                    "ja": "白黒《しろくろ》",
+                    "id": "hitam-putih",
+                    "en": "black and white"
+                },
+                {
+                    "ja": "原本《げんぽん》",
+                    "id": "dokumen asli",
+                    "en": "original"
+                },
+                {
+                    "ja": "小銭《こぜに》",
+                    "id": "uang receh",
+                    "en": "coins"
+                },
+                {
+                    "ja": "サイズ",
+                    "id": "ukuran",
+                    "en": "size"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "カラーで お願《ねが》いします。",
+                    "id": "Tolong berwarna.",
+                    "en": "In colour, please."
+                },
+                {
+                    "ja": "千円札《せんえんさつ》しか ありません。",
+                    "id": "Saya hanya punya uang kertas seribu.",
+                    "en": "I only have a 1,000-yen bill."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、コピーを したいんですが、どう すれば いいですか。",
+                    "speak": "すみません、コピーを したいんですが、どう すれば いいですか。",
+                    "id_text": "Permisi, saya mau fotokopi. Bagaimana caranya?",
+                    "accept": [
+                        "すみません、コピーを したいんですが、どう すれば いいですか。",
+                        "すみません、コピーをしたいんですが、どうすればいいですか。"
+                    ],
+                    "en_text": "Excuse me, I want to make a copy. What should I do?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t1.mp3"
+                },
+                {
+                    "id": "konbini-s4-t2",
+                    "who": "partner",
+                    "ja": "コピー機《き》は あちらです。紙《かみ》を ここに 置《お》いて ください。",
+                    "speak": "コピーきは あちらです。かみを ここに おいて ください。",
+                    "id_text": "Mesin fotokopi ada di sana. Letakkan kertas di sini.",
+                    "en_text": "The copier is over there. Please place the paper here.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t2.mp3"
+                },
+                {
+                    "id": "konbini-s4-t3",
+                    "who": "you",
+                    "ja": "白黒《しろくろ》で 五枚《ごまい》 コピーしたいです。",
+                    "speak": "しろくろで ごまい コピーしたいです。",
+                    "id_text": "Saya mau fotokopi hitam-putih lima lembar.",
+                    "accept": [
+                        "白黒で 五枚 コピーしたいです。",
+                        "白黒で五枚コピーしたいです。"
+                    ],
+                    "en_text": "I want five black-and-white copies.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t3.mp3"
+                },
+                {
+                    "id": "konbini-s4-t4",
+                    "who": "partner",
+                    "ja": "白黒《しろくろ》は 一枚《いちまい》 十円《じゅうえん》です。五枚《ごまい》で 五十円《ごじゅうえん》です。",
+                    "speak": "しろくろは いちまい じゅうえんです。ごまいで ごじゅうえんです。",
+                    "id_text": "Hitam-putih sepuluh yen per lembar. Lima lembar lima puluh yen.",
+                    "en_text": "Black and white is 10 yen a sheet. Five sheets is 50 yen.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t4.mp3"
+                },
+                {
+                    "id": "konbini-s4-t5",
+                    "who": "you",
+                    "ja": "小銭《こぜに》が ありません。千円札《せんえんさつ》でも いいですか。",
+                    "speak": "こぜにが ありません。せんえんさつでも いいですか。",
+                    "id_text": "Saya tidak punya receh. Boleh pakai uang seribu?",
+                    "accept": [
+                        "小銭が ありません。千円札でも いいですか。",
+                        "小銭がありません。千円札でもいいですか。"
+                    ],
+                    "en_text": "I have no coins. Is a 1,000-yen bill OK?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t5.mp3"
+                },
+                {
+                    "id": "konbini-s4-t6",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》ですよ。千円札《せんえんさつ》を ここに 入《い》れて ください。",
+                    "speak": "はい、だいじょうぶですよ。せんえんさつを ここに いれて ください。",
+                    "id_text": "Ya, boleh. Masukkan uang seribu di sini.",
+                    "en_text": "Yes, it is fine. Insert the 1,000-yen bill here.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t6.mp3"
+                },
+                {
+                    "id": "konbini-s4-t7",
+                    "who": "you",
+                    "ja": "できました。原本《げんぽん》も 持《も》って います。ありがとうございました。",
+                    "speak": "できました。げんぽんも もって います。ありがとうございました。",
+                    "id_text": "Sudah selesai. Dokumen asli juga sudah saya bawa. Terima kasih.",
+                    "accept": [
+                        "できました。原本も 持って います。ありがとうございました。",
+                        "できました。原本も持っています。ありがとうございました。"
+                    ],
+                    "en_text": "It is done. I have my original too. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s4-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s5",
+            "title_id": "Mengirim paket (宅配便)",
+            "title_en": "Sending a parcel",
+            "setting_id": "Kamu ingin mengirim paket kecil ke temanmu di Osaka lewat konbini.",
+            "setting_en": "You want to send a small parcel to a friend in Osaka via the konbini.",
+            "goal_id": "Meminta layanan dengan 荷物を 送りたいんですが dan memahami ukuran, tujuan, dan hari tiba.",
+            "goal_en": "Request a service with 荷物を 送りたいんですが and understand size, destination and arrival day.",
+            "patterns": [
+                "荷物を 送りたいんですが",
+                "〜へ 送ります",
+                "〜に 着きますか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Layanan 宅配便 (kurir) tersedia di banyak konbini: bawa barang, isi slip kirim (送り状) di kasir.",
+                "Siapkan alamat lengkap dan nomor telepon penerima.",
+                "Tanyakan estimasi: いつ 着きますか. Biasanya 1–2 hari untuk dalam negeri."
+            ],
+            "tips_en": [
+                "Parcel delivery (宅配便) is available at many konbini: bring the item and fill in the slip (送り状) at the register.",
+                "Prepare the full address and the recipient's phone number.",
+                "Ask for the estimate: いつ 着きますか. Usually 1–2 days domestically."
+            ],
+            "words": [
+                {
+                    "ja": "荷物《にもつ》",
+                    "id": "barang bawaan/paket",
+                    "en": "parcel"
+                },
+                {
+                    "ja": "送《おく》る",
+                    "id": "mengirim",
+                    "en": "to send"
+                },
+                {
+                    "ja": "大《おお》きさ",
+                    "id": "ukuran",
+                    "en": "size"
+                },
+                {
+                    "ja": "届《とど》く",
+                    "id": "sampai",
+                    "en": "to arrive"
+                },
+                {
+                    "ja": "住所《じゅうしょ》",
+                    "id": "alamat",
+                    "en": "address"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "明日《あした》までに 着《つ》きますか。",
+                    "id": "Apakah sampai paling lambat besok?",
+                    "en": "Will it arrive by tomorrow?"
+                },
+                {
+                    "ja": "着払《ちゃくばら》いでも いいですか。",
+                    "id": "Boleh bayar di tempat tujuan?",
+                    "en": "May I use cash on delivery?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s5-t1",
+                    "who": "you",
+                    "ja": "すみません、荷物《にもつ》を 送《おく》りたいんですが。",
+                    "speak": "すみません、にもつを おくりたいんですが。",
+                    "id_text": "Permisi, saya mau mengirim paket.",
+                    "accept": [
+                        "すみません、荷物を 送りたいんですが。",
+                        "すみません、荷物を送りたいんですが。"
+                    ],
+                    "en_text": "Excuse me, I would like to send a parcel.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t1.mp3"
+                },
+                {
+                    "id": "konbini-s5-t2",
+                    "who": "partner",
+                    "ja": "はい。どちらへ 送《おく》りますか。",
+                    "speak": "はい。どちらへ おくりますか。",
+                    "id_text": "Baik. Dikirim ke mana?",
+                    "en_text": "Certainly. Where would you like to send it?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t2.mp3"
+                },
+                {
+                    "id": "konbini-s5-t3",
+                    "who": "you",
+                    "ja": "大阪《おおさか》へ 送《おく》ります。友達《ともだち》の 家《いえ》です。",
+                    "speak": "おおさかへ おくります。ともだちの いえです。",
+                    "id_text": "Ke Osaka. Rumah teman saya.",
+                    "accept": [
+                        "大阪へ 送ります。友達の 家です。",
+                        "大阪へ送ります。友達の家です。"
+                    ],
+                    "en_text": "To Osaka. My friend's house.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t3.mp3"
+                },
+                {
+                    "id": "konbini-s5-t4",
+                    "who": "partner",
+                    "ja": "大《おお》きさを はかりますね。…六十《ろくじゅう》サイズです。千円《せんえん》です。",
+                    "speak": "おおきさを はかりますね。…ろくじゅうサイズです。せんえんです。",
+                    "id_text": "Saya ukur dulu ya. ... Ukuran 60. Seribu yen.",
+                    "en_text": "Let me measure it. ... It is size 60. That is 1,000 yen.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t4.mp3"
+                },
+                {
+                    "id": "konbini-s5-t5",
+                    "who": "you",
+                    "ja": "何日《なんにち》に 着《つ》きますか。",
+                    "speak": "なんにちに つきますか。",
+                    "id_text": "Sampai tanggal berapa?",
+                    "accept": [
+                        "何日に 着きますか。",
+                        "何日に着きますか。"
+                    ],
+                    "en_text": "On what day will it arrive?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t5.mp3"
+                },
+                {
+                    "id": "konbini-s5-t6",
+                    "who": "partner",
+                    "ja": "明後日《あさって》の 午後《ごご》に 着《つ》きます。この 紙《かみ》に 住所《じゅうしょ》を 書《か》いて ください。",
+                    "speak": "あさっての ごごに つきます。この かみに じゅうしょを かいて ください。",
+                    "id_text": "Sampai lusa siang. Tolong tulis alamat di kertas ini.",
+                    "en_text": "It will arrive the day after tomorrow in the afternoon. Please write the address on this slip.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t6.mp3"
+                },
+                {
+                    "id": "konbini-s5-t7",
+                    "who": "you",
+                    "ja": "書《か》きました。電話番号《でんわばんごう》も 書《か》いても いいですか。",
+                    "speak": "かきました。でんわばんごうも かいても いいですか。",
+                    "id_text": "Sudah saya tulis. Boleh nomor telepon juga saya tulis?",
+                    "accept": [
+                        "書きました。電話番号も 書いても いいですか。",
+                        "書きました。電話番号も書いてもいいですか。"
+                    ],
+                    "en_text": "I wrote it. May I write the phone number too?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s5-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s6",
+            "title_id": "Membayar tagihan",
+            "title_en": "Paying a bill",
+            "setting_id": "Kamu menerima tagihan listrik berbentuk slip dan membayarnya di konbini.",
+            "setting_en": "You received a paper electricity bill and pay it at the konbini.",
+            "goal_id": "Menyerahkan 払込票 dengan これを 払いたいんですが dan memahami batas waktu serta bukti bayar.",
+            "goal_en": "Hand over a 払込票 with これを 払いたいんですが and understand the deadline and the proof of payment.",
+            "patterns": [
+                "これを 払いたいんですが",
+                "〜までに 払って ください",
+                "〜を もらっても いいですか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tagihan listrik/gas/air/telepon berbentuk slip (払込票) bisa dibayar tunai di konbini; bawa barcode ke kasir.",
+                "Perhatikan batas waktu (支払期限): bayar sebelum tanggal itu.",
+                "Simpan bagian bukti pembayaran (領収書) bila ada; kadang diperlukan untuk kantor."
+            ],
+            "tips_en": [
+                "Electricity/gas/water/phone bills in slip form (払込票) can be paid in cash at a konbini; hand the barcode to the cashier.",
+                "Check the due date (支払期限): pay before it.",
+                "Keep the receipt part (領収書) if there is one; your company may need it."
+            ],
+            "words": [
+                {
+                    "ja": "払込票《はらいこみひょう》",
+                    "id": "slip pembayaran",
+                    "en": "payment slip"
+                },
+                {
+                    "ja": "電気代《でんきだい》",
+                    "id": "tagihan listrik",
+                    "en": "electricity bill"
+                },
+                {
+                    "ja": "期限《きげん》",
+                    "id": "batas waktu",
+                    "en": "deadline"
+                },
+                {
+                    "ja": "払《はら》う",
+                    "id": "membayar",
+                    "en": "to pay"
+                },
+                {
+                    "ja": "領収書《りょうしゅうしょ》",
+                    "id": "kuitansi",
+                    "en": "receipt"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "電気代《でんきだい》を 払《はら》いたいです。",
+                    "id": "Saya mau membayar tagihan listrik.",
+                    "en": "I want to pay the electricity bill."
+                },
+                {
+                    "ja": "期限《きげん》は いつですか。",
+                    "id": "Batas waktunya kapan?",
+                    "en": "When is the deadline?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s6-t1",
+                    "who": "you",
+                    "ja": "すみません、これを 払《はら》いたいんですが、ここで 払《はら》えますか。",
+                    "speak": "すみません、これを はらいたいんですが、ここで はらえますか。",
+                    "id_text": "Permisi, saya mau membayar ini, bisa di sini?",
+                    "accept": [
+                        "すみません、これを 払いたいんですが、ここで 払えますか。",
+                        "すみません、これを払いたいんですが、ここで払えますか。"
+                    ],
+                    "en_text": "Excuse me, I want to pay this. Can I pay here?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t1.mp3"
+                },
+                {
+                    "id": "konbini-s6-t2",
+                    "who": "partner",
+                    "ja": "はい、払《はら》えます。払込票《はらいこみひょう》を 見《み》せて ください。",
+                    "speak": "はい、はらえます。はらいこみひょうを みせて ください。",
+                    "id_text": "Ya, bisa. Tolong tunjukkan slip pembayarannya.",
+                    "en_text": "Yes, you can. Please show me the payment slip.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t2.mp3"
+                },
+                {
+                    "id": "konbini-s6-t3",
+                    "who": "you",
+                    "ja": "これです。電気代《でんきだい》です。",
+                    "speak": "これです。でんきだいです。",
+                    "id_text": "Ini. Tagihan listrik.",
+                    "accept": [
+                        "これです。電気代です。"
+                    ],
+                    "en_text": "Here it is. The electricity bill.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t3.mp3"
+                },
+                {
+                    "id": "konbini-s6-t4",
+                    "who": "partner",
+                    "ja": "四千五百円《よんせんごひゃくえん》ですが、期限《きげん》は 今日《きょう》までです。",
+                    "speak": "よんせんごひゃくえんですが、きげんは きょうまでです。",
+                    "id_text": "Empat ribu lima ratus yen, tetapi batas waktunya sampai hari ini.",
+                    "en_text": "It is 4,500 yen, but the deadline is today.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t4.mp3"
+                },
+                {
+                    "id": "konbini-s6-t5",
+                    "who": "you",
+                    "ja": "間《ま》に合《あ》って よかったです。五千円《ごせんえん》で お願《ねが》いします。",
+                    "speak": "まにあって よかったです。ごせんえんで おねがいします。",
+                    "id_text": "Syukurlah masih sempat. Saya bayar dengan lima ribu yen.",
+                    "accept": [
+                        "間に合って よかったです。五千円で お願いします。",
+                        "間に合ってよかったです。五千円でお願いします。"
+                    ],
+                    "en_text": "I am glad I made it in time. Here is 5,000 yen.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t5.mp3"
+                },
+                {
+                    "id": "konbini-s6-t6",
+                    "who": "partner",
+                    "ja": "五百円《ごひゃくえん》の お釣《つ》りです。これが 領収書《りょうしゅうしょ》です。",
+                    "speak": "ごひゃくえんの おつりです。これが りょうしゅうしょです。",
+                    "id_text": "Kembaliannya lima ratus yen. Ini kuitansinya.",
+                    "en_text": "Here is your 500 yen change. This is the receipt.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t6.mp3"
+                },
+                {
+                    "id": "konbini-s6-t7",
+                    "who": "you",
+                    "ja": "ありがとうございます。領収書《りょうしゅうしょ》は 会社《かいしゃ》に 出《だ》します。",
+                    "speak": "ありがとうございます。りょうしゅうしょは かいしゃに だします。",
+                    "id_text": "Terima kasih. Kuitansinya akan saya serahkan ke kantor.",
+                    "accept": [
+                        "ありがとうございます。領収書は 会社に 出します。",
+                        "ありがとうございます。領収書は会社に出します。"
+                    ],
+                    "en_text": "Thank you. I will hand the receipt in to my company.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s6-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s7",
+            "title_id": "Kembalian kurang",
+            "title_en": "Wrong change",
+            "setting_id": "Setelah membayar, kamu sadar uang kembalianmu kurang dan memberi tahu kasir dengan sopan.",
+            "setting_en": "After paying, you realise your change is short and tell the cashier politely.",
+            "goal_id": "Menyampaikan masalah dengan sopan: お釣りが 違うと 思います / 足りないようです, dan menjelaskan jumlah.",
+            "goal_en": "Politely explain a problem: お釣りが 違うと 思います / 足りないようです, and state the amounts.",
+            "patterns": [
+                "〜と 思います",
+                "〜ようです",
+                "〜を 出しました"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Sampaikan dengan lembut: 〜と 思います (menurut saya) lebih sopan daripada menuduh.",
+                "Sebut fakta: berapa uang yang diberikan dan berapa harga yang tertera.",
+                "Jangan langsung marah; kasir biasanya akan menghitung ulang di depanmu."
+            ],
+            "tips_en": [
+                "Say it softly: 〜と 思います (\"I think\") is more polite than accusing.",
+                "State facts: how much you handed over and how much the price was.",
+                "Do not get angry; the cashier will usually recount in front of you."
+            ],
+            "words": [
+                {
+                    "ja": "お釣《つ》り",
+                    "id": "kembalian",
+                    "en": "change"
+                },
+                {
+                    "ja": "足《た》りない",
+                    "id": "kurang",
+                    "en": "not enough"
+                },
+                {
+                    "ja": "間違《まちが》い",
+                    "id": "kesalahan",
+                    "en": "mistake"
+                },
+                {
+                    "ja": "もう一度《いちど》",
+                    "id": "sekali lagi",
+                    "en": "once more"
+                },
+                {
+                    "ja": "数《かぞ》える",
+                    "id": "menghitung",
+                    "en": "to count"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "計算《けいさん》が 違《ちが》うと 思《おも》います。",
+                    "id": "Menurut saya hitungannya berbeda.",
+                    "en": "I think the calculation is different."
+                },
+                {
+                    "ja": "もう一度《いちど》 数《かぞ》えて ください。",
+                    "id": "Tolong hitung sekali lagi.",
+                    "en": "Please count once more."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s7-t1",
+                    "who": "you",
+                    "ja": "あの、すみません。お釣《つ》りが 違《ちが》うと 思《おも》います。",
+                    "speak": "あの、すみません。おつりが ちがうと おもいます。",
+                    "id_text": "Permisi, menurut saya kembaliannya keliru.",
+                    "accept": [
+                        "あの、すみません。お釣りが 違うと 思います。",
+                        "あの、すみません。お釣りが違うと思います。"
+                    ],
+                    "en_text": "Excuse me, I think the change is wrong.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t1.mp3"
+                },
+                {
+                    "id": "konbini-s7-t2",
+                    "who": "partner",
+                    "ja": "え、そうですか。失礼《しつれい》しました。いくら 出《だ》しましたか。",
+                    "speak": "え、そうですか。しつれいしました。いくら だしましたか。",
+                    "id_text": "Oh, begitukah. Mohon maaf. Anda memberi berapa?",
+                    "en_text": "Oh, is that so. I am sorry. How much did you give me?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t2.mp3"
+                },
+                {
+                    "id": "konbini-s7-t3",
+                    "who": "you",
+                    "ja": "千円《せんえん》を 出《だ》しました。買《か》った 物《もの》は 四百円《よんひゃくえん》です。",
+                    "speak": "せんえんを だしました。かった ものは よんひゃくえんです。",
+                    "id_text": "Saya memberi seribu yen. Barang yang saya beli empat ratus yen.",
+                    "accept": [
+                        "千円を 出しました。買った 物は 四百円です。",
+                        "千円を出しました。買った物は四百円です。"
+                    ],
+                    "en_text": "I gave you 1,000 yen. The things I bought were 400 yen.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t3.mp3"
+                },
+                {
+                    "id": "konbini-s7-t4",
+                    "who": "partner",
+                    "ja": "ええと、六百円《ろっぴゃくえん》の お釣《つ》りですね。いくら もらいましたか。",
+                    "speak": "ええと、ろっぴゃくえんの おつりですね。いくら もらいましたか。",
+                    "id_text": "Hmm, kembaliannya enam ratus yen ya. Berapa yang Anda terima?",
+                    "en_text": "Let me see, the change should be 600 yen. How much did you receive?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t4.mp3"
+                },
+                {
+                    "id": "konbini-s7-t5",
+                    "who": "you",
+                    "ja": "五百円《ごひゃくえん》だけ です。百円《ひゃくえん》が 足《た》りないようです。",
+                    "speak": "ごひゃくえんだけ です。ひゃくえんが たりないようです。",
+                    "id_text": "Hanya lima ratus yen. Sepertinya kurang seratus yen.",
+                    "accept": [
+                        "五百円だけ です。百円が 足りないようです。",
+                        "五百円だけです。百円が足りないようです。"
+                    ],
+                    "en_text": "Only 500 yen. It seems 100 yen is missing.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t5.mp3"
+                },
+                {
+                    "id": "konbini-s7-t6",
+                    "who": "partner",
+                    "ja": "大変《たいへん》失礼《しつれい》しました。はい、百円《ひゃくえん》です。どうぞ。",
+                    "speak": "たいへんしつれいしました。はい、ひゃくえんです。どうぞ。",
+                    "id_text": "Mohon maaf sekali. Ini seratus yen. Silakan.",
+                    "en_text": "I am very sorry. Here is 100 yen.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t6.mp3"
+                },
+                {
+                    "id": "konbini-s7-t7",
+                    "who": "you",
+                    "ja": "ありがとうございます。大丈夫《だいじょうぶ》です。",
+                    "speak": "ありがとうございます。だいじょうぶです。",
+                    "id_text": "Terima kasih. Tidak apa-apa.",
+                    "accept": [
+                        "ありがとうございます。大丈夫です。"
+                    ],
+                    "en_text": "Thank you. It is all right.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s7-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "konbini-s8",
+            "title_id": "Camilan panas di kasir",
+            "title_en": "Hot snacks at the register",
+            "setting_id": "Kamu ingin membeli ayam goreng dan kentang dari etalase panas di dekat kasir.",
+            "setting_en": "You want to buy fried chicken and fries from the hot case beside the register.",
+            "goal_id": "Memesan dengan 〜を 〜個 ください dan menjawab pertanyaan jumlah atau saus.",
+            "goal_en": "Order with 〜を 〜個 ください and answer questions about quantity or sauce.",
+            "patterns": [
+                "〜を 〜個 ください",
+                "これを ひとつ",
+                "〜も お願いします"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Camilan panas (ホットスナック) ada di etalase kasir; pesan langsung ke petugas, jangan ambil sendiri.",
+                "Hitung benda kecil dengan 〜個 (こ) atau hitungan Jepang ひとつ・ふたつ・みっつ.",
+                "Tunjuk dengan jari sambil bilang これ / それ bila tidak tahu namanya."
+            ],
+            "tips_en": [
+                "Hot snacks (ホットスナック) are in the case at the register; order from staff, do not take them yourself.",
+                "Count small items with 〜個 (こ) or the native counting ひとつ・ふたつ・みっつ.",
+                "Point and say これ / それ if you do not know the name."
+            ],
+            "words": [
+                {
+                    "ja": "ホットスナック",
+                    "id": "camilan panas",
+                    "en": "hot snacks"
+                },
+                {
+                    "ja": "からあげ",
+                    "id": "ayam goreng karaage",
+                    "en": "fried chicken"
+                },
+                {
+                    "ja": "個《こ》",
+                    "id": "buah (penghitung)",
+                    "en": "pieces (counter)"
+                },
+                {
+                    "ja": "ケチャップ",
+                    "id": "saus tomat",
+                    "en": "ketchup"
+                },
+                {
+                    "ja": "ひとつ",
+                    "id": "satu buah",
+                    "en": "one (piece)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "これを ふたつ ください。",
+                    "id": "Tolong dua buah ini.",
+                    "en": "Two of these, please."
+                },
+                {
+                    "ja": "塩《しお》で お願《ねが》いします。",
+                    "id": "Pakai garam, tolong.",
+                    "en": "With salt, please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "konbini-s8-t1",
+                    "who": "you",
+                    "ja": "すみません、からあげを 五個《ごこ》 ください。",
+                    "speak": "すみません、からあげを ごこ ください。",
+                    "id_text": "Permisi, tolong karaage lima buah.",
+                    "accept": [
+                        "すみません、からあげを 五個 ください。",
+                        "すみません、からあげを五個ください。"
+                    ],
+                    "en_text": "Excuse me, five pieces of karaage, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t1.mp3"
+                },
+                {
+                    "id": "konbini-s8-t2",
+                    "who": "partner",
+                    "ja": "からあげを 五個《ごこ》ですね。ほかに ありますか。",
+                    "speak": "からあげを ごこですね。ほかに ありますか。",
+                    "id_text": "Karaage lima buah ya. Ada yang lain?",
+                    "en_text": "Five pieces of karaage. Anything else?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t2.mp3"
+                },
+                {
+                    "id": "konbini-s8-t3",
+                    "who": "you",
+                    "ja": "この フライドポテトも ひとつ お願《ねが》いします。",
+                    "speak": "この フライドポテトも ひとつ おねがいします。",
+                    "id_text": "Kentang goreng ini juga satu, tolong.",
+                    "accept": [
+                        "この フライドポテトも ひとつ お願いします。",
+                        "このフライドポテトもひとつお願いします。"
+                    ],
+                    "en_text": "One of these fries as well, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t3.mp3"
+                },
+                {
+                    "id": "konbini-s8-t4",
+                    "who": "partner",
+                    "ja": "ポテトの サイズは どちらに しますか。",
+                    "speak": "ポテトの サイズは どちらに しますか。",
+                    "id_text": "Ukuran kentangnya mau yang mana?",
+                    "en_text": "Which size of fries would you like?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t4.mp3"
+                },
+                {
+                    "id": "konbini-s8-t5",
+                    "who": "you",
+                    "ja": "小《ちい》さい サイズを お願《ねが》いします。",
+                    "speak": "ちいさい サイズを おねがいします。",
+                    "id_text": "Ukuran kecil, tolong.",
+                    "accept": [
+                        "小さい サイズを お願いします。",
+                        "小さいサイズをお願いします。"
+                    ],
+                    "en_text": "The small size, please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t5.mp3"
+                },
+                {
+                    "id": "konbini-s8-t6",
+                    "who": "partner",
+                    "ja": "ケチャップは つけますか。",
+                    "speak": "ケチャップは つけますか。",
+                    "id_text": "Mau saus tomatnya?",
+                    "en_text": "Would you like ketchup?",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t6.mp3"
+                },
+                {
+                    "id": "konbini-s8-t7",
+                    "who": "you",
+                    "ja": "はい、ふたつ ください。",
+                    "speak": "はい、ふたつ ください。",
+                    "id_text": "Ya, tolong dua.",
+                    "accept": [
+                        "はい、ふたつ ください。",
+                        "はい、ふたつください。"
+                    ],
+                    "en_text": "Yes, two please.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t7.mp3"
+                },
+                {
+                    "id": "konbini-s8-t8",
+                    "who": "partner",
+                    "ja": "熱《あつ》いですから、気《き》を つけて ください。",
+                    "speak": "あついですから、きを つけて ください。",
+                    "id_text": "Panas, jadi hati-hati.",
+                    "en_text": "It is hot, so please be careful.",
+                    "audio": "/audio/kaiwa/situation-konbini/konbini-s8-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

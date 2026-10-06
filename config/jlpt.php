@@ -90,6 +90,57 @@ return [
             ],
         ],
 
+        // Bank soal asli JLPT N3 (salinan) — sama seperti 'private' (N5) dan 'private-n4': HANYA admin.
+        // Bank soal: resources/lang-data/jlpt/n3/. Audio chokai N3: public/audio/jlpt/n3/NN-….mp3 (40 trek, istirahat trek 18),
+        // gambar: public/images/jlpt/n3/ — lihat docs/jlpt-real-images-n3.md.
+        // Ikut dimatikan oleh JLPT_PRIVATE_PACK=false.
+        'private-n3' => [
+            'enabled' => (bool) env('JLPT_PRIVATE_PACK', true),
+            'admin_only' => true,
+            'level' => 'N3',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/n3',
+            'audio_path' => '/audio/jlpt',
+            'title' => [
+                'id' => 'Tes JLPT N3 (soal asli)',
+                'en' => 'JLPT N3 Test (original questions)',
+            ],
+        ],
+
+        // Bank soal asli JLPT N2 (salinan) — sama seperti 'private' (N5), 'private-n4', dan 'private-n3': HANYA admin.
+        // Ketiga sesi sudah ada (resources/lang-data/jlpt/n2/{mojigoi,bunpou_dokkai,chokai}.json). Audio chokai N2
+        // = LIMA berkas utuh (satu per もんだい) di public/audio/jlpt/n2/N2-chokai-1…5; lihat docs/JLPT-CHOKAI-AUDIO-N2.md.
+        // Ikut dimatikan oleh JLPT_PRIVATE_PACK=false.
+        'private-n2' => [
+            'enabled' => (bool) env('JLPT_PRIVATE_PACK', true),
+            'admin_only' => true,
+            'level' => 'N2',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/n2',
+            'audio_path' => '/audio/jlpt',
+            'title' => [
+                'id' => 'Tes JLPT N2 (soal asli)',
+                'en' => 'JLPT N2 Test (original questions)',
+            ],
+        ],
+
+        // Bank soal asli JLPT N1 (salinan) — sama seperti 'private' (N5), 'private-n4', 'private-n3', dan 'private-n2': HANYA admin.
+        // Ketiga sesi sudah ada (resources/lang-data/jlpt/n1/{mojigoi,bunpou_dokkai,chokai}.json). Audio chokai N1
+        // = LIMA berkas utuh (satu per もんだい) di public/audio/jlpt/n1/N1-chokai-1…5; lihat docs/JLPT-CHOKAI-AUDIO-N1.md.
+        // Ikut dimatikan oleh JLPT_PRIVATE_PACK=false.
+        'private-n1' => [
+            'enabled' => (bool) env('JLPT_PRIVATE_PACK', true),
+            'admin_only' => true,
+            'level' => 'N1',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/n1',
+            'audio_path' => '/audio/jlpt',
+            'title' => [
+                'id' => 'Tes JLPT N1 (soal asli)',
+                'en' => 'JLPT N1 Test (original questions)',
+            ],
+        ],
+
         // Paket orisinal HonTomo (dulu "Simulasi JLPT"). Tambah paket baru dengan
         // menjalankan scripts/jlpt-mock-to-bank.py lalu menambah entri seperti ini.
         'n5-test-1' => [
@@ -227,6 +278,171 @@ return [
                     'enabled' => true,
                     'minutes' => 35,
                     'questions' => 28,
+                    'file' => 'chokai.json',
+                ],
+            ],
+        ],
+        // JLPT N3 — total 0–180, lulus ≥ 95; batas minimal tiap bagian 19 (jlpt.jp/e/guideline/results.html).
+        // Resminya ada TIGA bagian berskor 0–60 (bahasa [moji-goi + tata bahasa], membaca, mendengarkan), tetapi
+        // sesi di sini menggabungkan tata bahasa dan membaca (bunpou_dokkai), sehingga bahasa + membaca
+        // dihitung sebagai satu grup 0–120 dengan batas minimal 38 (= 19 + 19). Seperti N5/N4, nilai grup
+        // proporsional (ESTIMASI). Ketiga sesi (mojigoi, bunpou_dokkai, chokai) aktif, jadi rekap langsung
+        // memberi keputusan lulus/tidak.
+        'N3' => [
+            'pass_total' => 95,
+            'total_max' => 180,
+
+            'groups' => [
+                'language_knowledge' => [
+                    'max' => 120,
+                    'min' => 38,
+                    'sections' => ['mojigoi', 'bunpou_dokkai'],
+                ],
+                'listening' => [
+                    'max' => 60,
+                    'min' => 19,
+                    'sections' => ['chokai'],
+                ],
+            ],
+
+            'sections' => [
+                // 言語知識（文字・語彙）— 30 menit (sesuai sampul soal), 33 soal (8 + 6 + 9 + 5 + 5)
+                'mojigoi' => [
+                    'order' => 1,
+                    'enabled' => true,
+                    'minutes' => 30,
+                    'questions' => 33,
+                    'file' => 'mojigoi.json',
+                ],
+
+                // 言語知識（文法）・読解 — 70 menit (sesuai sampul soal), 39 soal (13 + 5 + 5 + 4 + 6 + 4 + 2)
+                'bunpou_dokkai' => [
+                    'order' => 2,
+                    'enabled' => true,
+                    'minutes' => 70,
+                    'questions' => 39,
+                    'file' => 'bunpou_dokkai.json',
+                ],
+
+                // 聴解 — 27 soal (6 + 6 + 3 + 4 + 8); 40 menit (sampul soal); id soal "{mondai}-{no}";
+                // 40 trek audio (trek 18 = istirahat sebelum もんだい 3)
+                'chokai' => [
+                    'order' => 3,
+                    'enabled' => true,
+                    'minutes' => 40,
+                    'questions' => 27,
+                    'file' => 'chokai.json',
+                ],
+            ],
+        ],
+        // JLPT N2 — total 0–180, lulus ≥ 90; batas minimal tiap bagian 19 (jlpt.jp/e/guideline/results.html).
+        // Seperti N3: resminya tiga bagian berskor 0–60 (bahasa [moji-goi + tata bahasa], membaca, mendengarkan),
+        // sesi di sini menggabungkan tata bahasa dan membaca (bunpou_dokkai), jadi bahasa + membaca satu grup
+        // 0–120 dengan batas minimal 38 (= 19 + 19). Nilai grup proporsional (ESTIMASI).
+        // Lembar soal N2 hanya punya SATU sampul untuk 言語知識（文字・語彙・文法）・読解 (105 menit, 75 soal =
+        // moji-goi 32 + tata bahasa/membaca 43), jadi pembagian waktu ke dua sesi aplikasi adalah ASUMSI:
+        // moji-goi 30 menit + bunpou_dokkai 75 menit (total tetap 105). Ubah di sini bila ingin pembagian lain.
+        // Ketiga sesi aktif, jadi rekap langsung memberi keputusan lulus/tidak.
+        'N2' => [
+            'pass_total' => 90,
+            'total_max' => 180,
+
+            'groups' => [
+                'language_knowledge' => [
+                    'max' => 120,
+                    'min' => 38,
+                    'sections' => ['mojigoi', 'bunpou_dokkai'],
+                ],
+                'listening' => [
+                    'max' => 60,
+                    'min' => 19,
+                    'sections' => ['chokai'],
+                ],
+            ],
+
+            'sections' => [
+                // 言語知識（文字・語彙）— 32 soal (5 + 5 + 5 + 7 + 5 + 5), nomor 1–32 di 正答表 (問題1–6)
+                'mojigoi' => [
+                    'order' => 1,
+                    'enabled' => true,
+                    'minutes' => 30,
+                    'questions' => 32,
+                    'file' => 'mojigoi.json',
+                ],
+
+                // 言語知識（文法）・読解 — 43 soal (12 + 5 + 5 + 5 + 9 + 2 + 3 + 2), nomor 33–75 (問題7–14);
+                // id soal = nomor di 正答表, もんだい diberi nomor cetak 7–14.
+                'bunpou_dokkai' => [
+                    'order' => 2,
+                    'enabled' => true,
+                    'minutes' => 75,
+                    'questions' => 43,
+                    'file' => 'bunpou_dokkai.json',
+                ],
+
+                // 聴解 — 50 menit (sampul soal), 31 soal (5 + 6 + 5 + 11 + 4); もんだい 5 nomor 3 punya dua
+                // pertanyaan (id "5-3-1", "5-3-2"). Audio: satu berkas utuh per もんだい (`whole_audio`).
+                'chokai' => [
+                    'order' => 3,
+                    'enabled' => true,
+                    'minutes' => 50,
+                    'questions' => 31,
+                    'file' => 'chokai.json',
+                ],
+            ],
+        ],
+        // JLPT N1 — total 0–180, lulus ≥ 100; batas minimal tiap bagian 19 (jlpt.jp/e/guideline/results.html).
+        // Seperti N3/N2: resminya tiga bagian berskor 0–60 (bahasa [moji-goi + tata bahasa], membaca, mendengarkan),
+        // sesi di sini menggabungkan tata bahasa dan membaca (bunpou_dokkai), jadi bahasa + membaca satu grup
+        // 0–120 dengan batas minimal 38 (= 19 + 19). Nilai grup proporsional (ESTIMASI).
+        // Lembar soal N1 hanya punya SATU sampul untuk 言語知識（文字・語彙・文法）・読解 (110 menit, 69 soal =
+        // moji-goi 25 + tata bahasa/membaca 44), jadi pembagian waktu ke dua sesi aplikasi adalah ASUMSI:
+        // moji-goi 25 menit + bunpou_dokkai 85 menit (total tetap 110). Ubah di sini bila ingin pembagian lain.
+        // Ketiga sesi aktif, jadi rekap langsung memberi keputusan lulus/tidak.
+        'N1' => [
+            'pass_total' => 100,
+            'total_max' => 180,
+
+            'groups' => [
+                'language_knowledge' => [
+                    'max' => 120,
+                    'min' => 38,
+                    'sections' => ['mojigoi', 'bunpou_dokkai'],
+                ],
+                'listening' => [
+                    'max' => 60,
+                    'min' => 19,
+                    'sections' => ['chokai'],
+                ],
+            ],
+
+            'sections' => [
+                // 言語知識（文字・語彙）— 25 soal (6 + 7 + 6 + 6), nomor 1–25 di 正答表 (問題1–4)
+                'mojigoi' => [
+                    'order' => 1,
+                    'enabled' => true,
+                    'minutes' => 25,
+                    'questions' => 25,
+                    'file' => 'mojigoi.json',
+                ],
+
+                // 言語知識（文法）・読解 — 44 soal, nomor 26–69 (問題5–13; 10 + 5 + 5 + 3 + 9 + 4 + 2 + 4 + 2).
+                // id soal = nomor di lembar soal / 正答表.
+                'bunpou_dokkai' => [
+                    'order' => 2,
+                    'enabled' => true,
+                    'minutes' => 85,
+                    'questions' => 44,
+                    'file' => 'bunpou_dokkai.json',
+                ],
+
+                // 聴解 — 60 menit (sampul soal), 36 soal (6 + 7 + 6 + 13 + 4); もんだい 5 nomor 3 punya dua
+                // pertanyaan (id "5-3-1", "5-3-2"). Audio: satu berkas utuh per もんだい (`whole_audio`), N1-chokai-1…5.
+                'chokai' => [
+                    'order' => 3,
+                    'enabled' => true,
+                    'minutes' => 60,
+                    'questions' => 36,
                     'file' => 'chokai.json',
                 ],
             ],

@@ -109,7 +109,7 @@ class NotificationService
      * lives in the Vue file — see UserMondaishuuProgress's docblock), so
      * there's no model to pull a localized title from like Lesson::title().
      * `label` is built from the set_key instead: mostly numbers ("Pelajaran
-     * 3", "Rangkuman 9-17", "Bab 2"), which read fine in either language,
+     * 3", "Rangkuman 9-17", "Pelajaran 2"), which read fine in either language,
      * so it's safe to resolve once here rather than needing a translation
      * key round-trip on the frontend.
      */
@@ -161,7 +161,22 @@ class NotificationService
 
             // Paket situasi: '{paket}-s{urut}', mis. 'mensetsu-s3' (index.json → situations).
             if (preg_match('/^([a-z0-9]+(?:-[a-z0-9]+)*)-s(\d+)$/', $setKey, $m)) {
-                $packs = ['mensetsu' => ['Mensetsu (wawancara kerja)', 'Job interview (mensetsu)']];
+                $packs = [
+                    'mensetsu' => ['Mensetsu (wawancara kerja)', 'Job interview (mensetsu)'],
+                    'kereta' => ['Kereta & Stasiun', 'Trains & stations'],
+                    'konbini' => ['Konbini', 'Convenience store (konbini)'],
+                    'pabrik' => ['Pabrik (tempat kerja)', 'Factory (workplace)'],
+                    'restoran' => ['Restoran', 'Restaurant'],
+                    'rumahsakit' => ['Rumah Sakit', 'Hospital'],
+                    'telepon' => ['Telepon', 'Telephone'],
+                    'supermarket' => ['Supermarket', 'Supermarket'],
+                    'pakaian' => ['Belanja Pakaian', 'Clothes shopping'],
+                    'gaji' => ['Gaji & Slip Gaji', 'Pay & payslip'],
+                    'keitai' => ['Ponsel & Internet', 'Phone & Internet'],
+                    'bank' => ['Bank & Kirim Uang', 'Bank & money transfer'],
+                    'kelurahan' => ['Kelurahan & Imigrasi', 'City hall & immigration'],
+                    'tetangga' => ['Tetangga & Asrama', 'Neighbors & dormitory'],
+                ];
                 [$labelId, $labelEn] = $packs[$m[1]] ?? [ucfirst($m[1]), ucfirst($m[1])];
 
                 return $isEnglish ? "{$labelEn} · Scenario {$m[2]}" : "{$labelId} · Skenario {$m[2]}";
@@ -185,9 +200,9 @@ class NotificationService
             return $isEnglish ? "JLPT {$level} Mock Test #{$n}" : "Simulasi JLPT {$level} #{$n}";
         }
 
-        // kaite_oboeru: set_key is always 'l{n}' — one of its 5 chapters (bab).
+        // kaite_oboeru: set_key is always 'l{n}' — one of its 5 lessons (pelajaran).
         $n = substr($setKey, 1);
 
-        return $isEnglish ? "Chapter {$n}" : "Bab {$n}";
+        return $isEnglish ? "Lesson {$n}" : "Pelajaran {$n}";
     }
 }

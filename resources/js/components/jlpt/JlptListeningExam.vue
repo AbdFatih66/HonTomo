@@ -8,7 +8,13 @@
 // dipilih saat audio diputar maupun sesudahnya; begitu audio selesai ada jeda
 // menjawab (hitung mundur) lalu pindah sendiri ke soal berikutnya.
 //
-// Yang dikendalikan server tetap timer 30 menit + jawaban (autosave & submit
+// Mode REKAMAN UTUH (`whole_audio` pada もんだい, dipakai N2): rekaman asli N2 diberikan sebagai
+// SATU berkas per もんだい (petunjuk + れい + semua soal + jeda menjawab sudah ada di dalam berkas).
+// Layar menampilkan seluruh soal もんだい itu sekaligus (seperti lembar soal), jawaban boleh dipilih
+// kapan saja selama rekaman berjalan, dan pindah otomatis ke もんだい berikutnya setelah rekaman
+// selesai (jeda BLOCK_GAP detik).
+//
+// Yang dikendalikan server tetap timer sesi + jawaban (autosave & submit
 // ada di halaman induk); pemutar ini hanya mengurus urutan audio & tampilan.
 // Posisi terakhir disimpan di sessionStorage agar muat ulang halaman tidak
 // mengulang dari awal (soal yang sedang berjalan diputar lagi dari awal).
@@ -21,14 +27,26 @@ const props = defineProps({
   answers: { type: Object, required: true },
   stopped: { type: Boolean, default: false }, // waktu habis
   storageKey: { type: String, default: '' },
+  level: { type: String, default: '' }, // N2, N3, … → petunjuk もんだい khusus level (bila ada)
 })
 
 const emit = defineEmits(['choose', 'done'])
 
-const { t } = useI18n()
+const { t, te } = useI18n()
 
 const DEFAULT_WAIT = 8 // detik jeda menjawab bila bank soal tidak menyebutnya
 const INTRO_GAP = 2 // detik jeda setelah petunjuk/れい selesai
+const BLOCK_GAP = 5 // detik jeda setelah rekaman utuh satu もんだい selesai (memberi waktu menandai jawaban terakhir)
+
+// Petunjuk もんだい: kunci khusus level (mis. `N2_chokai_5`) didahulukan, lalu kunci umum (`chokai_5`).
+function mondaiHint(mondai) {
+  const specific = `jlptTest.mondai_hint.${props.level}_chokai_${mondai}`
+
+  return props.level && te(specific) ? t(specific) : t(`jlptTest.mondai_hint.chokai_${mondai}`)
+}
+
+// Nama tampilan satu soal pada layar rekaman utuh ("3ばん", atau "3ばん 質問1" untuk soal berpasangan).
+const questionLabel = q => q.label ?? `${q.no}ばん`
 
 // Urutan langkah mengikuti nomor trek rekaman: penjelasan umum (`start`), lalu
 // tiap もんだい = [istirahat (`rest`, bila ada)] + petunjuk & れい (`intro`) +
@@ -45,8 +63,16 @@ const steps = computed(() => {
 
     if (m.audio_before)
       out.push({ kind: 'rest', mondai: no, m, audio: [m.audio_before] })
+
+    const qs = props.test.questions.filter(x => Number(x.mondai) === no)
+
+    if (m.whole_audio) {
+      out.push({ kind: 'block', mondai: no, m, qs, audio: m.audio ? [m.audio] : [] })
+
+      continue
+    }
     out.push({ kind: 'intro', mondai: no, m, audio: [m.audio, m.example?.audio].filter(Boolean) })
-    for (const q of props.test.questions.filter(x => Number(x.mondai) === no))
+    for (const q of qs)
       out.push({ kind: 'question', mondai: no, m, q, audio: q.audio ? [q.audio] : [], wait: m.answer_seconds ?? DEFAULT_WAIT })
   }
 
@@ -199,7 +225,9 @@ function audioFinished() {
 
     return
   }
-  countdown.value = step.value?.kind === 'question' ? step.value.wait ?? DEFAULT_WAIT : INTRO_GAP
+  countdown.value = step.value?.kind === 'question'
+    ? step.value.wait ?? DEFAULT_WAIT
+    : step.value?.kind === 'block' ? BLOCK_GAP : INTRO_GAP
   clearTimer()
   timer = setInterval(() => {
     countdown.value -= 1
@@ -353,6 +381,12 @@ onBeforeUnmount(() => {
           >
             {{ t('jlptTest.listen.question_of', { n: answeredIndex, total }) }}
           </span>
+          <span
+            v-else-if="step.kind === 'block'"
+            class="text-caption text-medium-emphasis"
+          >
+            {{ t('jlptTest.listen.block_questions', { n: step.qs.length }) }}
+          </span>
         </div>
         <div class="text-caption text-medium-emphasis">
           <template v-if="phase === 'playing' && !audioError">
@@ -417,6 +451,64 @@ onBeforeUnmount(() => {
         </p>
       </div>
 
+      <!-- Rekaman utuh satu もんだい (N2): petunjuk + れい + semua soal dalam satu layar -->
+      <div
+        v-else-if="step.kind === 'block'"
+        class="jl-paper"
+      >
+        <div class="jl-mondai">
+          <span
+            class="jl-mondai__tag"
+            lang="ja"
+          >もんだい {{ step.mondai }}</span>
+          <span class="jl-mondai__text"><JlptText :text="step.m.instruction" /></span>
+        </div>
+        <div class="text-caption text-medium-emphasis mt-2 mb-1">
+          {{ mondaiHint(step.mondai) }}
+        </div>
+        <div class="text-caption text-medium-emphasis mb-4">
+          {{ t('jlptTest.listen.block_hint') }}
+        </div>
+
+        <div
+          v-if="step.m.example"
+          class="jl-example mb-6"
+        >
+          <div
+            class="font-weight-bold mb-2"
+            lang="ja"
+          >
+            れい
+          </div>
+          <JlptListeningItem
+            :item="step.m.example"
+            :selected="step.m.example.answer"
+            readonly
+          />
+          <div class="text-caption text-medium-emphasis mt-2">
+            {{ t('jlptTest.listen.example_answer', { n: step.m.example.answer }) }}
+          </div>
+        </div>
+
+        <div
+          v-for="q in step.qs"
+          :key="q.id"
+          class="jl-block-q"
+        >
+          <div
+            class="jl-qno"
+            lang="ja"
+          >
+            {{ questionLabel(q) }}
+          </div>
+          <JlptListeningItem
+            :item="q"
+            :selected="answers[q.id] ?? null"
+            @pick="n => pick(q, n)"
+          />
+        </div>
+      </div>
+
       <!-- Langkah petunjuk: teks もんだい + れい (contoh) -->
       <div
         v-else-if="step.kind === 'intro'"
@@ -430,7 +522,7 @@ onBeforeUnmount(() => {
           <span class="jl-mondai__text"><JlptText :text="step.m.instruction" /></span>
         </div>
         <div class="text-caption text-medium-emphasis mt-2 mb-4">
-          {{ t(`jlptTest.mondai_hint.chokai_${step.mondai}`) }}
+          {{ mondaiHint(step.mondai) }}
         </div>
 
         <div
@@ -568,6 +660,12 @@ onBeforeUnmount(() => {
   font-size: 1.2rem;
   font-weight: 700;
   margin-block-end: 12px;
+}
+
+.jl-block-q + .jl-block-q {
+  padding-block-start: 16px;
+  border-block-start: 1px dashed rgba(var(--v-theme-on-surface), 0.25);
+  margin-block-start: 16px;
 }
 
 @media (prefers-reduced-motion: reduce) {

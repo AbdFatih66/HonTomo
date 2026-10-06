@@ -25,7 +25,7 @@ definePage({ meta: { layout: 'blank' } })
 
 const route = useRoute()
 const router = useRouter()
-const { t } = useI18n()
+const { t, te } = useI18n()
 
 const attemptId = computed(() => route.params.attempt)
 const sectionKey = computed(() => route.params.section)
@@ -82,6 +82,15 @@ const groups = computed(() => {
 })
 
 const sectionTitle = computed(() => section.value?.title ?? '')
+
+// Petunjuk singkat tiap もんだい. Jenis soal bisa berbeda antar level untuk nomor もんだい yang sama
+// (mis. moji-goi N2 punya 6 もんだい), jadi kunci khusus level (`N2_mojigoi_4`) didahulukan,
+// lalu kunci umum (`mojigoi_4`).
+function mondaiHint(mondai) {
+  const specific = `jlptTest.mondai_hint.${level.value}_${sectionKey.value}_${mondai}`
+
+  return te(specific) ? t(specific) : t(`jlptTest.mondai_hint.${sectionKey.value}_${mondai}`)
+}
 
 const answeredCount = computed(() => questions.value.filter(q => answers[q.id]).length)
 const unansweredCount = computed(() => questions.value.length - answeredCount.value)
@@ -399,6 +408,7 @@ onBeforeUnmount(() => {
             :answers="answers"
             :stopped="timeUp"
             :storage-key="`jlpt-chokai-${attemptId}`"
+            :level="level"
             class="mb-8"
             @choose="choose"
             @done="listeningDone = true"
@@ -419,7 +429,7 @@ onBeforeUnmount(() => {
                   </span>
                 </div>
                 <div class="text-caption text-medium-emphasis mt-2">
-                  {{ t(`jlptTest.mondai_hint.${sectionKey}_${g.mondai}`) }}
+                  {{ mondaiHint(g.mondai) }}
                 </div>
 
                 <!-- Contoh (れい) — hanya untuk もんだい yang punya contoh -->
