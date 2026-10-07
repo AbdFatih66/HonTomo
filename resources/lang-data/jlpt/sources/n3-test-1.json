@@ -1,0 +1,3144 @@
+{
+    "id": "n3-test-1",
+    "level": "N3",
+    "title": {
+        "id": "Simulasi JLPT N3 — Paket 1",
+        "en": "JLPT N3 Mock Test — Set 1"
+    },
+    "pass": {
+        "total": 95,
+        "language": 38,
+        "listening": 19
+    },
+    "scale": {
+        "language": 120,
+        "listening": 60,
+        "total": 180
+    },
+    "sections": [
+        {
+            "key": "listening",
+            "kind": "listening",
+            "minutes": 40,
+            "jp": "聴解",
+            "title": {
+                "id": "Mendengar (聴解)",
+                "en": "Listening (聴解)"
+            },
+            "intro": {
+                "id": "l-intro",
+                "audio_text": [
+                    {
+                        "speaker": "narrator",
+                        "text": "ちょうかいの しけんを はじめます。もんだいようしの ページを ひらいて ください。もんだいは ぜんぶで ごつ あります。はなしは いちどだけ ながれます。はなしを ききながら、メモを とっても かまいません。",
+                        "pause": 2
+                    }
+                ],
+                "audio": "/audio/jlpt-mock/n3-test-1/l-intro.mp3"
+            },
+            "outro": {
+                "id": "l-outro",
+                "audio_text": [
+                    {
+                        "speaker": "narrator",
+                        "text": "これで ちょうかいの しけんを おわります。",
+                        "pause": 1
+                    }
+                ],
+                "audio": "/audio/jlpt-mock/n3-test-1/l-outro.mp3"
+            },
+            "mondai": [
+                {
+                    "id": "l1",
+                    "label": "問題１",
+                    "instruction": "問題《もんだい》1では、まず 質問《しつもん》を 聞《き》いてください。それから 話《はなし》を 聞《き》いて、問題用紙《もんだいようし》の1から4の 中《なか》から、最《もっと》もよいものを 一《ひと》つえらんでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l1-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい いち。もんだい いちでは、まず しつもんを きいて ください。それから はなしを きいて、もんだいようしの いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l1-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l1-ex",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。おとこの ひとと おんなの ひとが、あした みる えいがの そうだんを しています。ふたりは なんじに えいがかんの まえで あいますか。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "あした みる えいが、じゅうじからだよね。なんじに あおうか。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "じゅうじに はじまるから、ちょっと はやめに いって、チケットを かおう。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "じゅうごふん まえで いいかな。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "にちようびは こむから、さんじゅっぷん まえに しよう。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "わかった。じゃあ、そうしよう。"
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "ふたりは なんじに えいがかんの まえで あいますか。"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l1-ex.mp3",
+                        "choices": [
+                            "9時《じ》",
+                            "9時《じ》15分《ふん》",
+                            "9時《じ》半《はん》",
+                            "10時《じ》"
+                        ],
+                        "answer": 2,
+                        "type": "listening"
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l1-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。かいしゃで おとこの ひとと おんなの ひとが、おきゃくさんに だす ものの メモを みながら はなしています。おとこの ひとは なにを かいますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "らいきゃくように かう ものを、メモに かいて みたんだけど、みてくれる？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "はい。ええと、おちゃと コーヒーと かみコップと おかしと さとうですね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "おちゃは まだ たくさん のこってるから、かわなくて いいよ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "わかりました。コーヒーは、もう ほとんど ないです。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、それは ひつようね。かみコップは？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "これも すくなく なって きました。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そう。じゃあ、それも おねがい。おかしは、ぶちょうが おみやげを くださったから、かわなくて だいじょうぶ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "さとうは どう しましょう。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "さとうは あしたの かいぎで つかうから、かって おいて。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "はい、わかりました。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの ひとは なにを かいますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l1-1.mp3",
+                                    "choices": [
+                                        "イウオ",
+                                        "アウエ",
+                                        "アイウ",
+                                        "イエオ"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Teh masih banyak (ア tidak), kopi hampir habis (イ), gelas kertas menipis (ウ), kue dari kepala bagian (エ tidak), gula untuk rapat besok (オ) → イウオ.",
+                                    "image": {
+                                        "image": "/images/jlpt-mock/n3/l1-1.png",
+                                        "alt": "Lima barang di satu baris, dari kiri ke kanan: kotak teh, stoples kopi, tumpukan gelas kertas, kotak kue kering, kantong gula"
+                                    },
+                                    "marks": [
+                                        {
+                                            "x": 10,
+                                            "y": 82,
+                                            "text": "ア"
+                                        },
+                                        {
+                                            "x": 30,
+                                            "y": 82,
+                                            "text": "イ"
+                                        },
+                                        {
+                                            "x": 50,
+                                            "y": 82,
+                                            "text": "ウ"
+                                        },
+                                        {
+                                            "x": 70,
+                                            "y": 82,
+                                            "text": "エ"
+                                        },
+                                        {
+                                            "x": 90,
+                                            "y": 82,
+                                            "text": "オ"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "l1-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。だいがくで おんなの がくせいと おとこの がくせいが はなしています。おんなの がくせいは この あと、まず なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "せんぱい、らいしゅう ていしゅつの レポートの さんこうぶんけんは、どうやって さがせば いいですか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "まず としょかんの ホームページで けんさくして みると いいよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "さきに としょかんへ いったほうが いいですか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "いや、その まえに、せんせいに テーマが おおきすぎないか かくにんしたほうが いいよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "テーマですか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "うん。わたしは まえに テーマを かえることに なって、さがした ぶんけんが ぜんぶ むだに なったんだ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうなんですか。じゃあ、まず メールで せんせいに きいて みます。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "そうだね。それが いちばん いいと おもう。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの がくせいは この あと、まず なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l1-2.mp3",
+                                    "choices": [
+                                        "図書館《としょかん》のホームページで検索《けんさく》する",
+                                        "先生《せんせい》にテーマを確認《かくにん》する",
+                                        "図書館《としょかん》へ行《い》く",
+                                        "レポートを書《か》き始《はじ》める"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Sebelum mencari pustaka, cek dulu tema ke dosen (まず先生にテーマを確認)."
+                                },
+                                {
+                                    "id": "l1-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。いえで おっとと つまが はなしています。おとこの ひとは この あと、まず なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あしたの あさ ろくじに しゅっぱつだから、にもつは もう できた？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "きがえは いれたよ。あとは じゅうでんきだけ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゅうでんきは わたしが いれたから だいじょうぶ。それより、くるまに ガソリンが はいってるか かくにんして くれる？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あ、そうだ。きのう みたら はんぶんぐらいだった。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "いまから いれて きたほうが いいよ。あしたは はやすぎて、スタンドが あいてないから。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "わかった。あと、ゴミも ださなきゃ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ゴミは あしたの あさ わたしが だすから いいよ。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの ひとは この あと、まず なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l1-3.mp3",
+                                    "choices": [
+                                        "荷物《にもつ》を入《い》れる",
+                                        "充電器《じゅうでんき》を入《い》れる",
+                                        "ゴミを出《だ》す",
+                                        "ガソリンを入《い》れに行《い》く"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Pakaian sudah, charger sudah dimasukkan istri, sampah akan dibuang istri → pria mengisi bensin sekarang."
+                                },
+                                {
+                                    "id": "l1-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。かいしゃで ぶちょうと おんなの ひとが はなしています。おんなの ひとは これから なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ぶちょう、ごごの かいぎの しりょうを、にんずうぶん コピーしました。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ありがとう。さんかしゃは じゅうににんだったよね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "はい、じゅうにぶです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あ、さっき さとうさんから れんらくが あって、かちょうも しゅっせきすることに なったよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "では、もう いちぶ コピーして きます。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "いや、かちょうには カラーの ものを わたしたいから、それは わたしが やるよ。それより、かいぎしつの いすを ひとつ ふやして くれる？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "はい、わかりました。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは これから なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l1-4.mp3",
+                                    "choices": [
+                                        "資料《しりょう》をもう一部《いちぶ》コピーする",
+                                        "課長《かちょう》に資料《しりょう》を渡《わた》す",
+                                        "会議室《かいぎしつ》のいすを増《ふ》やす",
+                                        "会議室《かいぎしつ》を予約《よやく》する"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Salinan tambahan dikerjakan atasan sendiri; staf diminta menambah satu kursi di ruang rapat."
+                                },
+                                {
+                                    "id": "l1-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。クリーニングてんで おんなの ひとと てんいんが はなしています。おんなの ひとは いつ ふくを とりに きますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "この コートを おねがいします。いつ できますか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ふつうは みっか かかりますが、きょうは げつようびなので、すいようびの ゆうがたには できあがります。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じつは、こんしゅうの もくようびに きたいんです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "それなら まにあいますね。でも、もくようびは ていきゅうびで、おやすみなんです。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうですか。みせは なんじまで あいていますか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "へいじつは ななじまでです。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "すいようびは しごとで おそく なりそうですが、はやく おわらせて きます。それなら もくようびに きられますね。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは いつ ふくを とりに きますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l1-5.mp3",
+                                    "choices": [
+                                        "月曜日《げつようび》",
+                                        "火曜日《かようび》",
+                                        "水曜日《すいようび》",
+                                        "木曜日《もくようび》"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Jadi Rabu sore; Kamis toko libur, jadi harus diambil sebelumnya."
+                                },
+                                {
+                                    "id": "l1-6",
+                                    "no": 6,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ろくばん。かいしゃで おんなの ひとと おとこの ひとが はなしています。おんなの ひとは サンプルを どの ほうほうで おくりますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "とりひきさきに サンプルを おくりたいんですが、どう すれば いいでしょうか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "いつまでに とどけたいの？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "らいしゅうの げつようびの あさの かいぎで つかうそうです。きょうは もくようびです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ゆうびんだと どにちが はいるから、まにあわない かもしれないね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "たくはいびんは どうでしょう。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "きんようびの ごごまでに だせば、にちを していして とどけて もらえるよ。げつようびの あさに つくように したら？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "それなら あんしんですね。そう します。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは サンプルを どの ほうほうで おくりますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l1-6.mp3",
+                                    "choices": [
+                                        "速達《そくたつ》で送《おく》る",
+                                        "宅配便《たくはいびん》で日《ひ》にちを指定《してい》して送《おく》る",
+                                        "郵便《ゆうびん》で送《おく》る",
+                                        "自分《じぶん》で持《も》って行《い》く"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Pos biasa bisa terhambat akhir pekan; pakai kurir dengan tanggal tiba ditentukan (Senin pagi)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l2",
+                    "label": "問題２",
+                    "instruction": "問題《もんだい》2では、まず 質問《しつもん》を 聞《き》いてください。そのあと、問題用紙《もんだいようし》を 見《み》てください。読《よ》む時間《じかん》があります。それから 話《はなし》を 聞《き》いて、問題用紙《もんだいようし》の1から4の 中《なか》から、最《もっと》もよいものを 一《ひと》つえらんでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l2-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい に。もんだい にでは、まず しつもんを きいて ください。そのあと、もんだいようしを みて ください。よむ じかんが あります。それから はなしを きいて、もんだいようしの いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l2-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l2-ex",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。かいしゃで おとこの ひとと おんなの ひとが はなしています。おとこの ひとは どうして きょう はやく かえりますか。",
+                                "pause": 6
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "おさきに しつれいします。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "あれ、きょうは はやいですね。デートですか。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "いえ、そうじゃ ないんです。じつは、ははが にゅういんして いて、おみまいに いくんです。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "そうですか。おだいじにと つたえて ください。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "ありがとう ございます。"
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "おとこの ひとは どうして きょう はやく かえりますか。"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l2-ex.mp3",
+                        "choices": [
+                            "約束《やくそく》があるから",
+                            "デートがあるから",
+                            "母《はは》のお見舞《みま》いに行《い》くから",
+                            "具合《ぐあい》が悪《わる》いから"
+                        ],
+                        "answer": 2,
+                        "type": "listening"
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l2-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。だいがくで おんなの がくせいと おとこの がくせいが はなしています。おとこの がくせいは どうして サッカーサークルを やめましたか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "サッカーサークル、やめたんだって？ ひとの かんけいで なにか あったの？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ううん、みんな いい ひとだよ。れんしゅうも そんなに きびしく ないし。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、けがでも した？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "それも ちがうんだ。ほんとうは つづけたかったんだけど、がくひを はらうために アルバイトを ふやさないと いけなくて。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうか。たいへんだね。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの がくせいは どうして サッカーサークルを やめましたか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l2-1.mp3",
+                                    "choices": [
+                                        "人間関係《にんげんかんけい》がうまくいかなかったから",
+                                        "練習《れんしゅう》がきびしかったから",
+                                        "アルバイトの時間《じかん》を増《ふ》やす必要《ひつよう》があるから",
+                                        "けがをしたから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Bukan hubungan, latihan, atau cedera; ia perlu menambah jam kerja sambilan untuk biaya kuliah."
+                                },
+                                {
+                                    "id": "l2-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。おんなの ひとと おとこの ひとが、あたらしい スマートフォンに ついて はなしています。おんなの ひとは どうして この きしゅに きめましたか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あたらしいの かったんだ。どれに したの？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "これ。さいしょは、きょねんの モデルが やすいから それに しようと おもったんだけど。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "カメラが いいって きいたけど、しゃしん よく とるの？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "わたしは そんなに とらないの。それより しゅっちょうが おおいから、じゅうでんが できない ときでも こまらない ほうが いいと おもって。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "へえ。がめんは ちょっと ちいさいね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "うん。でも、きに ならないよ。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは どうして この きしゅに きめましたか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l2-2.mp3",
+                                    "choices": [
+                                        "値段《ねだん》が安《やす》いから",
+                                        "カメラがきれいだから",
+                                        "電池《でんち》が長持《ながも》ちするから",
+                                        "画面《がめん》が大《おお》きいから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Karena sering dinas luar, ia memilih yang baterainya awet."
+                                },
+                                {
+                                    "id": "l2-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。おんなの ひとと おとこの ひとが はなしています。おとこの ひとは どうして ひっこすことに しましたか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ひっこすんだって？ いまの へや、えきから ちかくて べんりじゃない？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "うん、かいしゃにも ちかいんだけどね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "やちんが たかいの？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "やちんは やすい ほうだと おもう。へやが せまいのも、がまんできるんだ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、どうして？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "となりの おとが ひどくて、よる ぜんぜん ねむれないんだ。それが いちばん つらくて。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの ひとは どうして ひっこすことに しましたか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l2-3.mp3",
+                                    "choices": [
+                                        "隣《となり》の音《おと》がうるさいから",
+                                        "駅《えき》から遠《とお》いから",
+                                        "部屋《へや》がせまいから",
+                                        "家賃《やちん》が高《たか》いから"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Letak dekat stasiun, sewa murah, sempit masih tertahankan; yang terberat suara tetangga."
+                                },
+                                {
+                                    "id": "l2-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。だいがくで せんせいと おんなの がくせいが はなしています。せんせいは おんなの がくせいの はっぴょうの どこが よくないと いっていますか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "きのうの はっぴょうの れんしゅう、きいたよ。ないようは よく わかったよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ありがとう ございます。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ただ、スライドの もじが ちいさくて、うしろの せきからは よめないと おもう。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あ、そうですか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "こえは おおきくて ききやすかったから、そこは このままで いいよ。もじを おおきく して みて。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "はい、なおして みます。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "せんせいは おんなの がくせいの はっぴょうの どこが よくないと いっていますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l2-4.mp3",
+                                    "choices": [
+                                        "内容《ないよう》が分《わ》かりにくい点《てん》",
+                                        "スライドの文字《もじ》が小《ちい》さい点《てん》",
+                                        "声《こえ》が小《ちい》さい点《てん》",
+                                        "説明《せつめい》が短《みじか》すぎる点《てん》"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Isi dan suara sudah baik; yang bermasalah ukuran huruf di slide."
+                                },
+                                {
+                                    "id": "l2-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。おとこの ひとと おんなの ひとが、かいしゃの しょくどうに ついて はなしています。おんなの ひとは どうして さいきん しょくどうを りようしなく なりましたか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "さいきん しょくどうで みかけないね。こんでるから？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "こんでるのは まえからだし、もう なれたよ。ねだんも やすいし、ふまんは ないんだけど。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "じゃあ、あじが かわった？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ううん。じつは、せんげつの けんこうしんだんで やさいが たりないって いわれて、じぶんで おべんとうを つくるように なったの。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは どうして さいきん しょくどうを りようしなく なりましたか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l2-5.mp3",
+                                    "choices": [
+                                        "自分《じぶん》でお弁当《べんとう》を作《つく》っているから",
+                                        "混《こ》んでいるから",
+                                        "値段《ねだん》が高《たか》くなったから",
+                                        "味《あじ》が変《か》わったから"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Setelah cek kesehatan disuruh makan lebih banyak sayur, ia mulai membawa bekal sendiri."
+                                },
+                                {
+                                    "id": "l2-6",
+                                    "no": 6,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ろくばん。おとこの ひとと おんなの ひとが、りょこうに ついて はなしています。おんなの ひとは どうして りょこうに いけなく なりましたか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "らいしゅうの りょこう、たのしみだね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "それが ごめん、いけなく なっちゃった。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "え、しごと？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ううん、しごとは ちょうせいできたんだけど。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "じゃあ、たいちょうが わるいの？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "それも だいじょうぶ。じつは、いぬを あずける ところが みつからなくて。ペットホテルも みに いったんだけど、あの こ、しらない ところだと ごはんを たべなく なっちゃうの。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは どうして りょこうに いけなく なりましたか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l2-6.mp3",
+                                    "choices": [
+                                        "仕事《しごと》が忙《いそが》しいから",
+                                        "体《からだ》の具合《ぐあい》が悪《わる》いから",
+                                        "犬《いぬ》を預《あず》ける所《ところ》がないから",
+                                        "旅行《りょこう》の費用《ひよう》が足《た》りないから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Kerja sudah diatur dan sehat; masalahnya tidak ada tempat menitipkan anjing."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l3",
+                    "label": "問題３",
+                    "instruction": "問題《もんだい》3では、問題用紙《もんだいようし》に 何《なに》も いんさつされていません。この問題《もんだい》は、ぜんたいとして どんな ないようかを 聞《き》く問題《もんだい》です。話《はなし》の前《まえ》に質問《しつもん》はありません。まず 話《はなし》を 聞《き》いてください。それから、質問《しつもん》と せんたくしを 聞《き》いて、1から4の 中《なか》から、最《もっと》もよいものを 一《ひと》つえらんでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l3-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい さん。もんだい さんでは、もんだいようしに なにも いんさつされて いません。この もんだいは、ぜんたいとして どんな ないようかを きく もんだいです。はなしの まえに しつもんは ありません。まず はなしを きいて ください。それから、しつもんと せんたくしを きいて、いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l3-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l3-ex",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。おとこの ひとが かいしゃの どうりょうに でんわを しています。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "もしもし、やまだです。いま えきに ついたんですが、でんしゃが じこで とまって しまって、いつ うごくか わからないんです。かいぎに すこし おくれるかも しれません。ぶちょうに つたえて おいて もらえませんか。",
+                                "pause": 1.5
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "やまださんが いちばん いいたい ことは なんですか。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "1。でんしゃが じこで とまった こと。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "2。かいぎに おくれそうな こと。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "3。ぶちょうに あいたい こと。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "4。もう えきに ついた こと。"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l3-ex.mp3",
+                        "choices": [
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "answer": 1,
+                        "type": "listening",
+                        "hidden_choices": true
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l3-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。しかいんの よやくに ついての、るすばんでんわの メッセージを きいて います。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "もしもし、やまもとです。らいしゅうの かようびに よやくを している けんですが、じつは その ひに たいせつな かいぎが はいって しまいました。たいへん もうしわけ ありませんが、すいようび いこうに かえて いただけないでしょうか。すいようびは ごごなら だいじょうぶです。また、あとで おでんわ します。よろしく おねがい します。",
+                                            "pause": 1.5
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "やまもとさんが いちばん いいたい ことは なんですか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。よやくを とりけしたい こと",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。かいぎに でられない こと",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。よやくの ひを かえて ほしい こと",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。すいようびに かいぎが ある こと"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l3-1.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Intinya meminta jadwal diundur ke Rabu atau sesudahnya.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l3-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。おとこの がくせいと おんなの がくせいが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "えきまえの カフェで、アルバイトを ぼしゅうして いたよ。やって みない？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "カフェかあ。おしゃれで たのしそう。じきゅうも いいし。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "でしょ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "でも、どにちは かならず でなきゃ いけないんだよね。サークルの かつどうが あるから むずかしくて。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "へいじつだけの ひとも いるらしいよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ほんとう？ じゃあ、きいて みようかな。",
+                                            "pause": 1.5
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの がくせいは この アルバイトに ついて どう おもっていますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。たのしそうなので、もうしこむ つもりだ",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。じょうけんが あえば、やって みたい",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。どにちに はたらけないので、あきらめる",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。じきゅうが やすいので、やりたくない"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l3-2.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Tertarik; kalau ada pilihan hari kerja biasa saja, ia mau mencoba (条件が合えば).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l3-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。ラジオで レポーターが おんなの ひとに、じてんしゃ つうきんに ついて ききます。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "じてんしゃで つうきんして、いちねんに なるそうですね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ええ。さいしょは けんこうの ためだったんですが、でんしゃより はやく つくことが わかって。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あめの ひは たいへんでしょう。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうですね、そういう ひは やっぱり でんしゃに のります。でも、それは ねんに すうかいですし、からだも かるく なって、いまは まいにちが たのしいんです。",
+                                            "pause": 1.5
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは じてんしゃ つうきんに ついて どう おもっていますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。あめの ひが おおいので、やめたい",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。でんしゃの ほうが はやいので、つづけたくない",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。けんこうに ならないので、いみが ない",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。すこし たいへんだが、つづけて よかった"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l3-3.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Hujan hanya beberapa kali setahun; badan terasa ringan dan menyenangkan → senang melanjutkan.",
+                                    "hidden_choices": true
+                                }
+                            ]
+                        }
+                    ],
+                    "before": {
+                        "id": "l3-break",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "ちょっと やすみましょう。",
+                                "pause": 8
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l3-break.mp3"
+                    },
+                    "memo": true
+                },
+                {
+                    "id": "l4",
+                    "label": "問題４",
+                    "instruction": "問題《もんだい》4では、えを 見《み》ながら 質問《しつもん》を 聞《き》いてください。やじるし（➡）の 人《ひと》は 何《なん》と 言《い》いますか。1から3の 中《なか》から、最《もっと》もよいものを 一《ひと》つえらんでください。",
+                    "gap": 6,
+                    "intro": {
+                        "id": "l4-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい よん。もんだい よんでは、えを みながら しつもんを きいて ください。やじるしの ひとは なんと いいますか。いちから さんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l4-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l4-ex",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。レストランで りょうりが なかなか きません。みせの ひとに なんと いいますか。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "1。すみません、ちゅうもんした りょうり、まだなんですが。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "2。すみません、ちゅうもんを とりけしても いいですか。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "3。すみません、りょうりを おもちしました。"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l4-ex.mp3",
+                        "choices": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "answer": 0,
+                        "type": "listening",
+                        "hidden_choices": true,
+                        "image": {
+                            "image": "/images/jlpt-mock/n3/l4-ex.png",
+                            "alt": "Restoran: wanita duduk di tengah meja sambil menoleh ke pelayan; pelayan di kanan membawa piring untuk meja lain"
+                        },
+                        "arrow": {
+                            "x": 50,
+                            "y": 9
+                        }
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l4-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。ともだちに かりた カメラを こわして しまいました。ともだちに なんと いいますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。ごめん、かりた カメラ、こわしちゃったんだ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。ごめん、カメラ、こわれて いたよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。ごめん、カメラ、こわして もらったんだ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l4-1.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Mengaku merusak barang pinjaman: 壊しちゃったんだ.",
+                                    "hidden_choices": true,
+                                    "image": {
+                                        "image": "/images/jlpt-mock/n3/l4-1.png",
+                                        "alt": "Dua teman di ruang tamu: pria di tengah memegang kamera rusak dengan wajah menyesal, teman di kanan menatapnya"
+                                    },
+                                    "arrow": {
+                                        "x": 50,
+                                        "y": 9
+                                    }
+                                },
+                                {
+                                    "id": "l4-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。せんせいに もんだいの いみを きいて ほしいです。せんせいに なんと いいますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。せんせい、この もんだいの いみを おしえて さしあげます。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。せんせい、この もんだいの いみを おしえて あげましょうか。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。せんせい、この もんだいの いみを おしえて いただけませんか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l4-2.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Meminta dengan hormat kepada guru: 教えていただけませんか.",
+                                    "hidden_choices": true,
+                                    "image": {
+                                        "image": "/images/jlpt-mock/n3/l4-2.png",
+                                        "alt": "Ruang guru: mahasiswa pria di tengah memegang buku latihan dengan raut bingung; guru wanita duduk di meja di kanan"
+                                    },
+                                    "arrow": {
+                                        "x": 50,
+                                        "y": 9
+                                    }
+                                },
+                                {
+                                    "id": "l4-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。とりひきさきの ひとに でんわで、あしたの うちあわせの じかんを かえて ほしいと つたえます。なんと いいますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。あしたの うちあわせの じかんが かわりました。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。あしたの うちあわせの じかんを かえて いただけませんか。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。あしたの うちあわせの じかんを かえて さしあげます。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l4-3.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Meminta klien mengubah jam dengan sopan: 変えていただけませんか.",
+                                    "hidden_choices": true,
+                                    "image": {
+                                        "image": "/images/jlpt-mock/n3/l4-3.png",
+                                        "alt": "Kantor: wanita di tengah duduk di meja sambil menelepon dan membuka kalender di meja"
+                                    },
+                                    "arrow": {
+                                        "x": 50,
+                                        "y": 9
+                                    }
+                                },
+                                {
+                                    "id": "l4-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。でんしゃの なかで、となりの ひとが ハンカチを おとしました。なんと いいますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。あの、ハンカチが おちるでしょう。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。あの、ハンカチを おとして あげます。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。あの、ハンカチ、おとしましたよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l4-4.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Memberi tahu orang yang menjatuhkan sesuatu: 落としましたよ.",
+                                    "hidden_choices": true,
+                                    "image": {
+                                        "image": "/images/jlpt-mock/n3/l4-4.png",
+                                        "alt": "Dalam kereta: wanita duduk di tengah menoleh ke penumpang di sebelah kanan; sapu tangan jatuh di lantai dekat kaki penumpang itu"
+                                    },
+                                    "arrow": {
+                                        "x": 50,
+                                        "y": 9
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l5",
+                    "label": "問題５",
+                    "instruction": "問題《もんだい》5では、問題用紙《もんだいようし》に 何《なに》も いんさつされていません。まず 文《ぶん》を 聞《き》いてください。それから、そのへんじを 聞《き》いて、1から3の 中《なか》から、最《もっと》もよいものを 一《ひと》つえらんでください。",
+                    "gap": 6,
+                    "intro": {
+                        "id": "l5-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい ご。もんだい ごでは、もんだいようしに なにも いんさつされて いません。まず ぶんを きいて ください。それから、そのへんじを きいて、いちから さんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l5-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l5-ex",
+                        "audio_text": [
+                            {
+                                "speaker": "male",
+                                "text": "すみません、いま、なんじか わかりますか。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "1。ええと、さんじ じゅっぷんです。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "2。ええ。なんですか。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "3。とけいは あそこですよ。"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n3-test-1/l5-ex.mp3",
+                        "choices": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "answer": 0,
+                        "type": "listening",
+                        "hidden_choices": true
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l5-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "やまださん、あしたの かいぎの しりょうを じゅんびして もらえますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。はい、いつまでに すれば いいですか。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。はい、おねがいします。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いえ、まだ だいじょうぶです。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-1.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Menerima permintaan lalu menanyakan tenggat.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "しゅうまつ、うちに あそびに こない？",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。うん、あそびに いったよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。ううん、あそびに こないで。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。ごめん、しゅうまつは よてい が あって。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-2.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Menolak ajakan dengan sopan.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "すみません、この にもつ、ここに おいても よろしいですか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。ええ、おいて ありますよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。ええ、どうぞ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いいえ、ありがとう ございます。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-3.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Memberi izin: ええ、どうぞ.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "せんしゅうの テスト、どうだった？",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。おもったより できたよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。らいしゅう あるんだって。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。せんせいに きいて みるよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-4.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Ditanya hasil tes → ceritakan hasilnya.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "きょうは かさが いりそうですね。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。ええ、あさから はれて いますね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。ええ、ゆうがたから ふるそうですよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いいえ、かさは もって いません。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-5.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Setuju dan menambah informasi: katanya sore hujan.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-6",
+                                    "no": 6,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ろくばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "おさきに しつれいします。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。おつかれさまでした。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。おだいじに。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。いってらっしゃい。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-6.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Sapaan saat rekan pulang lebih dulu: お疲れさまでした.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-7",
+                                    "no": 7,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ななばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "わたしの せつめい、わかりにくかったですか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。ええ、わかりやすいですね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。いえ、わかりにくいと おもいます。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いえ、とても わかりやすかったです。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-7.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Pertanyaan negatif: \"tidak, sangat mudah dipahami\".",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-8",
+                                    "no": 8,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "はちばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "かいぎしつ、いまから つかって いいですか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。つかって いないと いいですね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。すみません、さんじまで よやくが はいって いるんです。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。ええ、つかいたかったです。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n3-test-1/l5-8.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Menolak karena ruangan sudah dipesan sampai jam tiga.",
+                                    "hidden_choices": true
+                                }
+                            ]
+                        }
+                    ],
+                    "memo": true
+                }
+            ]
+        },
+        {
+            "key": "vocab",
+            "kind": "reading",
+            "minutes": 30,
+            "jp": "言語知識（文字・語彙）",
+            "title": {
+                "id": "Pengetahuan Bahasa (Huruf & Kosakata)",
+                "en": "Language Knowledge (Vocabulary)"
+            },
+            "mondai": [
+                {
+                    "id": "v1",
+                    "label": "問題１",
+                    "instruction": "＿＿＿のことばの読み方として最もよいものを、1・2・3・4から一つ\nえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v1-1",
+                                    "no": 1,
+                                    "type": "choice",
+                                    "stem": "昨日《きのう》の会議《かいぎ》で、新《あたら》しい計画《けいかく》が__決定__された。",
+                                    "choices": [
+                                        "けつてい",
+                                        "けってい",
+                                        "きってい",
+                                        "けいてい"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "決定 = けってい (keputusan). 「決」dibaca けっ di depan て (促音便), bukan けつ."
+                                },
+                                {
+                                    "id": "v1-2",
+                                    "no": 2,
+                                    "type": "choice",
+                                    "stem": "この町《まち》は__人口__が年々《ねんねん》増《ふ》えている。",
+                                    "choices": [
+                                        "じんこう",
+                                        "にんこう",
+                                        "じんくち",
+                                        "ひとこう"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "人口 = じんこう (jumlah penduduk). 人 dibaca じん di sini, bukan にん."
+                                },
+                                {
+                                    "id": "v1-3",
+                                    "no": 3,
+                                    "type": "choice",
+                                    "stem": "山《やま》の上《うえ》から美《うつく》しい__景色__を眺《なが》めた。",
+                                    "choices": [
+                                        "けいしき",
+                                        "けいしょく",
+                                        "けしょく",
+                                        "けしき"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "景色 = けしき (pemandangan). Bacaan khusus; 景 dibaca け, bukan けい."
+                                },
+                                {
+                                    "id": "v1-4",
+                                    "no": 4,
+                                    "type": "choice",
+                                    "stem": "彼《かれ》はどんなときでも__冷静__に判断《はんだん》する。",
+                                    "choices": [
+                                        "れいぜい",
+                                        "れせい",
+                                        "れいせい",
+                                        "れいじょう"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "冷静 = れいせい (tenang). 静 dibaca せい, bukan ぜい/じょう."
+                                },
+                                {
+                                    "id": "v1-5",
+                                    "no": 5,
+                                    "type": "choice",
+                                    "stem": "学校《がっこう》の__規則__を守《まも》らなければならない。",
+                                    "choices": [
+                                        "きぞく",
+                                        "きそく",
+                                        "ぎそく",
+                                        "きそう"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "規則 = きそく (peraturan). 貴族 (きぞく) adalah pengecoh bunyi."
+                                },
+                                {
+                                    "id": "v1-6",
+                                    "no": 6,
+                                    "type": "choice",
+                                    "stem": "この会社《かいしゃ》は外国《がいこく》から食品《しょくひん》を__輸入__している。",
+                                    "choices": [
+                                        "ゆうにゅう",
+                                        "ゆにゅ",
+                                        "ゆにゅう",
+                                        "ゆいにゅう"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "輸入 = ゆにゅう (impor). 輸 dibaca ゆ (pendek), にゅう panjang."
+                                },
+                                {
+                                    "id": "v1-7",
+                                    "no": 7,
+                                    "type": "choice",
+                                    "stem": "駅前《えきまえ》の店《みせ》は夜《よる》十一時《じゅういちじ》まで__営業__している。",
+                                    "choices": [
+                                        "えいごう",
+                                        "えいぎょ",
+                                        "えいきょう",
+                                        "えいぎょう"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "営業 = えいぎょう (beroperasi/buka usaha). えいきょう = 影響 (pengaruh) adalah jebakan."
+                                },
+                                {
+                                    "id": "v1-8",
+                                    "no": 8,
+                                    "type": "choice",
+                                    "stem": "交通《こうつう》__事故__のため、電車《でんしゃ》が遅《おく》れている。",
+                                    "choices": [
+                                        "じこ",
+                                        "じご",
+                                        "しこ",
+                                        "ずこ"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "事故 = じこ (kecelakaan)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v2",
+                    "label": "問題２",
+                    "instruction": "＿＿＿のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つ\nえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v2-9",
+                                    "no": 9,
+                                    "type": "choice",
+                                    "stem": "外国《がいこく》の文化《ぶんか》を__けんきゅう__している。",
+                                    "choices": [
+                                        "研完",
+                                        "研宮",
+                                        "研究",
+                                        "研穴"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "けんきゅう = 研究 (penelitian). 究 bukan 完/宮/穴 meski mirip."
+                                },
+                                {
+                                    "id": "v2-10",
+                                    "no": 10,
+                                    "type": "choice",
+                                    "stem": "彼女《かのじょ》は__ゆうめい__な歌手《かしゅ》だ。",
+                                    "choices": [
+                                        "有名",
+                                        "友名",
+                                        "有各",
+                                        "友各"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "ゆうめい = 有名 (terkenal). 有 (ada) + 名 (nama)."
+                                },
+                                {
+                                    "id": "v2-11",
+                                    "no": 11,
+                                    "type": "choice",
+                                    "stem": "先生《せんせい》が文法《ぶんぽう》を__せつめい__してくれた。",
+                                    "choices": [
+                                        "説朋",
+                                        "設明",
+                                        "説名",
+                                        "説明"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "せつめい = 説明 (penjelasan). 説 (bicara/menjelaskan) + 明 (jelas)."
+                                },
+                                {
+                                    "id": "v2-12",
+                                    "no": 12,
+                                    "type": "choice",
+                                    "stem": "新聞《しんぶん》に地震《じしん》の__きじ__が出《で》ていた。",
+                                    "choices": [
+                                        "紀事",
+                                        "記事",
+                                        "記字",
+                                        "紀字"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "きじ = 記事 (artikel). 記 (mencatat) + 事 (hal)."
+                                },
+                                {
+                                    "id": "v2-13",
+                                    "no": 13,
+                                    "type": "choice",
+                                    "stem": "__でんち__が切《き》れて、時計《とけい》が止《と》まった。",
+                                    "choices": [
+                                        "電地",
+                                        "雷池",
+                                        "電池",
+                                        "雷地"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "でんち = 電池 (baterai). 電 (listrik) + 池 (kolam, merujuk wadah)."
+                                },
+                                {
+                                    "id": "v2-14",
+                                    "no": 14,
+                                    "type": "choice",
+                                    "stem": "京都《きょうと》へ__かんこう__に行《い》った。",
+                                    "choices": [
+                                        "観光",
+                                        "勧光",
+                                        "観先",
+                                        "勧先"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "かんこう = 観光 (wisata). 観 (melihat) + 光 (cahaya/pemandangan)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v3",
+                    "label": "問題３",
+                    "instruction": "（　　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v3-15",
+                                    "no": 15,
+                                    "type": "choice",
+                                    "stem": "道《みち》が混《こ》んでいて、約束《やくそく》の時間《じかん》に（　　）してしまった。",
+                                    "choices": [
+                                        "延期《えんき》",
+                                        "欠席《けっせき》",
+                                        "遅刻《ちこく》",
+                                        "中止《ちゅうし》"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "時間に遅刻する = terlambat. 延期 (ditunda), 欠席 (absen), 中止 (dibatalkan) tidak cocok dengan 'terlambat pada waktu janji'."
+                                },
+                                {
+                                    "id": "v3-16",
+                                    "no": 16,
+                                    "type": "choice",
+                                    "stem": "この椅子《いす》は座《すわ》り心地《ごこち》がよくて、とても（　　）だ。",
+                                    "choices": [
+                                        "快適《かいてき》",
+                                        "簡単《かんたん》",
+                                        "確実《かくじつ》",
+                                        "十分《じゅうぶん》"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "座り心地がよい → 快適だ (nyaman)."
+                                },
+                                {
+                                    "id": "v3-17",
+                                    "no": 17,
+                                    "type": "choice",
+                                    "stem": "国際《こくさい》会議《かいぎ》に出席《しゅっせき》するため、来週《らいしゅう》から（　　）に行《い》く予定《よてい》だ。",
+                                    "choices": [
+                                        "留学《りゅうがく》",
+                                        "出張《しゅっちょう》",
+                                        "通学《つうがく》",
+                                        "運動《うんどう》"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "仕事で会議に出るために行く = 出張 (perjalanan dinas)."
+                                },
+                                {
+                                    "id": "v3-18",
+                                    "no": 18,
+                                    "type": "choice",
+                                    "stem": "雨《あめ》が降《ふ》りそうだったので、洗濯物《せんたくもの》を急《いそ》いで（　　）。",
+                                    "choices": [
+                                        "とりあげた",
+                                        "とりけした",
+                                        "とりかえた",
+                                        "とりこんだ"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "洗濯物をとりこむ = mengangkat jemuran masuk rumah."
+                                },
+                                {
+                                    "id": "v3-19",
+                                    "no": 19,
+                                    "type": "choice",
+                                    "stem": "彼《かれ》の意見《いけん》は正《ただ》しいと思《おも》うので、私《わたし》も（　　）だ。",
+                                    "choices": [
+                                        "反対《はんたい》",
+                                        "賛成《さんせい》",
+                                        "心配《しんぱい》",
+                                        "相談《そうだん》"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "意見が正しい → 賛成 (setuju). 反対 berlawanan."
+                                },
+                                {
+                                    "id": "v3-20",
+                                    "no": 20,
+                                    "type": "choice",
+                                    "stem": "この漫画《まんが》は子《こ》どもだけでなく、大人《おとな》にも（　　）がある。",
+                                    "choices": [
+                                        "規則《きそく》",
+                                        "心配《しんぱい》",
+                                        "人気《にんき》",
+                                        "予定《よてい》"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "人気がある = populer."
+                                },
+                                {
+                                    "id": "v3-21",
+                                    "no": 21,
+                                    "type": "choice",
+                                    "stem": "机《つくえ》の上《うえ》の書類《しょるい》を（　　）して、必要《ひつよう》なものだけを残《のこ》した。",
+                                    "choices": [
+                                        "整理《せいり》",
+                                        "注意《ちゅうい》",
+                                        "参加《さんか》",
+                                        "説明《せつめい》"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "書類を整理する = merapikan/menyortir dokumen."
+                                },
+                                {
+                                    "id": "v3-22",
+                                    "no": 22,
+                                    "type": "choice",
+                                    "stem": "かばんの中《なか》がごちゃごちゃで、探《さが》している鍵《かぎ》が（　　）見《み》つからない。",
+                                    "choices": [
+                                        "たまに",
+                                        "ぜひ",
+                                        "ちょうど",
+                                        "なかなか"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "なかなか〜ない = sulit/tidak kunjung …"
+                                },
+                                {
+                                    "id": "v3-23",
+                                    "no": 23,
+                                    "type": "choice",
+                                    "stem": "一日中《いちにちじゅう》歩《ある》いて疲《つか》れたので、その夜《よる》は（　　）眠《ねむ》れた。",
+                                    "choices": [
+                                        "ぴかぴか",
+                                        "ぐっすり",
+                                        "ごろごろ",
+                                        "ばたばた"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "ぐっすり眠る = tidur nyenyak."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v4",
+                    "label": "問題４",
+                    "instruction": "＿＿＿に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v4-24",
+                                    "no": 24,
+                                    "type": "choice",
+                                    "stem": "医者《いしゃ》は連絡《れんらく》を受《う》けて、__ただちに__病院《びょういん》を出《で》た。",
+                                    "choices": [
+                                        "あとで",
+                                        "ゆっくり",
+                                        "すぐに",
+                                        "ひとりで"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "ただちに = すぐに (segera)."
+                                },
+                                {
+                                    "id": "v4-25",
+                                    "no": 25,
+                                    "type": "choice",
+                                    "stem": "昨日《きのう》見《み》た映画《えいが》は、__つまらなかった__。",
+                                    "choices": [
+                                        "むずかしくなかった",
+                                        "おもしろくなかった",
+                                        "おもしろかった",
+                                        "みじかかった"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "つまらない = おもしろくない (membosankan)."
+                                },
+                                {
+                                    "id": "v4-26",
+                                    "no": 26,
+                                    "type": "choice",
+                                    "stem": "午後《ごご》から天気《てんき》が__くもる__そうだ。",
+                                    "choices": [
+                                        "雲《くも》が多《おお》くなる",
+                                        "雨《あめ》がやむ",
+                                        "風《かぜ》が強《つよ》くなる",
+                                        "暑《あつ》くなる"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "くもる = langit jadi berawan (雲が多くなる)."
+                                },
+                                {
+                                    "id": "v4-27",
+                                    "no": 27,
+                                    "type": "choice",
+                                    "stem": "この店《みせ》は__評判《ひょうばん》がいい__。",
+                                    "choices": [
+                                        "店《みせ》が新《あたら》しくなった",
+                                        "値段《ねだん》が安《やす》くなった",
+                                        "客《きゃく》が少《すく》ない",
+                                        "たくさんの人《ひと》がよいと言《い》っている"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "評判がいい = reputasinya baik = banyak orang menilai baik."
+                                },
+                                {
+                                    "id": "v4-28",
+                                    "no": 28,
+                                    "type": "choice",
+                                    "stem": "彼女《かのじょ》は__うっかり__鍵《かぎ》を忘《わす》れてしまった。",
+                                    "choices": [
+                                        "わざと",
+                                        "急《いそ》いで",
+                                        "気《き》をつけずに",
+                                        "すぐに"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "うっかり = tanpa sengaja karena kurang hati-hati (気をつけずに)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v5",
+                    "label": "問題５",
+                    "instruction": "つぎのことばの使い方として最もよいものを、1・2・3・4から一つ\nえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v5-29",
+                                    "no": 29,
+                                    "type": "choice",
+                                    "stem": "ぶつかる",
+                                    "choices": [
+                                        "友達《ともだち》と駅《えき》の前《まえ》で__ぶつかる__約束《やくそく》をした。",
+                                        "宿題《しゅくだい》が多《おお》くて、毎日《まいにち》__ぶつかって__いる。",
+                                        "雨《あめ》が弱《よわ》くなって、道《みち》に__ぶつかった__。",
+                                        "自転車《じてんしゃ》が電柱《でんちゅう》に__ぶつかって__、けがをした。"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "ぶつかる = menabrak/bertabrakan secara fisik. Hanya kalimat 4 yang benar."
+                                },
+                                {
+                                    "id": "v5-30",
+                                    "no": 30,
+                                    "type": "choice",
+                                    "stem": "あきらめる",
+                                    "choices": [
+                                        "彼《かれ》は新《あたら》しい仕事《しごと》を始《はじ》めたくて、__あきらめた__。",
+                                        "大《おお》きな荷物《にもつ》を持《も》って、駅《えき》まで__あきらめた__。",
+                                        "雪《ゆき》がひどくて、山《やま》に登《のぼ》るのを__あきらめた__。",
+                                        "先生《せんせい》にほめられて、とても__あきらめた__。"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "あきらめる = menyerah/mengurungkan niat."
+                                },
+                                {
+                                    "id": "v5-31",
+                                    "no": 31,
+                                    "type": "choice",
+                                    "stem": "退屈《たいくつ》",
+                                    "choices": [
+                                        "この町《まち》は静《しず》かで空気《くうき》もきれいなので、とても__退屈《たいくつ》__だ。",
+                                        "一日中《いちにちじゅう》家《いえ》にいて何《なに》もすることがなく、__退屈《たいくつ》__だった。",
+                                        "__退屈《たいくつ》__な電車《でんしゃ》に乗《の》ったので、早《はや》く着《つ》いた。",
+                                        "急《きゅう》に雨《あめ》が降《ふ》ってきて、__退屈《たいくつ》__した。"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "退屈 = bosan karena tidak ada yang dilakukan."
+                                },
+                                {
+                                    "id": "v5-32",
+                                    "no": 32,
+                                    "type": "choice",
+                                    "stem": "きっかけ",
+                                    "choices": [
+                                        "日本《にほん》のアニメを見《み》たのが、日本語《にほんご》を勉強《べんきょう》する__きっかけ__になった。",
+                                        "この荷物《にもつ》を__きっかけ__に入《い》れてください。",
+                                        "__きっかけ__して、つぎの駅《えき》で降《お》りた。",
+                                        "夕食《ゆうしょく》の__きっかけ__は七時《しちじ》からです。"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "きっかけ = pemicu/awal mula."
+                                },
+                                {
+                                    "id": "v5-33",
+                                    "no": 33,
+                                    "type": "choice",
+                                    "stem": "豊《ゆた》か",
+                                    "choices": [
+                                        "彼《かれ》は足《あし》が__豊《ゆた》か__で、百《ひゃく》メートルを十秒《じゅうびょう》で走《はし》る。",
+                                        "朝《あさ》から何《なに》も食《た》べていないので、おなかが__豊《ゆた》か__だ。",
+                                        "この辺《あた》りは自然《しぜん》が__豊《ゆた》か__で、いろいろな鳥《とり》が見《み》られる。",
+                                        "このシャツは値段《ねだん》が__豊《ゆた》か__なので、買《か》えない。"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "豊か = kaya/melimpah (自然が豊か)."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "grammar",
+            "kind": "reading",
+            "minutes": 70,
+            "jp": "言語知識（文法）・読解",
+            "title": {
+                "id": "Pengetahuan Bahasa (Tata Bahasa) & Membaca",
+                "en": "Language Knowledge (Grammar) & Reading"
+            },
+            "mondai": [
+                {
+                    "id": "g1",
+                    "label": "もんだい１",
+                    "instruction": "つぎの文《ぶん》の（　　）に入《い》れるのに最《もっと》もよいものを、1・2・3・4から\n一《ひと》つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g1-1",
+                                    "no": 1,
+                                    "type": "choice",
+                                    "stem": "昨日《きのう》は夜《よる》遅《おそ》くまでゲームをしていた（　　）、今朝《けさ》は寝坊《ねぼう》してしまった。",
+                                    "choices": [
+                                        "おかげで",
+                                        "くせに",
+                                        "せいで",
+                                        "うちに"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "〜せいで = akibat buruk yang disebabkan sesuatu (begadang → kesiangan). 〜おかげで dipakai untuk hasil baik; 〜くせに = \"padahal\" (celaan) dan 〜うちに = \"selagi\" tidak cocok dengan hubungan sebab-akibat ini."
+                                },
+                                {
+                                    "id": "g1-2",
+                                    "no": 2,
+                                    "type": "choice",
+                                    "stem": "兄《あに》は休《やす》みの日《ひ》になると、一日中《いちにちじゅう》寝《ね》て（　　）いる。",
+                                    "choices": [
+                                        "ばかり",
+                                        "だけ",
+                                        "ほど",
+                                        "しか"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "V-て + ばかりいる = terus-menerus hanya melakukan V (kebiasaan yang kurang baik). だけ/ほど/しか tidak bisa menyambung dengan いる dalam arti ini."
+                                },
+                                {
+                                    "id": "g1-3",
+                                    "no": 3,
+                                    "type": "choice",
+                                    "stem": "電車《でんしゃ》のドアが開《あ》いた（　　）、たくさんの人《ひと》が降《お》りてきた。",
+                                    "choices": [
+                                        "たびに",
+                                        "うちに",
+                                        "あげく",
+                                        "とたん"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "V-た + とたん(に) = begitu V terjadi, langsung muncul kejadian lain. 〜たびに memakai bentuk kamus (開くたびに), 〜うちに = selagi, 〜あげく = akhirnya setelah proses panjang."
+                                },
+                                {
+                                    "id": "g1-4",
+                                    "no": 4,
+                                    "type": "choice",
+                                    "stem": "山田《やまだ》さんの話《はなし》（　　）、来月《らいげつ》から駅前《えきまえ》に新《あたら》しい図書館《としょかん》ができるそうだ。",
+                                    "choices": [
+                                        "によって",
+                                        "によると",
+                                        "にとって",
+                                        "に対《たい》して"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "〜によると 〜そうだ = sumber kabar yang didengar (伝聞). 〜によって = tergantung/oleh, 〜にとって = bagi, 〜に対して = terhadap; tidak membentuk pola sumber berita."
+                                },
+                                {
+                                    "id": "g1-5",
+                                    "no": 5,
+                                    "type": "choice",
+                                    "stem": "A「昨日《きのう》の映画《えいが》、どうだった？」\nB「泣《な》ける映画《えいが》だと聞《き》いていたけど、思《おも》った（　　）おもしろくなかったよ。」",
+                                    "choices": [
+                                        "だけ",
+                                        "ばかり",
+                                        "ほど",
+                                        "ごろ"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "思ったほど〜ない = \"tidak sebagus yang kukira\" (〜ほど + negatif membandingkan dengan harapan). だけ/ばかり/ごろ tidak membentuk perbandingan seperti ini."
+                                },
+                                {
+                                    "id": "g1-6",
+                                    "no": 6,
+                                    "type": "choice",
+                                    "stem": "母《はは》は私《わたし》に、毎日《まいにち》30分《ふん》は本《ほん》を読《よ》む（　　）言《い》いました。",
+                                    "choices": [
+                                        "ように",
+                                        "ことと",
+                                        "ことに",
+                                        "ためと"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "〜ように言う = menyuruh/menasihati agar melakukan sesuatu (perintah tak langsung). Bentuk lain tidak dipakai untuk menyampaikan perintah secara tidak langsung."
+                                },
+                                {
+                                    "id": "g1-7",
+                                    "no": 7,
+                                    "type": "choice",
+                                    "stem": "（会社《かいしゃ》で）\n客《きゃく》「社長《しゃちょう》にお会《あ》いしたいのですが。」\n受付《うけつけ》「申《もう》し訳《わけ》ございません。社長《しゃちょう》は今《いま》、会議《かいぎ》に（　　）。」",
+                                    "choices": [
+                                        "出《で》ていらっしゃいます",
+                                        "出《で》ております",
+                                        "お出《で》になります",
+                                        "出《で》られます"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Resepsionis membicarakan atasan di perusahaannya sendiri kepada tamu (luar) → pakai bentuk merendah/sopan 〜ております. いらっしゃいます / お出になります / 出られます meninggikan pihak sendiri, salah untuk hubungan uchi–soto."
+                                },
+                                {
+                                    "id": "g1-8",
+                                    "no": 8,
+                                    "type": "choice",
+                                    "stem": "家《いえ》を出《で》ようとした（　　）、友達《ともだち》から電話《でんわ》がかかってきた。",
+                                    "choices": [
+                                        "うちに",
+                                        "ばかりに",
+                                        "あいだに",
+                                        "ところに"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "V-ようとしたところに/へ = tepat ketika hendak melakukan V, ada hal lain yang terjadi. 〜うちに/〜あいだに = selama, 〜ばかりに = hanya karena; tidak cocok."
+                                },
+                                {
+                                    "id": "g1-9",
+                                    "no": 9,
+                                    "type": "choice",
+                                    "stem": "この仕事《しごと》は、経験《けいけん》（　　）関係《かんけい》なく、やる気《き》のある人《ひと》を募集《ぼしゅう》しています。",
+                                    "choices": [
+                                        "で",
+                                        "に",
+                                        "と",
+                                        "を"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "〜に関係なく = tanpa memandang (pengalaman). Partikel yang membentuk ungkapan ini adalah に; で/と/を tidak."
+                                },
+                                {
+                                    "id": "g1-10",
+                                    "no": 10,
+                                    "type": "choice",
+                                    "stem": "A「田中《たなか》さん、いつも疲《つか》れた顔《かお》をしているね。」\nB「毎日《まいにち》夜中《よなか》まで仕事《しごと》をしているから、疲《つか》れる（　　）よ。」",
+                                    "choices": [
+                                        "はずがない",
+                                        "ことだ",
+                                        "わけだ",
+                                        "ものか"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "〜わけだ = \"pantas saja / wajar kalau begitu\" (menerima sebab). 〜はずがない = mustahil, 〜ことだ = sebaiknya, 〜ものか = penolakan kuat; semuanya tidak cocok dengan konteks."
+                                },
+                                {
+                                    "id": "g1-11",
+                                    "no": 11,
+                                    "type": "choice",
+                                    "stem": "長《なが》い時間《じかん》悩《なや》んだ（　　）、留学《りゅうがく》するのをやめた。",
+                                    "choices": [
+                                        "あげく",
+                                        "まま",
+                                        "ついでに",
+                                        "とおり"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "V-た + あげく = akhirnya (hasil yang biasanya kurang menyenangkan) setelah proses panjang. 〜まま = tetap dalam keadaan, 〜ついでに = sekalian, 〜とおり = sesuai dengan."
+                                },
+                                {
+                                    "id": "g1-12",
+                                    "no": 12,
+                                    "type": "choice",
+                                    "stem": "日本語《にほんご》は勉強《べんきょう》すれば（　　）おもしろくなります。",
+                                    "choices": [
+                                        "するのに",
+                                        "するより",
+                                        "するばかり",
+                                        "するほど"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "V-ば V-る + ほど = semakin V semakin ... (〜ば〜ほど). Bentuk lain tidak membentuk pola \"semakin\"."
+                                },
+                                {
+                                    "id": "g1-13",
+                                    "no": 13,
+                                    "type": "choice",
+                                    "stem": "ここのラーメンは、味《あじ》がいい（　　）、値段《ねだん》も安《やす》いので、いつも混《こ》んでいる。",
+                                    "choices": [
+                                        "ばかりに",
+                                        "ことに",
+                                        "だけでなく",
+                                        "ところで"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "〜だけでなく〜も = bukan hanya ... tetapi juga .... 〜ばかりに = hanya karena (alasan negatif), 〜ことに = (perasaan) sungguh ..., 〜ところで = meskipun; tidak cocok."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g2",
+                    "label": "もんだい２",
+                    "instruction": "つぎの文《ぶん》の⟦★⟧に入《はい》る最《もっと》もよいものを、1・2・3・4から一《ひと》つえらびなさい。",
+                    "example": {
+                        "id": "g2-ex",
+                        "no": 0,
+                        "type": "star",
+                        "label": "（もんだいれい）",
+                        "prefix": "ここは日本語《にほんご》 ",
+                        "suffix": " 教室《きょうしつ》です。",
+                        "words": [
+                            "ための",
+                            "を",
+                            "する",
+                            "勉強《べんきょう》"
+                        ],
+                        "order": [
+                            1,
+                            3,
+                            2,
+                            0
+                        ],
+                        "choices": [
+                            "ための",
+                            "を",
+                            "する",
+                            "勉強《べんきょう》"
+                        ],
+                        "answer": 2,
+                        "howto": {
+                            "title": "（かいとうのしかた）",
+                            "step1": "1．正《ただ》しい答《こた》えはこうなります。",
+                            "figure": {
+                                "stem": "ここは日本語《にほんご》 ⟦　⟧ ⟦　⟧ ⟦★⟧ ⟦　⟧ 教室《きょうしつ》です。",
+                                "order": "2 を　4 勉強《べんきょう》　3 する　1 ための"
+                            },
+                            "step2": "2．⟦★⟧に入《はい》る番号《ばんごう》を解答用紙《かいとうようし》にマークします。"
+                        }
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g2-14",
+                                    "no": 14,
+                                    "type": "star",
+                                    "prefix": "日本《にほん》に来《き》たばかりのころは、 ",
+                                    "suffix": " 苦労《くろう》しました。",
+                                    "words": [
+                                        "買《か》い物《もの》を",
+                                        "するのにも",
+                                        "言葉《ことば》が",
+                                        "わからなくて"
+                                    ],
+                                    "order": [
+                                        2,
+                                        3,
+                                        0,
+                                        1
+                                    ],
+                                    "choices": [
+                                        "買《か》い物《もの》を",
+                                        "するのにも",
+                                        "言葉《ことば》が",
+                                        "わからなくて"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "言葉が わからなくて 買い物を するのにも 苦労しました。 → ★ = 買い物を (〜するのにも苦労する = bahkan untuk berbelanja pun susah)."
+                                },
+                                {
+                                    "id": "g2-15",
+                                    "no": 15,
+                                    "type": "star",
+                                    "prefix": "あの店《みせ》は ",
+                                    "suffix": " 人気《にんき》があります。",
+                                    "words": [
+                                        "安《やす》いだけでなく",
+                                        "味《あじ》も",
+                                        "値段《ねだん》が",
+                                        "いいので"
+                                    ],
+                                    "order": [
+                                        2,
+                                        0,
+                                        1,
+                                        3
+                                    ],
+                                    "choices": [
+                                        "安《やす》いだけでなく",
+                                        "味《あじ》も",
+                                        "値段《ねだん》が",
+                                        "いいので"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "値段が 安いだけでなく 味も いいので 人気があります。 → ★ = 味も (〜だけでなく〜も)."
+                                },
+                                {
+                                    "id": "g2-16",
+                                    "no": 16,
+                                    "type": "star",
+                                    "prefix": "部屋《へや》の電気《でんき》をつけた ",
+                                    "suffix": " 寝《ね》てしまった。",
+                                    "words": [
+                                        "まま",
+                                        "うちに",
+                                        "テレビを",
+                                        "見《み》ている"
+                                    ],
+                                    "order": [
+                                        0,
+                                        2,
+                                        3,
+                                        1
+                                    ],
+                                    "choices": [
+                                        "まま",
+                                        "うちに",
+                                        "テレビを",
+                                        "見《み》ている"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "電気をつけた まま テレビを 見ている うちに 寝てしまった。 → ★ = 見ている (〜ているうちに = selagi ...)."
+                                },
+                                {
+                                    "id": "g2-17",
+                                    "no": 17,
+                                    "type": "star",
+                                    "prefix": "A「このレポート、いつまでに出《だ》せばいいですか。」\nB「来週《らいしゅう》の ",
+                                    "suffix": " いいですよ。」",
+                                    "words": [
+                                        "月曜日《げつようび》",
+                                        "出《だ》して",
+                                        "までに",
+                                        "くれれば"
+                                    ],
+                                    "order": [
+                                        0,
+                                        2,
+                                        1,
+                                        3
+                                    ],
+                                    "choices": [
+                                        "月曜日《げつようび》",
+                                        "出《だ》して",
+                                        "までに",
+                                        "くれれば"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "来週の 月曜日 までに 出して くれれば いいですよ。 → ★ = 出して (〜てくれればいい = cukup jika kamu ...)."
+                                },
+                                {
+                                    "id": "g2-18",
+                                    "no": 18,
+                                    "type": "star",
+                                    "prefix": "この薬《くすり》は、 ",
+                                    "suffix": " して ください。",
+                                    "words": [
+                                        "後《あと》で",
+                                        "食事《しょくじ》の",
+                                        "飲《の》む",
+                                        "ように"
+                                    ],
+                                    "order": [
+                                        1,
+                                        0,
+                                        2,
+                                        3
+                                    ],
+                                    "choices": [
+                                        "後《あと》で",
+                                        "食事《しょくじ》の",
+                                        "飲《の》む",
+                                        "ように"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "食事の 後で 飲む ように して ください。 → ★ = 飲む (〜ようにしてください = usahakan agar ...). "
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g3",
+                    "label": "もんだい３",
+                    "instruction": "つぎの文章《ぶんしょう》を読《よ》んで、文章《ぶんしょう》全体《ぜんたい》の内容《ないよう》を考《かんが》えて、［19］から［23］の中《なか》に\n入《はい》る最《もっと》もよいものを、1・2・3・4から一《ひと》つえらびなさい。",
+                    "lead": "下《した》の文章《ぶんしょう》は、半年《はんとし》前《まえ》に日本《にほん》に来《き》た留学生《りゅうがくせい》のマリアさんが、「ごみの出《だ》し方《かた》」について書《か》いた作文《さくぶん》である。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g3-19",
+                                    "no": 19,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "面倒《めんどう》でした",
+                                        "面倒《めんどう》でしょう",
+                                        "面倒《めんどう》なはずです",
+                                        "面倒《めんどう》そうです"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Kalimat berbicara tentang perasaan di masa lalu (最初は) → bentuk lampau 面倒でした. 〜でしょう (dugaan), 〜はずです (keyakinan), 〜そうです (kesan) tidak cocok untuk pengalaman pribadi yang sudah lewat."
+                                },
+                                {
+                                    "id": "g3-20",
+                                    "no": 20,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "だから",
+                                        "ところで",
+                                        "たとえば",
+                                        "それでも"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Kalimat berikutnya memberi contoh konkret (kertas hari Selasa, botol hari Kamis kedua) → たとえば. だから = karena itu, ところで = ngomong-ngomong, それでも = meskipun begitu."
+                                },
+                                {
+                                    "id": "g3-21",
+                                    "no": 21,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "どういう",
+                                        "こういう",
+                                        "どんなに",
+                                        "あの"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Menunjuk aturan yang baru saja dijelaskan di kalimat sebelumnya → こういうルール (\"aturan seperti ini\"). どういう/どんなに adalah kata tanya/derajat, あの menunjuk sesuatu yang jauh/diketahui bersama."
+                                },
+                                {
+                                    "id": "g3-22",
+                                    "no": 22,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "慣《な》れていきました",
+                                        "慣《な》れてしまいました",
+                                        "慣《な》れておきました",
+                                        "慣《な》れてきました"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "〜てきました = perubahan bertahap dari dulu sampai sekarang (sekarang sudah terbiasa). 〜ていきました = perubahan menuju masa depan, 〜てしまいました = tuntas/penyesalan, 〜ておきました = persiapan."
+                                },
+                                {
+                                    "id": "g3-23",
+                                    "no": 23,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "教《おし》えてもらおうと思《おも》います",
+                                        "教《おし》えてくださろうと思《おも》います",
+                                        "教《おし》えてあげようと思《おも》います",
+                                        "教《おし》えられようと思《おも》います"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Saya yang akan memberi tahu teman → 〜てあげる (memberi untuk orang lain). 〜てもらう = menerima, 〜てくださる = (orang yang dihormati) memberi saya, 〜られよう tidak wajar."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "text",
+                                "label": "",
+                                "title": "日本《にほん》のごみの出《だ》し方《かた》",
+                                "author": "マリア　ロペス",
+                                "text": "　日本《にほん》に来《き》て、いちばん驚《おどろ》いたのは、ごみの出《だ》し方《かた》でした。わたしの国《くに》では、ごみを全部《ぜんぶ》一《ひと》つの袋《ふくろ》に入《い》れて、いつでも捨《す》てることができます。しかし、日本《にほん》では、燃《も》えるごみ、燃《も》えないごみ、プラスチックなど、種類《しゅるい》ごとに分《わ》けて、決《き》められた日《ひ》に出《だ》さなければなりません。最初《さいしょ》は、分《わ》けるのがとても［19］。\n　でも、アパートの隣《となり》に住《す》む鈴木《すずき》さんが、分《わ》け方《かた》を教《おし》えてくれました。［20］、紙《かみ》は火曜日《かようび》、びんは第二《だいに》木曜日《もくようび》というように、集《あつ》める日《ひ》が決《き》まっているのです。［21］ルールがあるのは、町《まち》をきれいにして、使《つか》えるものをもう一度《いちど》使《つか》うためだそうです。\n　今《いま》では、ごみを分《わ》けるのにも［22］。今度《こんど》の休《やす》みに国《くに》から友達《ともだち》が来《く》るので、日本《にほん》のごみの出《だ》し方《かた》を［23］。"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "g4",
+                    "label": "もんだい４",
+                    "instruction": "つぎの(1)から(4)の文章《ぶんしょう》を読《よ》んで、質問《しつもん》に答《こた》えなさい。答《こた》えは、1・2・3・4から\n最《もっと》もよいものを一《ひと》つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g4-24",
+                                    "no": 24,
+                                    "type": "choice",
+                                    "stem": "山本《やまもと》さんが明日《あした》の朝《あさ》までにしなければならないことは何《なに》か。",
+                                    "choices": [
+                                        "お茶《ちゃ》を用意《ようい》して、会議室《かいぎしつ》に運《はこ》ぶ",
+                                        "資料《しりょう》を10部《ぶ》コピーして、会議室《かいぎしつ》の机《つくえ》に置《お》く",
+                                        "取引先《とりひきさき》の人《ひと》を会議室《かいぎしつ》Bに案内《あんない》する",
+                                        "中川商事《なかがわしょうじ》に電話《でんわ》して、時間《じかん》を確認《かくにん》する"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "メモ: 「資料は、10部コピーして、会議室の机の上に置いておいてください」. お茶は課長が用意する (1×)、案内や電話は頼まれていない (3×4×)."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "memo",
+                                "lead": "山本《やまもと》さんの机《つくえ》に、課長《かちょう》が書《か》いたメモが置《お》かれている。",
+                                "to": "山本《やまもと》さん",
+                                "text": "お疲《つか》れさまです。\n明日《あした》の午前中《ごぜんちゅう》に、取引先《とりひきさき》の中川商事《なかがわしょうじ》の方《かた》が来《こ》られます。わたしは朝《あさ》から会議《かいぎ》が入《はい》っているので、会議室《かいぎしつ》Bの準備《じゅんび》をお願《ねが》いします。\nお茶《ちゃ》は人数分《にんずうぶん》、わたしが用意《ようい》しておきます。資料《しりょう》は、10部《ぶ》コピーして、会議室《かいぎしつ》の机《つくえ》の上《うえ》に置《お》いておいてください。",
+                                "from": "高田《たかだ》"
+                            }
+                        },
+                        {
+                            "questions": [
+                                {
+                                    "id": "g4-25",
+                                    "no": 25,
+                                    "type": "choice",
+                                    "stem": "11月《がつ》8日《ようか》が雨《あめ》の場合《ばあい》、撮影会《さつえいかい》はどうなるか。",
+                                    "choices": [
+                                        "11月《がつ》15日《にち》に行《おこな》う",
+                                        "中止《ちゅうし》になり、バス代《だい》が戻《もど》ってくる",
+                                        "みどり山《やま》ではなく、駅前《えきまえ》で行《おこな》う",
+                                        "参加《さんか》する人《ひと》が相談《そうだん》して、日《ひ》を決《き》める"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "メール: 「雨の場合は…11月15日（土）に行います」 = ditunda, bukan dibatalkan. Perubahan tempat/biaya/keputusan peserta tidak disebut."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "memo",
+                                "variant": "mail",
+                                "lead": "これは、写真《しゃしん》サークルのメンバーに届《とど》いたメールである。",
+                                "headers": [
+                                    [
+                                        "あて先《さき》",
+                                        "members@midori-photo.example.jp"
+                                    ],
+                                    [
+                                        "件名《けんめい》",
+                                        "秋《あき》の撮影会《さつえいかい》のお知《し》らせ"
+                                    ],
+                                    [
+                                        "送信日時《そうしんにちじ》",
+                                        "2026年《ねん》10月《がつ》20日《はつか》　18:05"
+                                    ]
+                                ],
+                                "text": "秋《あき》の撮影会《さつえいかい》について、お知《し》らせします。\n日時《にちじ》：11月《がつ》8日《ようか》（土《ど》）　朝《あさ》8時《じ》に駅前《えきまえ》に集合《しゅうごう》\n場所《ばしょ》：みどり山《やま》\n費用《ひよう》：バス代《だい》1,500円《えん》（昼《ひる》ご飯《はん》は各自《かくじ》で用意《ようい》してください）\n参加《さんか》できる人《ひと》は、10月《がつ》31日《にち》（金《きん》）までに、メールでお返事《へんじ》ください。\n雨《あめ》の場合《ばあい》は、前日《ぜんじつ》の夜《よる》までにメールで連絡《れんらく》します。その場合《ばあい》は、11月《がつ》15日《にち》（土《ど》）に行《おこな》います。",
+                                "from": "事務局《じむきょく》　松本《まつもと》"
+                            }
+                        },
+                        {
+                            "questions": [
+                                {
+                                    "id": "g4-26",
+                                    "no": 26,
+                                    "type": "choice",
+                                    "stem": "男《おとこ》の人《ひと》が自転車《じてんしゃ》を直《なお》してくれたのは、なぜか。",
+                                    "choices": [
+                                        "自転車《じてんしゃ》の修理《しゅうり》が仕事《しごと》だから",
+                                        "お礼《れい》のお金《かね》がほしかったから",
+                                        "前《まえ》に自分《じぶん》も同《おな》じ場所《ばしょ》で助《たす》けてもらったことがあるから",
+                                        "荷物《にもつ》を運《はこ》んでもらいたかったから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Pria itu berkata 「前に、同じ場所でわたしも助けてもらったことがある…今度はわたしの番」. Pekerjaan, uang, dan bantuan membawa barang tidak disebut."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "text",
+                                "boxed": false,
+                                "text": "　先日《せんじつ》、自転車《じてんしゃ》で買《か》い物《もの》に行《い》く途中《とちゅう》、タイヤがパンクしてしまった。困《こま》ったなあと思《おも》っていると、通《とお》りがかった男《おとこ》の人《ひと》が「どうしました？」と声《こえ》をかけてくれた。その人《ひと》は、自分《じぶん》の荷物《にもつ》から道具《どうぐ》を出《だ》して、あっという間《ま》に直《なお》してくれた。お礼《れい》を言《い》うと、「前《まえ》に、同《おな》じ場所《ばしょ》でわたしも助《たす》けてもらったことがあるんです。だから、今度《こんど》はわたしの番《ばん》です。」と笑《わら》って、行《い》ってしまった。名前《なまえ》も聞《き》かなかったが、わたしも、いつか困《こま》っている人《ひと》を見《み》かけたら、声《こえ》をかけようと思《おも》った。"
+                            }
+                        },
+                        {
+                            "questions": [
+                                {
+                                    "id": "g4-27",
+                                    "no": 27,
+                                    "type": "choice",
+                                    "stem": "この文章《ぶんしょう》を書《か》いた人《ひと》が言《い》いたいことは何《なに》か。",
+                                    "choices": [
+                                        "スマートフォンの地図《ちず》は便利《べんり》なので、いつも使《つか》ったほうがいい。",
+                                        "道《みち》に迷《まよ》わないように、地図《ちず》をよく見《み》て歩《ある》いたほうがいい。",
+                                        "初《はじ》めて行《い》く場所《ばしょ》には、地図《ちず》を見《み》ないで行《い》くほうがいい。",
+                                        "便利《べんり》な道具《どうぐ》だけでなく、自分《じぶん》の目《め》で周《まわ》りを見《み》て歩《ある》くことも大切《たいせつ》だ。"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Penulis mengakui kemudahan peta, tetapi menyarankan 「頼りすぎず、ときには自分の目で町を見ながら歩いてみては」. Pilihan lain bertentangan (selalu pakai, terus lihat peta, atau sama sekali tanpa peta)."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "text",
+                                "boxed": false,
+                                "text": "　最近《さいきん》、スマートフォンの地図《ちず》を見《み》ながら歩《ある》く人《ひと》が増《ふ》えた。確《たし》かに、初《はじ》めて行《い》く場所《ばしょ》でも迷《まよ》わずに着《つ》けて便利《べんり》である。しかし、画面《がめん》ばかり見《み》ていると、周《まわ》りの景色《けしき》や町《まち》の様子《ようす》に気《き》づかなくなってしまう。道《みち》に迷《まよ》ったときにこそ、思《おも》いがけない店《みせ》や景色《けしき》に出会《であ》えることもある。便利《べんり》な道具《どうぐ》に頼《たよ》りすぎず、ときには自分《じぶん》の目《め》で町《まち》を見《み》ながら歩《ある》いてみてはどうだろうか。"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "g5",
+                    "label": "もんだい５",
+                    "instruction": "つぎの(1)と(2)の文章《ぶんしょう》を読《よ》んで、質問《しつもん》に答《こた》えなさい。答《こた》えは、1・2・3・4から\n最《もっと》もよいものを一《ひと》つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g5-28",
+                                    "no": 28,
+                                    "type": "choice",
+                                    "stem": "①⟦この味《あじ》⟧とあるが、どんな味《あじ》か。",
+                                    "choices": [
+                                        "店《みせ》で売《う》っているトマトと同《おな》じ味《あじ》",
+                                        "子《こ》どものころ、夏休《なつやす》みに祖母《そぼ》の家《いえ》で食《た》べたトマトの味《あじ》",
+                                        "祖母《そぼ》が井戸《いど》の水《みず》で冷《ひ》やした水《みず》の味《あじ》",
+                                        "祖母《そぼ》が作《つく》ってくれた夏《なつ》の料理《りょうり》の味《あじ》"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Kalimat berikutnya menjelaskan: 子どものころ、夏休みに祖母の家で食べた味と同じ. Rasanya TIDAK sama dengan tomat toko (bentuknya lebih kecil, tetapi manis sekali)."
+                                },
+                                {
+                                    "id": "g5-29",
+                                    "no": 29,
+                                    "type": "choice",
+                                    "stem": "②⟦忙《いそが》しいことを理由《りゆう》に、なかなか会《あ》いに行《い》かなかった自分《じぶん》⟧とあるが、「わたし」がそう思《おも》ったのはなぜか。",
+                                    "choices": [
+                                        "祖母《そぼ》の畑《はたけ》の手伝《てつだ》いを一度《いちど》もしたことがないから",
+                                        "祖母《そぼ》が元気《げんき》なのに、心配《しんぱい》しすぎていたから",
+                                        "祖母《そぼ》が一人《ひとり》で暮《く》らしているのに、あまり会《あ》いに行《い》かなかったから",
+                                        "トマトの育《そだ》て方《かた》を祖母《そぼ》に教《おし》えてもらわなかったから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Alasannya tersirat di kalimat 〜「祖母は一人で暮らしている」+「忙しいことを理由に、なかなか会いに行かなかった」. Kenangan membantu di kebun hanyalah latar cerita, dan tidak ada kekhawatiran berlebihan di teks; keduanya bukan alasan rasa malu itu."
+                                },
+                                {
+                                    "id": "g5-30",
+                                    "no": 30,
+                                    "type": "choice",
+                                    "stem": "この文章《ぶんしょう》の内容《ないよう》に合《あ》っているものはどれか。",
+                                    "choices": [
+                                        "祖母《そぼ》は、店《みせ》で買《か》ったトマトを「わたし」にくれた。",
+                                        "「わたし」は、祖母《そぼ》の家《いえ》で夏休《なつやす》みを過《す》ごす予定《よてい》である。",
+                                        "祖母《そぼ》は、最近《さいきん》畑《はたけ》の仕事《しごと》をやめてしまった。",
+                                        "「わたし」は、来月《らいげつ》また祖母《そぼ》に会《あ》いに行《い》くつもりである。"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Kalimat terakhir: 来月は、祖母と一緒に、また畑の仕事を手伝いに行こう. Tomatnya dari kebun sendiri (1×), rencana musim panas tidak disebut (2×), nenek masih mengurus kebun (3×)."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "text",
+                                "boxed": false,
+                                "text": "　先週《せんしゅう》の日曜日《にちようび》、久《ひさ》しぶりに祖母《そぼ》の家《いえ》に行《い》った。祖母《そぼ》は一人《ひとり》で暮《く》らしているが、毎日《まいにち》畑《はたけ》で野菜《やさい》を育《そだ》てていて、とても元気《げんき》だ。\n　帰《かえ》るとき、祖母《そぼ》は小《ちい》さな袋《ふくろ》をくれた。中《なか》には、畑《はたけ》でとれたトマトが入《はい》っていた。形《かたち》はふぞろいで、店《みせ》で売《う》っているものより小《ちい》さい。でも、家《いえ》に帰《かえ》って食《た》べてみると、驚《おどろ》くほど甘《あま》かった。⟦この味《あじ》⟧①は、子《こ》どものころ、夏休《なつやす》みに祖母《そぼ》の家《いえ》で食《た》べた味《あじ》と同《おな》じだった。\n　その夜《よる》、わたしは、昔《むかし》、祖母《そぼ》と一緒《いっしょ》に畑《はたけ》で水《みず》をまいたことや、とれたばかりのトマトを井戸《いど》の水《みず》で冷《ひ》やして食《た》べたことを思《おも》い出《だ》した。そして、⟦忙《いそが》しいことを理由《りゆう》に、なかなか会《あ》いに行《い》かなかった自分《じぶん》⟧②が少《すこ》し恥《は》ずかしくなった。来月《らいげつ》は、祖母《そぼ》と一緒《いっしょ》に、また畑《はたけ》の仕事《しごと》を手伝《てつだ》いに行《い》こうと思《おも》う。"
+                            }
+                        },
+                        {
+                            "questions": [
+                                {
+                                    "id": "g5-31",
+                                    "no": 31,
+                                    "type": "choice",
+                                    "stem": "⟦このこと⟧とは、何《なに》のことか。",
+                                    "choices": [
+                                        "駅員《えきいん》さんが切符《きっぷ》を一枚《いちまい》ずつ確認《かくにん》していたこと",
+                                        "切符《きっぷ》もカードも必要《ひつよう》なくなったこと",
+                                        "ほとんどの駅《えき》に自動改札機《じどうかいさつき》が置《お》かれ、カードで通《とお》れるようになったこと",
+                                        "駅員《えきいん》さんが減《へ》って、案内《あんない》が少《すく》なくなったこと"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Kalimat sebelum このこと: 「ほとんどの駅に自動改札機が置かれ、カードをかざすだけで通れるようになった」. Setelah このこと baru dijelaskan akibatnya (pekerjaan petugas berkurang)."
+                                },
+                                {
+                                    "id": "g5-32",
+                                    "no": 32,
+                                    "type": "choice",
+                                    "stem": "この文章《ぶんしょう》では、駅員《えきいん》さんが少《すく》なくなって、どんな人《ひと》が困《こま》っていると言《い》っているか。",
+                                    "choices": [
+                                        "カードの使《つか》い方《かた》がわからない若《わか》い人《ひと》",
+                                        "道《みち》に迷《まよ》った旅行者《りょこうしゃ》や、荷物《にもつ》が重《おも》くて困《こま》っているお年寄《としよ》り",
+                                        "電車《でんしゃ》の時間《じかん》がわからず、遅《おく》れてしまった人《ひと》",
+                                        "改札《かいさつ》で待《ま》たされて、電車《でんしゃ》に乗《の》れなかった人《ひと》"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Paragraf 2: 「道に迷った旅行者や、荷物が重くて困っているお年寄りが、助けを求める相手を見つけにくくなっている」. Antrean di gerbang justru berkurang (3×)."
+                                },
+                                {
+                                    "id": "g5-33",
+                                    "no": 33,
+                                    "type": "choice",
+                                    "stem": "この文章《ぶんしょう》を書《か》いた人《ひと》が最《もっと》も伝《つた》えたいことは何《なに》か。",
+                                    "choices": [
+                                        "便利《べんり》さだけでなく、人《ひと》と人《ひと》のつながりを残《のこ》す方法《ほうほう》を考《かんが》えることが大切《たいせつ》だ。",
+                                        "駅員《えきいん》さんの数《かず》を、昔《むかし》と同《おな》じように増《ふ》やすべきだ。",
+                                        "自動改札機《じどうかいさつき》は便利《べんり》なので、もっと多《おお》くの駅《えき》に置《お》くべきだ。",
+                                        "案内用《あんないよう》の機械《きかい》を使《つか》って、人《ひと》が案内《あんない》する仕事《しごと》をなくすべきだ。"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Kesimpulan penulis di kalimat akhir: 便利さを求めるだけでなく、人と人とのつながりをどう残すかが課題. Menambah petugas/mesin atau menghapus pekerjaan manusia bukan pendapat penulis."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "text",
+                                "boxed": false,
+                                "text": "　以前《いぜん》は、電車《でんしゃ》に乗《の》るとき、駅員《えきいん》さんが切符《きっぷ》を一枚《いちまい》ずつ確認《かくにん》していた。しかし、今《いま》では、ほとんどの駅《えき》に自動改札機《じどうかいさつき》が置《お》かれ、カードをかざすだけで通《とお》れるようになった。⟦このこと⟧によって、駅員《えきいん》さんの仕事《しごと》は減《へ》り、人々《ひとびと》は待《ま》たずに電車《でんしゃ》に乗《の》れるようになった。\n　確《たし》かに便利《べんり》にはなったが、一方《いっぽう》で、困《こま》っている人《ひと》に声《こえ》をかけてくれる駅員《えきいん》さんが少《すく》なくなったという声《こえ》も聞《き》かれる。道《みち》に迷《まよ》った旅行者《りょこうしゃ》や、荷物《にもつ》が重《おも》くて困《こま》っているお年寄《としよ》りが、助《たす》けを求《もと》める相手《あいて》を見《み》つけにくくなっているのだ。\n　そこで、最近《さいきん》では、駅《えき》の中《なか》に案内用《あんないよう》の機械《きかい》を置《お》くだけでなく、時間帯《じかんたい》によっては、案内係《あんないがかり》の人《ひと》が改札《かいさつ》の近《ちか》くに立《た》つ駅《えき》も出《で》てきた。便利《べんり》さを求《もと》めるだけでなく、人《ひと》と人《ひと》とのつながりをどう残《のこ》すかが、これからの駅《えき》の課題《かだい》だと言《い》えるだろう。"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "g6",
+                    "label": "もんだい６",
+                    "instruction": "つぎの文章《ぶんしょう》を読《よ》んで、質問《しつもん》に答《こた》えなさい。答《こた》えは、1・2・3・4から最《もっと》も\nよいものを一《ひと》つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g6-34",
+                                    "no": 34,
+                                    "type": "choice",
+                                    "stem": "①⟦この状態《じょうたい》⟧とあるが、どんな状態《じょうたい》か。",
+                                    "choices": [
+                                        "ショッピングセンターに客《きゃく》が集《あつ》まりすぎた状態《じょうたい》",
+                                        "買《か》い物《もの》をする人《ひと》が減《へ》り、閉《し》まる店《みせ》が増《ふ》えた状態《じょうたい》",
+                                        "若《わか》い人《ひと》が店《みせ》を開《ひら》きたがらない状態《じょうたい》",
+                                        "商店街《しょうてんがい》の道路《どうろ》が使《つか》えなくなった状態《じょうたい》"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Sebelum この状態: 「客が減り、閉まる店が増えて」. Kata kuncinya adalah berkurangnya pengunjung dan toko yang tutup di arkade belanja, bukan keadaan pusat perbelanjaan atau jalan."
+                                },
+                                {
+                                    "id": "g6-35",
+                                    "no": 35,
+                                    "type": "choice",
+                                    "stem": "②⟦いくつかのくふう⟧とあるが、例《れい》えばどんなくふうか。",
+                                    "choices": [
+                                        "ショッピングセンターと協力《きょうりょく》して、客《きゃく》を集《あつ》めること",
+                                        "値段《ねだん》を下《さ》げて、大《おお》きな店《みせ》と競争《きょうそう》すること",
+                                        "遠《とお》くから来《く》る人《ひと》に、お金《かね》を払《はら》ってもらうこと",
+                                        "使《つか》われなくなった店《みせ》を安《やす》く貸《か》して、月《つき》に一度《いちど》市《し》を開《ひら》くこと"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Paragraf 2 menyebut dua usaha: menyewakan toko kosong dengan murah dan mengadakan pasar sebulan sekali (jalan jadi 歩行者天国). Kerja sama dengan pusat belanja atau perang harga tidak disebut."
+                                },
+                                {
+                                    "id": "g6-36",
+                                    "no": 36,
+                                    "type": "choice",
+                                    "stem": "③⟦お金《かね》がなくてもお客《きゃく》さんとして入《い》れる⟧とあるが、それはどうしてか。",
+                                    "choices": [
+                                        "店《みせ》の掃除《そうじ》やお皿《さら》洗《あら》いを手伝《てつだ》えば、お茶《ちゃ》が飲《の》めるから",
+                                        "野菜《やさい》や料理《りょうり》を持《も》ってくる人《ひと》は、お金《かね》を払《はら》わなくていいから",
+                                        "お年寄《としよ》りと子《こ》どもは、お金《かね》を払《はら》わなくていいと決《き》まっているから",
+                                        "店《みせ》のメニューは、全部《ぜんぶ》無料《むりょう》だから"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Kalimat setelah ③: 「お金の代わりに、店の掃除やお皿洗いを手伝えば、お茶が飲めるのだ」. Pembebasan khusus lansia/anak atau menu gratis tidak ada dalam teks."
+                                },
+                                {
+                                    "id": "g6-37",
+                                    "no": 37,
+                                    "type": "choice",
+                                    "stem": "この文章《ぶんしょう》は、全体《ぜんたい》として何《なに》について書《か》かれているか。",
+                                    "choices": [
+                                        "ショッピングセンターが商店街《しょうてんがい》に与《あた》えた悪《わる》い影響《えいきょう》",
+                                        "「おすそ分《わ》けカフェ」の作《つく》り方《かた》と成功《せいこう》の理由《りゆう》",
+                                        "商店街《しょうてんがい》が、人《ひと》がつながる場所《ばしょ》になって元気《げんき》を取《と》り戻《もど》した例《れい》",
+                                        "若《わか》い人《ひと》が店《みせ》を開《ひら》くときの苦労《くろう》"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Teks dimulai dari arkade yang sepi, lalu usaha pemulihan, dan ditutup dengan 「人が集まって、つながる場所をつくること」. Kafe hanya salah satu contoh (bukan tema), dan pengaruh pusat belanja hanya latar belakang."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "text",
+                                "boxed": false,
+                                "text": "　わたしの住《す》む町《まち》の商店街《しょうてんがい》は、十年《じゅうねん》ほど前《まえ》まで、買《か》い物《もの》をする人《ひと》でにぎわっていた。ところが、大《おお》きなショッピングセンターができてから、客《きゃく》が減《へ》り、閉《し》まる店《みせ》が増《ふ》えて、⟦この状態《じょうたい》⟧①が続《つづ》いていた。\n　そこで、商店街《しょうてんがい》の人《ひと》たちは、まず、使《つか》われなくなった店《みせ》を、安《やす》い値段《ねだん》で若《わか》い人《ひと》に貸《か》すことにした。すると、パン屋《や》や雑貨店《ざっかてん》を開《ひら》きたいという人《ひと》が次々《つぎつぎ》に集《あつ》まってきた。また、月《つき》に一度《いちど》、道路《どうろ》を歩行者天国《ほこうしゃてんごく》にして、みんなで市《し》を開《ひら》くようにした。⟦いくつかのくふう⟧②のおかげで、今《いま》では、遠《とお》くから訪《おとず》れる人《ひと》も多《おお》い。\n　なかでも、特《とく》に人気《にんき》があるのは、「おすそ分《わ》けカフェ」である。この店《みせ》では、近所《きんじょ》の人《ひと》が、家《いえ》でとれた野菜《やさい》や作《つく》りすぎた料理《りょうり》を持《も》ち寄《よ》り、それをメニューにしている。⟦お金《かね》がなくてもお客《きゃく》さんとして入《い》れる⟧③のも、この店《みせ》の特徴《とくちょう》だ。お金《かね》の代《か》わりに、店《みせ》の掃除《そうじ》やお皿《さら》洗《あら》いを手伝《てつだ》えば、お茶《ちゃ》が飲《の》めるのだ。このカフェのおかげで、お年寄《としよ》りと子《こ》ども、新《あたら》しく引《ひ》っ越《こ》してきた人《ひと》たちが話《はなし》をする機会《きかい》が増《ふ》えたという。\n　商店街《しょうてんがい》が元気《げんき》になるために必要《ひつよう》なのは、品物《しなもの》を売《う》ることだけではなく、人《ひと》が集《あつ》まって、つながる場所《ばしょ》をつくることなのかもしれない。"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "g7",
+                    "label": "もんだい７",
+                    "instruction": "右《みぎ》のページは、「みどり市民《しみん》センター　秋《あき》の講座案内《こうざあんない》」である。これを読《よ》んで、下《した》の\n質問《しつもん》に答《こた》えなさい。答《こた》えは、1・2・3・4から最《もっと》もよいものを一《ひと》つえらびなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g7-38",
+                                    "no": 38,
+                                    "type": "choice",
+                                    "stem": "今井《いまい》さん（68歳《さい》）は、平日《へいじつ》の昼間《ひるま》は仕事《しごと》があるので、参加《さんか》できない。体《からだ》を動《うご》かす講座《こうざ》に出《で》たいと思《おも》っている。今井《いまい》さんが選《えら》ぶ講座《こうざ》はどれか。",
+                                    "choices": [
+                                        "①ヨガ入門《にゅうもん》",
+                                        "②やさしい太極拳《たいきょくけん》",
+                                        "③夜《よる》のウォーキング",
+                                        "⑥絵手紙《えてがみ》教室《きょうしつ》"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Syarat: bukan siang hari kerja + kegiatan menggerakkan badan. ① (Selasa siang) dan ② (Kamis siang) bentrok dengan kerja; ⑥ hari Sabtu tetapi bukan olahraga. Hanya ③ (Jumat malam) yang memenuhi."
+                                },
+                                {
+                                    "id": "g7-39",
+                                    "no": 39,
+                                    "type": "choice",
+                                    "stem": "ホセさんは、11月《がつ》8日《ようか》（土《ど》）から始《はじ》まる「パソコン入門《にゅうもん》」に参加《さんか》する。最初《さいしょ》の月《つき》に、全部《ぜんぶ》でいくら払《はら》わなければならないか。",
+                                    "choices": [
+                                        "4,500円《えん》",
+                                        "5,000円《えん》",
+                                        "6,500円《えん》",
+                                        "5,500円《えん》"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Biaya kursus 4,500 yen + biaya bahan ajar terpisah 1,000 yen (※教材費は別) = 5,500 yen. 4,500 lupa biaya bahan; 5,000 = harga kursus ④ (bukan ⑤); 6,500 salah hitung."
+                                }
+                            ],
+                            "passage": {
+                                "kind": "brochure",
+                                "data": {
+                                    "title": "みどり市民《しみん》センター　秋《あき》の講座案内《こうざあんない》",
+                                    "headers": [
+                                        "講座名《こうざめい》",
+                                        "曜日《ようび》・時間《じかん》",
+                                        "料金《りょうきん》（円《えん》）"
+                                    ],
+                                    "sections": [
+                                        {
+                                            "heading": "1．体《からだ》を動《うご》かす講座《こうざ》",
+                                            "rows": [
+                                                {
+                                                    "mark": "①",
+                                                    "name": "ヨガ入門《にゅうもん》",
+                                                    "dates": "毎週《まいしゅう》火曜《かよう》\n10:00〜11:30\n（月《つき》4回《かい》）",
+                                                    "price": "4,000",
+                                                    "notes": [
+                                                        "マットの貸《か》し出《だ》しあり",
+                                                        "初心者《しょしんしゃ》向《む》け"
+                                                    ]
+                                                },
+                                                {
+                                                    "mark": "②",
+                                                    "name": "やさしい太極拳《たいきょくけん》",
+                                                    "dates": "毎週《まいしゅう》木曜《もくよう》\n14:00〜15:30\n（月《つき》4回《かい》）",
+                                                    "price": "3,600",
+                                                    "notes": [
+                                                        "動《うご》きやすい服装《ふくそう》でお越《こ》しください",
+                                                        "65歳《さい》以上《いじょう》の方《かた》は3,000円《えん》"
+                                                    ]
+                                                },
+                                                {
+                                                    "mark": "③",
+                                                    "name": "夜《よる》のウォーキング",
+                                                    "dates": "毎週《まいしゅう》金曜《きんよう》\n19:00〜20:00\n（月《つき》4回《かい》）",
+                                                    "price": "2,800",
+                                                    "notes": [
+                                                        "雨《あめ》の日《ひ》は室内《しつない》で行《おこな》います",
+                                                        "運動《うんどう》が苦手《にがて》な方《かた》も大丈夫《だいじょうぶ》です"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "heading": "2．学《まな》ぶ講座《こうざ》",
+                                            "rows": [
+                                                {
+                                                    "mark": "④",
+                                                    "name": "はじめての英会話《えいかいわ》",
+                                                    "dates": "毎週《まいしゅう》水曜《すいよう》\n19:00〜20:30\n（月《つき》4回《かい》）",
+                                                    "price": "5,000",
+                                                    "notes": [
+                                                        "教材費《きょうざいひ》は料金《りょうきん》に含《ふく》まれます"
+                                                    ]
+                                                },
+                                                {
+                                                    "mark": "⑤",
+                                                    "name": "パソコン入門《にゅうもん》",
+                                                    "dates": "毎週《まいしゅう》土曜《どよう》\n10:00〜12:00\n（月《つき》3回《かい》）",
+                                                    "price": "4,500",
+                                                    "notes": [
+                                                        "パソコンの貸《か》し出《だ》しあり",
+                                                        "教材費《きょうざいひ》は別《べつ》に1,000円《えん》かかります"
+                                                    ]
+                                                },
+                                                {
+                                                    "mark": "⑥",
+                                                    "name": "絵手紙《えてがみ》教室《きょうしつ》",
+                                                    "dates": "毎週《まいしゅう》土曜《どよう》\n13:30〜15:30\n（月《つき》2回《かい》）",
+                                                    "price": "3,000",
+                                                    "notes": [
+                                                        "筆《ふで》や絵《え》の具《ぐ》は貸《か》し出《だ》します"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "remark": "（このほかにも、さまざまな講座《こうざ》をご用意《ようい》しております。）",
+                                    "bullets": [
+                                        "お申《もう》し込《こ》みは、講座《こうざ》が始《はじ》まる1週間《しゅうかん》前《まえ》までに、センターの窓口《まどぐち》か電話《でんわ》でお願《ねが》いします。",
+                                        "料金《りょうきん》は、申《もう》し込《こ》みのときに窓口《まどぐち》でお支払《しはら》いください。",
+                                        "休《やす》まれた場合《ばあい》でも、料金《りょうきん》はお返《かえ》しできません。"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

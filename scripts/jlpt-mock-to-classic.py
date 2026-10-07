@@ -26,8 +26,8 @@ def mark(s):
     return re.sub(r'［(\d+)］', r'{{\1}}', s)
 
 
-def mondai_number(m_idx):
-    return str(m_idx + 1)
+def mondai_number(m_idx, start=1):
+    return str(m_idx + start)
 
 
 def convert_flyer(p, label):
@@ -62,7 +62,23 @@ def convert_passage(p, label, boxed):
             out['lead'] = mark(p['lead'])
         if p.get('variant'):  # 'mail' = email (N4)
             out['variant'] = p['variant']
+        if p.get('headers'):  # baris header email: [[label, isi], …] (N3 もんだい 4 (2))
+            out['headers'] = [[mark(a), mark(b)] for a, b in p['headers']]
+        if p.get('footnote'):  # （注）di bawah email (N2)
+            out['footnote'] = mark(p['footnote'])
+        if not out['to']:  # email ber-header tidak punya baris 〜さん
+            del out['to']
         return out
+    if kind == 'pair':  # dua bacaan A/B bersisian (N2 もんだい 12); catatan kaki opsional
+        out = {
+            'kind': 'pair',
+            'items': [{'label': it.get('label', ''), 'body': mark(it.get('text', ''))} for it in p.get('items', [])],
+        }
+        if p.get('footnote'):
+            out['footnote'] = mark(p['footnote'])
+        return out
+    if kind == 'plans':  # tabel A社 + diagram alur B社 (N2 もんだい 14); `data` dipakai apa adanya
+        return {'kind': 'plans', 'data': p.get('data', {})}
     if kind == 'notice':  # papan pengumuman: judul + butir ◆ (+ sub-butir ・) (N4)
         out = {
             'kind': 'notice',
@@ -76,6 +92,8 @@ def convert_passage(p, label, boxed):
         if p.get('lead'):
             out['lead'] = mark(p['lead'])
         return out
+    if kind == 'brochure':  # daftar bertabel + catatan (N3 もんだい 7); `data` dipakai apa adanya
+        return {'kind': 'brochure', 'label': label, 'data': p.get('data', {})}
     if kind == 'poster':  # pengumuman bertabel (N4 もんだい 6); `data` dipakai apa adanya
         return {'kind': 'poster', 'label': label, 'data': p.get('data', {})}
     out = {'kind': 'text', 'boxed': p.get('boxed', boxed), 'label': label, 'body': mark(p.get('text', ''))}
@@ -106,8 +124,9 @@ def convert_reading(bank):
     }
     passages = {}
 
+    start = int(bank.get('mondai_start', 1))  # nomor cetak もんだい pertama (N2 bunpou_dokkai: 7)
     for mi, m in enumerate(bank['mondai']):
-        no = mondai_number(mi)
+        no = mondai_number(mi, start)
         out['mondai'][no] = {'instruction': mark(m['instruction'])}
         if m.get('lead'):  # kalimat pengantar sebelum bacaan (N4 もんだい 3)
             out['mondai'][no]['lead'] = mark(m['lead'])
@@ -151,7 +170,7 @@ def convert_reading(bank):
                 nq = {
                     'id': q['id'],
                     'no': q['no'],
-                    'mondai': mi + 1,
+                    'mondai': mi + start,
                     'stem': stem,
                     'choices': [mark(c) for c in q['choices']],
                     'answer': q['answer'],
@@ -192,6 +211,8 @@ def convert_listening(bank):
             f['choice_count'] = len(choices)  # hanya terdengar, seperti ujian asli
         else:
             f['choices'] = [mark(c) if isinstance(c, str) else c for c in choices]
+        if q.get('label'):
+            f['label'] = q['label']  # label tampilan khusus (mis. N2 3番 質問1/2)
         if q.get('image'):
             f['image'] = q['image']
         if q.get('arrow'):

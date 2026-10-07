@@ -12,7 +12,7 @@ audio_text tanpa tanda 《》, speaker valid, gambar & audio yang belum ada
 import json, re, sys, glob, os
 
 KJ = r'[\u3400-\u9FFF々〇]'
-EXPECTED = {'vocab': [10, 8, 10, 5], 'grammar': [16, 5, 5, 3, 2, 1], 'listening': [7, 6, 5, 6]}
+EXPECTED = {'n2_listening': [5, 6, 5, 11, 4], 'vocab': [10, 8, 10, 5], 'grammar': [16, 5, 5, 3, 2, 1], 'listening': [7, 6, 5, 6]}
 SPEAKERS = {'narrator', 'male', 'female'}
 errors, warns = [], []
 

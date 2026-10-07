@@ -173,6 +173,61 @@ return [
                 'en' => 'JLPT N4 Mock Test — Set 1',
             ],
         ],
+
+        // Paket orisinal HonTomo N3 — ketiga sesi sudah ada (bank:
+        // resources/lang-data/jlpt/packs/n3-test-1/{mojigoi,bunpou_dokkai,chokai}.json, sumber naskah:
+        // resources/lang-data/jlpt/sources/n3-test-1.json, gambar chokai: public/images/jlpt-mock/n3/,
+        // audio TTS: public/audio/jlpt-mock/n3-test-1/). Level N3 mewajibkan ketiga sesi aktif (test
+        // JlptMockN3{Mojigoi,Bunpou,Chokai}Test menjaga agar pack aktif selalu punya semua bank-nya, dan
+        // mengingatkan bila semua bank ada tetapi pack masih nonaktif). Set `false` bila audio/gambar chokai
+        // belum ada di server — tes tetap jalan, tetapi pemutar menampilkan "File audio tidak ditemukan".
+        // Panduan: docs/jlpt-mock-n3.md.
+        'n3-test-1' => [
+            'enabled' => true,
+            'level' => 'N3',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/packs/n3-test-1',
+            'audio_path' => null,
+            'title' => [
+                'id' => 'Simulasi JLPT N3 — Paket 1',
+                'en' => 'JLPT N3 Mock Test — Set 1',
+            ],
+        ],
+
+        // Paket orisinal HonTomo N2 — ketiga sesi sudah ada (bank:
+        // resources/lang-data/jlpt/packs/n2-test-1/{chokai,mojigoi,bunpou_dokkai}.json, sumber naskah:
+        // resources/lang-data/jlpt/sources/n2-test-1.json, audio TTS: public/audio/jlpt-mock/n2-test-1/;
+        // N2 tidak memakai gambar). Level N2 mewajibkan ketiga sesi aktif; paket ini `enabled => false` sampai
+        // audio dibuat di server (JlptMockN2ChokaiTest/JlptMockN2MojigoiTest menjaga agar pack aktif selalu
+        // punya semua bank-nya). Panduan: docs/jlpt-mock-n2.md.
+        'n2-test-1' => [
+            'enabled' => true,
+            'level' => 'N2',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/packs/n2-test-1',
+            'audio_path' => null,
+            'title' => [
+                'id' => 'Simulasi JLPT N2 — Paket 1',
+                'en' => 'JLPT N2 Mock Test — Set 1',
+            ],
+        ],
+
+        // Paket orisinal HonTomo N1 — tiga sesi lengkap: mojigoi, bunpou_dokkai, chokai
+        // (bank: resources/lang-data/jlpt/packs/n1-test-1/{mojigoi,bunpou_dokkai,chokai}.json,
+        // naskah audio chokai: resources/lang-data/jlpt/sources/n1-test-1.json, audio TTS: public/audio/jlpt-mock/n1-test-1/
+        // n1-chokai-1…5.mp3 — satu rekaman utuh per もんだい, sama seperti pack 'private-n1').
+        // `enabled => true` karena ketiga berkas bank ada; audio perlu dibuat dulu. Panduan: docs/jlpt-mock-n1.md.
+        'n1-test-1' => [
+            'enabled' => true,
+            'level' => 'N1',
+            'format' => 'classic',
+            'data_dir' => 'jlpt/packs/n1-test-1',
+            'audio_path' => null,
+            'title' => [
+                'id' => 'Simulasi JLPT N1 — Paket 1',
+                'en' => 'JLPT N1 Mock Test — Set 1',
+            ],
+        ],
     ],
 
     'levels' => [

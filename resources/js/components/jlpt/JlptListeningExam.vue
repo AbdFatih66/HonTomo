@@ -372,7 +372,7 @@ onBeforeUnmount(() => {
             <template v-else-if="step.kind === 'rest'">きゅうけい</template>
             <template v-else-if="step.kind === 'end'">おわり</template>
             <template v-else>
-              もんだい {{ step.mondai }}<template v-if="step.kind === 'question'"> · {{ step.q.no }}ばん</template>
+              もんだい {{ step.mondai }}<template v-if="step.kind === 'question'"> · {{ questionLabel(step.q) }}</template>
             </template>
           </span>
           <span
@@ -555,7 +555,7 @@ onBeforeUnmount(() => {
           class="jl-qno"
           lang="ja"
         >
-          {{ step.q.no }}ばん
+          {{ questionLabel(step.q) }}
         </div>
         <JlptListeningItem
           :key="step.q.id"
