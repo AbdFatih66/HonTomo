@@ -20,6 +20,8 @@ use App\Services\ProgressService;
 use App\Services\XpService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Log;
 
 class DashboardController extends Controller
 {
@@ -42,6 +44,21 @@ class DashboardController extends Controller
     {
         $user = $request->user();
 
+        // Dasbor adalah halaman tersering dibuka dan merangkum 20+ query.
+        // Cache 60 detik per user; dihapus paksa saat preferensi berubah
+        // (lihat updatePreferences()).
+        $payload = Cache::remember(
+            "dashboard:{$user->id}",
+            60,
+            fn () => $this->dashboardPayload($user)
+        );
+
+        return response()->json($payload);
+    }
+
+    /** Seluruh isi dasbor sebagai array (di-cache oleh index()). */
+    private function dashboardPayload(User $user): array
+    {
         $level = $user->currentLevel
             ?? Level::where('is_active', true)->orderBy('order')->first();
 
@@ -49,7 +66,7 @@ class DashboardController extends Controller
         $xp = $this->xpService->totalXp($user);
         $streak = $user->streak;
 
-        return response()->json([
+        return [
             'name' => $user->name,
             'current_level' => $level ? new LevelResource($level) : null,
             'xp' => $xp,
@@ -60,7 +77,7 @@ class DashboardController extends Controller
             'streak_active_today' => $streak?->last_activity_date !== null
                 && Carbon::parse($streak->last_activity_date)->isToday(),
             'daily_goal_target' => $user->daily_goal_target,
-            'xp_today' => (int) $user->xpLedger()->whereDate('created_at', today())->sum('amount'),
+            'xp_today' => (int) $user->xpLedger()->where('created_at', '>=', today())->sum('amount'),
             'progress' => $this->progressService->summary($user),
             'next_lesson' => $path ? $this->progressService->nextLesson($path) : null,
             'roadmap' => $this->roadmap($user, $path, $level),
@@ -72,7 +89,7 @@ class DashboardController extends Controller
             'jlpt_exam_date' => $user->jlpt_exam_date?->toDateString(),
             // null = belum pernah tercatat (kunjungan pertama → tanpa notifikasi)
             'seen_badges' => $user->seen_badges,
-        ]);
+        ];
     }
 
     /**
@@ -104,6 +121,9 @@ class DashboardController extends Controller
         }
 
         $user->save();
+
+        // Preferensi berubah → dasbor yang di-cache harus dihitung ulang.
+        Cache::forget("dashboard:{$user->id}");
 
         return response()->json([
             'jlpt_exam_date' => $user->jlpt_exam_date?->toDateString(),
@@ -236,24 +256,47 @@ class DashboardController extends Controller
      * Id semua skenario jalur pelajaran Kaiwa (index.json → lessons → lesson-{n}.json).
      * Kosong bila materi belum terpasang, jadi tahap Kaiwa tampil tanpa meter.
      *
+     * Di-cache selamanya karena daftar ini hanya berubah saat materi di-deploy
+     * ulang — jalankan `php artisan cache:clear` (atau flush key
+     * `kaiwa:scenario-ids`) setelah memperbarui materi Kaiwa.
+     *
      * @return list<string>
      */
     private function kaiwaLessonScenarioIds(): array
     {
-        $dir = public_path('data/kaiwa');
-        $manifest = json_decode((string) @file_get_contents("{$dir}/index.json"), true);
-        $ids = [];
+        return Cache::rememberForever('kaiwa:scenario-ids', function (): array {
+            $dir = public_path('data/kaiwa');
+            $indexPath = "{$dir}/index.json";
 
-        foreach ($manifest['lessons'] ?? [] as $entry) {
-            $lesson = json_decode((string) @file_get_contents("{$dir}/".basename((string) ($entry['file'] ?? ''))), true);
-
-            foreach ($lesson['scenarios'] ?? [] as $scenario) {
-                if (! empty($scenario['id']))
-                    $ids[] = (string) $scenario['id'];
+            if (! is_file($indexPath)) {
+                Log::warning('Kaiwa index.json tidak ditemukan', ['path' => $indexPath]);
+                return [];
             }
-        }
 
-        return $ids;
+            $manifest = json_decode((string) file_get_contents($indexPath), true);
+            $ids = [];
+
+            foreach ($manifest['lessons'] ?? [] as $entry) {
+                $file = basename((string) ($entry['file'] ?? ''));
+                if ($file === '')
+                    continue;
+
+                $lessonPath = "{$dir}/{$file}";
+                if (! is_file($lessonPath)) {
+                    Log::warning('Kaiwa lesson file tidak ditemukan', ['path' => $lessonPath]);
+                    continue;
+                }
+
+                $lesson = json_decode((string) file_get_contents($lessonPath), true);
+
+                foreach ($lesson['scenarios'] ?? [] as $scenario) {
+                    if (! empty($scenario['id']))
+                        $ids[] = (string) $scenario['id'];
+                }
+            }
+
+            return $ids;
+        });
     }
 
     /** 5 perolehan XP terbaru. `source` dipetakan ke teks di frontend. */
@@ -290,7 +333,11 @@ class DashboardController extends Controller
         $start = (int) floor(today()->timestamp / 86400) * $count % $ids->count();
         $picked = collect(range(0, $count - 1))->map(fn (int $i) => $ids[($start + $i) % $ids->count()]);
 
-        $kanji = Kanji::with(['vocabulary' => fn ($q) => $q->limit(self::KANJI_EXAMPLES)])
+        // NOTE: jangan pakai limit() di dalam eager load — limit() di sana
+        // berlaku untuk keseluruhan query (bukan per kanji), sehingga sebagian
+        // kanji tidak dapat contoh kata. Pembatasan per kanji dilakukan lewat
+        // ->take() pada collection di bawah.
+        $kanji = Kanji::with('vocabulary')
             ->whereIn('id', $picked)->get()->keyBy('id');
 
         return $picked->map(fn ($id) => $kanji[$id])->map(fn (Kanji $k) => [

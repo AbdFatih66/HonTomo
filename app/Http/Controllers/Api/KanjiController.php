@@ -8,6 +8,7 @@ use App\Models\Lesson;
 use App\Models\UserKanjiProgress;
 use App\Models\UserLesson;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class KanjiController extends Controller
 {
@@ -36,6 +37,15 @@ class KanjiController extends Controller
      */
     public function index(Request $request)
     {
+        $request->validate([
+            'jlpt_level' => ['nullable', Rule::in(['N5', 'N4', 'N3', 'N2', 'N1'])],
+            'grade' => ['nullable', 'integer', 'min:1', 'max:255'],
+            'sort' => ['nullable', Rule::in(['curriculum'])],
+            'scope' => ['nullable', Rule::in(['learned'])],
+            'search' => ['nullable', 'string', 'max:100'],
+            'per_page' => ['nullable', 'integer', 'min:1', 'max:100'],
+        ]);
+
         $perPage = max(1, min(100, (int) $request->query('per_page', 48)));
 
         $query = Kanji::query();

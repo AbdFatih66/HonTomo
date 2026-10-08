@@ -156,8 +156,10 @@ class LessonService
             if (in_array($userLesson->status, [UserLesson::STATUS_COMPLETED, UserLesson::STATUS_MASTERED], true)) {
                 $userLesson->completed_at ??= now();
 
-                // Re-reading a study-only lesson must not farm XP again.
-                if (! ($studyOnly && $alreadyDone)) {
+                // XP hanya diberikan saat pertama kali lesson selesai.
+                // Mengulang lesson untuk review tidak menambah XP lagi
+                // (anti-farming: sebelumnya replay selalu dapat xp_reward penuh).
+                if (! $alreadyDone) {
                     $xp = $lesson->xp_reward;
                     $userLesson->xp_earned += $xp;
 
