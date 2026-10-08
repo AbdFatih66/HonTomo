@@ -2,12 +2,15 @@
 import { $api } from '@/utils/api'
 
 const { t, locale } = useI18n()
+const route = useRoute()
+const router = useRouter()
 
 const chapters = ref([])
 const chaptersLoading = ref(true)
 const chaptersError = ref(false)
 
-const selectedChapter = ref(1)
+const initialChapter = Number(route.query.chapter)
+const selectedChapter = ref(initialChapter >= 1 && initialChapter <= 25 ? initialChapter : 1)
 const words = ref([])
 const wordsLoading = ref(true)
 const wordsError = ref(false)
@@ -68,6 +71,19 @@ const filteredWords = computed(() => {
     || w.meaning?.toLowerCase().includes(q),
   )
 })
+
+// Kuis kosakata pelajaran ini (1 kuis; Pelajaran 1 & 2 punya 2).
+const quizzes = computed(() => currentChapter.value?.quiz ?? [])
+
+function startQuiz(quiz) {
+  router.push({ name: 'learn-id', params: { id: quiz.id } })
+}
+
+function quizLabel(quiz, index) {
+  return quizzes.value.length > 1
+    ? t('vocabulary.quiz_part', { n: index + 1 })
+    : t('vocabulary.quiz_start')
+}
 
 function selectChapter(order) {
   selectedChapter.value = order
@@ -144,6 +160,27 @@ onMounted(async () => {
         </VCardItem>
 
         <VCardText>
+          <div
+            v-if="quizzes.length"
+            class="d-flex flex-wrap align-center gap-3 mb-4"
+          >
+            <span class="text-body-1 font-weight-medium">
+              <VIcon icon="tabler-bulb" size="20" class="me-1" />
+              {{ t('vocabulary.quiz_title') }}
+            </span>
+            <VBtn
+              v-for="(quiz, i) in quizzes"
+              :key="quiz.id"
+              size="small"
+              color="primary"
+              :variant="quiz.status === 'completed' || quiz.status === 'mastered' ? 'tonal' : 'flat'"
+              :prepend-icon="quiz.status === 'completed' || quiz.status === 'mastered' ? 'tabler-check' : 'tabler-player-play-filled'"
+              @click="startQuiz(quiz)"
+            >
+              {{ quizLabel(quiz, i) }} · {{ t('vocabulary.quiz_questions', { n: quiz.question_count }) }}
+            </VBtn>
+          </div>
+
           <AppTextField
             v-model="search"
             :placeholder="t('vocabulary.search_placeholder')"

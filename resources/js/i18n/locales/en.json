@@ -717,7 +717,11 @@
     "col_japanese": "Kanji/Kana",
     "col_hiragana": "Hiragana",
     "col_romaji": "Romaji",
-    "col_meaning": "Meaning"
+    "col_meaning": "Meaning",
+    "quiz_title": "Vocabulary Quiz",
+    "quiz_start": "Start Quiz",
+    "quiz_part": "Quiz {n}",
+    "quiz_questions": "{n} questions"
   },
   "mondaishuu": {
     "title": "Practice Questions",

@@ -35,7 +35,7 @@ class LessonController extends Controller
         // before being sent, so the player never shows an unanswerable card.
         $this->optionRepair->ensureForLesson($lesson);
 
-        $lesson->load(['questions.options']);
+        $lesson->load(['questions.options', 'unit']);
 
         return response()->json([
             'lesson' => new LessonResource($lesson),

@@ -790,16 +790,9 @@ function markProgress(key, perfect) {
   })
 }
 
-// Sama seperti Jalur Belajar/Mondaishuu: pelajaran berikutnya terkunci sampai
-// pelajaran sebelumnya diselesaikan (status `done`). Admin bebas dari penguncian
-// ini supaya bisa memeriksa/menguji pelajaran mana saja.
-function isLocked(key) {
-  if (authStore.isAdmin)
-    return false
-
-  const n = Number(key.slice(1))
-
-  return n > 1 && !progress[`l${n - 1}`]?.done
+// Semua pelajaran terbuka untuk semua akun — tidak ada penguncian.
+function isLocked() {
+  return false
 }
 
 function statusFor(key) {

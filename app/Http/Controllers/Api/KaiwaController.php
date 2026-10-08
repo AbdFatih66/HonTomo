@@ -54,25 +54,6 @@ class KaiwaController extends Controller
 
         $user = $request->user();
 
-        // Kunci pelajaran (sama dengan `blockerOf` di halaman): pelajaran n baru terbuka bila SEMUA
-        // skenario pelajaran sebelumnya (urutan manifest) sudah done. Admin dikecualikan. Skenario yang
-        // sudah pernah tamat boleh diulang, supaya skenario baru di pelajaran lama tidak mengunci
-        // ulang pemain yang sudah lebih maju.
-        if ($lessonId !== null && ! $user->isAdmin()) {
-            $done = UserKaiwaProgress::where('user_id', $user->id)->where('done', true)->pluck('set_key')->all();
-
-            if (! in_array($setKey, $done, true)) {
-                $blocker = $this->blockingLesson($lessonId, $lessons, $done);
-
-                if ($blocker !== null) {
-                    return response()->json([
-                        'message' => "Selesaikan semua skenario Pelajaran {$blocker} dulu.",
-                        'blocked_by' => $blocker,
-                    ], 403);
-                }
-            }
-        }
-
         $progress = UserKaiwaProgress::firstOrCreate([
             'user_id' => $user->id,
             'set_key' => $setKey,
@@ -165,25 +146,6 @@ class KaiwaController extends Controller
         foreach ($lessons as $lessonId => $ids) {
             if (in_array($setKey, $ids, true))
                 return $lessonId;
-        }
-
-        return null;
-    }
-
-    /**
-     * Pelajaran pertama (urutan manifest) sebelum $lessonId yang belum tuntas; null bila terbuka.
-     *
-     * @param  array<int, list<string>>  $lessons
-     * @param  list<string>  $done
-     */
-    private function blockingLesson(int $lessonId, array $lessons, array $done): ?int
-    {
-        foreach ($lessons as $id => $ids) {
-            if ($id === $lessonId)
-                return null;
-
-            if ($ids !== [] && array_diff($ids, $done) !== [])
-                return $id;
         }
 
         return null;

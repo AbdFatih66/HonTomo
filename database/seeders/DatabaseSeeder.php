@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             MissingVocabularySeeder::class, // fills the Pelajaran 1-5 gaps; must run before the quiz builder
             LessonQuestionSeeder::class,
             QuestionOptionSeeder::class,
+            VocabularyQuizSyncSeeder::class, // list <-> quiz: every word in both
             GrammarSeeder::class,
             LessonGrammarQuestionSeeder::class, // weaves grammar cards into the lesson flow
             Lesson1BunpouSeeder::class, // separate "Tata Bahasa" lesson node for Pelajaran 1

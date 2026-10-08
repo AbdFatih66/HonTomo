@@ -34,9 +34,9 @@ class VocabularyController extends Controller
     }
 
     /** All 25 curriculum chapters (Pelajaran 1-25) with their word counts, for the vocabulary-by-chapter menu. */
-    public function chapters()
+    public function chapters(Request $request)
     {
-        return response()->json(['data' => $this->chapters->chapters()]);
+        return response()->json(['data' => $this->chapters->chapters($request->user())]);
     }
 
     public function show(\App\Models\Vocabulary $vocabulary)

@@ -740,10 +740,7 @@ function markProgress(key, perfect) {
   })
 }
 
-// Sama seperti Jalur Belajar: pelajaran berikutnya terkunci sampai
-// pelajaran sebelumnya diselesaikan (status `done`, boleh tanpa mahkota).
-// Rangkuman butuh semua pelajaran di rentangnya selesai dulu. Admin bebas
-// dari penguncian ini supaya bisa memeriksa/menguji materi mana saja.
+// Semua pelajaran & rangkuman terbuka untuk semua akun — tidak ada penguncian.
 const REVIEW_RANGES = {
   'r1-8': [1, 8],
   'r9-17': [9, 17],
@@ -751,27 +748,7 @@ const REVIEW_RANGES = {
   'r1-25': [1, 25],
 }
 
-function isLocked(key) {
-  if (authStore.isAdmin)
-    return false
-
-  if (key.startsWith('l')) {
-    const n = Number(key.slice(1))
-
-    return n > 1 && !progress[`l${n - 1}`]?.done
-  }
-
-  const range = REVIEW_RANGES[key]
-  if (!range)
-    return false
-
-  const [start, end] = range
-
-  for (let i = start; i <= end; i++) {
-    if (!progress[`l${i}`]?.done)
-      return true
-  }
-
+function isLocked() {
   return false
 }
 

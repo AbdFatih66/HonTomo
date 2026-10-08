@@ -165,6 +165,9 @@ async function load() {
     const lessonId = route.params.id
     const res = await $api(`/lessons/${lessonId}`)
 
+    lessonCategory.value = res.lesson?.category ?? null
+    unitOrder.value = res.lesson?.unit_order ?? null
+
     // Grammar cards are pulled out and taught as their own step first —
     // they never sit inside the scored quiz's question list/progress/hearts.
     grammarCards.value = res.questions.filter(q => q.question_type === 'grammar')
@@ -274,14 +277,34 @@ const accuracy = computed(() => {
 //                      can still be done.
 const isLeaving = ref(false)
 
+// Vocabulary quizzes are started from the Kosakata page, so they return there
+// (to the chapter they belong to) instead of the Bunpou learning path.
+const lessonCategory = ref(null)
+const unitOrder = ref(null)
+
+const isVocabularyQuiz = computed(() => lessonCategory.value === 'vocabulary')
+
 function goToPath() {
   clearAutoAdvance()
+
+  if (isVocabularyQuiz.value) {
+    router.push({ name: 'kosakata', query: unitOrder.value ? { chapter: unitOrder.value } : {} })
+
+    return
+  }
+
   router.push({ name: 'learn', query: { focus: route.params.id } })
 }
 
 async function continueLearning() {
   if (isLeaving.value)
     return
+
+  if (isVocabularyQuiz.value) {
+    goToPath()
+
+    return
+  }
 
   isLeaving.value = true
 

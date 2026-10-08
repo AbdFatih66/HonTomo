@@ -9,6 +9,9 @@ use App\Models\UserLesson;
 
 class ProgressService
 {
+    /** The only lesson category shown on the learning path. */
+    public const PATH_CATEGORY = 'grammar';
+
     /**
      * Unlock the first lesson(s) with no prerequisite for a fresh user,
      * or unlock the next lesson after one is completed.
@@ -41,30 +44,12 @@ class ProgressService
     }
 
     /**
-     * Whether the learner may open this lesson: it has no prerequisite, the
-     * prerequisite is completed/mastered, or the lesson itself is already done
-     * (so finished lessons can always be reviewed).
+     * Every lesson is open to every account — there is no prerequisite gate.
+     * (Kept as a method so LessonService / LessonController callers stay valid.)
      */
     public function isUnlocked(User $user, Lesson $lesson): bool
     {
-        if ($user->isAdmin()) {
-            return true;
-        }
-
-        $done = [UserLesson::STATUS_COMPLETED, UserLesson::STATUS_MASTERED];
-
-        $own = UserLesson::where('user_id', $user->id)
-            ->where('lesson_id', $lesson->id)
-            ->value('status');
-
-        if (in_array($own, $done, true) || $lesson->prerequisite_lesson_id === null) {
-            return true;
-        }
-
-        return UserLesson::where('user_id', $user->id)
-            ->where('lesson_id', $lesson->prerequisite_lesson_id)
-            ->whereIn('status', $done)
-            ->exists();
+        return true;
     }
 
     public function summary(User $user): array
@@ -85,10 +70,10 @@ class ProgressService
 
     /**
      * Build the learning path (units -> lessons) for a level with the status
-     * of every lesson for this user. A lesson with no UserLesson row is
-     * "available" if it has no prerequisite or its prerequisite is done,
-     * otherwise "locked" — so the path is correct even for brand new users
-     * and for lessons an admin adds later.
+     * of every lesson for this user. Nothing is locked: a lesson is finished,
+     * in progress, or available. Only Bunpou (grammar) lessons are part of
+     * the path — vocabulary quizzes live on the Kosakata page and
+     * Hiragana/Katakana on the Kana page — and units left empty are dropped.
      */
     public function learningPath(User $user, Level $level): array
     {
@@ -100,31 +85,27 @@ class ProgressService
         $statuses = UserLesson::where('user_id', $user->id)->pluck('status', 'lesson_id');
         $done = [UserLesson::STATUS_COMPLETED, UserLesson::STATUS_MASTERED];
         $en = app()->getLocale() === 'en';
-        $isAdmin = $user->isAdmin();
 
-        $units = $level->units->map(function ($unit) use ($statuses, $done, $en, $isAdmin) {
+        $units = $level->units->map(function ($unit) use ($statuses, $done, $en) {
+            // The path is Bunpou (grammar) only. Vocabulary quizzes live on the
+            // Kosakata page; Hiragana/Katakana live on the Kana page.
+            $lessons = $unit->lessons
+                ->filter(fn (Lesson $lesson) => $lesson->category === self::PATH_CATEGORY);
+
+            if ($lessons->isEmpty()) {
+                return null;
+            }
+
             return [
                 'id' => $unit->id,
                 'title' => $unit->title(),
                 'description' => $en ? $unit->description_en : $unit->description_id,
                 'icon' => $unit->icon,
-                'lessons' => $unit->lessons->map(function (Lesson $lesson) use ($statuses, $done, $isAdmin) {
+                'lessons' => $lessons->map(function (Lesson $lesson) use ($statuses, $done) {
                     $stored = $statuses[$lesson->id] ?? null;
 
-                    // A finished lesson stays finished. Anything else is only
-                    // open while its prerequisite is done — a stored
-                    // "available" row is not proof of that: rows are created
-                    // when an EARLIER lesson is completed, so a lesson that
-                    // later gained a new prerequisite (e.g. a Bunpou lesson
-                    // slotted in before the vocabulary) would otherwise stay
-                    // open ahead of it.
-                    $prerequisiteDone = $lesson->prerequisite_lesson_id === null
-                        || in_array($statuses[$lesson->prerequisite_lesson_id] ?? null, $done, true);
-
                     $status = match (true) {
-                        $isAdmin && ! in_array($stored, $done, true) => UserLesson::STATUS_AVAILABLE,
                         in_array($stored, $done, true) => $stored,
-                        ! $prerequisiteDone => UserLesson::STATUS_LOCKED,
                         $stored === UserLesson::STATUS_IN_PROGRESS => UserLesson::STATUS_IN_PROGRESS,
                         default => UserLesson::STATUS_AVAILABLE,
                     };
@@ -138,7 +119,7 @@ class ProgressService
                     ];
                 })->values(),
             ];
-        })->values();
+        })->filter()->values();
 
         return [
             'level' => ['id' => $level->id, 'code' => $level->code, 'name' => $level->name()],

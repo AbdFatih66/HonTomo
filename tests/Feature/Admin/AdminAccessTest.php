@@ -16,7 +16,7 @@ class AdminAccessTest extends TestCase
     {
         parent::setUp();
 
-        $this->buildMiniCurriculum(); // firstLesson -> secondLesson (locked by default)
+        $this->buildMiniCurriculum(); // firstLesson -> secondLesson 
     }
 
     private function admin(): User
@@ -38,12 +38,12 @@ class AdminAccessTest extends TestCase
         $this->assertNull($user->role);
     }
 
-    public function test_an_admin_can_open_a_lesson_that_is_still_locked_for_a_regular_user(): void
+    public function test_every_account_can_open_any_lesson(): void
     {
         $admin = $this->admin();
         $user = User::factory()->create();
 
-        $this->asToken($user)->postJson("/api/lessons/{$this->secondLesson->id}/start")->assertForbidden();
+        $this->asToken($user)->postJson("/api/lessons/{$this->secondLesson->id}/start")->assertOk();
         $this->asToken($admin)->postJson("/api/lessons/{$this->secondLesson->id}/start")->assertOk();
     }
 

@@ -102,26 +102,8 @@ const userName = computed(() => (round.value === 2 ? partnerName.value : youName
 const appName = computed(() => (round.value === 2 ? youName.value : partnerName.value))
 const passPercent = Math.round(PASS_SCORE * 100)
 
-/** Id pelajaran pertama (urutan manifest) yang belum tuntas dan menghalangi `id`; null bila tidak terkunci. */
-function blockerOf(id) {
-  // Admin boleh membuka semua pelajaran (untuk uji materi).
-  if (authStore.isAdmin)
-    return null
-
-  const idx = manifest.value.findIndex(x => x.id === id)
-
-  if (idx <= 0)
-    return null
-  if (!gateReady.value)
-    return manifest.value[0].id
-
-  for (const prev of manifest.value.slice(0, idx)) {
-    const ids = lessonScenarioIds[prev.id]
-
-    if (ids?.length && !ids.every(k => progress[k]?.done))
-      return prev.id
-  }
-
+/** Semua pelajaran terbuka untuk semua akun — tidak ada penguncian. */
+function blockerOf() {
   return null
 }
 

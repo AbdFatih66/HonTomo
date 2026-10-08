@@ -152,34 +152,16 @@ class KaiwaProgressTest extends TestCase
             ->assertJson(['set_key' => 'l25-s4', 'xp' => 10]);
     }
 
-    public function test_later_lesson_is_locked_until_every_earlier_scenario_is_done(): void
+    public function test_later_lesson_is_open_without_finishing_earlier_ones(): void
     {
         $user = User::factory()->create();
         $client = $this->actingAsToken($user);
 
-        $client->postJson('/api/kaiwa/progress/l2-s1', ['perfect' => true])
-            ->assertForbidden()
-            ->assertJson(['blocked_by' => 1]);
-
-        $this->assertSame(0, UserKaiwaProgress::where('user_id', $user->id)->count());
-        $this->assertEquals(0, $user->xpLedger()->sum('amount'));
-
-        // semua skenario Pelajaran 1 kecuali satu: masih terkunci
-        $ids = $this->lessonIds()[1];
-        $last = array_pop($ids);
-
-        foreach ($ids as $key)
-            $client->postJson("/api/kaiwa/progress/{$key}", ['perfect' => false])->assertOk();
-
-        $client->postJson('/api/kaiwa/progress/l2-s1', ['perfect' => false])->assertForbidden();
-
-        $client->postJson("/api/kaiwa/progress/{$last}", ['perfect' => false])->assertOk();
-        $client->postJson('/api/kaiwa/progress/l2-s1', ['perfect' => false])->assertOk()->assertJson(['xp' => 10]);
-
-        // Pelajaran 3 tetap terkunci: Pelajaran 2 belum tuntas
         $client->postJson('/api/kaiwa/progress/l3-s1', ['perfect' => false])
-            ->assertForbidden()
-            ->assertJson(['blocked_by' => 2]);
+            ->assertOk()
+            ->assertJson(['set_key' => 'l3-s1', 'xp' => 10]);
+
+        $this->assertSame(1, UserKaiwaProgress::where('user_id', $user->id)->count());
     }
 
     public function test_admin_is_not_subject_to_the_lesson_lock(): void
@@ -285,14 +267,12 @@ class KaiwaProgressTest extends TestCase
         $this->assertEquals(0, $user->xpLedger()->sum('amount'));
     }
 
-    public function test_situation_progress_does_not_count_toward_the_lesson_lock(): void
+    public function test_situation_progress_does_not_affect_lesson_access(): void
     {
         $user = User::factory()->create();
         $client = $this->actingAsToken($user);
 
         $client->postJson('/api/kaiwa/progress/mensetsu-s1', ['perfect' => false])->assertOk();
-
-        // menamatkan situasi tidak membuka Pelajaran 2
-        $client->postJson('/api/kaiwa/progress/l2-s1', ['perfect' => false])->assertForbidden();
+        $client->postJson('/api/kaiwa/progress/l2-s1', ['perfect' => false])->assertOk();
     }
 }

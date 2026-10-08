@@ -197,19 +197,15 @@ class LearningRegressionTest extends TestCase
         ])->assertOk()->assertJsonPath('is_correct', false);
     }
 
-    public function test_the_next_lesson_stays_locked_until_the_previous_one_is_completed(): void
+    public function test_the_next_lesson_is_open_without_completing_the_previous_one(): void
     {
         [, $token] = $this->register();
 
-        // locked at first
-        $this->as($token)->postJson("/api/lessons/{$this->secondLesson->id}/start")->assertForbidden();
-
-        $userLessonId = $this->startFirstLesson($token)->json('user_lesson_id');
-        $this->answerCorrectly($token, $userLessonId)->assertOk();
-        $this->as($token)->postJson("/api/user-lessons/{$userLessonId}/finish")->assertOk();
-
-        // unlocked afterwards
         $this->as($token)->postJson("/api/lessons/{$this->secondLesson->id}/start")->assertOk();
+
+        $path = $this->as($token)->getJson('/api/learning-path')->assertOk()->json();
+        $statuses = collect($path['units'])->pluck('lessons')->flatten(1)->pluck('status');
+        $this->assertNotContains('locked', $statuses->all());
     }
 
     // ------------------------------------------------ progress is preserved
@@ -286,5 +282,24 @@ class LearningRegressionTest extends TestCase
 
         $this->answerCorrectly($token, $id)->assertOk();
         $this->as($token)->postJson("/api/user-lessons/{$id}/finish")->assertOk();
+    }
+
+    public function test_the_learning_path_only_has_bunpou_lessons(): void
+    {
+        [, $token] = $this->register();
+
+        $unit = $this->firstLesson->unit;
+        foreach (['grammar', 'hiragana', 'katakana'] as $category) {
+            \App\Models\Lesson::create([
+                'unit_id' => $unit->id, 'title_id' => ucfirst($category), 'title_en' => ucfirst($category),
+                'category' => $category, 'order' => 50, 'xp_reward' => 10, 'required_accuracy' => 70, 'is_active' => true,
+            ]);
+        }
+
+        $path = $this->as($token)->getJson('/api/learning-path')->assertOk()->json();
+        $categories = collect($path['units'])->pluck('lessons')->flatten(1)->pluck('category');
+
+        // the fixture's two vocabulary lessons, hiragana and katakana are all left out
+        $this->assertSame(['grammar'], $categories->unique()->values()->all());
     }
 }
