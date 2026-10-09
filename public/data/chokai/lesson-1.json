@@ -1,0 +1,331 @@
+{
+    "id": 1,
+    "focus": "Perkenalan diri, asal negara, pekerjaan, usia — は・も・か・じゃありません・の",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "はじめまして。ブディです。インドネシアから来ました。どうぞよろしく。"
+            },
+            {
+                "speaker": "female",
+                "text": "はじめまして。田口です。どうぞよろしく。"
+            },
+            {
+                "speaker": "male",
+                "text": "田口さんは先生ですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいえ、先生じゃありません。銀行員です。ブディさんも銀行員ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、わたしは会社員です。ヒカリ電気の社員です。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-1/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l1-kq1",
+                "prompt": "ブディさんは、何《なん》の　社員《しゃいん》ですか。",
+                "choices": [
+                    "みなと大学《だいがく》",
+                    "つばさ病院《びょういん》",
+                    "ヒカリ電気《でんき》"
+                ],
+                "answer": 2,
+                "translate": {
+                    "id": "Di kaiwa, Budi berkata dia karyawan Hikari Denki. Jawaban: Hikari Denki.",
+                    "en": "In the kaiwa, Budi says he is an employee of Hikari Denki. Answer: Hikari Denki."
+                },
+                "audio": null
+            },
+            {
+                "id": "l1-kq2",
+                "prompt": "田口《たぐち》さんは、先生《せんせい》ですか。",
+                "choices": [
+                    "はい、先生《せんせい》です。",
+                    "いいえ、銀行員《ぎんこういん》です。",
+                    "いいえ、医者《いしゃ》です。"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa, Taguchi berkata dia bukan guru, tapi pegawai bank. Jawaban: bukan, pegawai bank.",
+                    "en": "In the kaiwa, Taguchi says she is not a teacher, but a bank employee. Answer: no, a bank employee."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l1-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "はじめまして。ラニです。インドネシアから来ました。どうぞよろしく。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q1.mp3",
+            "prompt": "この　人《ひと》は　だれですか。",
+            "choices": [
+                "ヌルさんです。",
+                "ラニさんです。",
+                "ハンナさんです。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Salam kenal, saya Rani. Saya dari Indonesia.' Jawaban: Rani.",
+                "en": "Audio: 'Nice to meet you, I'm Rani. I'm from Indonesia.' Answer: Rani."
+            }
+        },
+        {
+            "id": "l1-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ゲイリーさんは、おいくつですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わたしは、三十一歳です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q2.mp3",
+            "prompt": "ゲイリーさんは　何歳《なんさい》ですか。",
+            "choices": [
+                "13歳《さい》です。",
+                "31歳《さい》です。",
+                "30歳《さい》です。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Gary, berapa usia Anda?' 'Saya 31 tahun.' Jawaban: 31 tahun.",
+                "en": "Audio: 'Gary, how old are you?' 'I'm 31.' Answer: 31."
+            }
+        },
+        {
+            "id": "l1-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "スミスさんは、アメリカ人ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、わたしはアメリカ人じゃありません。イギリス人です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q3.mp3",
+            "prompt": "スミスさんは　（　　）人《じん》です。",
+            "choices": [
+                "アメリカ",
+                "ドイツ",
+                "イギリス"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Apakah Smith orang Amerika?' 'Bukan, saya orang Inggris.' Jawaban: Inggris.",
+                "en": "Audio: 'Is Smith American?' 'No, I'm British.' Answer: British."
+            }
+        },
+        {
+            "id": "l1-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "こちらは、ハンさんです。ハンさんは、銀行員じゃありません。医者です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q4.mp3",
+            "prompt": "ハンさんは　（　　）です。",
+            "choices": [
+                "銀行員《ぎんこういん》",
+                "医者《いしゃ》",
+                "先生《せんせい》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Ini Han. Han bukan pegawai bank. Han dokter.' Jawaban: dokter.",
+                "en": "Audio: 'This is Han. Han is not a bank clerk. Han is a doctor.' Answer: doctor."
+            }
+        },
+        {
+            "id": "l1-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは、学生ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、学生じゃありません。会社員です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ヌルさんも、会社員ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、ヌルさんは先生です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q5.mp3",
+            "prompt": "ヌルさんは　（　　）です。",
+            "choices": [
+                "会社員《かいしゃいん》",
+                "学生《がくせい》",
+                "先生《せんせい》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Apakah Nur juga karyawan?' 'Bukan, Nur guru.' Jawaban: guru.",
+                "en": "Audio: 'Is Nur a company employee too?' 'No, Nur is a teacher.' Answer: teacher."
+            }
+        },
+        {
+            "id": "l1-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "はじめまして。ブラウンです。イギリスから来ました。どうぞよろしく。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はじめまして。ヤンです。どうぞよろしく。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "はじめまして。ヤンです。どうぞよろしく。",
+                "はじめまして。リナです。どうぞよろしく。",
+                "はじめまして。ハンです。どうぞよろしく。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Salam kenal, saya Brown, dari Inggris.' 'Salam kenal, saya Yan.' Jawaban: sesuai yang diucapkan perempuan di audio.",
+                "en": "Audio: 'Nice to meet you, I'm Brown, from England.' 'Nice to meet you, I'm Yan.' Answer: exactly what the woman says in the audio."
+            }
+        },
+        {
+            "id": "l1-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "わたしは会社員です。あなたも会社員ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、わたしも会社員です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "はい、わたしも会社員《かいしゃいん》です。",
+                "いいえ、わたしは学生《がくせい》です。",
+                "はい、わたしも医者《いしゃ》です。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Saya karyawan perusahaan. Kamu juga?' 'Ya, saya juga karyawan perusahaan.' Jawaban: sesuai ucapan perempuan di audio.",
+                "en": "Audio: 'I'm a company employee. Are you too?' 'Yes, I'm also a company employee.' Answer: exactly what the woman says in the audio."
+            }
+        },
+        {
+            "id": "l1-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "マイさんは、おいくつですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "二十三歳です。学生です。ケンさんは。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わたしは二十五歳です。会社員です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q8.mp3",
+            "prompt": "ケンさんは　二十五歳《にじゅうごさい》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ken berusia 25 tahun. Jawaban: Benar (○).",
+                "en": "Ken is 25 years old. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l1-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ジョンさんはエンジニアですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、エンジニアです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ポールさんもエンジニアですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ポールさんはエンジニアじゃありません。医者です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q9.mp3",
+            "prompt": "ポールさんも　エンジニアです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Paul juga insinyur. Jawaban: Salah (×) — Paul adalah dokter.",
+                "en": "Paul is also an engineer. Answer: False (×) — Paul is a doctor."
+            }
+        },
+        {
+            "id": "l1-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヌルさんは、インドネシア人ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、マレーシア人です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "銀行員ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、銀行員じゃありません。先生です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-1/l1-q10.mp3",
+            "prompt": "ヌルさんは　マレーシア人《じん》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Nur orang Malaysia. Jawaban: Benar (○).",
+                "en": "Nur is Malaysian. Answer: True (○)."
+            }
+        }
+    ]
+}

@@ -1,0 +1,1207 @@
+{
+    "id": "pakaian",
+    "track": "situation",
+    "level": "N5",
+    "rounds": 1,
+    "title_id": "Belanja Pakaian",
+    "title_en": "Clothes Shopping",
+    "note_id": "Kalimat pegawai memakai bahasa sopan toko (mis. いかがですか, かしこまりました, ございます). Kamu cukup mengerti dan menjawab sederhana. Ukuran, warna, dan harga di jawaban contoh hanya contoh; ganti dengan ukuranmu sendiri saat belanja sungguhan.",
+    "note_en": "Clerk lines use polite shop language (e.g. いかがですか, かしこまりました, ございます). You only need to understand and answer simply. Sizes, colors and prices in the sample answers are examples; use your own size when shopping for real.",
+    "scenarios": [
+        {
+            "id": "pakaian-s1",
+            "title_id": "Masuk toko & mencari pakaian",
+            "title_en": "Entering a store & looking for clothes",
+            "setting_id": "Kamu masuk toko pakaian untuk mencari jaket musim dingin.",
+            "setting_en": "You enter a clothing store to look for a winter jacket.",
+            "goal_id": "Memakai 〜を 探《さが》しています dan 〜は どこですか.",
+            "goal_en": "Use 〜を 探しています and 〜は どこですか.",
+            "patterns": [
+                "〜を 探しています",
+                "〜は どこですか",
+                "見《み》るだけです"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Saat pegawai menyapa いらっしゃいませ, jawab ちょっと 見《み》るだけです bila belum mau dibantu, atau 〜を 探《さが》しています bila butuh bantuan.",
+                "Jenis pakaian: ジャケット, コート (mantel), シャツ, ズボン (celana), スカート."
+            ],
+            "tips_en": [
+                "When staff greet you, say ちょっと 見るだけです if you just browse, or 〜を 探しています if you need help.",
+                "Types: ジャケット, コート (coat), シャツ, ズボン (trousers), スカート."
+            ],
+            "words": [
+                {
+                    "ja": "探《さが》しています",
+                    "id": "sedang mencari",
+                    "en": "am looking for"
+                },
+                {
+                    "ja": "ジャケット",
+                    "id": "jaket",
+                    "en": "jacket"
+                },
+                {
+                    "ja": "コート",
+                    "id": "mantel",
+                    "en": "coat"
+                },
+                {
+                    "ja": "ズボン",
+                    "id": "celana panjang",
+                    "en": "trousers"
+                },
+                {
+                    "ja": "見《み》るだけ",
+                    "id": "hanya melihat-lihat",
+                    "en": "just looking"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ズボンを 探《さが》しています。",
+                    "id": "Saya mencari celana.",
+                    "en": "I am looking for trousers."
+                },
+                {
+                    "ja": "コートは どこですか。",
+                    "id": "Mantel di mana?",
+                    "en": "Where are the coats?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。何《なに》か お探《さが》しですか。",
+                    "speak": "いらっしゃいませ。なにか おさがしですか。",
+                    "id_text": "Selamat datang. Sedang mencari sesuatu?",
+                    "en_text": "Welcome. Are you looking for something?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s1-t2",
+                    "who": "you",
+                    "ja": "はい、ジャケットを 探《さが》しています。",
+                    "speak": "はい、ジャケットを さがしています。",
+                    "id_text": "Ya, saya mencari jaket.",
+                    "accept": [
+                        "はい、ジャケットを 探しています。",
+                        "はい、ジャケットを探しています。"
+                    ],
+                    "en_text": "Yes, I am looking for a jacket.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s1-t3",
+                    "who": "partner",
+                    "ja": "男性用《だんせいよう》ですか。",
+                    "speak": "だんせいようですか。",
+                    "id_text": "Untuk pria?",
+                    "en_text": "For men?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s1-t4",
+                    "who": "you",
+                    "ja": "はい、そうです。",
+                    "speak": "はい、そうです。",
+                    "id_text": "Ya, benar.",
+                    "accept": [
+                        "はい、そうです。"
+                    ],
+                    "en_text": "Yes, that is right.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s1-t5",
+                    "who": "partner",
+                    "ja": "ジャケットは 二階《にかい》に あります。",
+                    "speak": "ジャケットは にかいに あります。",
+                    "id_text": "Jaket ada di lantai dua.",
+                    "en_text": "Jackets are on the second floor.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s1-t6",
+                    "who": "you",
+                    "ja": "エレベーターは どこですか。",
+                    "speak": "エレベーターは どこですか。",
+                    "id_text": "Lift di mana?",
+                    "accept": [
+                        "エレベーターは どこですか。",
+                        "エレベーターはどこですか。"
+                    ],
+                    "en_text": "Where is the elevator?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s1-t7",
+                    "who": "partner",
+                    "ja": "あちらです。階段《かいだん》も 右《みぎ》に あります。",
+                    "speak": "あちらです。かいだんも みぎに あります。",
+                    "id_text": "Di sebelah sana. Tangga juga ada di kanan.",
+                    "en_text": "Over there. The stairs are on the right too.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s2",
+            "title_id": "Menanyakan ukuran",
+            "title_en": "Asking about sizes",
+            "setting_id": "Kamu menemukan kemeja tetapi tidak tahu ukurannya. Kamu bertanya サイズ.",
+            "setting_en": "You find a shirt but are unsure about the size. You ask about サイズ.",
+            "goal_id": "Memakai サイズは ありますか, Mサイズ, dan もう 少《すこ》し 大《おお》きい / 小《ちい》さい.",
+            "goal_en": "Use サイズは ありますか, Mサイズ and もう 少し 大きい / 小さい.",
+            "patterns": [
+                "〜サイズは ありますか",
+                "もう 少し 大きい のは ありますか",
+                "〜を ください"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "サイズ: S (エス), M (エム), L (エル). Nama ukuran dibaca dengan huruf Inggris: エスサイズ, エムサイズ, エルサイズ.",
+                "もう 少《すこ》し 大《おお》きい のは ありますか = Ada yang sedikit lebih besar? Ganti 大きい dengan 小《ちい》さい untuk lebih kecil."
+            ],
+            "tips_en": [
+                "Sizes S, M, L are read as エス, エム, エル + サイズ.",
+                "もう 少し 大きい のは ありますか = Is there a slightly bigger one? Swap in 小さい for smaller."
+            ],
+            "words": [
+                {
+                    "ja": "サイズ",
+                    "id": "ukuran",
+                    "en": "size"
+                },
+                {
+                    "ja": "大《おお》きい",
+                    "id": "besar",
+                    "en": "big"
+                },
+                {
+                    "ja": "小《ちい》さい",
+                    "id": "kecil",
+                    "en": "small"
+                },
+                {
+                    "ja": "もう 少《すこ》し",
+                    "id": "sedikit lagi",
+                    "en": "a little more"
+                },
+                {
+                    "ja": "ありますか",
+                    "id": "apakah ada",
+                    "en": "do you have"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "エルサイズは ありますか。",
+                    "id": "Apakah ada ukuran L?",
+                    "en": "Do you have size L?"
+                },
+                {
+                    "ja": "もう 少《すこ》し 小《ちい》さい のは ありますか。",
+                    "id": "Ada yang sedikit lebih kecil?",
+                    "en": "Is there a slightly smaller one?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s2-t1",
+                    "who": "you",
+                    "ja": "すみません、この シャツの エムサイズは ありますか。",
+                    "speak": "すみません、この シャツの エムサイズは ありますか。",
+                    "id_text": "Maaf, apakah kemeja ini ada ukuran M?",
+                    "accept": [
+                        "すみません、この シャツの エムサイズは ありますか。",
+                        "すみません、このシャツのエムサイズはありますか。",
+                        "すみません、この シャツの Mサイズは ありますか。",
+                        "すみません、このシャツのMサイズはありますか。"
+                    ],
+                    "en_text": "Excuse me, does this shirt come in size M?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s2-t2",
+                    "who": "partner",
+                    "ja": "はい、ございます。少々《しょうしょう》 お待《ま》ちください。",
+                    "speak": "はい、ございます。しょうしょう おまちください。",
+                    "id_text": "Ya, ada. Mohon tunggu sebentar.",
+                    "en_text": "Yes, we do. Please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s2-t3",
+                    "who": "partner",
+                    "ja": "お待《ま》たせしました。こちらです。",
+                    "speak": "おまたせしました。こちらです。",
+                    "id_text": "Maaf menunggu. Ini dia.",
+                    "en_text": "Thank you for waiting. Here you are.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s2-t4",
+                    "who": "you",
+                    "ja": "ありがとうございます。もう 少《すこ》し 大《おお》きい のは ありますか。",
+                    "speak": "ありがとうございます。もう すこし おおきい のは ありますか。",
+                    "id_text": "Terima kasih. Ada yang sedikit lebih besar?",
+                    "accept": [
+                        "ありがとうございます。もう 少し 大きい のは ありますか。",
+                        "ありがとうございます。もう少し大きいのはありますか。"
+                    ],
+                    "en_text": "Thank you. Is there a slightly bigger one?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s2-t5",
+                    "who": "partner",
+                    "ja": "はい、エルサイズも ありますよ。",
+                    "speak": "はい、エルサイズも ありますよ。",
+                    "id_text": "Ya, ukuran L juga ada.",
+                    "en_text": "Yes, we also have size L.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s2-t6",
+                    "who": "you",
+                    "ja": "じゃ、エルサイズを ください。",
+                    "speak": "じゃ、エルサイズを ください。",
+                    "id_text": "Kalau begitu, tolong ukuran L.",
+                    "accept": [
+                        "じゃ、エルサイズを ください。",
+                        "じゃ、エルサイズをください。",
+                        "じゃ、Lサイズを ください。",
+                        "じゃ、Lサイズをください。"
+                    ],
+                    "en_text": "Then I will take size L.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s2-t7",
+                    "who": "partner",
+                    "ja": "かしこまりました。",
+                    "speak": "かしこまりました。",
+                    "id_text": "Baik.",
+                    "en_text": "Certainly.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s3",
+            "title_id": "Menanyakan warna",
+            "title_en": "Asking about colors",
+            "setting_id": "Kamu suka celana ini tetapi warnanya kurang cocok. Kamu bertanya 色《いろ》 lain.",
+            "setting_en": "You like these trousers but not the color. You ask about other 色.",
+            "goal_id": "Memakai ほかの 色《いろ》は ありますか dan 〜色《いろ》が いいです.",
+            "goal_en": "Use ほかの 色は ありますか and 〜色が いいです.",
+            "patterns": [
+                "ほかの 色《いろ》は ありますか",
+                "〜色《いろ》が いいです",
+                "〜は ありません"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Warna dasar: 赤《あか》 (merah), 青《あお》 (biru), 黒《くろ》 (hitam), 白《しろ》 (putih), 黄色《きいろ》 (kuning).",
+                "〜色《いろ》が いいです = saya mau warna 〜. Kalau tidak ada, pegawai bilang 〜は ございません."
+            ],
+            "tips_en": [
+                "Basic colors: 赤 red, 青 blue, 黒 black, 白 white, 黄色 yellow.",
+                "〜色が いいです = I would like color 〜. If unavailable the clerk says 〜は ございません."
+            ],
+            "words": [
+                {
+                    "ja": "色《いろ》",
+                    "id": "warna",
+                    "en": "color"
+                },
+                {
+                    "ja": "黒《くろ》",
+                    "id": "hitam",
+                    "en": "black"
+                },
+                {
+                    "ja": "白《しろ》",
+                    "id": "putih",
+                    "en": "white"
+                },
+                {
+                    "ja": "青《あお》",
+                    "id": "biru",
+                    "en": "blue"
+                },
+                {
+                    "ja": "赤《あか》",
+                    "id": "merah",
+                    "en": "red"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "青《あお》い 色《いろ》が いいです。",
+                    "id": "Saya mau warna biru.",
+                    "en": "I would like blue."
+                },
+                {
+                    "ja": "白《しろ》は ありますか。",
+                    "id": "Apakah ada yang putih?",
+                    "en": "Do you have it in white?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s3-t1",
+                    "who": "you",
+                    "ja": "すみません、この ズボンの ほかの 色《いろ》は ありますか。",
+                    "speak": "すみません、この ズボンの ほかの いろは ありますか。",
+                    "id_text": "Maaf, apakah celana ini ada warna lain?",
+                    "accept": [
+                        "すみません、この ズボンの ほかの 色は ありますか。",
+                        "すみません、このズボンのほかの色はありますか。"
+                    ],
+                    "en_text": "Excuse me, does this come in other colors?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s3-t2",
+                    "who": "partner",
+                    "ja": "はい、黒《くろ》と 青《あお》と 白《しろ》が あります。",
+                    "speak": "はい、くろと あおと しろが あります。",
+                    "id_text": "Ya, ada hitam, biru, dan putih.",
+                    "en_text": "Yes, we have black, blue and white.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s3-t3",
+                    "who": "you",
+                    "ja": "黒《くろ》が いいです。",
+                    "speak": "くろが いいです。",
+                    "id_text": "Saya mau yang hitam.",
+                    "accept": [
+                        "黒が いいです。",
+                        "黒がいいです。"
+                    ],
+                    "en_text": "I would like black.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s3-t4",
+                    "who": "partner",
+                    "ja": "黒《くろ》ですね。サイズは いかがですか。",
+                    "speak": "くろですね。サイズは いかがですか。",
+                    "id_text": "Hitam ya. Ukurannya bagaimana?",
+                    "en_text": "Black. And the size?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s3-t5",
+                    "who": "you",
+                    "ja": "エムサイズを お願《ねが》いします。",
+                    "speak": "エムサイズを おねがいします。",
+                    "id_text": "Tolong ukuran M.",
+                    "accept": [
+                        "エムサイズを お願いします。",
+                        "エムサイズをお願いします。",
+                        "Mサイズを お願いします。",
+                        "Mサイズをお願いします。"
+                    ],
+                    "en_text": "Size M, please.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s3-t6",
+                    "who": "partner",
+                    "ja": "すみません、黒《くろ》の エムサイズは ございません。",
+                    "speak": "すみません、くろの エムサイズは ございません。",
+                    "id_text": "Maaf, hitam ukuran M tidak ada.",
+                    "en_text": "Sorry, black in M is not available.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s3-t7",
+                    "who": "you",
+                    "ja": "じゃ、青《あお》を 見《み》せて ください。",
+                    "speak": "じゃ、あおを みせて ください。",
+                    "id_text": "Kalau begitu, tolong tunjukkan yang biru.",
+                    "accept": [
+                        "じゃ、青を 見せて ください。",
+                        "じゃ、青を見せてください。"
+                    ],
+                    "en_text": "Then please show me the blue.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s4",
+            "title_id": "Mencoba pakaian (試着)",
+            "title_en": "Trying on clothes (試着)",
+            "setting_id": "Kamu ingin mencoba jaket di ruang ganti dan bertanya boleh atau tidak.",
+            "setting_en": "You want to try on a jacket in the fitting room and ask if you may.",
+            "goal_id": "Memakai 試着《しちゃく》しても いいですか dan 試着室《しちゃくしつ》.",
+            "goal_en": "Use 試着しても いいですか and 試着室.",
+            "patterns": [
+                "試着《しちゃく》しても いいですか",
+                "〜は どこですか",
+                "〜を お願いします"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "試着《しちゃく》 = mencoba pakaian, 試着室《しちゃくしつ》 = ruang ganti. Pola izin: 〜ても いいですか.",
+                "Di Jepang pakai penutup wajah saat mencoba, dan lepas sepatu di ruang ganti. Pegawai sering memberi 番号札《ばんごうふだ》 (nomor)."
+            ],
+            "tips_en": [
+                "試着 = trying on, 試着室 = fitting room. Permission pattern: 〜ても いいですか.",
+                "In Japan you often wear a face cover when trying on, and remove shoes in the fitting room. Staff may give a numbered tag."
+            ],
+            "words": [
+                {
+                    "ja": "試着《しちゃく》",
+                    "id": "mencoba pakaian",
+                    "en": "try on"
+                },
+                {
+                    "ja": "試着室《しちゃくしつ》",
+                    "id": "ruang ganti",
+                    "en": "fitting room"
+                },
+                {
+                    "ja": "鏡《かがみ》",
+                    "id": "cermin",
+                    "en": "mirror"
+                },
+                {
+                    "ja": "何点《なんてん》",
+                    "id": "berapa potong",
+                    "en": "how many items"
+                },
+                {
+                    "ja": "一《ひと》つ",
+                    "id": "satu",
+                    "en": "one"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "試着室《しちゃくしつ》は どこですか。",
+                    "id": "Ruang ganti di mana?",
+                    "en": "Where is the fitting room?"
+                },
+                {
+                    "ja": "鏡《かがみ》は ありますか。",
+                    "id": "Apakah ada cermin?",
+                    "en": "Is there a mirror?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、この ジャケットを 試着《しちゃく》しても いいですか。",
+                    "speak": "すみません、この ジャケットを しちゃくしても いいですか。",
+                    "id_text": "Maaf, boleh saya coba jaket ini?",
+                    "accept": [
+                        "すみません、この ジャケットを 試着しても いいですか。",
+                        "すみません、このジャケットを試着してもいいですか。"
+                    ],
+                    "en_text": "Excuse me, may I try this jacket on?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s4-t2",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。何点《なんてん》 お持《も》ちですか。",
+                    "speak": "はい、どうぞ。なんてん おもちですか。",
+                    "id_text": "Ya, silakan. Berapa potong yang dibawa?",
+                    "en_text": "Sure. How many items do you have?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s4-t3",
+                    "who": "you",
+                    "ja": "一点《いってん》です。",
+                    "speak": "いってんです。",
+                    "id_text": "Satu potong.",
+                    "accept": [
+                        "一点です。"
+                    ],
+                    "en_text": "Just one.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s4-t4",
+                    "who": "partner",
+                    "ja": "では、この 番号札《ばんごうふだ》を どうぞ。",
+                    "speak": "では、この ばんごうふだを どうぞ。",
+                    "id_text": "Kalau begitu, ini kartu nomornya.",
+                    "en_text": "Then here is your numbered tag.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s4-t5",
+                    "who": "you",
+                    "ja": "試着室《しちゃくしつ》は どこですか。",
+                    "speak": "しちゃくしつは どこですか。",
+                    "id_text": "Ruang gantinya di mana?",
+                    "accept": [
+                        "試着室は どこですか。",
+                        "試着室はどこですか。"
+                    ],
+                    "en_text": "Where is the fitting room?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s4-t6",
+                    "who": "partner",
+                    "ja": "あちらの 奥《おく》です。",
+                    "speak": "あちらの おくです。",
+                    "id_text": "Di bagian dalam sana.",
+                    "en_text": "At the back over there.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s4-t7",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "en_text": "Thank you.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s4-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s5",
+            "title_id": "Pas atau tidak? Setelah mencoba",
+            "title_en": "Does it fit? After trying on",
+            "setting_id": "Kamu selesai mencoba dan memberi tahu pegawai bahwa ukurannya terlalu besar atau pas.",
+            "setting_en": "You finish trying on and tell the clerk whether it is too big or fits.",
+            "goal_id": "Memakai ちょうど いいです, 少《すこ》し 大《おお》きいです / 小《ちい》さいです.",
+            "goal_en": "Use ちょうど いいです and 少し 大きいです / 小さいです.",
+            "patterns": [
+                "〜は ちょうど いいです",
+                "少し 〜です",
+                "〜に します"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "ちょうど いいです = pas sekali. 少《すこ》し 大《おお》きいです = agak besar, 少し 小《ちい》さいです = agak kecil.",
+                "Setelah mencoba, katakan keputusanmu: これに します (saya ambil ini) atau やめます (tidak jadi)."
+            ],
+            "tips_en": [
+                "ちょうど いいです = fits just right. 少し 大きいです = a bit big; 少し 小さいです = a bit small.",
+                "After trying on, say your decision: これに します (I will take it) or やめます (I will pass)."
+            ],
+            "words": [
+                {
+                    "ja": "ちょうど いい",
+                    "id": "pas sekali",
+                    "en": "just right"
+                },
+                {
+                    "ja": "少《すこ》し",
+                    "id": "sedikit",
+                    "en": "a little"
+                },
+                {
+                    "ja": "やめます",
+                    "id": "tidak jadi",
+                    "en": "to decide against"
+                },
+                {
+                    "ja": "どうですか",
+                    "id": "bagaimana?",
+                    "en": "how is it?"
+                },
+                {
+                    "ja": "似合《にあ》います",
+                    "id": "cocok (gaya)",
+                    "en": "suits you"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "少《すこ》し 小《ちい》さいです。",
+                    "id": "Agak kecil.",
+                    "en": "It is a little small."
+                },
+                {
+                    "ja": "これに します。",
+                    "id": "Saya ambil ini.",
+                    "en": "I will take this."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s5-t1",
+                    "who": "partner",
+                    "ja": "いかがですか。サイズは どうですか。",
+                    "speak": "いかがですか。サイズは どうですか。",
+                    "id_text": "Bagaimana? Ukurannya bagaimana?",
+                    "en_text": "How is it? How is the size?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s5-t2",
+                    "who": "you",
+                    "ja": "少《すこ》し 大《おお》きいです。",
+                    "speak": "すこし おおきいです。",
+                    "id_text": "Agak besar.",
+                    "accept": [
+                        "少し 大きいです。",
+                        "少し大きいです。"
+                    ],
+                    "en_text": "It is a little big.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s5-t3",
+                    "who": "partner",
+                    "ja": "では、小《ちい》さい サイズを 持《も》ってきます。",
+                    "speak": "では、ちいさい サイズを もってきます。",
+                    "id_text": "Kalau begitu saya ambilkan ukuran lebih kecil.",
+                    "en_text": "Then I will bring a smaller size.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s5-t4",
+                    "who": "partner",
+                    "ja": "どうぞ。こちらは どうですか。",
+                    "speak": "どうぞ。こちらは どうですか。",
+                    "id_text": "Silakan. Yang ini bagaimana?",
+                    "en_text": "Here you are. How is this one?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s5-t5",
+                    "who": "you",
+                    "ja": "ちょうど いいです。",
+                    "speak": "ちょうど いいです。",
+                    "id_text": "Pas sekali.",
+                    "accept": [
+                        "ちょうど いいです。",
+                        "ちょうどいいです。"
+                    ],
+                    "en_text": "It fits just right.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s5-t6",
+                    "who": "partner",
+                    "ja": "とても お似合《にあ》いですよ。",
+                    "speak": "とても おにあいですよ。",
+                    "id_text": "Sangat cocok dengan Anda.",
+                    "en_text": "It really suits you.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s5-t7",
+                    "who": "you",
+                    "ja": "じゃ、これに します。",
+                    "speak": "じゃ、これに します。",
+                    "id_text": "Kalau begitu, saya ambil ini.",
+                    "accept": [
+                        "じゃ、これに します。",
+                        "じゃ、これにします。"
+                    ],
+                    "en_text": "Then I will take this.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s5-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s6",
+            "title_id": "Harga & diskon (セール)",
+            "title_en": "Prices & sales (セール)",
+            "setting_id": "Kamu melihat tanda セール dan bertanya harga serta apakah ada yang lebih murah.",
+            "setting_en": "You see a セール sign and ask about the price and whether there is a cheaper one.",
+            "goal_id": "Memakai いくらですか, セール, dan もう 少《すこ》し 安《やす》い のは ありますか.",
+            "goal_en": "Use いくらですか, セール and もう 少し 安い のは ありますか.",
+            "patterns": [
+                "〜は いくらですか",
+                "もう 少し 安い のは ありますか",
+                "〜に します"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "セール = obral. 〜パーセント オフ = diskon 〜%. Harga sering ditulis 税込《ぜいこ》み (sudah termasuk pajak).",
+                "安《やす》い = murah, 高《たか》い = mahal. Katakan 高《たか》いです bila terlalu mahal."
+            ],
+            "tips_en": [
+                "セール = sale. 〜パーセント オフ = 〜% off. Prices are often marked 税込み (tax included).",
+                "安い = cheap, 高い = expensive. Say 高いです if it is too expensive."
+            ],
+            "words": [
+                {
+                    "ja": "セール",
+                    "id": "obral",
+                    "en": "sale"
+                },
+                {
+                    "ja": "税込《ぜいこ》み",
+                    "id": "termasuk pajak",
+                    "en": "tax included"
+                },
+                {
+                    "ja": "安《やす》い",
+                    "id": "murah",
+                    "en": "cheap"
+                },
+                {
+                    "ja": "高《たか》い",
+                    "id": "mahal",
+                    "en": "expensive"
+                },
+                {
+                    "ja": "オフ",
+                    "id": "diskon",
+                    "en": "off"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "これは 高《たか》いです。",
+                    "id": "Ini mahal.",
+                    "en": "This is expensive."
+                },
+                {
+                    "ja": "セールは いつまでですか。",
+                    "id": "Obralnya sampai kapan?",
+                    "en": "Until when is the sale?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s6-t1",
+                    "who": "you",
+                    "ja": "すみません、この シャツは いくらですか。",
+                    "speak": "すみません、この シャツは いくらですか。",
+                    "id_text": "Maaf, kemeja ini berapa harganya?",
+                    "accept": [
+                        "すみません、この シャツは いくらですか。",
+                        "すみません、このシャツはいくらですか。"
+                    ],
+                    "en_text": "Excuse me, how much is this shirt?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s6-t2",
+                    "who": "partner",
+                    "ja": "税込《ぜいこ》みで 三千九百八十円《さんぜんきゅうひゃくはちじゅうえん》です。",
+                    "speak": "ぜいこみで さんぜんきゅうひゃくはちじゅうえんです。",
+                    "id_text": "3980 yen termasuk pajak.",
+                    "en_text": "3980 yen including tax.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s6-t3",
+                    "who": "you",
+                    "ja": "少《すこ》し 高《たか》いです。もう 少《すこ》し 安《やす》い のは ありますか。",
+                    "speak": "すこし たかいです。もう すこし やすい のは ありますか。",
+                    "id_text": "Agak mahal. Ada yang sedikit lebih murah?",
+                    "accept": [
+                        "少し 高いです。もう 少し 安い のは ありますか。",
+                        "少し高いです。もう少し安いのはありますか。"
+                    ],
+                    "en_text": "It is a bit expensive. Is there a slightly cheaper one?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s6-t4",
+                    "who": "partner",
+                    "ja": "こちらは セールで 二千円《にせんえん》です。",
+                    "speak": "こちらは セールで にせんえんです。",
+                    "id_text": "Yang ini sedang obral, 2000 yen.",
+                    "en_text": "This one is on sale for 2000 yen.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s6-t5",
+                    "who": "you",
+                    "ja": "セールは いつまでですか。",
+                    "speak": "セールは いつまでですか。",
+                    "id_text": "Obralnya sampai kapan?",
+                    "accept": [
+                        "セールは いつまでですか。",
+                        "セールはいつまでですか。"
+                    ],
+                    "en_text": "Until when is the sale?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s6-t6",
+                    "who": "partner",
+                    "ja": "日曜日《にちようび》までです。",
+                    "speak": "にちようびまでです。",
+                    "id_text": "Sampai hari Minggu.",
+                    "en_text": "Until Sunday.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s6-t7",
+                    "who": "you",
+                    "ja": "じゃ、これに します。",
+                    "speak": "じゃ、これに します。",
+                    "id_text": "Kalau begitu, saya ambil ini.",
+                    "accept": [
+                        "じゃ、これに します。",
+                        "じゃ、これにします。"
+                    ],
+                    "en_text": "Then I will take this one.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s6-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s7",
+            "title_id": "Membeli sepatu: ukuran dalam sentimeter",
+            "title_en": "Buying shoes: size in centimeters",
+            "setting_id": "Kamu membeli sepatu kerja dan bilang ukuran kakimu dalam センチ.",
+            "setting_en": "You buy work shoes and give your foot size in センチ.",
+            "goal_id": "Memakai 〜センチです, 履《は》いても いいですか, dan きつい / ゆるい.",
+            "goal_en": "Use 〜センチです, 履いても いいですか and きつい / ゆるい.",
+            "patterns": [
+                "〜センチです",
+                "履いても いいですか",
+                "〜は ありますか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Ukuran sepatu di Jepang dalam センチ (cm), mis. 二十六《にじゅうろく》センチ. Perempuan biasanya 22–25, laki-laki 25–28.",
+                "きつい = sempit/ketat, ゆるい = longgar. 靴《くつ》を 履《は》く = memakai sepatu."
+            ],
+            "tips_en": [
+                "Shoe sizes in Japan are in cm, e.g. 26センチ. Women commonly 22–25, men 25–28.",
+                "きつい = tight, ゆるい = loose. 靴を 履く = to put on shoes."
+            ],
+            "words": [
+                {
+                    "ja": "靴《くつ》",
+                    "id": "sepatu",
+                    "en": "shoes"
+                },
+                {
+                    "ja": "センチ",
+                    "id": "sentimeter",
+                    "en": "centimeter"
+                },
+                {
+                    "ja": "履《は》きます",
+                    "id": "memakai (kaki)",
+                    "en": "to wear (on feet)"
+                },
+                {
+                    "ja": "きつい",
+                    "id": "sempit",
+                    "en": "tight"
+                },
+                {
+                    "ja": "ゆるい",
+                    "id": "longgar",
+                    "en": "loose"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "二十五《にじゅうご》センチです。",
+                    "id": "Ukuran 25 cm.",
+                    "en": "It is 25 centimeters."
+                },
+                {
+                    "ja": "少《すこ》し ゆるいです。",
+                    "id": "Agak longgar.",
+                    "en": "It is a bit loose."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s7-t1",
+                    "who": "you",
+                    "ja": "すみません、仕事用《しごとよう》の 靴《くつ》を 探《さが》しています。",
+                    "speak": "すみません、しごとようの くつを さがしています。",
+                    "id_text": "Maaf, saya mencari sepatu kerja.",
+                    "accept": [
+                        "すみません、仕事用の 靴を 探しています。",
+                        "すみません、仕事用の靴を探しています。"
+                    ],
+                    "en_text": "Excuse me, I am looking for work shoes.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s7-t2",
+                    "who": "partner",
+                    "ja": "はい。サイズは 何《なに》センチですか。",
+                    "speak": "はい。サイズは なにセンチですか。",
+                    "id_text": "Ya. Ukurannya berapa sentimeter?",
+                    "en_text": "Sure. What size in centimeters?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s7-t3",
+                    "who": "you",
+                    "ja": "二十六《にじゅうろく》センチです。",
+                    "speak": "にじゅうろくセンチです。",
+                    "id_text": "Ukuran 26 cm.",
+                    "accept": [
+                        "二十六センチです。",
+                        "26センチです。",
+                        "26センチ"
+                    ],
+                    "en_text": "It is 26 centimeters.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s7-t4",
+                    "who": "partner",
+                    "ja": "こちらは どうですか。履《は》いて みて ください。",
+                    "speak": "こちらは どうですか。はいて みて ください。",
+                    "id_text": "Yang ini bagaimana? Silakan dicoba.",
+                    "en_text": "How about this one? Please try it on.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s7-t5",
+                    "who": "you",
+                    "ja": "ありがとうございます。この 靴《くつ》を 履《は》いても いいですか。",
+                    "speak": "ありがとうございます。この くつを はいても いいですか。",
+                    "id_text": "Terima kasih. Boleh saya pakai sepatu ini?",
+                    "accept": [
+                        "ありがとうございます。この 靴を 履いても いいですか。",
+                        "ありがとうございます。この靴を履いてもいいですか。"
+                    ],
+                    "en_text": "Thank you. May I put these shoes on?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s7-t6",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。いかがですか。",
+                    "speak": "はい、どうぞ。いかがですか。",
+                    "id_text": "Ya, silakan. Bagaimana?",
+                    "en_text": "Of course. How are they?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s7-t7",
+                    "who": "you",
+                    "ja": "少《すこ》し きついです。",
+                    "speak": "すこし きついです。",
+                    "id_text": "Agak sempit.",
+                    "accept": [
+                        "少し きついです。",
+                        "少しきついです。"
+                    ],
+                    "en_text": "They are a bit tight.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s7-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "pakaian-s8",
+            "title_id": "Menukar atau mengembalikan barang",
+            "title_en": "Exchanging or returning an item",
+            "setting_id": "Kamu kembali ke toko karena ukuran celana yang kamu beli kemarin salah.",
+            "setting_en": "You return to the store because the trousers you bought yesterday are the wrong size.",
+            "goal_id": "Memakai 交換《こうかん》して ほしいです dan レシートが あります.",
+            "goal_en": "Use 交換して ほしいです and レシートが あります.",
+            "patterns": [
+                "〜を 交換《こうかん》して ください",
+                "レシートが あります",
+                "〜が 小《ちい》さいです"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "交換《こうかん》 = tukar, 返品《へんぴん》 = kembalikan (uang). Bawa レシート (struk) dan barang dengan label.",
+                "Sebut alasan: サイズが 合《あ》いません (ukuran tidak cocok). Pegawai sering minta 確認《かくにん》 (cek) dulu."
+            ],
+            "tips_en": [
+                "交換 = exchange; 返品 = return for refund. Bring the レシート (receipt) and the item with tags.",
+                "State the reason: サイズが 合いません (size does not fit). Staff may ask to confirm first."
+            ],
+            "words": [
+                {
+                    "ja": "交換《こうかん》",
+                    "id": "tukar",
+                    "en": "exchange"
+                },
+                {
+                    "ja": "返品《へんぴん》",
+                    "id": "pengembalian",
+                    "en": "return"
+                },
+                {
+                    "ja": "レシート",
+                    "id": "struk",
+                    "en": "receipt"
+                },
+                {
+                    "ja": "昨日《きのう》",
+                    "id": "kemarin",
+                    "en": "yesterday"
+                },
+                {
+                    "ja": "合《あ》いません",
+                    "id": "tidak cocok",
+                    "en": "does not fit"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "レシートは ここに あります。",
+                    "id": "Struknya ada di sini.",
+                    "en": "The receipt is here."
+                },
+                {
+                    "ja": "エムサイズと 交換《こうかん》して ください。",
+                    "id": "Tolong tukar dengan ukuran M.",
+                    "en": "Please exchange it for size M."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "pakaian-s8-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。どう されましたか。",
+                    "speak": "いらっしゃいませ。どう されましたか。",
+                    "id_text": "Selamat datang. Ada yang bisa dibantu?",
+                    "en_text": "Welcome. How can I help?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t1.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t2",
+                    "who": "you",
+                    "ja": "昨日《きのう》 この ズボンを 買《か》いました。",
+                    "speak": "きのう この ズボンを かいました。",
+                    "id_text": "Kemarin saya membeli celana ini.",
+                    "accept": [
+                        "昨日 この ズボンを 買いました。",
+                        "昨日このズボンを買いました。"
+                    ],
+                    "en_text": "I bought these trousers yesterday.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t2.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t3",
+                    "who": "partner",
+                    "ja": "そうですか。どう しましたか。",
+                    "speak": "そうですか。どう しましたか。",
+                    "id_text": "Begitu. Ada masalah apa?",
+                    "en_text": "I see. What is the problem?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t3.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t4",
+                    "who": "you",
+                    "ja": "サイズが 合《あ》いません。交換《こうかん》して ください。",
+                    "speak": "サイズが あいません。こうかんして ください。",
+                    "id_text": "Ukurannya tidak cocok. Tolong tukar.",
+                    "accept": [
+                        "サイズが 合いません。交換して ください。",
+                        "サイズが合いません。交換してください。"
+                    ],
+                    "en_text": "The size does not fit. Please exchange it.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t4.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t5",
+                    "who": "partner",
+                    "ja": "かしこまりました。レシートは お持《も》ちですか。",
+                    "speak": "かしこまりました。レシートは おもちですか。",
+                    "id_text": "Baik. Apakah punya struk?",
+                    "en_text": "Certainly. Do you have the receipt?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t5.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t6",
+                    "who": "you",
+                    "ja": "はい、レシートが あります。",
+                    "speak": "はい、レシートが あります。",
+                    "id_text": "Ya, ada struknya.",
+                    "accept": [
+                        "はい、レシートが あります。",
+                        "はい、レシートがあります。"
+                    ],
+                    "en_text": "Yes, I have the receipt.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t6.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。何《なに》サイズに しますか。",
+                    "speak": "ありがとうございます。なにサイズに しますか。",
+                    "id_text": "Terima kasih. Mau ukuran apa?",
+                    "en_text": "Thank you. Which size would you like?",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t7.mp3"
+                },
+                {
+                    "id": "pakaian-s8-t8",
+                    "who": "you",
+                    "ja": "エルサイズに お願《ねが》いします。",
+                    "speak": "エルサイズに おねがいします。",
+                    "id_text": "Tolong ukuran L.",
+                    "accept": [
+                        "エルサイズに お願いします。",
+                        "エルサイズにお願いします。",
+                        "Lサイズに お願いします。",
+                        "Lサイズにお願いします。"
+                    ],
+                    "en_text": "Size L, please.",
+                    "audio": "/audio/kaiwa/situation-pakaian/pakaian-s8-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

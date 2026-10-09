@@ -1,0 +1,368 @@
+{
+    "id": 12,
+    "level": "N4",
+    "title_id": "Kata Kerja Pasif",
+    "title_en": "Passive Verbs",
+    "scenarios": [
+        {
+            "id": "n4l12-s1",
+            "title_id": "Ditegur atasan",
+            "title_en": "Warned by the boss",
+            "setting_id": "Di kantor, bersama rekan kerja setelah rapat.",
+            "setting_en": "At the office with a coworker after a meeting.",
+            "goal_id": "Menyatakan perbuatan orang lain yang dialami (Ｎ１は Ｎ２に 受身).",
+            "goal_en": "Say what someone did to you with the ni-passive.",
+            "patterns": [
+                "Ｎ１は Ｎ２に 〜れます"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l12-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、どうして 元気《げんき》が ないんですか。",
+                    "speak": "ブディさん、どうして げんきが ないんですか。",
+                    "id_text": "Budi, kenapa kamu tidak bersemangat?",
+                    "en_text": "Budi, why are you down?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l12-s1-t2",
+                    "who": "you",
+                    "ja": "さっき 部長《ぶちょう》に 呼《よ》ばれたんです。",
+                    "speak": "さっき ぶちょうに よばれたんです。",
+                    "id_text": "Tadi saya dipanggil kepala bagian.",
+                    "en_text": "I was just called by the manager.",
+                    "accept": [
+                        "さっき部長に呼ばれたんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l12-s1-t3",
+                    "who": "partner",
+                    "ja": "何《なに》か あったんですか。",
+                    "speak": "なにか あったんですか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "Did something happen?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l12-s1-t4",
+                    "who": "you",
+                    "ja": "メールの 書《か》き方《かた》を 注意《ちゅうい》されました。",
+                    "speak": "メールの かきかたを ちゅういされました。",
+                    "id_text": "Cara menulis email saya ditegur.",
+                    "en_text": "I was warned about how I write emails.",
+                    "accept": [
+                        "メールの書き方を注意されました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l12-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですか。 でも、仕事《しごと》は いつも 褒《ほ》められて いますよ。",
+                    "speak": "そうですか。 でも、しごとは いつも ほめられて いますよ。",
+                    "id_text": "Begitu ya. Tapi pekerjaanmu selalu dipuji kok.",
+                    "en_text": "I see. But your work is always praised.",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l12-s1-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l12-s2",
+            "title_id": "Melapor ke polisi",
+            "title_en": "Reporting to the police",
+            "setting_id": "Di pos polisi dekat stasiun.",
+            "setting_en": "At a police box near the station.",
+            "goal_id": "Menyatakan barang milik yang terdampak (Ｎ１は Ｎ２に Ｎ３を 受身).",
+            "goal_en": "Say your belongings were affected (possession passive).",
+            "patterns": [
+                "Ｎ１は Ｎ２に Ｎ３を 〜れます"
+            ],
+            "partner": {
+                "name": "けいかん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l12-s2-t1",
+                    "who": "partner",
+                    "ja": "どう しましたか。",
+                    "speak": "どう しましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What happened?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t2",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》の 中《なか》で かばんを 盗《ぬす》まれたんです。",
+                    "speak": "でんしゃの なかで かばんを ぬすまれたんです。",
+                    "id_text": "Tas saya dicuri di dalam kereta.",
+                    "en_text": "My bag was stolen on the train.",
+                    "accept": [
+                        "電車の中でかばんを盗まれたんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t3",
+                    "who": "partner",
+                    "ja": "何《なに》が 入《はい》って いましたか。",
+                    "speak": "なにが はいって いましたか。",
+                    "id_text": "Apa isinya?",
+                    "en_text": "What was in it?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t4",
+                    "who": "you",
+                    "ja": "財布《さいふ》と 傘《かさ》です。",
+                    "speak": "さいふと かさです。",
+                    "id_text": "Dompet dan payung.",
+                    "en_text": "A wallet and an umbrella.",
+                    "accept": [
+                        "財布と傘です。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t5",
+                    "who": "partner",
+                    "ja": "どろぼうを 見《み》ましたか。",
+                    "speak": "どろぼうを みましたか。",
+                    "id_text": "Apakah Anda melihat pencurinya?",
+                    "en_text": "Did you see the thief?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、見《み》ませんでした。",
+                    "speak": "いいえ、みませんでした。",
+                    "id_text": "Tidak, saya tidak melihatnya.",
+                    "en_text": "No, I didn't.",
+                    "accept": [
+                        "いいえ、見ませんでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t7",
+                    "who": "partner",
+                    "ja": "わかりました。 ここに 名前《なまえ》と 電話番号《でんわばんごう》を 書《か》いて ください。",
+                    "speak": "わかりました。 ここに なまえと でんわばんごうを かいて ください。",
+                    "id_text": "Baik. Tolong tulis nama dan nomor telepon di sini.",
+                    "en_text": "I see. Please write your name and phone number here.",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t7.mp3"
+                },
+                {
+                    "id": "n4l12-s2-t8",
+                    "who": "you",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Ya, baik.",
+                    "en_text": "Yes, understood.",
+                    "accept": [
+                        "はい、わかりました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l12-s3",
+            "title_id": "Festival kembang api",
+            "title_en": "Fireworks festival",
+            "setting_id": "Di taman kota, membicarakan acara musim panas.",
+            "setting_en": "In a city park, talking about summer events.",
+            "goal_id": "Menyatakan acara yang diadakan tanpa menyebut pelaku (Ｎが 受身).",
+            "goal_en": "Say an event is held, without naming the doer.",
+            "patterns": [
+                "Ｎが 開《ひら》かれます"
+            ],
+            "partner": {
+                "name": "サリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l12-s3-t1",
+                    "who": "partner",
+                    "ja": "日本《にほん》では 花火大会《はなびたいかい》は いつ ひらかれますか。",
+                    "speak": "にほんでは はなびたいかいは いつ ひらかれますか。",
+                    "id_text": "Di Jepang, festival kembang api diadakan kapan?",
+                    "en_text": "When is the fireworks festival held in Japan?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l12-s3-t2",
+                    "who": "you",
+                    "ja": "夏《なつ》に ひらかれますよ。",
+                    "speak": "なつに ひらかれますよ。",
+                    "id_text": "Diadakan pada musim panas.",
+                    "en_text": "It is held in summer.",
+                    "accept": [
+                        "夏に開かれますよ。",
+                        "夏に行われますよ。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l12-s3-t3",
+                    "who": "partner",
+                    "ja": "どこで ひらかれますか。",
+                    "speak": "どこで ひらかれますか。",
+                    "id_text": "Diadakan di mana?",
+                    "en_text": "Where is it held?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l12-s3-t4",
+                    "who": "you",
+                    "ja": "川《かわ》の 近《ちか》くで ひらかれます。",
+                    "speak": "かわの ちかくで ひらかれます。",
+                    "id_text": "Diadakan di dekat sungai.",
+                    "en_text": "It is held near the river.",
+                    "accept": [
+                        "川の近くで開かれます。",
+                        "川の近くで行われます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l12-s3-t5",
+                    "who": "partner",
+                    "ja": "見《み》に 行《い》きたいです。",
+                    "speak": "みに いきたいです。",
+                    "id_text": "Saya ingin pergi melihatnya.",
+                    "en_text": "I want to go and see it.",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l12-s3-t6",
+                    "who": "you",
+                    "ja": "じゃ、いっしょに 行《い》きましょう。",
+                    "speak": "じゃ、いっしょに いきましょう。",
+                    "id_text": "Kalau begitu, ayo pergi bersama.",
+                    "en_text": "Then let's go together.",
+                    "accept": [
+                        "じゃ、いっしょに行きましょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l12-s4",
+            "title_id": "Dibuat dari apa?",
+            "title_en": "What is it made from?",
+            "setting_id": "Di dapur, membicarakan bahan makanan Jepang.",
+            "setting_en": "In a kitchen, talking about Japanese ingredients.",
+            "goal_id": "Menyatakan bahan: から (bahan baku) dan で (bahan jadi).",
+            "goal_en": "State materials with kara (raw) and de (material).",
+            "patterns": [
+                "Ｎから 作《つく》られます",
+                "Ｎで 作《つく》られます"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l12-s4-t1",
+                    "who": "partner",
+                    "ja": "日本《にほん》の お酒《さけ》は 何《なに》から 作《つく》られて いますか。",
+                    "speak": "にほんの おさけは なにから つくられて いますか。",
+                    "id_text": "Sake Jepang dibuat dari apa?",
+                    "en_text": "What is Japanese sake made from?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l12-s4-t2",
+                    "who": "you",
+                    "ja": "米《こめ》から 作《つく》られて います。",
+                    "speak": "こめから つくられて います。",
+                    "id_text": "Dibuat dari beras.",
+                    "en_text": "It is made from rice.",
+                    "accept": [
+                        "米から作られています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l12-s4-t3",
+                    "who": "partner",
+                    "ja": "しょうゆは 何《なに》から 作《つく》られて いますか。",
+                    "speak": "しょうゆは なにから つくられて いますか。",
+                    "id_text": "Kalau kecap asin dibuat dari apa?",
+                    "en_text": "What is soy sauce made from?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l12-s4-t4",
+                    "who": "you",
+                    "ja": "大豆《だいず》から 作《つく》られます。",
+                    "speak": "だいずから つくられます。",
+                    "id_text": "Dibuat dari kedelai.",
+                    "en_text": "It is made from soybeans.",
+                    "accept": [
+                        "大豆から作られます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l12-s4-t5",
+                    "who": "partner",
+                    "ja": "この テーブルは 何《なに》で 作《つく》られて いますか。",
+                    "speak": "この テーブルは なにで つくられて いますか。",
+                    "id_text": "Meja ini dibuat dari apa?",
+                    "en_text": "What is this table made of?",
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l12-s4-t6",
+                    "who": "you",
+                    "ja": "木《き》で 作《つく》られて います。",
+                    "speak": "きで つくられて います。",
+                    "id_text": "Dibuat dari kayu.",
+                    "en_text": "It is made of wood.",
+                    "accept": [
+                        "木で作られています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-12/n4l12-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

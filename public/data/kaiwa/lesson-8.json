@@ -1,0 +1,399 @@
+{
+    "id": 8,
+    "level": "N5",
+    "title_id": "Pelajaran 8 — Kata Sifat",
+    "title_en": "Lesson 8 — Adjectives",
+    "scenarios": [
+        {
+            "id": "l8-s1",
+            "title_id": "Kota baru",
+            "title_en": "The new town",
+            "setting_id": "Tanaka bertanya kesanmu tentang kota tempat kamu tinggal sekarang.",
+            "setting_en": "Tanaka asks your impression of the town where you live now.",
+            "goal_id": "Memakai い／な-kata sifat, そして, dan が.",
+            "goal_en": "Use i/na-adjectives, soshite, and ga.",
+            "patterns": [
+                "KBは どうですか",
+                "〜です。そして 〜です",
+                "〜ですが、〜です"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l8-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、日本《にほん》の 町《まち》は どうですか。",
+                    "speak": "ブディさん、にほんの まちは どうですか。",
+                    "id_text": "Budi, bagaimana kota di Jepang?",
+                    "en_text": "Budi, how is the town in Japan?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t1.mp3"
+                },
+                {
+                    "id": "l8-s1-t2",
+                    "who": "you",
+                    "ja": "とても きれいです。そして 静《しず》かです。",
+                    "speak": "とても きれいです。そして しずかです。",
+                    "id_text": "Sangat bersih. Dan tenang.",
+                    "accept": [
+                        "とても きれいです。そして 静かです。",
+                        "とてもきれいです。そして静かです。"
+                    ],
+                    "en_text": "It is very clean. And quiet.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t2.mp3"
+                },
+                {
+                    "id": "l8-s1-t3",
+                    "who": "partner",
+                    "ja": "人《ひと》は どうですか。",
+                    "speak": "ひとは どうですか。",
+                    "id_text": "Orangnya bagaimana?",
+                    "en_text": "How are the people?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t3.mp3"
+                },
+                {
+                    "id": "l8-s1-t4",
+                    "who": "you",
+                    "ja": "親切《しんせつ》です。",
+                    "speak": "しんせつです。",
+                    "id_text": "Ramah.",
+                    "accept": [
+                        "親切です。"
+                    ],
+                    "en_text": "They are kind.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t4.mp3"
+                },
+                {
+                    "id": "l8-s1-t5",
+                    "who": "partner",
+                    "ja": "食《た》べ物《もの》は おいしいですか。",
+                    "speak": "たべものは おいしいですか。",
+                    "id_text": "Apakah makanannya enak?",
+                    "en_text": "Is the food delicious?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t5.mp3"
+                },
+                {
+                    "id": "l8-s1-t6",
+                    "who": "you",
+                    "ja": "はい、おいしいですが、高《たか》いです。",
+                    "speak": "はい、おいしいですが、たかいです。",
+                    "id_text": "Ya, enak, tetapi mahal.",
+                    "accept": [
+                        "はい、おいしいですが、高いです。",
+                        "はい、おいしいですが高いです。"
+                    ],
+                    "en_text": "Yes, it is delicious, but expensive.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t6.mp3"
+                },
+                {
+                    "id": "l8-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですね。",
+                    "speak": "そうですね。",
+                    "id_text": "Benar ya.",
+                    "en_text": "That's true.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l8-s2",
+            "title_id": "Memilih kemeja",
+            "title_en": "Choosing a shirt",
+            "setting_id": "Di toserba, kamu memilih kemeja dan menanyakan harganya.",
+            "setting_en": "At a department store, you choose a shirt and ask the price.",
+            "goal_id": "Memakai kata sifat い (赤い, 白い, 高い, 安い) dan いくら.",
+            "goal_en": "Use i-adjectives (akai, shiroi, takai, yasui) and ikura.",
+            "patterns": [
+                "い形容詞＋KB",
+                "〜は いくらですか",
+                "〜を ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l8-s2-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t1.mp3"
+                },
+                {
+                    "id": "l8-s2-t2",
+                    "who": "you",
+                    "ja": "あの 赤《あか》い シャツは いくらですか。",
+                    "speak": "あの あかい シャツは いくらですか。",
+                    "id_text": "Kemeja merah itu harganya berapa?",
+                    "accept": [
+                        "あの 赤い シャツは いくらですか。",
+                        "あの赤いシャツはいくらですか。"
+                    ],
+                    "en_text": "How much is that red shirt?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t2.mp3"
+                },
+                {
+                    "id": "l8-s2-t3",
+                    "who": "partner",
+                    "ja": "あれは 三千円《さんぜんえん》です。",
+                    "speak": "あれは さんぜんえんです。",
+                    "id_text": "Itu tiga ribu yen.",
+                    "en_text": "That one is 3,000 yen.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t3.mp3"
+                },
+                {
+                    "id": "l8-s2-t4",
+                    "who": "you",
+                    "ja": "ちょっと 高《たか》いですね。あの 白《しろ》い シャツは いくらですか。",
+                    "speak": "ちょっと たかいですね。あの しろい シャツは いくらですか。",
+                    "id_text": "Agak mahal ya. Kemeja putih itu berapa?",
+                    "accept": [
+                        "ちょっと 高いですね。あの 白い シャツは いくらですか。",
+                        "ちょっと高いですね。あの白いシャツはいくらですか。"
+                    ],
+                    "en_text": "A bit expensive. How much is that white shirt?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t4.mp3"
+                },
+                {
+                    "id": "l8-s2-t5",
+                    "who": "partner",
+                    "ja": "あれは 二千円《にせんえん》です。",
+                    "speak": "あれは にせんえんです。",
+                    "id_text": "Itu dua ribu yen.",
+                    "en_text": "That one is 2,000 yen.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t5.mp3"
+                },
+                {
+                    "id": "l8-s2-t6",
+                    "who": "you",
+                    "ja": "安《やす》いですね。あれを ください。",
+                    "speak": "やすいですね。あれを ください。",
+                    "id_text": "Murah ya. Tolong beri saya yang itu.",
+                    "accept": [
+                        "安いですね。あれを ください。",
+                        "安いですね。あれをください。"
+                    ],
+                    "en_text": "That's cheap. I'll take that one, please.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t6.mp3"
+                },
+                {
+                    "id": "l8-s2-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih banyak.",
+                    "en_text": "Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l8-s3",
+            "title_id": "Bahasa Jepang itu bagaimana?",
+            "title_en": "How is Japanese?",
+            "setting_id": "Suzuki bertanya kesanmu tentang belajar bahasa Jepang.",
+            "setting_en": "Suzuki asks what you think about studying Japanese.",
+            "goal_id": "Memakai とても／あまり dengan bentuk positif dan negatif kata sifat.",
+            "goal_en": "Use totemo / amari with positive and negative adjectives.",
+            "patterns": [
+                "とても 〜です",
+                "あまり 〜くないです",
+                "〜は どうですか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l8-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、日本語《にほんご》は どうですか。",
+                    "speak": "ブディさん、にほんごは どうですか。",
+                    "id_text": "Budi, bagaimana bahasa Jepang?",
+                    "en_text": "Budi, how is Japanese?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t1.mp3"
+                },
+                {
+                    "id": "l8-s3-t2",
+                    "who": "you",
+                    "ja": "とても 面白《おもしろ》いです。",
+                    "speak": "とても おもしろいです。",
+                    "id_text": "Sangat menarik.",
+                    "accept": [
+                        "とても 面白いです。",
+                        "とても面白いです。"
+                    ],
+                    "en_text": "It is very interesting.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t2.mp3"
+                },
+                {
+                    "id": "l8-s3-t3",
+                    "who": "partner",
+                    "ja": "漢字《かんじ》は 易《やさ》しいですか。",
+                    "speak": "かんじは やさしいですか。",
+                    "id_text": "Apakah kanji mudah?",
+                    "en_text": "Is kanji easy?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t3.mp3"
+                },
+                {
+                    "id": "l8-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、あまり 易《やさ》しくないです。",
+                    "speak": "いいえ、あまり やさしくないです。",
+                    "id_text": "Tidak, kurang mudah.",
+                    "accept": [
+                        "いいえ、あまり 易しくないです。",
+                        "いいえ、あまり易しくないです。"
+                    ],
+                    "en_text": "No, it is not very easy.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t4.mp3"
+                },
+                {
+                    "id": "l8-s3-t5",
+                    "who": "partner",
+                    "ja": "難《むずか》しいですか。",
+                    "speak": "むずかしいですか。",
+                    "id_text": "Apakah sulit?",
+                    "en_text": "Is it difficult?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t5.mp3"
+                },
+                {
+                    "id": "l8-s3-t6",
+                    "who": "you",
+                    "ja": "はい、とても 難《むずか》しいです。",
+                    "speak": "はい、とても むずかしいです。",
+                    "id_text": "Ya, sangat sulit.",
+                    "accept": [
+                        "はい、とても 難しいです。",
+                        "はい、とても難しいです。"
+                    ],
+                    "en_text": "Yes, it is very difficult.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t6.mp3"
+                },
+                {
+                    "id": "l8-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですね。いっしょに 勉強《べんきょう》しましょう。",
+                    "speak": "そうですね。いっしょに べんきょうしましょう。",
+                    "id_text": "Benar ya. Mari belajar bersama.",
+                    "en_text": "I see. Let's study together.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l8-s4",
+            "title_id": "Perusahaan seperti apa?",
+            "title_en": "What kind of company?",
+            "setting_id": "Tanaka bertanya tentang perusahaan dan kesibukanmu.",
+            "setting_en": "Tanaka asks about your company and how busy you are.",
+            "goal_id": "Memakai どんな ＋ KB dan kata sifat sebelum kata benda.",
+            "goal_en": "Use donna + noun and adjectives before nouns.",
+            "patterns": [
+                "どんな KBですか",
+                "い形容詞＋KB",
+                "な形容詞な＋KB"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l8-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの 会社《かいしゃ》は どんな 会社《かいしゃ》ですか。",
+                    "speak": "ブディさんの かいしゃは どんな かいしゃですか。",
+                    "id_text": "Budi, perusahaanmu perusahaan seperti apa?",
+                    "en_text": "Budi, what kind of company is yours?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t1.mp3"
+                },
+                {
+                    "id": "l8-s4-t2",
+                    "who": "you",
+                    "ja": "大《おお》きい 会社《かいしゃ》です。",
+                    "speak": "おおきい かいしゃです。",
+                    "id_text": "Perusahaan yang besar.",
+                    "accept": [
+                        "大きい 会社です。",
+                        "大きい会社です。"
+                    ],
+                    "en_text": "It is a big company.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t2.mp3"
+                },
+                {
+                    "id": "l8-s4-t3",
+                    "who": "partner",
+                    "ja": "会社《かいしゃ》の 人《ひと》は どんな 人《ひと》ですか。",
+                    "speak": "かいしゃの ひとは どんな ひとですか。",
+                    "id_text": "Orang di perusahaan itu orang seperti apa?",
+                    "en_text": "What kind of people are they?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t3.mp3"
+                },
+                {
+                    "id": "l8-s4-t4",
+                    "who": "you",
+                    "ja": "親切《しんせつ》な 人《ひと》です。",
+                    "speak": "しんせつな ひとです。",
+                    "id_text": "Orang yang ramah.",
+                    "accept": [
+                        "親切な 人です。",
+                        "親切な人です。"
+                    ],
+                    "en_text": "They are kind people.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t4.mp3"
+                },
+                {
+                    "id": "l8-s4-t5",
+                    "who": "partner",
+                    "ja": "ブディさんは 忙《いそが》しいですか。",
+                    "speak": "ブディさんは いそがしいですか。",
+                    "id_text": "Apakah Budi sibuk?",
+                    "en_text": "Are you busy, Budi?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t5.mp3"
+                },
+                {
+                    "id": "l8-s4-t6",
+                    "who": "you",
+                    "ja": "はい、とても 忙《いそが》しいです。",
+                    "speak": "はい、とても いそがしいです。",
+                    "id_text": "Ya, sangat sibuk.",
+                    "accept": [
+                        "はい、とても 忙しいです。",
+                        "はい、とても忙しいです。"
+                    ],
+                    "en_text": "Yes, I am very busy.",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t6.mp3"
+                },
+                {
+                    "id": "l8-s4-t7",
+                    "who": "partner",
+                    "ja": "大変《たいへん》ですね。",
+                    "speak": "たいへんですね。",
+                    "id_text": "Wah, berat ya.",
+                    "en_text": "That sounds hard, doesn't it?",
+                    "audio": "/audio/kaiwa/lesson-8/l8-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

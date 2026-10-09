@@ -1,0 +1,357 @@
+{
+    "id": 13,
+    "level": "N4",
+    "title_id": "Pelajaran 13 (N4)",
+    "title_en": "N4 Lesson 13",
+    "scenarios": [
+        {
+            "id": "n4l13-s1",
+            "title_id": "Membicarakan hobi",
+            "title_en": "Talking about hobbies",
+            "setting_id": "Kamu mengobrol dengan teman tentang hal yang kamu suka.",
+            "setting_en": "You chat with a friend about what you like doing.",
+            "goal_id": "Menyatakan kesukaan dengan Vのが 好きです dan menilai dengan Vのは 〜です.",
+            "goal_en": "State likes with Vのが 好きです and evaluate with Vのは 〜です.",
+            "patterns": [
+                "Ｖのが 好きです",
+                "Ｖのは たいへんです"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l13-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 何《なに》を するのが 好《す》きですか。",
+                    "speak": "ブディさんは なにを するのが すきですか。",
+                    "id_text": "Budi, kamu suka melakukan apa?",
+                    "en_text": "Budi, what do you like doing?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l13-s1-t2",
+                    "who": "you",
+                    "ja": "写真《しゃしん》を 撮《と》るのが 好《す》きです。",
+                    "speak": "しゃしんを とるのが すきです。",
+                    "id_text": "Saya suka memotret.",
+                    "en_text": "I like taking photos.",
+                    "accept": [
+                        "写真を 撮るのが 好きです。",
+                        "しゃしんを とるのが すきです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l13-s1-t3",
+                    "who": "partner",
+                    "ja": "いいですね。撮《と》った 写真《しゃしん》を 見《み》るのも 楽《たの》しいですよね。",
+                    "speak": "いいですね。とった しゃしんを みるのも たのしいですよね。",
+                    "id_text": "Bagus. Melihat foto yang diambil juga menyenangkan, ya.",
+                    "en_text": "Nice. Looking at the photos is fun too.",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l13-s1-t4",
+                    "who": "you",
+                    "ja": "はい、とても 楽《たの》しいです。ヌルさんは 何《なに》が 好《す》きですか。",
+                    "speak": "はい、とても たのしいです。ヌルさんは なにが すきですか。",
+                    "id_text": "Ya, sangat menyenangkan. Kalau Nur, suka apa?",
+                    "en_text": "Yes, very fun. What do you like, Nur?",
+                    "accept": [
+                        "はい、とても 楽しいです。ヌルさんは 何が 好きですか。",
+                        "はい、とても たのしいです。ヌルさんは なにが すきですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l13-s1-t5",
+                    "who": "partner",
+                    "ja": "料理《りょうり》を 作《つく》るのが 好《す》きです。でも、毎日《まいにち》 作《つく》るのは たいへんです。",
+                    "speak": "りょうりを つくるのが すきです。でも、まいにち つくるのは たいへんです。",
+                    "id_text": "Saya suka memasak. Tapi memasak tiap hari itu berat.",
+                    "en_text": "I like cooking. But cooking every day is hard.",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l13-s1-t6",
+                    "who": "you",
+                    "ja": "そうですね。毎日《まいにち》 作《つく》るのは たいへんですね。",
+                    "speak": "そうですね。まいにち つくるのは たいへんですね。",
+                    "id_text": "Benar. Memasak tiap hari itu berat, ya.",
+                    "en_text": "Right. Cooking every day is hard.",
+                    "accept": [
+                        "そうですね。毎日 作るのは たいへんですね。",
+                        "そうですね。まいにち つくるのは たいへんですね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l13-s2",
+            "title_id": "Lupa mengunci",
+            "title_en": "Forgetting to lock up",
+            "setting_id": "Atasanmu menanyakan apakah kamu sudah mengunci kantor.",
+            "setting_en": "Your boss asks whether you locked the office.",
+            "goal_id": "Mengaku lupa dengan Vのを 忘れました.",
+            "goal_en": "Admit forgetting with Vのを 忘れました.",
+            "patterns": [
+                "Ｖのを 忘れました"
+            ],
+            "partner": {
+                "name": "森",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l13-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きのう 帰《かえ》る とき、事務所《じむしょ》の かぎを 掛《か》けましたか。",
+                    "speak": "ブディさん、きのう かえる とき、じむしょの かぎを かけましたか。",
+                    "id_text": "Budi, kemarin saat pulang, apakah kamu mengunci kantor?",
+                    "en_text": "Budi, did you lock the office when you left yesterday?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l13-s2-t2",
+                    "who": "you",
+                    "ja": "あ、いけない！ かぎを 掛《か》けるのを 忘《わす》れました。",
+                    "speak": "あ、いけない！ かぎを かけるのを わすれました。",
+                    "id_text": "Aduh! Saya lupa mengunci.",
+                    "en_text": "Oh no! I forgot to lock it.",
+                    "accept": [
+                        "あ、いけない！ かぎを 掛けるのを 忘れました。",
+                        "あ、いけない！ かぎを かけるのを わすれました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l13-s2-t3",
+                    "who": "partner",
+                    "ja": "そうですか。今《いま》 だれも いませんから、わたしが 行《い》って きます。",
+                    "speak": "そうですか。いま だれも いませんから、わたしが いって きます。",
+                    "id_text": "Begitu. Sekarang tidak ada orang, jadi saya yang pergi.",
+                    "en_text": "I see. Nobody is there now, so I will go.",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l13-s2-t4",
+                    "who": "you",
+                    "ja": "すみません。これから 気《き》を つけます。",
+                    "speak": "すみません。これから きを つけます。",
+                    "id_text": "Maaf. Mulai sekarang saya akan hati-hati.",
+                    "en_text": "Sorry. I will be careful from now on.",
+                    "accept": [
+                        "すみません。これから 気を つけます。",
+                        "すみません。これから きを つけます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l13-s2-t5",
+                    "who": "partner",
+                    "ja": "それから、電気《でんき》を 消《け》すのも 忘《わす》れないで ください。",
+                    "speak": "それから、でんきを けすのも わすれないで ください。",
+                    "id_text": "Lalu, jangan lupa mematikan lampu juga.",
+                    "en_text": "Also, please do not forget to turn off the lights.",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l13-s2-t6",
+                    "who": "you",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Baik, mengerti.",
+                    "en_text": "Yes, understood.",
+                    "accept": [
+                        "はい、わかりました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l13-s3",
+            "title_id": "Kabar di tempat kerja",
+            "title_en": "News at work",
+            "setting_id": "Rekan kerja menyampaikan kabar libur pabrik.",
+            "setting_en": "A coworker tells you about a factory holiday.",
+            "goal_id": "Menjawab 〜のを 知っていますか dengan 知りません／知りませんでした.",
+            "goal_en": "Answer 〜のを 知っていますか with 知りません／知りませんでした.",
+            "patterns": [
+                "〜のを 知って いますか",
+                "知りませんでした"
+            ],
+            "partner": {
+                "name": "井上",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l13-s3-t1",
+                    "who": "partner",
+                    "ja": "来週《らいしゅう》 工場《こうじょう》が 三日間《みっかかん》 休《やす》みなのを 知《し》って いますか。",
+                    "speak": "らいしゅう こうじょうが みっかかん やすみなのを しって いますか。",
+                    "id_text": "Tahukah kamu bahwa minggu depan pabrik libur tiga hari?",
+                    "en_text": "Do you know the factory is closed for three days next week?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l13-s3-t2",
+                    "who": "you",
+                    "ja": "いいえ、知《し》りませんでした。いつからですか。",
+                    "speak": "いいえ、しりませんでした。いつからですか。",
+                    "id_text": "Tidak, saya tidak tahu. Mulai kapan?",
+                    "en_text": "No, I did not know. From when?",
+                    "accept": [
+                        "いいえ、知りませんでした。いつからですか。",
+                        "いいえ、しりませんでした。いつからですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l13-s3-t3",
+                    "who": "partner",
+                    "ja": "月曜日《げつようび》からです。",
+                    "speak": "げつようびからです。",
+                    "id_text": "Mulai hari Senin.",
+                    "en_text": "From Monday.",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l13-s3-t4",
+                    "who": "you",
+                    "ja": "わかりました。休《やす》みの 前《まえ》に、機械《きかい》を 片《かた》づけて おきます。",
+                    "speak": "わかりました。やすみの まえに、きかいを かたづけて おきます。",
+                    "id_text": "Baik. Sebelum libur, saya rapikan mesin lebih dulu.",
+                    "en_text": "Understood. Before the holiday, I will tidy up the machines.",
+                    "accept": [
+                        "わかりました。休みの 前に、機械を 片づけて おきます。",
+                        "わかりました。やすみの まえに、きかいを かたづけて おきます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l13-s3-t5",
+                    "who": "partner",
+                    "ja": "おねがいします。ブディさんは 先生《せんせい》の 電話《でんわ》番号《ばんごう》を 知《し》って いますか。",
+                    "speak": "おねがいします。ブディさんは せんせいの でんわばんごうを しって いますか。",
+                    "id_text": "Terima kasih. Apakah Budi tahu nomor telepon guru?",
+                    "en_text": "Thank you. Do you know the teacher's phone number?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l13-s3-t6",
+                    "who": "you",
+                    "ja": "いいえ、知《し》りません。",
+                    "speak": "いいえ、しりません。",
+                    "id_text": "Tidak, saya tidak tahu.",
+                    "en_text": "No, I do not.",
+                    "accept": [
+                        "いいえ、知りません。",
+                        "いいえ、しりません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l13-s4",
+            "title_id": "Tempat lahir",
+            "title_en": "Where you were born",
+            "setting_id": "Teman baru menanyakan asal-usulmu.",
+            "setting_en": "A new friend asks about your background.",
+            "goal_id": "Menegaskan satu hal dengan 〜のは Ｎ です.",
+            "goal_en": "Single out one thing with 〜のは Ｎ です.",
+            "patterns": [
+                "〜のは Ｎ です"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l13-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは ジャカルタで 生《う》まれたんですか。",
+                    "speak": "ブディさんは ジャカルタで うまれたんですか。",
+                    "id_text": "Budi, apakah kamu lahir di Jakarta?",
+                    "en_text": "Budi, were you born in Jakarta?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l13-s4-t2",
+                    "who": "you",
+                    "ja": "いいえ、生《う》まれたのは 小《ちい》さな 村《むら》です。",
+                    "speak": "いいえ、うまれたのは ちいさな むらです。",
+                    "id_text": "Bukan, saya lahir di sebuah desa kecil.",
+                    "en_text": "No, I was born in a small village.",
+                    "accept": [
+                        "いいえ、生まれたのは 小さな 村です。",
+                        "いいえ、うまれたのは ちいさな むらです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l13-s4-t3",
+                    "who": "partner",
+                    "ja": "そうですか。ジャカルタに 来《き》たのは いつですか。",
+                    "speak": "そうですか。ジャカルタに きたのは いつですか。",
+                    "id_text": "Begitu. Kapan pindah ke Jakarta?",
+                    "en_text": "I see. When did you come to Jakarta?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l13-s4-t4",
+                    "who": "you",
+                    "ja": "十年前《じゅうねんまえ》です。",
+                    "speak": "じゅうねんまえです。",
+                    "id_text": "Sepuluh tahun lalu.",
+                    "en_text": "Ten years ago.",
+                    "accept": [
+                        "十年前です。",
+                        "じゅうねんまえです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l13-s4-t5",
+                    "who": "partner",
+                    "ja": "日本《にほん》へ 初《はじ》めて 来《き》たのは いつですか。",
+                    "speak": "にほんへ はじめて きたのは いつですか。",
+                    "id_text": "Kapan pertama kali datang ke Jepang?",
+                    "en_text": "When did you first come to Japan?",
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l13-s4-t6",
+                    "who": "you",
+                    "ja": "おととしの 三月《さんがつ》です。",
+                    "speak": "おととしの さんがつです。",
+                    "id_text": "Bulan Maret dua tahun lalu.",
+                    "en_text": "March two years ago.",
+                    "accept": [
+                        "おととしの 三月です。",
+                        "おととしの さんがつです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-13/n4l13-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

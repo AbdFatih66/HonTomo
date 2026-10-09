@@ -1,0 +1,400 @@
+{
+    "id": 13,
+    "level": "N5",
+    "title_id": "Pelajaran 13 — Keinginan",
+    "title_en": "Lesson 13 — Wants & Wishes",
+    "scenarios": [
+        {
+            "id": "l13-s1",
+            "title_id": "Hadiah ulang tahun",
+            "title_en": "Birthday present",
+            "setting_id": "Suzuki bertanya hadiah apa yang kamu inginkan.",
+            "setting_en": "Suzuki asks what present you want.",
+            "goal_id": "Memakai 〜が ほしいです.",
+            "goal_en": "Use ~ga hoshii desu.",
+            "patterns": [
+                "KBが ほしいです",
+                "何が ほしいですか",
+                "どんな KB"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l13-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、もうすぐ 誕生日《たんじょうび》ですね。何《なに》が ほしいですか。",
+                    "speak": "ブディさん、もうすぐ たんじょうびですね。なにが ほしいですか。",
+                    "id_text": "Budi, sebentar lagi ulang tahun ya. Kamu ingin apa?",
+                    "en_text": "Budi, your birthday is coming. What do you want?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t1.mp3"
+                },
+                {
+                    "id": "l13-s1-t2",
+                    "who": "you",
+                    "ja": "新《あたら》しい パソコンが ほしいです。",
+                    "speak": "あたらしい パソコンが ほしいです。",
+                    "id_text": "Aku ingin komputer baru.",
+                    "accept": [
+                        "新しい パソコンが ほしいです。",
+                        "新しいパソコンがほしいです。",
+                        "新しい パソコンが 欲しいです。"
+                    ],
+                    "en_text": "I want a new computer.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t2.mp3"
+                },
+                {
+                    "id": "l13-s1-t3",
+                    "who": "partner",
+                    "ja": "どんな パソコンが ほしいですか。",
+                    "speak": "どんな パソコンが ほしいですか。",
+                    "id_text": "Komputer seperti apa yang kamu inginkan?",
+                    "en_text": "What kind of computer do you want?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t3.mp3"
+                },
+                {
+                    "id": "l13-s1-t4",
+                    "who": "you",
+                    "ja": "軽《かる》い パソコンが ほしいです。",
+                    "speak": "かるい パソコンが ほしいです。",
+                    "id_text": "Aku ingin komputer yang ringan.",
+                    "accept": [
+                        "軽い パソコンが ほしいです。",
+                        "軽いパソコンがほしいです。",
+                        "軽い パソコンが 欲しいです。"
+                    ],
+                    "en_text": "I want a light computer.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t4.mp3"
+                },
+                {
+                    "id": "l13-s1-t5",
+                    "who": "partner",
+                    "ja": "ケータイも ほしいですか。",
+                    "speak": "ケータイも ほしいですか。",
+                    "id_text": "Apakah kamu ingin ponsel juga?",
+                    "en_text": "Do you want a phone too?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t5.mp3"
+                },
+                {
+                    "id": "l13-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ、ケータイは ほしくないです。",
+                    "speak": "いいえ、ケータイは ほしくないです。",
+                    "id_text": "Tidak, aku tidak ingin ponsel.",
+                    "accept": [
+                        "いいえ、ケータイは 欲しくないです。",
+                        "いいえ、ケータイは ほしくありません。"
+                    ],
+                    "en_text": "No, I do not want a phone.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t6.mp3"
+                },
+                {
+                    "id": "l13-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l13-s2",
+            "title_id": "Rencana liburan",
+            "title_en": "Holiday plans",
+            "setting_id": "Tanaka bertanya ke mana kamu ingin pergi saat libur.",
+            "setting_en": "Tanaka asks where you want to go on your holiday.",
+            "goal_id": "Memakai 〜たいです dan 〜たくないです.",
+            "goal_en": "Use ~tai desu and ~takunai desu.",
+            "patterns": [
+                "〜へ 行きたいです",
+                "〜が したいです",
+                "〜たくないです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l13-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、冬休《ふゆやす》みに どこへ 行《い》きたいですか。",
+                    "speak": "ブディさん、ふゆやすみに どこへ いきたいですか。",
+                    "id_text": "Budi, saat libur musim dingin kamu ingin pergi ke mana?",
+                    "en_text": "Budi, where do you want to go in the winter holiday?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t1.mp3"
+                },
+                {
+                    "id": "l13-s2-t2",
+                    "who": "you",
+                    "ja": "北海道《ほっかいどう》へ 行《い》きたいです。",
+                    "speak": "ほっかいどうへ いきたいです。",
+                    "id_text": "Aku ingin pergi ke Hokkaido.",
+                    "accept": [
+                        "北海道へ 行きたいです。",
+                        "北海道へ行きたいです。"
+                    ],
+                    "en_text": "I want to go to Hokkaido.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t2.mp3"
+                },
+                {
+                    "id": "l13-s2-t3",
+                    "who": "partner",
+                    "ja": "そこで 何《なに》が したいですか。",
+                    "speak": "そこで なにが したいですか。",
+                    "id_text": "Di sana kamu ingin melakukan apa?",
+                    "en_text": "What do you want to do there?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t3.mp3"
+                },
+                {
+                    "id": "l13-s2-t4",
+                    "who": "you",
+                    "ja": "スキーが したいです。",
+                    "speak": "スキーが したいです。",
+                    "id_text": "Aku ingin bermain ski.",
+                    "accept": [
+                        "スキーを したいです。"
+                    ],
+                    "en_text": "I want to ski.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t4.mp3"
+                },
+                {
+                    "id": "l13-s2-t5",
+                    "who": "partner",
+                    "ja": "夜《よる》は 何《なに》が 食《た》べたいですか。",
+                    "speak": "よるは なにが たべたいですか。",
+                    "id_text": "Malamnya kamu ingin makan apa?",
+                    "en_text": "What do you want to eat at night?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t5.mp3"
+                },
+                {
+                    "id": "l13-s2-t6",
+                    "who": "you",
+                    "ja": "魚《さかな》が 食《た》べたいです。",
+                    "speak": "さかなが たべたいです。",
+                    "id_text": "Aku ingin makan ikan.",
+                    "accept": [
+                        "魚が 食べたいです。",
+                        "さかなが 食べたいです。"
+                    ],
+                    "en_text": "I want to eat fish.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t6.mp3"
+                },
+                {
+                    "id": "l13-s2-t7",
+                    "who": "partner",
+                    "ja": "いいですね。",
+                    "speak": "いいですね。",
+                    "id_text": "Bagus ya.",
+                    "en_text": "That sounds nice.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l13-s3",
+            "title_id": "Pergi berbelanja",
+            "title_en": "Going shopping",
+            "setting_id": "Suzuki bertanya rencanamu akhir pekan ini.",
+            "setting_en": "Suzuki asks your plans for this weekend.",
+            "goal_id": "Memakai (場所)へ 〜に 行きます.",
+            "goal_en": "Use (place) e ~ni ikimasu.",
+            "patterns": [
+                "(場所)へ KKに 行きます",
+                "KBを 買いに 行きます"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l13-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、週末《しゅうまつ》は どこへ 行《い》きますか。",
+                    "speak": "ブディさん、しゅうまつは どこへ いきますか。",
+                    "id_text": "Budi, akhir pekan ini kamu pergi ke mana?",
+                    "en_text": "Budi, where are you going this weekend?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t1.mp3"
+                },
+                {
+                    "id": "l13-s3-t2",
+                    "who": "you",
+                    "ja": "デパートへ 買《か》い物《もの》に 行《い》きます。",
+                    "speak": "デパートへ かいものに いきます。",
+                    "id_text": "Aku pergi ke toserba untuk berbelanja.",
+                    "accept": [
+                        "デパートへ 買い物に 行きます。",
+                        "デパートへ買い物に行きます。"
+                    ],
+                    "en_text": "I am going to the department store to shop.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t2.mp3"
+                },
+                {
+                    "id": "l13-s3-t3",
+                    "who": "partner",
+                    "ja": "何《なに》を 買《か》いますか。",
+                    "speak": "なにを かいますか。",
+                    "id_text": "Kamu membeli apa?",
+                    "en_text": "What will you buy?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t3.mp3"
+                },
+                {
+                    "id": "l13-s3-t4",
+                    "who": "you",
+                    "ja": "シャツを 買《か》いに 行《い》きます。",
+                    "speak": "シャツを かいに いきます。",
+                    "id_text": "Aku pergi untuk membeli kemeja.",
+                    "accept": [
+                        "シャツを 買いに 行きます。",
+                        "シャツを買いに行きます。"
+                    ],
+                    "en_text": "I am going to buy a shirt.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t4.mp3"
+                },
+                {
+                    "id": "l13-s3-t5",
+                    "who": "partner",
+                    "ja": "日曜日《にちようび》も 買《か》い物《もの》ですか。",
+                    "speak": "にちようびも かいものですか。",
+                    "id_text": "Hari Minggu juga berbelanja?",
+                    "en_text": "Is Sunday for shopping too?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t5.mp3"
+                },
+                {
+                    "id": "l13-s3-t6",
+                    "who": "you",
+                    "ja": "はい、日曜日《にちようび》は 友達《ともだち》に 会《あ》いに 行《い》きます。",
+                    "speak": "はい、にちようびは ともだちに あいに いきます。",
+                    "id_text": "Ya, hari Minggu aku pergi menemui teman.",
+                    "accept": [
+                        "はい、日曜日は 友達に 会いに 行きます。",
+                        "はい、日曜日は友達に会いに行きます。"
+                    ],
+                    "en_text": "Yes, on Sunday I am going to see a friend.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t6.mp3"
+                },
+                {
+                    "id": "l13-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l13-s4",
+            "title_id": "Ayo minum sesuatu",
+            "title_en": "Let's have a drink",
+            "setting_id": "Setelah bekerja, Tanaka mengajakmu minum sesuatu.",
+            "setting_en": "After work, Tanaka invites you for a drink.",
+            "goal_id": "Memakai 何か／どこか dan 〜たいです.",
+            "goal_en": "Use nanika / dokoka and ~tai desu.",
+            "patterns": [
+                "何か 飲みませんか",
+                "どこか 〜ませんか",
+                "〜たいです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l13-s4-t1",
+                    "who": "partner",
+                    "ja": "疲《つか》れましたね。何《なに》か 飲《の》みませんか。",
+                    "speak": "つかれましたね。なにか のみませんか。",
+                    "id_text": "Capek ya. Mau minum sesuatu?",
+                    "en_text": "You must be tired. Shall we have something to drink?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t1.mp3"
+                },
+                {
+                    "id": "l13-s4-t2",
+                    "who": "you",
+                    "ja": "ええ、飲《の》みましょう。冷《つめ》たい ジュースが 飲《の》みたいです。",
+                    "speak": "ええ、のみましょう。つめたい ジュースが のみたいです。",
+                    "id_text": "Ya, ayo. Aku ingin jus dingin.",
+                    "accept": [
+                        "ええ、飲みましょう。冷たい ジュースが 飲みたいです。",
+                        "ええ、飲みましょう。冷たいジュースが飲みたいです。"
+                    ],
+                    "en_text": "Yes, let's. I want a cold juice.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t2.mp3"
+                },
+                {
+                    "id": "l13-s4-t3",
+                    "who": "partner",
+                    "ja": "どこか 入《はい》りましょうか。",
+                    "speak": "どこか はいりましょうか。",
+                    "id_text": "Mau masuk ke suatu tempat?",
+                    "en_text": "Shall we go into somewhere?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t3.mp3"
+                },
+                {
+                    "id": "l13-s4-t4",
+                    "who": "you",
+                    "ja": "あの 喫茶店《きっさてん》に 入《はい》りましょう。",
+                    "speak": "あの きっさてんに はいりましょう。",
+                    "id_text": "Ayo masuk ke kafe itu.",
+                    "accept": [
+                        "あの 喫茶店に 入りましょう。",
+                        "あの喫茶店に入りましょう。"
+                    ],
+                    "en_text": "Let's go into that cafe.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t4.mp3"
+                },
+                {
+                    "id": "l13-s4-t5",
+                    "who": "partner",
+                    "ja": "何《なに》か 食《た》べたいですか。",
+                    "speak": "なにか たべたいですか。",
+                    "id_text": "Apakah kamu ingin makan sesuatu?",
+                    "en_text": "Do you want something to eat?",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t5.mp3"
+                },
+                {
+                    "id": "l13-s4-t6",
+                    "who": "you",
+                    "ja": "いいえ、何《なに》も 食《た》べたくないです。",
+                    "speak": "いいえ、なにも たべたくないです。",
+                    "id_text": "Tidak, aku tidak ingin makan apa pun.",
+                    "accept": [
+                        "いいえ、何も 食べたくないです。",
+                        "いいえ、何も食べたくないです。"
+                    ],
+                    "en_text": "No, I do not want to eat anything.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t6.mp3"
+                },
+                {
+                    "id": "l13-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-13/l13-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

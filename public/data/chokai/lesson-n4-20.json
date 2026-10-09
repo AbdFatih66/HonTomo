@@ -1,0 +1,305 @@
+{
+    "id": "n4-20",
+    "level": "N4",
+    "focus": "〜場合は、〜のに、のに／が／ても",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ケンさん、会社に 行く 電車が 止まった 場合は、どう しますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "まず、会社に 電話します。"
+            },
+            {
+                "speaker": "female",
+                "text": "電話が つながらない 場合は？"
+            },
+            {
+                "speaker": "male",
+                "text": "メールで 知らせます。"
+            },
+            {
+                "speaker": "female",
+                "text": "それでも だめな 場合は？"
+            },
+            {
+                "speaker": "male",
+                "text": "駅で 待って、電車が 動いてから 行きます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-20/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l20-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は、まず 何《なに》を しますか。",
+                "choices": [
+                    "会社《かいしゃ》に 電話《でんわ》する",
+                    "メールを 送《おく》る",
+                    "駅《えき》で 待《ま》つ"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Pertama dia menelepon kantor. → Menelepon kantor.",
+                    "en": "First he phones the office. → Phone the office."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l20-kq2",
+                "prompt": "電話《でんわ》が つながらない 場合《ばあい》、どう しますか。",
+                "choices": [
+                    "メールで 知《し》らせる",
+                    "タクシーに 乗《の》る",
+                    "家《いえ》に 帰《かえ》る"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kalau telepon tidak tersambung, memberi tahu lewat surel. → Lewat surel.",
+                    "en": "If the call does not connect, he informs them by e-mail. → By e-mail."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l20-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あしたの マラソンは、雨の 場合は 中止です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わかりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q1.mp3",
+            "prompt": "雨《あめ》の 場合《ばあい》、マラソンは どう なりますか。",
+            "choices": [
+                "中止《ちゅうし》になる",
+                "時間《じかん》が 変《か》わる",
+                "場所《ばしょ》が 変《か》わる"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalau hujan, lomba lari dibatalkan. → Dibatalkan.",
+                "en": "If it rains, the marathon is cancelled. → It is cancelled."
+            }
+        },
+        {
+            "id": "n4l20-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "パソコンの 調子が 悪い 場合は、この 番号に 電話して ください。さん、の、ご、の、はち、の、に です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q2.mp3",
+            "prompt": "電話《でんわ》する 番号《ばんごう》は どれですか。",
+            "choices": [
+                "3-5-8-2",
+                "3-8-5-2",
+                "5-3-8-2"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalau komputer bermasalah, telepon nomor 3-5-8-2. → 3-5-8-2.",
+                "en": "If the computer has trouble, call 3-5-8-2. → 3-5-8-2."
+            }
+        },
+        {
+            "id": "n4l20-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "領収書が 必要な 場合は、受付で 言って ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。受付は どこですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "一階の 入口の 右です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q3.mp3",
+            "prompt": "受付《うけつけ》は どこに ありますか。",
+            "choices": [
+                "一階《いっかい》の 入口《いりぐち》の 右《みぎ》",
+                "二階《にかい》の 入口《いりぐち》の 右《みぎ》",
+                "一階《いっかい》の 入口《いりぐち》の 左《ひだり》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Resepsionis ada di sisi kanan pintu masuk lantai satu. → Lantai satu, kanan pintu masuk.",
+                "en": "The reception is on the right of the entrance on the first floor. → First floor, right of the entrance."
+            }
+        },
+        {
+            "id": "n4l20-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "昨日は 九時に 寝たのに、今日も 眠いです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それは 心配ですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 昨日《きのう》 何時《なんじ》に 寝《ね》ましたか。",
+            "choices": [
+                "9時《じ》",
+                "11時《じ》",
+                "1時《じ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Padahal kemarin tidur jam sembilan, hari ini masih mengantuk. → Jam 9.",
+                "en": "Even though he went to bed at nine yesterday, he is sleepy today. → 9 o clock."
+            }
+        },
+        {
+            "id": "n4l20-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "テストの 点は どうでしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "三時間も 勉強したのに、六十点でした。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q5.mp3",
+            "prompt": "テストの 点《てん》は 何点《なんてん》でしたか。",
+            "choices": [
+                "60点《てん》",
+                "90点《てん》",
+                "30点《てん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Padahal belajar tiga jam, nilainya 60. → 60 poin.",
+                "en": "Although he studied for three hours, he got 60 points. → 60 points."
+            }
+        },
+        {
+            "id": "n4l20-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "目覚ましを セットしたのに、起きられませんでした。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "それは 大変《たいへん》でしたね。",
+                "それは よかったですね。",
+                "はい、起《お》きられました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pernyataan: padahal sudah memasang weker, tidak bisa bangun. Tanggapan: Wah, itu repot sekali.",
+                "en": "Statement: I set the alarm but could not get up. Response: That must have been tough."
+            }
+        },
+        {
+            "id": "n4l20-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この かばんが 壊れた 場合は、どう すれば いいですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "保証書《ほしょうしょ》を 持《も》って 店《みせ》に 行《い》けば いいです。",
+                "保証書《ほしょうしょ》は 高《たか》かったです。",
+                "はい、壊《こわ》れました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pertanyaan: kalau tas rusak, bagaimana? Jawaban: Bawa surat garansi ke toko.",
+                "en": "Question: What if the bag breaks? Answer: Take the warranty card to the shop."
+            }
+        },
+        {
+            "id": "n4l20-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "体の 調子が 悪い 場合は、どの 病院へ 行けば いいですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q8.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "内科《ないか》へ 行《い》けば いいです。",
+                "昨日《きのう》 行《い》きました。",
+                "病院《びょういん》は 好《す》きです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pertanyaan: kalau kondisi badan buruk, ke bagian mana? Jawaban: Ke penyakit dalam.",
+                "en": "Question: Which department if I feel unwell? Answer: Internal medicine."
+            }
+        },
+        {
+            "id": "n4l20-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした 雨の 場合は、試合は どう なりますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "雨の 場合も、試合は ありますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q9.mp3",
+            "prompt": "あした 雨《あめ》の 場合《ばあい》、試合《しあい》は 中止《ちゅうし》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kalau hujan pun, pertandingan tetap ada. → × (salah)",
+                "en": "Even if it rains, the match is held. → × (false)"
+            }
+        },
+        {
+            "id": "n4l20-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "マラソンは どうでしたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "たくさん 練習したのに、二位でした。残念です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-20/n4l20-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 練習《れんしゅう》を たくさん しました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Dia banyak berlatih tetapi juara dua. → ○ (benar)",
+                "en": "She practised a lot but came second. → ○ (true)"
+            }
+        }
+    ]
+}

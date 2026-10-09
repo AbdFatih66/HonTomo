@@ -1,0 +1,296 @@
+{
+    "id": "n4-23",
+    "level": "N4",
+    "focus": "kata kerja kausatif, 〜させて いただけませんか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "部長、今、お忙しいですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいえ、どうぞ。"
+            },
+            {
+                "speaker": "male",
+                "text": "来月、五日間　休ませて　いただけませんか。"
+            },
+            {
+                "speaker": "female",
+                "text": "五日間ですか。どうしてですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "国の　家族が　日本へ　来るんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "わかりました。それまでに　仕事を　片づけて　ください。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-23/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l23-kq1",
+                "audio": null,
+                "prompt": "男《おとこ》の　人《ひと》は　何《なに》を　お願《ねが》いしましたか。",
+                "choices": [
+                    "休《やす》みを　とる　こと",
+                    "給料《きゅうりょう》を　もらう　こと",
+                    "会議《かいぎ》に　出《で》る　こと"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang diminta? Mengambil cuti.",
+                    "en": "What did he ask for? To take some leave."
+                }
+            },
+            {
+                "id": "n4l23-kq2",
+                "audio": null,
+                "prompt": "どうして　休《やす》みたいですか。",
+                "choices": [
+                    "国《くに》の　家族《かぞく》が　日本《にほん》へ　来《く》るから",
+                    "病気《びょうき》だから",
+                    "旅行《りょこう》に　行《い》くから"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kenapa ingin cuti? Karena keluarga dari kampung halaman datang ke Jepang.",
+                    "en": "Why does he want leave? Because his family from home is coming to Japan."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l23-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ワヒュさんの　お子さんは　毎朝　何を　して　いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "公園を　走って　います。わたしが　走らせて　いるんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q1.mp3",
+            "prompt": "子《こ》どもは　毎朝《まいあさ》　何《なに》を　しますか。",
+            "choices": [
+                "公園《こうえん》を　走《はし》ります",
+                "ピアノを　習《なら》います",
+                "塾《じゅく》へ　行《い》きます"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Anak itu setiap pagi apa? Berlari di taman (disuruh ayahnya).",
+                "en": "What does the child do every morning? Runs in the park (his father makes him)."
+            }
+        },
+        {
+            "id": "n4l23-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "うちの　子どもは　塾へ　行って、英語を　習って　います。わたしが　行かせて　いるんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q2.mp3",
+            "prompt": "どうして　塾《じゅく》へ　行《い》きますか。",
+            "choices": [
+                "親《おや》が　行《い》かせて　いるから",
+                "先生《せんせい》が　好《す》きだから",
+                "友達《ともだち》に　会《あ》いたいから"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kenapa anak pergi les? Karena orang tuanya menyuruhnya.",
+                "en": "Why does the child go to cram school? Because his parent sends him."
+            }
+        },
+        {
+            "id": "n4l23-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "お子さんに　家の　仕事を　させて　いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、毎晩　皿を　洗わせて　います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q3.mp3",
+            "prompt": "子《こ》どもは　毎晩《まいばん》　何《なに》を　しますか。",
+            "choices": [
+                "皿《さら》を　洗《あら》います",
+                "掃除《そうじ》を　します",
+                "買《か》い物《もの》に　行《い》きます"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Anak setiap malam melakukan apa? Mencuci piring.",
+                "en": "What does the child do every night? Washes the dishes."
+            }
+        },
+        {
+            "id": "n4l23-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来月、三日間　休ませて　いただけませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいですよ。それまでに　仕事を　片づけて　ください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　何日間《なんにちかん》　休《やす》みたいですか。",
+            "choices": [
+                "三日間《みっかかん》",
+                "五日間《いつかかん》",
+                "十日間《とおかかん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Berapa hari ia ingin cuti? Tiga hari.",
+                "en": "How many days does he want off? Three days."
+            }
+        },
+        {
+            "id": "n4l23-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ワヒュさん、この　書類を　営業の　部長に　届けて　ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、わかりました。今から　行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　これから　何《なに》を　しますか。",
+            "choices": [
+                "書類《しょるい》を　届《とど》けに　行《い》きます",
+                "ファイルを　作《つく》ります",
+                "部長《ぶちょう》に　電話《でんわ》します"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang akan dilakukan laki-laki? Pergi mengantar dokumen.",
+                "en": "What will the man do now? Go and deliver the documents."
+            }
+        },
+        {
+            "id": "n4l23-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、ここに　車を　止めさせて　いただけませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "ええ、どうぞ。",
+                "ええ、いただきます。",
+                "いいえ、まだです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bolehkah saya memarkir mobil di sini? Jawaban perempuan: Ya, silakan.",
+                "en": "May I park my car here? The woman answers: Yes, go ahead."
+            }
+        },
+        {
+            "id": "n4l23-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ファイルは　どこに　ありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "机の　上に　あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q7.mp3",
+            "prompt": "ファイルは　どこに　ありますか。",
+            "choices": [
+                "机《つくえ》の　上《うえ》",
+                "かばんの　中《なか》",
+                "部長《ぶちょう》の　ところ"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Map ada di mana? Di atas meja.",
+                "en": "Where is the file? On the desk."
+            }
+        },
+        {
+            "id": "n4l23-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "先生は　生徒に　自由に　意見を　言わせました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q8.mp3",
+            "prompt": "生徒《せいと》は　自由《じゆう》に　意見《いけん》を　言《い》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Murid mengutarakan pendapat dengan bebas. (Benar)",
+                "en": "The students voiced their opinions freely. (True)"
+            }
+        },
+        {
+            "id": "n4l23-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "母は　子どもに　嫌いな　野菜を　食べさせました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q9.mp3",
+            "prompt": "子《こ》どもは　好《す》きな　野菜《やさい》を　食《た》べました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Anak makan sayur yang disukai. (Salah — sayur yang tidak disukai.)",
+                "en": "The child ate a vegetable he likes. (False — one he dislikes.)"
+            }
+        },
+        {
+            "id": "n4l23-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "わたしは　毎日　子どもに　習字を　習わせて　います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-23/n4l23-q10.mp3",
+            "prompt": "子《こ》どもは　習字《しゅうじ》を　習《なら》って　います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Anak belajar kaligrafi. (Benar)",
+                "en": "The child is learning calligraphy. (True)"
+            }
+        }
+    ]
+}

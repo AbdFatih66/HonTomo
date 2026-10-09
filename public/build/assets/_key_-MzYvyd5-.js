@@ -1,0 +1,1 @@
+import{u as t,i as r,o,c as a}from"./main-eOyKIP-9.js";const _={__name:"[key]",setup(s){const e=t();return r().replace({name:"jlpt-test",query:{pack:String(e.params.key)}}),(u,n)=>(o(),a("div"))}};export{_ as default};

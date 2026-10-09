@@ -1,0 +1,453 @@
+{
+  "level": "N2",
+  "section": "chokai",
+  "title": "聴解",
+  "minutes": 50,
+  "mondai": {
+    "1": {
+      "instruction": "問題《もんだい》1では、まず質問《しつもん》を聞《き》いてください。それから話《はなし》を聞《き》いて、問題用紙《もんだいようし》の1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n2-test-1/l1-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n2-test-1/l1-ex.mp3",
+        "answer": 3,
+        "choices": [
+          "ホテルを予約《よやく》する",
+          "新幹線《しんかんせん》の切符《きっぷ》を取《と》る",
+          "出張届《しゅっちょうとどけ》を出《だ》す",
+          "取引先《とりひきさき》に連絡《れんらく》する"
+        ],
+        "script": "れい。かいしゃで、かちょうと ぶかが はなしています。ぶかは、このあと まず なにを しますか。\nM：来週の出張の件だけど、ホテルはもう取ってくれた？\nF：はい、先週のうちに予約しました。あとは新幹線の切符だけです。\nM：切符は総務課で手配してくれるから、君は出張届を出しておいて。\nF：出張届ですね。承知しました。\nM：あ、それから、取引先に訪問の時間を知らせておいてくれるとありがたいな。\nF：それは、届を出してからにします。\nM：うん、頼むよ。\nぶかは、このあと まず なにを しますか。"
+      }
+    },
+    "2": {
+      "instruction": "問題《もんだい》2では、まず質問《しつもん》を聞《き》いてください。そのあと、問題用紙《もんだいようし》のせんたくしを読《よ》んでください。読《よ》む時間《じかん》があります。それから話《はなし》を聞《き》いて、問題用紙《もんだいようし》の1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n2-test-1/l2-ex.mp3",
+        "answer": 3,
+        "choices": [
+          "給料《きゅうりょう》が安《やす》いから",
+          "職場《しょくば》の人《ひと》と合《あ》わないから",
+          "勉強《べんきょう》する時間《じかん》が足《た》りなくなったから",
+          "朝《あさ》起《お》きられなくなったから"
+        ],
+        "script": "れい。おとこの がくせいと おんなの がくせいが はなしています。おとこの がくせいは、どうして アルバイトを やめますか。\nM：来月からバイト、やめることにしたんだ。\nF：え、どうして？ 時給、悪くないって言ってたじゃない。\nM：うん、給料はいいんだけど、閉店が遅くて、帰りが十二時すぎになるんだよ。\nF：それは大変ね。授業に影響が出てる？\nM：朝は起きられるから、それは大丈夫。ただ、レポートを書く時間がなくなってきて。\nF：人間関係は？\nM：そっちは問題ない。いい人ばかりだよ。\nおとこの がくせいは、どうして アルバイトを やめますか。"
+      }
+    },
+    "3": {
+      "instruction": "問題《もんだい》3では、問題用紙《もんだいようし》に何《なに》もいんさつされていません。この問題《もんだい》は、全体《ぜんたい》としてどんな内容《ないよう》かを聞《き》く問題《もんだい》です。話《はなし》の前《まえ》に質問《しつもん》はありません。まず話《はなし》を聞《き》いてください。それから、質問《しつもん》とせんたくしを聞《き》いて、1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n2-test-1/l3-intro.mp3",
+      "memo": true,
+      "example": {
+        "audio": "/audio/jlpt-mock/n2-test-1/l3-ex.mp3",
+        "answer": 3,
+        "choice_count": 4,
+        "script": "れい。ラジオで アナウンサーが はなしています。\nF：最近、駅や公園で、ごみ箱を見かけなくなったと思いませんか。実は、ごみ箱が減っているのは、ごみを捨てる人が増えたからではありません。家庭のごみまで捨てていく人が多く、片づける人の負担が大きくなったためなんです。そこで、ある町では、ごみは持ち帰りましょうと、ポスターで呼びかけることにしました。\nごみ箱が減っているのは、なぜですか。\n1。ごみを捨てる人が減ったから\n2。ごみ箱を置く場所がないから\n3。家庭のごみを捨てる人が多いから\n4。ごみ箱を作る費用が高いから"
+      }
+    },
+    "4": {
+      "instruction": "問題《もんだい》4では、問題用紙《もんだいようし》に何《なに》もいんさつされていません。まず文《ぶん》を聞《き》いてください。それから、それに対《たい》する返事《へんじ》を聞《き》いて、1から3の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+      "answer_seconds": 6,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-intro.mp3",
+      "memo": true,
+      "example": {
+        "audio": "/audio/jlpt-mock/n2-test-1/l4-ex.mp3",
+        "answer": 1,
+        "choice_count": 3,
+        "script": "れい。\nF：あの、この書類、来週までに出してもらえますか。\nM：1。はい、分かりました。\nM：2。いいえ、来週は暇でした。\nM：3。ええ、出してもらいました。"
+      }
+    },
+    "5": {
+      "instruction": "問題《もんだい》5では、長《なが》めの話《はなし》を聞《き》きます。この問題《もんだい》には練習《れんしゅう》はありません。\nメモをとってもかまいません。\n1番《ばん》、2番《ばん》　問題用紙《もんだいようし》に何《なに》もいんさつされていません。まず話《はなし》を聞《き》いてください。それから、質問《しつもん》とせんたくしを聞《き》いて、1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。\n3番《ばん》　まず話《はなし》を聞《き》いてください。それから、二《ふた》つの質問《しつもん》を聞《き》いて、それぞれ問題用紙《もんだいようし》の1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n2-test-1/l5-intro.mp3",
+      "memo": true
+    }
+  },
+  "questions": [
+    {
+      "id": "l1-1",
+      "no": 1,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n2-test-1/l1-1.mp3",
+      "answer": 1,
+      "choices": [
+        "成績証明書《せいせきしょうめいしょ》の発行《はっこう》を申《もう》し込《こ》む",
+        "推薦書《すいせんしょ》をもらう",
+        "申請書《しんせいしょ》を書《か》く",
+        "印鑑《いんかん》を用意《ようい》する"
+      ],
+      "script": "いちばん。だいがくの まどぐちで、おんなの がくせいと しょくいんが はなしています。がくせいは、このあと まず なにを しますか。\nF：すみません、奨学金の申請をしたいんですが。\nM：はい。申請書は書いてありますか。\nF：はい、ここに。それから、先生の推薦書ももらってきました。\nM：ありがとうございます。あ、成績証明書は？\nF：あ、それは学部の事務室で出してもらうんですよね。まだです。\nM：ええ、それは発行に二日ぐらいかかりますから、今日のうちに申し込んでおいたほうがいいですよ。締め切りは金曜日ですから。\nF：じゃあ、先にそちらへ行ってきます。\nM：印鑑は、もういりません。サインで大丈夫です。\nF：わかりました。\nがくせいは、このあと まず なにを しますか。",
+      "exp": "Pengajuan surat keterangan nilai butuh ±2 hari dan batas akhir Jumat, jadi dikerjakan lebih dulu (先にそちらへ). Surat rekomendasi dan formulir sudah ada; stempel tidak diperlukan."
+    },
+    {
+      "id": "l1-2",
+      "no": 2,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n2-test-1/l1-2.mp3",
+      "answer": 4,
+      "choices": [
+        "会議室《かいぎしつ》を予約《よやく》する",
+        "資料《しりょう》をコピーする",
+        "部長《ぶちょう》にメールを送《おく》る",
+        "お茶《ちゃ》の用意《ようい》を頼《たの》む"
+      ],
+      "script": "にばん。かいしゃで、おんなの ひとと おとこの ひとが、あしたの かいぎの じゅんびに ついて はなしています。おとこの ひとは、このあと なにを しますか。\nF：明日の会議、会議室の予約は取れた？\nM：はい、三階の大きいほうを押さえました。プロジェクターも使えるように、総務に頼んであります。\nF：ありがとう。資料は？\nM：人数分、コピーしました。ただ、部長の分はまだ印刷してなくて。\nF：部長のは、データで送ってくれればいいって言ってたよ。\nM：あ、そうなんですか。じゃあ、メールで送っておきます。\nF：うん。それより、お茶の用意って、誰かに頼んである？\nM：あ、それはまだです。\nF：外部のお客さんも来るから、そっちを先に手配して。メールは、そのあとでいいから。\nM：わかりました。\nおとこの ひとは、このあと なにを しますか。",
+      "exp": "Reservasi ruang dan fotokopi sudah beres. Pesanan teh untuk tamu luar belum dilakukan dan disuruh lebih dulu; email ke direktur baru setelahnya."
+    },
+    {
+      "id": "l1-3",
+      "no": 3,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n2-test-1/l1-3.mp3",
+      "answer": 2,
+      "choices": [
+        "電気《でんき》の手続《てつづ》きをする",
+        "不動産屋《ふどうさんや》に解約《かいやく》を連絡《れんらく》する",
+        "ガス会社《がいしゃ》に電話《でんわ》する",
+        "郵便局《ゆうびんきょく》に転居届《てんきょとどけ》を出《だ》す"
+      ],
+      "script": "さんばん。ひっこしを する おんなの ひとと おとこの ひとが はなしています。おんなの ひとは、まず なにを しなければ なりませんか。\nM：来週の引っ越し、準備は進んでる？\nF：荷物はだいぶ箱に詰めたよ。でも、手続きがいろいろあって。\nM：電気とガスは？\nF：電気はネットで済んだんだけど、ガスは立ち会いが必要なんだって。\nM：じゃあ、日にちを決めて、会社に電話しなきゃね。\nF：うん。でもそれより先に、今の部屋を解約するって連絡しないと、来月の家賃がかかっちゃうのよ。それは今日の夕方までなんだ。\nM：ああ、それは急いだほうがいいね。\nF：不動産屋に電話するね。ガスはそのあとにする。\nM：郵便局の転居届は？\nF：それは来週でいいって。\nおんなの ひとは、まず なにを しなければ なりませんか。",
+      "exp": "Pembatalan kontrak kamar lama harus dikabari sampai sore ini agar sewa bulan depan tidak ditagih → ke agen properti dulu. Listrik sudah selesai, gas menyusul, surat pindah minggu depan."
+    },
+    {
+      "id": "l1-4",
+      "no": 4,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n2-test-1/l1-4.mp3",
+      "answer": 3,
+      "choices": [
+        "原稿《げんこう》を短《みじか》くする",
+        "スライドを作《つく》り直《なお》す",
+        "グラフの数字《すうじ》を直《なお》す",
+        "時間《じかん》を測《はか》って練習《れんしゅう》する"
+      ],
+      "script": "よんばん。だいがくで、せんせいと おとこの がくせいが はなしています。がくせいは、はっぴょうの まえに、まず なにを しますか。\nF：来週の発表の原稿、読ませてもらったわ。\nM：ありがとうございます。どうでしょうか。\nF：内容はよくまとまってる。ただ、グラフの数字が本文と合っていないところが二か所あるわね。\nM：あ、すみません。直します。\nF：それと、時間は十五分だけど、原稿だと二十分はかかりそう。\nM：削ったほうがいいですか。\nF：ううん、まず数字を直して、それから実際に声に出して時間を測ってみて。長ければ、そのとき削ればいいから。\nM：わかりました。スライドは、そのあとでいいですか。\nF：ええ。\nがくせいは、はっぴょうの まえに、まず なにを しますか。",
+      "exp": "Urutan dari dosen: (1) perbaiki angka grafik → (2) baca dengan suara & ukur waktu → (3) baru pangkas bila terlalu panjang; slide terakhir."
+    },
+    {
+      "id": "l1-5",
+      "no": 5,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n2-test-1/l1-5.mp3",
+      "answer": 1,
+      "choices": [
+        "写真《しゃしん》を撮《と》ってメールで送《おく》る",
+        "注文番号《ちゅうもんばんごう》を探《さが》して電話《でんわ》する",
+        "店《みせ》に本棚《ほんだな》を返《かえ》しに行《い》く",
+        "新《あたら》しい本棚《ほんだな》を注文《ちゅうもん》する"
+      ],
+      "script": "ごばん。でんわで、おんなの ひとと みせの おとこの ひとが はなしています。おんなの ひとは、このあと まず なにを しますか。\nF：あの、先週そちらで買った本棚のことなんですが、側面の板にひびが入っていて。\nM：申し訳ございません。商品の写真を送っていただけますか。\nF：写真ですか。はい、スマホで撮れます。\nM：ありがとうございます。それから、注文番号を教えていただけますか。\nF：えっと、メールに書いてあったと思うんですが、探してから、あとでかけ直します。\nM：いえ、メールでお送りいただくのが一番確実です。写真と一緒に、注文番号と、お名前もお書きください。交換品は確認してから手配いたします。\nF：わかりました。すぐ送ります。\nおんなの ひとは、このあと まず なにを しますか。",
+      "exp": "Penjual meminta foto + nomor pesanan + nama lewat email (paling pasti), jadi ia memotret lalu mengirim email. Menelepon ulang tidak diminta; penggantian diurus setelah dicek."
+    },
+    {
+      "id": "l2-1",
+      "no": 1,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-1.mp3",
+      "answer": 2,
+      "choices": [
+        "費用《ひよう》が高《たか》いから",
+        "子《こ》どもの体調《たいちょう》が心配《しんぱい》だから",
+        "休《やす》みが短《みじか》いから",
+        "車《くるま》で行《い》きたいから"
+      ],
+      "script": "いちばん。ふうふが なつやすみの りょこうに ついて はなしています。ふたりは、どうして ことしは こくないりょこうに しますか。\nF：今年の夏休み、やっぱりハワイにしない？\nM：俺も行きたいけど、円安で、航空券もホテルもかなり高くなってるんだよ。\nF：そうか。でも、国内だって夏は混むでしょ。\nM：まあ、値段はなんとかなるんだ。それより、去年、旅行先で子どもが熱を出しただろ。海外だと病院も言葉も心配で。\nF：ああ、そうだったね。\nM：車で行ける場所なら、何かあってもすぐ帰れるし。\nF：うん、それは安心ね。じゃあ、国内で探そう。\nふたりは、どうして ことしは こくないりょこうに しますか。",
+      "exp": "Biaya disebut \"bisa diatur\" (なんとかなる); alasan yang menentukan adalah anak pernah demam di perjalanan dan kekhawatiran soal rumah sakit/bahasa di luar negeri."
+    },
+    {
+      "id": "l2-2",
+      "no": 2,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-2.mp3",
+      "answer": 1,
+      "choices": [
+        "すいているから",
+        "会費《かいひ》が安《やす》いから",
+        "駅《えき》から近《ちか》いから",
+        "プールがあるから"
+      ],
+      "script": "にばん。おとこの ひとと おんなの ひとが、スポーツジムに ついて はなしています。おとこの ひとは、どうして かわぞいの ジムに しますか。\nF：駅前のジムと、川沿いのジム、どっちに入会するの？\nM：川沿いのほうにしようと思って。\nF：え、駅から遠いのに。駅前のほうが便利でしょ。月会費も安いし。\nM：うん、でも駅前のは、仕事帰りの人で夜はすごく混むって聞いたんだ。マシンを待つのが嫌でさ。\nF：川沿いは空いてるの？\nM：会員の数を制限してるらしくて、いつ行ってもすいてるって。\nF：プールもあるんでしょ？\nM：うん、でも泳がないから、それは関係ないな。\nおとこの ひとは、どうして かわぞいの ジムに しますか。",
+      "exp": "Gym tepi sungai lebih jauh dan lebih mahal; alasannya jumlah anggota dibatasi sehingga selalu sepi (tidak menunggu mesin). Kolam renang tidak dipakai."
+    },
+    {
+      "id": "l2-3",
+      "no": 3,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-3.mp3",
+      "answer": 4,
+      "choices": [
+        "値段《ねだん》が高《たか》すぎたから",
+        "香《かお》りの評判《ひょうばん》が悪《わる》かったから",
+        "広告《こうこく》が多《おお》すぎたから",
+        "商品《しょうひん》が見《み》つけにくかったから"
+      ],
+      "script": "さんばん。かいしゃで、おんなの ひとと おとこの ひとが はなしています。しんしょうひんの うりあげが のびなかった いちばんの りゆうは なんですか。\nF：先月出した新しいシャンプー、思ったほど売れなかったね。\nM：値段が高かったかな。\nF：競合の商品と比べて、千円ぐらいしか違わないから、値段じゃないと思う。\nM：香りは評判がよかったよね。\nF：うん。アンケートでも香りはいい結果。それより、どこで売ってるのか分からないって声が多かったの。\nM：ああ、ドラッグストアでは目立たない棚に置かれてたからね。\nF：広告もあまり出せなかったし、次は置き場所を考えないと。\nしんしょうひんの うりあげが のびなかった いちばんの りゆうは なんですか。",
+      "exp": "Harga hampir sama dengan pesaing dan aroma bagus; keluhan terbanyak: tidak tahu di mana produk dijual karena rak tersembunyi."
+    },
+    {
+      "id": "l2-4",
+      "no": 4,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-4.mp3",
+      "answer": 3,
+      "choices": [
+        "先輩《せんぱい》と合《あ》わないから",
+        "試合《しあい》に出《で》られないから",
+        "塾《じゅく》に間《ま》に合《あ》わないから",
+        "練習《れんしゅう》がきついから"
+      ],
+      "script": "よんばん。おんなの こと おとこの ひとが はなしています。おんなの こは、どうして ぶかつを やめたいと いっていますか。\nM：最近、部活の帰りが遅いな。何かあったのか？\nF：うん……あのさ、バスケ部、やめようかなと思って。\nM：え？ あんなに好きだったのに。先輩とうまくいってないのか？\nF：ううん、先輩はみんな優しいよ。\nM：じゃあ、試合に出られないのが嫌なのか？\nF：それもあるけど、それは仕方ないと思ってる。実は、塾に行くことになったでしょ。練習のある日は、塾に間に合わなくて、先生に怒られちゃうの。\nM：そうか。\nF：両方は無理かなって。\nおんなの こは、どうして ぶかつを やめたいと いっていますか。",
+      "exp": "Hubungan dengan senior baik; tidak ikut pertandingan \"tidak masalah\". Masalah nyata: latihan membuat ia terlambat ke bimbel."
+    },
+    {
+      "id": "l2-5",
+      "no": 5,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-5.mp3",
+      "answer": 2,
+      "choices": [
+        "自分《じぶん》が病気《びょうき》になったから",
+        "相手《あいて》の担当者《たんとうしゃ》が出《で》られなくなったから",
+        "出張《しゅっちょう》の費用《ひよう》を減《へ》らしたいから",
+        "会議《かいぎ》が中止《ちゅうし》になったから"
+      ],
+      "script": "ごばん。かいしゃで、おんなの ひとと おとこの ひとが はなしています。おとこの ひとは、どうして らいしゅうの しゅっちょうを やめましたか。\nF：来週の大阪出張、行かないことにしたんだって？\nM：うん。先方と相談して、オンラインでやることになった。\nF：交通費の節約？\nM：それもあるけど、本当は、先方の担当者が急に入院して、代わりの人が打ち合わせに出られなくなったんだ。\nF：そうなんだ。大丈夫なの？\nM：軽い病気みたい。来週は代わりの人とオンラインで資料の確認だけすることにした。\nF：じゃあ、出張はまたの機会ね。\nおとこの ひとは、どうして らいしゅうの しゅっちょうを やめましたか。",
+      "exp": "Biaya hanya alasan sampingan; sebenarnya penanggung jawab pihak klien dirawat di rumah sakit dan penggantinya tak bisa hadir."
+    },
+    {
+      "id": "l2-6",
+      "no": 6,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n2-test-1/l2-6.mp3",
+      "answer": 1,
+      "choices": [
+        "館内《かんない》で読《よ》む本《ほん》だから",
+        "学生証《がくせいしょう》を忘《わす》れたから",
+        "すでに誰《だれ》かが借《か》りているから",
+        "返却期限《へんきゃくきげん》が過《す》ぎているから"
+      ],
+      "script": "ろくばん。としょかんで、おんなの ししょと おとこの がくせいが はなしています。おとこの がくせいは、どうして この ほんを かりられませんか。\nM：すみません、この本を借りたいんですが。\nF：学生証を貸していただけますか。\nM：はい。\nF：あ、これは貸し出しできない本ですね。参考図書のコーナーのものは、館内で読むだけなんです。\nM：そうなんですか。でも、レポートの締め切りが明日なんです。\nF：コピーなら、一部だけできますよ。それから、同じ内容の新版が、あちらの棚にありますので、そちらなら貸し出せます。\nM：じゃあ、新版を借ります。\nおとこの がくせいは、どうして この ほんを かりられませんか。",
+      "exp": "Buku di sudut referensi hanya boleh dibaca di dalam perpustakaan (tidak dipinjamkan). Kartu mahasiswa sudah diserahkan; edisi baru bisa dipinjam."
+    },
+    {
+      "id": "l3-1",
+      "no": 1,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n2-test-1/l3-1.mp3",
+      "answer": 4,
+      "choice_count": 4,
+      "script": "いちばん。るすばんでんわの メッセージを きいています。\nF：もしもし、さくら歯科の佐藤です。山田さんの今度の予約、木曜日の午後三時でしたが、先生が学会で出られなくなりまして、その日は診察ができなくなりました。申し訳ありません。代わりに、金曜日の午前なら空いておりますので、ご都合がよろしければ、お電話ください。お急ぎでなければ、来週以降でも結構です。お電話お待ちしております。\nこの でんわは、なんの ために かけましたか。\n1。ちりょうの けっかを しらせるため\n2。あたらしい せんせいを しょうかいするため\n3。しんさつの りょうきんが かわったことを しらせるため\n4。よやくの へんこうを おねがいするため",
+      "exp": "Pesan dari klinik gigi: dokter tidak bisa praktik hari Kamis, sehingga pasien diminta mengubah jadwal (tujuan telepon = meminta perubahan reservasi)."
+    },
+    {
+      "id": "l3-2",
+      "no": 2,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n2-test-1/l3-2.mp3",
+      "answer": 1,
+      "choice_count": 4,
+      "script": "にばん。だいがくの じゅぎょうで、せんせいが はなしています。\nM：皆さんは、買い物をするとき、店の人に話しかけられるのと、自分で自由に見て回るのと、どちらが好きですか。最近の調査では、半数以上の人が、話しかけられるのは苦手だと答えています。これを受けて、ある衣料品の店では、買い物かごの色を二種類にしました。店員に相談したい人は赤いかごを、一人でゆっくり見たい人は青いかごを持って店に入る仕組みです。この店では、お客様の満足度が上がったそうです。\nせんせいは、なにに ついて はなしていますか。\n1。かいものかごの いろで きゃくの きぼうを つたえる みせの くふう\n2。いりょうひんの うりあげが のびた りゆう\n3。てんいんの はなしかたの くんれんほうほう\n4。かいものきゃくの ねんれいに よる このみの ちがい",
+      "exp": "Inti: toko pakaian membedakan keranjang merah/biru agar pelanggan bisa menyatakan keinginan dilayani atau tidak. Bukan tentang penjualan, pelatihan, atau usia."
+    },
+    {
+      "id": "l3-3",
+      "no": 3,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n2-test-1/l3-3.mp3",
+      "answer": 4,
+      "choice_count": 4,
+      "script": "さんばん。かいしゃで、ぶちょうが はなしています。\nM：皆さん、来月から在宅勤務の日数を、週三日から週二日に変更します。これは、在宅勤務が悪いということではありません。むしろ、成果は出ています。ただ、新入社員から、先輩に質問しにくい、仕事の進め方が分かりにくいという声が出ておりまして、顔を合わせて話す機会を増やしたいと考えました。この点について、ご意見がある方は、今週中に私までお知らせください。\nぶちょうが いちばん つたえたいことは なんですか。\n1。ざいたくきんむの せいかが でていないこと\n2。しんにゅうしゃいんが やめたがっていること\n3。せんぱいが しつもんしにくいこと\n4。ざいたくきんむの にっすうを へらすこと",
+      "exp": "Pengumuman utama: hari kerja dari rumah dikurangi dari 3 menjadi 2 hari per minggu. Kesulitan karyawan baru hanya alasannya; hasil kerja justru bagus."
+    },
+    {
+      "id": "l3-4",
+      "no": 4,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n2-test-1/l3-4.mp3",
+      "answer": 1,
+      "choice_count": 4,
+      "script": "よんばん。まちの ほうそうで、おんなの ひとが はなしています。\nF：町民の皆様にお知らせします。毎年開催しております夏祭りですが、今年は猛暑が予想されるため、開始時間を午後四時から午後六時に遅らせて行います。また、出店の数は去年の半分に減らし、代わりに休憩できる日陰のスペースを広げます。屋台の数が減りますので、ご不便をおかけいたしますが、ご理解のほど、よろしくお願いいたします。\nこの ほうそうは、なにに ついての おしらせですか。\n1。なつまつりの ないようの へんこう\n2。なつまつりの ちゅうし\n3。なつまつりの さんかしゃの ぼしゅう\n4。なつまつりの ばしょの へんこう",
+      "exp": "Festival tetap diadakan, tetapi isinya diubah: mulai lebih malam, kios dikurangi separuh, area teduh diperluas."
+    },
+    {
+      "id": "l3-5",
+      "no": 5,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n2-test-1/l3-5.mp3",
+      "answer": 2,
+      "choice_count": 4,
+      "script": "ごばん。ラジオで ねむりの せんもんかが はなしています。\nF：眠れないときに、早く寝なければと焦るほど、目が冴えてしまった経験はありませんか。実は、眠れない夜に大切なのは、眠ろうと頑張らないことです。眠くなるまで、いったん布団から出て、暗い部屋で静かな音楽を聞いたり、本を読んだりして過ごしてみてください。ただし、スマートフォンは明るい画面が脳を刺激するので、避けたほうがいいでしょう。\nせんもんかは、ねむれないとき、どうすると いいと いっていますか。\n1。スマートフォンで おんがくを きく\n2。ねむくなるまで ふとんから でて しずかに すごす\n3。ふとんの なかで じっと している\n4。あかるい へやで ほんを よむ",
+      "exp": "Saran: jangan memaksa tidur; keluar dari kasur sampai mengantuk, di ruang redup, dengan musik tenang/buku. Layar ponsel dihindari."
+    },
+    {
+      "id": "l4-1",
+      "no": 1,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-1.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "いちばん。\nM：先月の売り上げ、思ったより伸びなかったね。\nF：1。ええ、予想以上でしたね。\nF：2。ええ、もっと頑張らなければなりませんね。\nF：3。いいえ、まだ伸びていませんよ。",
+      "exp": "Menanggapi kabar penjualan kurang bagus dengan sikap prihatin & bertekad (頑張らなければ). Jawaban lain bertentangan dengan isi."
+    },
+    {
+      "id": "l4-2",
+      "no": 2,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-2.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "にばん。\nF：ちょっとお願いがあるんだけど、この荷物、運ぶの手伝ってくれない？\nM：1。うん、運んでくれてありがとう。\nM：2。手伝わせていただきます、いつでも。\nM：3。ごめん、今ちょっと手が離せなくて。",
+      "exp": "Permintaan bantuan; tanggapan yang wajar adalah menolak halus/menunda (手が離せない = sedang sibuk)."
+    },
+    {
+      "id": "l4-3",
+      "no": 3,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-3.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "さんばん。\nM：先生、昨日のレポートですが、提出が遅れてしまって、申し訳ありません。\nF：1。それは、早く出してくれてありがとう。\nF：2。次からは気をつけてくださいね。\nF：3。遅れても、何も言いませんよ。",
+      "exp": "Guru menerima permintaan maaf dan mengingatkan agar lain kali berhati-hati (気をつけてください)."
+    },
+    {
+      "id": "l4-4",
+      "no": 4,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-4.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "よんばん。\nF：部長、明日の会議、私が司会をやってもよろしいでしょうか。\nM：1。ええ、君が司会をしてくれると言ったね。\nM：2。うん、ぜひやってもらいたいな。\nM：3。司会は会議のあとだよ。",
+      "exp": "Meminta izin menjadi pembawa acara → atasan menyetujui dengan positif (ぜひ〜てもらいたい)."
+    },
+    {
+      "id": "l4-5",
+      "no": 5,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-5.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "ごばん。\nM：この店、料理はおいしいけど、ちょっと値段が高めだね。\nF：1。ええ、でも、それだけの価値はあると思います。\nF：2。ええ、もっと高いのを頼めばよかったですね。\nF：3。いいえ、安いのでびっくりしました。",
+      "exp": "Menyetujui bahwa mahal, sambil menambahkan sudut pandang (それだけの価値). Pilihan lain tidak nyambung dengan \"mahal\"."
+    },
+    {
+      "id": "l4-6",
+      "no": 6,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-6.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "ろくばん。\nF：あれ、佐藤さんまだ来ていないの？ いつもなら、もう着いている時間なのに。\nM：1。ええ、さっき着いたばかりですよ。\nM：2。いつもは、もうすぐ着くところです。\nM：3。電車が遅れているのかもしれませんね。",
+      "exp": "Menduga penyebab keterlambatan (かもしれません). Jawaban lain menyatakan ia sudah tiba, bertentangan dengan あれ、まだ来ていない."
+    },
+    {
+      "id": "l4-7",
+      "no": 7,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-7.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "ななばん。\nM：お忙しいところ恐れ入りますが、少しお時間をいただけませんか。\nF：1。ええ、どういたしまして。\nF：2。ええ、五分ぐらいなら大丈夫ですよ。\nF：3。いいえ、私こそ恐れ入ります。",
+      "exp": "Permintaan waktu → persetujuan bersyarat. どういたしまして dipakai untuk menjawab terima kasih, bukan permintaan."
+    },
+    {
+      "id": "l4-8",
+      "no": 8,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-8.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "はちばん。\nF：こんなに遅くなるまで仕事をしていると、体を壊しかねないよ。\nM：1。そうだね、もっと遅くまでやるつもりだよ。\nM：2。いや、体は壊れていないよ。\nM：3。ありがとう。今日は早く帰るよ。",
+      "exp": "〜かねない = \"bisa jadi\". Tanggapan wajar: terima kasih atas perhatian dan berjanji pulang lebih awal."
+    },
+    {
+      "id": "l4-9",
+      "no": 9,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-9.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "きゅうばん。\nM：田中さん、新しい部署での仕事は、いかがですか。\nF：1。おかげさまで、少しずつ慣れてきました。\nF：2。ええ、どうぞいらっしゃってください。\nF：3。はい、来月から異動します。",
+      "exp": "Ditanya kabar di departemen baru → menjawab sudah mulai terbiasa (おかげさまで)."
+    },
+    {
+      "id": "l4-10",
+      "no": 10,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-10.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "じゅうばん。\nF：このデータ、まだ確認していないのに、勝手に送っちゃったの？\nM：1。ええ、勝手に確認してくれました。\nM：2。すみません、急いでいたもので。\nM：3。いいえ、あとで送るつもりです。",
+      "exp": "Ditegur karena mengirim sebelum dicek → meminta maaf dan memberi alasan. \"あとで送る\" bertentangan karena sudah terkirim."
+    },
+    {
+      "id": "l4-11",
+      "no": 11,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n2-test-1/l4-11.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "じゅういちばん。\nF：あなたがいなかったら、このプロジェクトは成功しなかったわ。\nM：1。ええ、私がいなくてもできましたね。\nM：2。そうですか、成功しなくて残念でしたね。\nM：3。いえ、皆さんのおかげですよ。",
+      "exp": "Dipuji → merendah dan memuji tim (皆さんのおかげ)."
+    },
+    {
+      "id": "l5-1",
+      "no": 1,
+      "mondai": 5,
+      "audio": "/audio/jlpt-mock/n2-test-1/l5-1.mp3",
+      "answer": 2,
+      "choice_count": 4,
+      "script": "いちばん。りょこうがいしゃで、おんなの おきゃくと みせの おとこの ひとが はなしています。\nF：あの、来月、友達と二人で、温泉に行きたいんですが、あまり高くなくて、ゆっくりできるところがいいんです。\nM：かしこまりました。こちらに四つのプランがございます。一番は、都心から近い日帰りの温泉施設の入場券と昼食のセットで、五千円です。二番は、温泉街の旅館に一泊二日で、食事なしの素泊まりで、一万二千円です。三番は、山の中の一軒宿で、一泊二日、お部屋に専用の温泉がついて、三万円です。四番は、同じ温泉街の旅館で、夕食と朝食がつく一泊二日で、二万円です。\nF：ええと、泊まりで行きたいんです。予算は、一人二万円までなんですけど、お金は旅行先で使いたいので、宿はできるだけ安くしたいんです。\nM：食事は、お付けしなくてよろしいですか。\nF：はい、外で食べるのも楽しみなので。温泉街を歩けるといいな。\nM：それでしたら、旅館が温泉街の中にございますので、ちょうどよろしいかと。\nF：じゃあ、それにします。\nおんなの ひとは、どの プランに しましたか。\n1。いちばんの プラン。\n2。にばんの プラン。\n3。さんばんの プラン。\n4。よんばんの プラン。",
+      "exp": "Syarat: menginap, anggaran ≤ 20.000 yen, hemat untuk penginapan, tanpa makan, dekat kota onsen → plan no. 2 (penginapan di kota onsen, tanpa makan, 12.000 yen)."
+    },
+    {
+      "id": "l5-2",
+      "no": 2,
+      "mondai": 5,
+      "audio": "/audio/jlpt-mock/n2-test-1/l5-2.mp3",
+      "answer": 1,
+      "choice_count": 4,
+      "script": "にばん。ふうふが、こどもの ならいごとに ついて はなしています。\nM：隼人が、サッカーを習いたいって言ってたね。\nF：ええ。友達がみんなやってるからって。でも、教室まではバスで三十分もかかるのよ。\nM：通うのは、君が車で送ることになるだろう？ 今は仕事が忙しいから、毎週は難しいよね。\nF：そうなの。サッカーは土曜日の午前だけど、その日は私も用事が多くて。\nM：水泳はどうかな。この前、学校のプールで、ちょっと得意になったって言ってたよ。\nF：水泳なら、駅前のスポーツクラブで、平日の夕方にあるから、一人でも通えるわね。\nM：夏の間に水泳を習って、体力をつけて、秋になったら、サッカーを始めたらどうだろう。秋なら、君も少し楽になるだろう？\nF：そうね、それならいいと思う。隼人にもそう話してみましょう。\nふたりは、どうすることに しましたか。\n1。なつは すいえいを ならい、あきから サッカーを はじめる。\n2。すぐに サッカーを はじめる。\n3。すいえいも サッカーも ならわせない。\n4。ピアノを ならわせる。",
+      "exp": "Kesimpulan: musim panas ikut renang (bisa pergi sendiri di sore hari), mulai sepak bola di musim gugur ketika ibu lebih longgar."
+    },
+    {
+      "id": "l5-3",
+      "no": 3,
+      "mondai": 5,
+      "audio": "/audio/jlpt-mock/n2-test-1/l5-3.mp3",
+      "answer": 4,
+      "choices": [
+        "1番《ばん》の講座《こうざ》",
+        "2番《ばん》の講座《こうざ》",
+        "3番《ばん》の講座《こうざ》",
+        "4番《ばん》の講座《こうざ》"
+      ],
+      "label": "3ばん 質問1",
+      "script": "さんばん。しみんセンターの パンフレットを みながら、おんなの ひとと おとこの ひとが はなしています。\nF：ねえ、市民センターの秋の講座、一緒に何か申し込まない？\nM：いいね。どんなのがあるの？\nF：一番は、ヨガ。夜の八時からで、仕事帰りに通えるよ。二番は、料理教室。季節の野菜を使った料理を、毎回違う先生が教えてくれるんだって。三番は、写真教室で、土曜日の午後に、町を歩きながら撮影の練習をするの。四番は、英会話。少人数のクラスで、外国人の先生が教えてくれるって。\nM：ヨガか。最近、肩こりがひどいから、やってみたいけど、夜は残業で行けない日が多いんだ。\nF：そうなんだ。私は毎日同じ時間に帰れるから、夜でも大丈夫。でも、体を動かすのは続かないし、英語は、仕事で使うかもしれないから、役に立つかなと思って。\nM：英会話か、いいね。ただ、僕は発音が苦手で、人前で話すのが恥ずかしいんだよな。\nF：少人数だから、大丈夫よ。\nM：うーん、でも僕はやっぱり、体のためになるものがいいな。夜は無理だけど、土曜日にやっているものはない？\nF：ええと、写真教室は土曜の午後で、歩くから運動にもなるって書いてある。\nM：歩くのか。それなら続けられそう。それにするよ。\nF：じゃあ、私は、英語にする。\nしつもん いち。おんなの ひとは、どの こうざに もうしこみたいと いっていますか。",
+      "exp": "Pertanyaan 1 (perempuan): ia tidak suka olahraga yang tak bertahan lama dan ingin bahasa Inggris yang berguna untuk pekerjaan → no. 4 (percakapan Inggris)."
+    },
+    {
+      "id": "l5-4",
+      "no": 4,
+      "mondai": 5,
+      "audio": "/audio/jlpt-mock/n2-test-1/l5-4.mp3",
+      "answer": 3,
+      "choices": [
+        "1番《ばん》の講座《こうざ》",
+        "2番《ばん》の講座《こうざ》",
+        "3番《ばん》の講座《こうざ》",
+        "4番《ばん》の講座《こうざ》"
+      ],
+      "label": "3ばん 質問2",
+      "script": "しつもん に。おとこの ひとは、どの こうざに もうしこみたいと いっていますか。",
+      "exp": "Pertanyaan 2 (laki-laki): malam hari ia lembur, ingin yang baik untuk tubuh dan ada hari Sabtu → no. 3 (kelas fotografi sambil berjalan, Sabtu siang)."
+    }
+  ],
+  "audio": {
+    "intro": "/audio/jlpt-mock/n2-test-1/l-intro.mp3",
+    "outro": "/audio/jlpt-mock/n2-test-1/l-outro.mp3"
+  }
+}

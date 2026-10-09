@@ -1,0 +1,310 @@
+{
+    "id": "n4-5",
+    "level": "N4",
+    "focus": "〜て あります (keadaan hasil perbuatan), 〜て おきます (persiapan／dibiarkan), まだ (masih), とか, partikel も",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "ヌルさん、あしたの パーティーの じゅんびは どうですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "ケーキは もう 買って あります。ジュースも 冷蔵庫に 入れて あります。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとう。じゃ、わたしは 部屋を かざって おきます。"
+            },
+            {
+                "speaker": "female",
+                "text": "おねがいします。壁に ポスターも はって おいて ください。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、わかりました。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-5/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l5-kq1",
+                "prompt": "ケーキは どう なって いますか。",
+                "choices": [
+                    "もう 買《か》って あります",
+                    "これから 買《か》います",
+                    "まだ 作《つく》って います"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Bagaimana keadaan kuenya? — Sudah dibeli.",
+                    "en": "How is the cake? — It has already been bought."
+                }
+            },
+            {
+                "id": "n4l5-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なに》を して おきますか。",
+                "choices": [
+                    "部屋《へや》を かざります",
+                    "ジュースを 買《か》います",
+                    "ケーキを 作《つく》ります"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang akan disiapkan pria itu? — Menghias kamar.",
+                    "en": "What will the man do in advance? — Decorate the room."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l5-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "しりょうは どこですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "つくえの 上に 置いて ありますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q1.mp3",
+            "prompt": "しりょうは どこに 置《お》いて ありますか。",
+            "choices": [
+                "机《つくえ》の 上《うえ》",
+                "引《ひ》き出《だ》しの 中《なか》",
+                "いすの 下《した》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Materinya diletakkan di mana? — Di atas meja.",
+                "en": "Where are the materials? — On the desk."
+            }
+        },
+        {
+            "id": "n4l5-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "かぎは どこに ありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "げんかんの 壁に かけて あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q2.mp3",
+            "prompt": "かぎは どこに かけて ありますか。",
+            "choices": [
+                "玄関《げんかん》の 壁《かべ》",
+                "台所《だいどころ》の 机《つくえ》",
+                "部屋《へや》の ドア"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kuncinya digantung di mana? — Di dinding ruang depan.",
+                "en": "Where is the key hung? — On the wall of the entrance."
+            }
+        },
+        {
+            "id": "n4l5-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした、旅行ですね。ホテルは どうしましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "きのう よやくして おきました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q3.mp3",
+            "prompt": "女《おんな》の 人《ひと》は きのう 何《なに》を しましたか。",
+            "choices": [
+                "ホテルを 予約《よやく》しました",
+                "切符《きっぷ》を 買《か》いました",
+                "荷物《にもつ》を まとめました"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang dilakukan wanita itu kemarin? — Memesan hotel lebih dulu.",
+                "en": "What did the woman do yesterday? — She booked the hotel in advance."
+            }
+        },
+        {
+            "id": "n4l5-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "スリさん、はさみを 使いましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。使いました。引き出しに もどして おきます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q4.mp3",
+            "prompt": "はさみを どこに もどしますか。",
+            "choices": [
+                "引《ひ》き出《だ》しに",
+                "机《つくえ》の 上《うえ》に",
+                "ごみ箱《ばこ》に"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Guntingnya dikembalikan ke mana? — Ke laci.",
+                "en": "Where will he put the scissors back? — In the drawer."
+            }
+        },
+        {
+            "id": "n4l5-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "どんな スポーツを して いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "テニスとか 水泳とか して います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》が して いる スポーツは どれですか。",
+            "choices": [
+                "テニスと 水泳《すいえい》",
+                "サッカーと 野球《やきゅう》",
+                "テニスと サッカー"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Olahraga apa yang dilakukan wanita itu? — Tenis dan renang.",
+                "en": "Which sports does the woman play? — Tennis and swimming."
+            }
+        },
+        {
+            "id": "n4l5-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この いすは かたづけましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、まだ 使って いますから、そのままに して おいて ください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q6.mp3",
+            "prompt": "女《おんな》の 人《ひと》は いすを どう して ほしいですか。",
+            "choices": [
+                "そのままに して おく",
+                "片《かた》づける",
+                "別《べつ》の 部屋《へや》に 運《はこ》ぶ"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Wanita itu ingin kursinya diapakan? — Dibiarkan begitu saja.",
+                "en": "What does the woman want done with the chairs? — Left as they are."
+            }
+        },
+        {
+            "id": "n4l5-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ラニさん、日曜日は どこかへ 行きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、どこへも 行きませんでした。うちで 勉強しました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q7.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 日曜日《にちようび》に 何《なに》を しましたか。",
+            "choices": [
+                "家《いえ》で 勉強《べんきょう》しました",
+                "友達《ともだち》と 出《で》かけました",
+                "買《か》い物《もの》に 行《い》きました"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang dilakukan pria itu hari Minggu? — Belajar di rumah.",
+                "en": "What did the man do on Sunday? — He studied at home."
+            }
+        },
+        {
+            "id": "n4l5-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ポスターは どこに はって ありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "入口の 壁に はって あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q8.mp3",
+            "prompt": "ポスターは 入口《いりぐち》の 壁《かべ》に 貼《は》って あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Poster ditempel di dinding pintu masuk. — Benar (○).",
+                "en": "The poster is put up on the entrance wall. — True (○)."
+            }
+        },
+        {
+            "id": "n4l5-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "レポートは もう 出しましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、まだ 書いて います。あした 出します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は もう レポートを 出《だ》しました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pria itu sudah mengumpulkan laporan. — Salah (×), dia masih menulis.",
+                "en": "The man has already handed in the report. — False (×); he is still writing it."
+            }
+        },
+        {
+            "id": "n4l5-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "おみやげは 何を 買いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "おかしとか お茶とかを 買って おきます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-5/n4l5-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 果物《くだもの》を 買《か》って おきます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Wanita itu membeli buah lebih dulu. — Salah (×), dia membeli kue dan teh.",
+                "en": "The woman will buy fruit in advance. — False (×); she will buy sweets and tea."
+            }
+        }
+    ]
+}

@@ -1,0 +1,400 @@
+{
+    "id": 23,
+    "level": "N5",
+    "title_id": "Pelajaran 23 — Petunjuk & Cara Pakai",
+    "title_en": "Lesson 23 — Directions & Operation",
+    "scenarios": [
+        {
+            "id": "l23-s1",
+            "title_id": "Menunjukkan jalan ke stasiun",
+            "title_en": "Giving directions to the station",
+            "setting_id": "Seorang turis bertanya jalan ke stasiun dan kamu menjelaskan.",
+            "setting_en": "A tourist asks the way to the station and you explain.",
+            "goal_id": "Memakai を + kata kerja gerak (渡ります／曲がります), 〜目, dan まっすぐ.",
+            "goal_en": "Use wo with motion verbs (watarimasu / magarimasu), ~me, and massugu.",
+            "patterns": [
+                "Nを 渡ります／曲がります",
+                "〜つ目の 角",
+                "まっすぐ"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l23-s1-t1",
+                    "who": "partner",
+                    "ja": "すみません。駅《えき》へ 行《い》く 道《みち》を 教《おし》えてください。",
+                    "speak": "すみません。えきへ いく みちを おしえてください。",
+                    "id_text": "Permisi. Tolong beri tahu jalan ke stasiun.",
+                    "en_text": "Excuse me. Please tell me the way to the station.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t1.mp3"
+                },
+                {
+                    "id": "l23-s1-t2",
+                    "who": "you",
+                    "ja": "この 道《みち》を まっすぐ 行《い》ってください。",
+                    "speak": "この みちを まっすぐ いってください。",
+                    "id_text": "Silakan jalan lurus di jalan ini.",
+                    "accept": [
+                        "この 道を まっすぐ 行ってください。",
+                        "この道をまっすぐ行ってください。"
+                    ],
+                    "en_text": "Please go straight down this road.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t2.mp3"
+                },
+                {
+                    "id": "l23-s1-t3",
+                    "who": "partner",
+                    "ja": "はい。信号《しんごう》は ありますか。",
+                    "speak": "はい。しんごうは ありますか。",
+                    "id_text": "Baik. Apakah ada lampu lalu lintas?",
+                    "en_text": "Okay. Is there a traffic light?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t3.mp3"
+                },
+                {
+                    "id": "l23-s1-t4",
+                    "who": "you",
+                    "ja": "はい。次《つぎ》の 信号《しんごう》を 右《みぎ》へ 曲《ま》がってください。",
+                    "speak": "はい。つぎの しんごうを みぎへ まがってください。",
+                    "id_text": "Ya. Belok kanan di lampu lalu lintas berikutnya.",
+                    "accept": [
+                        "はい。次の 信号を 右へ 曲がってください。",
+                        "はい。次の信号を右へ曲がってください。"
+                    ],
+                    "en_text": "Yes. Turn right at the next traffic light.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t4.mp3"
+                },
+                {
+                    "id": "l23-s1-t5",
+                    "who": "partner",
+                    "ja": "橋《はし》を 渡《わた》りますか。",
+                    "speak": "はしを わたりますか。",
+                    "id_text": "Apakah menyeberangi jembatan?",
+                    "en_text": "Do I cross a bridge?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t5.mp3"
+                },
+                {
+                    "id": "l23-s1-t6",
+                    "who": "you",
+                    "ja": "はい、橋《はし》を 渡《わた》って、二《ふた》つ目《め》の 角《かど》を 右《みぎ》へ 曲《ま》がってください。",
+                    "speak": "はい、はしを わたって、ふたつめの かどを みぎへ まがってください。",
+                    "id_text": "Ya, seberangi jembatan, lalu belok kanan di sudut kedua.",
+                    "accept": [
+                        "はい、橋を 渡って、二つ目の 角を 右へ 曲がってください。",
+                        "はい、橋を渡って、二つ目の角を右へ曲がってください。"
+                    ],
+                    "en_text": "Yes, cross the bridge and turn right at the second corner.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t6.mp3"
+                },
+                {
+                    "id": "l23-s1-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。歩《ある》いて 二十分《にじゅっぷん》ぐらいですか。",
+                    "speak": "ありがとうございます。あるいて にじゅっぷんぐらいですか。",
+                    "id_text": "Terima kasih. Kira-kira dua puluh menit berjalan kaki?",
+                    "en_text": "Thank you. About twenty minutes on foot?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l23-s2",
+            "title_id": "Mesin tiket",
+            "title_en": "The ticket machine",
+            "setting_id": "Di stasiun, kamu minta diajari cara memakai mesin tiket.",
+            "setting_en": "At the station, you ask how to use the ticket machine.",
+            "goal_id": "Memakai 〜と (kalau → hasil) dan 〜とき.",
+            "goal_en": "Use ~to (if/when → result) and ~toki.",
+            "patterns": [
+                "V(辞書形)と、〜",
+                "V(ない形)とき、〜",
+                "Vてください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l23-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、切符《きっぷ》を 買《か》いますか。",
+                    "speak": "ブディさん、きっぷを かいますか。",
+                    "id_text": "Budi, mau membeli tiket?",
+                    "en_text": "Budi, are you buying a ticket?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t1.mp3"
+                },
+                {
+                    "id": "l23-s2-t2",
+                    "who": "you",
+                    "ja": "はい。でも、使《つか》い方《かた》が わかりません。教《おし》えてください。",
+                    "speak": "はい。でも、つかいかたが わかりません。おしえてください。",
+                    "id_text": "Ya. Tapi saya tidak tahu cara memakainya. Tolong ajari.",
+                    "accept": [
+                        "はい。でも、使い方が わかりません。教えてください。",
+                        "はい。でも、使い方がわかりません。教えてください。"
+                    ],
+                    "en_text": "Yes. But I don't know how to use it. Please teach me.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t2.mp3"
+                },
+                {
+                    "id": "l23-s2-t3",
+                    "who": "partner",
+                    "ja": "まず、お金《かね》を 入《い》れてください。そして、行《い》く 駅《えき》の ボタンを 押《お》してください。",
+                    "speak": "まず、おかねを いれてください。そして、いく えきの ボタンを おしてください。",
+                    "id_text": "Pertama, masukkan uang. Lalu tekan tombol stasiun tujuan.",
+                    "en_text": "First, put in money. Then press the button for your destination.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t3.mp3"
+                },
+                {
+                    "id": "l23-s2-t4",
+                    "who": "you",
+                    "ja": "ボタンを 押《お》すと、切符《きっぷ》が 出《で》ますか。",
+                    "speak": "ボタンを おすと、きっぷが でますか。",
+                    "id_text": "Kalau menekan tombol, tiketnya keluar?",
+                    "accept": [
+                        "ボタンを 押すと、切符が 出ますか。",
+                        "ボタンを押すと、切符が出ますか。"
+                    ],
+                    "en_text": "If I press the button, the ticket comes out?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t4.mp3"
+                },
+                {
+                    "id": "l23-s2-t5",
+                    "who": "partner",
+                    "ja": "ええ。切符《きっぷ》と お釣《つ》りが 出《で》ます。お釣《つ》りは 忘《わす》れないでください。",
+                    "speak": "ええ。きっぷと おつりが でます。おつりは わすれないでください。",
+                    "id_text": "Ya. Tiket dan uang kembalian keluar. Jangan lupa uang kembaliannya.",
+                    "en_text": "Yes. The ticket and change come out. Don't forget the change.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t5.mp3"
+                },
+                {
+                    "id": "l23-s2-t6",
+                    "who": "you",
+                    "ja": "わかりました。切符《きっぷ》が 出《で》ない ときは、どう しますか。",
+                    "speak": "わかりました。きっぷが でない ときは、どう しますか。",
+                    "id_text": "Baik. Kalau tiketnya tidak keluar, bagaimana?",
+                    "accept": [
+                        "わかりました。切符が 出ない ときは、どう しますか。",
+                        "わかりました。切符が出ないときは、どうしますか。"
+                    ],
+                    "en_text": "I see. What do I do when the ticket doesn't come out?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t6.mp3"
+                },
+                {
+                    "id": "l23-s2-t7",
+                    "who": "partner",
+                    "ja": "故障《こしょう》の ときは、この ボタンを 押《お》して、駅《えき》の 人《ひと》を 呼《よ》んでください。",
+                    "speak": "こしょうの ときは、この ボタンを おして、えきの ひとを よんでください。",
+                    "id_text": "Kalau rusak, tekan tombol ini dan panggil petugas stasiun.",
+                    "en_text": "If it's broken, press this button and call a station staff member.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l23-s3",
+            "title_id": "Radio yang suaranya kecil",
+            "title_en": "A radio with low volume",
+            "setting_id": "Kamu membawa radio ke toko reparasi karena suaranya kecil.",
+            "setting_en": "You take a radio to a repair shop because the sound is quiet.",
+            "goal_id": "Memakai N が Adj (音が 小さい), 〜と, dan 故障.",
+            "goal_en": "Use N ga Adj (oto ga chiisai), ~to, and koshou.",
+            "patterns": [
+                "Nが Adj",
+                "V(辞書形)と、〜く なります",
+                "故障"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l23-s3-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。どうしましたか。",
+                    "speak": "いらっしゃいませ。どうしましたか。",
+                    "id_text": "Selamat datang. Ada masalah apa?",
+                    "en_text": "Welcome. What seems to be the problem?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t1.mp3"
+                },
+                {
+                    "id": "l23-s3-t2",
+                    "who": "you",
+                    "ja": "この ラジオは 音《おと》が 小《ちい》さいです。故障《こしょう》ですか。",
+                    "speak": "この ラジオは おとが ちいさいです。こしょうですか。",
+                    "id_text": "Radio ini suaranya kecil. Apakah rusak?",
+                    "accept": [
+                        "この ラジオは 音が 小さいです。故障ですか。",
+                        "このラジオは音が小さいです。故障ですか。"
+                    ],
+                    "en_text": "The sound of this radio is quiet. Is it broken?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t2.mp3"
+                },
+                {
+                    "id": "l23-s3-t3",
+                    "who": "partner",
+                    "ja": "ちょっと 見《み》ましょう。電池《でんち》を 換《か》えると、音《おと》が 大《おお》きく なりますよ。",
+                    "speak": "ちょっと みましょう。でんちを かえると、おとが おおきく なりますよ。",
+                    "id_text": "Mari saya lihat. Kalau baterainya diganti, suaranya jadi besar.",
+                    "en_text": "Let me take a look. If you change the batteries, the sound gets louder.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t3.mp3"
+                },
+                {
+                    "id": "l23-s3-t4",
+                    "who": "you",
+                    "ja": "電池《でんち》ですか。先週《せんしゅう》 換《か》えました。",
+                    "speak": "でんちですか。せんしゅう かえました。",
+                    "id_text": "Baterai? Minggu lalu sudah saya ganti.",
+                    "accept": [
+                        "電池ですか。先週 換えました。",
+                        "電池ですか。先週換えました。"
+                    ],
+                    "en_text": "The batteries? I changed them last week.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t4.mp3"
+                },
+                {
+                    "id": "l23-s3-t5",
+                    "who": "partner",
+                    "ja": "そうですか。この ボタンを 回《まわ》すと、音《おと》が 大《おお》きく なります。",
+                    "speak": "そうですか。この ボタンを まわすと、おとが おおきく なります。",
+                    "id_text": "Begitu. Kalau tombol ini diputar, suaranya menjadi besar.",
+                    "en_text": "I see. If you turn this knob, the sound gets louder.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t5.mp3"
+                },
+                {
+                    "id": "l23-s3-t6",
+                    "who": "you",
+                    "ja": "あ、大《おお》きく なりました。ありがとうございます。",
+                    "speak": "あ、おおきく なりました。ありがとうございます。",
+                    "id_text": "Ah, sudah jadi besar. Terima kasih.",
+                    "accept": [
+                        "あ、大きく なりました。ありがとうございます。",
+                        "あ、大きくなりました。ありがとうございます。"
+                    ],
+                    "en_text": "Oh, it's louder now. Thank you.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t6.mp3"
+                },
+                {
+                    "id": "l23-s3-t7",
+                    "who": "partner",
+                    "ja": "よかったです。故障《こしょう》では ありませんでしたね。",
+                    "speak": "よかったです。こしょうでは ありませんでしたね。",
+                    "id_text": "Syukurlah. Ternyata bukan rusak ya.",
+                    "en_text": "I'm glad. It wasn't broken after all.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l23-s4",
+            "title_id": "Jalan ke kantor",
+            "title_en": "The way to the office",
+            "setting_id": "Rekan kerja bertanya bagaimana kamu berangkat ke kantor.",
+            "setting_en": "A colleague asks how you get to the office.",
+            "goal_id": "Memakai 〜とき (V kamus／V ta) dan を + 渡ります／歩きます.",
+            "goal_en": "Use ~toki (dictionary / ta form) and wo with watarimasu / arukimasu.",
+            "patterns": [
+                "V(辞書形)とき、〜",
+                "Nを 歩きます／渡ります",
+                "N(場所)に あります"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l23-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 毎日《まいにち》、何《なん》で 会社《かいしゃ》へ 来《き》ますか。",
+                    "speak": "ブディさんは まいにち、なんで かいしゃへ きますか。",
+                    "id_text": "Budi, setiap hari kamu datang ke kantor naik apa?",
+                    "en_text": "Budi, how do you come to the office every day?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t1.mp3"
+                },
+                {
+                    "id": "l23-s4-t2",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》で 来《き》ます。でも、天気《てんき》が いい ときは 歩《ある》いて 来《き》ます。",
+                    "speak": "でんしゃで きます。でも、てんきが いい ときは あるいて きます。",
+                    "id_text": "Naik kereta. Tapi kalau cuaca bagus, saya jalan kaki.",
+                    "accept": [
+                        "電車で 来ます。でも、天気が いい ときは 歩いて 来ます。",
+                        "電車で来ます。でも、天気がいいときは歩いて来ます。"
+                    ],
+                    "en_text": "By train. But when the weather is nice, I walk.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t2.mp3"
+                },
+                {
+                    "id": "l23-s4-t3",
+                    "who": "partner",
+                    "ja": "歩《ある》く とき、どの 道《みち》を 歩《ある》きますか。",
+                    "speak": "あるく とき、どの みちを あるきますか。",
+                    "id_text": "Kalau berjalan, lewat jalan yang mana?",
+                    "en_text": "When you walk, which way do you take?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t3.mp3"
+                },
+                {
+                    "id": "l23-s4-t4",
+                    "who": "you",
+                    "ja": "大《おお》きい 橋《はし》を 渡《わた》って、駐車場《ちゅうしゃじょう》の 前《まえ》を 歩《ある》きます。",
+                    "speak": "おおきい はしを わたって、ちゅうしゃじょうの まえを あるきます。",
+                    "id_text": "Menyeberangi jembatan besar, lalu berjalan di depan tempat parkir.",
+                    "accept": [
+                        "大きい 橋を 渡って、駐車場の 前を 歩きます。",
+                        "大きい橋を渡って、駐車場の前を歩きます。"
+                    ],
+                    "en_text": "I cross the big bridge and walk past the front of the parking lot.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t4.mp3"
+                },
+                {
+                    "id": "l23-s4-t5",
+                    "who": "partner",
+                    "ja": "信号《しんごう》が 多《おお》い 道《みち》ですね。何分《なんぷん》ぐらい かかりますか。",
+                    "speak": "しんごうが おおい みちですね。なんぷんぐらい かかりますか。",
+                    "id_text": "Jalan yang banyak lampu lalu lintasnya ya. Kira-kira berapa menit?",
+                    "en_text": "A road with many traffic lights. About how many minutes does it take?",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t5.mp3"
+                },
+                {
+                    "id": "l23-s4-t6",
+                    "who": "you",
+                    "ja": "三十分《さんじゅっぷん》ぐらい かかります。会社《かいしゃ》の 建物《たてもの》は 交差点《こうさてん》の 角《かど》に あります。",
+                    "speak": "さんじゅっぷんぐらい かかります。かいしゃの たてものは こうさてんの かどに あります。",
+                    "id_text": "Kira-kira tiga puluh menit. Gedung kantor ada di sudut perempatan.",
+                    "accept": [
+                        "三十分ぐらい かかります。会社の 建物は 交差点の 角に あります。",
+                        "三十分ぐらいかかります。会社の建物は交差点の角にあります。"
+                    ],
+                    "en_text": "About thirty minutes. The company building is at the corner of the intersection.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t6.mp3"
+                },
+                {
+                    "id": "l23-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。私《わたし》も 交差点《こうさてん》を 渡《わた》って、毎朝《まいあさ》 歩《ある》いて 来《き》ます。",
+                    "speak": "そうですか。わたしも こうさてんを わたって、まいあさ あるいて きます。",
+                    "id_text": "Begitu ya. Saya juga menyeberangi perempatan dan berjalan kaki setiap pagi.",
+                    "en_text": "I see. I also cross the intersection and walk every morning.",
+                    "audio": "/audio/kaiwa/lesson-23/l23-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

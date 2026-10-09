@@ -1,0 +1,37 @@
+{
+    "low_volume": {
+        "ja": "声《こえ》が 小《ちい》さいです。大《おお》きい 声《こえ》で もう一度《いちど》 お願《ねが》いします。",
+        "speak": "こえが ちいさいです。おおきい こえで もういちど おねがいします。",
+        "id": "Suaramu kurang keras. Ulangi dengan suara lebih keras.",
+        "en": "Your voice is too quiet. Please say it again, louder.",
+        "audio": "/audio/kaiwa/alerts/low_volume.mp3"
+    },
+    "no_speech": {
+        "ja": "声《こえ》が 聞《き》こえません。もう一度《いちど》 お願《ねが》いします。",
+        "speak": "こえが きこえません。もういちど おねがいします。",
+        "id": "Suaramu tidak terdengar. Ulangi sekali lagi.",
+        "en": "I could not hear you. Please try again.",
+        "audio": "/audio/kaiwa/alerts/no_speech.mp3"
+    },
+    "not_match": {
+        "ja": "もう一度《いちど》 言《い》って ください。",
+        "speak": "もういちど いって ください。",
+        "id": "Belum cocok. Ucapkan sekali lagi.",
+        "en": "Not quite. Please say it once more.",
+        "audio": "/audio/kaiwa/alerts/not_match.mp3"
+    },
+    "mic_denied": {
+        "ja": "マイクが 使《つか》えません。ブラウザの 設定《せってい》を 確認《かくにん》して ください。",
+        "speak": "マイクが つかえません。ブラウザの せっていを かくにんして ください。",
+        "id": "Mikrofon tidak bisa dipakai. Periksa pengaturan izin mikrofon di browser.",
+        "en": "The microphone cannot be used. Check the microphone permission in your browser.",
+        "audio": "/audio/kaiwa/alerts/mic_denied.mp3"
+    },
+    "network": {
+        "ja": "ネットワークに つながりません。インターネットを 確認《かくにん》して ください。",
+        "speak": "ネットワークに つながりません。インターネットを かくにんして ください。",
+        "id": "Tidak tersambung ke jaringan. Periksa koneksi internetmu.",
+        "en": "No network connection. Please check your internet.",
+        "audio": "/audio/kaiwa/alerts/network.mp3"
+    }
+}

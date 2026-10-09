@@ -1,0 +1,1219 @@
+{
+    "id": "supermarket",
+    "track": "situation",
+    "level": "N5",
+    "rounds": 1,
+    "title_id": "Supermarket",
+    "title_en": "Supermarket",
+    "note_id": "Kalimat petugas memakai bahasa sopan toko (mis. おつけしますか, いかがですか). Kamu cukup mengerti dan menjawab sederhana. Harga, berat, dan jumlah di jawaban contoh hanya contoh; di skenario 2 pantangan babi dan alkohol hanyalah peran. Label halal di Jepang jarang, jadi selalu cek 原材料 (daftar bahan) sendiri.",
+    "note_en": "Staff lines use polite shop language (e.g. おつけしますか, いかがですか). You only need to understand and answer simply. Prices, weights and quantities in the sample answers are examples; the pork and alcohol restriction in scenario 2 is just a role. Halal labels are rare in Japan, so always check the 原材料 (ingredient list) yourself.",
+    "scenarios": [
+        {
+            "id": "supermarket-s1",
+            "title_id": "Mencari barang di supermarket",
+            "title_en": "Finding items in the supermarket",
+            "setting_id": "Kamu mencari tahu, tomat, dan kecap tetapi lorongnya tidak jelas.",
+            "setting_en": "You are looking for tofu, tomatoes and soy sauce but cannot find the aisles.",
+            "goal_id": "Menanyakan letak dengan 〜は どこですか dan memahami 〜番《ばん》 / 奥 / 右 / 左.",
+            "goal_en": "Ask where things are with 〜は どこですか and understand 〜番 / 奥 / 右 / 左.",
+            "patterns": [
+                "〜は どこですか",
+                "〜は ありますか",
+                "〜に あります"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Untuk bertanya letak: 〜は どこですか. Jawaban umum: 〜番《ばん》の 通路《つうろ》 (lorong nomor 〜), 奥《おく》 (bagian dalam), 右/左.",
+                "Supermarket Jepang menyusun barang per 売《う》り場《ば》 (bagian): 野菜《やさい》, 肉《にく》, 魚《さかな》, 調味料《ちょうみりょう》."
+            ],
+            "tips_en": [
+                "Ask location with 〜は どこですか. Typical answers: 〜番の 通路 (aisle number), 奥 (far end), 右/左.",
+                "Japanese supermarkets arrange goods by section: vegetables, meat, fish, seasonings."
+            ],
+            "words": [
+                {
+                    "ja": "豆腐《とうふ》",
+                    "id": "tahu",
+                    "en": "tofu"
+                },
+                {
+                    "ja": "トマト",
+                    "id": "tomat",
+                    "en": "tomato"
+                },
+                {
+                    "ja": "しょうゆ",
+                    "id": "kecap asin",
+                    "en": "soy sauce"
+                },
+                {
+                    "ja": "通路《つうろ》",
+                    "id": "lorong",
+                    "en": "aisle"
+                },
+                {
+                    "ja": "奥《おく》",
+                    "id": "bagian dalam",
+                    "en": "far end"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "牛乳《ぎゅうにゅう》は どこですか。",
+                    "id": "Susu di mana?",
+                    "en": "Where is the milk?"
+                },
+                {
+                    "ja": "卵《たまご》は ありますか。",
+                    "id": "Apakah ada telur?",
+                    "en": "Do you have eggs?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s1-t1",
+                    "who": "you",
+                    "ja": "すみません、豆腐《とうふ》は どこですか。",
+                    "speak": "すみません、とうふは どこですか。",
+                    "id_text": "Permisi, tahu di mana?",
+                    "accept": [
+                        "すみません、豆腐は どこですか。",
+                        "すみません、豆腐はどこですか。"
+                    ],
+                    "en_text": "Excuse me, where is the tofu?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s1-t2",
+                    "who": "partner",
+                    "ja": "豆腐《とうふ》は 三番《さんばん》の 通路《つうろ》の 奥《おく》です。",
+                    "speak": "とうふは さんばんの つうろの おくです。",
+                    "id_text": "Tahu ada di bagian dalam lorong nomor 3.",
+                    "en_text": "Tofu is at the end of aisle 3.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s1-t3",
+                    "who": "you",
+                    "ja": "ありがとうございます。トマトも ありますか。",
+                    "speak": "ありがとうございます。トマトも ありますか。",
+                    "id_text": "Terima kasih. Apakah ada tomat juga?",
+                    "accept": [
+                        "ありがとうございます。トマトも ありますか。",
+                        "ありがとうございます。トマトもありますか。"
+                    ],
+                    "en_text": "Thank you. Do you have tomatoes too?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s1-t4",
+                    "who": "partner",
+                    "ja": "トマトは 野菜《やさい》の 売《う》り場《ば》です。入口《いりぐち》の 右《みぎ》に あります。",
+                    "speak": "トマトは やさいの うりばです。いりぐちの みぎに あります。",
+                    "id_text": "Tomat ada di bagian sayur, di sebelah kanan pintu masuk.",
+                    "en_text": "Tomatoes are in the vegetable section, to the right of the entrance.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s1-t5",
+                    "who": "you",
+                    "ja": "しょうゆは どこに ありますか。",
+                    "speak": "しょうゆは どこに ありますか。",
+                    "id_text": "Kecap asin ada di mana?",
+                    "accept": [
+                        "しょうゆは どこに ありますか。",
+                        "しょうゆはどこにありますか。"
+                    ],
+                    "en_text": "Where is the soy sauce?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s1-t6",
+                    "who": "partner",
+                    "ja": "しょうゆは 調味料《ちょうみりょう》の 通路《つうろ》です。五番《ごばん》です。",
+                    "speak": "しょうゆは ちょうみりょうの つうろです。ごばんです。",
+                    "id_text": "Kecap asin di lorong bumbu, nomor 5.",
+                    "en_text": "Soy sauce is in the seasoning aisle, number 5.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s1-t7",
+                    "who": "you",
+                    "ja": "わかりました。どうもありがとうございます。",
+                    "speak": "わかりました。どうもありがとうございます。",
+                    "id_text": "Mengerti. Terima kasih banyak.",
+                    "accept": [
+                        "わかりました。どうもありがとうございます。"
+                    ],
+                    "en_text": "Got it. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s2",
+            "title_id": "Bertanya bahan & label halal",
+            "title_en": "Asking about ingredients & halal labels",
+            "setting_id": "Kamu tidak makan babi dan alkohol. Kamu bertanya pada petugas tentang bahan dan label halal di sebuah produk.",
+            "setting_en": "You do not eat pork or alcohol. You ask a staff member about the ingredients and halal labels of a product.",
+            "goal_id": "Bertanya ハラール dan 〜は 入《はい》っていますか, lalu membaca 原材料《げんざいりょう》.",
+            "goal_en": "Ask about ハラール and 〜は 入っていますか, then check 原材料 (ingredients).",
+            "patterns": [
+                "ハラールの 〜は ありますか",
+                "〜は 入っていますか",
+                "〜は 食べられません"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "ハラール (halal) ditulis dalam katakana. Label halal Jepang jarang; tanyakan ハラールの 商品《しょうひん》は ありますか.",
+                "Cek 原材料名《げんざいりょうめい》 (daftar bahan) di bagian belakang kemasan. Waspadai 豚《ぶた》 (babi), ゼラチン, みりん, 料理酒《りょうりしゅ》, ラード.",
+                "Kata お酒《さけ》 mencakup alkohol; みりん dan 料理酒 adalah bumbu yang mengandung alkohol."
+            ],
+            "tips_en": [
+                "Halal is written in katakana. Halal labels are uncommon in Japan, so ask ハラールの 商品は ありますか.",
+                "Check the ingredient list on the back. Watch for pork (豚), gelatin, mirin, cooking sake and lard.",
+                "お酒 means alcohol; mirin and cooking sake are seasonings that contain alcohol."
+            ],
+            "words": [
+                {
+                    "ja": "ハラール",
+                    "id": "halal",
+                    "en": "halal"
+                },
+                {
+                    "ja": "原材料《げんざいりょう》",
+                    "id": "bahan baku (daftar bahan)",
+                    "en": "ingredients"
+                },
+                {
+                    "ja": "豚肉《ぶたにく》",
+                    "id": "daging babi",
+                    "en": "pork"
+                },
+                {
+                    "ja": "お酒《さけ》",
+                    "id": "alkohol",
+                    "en": "alcohol"
+                },
+                {
+                    "ja": "ゼラチン",
+                    "id": "gelatin",
+                    "en": "gelatin"
+                },
+                {
+                    "ja": "入《はい》っています",
+                    "id": "mengandung",
+                    "en": "contains"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ハラールの 商品《しょうひん》は ありますか。",
+                    "id": "Apakah ada produk halal?",
+                    "en": "Do you have halal products?"
+                },
+                {
+                    "ja": "ゼラチンは 入《はい》っていますか。",
+                    "id": "Apakah mengandung gelatin?",
+                    "en": "Does it contain gelatin?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s2-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。何《なに》か お探《さが》しですか。",
+                    "speak": "いらっしゃいませ。なにか おさがしですか。",
+                    "id_text": "Selamat datang. Sedang mencari sesuatu?",
+                    "en_text": "Welcome. Are you looking for something?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t2",
+                    "who": "you",
+                    "ja": "すみません、ハラールの 商品《しょうひん》は ありますか。",
+                    "speak": "すみません、ハラールの しょうひんは ありますか。",
+                    "id_text": "Maaf, apakah ada produk halal?",
+                    "accept": [
+                        "すみません、ハラールの 商品は ありますか。",
+                        "すみません、ハラールの商品はありますか。"
+                    ],
+                    "en_text": "Excuse me, do you have halal products?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t3",
+                    "who": "partner",
+                    "ja": "はい、少《すこ》し あります。この 棚《たな》です。",
+                    "speak": "はい、すこし あります。この たなです。",
+                    "id_text": "Ya, ada sedikit. Di rak ini.",
+                    "en_text": "Yes, a few. On this shelf.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t4",
+                    "who": "you",
+                    "ja": "このカレーに 豚肉《ぶたにく》は 入《はい》っていますか。",
+                    "speak": "このカレーに ぶたにくは はいっていますか。",
+                    "id_text": "Apakah kari ini mengandung daging babi?",
+                    "accept": [
+                        "このカレーに 豚肉は 入っていますか。",
+                        "このカレーに豚肉は入っていますか。"
+                    ],
+                    "en_text": "Does this curry contain pork?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t5",
+                    "who": "partner",
+                    "ja": "原材料《げんざいりょう》を 見《み》ますね。いいえ、豚肉《ぶたにく》は 入《はい》っていません。",
+                    "speak": "げんざいりょうを みますね。いいえ、ぶたにくは はいっていません。",
+                    "id_text": "Saya cek bahannya. Tidak, tidak ada daging babi.",
+                    "en_text": "Let me check the ingredients. No, there is no pork.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t6",
+                    "who": "you",
+                    "ja": "お酒《さけ》も 入《はい》っていませんか。",
+                    "speak": "おさけも はいっていませんか。",
+                    "id_text": "Apakah alkohol juga tidak ada?",
+                    "accept": [
+                        "お酒も 入っていませんか。",
+                        "お酒も入っていませんか。"
+                    ],
+                    "en_text": "Is there no alcohol either?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t7",
+                    "who": "partner",
+                    "ja": "はい、お酒《さけ》も 入《はい》っていません。",
+                    "speak": "はい、おさけも はいっていません。",
+                    "id_text": "Ya, alkohol juga tidak ada.",
+                    "en_text": "Right, there is no alcohol either.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t7.mp3"
+                },
+                {
+                    "id": "supermarket-s2-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。これを ください。",
+                    "speak": "ありがとうございます。これを ください。",
+                    "id_text": "Terima kasih. Saya ambil yang ini.",
+                    "accept": [
+                        "ありがとうございます。これを ください。",
+                        "ありがとうございます。これをください。"
+                    ],
+                    "en_text": "Thank you. I will take this.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s3",
+            "title_id": "Daging & ikan: berat dan jumlah",
+            "title_en": "Meat & fish: weight and amount",
+            "setting_id": "Kamu membeli ayam di bagian daging dan ikan, lalu menyebut jumlahnya.",
+            "setting_en": "You buy chicken and fish at the counter and state the amount.",
+            "goal_id": "Memesan dengan 〜グラム dan 〜を 〜枚《まい》 / 〜切《き》れ, bertanya ハラール tidak perlu — fokus pada jumlah.",
+            "goal_en": "Order with 〜グラム and counters 〜枚 / 〜切れ.",
+            "patterns": [
+                "〜を 〜グラム ください",
+                "〜を 〜つ ください",
+                "〜は 何《なん》グラムですか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Di bagian daging, 100グラム (ひゃくグラム) adalah satuan harga. Pesan: 鶏肉《とりにく》を 三百《さんびゃく》グラム ください.",
+                "Ikan sering dihitung 一切《ひとき》れ (satu potong) atau 一匹《いっぴき》 (satu ekor)."
+            ],
+            "tips_en": [
+                "In the meat section the price unit is 100 g. Order: 鶏肉を 三百グラム ください.",
+                "Fish is counted by the slice (一切れ) or whole fish (一匹)."
+            ],
+            "words": [
+                {
+                    "ja": "鶏肉《とりにく》",
+                    "id": "daging ayam",
+                    "en": "chicken"
+                },
+                {
+                    "ja": "グラム",
+                    "id": "gram",
+                    "en": "gram"
+                },
+                {
+                    "ja": "切《き》れ",
+                    "id": "potong",
+                    "en": "slice"
+                },
+                {
+                    "ja": "魚《さかな》",
+                    "id": "ikan",
+                    "en": "fish"
+                },
+                {
+                    "ja": "百《ひゃく》グラム",
+                    "id": "100 gram",
+                    "en": "100 grams"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "鶏肉《とりにく》を 二百《にひゃく》グラム ください。",
+                    "id": "Tolong ayam 200 gram.",
+                    "en": "200 grams of chicken, please."
+                },
+                {
+                    "ja": "鮭《さけ》を 二切《ふたき》れ ください。",
+                    "id": "Tolong dua potong salmon.",
+                    "en": "Two slices of salmon, please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s3-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。ご注文《ちゅうもん》は お決《き》まりですか。",
+                    "speak": "いらっしゃいませ。ごちゅうもんは おきまりですか。",
+                    "id_text": "Selamat datang. Sudah memutuskan pesanannya?",
+                    "en_text": "Welcome. Have you decided?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s3-t2",
+                    "who": "you",
+                    "ja": "鶏肉《とりにく》を 三百《さんびゃく》グラム ください。",
+                    "speak": "とりにくを さんびゃくグラム ください。",
+                    "id_text": "Tolong ayam 300 gram.",
+                    "accept": [
+                        "鶏肉を 三百グラム ください。",
+                        "鶏肉を三百グラムください。"
+                    ],
+                    "en_text": "300 grams of chicken, please.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s3-t3",
+                    "who": "partner",
+                    "ja": "はい、三百《さんびゃく》グラムですね。ほかには いかがですか。",
+                    "speak": "はい、さんびゃくグラムですね。ほかには いかがですか。",
+                    "id_text": "Baik, 300 gram ya. Yang lain?",
+                    "en_text": "300 grams. Anything else?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s3-t4",
+                    "who": "you",
+                    "ja": "魚《さかな》も ほしいです。これを 二切《ふたき》れ ください。",
+                    "speak": "さかなも ほしいです。これを ふたきれ ください。",
+                    "id_text": "Saya mau ikan juga. Tolong dua potong ini.",
+                    "accept": [
+                        "魚も ほしいです。これを 二切れ ください。",
+                        "魚もほしいです。これを二切れください。",
+                        "魚もほしいです。これを2切れください。",
+                        "魚も ほしいです。これを 2切れ ください。"
+                    ],
+                    "en_text": "I want fish too. Two slices of this, please.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s3-t5",
+                    "who": "partner",
+                    "ja": "二切《ふたき》れで 四百八十円《よんひゃくはちじゅうえん》です。",
+                    "speak": "ふたきれで よんひゃくはちじゅうえんです。",
+                    "id_text": "Dua potong 480 yen.",
+                    "en_text": "Two slices is 480 yen.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s3-t6",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, tolong.",
+                    "accept": [
+                        "はい、お願いします。"
+                    ],
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s3-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。レジで お支払《しはら》いください。",
+                    "speak": "ありがとうございます。レジで おしはらいください。",
+                    "id_text": "Terima kasih. Silakan bayar di kasir.",
+                    "en_text": "Thank you. Please pay at the register.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s4",
+            "title_id": "Harga, diskon, dan tanggal kedaluwarsa",
+            "title_en": "Prices, discounts and expiry dates",
+            "setting_id": "Kamu melihat stiker diskon di bento dan bertanya harga serta tanggal kedaluwarsanya.",
+            "setting_en": "You see a discount sticker on a bento and ask about the price and expiry date.",
+            "goal_id": "Bertanya いくらですか, 半額《はんがく》, dan 賞味期限《しょうみきげん》.",
+            "goal_en": "Ask いくらですか, 半額 and 賞味期限.",
+            "patterns": [
+                "〜は いくらですか",
+                "〜は いつまでですか",
+                "〜に します"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "半額《はんがく》 = setengah harga. Stiker 割引《わりびき》 = diskon. Biasanya muncul sore hari untuk makanan siap saji.",
+                "賞味期限《しょうみきげん》 = batas terbaik dimakan; 消費期限《しょうひきげん》 = batas aman dimakan (lebih ketat)."
+            ],
+            "tips_en": [
+                "半額 = half price. A 割引 sticker means a discount; they usually appear in the evening on ready-made food.",
+                "賞味期限 = best-before date; 消費期限 = use-by date (stricter)."
+            ],
+            "words": [
+                {
+                    "ja": "半額《はんがく》",
+                    "id": "setengah harga",
+                    "en": "half price"
+                },
+                {
+                    "ja": "割引《わりびき》",
+                    "id": "diskon",
+                    "en": "discount"
+                },
+                {
+                    "ja": "賞味期限《しょうみきげん》",
+                    "id": "batas terbaik dimakan",
+                    "en": "best-before date"
+                },
+                {
+                    "ja": "今日《きょう》",
+                    "id": "hari ini",
+                    "en": "today"
+                },
+                {
+                    "ja": "明日《あした》",
+                    "id": "besok",
+                    "en": "tomorrow"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "これは いくらですか。",
+                    "id": "Ini berapa harganya?",
+                    "en": "How much is this?"
+                },
+                {
+                    "ja": "明日《あした》まで 食《た》べられますか。",
+                    "id": "Bisakah dimakan sampai besok?",
+                    "en": "Can I eat it until tomorrow?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s4-t1",
+                    "who": "you",
+                    "ja": "すみません、この お弁当《べんとう》は いくらですか。",
+                    "speak": "すみません、この おべんとうは いくらですか。",
+                    "id_text": "Maaf, bento ini berapa harganya?",
+                    "accept": [
+                        "すみません、この お弁当は いくらですか。",
+                        "すみません、このお弁当はいくらですか。"
+                    ],
+                    "en_text": "Excuse me, how much is this bento?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s4-t2",
+                    "who": "partner",
+                    "ja": "五百円《ごひゃくえん》ですが、今《いま》は 半額《はんがく》です。",
+                    "speak": "ごひゃくえんですが、いまは はんがくです。",
+                    "id_text": "500 yen, tetapi sekarang setengah harga.",
+                    "en_text": "It is 500 yen, but it is half price now.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s4-t3",
+                    "who": "you",
+                    "ja": "じゃ、二百五十円《にひゃくごじゅうえん》ですね。",
+                    "speak": "じゃ、にひゃくごじゅうえんですね。",
+                    "id_text": "Kalau begitu 250 yen ya.",
+                    "accept": [
+                        "じゃ、二百五十円ですね。"
+                    ],
+                    "en_text": "So it is 250 yen.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s4-t4",
+                    "who": "partner",
+                    "ja": "はい、そうです。今日《きょう》までの お弁当《べんとう》です。",
+                    "speak": "はい、そうです。きょうまでの おべんとうです。",
+                    "id_text": "Ya, benar. Ini bento sampai hari ini.",
+                    "en_text": "Yes. This bento is good until today.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s4-t5",
+                    "who": "you",
+                    "ja": "明日《あした》まで 食《た》べられますか。",
+                    "speak": "あしたまで たべられますか。",
+                    "id_text": "Bisakah dimakan sampai besok?",
+                    "accept": [
+                        "明日まで 食べられますか。",
+                        "明日まで食べられますか。"
+                    ],
+                    "en_text": "Can I eat it until tomorrow?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s4-t6",
+                    "who": "partner",
+                    "ja": "いいえ、今日《きょう》 食《た》べて ください。",
+                    "speak": "いいえ、きょう たべて ください。",
+                    "id_text": "Tidak, tolong dimakan hari ini.",
+                    "en_text": "No, please eat it today.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s4-t7",
+                    "who": "you",
+                    "ja": "わかりました。これに します。",
+                    "speak": "わかりました。これに します。",
+                    "id_text": "Mengerti. Saya ambil ini.",
+                    "accept": [
+                        "わかりました。これに します。",
+                        "わかりました。これにします。"
+                    ],
+                    "en_text": "Understood. I will take this.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s4-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s5",
+            "title_id": "Di kasir: kantong, kartu, dan pembayaran",
+            "title_en": "At the register: bags, cards and payment",
+            "setting_id": "Kamu membayar di kasir. Kasir bertanya soal kantong plastik dan cara bayar.",
+            "setting_en": "You pay at the register. The cashier asks about a bag and how you will pay.",
+            "goal_id": "Menjawab レジ袋《ぶくろ》 dan 〜で お願《ねが》いします (tunai / kartu).",
+            "goal_en": "Answer about レジ袋 and say 〜で お願いします (cash / card).",
+            "patterns": [
+                "レジ袋《ぶくろ》は いりません",
+                "〜で お願いします",
+                "〜は 使《つか》えますか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "レジ袋《ぶくろ》 (kantong kasir) di Jepang berbayar. Jawab いりません (tidak perlu) bila membawa tas sendiri, atau お願《ねが》いします.",
+                "Cara bayar: 現金《げんきん》 (tunai), カード, 電子《でんし》マネー. Tanyakan 〜は 使《つか》えますか."
+            ],
+            "tips_en": [
+                "Checkout bags cost money in Japan. Say いりません if you bring your own, or お願いします.",
+                "Payment: 現金 (cash), card, e-money. Ask 〜は 使えますか."
+            ],
+            "words": [
+                {
+                    "ja": "レジ袋《ぶくろ》",
+                    "id": "kantong plastik kasir",
+                    "en": "checkout bag"
+                },
+                {
+                    "ja": "現金《げんきん》",
+                    "id": "tunai",
+                    "en": "cash"
+                },
+                {
+                    "ja": "カード",
+                    "id": "kartu",
+                    "en": "card"
+                },
+                {
+                    "ja": "使《つか》えます",
+                    "id": "bisa dipakai",
+                    "en": "can be used"
+                },
+                {
+                    "ja": "ポイントカード",
+                    "id": "kartu poin",
+                    "en": "point card"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "カードは 使《つか》えますか。",
+                    "id": "Apakah bisa pakai kartu?",
+                    "en": "Can I use a card?"
+                },
+                {
+                    "ja": "袋《ふくろ》は いりません。",
+                    "id": "Saya tidak perlu kantong.",
+                    "en": "I do not need a bag."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s5-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。ポイントカードは お持《も》ちですか。",
+                    "speak": "いらっしゃいませ。ポイントカードは おもちですか。",
+                    "id_text": "Selamat datang. Apakah punya kartu poin?",
+                    "en_text": "Welcome. Do you have a point card?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s5-t2",
+                    "who": "you",
+                    "ja": "いいえ、ありません。",
+                    "speak": "いいえ、ありません。",
+                    "id_text": "Tidak, tidak ada.",
+                    "accept": [
+                        "いいえ、ありません。"
+                    ],
+                    "en_text": "No, I do not.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s5-t3",
+                    "who": "partner",
+                    "ja": "レジ袋《ぶくろ》は 三円《さんえん》ですが、いかがですか。",
+                    "speak": "レジぶくろは さんえんですが、いかがですか。",
+                    "id_text": "Kantong 3 yen, bagaimana?",
+                    "en_text": "A bag is 3 yen. Would you like one?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s5-t4",
+                    "who": "you",
+                    "ja": "はい、一《ひと》つ お願《ねが》いします。",
+                    "speak": "はい、ひとつ おねがいします。",
+                    "id_text": "Ya, satu tolong.",
+                    "accept": [
+                        "はい、一つ お願いします。",
+                        "はい、一つお願いします。"
+                    ],
+                    "en_text": "Yes, one please.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s5-t5",
+                    "who": "partner",
+                    "ja": "全部《ぜんぶ》で 千二百円《せんにひゃくえん》です。",
+                    "speak": "ぜんぶで せんにひゃくえんです。",
+                    "id_text": "Totalnya 1200 yen.",
+                    "en_text": "The total is 1200 yen.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s5-t6",
+                    "who": "you",
+                    "ja": "カードは 使《つか》えますか。",
+                    "speak": "カードは つかえますか。",
+                    "id_text": "Apakah bisa pakai kartu?",
+                    "accept": [
+                        "カードは 使えますか。",
+                        "カードは使えますか。"
+                    ],
+                    "en_text": "Can I use a card?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s5-t7",
+                    "who": "partner",
+                    "ja": "はい、使《つか》えます。こちらに お願《ねが》いします。",
+                    "speak": "はい、つかえます。こちらに おねがいします。",
+                    "id_text": "Ya, bisa. Silakan di sini.",
+                    "en_text": "Yes. Please use this.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s5-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s6",
+            "title_id": "Barang habis atau tidak ada",
+            "title_en": "Out of stock or not available",
+            "setting_id": "Kamu mencari susu favorit tetapi rak kosong. Kamu bertanya kapan ada lagi.",
+            "setting_en": "You look for your usual milk but the shelf is empty. You ask when it will be back.",
+            "goal_id": "Bertanya 〜は ありませんか dan いつ 入《はい》りますか.",
+            "goal_en": "Ask 〜は ありませんか and いつ 入りますか.",
+            "patterns": [
+                "〜は ありませんか",
+                "いつ 入《はい》りますか",
+                "〜でも いいです"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "売《う》り切《き》れ = habis terjual. Tanyakan いつ 入《はい》りますか (kapan masuk lagi?).",
+                "Jika tidak ada, tawarkan pengganti: 〜でも いいです (yang lain juga boleh)."
+            ],
+            "tips_en": [
+                "売り切れ = sold out. Ask いつ 入りますか (when will it come in?).",
+                "If it is unavailable, offer a substitute: 〜でも いいです (something else is fine)."
+            ],
+            "words": [
+                {
+                    "ja": "売《う》り切《き》れ",
+                    "id": "habis terjual",
+                    "en": "sold out"
+                },
+                {
+                    "ja": "入《はい》ります",
+                    "id": "masuk (stok baru)",
+                    "en": "comes in (stock)"
+                },
+                {
+                    "ja": "明日《あした》",
+                    "id": "besok",
+                    "en": "tomorrow"
+                },
+                {
+                    "ja": "牛乳《ぎゅうにゅう》",
+                    "id": "susu",
+                    "en": "milk"
+                },
+                {
+                    "ja": "ほかの",
+                    "id": "yang lain",
+                    "en": "another"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "牛乳《ぎゅうにゅう》は ありませんか。",
+                    "id": "Apakah tidak ada susu?",
+                    "en": "Is there no milk?"
+                },
+                {
+                    "ja": "明日《あした》は ありますか。",
+                    "id": "Apakah besok ada?",
+                    "en": "Will there be some tomorrow?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s6-t1",
+                    "who": "you",
+                    "ja": "すみません、この 牛乳《ぎゅうにゅう》は ありませんか。",
+                    "speak": "すみません、この ぎゅうにゅうは ありませんか。",
+                    "id_text": "Maaf, apakah susu ini tidak ada?",
+                    "accept": [
+                        "すみません、この 牛乳は ありませんか。",
+                        "すみません、この牛乳はありませんか。"
+                    ],
+                    "en_text": "Excuse me, is this milk not available?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s6-t2",
+                    "who": "partner",
+                    "ja": "すみません、今日《きょう》は 売《う》り切《き》れです。",
+                    "speak": "すみません、きょうは うりきれです。",
+                    "id_text": "Maaf, hari ini habis.",
+                    "en_text": "Sorry, it is sold out today.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s6-t3",
+                    "who": "you",
+                    "ja": "いつ 入《はい》りますか。",
+                    "speak": "いつ はいりますか。",
+                    "id_text": "Kapan masuk lagi?",
+                    "accept": [
+                        "いつ 入りますか。",
+                        "いつ入りますか。"
+                    ],
+                    "en_text": "When will it come in?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s6-t4",
+                    "who": "partner",
+                    "ja": "明日《あした》の 朝《あさ》 入《はい》ります。",
+                    "speak": "あしたの あさ はいります。",
+                    "id_text": "Besok pagi masuk.",
+                    "en_text": "It comes in tomorrow morning.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s6-t5",
+                    "who": "you",
+                    "ja": "ほかの 牛乳《ぎゅうにゅう》でも いいです。",
+                    "speak": "ほかの ぎゅうにゅうでも いいです。",
+                    "id_text": "Susu yang lain juga boleh.",
+                    "accept": [
+                        "ほかの 牛乳でも いいです。",
+                        "ほかの牛乳でもいいです。"
+                    ],
+                    "en_text": "Another milk is fine too.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s6-t6",
+                    "who": "partner",
+                    "ja": "では、こちらは いかがですか。",
+                    "speak": "では、こちらは いかがですか。",
+                    "id_text": "Kalau begitu, yang ini bagaimana?",
+                    "en_text": "Then how about this one?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s6-t7",
+                    "who": "you",
+                    "ja": "はい、それを お願《ねが》いします。",
+                    "speak": "はい、それを おねがいします。",
+                    "id_text": "Ya, tolong yang itu.",
+                    "accept": [
+                        "はい、それを お願いします。",
+                        "はい、それをお願いします。"
+                    ],
+                    "en_text": "Yes, that one please.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s6-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s7",
+            "title_id": "Menghangatkan dan membungkus makanan siap saji",
+            "title_en": "Heating and packing ready-made food",
+            "setting_id": "Kamu membeli lauk siap saji di bagian deli dan minta dipanaskan dan diberi sumpit.",
+            "setting_en": "You buy a ready-made side dish at the deli and ask for it to be heated and given chopsticks.",
+            "goal_id": "Memakai 温《あたた》めて ください dan 〜を つけて ください.",
+            "goal_en": "Use 温めて ください and 〜を つけて ください.",
+            "patterns": [
+                "〜を 温《あたた》めて ください",
+                "〜を つけて ください",
+                "〜は 要《い》りません"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "温《あたた》めて ください = tolong dihangatkan. Di supermarket biasanya petugas deli yang melakukannya, bukan kasir.",
+                "おはしは 一膳《いちぜん》 (satu pasang sumpit), スプーン = sendok. 要《い》りません = tidak perlu."
+            ],
+            "tips_en": [
+                "温めて ください = please heat it. At the deli counter staff do it, not always the cashier.",
+                "おはし counts as 一膳; スプーン = spoon. 要りません = not needed."
+            ],
+            "words": [
+                {
+                    "ja": "お惣菜《そうざい》",
+                    "id": "lauk siap saji",
+                    "en": "ready-made side dish"
+                },
+                {
+                    "ja": "温《あたた》めます",
+                    "id": "menghangatkan",
+                    "en": "to heat"
+                },
+                {
+                    "ja": "おはし",
+                    "id": "sumpit",
+                    "en": "chopsticks"
+                },
+                {
+                    "ja": "スプーン",
+                    "id": "sendok",
+                    "en": "spoon"
+                },
+                {
+                    "ja": "つけます",
+                    "id": "menyertakan",
+                    "en": "to include"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "おはしを 二膳《にぜん》 つけて ください。",
+                    "id": "Tolong sertakan dua pasang sumpit.",
+                    "en": "Please include two pairs of chopsticks."
+                },
+                {
+                    "ja": "袋《ふくろ》は 要《い》りません。",
+                    "id": "Tidak perlu kantong.",
+                    "en": "I do not need a bag."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s7-t1",
+                    "who": "you",
+                    "ja": "すみません、この からあげを 一《ひと》つ ください。",
+                    "speak": "すみません、この からあげを ひとつ ください。",
+                    "id_text": "Maaf, tolong satu karaage ini.",
+                    "accept": [
+                        "すみません、この からあげを 一つ ください。",
+                        "すみません、このからあげを一つください。"
+                    ],
+                    "en_text": "Excuse me, one of these karaage, please.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s7-t2",
+                    "who": "partner",
+                    "ja": "はい。温《あたた》めますか。",
+                    "speak": "はい。あたためますか。",
+                    "id_text": "Baik. Mau dihangatkan?",
+                    "en_text": "Sure. Shall I heat it?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s7-t3",
+                    "who": "you",
+                    "ja": "はい、温《あたた》めて ください。",
+                    "speak": "はい、あたためて ください。",
+                    "id_text": "Ya, tolong dihangatkan.",
+                    "accept": [
+                        "はい、温めて ください。",
+                        "はい、温めてください。"
+                    ],
+                    "en_text": "Yes, please heat it.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s7-t4",
+                    "who": "partner",
+                    "ja": "おはしは おつけしますか。",
+                    "speak": "おはしは おつけしますか。",
+                    "id_text": "Mau disertakan sumpit?",
+                    "en_text": "Would you like chopsticks?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s7-t5",
+                    "who": "you",
+                    "ja": "はい、おはしを つけて ください。",
+                    "speak": "はい、おはしを つけて ください。",
+                    "id_text": "Ya, tolong sertakan sumpit.",
+                    "accept": [
+                        "はい、おはしを つけて ください。",
+                        "はい、おはしをつけてください。"
+                    ],
+                    "en_text": "Yes, please include chopsticks.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s7-t6",
+                    "who": "partner",
+                    "ja": "スプーンは よろしいですか。",
+                    "speak": "スプーンは よろしいですか。",
+                    "id_text": "Sendok bagaimana?",
+                    "en_text": "How about a spoon?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s7-t7",
+                    "who": "you",
+                    "ja": "スプーンは 要《い》りません。",
+                    "speak": "スプーンは いりません。",
+                    "id_text": "Sendok tidak perlu.",
+                    "accept": [
+                        "スプーンは 要りません。",
+                        "スプーンは要りません。"
+                    ],
+                    "en_text": "I do not need a spoon.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s7-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "supermarket-s8",
+            "title_id": "Menyimpan dan memilah sampah belanjaan",
+            "title_en": "Storing food and sorting shopping waste",
+            "setting_id": "Kamu bertanya pada petugas bagaimana menyimpan daging segar dan memilah kemasan.",
+            "setting_en": "You ask staff how to store fresh meat and how to sort packaging.",
+            "goal_id": "Bertanya どうやって 〜ますか dan memahami 冷蔵庫《れいぞうこ》 / 冷凍《れいとう》.",
+            "goal_en": "Ask どうやって 〜ますか and understand 冷蔵庫 / 冷凍.",
+            "patterns": [
+                "どうやって 〜ますか",
+                "〜に いれて ください",
+                "いつまで 〜ますか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "冷蔵《れいぞう》 = kulkas biasa, 冷凍《れいとう》 = freezer. Tanya 冷凍《れいとう》しても いいですか bila ingin membekukan.",
+                "Kemasan plastik dan styrofoam sering ada tempat daur ulangnya di depan supermarket (リサイクル)."
+            ],
+            "tips_en": [
+                "冷蔵 = fridge, 冷凍 = freezer. Ask 冷凍しても いいですか about freezing.",
+                "Plastic and styrofoam trays often have recycling bins at the entrance (リサイクル)."
+            ],
+            "words": [
+                {
+                    "ja": "冷蔵庫《れいぞうこ》",
+                    "id": "kulkas",
+                    "en": "refrigerator"
+                },
+                {
+                    "ja": "冷凍《れいとう》",
+                    "id": "membekukan",
+                    "en": "freeze"
+                },
+                {
+                    "ja": "リサイクル",
+                    "id": "daur ulang",
+                    "en": "recycling"
+                },
+                {
+                    "ja": "容器《ようき》",
+                    "id": "wadah / kemasan",
+                    "en": "container"
+                },
+                {
+                    "ja": "三日《みっか》",
+                    "id": "tiga hari",
+                    "en": "three days"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "冷凍《れいとう》しても いいですか。",
+                    "id": "Boleh dibekukan?",
+                    "en": "Can I freeze it?"
+                },
+                {
+                    "ja": "容器《ようき》は どこに 捨《す》てますか。",
+                    "id": "Kemasan dibuang di mana?",
+                    "en": "Where do I throw the container?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "supermarket-s8-t1",
+                    "who": "you",
+                    "ja": "すみません、この 肉《にく》は どうやって 保存《ほぞん》しますか。",
+                    "speak": "すみません、この にくは どうやって ほぞんしますか。",
+                    "id_text": "Maaf, bagaimana menyimpan daging ini?",
+                    "accept": [
+                        "すみません、この 肉は どうやって 保存しますか。",
+                        "すみません、この肉はどうやって保存しますか。"
+                    ],
+                    "en_text": "Excuse me, how do I store this meat?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t1.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t2",
+                    "who": "partner",
+                    "ja": "冷蔵庫《れいぞうこ》に いれて ください。",
+                    "speak": "れいぞうこに いれて ください。",
+                    "id_text": "Tolong taruh di kulkas.",
+                    "en_text": "Please put it in the fridge.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t2.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t3",
+                    "who": "you",
+                    "ja": "いつまで 食《た》べられますか。",
+                    "speak": "いつまで たべられますか。",
+                    "id_text": "Sampai kapan bisa dimakan?",
+                    "accept": [
+                        "いつまで 食べられますか。",
+                        "いつまで食べられますか。"
+                    ],
+                    "en_text": "Until when can I eat it?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t3.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t4",
+                    "who": "partner",
+                    "ja": "三日《みっか》ぐらいです。",
+                    "speak": "みっかぐらいです。",
+                    "id_text": "Sekitar tiga hari.",
+                    "en_text": "About three days.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t4.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t5",
+                    "who": "you",
+                    "ja": "冷凍《れいとう》しても いいですか。",
+                    "speak": "れいとうしても いいですか。",
+                    "id_text": "Boleh dibekukan?",
+                    "accept": [
+                        "冷凍しても いいですか。",
+                        "冷凍してもいいですか。"
+                    ],
+                    "en_text": "Can I freeze it?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t5.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t6",
+                    "who": "partner",
+                    "ja": "はい、いいですよ。",
+                    "speak": "はい、いいですよ。",
+                    "id_text": "Ya, boleh.",
+                    "en_text": "Yes, that is fine.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t6.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t7",
+                    "who": "you",
+                    "ja": "容器《ようき》は どこに 捨《す》てますか。",
+                    "speak": "ようきは どこに すてますか。",
+                    "id_text": "Kemasannya dibuang di mana?",
+                    "accept": [
+                        "容器は どこに 捨てますか。",
+                        "容器はどこに捨てますか。"
+                    ],
+                    "en_text": "Where do I throw away the container?",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t7.mp3"
+                },
+                {
+                    "id": "supermarket-s8-t8",
+                    "who": "partner",
+                    "ja": "入口《いりぐち》の リサイクルの 箱《はこ》です。",
+                    "speak": "いりぐちの リサイクルの はこです。",
+                    "id_text": "Di kotak daur ulang dekat pintu masuk.",
+                    "en_text": "In the recycling box by the entrance.",
+                    "audio": "/audio/kaiwa/situation-supermarket/supermarket-s8-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

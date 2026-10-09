@@ -1,0 +1,330 @@
+{
+    "id": 11,
+    "level": "N4",
+    "title_id": "Berusaha, jadi bisa & kata keterangan",
+    "title_en": "Making an effort, coming to be able & adverbs",
+    "scenarios": [
+        {
+            "id": "n4l11-s1",
+            "title_id": "Nasihat dokter",
+            "title_en": "The doctor's advice",
+            "setting_id": "Di klinik, dokter menanyakan keadaanmu dan memberi saran.",
+            "setting_en": "At a clinic, the doctor asks how you are and gives advice.",
+            "goal_id": "Memakai 〜ように して ください dan 〜ように します.",
+            "goal_en": "Use ~you ni shite kudasai and ~you ni shimasu.",
+            "patterns": [
+                "Ｖないように して ください"
+            ],
+            "partner": {
+                "name": "いしゃ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "who": "partner",
+                    "ja": "体《からだ》の 調子《ちょうし》は どうですか。",
+                    "speak": "からだのちょうしは、どうですか。",
+                    "id_text": "Bagaimana kondisi tubuhmu?",
+                    "en_text": "How are you feeling?",
+                    "id": "n4l11-s1-t1",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s1-t1.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "このごろ、毎朝《まいあさ》 走《はし》るように なりました。",
+                    "speak": "このごろ、まいあさ、はしるようになりました。",
+                    "id_text": "Akhir-akhir ini saya jadi berlari setiap pagi.",
+                    "en_text": "Lately I have started running every morning.",
+                    "accept": [
+                        "このごろ、毎朝走るようになりました。",
+                        "このごろまいあさはしるようになりました。"
+                    ],
+                    "id": "n4l11-s1-t2",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s1-t2.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "いいですね。夜《よる》は 遅《おそ》く 食《た》べないように して ください。",
+                    "speak": "いいですね。よるは、おそくたべないようにしてください。",
+                    "id_text": "Bagus. Malam hari usahakan jangan makan larut.",
+                    "en_text": "Good. At night, please try not to eat late.",
+                    "id": "n4l11-s1-t3",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s1-t3.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Baik, saya mengerti.",
+                    "en_text": "Yes, I understand.",
+                    "accept": [
+                        "はい、わかりました。",
+                        "はいわかりました。"
+                    ],
+                    "id": "n4l11-s1-t4",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s1-t4.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "お酒《さけ》も あまり 飲《の》まないように して ください。",
+                    "speak": "おさけも、あまりのまないようにしてください。",
+                    "id_text": "Minuman keras juga usahakan jangan terlalu banyak.",
+                    "en_text": "Please also try not to drink much alcohol.",
+                    "id": "n4l11-s1-t5",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s1-t5.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "はい、飲《の》まないように します。",
+                    "speak": "はい、のまないようにします。",
+                    "id_text": "Baik, saya akan berusaha tidak minum.",
+                    "en_text": "Yes, I will try not to drink.",
+                    "accept": [
+                        "はい、飲まないようにします。",
+                        "はいのまないようにします。"
+                    ],
+                    "id": "n4l11-s1-t6",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l11-s2",
+            "title_id": "Cara menjaga kesehatan",
+            "title_en": "Ways to stay healthy",
+            "setting_id": "Teman bertanya apa yang kamu lakukan agar tetap sehat.",
+            "setting_en": "A friend asks what you do to stay healthy.",
+            "goal_id": "Memakai 〜ように して います untuk usaha sehari-hari.",
+            "goal_en": "Use ~you ni shite imasu for daily efforts.",
+            "patterns": [
+                "Ｖる／Ｖないように して います"
+            ],
+            "partner": {
+                "name": "サリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "who": "partner",
+                    "ja": "ブディさんは、健康《けんこう》の ために、何《なに》か して いますか。",
+                    "speak": "ブディさんは、けんこうのために、なにかしていますか。",
+                    "id_text": "Budi, untuk kesehatan, apakah kamu melakukan sesuatu?",
+                    "en_text": "Budi, do you do anything for your health?",
+                    "id": "n4l11-s2-t1",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s2-t1.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "毎日《まいにち》 野菜《やさい》を 食《た》べるように して います。",
+                    "speak": "まいにち、やさいをたべるようにしています。",
+                    "id_text": "Setiap hari saya berusaha makan sayur.",
+                    "en_text": "I try to eat vegetables every day.",
+                    "accept": [
+                        "毎日野菜を食べるようにしています。",
+                        "まいにちやさいをたべるようにしています。"
+                    ],
+                    "id": "n4l11-s2-t2",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s2-t2.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "運動《うんどう》は どうですか。",
+                    "speak": "うんどうは、どうですか。",
+                    "id_text": "Kalau olahraga bagaimana?",
+                    "en_text": "What about exercise?",
+                    "id": "n4l11-s2-t3",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s2-t3.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "エレベーターを 使《つか》わないで、階段《かいだん》を 歩《ある》くように して います。",
+                    "speak": "エレベーターをつかわないで、かいだんをあるくようにしています。",
+                    "id_text": "Saya berusaha tidak naik lift dan berjalan lewat tangga.",
+                    "en_text": "I try to walk up the stairs instead of using the elevator.",
+                    "accept": [
+                        "エレベーターを使わないで、階段を歩くようにしています。",
+                        "エレベーターをつかわないでかいだんをあるくようにしています。"
+                    ],
+                    "id": "n4l11-s2-t4",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s2-t4.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "すごいですね。わたしも まねします。",
+                    "speak": "すごいですね。わたしも、まねします。",
+                    "id_text": "Hebat. Saya juga akan menirunya.",
+                    "en_text": "Great. I will copy you too.",
+                    "id": "n4l11-s2-t5",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s2-t5.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l11-s3",
+            "title_id": "Bahasa Jepangmu makin pandai",
+            "title_en": "Your Japanese is improving",
+            "setting_id": "Teman memuji kemajuan bahasa Jepangmu dan bertanya cara belajarmu.",
+            "setting_en": "A friend praises your Japanese and asks how you study.",
+            "goal_id": "Memakai 〜ように なりました dan 〜ように して います.",
+            "goal_en": "Use ~you ni narimashita and ~you ni shite imasu.",
+            "patterns": [
+                "Ｖる ように なりました"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "who": "partner",
+                    "ja": "日本語《にほんご》が 上手《じょうず》に なりましたね。",
+                    "speak": "にほんごがじょうずになりましたね。",
+                    "id_text": "Bahasa Jepangmu jadi pandai, ya.",
+                    "en_text": "Your Japanese has become good.",
+                    "id": "n4l11-s3-t1",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s3-t1.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "ありがとうございます。日本語《にほんご》の ニュースが わかるように なりました。",
+                    "speak": "ありがとうございます。にほんごのニュースがわかるようになりました。",
+                    "id_text": "Terima kasih. Saya jadi mengerti berita berbahasa Jepang.",
+                    "en_text": "Thank you. I have come to understand the news in Japanese.",
+                    "accept": [
+                        "ありがとうございます。日本語のニュースがわかるようになりました。",
+                        "ありがとうございますにほんごのニュースがわかるようになりました。"
+                    ],
+                    "id": "n4l11-s3-t2",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s3-t2.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "どうやって 勉強《べんきょう》して いますか。",
+                    "speak": "どうやってべんきょうしていますか。",
+                    "id_text": "Bagaimana cara belajarmu?",
+                    "en_text": "How do you study?",
+                    "id": "n4l11-s3-t3",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s3-t3.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "毎晩《まいばん》、三十分《さんじゅっぷん》 聞《き》くように して います。",
+                    "speak": "まいばん、さんじゅっぷんきくようにしています。",
+                    "id_text": "Setiap malam saya berusaha mendengarkan 30 menit.",
+                    "en_text": "I try to listen for thirty minutes every night.",
+                    "accept": [
+                        "毎晩、三十分聞くようにしています。",
+                        "まいばんさんじゅっぷんきくようにしています。"
+                    ],
+                    "id": "n4l11-s3-t4",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s3-t4.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "いいですね。続《つづ》けて ください。",
+                    "speak": "いいですね。つづけてください。",
+                    "id_text": "Bagus. Teruskan, ya.",
+                    "en_text": "Nice. Please keep it up.",
+                    "id": "n4l11-s3-t5",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s3-t5.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l11-s4",
+            "title_id": "Pesan dari atasan",
+            "title_en": "A message from your boss",
+            "setting_id": "Atasan mengingatkan rapat besok.",
+            "setting_en": "Your boss reminds you about tomorrow's meeting.",
+            "goal_id": "Memakai 〜ないように して ください dan menjawab 〜ように します.",
+            "goal_en": "Use ~nai you ni shite kudasai and answer with ~you ni shimasu.",
+            "patterns": [
+                "Ｖないように して ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "who": "partner",
+                    "ja": "明日《あした》の 会議《かいぎ》は 九時《くじ》からです。",
+                    "speak": "あしたのかいぎは、くじからです。",
+                    "id_text": "Rapat besok mulai jam sembilan.",
+                    "en_text": "Tomorrow's meeting starts at nine.",
+                    "id": "n4l11-s4-t1",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s4-t1.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Baik, saya mengerti.",
+                    "en_text": "Yes, understood.",
+                    "accept": [
+                        "はい、わかりました。",
+                        "はいわかりました。"
+                    ],
+                    "id": "n4l11-s4-t2",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s4-t2.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "遅《おく》れないように して ください。",
+                    "speak": "おくれないようにしてください。",
+                    "id_text": "Usahakan jangan terlambat.",
+                    "en_text": "Please try not to be late.",
+                    "id": "n4l11-s4-t3",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s4-t3.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "はい、早《はや》く 起《お》きるように します。",
+                    "speak": "はい、はやくおきるようにします。",
+                    "id_text": "Baik, saya akan berusaha bangun lebih awal.",
+                    "en_text": "Yes, I will try to get up early.",
+                    "accept": [
+                        "はい、早く起きるようにします。",
+                        "はいはやくおきるようにします。"
+                    ],
+                    "id": "n4l11-s4-t4",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s4-t4.mp3"
+                },
+                {
+                    "who": "partner",
+                    "ja": "それから、資料《しりょう》を 忘《わす》れないように して ください。",
+                    "speak": "それから、しりょうをわすれないようにしてください。",
+                    "id_text": "Lalu, usahakan jangan lupa membawa dokumen.",
+                    "en_text": "Also, please make sure not to forget the documents.",
+                    "id": "n4l11-s4-t5",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s4-t5.mp3"
+                },
+                {
+                    "who": "you",
+                    "ja": "はい、忘《わす》れないように します。",
+                    "speak": "はい、わすれないようにします。",
+                    "id_text": "Baik, saya akan berusaha tidak lupa.",
+                    "en_text": "Yes, I will make sure not to forget.",
+                    "accept": [
+                        "はい、忘れないようにします。",
+                        "はいわすれないようにします。"
+                    ],
+                    "id": "n4l11-s4-t6",
+                    "audio": "/audio/kaiwa/lesson-n4-11/n4l11-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

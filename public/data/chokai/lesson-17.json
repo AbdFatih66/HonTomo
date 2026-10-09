@@ -1,0 +1,297 @@
+{
+    "id": 17,
+    "focus": "Keharusan, larangan, ketidakperluan — 〜なければなりません、〜なくてもいいです、〜ないでください",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、あしたのパーティーに来ますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "すみません。あしたは、仕事をしなければなりませんから、行きません。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですか。じゃ、また今度。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-17/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l17-kq1",
+                "prompt": "ブディさんは、どうして　あしたの　パーティーに　行《い》きませんか。",
+                "choices": [
+                    "仕事《しごと》を　しなければなりませんから",
+                    "病気《びょうき》ですから",
+                    "国《くに》へ　帰《かえ》りますから"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi tidak ke pesta besok karena harus bekerja.",
+                    "en": "Budi isn't coming to tomorrow's party because he has to work."
+                },
+                "audio": null
+            },
+            {
+                "id": "l17-kq2",
+                "prompt": "ブディさんは、あしたの　パーティーの　後《あと》、何《なに》と　言《い》いましたか。",
+                "choices": [
+                    "「また今度《こんど》。」",
+                    "「すぐ行《い》きます。」",
+                    "「わかりません。」"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi bilang 'lain kali saja' setelah tidak bisa hadir.",
+                    "en": "Budi said 'maybe next time' after saying he can't come."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l17-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ニコさん、毎朝、何時に起きなければなりませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "五時半に起きなければなりません。バスが六時ですから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q1.mp3",
+            "prompt": "ニコさんは　何時《なんじ》に　起《お》きなければなりませんか。",
+            "choices": [
+                "6:30",
+                "6:00",
+                "5:30"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Nico harus bangun jam 5.30 (bus jam 6).",
+                "en": "Nico has to get up at 5:30."
+            }
+        },
+        {
+            "id": "l17-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先生、あしたのテストに、何を持って来なければなりませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ペンとノートを持って来てください。辞書は持って来なくてもいいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q2.mp3",
+            "prompt": "あしたの　テストに　何《なに》を　持《も》って　来《こ》なければなりませんか。",
+            "choices": [
+                "ノートと　辞書《じしょ》",
+                "ペンと　辞書《じしょ》",
+                "ペンと　ノート"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Harus bawa pena dan buku catatan; kamus tidak perlu.",
+                "en": "You must bring a pen and a notebook; a dictionary is not necessary."
+            }
+        },
+        {
+            "id": "l17-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "皆さん、この部屋で、たばこを吸わないでください。お茶は、飲んでもいいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q3.mp3",
+            "prompt": "この　部屋《へや》で　何《なに》を　してはいけませんか。",
+            "choices": [
+                "写真《しゃしん》を　撮《と》ってはいけません。",
+                "お茶《ちゃ》を　飲《の》んではいけません。",
+                "たばこを　吸《す》ってはいけません。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Di ruangan ini dilarang merokok; minum teh boleh.",
+                "en": "Smoking is not allowed in this room; drinking tea is fine."
+            }
+        },
+        {
+            "id": "l17-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ゴメスさん、いっしょに晩ごはんを食べませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すみません。今晩は、買い物に行かなければなりません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q4.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　今晩《こんばん》　何《なに》を　しなければなりませんか。",
+            "choices": [
+                "買《か》い物《もの》に　行《い》かなければなりません。",
+                "宿題《しゅくだい》を　しなければなりません。",
+                "友達《ともだち》に　手紙《てがみ》を　書《か》かなければなりません。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Malam ini si perempuan harus pergi berbelanja.",
+                "en": "Tonight she has to go shopping."
+            }
+        },
+        {
+            "id": "l17-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。ここで、電話をしてもいいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ここでは、電話をしないでください。二階でしてください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q5.mp3",
+            "prompt": "電話《でんわ》は　何階《なんがい》で　しなければなりませんか。",
+            "choices": [
+                "三階《さんがい》",
+                "一階《いっかい》",
+                "二階《にかい》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Telepon harus dilakukan di lantai dua.",
+                "en": "Phone calls must be made on the second floor."
+            }
+        },
+        {
+            "id": "l17-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きょうの晩、いっしょに映画を見に行きませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すみません。あしたテストがありますから、勉強しなければなりません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　きょうの　晩《ばん》、勉強《べんきょう》しなければなりません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia harus belajar malam ini. Jawaban: Benar (○).",
+                "en": "She has to study tonight. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l17-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あしたは、何時に来なければなりませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "九時に来てください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　あした　八時《はちじ》に　来《こ》なければなりません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Harus datang jam 9, bukan jam 8. Jawaban: Salah (×).",
+                "en": "He must come at 9, not 8. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l17-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先生、あしたのテストに、辞書を持って来てもいいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、辞書は持って来ないでください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　辞書《じしょ》を　持《も》って　来《き》てもいいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kamus tidak boleh dibawa. Jawaban: Salah (×).",
+                "en": "He may not bring a dictionary. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l17-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日曜日も、会社へ行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、日曜日は、休みですから、行かなくてもいいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q9.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　日曜日《にちようび》、会社《かいしゃ》へ　行《い》きません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hari Minggu libur, ia tidak perlu ke kantor. Jawaban: Benar (○).",
+                "en": "She doesn't go to the office on Sunday. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l17-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この部屋で、昼ごはんを食べてもいいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません。ここでは食べないでください。あちらの部屋でお願いします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-17/l17-q10.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　この　部屋《へや》で　昼《ひる》ごはんを　食《た》べてもいいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Tidak boleh makan siang di ruangan ini. Jawaban: Salah (×).",
+                "en": "She may not eat lunch in this room. Answer: False (×)."
+            }
+        }
+    ]
+}

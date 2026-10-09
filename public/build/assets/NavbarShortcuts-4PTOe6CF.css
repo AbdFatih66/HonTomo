@@ -1,0 +1,1 @@
+.shortcut-icon:hover{background-color:rgba(var(--v-theme-on-surface),var(--v-hover-opacity))}.shortcut-icon:hover .shortcut-icon__remove{opacity:1}.shortcut-hint{flex-shrink:0;line-height:1.4}.shortcut-icon.is-dragging{opacity:.5}.shortcut-icon__remove{position:absolute;z-index:1;opacity:0;transition:opacity .15s ease;inset-block-start:4px;inset-inline-end:4px}

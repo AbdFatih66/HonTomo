@@ -1,0 +1,1 @@
+import{r as c}from"./main-eOyKIP-9.js";const r=["N5","N4"],o="hontomo.level";function l(){try{const e=localStorage.getItem(o);return r.includes(e)?e:"N5"}catch{return"N5"}}const n=c(l());function a(){function e(t){if(r.includes(t)){n.value=t;try{localStorage.setItem(o,t)}catch{}}}return{level:n,setLevel:e,LEVEL_CODES:r}}export{r as L,a as u};

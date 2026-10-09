@@ -1,0 +1,323 @@
+{
+    "id": 9,
+    "focus": "Suka, mahir, paham, alasan — 〜が好き・上手・わかります・あります、どうして〜から、〜が（tetapi）",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さんは、どんな料理が好きですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "日本料理が好きです。ブディさんは。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしも好きです。でも、料理は下手です。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですか。じゃ、あした、いっしょにレストランで食べませんか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ええ、いいですね。時間がありますから。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-9/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l9-kq1",
+                "prompt": "田口《たぐち》さんは　どんな　料理《りょうり》が　好《す》きですか。",
+                "choices": [
+                    "日本《にほん》料理《りょうり》が好《す》きです",
+                    "中国《ちゅうごく》料理《りょうり》が好《す》きです",
+                    "料理《りょうり》は好《す》きじゃありません"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Taguchi menjawab suka masakan Jepang. Jawaban: masakan Jepang.",
+                    "en": "Taguchi says she likes Japanese food. Answer: Japanese food."
+                }
+            },
+            {
+                "id": "l9-kq2",
+                "prompt": "二人《ふたり》は　あした　何《なに》を　しますか。",
+                "choices": [
+                    "レストランで　食《た》べます",
+                    "うちで　料理《りょうり》をします",
+                    "映画《えいが》を　見《み》ます"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Mereka sepakat makan bersama di restoran besok. Jawaban: makan di restoran.",
+                    "en": "They agree to eat together at a restaurant tomorrow. Answer: eat at a restaurant."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l9-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ラニさんは、どんな食べ物が好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "魚が好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q1.mp3",
+            "prompt": "ラニさんは　どんな　食《た》べ物《もの》が　好《す》きですか。",
+            "choices": [
+                "肉《にく》",
+                "魚《さかな》",
+                "野菜《やさい》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Rani, kamu suka makanan apa?' 'Saya suka ikan.' Jawaban: ikan.",
+                "en": "Audio: 'Rani, what kind of food do you like?' 'I like fish.' Answer: fish."
+            }
+        },
+        {
+            "id": "l9-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ダニさんは、何が上手ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "歌が上手です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q2.mp3",
+            "prompt": "ダニさんは　何《なに》が　上手《じょうず》ですか。",
+            "choices": [
+                "絵《え》",
+                "歌《うた》",
+                "料理《りょうり》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Dani pandai dalam hal apa?' 'Pandai menyanyi.' Jawaban: menyanyi.",
+                "en": "Audio: 'What is Dani good at?' 'Singing.' Answer: singing."
+            }
+        },
+        {
+            "id": "l9-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日曜日、時間がありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、日曜日は、用事があります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q3.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　日曜日《にちようび》　何《なに》が　ありますか。",
+            "choices": [
+                "約束《やくそく》",
+                "用事《ようじ》",
+                "時間《じかん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Hari Minggu ada waktu?' 'Tidak, hari Minggu saya ada urusan.' Jawaban: ada urusan.",
+                "en": "Audio: 'Do you have time on Sunday?' 'No, I have something to do on Sunday.' Answer: something to do (errand)."
+            }
+        },
+        {
+            "id": "l9-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ロペスさん、日本語の新聞が、わかりますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、全然わかりません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　日本語《にほんご》の　新聞《しんぶん》が　わかりますか。",
+            "choices": [
+                "少《すこ》し　わかります",
+                "全然《ぜんぜん》　わかりません",
+                "よく　わかります"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Lopez, apakah kamu mengerti koran bahasa Jepang?' 'Tidak, sama sekali tidak mengerti.' Jawaban: sama sekali tidak mengerti.",
+                "en": "Audio: 'Lopez, do you understand Japanese newspapers?' 'No, not at all.' Answer: not at all."
+            }
+        },
+        {
+            "id": "l9-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "どうして、あした、会社を休みますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "母が国から来ますから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　どうして　あした　会社《かいしゃ》を　休《やす》みますか。",
+            "choices": [
+                "約束《やくそく》が　ありますから",
+                "母《はは》が　来《き》ますから",
+                "暇《ひま》ですから"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Mengapa besok tidak masuk kantor?' 'Karena ibu saya datang dari kampung halaman.' Jawaban: karena ibunya datang.",
+                "en": "Audio: 'Why are you taking tomorrow off from work?' 'Because my mother is coming from my country.' Answer: because her mother is coming."
+            }
+        },
+        {
+            "id": "l9-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ダニさん、どんな映画が好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "アニメが好きです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どんな音楽が好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ジャズが好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q6.mp3",
+            "prompt": "ダニさんは　ジャズが　好《す》きです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Dani suka jazz. Jawaban: Benar (○).",
+                "en": "Dani likes jazz. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l9-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "エマさんは、絵が上手ですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとうございます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "字も上手ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、字は下手です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q7.mp3",
+            "prompt": "エマさんは　字《じ》が　上手《じょうず》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Emma pandai menulis huruf. Jawaban: Salah (×) — tulisannya jelek.",
+                "en": "Emma has good handwriting. Answer: False (×) — she is poor at it."
+            }
+        },
+        {
+            "id": "l9-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ニコさん、あした、いっしょにサッカーをしませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、いいですね。時間がありますから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q8.mp3",
+            "prompt": "ニコさんは　あした　時間《じかん》が　ありません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Nico tidak punya waktu besok. Jawaban: Salah (×) — ia punya waktu.",
+                "en": "Nico has no time tomorrow. Answer: False (×) — she has time."
+            }
+        },
+        {
+            "id": "l9-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ゴメスさん、あした、いっしょに昼ごはんを食べませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません。あしたは、レポートがありますから、昼ごはんを食べません。勉強します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　レポートが　ありますから、あした　昼《ひる》ごはんを　食《た》べません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Si laki-laki tidak makan siang besok karena ada laporan. Jawaban: Benar (○).",
+                "en": "The man will not eat lunch tomorrow because he has a report. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l9-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、どうして、うちで晩ごはんを食べませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "料理が下手ですから、いつも、レストランで食べます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-9/l9-q10.mp3",
+            "prompt": "ハンナさんは　料理《りょうり》が　上手《じょうず》ですから、うちで　晩《ばん》ごはんを　食《た》べます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Hanna pandai memasak, jadi makan malam di rumah. Jawaban: Salah (×) — dia tidak pandai memasak, makan di restoran.",
+                "en": "Hanna is good at cooking, so she eats dinner at home. Answer: False (×) — she is bad at cooking and eats at restaurants."
+            }
+        }
+    ]
+}

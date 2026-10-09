@@ -1,0 +1,307 @@
+{
+    "id": 16,
+    "focus": "Urutan kegiatan dan ciri — 〜て、〜て（urutan）、〜てから、kata sifat 〜くて・〜で、どうやって、〜は〜が（髪が短い）",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、会社まで、どうやって行きますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "うちから駅まで自転車で行って、電車に乗ります。会社の駅で降りて、歩いて行きます。"
+            },
+            {
+                "speaker": "female",
+                "text": "電車の中で、何をしますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "本を読みます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-16/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l16-kq1",
+                "prompt": "ブディさんは、会社《かいしゃ》の　駅《えき》で　降《お》りてから、どうやって　会社《かいしゃ》まで　行《い》きますか。",
+                "choices": [
+                    "歩《ある》いて　行《い》きます。",
+                    "バスに　乗《の》ります。",
+                    "タクシーで　行《い》きます。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Setelah turun di stasiun kantor, Budi berjalan kaki ke kantor.",
+                    "en": "After getting off at the company's station, Budi walks to the office."
+                },
+                "audio": null
+            },
+            {
+                "id": "l16-kq2",
+                "prompt": "電車《でんしゃ》の　中《なか》で、ブディさんは　何《なに》を　しますか。",
+                "choices": [
+                    "本《ほん》を　読《よ》みます。",
+                    "音楽《おんがく》を　聞《き》きます。",
+                    "寝《ね》ます。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Di dalam kereta, Budi membaca buku.",
+                    "en": "On the train, Budi reads a book."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l16-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ダニさんは、朝、起きて、まず何をしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ラジオを聞いて、それから、シャワーを浴びます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q1.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　朝《あさ》　何《なに》を　しますか。",
+            "choices": [
+                "ラジオを聞《き》いて、朝《あさ》ごはんを食《た》べます。",
+                "新聞《しんぶん》を読《よ》んで、シャワーを浴《あ》びます。",
+                "ラジオを聞《き》いて、シャワーを浴《あ》びます。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Dani, setelah bangun pagi apa dulu?' 'Dengar radio, lalu mandi.' Jawaban: dengar radio, lalu mandi.",
+                "en": "Dani listens to the radio and then showers."
+            }
+        },
+        {
+            "id": "l16-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、きのうの晩、何をしましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "晩ごはんを食べてから、友達に電話をかけました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q2.mp3",
+            "prompt": "ハンナさんは　晩《ばん》ごはんを　食《た》べてから、何《なに》を　しましたか。",
+            "choices": [
+                "手紙《てがみ》を　書《か》きました。",
+                "友達《ともだち》に　電話《でんわ》を　かけました。",
+                "買《か》い物《もの》に　行《い》きました。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Hanna setelah makan malam menelepon temannya.",
+                "en": "After dinner, Hanna phoned a friend."
+            }
+        },
+        {
+            "id": "l16-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。あおぞら大学まで、どうやって行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "地下鉄に乗って、大学の前の駅で降りて、歩いて行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q3.mp3",
+            "prompt": "あおぞら大学《だいがく》まで　どうやって　行《い》きますか。",
+            "choices": [
+                "地下鉄《ちかてつ》に　乗《の》って、バスに　乗《の》り換《か》えます。",
+                "バスに　乗《の》って、歩《ある》いて　行《い》きます。",
+                "地下鉄《ちかてつ》に　乗《の》って、歩《ある》いて　行《い》きます。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Ke Universitas Aozora: naik kereta bawah tanah, turun di stasiun depan kampus, lalu jalan kaki.",
+                "en": "Take the subway, get off at the station in front of the university, and walk."
+            }
+        },
+        {
+            "id": "l16-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ヌルさんの新しいうちは、どうですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "広くて、明るいです。でも、駅から遠いです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q4.mp3",
+            "prompt": "ヌルさんの　新《あたら》しい　うちは　どうですか。",
+            "choices": [
+                "広《ひろ》くて、明《あか》るいです。",
+                "狭《せま》くて、明《あか》るいです。",
+                "広《ひろ》くて、暗《くら》いです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Rumah baru Nur luas dan terang (tetapi jauh dari stasiun).",
+                "en": "Nur's new house is spacious and bright (but far from the station)."
+            }
+        },
+        {
+            "id": "l16-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさんは、どの人ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あの目が大きくて、背が低い人です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q5.mp3",
+            "prompt": "ケンさんは　どんな　人《ひと》ですか。",
+            "choices": [
+                "目《め》が　大《おお》きくて、背《せ》が　低《ひく》い人《ひと》",
+                "目《め》が　小《ちい》さくて、背《せ》が　低《ひく》い人《ひと》",
+                "目《め》が　大《おお》きくて、背《せ》が　高《たか》い人《ひと》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ken: matanya besar dan badannya pendek.",
+                "en": "Ken has big eyes and is short."
+            }
+        },
+        {
+            "id": "l16-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ゲイリーさん、日本語の勉強は、いつしますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "仕事が終わってから、図書館でします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　いつ　勉強《べんきょう》しますか。",
+            "choices": [
+                "朝《あさ》、起《お》きてから",
+                "晩《ばん》ごはんを　食《た》べてから",
+                "仕事《しごと》が　終《お》わってから"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Ia belajar di perpustakaan setelah pekerjaan selesai.",
+                "en": "She studies at the library after work."
+            }
+        },
+        {
+            "id": "l16-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "エマさんの大学は、どうですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "きれいで、にぎやかです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　大学《だいがく》は　どうですか。",
+            "choices": [
+                "きれいで、静《しず》かです。",
+                "きれいで、にぎやかです。",
+                "古《ふる》くて、にぎやかです。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Universitas Emma bersih dan ramai.",
+                "en": "Emma's university is clean and lively."
+            }
+        },
+        {
+            "id": "l16-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ポールさん、あしたの日曜日は、何をしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "朝、勉強して、それから、友達とテニスをします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　テニスを　してから、勉強《べんきょう》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Yang benar: belajar dulu, lalu tenis. Jawaban: Salah (×).",
+                "en": "He studies first and then plays tennis. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l16-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "新しい部屋は、どうですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "小さくて、古いです。でも、駅から近くて、便利です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　部屋《へや》は　駅《えき》から　近《ちか》いです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kamarnya dekat dari stasiun. Jawaban: Benar (○).",
+                "en": "His room is close to the station. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l16-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ラニさんは、どうやって学校へ行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "うちから駅まで歩いて、電車に乗ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-16/l16-q10.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　電車《でんしゃ》に　乗《の》って　学校《がっこう》へ　行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia naik kereta ke sekolah. Jawaban: Benar (○).",
+                "en": "He takes the train to school. Answer: True (○)."
+            }
+        }
+    ]
+}

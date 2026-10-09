@@ -1,0 +1,1 @@
+import{a7 as s,aa as r,b as o,ab as c,ad as n,ae as d}from"./main-eOyKIP-9.js";const m=c({opacity:[Number,String],...d(),...n()},"VCardText"),x=s()({name:"VCardText",props:m(),setup(a,e){let{slots:t}=e;return r(()=>o(a.tag,{class:["v-card-text",a.class],style:[{"--v-card-text-opacity":a.opacity},a.style]},t)),{}}});export{x as V};

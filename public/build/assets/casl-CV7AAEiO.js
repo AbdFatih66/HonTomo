@@ -1,0 +1,1 @@
+import{Z as t}from"./main-eOyKIP-9.js";const o=(n,a)=>{var r;const c=t();return c?c.proxy&&"$can"in c.proxy?(r=c.proxy)==null?void 0:r.$can(n,a):!0:!1},u=n=>{const a=n.children.some(c=>o(c.action,c.subject));return n.action&&n.subject?o(n.action,n.subject)&&a:a};export{o as a,u as c};

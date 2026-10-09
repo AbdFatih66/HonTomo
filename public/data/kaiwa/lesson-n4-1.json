@@ -1,0 +1,361 @@
+{
+    "id": 1,
+    "level": "N4",
+    "title_id": "Pelajaran 1 (N4): Sebaiknya Buang Sampah di Mana?",
+    "title_en": "N4 Lesson 1: Where Should I Put Out the Garbage?",
+    "scenarios": [
+        {
+            "id": "n4l1-s1",
+            "title_id": "Terlambat ke kantor",
+            "title_en": "Late for work",
+            "setting_id": "Pagi hari di kantor. Kamu datang terlambat dan rekan kerja menanyakan alasannya.",
+            "setting_en": "Morning at the office. You arrived late and a colleague asks why.",
+            "goal_id": "Menjelaskan alasan dengan 〜んです.",
+            "goal_en": "Explain a reason with 〜んです.",
+            "patterns": [
+                "〜んですか",
+                "〜んです"
+            ],
+            "partner": {
+                "name": "田口",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l1-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、おはようございます。遅《おそ》かったですね。どうして 遅《おく》れたんですか。",
+                    "speak": "ブディさん、おはようございます。おそかったですね。どうして おくれたんですか。",
+                    "id_text": "Budi, selamat pagi. Kamu terlambat, ya. Kenapa bisa terlambat?",
+                    "en_text": "Good morning, Budi. You are late. Why were you late?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l1-s1-t2",
+                    "who": "you",
+                    "ja": "すみません。バスが 来《こ》なかったんです。",
+                    "speak": "すみません。バスが こなかったんです。",
+                    "id_text": "Maaf. Karena busnya tidak datang.",
+                    "en_text": "Sorry. The bus did not come.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s1-t2.mp3",
+                    "accept": [
+                        "すみません。バスが 来なかったんです。",
+                        "すみません。バスが こなかったんです。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。どのくらい 待《ま》ちましたか。",
+                    "speak": "そうですか。どのくらい まちましたか。",
+                    "id_text": "Begitu. Berapa lama kamu menunggu?",
+                    "en_text": "I see. How long did you wait?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l1-s1-t4",
+                    "who": "you",
+                    "ja": "三十分《さんじゅっぷん》 待《ま》ちました。",
+                    "speak": "さんじゅっぷん まちました。",
+                    "id_text": "Saya menunggu tiga puluh menit.",
+                    "en_text": "I waited thirty minutes.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s1-t4.mp3",
+                    "accept": [
+                        "三十分 待ちました。",
+                        "さんじゅっぷん まちました。",
+                        "さんじゅっぷんまちました。",
+                        "30分待ちました。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s1-t5",
+                    "who": "partner",
+                    "ja": "大変《たいへん》でしたね。会議《かいぎ》には 間《ま》に 合《あ》いましたか。",
+                    "speak": "たいへんでしたね。かいぎには まに あいましたか。",
+                    "id_text": "Berat sekali, ya. Apakah sempat untuk rapatnya?",
+                    "en_text": "That was rough. Did you make it to the meeting in time?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l1-s1-t6",
+                    "who": "you",
+                    "ja": "はい、間《ま》に 合《あ》いました。ありがとうございます。",
+                    "speak": "はい、まに あいました。ありがとうございます。",
+                    "id_text": "Ya, sempat. Terima kasih.",
+                    "en_text": "Yes, I made it. Thank you.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s1-t6.mp3",
+                    "accept": [
+                        "はい、間に 合いました。ありがとうございます。",
+                        "はい、まに あいました。ありがとうございます。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l1-s2",
+            "title_id": "Meminta tolong dengan sopan",
+            "title_en": "Asking for help politely",
+            "setting_id": "Di kantor. Kamu tidak tahu cara memakai mesin fotokopi dan meminta bantuan senior.",
+            "setting_en": "At the office. You do not know how to use the copier and ask a senior colleague for help.",
+            "goal_id": "Membuka permintaan dengan 〜んですが dan meminta 〜ていただけませんか.",
+            "goal_en": "Open a request with 〜んですが and ask with 〜ていただけませんか.",
+            "patterns": [
+                "〜んですが、〜",
+                "Vて いただけませんか"
+            ],
+            "partner": {
+                "name": "青木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l1-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、何《なに》か 困《こま》って いますか。",
+                    "speak": "ブディさん、なにか こまって いますか。",
+                    "id_text": "Budi, apa kamu sedang kesulitan?",
+                    "en_text": "Budi, are you having some trouble?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l1-s2-t2",
+                    "who": "you",
+                    "ja": "はい。この コピーの 使《つか》い方《かた》が わからないんですが、教《おし》えて いただけませんか。",
+                    "speak": "はい。この コピーの つかいかたが わからないんですが、おしえて いただけませんか。",
+                    "id_text": "Ya. Saya tidak tahu cara memakai mesin fotokopi ini. Bisakah Anda mengajari saya?",
+                    "en_text": "Yes. I do not know how to use this copier. Could you teach me?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s2-t2.mp3",
+                    "accept": [
+                        "はい。この コピーの 使い方が わからないんですが、教えて いただけませんか。",
+                        "はい。この コピーの つかいかたが わからないんですが、おしえて いただけませんか。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s2-t3",
+                    "who": "partner",
+                    "ja": "ええ、いいですよ。まず この ボタンを 押《お》して ください。",
+                    "speak": "ええ、いいですよ。まず この ボタンを おして ください。",
+                    "id_text": "Ya, boleh. Pertama, tekan tombol ini.",
+                    "en_text": "Sure. First, please press this button.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l1-s2-t4",
+                    "who": "you",
+                    "ja": "はい。……この 紙《かみ》を ここに 入《い》れても いいですか。",
+                    "speak": "はい。……この かみを ここに いれても いいですか。",
+                    "id_text": "Baik. ……Bolehkah saya memasukkan kertas ini di sini?",
+                    "en_text": "Okay. ...May I put this paper in here?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s2-t4.mp3",
+                    "accept": [
+                        "はい。……この 紙を ここに 入れても いいですか。",
+                        "はい。……この かみを ここに いれても いいですか。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s2-t5",
+                    "who": "partner",
+                    "ja": "ええ。入《い》れたら、もう 一度《いちど》 ボタンを 押《お》して ください。",
+                    "speak": "ええ。いれたら、もう いちど ボタンを おして ください。",
+                    "id_text": "Ya. Setelah memasukkan, tekan tombolnya sekali lagi.",
+                    "en_text": "Yes. After you put it in, press the button once more.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l1-s2-t6",
+                    "who": "you",
+                    "ja": "わかりました。どうも ありがとうございました。",
+                    "speak": "わかりました。どうも ありがとうございました。",
+                    "id_text": "Saya mengerti. Terima kasih banyak.",
+                    "en_text": "I understand. Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s2-t6.mp3",
+                    "accept": [
+                        "わかりました。どうも ありがとうございました。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l1-s3",
+            "title_id": "Cara membuang sampah",
+            "title_en": "How to put out the garbage",
+            "setting_id": "Di depan apartemen. Kamu bertanya kepada tetangga kapan dan di mana membuang sampah.",
+            "setting_en": "In front of the apartment. You ask a neighbour when and where to put out the garbage.",
+            "goal_id": "Meminta saran dengan kata tanya + 〜たらいいですか.",
+            "goal_en": "Ask for advice with a question word + 〜たらいいですか.",
+            "patterns": [
+                "〜んですが",
+                "Kata tanya + 〜たらいいですか"
+            ],
+            "partner": {
+                "name": "井上",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l1-s3-t1",
+                    "who": "partner",
+                    "ja": "あ、ブディさん。ごみを 出《だ》しに 行《い》きますか。",
+                    "speak": "あ、ブディさん。ごみを だしに いきますか。",
+                    "id_text": "Oh, Budi. Mau membuang sampah?",
+                    "en_text": "Oh, Budi. Are you going to put out the garbage?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l1-s3-t2",
+                    "who": "you",
+                    "ja": "はい。燃《も》えるごみを 出《だ》したいんですが、いつ 出《だ》したら いいですか。",
+                    "speak": "はい。もえるごみを だしたいんですが、いつ だしたら いいですか。",
+                    "id_text": "Ya. Saya ingin membuang sampah organik, kapan sebaiknya dibuang?",
+                    "en_text": "Yes. I want to put out burnable garbage. When should I do it?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s3-t2.mp3",
+                    "accept": [
+                        "はい。燃えるごみを 出したいんですが、いつ 出したら いいですか。",
+                        "はい。もえるごみを だしたいんですが、いつ だしたら いいですか。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s3-t3",
+                    "who": "partner",
+                    "ja": "燃《も》えるごみは 月曜日《げつようび》と 木曜日《もくようび》の 朝《あさ》ですよ。",
+                    "speak": "もえるごみは げつようびと もくようびの あさですよ。",
+                    "id_text": "Sampah organik dibuang Senin dan Kamis pagi.",
+                    "en_text": "Burnable garbage goes out on Monday and Thursday mornings.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l1-s3-t4",
+                    "who": "you",
+                    "ja": "ごみ置《お》き場《ば》は どこですか。",
+                    "speak": "ごみおきばは どこですか。",
+                    "id_text": "Tempat sampahnya di mana?",
+                    "en_text": "Where is the garbage place?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s3-t4.mp3",
+                    "accept": [
+                        "ごみ置き場は どこですか。",
+                        "ごみおきばは どこですか。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s3-t5",
+                    "who": "partner",
+                    "ja": "あの 建物《たてもの》の 横《よこ》です。",
+                    "speak": "あの たてものの よこです。",
+                    "id_text": "Di samping gedung itu.",
+                    "en_text": "Next to that building.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l1-s3-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。よく わかりました。",
+                    "speak": "ありがとうございます。よく わかりました。",
+                    "id_text": "Terima kasih. Saya mengerti dengan baik.",
+                    "en_text": "Thank you. I understand well.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s3-t6.mp3",
+                    "accept": [
+                        "ありがとうございます。よく わかりました。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l1-s4",
+            "title_id": "Ajakan hari olahraga",
+            "title_en": "An invitation to sports day",
+            "setting_id": "Rekan kerja mengajakmu ke lomba olahraga perusahaan. Kamu menjelaskan bahwa kamu kurang pandai olahraga.",
+            "setting_en": "A colleague invites you to the company sports day. You explain that you are not good at sports.",
+            "goal_id": "Memakai 〜んです untuk menambah alasan dan N は 上手じゃ ないんです.",
+            "goal_en": "Use 〜んです to add a reason and N は 上手じゃ ないんです.",
+            "patterns": [
+                "〜んですが",
+                "N は 好きです／上手です",
+                "〜んです"
+            ],
+            "partner": {
+                "name": "ケン",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l1-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、来週《らいしゅう》の 日曜日《にちようび》に 会社《かいしゃ》の 運動会《うんどうかい》が あるんですが、来《き》ませんか。",
+                    "speak": "ブディさん、らいしゅうの にちようびに かいしゃの うんどうかいが あるんですが、きませんか。",
+                    "id_text": "Budi, hari Minggu depan ada lomba olahraga perusahaan. Mau datang?",
+                    "en_text": "Budi, there is a company sports day next Sunday. Would you like to come?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l1-s4-t2",
+                    "who": "you",
+                    "ja": "はい、行《い》きたいです。でも、スポーツは あまり 上手《じょうず》じゃ ないんです。",
+                    "speak": "はい、いきたいです。でも、スポーツは あまり じょうずじゃ ないんです。",
+                    "id_text": "Ya, saya ingin datang. Tetapi saya kurang pandai olahraga.",
+                    "en_text": "Yes, I would like to. But I am not very good at sports.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s4-t2.mp3",
+                    "accept": [
+                        "はい、行きたいです。でも、スポーツは あまり 上手じゃ ないんです。",
+                        "はい、いきたいです。でも、スポーツは あまり じょうずじゃ ないんです。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s4-t3",
+                    "who": "partner",
+                    "ja": "だいじょうぶですよ。見《み》ても いいです。",
+                    "speak": "だいじょうぶですよ。みても いいです。",
+                    "id_text": "Tidak apa-apa. Melihat saja juga boleh.",
+                    "en_text": "That is fine. You can just watch.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l1-s4-t4",
+                    "who": "you",
+                    "ja": "そうですか。何《なに》を 持《も》って 行《い》ったら いいですか。",
+                    "speak": "そうですか。なにを もって いったら いいですか。",
+                    "id_text": "Begitu. Sebaiknya saya membawa apa?",
+                    "en_text": "I see. What should I bring?",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s4-t4.mp3",
+                    "accept": [
+                        "そうですか。何を 持って 行ったら いいですか。",
+                        "そうですか。なにを もって いったら いいですか。"
+                    ]
+                },
+                {
+                    "id": "n4l1-s4-t5",
+                    "who": "partner",
+                    "ja": "飲《の》み物《もの》と タオルを 持《も》って 来《き》たら いいですよ。",
+                    "speak": "のみものと タオルを もって きたら いいですよ。",
+                    "id_text": "Sebaiknya bawa minuman dan handuk.",
+                    "en_text": "You should bring something to drink and a towel.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l1-s4-t6",
+                    "who": "you",
+                    "ja": "わかりました。じゃ、行《い》きます。",
+                    "speak": "わかりました。じゃ、いきます。",
+                    "id_text": "Saya mengerti. Kalau begitu, saya akan datang.",
+                    "en_text": "Understood. Then I will come.",
+                    "audio": "/audio/kaiwa/lesson-n4-1/n4l1-s4-t6.mp3",
+                    "accept": [
+                        "わかりました。じゃ、行きます。",
+                        "わかりました。じゃ、いきます。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

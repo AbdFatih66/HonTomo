@@ -1,0 +1,315 @@
+{
+    "id": 2,
+    "focus": "Benda di sekitar, milik — これ・それ・あれ、この・その・あの、そうです、の",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、それは辞書ですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい、そうです。日本語の辞書です。ブディさん、あれも辞書ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、辞書じゃありません。雑誌です。"
+            },
+            {
+                "speaker": "female",
+                "text": "だれの雑誌ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしのです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-2/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l2-kq1",
+                "prompt": "田口《たぐち》さんの　辞書《じしょ》は、何語《なにご》の　辞書《じしょ》ですか。",
+                "choices": [
+                    "英語《えいご》",
+                    "日本語《にほんご》",
+                    "中国語《ちゅうごくご》"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa, Taguchi berkata kamusnya adalah kamus bahasa Jepang. Jawaban: bahasa Jepang.",
+                    "en": "In the kaiwa, Taguchi says her dictionary is a Japanese-language dictionary. Answer: Japanese."
+                },
+                "audio": null
+            },
+            {
+                "id": "l2-kq2",
+                "prompt": "あれは、だれの　雑誌《ざっし》ですか。",
+                "choices": [
+                    "田口《たぐち》さんのです。",
+                    "ブディさんのです。",
+                    "だれのでもありません。"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa, majalah itu adalah milik Budi. Jawaban: milik Budi.",
+                    "en": "In the kaiwa, the magazine belongs to Budi. Answer: Budi's."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l2-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "それは、あなたのかさですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、わたしのじゃありません。リナさんのです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q1.mp3",
+            "prompt": "かさは　だれのですか。",
+            "choices": [
+                "ケンさんのです。",
+                "リナさんのです。",
+                "ポールさんのです。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Apakah itu payung Anda?' 'Bukan punya saya. Punya Rina.' Jawaban: punya Rina.",
+                "en": "Audio: 'Is that your umbrella?' 'No, it's not mine. It's Rina's.' Answer: Rina's."
+            }
+        },
+        {
+            "id": "l2-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "それは、テレビですか、ラジオですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ラジオです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q2.mp3",
+            "prompt": "これは　（　　）です。",
+            "choices": [
+                "テレビ",
+                "ラジオ",
+                "コンピューター"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Itu TV atau radio?' 'Radio.' Jawaban: radio.",
+                "en": "Audio: 'Is that a TV or a radio?' 'A radio.' Answer: radio."
+            }
+        },
+        {
+            "id": "l2-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "それは、何の本ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "コンピューターの本です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q3.mp3",
+            "prompt": "これは　何《なん》の　本《ほん》ですか。",
+            "choices": [
+                "カメラの　本《ほん》",
+                "自動車《じどうしゃ》の　本《ほん》",
+                "コンピューターの　本《ほん》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Itu buku tentang apa?' 'Buku komputer.' Jawaban: buku komputer.",
+                "en": "Audio: 'What kind of book is that?' 'A computer book.' Answer: a computer book."
+            }
+        },
+        {
+            "id": "l2-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "そのかばんは、ブディさんのですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ブディさんのじゃありません。わたしのです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q4.mp3",
+            "prompt": "かばんは　だれのですか。",
+            "choices": [
+                "ブディさんのです。",
+                "男《おとこ》の　人《ひと》のです。",
+                "女《おんな》の　人《ひと》のです。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Apakah tas itu punya Budi?' 'Bukan. Punya saya.' (yang bicara wanita) Jawaban: punya si wanita.",
+                "en": "Audio: 'Is that bag Budi's?' 'No, it's mine.' (the speaker is a woman) Answer: the woman's."
+            }
+        },
+        {
+            "id": "l2-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "それは、新聞ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、新聞じゃありません。雑誌です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q5.mp3",
+            "prompt": "これは　何《なん》ですか。",
+            "choices": [
+                "新聞《しんぶん》",
+                "雑誌《ざっし》",
+                "本《ほん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Apakah itu koran?' 'Bukan, itu majalah.' Jawaban: majalah.",
+                "en": "Audio: 'Is that a newspaper?' 'No, it's a magazine.' Answer: magazine."
+            }
+        },
+        {
+            "id": "l2-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きょうから、お世話になります。どうぞよろしくお願いします。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "こちらこそ、よろしくお願いします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "こちらこそ、よろしくお願《ねが》いします。",
+                "はじめまして。どうぞよろしく。",
+                "こちらこそ、お世話《せわ》になります。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Mulai hari ini mohon bantuannya.' 'Sama-sama, mohon bantuannya juga.' Jawaban: sesuai ucapan perempuan di audio.",
+                "en": "Audio: 'Please take care of me starting today.' 'Likewise, please take care of me too.' Answer: exactly what the woman says in the audio."
+            }
+        },
+        {
+            "id": "l2-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あのう、これ、どうぞ。おみやげです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "どうも　ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "どうも　ありがとうございます。",
+                "どうも　すみません。",
+                "いいえ、けっこうです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Ini, silakan. Oleh-oleh.' 'Terima kasih banyak.' Jawaban: sesuai ucapan perempuan di audio.",
+                "en": "Audio: 'Here, please. It's a souvenir.' 'Thank you very much.' Answer: exactly what the woman says in the audio."
+            }
+        },
+        {
+            "id": "l2-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "それは、辞書ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、そうです。日本語の辞書です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q8.mp3",
+            "prompt": "これは　日本語《にほんご》の　辞書《じしょ》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ini kamus bahasa Jepang. Jawaban: Benar (○).",
+                "en": "This is a Japanese dictionary. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l2-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "そのカードは、ヌルさんのですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ヌルさんのじゃありません。ハンさんのです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q9.mp3",
+            "prompt": "その　カードは　ヌルさんのです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kartu itu milik Nur. Jawaban: Salah (×) — milik Han.",
+                "en": "That card is Nur's. Answer: False (×) — it is Han's."
+            }
+        },
+        {
+            "id": "l2-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "これは、あなたの時計ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、わたしのじゃありません。それはスリさんのです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-2/l2-q10.mp3",
+            "prompt": "時計《とけい》は　女《おんな》の　人《ひと》のじゃありません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jam itu bukan milik si perempuan. Jawaban: Benar (○).",
+                "en": "The watch is not the woman's. Answer: True (○)."
+            }
+        }
+    ]
+}

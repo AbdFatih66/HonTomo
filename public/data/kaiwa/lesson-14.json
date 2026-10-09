@@ -1,0 +1,397 @@
+{
+    "id": 14,
+    "level": "N5",
+    "title_id": "Pelajaran 14 — Bentuk -te & Permintaan",
+    "title_en": "Lesson 14 — Te-form & Requests",
+    "scenarios": [
+        {
+            "id": "l14-s1",
+            "title_id": "Naik taksi",
+            "title_en": "Taking a taxi",
+            "setting_id": "Kamu naik taksi dan memberi petunjuk pada sopir.",
+            "setting_en": "You take a taxi and give directions to the driver.",
+            "goal_id": "Memakai 〜てください untuk meminta.",
+            "goal_en": "Use ~te kudasai to make requests.",
+            "patterns": [
+                "〜てください",
+                "〜まで お願いします"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l14-s1-t1",
+                    "who": "partner",
+                    "ja": "どちらまで ですか。",
+                    "speak": "どちらまで ですか。",
+                    "id_text": "Mau ke mana?",
+                    "en_text": "Where to?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t1.mp3"
+                },
+                {
+                    "id": "l14-s1-t2",
+                    "who": "you",
+                    "ja": "駅《えき》まで お願《ねが》いします。",
+                    "speak": "えきまで おねがいします。",
+                    "id_text": "Tolong antar ke stasiun.",
+                    "accept": [
+                        "駅まで お願いします。",
+                        "駅までお願いします。"
+                    ],
+                    "en_text": "To the station, please.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t2.mp3"
+                },
+                {
+                    "id": "l14-s1-t3",
+                    "who": "partner",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Baik, saya mengerti.",
+                    "en_text": "All right.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t3.mp3"
+                },
+                {
+                    "id": "l14-s1-t4",
+                    "who": "you",
+                    "ja": "すみません、急《いそ》いでください。",
+                    "speak": "すみません、いそいでください。",
+                    "id_text": "Maaf, tolong cepat.",
+                    "accept": [
+                        "すみません、急いでください。",
+                        "すみません、急いで ください。"
+                    ],
+                    "en_text": "Excuse me, please hurry.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t4.mp3"
+                },
+                {
+                    "id": "l14-s1-t5",
+                    "who": "partner",
+                    "ja": "はい。あの ビルの 前《まえ》ですか。",
+                    "speak": "はい。あの ビルの まえですか。",
+                    "id_text": "Baik. Di depan gedung itu?",
+                    "en_text": "Yes. In front of that building?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t5.mp3"
+                },
+                {
+                    "id": "l14-s1-t6",
+                    "who": "you",
+                    "ja": "はい、そこで 止《と》めてください。",
+                    "speak": "はい、そこで とめてください。",
+                    "id_text": "Ya, tolong berhenti di situ.",
+                    "accept": [
+                        "はい、そこで 止めてください。",
+                        "はい、そこで止めてください。"
+                    ],
+                    "en_text": "Yes, please stop there.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t6.mp3"
+                },
+                {
+                    "id": "l14-s1-t7",
+                    "who": "partner",
+                    "ja": "はい、ここですね。",
+                    "speak": "はい、ここですね。",
+                    "id_text": "Baik, di sini ya.",
+                    "en_text": "Here we are.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l14-s2",
+            "title_id": "Sedang apa sekarang?",
+            "title_en": "What are you doing now?",
+            "setting_id": "Suzuki menelepon dan bertanya apa yang sedang kamu lakukan.",
+            "setting_en": "Suzuki calls and asks what you are doing now.",
+            "goal_id": "Memakai 〜ています untuk kegiatan yang sedang berlangsung.",
+            "goal_en": "Use ~te imasu for ongoing actions.",
+            "patterns": [
+                "〜ています",
+                "何を していますか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l14-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、今《いま》 何《なに》を していますか。",
+                    "speak": "ブディさん、いま なにを していますか。",
+                    "id_text": "Budi, sekarang kamu sedang apa?",
+                    "en_text": "Budi, what are you doing now?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t1.mp3"
+                },
+                {
+                    "id": "l14-s2-t2",
+                    "who": "you",
+                    "ja": "メールを 書《か》いています。",
+                    "speak": "メールを かいています。",
+                    "id_text": "Aku sedang menulis surel.",
+                    "accept": [
+                        "メールを 書いています。",
+                        "メールを書いています。"
+                    ],
+                    "en_text": "I am writing an email.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t2.mp3"
+                },
+                {
+                    "id": "l14-s2-t3",
+                    "who": "partner",
+                    "ja": "ミラーさんは 何《なに》を していますか。",
+                    "speak": "ミラーさんは なにを していますか。",
+                    "id_text": "Pak Miller sedang apa?",
+                    "en_text": "What is Mr. Miller doing?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t3.mp3"
+                },
+                {
+                    "id": "l14-s2-t4",
+                    "who": "you",
+                    "ja": "ミラーさんは 電話《でんわ》を かけています。",
+                    "speak": "ミラーさんは でんわを かけています。",
+                    "id_text": "Pak Miller sedang menelepon.",
+                    "accept": [
+                        "ミラーさんは 電話を かけています。",
+                        "ミラーさんは電話をかけています。"
+                    ],
+                    "en_text": "Mr. Miller is making a phone call.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t4.mp3"
+                },
+                {
+                    "id": "l14-s2-t5",
+                    "who": "partner",
+                    "ja": "たなかさんも 会社《かいしゃ》に いますか。",
+                    "speak": "たなかさんも かいしゃに いますか。",
+                    "id_text": "Apakah Tanaka juga ada di kantor?",
+                    "en_text": "Is Tanaka at the office too?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t5.mp3"
+                },
+                {
+                    "id": "l14-s2-t6",
+                    "who": "you",
+                    "ja": "はい、会議室《かいぎしつ》で 待《ま》っています。",
+                    "speak": "はい、かいぎしつで まっています。",
+                    "id_text": "Ya, dia sedang menunggu di ruang rapat.",
+                    "accept": [
+                        "はい、会議室で 待っています。",
+                        "はい、会議室で待っています。"
+                    ],
+                    "en_text": "Yes, he is waiting in the meeting room.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t6.mp3"
+                },
+                {
+                    "id": "l14-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。ありがとう。",
+                    "speak": "そうですか。ありがとう。",
+                    "id_text": "Oh begitu. Terima kasih.",
+                    "en_text": "I see. Thanks.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l14-s3",
+            "title_id": "Menawarkan bantuan",
+            "title_en": "Offering help",
+            "setting_id": "Tanaka melihatmu membawa banyak barang.",
+            "setting_en": "Tanaka sees you carrying lots of things.",
+            "goal_id": "Memakai 〜ましょうか dan 〜てください.",
+            "goal_en": "Use ~mashou ka and ~te kudasai.",
+            "patterns": [
+                "〜ましょうか",
+                "ええ、お願いします",
+                "〜てください"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l14-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、荷物《にもつ》を 持《も》ちましょうか。",
+                    "speak": "ブディさん、にもつを もちましょうか。",
+                    "id_text": "Budi, mau saya bawakan barangnya?",
+                    "en_text": "Budi, shall I carry your bags?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t1.mp3"
+                },
+                {
+                    "id": "l14-s3-t2",
+                    "who": "you",
+                    "ja": "ええ、お願《ねが》いします。",
+                    "speak": "ええ、おねがいします。",
+                    "id_text": "Ya, tolong.",
+                    "accept": [
+                        "ええ、お願いします。",
+                        "はい、お願いします。"
+                    ],
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t2.mp3"
+                },
+                {
+                    "id": "l14-s3-t3",
+                    "who": "partner",
+                    "ja": "ドアを 開《あ》けましょうか。",
+                    "speak": "ドアを あけましょうか。",
+                    "id_text": "Mau saya bukakan pintunya?",
+                    "en_text": "Shall I open the door?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t3.mp3"
+                },
+                {
+                    "id": "l14-s3-t4",
+                    "who": "you",
+                    "ja": "すみません、開《あ》けてください。",
+                    "speak": "すみません、あけてください。",
+                    "id_text": "Maaf, tolong bukakan.",
+                    "accept": [
+                        "すみません、開けてください。",
+                        "すみません、開けて ください。"
+                    ],
+                    "en_text": "Sorry, please open it.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t4.mp3"
+                },
+                {
+                    "id": "l14-s3-t5",
+                    "who": "partner",
+                    "ja": "エレベーターに 入《はい》りましょう。何階《なんがい》ですか。",
+                    "speak": "エレベーターに はいりましょう。なんがいですか。",
+                    "id_text": "Ayo masuk lift. Lantai berapa?",
+                    "en_text": "Let's get in the elevator. Which floor?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t5.mp3"
+                },
+                {
+                    "id": "l14-s3-t6",
+                    "who": "you",
+                    "ja": "三階《さんがい》です。ドアを 閉《し》めてください。",
+                    "speak": "さんがいです。ドアを しめてください。",
+                    "id_text": "Lantai tiga. Tolong tutup pintunya.",
+                    "accept": [
+                        "3階です。ドアを 閉めてください。",
+                        "三階です。ドアを閉めてください。"
+                    ],
+                    "en_text": "The 3rd floor. Please close the door.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t6.mp3"
+                },
+                {
+                    "id": "l14-s3-t7",
+                    "who": "partner",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Baik, saya mengerti.",
+                    "en_text": "All right.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l14-s4",
+            "title_id": "Di ruang rapat",
+            "title_en": "In the meeting room",
+            "setting_id": "Di ruang rapat yang panas, kamu meminta sesuatu pada Suzuki.",
+            "setting_en": "In the hot meeting room, you ask Suzuki for a few things.",
+            "goal_id": "Memakai すみませんが、〜てください dan 〜ましょうか.",
+            "goal_en": "Use sumimasen ga, ~te kudasai and ~mashou ka.",
+            "patterns": [
+                "すみませんが、〜てください",
+                "〜ましょうか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l14-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、暑《あつ》いですね。エアコンを つけましょうか。",
+                    "speak": "ブディさん、あついですね。エアコンを つけましょうか。",
+                    "id_text": "Budi, panas ya. Mau saya nyalakan AC?",
+                    "en_text": "Budi, it's hot. Shall I turn on the air conditioner?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t1.mp3"
+                },
+                {
+                    "id": "l14-s4-t2",
+                    "who": "you",
+                    "ja": "ええ、お願《ねが》いします。",
+                    "speak": "ええ、おねがいします。",
+                    "id_text": "Ya, tolong.",
+                    "accept": [
+                        "はい、お願いします。",
+                        "ええ、お願いします"
+                    ],
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t2.mp3"
+                },
+                {
+                    "id": "l14-s4-t3",
+                    "who": "partner",
+                    "ja": "ほかに 何《なに》か ありますか。",
+                    "speak": "ほかに なにか ありますか。",
+                    "id_text": "Ada hal lain?",
+                    "en_text": "Is there anything else?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t3.mp3"
+                },
+                {
+                    "id": "l14-s4-t4",
+                    "who": "you",
+                    "ja": "すみませんが、窓《まど》を 閉《し》めてください。",
+                    "speak": "すみませんが、まどを しめてください。",
+                    "id_text": "Maaf, tolong tutup jendelanya.",
+                    "accept": [
+                        "すみませんが、窓を 閉めてください。",
+                        "すみませんが、窓を閉めてください。"
+                    ],
+                    "en_text": "Excuse me, please close the window.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t4.mp3"
+                },
+                {
+                    "id": "l14-s4-t5",
+                    "who": "partner",
+                    "ja": "はい。資料《しりょう》も コピーしましょうか。",
+                    "speak": "はい。しりょうも コピーしましょうか。",
+                    "id_text": "Baik. Mau saya fotokopi dokumennya juga?",
+                    "en_text": "OK. Shall I copy the materials too?",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t5.mp3"
+                },
+                {
+                    "id": "l14-s4-t6",
+                    "who": "you",
+                    "ja": "はい、五枚《ごまい》 コピーしてください。",
+                    "speak": "はい、ごまい コピーしてください。",
+                    "id_text": "Ya, tolong fotokopi lima lembar.",
+                    "accept": [
+                        "はい、5枚 コピーしてください。",
+                        "はい、五枚コピーしてください。"
+                    ],
+                    "en_text": "Yes, please make five copies.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t6.mp3"
+                },
+                {
+                    "id": "l14-s4-t7",
+                    "who": "partner",
+                    "ja": "わかりました。",
+                    "speak": "わかりました。",
+                    "id_text": "Baik, saya mengerti.",
+                    "en_text": "Understood.",
+                    "audio": "/audio/kaiwa/lesson-14/l14-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

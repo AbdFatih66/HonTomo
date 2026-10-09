@@ -1,0 +1,311 @@
+{
+    "id": 23,
+    "focus": "Waktu dan syarat — 〜とき、〜と（syarat/hasil pasti）、cara pakai (〜方)、petunjuk jalan",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、日本へ来たとき、何が大変でしたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "道がわからないとき、大変でした。"
+            },
+            {
+                "speaker": "female",
+                "text": "今は、どうしますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "地図を見ます。それから、近くにいる人に聞きます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-23/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l23-kq1",
+                "prompt": "ブディさんは、道《みち》が　わからないとき、今《いま》　どう　しますか。",
+                "choices": [
+                    "地図《ちず》を　見《み》て、人《ひと》に　聞《き》きます。",
+                    "うちへ　帰《かえ》ります。",
+                    "タクシーに　乗《の》ります。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kalau tidak tahu jalan, sekarang Budi melihat peta dan bertanya pada orang.",
+                    "en": "When he doesn't know the way, Budi now checks a map and asks people."
+                },
+                "audio": null
+            },
+            {
+                "id": "l23-kq2",
+                "prompt": "日本《にほん》へ　来《き》たとき、ブディさんは　何《なに》が　大変《たいへん》でしたか。",
+                "choices": [
+                    "道《みち》が　わからなかったこと",
+                    "日本語《にほんご》が　わからなかったこと",
+                    "仕事《しごと》が　なかったこと"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Saat baru datang ke Jepang, yang sulit bagi Budi adalah tidak tahu jalan.",
+                    "en": "When he first came to Japan, what was hard for Budi was not knowing the way."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l23-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ヨンさんは、疲れたとき、どうしますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "音楽を聞いて、早く寝ます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q1.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　疲《つか》れたとき、どうしますか。",
+            "choices": [
+                "音楽《おんがく》を　聞《き》いて、早《はや》く　寝《ね》ます。",
+                "友達《ともだち》と　食事《しょくじ》に　行《い》きます。",
+                "散歩《さんぽ》に　行《い》きます。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Saat lelah ia mendengarkan musik dan tidur lebih awal.",
+                "en": "When tired, she listens to music and goes to bed early."
+            }
+        },
+        {
+            "id": "l23-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、駅はどこですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "この道をまっすぐ行くと、左に銀行があります。その銀行の隣が駅です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q2.mp3",
+            "prompt": "駅《えき》は　どこに　ありますか。",
+            "choices": [
+                "銀行《ぎんこう》の　隣《となり》",
+                "銀行《ぎんこう》の　前《まえ》",
+                "銀行《ぎんこう》の　後《うし》ろ"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Stasiun berada di sebelah bank.",
+                "en": "The station is next to the bank."
+            }
+        },
+        {
+            "id": "l23-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません。このドアは、どうやって開けますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ここを押すと、開きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q3.mp3",
+            "prompt": "ドアは　どうすると　開《あ》きますか。",
+            "choices": [
+                "ボタンを　押《お》すと",
+                "ボタンを　回《まわ》すと",
+                "引《ひ》くと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pintu terbuka bila tombolnya ditekan.",
+                "en": "The door opens when you push the button."
+            }
+        },
+        {
+            "id": "l23-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日本語がわからないとき、どうしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "辞書を見ます。それから、友達にも聞きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　日本語《にほんご》が　わからないとき、何《なに》を　しますか。",
+            "choices": [
+                "辞書《じしょ》を　見《み》て、友達《ともだち》に　聞《き》きます。",
+                "先生《せんせい》に　電話《でんわ》を　かけます。",
+                "友達《ともだち》に　聞《き》いて、家《いえ》へ　帰《かえ》ります。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Saat tidak paham bahasa Jepang, ia membuka kamus lalu bertanya pada teman.",
+                "en": "When he doesn't understand Japanese, he checks a dictionary and asks a friend."
+            }
+        },
+        {
+            "id": "l23-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさんは、いつ日本へ来ましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "学生のとき、来ました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　いつ　日本《にほん》へ　来《き》ましたか。",
+            "choices": [
+                "学生《がくせい》のとき",
+                "会社《かいしゃ》で　働《はたら》いているとき",
+                "子《こ》どものとき"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia datang ke Jepang saat masih mahasiswa.",
+                "en": "She came to Japan when she was a student."
+            }
+        },
+        {
+            "id": "l23-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。郵便局は、どこですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "まっすぐ行って、信号を右へ曲がると、左にあります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q6.mp3",
+            "prompt": "どこで　右《みぎ》へ　曲《ま》がりますか。",
+            "choices": [
+                "角《かど》",
+                "橋《はし》",
+                "信号《しんごう》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Belok kanan di lampu lalu lintas.",
+                "en": "Turn right at the traffic light."
+            }
+        },
+        {
+            "id": "l23-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、切符の買い方を教えてください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "まず、お金を入れてください。それから、行く駅のボタンを押してください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q7.mp3",
+            "prompt": "最初《さいしょ》に　何《なに》を　しますか。",
+            "choices": [
+                "切符《きっぷ》を　取《と》ります。",
+                "お金《かね》を　入《い》れます。",
+                "ボタンを　押《お》します。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Yang pertama dilakukan: memasukkan uang.",
+                "en": "First, put the money in."
+            }
+        },
+        {
+            "id": "l23-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "お酒を飲んだとき、車を運転してもいいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、だめです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　お酒《さけ》を　飲《の》んだとき、車《くるま》を　運転《うんてん》してもいいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Tidak boleh mengemudi setelah minum alkohol. Jawaban: Salah (×).",
+                "en": "You must not drive after drinking. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l23-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "わたしは、暇なとき、公園を散歩します。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わたしは、暇なとき、いつも友達に電話します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　暇《ひま》なとき、散歩《さんぽ》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Saat senggang ia menelepon teman. Jawaban: Salah (×).",
+                "en": "When free, he phones friends. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l23-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この道をまっすぐ行くと、右に駅があります。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "駅の前に、スーパーがありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、駅の前にあります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-23/l23-q10.mp3",
+            "prompt": "この　道《みち》を　まっすぐ　行《い》くと、右《みぎ》に　駅《えき》が　あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jalan lurus, stasiun ada di kanan. Jawaban: Benar (○).",
+                "en": "Go straight and the station is on the right. Answer: True (○)."
+            }
+        }
+    ]
+}

@@ -1,0 +1,292 @@
+{
+    "id": "n4-8",
+    "level": "N4",
+    "focus": "Bentuk perintah dan larangan, 〜と書いてあります／〜と読みます, 〜という意味です, 〜と言っていました, 〜と伝えていただけませんか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "たぐちさん、あそこに 「たちいりきんし」と かいて ありますね。"
+            },
+            {
+                "speaker": "female",
+                "text": "ええ。「たちいりきんし」は、はいるなと いう いみです。"
+            },
+            {
+                "speaker": "male",
+                "text": "この みちは どうですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "そこは 「じょこう」と かいて あります。ゆっくり いけと いう いみです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-8/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l8-kq1",
+                "prompt": "「立入禁止《たちいりきんし》」は どういう 意味《いみ》ですか。",
+                "choices": [
+                    "入《はい》るな",
+                    "ゆっくり 行《い》け",
+                    "止《と》まれ"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "\"Tachiiri kinshi\" artinya jangan masuk.",
+                    "en": "\"Tachiiri kinshi\" means do not enter."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l8-kq2",
+                "prompt": "「徐行《じょこう》」は どういう 意味《いみ》ですか。",
+                "choices": [
+                    "ゆっくり 行《い》く",
+                    "入《はい》るな",
+                    "急《いそ》げ"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "\"Jokou\" artinya berjalan perlahan.",
+                    "en": "\"Jokou\" means go slowly."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l8-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さん、あの みどりの かんばんには、なんと かいて ありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "「ひじょうぐち」と かいて あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q1.mp3",
+            "prompt": "看板《かんばん》には 何《なん》と 書《か》いて ありますか。",
+            "choices": [
+                "非常口《ひじょうぐち》",
+                "入口《いりぐち》",
+                "出口《でぐち》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang tertulis di papan itu? ...Tertulis \"hijouguchi\" (pintu darurat).",
+                "en": "What does the sign say? ...It says \"hijouguchi\" (emergency exit)."
+            }
+        },
+        {
+            "id": "n4l8-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この マークは、どういう いみですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "せんたくきで あらえると いう いみです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q2.mp3",
+            "prompt": "この マークは どういう 意味《いみ》ですか。",
+            "choices": [
+                "洗濯機《せんたくき》で 洗《あら》える",
+                "手《て》で 洗《あら》う",
+                "アイロンを かける"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa maksud tanda ini? ...Maksudnya dapat dicuci dengan mesin cuci.",
+                "en": "What does this mark mean? ...It means it can be washed in a washing machine."
+            }
+        },
+        {
+            "id": "n4l8-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "スリさんは、あした かいしゃを やすむと いって いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q3.mp3",
+            "prompt": "スリさんは あした どうすると 言《い》って いましたか。",
+            "choices": [
+                "会社《かいしゃ》を 休《やす》む",
+                "早《はや》く 帰《かえ》る",
+                "大阪《おおさか》へ 行《い》く"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sri bilang besok dia tidak masuk kerja.",
+                "en": "Sri said she will take the day off tomorrow."
+            }
+        },
+        {
+            "id": "n4l8-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "パーティーは、なんじからですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ヌルさんは、ろくじからだと いって いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q4.mp3",
+            "prompt": "パーティーは 何時《なんじ》からですか。",
+            "choices": [
+                "5:00",
+                "6:00",
+                "7:00"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pesta mulai jam berapa? ...Jam 6, kata Nur.",
+                "en": "What time does the party start? ...Six, according to Nur."
+            }
+        },
+        {
+            "id": "n4l8-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あの いけに、はいるなと かいて あります。あぶないですから、はいっては いけません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q5.mp3",
+            "prompt": "池《いけ》に ついて、正《ただ》しいのは どれですか。",
+            "choices": [
+                "魚《さかな》を 釣《つ》っても いいです",
+                "入《はい》っても いいです",
+                "入《はい》っては いけません"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Tertulis agar tidak masuk kolam. Tidak boleh masuk karena berbahaya.",
+                "en": "The sign says not to enter the pond. You must not go in because it is dangerous."
+            }
+        },
+        {
+            "id": "n4l8-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、あした かいぎは くじからだと、ヌルさんに つたえて いただけませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なん》と 答《こた》えますか。",
+            "choices": [
+                "いいえ、書《か》いて あります。",
+                "はい、わかりました。伝《つた》えます。",
+                "はい、いただきます。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Maaf, tolong sampaikan kepada Nur bahwa rapat besok mulai jam 9. ...Baik, saya sampaikan.",
+                "en": "Excuse me, could you tell Nur the meeting tomorrow starts at nine? ...Certainly, I will tell her."
+            }
+        },
+        {
+            "id": "n4l8-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、この かみに なんと かいて ありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "「しようちゅう」と かいて あります。トイレは いま、つかえませんよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q7.mp3",
+            "prompt": "トイレは 今《いま》 どうですか。",
+            "choices": [
+                "使《つか》えます",
+                "使《つか》えません",
+                "工事中《こうじちゅう》です"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Bagaimana toilet sekarang? ...Sedang dipakai, tidak bisa digunakan.",
+                "en": "How is the restroom now? ...It is in use and cannot be used."
+            }
+        },
+        {
+            "id": "n4l8-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あしたの かいぎは、じゅうじからだと ききました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、くじからだと あおきさんが いって いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q8.mp3",
+            "prompt": "会議《かいぎ》は 九時《くじ》からです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Rapat mulai jam 9. ...Benar (○).",
+                "en": "The meeting starts at nine. ...True (○)."
+            }
+        },
+        {
+            "id": "n4l8-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この かわで およいでも いいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "だめです。「およぐな」と かいて あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q9.mp3",
+            "prompt": "この 川《かわ》で 泳《およ》いでも いいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Boleh berenang di sungai ini. ...Salah (×), karena tertulis \"jangan berenang\".",
+                "en": "You may swim in this river. ...False (×); the sign says not to swim."
+            }
+        },
+        {
+            "id": "n4l8-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさんは、にちようびは うちに いると いって いました。でも、どようびは でかけると いって いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-8/n4l8-q10.mp3",
+            "prompt": "ケンさんは 土曜日《どようび》に 出《で》かけます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ken pergi keluar pada hari Sabtu. ...Benar (○).",
+                "en": "Ken goes out on Saturday. ...True (○)."
+            }
+        }
+    ]
+}

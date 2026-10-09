@@ -1,0 +1,394 @@
+{
+    "id": 1,
+    "level": "N5",
+    "title_id": "Pelajaran 1 — Perkenalan",
+    "title_en": "Lesson 1 — Introductions",
+    "scenarios": [
+        {
+            "id": "l1-s1",
+            "title_id": "Perkenalan pertama di kantor",
+            "title_en": "First introduction at the office",
+            "setting_id": "Hari pertamamu di kantor. Rekan kerja bernama Tanaka menyapamu.",
+            "goal_id": "Memperkenalkan diri, menyebut asal, dan memakai も.",
+            "patterns": [
+                "Ａは Ｂです",
+                "Ａは Ｂですか",
+                "Ａも Ｂです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l1-s1-t1",
+                    "who": "partner",
+                    "ja": "はじめまして。たなかです。",
+                    "speak": "はじめまして。たなかです。",
+                    "id_text": "Perkenalkan. Saya Tanaka.",
+                    "en_text": "Nice to meet you. I am Tanaka.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t1.mp3"
+                },
+                {
+                    "id": "l1-s1-t2",
+                    "who": "you",
+                    "ja": "はじめまして。ブディです。",
+                    "speak": "はじめまして。ブディです。",
+                    "id_text": "Perkenalkan. Saya Budi.",
+                    "accept": [
+                        "はじめまして。ブディです。"
+                    ],
+                    "en_text": "Nice to meet you. I am Budi.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t2.mp3"
+                },
+                {
+                    "id": "l1-s1-t3",
+                    "who": "partner",
+                    "ja": "ブディさんは インドネシア人《じん》ですか。",
+                    "speak": "ブディさんは インドネシアじんですか。",
+                    "id_text": "Apakah Budi orang Indonesia?",
+                    "en_text": "Are you Indonesian, Budi?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t3.mp3"
+                },
+                {
+                    "id": "l1-s1-t4",
+                    "who": "you",
+                    "ja": "はい、インドネシア人《じん》です。",
+                    "speak": "はい、インドネシアじんです。",
+                    "id_text": "Ya, saya orang Indonesia.",
+                    "accept": [
+                        "はい、インドネシアじんです。",
+                        "はい、インドネシア人です。"
+                    ],
+                    "en_text": "Yes, I am Indonesian.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t4.mp3"
+                },
+                {
+                    "id": "l1-s1-t5",
+                    "who": "partner",
+                    "ja": "わたしは 会社員《かいしゃいん》です。ブディさんも 会社員《かいしゃいん》ですか。",
+                    "speak": "わたしは かいしゃいんです。ブディさんも かいしゃいんですか。",
+                    "id_text": "Saya karyawan perusahaan. Apakah Budi juga karyawan perusahaan?",
+                    "en_text": "I am a company employee. Are you a company employee too, Budi?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t5.mp3"
+                },
+                {
+                    "id": "l1-s1-t6",
+                    "who": "you",
+                    "ja": "はい、わたしも 会社員《かいしゃいん》です。",
+                    "speak": "はい、わたしも かいしゃいんです。",
+                    "id_text": "Ya, saya juga karyawan perusahaan.",
+                    "accept": [
+                        "はい、わたしも かいしゃいんです。",
+                        "はい、私も会社員です。",
+                        "はい、私もかいしゃいんです。"
+                    ],
+                    "en_text": "Yes, I am a company employee too.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t6.mp3"
+                },
+                {
+                    "id": "l1-s1-t7",
+                    "who": "partner",
+                    "ja": "どうぞ よろしく。",
+                    "speak": "どうぞ よろしく。",
+                    "id_text": "Mohon bantuannya.",
+                    "en_text": "Please treat me well.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t7.mp3"
+                },
+                {
+                    "id": "l1-s1-t8",
+                    "who": "you",
+                    "ja": "どうぞ よろしく おねがいします。",
+                    "speak": "どうぞ よろしく おねがいします。",
+                    "id_text": "Mohon bantuan dan kerja samanya.",
+                    "accept": [
+                        "どうぞ よろしく おねがいします。",
+                        "どうぞよろしくお願いします。"
+                    ],
+                    "en_text": "Please treat me well, too.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s1-t8.mp3"
+                }
+            ],
+            "setting_en": "Your first day at the office. A colleague named Tanaka greets you.",
+            "goal_en": "Introduce yourself, say where you are from, and use も."
+        },
+        {
+            "id": "l1-s2",
+            "title_id": "Di universitas: siapa orang itu?",
+            "title_en": "At the university: who is that?",
+            "setting_id": "Kamu bertemu Suzuki, teman di universitas, dan membicarakan seorang dosen.",
+            "goal_id": "Memakai の, だれ, dan bentuk negatif じゃありません.",
+            "patterns": [
+                "Ａの Ｂ",
+                "Ａは Ｂじゃ ありません",
+                "〜さん"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l1-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 学生《がくせい》ですか。",
+                    "speak": "ブディさんは がくせいですか。",
+                    "id_text": "Apakah Budi seorang mahasiswa?",
+                    "en_text": "Are you a student, Budi?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s2-t1.mp3"
+                },
+                {
+                    "id": "l1-s2-t2",
+                    "who": "you",
+                    "ja": "はい、わたしは 大学《だいがく》の 学生《がくせい》です。",
+                    "speak": "はい、わたしは だいがくの がくせいです。",
+                    "id_text": "Ya, saya mahasiswa universitas.",
+                    "accept": [
+                        "はい、わたしは だいがくの がくせいです。",
+                        "はい、私は大学の学生です。",
+                        "はい、私は大学のがくせいです。"
+                    ],
+                    "en_text": "Yes, I am a university student.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s2-t2.mp3"
+                },
+                {
+                    "id": "l1-s2-t3",
+                    "who": "partner",
+                    "ja": "あの 方《かた》は ミラーさんです。大学《だいがく》の 先生《せんせい》です。",
+                    "speak": "あの かたは ミラーさんです。だいがくの せんせいです。",
+                    "id_text": "Beliau Pak Miller. Dosen universitas.",
+                    "en_text": "That person is Mr. Miller. He is a university teacher.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s2-t3.mp3"
+                },
+                {
+                    "id": "l1-s2-t4",
+                    "who": "you",
+                    "ja": "ミラーさんは アメリカ人《じん》ですか。",
+                    "speak": "ミラーさんは アメリカじんですか。",
+                    "id_text": "Apakah Pak Miller orang Amerika?",
+                    "accept": [
+                        "ミラーさんは アメリカじんですか。",
+                        "ミラーさんは アメリカ人ですか。"
+                    ],
+                    "en_text": "Is Mr. Miller American?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s2-t4.mp3"
+                },
+                {
+                    "id": "l1-s2-t5",
+                    "who": "partner",
+                    "ja": "いいえ、アメリカ人《じん》じゃ ありません。イギリス人《じん》です。ブディさんは ミラーさんの 学生《がくせい》ですか。",
+                    "speak": "いいえ、アメリカじんじゃ ありません。イギリスじんです。ブディさんは ミラーさんの がくせいですか。",
+                    "id_text": "Bukan, bukan orang Amerika. Orang Inggris. Apakah Budi mahasiswa Pak Miller?",
+                    "en_text": "No, he is not American. He is British. Are you Mr. Miller's student, Budi?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s2-t5.mp3"
+                },
+                {
+                    "id": "l1-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、ミラーさんの 学生《がくせい》じゃ ありません。",
+                    "speak": "いいえ、ミラーさんの がくせいじゃ ありません。",
+                    "id_text": "Bukan, saya bukan mahasiswa Pak Miller.",
+                    "accept": [
+                        "いいえ、ミラーさんの がくせいじゃ ありません。",
+                        "いいえ、ミラーさんの 学生じゃありません。",
+                        "いいえ、ミラーさんの がくせいでは ありません。"
+                    ],
+                    "en_text": "No, I am not Mr. Miller's student.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s2-t6.mp3"
+                }
+            ],
+            "setting_en": "You meet Suzuki, a friend at the university, and talk about a teacher.",
+            "goal_en": "Use の, だれ and the negative じゃありません."
+        },
+        {
+            "id": "l1-s3",
+            "title_id": "Menanyakan usia dan pekerjaan",
+            "title_en": "Asking about age and job",
+            "setting_id": "Saat istirahat, kamu mengobrol santai dengan Tanaka.",
+            "goal_id": "Memakai なんさい, bilangan umur, dan menanyakan pekerjaan.",
+            "patterns": [
+                "Ａは Ｂですか",
+                "なんさい",
+                "Ａも Ｂです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l1-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 何歳《なんさい》ですか。",
+                    "speak": "ブディさんは なんさいですか。",
+                    "id_text": "Budi berumur berapa?",
+                    "en_text": "How old are you, Budi?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s3-t1.mp3"
+                },
+                {
+                    "id": "l1-s3-t2",
+                    "who": "you",
+                    "ja": "にじゅうごさいです。",
+                    "speak": "にじゅうごさいです。",
+                    "id_text": "Saya 25 tahun.",
+                    "accept": [
+                        "にじゅうごさいです。",
+                        "二十五歳です。",
+                        "25歳です。"
+                    ],
+                    "en_text": "I am 25 years old.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s3-t2.mp3"
+                },
+                {
+                    "id": "l1-s3-t3",
+                    "who": "partner",
+                    "ja": "わたしも にじゅうごさいです。",
+                    "speak": "わたしも にじゅうごさいです。",
+                    "id_text": "Saya juga 25 tahun.",
+                    "accept": [
+                        "わたしも にじゅうごさいです。",
+                        "私も25歳です。",
+                        "私も二十五歳です。"
+                    ],
+                    "en_text": "I am 25, too.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s3-t3.mp3"
+                },
+                {
+                    "id": "l1-s3-t4",
+                    "who": "you",
+                    "ja": "たなかさんは 銀行員《ぎんこういん》ですか。",
+                    "speak": "たなかさんは ぎんこういんですか。",
+                    "id_text": "Apakah Tanaka pegawai bank?",
+                    "accept": [
+                        "たなかさんは ぎんこういんですか。",
+                        "たなかさんは 銀行員ですか。"
+                    ],
+                    "en_text": "Is Tanaka a bank employee?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s3-t4.mp3"
+                },
+                {
+                    "id": "l1-s3-t5",
+                    "who": "partner",
+                    "ja": "いいえ、銀行員《ぎんこういん》じゃ ありません。会社員《かいしゃいん》です。",
+                    "speak": "いいえ、ぎんこういんじゃ ありません。かいしゃいんです。",
+                    "id_text": "Bukan, saya bukan pegawai bank. Saya karyawan perusahaan.",
+                    "en_text": "No, I am not a bank employee. I am a company employee.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s3-t5.mp3"
+                },
+                {
+                    "id": "l1-s3-t6",
+                    "who": "you",
+                    "ja": "わたしも 会社員《かいしゃいん》です。",
+                    "speak": "わたしも かいしゃいんです。",
+                    "id_text": "Saya juga karyawan perusahaan.",
+                    "accept": [
+                        "わたしも かいしゃいんです。",
+                        "私も会社員です。",
+                        "私もかいしゃいんです。"
+                    ],
+                    "en_text": "I am a company employee, too.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s3-t6.mp3"
+                }
+            ],
+            "setting_en": "On a break, you chat casually with Tanaka.",
+            "goal_en": "Use なんさい, ages, and ask about jobs."
+        },
+        {
+            "id": "l1-s4",
+            "title_id": "Siapa orang itu? (di pesta)",
+            "title_en": "Who is that? (at a party)",
+            "setting_id": "Di acara makan malam kantor, Suzuki menanyakan seseorang yang kamu kenal.",
+            "setting_en": "At an office dinner, Suzuki asks about someone you know.",
+            "goal_id": "Memperkenalkan orang lain dengan だれ, 〜さん, 〜人, dan menyangkal dengan じゃ ありません.",
+            "goal_en": "Introduce another person with dare, ~san, ~jin, and deny with ja arimasen.",
+            "patterns": [
+                "Ａは だれですか",
+                "Ａは Ｂじゃ ありません",
+                "Ａの Ｂ"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l1-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あの 方《かた》は だれですか。",
+                    "speak": "ブディさん、あの かたは だれですか。",
+                    "id_text": "Budi, siapa beliau itu?",
+                    "en_text": "Budi, who is that person?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s4-t1.mp3"
+                },
+                {
+                    "id": "l1-s4-t2",
+                    "who": "you",
+                    "ja": "あの 方《かた》は キムさんです。",
+                    "speak": "あの かたは キムさんです。",
+                    "id_text": "Beliau Pak Kim.",
+                    "accept": [
+                        "あの方はキムさんです。"
+                    ],
+                    "en_text": "That person is Mr. Kim.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s4-t2.mp3"
+                },
+                {
+                    "id": "l1-s4-t3",
+                    "who": "partner",
+                    "ja": "キムさんは 中国人《ちゅうごくじん》ですか。",
+                    "speak": "キムさんは ちゅうごくじんですか。",
+                    "id_text": "Apakah Pak Kim orang Cina?",
+                    "en_text": "Is Mr. Kim Chinese?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s4-t3.mp3"
+                },
+                {
+                    "id": "l1-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ、中国人《ちゅうごくじん》じゃ ありません。韓国人《かんこくじん》です。",
+                    "speak": "いいえ、ちゅうごくじんじゃ ありません。かんこくじんです。",
+                    "id_text": "Bukan, bukan orang Cina. Orang Korea.",
+                    "accept": [
+                        "いいえ、中国人じゃありません。韓国人です。",
+                        "いいえ、ちゅうごくじんではありません。かんこくじんです。"
+                    ],
+                    "en_text": "No, he is not Chinese. He is Korean.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s4-t4.mp3"
+                },
+                {
+                    "id": "l1-s4-t5",
+                    "who": "partner",
+                    "ja": "キムさんは 学生《がくせい》ですか。",
+                    "speak": "キムさんは がくせいですか。",
+                    "id_text": "Apakah Pak Kim seorang mahasiswa?",
+                    "en_text": "Is Mr. Kim a student?",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s4-t5.mp3"
+                },
+                {
+                    "id": "l1-s4-t6",
+                    "who": "you",
+                    "ja": "いいえ、学生《がくせい》じゃ ありません。病院《びょういん》の 医者《いしゃ》です。",
+                    "speak": "いいえ、がくせいじゃ ありません。びょういんの いしゃです。",
+                    "id_text": "Bukan, bukan mahasiswa. Dokter rumah sakit.",
+                    "accept": [
+                        "いいえ、学生じゃありません。病院の医者です。",
+                        "いいえ、がくせいではありません。びょういんのいしゃです。"
+                    ],
+                    "en_text": "No, he is not a student. He is a hospital doctor.",
+                    "audio": "/audio/kaiwa/lesson-1/l1-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

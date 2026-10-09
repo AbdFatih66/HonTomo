@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'failed' => 'The email or password is incorrect.',
+    'password' => 'The provided password is incorrect.',
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'logged_out' => 'You have been logged out.',
+    'reset_link_sent' => "If that email is registered, we have sent a password reset link. Please check your inbox (and spam folder).",
+    'reset_invalid' => "This password reset link is invalid or has expired. Please request a new one.",
+    'reset_success' => "Your password has been reset. Please log in with your new password.",
+    'current_password_incorrect' => "The current password you entered is incorrect.",
+    'password_changed' => "Your password has been changed.",
+    'oauth_code_invalid' => "This sign-in link has expired. Please try again.",
+    'unlink_requires_password' => "Set a password first, otherwise you would be locked out of your account.",
+    'unlinked' => "Google account disconnected.",
+    'verify_success' => "Your email has been verified. Thank you!",
+    'verify_already' => "Your email is already verified.",
+    'verify_invalid' => "This verification link is invalid or has expired.",
+    'verify_sent' => "A new verification link has been sent to your email.",
+    'session_revoked' => "Session signed out.",
+    'sessions_revoked' => "Signed out of all other devices.",
+    'device_evicted' => [
+        'device_limit' => "You were signed out because your account reached the 3-device sign-in limit.",
+    ],
+    'captcha_failed' => "CAPTCHA verification failed. Please try again.",
+    'new_device' => [
+        'subject' => "New sign-in to your HonTomo account",
+        'greeting' => "Hello!",
+        'body' => "Your account was just signed in from a new device: :device, on :time (IP: :ip).",
+        'not_you' => "If this was you, no action is needed. If you don't recognize this, change your password immediately from the login page's \"Forgot password\" link.",
+        'unknown_ip' => "unknown",
+    ],
+    'webauthn_registered' => "Passkey registered. You can now sign in with it.",
+    'webauthn_removed' => "Passkey removed.",
+    'webauthn_failed' => "Biometric sign-in failed. Please try again or use your password.",
+];

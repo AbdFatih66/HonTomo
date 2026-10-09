@@ -1,0 +1,399 @@
+{
+    "id": 20,
+    "level": "N5",
+    "title_id": "Pelajaran 20 — Bahasa Santai",
+    "title_en": "Lesson 20 — Casual Speech",
+    "scenarios": [
+        {
+            "id": "l20-s1",
+            "title_id": "Makan siang bersama (santai)",
+            "title_en": "Lunch together (casual)",
+            "setting_id": "Kamu mengobrol santai dengan teman sekantor tentang makan siang.",
+            "setting_en": "You chat casually with a coworker about lunch.",
+            "goal_id": "Memakai bentuk biasa dan pertanyaan tanpa か (naik nada).",
+            "goal_en": "Use the plain form and questions without ka (rising tone).",
+            "patterns": [
+                "V(普通形)？",
+                "うん／ううん",
+                "Vない？ (ajakan)"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l20-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディくん、今日《きょう》は 忙《いそが》しい？",
+                    "speak": "ブディくん、きょうは いそがしい？",
+                    "id_text": "Budi, hari ini sibuk?",
+                    "en_text": "Budi, are you busy today?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t1.mp3"
+                },
+                {
+                    "id": "l20-s1-t2",
+                    "who": "you",
+                    "ja": "ううん、暇《ひま》だよ。",
+                    "speak": "ううん、ひまだよ。",
+                    "id_text": "Tidak, aku senggang.",
+                    "accept": [
+                        "ううん、暇だよ。"
+                    ],
+                    "en_text": "No, I'm free.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t2.mp3"
+                },
+                {
+                    "id": "l20-s1-t3",
+                    "who": "partner",
+                    "ja": "ね、昼《ひる》ごはん、いっしょに 食《た》べない？",
+                    "speak": "ね、ひるごはん、いっしょに たべない？",
+                    "id_text": "Hei, makan siang bareng yuk?",
+                    "en_text": "Hey, want to eat lunch together?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t3.mp3"
+                },
+                {
+                    "id": "l20-s1-t4",
+                    "who": "you",
+                    "ja": "うん、食《た》べる。どこで 食《た》べる？",
+                    "speak": "うん、たべる。どこで たべる？",
+                    "id_text": "Ya, aku mau. Makan di mana?",
+                    "accept": [
+                        "うん、食べる。どこで 食べる？",
+                        "うん、食べる。どこで食べる？"
+                    ],
+                    "en_text": "Yeah, sure. Where shall we eat?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t4.mp3"
+                },
+                {
+                    "id": "l20-s1-t5",
+                    "who": "partner",
+                    "ja": "食堂《しょくどう》で いい？",
+                    "speak": "しょくどうで いい？",
+                    "id_text": "Di kantin saja, bagaimana?",
+                    "en_text": "Is the cafeteria okay?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t5.mp3"
+                },
+                {
+                    "id": "l20-s1-t6",
+                    "who": "you",
+                    "ja": "うん、いいよ。僕《ぼく》は カレーを 食《た》べる。",
+                    "speak": "うん、いいよ。ぼくは カレーを たべる。",
+                    "id_text": "Ya, boleh. Aku makan kari.",
+                    "accept": [
+                        "うん、いいよ。僕は カレーを 食べる。",
+                        "うん、いいよ。僕はカレーを食べる。"
+                    ],
+                    "en_text": "Yeah, fine. I'll have curry.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t6.mp3"
+                },
+                {
+                    "id": "l20-s1-t7",
+                    "who": "partner",
+                    "ja": "そう？ 僕《ぼく》も カレーを 食《た》べるよ。",
+                    "speak": "そう？ ぼくも カレーを たべるよ。",
+                    "id_text": "Oh ya? Aku juga makan kari.",
+                    "en_text": "Oh? I'll have curry too.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l20-s2",
+            "title_id": "Mengajak nonton film (santai)",
+            "title_en": "Inviting someone to a movie (casual)",
+            "setting_id": "Teman perempuan sekantor mengajakmu nonton film akhir pekan.",
+            "setting_en": "A female coworker invites you to a movie this weekend.",
+            "goal_id": "Memakai bentuk biasa untuk mengajak dan menjawab.",
+            "goal_en": "Use the plain form to invite and answer.",
+            "patterns": [
+                "Vない？",
+                "V(辞書形)",
+                "N？ (tanpa だ)"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l20-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディくん、週末《しゅうまつ》、何《なに》か する？",
+                    "speak": "ブディくん、しゅうまつ、なにか する？",
+                    "id_text": "Budi, akhir pekan ada rencana?",
+                    "en_text": "Budi, are you doing anything this weekend?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t1.mp3"
+                },
+                {
+                    "id": "l20-s2-t2",
+                    "who": "you",
+                    "ja": "ううん、何《なに》も しない。すずきさんは？",
+                    "speak": "ううん、なにも しない。すずきさんは？",
+                    "id_text": "Tidak, tidak ada apa-apa. Kalau kamu?",
+                    "accept": [
+                        "ううん、何も しない。すずきさんは？",
+                        "ううん、何もしない。すずきさんは？"
+                    ],
+                    "en_text": "No, nothing. How about you?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t2.mp3"
+                },
+                {
+                    "id": "l20-s2-t3",
+                    "who": "partner",
+                    "ja": "私《わたし》は 映画《えいが》を 見《み》に 行《い》く。いっしょに 行《い》かない？",
+                    "speak": "わたしは えいがを みに いく。いっしょに いかない？",
+                    "id_text": "Aku mau nonton film. Mau ikut?",
+                    "en_text": "I'm going to see a movie. Want to come?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t3.mp3"
+                },
+                {
+                    "id": "l20-s2-t4",
+                    "who": "you",
+                    "ja": "うん、行《い》く。何《なん》の 映画《えいが》？",
+                    "speak": "うん、いく。なんの えいが？",
+                    "id_text": "Ya, aku ikut. Film apa?",
+                    "accept": [
+                        "うん、行く。何の 映画？",
+                        "うん、行く。何の映画？"
+                    ],
+                    "en_text": "Yeah, I'll go. What movie?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t4.mp3"
+                },
+                {
+                    "id": "l20-s2-t5",
+                    "who": "partner",
+                    "ja": "おもしろい 映画《えいが》。ブディくんは 映画《えいが》、好《す》き？",
+                    "speak": "おもしろい えいが。ブディくんは えいが、すき？",
+                    "id_text": "Film yang seru. Budi suka film?",
+                    "en_text": "A fun one. Do you like movies, Budi?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t5.mp3"
+                },
+                {
+                    "id": "l20-s2-t6",
+                    "who": "you",
+                    "ja": "うん、好《す》きだよ。何時《なんじ》に 会《あ》う？",
+                    "speak": "うん、すきだよ。なんじに あう？",
+                    "id_text": "Ya, aku suka. Jam berapa bertemu?",
+                    "accept": [
+                        "うん、好きだよ。何時に 会う？",
+                        "うん、好きだよ。何時に会う？"
+                    ],
+                    "en_text": "Yeah, I like them. What time shall we meet?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t6.mp3"
+                },
+                {
+                    "id": "l20-s2-t7",
+                    "who": "partner",
+                    "ja": "二時《にじ》に 駅《えき》で。待《ま》ってるよ。",
+                    "speak": "にじに えきで。まってるよ。",
+                    "id_text": "Jam dua di stasiun. Aku tunggu ya.",
+                    "en_text": "At two, at the station. I'll be waiting.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l20-s3",
+            "title_id": "Menawarkan makanan (santai)",
+            "title_en": "Offering food (casual)",
+            "setting_id": "Teman menawarkan makanan dan kamu menjawab dengan bahasa santai.",
+            "setting_en": "A friend offers you some food and you answer casually.",
+            "goal_id": "Memakai 〜けど, よかったら, dan おなかが いっぱい.",
+            "goal_en": "Use ~kedo, yokattara, and onaka ga ippai.",
+            "patterns": [
+                "〜けど、〜",
+                "よかったら、V？",
+                "おなかが いっぱい"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l20-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディくん、おなか、すいてない？",
+                    "speak": "ブディくん、おなか、すいてない？",
+                    "id_text": "Budi, kamu tidak lapar?",
+                    "en_text": "Budi, aren't you hungry?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t1.mp3"
+                },
+                {
+                    "id": "l20-s3-t2",
+                    "who": "you",
+                    "ja": "うん、すいてる。朝《あさ》ごはんを 食《た》べなかったから。",
+                    "speak": "うん、すいてる。あさごはんを たべなかったから。",
+                    "id_text": "Ya, lapar. Soalnya aku tidak sarapan.",
+                    "accept": [
+                        "うん、すいてる。朝ごはんを 食べなかったから。",
+                        "うん、すいてる。朝ごはんを食べなかったから。"
+                    ],
+                    "en_text": "Yeah, I am. I didn't eat breakfast.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t2.mp3"
+                },
+                {
+                    "id": "l20-s3-t3",
+                    "who": "partner",
+                    "ja": "これ、高《たか》いけど、おいしい サンドイッチだよ。",
+                    "speak": "これ、たかいけど、おいしい サンドイッチだよ。",
+                    "id_text": "Ini mahal, tapi sandwich yang enak lho.",
+                    "en_text": "This is expensive, but it's a tasty sandwich.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t3.mp3"
+                },
+                {
+                    "id": "l20-s3-t4",
+                    "who": "you",
+                    "ja": "ありがとう。一《ひと》つ もらうよ。……おいしい！",
+                    "speak": "ありがとう。ひとつ もらうよ。おいしい！",
+                    "id_text": "Terima kasih. Aku ambil satu. ... Enak!",
+                    "accept": [
+                        "ありがとう。一つ もらうよ。……おいしい！",
+                        "ありがとう。一つもらうよ。……おいしい！"
+                    ],
+                    "en_text": "Thanks. I'll take one. ... Delicious!",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t4.mp3"
+                },
+                {
+                    "id": "l20-s3-t5",
+                    "who": "partner",
+                    "ja": "よかったら、もう 一《ひと》つ 食《た》べる？",
+                    "speak": "よかったら、もう ひとつ たべる？",
+                    "id_text": "Kalau mau, makan satu lagi?",
+                    "en_text": "If you like, want another one?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t5.mp3"
+                },
+                {
+                    "id": "l20-s3-t6",
+                    "who": "you",
+                    "ja": "ううん、もう おなかが いっぱいだよ。ありがとう。",
+                    "speak": "ううん、もう おなかが いっぱいだよ。ありがとう。",
+                    "id_text": "Tidak, aku sudah kenyang. Terima kasih.",
+                    "accept": [
+                        "ううん、もう おなかが いっぱいだよ。ありがとう。",
+                        "ううん、もうおなかがいっぱいだよ。ありがとう。"
+                    ],
+                    "en_text": "No, I'm already full. Thanks.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t6.mp3"
+                },
+                {
+                    "id": "l20-s3-t7",
+                    "who": "partner",
+                    "ja": "そう。私《わたし》が 食《た》べるね。",
+                    "speak": "そう。わたしが たべるね。",
+                    "id_text": "Begitu. Kalau begitu aku yang makan ya.",
+                    "en_text": "Okay. Then I'll eat it.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l20-s4",
+            "title_id": "Visa dan kimono (santai)",
+            "title_en": "Visa and kimono (casual)",
+            "setting_id": "Teman sekantor mengobrol santai soal visa dan toko kimono.",
+            "setting_en": "A coworker chats casually about visas and a kimono shop.",
+            "goal_id": "Memakai bentuk biasa dan こっち／そっち／あっち／どっち.",
+            "goal_en": "Use the plain form and kocchi / socchi / acchi / docchi.",
+            "patterns": [
+                "V(普通形)",
+                "こっち／あっち／どっち",
+                "Vない？"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l20-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディくんは 来年《らいねん》 日本《にほん》で 働《はたら》く？",
+                    "speak": "ブディくんは らいねん にほんで はたらく？",
+                    "id_text": "Budi, tahun depan kamu bekerja di Jepang?",
+                    "en_text": "Budi, will you work in Japan next year?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t1.mp3"
+                },
+                {
+                    "id": "l20-s4-t2",
+                    "who": "you",
+                    "ja": "うん、働《はたら》く。でも、ビザが 要《い》る。",
+                    "speak": "うん、はたらく。でも、ビザが いる。",
+                    "id_text": "Ya, bekerja. Tapi perlu visa.",
+                    "accept": [
+                        "うん、働く。でも、ビザが 要る。",
+                        "うん、働く。でも、ビザが要る。"
+                    ],
+                    "en_text": "Yeah. But I need a visa.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t2.mp3"
+                },
+                {
+                    "id": "l20-s4-t3",
+                    "who": "partner",
+                    "ja": "ビザは もう 調《しら》べた？",
+                    "speak": "ビザは もう しらべた？",
+                    "id_text": "Sudah kamu cek soal visanya?",
+                    "en_text": "Have you already looked into the visa?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t3.mp3"
+                },
+                {
+                    "id": "l20-s4-t4",
+                    "who": "you",
+                    "ja": "ううん、まだ。会社《かいしゃ》の 人《ひと》に 聞《き》く。",
+                    "speak": "ううん、まだ。かいしゃの ひとに きく。",
+                    "id_text": "Belum. Aku akan tanya orang kantor.",
+                    "accept": [
+                        "ううん、まだ。会社の 人に 聞く。",
+                        "ううん、まだ。会社の人に聞く。"
+                    ],
+                    "en_text": "Not yet. I'll ask someone at the company.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t4.mp3"
+                },
+                {
+                    "id": "l20-s4-t5",
+                    "who": "partner",
+                    "ja": "そう。着物《きもの》を 見《み》に 行《い》かない？ あっちに デパートが あるよ。",
+                    "speak": "そう。きものを みに いかない？ あっちに デパートが あるよ。",
+                    "id_text": "Begitu. Mau lihat kimono? Di sana ada department store.",
+                    "en_text": "I see. Want to go look at kimono? There's a department store over there.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t5.mp3"
+                },
+                {
+                    "id": "l20-s4-t6",
+                    "who": "you",
+                    "ja": "いいね。デパートは どっち？ こっち？",
+                    "speak": "いいね。デパートは どっち？ こっち？",
+                    "id_text": "Boleh. Department store-nya ke arah mana? Sini?",
+                    "accept": [
+                        "いいね。デパートは どっち？ こっち？",
+                        "いいね。デパートはどっち？こっち？"
+                    ],
+                    "en_text": "Sounds good. Which way is the department store? This way?",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t6.mp3"
+                },
+                {
+                    "id": "l20-s4-t7",
+                    "who": "partner",
+                    "ja": "あっち。ここから 近《ちか》いよ。",
+                    "speak": "あっち。ここから ちかいよ。",
+                    "id_text": "Ke sana. Dekat dari sini.",
+                    "en_text": "That way. It's close from here.",
+                    "audio": "/audio/kaiwa/lesson-20/l20-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

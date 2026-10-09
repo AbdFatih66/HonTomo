@@ -1,0 +1,355 @@
+{
+    "id": 17,
+    "level": "N4",
+    "title_id": "Pelajaran 17 (N4): Menabung untuk Apa?",
+    "title_en": "N4 Lesson 17: What Are You Saving For?",
+    "scenarios": [
+        {
+            "id": "n4l17-s1",
+            "title_id": "Tujuan belajar bahasa Jepang",
+            "title_en": "Why you study Japanese",
+            "setting_id": "Rekan kerja bertanya mengapa kamu belajar bahasa Jepang.",
+            "setting_en": "A colleague asks why you study Japanese.",
+            "goal_id": "Menyatakan tujuan dengan 〜ために dan jumlah dengan 〜も.",
+            "goal_en": "State a purpose with 〜ために and an amount with 〜も.",
+            "patterns": [
+                "V(kamus) ために",
+                "Bilangan も"
+            ],
+            "partner": {
+                "name": "田口",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l17-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは どうして 日本語《にほんご》を 勉強《べんきょう》して いるんですか。",
+                    "speak": "ブディさんは どうして にほんごを べんきょうして いるんですか。",
+                    "id_text": "Budi, kenapa kamu belajar bahasa Jepang?",
+                    "en_text": "Budi, why are you studying Japanese?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l17-s1-t2",
+                    "who": "you",
+                    "ja": "日本《にほん》で 働《はたら》く ために 勉強《べんきょう》して います。",
+                    "speak": "にほんで はたらく ために べんきょうして います。",
+                    "id_text": "Saya belajar untuk bekerja di Jepang.",
+                    "en_text": "I study in order to work in Japan.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s1-t2.mp3",
+                    "accept": [
+                        "日本で 働く ために 勉強して います。",
+                        "にほんで はたらく ために べんきょうして います。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。毎日《まいにち》 どのくらい 勉強《べんきょう》しますか。",
+                    "speak": "そうですか。まいにち どのくらい べんきょうしますか。",
+                    "id_text": "Begitu. Berapa lama kamu belajar setiap hari?",
+                    "en_text": "I see. How long do you study every day?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l17-s1-t4",
+                    "who": "you",
+                    "ja": "毎日《まいにち》 二時間《にじかん》も 勉強《べんきょう》します。",
+                    "speak": "まいにち にじかんも べんきょうします。",
+                    "id_text": "Setiap hari saya belajar sampai dua jam.",
+                    "en_text": "I study as long as two hours every day.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s1-t4.mp3",
+                    "accept": [
+                        "毎日 二時間も 勉強します。",
+                        "まいにち にじかんも べんきょうします。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s1-t5",
+                    "who": "partner",
+                    "ja": "すごいですね。きっと 上手《じょうず》に なりますよ。",
+                    "speak": "すごいですね。きっと じょうずに なりますよ。",
+                    "id_text": "Hebat. Pasti kamu akan jadi pandai.",
+                    "en_text": "Great. I am sure you will get good.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l17-s1-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。がんばります。",
+                    "speak": "ありがとうございます。がんばります。",
+                    "id_text": "Terima kasih. Saya akan berusaha.",
+                    "en_text": "Thank you. I will do my best.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s1-t6.mp3",
+                    "accept": [
+                        "ありがとうございます。がんばります。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l17-s2",
+            "title_id": "Membeli alat dapur",
+            "title_en": "Buying a kitchen tool",
+            "setting_id": "Di toko perabot dapur. Kamu mencari alat untuk membuka makanan kaleng.",
+            "setting_en": "In a kitchenware shop. You look for a tool to open canned food.",
+            "goal_id": "Menyatakan kegunaan dengan 〜のに.",
+            "goal_en": "State a use with 〜のに.",
+            "patterns": [
+                "V(kamus)のに 使います／便利です"
+            ],
+            "partner": {
+                "name": "井上",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l17-s2-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。何《なに》が ほしいですか。",
+                    "speak": "いらっしゃいませ。なにが ほしいですか。",
+                    "id_text": "Selamat datang. Anda mencari apa?",
+                    "en_text": "Welcome. What would you like?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l17-s2-t2",
+                    "who": "you",
+                    "ja": "缶詰《かんづめ》を 開《あ》ける 物《もの》が ほしいんですが。",
+                    "speak": "かんづめを あける ものが ほしいんですが。",
+                    "id_text": "Saya mencari alat untuk membuka makanan kaleng.",
+                    "en_text": "I am looking for something to open canned food.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s2-t2.mp3",
+                    "accept": [
+                        "缶詰を 開ける 物が ほしいんですが。",
+                        "かんづめを あける ものが ほしいんですが。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s2-t3",
+                    "who": "partner",
+                    "ja": "それなら この 缶切《かんき》りが 便利《べんり》ですよ。",
+                    "speak": "それなら この かんきりが べんりですよ。",
+                    "id_text": "Kalau begitu, pembuka kaleng ini praktis.",
+                    "en_text": "Then this can opener is handy.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l17-s2-t4",
+                    "who": "you",
+                    "ja": "この 缶切《かんき》りは 缶詰《かんづめ》を 開《あ》けるのに 使《つか》いますか。",
+                    "speak": "この かんきりは かんづめを あけるのに つかいますか。",
+                    "id_text": "Apakah pembuka kaleng ini dipakai untuk membuka makanan kaleng?",
+                    "en_text": "Is this can opener used for opening canned food?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s2-t4.mp3",
+                    "accept": [
+                        "この 缶切りは 缶詰を 開けるのに 使いますか。",
+                        "この かんきりは かんづめを あけるのに つかいますか。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s2-t5",
+                    "who": "partner",
+                    "ja": "はい、そうです。丈夫《じょうぶ》ですよ。",
+                    "speak": "はい、そうです。じょうぶですよ。",
+                    "id_text": "Ya, benar. Kuat, lho.",
+                    "en_text": "Yes. It is sturdy.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l17-s2-t6",
+                    "who": "you",
+                    "ja": "じゃ、これを ください。",
+                    "speak": "じゃ、これを ください。",
+                    "id_text": "Kalau begitu, saya ambil yang ini.",
+                    "en_text": "Then I will take this one.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s2-t6.mp3",
+                    "accept": [
+                        "じゃ、これを ください。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l17-s3",
+            "title_id": "Bekerja demi keluarga",
+            "title_en": "Working for the family",
+            "setting_id": "Makan siang bersama rekan kerja. Ia heran kamu selalu pulang larut.",
+            "setting_en": "Lunch with a colleague who wonders why you always work late.",
+            "goal_id": "Memakai Nのために untuk menyatakan demi siapa.",
+            "goal_en": "Use Nのために to say who something is for.",
+            "patterns": [
+                "Nの ために"
+            ],
+            "partner": {
+                "name": "ケン",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l17-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは いつも 遅《おそ》くまで 働《はたら》いて いますね。",
+                    "speak": "ブディさんは いつも おそくまで はたらいて いますね。",
+                    "id_text": "Budi, kamu selalu bekerja sampai larut, ya.",
+                    "en_text": "Budi, you always work late.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l17-s3-t2",
+                    "who": "you",
+                    "ja": "はい。家族《かぞく》の ために 働《はたら》いて います。",
+                    "speak": "はい。かぞくの ために はたらいて います。",
+                    "id_text": "Ya. Saya bekerja demi keluarga.",
+                    "en_text": "Yes. I work for my family.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s3-t2.mp3",
+                    "accept": [
+                        "はい。家族の ために 働いて います。",
+                        "はい。かぞくの ために はたらいて います。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s3-t3",
+                    "who": "partner",
+                    "ja": "家族《かぞく》は 日本《にほん》に いますか。",
+                    "speak": "かぞくは にほんに いますか。",
+                    "id_text": "Apakah keluargamu ada di Jepang?",
+                    "en_text": "Is your family in Japan?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l17-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、国《くに》に います。毎週《まいしゅう》 電話《でんわ》を かけます。",
+                    "speak": "いいえ、くにに います。まいしゅう でんわを かけます。",
+                    "id_text": "Tidak, mereka ada di tanah air. Setiap minggu saya menelepon.",
+                    "en_text": "No, they are back home. I call them every week.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s3-t4.mp3",
+                    "accept": [
+                        "いいえ、国に います。毎週 電話を かけます。",
+                        "いいえ、くにに います。まいしゅう でんわを かけます。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s3-t5",
+                    "who": "partner",
+                    "ja": "大変《たいへん》ですね。",
+                    "speak": "たいへんですね。",
+                    "id_text": "Berat, ya.",
+                    "en_text": "That sounds hard.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l17-s3-t6",
+                    "who": "you",
+                    "ja": "いいえ、家族《かぞく》の ためですから、だいじょうぶです。",
+                    "speak": "いいえ、かぞくの ためですから、だいじょうぶです。",
+                    "id_text": "Tidak, karena demi keluarga, saya baik-baik saja.",
+                    "en_text": "No, it is for my family, so I am fine.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s3-t6.mp3",
+                    "accept": [
+                        "いいえ、家族の ためですから、だいじょうぶです。",
+                        "いいえ、かぞくの ためですから、だいじょうぶです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l17-s4",
+            "title_id": "Lagu dan penciptanya",
+            "title_en": "A song and its composer",
+            "setting_id": "Di kafe terdengar lagu merdu. Rekan bertanya siapa penciptanya.",
+            "setting_en": "A lovely song plays in a cafe. A colleague asks who wrote it.",
+            "goal_id": "Memakai 〜によって pada kalimat pasif.",
+            "goal_en": "Use 〜によって in a passive sentence.",
+            "patterns": [
+                "Pelaku によって V(受身)"
+            ],
+            "partner": {
+                "name": "森",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l17-s4-t1",
+                    "who": "partner",
+                    "ja": "いい 歌《うた》ですね。だれが 作《つく》ったんですか。",
+                    "speak": "いい うたですね。だれが つくったんですか。",
+                    "id_text": "Lagunya bagus, ya. Siapa yang menciptakannya?",
+                    "en_text": "Nice song. Who wrote it?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l17-s4-t2",
+                    "who": "you",
+                    "ja": "有名《ゆうめい》な 音楽家《おんがくか》によって 作《つく》られました。",
+                    "speak": "ゆうめいな おんがくかによって つくられました。",
+                    "id_text": "Lagu ini diciptakan oleh musisi terkenal.",
+                    "en_text": "It was written by a famous musician.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s4-t2.mp3",
+                    "accept": [
+                        "有名な 音楽家によって 作られました。",
+                        "ゆうめいな おんがくかによって つくられました。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s4-t3",
+                    "who": "partner",
+                    "ja": "そうですか。いつ 作《つく》られましたか。",
+                    "speak": "そうですか。いつ つくられましたか。",
+                    "id_text": "Begitu. Kapan diciptakan?",
+                    "en_text": "I see. When was it written?",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l17-s4-t4",
+                    "who": "you",
+                    "ja": "十年前《じゅうねんまえ》に 作《つく》られました。",
+                    "speak": "じゅうねんまえに つくられました。",
+                    "id_text": "Diciptakan sepuluh tahun lalu.",
+                    "en_text": "It was written ten years ago.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s4-t4.mp3",
+                    "accept": [
+                        "十年前に 作られました。",
+                        "じゅうねんまえに つくられました。"
+                    ]
+                },
+                {
+                    "id": "n4l17-s4-t5",
+                    "who": "partner",
+                    "ja": "今《いま》も 子《こ》どもたちが よく 歌《うた》って いますね。",
+                    "speak": "いまも こどもたちが よく うたって いますね。",
+                    "id_text": "Sampai sekarang anak-anak sering menyanyikannya.",
+                    "en_text": "Children still sing it often.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l17-s4-t6",
+                    "who": "you",
+                    "ja": "はい。いい 歌《うた》ですね。",
+                    "speak": "はい。いい うたですね。",
+                    "id_text": "Ya. Lagu yang bagus.",
+                    "en_text": "Yes. It is a nice song.",
+                    "audio": "/audio/kaiwa/lesson-n4-17/n4l17-s4-t6.mp3",
+                    "accept": [
+                        "はい。いい 歌ですね。",
+                        "はい。いい うたですね。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

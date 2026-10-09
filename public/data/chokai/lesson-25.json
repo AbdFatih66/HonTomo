@@ -1,0 +1,305 @@
+{
+    "id": 25,
+    "focus": "Pengandaian dan konsesi — 〜たら、〜ても、もし〜たら、すぐ〜",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、休みになったら、何をしたいですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "国へ帰りたいです。田口さんは。"
+            },
+            {
+                "speaker": "female",
+                "text": "お金があったら、外国を旅行したいです。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいですね。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-25/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l25-kq1",
+                "prompt": "田口《たぐち》さんは、お金《かね》が　あったら、何《なに》を　したいですか。",
+                "choices": [
+                    "外国《がいこく》を　旅行《りょこう》したいです。",
+                    "国《くに》へ　帰《かえ》りたいです。",
+                    "車《くるま》を　買《か》いたいです。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kalau punya uang, Taguchi ingin bepergian ke luar negeri.",
+                    "en": "If she had money, Taguchi would want to travel abroad."
+                },
+                "audio": null
+            },
+            {
+                "id": "l25-kq2",
+                "prompt": "男《おとこ》の　人《ひと》は、休《やす》みに　なったら、何《なに》を　したいですか。",
+                "choices": [
+                    "国《くに》へ　帰《かえ》りたいです。",
+                    "外国《がいこく》を　旅行《りょこう》したいです。",
+                    "うちで　休《やす》みたいです。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kalau libur, laki-laki itu ingin pulang kampung.",
+                    "en": "When he gets time off, the man wants to go back to his home country."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l25-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "もし、たくさんお金があったら、何をしたいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "外国を旅行したいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q1.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　お金《かね》が　あったら、何《なに》を　したいですか。",
+            "choices": [
+                "外国《がいこく》を　旅行《りょこう》したいです。",
+                "車《くるま》を　買《か》いたいです。",
+                "大《おお》きい　うちを　買《か》いたいです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jika punya banyak uang, ia ingin bepergian ke luar negeri.",
+                "en": "If she had a lot of money, she would travel abroad."
+            }
+        },
+        {
+            "id": "l25-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あした、雨が降ったら、どうしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "うちで映画を見ます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q2.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　あした　雨《あめ》が　降《ふ》ったら、何《なに》を　しますか。",
+            "choices": [
+                "うちで　掃除《そうじ》を　します。",
+                "うちで　映画《えいが》を　見《み》ます。",
+                "うちで　本《ほん》を　読《よ》みます。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jika besok hujan ia menonton film di rumah.",
+                "en": "If it rains tomorrow, he will watch a movie at home."
+            }
+        },
+        {
+            "id": "l25-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "仕事が終わったら、どこへ行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すぐ、銀行へ行きます。それから、晩ごはんを食べに行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q3.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　仕事《しごと》が　終《お》わったら、最初《さいしょ》に　どこへ　行《い》きますか。",
+            "choices": [
+                "銀行《ぎんこう》",
+                "図書館《としょかん》",
+                "郵便局《ゆうびんきょく》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Setelah kerja ia langsung ke bank.",
+                "en": "After work he goes straight to the bank."
+            }
+        },
+        {
+            "id": "l25-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あしたは、雨が降っても、サッカーをしますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、雨が降っても、します。でも、雪が降ったら、しません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q4.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　どんな　とき、サッカーを　しませんか。",
+            "choices": [
+                "暑《あつ》いとき",
+                "雪《ゆき》が　降《ふ》ったとき",
+                "雨《あめ》が　降《ふ》ったとき"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia tidak main sepak bola bila turun salju.",
+                "en": "She won't play football if it snows."
+            }
+        },
+        {
+            "id": "l25-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あの車、高いですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "高くても、買いたいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どう　しますか。",
+            "choices": [
+                "高《たか》くても　買《か》いたいです。",
+                "安《やす》くなったら　買《か》います。",
+                "高《たか》かったら　買《か》いません。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Meskipun mahal ia ingin membelinya.",
+                "en": "Even if it's expensive, he wants to buy it."
+            }
+        },
+        {
+            "id": "l25-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来月、休みになったら、国へ帰りますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、帰ります。母に会いたいですから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　休《やす》みに　なったら、国《くに》へ　帰《かえ》ります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bila libur ia pulang kampung. Jawaban: Benar (○).",
+                "en": "She will go home if she gets time off. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l25-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あしたのテニス、雨が降ったら、どうしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "雨が降っても、します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　雨《あめ》が　降《ふ》ったら、テニスを　しません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Meski hujan tetap main. Jawaban: Salah (×).",
+                "en": "He plays even if it rains. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l25-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この時計、五千円です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "高いですね。もう少し安かったら、買います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q8.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　この　時計《とけい》を　買《か》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia belum membelinya. Jawaban: Salah (×).",
+                "en": "She has not bought it. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l25-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日曜日、天気がよかったら、いっしょに公園へ行きませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいですね。でも、雨だったら、うちで映画を見ましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q9.mp3",
+            "prompt": "雨《あめ》だったら、公園《こうえん》へ　行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jika hujan mereka menonton film di rumah. Jawaban: Salah (×).",
+                "en": "If it rains, they will watch a movie at home. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l25-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "疲れても、毎日、日本語を勉強していますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ。疲れても、少し勉強します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-25/l25-q10.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　疲《つか》れていても、勉強《べんきょう》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Meski lelah ia tetap belajar sedikit. Jawaban: Benar (○).",
+                "en": "Even when tired, he studies a little. Answer: True (○)."
+            }
+        }
+    ]
+}

@@ -1,0 +1,305 @@
+{
+    "id": 22,
+    "focus": "Keterangan benda dengan klausa — 〜する人・〜した物・〜している所・〜という（bentuk biasa + kata benda）",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、あの眼鏡をかけている人は、だれですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "あの人は、わたしが働いている銀行の吉川さんです。"
+            },
+            {
+                "speaker": "male",
+                "text": "そうですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "きのう、いっしょに映画を見た人です。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-22/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l22-kq1",
+                "prompt": "眼鏡《めがね》を　かけている　人《ひと》は、だれですか。",
+                "choices": [
+                    "吉川《よしかわ》さん",
+                    "田口《たぐち》さん",
+                    "ブディさん"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Orang berkacamata itu adalah Yoshikawa.",
+                    "en": "The person wearing glasses is Yoshikawa."
+                },
+                "audio": null
+            },
+            {
+                "id": "l22-kq2",
+                "prompt": "吉川《よしかわ》さんは、田口《たぐち》さんと、きのう　何《なに》を　しましたか。",
+                "choices": [
+                    "映画《えいが》を　見《み》ました。",
+                    "食事《しょくじ》を　しました。",
+                    "買《か》い物《もの》を　しました。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kemarin Yoshikawa menonton film bersama Taguchi.",
+                    "en": "Yesterday, Yoshikawa watched a movie with Taguchi."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l22-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すてきなかばんですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとう。これは、母にもらったかばんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q1.mp3",
+            "prompt": "このかばんは　だれに　もらいましたか。",
+            "choices": [
+                "お母《かあ》さん",
+                "お姉《ねえ》さん",
+                "友達《ともだち》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Tas itu dari ibunya.",
+                "en": "She got the bag from her mother."
+            }
+        },
+        {
+            "id": "l22-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。ブラウンさんは、どの人ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あそこで、コーヒーを飲んでいる人です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q2.mp3",
+            "prompt": "ブラウンさんは　どの　人《ひと》ですか。",
+            "choices": [
+                "電話《でんわ》を　かけている人《ひと》",
+                "コーヒーを　飲《の》んでいる人《ひと》",
+                "新聞《しんぶん》を　読《よ》んでいる人《ひと》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Brown adalah orang yang sedang minum kopi.",
+                "en": "Brown is the person drinking coffee."
+            }
+        },
+        {
+            "id": "l22-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きのう、行ったレストランは、どうでしたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "わたしが行った店は、安くて、おいしかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q3.mp3",
+            "prompt": "女《おんな》の　人《ひと》が　行《い》った　店《みせ》は　どうでしたか。",
+            "choices": [
+                "安《やす》いですが、おいしくなかったです。",
+                "安《やす》くて、おいしかったです。",
+                "高《たか》くて、おいしかったです。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Restoran yang ia datangi murah dan enak.",
+                "en": "The restaurant she went to was cheap and delicious."
+            }
+        },
+        {
+            "id": "l22-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あした、いっしょに昼ごはんを食べませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません。あしたは、友達と会う約束があります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どうして　いっしょに　食《た》べませんか。",
+            "choices": [
+                "病院《びょういん》へ　行《い》かなければならないから",
+                "仕事《しごと》が　あるから",
+                "友達《ともだち》と　会《あ》う　約束《やくそく》が　あるから"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Ia sudah berjanji bertemu teman.",
+                "en": "He has a promise to meet a friend."
+            }
+        },
+        {
+            "id": "l22-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ヌルさんは、どんな人が好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "わたしは、いっしょにスポーツをする人が好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　どんな　人《ひと》が　好《す》きですか。",
+            "choices": [
+                "いっしょに　スポーツを　する人《ひと》",
+                "いっしょに　料理《りょうり》を　作《つく》る人《ひと》",
+                "いっしょに　歌《うた》を　歌《うた》う人《ひと》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia suka orang yang berolahraga bersama.",
+                "en": "She likes people who play sports together."
+            }
+        },
+        {
+            "id": "l22-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの、赤いシャツを着ている人は、だれですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あの人は、ハンさんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q6.mp3",
+            "prompt": "赤《あか》い　シャツを　着《き》ている人《ひと》は　ハンさんです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Orang berkemeja merah adalah Han. Jawaban: Benar (○).",
+                "en": "The person in the red shirt is Han. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l22-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きのう見た映画は、どうでしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "つまらなかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　きのう　見《み》た　映画《えいが》が　おもしろかったです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Filmnya membosankan. Jawaban: Salah (×).",
+                "en": "The film was boring. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l22-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "来年、行きたい国は、どこですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "インドです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》が　行《い》きたい　国《くに》は　インドです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Negara yang ingin ia kunjungi: India. Jawaban: Benar (○).",
+                "en": "The country he wants to visit is India. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l22-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "これは、だれが撮った写真ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達が撮った写真です。友達は今、アメリカにいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　友達《ともだち》は　今《いま》　日本《にほん》に　います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Temannya sekarang di Amerika. Jawaban: Salah (×).",
+                "en": "His friend is in America now. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l22-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした、来る人は、何人ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "六人です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-22/l22-q10.mp3",
+            "prompt": "あした　来《く》る　人《ひと》は　六人《ろくにん》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Yang datang besok enam orang. Jawaban: Benar (○).",
+                "en": "Six people are coming tomorrow. Answer: True (○)."
+            }
+        }
+    ]
+}

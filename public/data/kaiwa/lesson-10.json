@@ -1,0 +1,383 @@
+{
+    "id": 10,
+    "level": "N5",
+    "title_id": "Pelajaran 10 — Ada & Ruang",
+    "title_en": "Lesson 10 — Existence & Location",
+    "scenarios": [
+        {
+            "id": "l10-s1",
+            "title_id": "Isi kulkas",
+            "title_en": "Inside the fridge",
+            "setting_id": "Suzuki bertanya apa saja isi kulkas di rumahmu.",
+            "setting_en": "Suzuki asks what is in the fridge at your place.",
+            "goal_id": "Memakai 〜に 〜が あります dan 〜や 〜.",
+            "goal_en": "Use ~ni ~ga arimasu and ~ya ~.",
+            "patterns": [
+                "(場所)に KBが あります",
+                "KB1や KB2",
+                "KBは ありません"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l10-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、れいぞうこの 中《なか》に 何《なに》が ありますか。",
+                    "speak": "ブディさん、れいぞうこの なかに なにが ありますか。",
+                    "id_text": "Budi, di dalam kulkas ada apa?",
+                    "en_text": "Budi, what is in the fridge?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t1.mp3"
+                },
+                {
+                    "id": "l10-s1-t2",
+                    "who": "you",
+                    "ja": "卵《たまご》や 牛乳《ぎゅうにゅう》が あります。",
+                    "speak": "たまごや ぎゅうにゅうが あります。",
+                    "id_text": "Ada telur dan susu.",
+                    "accept": [
+                        "卵や 牛乳が あります。",
+                        "卵や牛乳があります。"
+                    ],
+                    "en_text": "There are eggs and milk.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t2.mp3"
+                },
+                {
+                    "id": "l10-s1-t3",
+                    "who": "partner",
+                    "ja": "肉《にく》は ありますか。",
+                    "speak": "にくは ありますか。",
+                    "id_text": "Apakah ada daging?",
+                    "en_text": "Is there any meat?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t3.mp3"
+                },
+                {
+                    "id": "l10-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、ありません。魚《さかな》が あります。",
+                    "speak": "いいえ、ありません。さかなが あります。",
+                    "id_text": "Tidak ada. Ada ikan.",
+                    "accept": [
+                        "いいえ、ありません。魚が あります。",
+                        "いいえ、ありません。魚があります。"
+                    ],
+                    "en_text": "No, there isn't. There is fish.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t4.mp3"
+                },
+                {
+                    "id": "l10-s1-t5",
+                    "who": "partner",
+                    "ja": "野菜《やさい》は ありますか。",
+                    "speak": "やさいは ありますか。",
+                    "id_text": "Apakah ada sayuran?",
+                    "en_text": "Is there any vegetables?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t5.mp3"
+                },
+                {
+                    "id": "l10-s1-t6",
+                    "who": "you",
+                    "ja": "はい、あります。",
+                    "speak": "はい、あります。",
+                    "id_text": "Ya, ada.",
+                    "accept": [
+                        "はい、あります"
+                    ],
+                    "en_text": "Yes, there is.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t6.mp3"
+                },
+                {
+                    "id": "l10-s1-t7",
+                    "who": "partner",
+                    "ja": "じゃ、晩《ばん》ごはんは 魚《さかな》を 食《た》べましょう。",
+                    "speak": "じゃ、ばんごはんは さかなを たべましょう。",
+                    "id_text": "Kalau begitu, makan malam kita makan ikan.",
+                    "en_text": "Then let's eat fish for dinner.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l10-s2",
+            "title_id": "Mencari ATM",
+            "title_en": "Looking for an ATM",
+            "setting_id": "Di jalan, kamu bertanya letak ATM pada seorang kenalan.",
+            "setting_en": "On the street, you ask an acquaintance where an ATM is.",
+            "goal_id": "Memakai 〜に 〜が ありますか dan kata posisi 前／中／近く.",
+            "goal_en": "Use ~ni ~ga arimasu ka and position words mae / naka / chikaku.",
+            "patterns": [
+                "この 近くに KBが ありますか",
+                "(場所)の 前に／中に あります"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l10-s2-t1",
+                    "who": "you",
+                    "ja": "すみません、この 近《ちか》くに コンビニが ありますか。",
+                    "speak": "すみません、この ちかくに コンビニが ありますか。",
+                    "id_text": "Permisi, apakah ada minimarket di dekat sini?",
+                    "accept": [
+                        "すみません、この 近くに コンビニが ありますか。",
+                        "すみません、この近くにコンビニがありますか。"
+                    ],
+                    "en_text": "Excuse me, is there a convenience store near here?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s2-t1.mp3"
+                },
+                {
+                    "id": "l10-s2-t2",
+                    "who": "partner",
+                    "ja": "はい、あります。駅《えき》の 前《まえ》に あります。",
+                    "speak": "はい、あります。えきの まえに あります。",
+                    "id_text": "Ya, ada. Ada di depan stasiun.",
+                    "en_text": "Yes, there is. It is in front of the station.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s2-t2.mp3"
+                },
+                {
+                    "id": "l10-s2-t3",
+                    "who": "you",
+                    "ja": "ATMも ありますか。",
+                    "speak": "ATMも ありますか。",
+                    "id_text": "Apakah ATM juga ada?",
+                    "accept": [
+                        "エーティーエムも ありますか。"
+                    ],
+                    "en_text": "Is there an ATM too?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s2-t3.mp3"
+                },
+                {
+                    "id": "l10-s2-t4",
+                    "who": "partner",
+                    "ja": "はい、コンビニの 中《なか》に あります。",
+                    "speak": "はい、コンビニの なかに あります。",
+                    "id_text": "Ya, ada di dalam minimarket.",
+                    "en_text": "Yes, it is inside the convenience store.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s2-t4.mp3"
+                },
+                {
+                    "id": "l10-s2-t5",
+                    "who": "you",
+                    "ja": "どうも ありがとうございます。",
+                    "speak": "どうも ありがとうございます。",
+                    "id_text": "Terima kasih banyak.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "en_text": "Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s2-t5.mp3"
+                },
+                {
+                    "id": "l10-s2-t6",
+                    "who": "partner",
+                    "ja": "どういたしまして。",
+                    "speak": "どういたしまして。",
+                    "id_text": "Sama-sama.",
+                    "en_text": "You're welcome.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l10-s3",
+            "title_id": "Di mana orangnya?",
+            "title_en": "Where is everyone?",
+            "setting_id": "Ruang kerja sepi. Suzuki bertanya di mana rekan-rekanmu.",
+            "setting_en": "The office is quiet. Suzuki asks where your colleagues are.",
+            "goal_id": "Memakai 〜は (場所)に います untuk orang.",
+            "goal_en": "Use ~wa (place) ni imasu for people.",
+            "patterns": [
+                "(人)は (場所)に います",
+                "〜に いません"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l10-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、たなかさんは どこに いますか。",
+                    "speak": "ブディさん、たなかさんは どこに いますか。",
+                    "id_text": "Budi, Tanaka ada di mana?",
+                    "en_text": "Budi, where is Tanaka?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t1.mp3"
+                },
+                {
+                    "id": "l10-s3-t2",
+                    "who": "you",
+                    "ja": "たなかさんは 会議室《かいぎしつ》に います。",
+                    "speak": "たなかさんは かいぎしつに います。",
+                    "id_text": "Tanaka ada di ruang rapat.",
+                    "accept": [
+                        "たなかさんは 会議室に います。",
+                        "たなかさんは会議室にいます。"
+                    ],
+                    "en_text": "Tanaka is in the meeting room.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t2.mp3"
+                },
+                {
+                    "id": "l10-s3-t3",
+                    "who": "partner",
+                    "ja": "ミラーさんも 会議室《かいぎしつ》に いますか。",
+                    "speak": "ミラーさんも かいぎしつに いますか。",
+                    "id_text": "Apakah Miller juga di ruang rapat?",
+                    "en_text": "Is Miller in the meeting room too?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t3.mp3"
+                },
+                {
+                    "id": "l10-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、ミラーさんは ロビーに います。",
+                    "speak": "いいえ、ミラーさんは ロビーに います。",
+                    "id_text": "Bukan, Miller ada di lobi.",
+                    "accept": [
+                        "いいえ、ミラーさんは ロビーにいます。"
+                    ],
+                    "en_text": "No, Miller is in the lobby.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t4.mp3"
+                },
+                {
+                    "id": "l10-s3-t5",
+                    "who": "partner",
+                    "ja": "木村《きむら》さんは どこに いますか。",
+                    "speak": "きむらさんは どこに いますか。",
+                    "id_text": "Kalau Kimura ada di mana?",
+                    "en_text": "Where is Kimura?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t5.mp3"
+                },
+                {
+                    "id": "l10-s3-t6",
+                    "who": "you",
+                    "ja": "木村《きむら》さんは 会社《かいしゃ》に いません。",
+                    "speak": "きむらさんは かいしゃに いません。",
+                    "id_text": "Kimura tidak ada di kantor.",
+                    "accept": [
+                        "木村さんは 会社に いません。",
+                        "木村さんは会社にいません。"
+                    ],
+                    "en_text": "Kimura is not at the company.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t6.mp3"
+                },
+                {
+                    "id": "l10-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。ありがとうございます。",
+                    "speak": "そうですか。ありがとうございます。",
+                    "id_text": "Oh begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l10-s4",
+            "title_id": "Isi tas dan meja",
+            "title_en": "Inside the bag and on the table",
+            "setting_id": "Tanaka bertanya barang apa yang ada di tasmu dan di mana kuncinya.",
+            "setting_en": "Tanaka asks what is in your bag and where your key is.",
+            "goal_id": "Memakai kata posisi 上／中／となり dengan あります.",
+            "goal_en": "Use position words ue / naka / tonari with arimasu.",
+            "patterns": [
+                "(場所)の 上に／中に／となりに あります",
+                "KB1や KB2"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l10-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、かばんの 中《なか》に 何《なに》が ありますか。",
+                    "speak": "ブディさん、かばんの なかに なにが ありますか。",
+                    "id_text": "Budi, di dalam tas ada apa?",
+                    "en_text": "Budi, what is in your bag?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t1.mp3"
+                },
+                {
+                    "id": "l10-s4-t2",
+                    "who": "you",
+                    "ja": "ノートや ボールペンが あります。",
+                    "speak": "ノートや ボールペンが あります。",
+                    "id_text": "Ada buku catatan dan bolpoin.",
+                    "accept": [
+                        "ノートや ボールペンが あります"
+                    ],
+                    "en_text": "There is a notebook and a ballpoint pen.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t2.mp3"
+                },
+                {
+                    "id": "l10-s4-t3",
+                    "who": "partner",
+                    "ja": "かぎは どこに ありますか。",
+                    "speak": "かぎは どこに ありますか。",
+                    "id_text": "Kuncinya ada di mana?",
+                    "en_text": "Where is the key?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t3.mp3"
+                },
+                {
+                    "id": "l10-s4-t4",
+                    "who": "you",
+                    "ja": "かぎは テーブルの 上《うえ》に あります。",
+                    "speak": "かぎは テーブルの うえに あります。",
+                    "id_text": "Kuncinya ada di atas meja.",
+                    "accept": [
+                        "かぎは テーブルの 上に あります。",
+                        "鍵は テーブルの 上に あります。"
+                    ],
+                    "en_text": "The key is on the table.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t4.mp3"
+                },
+                {
+                    "id": "l10-s4-t5",
+                    "who": "partner",
+                    "ja": "ケータイは どこに ありますか。",
+                    "speak": "ケータイは どこに ありますか。",
+                    "id_text": "Ponselnya ada di mana?",
+                    "en_text": "Where is your phone?",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t5.mp3"
+                },
+                {
+                    "id": "l10-s4-t6",
+                    "who": "you",
+                    "ja": "ケータイは かぎの となりに あります。",
+                    "speak": "ケータイは かぎの となりに あります。",
+                    "id_text": "Ponselnya ada di sebelah kunci.",
+                    "accept": [
+                        "ケータイは 鍵の となりに あります。",
+                        "ケータイは かぎの 隣に あります。"
+                    ],
+                    "en_text": "The phone is next to the key.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t6.mp3"
+                },
+                {
+                    "id": "l10-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。わかりました。",
+                    "speak": "そうですか。わかりました。",
+                    "id_text": "Oh begitu. Aku mengerti.",
+                    "en_text": "I see. Understood.",
+                    "audio": "/audio/kaiwa/lesson-10/l10-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

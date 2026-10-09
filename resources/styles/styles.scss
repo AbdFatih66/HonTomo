@@ -1,0 +1,24 @@
+// Write your overrides
+@use "learning";
+
+// ─── App logo (sidebar, login, horizontal navbar) ───────────────
+// Keep the natural aspect ratio of the logo (never force width + height).
+.app-logo-img {
+  display: block;
+  flex-shrink: 0;
+  block-size: 48px;
+  inline-size: auto;
+  max-inline-size: none;
+  object-fit: contain;
+  transition: block-size 0.25s ease-in-out;
+}
+
+// Slightly tighter header so the bigger logo doesn't make the sidebar header too tall
+.layout-nav-type-vertical .layout-vertical-nav .nav-header {
+  padding-block: 0.875rem;
+}
+
+// Mini sidebar (collapsed & not hovered): shrink so the logo isn't clipped
+.layout-vertical-nav-collapsed.layout-nav-type-vertical .layout-vertical-nav:not(.hovered) .nav-header .app-logo-img {
+  block-size: 26px;
+}
