@@ -1,0 +1,320 @@
+{
+    "id": "n4-24",
+    "level": "N4",
+    "focus": "Keigo (尊敬語), Ｖれる／Ｖられる, お＋Ｖます形＋に なります, お／ご〜ください, 〜まして／〜ますので",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "いらっしゃいませ。"
+            },
+            {
+                "speaker": "male",
+                "text": "営業部の山田部長は、いらっしゃいますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい、いらっしゃいます。こちらでお待ちください。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとうございます。"
+            },
+            {
+                "speaker": "female",
+                "text": "部長は、ただいま電話中です。どうぞお掛けください。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、失礼します。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-24/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l24-kq1",
+                "audio": null,
+                "prompt": "男《おとこ》の 人《ひと》は だれに 会《あ》いたいですか。",
+                "choices": [
+                    "山田部長《やまだぶちょう》",
+                    "田中課長《たなかかちょう》",
+                    "社長《しゃちょう》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Pria itu ingin bertemu siapa? Kepala bagian Yamada.",
+                    "en": "Who does the man want to see? Manager Yamada."
+                }
+            },
+            {
+                "id": "n4l24-kq2",
+                "audio": null,
+                "prompt": "男《おとこ》の 人《ひと》は これから 何《なに》を しますか。",
+                "choices": [
+                    "部長《ぶちょう》の 部屋《へや》へ 行《い》く",
+                    "帰《かえ》る",
+                    "ここで 待《ま》つ"
+                ],
+                "answer": 2,
+                "translate": {
+                    "id": "Apa yang akan dilakukan pria itu? Menunggu di sini.",
+                    "en": "What will the man do next? Wait here."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l24-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先生は、いつ国へ帰られますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "来月、帰られます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q1.mp3",
+            "prompt": "先生《せんせい》は いつ 国《くに》へ 帰《かえ》られますか。",
+            "choices": [
+                "今月《こんげつ》",
+                "来月《らいげつ》",
+                "来週《らいしゅう》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kapan guru pulang ke negaranya? Bulan depan.",
+                "en": "When will the teacher return to their country? Next month."
+            }
+        },
+        {
+            "id": "n4l24-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "社長は、何をめしあがりますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "コーヒーをめしあがります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q2.mp3",
+            "prompt": "社長《しゃちょう》は 何《なに》を 飲《の》みますか。",
+            "choices": [
+                "紅茶《こうちゃ》",
+                "ジュース",
+                "コーヒー"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang diminum direktur utama? Kopi.",
+                "en": "What will the president drink? Coffee."
+            }
+        },
+        {
+            "id": "n4l24-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "課長は、今どちらにいらっしゃいますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "会議室にいらっしゃいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q3.mp3",
+            "prompt": "課長《かちょう》は どこに いますか。",
+            "choices": [
+                "会議室《かいぎしつ》",
+                "図書館《としょかん》",
+                "食堂《しょくどう》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kepala seksi ada di mana? Ruang rapat.",
+                "en": "Where is the section chief? In the meeting room."
+            }
+        },
+        {
+            "id": "n4l24-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "お客様が、お待ちになっています。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どこでお待ちですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "受付です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q4.mp3",
+            "prompt": "お客様《きゃくさま》は どこで 待《ま》って いますか。",
+            "choices": [
+                "玄関《げんかん》",
+                "食堂《しょくどう》",
+                "受付《うけつけ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Di mana tamu menunggu? Di resepsionis.",
+                "en": "Where is the guest waiting? At the reception desk."
+            }
+        },
+        {
+            "id": "n4l24-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "バスが遅れまして、すみません。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、大丈夫ですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q5.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 謝《あやま》って いますか。",
+            "choices": [
+                "道《みち》を 間違《まちが》えたから",
+                "バスが 遅《おく》れたから",
+                "寝坊《ねぼう》したから"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Mengapa pria itu meminta maaf? Karena bus terlambat.",
+                "en": "Why is the man apologizing? The bus was late."
+            }
+        },
+        {
+            "id": "n4l24-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "先生は、何とおっしゃいましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あした休みだと、おっしゃいました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "あした 休《やす》みだと おっしゃいました。",
+                "あした 来《く》ると おっしゃいました。",
+                "あさって 休《やす》みだと おっしゃいました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jawaban pria: guru berkata besok libur.",
+                "en": "The man's answer: the teacher said tomorrow is a day off."
+            }
+        },
+        {
+            "id": "n4l24-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "部長は、もうお帰りになりましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、まだ会社にいらっしゃいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q7.mp3",
+            "prompt": "女《おんな》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "もう お帰《かえ》りに なりました。",
+                "まだ 会社《かいしゃ》に いらっしゃいます。",
+                "あした お帰《かえ》りに なります。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jawaban wanita: beliau masih ada di kantor.",
+                "en": "The woman's answer: he is still at the office."
+            }
+        },
+        {
+            "id": "n4l24-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "社長は、毎朝新聞をお読みになります。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "夕方にも、お読みになりますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q8.mp3",
+            "prompt": "社長《しゃちょう》は 毎朝《まいあさ》 新聞《しんぶん》を お読《よ》みに なります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Direktur utama membaca koran setiap pagi. (○)",
+                "en": "The president reads the newspaper every morning. (○)"
+            }
+        },
+        {
+            "id": "n4l24-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先生、どうぞお掛けください。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 女《おんな》の 人《ひと》に 立《た》って 待《ま》つように 言《い》って います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pria itu menyuruh wanita berdiri menunggu. (×) Ia mempersilakan duduk.",
+                "en": "The man tells the woman to stand and wait. (×) He invites her to sit."
+            }
+        },
+        {
+            "id": "n4l24-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "風邪をひきまして、きのう会社を休みました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "それはいけませんね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-24/n4l24-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は きのう 会社《かいしゃ》を 休《やす》みました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Wanita itu kemarin tidak masuk kantor. (○)",
+                "en": "The woman took yesterday off work. (○)"
+            }
+        }
+    ]
+}

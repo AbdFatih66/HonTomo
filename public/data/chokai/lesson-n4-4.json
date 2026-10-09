@@ -1,0 +1,308 @@
+{
+    "id": "n4-4",
+    "level": "N4",
+    "focus": "〜て います (keadaan: 開いて います, 消えて います), 〜て しまいました, に (tujuan), ありました, どこかで",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "すみません、今の　電車に　傘を　忘れて　しまいました。"
+            },
+            {
+                "speaker": "female",
+                "text": "どんな　傘ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "青い　傘です。ポケットが　ついて　います。"
+            },
+            {
+                "speaker": "female",
+                "text": "網棚の　上に　ありませんでしたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、網棚の　上に　置きました。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありました。いま、駅の　事務所に　あります。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-4/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l4-kq1",
+                "prompt": "男《おとこ》の　人《ひと》は　何《なに》を　忘《わす》れましたか。",
+                "choices": [
+                    "傘《かさ》",
+                    "かばん",
+                    "財布《さいふ》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang tertinggal? Payung.",
+                    "en": "What did he leave behind? An umbrella."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l4-kq2",
+                "prompt": "傘《かさ》は　いま　どこに　ありますか。",
+                "choices": [
+                    "駅《えき》の　事務所《じむしょ》",
+                    "電車《でんしゃ》の　中《なか》",
+                    "交番《こうばん》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Payung sekarang ada di mana? Di kantor stasiun.",
+                    "en": "Where is the umbrella now? At the station office."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l4-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ドアが　開いて　いますね。だれか　いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、会議室に　スリさんが　います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q1.mp3",
+            "prompt": "だれが　会議室《かいぎしつ》に　いますか。",
+            "choices": [
+                "スリさん",
+                "ハンさん",
+                "リナさん"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pintunya terbuka, siapa yang ada di ruang rapat? Jawaban: Sri.",
+                "en": "The door is open. Who is in the meeting room? Answer: Sri."
+            }
+        },
+        {
+            "id": "n4l4-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この　コップ、割れて　いますよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あっ、ほんとうですね。新しいのを　持って　来ます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q2.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　これから　何《なに》を　しますか。",
+            "choices": [
+                "新《あたら》しい　コップを　持《も》って　来《き》ます",
+                "割《わ》れた　コップを　洗《あら》います",
+                "コップを　買《か》いに　行《い》きます"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Gelas ini pecah. Apa yang akan dilakukan laki-laki? Mengambil gelas yang baru.",
+                "en": "This glass is cracked. What will the man do next? Bring a new glass."
+            }
+        },
+        {
+            "id": "n4l4-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、鍵が　かかって　いて、部屋に　入れません。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃ、受付で　聞きましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q3.mp3",
+            "prompt": "どこで　聞《き》きますか。",
+            "choices": [
+                "受付《うけつけ》",
+                "交番《こうばん》",
+                "駅《えき》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kuncinya terkunci, tidak bisa masuk kamar. Bertanya di mana? Di resepsionis.",
+                "en": "The door is locked and we cannot get into the room. Where will they ask? At the reception desk."
+            }
+        },
+        {
+            "id": "n4l4-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きのう、電車に　財布を　忘れて　しまいました。でも、駅員さんの　ところに　ありました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q4.mp3",
+            "prompt": "財布《さいふ》は　どこに　ありましたか。",
+            "choices": [
+                "駅員《えきいん》の　ところ",
+                "交番《こうばん》",
+                "電車《でんしゃ》の　網棚《あみだな》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kemarin dompet tertinggal di kereta, tetapi ada di tempat petugas stasiun. Dompet ada di mana? Di tempat petugas stasiun.",
+                "en": "Yesterday I left my wallet on the train, but it was at the station staff office. Where was the wallet? With the station staff."
+            }
+        },
+        {
+            "id": "n4l4-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "袋の　中に　何が　ありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "本が　二冊と、傘が　一本　あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q5.mp3",
+            "prompt": "袋《ふくろ》の　中《なか》に　何《なに》が　ありますか。",
+            "choices": [
+                "本《ほん》と　傘《かさ》",
+                "本《ほん》と　書類《しょるい》",
+                "傘《かさ》と　財布《さいふ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ada apa di dalam kantong? Buku dan payung.",
+                "en": "What is in the bag? A book and an umbrella."
+            }
+        },
+        {
+            "id": "n4l4-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、電気が　消えて　います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q6.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "あ、すぐ　つけます。",
+                "あ、すぐ　けします。",
+                "あ、すぐ　かけます。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Maaf, lampunya padam. Jawaban laki-laki: Ah, segera saya nyalakan.",
+                "en": "Excuse me, the light is off. The man answers: Oh, I will turn it on right away."
+            }
+        },
+        {
+            "id": "n4l4-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "傘は　どこに　ありましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "電車の　網棚の　上に　ありました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q7.mp3",
+            "prompt": "傘《かさ》は　どこに　ありましたか。",
+            "choices": [
+                "網棚《あみだな》の　上《うえ》",
+                "いすの　下《した》",
+                "ポケットの　中《なか》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Payung ada di mana? Di atas rak bagasi.",
+                "en": "Where was the umbrella? On the luggage rack."
+            }
+        },
+        {
+            "id": "n4l4-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ドアは　開いて　いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、閉まって　います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q8.mp3",
+            "prompt": "ドアは　閉《し》まって　います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pintunya tertutup. (Benar)",
+                "en": "The door is closed. (True)"
+            }
+        },
+        {
+            "id": "n4l4-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "かばんの　中に　鍵は　ありませんでした。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ポケットの　中に　ありましたよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q9.mp3",
+            "prompt": "鍵《かぎ》は　かばんの　中《なか》に　ありました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kunci ada di dalam tas. (Salah — kunci ada di saku.)",
+                "en": "The key was in the bag. (False — it was in the pocket.)"
+            }
+        },
+        {
+            "id": "n4l4-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "会議室の　電気が　消えて　いますね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。もう　みんな　帰って　しまいました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-4/n4l4-q10.mp3",
+            "prompt": "みんなは　もう　帰《かえ》りました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Semuanya sudah pulang. (Benar)",
+                "en": "Everyone has already gone home. (True)"
+            }
+        }
+    ]
+}

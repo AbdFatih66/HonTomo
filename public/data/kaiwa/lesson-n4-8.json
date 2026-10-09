@@ -1,0 +1,360 @@
+{
+    "id": 8,
+    "level": "N4",
+    "title_id": "Pelajaran 8: Apa Artinya Tanda Ini?",
+    "title_en": "Lesson 8: What Does This Sign Mean?",
+    "scenarios": [
+        {
+            "id": "n4l8-s1",
+            "title_id": "Membaca tulisan di tempat kerja",
+            "title_en": "Reading a notice at work",
+            "setting_id": "Rekan kerja bertanya apa yang tertulis pada sebuah kertas.",
+            "setting_en": "A colleague asks what a notice says.",
+            "goal_id": "Menyebutkan isi tulisan dan cara membacanya.",
+            "goal_en": "State what a notice says and how it is read.",
+            "patterns": [
+                "〜と書いてあります",
+                "〜と読みます"
+            ],
+            "partner": {
+                "name": "田口",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l8-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あの 紙《かみ》を 見《み》て ください。何《なん》と 書《か》いて ありますか。",
+                    "speak": "ブディさん、あの かみを みて ください。なんと かいて ありますか。",
+                    "id_text": "Budi, lihat kertas itu. Apa yang tertulis?",
+                    "en_text": "Budi, look at that paper. What does it say?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l8-s1-t2",
+                    "who": "you",
+                    "ja": "「使用中《しようちゅう》」と 書《か》いて あります。",
+                    "speak": "しようちゅうと かいて あります。",
+                    "id_text": "Tertulis \"sedang dipakai\".",
+                    "en_text": "It says \"in use\".",
+                    "accept": [
+                        "使用中と書いてあります",
+                        "使用中と書いてあります。",
+                        "しようちゅうとかいてあります"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l8-s1-t3",
+                    "who": "partner",
+                    "ja": "この 漢字《かんじ》は 何《なん》と 読《よ》みますか。",
+                    "speak": "この かんじは なんと よみますか。",
+                    "id_text": "Kanji ini dibaca apa?",
+                    "en_text": "How is this kanji read?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l8-s1-t4",
+                    "who": "you",
+                    "ja": "「しようちゅう」と 読《よ》みます。",
+                    "speak": "しようちゅうと よみます。",
+                    "id_text": "Dibaca \"shiyouchuu\".",
+                    "en_text": "It is read \"shiyouchuu\".",
+                    "accept": [
+                        "使用中と読みます",
+                        "しようちゅうとよみます"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l8-s1-t5",
+                    "who": "partner",
+                    "ja": "そうです。トイレは 今《いま》 使《つか》えませんね。",
+                    "speak": "そうです。トイレは いま つかえませんね。",
+                    "id_text": "Benar. Toilet sekarang tidak bisa dipakai, ya.",
+                    "en_text": "Right. The restroom cannot be used now.",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l8-s1-t6",
+                    "who": "you",
+                    "ja": "はい、ほかの トイレへ 行《い》きます。",
+                    "speak": "はい、ほかの トイレへ いきます。",
+                    "id_text": "Ya, saya pergi ke toilet yang lain.",
+                    "en_text": "Yes, I will go to another restroom.",
+                    "accept": [
+                        "はい、他のトイレへ行きます。",
+                        "はい、ほかのトイレにいきます"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l8-s2",
+            "title_id": "Arti sebuah tanda",
+            "title_en": "What a sign means",
+            "setting_id": "Rekan kerja menanyakan arti beberapa tanda di pabrik.",
+            "setting_en": "A colleague asks the meaning of some signs at the factory.",
+            "goal_id": "Menjelaskan arti tanda dengan 〜という意味です.",
+            "goal_en": "Explain meanings with 〜という意味です.",
+            "patterns": [
+                "Ｘは Ｙと いう 意味です",
+                "どういう 意味ですか"
+            ],
+            "partner": {
+                "name": "青木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l8-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、「立入禁止《たちいりきんし》」は どういう 意味《いみ》ですか。",
+                    "speak": "ブディさん、たちいりきんしは どういう いみですか。",
+                    "id_text": "Budi, apa arti \"tachiiri kinshi\"?",
+                    "en_text": "Budi, what does \"tachiiri kinshi\" mean?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l8-s2-t2",
+                    "who": "you",
+                    "ja": "入《はい》るなと いう 意味《いみ》です。",
+                    "speak": "はいるなと いう いみです。",
+                    "id_text": "Artinya jangan masuk.",
+                    "en_text": "It means do not enter.",
+                    "accept": [
+                        "入るなという意味です",
+                        "入るなという意味です。",
+                        "はいるなといういみです"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l8-s2-t3",
+                    "who": "partner",
+                    "ja": "そうです。じゃ、「徐行《じょこう》」は どういう 意味《いみ》ですか。",
+                    "speak": "そうです。じゃ、じょこうは どういう いみですか。",
+                    "id_text": "Benar. Lalu, apa arti \"jokou\"?",
+                    "en_text": "Right. Then what does \"jokou\" mean?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l8-s2-t4",
+                    "who": "you",
+                    "ja": "ゆっくり 行《い》くと いう 意味《いみ》です。",
+                    "speak": "ゆっくり いくと いう いみです。",
+                    "id_text": "Artinya berjalan perlahan.",
+                    "en_text": "It means go slowly.",
+                    "accept": [
+                        "ゆっくり行くという意味です",
+                        "ゆっくりいくといういみです"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l8-s2-t5",
+                    "who": "partner",
+                    "ja": "正《ただ》しいです。「無料《むりょう》」は？",
+                    "speak": "ただしいです。むりょうは？",
+                    "id_text": "Benar. Kalau \"muryou\"?",
+                    "en_text": "Correct. And \"muryou\"?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l8-s2-t6",
+                    "who": "you",
+                    "ja": "お金《かね》が いらないと いう 意味《いみ》です。",
+                    "speak": "おかねが いらないと いう いみです。",
+                    "id_text": "Artinya tidak perlu bayar.",
+                    "en_text": "It means no money is needed.",
+                    "accept": [
+                        "お金がいらないという意味です",
+                        "おかねがいらないといういみです"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l8-s3",
+            "title_id": "Menyampaikan ucapan orang lain",
+            "title_en": "Passing on what someone said",
+            "setting_id": "Rekan kerja mencari seseorang yang sedang keluar.",
+            "setting_en": "A colleague is looking for someone who is out.",
+            "goal_id": "Menyampaikan ucapan orang ketiga dengan 〜と言っていました.",
+            "goal_en": "Relay a third person words with 〜と言っていました.",
+            "patterns": [
+                "〜と 言って いました"
+            ],
+            "partner": {
+                "name": "スリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l8-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、森《もり》さんは どこですか。",
+                    "speak": "ブディさん、もりさんは どこですか。",
+                    "id_text": "Budi, Pak Mori di mana?",
+                    "en_text": "Budi, where is Mr. Mori?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l8-s3-t2",
+                    "who": "you",
+                    "ja": "さっき 出《で》かけました。三時《さんじ》に 戻《もど》ると 言《い》って いました。",
+                    "speak": "さっき でかけました。さんじに もどると いって いました。",
+                    "id_text": "Tadi beliau keluar. Katanya kembali jam tiga.",
+                    "en_text": "He went out a moment ago. He said he would be back at three.",
+                    "accept": [
+                        "さっき出かけました。3時に戻ると言っていました。",
+                        "さっき出かけました。三時に戻ると言っていました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l8-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。会議《かいぎ》には 出席《しゅっせき》すると 言《い》って いましたか。",
+                    "speak": "そうですか。かいぎには しゅっせきすると いって いましたか。",
+                    "id_text": "Begitu. Apakah beliau bilang akan menghadiri rapat?",
+                    "en_text": "I see. Did he say he would attend the meeting?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l8-s3-t4",
+                    "who": "you",
+                    "ja": "はい、出席《しゅっせき》すると 言《い》って いました。",
+                    "speak": "はい、しゅっせきすると いって いました。",
+                    "id_text": "Ya, katanya akan hadir.",
+                    "en_text": "Yes, he said he would attend.",
+                    "accept": [
+                        "はい、出席すると言っていました。",
+                        "はい、しゅっせきするといっていました"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l8-s3-t5",
+                    "who": "partner",
+                    "ja": "わかりました。予定《よてい》は 変《か》わりませんね。",
+                    "speak": "わかりました。よていは かわりませんね。",
+                    "id_text": "Baik. Jadwalnya tidak berubah, ya.",
+                    "en_text": "Understood. The schedule has not changed.",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l8-s3-t6",
+                    "who": "you",
+                    "ja": "はい。あしたは 九時《くじ》からだと 言《い》って いました。",
+                    "speak": "はい。あしたは くじからだと いって いました。",
+                    "id_text": "Ya. Katanya besok mulai jam sembilan.",
+                    "en_text": "Yes. He said tomorrow starts at nine.",
+                    "accept": [
+                        "はい。明日は9時からだと言っていました。",
+                        "はい。明日は九時からだと言っていました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l8-s4",
+            "title_id": "Menitip pesan lewat telepon",
+            "title_en": "Leaving a message by phone",
+            "setting_id": "Ke pabrik menelepon, orang yang dicari sedang keluar.",
+            "setting_en": "You phone the factory and the person you want is out.",
+            "goal_id": "Menitip pesan dengan 〜と伝えていただけませんか.",
+            "goal_en": "Leave a message with 〜と伝えていただけませんか.",
+            "patterns": [
+                "〜と 伝えて いただけませんか"
+            ],
+            "partner": {
+                "name": "受付",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l8-s4-t1",
+                    "who": "partner",
+                    "ja": "もしもし、あおぞら工場《こうじょう》です。",
+                    "speak": "もしもし、あおぞらこうじょうです。",
+                    "id_text": "Halo, ini Pabrik Aozora.",
+                    "en_text": "Hello, this is Aozora Factory.",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l8-s4-t2",
+                    "who": "you",
+                    "ja": "ブディです。青木《あおき》さんは いますか。",
+                    "speak": "ブディです。あおきさんは いますか。",
+                    "id_text": "Saya Budi. Apakah Pak Aoki ada?",
+                    "en_text": "This is Budi. Is Mr. Aoki there?",
+                    "accept": [
+                        "ブディです。青木さんはいますか。",
+                        "ブディです。青木さんはいますか"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l8-s4-t3",
+                    "who": "partner",
+                    "ja": "ただいま 出《で》かけて います。",
+                    "speak": "ただいま でかけて います。",
+                    "id_text": "Beliau sedang keluar.",
+                    "en_text": "He is out at the moment.",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l8-s4-t4",
+                    "who": "you",
+                    "ja": "では、会議《かいぎ》は 九時《くじ》からだと 伝《つた》えて いただけませんか。",
+                    "speak": "では、かいぎは くじからだと つたえて いただけませんか。",
+                    "id_text": "Kalau begitu, tolong sampaikan bahwa rapat mulai jam sembilan.",
+                    "en_text": "Then could you tell him the meeting starts at nine?",
+                    "accept": [
+                        "では、会議は9時からだと伝えていただけませんか。",
+                        "では、会議は九時からだと伝えていただけませんか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l8-s4-t5",
+                    "who": "partner",
+                    "ja": "はい、伝《つた》えます。お名前《なまえ》は？",
+                    "speak": "はい、つたえます。おなまえは？",
+                    "id_text": "Baik, saya sampaikan. Siapa nama Anda?",
+                    "en_text": "Certainly. May I have your name?",
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l8-s4-t6",
+                    "who": "you",
+                    "ja": "ブディです。よろしく お願《ねが》いします。",
+                    "speak": "ブディです。よろしく おねがいします。",
+                    "id_text": "Saya Budi. Mohon bantuannya.",
+                    "en_text": "It is Budi. Thank you.",
+                    "accept": [
+                        "ブディです。よろしくお願いします。",
+                        "ブディです。よろしくおねがいします"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-8/n4l8-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

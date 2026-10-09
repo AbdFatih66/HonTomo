@@ -388,6 +388,8 @@
     "stripRuby": true,
     "targetsOf": true,
     "registerReadings": true,
-    "numbersToKana": true
+    "numbersToKana": true,
+    "LEVEL_CODES": true,
+    "useLevelChoice": true
   }
 }

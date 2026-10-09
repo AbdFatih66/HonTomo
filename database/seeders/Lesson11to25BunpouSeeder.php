@@ -15,7 +15,7 @@ class Lesson11to25BunpouSeeder extends Seeder
      * its own "Tata Bahasa (Bunpou)" lesson node (order = 0) that sits
      * BEFORE that unit's vocabulary lesson.
      *
-     * The grammar progression follows Minna no Nihongo I's own sequence
+     * The grammar progression follows the standard beginner (N5) textbook sequence
      * (counters, comparison, desire, te-form, ~ています, giving directions,
      * nai-form, dictionary form, ta-form, plain form, quoting opinions,
      * relative clauses, then the と／たら／なら conditionals), matched to
@@ -61,7 +61,7 @@ class Lesson11to25BunpouSeeder extends Seeder
 
     private function buildUnitBunpou(int $unitOrder, array $unitData): void
     {
-        $unit = Unit::where('order', $unitOrder)->first();
+        $unit = Unit::where('order', $unitOrder)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->first();
 
         if (! $unit) {
             return;
@@ -134,7 +134,7 @@ class Lesson11to25BunpouSeeder extends Seeder
     private function units(): array
     {
         $lessonByUnitOrder = fn (int $unitOrder, int $lessonOrder) => optional(
-            Lesson::whereHas('unit', fn ($q) => $q->where('order', $unitOrder))
+            Lesson::whereHas('unit', fn ($q) => $q->where('order', $unitOrder)->whereHas('level', fn ($l) => $l->where('code', 'N5')))
                 ->where('order', $lessonOrder)
                 ->first()
         )->id;

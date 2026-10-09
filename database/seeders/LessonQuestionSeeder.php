@@ -54,7 +54,7 @@ class LessonQuestionSeeder extends Seeder
     {
         [$unitOrder, $lessonOrder] = $titleOrder;
 
-        $lesson = Lesson::whereHas('unit', fn ($q) => $q->where('order', $unitOrder))
+        $lesson = Lesson::whereHas('unit', fn ($q) => $q->where('order', $unitOrder)->whereHas('level', fn ($l) => $l->where('code', 'N5')))
             ->where('order', $lessonOrder)
             ->first();
 

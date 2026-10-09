@@ -13,13 +13,16 @@
 // self-report step — same as Kana/Kanji, not like Mondaishuu's tap-to-check.
 import KaiteOboekuWritingCanvas from '@/components/learning/KaiteOboekuWritingCanvas.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
+import { useLevelChoice } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
 import kanaStrokes from '@/data/kana-strokes.json'
+import { LESSONS_N4 } from '@/data/practice/kaiteOboeruN4'
 import { $api } from '@/utils/api'
 
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
 const authStore = useAuthStore()
+const { level: levelChoice } = useLevelChoice()
 
 // Every learner-facing string below is bilingual ({ id, en }); pick the
 // active one from the current UI locale instead of hardcoding Indonesian.
@@ -810,6 +813,11 @@ function statusFor(key) {
 
 const activeLesson = ref(null)
 
+// Daftar pelajaran sesuai selektor level. Kunci progres: N5 `l{id}`, N4 `n4l{id}`
+// (bank soal N4 ada di data/practice/kaiteOboeruN4.js).
+const lessons = computed(() => (levelChoice.value === 'N4' ? LESSONS_N4 : LESSONS))
+const keyOf = lesson => `${levelChoice.value === 'N4' ? 'n4l' : 'l'}${lesson.id}`
+
 const STAGE_SETUP = 'setup'
 const STAGE_QUIZ = 'quiz'
 const STAGE_RESULT = 'result'
@@ -902,7 +910,7 @@ watch(autoNext, on => {
 })
 
 function startLesson(lesson) {
-  if (isLocked(`l${lesson.id}`))
+  if (isLocked(keyOf(lesson)))
     return
 
   clearAdvanceTimer()
@@ -967,7 +975,7 @@ function nextQuestion() {
   }
 
   if (qIndex.value + 1 >= totalQuestions.value) {
-    markProgress(`l${activeLesson.value.id}`, wrongCount.value === 0)
+    markProgress(keyOf(activeLesson.value), wrongCount.value === 0)
     stage.value = STAGE_RESULT
 
     return
@@ -1002,9 +1010,10 @@ onBeforeUnmount(clearAdvanceTimer)
       <h4 class="text-h4 mb-0">
         {{ t('kaite_oboeru.title') }}
       </h4>
+      <LevelSwitch />
     </div>
     <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ t('kaite_oboeru.subtitle') }}
+      {{ levelChoice === 'N4' ? t('kaite_oboeru.subtitle_n4') : t('kaite_oboeru.subtitle') }}
     </p>
 
     <!-- Ditunggu sampai progres selesai dimuat (progressLoaded) sebelum
@@ -1020,29 +1029,29 @@ onBeforeUnmount(clearAdvanceTimer)
 
     <div v-else class="ko-grid">
       <button
-        v-for="lesson in LESSONS"
+        v-for="lesson in lessons"
         :key="lesson.id"
         type="button"
         class="ko-card"
-        :class="`ko-card--${statusFor(`l${lesson.id}`)}`"
-        :disabled="statusFor(`l${lesson.id}`) === 'locked'"
+        :class="`ko-card--${statusFor(keyOf(lesson))}`"
+        :disabled="statusFor(keyOf(lesson)) === 'locked'"
         @click="startLesson(lesson)"
       >
         <VIcon
-          v-if="statusFor(`l${lesson.id}`) === 'mastered'"
+          v-if="statusFor(keyOf(lesson)) === 'mastered'"
           icon="tabler-crown"
           size="18"
           class="ko-card__crown ko-card__crown--gold"
         />
         <VIcon
-          v-else-if="statusFor(`l${lesson.id}`) === 'completed'"
+          v-else-if="statusFor(keyOf(lesson)) === 'completed'"
           icon="tabler-circle-check-filled"
           size="16"
           color="success"
           class="ko-card__crown"
         />
         <VIcon
-          v-else-if="statusFor(`l${lesson.id}`) === 'locked'"
+          v-else-if="statusFor(keyOf(lesson)) === 'locked'"
           icon="tabler-lock"
           size="16"
           class="ko-card__crown"

@@ -10,8 +10,8 @@ class LessonSeeder extends Seeder
 {
     public function run(): void
     {
-        $unit1 = Unit::where('order', 1)->firstOrFail();
-        $unit2 = Unit::where('order', 2)->firstOrFail();
+        $unit1 = Unit::where('order', 1)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->firstOrFail();
+        $unit2 = Unit::where('order', 2)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->firstOrFail();
 
         $lesson1a = Lesson::firstOrCreate(
             ['unit_id' => $unit1->id, 'order' => 1],

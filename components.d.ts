@@ -78,6 +78,8 @@ declare module 'vue' {
     KanjiStrokeAnimation: typeof import('./resources/js/components/kanji/KanjiStrokeAnimation.vue')['default']
     KanjiWritingCanvas: typeof import('./resources/js/components/kanji/KanjiWritingCanvas.vue')['default']
     LearningPath: typeof import('./resources/js/components/learning/LearningPath.vue')['default']
+    LevelSwitch: typeof import('./resources/js/components/learning/LevelSwitch.vue')['default']
+    ModeSwitch: typeof import('./resources/js/components/learning/ModeSwitch.vue')['default']
     MoreBtn: typeof import('./resources/js/@core/components/MoreBtn.vue')['default']
     MultipleChoiceQuestion: typeof import('./resources/js/components/learning/MultipleChoiceQuestion.vue')['default']
     Notifications: typeof import('./resources/js/@core/components/Notifications.vue')['default']

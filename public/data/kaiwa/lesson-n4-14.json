@@ -1,0 +1,393 @@
+{
+    "id": 14,
+    "level": "N4",
+    "title_id": "Maaf, Terlambat",
+    "title_en": "Sorry I Am Late",
+    "scenarios": [
+        {
+            "id": "n4l14-s1",
+            "title_id": "Terlambat karena kecelakaan",
+            "title_en": "Late because of an accident",
+            "setting_id": "Di kantor pagi hari, setelah terlambat.",
+            "setting_en": "At the office in the morning, after arriving late.",
+            "goal_id": "Menjelaskan alasan terlambat dengan 途中で dan Nで.",
+            "goal_en": "Explain why you are late using 途中で and Nで.",
+            "patterns": [
+                "途中で",
+                "Ｎで"
+            ],
+            "partner": {
+                "name": "ぶちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l14-s1-t1",
+                    "who": "partner",
+                    "ja": "遅《おそ》かったですね。どうしましたか。",
+                    "speak": "おそかったですね。どうしましたか。",
+                    "id_text": "Kamu terlambat. Ada apa?",
+                    "en_text": "You are late. What happened?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l14-s1-t2",
+                    "who": "you",
+                    "ja": "すみません。来《く》る 途中《とちゅう》で、事故《じこ》が ありました。",
+                    "speak": "すみません。くる とちゅうで、じこが ありました。",
+                    "id_text": "Maaf. Di tengah perjalanan ke sini ada kecelakaan.",
+                    "en_text": "I am sorry. There was an accident on the way here.",
+                    "accept": [
+                        "すみません。来る 途中で、事故が ありました。",
+                        "すみません。来る途中で事故がありました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l14-s1-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》でしたね。バスですか。",
+                    "speak": "それは たいへんでしたね。バスですか。",
+                    "id_text": "Wah, itu repot. Bus?",
+                    "en_text": "That must have been hard. Was it the bus?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l14-s1-t4",
+                    "who": "you",
+                    "ja": "はい、バスが 止《と》まって しまったんです。",
+                    "speak": "はい、バスが とまって しまったんです。",
+                    "id_text": "Ya, busnya berhenti.",
+                    "en_text": "Yes, the bus stopped on me.",
+                    "accept": [
+                        "はい、バスが 止まって しまったんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l14-s1-t5",
+                    "who": "partner",
+                    "ja": "電話《でんわ》は しましたか。",
+                    "speak": "でんわは しましたか。",
+                    "id_text": "Apakah kamu menelepon?",
+                    "en_text": "Did you call?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l14-s1-t6",
+                    "who": "you",
+                    "ja": "携帯電話《けいたいでんわ》を 家《いえ》に 忘《わす》れて しまいました。すみません。",
+                    "speak": "けいたいでんわを いえに わすれて しまいました。すみません。",
+                    "id_text": "Ponsel saya tertinggal di rumah. Maaf.",
+                    "en_text": "I left my mobile phone at home. I am sorry.",
+                    "accept": [
+                        "携帯電話を 家に 忘れて しまいました。すみません。",
+                        "携帯電話を家に忘れてしまいました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l14-s1-t7",
+                    "who": "partner",
+                    "ja": "わかりました。会議《かいぎ》を 始《はじ》めましょう。",
+                    "speak": "わかりました。かいぎを はじめましょう。",
+                    "id_text": "Baik. Mari kita mulai rapat.",
+                    "en_text": "I see. Let us start the meeting.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l14-s2",
+            "title_id": "Pulang lebih awal",
+            "title_en": "Leaving early",
+            "setting_id": "Di meja kerja, sore hari.",
+            "setting_en": "At your desk in the afternoon.",
+            "goal_id": "Meminta izin pulang dengan alasan memakai 〜ので.",
+            "goal_en": "Ask permission to go home giving a reason with 〜ので.",
+            "patterns": [
+                "〜ので"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l14-s2-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What is it?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l14-s2-t2",
+                    "who": "you",
+                    "ja": "熱《ねつ》が あるので、早《はや》く 帰《かえ》っても いいですか。",
+                    "speak": "ねつが あるので、はやく かえっても いいですか。",
+                    "id_text": "Karena demam, bolehkah saya pulang lebih awal?",
+                    "en_text": "I have a fever, so may I go home early?",
+                    "accept": [
+                        "熱が あるので、早く 帰っても いいですか。",
+                        "熱があるので、早く帰ってもいいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l14-s2-t3",
+                    "who": "partner",
+                    "ja": "だいじょうぶですか。",
+                    "speak": "だいじょうぶですか。",
+                    "id_text": "Apakah baik-baik saja?",
+                    "en_text": "Are you all right?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l14-s2-t4",
+                    "who": "you",
+                    "ja": "はい、家《いえ》で 休《やす》みます。",
+                    "speak": "はい、いえで やすみます。",
+                    "id_text": "Ya, saya akan istirahat di rumah.",
+                    "en_text": "Yes, I will rest at home.",
+                    "accept": [
+                        "はい、家で 休みます。",
+                        "はい、家で休みます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l14-s2-t5",
+                    "who": "partner",
+                    "ja": "そうですか。お大事《だいじ》に。",
+                    "speak": "そうですか。おだいじに。",
+                    "id_text": "Begitu. Semoga lekas sembuh.",
+                    "en_text": "I see. Take care.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l14-s2-t6",
+                    "who": "you",
+                    "ja": "ありがとう ございます。お先《さき》に 失礼《しつれい》します。",
+                    "speak": "ありがとう ございます。おさきに しつれいします。",
+                    "id_text": "Terima kasih. Saya pamit duluan.",
+                    "en_text": "Thank you. I will leave first.",
+                    "accept": [
+                        "ありがとう ございます。お先に 失礼します。",
+                        "ありがとうございます。お先に失礼します。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l14-s2-t7",
+                    "who": "partner",
+                    "ja": "お疲《つか》れさまでした。",
+                    "speak": "おつかれさまでした。",
+                    "id_text": "Terima kasih atas kerja kerasnya.",
+                    "en_text": "Thank you for your hard work.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l14-s3",
+            "title_id": "Rindu pada teman",
+            "title_en": "Missing a friend",
+            "setting_id": "Mengobrol di jam istirahat.",
+            "setting_en": "Chatting during a break.",
+            "goal_id": "Mengungkapkan perasaan dengan 〜て dan 〜ので.",
+            "goal_en": "Express feelings with 〜て and 〜ので.",
+            "patterns": [
+                "〜て（perasaan）",
+                "〜ので"
+            ],
+            "partner": {
+                "name": "リナ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l14-s3-t1",
+                    "who": "partner",
+                    "ja": "元気《げんき》が ありませんね。どうしたんですか。",
+                    "speak": "げんきが ありませんね。どうしたんですか。",
+                    "id_text": "Kamu kelihatan lesu. Ada apa?",
+                    "en_text": "You do not look well. What is wrong?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l14-s3-t2",
+                    "who": "you",
+                    "ja": "友達《ともだち》に 会《あ》えなくて、寂《さび》しいんです。",
+                    "speak": "ともだちに あえなくて、さびしいんです。",
+                    "id_text": "Saya kesepian karena tidak bisa bertemu teman.",
+                    "en_text": "I feel lonely because I cannot meet my friend.",
+                    "accept": [
+                        "友達に 会えなくて、寂しいんです。",
+                        "友達に会えなくて、寂しいんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l14-s3-t3",
+                    "who": "partner",
+                    "ja": "友達《ともだち》は 国《くに》に いるんですか。",
+                    "speak": "ともだちは くにに いるんですか。",
+                    "id_text": "Apakah temanmu ada di kampung halaman?",
+                    "en_text": "Is your friend in your home country?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l14-s3-t4",
+                    "who": "you",
+                    "ja": "はい。でも、きのう 電話《でんわ》で 話《はな》して、うれしかったです。",
+                    "speak": "はい。でも、きのう でんわで はなして、うれしかったです。",
+                    "id_text": "Ya. Tapi kemarin kami berbicara lewat telepon dan saya senang.",
+                    "en_text": "Yes. But I talked to him on the phone yesterday and I was happy.",
+                    "accept": [
+                        "はい。でも、きのう 電話で 話して、うれしかったです。",
+                        "はい。でも、きのう電話で話して、うれしかったです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l14-s3-t5",
+                    "who": "partner",
+                    "ja": "それは よかったですね。",
+                    "speak": "それは よかったですね。",
+                    "id_text": "Syukurlah.",
+                    "en_text": "That is good.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l14-s3-t6",
+                    "who": "you",
+                    "ja": "はい。来月《らいげつ》、会《あ》えるので、わくわくして います。",
+                    "speak": "はい。らいげつ、あえるので、わくわくして います。",
+                    "id_text": "Ya. Bulan depan kami bisa bertemu, jadi saya sangat bersemangat.",
+                    "en_text": "Yes. We can meet next month, so I am excited.",
+                    "accept": [
+                        "はい。来月、会えるので、わくわくして います。",
+                        "はい。来月、会えるので、わくわくしています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l14-s3-t7",
+                    "who": "partner",
+                    "ja": "楽《たの》しみですね。",
+                    "speak": "たのしみですね。",
+                    "id_text": "Pasti menyenangkan, ya.",
+                    "en_text": "You must be looking forward to it.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l14-s4",
+            "title_id": "Kereta berhenti",
+            "title_en": "The train has stopped",
+            "setting_id": "Di peron stasiun yang ramai.",
+            "setting_en": "On a crowded station platform.",
+            "goal_id": "Menanyakan keadaan kereta dan menyebut sebab dengan Nで.",
+            "goal_en": "Ask about a stopped train and hear the reason given with Nで.",
+            "patterns": [
+                "Ｎで"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l14-s4-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What is the matter?",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l14-s4-t2",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》は まだ 動《うご》きませんか。",
+                    "speak": "でんしゃは まだ うごきませんか。",
+                    "id_text": "Apakah kereta belum jalan?",
+                    "en_text": "Are the trains still not running?",
+                    "accept": [
+                        "電車は まだ 動きませんか。",
+                        "電車はまだ動きませんか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l14-s4-t3",
+                    "who": "partner",
+                    "ja": "ええ、事故《じこ》で、止《と》まって います。",
+                    "speak": "ええ、じこで、とまって います。",
+                    "id_text": "Ya, berhenti karena kecelakaan.",
+                    "en_text": "Yes, they are stopped because of an accident.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l14-s4-t4",
+                    "who": "you",
+                    "ja": "いつ 動《うご》きますか。",
+                    "speak": "いつ うごきますか。",
+                    "id_text": "Kapan akan jalan lagi?",
+                    "en_text": "When will they run?",
+                    "accept": [
+                        "いつ 動きますか。",
+                        "いつ動きますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l14-s4-t5",
+                    "who": "partner",
+                    "ja": "三十分《さんじゅっぷん》ぐらい かかります。",
+                    "speak": "さんじゅっぷんぐらい かかります。",
+                    "id_text": "Sekitar tiga puluh menit.",
+                    "en_text": "It will take about thirty minutes.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l14-s4-t6",
+                    "who": "you",
+                    "ja": "じゃ、バスで 行《い》きます。",
+                    "speak": "じゃ、バスで いきます。",
+                    "id_text": "Kalau begitu, saya naik bus.",
+                    "en_text": "Then I will go by bus.",
+                    "accept": [
+                        "じゃ、バスで 行きます。",
+                        "じゃ、バスで行きます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l14-s4-t7",
+                    "who": "partner",
+                    "ja": "バスは 駅前《えきまえ》から 出《で》ますよ。",
+                    "speak": "バスは えきまえから でますよ。",
+                    "id_text": "Busnya berangkat dari depan stasiun.",
+                    "en_text": "The bus leaves from in front of the station.",
+                    "audio": "/audio/kaiwa/lesson-n4-14/n4l14-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

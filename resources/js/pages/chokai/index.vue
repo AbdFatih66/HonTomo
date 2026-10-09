@@ -11,12 +11,14 @@
 // masing-masing) — tinggal diisi begitu transkrip/kunci jawabannya ada.
 import RubyText from '@/components/learning/RubyText.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
+import { useLevelChoice } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
 import { $api } from '@/utils/api'
 
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
 const authStore = useAuthStore()
+const { level: levelChoice } = useLevelChoice()
 
 // Some fields are plain Indonesian strings and some are { id, en } — same
 // convention as Mondaishuu, so this can be filled in gradually.
@@ -36,21 +38,39 @@ function tr(value) {
 // ---------------------------------------------------------------------
 const AVAILABLE_LESSON_IDS = Array.from({ length: 25 }, (_, i) => i + 1) // 1-25 semua sudah ada; tambah id di sini kalau ada pelajaran baru
 const LESSONS = Array.from({ length: 25 }, (_, i) => ({ id: i + 1 }))
-const loadedLessons = reactive({})
+
+// N4: skrip di public/data/chokai/lesson-n4-{n}.json (id soal `n4l{n}-q{i}`, audio
+// /audio/chokai/lesson-n4-{n}/...). Kunci progres N4 = `n4l{n}`, N5 = `l{n}`.
+// Tambah nomor pelajaran N4 baru di sini.
+const N4_LESSON_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+
+// 'l3' → { level: 'N5', n: 3 }, 'n4l1' → { level: 'N4', n: 1 }
+function parseKey(key) {
+  const m = /^(n4)?l(\d+)$/.exec(key ?? '')
+
+  return m ? { level: m[1] ? 'N4' : 'N5', n: Number(m[2]) } : null
+}
+
+const loadedLessons = reactive({}) // dikunci per kunci progres ('l3', 'n4l1')
 const loadingLesson = ref(false)
 const loadError = ref(false)
 
-async function fetchLesson(id) {
-  if (loadedLessons[id])
-    return loadedLessons[id]
+async function fetchLesson(key) {
+  if (loadedLessons[key])
+    return loadedLessons[key]
 
-  const res = await fetch(`/data/chokai/lesson-${id}.json`, { cache: 'no-cache' })
+  const info = parseKey(key)
+  if (!info)
+    throw new Error(`lesson ${key}: kunci tidak dikenal`)
+
+  const file = info.level === 'N4' ? `lesson-n4-${info.n}.json` : `lesson-${info.n}.json`
+  const res = await fetch(`/data/chokai/${file}`, { cache: 'no-cache' })
   if (!res.ok)
-    throw new Error(`lesson ${id}: HTTP ${res.status}`)
+    throw new Error(`lesson ${key}: HTTP ${res.status}`)
 
   const json = await res.json()
 
-  loadedLessons[id] = json
+  loadedLessons[key] = json
 
   return json
 }
@@ -127,29 +147,31 @@ function statusFor(key) {
   return 'available'
 }
 
-const pathLessons = computed(() => LESSONS.map(l => ({
-  id: `l${l.id}`,
-  n: l.id,
-  ready: AVAILABLE_LESSON_IDS.includes(l.id),
-  status: statusFor(`l${l.id}`),
-})))
+const pathLessons = computed(() => levelChoice.value === 'N4'
+  ? N4_LESSON_IDS.map(n => ({ id: `n4l${n}`, n, ready: true, status: statusFor(`n4l${n}`) }))
+  : LESSONS.map(l => ({
+      id: `l${l.id}`,
+      n: l.id,
+      ready: AVAILABLE_LESSON_IDS.includes(l.id),
+      status: statusFor(`l${l.id}`),
+    })))
 
 const activeKey = ref(null)
-const active = computed(() => {
-  const m = /^l(\d+)$/.exec(activeKey.value ?? '')
-
-  return m ? loadedLessons[Number(m[1])] ?? null : null
-})
+const active = computed(() => (parseKey(activeKey.value) ? loadedLessons[activeKey.value] ?? null : null))
 
 // Pelajaran berikutnya — untuk tombol "lanjut ke Pelajaran N+1" di layar
 // hasil, sama seperti Mondaishuu. `null` kalau pelajaran ini yang
 // terakhir atau pelajaran berikutnya belum tersedia.
 const nextLessonId = computed(() => {
-  const m = /^l(\d+)$/.exec(activeKey.value ?? '')
-  if (!m)
+  const info = parseKey(activeKey.value)
+  if (!info)
     return null
 
-  const n = Number(m[1]) + 1
+  // N4: pelajaran berikutnya di daftar (nomornya boleh melompat, mis. 1 → 16).
+  if (info.level === 'N4')
+    return N4_LESSON_IDS[N4_LESSON_IDS.indexOf(info.n) + 1] ?? null
+
+  const n = info.n + 1
 
   return AVAILABLE_LESSON_IDS.includes(n) ? n : null
 })
@@ -353,7 +375,7 @@ async function startTab(key) {
   loadingLesson.value = true
 
   try {
-    await fetchLesson(Number(key.slice(1)))
+    await fetchLesson(key)
   }
   catch {
     loadError.value = true
@@ -438,7 +460,7 @@ function restartQuiz() {
 // balik ke kartu pemilihan pelajaran dulu.
 function goToNextLesson() {
   if (nextLessonId.value)
-    startTab(`l${nextLessonId.value}`)
+    startTab(`${parseKey(activeKey.value)?.level === 'N4' ? 'n4l' : 'l'}${nextLessonId.value}`)
 }
 
 function backToSetup() {
@@ -462,9 +484,10 @@ onBeforeUnmount(clearAdvanceTimer)
       <h4 class="text-h4 mb-0">
         {{ t('chokai.title') }}
       </h4>
+      <LevelSwitch />
     </div>
     <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ t('chokai.subtitle') }}
+      {{ levelChoice === 'N4' ? t('chokai.subtitle_n4') : t('chokai.subtitle') }}
     </p>
 
     <div
@@ -705,7 +728,7 @@ onBeforeUnmount(clearAdvanceTimer)
         >
           <div class="d-flex align-center justify-space-between mb-2">
             <div class="text-caption text-medium-emphasis">
-              {{ t('chokai.lesson_label', { n: active.id }) }}
+              {{ t('chokai.lesson_label', { n: parseKey(activeKey)?.n ?? active.id }) }}
             </div>
             <VChip size="small" variant="tonal" color="primary">
               {{ t('chokai.score', { score, total: totalQuestions }) }}

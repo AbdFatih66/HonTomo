@@ -1,0 +1,304 @@
+{
+    "id": "n4-14",
+    "level": "N4",
+    "focus": "〜て（sebab）, Nで, 〜ので, 途中で, perasaan",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "すみません、遅れました。"
+            },
+            {
+                "speaker": "female",
+                "text": "どうしたんですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "来る　途中で、バスが　事故で　止まったんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "それは　大変でしたね。"
+            },
+            {
+                "speaker": "male",
+                "text": "電話したかったんですが、携帯電話を　家に　忘れて　しまいました。"
+            },
+            {
+                "speaker": "female",
+                "text": "わかりました。会議を　始めましょう。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-14/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l14-kq1",
+                "prompt": "どうして　遅《おく》れましたか。",
+                "choices": [
+                    "バスが　事故《じこ》で　止《と》まったから",
+                    "台風《たいふう》が　来《き》たから",
+                    "寝《ね》て　しまったから"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Kenapa terlambat? Karena bus berhenti akibat kecelakaan.",
+                    "en": "Why was he late? Because the bus stopped because of an accident."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l14-kq2",
+                "prompt": "携帯電話《けいたいでんわ》は　どこに　ありますか。",
+                "choices": [
+                    "家《いえ》",
+                    "会社《かいしゃ》",
+                    "バス"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Ponselnya di mana? Di rumah.",
+                    "en": "Where is the mobile phone? At home."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l14-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "どうして　遅れたんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "来る　途中で、トラックと　車が　ぶつかったんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q1.mp3",
+            "prompt": "どうして　遅《おく》れましたか。",
+            "choices": [
+                "トラックと　車《くるま》が　ぶつかったから",
+                "台風《たいふう》が　来《き》たから",
+                "病気《びょうき》だったから"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kenapa terlambat? Karena di tengah perjalanan, truk dan mobil bertabrakan.",
+                "en": "Why was he late? Because a truck and a car collided on the way."
+            }
+        },
+        {
+            "id": "n4l14-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きのうは　どうして　会社を　休んだんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "熱が　あって、病院へ　行きました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q2.mp3",
+            "prompt": "どうして　会社《かいしゃ》を　休《やす》みましたか。",
+            "choices": [
+                "熱《ねつ》が　あったから",
+                "地震《じしん》が　あったから",
+                "火事《かじ》が　あったから"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kenapa tidak masuk kerja? Karena demam.",
+                "en": "Why did he miss work? Because he had a fever."
+            }
+        },
+        {
+            "id": "n4l14-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "このアパートは　駅から　遠いので、自転車を　買いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q3.mp3",
+            "prompt": "自転車《じてんしゃ》を　買《か》ったのは　どうしてですか。",
+            "choices": [
+                "駅《えき》から　遠《とお》いから",
+                "安《やす》かったから",
+                "好《す》きだから"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kenapa membeli sepeda? Karena apartemen jauh dari stasiun.",
+                "en": "Why did he buy a bicycle? Because the apartment is far from the station."
+            }
+        },
+        {
+            "id": "n4l14-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "テストは　どうでしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "点が　悪くて、がっかりしました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q4.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どんな　気持《きも》ちですか。",
+            "choices": [
+                "がっかりして　います",
+                "わくわくして　います",
+                "どきどきして　います"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana perasaan laki-laki itu? Kecewa, karena nilainya jelek.",
+                "en": "How does the man feel? Disappointed, because his score was bad."
+            }
+        },
+        {
+            "id": "n4l14-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "けさ、地震で　びっくりしました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ほんとうですか。だいじょうぶでしたか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　どうして　びっくりしましたか。",
+            "choices": [
+                "地震《じしん》が　あったから",
+                "犬《いぬ》が　いたから",
+                "電話《でんわ》が　あったから"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kenapa perempuan itu kaget? Karena ada gempa bumi.",
+                "en": "Why was the woman surprised? Because there was an earthquake."
+            }
+        },
+        {
+            "id": "n4l14-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、用事が　あるので、お先に　失礼します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q6.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "お疲《つか》れさまでした。",
+                "おめでとう　ございます。",
+                "いただきます。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Maaf, ada urusan jadi saya pamit duluan. Jawaban laki-laki: Terima kasih atas kerja samanya.",
+                "en": "Excuse me, I have an errand so I will leave first. The man answers: Thank you for your hard work."
+            }
+        },
+        {
+            "id": "n4l14-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "マラソンの　途中で　気分が　悪く　なりました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "だいじょうぶですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q7.mp3",
+            "prompt": "いつ　気分《きぶん》が　悪《わる》く　なりましたか。",
+            "choices": [
+                "マラソンの　途中《とちゅう》",
+                "マラソンが　終《お》わった　後《あと》",
+                "マラソンの　前《まえ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan badannya jadi kurang enak? Di tengah maraton.",
+                "en": "When did he start to feel unwell? In the middle of the marathon."
+            }
+        },
+        {
+            "id": "n4l14-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "バスは　どうして　遅れましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "事故が　あって、道が　こんで　いたんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q8.mp3",
+            "prompt": "バスは　事故《じこ》で　遅《おく》れました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bus terlambat karena kecelakaan. (Benar)",
+                "en": "The bus was late because of an accident. (True)"
+            }
+        },
+        {
+            "id": "n4l14-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きょうは　都合が　悪くて、パーティーに　行けません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　パーティーに　行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu pergi ke pesta. (Salah — dia tidak bisa pergi.)",
+                "en": "The man will go to the party. (False — he cannot go.)"
+            }
+        },
+        {
+            "id": "n4l14-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この　仕事は　初めてなので、教えて　いただけませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-14/n4l14-q10.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　この　仕事《しごと》を　初《はじ》めて　します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu baru pertama kali melakukan pekerjaan ini. (Benar)",
+                "en": "The man is doing this work for the first time. (True)"
+            }
+        }
+    ]
+}

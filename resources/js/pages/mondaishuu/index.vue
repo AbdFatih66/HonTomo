@@ -7,7 +7,9 @@
 // supaya latihannya benar-benar melatih baca tulis Jepang.
 import RubyText from '@/components/learning/RubyText.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
+import { useLevelChoice } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
+import { LESSONS_N4 } from '@/data/practice/mondaishuuN4'
 import { $api } from '@/utils/api'
 
 // Unlike the old version, this page does NOT force the blank layout for
@@ -20,6 +22,7 @@ import { $api } from '@/utils/api'
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
 const authStore = useAuthStore()
+const { level: levelChoice } = useLevelChoice()
 
 // ---------------------------------------------------------------------
 // Bank soal. Dua jenis soal:
@@ -672,9 +675,12 @@ const REVIEWS = [
   ] },
 ]
 
+// N4: bank soal ada di data/practice/mondaishuuN4.js, kunci progres `n4l{id}`
+// (tidak bentrok dengan `l{id}` milik N5). Rangkuman hanya ada di N5.
 const ALL_TABS = [
   ...LESSONS.map(l => ({ key: `l${l.id}`, label: String(l.id), kind: 'lesson', ref: l })),
   ...REVIEWS.map(r => ({ key: r.id, label: r.label.replace('まとめ ', 'R.'), kind: 'review', ref: r })),
+  ...LESSONS_N4.map(l => ({ key: `n4l${l.id}`, label: `N4-${l.id}`, kind: 'lesson', ref: l })),
 ]
 
 const activeKey = ref('l1')
@@ -833,7 +839,18 @@ function tr(value) {
   return typeof value === 'object' ? (locale.value === 'en' ? value.en : value.id) : value
 }
 
-const pathUnits = computed(() => [
+const pathUnits = computed(() => levelChoice.value === 'N4'
+  ? [{
+      id: 'lessons-n4',
+      title: t('mondaishuu.lessons_label'),
+      lessons: LESSONS_N4.map(l => ({
+        id: `n4l${l.id}`,
+        title: t('mondaishuu.lesson_label', { n: l.id }),
+        focus: tr(l.focus),
+        status: statusFor(`n4l${l.id}`),
+      })),
+    }]
+  : [
   {
     id: 'lessons',
     title: t('mondaishuu.lessons_label'),
@@ -854,7 +871,7 @@ const pathUnits = computed(() => [
       status: statusFor(r.id),
     })),
   },
-])
+  ])
 
 // Pemberitahuan saat kartu terkunci diketuk — snackbar (bukan alert di
 // atas daftar) supaya tetap terlihat walau kartunya ada jauh di bawah.
@@ -1100,9 +1117,10 @@ onBeforeUnmount(clearAdvanceTimer)
       <h4 class="text-h4 mb-0">
         {{ t('mondaishuu.title') }}
       </h4>
+      <LevelSwitch />
     </div>
     <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ t('mondaishuu.subtitle') }}
+      {{ levelChoice === 'N4' ? t('mondaishuu.subtitle_n4') : t('mondaishuu.subtitle') }}
     </p>
 
     <!-- Progres belajar ala pemilihan kanji: kartu per pelajaran/rangkuman,

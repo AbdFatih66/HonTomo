@@ -135,6 +135,13 @@ class NotificationService
     {
         $isEnglish = app()->getLocale() === 'en';
 
+        // Materi N4: set_key 'n4l{n}' (mondaishuu, chokai, kaite_oboeru) atau 'n4l{n}-s{k}' (kaiwa).
+        if (preg_match('/^n4l(\d+)(?:-s(\d+))?$/', $setKey, $m)) {
+            $scenario = isset($m[2]) ? ($isEnglish ? " · Scenario {$m[2]}" : " · Skenario {$m[2]}") : '';
+
+            return ($isEnglish ? "N4 Lesson {$m[1]}" : "N4 Pelajaran {$m[1]}").$scenario;
+        }
+
         if ($module === 'mondaishuu') {
             if (str_starts_with($setKey, 'l')) {
                 $n = substr($setKey, 1);

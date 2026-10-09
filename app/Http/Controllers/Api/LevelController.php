@@ -25,12 +25,15 @@ class LevelController extends Controller
     }
 
     /**
-     * Learning path of the user's current level (falls back to the first active level).
+     * Learning path of the requested level (?level=N5|N4, the Tata Bahasa level
+     * selector), else the user's current level (falls back to the first active level).
      */
     public function path(Request $request)
     {
         $user = $request->user();
-        $level = $user->currentLevel
+        $requested = strtoupper((string) $request->query('level', ''));
+        $level = ($requested !== '' ? Level::where('is_active', true)->where('code', $requested)->first() : null)
+            ?? $user->currentLevel
             ?? Level::where('is_active', true)->orderBy('order')->first();
 
         abort_if(! $level, 404, 'No level configured.');

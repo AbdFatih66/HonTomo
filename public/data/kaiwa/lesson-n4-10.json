@@ -1,0 +1,421 @@
+{
+    "id": 10,
+    "level": "N4",
+    "title_id": "Pelajaran 10: Ada Tempat yang Bagus?",
+    "title_en": "Lesson 10: Is There a Good Place?",
+    "scenarios": [
+        {
+            "id": "n4l10-s1",
+            "title_id": "Bertanya cara pergi",
+            "title_en": "Asking how to get there",
+            "setting_id": "Kamu berbicara dengan teman kerja tentang rencana libur.",
+            "setting_en": "You talk with a coworker about holiday plans.",
+            "goal_id": "Minta saran dengan どう Vば いいですか.",
+            "goal_en": "Ask for advice with どう Vば いいですか.",
+            "patterns": [
+                "どう Vば いいですか",
+                "Vば いいです"
+            ],
+            "partner": {
+                "name": "もり",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l10-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、来週《らいしゅう》の 休《やす》みは どこへ 行《い》きますか。",
+                    "speak": "ブディさん、らいしゅうの やすみは どこへ いきますか。",
+                    "id_text": "Budi, ke mana kamu pergi pada libur minggu depan?",
+                    "en_text": "Budi, where are you going on next week's holiday?",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l10-s1-t2",
+                    "who": "you",
+                    "ja": "山《やま》へ 行《い》きたいんですが、どう 行《い》けば いいですか。",
+                    "speak": "やまへ いきたいんですが、どう いけば いいですか。",
+                    "id_text": "Saya ingin ke gunung, bagaimana caranya?",
+                    "en_text": "I want to go to the mountains. How should I get there?",
+                    "accept": [
+                        "山へ行きたいんですが、どう行けばいいですか。",
+                        "やまへいきたいんですが、どういけばいいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l10-s1-t3",
+                    "who": "partner",
+                    "ja": "バスに 乗《の》れば、二時間《にじかん》で 着《つ》きますよ。",
+                    "speak": "バスに のれば、にじかんで つきますよ。",
+                    "id_text": "Kalau naik bus, sampai dalam dua jam.",
+                    "en_text": "If you take the bus, you will arrive in two hours.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l10-s1-t4",
+                    "who": "you",
+                    "ja": "切符《きっぷ》は どこで 買《か》えば いいですか。",
+                    "speak": "きっぷは どこで かえば いいですか。",
+                    "id_text": "Tiketnya sebaiknya dibeli di mana?",
+                    "en_text": "Where should I buy the ticket?",
+                    "accept": [
+                        "切符はどこで買えばいいですか。",
+                        "きっぷはどこでかえばいいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l10-s1-t5",
+                    "who": "partner",
+                    "ja": "駅《えき》の 窓口《まどぐち》で 買《か》えば いいです。",
+                    "speak": "えきの まどぐちで かえば いいです。",
+                    "id_text": "Beli saja di loket stasiun.",
+                    "en_text": "Just buy it at the station counter.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l10-s1-t6",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Saya mengerti. Terima kasih.",
+                    "en_text": "I understand. Thank you.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l10-s1-t7",
+                    "who": "partner",
+                    "ja": "どういたしまして。楽《たの》しんで ください。",
+                    "speak": "どういたしまして。たのしんで ください。",
+                    "id_text": "Sama-sama. Selamat bersenang-senang.",
+                    "en_text": "You are welcome. Enjoy yourself.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l10-s2",
+            "title_id": "Minta rekomendasi tempat",
+            "title_en": "Asking for a recommendation",
+            "setting_id": "Kamu bertanya kepada orang di jalan.",
+            "setting_en": "You ask a person on the street.",
+            "goal_id": "Bertanya sopan dengan ありませんか dan menanggapi dengan Nなら.",
+            "goal_en": "Ask politely with ありませんか and respond with Nなら.",
+            "patterns": [
+                "〜は ありませんか",
+                "Nなら、〜"
+            ],
+            "partner": {
+                "name": "あおき",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l10-s2-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。何《なに》を 探《さが》して いるんですか。",
+                    "speak": "こんにちは。なにを さがして いるんですか。",
+                    "id_text": "Halo. Kamu sedang mencari apa?",
+                    "en_text": "Hello. What are you looking for?",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l10-s2-t2",
+                    "who": "you",
+                    "ja": "おいしい ラーメンを 食《た》べたいんですが、いい 店《みせ》は ありませんか。",
+                    "speak": "おいしい ラーメンを たべたいんですが、いい みせは ありませんか。",
+                    "id_text": "Saya ingin makan ramen enak, adakah toko yang bagus?",
+                    "en_text": "I want to eat good ramen. Is there a good shop?",
+                    "accept": [
+                        "おいしいラーメンを食べたいんですが、いい店はありませんか。",
+                        "おいしいラーメンをたべたいんですが、いいみせはありませんか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l10-s2-t3",
+                    "who": "partner",
+                    "ja": "ラーメンなら、駅《えき》の 前《まえ》の 店《みせ》が おいしいですよ。",
+                    "speak": "ラーメンなら、えきの まえの みせが おいしいですよ。",
+                    "id_text": "Kalau ramen, toko di depan stasiun enak.",
+                    "en_text": "If it is ramen, the shop in front of the station is good.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l10-s2-t4",
+                    "who": "you",
+                    "ja": "安《やす》いですか。",
+                    "speak": "やすいですか。",
+                    "id_text": "Apakah murah?",
+                    "en_text": "Is it cheap?",
+                    "accept": [
+                        "安いですか。",
+                        "やすいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l10-s2-t5",
+                    "who": "partner",
+                    "ja": "ええ、安《やす》くて おいしいですよ。",
+                    "speak": "ええ、やすくて おいしいですよ。",
+                    "id_text": "Ya, murah dan enak.",
+                    "en_text": "Yes, it is cheap and delicious.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l10-s2-t6",
+                    "who": "you",
+                    "ja": "そうですか。じゃ、行《い》って みます。",
+                    "speak": "そうですか。じゃ、いって みます。",
+                    "id_text": "Begitu, ya. Kalau begitu, saya akan mencobanya.",
+                    "en_text": "I see. Then I will give it a try.",
+                    "accept": [
+                        "そうですか。じゃ、行ってみます。",
+                        "そうですか。じゃ、いってみます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l10-s2-t7",
+                    "who": "partner",
+                    "ja": "いってらっしゃい。",
+                    "speak": "いってらっしゃい。",
+                    "id_text": "Hati-hati di jalan.",
+                    "en_text": "Have a good time.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l10-s3",
+            "title_id": "Mengajak menonton film",
+            "title_en": "Inviting a friend to a movie",
+            "setting_id": "Kamu dan teman mengatur rencana besok.",
+            "setting_en": "You and a friend plan tomorrow.",
+            "goal_id": "Menyebut syarat dengan 〜ば dan 〜なら.",
+            "goal_en": "State conditions with 〜ば and 〜なら.",
+            "patterns": [
+                "Vば、〜",
+                "いAければ、〜",
+                "Nなら、〜"
+            ],
+            "partner": {
+                "name": "ハンナ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l10-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あした 時間《じかん》が あれば、いっしょに 映画《えいが》を 見《み》ませんか。",
+                    "speak": "ブディさん、あした じかんが あれば、いっしょに えいがを みませんか。",
+                    "id_text": "Budi, kalau besok ada waktu, mau menonton film bersama?",
+                    "en_text": "Budi, if you have time tomorrow, shall we watch a movie together?",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t2",
+                    "who": "you",
+                    "ja": "いいですね。仕事《しごと》が 早《はや》く 終《お》われば、行《い》けます。",
+                    "speak": "いいですね。しごとが はやく おわれば、いけます。",
+                    "id_text": "Boleh. Kalau pekerjaan cepat selesai, saya bisa pergi.",
+                    "en_text": "Sounds good. If work finishes early, I can go.",
+                    "accept": [
+                        "いいですね。仕事が早く終われば、行けます。",
+                        "いいですね。しごとがはやくおわれば、いけます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t3",
+                    "who": "partner",
+                    "ja": "何時《なんじ》に 終《お》わりますか。",
+                    "speak": "なんじに おわりますか。",
+                    "id_text": "Selesai jam berapa?",
+                    "en_text": "What time does it finish?",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t4",
+                    "who": "you",
+                    "ja": "五時《ごじ》です。天気《てんき》が よければ、歩《ある》いて 行《い》きましょう。",
+                    "speak": "ごじです。てんきが よければ、あるいて いきましょう。",
+                    "id_text": "Jam lima. Kalau cuacanya bagus, ayo jalan kaki.",
+                    "en_text": "At five. If the weather is good, let us walk.",
+                    "accept": [
+                        "五時です。天気がよければ、歩いて行きましょう。",
+                        "ごじです。てんきがよければ、あるいていきましょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t5",
+                    "who": "partner",
+                    "ja": "いいですよ。雨《あめ》なら、バスで 行《い》きましょう。",
+                    "speak": "いいですよ。あめなら、バスで いきましょう。",
+                    "id_text": "Boleh. Kalau hujan, kita naik bus.",
+                    "en_text": "Fine. If it rains, let us take the bus.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t6",
+                    "who": "you",
+                    "ja": "はい、そう しましょう。",
+                    "speak": "はい、そう しましょう。",
+                    "id_text": "Baik, begitu saja.",
+                    "en_text": "Yes, let us do that.",
+                    "accept": [
+                        "はい、そうしましょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t7",
+                    "who": "partner",
+                    "ja": "じゃ、あした 五時半《ごじはん》に 駅《えき》で 会《あ》いましょう。",
+                    "speak": "じゃ、あした ごじはんに えきで あいましょう。",
+                    "id_text": "Kalau begitu, besok jam setengah enam kita bertemu di stasiun.",
+                    "en_text": "Then let us meet at the station at 5:30 tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t7.mp3"
+                },
+                {
+                    "id": "n4l10-s3-t8",
+                    "who": "you",
+                    "ja": "わかりました。楽《たの》しみです。",
+                    "speak": "わかりました。たのしみです。",
+                    "id_text": "Mengerti. Saya menantikannya.",
+                    "en_text": "Understood. I am looking forward to it.",
+                    "accept": [
+                        "わかりました。楽しみです。",
+                        "わかりました。たのしみです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l10-s4",
+            "title_id": "Di rumah sakit",
+            "title_en": "At the hospital",
+            "setting_id": "Kamu demam dan bertanya di bagian informasi rumah sakit.",
+            "setting_en": "You have a fever and ask at the hospital information desk.",
+            "goal_id": "Bertanya poli yang tepat dan menjelaskan masalah dengan 〜ば／〜なら.",
+            "goal_en": "Ask which clinic to visit and explain a problem using 〜ば／〜なら.",
+            "patterns": [
+                "どこへ Vば いいですか",
+                "Nなら、〜",
+                "Vなければ、〜"
+            ],
+            "partner": {
+                "name": "たぐち",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l10-s4-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。どう しましたか。",
+                    "speak": "いらっしゃいませ。どう しましたか。",
+                    "id_text": "Selamat datang. Ada apa?",
+                    "en_text": "Welcome. What seems to be the problem?",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t2",
+                    "who": "you",
+                    "ja": "熱《ねつ》が あるんですが、どこの 病院《びょういん》へ 行《い》けば いいですか。",
+                    "speak": "ねつが あるんですが、どこの びょういんへ いけば いいですか。",
+                    "id_text": "Saya demam, sebaiknya ke bagian mana?",
+                    "en_text": "I have a fever. Which department should I go to?",
+                    "accept": [
+                        "熱があるんですが、どこの病院へ行けばいいですか。",
+                        "ねつがあるんですが、どこのびょういんへいけばいいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t3",
+                    "who": "partner",
+                    "ja": "熱《ねつ》なら、内科《ないか》へ 行《い》けば いいですよ。",
+                    "speak": "ねつなら、ないかへ いけば いいですよ。",
+                    "id_text": "Kalau demam, pergi saja ke bagian penyakit dalam.",
+                    "en_text": "If it is a fever, you should go to internal medicine.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t4",
+                    "who": "you",
+                    "ja": "内科《ないか》は どこに ありますか。",
+                    "speak": "ないかは どこに ありますか。",
+                    "id_text": "Bagian penyakit dalam di mana?",
+                    "en_text": "Where is internal medicine?",
+                    "accept": [
+                        "内科はどこにありますか。",
+                        "ないかはどこにありますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t5",
+                    "who": "partner",
+                    "ja": "あの エレベーターで 二階《にかい》へ 行《い》けば、すぐ わかります。",
+                    "speak": "あの エレベーターで にかいへ いけば、すぐ わかります。",
+                    "id_text": "Kalau naik lift itu ke lantai dua, langsung kelihatan.",
+                    "en_text": "If you take that elevator to the second floor, you will see it right away.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t6",
+                    "who": "you",
+                    "ja": "診察券《しんさつけん》が ないんですが、どう すれば いいですか。",
+                    "speak": "しんさつけんが ないんですが、どう すれば いいですか。",
+                    "id_text": "Saya tidak punya kartu pasien, bagaimana sebaiknya?",
+                    "en_text": "I do not have a patient card. What should I do?",
+                    "accept": [
+                        "診察券がないんですが、どうすればいいですか。",
+                        "しんさつけんがないんですが、どうすればいいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t7",
+                    "who": "partner",
+                    "ja": "診察券《しんさつけん》が なければ、受付《うけつけ》で 作《つく》って ください。",
+                    "speak": "しんさつけんが なければ、うけつけで つくって ください。",
+                    "id_text": "Kalau tidak punya kartu pasien, buatlah di bagian pendaftaran.",
+                    "en_text": "If you do not have one, please make one at the reception.",
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t7.mp3"
+                },
+                {
+                    "id": "n4l10-s4-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-10/n4l10-s4-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

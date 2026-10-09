@@ -17,6 +17,9 @@ import json, re, sys, glob, os
 # Jumlah soal per pelajaran = jumlah soal Chokai di buku (contoh 例 tidak dihitung).
 # Pelajaran 1-25 lengkap. (P4 = 18 karena ada 8 soal dikte angka; P19 = 9 karena
 # bagian 1 di buku hanya 4 soal.)
+# N4 (file lesson-n4-{n}.json, id "n4-{n}", id soal n4l{n}-q{i}): jumlah soal per pelajaran N4.
+EXPECTED_N4 = {n: 10 for n in range(1, 26)}
+EXPECTED_N4[19] = 9
 EXPECTED = {1: 10, 2: 10, 3: 10, 4: 18, 5: 10, 6: 10, 7: 10, 8: 10,
             9: 10, 10: 10, 11: 10, 12: 10, 13: 10, 14: 10, 15: 10,
             16: 10, 17: 10, 18: 10, 19: 9, 20: 10, 21: 10, 22: 10,
@@ -38,29 +41,35 @@ def main():
     folder = sys.argv[1] if len(sys.argv) > 1 else 'public/data/chokai'
     errors, warns = [], []
     files = sorted(glob.glob(os.path.join(folder, 'lesson-*.json')),
-                   key=lambda p: int(re.search(r'lesson-(\d+)', p).group(1)))
+                   key=lambda p: (1 if 'lesson-n4-' in p else 0,
+                                  int(re.search(r'lesson-(?:n4-)?(\d+)', p).group(1))))
     for path in files:
         d = json.load(open(path, encoding='utf-8'))
-        L = d['id']
+        raw = d['id']
+        n4 = isinstance(raw, str) and raw.startswith('n4-')
+        # L dipakai sebagai awalan id: N5 -> 'l{n}', N4 -> 'n4l{n}'
+        n = int(raw.split('-')[1]) if n4 else raw
+        prefix = f'n4l{n}' if n4 else f'l{raw}'
+        expected = EXPECTED_N4 if n4 else EXPECTED
         qs = d['questions']
-        if L in EXPECTED and len(qs) != EXPECTED[L]:
-            errors.append(f'L{L}: {len(qs)} soal, seharusnya {EXPECTED[L]}')
-        if L not in EXPECTED:
-            warns.append(f'L{L}: belum ada di EXPECTED (tambahkan jumlah soal dari buku)')
+        if n in expected and len(qs) != expected[n]:
+            errors.append(f'L{raw}: {len(qs)} soal, seharusnya {expected[n]}')
+        if n not in expected:
+            warns.append(f'L{raw}: belum ada di EXPECTED (tambahkan jumlah soal dari buku)')
         for t in turns(d['kaiwa']['audio_text']):
             if t['speaker'] not in SPEAKERS or '《' in t['text']:
-                errors.append(f'L{L} kaiwa: speaker/teks tidak valid')
+                errors.append(f'L{raw} kaiwa: speaker/teks tidak valid')
         # kaiwa.questions: 0-2 soal ringan berdasarkan isi kaiwa (tidak
         # dinilai, tidak masuk EXPECTED, tidak punya audio_text sendiri —
         # jawabannya harus ada di kaiwa.audio_text yang sudah didengar).
         kqs = d['kaiwa'].get('questions', [])
         if len(kqs) > 2:
-            errors.append(f'L{L} kaiwa.questions: {len(kqs)} soal, maksimal 2')
+            errors.append(f'L{raw} kaiwa.questions: {len(kqs)} soal, maksimal 2')
         kseen = set()
         for i, kq in enumerate(kqs, 1):
             kid = kq['id']
-            if kid != f'l{L}-kq{i}':
-                errors.append(f'{kid}: id tidak sesuai urutan (harus l{L}-kq{i})')
+            if kid != f'{prefix}-kq{i}':
+                errors.append(f'{kid}: id tidak sesuai urutan (harus {prefix}-kq{i})')
             if kid in kseen:
                 errors.append(f'{kid}: id ganda')
             kseen.add(kid)
@@ -80,8 +89,8 @@ def main():
         seen = set()
         for i, q in enumerate(qs, 1):
             qid = q['id']
-            if qid != f'l{L}-q{i}':
-                errors.append(f'{qid}: id tidak sesuai urutan (harus l{L}-q{i})')
+            if qid != f'{prefix}-q{i}':
+                errors.append(f'{qid}: id tidak sesuai urutan (harus {prefix}-q{i})')
             if qid in seen:
                 errors.append(f'{qid}: id ganda')
             seen.add(qid)

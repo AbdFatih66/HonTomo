@@ -98,21 +98,27 @@ class KaiwaController extends Controller
      * Dibaca langsung dari public/data/kaiwa (±100 KB, hanya saat skenario tamat) supaya
      * materi baru langsung sah tanpa cache yang basi.
      *
-     * @return array<int, list<string>>
+     * @return array<int|string, list<string>>
      */
     private function lessonScenarioIds(): array
     {
         $dir = public_path('data/kaiwa');
-        $manifest = json_decode((string) @file_get_contents("{$dir}/index.json"), true);
         $lessons = [];
 
-        foreach ($manifest['lessons'] ?? [] as $entry) {
-            $lesson = json_decode((string) @file_get_contents("{$dir}/".basename((string) ($entry['file'] ?? ''))), true);
+        // N5: index.json (kunci = id pelajaran). N4: index-n4.json (kunci 'n4-{id}', supaya
+        // tidak bentrok dengan id pelajaran N5; id skenario N4 berawalan `n4l{n}-s`).
+        foreach (['index.json' => '', 'index-n4.json' => 'n4-'] as $file => $prefix) {
+            $manifest = json_decode((string) @file_get_contents("{$dir}/{$file}"), true);
 
-            $lessons[(int) ($entry['id'] ?? 0)] = array_map(
-                fn ($scenario) => (string) ($scenario['id'] ?? ''),
-                $lesson['scenarios'] ?? [],
-            );
+            foreach ($manifest['lessons'] ?? [] as $entry) {
+                $lesson = json_decode((string) @file_get_contents("{$dir}/".basename((string) ($entry['file'] ?? ''))), true);
+
+                $key = $prefix === '' ? (int) ($entry['id'] ?? 0) : $prefix.(int) ($entry['id'] ?? 0);
+                $lessons[$key] = array_map(
+                    fn ($scenario) => (string) ($scenario['id'] ?? ''),
+                    $lesson['scenarios'] ?? [],
+                );
+            }
         }
 
         return $lessons;
@@ -140,8 +146,8 @@ class KaiwaController extends Controller
         return $ids;
     }
 
-    /** @param array<int, list<string>> $lessons */
-    private function lessonOf(string $setKey, array $lessons): ?int
+    /** @param array<int|string, list<string>> $lessons */
+    private function lessonOf(string $setKey, array $lessons): int|string|null
     {
         foreach ($lessons as $lessonId => $ids) {
             if (in_array($setKey, $ids, true))

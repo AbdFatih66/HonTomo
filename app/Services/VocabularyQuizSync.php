@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\Lesson;
 use App\Models\LessonQuestion;
+use App\Models\Unit;
 use App\Models\QuestionOption;
 use App\Models\Vocabulary;
 use App\Models\VocabularyCategory;
@@ -27,25 +28,43 @@ use Illuminate\Support\Facades\DB;
  */
 class VocabularyQuizSync
 {
+    /** JLPT level whose chapters are being synced (N5 = Pelajaran 1-25, N4 = its own units). */
+    private string $level = 'N5';
+
     public function __construct(private VocabularyChapterService $chapters) {}
+
+    /** @return list<int> chapter numbers (Unit.order) of the level being synced */
+    private function chapterNumbers(): array
+    {
+        if ($this->level === 'N5') {
+            return range(1, 25);
+        }
+
+        return Unit::whereHas('level', fn ($q) => $q->where('code', $this->level))
+            ->orderBy('order')->pluck('order')->map(fn ($o) => (int) $o)->all();
+    }
 
     /**
      * @return array{questions_added:int, words_added:int, words_fixed:int, questions_reactivated:int, chapters_without_quiz:list<int>}
      */
-    public function run(): array
+    public function run(string $level = 'N5'): array
     {
+        $this->level = $level;
+
         return DB::transaction(function () {
             $summary = [
                 'questions_added' => 0, 'words_added' => 0, 'words_fixed' => 0,
                 'questions_reactivated' => 0, 'chapters_without_quiz' => [],
             ];
 
-            $allChapterCategoryIds = collect(range(1, 25))
-                ->flatMap(fn ($n) => $this->chapters->categoryIds($n))
+            $numbers = $this->chapterNumbers();
+
+            $allChapterCategoryIds = collect($numbers)
+                ->flatMap(fn ($n) => $this->chapters->categoryIds($n, $this->level))
                 ->unique()->all();
 
-            for ($chapter = 1; $chapter <= 25; $chapter++) {
-                $lessons = $this->chapters->quizLessons($chapter)->keyBy('order');
+            foreach ($numbers as $chapter) {
+                $lessons = $this->chapters->quizLessons($chapter, $this->level)->keyBy('order');
 
                 if ($lessons->isEmpty()) {
                     $summary['chapters_without_quiz'][] = $chapter;
@@ -85,7 +104,7 @@ class VocabularyQuizSync
 
                 // Exact match in PHP: MySQL's unicode_ci treats か = が = カ as equal.
                 $word = Vocabulary::where('japanese', $japanese)->get()
-                    ->first(fn ($v) => $v->japanese === $japanese && in_array($v->category_id, $this->chapters->categoryIds($chapter), true));
+                    ->first(fn ($v) => $v->japanese === $japanese && in_array($v->category_id, $this->chapters->categoryIds($chapter, $this->level), true));
 
                 if (! $word) {
                     $word = Vocabulary::create([
@@ -95,7 +114,7 @@ class VocabularyQuizSync
                         'meaning_id' => $meaning,
                         'meaning_en' => $meaning,
                         'category_id' => $category->id,
-                        'jlpt_level' => 'N5',
+                        'jlpt_level' => $this->level,
                         'difficulty' => 1,
                         'is_active' => true,
                     ]);
@@ -141,7 +160,7 @@ class VocabularyQuizSync
             ->get()
             ->groupBy('vocabulary_id');
 
-        foreach ($this->chapters->quizLessonSlugs($chapter) as $lessonOrder => $slugs) {
+        foreach ($this->chapters->quizLessonSlugs($chapter, $this->level) as $lessonOrder => $slugs) {
             $lesson = $lessons->get($lessonOrder) ?? $lessons->first();
             $categoryIds = VocabularyCategory::whereIn('slug', $slugs)->pluck('id');
 
@@ -200,7 +219,7 @@ class VocabularyQuizSync
         }
     }
 
-    /** Three wrong options with distinct meanings: same lesson first, then the chapter, then any N5 word. */
+    /** Three wrong options with distinct meanings: same lesson first, then the chapter, then any word of the same level. */
     private function distractors(Vocabulary $word, Collection $lessonWords, int $chapter): Collection
     {
         $correct = trim((string) $word->meaning_id);
@@ -225,13 +244,13 @@ class VocabularyQuizSync
 
         if ($chosen->count() < 3) {
             $chapterWords = Vocabulary::where('is_active', true)
-                ->whereIn('category_id', $this->chapters->categoryIds($chapter))->get();
+                ->whereIn('category_id', $this->chapters->categoryIds($chapter, $this->level))->get();
             $chosen = $chosen->concat($pick($chapterWords, $chosen)->take(3 - $chosen->count()))->values();
         }
 
         if ($chosen->count() < 3) {
-            $anyN5 = Vocabulary::where('is_active', true)->where('jlpt_level', 'N5')->inRandomOrder()->limit(60)->get();
-            $chosen = $chosen->concat($pick($anyN5, $chosen)->take(3 - $chosen->count()))->values();
+            $anyLevel = Vocabulary::where('is_active', true)->where('jlpt_level', $this->level)->inRandomOrder()->limit(60)->get();
+            $chosen = $chosen->concat($pick($anyLevel, $chosen)->take(3 - $chosen->count()))->values();
         }
 
         return $chosen;
@@ -239,13 +258,15 @@ class VocabularyQuizSync
 
     private function categoryForLesson(int $chapter, int $lessonOrder): VocabularyCategory
     {
-        $slugs = $this->chapters->quizLessonSlugs($chapter)[$lessonOrder]
-            ?? $this->chapters->quizLessonSlugs($chapter)[1];
+        $slugs = $this->chapters->quizLessonSlugs($chapter, $this->level)[$lessonOrder]
+            ?? $this->chapters->quizLessonSlugs($chapter, $this->level)[1];
         $slug = $slugs[0];
 
         return VocabularyCategory::firstOrCreate(
             ['slug' => $slug],
-            ['name_id' => "Kosakata Pelajaran {$chapter}", 'name_en' => "Lesson {$chapter} Vocabulary"],
+            $this->level === 'N5'
+                ? ['name_id' => "Kosakata Pelajaran {$chapter}", 'name_en' => "Lesson {$chapter} Vocabulary"]
+                : ['name_id' => "Kosakata {$this->level} Pelajaran {$chapter}", 'name_en' => "{$this->level} Lesson {$chapter} Vocabulary"],
         );
     }
 }

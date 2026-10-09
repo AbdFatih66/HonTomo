@@ -1,0 +1,285 @@
+{
+    "id": "n4-19",
+    "level": "N4",
+    "focus": "〜すぎます、Vます 〜やすい／〜にくい、Ｎを 〜く／〜に します、Ｎに します",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "いらっしゃいませ。きょうは どう なさいますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "かみを みじかく して ください。"
+            },
+            {
+                "speaker": "female",
+                "text": "どのくらい みじかく しますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "みみが みえる くらいに おねがいします。"
+            },
+            {
+                "speaker": "female",
+                "text": "わかりました。シャンプーを した あとで、カットを します。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-19/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l19-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は 髪《かみ》を どう したいですか。",
+                "choices": [
+                    "短《みじか》く したいです",
+                    "長《なが》く したいです",
+                    "カラーを したいです"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Bagaimana laki-laki itu ingin rambutnya? ...Dipendekkan.",
+                    "en": "How does the man want his hair? ...Shorter."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l19-kq2",
+                "prompt": "カットの 前《まえ》に 何《なに》を しますか。",
+                "choices": [
+                    "シャンプー",
+                    "ブロー",
+                    "パーマ"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang dilakukan sebelum potong? ...Keramas.",
+                    "en": "What do they do before the cut? ...A shampoo."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l19-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この かばんは どうですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ちょっと ちいさすぎます。もう すこし おおきいのは ありませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q1.mp3",
+            "prompt": "かばんは どうですか。",
+            "choices": [
+                "小《ちい》さすぎます",
+                "大《おお》きすぎます",
+                "高《たか》すぎます"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana tasnya? ...Terlalu kecil.",
+                "en": "How is the bag? ...Too small."
+            }
+        },
+        {
+            "id": "n4l19-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この じしょは つかいやすいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、じが おおきくて よみやすいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q2.mp3",
+            "prompt": "辞書《じしょ》は どうですか。",
+            "choices": [
+                "読《よ》みやすいです",
+                "読《よ》みにくいです",
+                "持《も》ちやすいです"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana kamusnya? ...Mudah dibaca.",
+                "en": "How is the dictionary? ...Easy to read."
+            }
+        },
+        {
+            "id": "n4l19-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "エアコンを すこし よわく しましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、おねがいします。ちょっと さむいんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q3.mp3",
+            "prompt": "エアコンを どう しますか。",
+            "choices": [
+                "弱《よわ》く します",
+                "強《つよ》く します",
+                "消《け》します"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang dilakukan pada AC? ...Dikecilkan.",
+                "en": "What do they do with the AC? ...Turn it down."
+            }
+        },
+        {
+            "id": "n4l19-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、おひるは なにに しますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わしょくに します。てんぷらを たべます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q4.mp3",
+            "prompt": "ケンさんは 昼《ひる》ごはんに 何《なに》を 食《た》べますか。",
+            "choices": [
+                "天《てん》ぷら",
+                "カレー",
+                "ラーメン"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang Ken makan siang? ...Tempura.",
+                "en": "What does Ken eat for lunch? ...Tempura."
+            }
+        },
+        {
+            "id": "n4l19-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この シャツは ちょっと おおきすぎますね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。じゃ、ひとつ ちいさいのに しましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q5.mp3",
+            "prompt": "シャツは 大《おお》きすぎます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kemeja terlalu besar. → Benar.",
+                "en": "The shirt is too big. → True."
+            }
+        },
+        {
+            "id": "n4l19-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この くつは あるきにくいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、かるくて あるきやすいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q6.mp3",
+            "prompt": "靴《くつ》は 歩《ある》きにくいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Sepatu sulit dipakai berjalan. → Salah.",
+                "en": "The shoes are hard to walk in. → False."
+            }
+        },
+        {
+            "id": "n4l19-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、ピザを たべすぎましたね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、おなかが いたいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q7.mp3",
+            "prompt": "ケンさんは ピザを 食《た》べすぎました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ken makan pizza terlalu banyak. → Benar.",
+                "en": "Ken ate too much pizza. → True."
+            }
+        },
+        {
+            "id": "n4l19-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "へやは シングルに しますか、ツインに しますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ツインに します。ともだちと いっしょですから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q8.mp3",
+            "prompt": "女《おんな》の 人《ひと》は シングルの 部屋《へや》に します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu memilih kamar single. → Salah (twin).",
+                "en": "The woman chooses a single room. → False (twin)."
+            }
+        },
+        {
+            "id": "n4l19-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あしたの かいぎは なんじに しますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "くじに しましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-19/n4l19-q9.mp3",
+            "prompt": "会議《かいぎ》は 九時《くじ》に します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Rapat diadakan pukul sembilan. → Benar.",
+                "en": "The meeting is at nine. → True."
+            }
+        }
+    ]
+}

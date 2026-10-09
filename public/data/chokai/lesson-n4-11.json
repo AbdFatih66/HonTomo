@@ -1,0 +1,280 @@
+{
+    "id": "n4-11",
+    "level": "N4",
+    "focus": "〜ように（tujuan）, 〜ようになります, 〜ようにしています／ください, 〜く／〜に",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、元気ですね。何かしていますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "毎朝、走るようにしています。"
+            },
+            {
+                "speaker": "female",
+                "text": "すごいですね。わたしは、最近、やっと十キロ走れるようになりました。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいですね。今度、いっしょに走りましょう。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-11/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l11-kq1",
+                "prompt": "ブディさんは　毎朝《まいあさ》　何《なに》を　して　いますか。",
+                "choices": [
+                    "走《はし》るように　しています",
+                    "歩《ある》くように　しています",
+                    "泳《およ》ぐように　しています"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi berusaha berlari setiap pagi.",
+                    "en": "Budi tries to run every morning."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l11-kq2",
+                "prompt": "女《おんな》の　人《ひと》は　やっと　何《なに》が　できるように　なりましたか。",
+                "choices": [
+                    "十《じゅっ》キロ　走《はし》れるように　なりました",
+                    "十《じゅっ》キロ　泳《およ》げるように　なりました",
+                    "自転車《じてんしゃ》に　乗《の》れるように　なりました"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Akhirnya ia jadi bisa berlari 10 km.",
+                    "en": "She can finally run 10 km."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l11-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "毎日、会社まで歩くようにしています。駅から二十分です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q1.mp3",
+            "prompt": "この　人《ひと》は　会社《かいしゃ》まで　どうして　いますか。",
+            "choices": [
+                "歩《ある》いて　います",
+                "バスで　行《い》って　います",
+                "自転車《じてんしゃ》で　行《い》って　います"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia berusaha berjalan kaki ke kantor setiap hari.",
+                "en": "She tries to walk to the office every day."
+            }
+        },
+        {
+            "id": "n4l11-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "たばこは、吸っていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、健康のために、吸わないようにしています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q2.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どうして　たばこを　吸《す》いませんか。",
+            "choices": [
+                "健康《けんこう》の　ためです",
+                "お金《かね》が　ないからです",
+                "きらいだからです"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia tidak merokok demi kesehatan.",
+                "en": "He does not smoke for the sake of his health."
+            }
+        },
+        {
+            "id": "n4l11-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "自転車に乗れるようになりましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、先週、やっと乗れるようになりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q3.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　いつ　自転車《じてんしゃ》に　乗《の》れるように　なりましたか。",
+            "choices": [
+                "先週《せんしゅう》",
+                "先月《せんげつ》",
+                "きのう"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia jadi bisa naik sepeda minggu lalu.",
+                "en": "He became able to ride a bicycle last week."
+            }
+        },
+        {
+            "id": "n4l11-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "最近、日本語のニュースがわかるようになりました。毎晩、三十分、聞いています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q4.mp3",
+            "prompt": "毎晩《まいばん》　何分《なんぷん》　聞《き》いて　いますか。",
+            "choices": [
+                "三十分《さんじゅっぷん》",
+                "二十分《にじゅっぷん》",
+                "四十分《よんじゅっぷん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia mendengarkan berita 30 menit setiap malam.",
+                "en": "He listens for thirty minutes every night."
+            }
+        },
+        {
+            "id": "n4l11-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "約束の時間に遅れないように、いつも十分前に着きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q5.mp3",
+            "prompt": "この　人《ひと》は　いつも　何分前《なんぷんまえ》に　着《つ》きますか。",
+            "choices": [
+                "十分前《じゅっぷんまえ》",
+                "五分前《ごふんまえ》",
+                "十五分前《じゅうごふんまえ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia selalu tiba 10 menit lebih awal.",
+                "en": "She always arrives ten minutes early."
+            }
+        },
+        {
+            "id": "n4l11-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "お酒は、あまり飲まないようにしてください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q6.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　何《なに》を　言《い》いましたか。",
+            "choices": [
+                "お酒《さけ》を　あまり　飲《の》まないように",
+                "毎日《まいにち》　薬《くすり》を　飲《の》むように",
+                "早《はや》く　寝《ね》るように"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia berkata: usahakan jangan terlalu banyak minum minuman keras.",
+                "en": "He said: please try not to drink much alcohol."
+            }
+        },
+        {
+            "id": "n4l11-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "夜、遅く食べないようにしていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、八時までに食べるようにしています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　答《こた》えは　どれですか。",
+            "choices": [
+                "八時《はちじ》までに　食《た》べるように　しています",
+                "八時《はちじ》ごろに　寝《ね》るように　しています",
+                "夜《よる》　遅《おそ》く　食《た》べるように　しています"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia berusaha makan sebelum jam delapan.",
+                "en": "He tries to eat before eight o'clock."
+            }
+        },
+        {
+            "id": "n4l11-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "エレベーターを使わないで、階段を歩くようにしています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q8.mp3",
+            "prompt": "○か　×か。「この　人《ひと》は　エレベーターを　使《つか》います」",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Salah: ia tidak memakai lift, ia berjalan lewat tangga.",
+                "en": "False: she does not use the elevator; she takes the stairs."
+            }
+        },
+        {
+            "id": "n4l11-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "毎月、給料から少し貯金するようにしています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q9.mp3",
+            "prompt": "○か　×か。「この　人《ひと》は　毎月《まいつき》　貯金《ちょきん》して　います」",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar: ia berusaha menabung sedikit setiap bulan.",
+                "en": "True: he tries to save a little every month."
+            }
+        },
+        {
+            "id": "n4l11-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "声が小さいですね。もう少し大きく話してください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-11/n4l11-q10.mp3",
+            "prompt": "○か　×か。「この　人《ひと》は　小《ちい》さい　声《こえ》で　話《はな》して　ほしいです」",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Salah: ia meminta bicara lebih keras.",
+                "en": "False: she is asking the person to speak louder."
+            }
+        }
+    ]
+}

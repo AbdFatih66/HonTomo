@@ -2,9 +2,8 @@
 // component), so the sidebar follows the language switcher.
 //
 // Urutan item MENGIKUTI ROADMAP BELAJAR, dari dasar sampai ujian:
-//   Dasbor → Kana → Belajar (pelajaran) → Kosakata → Kanji
-//   → Latihan Soal → Latihan Menyimak → Latihan Menulis
-//   → Referensi Tata Bahasa → Tes JLPT
+//   Dasbor → Kana → Tata Bahasa → Referensi Tata Bahasa → Kosakata → Kanji
+//   → Latihan Soal → Latihan Menulis → Latihan Menyimak → Percakapan → Tes JLPT
 // Menu admin selalu di paling bawah.
 export default [
   {
@@ -23,6 +22,11 @@ export default [
     icon: { icon: 'tabler-book' },
   },
   {
+    title: 'nav.lampiran',
+    to: { name: 'lampiran' },
+    icon: { icon: 'tabler-clipboard-list' },
+  },
+  {
     title: 'nav.vocabulary',
     to: { name: 'kosakata' },
     icon: { icon: 'tabler-notebook' },
@@ -38,6 +42,11 @@ export default [
     icon: { icon: 'tabler-pencil-check' },
   },
   {
+    title: 'nav.kaite_oboeru',
+    to: { name: 'kaite-oboeru' },
+    icon: { icon: 'tabler-writing-sign' },
+  },
+  {
     title: 'nav.chokai',
     to: { name: 'chokai' },
     icon: { icon: 'tabler-headphones' },
@@ -46,16 +55,6 @@ export default [
     title: 'nav.kaiwa',
     to: { name: 'kaiwa' },
     icon: { icon: 'tabler-messages' },
-  },
-  {
-    title: 'nav.kaite_oboeru',
-    to: { name: 'kaite-oboeru' },
-    icon: { icon: 'tabler-writing-sign' },
-  },
-  {
-    title: 'nav.lampiran',
-    to: { name: 'lampiran' },
-    icon: { icon: 'tabler-clipboard-list' },
   },
   {
     title: 'nav.jlpt_test',

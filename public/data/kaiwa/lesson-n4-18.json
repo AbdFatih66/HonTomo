@@ -1,0 +1,358 @@
+{
+    "id": 18,
+    "level": "N4",
+    "title_id": "Pelajaran 18: Kelihatannya Menyenangkan",
+    "title_en": "Lesson 18: It Looks Fun",
+    "scenarios": [
+        {
+            "id": "n4l18-s1",
+            "title_id": "Langit mendung",
+            "title_en": "A cloudy sky",
+            "setting_id": "Rekan kerja mengajak melihat langit sebelum pulang.",
+            "setting_en": "A colleague points at the sky before going home.",
+            "goal_id": "Menyatakan gejala akan terjadi dengan 〜そうです.",
+            "goal_en": "State what is about to happen with 〜そうです.",
+            "patterns": [
+                "Ｖ(ます形)＋そうです"
+            ],
+            "partner": {
+                "name": "スリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l18-s1-t1",
+                    "who": "partner",
+                    "ja": "空《そら》を 見《み》て ください。どうですか。",
+                    "speak": "そらを みて ください。どうですか。",
+                    "id_text": "Coba lihat langit. Bagaimana?",
+                    "en_text": "Look at the sky. What do you think?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l18-s1-t2",
+                    "who": "you",
+                    "ja": "今《いま》にも 雨《あめ》が 降《ふ》りそうです。",
+                    "speak": "いまにも あめが ふりそうです。",
+                    "id_text": "Sepertinya sebentar lagi hujan.",
+                    "en_text": "It looks like it will rain any moment.",
+                    "accept": [
+                        "今にも雨が降りそうです。",
+                        "いまにもあめがふりそうです"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l18-s1-t3",
+                    "who": "partner",
+                    "ja": "かさを 持《も》って いますか。",
+                    "speak": "かさを もって いますか。",
+                    "id_text": "Apakah kamu membawa payung?",
+                    "en_text": "Do you have an umbrella?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l18-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、持《も》って いません。",
+                    "speak": "いいえ、もって いません。",
+                    "id_text": "Tidak, saya tidak membawanya.",
+                    "en_text": "No, I do not have one.",
+                    "accept": [
+                        "いいえ、持っていません。",
+                        "いいえ、もっていません"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l18-s1-t5",
+                    "who": "partner",
+                    "ja": "じゃ、コンビニへ 行《い》って、傘《かさ》を 買《か》って 来《き》て ください。",
+                    "speak": "じゃ、コンビニへ いって、かさを かって きて ください。",
+                    "id_text": "Kalau begitu, pergilah ke minimarket dan beli payung.",
+                    "en_text": "Then go to the convenience store and buy an umbrella.",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l18-s1-t6",
+                    "who": "you",
+                    "ja": "はい、買《か》って 来《き》ます。",
+                    "speak": "はい、かって きます。",
+                    "id_text": "Baik, saya belikan.",
+                    "en_text": "Yes, I will go and buy one.",
+                    "accept": [
+                        "はい、買って来ます。",
+                        "はい、かってきます"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l18-s2",
+            "title_id": "Kue dari teman",
+            "title_en": "A cake from a friend",
+            "setting_id": "Rekan kerja membawa kue buatan sendiri.",
+            "setting_en": "A colleague brings a homemade cake.",
+            "goal_id": "Menyatakan kesan dengan kata sifat + そうです.",
+            "goal_en": "Give an impression with adjective + そうです.",
+            "patterns": [
+                "Ａい／Ａな＋そうです"
+            ],
+            "partner": {
+                "name": "田口",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l18-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、これを どうぞ。わたしが 作《つく》った ケーキです。",
+                    "speak": "ブディさん、これを どうぞ。わたしが つくった ケーキです。",
+                    "id_text": "Budi, silakan. Ini kue buatan saya.",
+                    "en_text": "Budi, please have this. I made this cake.",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l18-s2-t2",
+                    "who": "you",
+                    "ja": "わあ、おいしそうですね。",
+                    "speak": "わあ、おいしそうですね。",
+                    "id_text": "Wah, kelihatannya enak.",
+                    "en_text": "Wow, it looks delicious.",
+                    "accept": [
+                        "わあ、美味しそうですね。",
+                        "わあおいしそうですね"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l18-s2-t3",
+                    "who": "partner",
+                    "ja": "食《た》べて みて ください。",
+                    "speak": "たべて みて ください。",
+                    "id_text": "Silakan dicoba.",
+                    "en_text": "Please try it.",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l18-s2-t4",
+                    "who": "you",
+                    "ja": "いただきます。",
+                    "speak": "いただきます。",
+                    "id_text": "Saya makan, ya.",
+                    "en_text": "Let me eat.",
+                    "accept": [
+                        "頂きます。",
+                        "いただきます"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l18-s2-t5",
+                    "who": "partner",
+                    "ja": "どうですか。",
+                    "speak": "どうですか。",
+                    "id_text": "Bagaimana?",
+                    "en_text": "How is it?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l18-s2-t6",
+                    "who": "you",
+                    "ja": "とても おいしいです。",
+                    "speak": "とても おいしいです。",
+                    "id_text": "Enak sekali.",
+                    "en_text": "It is very tasty.",
+                    "accept": [
+                        "とても美味しいです。",
+                        "とてもおいしいです"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l18-s3",
+            "title_id": "Pergi sebentar",
+            "title_en": "Popping out",
+            "setting_id": "Rekan kerja bertanya ke mana Anda pergi.",
+            "setting_en": "A colleague asks where you are going.",
+            "goal_id": "Berpamitan dengan 〜て来ます.",
+            "goal_en": "Say you will go and come back with 〜て来ます.",
+            "patterns": [
+                "Ｎへ 行って 来ます",
+                "Ｖて 来ます"
+            ],
+            "partner": {
+                "name": "森",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l18-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、どこへ 行《い》きますか。",
+                    "speak": "ブディさん、どこへ いきますか。",
+                    "id_text": "Budi, mau ke mana?",
+                    "en_text": "Budi, where are you going?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l18-s3-t2",
+                    "who": "you",
+                    "ja": "ちょっと 郵便局《ゆうびんきょく》へ 行《い》って 来《き》ます。",
+                    "speak": "ちょっと ゆうびんきょくへ いって きます。",
+                    "id_text": "Saya ke kantor pos sebentar.",
+                    "en_text": "I will pop over to the post office.",
+                    "accept": [
+                        "ちょっと郵便局へ行って来ます。",
+                        "ちょっとゆうびんきょくへいってきます"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l18-s3-t3",
+                    "who": "partner",
+                    "ja": "いってらっしゃい。何《なに》を しますか。",
+                    "speak": "いってらっしゃい。なにを しますか。",
+                    "id_text": "Hati-hati. Mau apa di sana?",
+                    "en_text": "See you. What will you do there?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l18-s3-t4",
+                    "who": "you",
+                    "ja": "切手《きって》を 買《か》って 来《き》ます。",
+                    "speak": "きってを かって きます。",
+                    "id_text": "Saya beli perangko.",
+                    "en_text": "I will buy some stamps.",
+                    "accept": [
+                        "切手を買って来ます。",
+                        "きってをかってきます"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l18-s3-t5",
+                    "who": "partner",
+                    "ja": "何時《なんじ》ごろ 戻《もど》りますか。",
+                    "speak": "なんじごろ もどりますか。",
+                    "id_text": "Kira-kira jam berapa kembali?",
+                    "en_text": "About what time will you be back?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l18-s3-t6",
+                    "who": "you",
+                    "ja": "三十分《さんじゅっぷん》ぐらいで 戻《もど》ります。",
+                    "speak": "さんじゅっぷんぐらいで もどります。",
+                    "id_text": "Sekitar tiga puluh menit lagi.",
+                    "en_text": "In about thirty minutes.",
+                    "accept": [
+                        "30分ぐらいで戻ります。",
+                        "三十分ぐらいで戻ります。",
+                        "三十分くらいで戻ります。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l18-s4",
+            "title_id": "Titip beli bekal",
+            "title_en": "Asking for lunch",
+            "setting_id": "Rekan kerja akan ke minimarket.",
+            "setting_en": "A colleague is heading to the convenience store.",
+            "goal_id": "Meminta tolong dengan 〜て くれませんか.",
+            "goal_en": "Ask a favour with 〜て くれませんか.",
+            "patterns": [
+                "Ｖて くれませんか"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l18-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、コンビニへ 行《い》って 来《き》ます。",
+                    "speak": "ブディさん、コンビニへ いって きます。",
+                    "id_text": "Budi, saya ke minimarket dulu.",
+                    "en_text": "Budi, I am going to the convenience store.",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l18-s4-t2",
+                    "who": "you",
+                    "ja": "じゃ、お弁当《べんとう》を 買《か》って 来《き》て くれませんか。",
+                    "speak": "じゃ、おべんとうを かって きて くれませんか。",
+                    "id_text": "Kalau begitu, tolong belikan bekal.",
+                    "en_text": "Then could you buy me a boxed lunch?",
+                    "accept": [
+                        "じゃ、お弁当を買って来てくれませんか。",
+                        "じゃおべんとうをかってきてくれませんか"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l18-s4-t3",
+                    "who": "partner",
+                    "ja": "いいですよ。何《なに》が いいですか。",
+                    "speak": "いいですよ。なにが いいですか。",
+                    "id_text": "Boleh. Mau yang mana?",
+                    "en_text": "Sure. Which one would you like?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l18-s4-t4",
+                    "who": "you",
+                    "ja": "からあげ弁当《べんとう》が いいです。",
+                    "speak": "からあげべんとうが いいです。",
+                    "id_text": "Bekal ayam goreng saja.",
+                    "en_text": "The fried chicken lunch, please.",
+                    "accept": [
+                        "からあげ弁当がいいです。",
+                        "唐揚げ弁当がいいです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l18-s4-t5",
+                    "who": "partner",
+                    "ja": "わかりました。ほかに ありますか。",
+                    "speak": "わかりました。ほかに ありますか。",
+                    "id_text": "Baik. Ada lagi?",
+                    "en_text": "Understood. Anything else?",
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l18-s4-t6",
+                    "who": "you",
+                    "ja": "お茶《ちゃ》も 買《か》って 来《き》て くれませんか。",
+                    "speak": "おちゃも かって きて くれませんか。",
+                    "id_text": "Tolong belikan teh juga.",
+                    "en_text": "Could you buy some tea too?",
+                    "accept": [
+                        "お茶も買って来てくれませんか。",
+                        "おちゃもかってきてくれませんか"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-18/n4l18-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

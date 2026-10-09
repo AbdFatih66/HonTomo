@@ -1,0 +1,316 @@
+{
+    "id": "n4-21",
+    "level": "N4",
+    "focus": "Ｖる／Ｖている／Ｖた ところです, Ｖた ばかりです, 〜はずです",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、今、いいですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "すみません、今ちょうど宅配便を受け取っているところです。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですか。じゃ、あとで電話します。"
+            },
+            {
+                "speaker": "male",
+                "text": "すぐ終わりますから、五分後にお願いします。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい、わかりました。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとうございます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-21/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l21-kq1",
+                "audio": null,
+                "prompt": "男《おとこ》の 人《ひと》は 今《いま》 何《なに》を して いますか。",
+                "choices": [
+                    "宅配便《たくはいびん》を 受《う》け取《と》って いる",
+                    "ご飯《はん》を 食《た》べて いる",
+                    "電話《でんわ》を して いる"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang sedang dilakukan pria itu? Menerima paket.",
+                    "en": "What is the man doing now? Receiving a parcel."
+                }
+            },
+            {
+                "id": "n4l21-kq2",
+                "audio": null,
+                "prompt": "男《おとこ》の 人《ひと》は いつ 電話《でんわ》して ほしいですか。",
+                "choices": [
+                    "一時間後《いちじかんご》",
+                    "五分後《ごふんご》",
+                    "あした"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Kapan pria itu ingin ditelepon? Lima menit lagi.",
+                    "en": "When does the man want a call? In five minutes."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l21-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "もしもし、田中さんはいますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "今、会議に出ているところです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q1.mp3",
+            "prompt": "田中《たなか》さんは 今《いま》 何《なに》を して いますか。",
+            "choices": [
+                "食事《しょくじ》",
+                "会議《かいぎ》",
+                "電話《でんわ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang sedang dilakukan Tanaka? Rapat.",
+                "en": "What is Mr. Tanaka doing now? He is in a meeting."
+            }
+        },
+        {
+            "id": "n4l21-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "バスは、もう行きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、たった今出たところです。次のバスは、じゅっぷんごですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q2.mp3",
+            "prompt": "バスは いつ 出《で》ましたか。",
+            "choices": [
+                "十分《じゅっぷん》 前《まえ》",
+                "たった 今《いま》",
+                "まだ 出《で》て いない"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Bus berangkat kapan? Baru saja.",
+                "en": "When did the bus leave? Just now."
+            }
+        },
+        {
+            "id": "n4l21-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ご飯は食べましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、これから食べるところです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は ご飯《はん》を 食《た》べましたか。",
+            "choices": [
+                "もう 食《た》べた",
+                "今《いま》 食《た》べて いる",
+                "まだ 食《た》べて いない"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apakah pria itu sudah makan? Belum.",
+                "en": "Has the man eaten? Not yet."
+            }
+        },
+        {
+            "id": "n4l21-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日本に来て、どのくらいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "先月来たばかりです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は いつ 日本《にほん》に 来《き》ましたか。",
+            "choices": [
+                "先月《せんげつ》",
+                "去年《きょねん》",
+                "さんねん 前《まえ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan pria itu datang ke Jepang? Bulan lalu.",
+                "en": "When did the man come to Japan? Last month."
+            }
+        },
+        {
+            "id": "n4l21-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田中さんは、今日来ますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、十時に来るはずです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q5.mp3",
+            "prompt": "田中《たなか》さんは 何時《なんじ》に 来《く》る はずですか。",
+            "choices": [
+                "九時《くじ》",
+                "十一時《じゅういちじ》",
+                "十時《じゅうじ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Jam berapa Tanaka seharusnya datang? Jam sepuluh.",
+                "en": "What time should Mr. Tanaka come? At ten."
+            }
+        },
+        {
+            "id": "n4l21-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "宅配便は、届きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "荷物は、たった今届いたところです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "荷物《にもつ》は まだ 届《とど》いて いません。",
+                "荷物《にもつ》は 今《いま》 届《とど》いた ところです。",
+                "荷物《にもつ》は 来週《らいしゅう》 届《とど》く はずです。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jawaban pria: paket baru saja sampai.",
+                "en": "The man's answer: the parcel has just arrived."
+            }
+        },
+        {
+            "id": "n4l21-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "このパソコン、いつ買いましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "先週買ったばかりなのに、もう動きません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q7.mp3",
+            "prompt": "女《おんな》の 人《ひと》の パソコンは どうですか。",
+            "choices": [
+                "先週《せんしゅう》 買《か》ったから、よく 動《うご》く。",
+                "まだ 買《か》って いない。",
+                "先週《せんしゅう》 買《か》ったが、もう 動《うご》かない。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Bagaimana komputer wanita itu? Baru dibeli minggu lalu tetapi sudah tidak jalan.",
+                "en": "How is the woman's computer? Bought last week, but it already doesn't work."
+            }
+        },
+        {
+            "id": "n4l21-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "今、何をしていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうじをしているところです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q8.mp3",
+            "prompt": "女《おんな》の 人《ひと》は これから そうじを します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Wanita itu akan membersihkan mulai sekarang. (×) Dia sedang membersihkan.",
+                "en": "The woman is about to start cleaning. (×) She is in the middle of it."
+            }
+        },
+        {
+            "id": "n4l21-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ミラーさんは、もう家にいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、今日は休みですから、いるはずです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q9.mp3",
+            "prompt": "ミラーさんは 家《いえ》に いる はずです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Miller seharusnya ada di rumah. (○)",
+                "en": "Mr. Miller should be at home. (○)"
+            }
+        },
+        {
+            "id": "n4l21-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "仕事は、もう終わりましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、たった今終わったところです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-21/n4l21-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》の 仕事《しごと》は まだ 終《お》わって いません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pekerjaan wanita itu belum selesai. (×)",
+                "en": "The woman's work is not finished yet. (×)"
+            }
+        }
+    ]
+}

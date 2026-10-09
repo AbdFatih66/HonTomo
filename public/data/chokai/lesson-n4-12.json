@@ -1,0 +1,320 @@
+{
+    "id": "n4-12",
+    "level": "N4",
+    "focus": "Kata kerja pasif (受身形), Ｎ１は Ｎ２に 〜れます, kepemilikan terdampak, Ｎが 〜れます, 作られます (から／で)",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、顔色が悪いですね。どうしたんですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "昨日、電車で財布を盗まれたんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "それは大変でしたね。警察に行きましたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい。警官に、名前と電話番号を聞かれました。"
+            },
+            {
+                "speaker": "female",
+                "text": "財布の中に何が入っていましたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "カードと、少しのお金です。でも、パスポートは家にありました。"
+            }
+        ],
+        "audio": null,
+        "questions": [
+            {
+                "id": "n4l12-kq1",
+                "prompt": "ブディさんは 昨日《きのう》 何《なに》を されましたか。",
+                "choices": [
+                    "財布《さいふ》を 盗《ぬす》まれた",
+                    "財布《さいふ》を 落《お》とした",
+                    "かばんを 壊《こわ》された"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang dialami Budi kemarin? Dompetnya dicuri.",
+                    "en": "What happened to Budi yesterday? His wallet was stolen."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l12-kq2",
+                "prompt": "警官《けいかん》に 何《なに》を 聞《き》かれましたか。",
+                "choices": [
+                    "住所《じゅうしょ》と 年《とし》",
+                    "名前《なまえ》と 電話番号《でんわばんごう》",
+                    "仕事《しごと》と 国《くに》"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Apa yang ditanyakan polisi? Nama dan nomor telepon.",
+                    "en": "What did the police officer ask? His name and phone number."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l12-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日、何かありましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "先生にほめられました。作文がとても上手だと言われました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 昨日《きのう》 だれに 褒《ほ》められましたか。",
+            "choices": [
+                "先生《せんせい》",
+                "友達《ともだち》",
+                "部長《ぶちょう》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pria itu kemarin dipuji siapa? Guru.",
+                "en": "Who praised the man yesterday? His teacher."
+            }
+        },
+        {
+            "id": "n4l12-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この町では、夏にお祭りがひらかれますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、八月に川の近くでひらかれますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q2.mp3",
+            "prompt": "お祭《まつ》りは いつ ひらかれますか。",
+            "choices": [
+                "五月《ごがつ》",
+                "十二月《じゅうにがつ》",
+                "八月《はちがつ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Festival diadakan kapan? Bulan Agustus.",
+                "en": "When is the festival held? In August."
+            }
+        },
+        {
+            "id": "n4l12-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "このチーズは、何から作られていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "牛乳から作られています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q3.mp3",
+            "prompt": "チーズは 何《なに》から 作《つく》られて いますか。",
+            "choices": [
+                "米《こめ》",
+                "牛乳《ぎゅうにゅう》",
+                "大豆《だいず》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Keju dibuat dari apa? Susu.",
+                "en": "What is cheese made from? Milk."
+            }
+        },
+        {
+            "id": "n4l12-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日本の車は、どこへ輸出されていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "せかいじゅうに輸出されています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q4.mp3",
+            "prompt": "日本《にほん》の 車《くるま》は どこへ 輸出《ゆしゅつ》されて いますか。",
+            "choices": [
+                "アジア だけ",
+                "ヨーロッパ だけ",
+                "世界中《せかいじゅう》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mobil Jepang diekspor ke mana? Seluruh dunia.",
+                "en": "Where are Japanese cars exported? All over the world."
+            }
+        },
+        {
+            "id": "n4l12-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "母に部屋のそうじを頼まれたので、今日は早く帰ります。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうですか。お疲れさまでした。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q5.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 早《はや》く 帰《かえ》りますか。",
+            "choices": [
+                "母《はは》に 呼《よ》ばれたから",
+                "友達《ともだち》に 誘《さそ》われたから",
+                "母《はは》に そうじを 頼《たの》まれたから"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa pria itu pulang cepat? Karena diminta ibunya membersihkan kamar.",
+                "en": "Why is the man going home early? His mother asked him to clean the room."
+            }
+        },
+        {
+            "id": "n4l12-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "どろぼうに何を盗まれましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "財布は盗まれませんでしたが、かばんを盗まれました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q6.mp3",
+            "prompt": "女《おんな》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "財布《さいふ》を 盗《ぬす》まれました。",
+                "かばんを 盗《ぬす》まれました。",
+                "財布《さいふ》も かばんも 盗《ぬす》まれました。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jawaban wanita: tasnya dicuri (dompetnya tidak).",
+                "en": "The woman's answer: her bag was stolen (not her wallet)."
+            }
+        },
+        {
+            "id": "n4l12-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この小説は、何語に翻訳されていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "英語には翻訳されていますが、中国語には翻訳されていません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q7.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "英語《えいご》には 翻訳《ほんやく》されて いますが、中国語《ちゅうごくご》には されて いません。",
+                "英語《えいご》にも 中国語《ちゅうごくご》にも 翻訳《ほんやく》されて います。",
+                "中国語《ちゅうごくご》には 翻訳《ほんやく》されて いますが、英語《えいご》には されて いません。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jawaban pria: diterjemahkan ke bahasa Inggris, tetapi belum ke bahasa Mandarin.",
+                "en": "The man's answer: it is translated into English but not into Chinese."
+            }
+        },
+        {
+            "id": "n4l12-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この机は、木で作られていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、プラスチックで作られています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q8.mp3",
+            "prompt": "この 机《つくえ》は 木《き》で 作《つく》られて います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Meja ini dibuat dari kayu. (×)",
+                "en": "This desk is made of wood. (×)"
+            }
+        },
+        {
+            "id": "n4l12-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "さっき部長に呼ばれました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "何かあったんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "メールの書き方を注意されたんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 部長《ぶちょう》に 注意《ちゅうい》されました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pria itu ditegur kepala bagian. (○)",
+                "en": "The man was warned by his manager. (○)"
+            }
+        },
+        {
+            "id": "n4l12-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日本のお酒は、何から作られていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "米から作られていますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-12/n4l12-q10.mp3",
+            "prompt": "日本《にほん》の お酒《さけ》は 麦《むぎ》から 作《つく》られて います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Sake Jepang dibuat dari gandum. (×)",
+                "en": "Japanese sake is made from wheat. (×)"
+            }
+        }
+    ]
+}

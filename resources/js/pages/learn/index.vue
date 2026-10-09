@@ -1,9 +1,11 @@
 <script setup>
 import { $api } from '@/utils/api'
+import { useLevelChoice } from '@/composables/useLevelChoice'
 
 const router = useRouter()
 const route = useRoute()
 const { t } = useI18n()
+const { level } = useLevelChoice()
 
 const path = ref(null)
 const isLoading = ref(true)
@@ -13,7 +15,7 @@ async function load() {
   isLoading.value = true
   hasError.value = false
   try {
-    path.value = await $api('/learning-path')
+    path.value = await $api('/learning-path', { query: { level: level.value } })
   }
   catch {
     hasError.value = true
@@ -43,6 +45,7 @@ function openLesson(lesson) {
   router.push({ name: 'learn-id', params: { id: lesson.id } })
 }
 
+watch(level, load)
 onMounted(load)
 </script>
 
@@ -52,13 +55,16 @@ onMounted(load)
       <h4 class="text-h4 mb-0">
         {{ t('path.title') }}
       </h4>
-      <VChip
-        v-if="path"
-        color="primary"
-        size="large"
-      >
-        {{ path.level.code }} · {{ path.level.name }}
-      </VChip>
+      <div class="d-flex align-center flex-wrap gap-2">
+        <LevelSwitch />
+        <VChip
+          v-if="path"
+          color="primary"
+          size="large"
+        >
+          {{ path.level.code }} · {{ path.level.name }}
+        </VChip>
+      </div>
     </div>
 
     <div

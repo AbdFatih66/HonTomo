@@ -19,6 +19,10 @@ use Illuminate\Support\Collection;
  * predate that convention (VocabularySeeder / MissingVocabularySeeder) and
  * spread their words across several older, topic-named categories, so
  * those two are listed explicitly here instead.
+ *
+ * Every method takes an optional JLPT level code (default "N5"). N4 chapters
+ * ("Pelajaran 1", "Pelajaran 2", ... of N4) are their own units
+ * under the N4 level and use categories with slug "n4-pelajaran-{order}".
  */
 class VocabularyChapterService
 {
@@ -37,47 +41,61 @@ class VocabularyChapterService
         2 => [1 => ['demonstratives'], 2 => ['everyday-objects', 'languages-terms', 'pelajaran-2-ungkapan']],
     ];
 
-    /** @return array<int, array<int, string>> lesson order => category slugs quizzed by that lesson */
-    public function quizLessonSlugs(int $chapter): array
+    /** Slug prefix of the single per-chapter category: N5 "pelajaran-3", N4 "n4-pelajaran-1". */
+    private function slugFor(int $chapter, string $level): string
     {
+        return $level === 'N5' ? "pelajaran-{$chapter}" : strtolower($level)."-pelajaran-{$chapter}";
+    }
+
+    /** @return array<int, array<int, string>> lesson order => category slugs quizzed by that lesson */
+    public function quizLessonSlugs(int $chapter, string $level = 'N5'): array
+    {
+        if ($level !== 'N5') {
+            return [1 => [$this->slugFor($chapter, $level)]];
+        }
+
         return self::QUIZ_LESSON_SLUGS[$chapter] ?? [1 => ["pelajaran-{$chapter}"]];
     }
 
     /** The vocabulary quiz lessons of a chapter (Pelajaran n), in order. */
-    public function quizLessons(int $chapter): Collection
+    public function quizLessons(int $chapter, string $level = 'N5'): Collection
     {
         return Lesson::where('category', 'vocabulary')
             ->whereHas('unit', fn ($q) => $q->where('order', $chapter)
-                ->whereHas('level', fn ($l) => $l->where('code', 'N5')))
+                ->whereHas('level', fn ($l) => $l->where('code', $level)))
             ->orderBy('order')
             ->get();
     }
 
     /** @return array<int, string> category slugs that belong to this chapter */
-    public function categorySlugs(int $chapter): array
+    public function categorySlugs(int $chapter, string $level = 'N5'): array
     {
+        if ($level !== 'N5') {
+            return [$this->slugFor($chapter, $level)];
+        }
+
         return self::LEGACY_CHAPTER_SLUGS[$chapter] ?? ["pelajaran-{$chapter}"];
     }
 
     /** @return array<int, int> VocabularyCategory ids that belong to this chapter */
-    public function categoryIds(int $chapter): array
+    public function categoryIds(int $chapter, string $level = 'N5'): array
     {
-        return VocabularyCategory::whereIn('slug', $this->categorySlugs($chapter))
+        return VocabularyCategory::whereIn('slug', $this->categorySlugs($chapter, $level))
             ->pluck('id')
             ->all();
     }
 
     /**
-     * One row per Unit (order 1-25) in the N5 learning path, with how many
+     * One row per Unit (order 1-25) in the given level's learning path, with how many
      * active vocabulary words that chapter has. Units without any mapped
      * vocabulary yet are still listed (count 0) so the menu shows the full
      * 1-25 range.
      *
      * @return Collection<int, array{order:int,title_id:string,title_en:string,count:int}>
      */
-    public function chapters(?User $user = null): Collection
+    public function chapters(?User $user = null, string $level = 'N5'): Collection
     {
-        $units = Unit::whereHas('level', fn ($q) => $q->where('code', 'N5'))
+        $units = Unit::whereHas('level', fn ($q) => $q->where('code', $level))
             ->whereBetween('order', [1, 25])
             ->orderBy('order')
             ->get(['id', 'order', 'title_id', 'title_en']);
@@ -89,7 +107,7 @@ class VocabularyChapterService
 
         $quizLessons = Lesson::where('category', 'vocabulary')
             ->where('is_active', true)
-            ->whereIn('unit_id', Unit::whereHas('level', fn ($q) => $q->where('code', 'N5'))
+            ->whereIn('unit_id', Unit::whereHas('level', fn ($q) => $q->where('code', $level))
                 ->whereBetween('order', [1, 25])->pluck('id'))
             ->withCount(['questions' => fn ($q) => $q->where('is_active', true)])
             ->orderBy('order')
@@ -100,8 +118,8 @@ class VocabularyChapterService
             ? UserLesson::where('user_id', $user->id)->pluck('status', 'lesson_id')
             : collect();
 
-        return $units->map(function ($unit) use ($countsByCategory, $quizLessons, $statuses) {
-            $ids = $this->categoryIds($unit->order);
+        return $units->map(function ($unit) use ($countsByCategory, $quizLessons, $statuses, $level) {
+            $ids = $this->categoryIds($unit->order, $level);
             $count = collect($ids)->sum(fn ($id) => $countsByCategory[$id] ?? 0);
 
             return [

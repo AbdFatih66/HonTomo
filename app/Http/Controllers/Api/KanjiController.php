@@ -89,10 +89,7 @@ class KanjiController extends Controller
                 $q->whereIn('id', $practicedKanjiIds);
 
                 if ($threshold !== null) {
-                    $q->orWhere(function ($q2) use ($threshold) {
-                        $q2->whereNotNull('earliest_lesson_order')
-                            ->where('earliest_lesson_order', '<=', $threshold);
-                    });
+                    $q->orWhere(fn ($q2) => $this->whereMetInLessons($q2, $threshold));
                 }
             });
 
@@ -203,9 +200,14 @@ class KanjiController extends Controller
         if ($scope === 'curriculum') {
             $threshold = $this->furthestCompletedLessonOrder($request->user()->id);
 
-            $query = Kanji::whereNotNull('earliest_lesson_order')
-                ->where('earliest_lesson_order', '<=', $threshold ?? -1)
-                ->with(['vocabulary', 'strokeData']);
+            $query = Kanji::query()->with(['vocabulary', 'strokeData']);
+
+            if ($threshold !== null) {
+                $this->whereMetInLessons($query, $threshold);
+            }
+            else {
+                $query->whereRaw('1 = 0'); // no completed lesson yet → nothing qualifies
+            }
         } else {
             $query = Kanji::where('jlpt_level', $level)->with(['vocabulary', 'strokeData']);
         }
@@ -238,14 +240,19 @@ class KanjiController extends Controller
     }
 
     /**
-     * Global order (Lesson::globalOrderMap()) of this user's furthest
-     * completed/mastered lesson — the cutoff for "kanji they've actually
-     * met so far" used by index()'s scope=learned and quiz()'s
-     * scope=curriculum. Null means the user hasn't completed any lesson
-     * yet, which both callers must treat as "nothing qualifies", not "no
-     * filter".
+     * Cutoff for "kanji they've actually met so far" used by index()'s
+     * scope=learned and quiz()'s scope=curriculum: the global order
+     * (Lesson::globalOrderMap()) of this user's furthest completed/mastered
+     * lesson, kept PER LEVEL (level band = order intdiv 100000). Each level
+     * has its own curriculum, so finishing an N4 lesson must not mark the
+     * N5 kanji of lessons the user never did as "met". Returns
+     * [band => furthest order in that band], or null when the user hasn't
+     * completed any lesson — which callers treat as "nothing qualifies",
+     * not "no filter".
+     *
+     * @return array<int, int>|null
      */
-    private function furthestCompletedLessonOrder(int $userId): ?int
+    private function furthestCompletedLessonOrder(int $userId): ?array
     {
         $completedLessonIds = UserLesson::where('user_id', $userId)
             ->whereIn('status', [UserLesson::STATUS_COMPLETED, UserLesson::STATUS_MASTERED])
@@ -257,7 +264,25 @@ class KanjiController extends Controller
 
         return Lesson::globalOrderMap()
             ->only($completedLessonIds->all())
-            ->max();
+            ->groupBy(fn (int $order) => intdiv($order, 100000))
+            ->map->max()
+            ->all();
+    }
+
+    /**
+     * Restrict a Kanji query to kanji first met in a lesson at or before the
+     * user's per-level cutoff (see furthestCompletedLessonOrder()).
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param  array<int, int>  $thresholds  level band => furthest completed order
+     */
+    private function whereMetInLessons($query, array $thresholds): void
+    {
+        $query->whereNotNull('earliest_lesson_order')->where(function ($q) use ($thresholds) {
+            foreach ($thresholds as $band => $max) {
+                $q->orWhereBetween('earliest_lesson_order', [$band * 100000, $max]);
+            }
+        });
     }
 
     private function buildQuestion($pool, array $requestedTypes, float $writeRatio)

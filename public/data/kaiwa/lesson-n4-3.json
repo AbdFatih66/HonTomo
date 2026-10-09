@@ -1,0 +1,319 @@
+{
+    "id": 3,
+    "level": "N4",
+    "title_id": "Dua kegiatan, kebiasaan & alasan",
+    "title_en": "Two actions, habits & reasons",
+    "scenarios": [
+        {
+            "id": "n4l3-s1",
+            "title_id": "Belajar sambil mendengarkan musik",
+            "title_en": "Studying while listening to music",
+            "setting_id": "Di perpustakaan, teman bertanya kebiasaan belajarmu.",
+            "setting_en": "At the library, a friend asks about your study habits.",
+            "goal_id": "Memakai 〜ながら untuk dua kegiatan sekaligus.",
+            "goal_en": "Use ~nagara for two actions at once.",
+            "patterns": [
+                "Ｖながら、Ｖ"
+            ],
+            "partner": {
+                "name": "サリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l3-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは、いつも、どうやって勉強《べんきょう》しますか。",
+                    "speak": "ブディさんは、いつも、どうやってべんきょうしますか。",
+                    "id_text": "Budi, biasanya kamu belajar bagaimana?",
+                    "en_text": "Budi, how do you usually study?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l3-s1-t2",
+                    "who": "you",
+                    "ja": "音楽《おんがく》を 聞《き》きながら 勉強《べんきょう》します。",
+                    "speak": "おんがくをききながらべんきょうします。",
+                    "id_text": "Saya belajar sambil mendengarkan musik.",
+                    "en_text": "I study while listening to music.",
+                    "accept": [
+                        "音楽を聞きながら勉強します。",
+                        "おんがくをききながらべんきょうします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l3-s1-t3",
+                    "who": "partner",
+                    "ja": "音楽《おんがく》を聞《き》きながら、集中《しゅうちゅう》できますか。",
+                    "speak": "おんがくをききながら、しゅうちゅうできますか。",
+                    "id_text": "Bisa konsentrasi sambil mendengarkan musik?",
+                    "en_text": "Can you concentrate while listening to music?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l3-s1-t4",
+                    "who": "you",
+                    "ja": "はい、できます。でも、むずかしい ときは 聞《き》きません。",
+                    "speak": "はい、できます。でも、むずかしいときはききません。",
+                    "id_text": "Bisa. Tapi saat sulit, saya tidak mendengarkan.",
+                    "en_text": "Yes. But when it is difficult, I do not listen.",
+                    "accept": [
+                        "はい、できます。でも、むずかしいときは聞きません。",
+                        "はい、できます。でも、難しいときは聞きません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l3-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですか。わたしは、コーヒーを飲《の》みながら、勉強《べんきょう》します。",
+                    "speak": "そうですか。わたしは、コーヒーをのみながら、べんきょうします。",
+                    "id_text": "Begitu ya. Saya belajar sambil minum kopi.",
+                    "en_text": "I see. I study while drinking coffee.",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s1-t5.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l3-s2",
+            "title_id": "Kebiasaan setiap hari",
+            "title_en": "Daily habits",
+            "setting_id": "Teman kerja bertanya tentang kebiasaan pagi dan malammu.",
+            "setting_en": "A coworker asks about your morning and evening habits.",
+            "goal_id": "Memakai 〜ています untuk kebiasaan.",
+            "goal_en": "Use ~te imasu for habits.",
+            "patterns": [
+                "Ｖています（kebiasaan）"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l3-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは、毎朝《まいあさ》、何《なに》をしていますか。",
+                    "speak": "ブディさんは、まいあさ、なにをしていますか。",
+                    "id_text": "Budi, setiap pagi kamu melakukan apa?",
+                    "en_text": "Budi, what do you do every morning?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l3-s2-t2",
+                    "who": "you",
+                    "ja": "毎朝《まいあさ》 六時《ろくじ》に 起《お》きて、散歩《さんぽ》して います。",
+                    "speak": "まいあさ、ろくじにおきて、さんぽしています。",
+                    "id_text": "Setiap pagi saya bangun jam enam dan berjalan-jalan.",
+                    "en_text": "Every morning I get up at six and take a walk.",
+                    "accept": [
+                        "毎朝六時に起きて、散歩しています。",
+                        "まいあさろくじにおきてさんぽしています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l3-s2-t3",
+                    "who": "partner",
+                    "ja": "いいですね。夜《よる》は、何《なに》をしていますか。",
+                    "speak": "いいですね。よるは、なにをしていますか。",
+                    "id_text": "Bagus. Kalau malam, melakukan apa?",
+                    "en_text": "Nice. What do you do at night?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l3-s2-t4",
+                    "who": "you",
+                    "ja": "毎晩《まいばん》、日記《にっき》を 書《か》いて います。",
+                    "speak": "まいばん、にっきをかいています。",
+                    "id_text": "Setiap malam saya menulis buku harian.",
+                    "en_text": "Every night I write in my diary.",
+                    "accept": [
+                        "毎晩、日記を書いています。",
+                        "まいばんにっきをかいています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l3-s2-t5",
+                    "who": "partner",
+                    "ja": "すごいですね。わたしも、始《はじ》めたいです。",
+                    "speak": "すごいですね。わたしも、はじめたいです。",
+                    "id_text": "Hebat. Saya juga ingin mulai.",
+                    "en_text": "Great. I want to start too.",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s2-t5.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l3-s3",
+            "title_id": "Mencari kamar",
+            "title_en": "Looking for a room",
+            "setting_id": "Di kantor agen properti, kamu menjelaskan alasan memilih kamar.",
+            "setting_en": "At a real-estate office, you explain why you chose a room.",
+            "goal_id": "Memakai 〜し、〜し dan それに／それで untuk alasan.",
+            "goal_en": "Use ~shi ~shi and sorekara/sorede for reasons.",
+            "patterns": [
+                "Ａし、Ｂし、～",
+                "それで／それに"
+            ],
+            "partner": {
+                "name": "やました",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l3-s3-t1",
+                    "who": "partner",
+                    "ja": "この部屋《へや》は、どうですか。",
+                    "speak": "このへやは、どうですか。",
+                    "id_text": "Bagaimana dengan kamar ini?",
+                    "en_text": "How is this room?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l3-s3-t2",
+                    "who": "you",
+                    "ja": "景色《けしき》も いいし、台所《だいどころ》も 広《ひろ》いです。",
+                    "speak": "けしきもいいし、だいどころもひろいです。",
+                    "id_text": "Pemandangannya bagus dan dapurnya juga luas.",
+                    "en_text": "The view is nice, and the kitchen is spacious too.",
+                    "accept": [
+                        "景色もいいし、台所も広いです。",
+                        "けしきもいいし、だいどころもひろいです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l3-s3-t3",
+                    "who": "partner",
+                    "ja": "家賃《やちん》は、少《すこ》し高《たか》いですが、いいですか。",
+                    "speak": "やちんは、すこしたかいですが、いいですか。",
+                    "id_text": "Sewanya agak mahal, tidak apa-apa?",
+                    "en_text": "The rent is a bit high. Is that all right?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l3-s3-t4",
+                    "who": "you",
+                    "ja": "駅《えき》に 近《ちか》いです。それに、静《しず》かです。",
+                    "speak": "えきにちかいです。それに、しずかです。",
+                    "id_text": "Dekat stasiun. Lagi pula, tenang.",
+                    "en_text": "It is close to the station. Besides, it is quiet.",
+                    "accept": [
+                        "駅に近いです。それに、静かです。",
+                        "えきにちかいです。それにしずかです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l3-s3-t5",
+                    "who": "partner",
+                    "ja": "わかりました。それで、この部屋《へや》に決《き》めますか。",
+                    "speak": "わかりました。それで、このへやにきめますか。",
+                    "id_text": "Mengerti. Jadi, apakah memilih kamar ini?",
+                    "en_text": "I see. So, will you decide on this room?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l3-s3-t6",
+                    "who": "you",
+                    "ja": "はい、ここに 決《き》めます。",
+                    "speak": "はい、ここにきめます。",
+                    "id_text": "Ya, saya memilih yang ini.",
+                    "en_text": "Yes, I will take this one.",
+                    "accept": [
+                        "はい、ここに決めます。",
+                        "はい、ここにきめます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l3-s4",
+            "title_id": "Saat lelah atau mengantuk",
+            "title_en": "When tired or sleepy",
+            "setting_id": "Teman bertanya apa yang kamu lakukan saat mengantuk atau lelah.",
+            "setting_en": "A friend asks what you do when sleepy or tired.",
+            "goal_id": "Memakai 〜とき(は) dan ungkapan A や B.",
+            "goal_en": "Use ~toki(wa) and A ya B.",
+            "patterns": [
+                "Ｖ／Ａいとき、～",
+                "Ｎや Ｎ"
+            ],
+            "partner": {
+                "name": "サリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l3-s4-t1",
+                    "who": "partner",
+                    "ja": "眠《ねむ》いときは、どうしますか。",
+                    "speak": "ねむいときは、どうしますか。",
+                    "id_text": "Kalau mengantuk, kamu melakukan apa?",
+                    "en_text": "What do you do when you are sleepy?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l3-s4-t2",
+                    "who": "you",
+                    "ja": "眠《ねむ》い ときは、ガムを 噛《か》みます。",
+                    "speak": "ねむいときは、ガムをかみます。",
+                    "id_text": "Kalau mengantuk, saya mengunyah permen karet.",
+                    "en_text": "When I am sleepy, I chew gum.",
+                    "accept": [
+                        "眠いときは、ガムを噛みます。",
+                        "ねむいときはガムをかみます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l3-s4-t3",
+                    "who": "partner",
+                    "ja": "疲《つか》れたときは、どうしますか。",
+                    "speak": "つかれたときは、どうしますか。",
+                    "id_text": "Kalau lelah, bagaimana?",
+                    "en_text": "What about when you are tired?",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l3-s4-t4",
+                    "who": "you",
+                    "ja": "疲《つか》れた ときは、音楽《おんがく》を 聞《き》きます。",
+                    "speak": "つかれたときは、おんがくをききます。",
+                    "id_text": "Kalau lelah, saya mendengarkan musik.",
+                    "en_text": "When I am tired, I listen to music.",
+                    "accept": [
+                        "疲れたときは、音楽を聞きます。",
+                        "つかれたときはおんがくをききます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l3-s4-t5",
+                    "who": "partner",
+                    "ja": "わたしは、休《やす》みの日《ひ》は、ドラマや映画《えいが》を見《み》ています。",
+                    "speak": "わたしは、やすみのひは、ドラマやえいがをみています。",
+                    "id_text": "Saya, di hari libur, menonton drama dan film.",
+                    "en_text": "On my days off, I watch dramas and movies.",
+                    "audio": "/audio/kaiwa/lesson-n4-3/n4l3-s4-t5.mp3"
+                }
+            ]
+        }
+    ]
+}

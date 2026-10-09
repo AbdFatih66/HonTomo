@@ -1,0 +1,308 @@
+{
+    "id": "n4-16",
+    "level": "N4",
+    "focus": "N4 Pelajaran 16 — いただきます／くださいます／やります, 〜て いただきます／くださいます／やります, 〜て くださいませんか, N に (お祝い・お土産)",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、きのうの 結婚式は どうでしたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "とても よかったです。部長が 車で 会場まで 送って くださいました。"
+            },
+            {
+                "speaker": "female",
+                "text": "それは よかったですね。お祝いに 何を あげましたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "森さんと いっしょに お皿を あげました。"
+            },
+            {
+                "speaker": "female",
+                "text": "いい プレゼントですね。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい。「どうぞ お幸せに」と 言いました。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-16/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l16-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は 結婚式《けっこんしき》に どうやって 行《い》きましたか。",
+                "choices": [
+                    "部長《ぶちょう》の 車《くるま》で 行《い》きました",
+                    "電車《でんしゃ》で 行《い》きました",
+                    "歩《ある》いて 行《い》きました"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Laki-laki itu pergi ke pernikahan diantar mobil kepala bagian.",
+                    "en": "The man went to the wedding in the department head car."
+                }
+            },
+            {
+                "id": "n4l16-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は お祝《いわ》いに 何《なに》を あげましたか。",
+                "choices": [
+                    "お皿《さら》",
+                    "花《はな》",
+                    "時計《とけい》"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Ia memberi piring sebagai hadiah.",
+                    "en": "He gave plates as a gift."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l16-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、その 時計は すてきですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ありがとうございます。社長に いただいたんです。結婚祝いです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q1.mp3",
+            "prompt": "ブディさんは 時計《とけい》を だれに いただきましたか。",
+            "choices": [
+                "社長《しゃちょう》に",
+                "友達《ともだち》に",
+                "兄《あに》に"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Budi menerima jam dari siapa? — Dari direktur.",
+                "en": "Who gave Budi the watch? — The company president."
+            }
+        },
+        {
+            "id": "n4l16-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この 絵本は どなたが くださったんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "森さんの おばあさんが くださったんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q2.mp3",
+            "prompt": "この 絵本《えほん》は だれが くれましたか。",
+            "choices": [
+                "森《もり》さんの おばあさん",
+                "森《もり》さんの おじいさん",
+                "森《もり》さんの お母《かあ》さん"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Buku gambar ini diberi oleh siapa? — Nenek Pak Mori.",
+                "en": "Who gave this picture book? — Mr. Mori grandmother."
+            }
+        },
+        {
+            "id": "n4l16-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "毎朝 何を して いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "犬に えさを やって、それから 花に 水を やります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 毎朝《まいあさ》 何《なに》に えさを やりますか。",
+            "choices": [
+                "犬《いぬ》",
+                "猫《ねこ》",
+                "鳥《とり》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Setiap pagi laki-laki itu memberi makan apa? — Anjing.",
+                "en": "What does the man feed every morning? — The dog."
+            }
+        },
+        {
+            "id": "n4l16-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きのうは 部長が 駅まで 送って くださったんです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "それは よかったですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》を 駅《えき》まで 送《おく》った 人《ひと》は だれですか。",
+            "choices": [
+                "部長《ぶちょう》",
+                "森《もり》さん",
+                "管理人《かんりにん》さん"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Yang mengantar perempuan itu ke stasiun adalah kepala bagian.",
+                "en": "The person who took the woman to the station was the department head."
+            }
+        },
+        {
+            "id": "n4l16-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "友達の 結婚の お祝いに 何を あげますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "きれいな お皿を あげます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》は お祝《いわ》いに 何《なに》を あげますか。",
+            "choices": [
+                "お皿《さら》",
+                "時計《とけい》",
+                "花《はな》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu memberi piring sebagai hadiah pernikahan.",
+                "en": "The woman will give plates as a wedding gift."
+            }
+        },
+        {
+            "id": "n4l16-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、この 荷物を 持って くださいませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、いいですよ。",
+                "はい、持《も》って くださいます。",
+                "いいえ、持《も》ちました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bisakah Anda membawakan barang ini? — Ya, boleh.",
+                "en": "Would you carry this luggage for me? — Yes, of course."
+            }
+        },
+        {
+            "id": "n4l16-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "お見舞いに 何を 持って 行ったら いいですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "果物《くだもの》を 持《も》って 行《い》ったら いいですよ。",
+                "はい、持《も》って 行《い》きました。",
+                "きのう 行《い》きました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang sebaiknya dibawa saat menjenguk? — Bawa buah.",
+                "en": "What should I take when visiting a sick person? — Take some fruit."
+            }
+        },
+        {
+            "id": "n4l16-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、その ハンカチ、かわいいですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "先生に いただいたんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q8.mp3",
+            "prompt": "ブディさんの ハンカチは 友達《ともだち》に もらいました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Sapu tangan itu dari guru, bukan teman. → ×",
+                "en": "The handkerchief is from the teacher, not a friend. → ×"
+            }
+        },
+        {
+            "id": "n4l16-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この 本、先生が 貸して くださったんです。来週 返します。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q9.mp3",
+            "prompt": "先生《せんせい》が 本《ほん》を 貸《か》して くださいました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Guru meminjamkan buku itu. → ○",
+                "en": "The teacher lent the book. → ○"
+            }
+        },
+        {
+            "id": "n4l16-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日曜日は 何を しますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "子どもに 絵本を 読んで あげます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-16/n4l16-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 日曜日《にちようび》に 犬《いぬ》に えさを やります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu akan membacakan buku gambar untuk anaknya, bukan memberi makan anjing. → ×",
+                "en": "The woman will read a picture book to her child, not feed a dog. → ×"
+            }
+        }
+    ]
+}

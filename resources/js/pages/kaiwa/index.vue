@@ -22,7 +22,9 @@
 // Putaran 1 = alur biasa (user menjawab). Putaran 2 = peran dibalik: user jadi penanya dan
 // bicara duluan (baris `partner` di data diucapkan user), sedangkan baris `you` diputar
 // sebagai suara lawan bicara. Skenario baru dianggap tamat setelah putaran 2.
+import ModeSwitch from '@/components/learning/ModeSwitch.vue'
 import RubyText from '@/components/learning/RubyText.vue'
+import { LEVEL_CODES, useLevelChoice } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
 import { $api } from '@/utils/api'
 import { PASS_SCORE, registerReadings, scoreSpeech } from '@/utils/kaiwaMatch'
@@ -33,11 +35,18 @@ const FALLBACK_MANIFEST = [{ id: 1, file: 'lesson-1.json', level: 'N5' }]
 
 const { t, locale } = useI18n()
 const authStore = useAuthStore()
+// Selektor N5 / N4. (`level` di bawah = level suara mic, jadi dinamai lain.)
+const { level: levelChoice, setLevel } = useLevelChoice()
 
 // Field data dwibahasa: `x_en` bila locale en dan tersedia, selain itu `x_id`/`x`.
 const tr = (o, key) => (locale.value === 'en' && o[`${key}_en`]) || o[`${key}_id`] || o[key] || ''
 
-const manifest = ref([]) // pelajaran yang tersedia (index.json → lessons)
+// Pelajaran yang tersedia: N5 dari index.json → lessons, N4 dari index-n4.json → lessons.
+// Daftar yang tampil mengikuti selektor level. Paket situasi punya selektor sendiri (mode Situasi).
+const manifests = reactive({ N5: [], N4: [] })
+const manifest = computed(() => manifests[levelChoice.value] ?? [])
+// Kunci peta skenario: id pelajaran N5 / paket situasi apa adanya, N4 diberi awalan agar tidak bentrok dengan id N5.
+const idKey = m => (m.level === 'N4' ? `n4-${m.id}` : m.id)
 const situations = ref([]) // paket situasi (index.json → situations), mis. mensetsu
 const track = ref('lesson') // 'lesson' | 'situation'
 const lastLessonId = ref(null) // pelajaran terakhir dibuka (dipulihkan saat kembali ke tab Pelajaran)
@@ -114,7 +123,7 @@ const isLocked = id => blockerOf(id) !== null
 // mahkota/centang/kunci di pojok. Tanpa keterangan (topik/jumlah skenario) — itu sudah ada di materi kaiwa.
 
 const lessonCards = computed(() => manifest.value.map((m) => {
-  const ids = lessonScenarioIds[m.id] ?? []
+  const ids = lessonScenarioIds[idKey(m)] ?? []
   const done = ids.filter(k => progress[k]?.done).length
   const crowns = ids.filter(k => progress[k]?.crown).length
   const locked = isLocked(m.id)
@@ -139,14 +148,14 @@ const nextLessonId = computed(() => (gateReady.value
 
 const overall = computed(() => {
   const sets = track.value === 'situation' ? situations.value : manifest.value
-  const all = sets.flatMap(m => lessonScenarioIds[m.id] ?? [])
+  const all = sets.flatMap(m => lessonScenarioIds[idKey(m)] ?? [])
 
   return { done: all.filter(k => progress[k]?.done).length, total: all.length }
 })
 
 // ── Kartu paket situasi (tab "Situasi") ──────────────────────────────────────
 const situationCards = computed(() => situations.value.map((m) => {
-  const ids = lessonScenarioIds[m.id] ?? []
+  const ids = lessonScenarioIds[idKey(m)] ?? []
   const done = ids.filter(k => progress[k]?.done).length
   const crowns = ids.filter(k => progress[k]?.crown).length
   const full = ids.length > 0 && done === ids.length
@@ -174,6 +183,34 @@ async function setTrack(value) {
     await selectSituation(lastSituationId.value ?? situations.value[0]?.id)
   else
     await selectLesson(lastLessonId.value ?? nextLessonId.value ?? manifest.value[0]?.id)
+}
+
+// Selektor mode di kepala halaman: Situasi | N5 | N4. Situasi berdiri sendiri (tidak ikut level);
+// N5 / N4 membuka jalur pelajaran level itu.
+const modeOptions = computed(() => [
+  ...(situations.value.length ? [{ value: 'situation', label: t('kaiwa.track_situation') }] : []),
+  ...LEVEL_CODES.map(code => ({ value: code, label: code })),
+])
+const mode = computed(() => (track.value === 'situation' ? 'situation' : levelChoice.value))
+
+async function selectMode(value) {
+  if (value === mode.value)
+    return
+  if (value === 'situation') {
+    await setTrack('situation')
+
+    return
+  }
+
+  // Ganti level memicu watch(levelChoice) yang membuka pelajaran pertama level itu.
+  if (levelChoice.value !== value) {
+    setLevel(value)
+    if (track.value === 'situation')
+      track.value = 'lesson'
+  }
+  else {
+    await setTrack('lesson')
+  }
 }
 
 async function pickSituation(card) {
@@ -205,14 +242,14 @@ async function pickLesson(card) {
 
 async function loadLessonIds() {
   // Pelajaran dan paket situasi memakai peta yang sama; id pelajaran angka, id situasi string (tidak bentrok).
-  await Promise.all([...manifest.value, ...situations.value].map(async (m) => {
+  await Promise.all([...manifests.N5, ...manifests.N4, ...situations.value].map(async (m) => {
     try {
       const res = await fetch(`/data/kaiwa/${m.file}`, { cache: 'no-cache' })
 
       if (res.ok) {
         const json = await res.json()
 
-        lessonScenarioIds[m.id] = (json.scenarios ?? []).map(sc => sc.id)
+        lessonScenarioIds[idKey(m)] = (json.scenarios ?? []).map(sc => sc.id)
       }
     }
     catch { /* gagal muat: pelajaran ini tidak dianggap menghalangi */ }
@@ -289,6 +326,16 @@ function finishScenario() {
   }).catch(() => {})
 }
 
+// Ganti level (N5 / N4): kembali ke jalur pelajaran dan buka pelajaran pertama level itu.
+watch(levelChoice, async () => {
+  if (!gateReady.value)
+    return
+
+  track.value = 'lesson'
+  lockNotice.value = ''
+  await selectLesson(manifest.value[0]?.id)
+})
+
 onMounted(async () => {
   try {
     const res = await fetch('/data/kaiwa/index.json', { cache: 'no-cache' })
@@ -297,12 +344,22 @@ onMounted(async () => {
       throw new Error(`HTTP ${res.status}`)
     const json = await res.json()
 
-    manifest.value = json.lessons ?? FALLBACK_MANIFEST
+    manifests.N5 = json.lessons ?? FALLBACK_MANIFEST
     situations.value = (json.situations ?? []).map(x => ({ ...x, track: 'situation' }))
   }
   catch {
-    manifest.value = FALLBACK_MANIFEST
+    manifests.N5 = FALLBACK_MANIFEST
   }
+
+  // Materi N4 (opsional): bila berkasnya tidak ada, pilihan N4 hanya menampilkan pesan gagal muat.
+  try {
+    const resN4 = await fetch('/data/kaiwa/index-n4.json', { cache: 'no-cache' })
+
+    if (resN4.ok)
+      manifests.N4 = ((await resN4.json()).lessons ?? []).map(x => ({ ...x, level: 'N4' }))
+  }
+  catch { /* N4 belum tersedia */ }
+
   await selectLesson(manifest.value[0]?.id)
   await Promise.all([loadLessonIds(), loadProgress()])
   gateReady.value = true
@@ -797,6 +854,12 @@ const stars = computed(() => {
         <h4 class="text-h4 mb-0">
           {{ t('kaiwa.title') }}
         </h4>
+        <ModeSwitch
+          :model-value="mode"
+          :options="modeOptions"
+          :aria-label="t('levels.switch_label')"
+          @update:model-value="selectMode"
+        />
         <VChip
           v-if="overall.total"
           color="primary"
@@ -806,26 +869,6 @@ const stars = computed(() => {
           {{ t('kaiwa.overall', { done: overall.done, total: overall.total }) }}
         </VChip>
       </div>
-
-      <VTabs
-        v-if="situations.length"
-        :model-value="track"
-        class="mt-2"
-        @update:model-value="setTrack"
-      >
-        <VTab
-          value="lesson"
-          prepend-icon="tabler-book-2"
-        >
-          {{ t('kaiwa.track_lesson') }}
-        </VTab>
-        <VTab
-          value="situation"
-          prepend-icon="tabler-briefcase"
-        >
-          {{ t('kaiwa.track_situation') }}
-        </VTab>
-      </VTabs>
 
       <div
         v-if="track === 'situation'"

@@ -1,7 +1,9 @@
 <script setup>
 import { $api } from '@/utils/api'
+import { useLevelChoice } from '@/composables/useLevelChoice'
 
 const { t, locale } = useI18n()
+const { level } = useLevelChoice()
 const route = useRoute()
 const router = useRouter()
 
@@ -20,7 +22,7 @@ async function loadChapters() {
   chaptersLoading.value = true
   chaptersError.value = false
   try {
-    const res = await $api('/vocabulary/chapters')
+    const res = await $api('/vocabulary/chapters', { query: { level: level.value } })
     chapters.value = res.data ?? []
   }
   catch {
@@ -35,7 +37,7 @@ async function loadWords() {
   wordsLoading.value = true
   wordsError.value = false
   try {
-    const res = await $api('/vocabulary', { query: { chapter: selectedChapter.value } })
+    const res = await $api('/vocabulary', { query: { chapter: selectedChapter.value, level: level.value } })
     words.value = res.data ?? []
   }
   catch {
@@ -92,21 +94,37 @@ function selectChapter(order) {
 
 watch(selectedChapter, loadWords)
 
+// Ganti level (N5 / N4): kembali ke pelajaran pertama level itu, muat ulang menu bab dan kata.
+watch(level, async () => {
+  search.value = ''
+  selectedChapter.value = 1
+  await loadChapters()
+  await loadWords()
+})
+
 onMounted(async () => {
   await loadChapters()
+
+  // ?chapter=… yang tidak ada di level ini (mis. 7 saat N4) → mulai dari pelajaran pertama yang ada.
+  if (chapters.value.length && !chapters.value.some(c => c.order === selectedChapter.value))
+    selectedChapter.value = chapters.value[0].order
+
   await loadWords()
 })
 </script>
 
 <template>
   <div>
-    <div class="mb-4">
-      <h4 class="text-h4 mb-1">
-        {{ t('vocabulary.title') }}
-      </h4>
-      <p class="text-body-2 text-medium-emphasis mb-0">
-        {{ t('vocabulary.subtitle') }}
-      </p>
+    <div class="d-flex flex-wrap align-center justify-space-between mb-4 ga-2">
+      <div>
+        <h4 class="text-h4 mb-1">
+          {{ t('vocabulary.title') }}
+        </h4>
+        <p class="text-body-2 text-medium-emphasis mb-0">
+          {{ level === 'N4' ? t('vocabulary.subtitle_n4') : t('vocabulary.subtitle') }}
+        </p>
+      </div>
+      <LevelSwitch />
     </div>
 
     <div

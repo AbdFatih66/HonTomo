@@ -12,7 +12,7 @@ use Illuminate\Database\Seeder;
 class ExtendedCurriculumSeeder extends Seeder
 {
     /**
-     * Pelajaran 3-25 (Minna no Nihongo I, complete).
+     * Pelajaran 3-25 (N5, complete).
      * Vocabulary word/reading/meaning pairs are dictionary-style
      * facts taken from the book's kosakata lists. No example
      * sentences, dialogues, or grammar prose are copied here.
@@ -21,9 +21,9 @@ class ExtendedCurriculumSeeder extends Seeder
     public function run(): void
     {
         $n5 = Level::where('code', 'N5')->firstOrFail();
-        $previousLesson = Lesson::whereHas('unit', fn ($q) => $q->where('order', 2))
+        $previousLesson = Lesson::whereHas('unit', fn ($q) => $q->where('order', 2)->whereHas('level', fn ($l) => $l->where('code', 'N5')))
             ->where('order', 2)->first();
-        $previousUnit = Unit::where('order', 2)->first();
+        $previousUnit = Unit::where('order', 2)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->first();
 
         foreach ($this->curriculum() as $order => $lesson) {
             $unit = Unit::firstOrCreate(

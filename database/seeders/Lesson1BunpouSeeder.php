@@ -13,7 +13,7 @@ class Lesson1BunpouSeeder extends Seeder
     /**
      * Pelajaran 1 gets its own "Tata Bahasa (Bunpou)" lesson node that sits
      * BEFORE the two vocabulary nodes (Orang & Profesi, Negara). It covers the
-     * six grammar points of Minna no Nihongo I / Pelajaran 1:
+     * six grammar points of N5 Pelajaran 1:
      *
      *   1. KB1 は KB2 です          4. KB も
      *   2. KB1 は KB2 じゃありません 5. KB1 の KB2
@@ -32,7 +32,7 @@ class Lesson1BunpouSeeder extends Seeder
      */
     public function run(): void
     {
-        $unit1 = Unit::where('order', 1)->firstOrFail();
+        $unit1 = Unit::where('order', 1)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->firstOrFail();
 
         $bunpou = Lesson::updateOrCreate(
             ['unit_id' => $unit1->id, 'order' => 0],
@@ -100,7 +100,7 @@ class Lesson1BunpouSeeder extends Seeder
             ->delete();
 
         $noGrammar = Grammar::where('order', 6)->first();
-        $unit2 = Unit::where('order', 2)->first();
+        $unit2 = Unit::where('order', 2)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->first();
         $lesson2a = $unit2
             ? Lesson::where('unit_id', $unit2->id)->where('order', 1)->first()
             : null;

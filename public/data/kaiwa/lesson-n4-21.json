@@ -1,0 +1,349 @@
+{
+    "id": 21,
+    "level": "N4",
+    "title_id": "Baru Saja / Sedang / Seharusnya",
+    "title_en": "Just Now / In the Middle / Should",
+    "scenarios": [
+        {
+            "id": "n4l21-s1",
+            "title_id": "Sekarang boleh bicara?",
+            "title_en": "Is now a good time?",
+            "setting_id": "Telepon dari rekan kerja.",
+            "setting_en": "A phone call from a coworker.",
+            "goal_id": "Menyatakan sedang apa dengan Ｖている ところです.",
+            "goal_en": "Say what you are in the middle of.",
+            "patterns": [
+                "Ｖて いる ところです"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l21-s1-t1",
+                    "who": "partner",
+                    "ja": "もしもし、ブディさん、今《いま》 いいですか。",
+                    "speak": "もしもし、ブディさん、いま いいですか。",
+                    "id_text": "Halo, Budi, apakah sekarang boleh?",
+                    "en_text": "Hello, Budi, is now a good time?",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l21-s1-t2",
+                    "who": "you",
+                    "ja": "すみません、今《いま》 ご飯《はん》を 食《た》べて いる ところです。",
+                    "speak": "すみません、いま ごはんを たべて いる ところです。",
+                    "id_text": "Maaf, sekarang saya sedang makan.",
+                    "en_text": "Sorry, I'm in the middle of eating.",
+                    "accept": [
+                        "すみません、今ご飯を食べているところです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l21-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。 では、あとで 電話《でんわ》します。",
+                    "speak": "そうですか。 では、あとで でんわします。",
+                    "id_text": "Begitu ya. Kalau begitu saya telepon nanti.",
+                    "en_text": "I see. Then I'll call later.",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l21-s1-t4",
+                    "who": "you",
+                    "ja": "はい、すぐ 終《お》わりますから、十分後《じゅっぷんご》に おねがいします。",
+                    "speak": "はい、すぐ おわりますから、じゅっぷんごに おねがいします。",
+                    "id_text": "Ya, sebentar lagi selesai, jadi tolong sepuluh menit lagi.",
+                    "en_text": "Yes, I'll be done soon, so please call in ten minutes.",
+                    "accept": [
+                        "はい、すぐ終わりますから、十分後にお願いします。",
+                        "はい、すぐ終わりますから、10分後にお願いします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l21-s1-t5",
+                    "who": "partner",
+                    "ja": "わかりました。",
+                    "speak": "わかりました。",
+                    "id_text": "Baik.",
+                    "en_text": "Understood.",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l21-s1-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l21-s2",
+            "title_id": "Bus sudah berangkat",
+            "title_en": "The bus has left",
+            "setting_id": "Di halte bus.",
+            "setting_en": "At a bus stop.",
+            "goal_id": "Memakai Ｖた ところです dan 〜はずです.",
+            "goal_en": "Use V-ta tokoro desu and ~hazu desu.",
+            "patterns": [
+                "Ｖた ところです",
+                "〜はずです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l21-s2-t1",
+                    "who": "partner",
+                    "ja": "バスは もう 出《で》ましたか。",
+                    "speak": "バスは もう でましたか。",
+                    "id_text": "Apakah bus sudah berangkat?",
+                    "en_text": "Has the bus already left?",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l21-s2-t2",
+                    "who": "you",
+                    "ja": "はい、たった 今《いま》 出《で》た ところです。",
+                    "speak": "はい、たった いま でた ところです。",
+                    "id_text": "Ya, baru saja berangkat.",
+                    "en_text": "Yes, it has just left.",
+                    "accept": [
+                        "はい、たった今出たところです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l21-s2-t3",
+                    "who": "partner",
+                    "ja": "次《つぎ》の バスは 何時《なんじ》ですか。",
+                    "speak": "つぎの バスは なんじですか。",
+                    "id_text": "Bus berikutnya jam berapa?",
+                    "en_text": "What time is the next bus?",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l21-s2-t4",
+                    "who": "you",
+                    "ja": "十分後《じゅっぷんご》に 来《く》る はずです。",
+                    "speak": "じゅっぷんごに くる はずです。",
+                    "id_text": "Seharusnya datang sepuluh menit lagi.",
+                    "en_text": "It should come in ten minutes.",
+                    "accept": [
+                        "十分後に来るはずです。",
+                        "10分後に来るはずです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l21-s2-t5",
+                    "who": "partner",
+                    "ja": "じゃ、ここで 待《ま》ちましょう。",
+                    "speak": "じゃ、ここで まちましょう。",
+                    "id_text": "Kalau begitu, ayo tunggu di sini.",
+                    "en_text": "Then let's wait here.",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l21-s2-t6",
+                    "who": "you",
+                    "ja": "はい、そうしましょう。",
+                    "speak": "はい、そうしましょう。",
+                    "id_text": "Ya, mari.",
+                    "en_text": "Yes, let's.",
+                    "accept": [
+                        "はい、そうしましょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l21-s3",
+            "title_id": "Baru datang ke Jepang",
+            "title_en": "New in Japan",
+            "setting_id": "Di pesta sambutan, mengobrol dengan teman baru.",
+            "setting_en": "At a welcome party, chatting with a new friend.",
+            "goal_id": "Memakai Ｖた ばかりです dan Ｖる ところです.",
+            "goal_en": "Use V-ta bakari desu and V-ru tokoro desu.",
+            "patterns": [
+                "Ｖた ばかりです",
+                "Ｖる ところです"
+            ],
+            "partner": {
+                "name": "サリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l21-s3-t1",
+                    "who": "partner",
+                    "ja": "日本《にほん》に 来《き》て、どのくらいですか。",
+                    "speak": "にほんに きて、どのくらいですか。",
+                    "id_text": "Sudah berapa lama di Jepang?",
+                    "en_text": "How long have you been in Japan?",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l21-s3-t2",
+                    "who": "you",
+                    "ja": "先月《せんげつ》 来《き》た ばかりです。",
+                    "speak": "せんげつ きた ばかりです。",
+                    "id_text": "Saya baru datang bulan lalu.",
+                    "en_text": "I only came last month.",
+                    "accept": [
+                        "先月来たばかりです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l21-s3-t3",
+                    "who": "partner",
+                    "ja": "日本語《にほんご》は もう 慣《な》れましたか。",
+                    "speak": "にほんごは もう なれましたか。",
+                    "id_text": "Apakah sudah terbiasa dengan bahasa Jepang?",
+                    "en_text": "Are you used to Japanese yet?",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l21-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、まだです。 これから 勉強《べんきょう》する ところです。",
+                    "speak": "いいえ、まだです。 これから べんきょうする ところです。",
+                    "id_text": "Belum. Saya baru akan mulai belajar.",
+                    "en_text": "Not yet. I'm just about to start studying.",
+                    "accept": [
+                        "いいえ、まだです。これから勉強するところです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l21-s3-t5",
+                    "who": "partner",
+                    "ja": "がんばって ください。",
+                    "speak": "がんばって ください。",
+                    "id_text": "Semangat ya.",
+                    "en_text": "Do your best.",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l21-s3-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l21-s4",
+            "title_id": "Paket belum sampai",
+            "title_en": "The parcel hasn't arrived",
+            "setting_id": "Telepon ke perusahaan pengiriman paket.",
+            "setting_en": "Phoning a delivery company.",
+            "goal_id": "Memakai 〜はずです dan Ｖた ところです.",
+            "goal_en": "Use ~hazu desu and V-ta tokoro desu.",
+            "patterns": [
+                "〜はずです",
+                "Ｖた ところです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l21-s4-t1",
+                    "who": "partner",
+                    "ja": "すみません、荷物《にもつ》が まだ 届《とど》きません。",
+                    "speak": "すみません、にもつが まだ とどきません。",
+                    "id_text": "Maaf, paket saya belum sampai.",
+                    "en_text": "Excuse me, my parcel hasn't arrived yet.",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l21-s4-t2",
+                    "who": "you",
+                    "ja": "そうですか。 きょうの 午後《ごご》に 届《とど》く はずです。",
+                    "speak": "そうですか。 きょうの ごごに とどく はずです。",
+                    "id_text": "Begitu ya. Seharusnya sampai sore ini.",
+                    "en_text": "I see. It should arrive this afternoon.",
+                    "accept": [
+                        "そうですか。今日の午後に届くはずです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l21-s4-t3",
+                    "who": "partner",
+                    "ja": "今《いま》、どこに ありますか。",
+                    "speak": "いま、どこに ありますか。",
+                    "id_text": "Sekarang ada di mana?",
+                    "en_text": "Where is it now?",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l21-s4-t4",
+                    "who": "you",
+                    "ja": "今《いま》、こちらを 出《で》た ところです。",
+                    "speak": "いま、こちらを でた ところです。",
+                    "id_text": "Baru saja berangkat dari sini.",
+                    "en_text": "It has just left here.",
+                    "accept": [
+                        "今、こちらを出たところです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l21-s4-t5",
+                    "who": "partner",
+                    "ja": "わかりました。 待《ま》って います。",
+                    "speak": "わかりました。 まって います。",
+                    "id_text": "Baik. Saya tunggu.",
+                    "en_text": "All right. I'll wait.",
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l21-s4-t6",
+                    "who": "you",
+                    "ja": "もうしわけ ありません。",
+                    "speak": "もうしわけ ありません。",
+                    "id_text": "Mohon maaf.",
+                    "en_text": "I'm very sorry.",
+                    "accept": [
+                        "申し訳ありません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-21/n4l21-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

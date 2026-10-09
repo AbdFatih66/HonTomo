@@ -53,7 +53,7 @@ class Lesson6to10BunpouSeeder extends Seeder
 
     private function buildUnitBunpou(int $unitOrder, array $unitData): void
     {
-        $unit = Unit::where('order', $unitOrder)->first();
+        $unit = Unit::where('order', $unitOrder)->whereHas('level', fn ($l) => $l->where('code', 'N5'))->first();
 
         if (! $unit) {
             return;
@@ -144,7 +144,7 @@ class Lesson6to10BunpouSeeder extends Seeder
     private function units(): array
     {
         $lessonByUnitOrder = fn (int $unitOrder, int $lessonOrder) => optional(
-            Lesson::whereHas('unit', fn ($q) => $q->where('order', $unitOrder))
+            Lesson::whereHas('unit', fn ($q) => $q->where('order', $unitOrder)->whereHas('level', fn ($l) => $l->where('code', 'N5')))
                 ->where('order', $lessonOrder)
                 ->first()
         )->id;
