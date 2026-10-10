@@ -1,10 +1,30 @@
 <script setup>
 // Selektor level materi (N5 / N4). Gaya pil sama dengan pemilih bab di
 // Kosakata dan Kana/Kanji. Nilai disimpan lewat useLevelChoice.
+//
+// Mode terkontrol (opsional): bila `modelValue` diberikan, pilihan tidak
+// menyentuh level bersama; halaman yang memakainya (mis. Kosakata dengan N3)
+// menentukan sendiri apa yang dilakukan saat pilihan berubah.
 import { LEVEL_CODES, useLevelChoice } from '@/composables/useLevelChoice'
+
+const props = defineProps({
+  levels: { type: Array, default: () => LEVEL_CODES },
+  modelValue: { type: String, default: undefined },
+})
+
+const emit = defineEmits(['update:modelValue'])
 
 const { t } = useI18n()
 const { level, setLevel } = useLevelChoice()
+
+const current = computed(() => props.modelValue ?? level.value)
+
+function choose(code) {
+  if (props.modelValue !== undefined)
+    emit('update:modelValue', code)
+  else
+    setLevel(code)
+}
 </script>
 
 <template>
@@ -14,14 +34,14 @@ const { level, setLevel } = useLevelChoice()
     :aria-label="t('levels.switch_label')"
   >
     <button
-      v-for="code in LEVEL_CODES"
+      v-for="code in levels"
       :key="code"
       type="button"
       role="tab"
       class="level-switch__btn"
-      :class="{ 'level-switch__btn--active': level === code }"
-      :aria-selected="level === code"
-      @click="setLevel(code)"
+      :class="{ 'level-switch__btn--active': current === code }"
+      :aria-selected="current === code"
+      @click="choose(code)"
     >
       {{ code }}
     </button>

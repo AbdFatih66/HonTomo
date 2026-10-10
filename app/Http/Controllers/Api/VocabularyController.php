@@ -13,12 +13,12 @@ class VocabularyController extends Controller
     {
     }
 
-    /** JLPT level of the chapter menu / word list (N5 default, N4 optional). */
+    /** JLPT level of the chapter menu / word list (N5 default, N4 and N3 optional). */
     private function level(Request $request): string
     {
         $level = strtoupper((string) $request->query('level', 'N5'));
 
-        return in_array($level, ['N5', 'N4'], true) ? $level : 'N5';
+        return in_array($level, ['N5', 'N4', 'N3'], true) ? $level : 'N5';
     }
 
     public function index(Request $request)

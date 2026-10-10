@@ -1020,6 +1020,7 @@
     "title": "Vocabulary by Lesson",
     "subtitle": "All vocabulary by lesson 1–25, with a quiz for each lesson.",
     "subtitle_n4": "N4 vocabulary by lesson, with a quiz for each lesson.",
+    "subtitle_n3": "N3 vocabulary by lesson, with a quiz for each lesson.",
     "chapter_label": "Lesson {n}",
     "word_count": "{n} words",
     "search_placeholder": "Search words...",

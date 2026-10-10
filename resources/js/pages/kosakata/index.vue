@@ -3,7 +3,18 @@ import { $api } from '@/utils/api'
 import { useLevelChoice } from '@/composables/useLevelChoice'
 
 const { t, locale } = useI18n()
-const { level } = useLevelChoice()
+const { level: sharedLevel, setLevel } = useLevelChoice()
+
+// Kosakata punya N3 di samping N5 / N4; level bersama (Tata Bahasa dll.) tetap N5 / N4.
+const VOCAB_LEVELS = ['N5', 'N4', 'N3']
+const level = ref(VOCAB_LEVELS.includes(sharedLevel.value) ? sharedLevel.value : 'N5')
+
+function onLevelChange(code) {
+  level.value = code
+  setLevel(code) // N3 diabaikan oleh level bersama
+}
+
+const subtitle = computed(() => level.value === 'N5' ? t('vocabulary.subtitle') : t(`vocabulary.subtitle_${level.value.toLowerCase()}`))
 const route = useRoute()
 const router = useRouter()
 
@@ -94,7 +105,7 @@ function selectChapter(order) {
 
 watch(selectedChapter, loadWords)
 
-// Ganti level (N5 / N4): kembali ke pelajaran pertama level itu, muat ulang menu bab dan kata.
+// Ganti level (N5 / N4 / N3): kembali ke pelajaran pertama level itu, muat ulang menu bab dan kata.
 watch(level, async () => {
   search.value = ''
   selectedChapter.value = 1
@@ -121,10 +132,14 @@ onMounted(async () => {
           {{ t('vocabulary.title') }}
         </h4>
         <p class="text-body-2 text-medium-emphasis mb-0">
-          {{ level === 'N4' ? t('vocabulary.subtitle_n4') : t('vocabulary.subtitle') }}
+          {{ subtitle }}
         </p>
       </div>
-      <LevelSwitch />
+      <LevelSwitch
+        :levels="VOCAB_LEVELS"
+        :model-value="level"
+        @update:model-value="onLevelChange"
+      />
     </div>
 
     <div

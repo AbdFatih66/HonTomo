@@ -51,6 +51,18 @@ class DatabaseSeeder extends Seeder
             N4Lesson23Seeder::class, // N4 Pelajaran 23: kata kerja kausatif; bunpou, kosakata, kuis
             N4Lesson24Seeder::class, // N4 Pelajaran 24: bunpou, kosakata, kuis
             N4Lesson25Seeder::class, // N4 Pelajaran 25: 謙譲語 (merendahkan diri); bunpou + kosakata + kuis
+            N3Lesson1Seeder::class, // N3 Pelajaran 1: kosakata, kuis
+            N3Lesson2Seeder::class, // N3 Pelajaran 2: kosakata, kuis
+            N3Lesson3Seeder::class, // N3 Pelajaran 3: kosakata, kuis
+            N3Lesson4Seeder::class, // N3 Pelajaran 4: kosakata, kuis
+            N3Lesson5Seeder::class, // N3 Pelajaran 5: kosakata, kuis
+            N3Lesson6Seeder::class, // N3 Pelajaran 6: kosakata, kuis
+            N3Lesson7Seeder::class, // N3 Pelajaran 7: kosakata, kuis
+            N3Lesson8Seeder::class, // N3 Pelajaran 8: kosakata, kuis
+            N3Lesson9Seeder::class, // N3 Pelajaran 9: kosakata, kuis
+            N3Lesson10Seeder::class, // N3 Pelajaran 10: kosakata, kuis
+            N3Lesson11Seeder::class, // N3 Pelajaran 11: kosakata, kuis
+            N3Lesson12Seeder::class, // N3 Pelajaran 12: kosakata, kuis
             KanjiSeeder::class,
             KanaSeeder::class, // Hiragana & Katakana chart, stroke order, dakuten/handakuten
             AchievementSeeder::class,
