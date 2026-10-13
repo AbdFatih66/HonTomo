@@ -24,7 +24,7 @@
 // sebagai suara lawan bicara. Skenario baru dianggap tamat setelah putaran 2.
 import ModeSwitch from '@/components/learning/ModeSwitch.vue'
 import RubyText from '@/components/learning/RubyText.vue'
-import { LEVEL_CODES, useLevelChoice } from '@/composables/useLevelChoice'
+import { PRACTICE_LEVEL_CODES, usePracticeLevel } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
 import { $api } from '@/utils/api'
 import { PASS_SCORE, registerReadings, scoreSpeech } from '@/utils/kaiwaMatch'
@@ -35,18 +35,18 @@ const FALLBACK_MANIFEST = [{ id: 1, file: 'lesson-1.json', level: 'N5' }]
 
 const { t, locale } = useI18n()
 const authStore = useAuthStore()
-// Selektor N5 / N4. (`level` di bawah = level suara mic, jadi dinamai lain.)
-const { level: levelChoice, setLevel } = useLevelChoice()
+// Selektor N5 / N4 / N3. (`level` di bawah = level suara mic, jadi dinamai lain.)
+const { level: levelChoice, setLevel } = usePracticeLevel()
 
 // Field data dwibahasa: `x_en` bila locale en dan tersedia, selain itu `x_id`/`x`.
 const tr = (o, key) => (locale.value === 'en' && o[`${key}_en`]) || o[`${key}_id`] || o[key] || ''
 
-// Pelajaran yang tersedia: N5 dari index.json → lessons, N4 dari index-n4.json → lessons.
+// Pelajaran yang tersedia: N5 dari index.json → lessons, N4 dari index-n4.json, N3 dari index-n3.json.
 // Daftar yang tampil mengikuti selektor level. Paket situasi punya selektor sendiri (mode Situasi).
-const manifests = reactive({ N5: [], N4: [] })
+const manifests = reactive({ N5: [], N4: [], N3: [] })
 const manifest = computed(() => manifests[levelChoice.value] ?? [])
-// Kunci peta skenario: id pelajaran N5 / paket situasi apa adanya, N4 diberi awalan agar tidak bentrok dengan id N5.
-const idKey = m => (m.level === 'N4' ? `n4-${m.id}` : m.id)
+// Kunci peta skenario: id pelajaran N5 / paket situasi apa adanya, N4 / N3 diberi awalan agar tidak bentrok dengan id N5.
+const idKey = m => (m.level === 'N4' || m.level === 'N3' ? `${m.level.toLowerCase()}-${m.id}` : m.id)
 const situations = ref([]) // paket situasi (index.json → situations), mis. mensetsu
 const track = ref('lesson') // 'lesson' | 'situation'
 const lastLessonId = ref(null) // pelajaran terakhir dibuka (dipulihkan saat kembali ke tab Pelajaran)
@@ -185,11 +185,11 @@ async function setTrack(value) {
     await selectLesson(lastLessonId.value ?? nextLessonId.value ?? manifest.value[0]?.id)
 }
 
-// Selektor mode di kepala halaman: Situasi | N5 | N4. Situasi berdiri sendiri (tidak ikut level);
-// N5 / N4 membuka jalur pelajaran level itu.
+// Selektor mode di kepala halaman: Situasi | N5 | N4 | N3. Situasi berdiri sendiri (tidak ikut level);
+// N5 / N4 / N3 membuka jalur pelajaran level itu.
 const modeOptions = computed(() => [
   ...(situations.value.length ? [{ value: 'situation', label: t('kaiwa.track_situation') }] : []),
-  ...LEVEL_CODES.map(code => ({ value: code, label: code })),
+  ...PRACTICE_LEVEL_CODES.map(code => ({ value: code, label: code })),
 ])
 const mode = computed(() => (track.value === 'situation' ? 'situation' : levelChoice.value))
 
@@ -242,7 +242,7 @@ async function pickLesson(card) {
 
 async function loadLessonIds() {
   // Pelajaran dan paket situasi memakai peta yang sama; id pelajaran angka, id situasi string (tidak bentrok).
-  await Promise.all([...manifests.N5, ...manifests.N4, ...situations.value].map(async (m) => {
+  await Promise.all([...manifests.N5, ...manifests.N4, ...manifests.N3, ...situations.value].map(async (m) => {
     try {
       const res = await fetch(`/data/kaiwa/${m.file}`, { cache: 'no-cache' })
 
@@ -326,7 +326,7 @@ function finishScenario() {
   }).catch(() => {})
 }
 
-// Ganti level (N5 / N4): kembali ke jalur pelajaran dan buka pelajaran pertama level itu.
+// Ganti level (N5 / N4 / N3): kembali ke jalur pelajaran dan buka pelajaran pertama level itu.
 watch(levelChoice, async () => {
   if (!gateReady.value)
     return
@@ -359,6 +359,15 @@ onMounted(async () => {
       manifests.N4 = ((await resN4.json()).lessons ?? []).map(x => ({ ...x, level: 'N4' }))
   }
   catch { /* N4 belum tersedia */ }
+
+  // Materi N3 (opsional), sama seperti N4.
+  try {
+    const resN3 = await fetch('/data/kaiwa/index-n3.json', { cache: 'no-cache' })
+
+    if (resN3.ok)
+      manifests.N3 = ((await resN3.json()).lessons ?? []).map(x => ({ ...x, level: 'N3' }))
+  }
+  catch { /* N3 belum tersedia */ }
 
   await selectLesson(manifest.value[0]?.id)
   await Promise.all([loadLessonIds(), loadProgress()])

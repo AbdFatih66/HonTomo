@@ -7,8 +7,9 @@
 // supaya latihannya benar-benar melatih baca tulis Jepang.
 import RubyText from '@/components/learning/RubyText.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
-import { useLevelChoice } from '@/composables/useLevelChoice'
+import { PRACTICE_LEVEL_CODES, usePracticeLevel } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
+import { LESSONS_N3 } from '@/data/practice/mondaishuuN3'
 import { LESSONS_N4 } from '@/data/practice/mondaishuuN4'
 import { $api } from '@/utils/api'
 
@@ -22,7 +23,7 @@ import { $api } from '@/utils/api'
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
 const authStore = useAuthStore()
-const { level: levelChoice } = useLevelChoice()
+const { level: levelChoice, setLevel: setPracticeLevel } = usePracticeLevel()
 
 // ---------------------------------------------------------------------
 // Bank soal. Dua jenis soal:
@@ -675,12 +676,14 @@ const REVIEWS = [
   ] },
 ]
 
-// N4: bank soal ada di data/practice/mondaishuuN4.js, kunci progres `n4l{id}`
-// (tidak bentrok dengan `l{id}` milik N5). Rangkuman hanya ada di N5.
+// N4: bank soal ada di data/practice/mondaishuuN4.js, kunci progres `n4l{id}`;
+// N3: data/practice/mondaishuuN3.js, kunci `n3l{id}` (tidak bentrok dengan `l{id}` milik N5).
+// Rangkuman hanya ada di N5.
 const ALL_TABS = [
   ...LESSONS.map(l => ({ key: `l${l.id}`, label: String(l.id), kind: 'lesson', ref: l })),
   ...REVIEWS.map(r => ({ key: r.id, label: r.label.replace('まとめ ', 'R.'), kind: 'review', ref: r })),
   ...LESSONS_N4.map(l => ({ key: `n4l${l.id}`, label: `N4-${l.id}`, kind: 'lesson', ref: l })),
+  ...LESSONS_N3.map(l => ({ key: `n3l${l.id}`, label: `N3-${l.id}`, kind: 'lesson', ref: l })),
 ]
 
 const activeKey = ref('l1')
@@ -694,8 +697,12 @@ const nextLessonTab = computed(() => {
     return null
 
   const i = ALL_TABS.findIndex(x => x.key === activeKey.value)
+  const next = ALL_TABS[i + 1]
 
-  return ALL_TABS[i + 1]?.kind === 'lesson' ? ALL_TABS[i + 1] : null
+  // Tombol lanjut hanya berlaku dalam satu level (N5 `l`, N4 `n4l`, N3 `n3l`): N4-25 tidak lanjut ke N3-1.
+  const levelOf = key => /^n\dl/.exec(key)?.[0] ?? 'l'
+
+  return next?.kind === 'lesson' && levelOf(next.key) === levelOf(activeKey.value) ? next : null
 })
 
 // ---------------------------------------------------------------------
@@ -839,16 +846,20 @@ function tr(value) {
   return typeof value === 'object' ? (locale.value === 'en' ? value.en : value.id) : value
 }
 
-const pathUnits = computed(() => levelChoice.value === 'N4'
+const pathUnits = computed(() => levelChoice.value === 'N4' || levelChoice.value === 'N3'
   ? [{
-      id: 'lessons-n4',
+      id: levelChoice.value === 'N3' ? 'lessons-n3' : 'lessons-n4',
       title: t('mondaishuu.lessons_label'),
-      lessons: LESSONS_N4.map(l => ({
-        id: `n4l${l.id}`,
-        title: t('mondaishuu.lesson_label', { n: l.id }),
-        focus: tr(l.focus),
-        status: statusFor(`n4l${l.id}`),
-      })),
+      lessons: (levelChoice.value === 'N3' ? LESSONS_N3 : LESSONS_N4).map((l) => {
+        const key = `${levelChoice.value === 'N3' ? 'n3l' : 'n4l'}${l.id}`
+
+        return {
+          id: key,
+          title: t('mondaishuu.lesson_label', { n: l.id }),
+          focus: tr(l.focus),
+          status: statusFor(key),
+        }
+      }),
     }]
   : [
   {
@@ -1117,10 +1128,14 @@ onBeforeUnmount(clearAdvanceTimer)
       <h4 class="text-h4 mb-0">
         {{ t('mondaishuu.title') }}
       </h4>
-      <LevelSwitch />
+      <LevelSwitch
+        :levels="PRACTICE_LEVEL_CODES"
+        :model-value="levelChoice"
+        @update:model-value="setPracticeLevel"
+      />
     </div>
     <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ levelChoice === 'N4' ? t('mondaishuu.subtitle_n4') : t('mondaishuu.subtitle') }}
+      {{ levelChoice === 'N3' ? t('mondaishuu.subtitle_n3') : levelChoice === 'N4' ? t('mondaishuu.subtitle_n4') : t('mondaishuu.subtitle') }}
     </p>
 
     <!-- Progres belajar ala pemilihan kanji: kartu per pelajaran/rangkuman,

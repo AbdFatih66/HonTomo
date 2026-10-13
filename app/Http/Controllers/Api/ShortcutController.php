@@ -20,6 +20,7 @@ class ShortcutController extends Controller
 
     private const VALID_KEYS = [
         'root', 'learn', 'kosakata', 'mondaishuu', 'jlpt-test', 'jlpt-mock', 'kaite-oboeru',
+        'membaca',
         'kana', 'kanji', 'lampiran', 'admin-users', 'admin-audit-logs',
     ];
 

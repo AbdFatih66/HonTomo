@@ -102,6 +102,21 @@ class N3Lesson9Seeder extends N3LessonSeeder
             ['役立つ', 'やくだつ', 'yakudatsu', 'berguna', 'to be useful for'],
             ['参加者', 'さんかしゃ', 'sankasha', 'peserta', 'participant'],
 
+            // Tambahan dari bacaan dan latihan di buku
+            ['勤める', 'つとめる', 'tsutomeru', 'bekerja (di perusahaan)', 'to work for'],
+            ['減る', 'へる', 'heru', 'berkurang', 'to decrease'],
+            ['勝つ', 'かつ', 'katsu', 'menang', 'to win'],
+            ['並ぶ', 'ならぶ', 'narabu', 'berjajar, sejajar', 'to line up, to rank alongside'],
+            ['技術', 'ぎじゅつ', 'gijutsu', 'teknologi, keterampilan teknis', 'technology, technique'],
+            ['開く[店を〜]', 'ひらく[みせを〜]', 'hiraku', 'membuka [toko]', 'to open [a shop]'],
+            ['踊る', 'おどる', 'odoru', 'menari', 'to dance'],
+            ['事実', 'じじつ', 'jijitsu', 'fakta', 'fact'],
+            ['比較する', 'ひかくする', 'hikaku suru', 'membandingkan', 'to compare'],
+            ['選ぶ', 'えらぶ', 'erabu', 'memilih', 'to choose'],
+            ['戻る', 'もどる', 'modoru', 'kembali', 'to return'],
+            ['生まれる', 'うまれる', 'umareru', 'lahir', 'to be born'],
+            ['売れる', 'うれる', 'ureru', 'laris, terjual', 'to sell well'],
+
             // Ungkapan
             ['こうやって', 'こうやって', 'kou yatte', 'dengan cara begini', 'Like this...'],
             ['〜だけじゃなくて、〜のがいいんですが……。', '〜だけじゃなくて、〜のがいいんですが……。', 'dake janakute no ga ii n desu ga', 'Tidak hanya ~, tetapi yang ~ lebih bagus...', 'Not just..., but... would be good'],

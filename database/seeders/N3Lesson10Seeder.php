@@ -84,6 +84,24 @@ class N3Lesson10Seeder extends N3LessonSeeder
             ['不注意', 'ふちゅうい', 'fuchuui', 'kecerobohan', 'carelessness'],
             ['引き起こす', 'ひきおこす', 'hikiokosu', 'menimbulkan, menyebabkan', 'to cause, to bring about'],
 
+            // Tambahan dari bacaan dan latihan di buku
+            ['信じる', 'しんじる', 'shinjiru', 'percaya', 'to believe'],
+            ['咲く', 'さく', 'saku', 'mekar', 'to bloom'],
+            ['座る', 'すわる', 'suwaru', 'duduk', 'to sit'],
+            ['乗り換える', 'のりかえる', 'norikaeru', 'berpindah (kendaraan)', 'to transfer'],
+            ['間違い電話', 'まちがいでんわ', 'machigai denwa', 'salah sambung', 'wrong number'],
+            ['間違える', 'まちがえる', 'machigaeru', 'salah, keliru', 'to make a mistake'],
+            ['発見する', 'はっけんする', 'hakken suru', 'menemukan', 'to discover'],
+            ['思い出す', 'おもいだす', 'omoidasu', 'teringat, mengingat kembali', 'to remember'],
+            ['巨大[な]', 'きょだい[な]', 'kyodai', 'raksasa, sangat besar', 'huge, gigantic'],
+            ['朝型', 'あさがた', 'asagata', 'tipe orang pagi', 'morning type'],
+            ['夜型', 'よるがた', 'yorugata', 'tipe orang malam', 'night type'],
+            ['家族会議', 'かぞくかいぎ', 'kazoku kaigi', 'rapat keluarga', 'family meeting'],
+            ['飼う', 'かう', 'kau', 'memelihara (hewan)', 'to keep (a pet)'],
+            ['鬼ごっこ', 'おにごっこ', 'onigokko', 'permainan kejar-kejaran', 'game of tag'],
+            ['呼ぶ', 'よぶ', 'yobu', 'memanggil', 'to call'],
+            ['失敗する', 'しっぱいする', 'shippai suru', 'gagal, berbuat salah', 'to fail, to make a mistake'],
+
             // Ungkapan
             ['どういうことでしょうか。', 'どういうことでしょうか。', 'douiu koto deshouka', 'Maksudnya bagaimana?', 'What are you talking about?'],
             ['そんなはずはありません。', 'そんなはずはありません。', 'sonna hazu wa arimasen', 'Tidak mungkin begitu!', 'That cannot be true'],

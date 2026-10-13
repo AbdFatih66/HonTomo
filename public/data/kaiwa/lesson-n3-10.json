@@ -1,0 +1,569 @@
+{
+    "id": 10,
+    "level": "N3",
+    "title_id": "Pelajaran 10 (N3): Dugaan, Kesalahan, dan Kejadian",
+    "title_en": "N3 Lesson 10: Expectations, Mistakes and Events",
+    "scenarios": [
+        {
+            "id": "n3l10-s1",
+            "title_id": "Yamada belum datang",
+            "title_en": "Yamada has not arrived",
+            "setting_id": "Di depan stasiun. Kamu dan rekan menunggu Yamada.",
+            "setting_en": "In front of the station. You and a colleague are waiting for Yamada.",
+            "goal_id": "Menyatakan perkiraan berdasar alasan dengan …はずだ.",
+            "goal_en": "State a reasoned expectation with ...hazu da.",
+            "patterns": [
+                "…はずだ"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l10-s1-t1",
+                    "who": "partner",
+                    "ja": "山田《やまだ》さん、まだ 来《き》ませんね。",
+                    "speak": "やまださん、まだ きませんね。",
+                    "id_text": "Yamada belum datang ya.",
+                    "en_text": "Yamada has not come yet.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s1-t1.mp3"
+                },
+                {
+                    "id": "n3l10-s1-t2",
+                    "who": "you",
+                    "ja": "十時《じゅうじ》の 電車《でんしゃ》に 乗《の》ると 言《い》って いたから、もうすぐ 着《つ》く はずですよ。",
+                    "speak": "じゅうじの でんしゃに のると いって いたから、もうすぐ つく はずですよ。",
+                    "id_text": "Katanya naik kereta jam sepuluh, jadi seharusnya sebentar lagi sampai.",
+                    "en_text": "He said he would take the ten o'clock train, so he should arrive soon.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s1-t2.mp3",
+                    "accept": [
+                        "十時の 電車に 乗ると 言って いたから、もうすぐ 着く はずですよ。",
+                        "十時の電車に乗ると言っていたから、もうすぐ着くはずですよ。",
+                        "じゅうじの でんしゃに のると いって いたから、もうすぐ つく はずですよ。",
+                        "じゅうじのでんしゃにのるといっていたから、もうすぐつくはずですよ。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s1-t3",
+                    "who": "partner",
+                    "ja": "電話《でんわ》して みましょうか。",
+                    "speak": "でんわして みましょうか。",
+                    "id_text": "Mau coba telepon?",
+                    "en_text": "Shall we try calling?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s1-t3.mp3"
+                },
+                {
+                    "id": "n3l10-s1-t4",
+                    "who": "you",
+                    "ja": "移動中《いどうちゅう》の はずですから、少《すこ》し 待《ま》ちましょう。",
+                    "speak": "いどうちゅうの はずですから、すこし まちましょう。",
+                    "id_text": "Seharusnya sedang di perjalanan, jadi tunggu sebentar.",
+                    "en_text": "He should be on the way, so let us wait a bit.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s1-t4.mp3",
+                    "accept": [
+                        "移動中の はずですから、少し 待ちましょう。",
+                        "移動中のはずですから、少し待ちましょう。",
+                        "いどうちゅうの はずですから、すこし まちましょう。",
+                        "いどうちゅうのはずですから、すこしまちましょう。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですね。",
+                    "speak": "そうですね。",
+                    "id_text": "Benar juga.",
+                    "en_text": "You are right.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s1-t5.mp3"
+                },
+                {
+                    "id": "n3l10-s1-t6",
+                    "who": "you",
+                    "ja": "十分《じゅっぷん》ぐらいで 来《く》る はずです。",
+                    "speak": "じゅっぷんぐらいで くる はずです。",
+                    "id_text": "Seharusnya datang sekitar sepuluh menit.",
+                    "en_text": "He should be here in about ten minutes.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s1-t6.mp3",
+                    "accept": [
+                        "十分ぐらいで 来る はずです。",
+                        "十分ぐらいで来るはずです。",
+                        "じゅっぷんぐらいで くる はずです。",
+                        "じゅっぷんぐらいでくるはずです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l10-s2",
+            "title_id": "Dompet siapa ini?",
+            "title_en": "Whose wallet is this?",
+            "setting_id": "Di kantor. Teman menemukan dompet di lantai.",
+            "setting_en": "At the office. A friend finds a wallet on the floor.",
+            "goal_id": "Menyatakan hal yang mustahil dengan …はずが ない.",
+            "goal_en": "State impossibility with ...hazu ga nai.",
+            "patterns": [
+                "…はずが／は ない"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l10-s2-t1",
+                    "who": "partner",
+                    "ja": "この 財布《さいふ》、鈴木《すずき》さんのかな。",
+                    "speak": "この さいふ、すずきさんのかな。",
+                    "id_text": "Dompet ini punya Suzuki, ya?",
+                    "en_text": "Is this wallet Suzuki's?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s2-t1.mp3"
+                },
+                {
+                    "id": "n3l10-s2-t2",
+                    "who": "you",
+                    "ja": "鈴木《すずき》さんは 先週《せんしゅう》から 出張中《しゅっちょうちゅう》だから、会社《かいしゃ》に ある はずが ないよ。",
+                    "speak": "すずきさんは せんしゅうから しゅっちょうちゅうだから、かいしゃに ある はずが ないよ。",
+                    "id_text": "Suzuki dinas luar sejak minggu lalu, mustahil ada di kantor.",
+                    "en_text": "Suzuki has been on a business trip since last week, so it cannot be here.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s2-t2.mp3",
+                    "accept": [
+                        "鈴木さんは 先週から 出張中だから、会社に ある はずが ないよ。",
+                        "鈴木さんは先週から出張中だから、会社にあるはずがないよ。",
+                        "すずきさんは せんしゅうから しゅっちょうちゅうだから、かいしゃに ある はずが ないよ。",
+                        "すずきさんはせんしゅうからしゅっちょうちゅうだから、かいしゃにあるはずがないよ。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s2-t3",
+                    "who": "partner",
+                    "ja": "そうか。じゃあ、どうしよう。",
+                    "speak": "そうか。じゃあ、どうしよう。",
+                    "id_text": "Begitu. Lalu bagaimana?",
+                    "en_text": "I see. Then what shall we do?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s2-t3.mp3"
+                },
+                {
+                    "id": "n3l10-s2-t4",
+                    "who": "you",
+                    "ja": "受付《うけつけ》に 届《とど》けよう。",
+                    "speak": "うけつけに とどけよう。",
+                    "id_text": "Kita serahkan ke resepsionis.",
+                    "en_text": "Let us hand it in at reception.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s2-t4.mp3",
+                    "accept": [
+                        "受付に 届けよう。",
+                        "受付に届けよう。",
+                        "うけつけに とどけよう。",
+                        "うけつけにとどけよう。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s2-t5",
+                    "who": "partner",
+                    "ja": "持《も》ち主《ぬし》は わかるかな。",
+                    "speak": "もちぬしは わかるかな。",
+                    "id_text": "Pemiliknya bisa ketahuan?",
+                    "en_text": "I wonder if they can find the owner.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s2-t5.mp3"
+                },
+                {
+                    "id": "n3l10-s2-t6",
+                    "who": "you",
+                    "ja": "財布《さいふ》の 中《なか》に 名前《なまえ》が ある はずだよ。",
+                    "speak": "さいふの なかに なまえが ある はずだよ。",
+                    "id_text": "Di dalam dompet seharusnya ada namanya.",
+                    "en_text": "There should be a name inside the wallet.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s2-t6.mp3",
+                    "accept": [
+                        "財布の 中に 名前が ある はずだよ。",
+                        "財布の中に名前があるはずだよ。",
+                        "さいふの なかに なまえが ある はずだよ。",
+                        "さいふのなかになまえがあるはずだよ。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l10-s3",
+            "title_id": "Pertandingan yang batal ditonton",
+            "title_en": "The match I could not watch",
+            "setting_id": "Pagi di kantor. Rekan menanyakan pertandingan kemarin.",
+            "setting_en": "Morning at the office. A colleague asks about yesterday's match.",
+            "goal_id": "Menyatakan rencana yang gagal dengan …はずだった.",
+            "goal_en": "State a plan that fell through with ...hazu datta.",
+            "patterns": [
+                "…はずだった"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l10-s3-t1",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の 試合《しあい》、見《み》に 行《い》きましたか。",
+                    "speak": "きのうの しあい、みに いきましたか。",
+                    "id_text": "Pertandingan kemarin, apakah Anda menonton?",
+                    "en_text": "Did you go to see yesterday's match?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s3-t1.mp3"
+                },
+                {
+                    "id": "n3l10-s3-t2",
+                    "who": "you",
+                    "ja": "行《い》く はずだったんですが、急《きゅう》に 残業《ざんぎょう》に なって しまって。",
+                    "speak": "いく はずだったんですが、きゅうに ざんぎょうに なって しまって。",
+                    "id_text": "Seharusnya saya pergi, tapi tiba-tiba lembur.",
+                    "en_text": "I was supposed to go, but I suddenly had to work overtime.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s3-t2.mp3",
+                    "accept": [
+                        "行く はずだったんですが、急に 残業に なって しまって。",
+                        "行くはずだったんですが、急に残業になってしまって。",
+                        "いく はずだったんですが、きゅうに ざんぎょうに なって しまって。",
+                        "いくはずだったんですが、きゅうにざんぎょうになってしまって。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s3-t3",
+                    "who": "partner",
+                    "ja": "それは 残念《ざんねん》でしたね。",
+                    "speak": "それは ざんねんでしたね。",
+                    "id_text": "Sayang sekali ya.",
+                    "en_text": "That is too bad.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s3-t3.mp3"
+                },
+                {
+                    "id": "n3l10-s3-t4",
+                    "who": "you",
+                    "ja": "ええ。チケットも 買《か》って あったのに。",
+                    "speak": "ええ。チケットも かって あったのに。",
+                    "id_text": "Ya. Padahal tiket sudah dibeli.",
+                    "en_text": "Yes. And I had even bought the ticket.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s3-t4.mp3",
+                    "accept": [
+                        "ええ。チケットも 買って あったのに。",
+                        "ええ。チケットも買ってあったのに。",
+                        "ええ。チケットも かって あったのに。",
+                        "ええ。チケットもかってあったのに。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s3-t5",
+                    "who": "partner",
+                    "ja": "来週《らいしゅう》も 試合《しあい》が ありますよ。",
+                    "speak": "らいしゅうも しあいが ありますよ。",
+                    "id_text": "Minggu depan juga ada pertandingan.",
+                    "en_text": "There is another match next week.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s3-t5.mp3"
+                },
+                {
+                    "id": "n3l10-s3-t6",
+                    "who": "you",
+                    "ja": "来週《らいしゅう》は 行《い》ける はずです。",
+                    "speak": "らいしゅうは いける はずです。",
+                    "id_text": "Minggu depan seharusnya saya bisa pergi.",
+                    "en_text": "I should be able to go next week.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s3-t6.mp3",
+                    "accept": [
+                        "来週は 行ける はずです。",
+                        "来週は行けるはずです。",
+                        "らいしゅうは いける はずです。",
+                        "らいしゅうはいけるはずです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l10-s4",
+            "title_id": "Mesin baru dan hasil pengukuran",
+            "title_en": "The new machine and the measurement",
+            "setting_id": "Di pabrik. Atasan menanyakan mesin baru dan survei kebisingan.",
+            "setting_en": "At the factory. A boss asks about the new machine and the noise survey.",
+            "goal_id": "Menyatakan hal yang kadang terjadi dengan ことが ある dan hasil dengan 結果.",
+            "goal_en": "State occasional events with koto ga aru and outcomes with kekka.",
+            "patterns": [
+                "…ことが／も ある",
+                "Vた結果"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l10-s4-t1",
+                    "who": "partner",
+                    "ja": "新《あたら》しい 機械《きかい》は どうですか。",
+                    "speak": "あたらしい きかいは どうですか。",
+                    "id_text": "Bagaimana mesin baru?",
+                    "en_text": "How is the new machine?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s4-t1.mp3"
+                },
+                {
+                    "id": "n3l10-s4-t2",
+                    "who": "you",
+                    "ja": "便利《べんり》ですが、ときどき 止《と》まる ことが あるんです。",
+                    "speak": "べんりですが、ときどき とまる ことが あるんです。",
+                    "id_text": "Praktis, tapi kadang-kadang berhenti.",
+                    "en_text": "It is convenient, but it sometimes stops.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s4-t2.mp3",
+                    "accept": [
+                        "便利ですが、ときどき 止まる ことが あるんです。",
+                        "便利ですが、ときどき止まることがあるんです。",
+                        "べんりですが、ときどき とまる ことが あるんです。",
+                        "べんりですが、ときどきとまることがあるんです。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s4-t3",
+                    "who": "partner",
+                    "ja": "原因《げんいん》は わかりましたか。",
+                    "speak": "げんいんは わかりましたか。",
+                    "id_text": "Penyebabnya sudah diketahui?",
+                    "en_text": "Do you know the cause?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s4-t3.mp3"
+                },
+                {
+                    "id": "n3l10-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ。動《うご》かない ことも ありますから、メーカーに 連絡《れんらく》しようと 思《おも》って います。",
+                    "speak": "いいえ。うごかない ことも ありますから、メーカーに れんらくしようと おもって います。",
+                    "id_text": "Belum. Kadang tidak jalan, jadi saya mau menghubungi pabrikan.",
+                    "en_text": "No. It sometimes does not run, so I plan to contact the manufacturer.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s4-t4.mp3",
+                    "accept": [
+                        "いいえ。動かない ことも ありますから、メーカーに 連絡しようと 思って います。",
+                        "いいえ。動かないこともありますから、メーカーに連絡しようと思っています。",
+                        "いいえ。うごかない ことも ありますから、メーカーに れんらくしようと おもって います。",
+                        "いいえ。うごかないこともありますから、メーカーにれんらくしようとおもっています。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s4-t5",
+                    "who": "partner",
+                    "ja": "騒音《そうおん》の 調査《ちょうさ》は どう なりましたか。",
+                    "speak": "そうおんの ちょうさは どう なりましたか。",
+                    "id_text": "Bagaimana survei kebisingan?",
+                    "en_text": "How did the noise survey go?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s4-t5.mp3"
+                },
+                {
+                    "id": "n3l10-s4-t6",
+                    "who": "you",
+                    "ja": "測定《そくてい》した 結果《けっか》、基準《きじゅん》を 超《こ》えて いる 場所《ばしょ》が ありました。",
+                    "speak": "そくていした けっか、きじゅんを こえて いる ばしょが ありました。",
+                    "id_text": "Hasil pengukuran, ada tempat yang melebihi standar.",
+                    "en_text": "As a result of measuring, some places exceeded the standard.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s4-t6.mp3",
+                    "accept": [
+                        "測定した 結果、基準を 超えて いる 場所が ありました。",
+                        "測定した結果、基準を超えている場所がありました。",
+                        "そくていした けっか、きじゅんを こえて いる ばしょが ありました。",
+                        "そくていしたけっか、きじゅんをこえているばしょがありました。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l10-s5",
+            "title_id": "Hujan mulai turun dan laporan",
+            "title_en": "Rain starts and the report",
+            "setting_id": "Di kafe. Hujan tiba-tiba turun, lalu temanmu menanyakan laporanmu.",
+            "setting_en": "At a cafe. Rain suddenly starts, then a friend asks about your report.",
+            "goal_id": "Memakai V出す／始める／終わる／続ける.",
+            "goal_en": "Use V-dasu / hajimeru / owaru / tsuzukeru.",
+            "patterns": [
+                "V出す",
+                "V始める・終わる・続ける"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l10-s5-t1",
+                    "who": "partner",
+                    "ja": "外《そと》、見《み》て。雨《あめ》が 降《ふ》り出《だ》したよ。",
+                    "speak": "そと、みて。あめが ふりだしたよ。",
+                    "id_text": "Lihat luar. Hujan mulai turun.",
+                    "en_text": "Look outside. It has started raining.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s5-t1.mp3"
+                },
+                {
+                    "id": "n3l10-s5-t2",
+                    "who": "you",
+                    "ja": "本当《ほんとう》だ。止《や》むまで ここで 待《ま》ちましょう。",
+                    "speak": "ほんとうだ。やむまで ここで まちましょう。",
+                    "id_text": "Benar. Kita tunggu di sini sampai reda.",
+                    "en_text": "Right. Let us wait here until it stops.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s5-t2.mp3",
+                    "accept": [
+                        "本当だ。止むまで ここで 待ちましょう。",
+                        "本当だ。止むまでここで待ちましょう。",
+                        "ほんとうだ。やむまで ここで まちましょう。",
+                        "ほんとうだ。やむまでここでまちましょう。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s5-t3",
+                    "who": "partner",
+                    "ja": "レポートは もう 書《か》き終《お》わりましたか。",
+                    "speak": "レポートは もう かきおわりましたか。",
+                    "id_text": "Laporannya sudah selesai ditulis?",
+                    "en_text": "Have you finished writing the report?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s5-t3.mp3"
+                },
+                {
+                    "id": "n3l10-s5-t4",
+                    "who": "you",
+                    "ja": "いいえ、まだ 書《か》き始《はじ》めた ところです。",
+                    "speak": "いいえ、まだ かきはじめた ところです。",
+                    "id_text": "Belum, baru mulai menulis.",
+                    "en_text": "No, I have only just started writing.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s5-t4.mp3",
+                    "accept": [
+                        "いいえ、まだ 書き始めた ところです。",
+                        "いいえ、まだ書き始めたところです。",
+                        "いいえ、まだ かきはじめた ところです。",
+                        "いいえ、まだかきはじめたところです。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s5-t5",
+                    "who": "partner",
+                    "ja": "明日《あした》までですよ。",
+                    "speak": "あしたまでですよ。",
+                    "id_text": "Tenggatnya besok lho.",
+                    "en_text": "It is due tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s5-t5.mp3"
+                },
+                {
+                    "id": "n3l10-s5-t6",
+                    "who": "you",
+                    "ja": "わかって います。今夜《こんや》は 夜中《よなか》まで 書《か》き続《つづ》けます。",
+                    "speak": "わかって います。こんやは よなかまで かきつづけます。",
+                    "id_text": "Saya tahu. Malam ini saya terus menulis sampai tengah malam.",
+                    "en_text": "I know. Tonight I will keep writing until midnight.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s5-t6.mp3",
+                    "accept": [
+                        "わかって います。今夜は 夜中まで 書き続けます。",
+                        "わかっています。今夜は夜中まで書き続けます。",
+                        "わかって います。こんやは よなかまで かきつづけます。",
+                        "わかっています。こんやはよなかまでかきつづけます。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l10-s6",
+            "title_id": "Lupa membeli tiket",
+            "title_en": "Forgot to buy the ticket",
+            "setting_id": "Di stasiun. Temanmu lupa membeli tiket dan menanyakan ganti kereta.",
+            "setting_en": "At the station. A friend forgot to buy a ticket and asks about the transfer.",
+            "goal_id": "Memakai V忘れる／合う／換える dan …ということに なる.",
+            "goal_en": "Use V-wasureru / au / kaeru and ...to iu koto ni naru.",
+            "patterns": [
+                "V忘れる・合う・換える",
+                "…と いう ことに なる"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l10-s6-t1",
+                    "who": "partner",
+                    "ja": "あっ、切符《きっぷ》を 買《か》い忘《わす》れちゃった。",
+                    "speak": "あっ、きっぷを かいわすれちゃった。",
+                    "id_text": "Aduh, lupa membeli tiket.",
+                    "en_text": "Oh no, I forgot to buy a ticket.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s6-t1.mp3"
+                },
+                {
+                    "id": "n3l10-s6-t2",
+                    "who": "you",
+                    "ja": "今《いま》なら まだ 間《ま》に 合《あ》うよ。窓口《まどぐち》で 買《か》って おいで。",
+                    "speak": "いまなら まだ まに あうよ。まどぐちで かって おいで。",
+                    "id_text": "Sekarang masih sempat. Beli di loket.",
+                    "en_text": "You can still make it. Go buy one at the window.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s6-t2.mp3",
+                    "accept": [
+                        "今なら まだ 間に 合うよ。窓口で 買って おいで。",
+                        "今ならまだ間に合うよ。窓口で買っておいで。",
+                        "いまなら まだ まに あうよ。まどぐちで かって おいで。",
+                        "いまならまだまにあうよ。まどぐちでかっておいで。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s6-t3",
+                    "who": "partner",
+                    "ja": "うん。ところで、乗《の》り換《か》えは どこだっけ？",
+                    "speak": "うん。ところで、のりかえは どこだっけ？",
+                    "id_text": "Iya. Omong-omong, ganti kereta di mana ya?",
+                    "en_text": "Okay. By the way, where do we transfer?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s6-t3.mp3"
+                },
+                {
+                    "id": "n3l10-s6-t4",
+                    "who": "you",
+                    "ja": "次《つぎ》の 駅《えき》で 乗《の》り換《か》えるんだよ。二人《ふたり》で 確《たし》かめ合《あ》おう。",
+                    "speak": "つぎの えきで のりかえるんだよ。ふたりで たしかめあおう。",
+                    "id_text": "Di stasiun berikutnya. Mari kita periksa bersama.",
+                    "en_text": "At the next station. Let us double-check together.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s6-t4.mp3",
+                    "accept": [
+                        "次の 駅で 乗り換えるんだよ。二人で 確かめ合おう。",
+                        "次の駅で乗り換えるんだよ。二人で確かめ合おう。",
+                        "つぎの えきで のりかえるんだよ。ふたりで たしかめあおう。",
+                        "つぎのえきでのりかえるんだよ。ふたりでたしかめあおう。"
+                    ]
+                },
+                {
+                    "id": "n3l10-s6-t5",
+                    "who": "partner",
+                    "ja": "部長《ぶちょう》は 金曜日《きんようび》に 戻《もど》るけど、会議《かいぎ》は 木曜日《もくようび》だよね。",
+                    "speak": "ぶちょうは きんようびに もどるけど、かいぎは もくようびだよね。",
+                    "id_text": "Kepala bagian kembali hari Jumat, tapi rapat hari Kamis, ya.",
+                    "en_text": "The department head comes back Friday, but the meeting is Thursday, right?",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s6-t5.mp3"
+                },
+                {
+                    "id": "n3l10-s6-t6",
+                    "who": "you",
+                    "ja": "ということは、部長《ぶちょう》は 会議《かいぎ》に 出《で》られないと いう ことに なるね。",
+                    "speak": "ということは、ぶちょうは かいぎに でられないと いう ことに なるね。",
+                    "id_text": "Artinya, kepala bagian tidak bisa hadir di rapat.",
+                    "en_text": "That means the department head cannot attend the meeting.",
+                    "audio": "/audio/kaiwa/lesson-n3-10/n3l10-s6-t6.mp3",
+                    "accept": [
+                        "ということは、部長は 会議に 出られないと いう ことに なるね。",
+                        "ということは、部長は会議に出られないということになるね。",
+                        "ということは、ぶちょうは かいぎに でられないと いう ことに なるね。",
+                        "ということは、ぶちょうはかいぎにでられないということになるね。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

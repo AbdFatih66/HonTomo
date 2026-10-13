@@ -17,8 +17,8 @@ use Illuminate\Database\Seeder;
  *   - kategori kosakata `n3-pelajaran-{unitOrder}` + kata (jlpt_level N3)
  *   - lesson kosakata (order 1) + kuis (VocabularyQuizSync::run('N3'))
  *
- * Belum ada lesson tata bahasa (Bunpou) untuk N3, jadi lesson kosakata tidak
- * punya prasyarat.
+ * Lesson kosakata punya prasyarat Bunpou bila N3Lesson{n}BunpouSeeder sudah
+ * dijalankan; kalau belum, tanpa prasyarat.
  *
  * Subclass cukup mengisi unitOrder() dan words(). Aman dijalankan berulang dan
  * pada database yang sudah punya user:
@@ -69,6 +69,9 @@ abstract class N3LessonSeeder extends Seeder
             ]
         );
 
+        // Bila Bunpou pelajaran ini sudah ada (N3Lesson{n}BunpouSeeder), kosakata memakainya sebagai prasyarat.
+        $bunpouId = Lesson::where('unit_id', $unit->id)->where('order', 0)->where('category', 'grammar')->value('id');
+
         Lesson::updateOrCreate(
             ['unit_id' => $unit->id, 'order' => 1],
             [
@@ -77,7 +80,7 @@ abstract class N3LessonSeeder extends Seeder
                 'category' => 'vocabulary',
                 'xp_reward' => 10,
                 'required_accuracy' => 70,
-                'prerequisite_lesson_id' => null,
+                'prerequisite_lesson_id' => $bunpouId,
                 'is_active' => true,
             ]
         );

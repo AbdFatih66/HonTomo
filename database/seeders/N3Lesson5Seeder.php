@@ -83,6 +83,28 @@ class N3Lesson5Seeder extends N3LessonSeeder
             ['使用する', 'しようする', 'shiyou suru', 'menggunakan', 'to use'],
             ['東西', 'とうざい', 'touzai', 'timur dan barat', 'East and West'],
 
+            // Tambahan dari lembar latihan (tata bahasa, bicara-dengar, baca-tulis, soal)
+            ['行き方', 'いきかた', 'ikikata', 'cara pergi, rute', 'way to get somewhere'],
+            ['尋ねる', 'たずねる', 'tazuneru', 'bertanya, menanyakan', 'to ask, to inquire'],
+            ['そのころ', 'そのころ', 'sono koro', 'pada waktu itu', 'at that time'],
+            ['食欲', 'しょくよく', 'shokuyoku', 'nafsu makan', 'appetite'],
+            ['診る', 'みる', 'miru shinsatsu', 'memeriksa (dokter)', 'to examine (a patient)'],
+            ['なかなか〜ない', 'なかなか〜ない', 'nakanaka nai', 'tidak mudah ~, tidak kunjung ~', 'not easily ~, hardly ever ~'],
+            ['携帯電話', 'けいたいでんわ', 'keitai denwa', 'telepon genggam', 'mobile phone'],
+            ['しまう', 'しまう', 'shimau', 'menyimpan, memasukkan ke tempatnya', 'to put away'],
+            ['アクセス', 'アクセス', 'akusesu', 'akses, jalur menuju suatu tempat', 'access'],
+            ['地球環境', 'ちきゅうかんきょう', 'chikyuu kankyou', 'lingkungan bumi', 'global environment'],
+            ['内容', 'ないよう', 'naiyou', 'isi, kandungan', 'content'],
+            ['世界地図', 'せかいちず', 'sekai chizu', 'peta dunia', 'world map'],
+            ['びっくりする', 'びっくりする', 'bikkuri suru', 'terkejut', 'to be surprised'],
+            ['カーナビ', 'カーナビ', 'kaanabi', 'navigasi mobil (GPS)', 'car navigation system'],
+            ['地形図', 'ちけいず', 'chikeizu', 'peta topografi', 'topographic map'],
+            ['元', 'もと', 'moto', 'tempat semula, keadaan semula', 'original place, former state'],
+            ['けんか', 'けんか', 'kenka', 'pertengkaran', 'quarrel'],
+            ['原因', 'げんいん', 'genin', 'penyebab', 'cause'],
+            ['電話代', 'でんわだい', 'denwadai', 'biaya telepon', 'telephone charges'],
+            ['見やすい', 'みやすい', 'miyasui', 'mudah dilihat', 'easy to see'],
+
             // Ungkapan
             ['〜から、〜てください。', '〜から、〜てください。', 'kara tekudasai', 'Dari ~, tolong ~ (menjelaskan rute lewat patokan).', 'Describing a route by landmarks'],
         ];

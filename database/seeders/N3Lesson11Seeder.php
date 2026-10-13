@@ -111,6 +111,21 @@ class N3Lesson11Seeder extends N3LessonSeeder
             ['観光案内', 'かんこうあんない', 'kankou annai', 'informasi wisata', 'tourist information'],
             ['観光地', 'かんこうち', 'kankouchi', 'tempat wisata', 'tourist spot'],
 
+            // Tambahan dari bacaan dan latihan di buku
+            ['受け入れる[提案を〜]', 'うけいれる[ていあんを〜]', 'ukeireru', 'menerima [usulan]', 'to accept [a proposal]'],
+            ['慣れる', 'なれる', 'nareru', 'terbiasa', 'to get used to'],
+            ['海外旅行', 'かいがいりょこう', 'kaigai ryokou', 'perjalanan ke luar negeri', 'overseas travel'],
+            ['留学生寮', 'りゅうがくせいりょう', 'ryuugakusei ryou', 'asrama mahasiswa asing', 'international students\' dormitory'],
+            ['科学者', 'かがくしゃ', 'kagakusha', 'ilmuwan', 'scientist'],
+            ['亡くなる', 'なくなる', 'nakunaru', 'meninggal dunia', 'to pass away'],
+            ['大地震', 'おおじしん', 'oojishin', 'gempa besar', 'major earthquake'],
+            ['遅刻する', 'ちこくする', 'chikoku suru', 'terlambat (masuk sekolah/kerja)', 'to be late (for school/work)'],
+            ['柔らかい', 'やわらかい', 'yawarakai', 'lembut, empuk', 'soft'],
+            ['登録する', 'とうろくする', 'touroku suru', 'mendaftarkan, terdaftar', 'to register'],
+            ['登る', 'のぼる', 'noboru', 'mendaki, memanjat', 'to climb'],
+            ['子孫', 'しそん', 'shison', 'keturunan', 'descendants'],
+            ['韓国語', 'かんこくご', 'kankokugo', 'bahasa Korea', 'Korean language'],
+
             // Ungkapan
             ['〜っていうのはどうですか。', '〜っていうのはどうですか。', 'tte iu no wa dou desu ka', 'Bagaimana kalau ~?', 'How about...?'],
             ['それも悪くないですね。', 'それもわるくないですね。', 'sore mo warukunai desu ne', 'Itu juga tidak buruk ya.', 'Yes, that is not bad either'],

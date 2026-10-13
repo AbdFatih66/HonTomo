@@ -95,6 +95,19 @@ class N3Lesson6Seeder extends N3LessonSeeder
             ['立てる[プランを〜]', 'たてる[プランを〜]', 'tateru', 'menyusun [rencana]', 'to make [a plan]'],
             ['順番', 'じゅんばん', 'junban', 'urutan, giliran', 'order, sequence'],
 
+            // Tambahan dari lembar latihan (tata bahasa, bicara-dengar, baca-tulis, soal)
+            ['昼間', 'ひるま', 'hiruma', 'siang hari', 'daytime'],
+            ['ちょうちょ', 'ちょうちょ', 'chouchou', 'kupu-kupu', 'butterfly'],
+            ['バッグ', 'バッグ', 'baggu', 'tas', 'bag'],
+            ['つもり貯金', 'つもりちょきん', 'tsumori chokin', 'tabungan "anggap sudah membeli"', '"as if I bought it" saving'],
+            ['体操', 'たいそう', 'taisou', 'senam', 'gymnastics, exercises'],
+            ['漫画', 'まんが', 'manga', 'komik', 'comic, manga'],
+            ['かむ', 'かむ', 'kamu', 'mengunyah, menggigit', 'to chew, to bite'],
+            ['ビタミン', 'ビタミン', 'bitamin', 'vitamin', 'vitamin'],
+            ['秋祭り', 'あきまつり', 'aki matsuri', 'festival musim gugur', 'autumn festival'],
+            ['やむ[雨が〜]', 'やむ[あめが〜]', 'yamu', 'berhenti [hujan]', '[rain] to stop'],
+            ['欲しがる', 'ほしがる', 'hoshigaru', 'menginginkan (dikatakan untuk orang lain)', 'to want (said of others)'],
+
             // Ungkapan
             ['いやあ、……。', 'いやあ、……。', 'iyaa', 'Wah, tidak...', 'No...'],
             ['今ちょっとよろしいでしょうか。', 'いまちょっとよろしいでしょうか。', 'ima chotto yoroshii deshouka', 'Apakah Anda punya waktu sebentar?', 'Have you got a moment?'],

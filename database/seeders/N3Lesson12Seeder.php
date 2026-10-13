@@ -86,6 +86,28 @@ class N3Lesson12Seeder extends N3LessonSeeder
             ['近所づきあい', 'きんじょづきあい', 'kinjo zukiai', 'bergaul dengan tetangga', 'socializing with neighbors'],
             ['コマーシャル', 'コマーシャル', 'komaasharu', 'iklan komersial', 'commercial'],
 
+            // Tambahan dari bacaan dan latihan di buku
+            ['祈る', 'いのる', 'inoru', 'berdoa, mendoakan', 'to pray for'],
+            ['国際交流協会', 'こくさいこうりゅうきょうかい', 'kokusai kouryuu kyoukai', 'asosiasi pertukaran internasional', 'international exchange association'],
+            ['体の調子', 'からだのちょうし', 'karada no choushi', 'kondisi tubuh', 'physical condition'],
+            ['タンス', 'タンス', 'tansu', 'lemari pakaian', 'chest of drawers'],
+            ['役に立つ', 'やくにたつ', 'yaku ni tatsu', 'berguna', 'to be useful'],
+            ['テープレコーダー', 'テープレコーダー', 'teepu rekoodaa', 'alat perekam kaset', 'tape recorder'],
+            ['聞き取る', 'ききとる', 'kikitoru', 'menangkap dengan telinga', 'to catch by ear'],
+            ['洗濯機', 'せんたくき', 'sentakuki', 'mesin cuci', 'washing machine'],
+            ['召し上がる', 'めしあがる', 'meshiagaru', 'makan／minum (hormat)', 'to eat／drink (honorific)'],
+            ['汚れる', 'よごれる', 'yogoreru', 'menjadi kotor', 'to get dirty'],
+            ['止める[自転車を〜]', 'とめる[じてんしゃを〜]', 'tomeru', 'memarkir [sepeda]', 'to park [a bicycle]'],
+            ['逃げる', 'にげる', 'nigeru', 'melarikan diri', 'to escape'],
+            ['年を取る', 'としをとる', 'toshi o toru', 'bertambah usia', 'to get old'],
+            ['社員食堂', 'しゃいんしょくどう', 'shain shokudou', 'kantin karyawan', 'staff cafeteria'],
+            ['騒ぐ', 'さわぐ', 'sawagu', 'ribut, hura-hura', 'to make noise'],
+            ['浴びる[シャワーを〜]', 'あびる[シャワーを〜]', 'abiru', 'mandi [shower]', 'to take [a shower]'],
+            ['長い間', 'ながいあいだ', 'nagai aida', 'untuk waktu yang lama', 'for a long time'],
+            ['下がる', 'さがる', 'sagaru', 'turun', 'to go down'],
+            ['負ける', 'まける', 'makeru', 'kalah', 'to lose'],
+            ['司会', 'しかい', 'shikai', 'pembawa acara, moderator', 'chairperson, moderator'],
+
             // Ungkapan
             ['気が付きませんでした。', 'きがつきませんでした。', 'ki ga tsukimasen deshita', 'Saya tidak menyadarinya.', 'I did not notice that'],
             ['どうしても……', 'どうしても……', 'doushitemo (ungkapan)', 'Bagaimanapun juga, ... (terpaksa)', 'inevitably, always'],

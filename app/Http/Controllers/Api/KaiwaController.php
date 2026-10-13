@@ -105,9 +105,10 @@ class KaiwaController extends Controller
         $dir = public_path('data/kaiwa');
         $lessons = [];
 
-        // N5: index.json (kunci = id pelajaran). N4: index-n4.json (kunci 'n4-{id}', supaya
-        // tidak bentrok dengan id pelajaran N5; id skenario N4 berawalan `n4l{n}-s`).
-        foreach (['index.json' => '', 'index-n4.json' => 'n4-'] as $file => $prefix) {
+        // N5: index.json (kunci = id pelajaran). N4: index-n4.json (kunci 'n4-{id}'), N3: index-n3.json
+        // (kunci 'n3-{id}'), supaya tidak bentrok dengan id pelajaran N5; id skenario N4/N3 berawalan
+        // `n4l{n}-s` / `n3l{n}-s`.
+        foreach (['index.json' => '', 'index-n4.json' => 'n4-', 'index-n3.json' => 'n3-'] as $file => $prefix) {
             $manifest = json_decode((string) @file_get_contents("{$dir}/{$file}"), true);
 
             foreach ($manifest['lessons'] ?? [] as $entry) {

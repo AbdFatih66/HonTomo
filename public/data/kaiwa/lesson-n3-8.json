@@ -1,0 +1,568 @@
+{
+    "id": 8,
+    "level": "N3",
+    "title_id": "Pelajaran 8 (N3): Ciri, Tenggat, dan Keadaan",
+    "title_en": "N3 Lesson 8: Features, Deadlines and States",
+    "scenarios": [
+        {
+            "id": "n3l8-s1",
+            "title_id": "Paket datang saat tidak di rumah",
+            "title_en": "A parcel while you were away",
+            "setting_id": "Sore di rumah. Kamu bertanya kepada anggota rumah tentang paket.",
+            "setting_en": "Evening at home. You ask a housemate about a parcel.",
+            "goal_id": "Menyatakan kejadian selama suatu periode dengan あいだ(に).",
+            "goal_en": "Describe events during a period with aida (ni).",
+            "patterns": [
+                "Vている／Nの あいだ(に)"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l8-s1-t1",
+                    "who": "you",
+                    "ja": "留守《るす》の あいだに、誰《だれ》か 来《き》ましたか。",
+                    "speak": "るすの あいだに、だれか きましたか。",
+                    "id_text": "Selama saya tidak di rumah, ada yang datang?",
+                    "en_text": "Did anyone come while I was out?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s1-t1.mp3",
+                    "accept": [
+                        "留守の あいだに、誰か 来ましたか。",
+                        "留守のあいだに、誰か来ましたか。",
+                        "るすの あいだに、だれか きましたか。",
+                        "るすのあいだに、だれかきましたか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s1-t2",
+                    "who": "partner",
+                    "ja": "ええ、宅配便《たくはいびん》が 届《とど》きましたよ。",
+                    "speak": "ええ、たくはいびんが とどきましたよ。",
+                    "id_text": "Ya, paket kurir datang.",
+                    "en_text": "Yes, a parcel was delivered.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s1-t2.mp3"
+                },
+                {
+                    "id": "n3l8-s1-t3",
+                    "who": "you",
+                    "ja": "荷物《にもつ》は どこですか。",
+                    "speak": "にもつは どこですか。",
+                    "id_text": "Barangnya di mana?",
+                    "en_text": "Where is it?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s1-t3.mp3",
+                    "accept": [
+                        "荷物は どこですか。",
+                        "荷物はどこですか。",
+                        "にもつは どこですか。",
+                        "にもつはどこですか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s1-t4",
+                    "who": "partner",
+                    "ja": "玄関《げんかん》に 置《お》いて あります。",
+                    "speak": "げんかんに おいて あります。",
+                    "id_text": "Ditaruh di pintu masuk.",
+                    "en_text": "I left it at the entrance.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s1-t4.mp3"
+                },
+                {
+                    "id": "n3l8-s1-t5",
+                    "who": "you",
+                    "ja": "わかりました。子《こ》どもが 寝《ね》て いる あいだに 取《と》りに 行《い》きます。",
+                    "speak": "わかりました。こどもが ねて いる あいだに とりに いきます。",
+                    "id_text": "Baik. Saya ambil selagi anak tidur.",
+                    "en_text": "Understood. I will get it while the child is sleeping.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s1-t5.mp3",
+                    "accept": [
+                        "わかりました。子どもが 寝て いる あいだに 取りに 行きます。",
+                        "わかりました。子どもが寝ているあいだに取りに行きます。",
+                        "わかりました。こどもが ねて いる あいだに とりに いきます。",
+                        "わかりました。こどもがねているあいだにとりにいきます。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s1-t6",
+                    "who": "partner",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, tolong ya.",
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l8-s2",
+            "title_id": "Tenggat laporan",
+            "title_en": "Report deadline",
+            "setting_id": "Di kantor. Kamu menanyakan tenggat dan jam kerja atasanmu.",
+            "setting_en": "At the office. You ask about the deadline and your boss's hours.",
+            "goal_id": "Membedakan まで dan までに.",
+            "goal_en": "Distinguish made and made ni.",
+            "patterns": [
+                "Nまで／Vるまで",
+                "Nまでに／Vるまでに"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l8-s2-t1",
+                    "who": "you",
+                    "ja": "報告書《ほうこくしょ》は いつまでに 出《だ》せば いいですか。",
+                    "speak": "ほうこくしょは いつまでに だせば いいですか。",
+                    "id_text": "Laporan harus diserahkan paling lambat kapan?",
+                    "en_text": "By when should I submit the report?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s2-t1.mp3",
+                    "accept": [
+                        "報告書は いつまでに 出せば いいですか。",
+                        "報告書はいつまでに出せばいいですか。",
+                        "ほうこくしょは いつまでに だせば いいですか。",
+                        "ほうこくしょはいつまでにだせばいいですか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s2-t2",
+                    "who": "partner",
+                    "ja": "金曜日《きんようび》までに お願《ねが》いします。",
+                    "speak": "きんようびまでに おねがいします。",
+                    "id_text": "Paling lambat Jumat, ya.",
+                    "en_text": "By Friday, please.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s2-t2.mp3"
+                },
+                {
+                    "id": "n3l8-s2-t3",
+                    "who": "you",
+                    "ja": "今日《きょう》は 何時《なんじ》まで 会社《かいしゃ》に いますか。",
+                    "speak": "きょうは なんじまで かいしゃに いますか。",
+                    "id_text": "Hari ini Anda di kantor sampai jam berapa?",
+                    "en_text": "Until what time are you at the office today?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s2-t3.mp3",
+                    "accept": [
+                        "今日は 何時まで 会社に いますか。",
+                        "今日は何時まで会社にいますか。",
+                        "きょうは なんじまで かいしゃに いますか。",
+                        "きょうはなんじまでかいしゃにいますか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s2-t4",
+                    "who": "partner",
+                    "ja": "夜《よる》まで いますから、いつでも どうぞ。",
+                    "speak": "よるまで いますから、いつでも どうぞ。",
+                    "id_text": "Saya sampai malam, jadi kapan saja silakan.",
+                    "en_text": "I will be here until night, so come any time.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s2-t4.mp3"
+                },
+                {
+                    "id": "n3l8-s2-t5",
+                    "who": "you",
+                    "ja": "では、金曜日《きんようび》までに 必《かなら》ず 出《だ》します。",
+                    "speak": "では、きんようびまでに かならず だします。",
+                    "id_text": "Kalau begitu, pasti saya serahkan paling lambat Jumat.",
+                    "en_text": "Then I will definitely submit it by Friday.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s2-t5.mp3",
+                    "accept": [
+                        "では、金曜日までに 必ず 出します。",
+                        "では、金曜日までに必ず出します。",
+                        "では、きんようびまでに かならず だします。",
+                        "では、きんようびまでにかならずだします。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s2-t6",
+                    "who": "partner",
+                    "ja": "お願《ねが》いしますね。",
+                    "speak": "おねがいしますね。",
+                    "id_text": "Saya mengandalkanmu.",
+                    "en_text": "I am counting on you.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l8-s3",
+            "title_id": "Yang mana Tanaka?",
+            "title_en": "Which one is Tanaka?",
+            "setting_id": "Di acara kantor. Kamu mencari Tanaka di antara banyak orang.",
+            "setting_en": "At a company event. You look for Tanaka among many people.",
+            "goal_id": "Menunjuk orang dengan kata kerja bentuk た + N.",
+            "goal_en": "Pick out people with a V-ta + noun phrase.",
+            "patterns": [
+                "Vた N"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l8-s3-t1",
+                    "who": "you",
+                    "ja": "田中《たなか》さんは どの 人《ひと》ですか。",
+                    "speak": "たなかさんは どの ひとですか。",
+                    "id_text": "Tanaka yang mana?",
+                    "en_text": "Which one is Tanaka?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s3-t1.mp3",
+                    "accept": [
+                        "田中さんは どの 人ですか。",
+                        "田中さんはどの人ですか。",
+                        "たなかさんは どの ひとですか。",
+                        "たなかさんはどのひとですか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s3-t2",
+                    "who": "partner",
+                    "ja": "ほら、あの めがねを かけた 人《ひと》ですよ。",
+                    "speak": "ほら、あの めがねを かけた ひとですよ。",
+                    "id_text": "Itu, yang berkacamata.",
+                    "en_text": "Look, the one wearing glasses.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s3-t2.mp3"
+                },
+                {
+                    "id": "n3l8-s3-t3",
+                    "who": "you",
+                    "ja": "青《あお》い シャツを 着《き》た 人《ひと》ですか。",
+                    "speak": "あおい シャツを きた ひとですか。",
+                    "id_text": "Yang memakai kemeja biru?",
+                    "en_text": "The one wearing a blue shirt?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s3-t3.mp3",
+                    "accept": [
+                        "青い シャツを 着た 人ですか。",
+                        "青いシャツを着た人ですか。",
+                        "あおい シャツを きた ひとですか。",
+                        "あおいシャツをきたひとですか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s3-t4",
+                    "who": "partner",
+                    "ja": "いいえ、その 隣《となり》の 帽子《ぼうし》を かぶった 人《ひと》です。",
+                    "speak": "いいえ、その となりの ぼうしを かぶった ひとです。",
+                    "id_text": "Bukan, orang di sebelahnya yang memakai topi.",
+                    "en_text": "No, the one next to him wearing a hat.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s3-t4.mp3"
+                },
+                {
+                    "id": "n3l8-s3-t5",
+                    "who": "you",
+                    "ja": "ああ、あの 人《ひと》ですね。ありがとうございます。",
+                    "speak": "ああ、あの ひとですね。ありがとうございます。",
+                    "id_text": "Oh, orang itu. Terima kasih.",
+                    "en_text": "Oh, that person. Thank you.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s3-t5.mp3",
+                    "accept": [
+                        "ああ、あの 人ですね。ありがとうございます。",
+                        "ああ、あの人ですね。ありがとうございます。",
+                        "ああ、あの ひとですね。ありがとうございます。",
+                        "ああ、あのひとですね。ありがとうございます。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s3-t6",
+                    "who": "partner",
+                    "ja": "いいえ。",
+                    "speak": "いいえ。",
+                    "id_text": "Sama-sama.",
+                    "en_text": "You are welcome.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l8-s4",
+            "title_id": "Ozouni berbeda tiap daerah",
+            "title_en": "Ozouni differs by region",
+            "setting_id": "Awal Januari di kantor. Kamu bertanya soal makanan Tahun Baru.",
+            "setting_en": "Early January at the office. You ask about New Year food.",
+            "goal_id": "Menyatakan perbedaan dengan Nによって.",
+            "goal_en": "State differences with N ni yotte.",
+            "patterns": [
+                "Nによって"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l8-s4-t1",
+                    "who": "you",
+                    "ja": "日本《にほん》では お正月《しょうがつ》に 何《なに》を 食《た》べますか。",
+                    "speak": "にほんでは おしょうがつに なにを たべますか。",
+                    "id_text": "Di Jepang, apa yang dimakan saat Tahun Baru?",
+                    "en_text": "What do people eat at New Year in Japan?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s4-t1.mp3",
+                    "accept": [
+                        "日本では お正月に 何を 食べますか。",
+                        "日本ではお正月に何を食べますか。",
+                        "にほんでは おしょうがつに なにを たべますか。",
+                        "にほんではおしょうがつになにをたべますか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s4-t2",
+                    "who": "partner",
+                    "ja": "お雑煮《ぞうに》を 食《た》べますが、地方《ちほう》によって 作《つく》り方《かた》が 違《ちが》います。",
+                    "speak": "おぞうにを たべますが、ちほうによって つくりかたが ちがいます。",
+                    "id_text": "Ozouni, tetapi cara membuatnya beda tiap daerah.",
+                    "en_text": "Ozouni, but the way it is made differs by region.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s4-t2.mp3"
+                },
+                {
+                    "id": "n3l8-s4-t3",
+                    "who": "you",
+                    "ja": "家《いえ》によっても 違《ちが》いますか。",
+                    "speak": "いえによっても ちがいますか。",
+                    "id_text": "Apakah beda juga tiap keluarga?",
+                    "en_text": "Does it differ by family too?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s4-t3.mp3",
+                    "accept": [
+                        "家によっても 違いますか。",
+                        "家によっても違いますか。",
+                        "いえによっても ちがいますか。",
+                        "いえによってもちがいますか。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s4-t4",
+                    "who": "partner",
+                    "ja": "ええ、家《いえ》によって 味《あじ》も さまざまです。",
+                    "speak": "ええ、いえによって あじも さまざまです。",
+                    "id_text": "Ya, rasanya juga beragam menurut keluarga.",
+                    "en_text": "Yes, the taste varies by family too.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s4-t4.mp3"
+                },
+                {
+                    "id": "n3l8-s4-t5",
+                    "who": "you",
+                    "ja": "人《ひと》によって 好《す》きな 味《あじ》も 違《ちが》いますね。",
+                    "speak": "ひとによって すきな あじも ちがいますね。",
+                    "id_text": "Selera orang juga berbeda-beda ya.",
+                    "en_text": "Preferred tastes differ from person to person too.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s4-t5.mp3",
+                    "accept": [
+                        "人によって 好きな 味も 違いますね。",
+                        "人によって好きな味も違いますね。",
+                        "ひとによって すきな あじも ちがいますね。",
+                        "ひとによってすきなあじもちがいますね。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s4-t6",
+                    "who": "partner",
+                    "ja": "そうですね。おもしろいでしょう。",
+                    "speak": "そうですね。おもしろいでしょう。",
+                    "id_text": "Betul. Menarik, kan?",
+                    "en_text": "That is right. Is it not interesting?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s4-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l8-s5",
+            "title_id": "AC masih menyala dan alasan belajar",
+            "title_en": "AC left on and why you study",
+            "setting_id": "Di rumah teman. Temanmu menemukan AC menyala, lalu bertanya alasan belajarmu.",
+            "setting_en": "At a friend's house. She finds the AC on, then asks why you study Japanese.",
+            "goal_id": "Memakai Vたまま dan alasan …からだ.",
+            "goal_en": "Use V-ta mama and the reason pattern ...kara da.",
+            "patterns": [
+                "Vたまま",
+                "…からだ"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l8-s5-t1",
+                    "who": "partner",
+                    "ja": "あれ、エアコンが つけた ままだよ。",
+                    "speak": "あれ、エアコンが つけた ままだよ。",
+                    "id_text": "Lho, AC-nya masih menyala.",
+                    "en_text": "Hey, the air conditioner is still on.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s5-t1.mp3"
+                },
+                {
+                    "id": "n3l8-s5-t2",
+                    "who": "you",
+                    "ja": "ごめん、つけた まま 出《で》かけて しまった。",
+                    "speak": "ごめん、つけた まま でかけて しまった。",
+                    "id_text": "Maaf, aku pergi tanpa mematikannya.",
+                    "en_text": "Sorry, I went out leaving it on.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s5-t2.mp3",
+                    "accept": [
+                        "ごめん、つけた まま 出かけて しまった。",
+                        "ごめん、つけたまま出かけてしまった。",
+                        "ごめん、つけた まま でかけて しまった。",
+                        "ごめん、つけたままでかけてしまった。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s5-t3",
+                    "who": "partner",
+                    "ja": "電気代《でんきだい》が もったいないよ。",
+                    "speak": "でんきだいが もったいないよ。",
+                    "id_text": "Sayang biaya listriknya.",
+                    "en_text": "It is a waste of electricity.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s5-t3.mp3"
+                },
+                {
+                    "id": "n3l8-s5-t4",
+                    "who": "you",
+                    "ja": "次《つぎ》から 気《き》を つけるね。",
+                    "speak": "つぎから きを つけるね。",
+                    "id_text": "Mulai lain kali aku hati-hati.",
+                    "en_text": "I will be careful from next time.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s5-t4.mp3",
+                    "accept": [
+                        "次から 気を つけるね。",
+                        "次から気をつけるね。",
+                        "つぎから きを つけるね。",
+                        "つぎからきをつけるね。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s5-t5",
+                    "who": "partner",
+                    "ja": "ところで、どうして 日本語《にほんご》を 勉強《べんきょう》して いるの？",
+                    "speak": "ところで、どうして にほんごを べんきょうして いるの？",
+                    "id_text": "Omong-omong, kenapa kamu belajar bahasa Jepang?",
+                    "en_text": "By the way, why are you studying Japanese?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s5-t5.mp3"
+                },
+                {
+                    "id": "n3l8-s5-t6",
+                    "who": "you",
+                    "ja": "日本《にほん》で 働《はたら》きたいからだよ。",
+                    "speak": "にほんで はたらきたいからだよ。",
+                    "id_text": "Karena ingin bekerja di Jepang.",
+                    "en_text": "Because I want to work in Japan.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s5-t6.mp3",
+                    "accept": [
+                        "日本で 働きたいからだよ。",
+                        "日本で働きたいからだよ。",
+                        "にほんで はたらきたいからだよ。",
+                        "にほんではたらきたいからだよ。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l8-s6",
+            "title_id": "Ciri orang yang dijemput",
+            "title_en": "Describing the person you are meeting",
+            "setting_id": "Di bandara. Petugas menanyakan ciri orang yang akan kamu jemput.",
+            "setting_en": "At the airport. A staff member asks what the person you are meeting looks like.",
+            "goal_id": "Menjelaskan penampilan dengan 髪／目を している.",
+            "goal_en": "Describe looks with kami / me o shite iru.",
+            "patterns": [
+                "髪／目／形を している"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l8-s6-t1",
+                    "who": "partner",
+                    "ja": "待《ま》ち合《あ》わせの 人《ひと》は どんな 人《ひと》ですか。",
+                    "speak": "まちあわせの ひとは どんな ひとですか。",
+                    "id_text": "Orang yang dijemput seperti apa?",
+                    "en_text": "What is the person you are meeting like?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s6-t1.mp3"
+                },
+                {
+                    "id": "n3l8-s6-t2",
+                    "who": "you",
+                    "ja": "背《せ》が 高《たか》くて、短《みじか》い 髪《かみ》を して います。",
+                    "speak": "せが たかくて、みじかい かみを して います。",
+                    "id_text": "Tinggi dan berambut pendek.",
+                    "en_text": "Tall, with short hair.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s6-t2.mp3",
+                    "accept": [
+                        "背が 高くて、短い 髪を して います。",
+                        "背が高くて、短い髪をしています。",
+                        "せが たかくて、みじかい かみを して います。",
+                        "せがたかくて、みじかいかみをしています。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s6-t3",
+                    "who": "partner",
+                    "ja": "目《め》は？",
+                    "speak": "めは？",
+                    "id_text": "Matanya?",
+                    "en_text": "And the eyes?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s6-t3.mp3"
+                },
+                {
+                    "id": "n3l8-s6-t4",
+                    "who": "you",
+                    "ja": "大《おお》きな 目《め》を して いて、いつも 笑《わら》って います。",
+                    "speak": "おおきな めを して いて、いつも わらって います。",
+                    "id_text": "Bermata besar dan selalu tersenyum.",
+                    "en_text": "Big eyes, and always smiling.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s6-t4.mp3",
+                    "accept": [
+                        "大きな 目を して いて、いつも 笑って います。",
+                        "大きな目をしていて、いつも笑っています。",
+                        "おおきな めを して いて、いつも わらって います。",
+                        "おおきなめをしていて、いつもわらっています。"
+                    ]
+                },
+                {
+                    "id": "n3l8-s6-t5",
+                    "who": "partner",
+                    "ja": "持《も》ち物《もの》は？",
+                    "speak": "もちものは？",
+                    "id_text": "Barang bawaannya?",
+                    "en_text": "And what is he carrying?",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s6-t5.mp3"
+                },
+                {
+                    "id": "n3l8-s6-t6",
+                    "who": "you",
+                    "ja": "青《あお》い リュックを 背負《せお》って います。",
+                    "speak": "あおい リュックを せおって います。",
+                    "id_text": "Memanggul ransel biru.",
+                    "en_text": "He is carrying a blue backpack.",
+                    "audio": "/audio/kaiwa/lesson-n3-8/n3l8-s6-t6.mp3",
+                    "accept": [
+                        "青い リュックを 背負って います。",
+                        "青いリュックを背負っています。",
+                        "あおい リュックを せおって います。",
+                        "あおいリュックをせおっています。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

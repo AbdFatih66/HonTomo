@@ -93,6 +93,25 @@ class N3Lesson7Seeder extends N3LessonSeeder
             ['笑い話', 'わらいばなし', 'waraibanashi', 'cerita lucu', 'funny story'],
             ['落語', 'らくご', 'rakugo', 'rakugo, seni bercerita lucu tradisional', 'rakugo'],
 
+            // Tambahan dari lembar latihan (tata bahasa, bicara-dengar, baca-tulis, soal)
+            ['丁寧[な]', 'ていねい[な]', 'teinei', 'sopan, teliti', 'polite, careful'],
+            ['断る', 'ことわる', 'kotowaru', 'menolak', 'to decline, to refuse'],
+            ['お風呂', 'おふろ', 'ofuro', 'bak mandi, mandi', 'bath'],
+            ['以内', 'いない', 'inai', 'dalam ~, kurang dari ~', 'within'],
+            ['アルバム', 'アルバム', 'arubamu', 'album', 'album'],
+            ['お祭り', 'おまつり', 'omatsuri', 'festival', 'festival'],
+            ['二十歳', 'はたち', 'hatachi', 'dua puluh tahun', 'twenty years old'],
+            ['がっかりする', 'がっかりする', 'gakkari suru', 'kecewa', 'to be disappointed'],
+            ['おしゃべり', 'おしゃべり', 'oshaberi', 'mengobrol, banyak bicara', 'chatting, chatterbox'],
+            ['おもしろがる', 'おもしろがる', 'omoshirogaru', 'merasa lucu atau menarik', 'to find amusing'],
+            ['まとめる', 'まとめる', 'matomeru', 'merangkum, menyatukan', 'to sum up, to put together'],
+            ['贈り物', 'おくりもの', 'okurimono', 'hadiah', 'gift, present'],
+            ['しかたがない', 'しかたがない', 'shikata ga nai', 'tidak ada cara lain', 'it cannot be helped'],
+            ['ただ', 'ただ', 'tada', 'hanya, namun', 'just, only'],
+            ['おなかがいっぱい', 'おなかがいっぱい', 'onaka ga ippai', 'kenyang', 'full (stomach)'],
+            ['大使館', 'たいしかん', 'taishikan', 'kedutaan besar', 'embassy'],
+            ['怖がる', 'こわがる', 'kowagaru', 'takut (dikatakan untuk orang lain)', 'to be afraid (said of others)'],
+
             // Ungkapan
             ['本当ですか。', 'ほんとうですか。', 'hontou desu ka', 'Benarkah?', 'Really?'],
             ['ぜひお願いします。', 'ぜひおねがいします。', 'zehi onegai shimasu', 'Ya, tentu, mohon ya.', 'Oh yes, please'],

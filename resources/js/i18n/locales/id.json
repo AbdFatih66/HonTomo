@@ -18,6 +18,7 @@
     "chokai": "Latihan Menyimak",
     "jlpt_test": "Tes JLPT",
     "kaite_oboeru": "Latihan Menulis",
+    "membaca": "Membaca",
     "kaiwa": "Latihan Percakapan"
   },
   "common": {
@@ -119,6 +120,7 @@
       "chokai": "Latih telinga: dengarkan audio lalu jawab pertanyaannya.",
       "kaiwa": "Berlatih bercakap: simulasi dialog situasi nyata dengan lawan bicara.",
       "kaite_oboeru": "Tulis jawaban dengan tangan agar kata melekat di ingatan.",
+      "membaca": "Baca teks pendek per pelajaran lalu jawab soal pemahamannya.",
       "lampiran": "Rujukan cepat: bilangan, waktu, kata bantu bilangan, konjugasi.",
       "jlpt_test": "Simulasi ujian JLPT lengkap dengan timer dan rekap nilai."
     },
@@ -131,6 +133,7 @@
       "chokai": "{done} dari {total} set menyimak selesai",
       "kaiwa": "{done} dari {total} skenario percakapan selesai",
       "kaite_oboeru": "{done} dari {total} pelajaran menulis selesai",
+      "membaca": "{done} dari {total} bacaan selesai",
       "lampiran": "",
       "jlpt_test": "{done} tes sudah diselesaikan"
     },
@@ -144,6 +147,7 @@
       "chokai_completed": "Latihan menyimak selesai",
       "kaiwa_completed": "Latihan percakapan selesai",
       "kaite_oboeru_completed": "Latihan menulis selesai",
+      "membaca_completed": "Latihan membaca selesai",
       "jlpt_test_completed": "Tes JLPT selesai",
       "other": "XP diperoleh"
     },
@@ -189,6 +193,11 @@
         "title": "Tulis dengan tangan",
         "body": "Menulis jawaban sendiri membuat otak bekerja lebih keras daripada sekadar memilih. Hasilnya, kata lebih awet diingat.",
         "cta": "Latihan Menulis"
+      },
+      "read": {
+        "title": "Biasakan membaca teks utuh",
+        "body": "Membaca paragraf utuh melatih kamu menangkap inti cerita tanpa menerjemahkan kata per kata. Ini inti soal bacaan di ujian.",
+        "cta": "Latihan Membaca"
       },
       "listen": {
         "title": "Biasakan telinga",
@@ -1014,7 +1023,12 @@
     "section_n4_g_expressions": "Ungkapan",
     "section_n4_g_keigo": "Bahasa Hormat & Surat",
     "section_n4_g_daily": "Kehidupan Sehari-hari",
-    "section_n4_g_vocab": "Kosakata Tema"
+    "section_n4_g_vocab": "Kosakata Tema",
+    "section_n3_g_patterns": "Ringkasan Pola",
+    "section_n3_g_compare": "Perbandingan",
+    "section_n3_g_forms": "Cara Membentuk",
+    "section_n3_g_phrases": "Ungkapan & Kata Tunjuk",
+    "subtitle_n3": "Ringkasan pola, perbandingan, dan ungkapan N3, Pelajaran 1–12."
   },
   "vocabulary": {
     "title": "Kosakata per Pelajaran",
@@ -1038,6 +1052,7 @@
     "title": "Latihan Soal",
     "subtitle": "Kuis latihan per pelajaran, 1–25, plus rangkuman — pilihan ganda dan susun kalimat, memakai kanji dengan furigana.",
     "subtitle_n4": "Kuis latihan N4 per pelajaran — pilihan ganda dan susun kalimat, memakai kanji dengan furigana.",
+    "subtitle_n3": "Kuis latihan N3 per pelajaran — pilihan ganda dan susun kalimat, memakai kanji dengan furigana.",
     "lessons_label": "Pilih Pelajaran",
     "reviews_label": "Set Rangkuman",
     "lesson_label": "Pelajaran {n}",
@@ -1377,6 +1392,7 @@
     "title": "Latihan Menyimak",
     "subtitle": "Latihan menyimak (chōkai) per pelajaran — dengarkan audio, lalu jawab pertanyaannya.",
     "subtitle_n4": "Latihan menyimak (chōkai) N4 per pelajaran — dengarkan audio, lalu jawab pertanyaannya.",
+    "subtitle_n3": "Latihan menyimak (chōkai) N3 per pelajaran — dengarkan audio, lalu jawab pertanyaannya.",
     "lesson_label": "Pelajaran {n}",
     "coming_soon": "Segera hadir",
     "kaiwa_title": "Percakapan",
@@ -1414,6 +1430,7 @@
     "title": "Latihan Menulis",
     "subtitle": "Latihan menulis tangan — tulis jawabannya sendiri di bawah, lalu cocokkan dengan kunci jawaban.",
     "subtitle_n4": "Latihan menulis kana N4 per pelajaran — tulis kata yang diminta huruf demi huruf.",
+    "subtitle_n3": "Latihan menulis kana N3 per pelajaran — tulis kata yang diminta huruf demi huruf.",
     "question_count": "{n} soal",
     "lesson_badge": "Pelajaran {n}",
     "quiz_back": "Kembali",
@@ -1434,6 +1451,38 @@
     "crown_hint": "Masih ada jawaban yang salah — selesaikan tanpa kesalahan untuk dapat mahkota.",
     "done_title": "Latihan selesai!",
     "retry": "Ulangi Latihan Ini"
+  },
+  "membaca": {
+    "title": "Membaca",
+    "subtitle": "Baca teks pendek per pelajaran (N5, N4, N3), lalu jawab soal pemahamannya. Furigana dan terjemahan bisa dinyalakan kapan saja.",
+    "lesson_label": "Pelajaran {n}",
+    "coming_soon": "Segera hadir",
+    "covers": "Mencakup Pelajaran {range}",
+    "back_to_list": "Kembali ke daftar",
+    "before_reading": "Sebelum membaca",
+    "focus_label": "Fokus",
+    "furigana": "Furigana",
+    "translation": "Terjemahan",
+    "tap_hint": "Ketuk sebuah paragraf untuk melihat terjemahannya.",
+    "vocab_title": "Kata penting",
+    "start_questions": "Mulai soal",
+    "question_of": "Soal {n}/{total}",
+    "type_mc": "Pilihan Ganda",
+    "type_tf": "Benar / Salah (○×)",
+    "show_passage": "Lihat teks lagi",
+    "true_label": "Benar (○)",
+    "false_label": "Salah (×)",
+    "correct": "Benar!",
+    "incorrect": "Belum tepat.",
+    "next": "Soal Berikutnya",
+    "finish": "Selesai",
+    "done_title": "Bacaan selesai!",
+    "score": "Skor: {score}/{total}",
+    "crown_earned": "Sempurna! Kamu dapat mahkota 👑",
+    "crown_hint": "Masih ada jawaban yang salah — selesaikan tanpa kesalahan untuk dapat mahkota.",
+    "challenge": "Tantangan",
+    "retry": "Ulangi soal",
+    "read_again": "Baca lagi"
   },
   "search": {
     "trigger": "Cari",

@@ -99,6 +99,16 @@ class NotificationService
         return $this->practiceNotification($user, 'jlpt_test', $pack, $xp, mastered: false);
     }
 
+    public function membacaCompleted(User $user, string $setKey, int $xp): UserNotification
+    {
+        return $this->practiceNotification($user, 'membaca', $setKey, $xp, mastered: false);
+    }
+
+    public function membacaMastered(User $user, string $setKey, int $xp): UserNotification
+    {
+        return $this->practiceNotification($user, 'membaca', $setKey, $xp, mastered: true);
+    }
+
     public function jlptTestPassed(User $user, string $pack, int $xp): UserNotification
     {
         return $this->practiceNotification($user, 'jlpt_test', $pack, $xp, mastered: true);
@@ -135,11 +145,15 @@ class NotificationService
     {
         $isEnglish = app()->getLocale() === 'en';
 
-        // Materi N4: set_key 'n4l{n}' (mondaishuu, chokai, kaite_oboeru) atau 'n4l{n}-s{k}' (kaiwa).
-        if (preg_match('/^n4l(\d+)(?:-s(\d+))?$/', $setKey, $m)) {
-            $scenario = isset($m[2]) ? ($isEnglish ? " · Scenario {$m[2]}" : " · Skenario {$m[2]}") : '';
+        // Membaca: set_key 'n{5|4|3}l{n}' (mis. n3l1) → "N3 Pelajaran 1".
+        if ($module === 'membaca' && preg_match('/^n([345])l(\d+)$/', $setKey, $m))
+            return $isEnglish ? "N{$m[1]} Lesson {$m[2]}" : "N{$m[1]} Pelajaran {$m[2]}";
 
-            return ($isEnglish ? "N4 Lesson {$m[1]}" : "N4 Pelajaran {$m[1]}").$scenario;
+        // Materi N4 / N3: set_key 'n{4|3}l{n}' (mondaishuu, chokai, kaite_oboeru) atau 'n{4|3}l{n}-s{k}' (kaiwa).
+        if (preg_match('/^n([34])l(\d+)(?:-s(\d+))?$/', $setKey, $m)) {
+            $scenario = isset($m[3]) ? ($isEnglish ? " · Scenario {$m[3]}" : " · Skenario {$m[3]}") : '';
+
+            return ($isEnglish ? "N{$m[1]} Lesson {$m[2]}" : "N{$m[1]} Pelajaran {$m[2]}").$scenario;
         }
 
         if ($module === 'mondaishuu') {

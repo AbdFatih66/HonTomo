@@ -390,6 +390,7 @@
     "registerReadings": true,
     "numbersToKana": true,
     "LEVEL_CODES": true,
-    "useLevelChoice": true
+    "useLevelChoice": true,
+    "toFurigana": true
   }
 }

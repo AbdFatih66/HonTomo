@@ -1,0 +1,570 @@
+{
+    "id": 6,
+    "level": "N3",
+    "title_id": "Pelajaran 6 (N3): Kutipan, Niat, dan Kata Tunjuk",
+    "title_en": "N3 Lesson 6: Quotations, Intentions and Demonstratives",
+    "scenarios": [
+        {
+            "id": "n3l6-s1",
+            "title_id": "Kata Tanaka tadi",
+            "title_en": "What Tanaka said",
+            "setting_id": "Di kantor. Rekan dekat bertanya apa kata Tanaka kepadamu.",
+            "setting_en": "At the office. A close colleague asks what Tanaka told you.",
+            "goal_id": "Menyampaikan ucapan orang lain dengan …って.",
+            "goal_en": "Report what someone said with ...tte.",
+            "patterns": [
+                "…て／…って"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l6-s1-t1",
+                    "who": "partner",
+                    "ja": "田中《たなか》さんは 何《なん》て 言《い》って いた？",
+                    "speak": "たなかさんは なんて いって いた？",
+                    "id_text": "Tanaka bilang apa?",
+                    "en_text": "What did Tanaka say?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s1-t1.mp3"
+                },
+                {
+                    "id": "n3l6-s1-t2",
+                    "who": "you",
+                    "ja": "今日《きょう》は 早《はや》く 帰《かえ》るって。",
+                    "speak": "きょうは はやく かえるって。",
+                    "id_text": "Katanya hari ini pulang cepat.",
+                    "en_text": "He says he is going home early today.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s1-t2.mp3",
+                    "accept": [
+                        "今日は 早く 帰るって。",
+                        "今日は早く帰るって。",
+                        "きょうは はやく かえるって。",
+                        "きょうははやくかえるって。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s1-t3",
+                    "who": "partner",
+                    "ja": "理由《りゆう》は？",
+                    "speak": "りゆうは？",
+                    "id_text": "Alasannya?",
+                    "en_text": "The reason?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s1-t3.mp3"
+                },
+                {
+                    "id": "n3l6-s1-t4",
+                    "who": "you",
+                    "ja": "子《こ》どもが 熱《ねつ》を 出《だ》したって 言《い》って いたよ。",
+                    "speak": "こどもが ねつを だしたって いって いたよ。",
+                    "id_text": "Katanya anaknya demam.",
+                    "en_text": "He said his child has a fever.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s1-t4.mp3",
+                    "accept": [
+                        "子どもが 熱を 出したって 言って いたよ。",
+                        "子どもが熱を出したって言っていたよ。",
+                        "こどもが ねつを だしたって いって いたよ。",
+                        "こどもがねつをだしたっていっていたよ。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s1-t5",
+                    "who": "partner",
+                    "ja": "そう。大変《たいへん》だね。",
+                    "speak": "そう。たいへんだね。",
+                    "id_text": "Begitu. Repot ya.",
+                    "en_text": "I see. That is tough.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s1-t5.mp3"
+                },
+                {
+                    "id": "n3l6-s1-t6",
+                    "who": "you",
+                    "ja": "明日《あした》は 来《く》るって。",
+                    "speak": "あしたは くるって。",
+                    "id_text": "Katanya besok dia masuk.",
+                    "en_text": "He says he will come in tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s1-t6.mp3",
+                    "accept": [
+                        "明日は 来るって。",
+                        "明日は来るって。",
+                        "あしたは くるって。",
+                        "あしたはくるって。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l6-s2",
+            "title_id": "Sapporo itu kota seperti apa?",
+            "title_en": "What kind of town is Sapporo?",
+            "setting_id": "Istirahat siang. Kamu bertanya kepada teman yang pernah ke Hokkaido.",
+            "setting_en": "Lunch break. You ask a friend who has been to Hokkaido.",
+            "goal_id": "Menanyakan topik dengan Xって、どんな〜？.",
+            "goal_en": "Ask about a topic with X tte, donna ~?",
+            "patterns": [
+                "Xって…"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l6-s2-t1",
+                    "who": "you",
+                    "ja": "札幌《さっぽろ》って、どんな 町《まち》？",
+                    "speak": "さっぽろって、どんな まち？",
+                    "id_text": "Sapporo itu kota seperti apa?",
+                    "en_text": "What kind of town is Sapporo?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s2-t1.mp3",
+                    "accept": [
+                        "札幌って、どんな 町？",
+                        "札幌って、どんな町？",
+                        "さっぽろって、どんな まち？",
+                        "さっぽろって、どんなまち？"
+                    ]
+                },
+                {
+                    "id": "n3l6-s2-t2",
+                    "who": "partner",
+                    "ja": "冬《ふゆ》は 雪《ゆき》が 多《おお》くて、食《た》べ物《もの》が おいしい 町《まち》だよ。",
+                    "speak": "ふゆは ゆきが おおくて、たべものが おいしい まちだよ。",
+                    "id_text": "Musim dingin banyak salju, makanannya enak.",
+                    "en_text": "It has lots of snow in winter and great food.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s2-t2.mp3"
+                },
+                {
+                    "id": "n3l6-s2-t3",
+                    "who": "you",
+                    "ja": "行《い》った ことが あるの？",
+                    "speak": "いった ことが あるの？",
+                    "id_text": "Kamu pernah ke sana?",
+                    "en_text": "Have you been there?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s2-t3.mp3",
+                    "accept": [
+                        "行った ことが あるの？",
+                        "行ったことがあるの？",
+                        "いった ことが あるの？",
+                        "いったことがあるの？"
+                    ]
+                },
+                {
+                    "id": "n3l6-s2-t4",
+                    "who": "partner",
+                    "ja": "うん、去年《きょねん》 行《い》った。",
+                    "speak": "うん、きょねん いった。",
+                    "id_text": "Iya, tahun lalu.",
+                    "en_text": "Yes, last year.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s2-t4.mp3"
+                },
+                {
+                    "id": "n3l6-s2-t5",
+                    "who": "you",
+                    "ja": "いいなあ。私《わたし》も 行《い》って みたい。",
+                    "speak": "いいなあ。わたしも いって みたい。",
+                    "id_text": "Enak ya. Saya juga ingin pergi.",
+                    "en_text": "Lucky you. I want to go too.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s2-t5.mp3",
+                    "accept": [
+                        "いいなあ。私も 行って みたい。",
+                        "いいなあ。私も行ってみたい。",
+                        "いいなあ。わたしも いって みたい。",
+                        "いいなあ。わたしもいってみたい。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s2-t6",
+                    "who": "partner",
+                    "ja": "ぜひ 行《い》って みて。",
+                    "speak": "ぜひ いって みて。",
+                    "id_text": "Cobalah pergi.",
+                    "en_text": "You should definitely go.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l6-s3",
+            "title_id": "Tidak berniat datang ke reuni",
+            "title_en": "No intention of going to the reunion",
+            "setting_id": "Sore hari. Teman lama menanyakan reuni bulan depan.",
+            "setting_en": "Evening. An old friend asks about next month's reunion.",
+            "goal_id": "Menyatakan tidak berniat dengan つもりは ない dan menjelaskan niat yang batal dengan つもりだった.",
+            "goal_en": "State no intention with tsumori wa nai and a failed plan with tsumori datta.",
+            "patterns": [
+                "Vる つもりは ない",
+                "Vる つもりだった"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l6-s3-t1",
+                    "who": "partner",
+                    "ja": "来月《らいげつ》の 同窓会《どうそうかい》、行《い》く？",
+                    "speak": "らいげつの どうそうかい、いく？",
+                    "id_text": "Reuni bulan depan, kamu datang?",
+                    "en_text": "Are you going to next month's reunion?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s3-t1.mp3"
+                },
+                {
+                    "id": "n3l6-s3-t2",
+                    "who": "you",
+                    "ja": "ううん、行《い》く つもりは ないよ。",
+                    "speak": "ううん、いく つもりは ないよ。",
+                    "id_text": "Tidak, aku tidak berniat datang.",
+                    "en_text": "No, I have no intention of going.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s3-t2.mp3",
+                    "accept": [
+                        "ううん、行く つもりは ないよ。",
+                        "ううん、行くつもりはないよ。",
+                        "ううん、いく つもりは ないよ。",
+                        "ううん、いくつもりはないよ。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s3-t3",
+                    "who": "partner",
+                    "ja": "どうして？",
+                    "speak": "どうして？",
+                    "id_text": "Kenapa?",
+                    "en_text": "Why?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s3-t3.mp3"
+                },
+                {
+                    "id": "n3l6-s3-t4",
+                    "who": "you",
+                    "ja": "仕事《しごと》が 忙《いそが》しいし、あまり 気《き》が 進《すす》まないんだ。",
+                    "speak": "しごとが いそがしいし、あまり きが すすまないんだ。",
+                    "id_text": "Pekerjaan sibuk, dan aku kurang berminat.",
+                    "en_text": "I am busy with work, and I do not feel like it.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s3-t4.mp3",
+                    "accept": [
+                        "仕事が 忙しいし、あまり 気が 進まないんだ。",
+                        "仕事が忙しいし、あまり気が進まないんだ。",
+                        "しごとが いそがしいし、あまり きが すすまないんだ。",
+                        "しごとがいそがしいし、あまりきがすすまないんだ。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s3-t5",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の 会議《かいぎ》は？ 来《こ》なかったね。",
+                    "speak": "きのうの かいぎは？ こなかったね。",
+                    "id_text": "Bagaimana dengan rapat kemarin? Kamu tidak datang.",
+                    "en_text": "What about yesterday's meeting? You did not come.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s3-t5.mp3"
+                },
+                {
+                    "id": "n3l6-s3-t6",
+                    "who": "you",
+                    "ja": "ごめん、行《い》く つもりだったんだけど、お客《きゃく》さんが 来《き》て しまって。",
+                    "speak": "ごめん、いく つもりだったんだけど、おきゃくさんが きて しまって。",
+                    "id_text": "Maaf, sebenarnya aku berniat datang, tapi ada tamu.",
+                    "en_text": "Sorry, I was going to come, but a customer showed up.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s3-t6.mp3",
+                    "accept": [
+                        "ごめん、行く つもりだったんだけど、お客さんが 来て しまって。",
+                        "ごめん、行くつもりだったんだけど、お客さんが来てしまって。",
+                        "ごめん、いく つもりだったんだけど、おきゃくさんが きて しまって。",
+                        "ごめん、いくつもりだったんだけど、おきゃくさんがきてしまって。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l6-s4",
+            "title_id": "Jendela terbuka",
+            "title_en": "The open window",
+            "setting_id": "Di rumah. Kamu dan keluarga menyadari jendela terbuka dan langit mulai gelap.",
+            "setting_en": "At home. You and a family member notice an open window and a darkening sky.",
+            "goal_id": "Memakai Vた つもり dan Vて くる.",
+            "goal_en": "Use V-ta tsumori and V-te kuru.",
+            "patterns": [
+                "Vた／Vている つもり",
+                "Vて くる"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l6-s4-t1",
+                    "who": "partner",
+                    "ja": "窓《まど》、閉《し》めた？",
+                    "speak": "まど、しめた？",
+                    "id_text": "Jendelanya sudah ditutup?",
+                    "en_text": "Did you close the window?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s4-t1.mp3"
+                },
+                {
+                    "id": "n3l6-s4-t2",
+                    "who": "you",
+                    "ja": "閉《し》めた つもりだけど…あれ、開《あ》いて いるね。",
+                    "speak": "しめた つもりだけど…あれ、あいて いるね。",
+                    "id_text": "Rasanya sudah, tapi... lho, terbuka ya.",
+                    "en_text": "I thought I did... oh, it is open.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s4-t2.mp3",
+                    "accept": [
+                        "閉めた つもりだけど…あれ、開いて いるね。",
+                        "閉めたつもりだけど…あれ、開いているね。",
+                        "しめた つもりだけど…あれ、あいて いるね。",
+                        "しめたつもりだけど…あれ、あいているね。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s4-t3",
+                    "who": "partner",
+                    "ja": "雨《あめ》が 入《はい》って くるよ。",
+                    "speak": "あめが はいって くるよ。",
+                    "id_text": "Hujan masuk, lho.",
+                    "en_text": "The rain is coming in.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s4-t3.mp3"
+                },
+                {
+                    "id": "n3l6-s4-t4",
+                    "who": "you",
+                    "ja": "ごめん、すぐ 閉《し》める。",
+                    "speak": "ごめん、すぐ しめる。",
+                    "id_text": "Maaf, segera kututup.",
+                    "en_text": "Sorry, I will close it right now.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s4-t4.mp3",
+                    "accept": [
+                        "ごめん、すぐ 閉める。",
+                        "ごめん、すぐ閉める。",
+                        "ごめん、すぐ しめる。",
+                        "ごめん、すぐしめる。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s4-t5",
+                    "who": "partner",
+                    "ja": "あれ、だんだん 暗《くら》く なって きたね。",
+                    "speak": "あれ、だんだん くらく なって きたね。",
+                    "id_text": "Lho, makin gelap ya.",
+                    "en_text": "Hey, it is getting darker.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s4-t5.mp3"
+                },
+                {
+                    "id": "n3l6-s4-t6",
+                    "who": "you",
+                    "ja": "本当《ほんとう》だ。雨《あめ》が 降《ふ》って くるかも しれない。",
+                    "speak": "ほんとうだ。あめが ふって くるかも しれない。",
+                    "id_text": "Benar. Mungkin hujan turun.",
+                    "en_text": "True. It might start to rain.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s4-t6.mp3",
+                    "accept": [
+                        "本当だ。雨が 降って くるかも しれない。",
+                        "本当だ。雨が降ってくるかもしれない。",
+                        "ほんとうだ。あめが ふって くるかも しれない。",
+                        "ほんとうだ。あめがふってくるかもしれない。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l6-s5",
+            "title_id": "Anak hanya main ponsel",
+            "title_en": "A child who only plays on the phone",
+            "setting_id": "Taman bermain. Kamu berbincang dengan sesama orang tua.",
+            "setting_en": "At a playground. You chat with another parent.",
+            "goal_id": "Memakai Nばかり／Vて ばかり いる dan とか…とか.",
+            "goal_en": "Use N bakari / V-te bakari iru and toka...toka.",
+            "patterns": [
+                "Vて ばかり いる",
+                "…とか…とか"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l6-s5-t1",
+                    "who": "partner",
+                    "ja": "最近《さいきん》、うちの 子《こ》は スマホばかり 見《み》て いるんです。",
+                    "speak": "さいきん、うちの こは スマホばかり みて いるんです。",
+                    "id_text": "Akhir-akhir ini anak saya hanya melihat ponsel.",
+                    "en_text": "Lately my child does nothing but look at his smartphone.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s5-t1.mp3"
+                },
+                {
+                    "id": "n3l6-s5-t2",
+                    "who": "you",
+                    "ja": "宿題《しゅくだい》は して いますか。",
+                    "speak": "しゅくだいは して いますか。",
+                    "id_text": "Apakah PR-nya dikerjakan?",
+                    "en_text": "Does he do his homework?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s5-t2.mp3",
+                    "accept": [
+                        "宿題は して いますか。",
+                        "宿題はしていますか。",
+                        "しゅくだいは して いますか。",
+                        "しゅくだいはしていますか。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s5-t3",
+                    "who": "partner",
+                    "ja": "それも 忘《わす》れて、遊《あそ》んで ばかり いて…。",
+                    "speak": "それも わすれて、あそんで ばかり いて…。",
+                    "id_text": "Itu pun lupa, hanya bermain terus...",
+                    "en_text": "He even forgets that, and just keeps playing...",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s5-t3.mp3"
+                },
+                {
+                    "id": "n3l6-s5-t4",
+                    "who": "you",
+                    "ja": "時間《じかん》を 決《き》めたら どうですか。",
+                    "speak": "じかんを きめたら どうですか。",
+                    "id_text": "Bagaimana kalau ditetapkan jamnya?",
+                    "en_text": "Why not set a time limit?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s5-t4.mp3",
+                    "accept": [
+                        "時間を 決めたら どうですか。",
+                        "時間を決めたらどうですか。",
+                        "じかんを きめたら どうですか。",
+                        "じかんをきめたらどうですか。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s5-t5",
+                    "who": "partner",
+                    "ja": "そうですね。夏休《なつやす》みは 海《うみ》へ 行《い》くとか、山《やま》に 登《のぼ》るとか したいです。",
+                    "speak": "そうですね。なつやすみは うみへ いくとか、やまに のぼるとか したいです。",
+                    "id_text": "Benar. Liburan musim panas ingin ke laut atau naik gunung.",
+                    "en_text": "True. For summer break I would like to go to the sea or climb a mountain.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s5-t5.mp3"
+                },
+                {
+                    "id": "n3l6-s5-t6",
+                    "who": "you",
+                    "ja": "いいですね。私《わたし》は レポートとか アルバイトとかで 忙《いそが》しそうです。",
+                    "speak": "いいですね。わたしは レポートとか アルバイトとかで いそがしそうです。",
+                    "id_text": "Bagus. Saya sepertinya sibuk dengan laporan dan kerja paruh waktu.",
+                    "en_text": "Nice. I look to be busy with reports and part-time work.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s5-t6.mp3",
+                    "accept": [
+                        "いいですね。私は レポートとか アルバイトとかで 忙しそうです。",
+                        "いいですね。私はレポートとかアルバイトとかで忙しそうです。",
+                        "いいですね。わたしは レポートとか アルバイトとかで いそがしそうです。",
+                        "いいですね。わたしはレポートとかアルバイトとかでいそがしそうです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l6-s6",
+            "title_id": "Ke mana Tanaka?",
+            "title_en": "Where did Tanaka go?",
+            "setting_id": "Di kantor. Kamu mencari Tanaka lalu membicarakan berita kemarin.",
+            "setting_en": "At the office. You look for Tanaka and then mention yesterday's news.",
+            "goal_id": "Memakai Vて いく／くる dan こ〜 untuk isi yang akan disebut.",
+            "goal_en": "Use V-te iku / kuru and ko- for content about to be introduced.",
+            "patterns": [
+                "Vて くる／いく",
+                "こ〜"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l6-s6-t1",
+                    "who": "you",
+                    "ja": "田中《たなか》さんは どこですか。",
+                    "speak": "たなかさんは どこですか。",
+                    "id_text": "Tanaka di mana?",
+                    "en_text": "Where is Tanaka?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s6-t1.mp3",
+                    "accept": [
+                        "田中さんは どこですか。",
+                        "田中さんはどこですか。",
+                        "たなかさんは どこですか。",
+                        "たなかさんはどこですか。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s6-t2",
+                    "who": "partner",
+                    "ja": "さっき 資料《しりょう》を 持《も》って 出《で》て いきましたよ。",
+                    "speak": "さっき しりょうを もって でて いきましたよ。",
+                    "id_text": "Tadi dia keluar membawa materi.",
+                    "en_text": "He went out a little while ago with the materials.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s6-t2.mp3"
+                },
+                {
+                    "id": "n3l6-s6-t3",
+                    "who": "you",
+                    "ja": "すぐ 帰《かえ》って きますか。",
+                    "speak": "すぐ かえって きますか。",
+                    "id_text": "Apakah segera kembali?",
+                    "en_text": "Will he come back soon?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s6-t3.mp3",
+                    "accept": [
+                        "すぐ 帰って きますか。",
+                        "すぐ帰ってきますか。",
+                        "すぐ かえって きますか。",
+                        "すぐかえってきますか。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s6-t4",
+                    "who": "partner",
+                    "ja": "ええ、十分《じゅっぷん》ぐらいで 戻《もど》って くると 思《おも》います。",
+                    "speak": "ええ、じゅっぷんぐらいで もどって くると おもいます。",
+                    "id_text": "Ya, saya kira kembali sekitar sepuluh menit.",
+                    "en_text": "Yes, I think he will be back in about ten minutes.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s6-t4.mp3"
+                },
+                {
+                    "id": "n3l6-s6-t5",
+                    "who": "you",
+                    "ja": "昨日《きのう》の ニュースで、こんな 話《はなし》を 聞《き》きました。",
+                    "speak": "きのうの ニュースで、こんな はなしを ききました。",
+                    "id_text": "Dalam berita kemarin, saya mendengar cerita seperti ini.",
+                    "en_text": "I heard a story like this on yesterday's news.",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s6-t5.mp3",
+                    "accept": [
+                        "昨日の ニュースで、こんな 話を 聞きました。",
+                        "昨日のニュースで、こんな話を聞きました。",
+                        "きのうの ニュースで、こんな はなしを ききました。",
+                        "きのうのニュースで、こんなはなしをききました。"
+                    ]
+                },
+                {
+                    "id": "n3l6-s6-t6",
+                    "who": "partner",
+                    "ja": "どんな 話《はなし》ですか。",
+                    "speak": "どんな はなしですか。",
+                    "id_text": "Cerita seperti apa?",
+                    "en_text": "What kind of story?",
+                    "audio": "/audio/kaiwa/lesson-n3-6/n3l6-s6-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

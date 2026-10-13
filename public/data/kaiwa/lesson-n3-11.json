@@ -1,0 +1,570 @@
+{
+    "id": 11,
+    "level": "N3",
+    "title_id": "Pelajaran 11 (N3): Perubahan, Saran, dan Perbandingan",
+    "title_en": "N3 Lesson 11: Change, Suggestions and Comparison",
+    "scenarios": [
+        {
+            "id": "n3l11-s1",
+            "title_id": "Pagi mulai dingin",
+            "title_en": "Mornings are getting cold",
+            "setting_id": "Di kantor pada bulan Oktober. Rekan kerja menyadari cuaca mulai dingin.",
+            "setting_en": "At the office in October. A colleague notices the weather turning cold.",
+            "goal_id": "Membicarakan perubahan dengan 〜て くる／いく.",
+            "goal_en": "Talk about change with ~te kuru / iku.",
+            "patterns": [
+                "〜て くる・〜て いく"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l11-s1-t1",
+                    "who": "partner",
+                    "ja": "最近《さいきん》、朝《あさ》は 寒《さむ》く なって きましたね。",
+                    "speak": "さいきん、あさは さむく なって きましたね。",
+                    "id_text": "Akhir-akhir ini pagi hari mulai dingin ya.",
+                    "en_text": "Mornings have gotten cold lately.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s1-t1.mp3"
+                },
+                {
+                    "id": "n3l11-s1-t2",
+                    "who": "you",
+                    "ja": "もう 十月《じゅうがつ》ですからね。これから もっと 寒《さむ》く なって いきますよ。",
+                    "speak": "もう じゅうがつですからね。これから もっと さむく なって いきますよ。",
+                    "id_text": "Sudah Oktober. Mulai sekarang akan makin dingin.",
+                    "en_text": "It is already October. It will keep getting colder.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s1-t2.mp3",
+                    "accept": [
+                        "もう 十月ですからね。これから もっと 寒く なって いきますよ。",
+                        "もう十月ですからね。これからもっと寒くなっていきますよ。",
+                        "もう じゅうがつですからね。これから もっと さむく なって いきますよ。",
+                        "もうじゅうがつですからね。これからもっとさむくなっていきますよ。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s1-t3",
+                    "who": "partner",
+                    "ja": "コートを 出《だ》さなきゃ。",
+                    "speak": "コートを ださなきゃ。",
+                    "id_text": "Harus mengeluarkan mantel.",
+                    "en_text": "I need to get out my coat.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s1-t3.mp3"
+                },
+                {
+                    "id": "n3l11-s1-t4",
+                    "who": "you",
+                    "ja": "風邪《かぜ》を ひかないように、早《はや》めに 準備《じゅんび》した ほうが いいですよ。",
+                    "speak": "かぜを ひかないように、はやめに じゅんびした ほうが いいですよ。",
+                    "id_text": "Supaya tidak masuk angin, sebaiknya disiapkan lebih awal.",
+                    "en_text": "You should prepare early so you do not catch a cold.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s1-t4.mp3",
+                    "accept": [
+                        "風邪を ひかないように、早めに 準備した ほうが いいですよ。",
+                        "風邪をひかないように、早めに準備したほうがいいですよ。",
+                        "かぜを ひかないように、はやめに じゅんびした ほうが いいですよ。",
+                        "かぜをひかないように、はやめにじゅんびしたほうがいいですよ。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですね。去年《きょねん》は 遅《おそ》かったんです。",
+                    "speak": "そうですね。きょねんは おそかったんです。",
+                    "id_text": "Benar. Tahun lalu saya terlambat.",
+                    "en_text": "True. I was late last year.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s1-t5.mp3"
+                },
+                {
+                    "id": "n3l11-s1-t6",
+                    "who": "you",
+                    "ja": "今年《ことし》は 早《はや》めに 出《だ》して おきましょう。",
+                    "speak": "ことしは はやめに だして おきましょう。",
+                    "id_text": "Tahun ini kita keluarkan lebih awal.",
+                    "en_text": "Let us get it out early this year.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s1-t6.mp3",
+                    "accept": [
+                        "今年は 早めに 出して おきましょう。",
+                        "今年は早めに出しておきましょう。",
+                        "ことしは はやめに だして おきましょう。",
+                        "ことしははやめにだしておきましょう。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l11-s2",
+            "title_id": "Susah tidur",
+            "title_en": "Trouble sleeping",
+            "setting_id": "Istirahat siang. Teman dekat mengeluh susah tidur.",
+            "setting_en": "Lunch break. A close friend complains of trouble sleeping.",
+            "goal_id": "Memberi saran dengan 〜たら どう？ dan Nなんか どう？.",
+            "goal_en": "Offer suggestions with ~tara dou? and N nanka dou?",
+            "patterns": [
+                "〜たら どう？／いかがですか",
+                "Nなんか どう？"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l11-s2-t1",
+                    "who": "partner",
+                    "ja": "最近《さいきん》、よく 眠《ねむ》れないんだ。",
+                    "speak": "さいきん、よく ねむれないんだ。",
+                    "id_text": "Akhir-akhir ini sulit tidur.",
+                    "en_text": "I cannot sleep well lately.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s2-t1.mp3"
+                },
+                {
+                    "id": "n3l11-s2-t2",
+                    "who": "you",
+                    "ja": "寝《ね》る 前《まえ》に スマホを 見《み》ないように したら どう？",
+                    "speak": "ねる まえに スマホを みないように したら どう？",
+                    "id_text": "Bagaimana kalau sebelum tidur tidak melihat ponsel?",
+                    "en_text": "How about trying not to look at your phone before bed?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s2-t2.mp3",
+                    "accept": [
+                        "寝る 前に スマホを 見ないように したら どう？",
+                        "寝る前にスマホを見ないようにしたらどう？",
+                        "ねる まえに スマホを みないように したら どう？",
+                        "ねるまえにスマホをみないようにしたらどう？"
+                    ]
+                },
+                {
+                    "id": "n3l11-s2-t3",
+                    "who": "partner",
+                    "ja": "そうだね。やって みる。",
+                    "speak": "そうだね。やって みる。",
+                    "id_text": "Benar juga. Akan kucoba.",
+                    "en_text": "Right. I will try it.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s2-t3.mp3"
+                },
+                {
+                    "id": "n3l11-s2-t4",
+                    "who": "you",
+                    "ja": "あと、軽《かる》い 運動《うんどう》を して みたら？",
+                    "speak": "あと、かるい うんどうを して みたら？",
+                    "id_text": "Selain itu, coba olahraga ringan.",
+                    "en_text": "Also, why not try some light exercise?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s2-t4.mp3",
+                    "accept": [
+                        "あと、軽い 運動を して みたら？",
+                        "あと、軽い運動をしてみたら？",
+                        "あと、かるい うんどうを して みたら？",
+                        "あと、かるいうんどうをしてみたら？"
+                    ]
+                },
+                {
+                    "id": "n3l11-s2-t5",
+                    "who": "partner",
+                    "ja": "どんな 運動《うんどう》が いいかな。",
+                    "speak": "どんな うんどうが いいかな。",
+                    "id_text": "Olahraga apa yang bagus ya?",
+                    "en_text": "What kind of exercise would be good?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s2-t5.mp3"
+                },
+                {
+                    "id": "n3l11-s2-t6",
+                    "who": "you",
+                    "ja": "散歩《さんぽ》なんか どう？",
+                    "speak": "さんぽなんか どう？",
+                    "id_text": "Bagaimana kalau jalan-jalan?",
+                    "en_text": "How about a walk?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s2-t6.mp3",
+                    "accept": [
+                        "散歩なんか どう？",
+                        "散歩なんかどう？",
+                        "さんぽなんか どう？",
+                        "さんぽなんかどう？"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l11-s3",
+            "title_id": "Rapat daring atau tatap muka",
+            "title_en": "Online or in-person meeting",
+            "setting_id": "Di kantor. Kamu dan rekan memilih cara rapat.",
+            "setting_en": "At the office. You and a colleague choose the meeting format.",
+            "goal_id": "Membandingkan dengan …より…ほうが….",
+            "goal_en": "Compare with ...yori ... hou ga ...",
+            "patterns": [
+                "…より…ほうが…"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l11-s3-t1",
+                    "who": "partner",
+                    "ja": "会議《かいぎ》は 対面《たいめん》と オンラインと、どちらが いいですか。",
+                    "speak": "かいぎは たいめんと オンラインと、どちらが いいですか。",
+                    "id_text": "Rapat lebih baik tatap muka atau daring?",
+                    "en_text": "For the meeting, which is better, in person or online?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s3-t1.mp3"
+                },
+                {
+                    "id": "n3l11-s3-t2",
+                    "who": "you",
+                    "ja": "移動《いどう》する 時間《じかん》を 考《かんが》えると、行《い》くより オンラインの ほうが 楽《らく》ですね。",
+                    "speak": "いどうする じかんを かんがえると、いくより オンラインの ほうが らくですね。",
+                    "id_text": "Mengingat waktu perjalanan, daring lebih mudah daripada datang.",
+                    "en_text": "Considering travel time, online is easier than going.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s3-t2.mp3",
+                    "accept": [
+                        "移動する 時間を 考えると、行くより オンラインの ほうが 楽ですね。",
+                        "移動する時間を考えると、行くよりオンラインのほうが楽ですね。",
+                        "いどうする じかんを かんがえると、いくより オンラインの ほうが らくですね。",
+                        "いどうするじかんをかんがえると、いくよりオンラインのほうがらくですね。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s3-t3",
+                    "who": "partner",
+                    "ja": "でも、大事《だいじ》な 話《はなし》は…。",
+                    "speak": "でも、だいじな はなしは…。",
+                    "id_text": "Tapi, untuk hal penting...",
+                    "en_text": "But for important matters...",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s3-t3.mp3"
+                },
+                {
+                    "id": "n3l11-s3-t4",
+                    "who": "you",
+                    "ja": "画面《がめん》で 話《はな》すより 会《あ》って 話《はな》した ほうが いいと 思《おも》います。",
+                    "speak": "がめんで はなすより あって はなした ほうが いいと おもいます。",
+                    "id_text": "Saya kira lebih baik bertemu daripada bicara lewat layar.",
+                    "en_text": "I think meeting in person is better than talking on a screen.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s3-t4.mp3",
+                    "accept": [
+                        "画面で 話すより 会って 話した ほうが いいと 思います。",
+                        "画面で話すより会って話したほうがいいと思います。",
+                        "がめんで はなすより あって はなした ほうが いいと おもいます。",
+                        "がめんではなすよりあってはなしたほうがいいとおもいます。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s3-t5",
+                    "who": "partner",
+                    "ja": "たしかに、そうですね。",
+                    "speak": "たしかに、そうですね。",
+                    "id_text": "Benar juga.",
+                    "en_text": "True, that is so.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s3-t5.mp3"
+                },
+                {
+                    "id": "n3l11-s3-t6",
+                    "who": "you",
+                    "ja": "では、今回《こんかい》は 会《あ》って 話《はな》しましょう。",
+                    "speak": "では、こんかいは あって はなしましょう。",
+                    "id_text": "Kalau begitu, kali ini kita bertemu langsung.",
+                    "en_text": "Then let us meet and talk this time.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s3-t6.mp3",
+                    "accept": [
+                        "では、今回は 会って 話しましょう。",
+                        "では、今回は会って話しましょう。",
+                        "では、こんかいは あって はなしましょう。",
+                        "では、こんかいはあってはなしましょう。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l11-s4",
+            "title_id": "Guru baru dan kabar burung",
+            "title_en": "The new teacher and a rumor",
+            "setting_id": "Istirahat. Teman menanyakan guru baru lalu menyampaikan kabar.",
+            "setting_en": "Break time. A friend asks about the new teacher, then shares a rumor.",
+            "goal_id": "Memakai Nらしい (khas) dan …らしい (kabar).",
+            "goal_en": "Use N rashii (typical) and ...rashii (hearsay).",
+            "patterns": [
+                "Nらしい",
+                "…らしい"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l11-s4-t1",
+                    "who": "partner",
+                    "ja": "新《あたら》しい 先生《せんせい》は どんな 人《ひと》？",
+                    "speak": "あたらしい せんせいは どんな ひと？",
+                    "id_text": "Guru baru orangnya seperti apa?",
+                    "en_text": "What is the new teacher like?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s4-t1.mp3"
+                },
+                {
+                    "id": "n3l11-s4-t2",
+                    "who": "you",
+                    "ja": "先生《せんせい》らしい 落《お》ち着《つ》いた 人《ひと》だよ。",
+                    "speak": "せんせいらしい おちついた ひとだよ。",
+                    "id_text": "Orang tenang, khas seorang guru.",
+                    "en_text": "A calm person, just like a teacher should be.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s4-t2.mp3",
+                    "accept": [
+                        "先生らしい 落ち着いた 人だよ。",
+                        "先生らしい落ち着いた人だよ。",
+                        "せんせいらしい おちついた ひとだよ。",
+                        "せんせいらしいおちついたひとだよ。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s4-t3",
+                    "who": "partner",
+                    "ja": "授業《じゅぎょう》は おもしろい？",
+                    "speak": "じゅぎょうは おもしろい？",
+                    "id_text": "Pelajarannya seru?",
+                    "en_text": "Are the classes interesting?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s4-t3.mp3"
+                },
+                {
+                    "id": "n3l11-s4-t4",
+                    "who": "you",
+                    "ja": "うん。子《こ》どもらしい 質問《しつもん》にも 丁寧《ていねい》に 答《こた》えて くれるよ。",
+                    "speak": "うん。こどもらしい しつもんにも ていねいに こたえて くれるよ。",
+                    "id_text": "Ya. Pertanyaan khas anak-anak pun dijawab dengan sopan.",
+                    "en_text": "Yes. He even answers childlike questions politely.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s4-t4.mp3",
+                    "accept": [
+                        "うん。子どもらしい 質問にも 丁寧に 答えて くれるよ。",
+                        "うん。子どもらしい質問にも丁寧に答えてくれるよ。",
+                        "うん。こどもらしい しつもんにも ていねいに こたえて くれるよ。",
+                        "うん。こどもらしいしつもんにもていねいにこたえてくれるよ。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s4-t5",
+                    "who": "partner",
+                    "ja": "田中《たなか》さん、会社《かいしゃ》を 辞《や》める らしいよ。",
+                    "speak": "たなかさん、かいしゃを やめる らしいよ。",
+                    "id_text": "Katanya Tanaka keluar dari perusahaan.",
+                    "en_text": "I hear Tanaka is quitting the company.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s4-t5.mp3"
+                },
+                {
+                    "id": "n3l11-s4-t6",
+                    "who": "you",
+                    "ja": "そうなんだ。鈴木《すずき》さんも 帰《かえ》る らしいよ。",
+                    "speak": "そうなんだ。すずきさんも かえる らしいよ。",
+                    "id_text": "Begitu. Katanya Suzuki juga pulang.",
+                    "en_text": "Is that so. I hear Suzuki is going home too.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s4-t6.mp3",
+                    "accept": [
+                        "そうなんだ。鈴木さんも 帰る らしいよ。",
+                        "そうなんだ。鈴木さんも帰るらしいよ。",
+                        "そうなんだ。すずきさんも かえる らしいよ。",
+                        "そうなんだ。すずきさんもかえるらしいよ。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l11-s5",
+            "title_id": "Bekerja sebagai insinyur",
+            "title_en": "Working as an engineer",
+            "setting_id": "Di kantor. Rekan bertanya alasanmu datang ke Jepang.",
+            "setting_en": "At the office. A colleague asks why you came to Japan.",
+            "goal_id": "Menyatakan peran dengan Nとして dan pengalaman dengan 〜て いる.",
+            "goal_en": "State roles with N toshite and experience with ~te iru.",
+            "patterns": [
+                "Nとして",
+                "〜て いる(経験・記録)"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l11-s5-t1",
+                    "who": "partner",
+                    "ja": "山田《やまだ》さんは どうして 日本《にほん》へ 来《き》たんですか。",
+                    "speak": "やまださんは どうして にほんへ きたんですか。",
+                    "id_text": "Mengapa Yamada datang ke Jepang?",
+                    "en_text": "Why did you come to Japan, Yamada?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s5-t1.mp3"
+                },
+                {
+                    "id": "n3l11-s5-t2",
+                    "who": "you",
+                    "ja": "エンジニアとして 工場《こうじょう》で 働《はたら》く ためです。",
+                    "speak": "エンジニアとして こうじょうで はたらく ためです。",
+                    "id_text": "Untuk bekerja di pabrik sebagai insinyur.",
+                    "en_text": "To work at a factory as an engineer.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s5-t2.mp3",
+                    "accept": [
+                        "エンジニアとして 工場で 働く ためです。",
+                        "エンジニアとして工場で働くためです。",
+                        "エンジニアとして こうじょうで はたらく ためです。",
+                        "エンジニアとしてこうじょうではたらくためです。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s5-t3",
+                    "who": "partner",
+                    "ja": "仕事《しごと》は どうですか。",
+                    "speak": "しごとは どうですか。",
+                    "id_text": "Bagaimana pekerjaannya?",
+                    "en_text": "How is the work?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s5-t3.mp3"
+                },
+                {
+                    "id": "n3l11-s5-t4",
+                    "who": "you",
+                    "ja": "外国人《がいこくじん》の 社員《しゃいん》として、学《まな》ぶ ことが たくさん あります。",
+                    "speak": "がいこくじんの しゃいんとして、まなぶ ことが たくさん あります。",
+                    "id_text": "Sebagai karyawan asing, banyak yang bisa dipelajari.",
+                    "en_text": "As a foreign employee, there is a lot to learn.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s5-t4.mp3",
+                    "accept": [
+                        "外国人の 社員として、学ぶ ことが たくさん あります。",
+                        "外国人の社員として、学ぶことがたくさんあります。",
+                        "がいこくじんの しゃいんとして、まなぶ ことが たくさん あります。",
+                        "がいこくじんのしゃいんとして、まなぶことがたくさんあります。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s5-t5",
+                    "who": "partner",
+                    "ja": "この 町《まち》は 地震《じしん》が 多《おお》いですか。",
+                    "speak": "この まちは じしんが おおいですか。",
+                    "id_text": "Apakah kota ini sering gempa?",
+                    "en_text": "Does this town have many earthquakes?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s5-t5.mp3"
+                },
+                {
+                    "id": "n3l11-s5-t6",
+                    "who": "you",
+                    "ja": "過去《かこ》に 大《おお》きな 地震《じしん》が 二回《にかい》 起《お》こって います。",
+                    "speak": "かこに おおきな じしんが にかい おこって います。",
+                    "id_text": "Di masa lalu pernah terjadi gempa besar dua kali.",
+                    "en_text": "Two big earthquakes have occurred in the past.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s5-t6.mp3",
+                    "accept": [
+                        "過去に 大きな 地震が 二回 起こって います。",
+                        "過去に大きな地震が二回起こっています。",
+                        "かこに おおきな じしんが にかい おこって います。",
+                        "かこにおおきなじしんがにかいおこっています。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l11-s6",
+            "title_id": "Tidak datang ke rapat",
+            "title_en": "Missing the meeting",
+            "setting_id": "Pagi hari. Rekan menanyakan kenapa kamu tidak datang ke rapat kemarin.",
+            "setting_en": "Morning. A colleague asks why you missed yesterday's meeting.",
+            "goal_id": "Menjelaskan sebab dan keadaan dengan 〜ず、…／〜ずに….",
+            "goal_en": "Explain causes and circumstances with ~zu, ... / ~zu ni ...",
+            "patterns": [
+                "〜ず、…",
+                "〜ず(に)…"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l11-s6-t1",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の 会議《かいぎ》に どうして 来《こ》なかったの？",
+                    "speak": "きのうの かいぎに どうして こなかったの？",
+                    "id_text": "Kenapa kamu tidak datang ke rapat kemarin?",
+                    "en_text": "Why did you not come to yesterday's meeting?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s6-t1.mp3"
+                },
+                {
+                    "id": "n3l11-s6-t2",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》が 動《うご》かず、会社《かいしゃ》に 着《つ》けなかったんです。",
+                    "speak": "でんしゃが うごかず、かいしゃに つけなかったんです。",
+                    "id_text": "Kereta tidak jalan, jadi tidak bisa sampai kantor.",
+                    "en_text": "The trains were not running, so I could not reach the office.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s6-t2.mp3",
+                    "accept": [
+                        "電車が 動かず、会社に 着けなかったんです。",
+                        "電車が動かず、会社に着けなかったんです。",
+                        "でんしゃが うごかず、かいしゃに つけなかったんです。",
+                        "でんしゃがうごかず、かいしゃにつけなかったんです。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s6-t3",
+                    "who": "partner",
+                    "ja": "連絡《れんらく》は？",
+                    "speak": "れんらくは？",
+                    "id_text": "Menghubungi?",
+                    "en_text": "Did you contact us?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s6-t3.mp3"
+                },
+                {
+                    "id": "n3l11-s6-t4",
+                    "who": "you",
+                    "ja": "電話《でんわ》も 通《つう》じず、連絡《れんらく》できませんでした。",
+                    "speak": "でんわも つうじず、れんらくできませんでした。",
+                    "id_text": "Teleponnya juga tidak tersambung, jadi tidak bisa menghubungi.",
+                    "en_text": "The phone would not connect either, so I could not contact you.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s6-t4.mp3",
+                    "accept": [
+                        "電話も 通じず、連絡できませんでした。",
+                        "電話も通じず、連絡できませんでした。",
+                        "でんわも つうじず、れんらくできませんでした。",
+                        "でんわもつうじず、れんらくできませんでした。"
+                    ]
+                },
+                {
+                    "id": "n3l11-s6-t5",
+                    "who": "partner",
+                    "ja": "天気予報《てんきよほう》は 見《み》ましたか。",
+                    "speak": "てんきよほうは みましたか。",
+                    "id_text": "Apakah sudah melihat ramalan cuaca?",
+                    "en_text": "Did you check the weather forecast?",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s6-t5.mp3"
+                },
+                {
+                    "id": "n3l11-s6-t6",
+                    "who": "you",
+                    "ja": "いいえ、確《たし》かめずに 家《いえ》を 出《で》て しまいました。",
+                    "speak": "いいえ、たしかめずに いえを でて しまいました。",
+                    "id_text": "Belum, saya keluar rumah tanpa memeriksa.",
+                    "en_text": "No, I left home without checking.",
+                    "audio": "/audio/kaiwa/lesson-n3-11/n3l11-s6-t6.mp3",
+                    "accept": [
+                        "いいえ、確かめずに 家を 出て しまいました。",
+                        "いいえ、確かめずに家を出てしまいました。",
+                        "いいえ、たしかめずに いえを でて しまいました。",
+                        "いいえ、たしかめずにいえをでてしまいました。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

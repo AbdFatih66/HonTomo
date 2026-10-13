@@ -16,6 +16,7 @@ use App\Http\Controllers\Api\JlptTestController;
 use App\Http\Controllers\Api\MondaishuuController;
 use App\Http\Controllers\Api\NotificationController;
 use App\Http\Controllers\Api\KaiteOboeruController;
+use App\Http\Controllers\Api\MembacaController;
 use App\Http\Controllers\Api\ReviewController;
 use App\Http\Controllers\Api\SessionController;
 use App\Http\Controllers\Api\ShortcutController;
@@ -124,6 +125,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('/kaite-oboeru/progress', [KaiteOboeruController::class, 'index']);
     Route::post('/kaite-oboeru/progress/{setKey}', [KaiteOboeruController::class, 'store']);
+
+    // Membaca (読解): set_key dibatasi n5l1..n3l12 supaya tidak ada kunci sembarang (404 di luar itu).
+    Route::get('/membaca/progress', [MembacaController::class, 'index']);
+    Route::post('/membaca/progress/{setKey}', [MembacaController::class, 'store'])
+        ->where('setKey', MembacaController::SET_KEY_PATTERN);
 
     // Tes JLPT (simulasi ujian per PAKET soal; satu-satunya fitur ujian JLPT — Simulasi JLPT
     // yang dulu terpisah sudah digabung ke sini). Mode strict: timer server-side, tanpa umpan

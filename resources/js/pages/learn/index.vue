@@ -5,7 +5,43 @@ import { useLevelChoice } from '@/composables/useLevelChoice'
 const router = useRouter()
 const route = useRoute()
 const { t } = useI18n()
-const { level } = useLevelChoice()
+const { level: sharedLevel, setLevel } = useLevelChoice()
+
+// Tata Bahasa punya N3 di samping N5 / N4; level bersama (Referensi dll.) tetap N5 / N4.
+// Pilihan N3 diingat sendiri supaya tidak hilang saat kembali dari sebuah pelajaran.
+const LEARN_LEVELS = ['N5', 'N4', 'N3']
+const LEARN_LEVEL_KEY = 'hontomo.learn.level'
+
+function readLearnLevel() {
+  try {
+    const stored = localStorage.getItem(LEARN_LEVEL_KEY)
+
+    if (stored === 'N3')
+      return 'N3'
+  }
+  catch {
+    // penyimpanan tidak tersedia — pakai level bersama
+  }
+
+  return LEARN_LEVELS.includes(sharedLevel.value) ? sharedLevel.value : 'N5'
+}
+
+const level = ref(readLearnLevel())
+
+function chooseLevel(code) {
+  level.value = code
+  setLevel(code) // N3 diabaikan oleh level bersama
+
+  try {
+    if (code === 'N3')
+      localStorage.setItem(LEARN_LEVEL_KEY, 'N3')
+    else
+      localStorage.removeItem(LEARN_LEVEL_KEY)
+  }
+  catch {
+    // abaikan
+  }
+}
 
 const path = ref(null)
 const isLoading = ref(true)
@@ -56,7 +92,11 @@ onMounted(load)
         {{ t('path.title') }}
       </h4>
       <div class="d-flex align-center flex-wrap gap-2">
-        <LevelSwitch />
+        <LevelSwitch
+          :levels="LEARN_LEVELS"
+          :model-value="level"
+          @update:model-value="chooseLevel"
+        />
         <VChip
           v-if="path"
           color="primary"

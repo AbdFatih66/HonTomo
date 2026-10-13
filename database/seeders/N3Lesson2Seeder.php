@@ -92,6 +92,24 @@ class N3Lesson2Seeder extends N3LessonSeeder
             ['文章', 'ぶんしょう', 'bunshou', 'tulisan, kalimat', 'essay, sentence'],
             ['比べる', 'くらべる', 'kuraberu', 'membandingkan', 'to compare'],
 
+            // Tambahan dari lembar latihan, bacaan, dan percakapan
+            ['窓ガラス', 'まどガラス', 'mado garasu', 'kaca jendela', 'window glass'],
+            ['汚す', 'よごす', 'yogosu', 'mengotori', 'to make dirty'],
+            ['避難訓練', 'ひなんくんれん', 'hinan kunren', 'latihan evakuasi', 'evacuation drill'],
+            ['避難', 'ひなん', 'hinan', 'evakuasi, mengungsi', 'evacuation, taking shelter'],
+            ['町内会', 'ちょうないかい', 'chounaikai', 'perkumpulan warga lingkungan', 'neighbourhood association'],
+            ['停電', 'ていでん', 'teiden', 'pemadaman listrik', 'power outage'],
+            ['雨天', 'うてん', 'uten', 'cuaca hujan', 'rainy weather'],
+            ['持ち帰る', 'もちかえる', 'mochikaeru', 'membawa pulang', 'to take back home'],
+            ['再配達', 'さいはいたつ', 'saihaitatsu', 'pengantaran ulang', 'redelivery'],
+            ['配達員', 'はいたついん', 'haitatsuin', 'kurir pengantar', 'delivery person'],
+            ['食品', 'しょくひん', 'shokuhin', 'bahan makanan, makanan', 'food products'],
+            ['ご不在', 'ごふざい', 'gofuzai', 'ketidakhadiran Anda (hormat)', 'your absence (honorific)'],
+            ['やり方', 'やりかた', 'yarikata', 'cara melakukan', 'way of doing'],
+            ['作り方', 'つくりかた', 'tsukurikata', 'cara membuat', 'how to make'],
+            ['謝る', 'あやまる', 'ayamaru', 'meminta maaf', 'to apologise'],
+            ['届く', 'とどく', 'todoku', 'sampai, tiba (kiriman)', 'to arrive, to be delivered'],
+
             // Ungkapan
             ['お忙しいところ、……。', 'おいそがしいところ、……。', 'oisogashii tokoro', 'Maaf mengganggu kesibukan Anda...', 'I am sorry to disturb you...'],
             ['それで……。', 'それで……。', 'sorede', 'Lalu...? (mendorong lawan bicara melanjutkan)', 'And...?'],

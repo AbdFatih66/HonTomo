@@ -213,6 +213,7 @@ const STUDY_TIPS = [
   { key: 'spaced', icon: 'tabler-repeat', route: 'kosakata' },
   { key: 'kanji', icon: 'tabler-writing', route: 'kanji' },
   { key: 'write', icon: 'tabler-writing-sign', route: 'kaite-oboeru' },
+  { key: 'read', icon: 'tabler-book-2', route: 'membaca' },
   { key: 'speak', icon: 'tabler-messages', route: 'kaiwa' },
   { key: 'listen', icon: 'tabler-headphones', route: 'chokai' },
   { key: 'quiz', icon: 'tabler-pencil-check', route: 'mondaishuu' },
@@ -537,7 +538,7 @@ const readyParts = computed(() => {
 
   const parts = [
     { key: 'moji', icon: 'tabler-abc', color: 'warning', route: 'kanji', value: avg([pctOf('vocabulary'), pctOf('kanji'), pctOf('kaite_oboeru')]) },
-    { key: 'bunpou', icon: 'tabler-book-2', color: 'primary', route: 'mondaishuu', value: avg([pctOf('learn'), pctOf('mondaishuu')]) },
+    { key: 'bunpou', icon: 'tabler-book-2', color: 'primary', route: 'mondaishuu', value: avg([pctOf('learn'), pctOf('mondaishuu'), pctOf('membaca')]) },
     { key: 'chokai', icon: 'tabler-headphones', color: 'info', route: 'chokai', value: pctOf('chokai') },
   ]
   const weakest = [...parts].sort((a, b) => a.value - b.value)[0]

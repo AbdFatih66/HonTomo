@@ -1,14 +1,50 @@
 <script setup>
 // Halaman referensi tata bahasa statis. Selektor N5 / N4 memilih isinya:
 //   N5: angka, ungkapan waktu, kata bantu bilangan, konjugasi kata kerja, kata sifat.
+//   N3: Pelajaran 1–12, 4 tab (ringkasan pola, perbandingan, cara membentuk, ungkapan) — komponen N3Reference.
 //   N4: Pelajaran 1–25, dikelompokkan jadi 6 tab (pola kalimat, bentuk kata kerja, ungkapan,
 //       bahasa hormat, kehidupan sehari-hari, kosakata tema); tiap tab menumpuk kartu per pelajaran.
 // Tidak memakai backend — semua data ditulis langsung di sini, mengikuti pola
 // halaman kana/kanji yang berdiri sendiri dari sistem `lessons`.
 import { useLevelChoice } from '@/composables/useLevelChoice'
+import N3Reference from '@/components/lampiran/N3Reference.vue'
 
 const { t, locale } = useI18n()
-const { level } = useLevelChoice()
+const { level: sharedLevel, setLevel } = useLevelChoice()
+
+// Referensi punya N3 di samping N5 / N4; level bersama (Tata Bahasa dll.) tetap N5 / N4.
+// Pilihan N3 diingat sendiri supaya tidak hilang saat membuka ulang halaman.
+const REFERENCE_LEVELS = ['N5', 'N4', 'N3']
+const REFERENCE_LEVEL_KEY = 'hontomo.reference.level'
+
+function readReferenceLevel() {
+  try {
+    if (localStorage.getItem(REFERENCE_LEVEL_KEY) === 'N3')
+      return 'N3'
+  }
+  catch {
+    // penyimpanan tidak tersedia — pakai level bersama
+  }
+
+  return REFERENCE_LEVELS.includes(sharedLevel.value) ? sharedLevel.value : 'N5'
+}
+
+const level = ref(readReferenceLevel())
+
+function chooseLevel(code) {
+  level.value = code
+  setLevel(code) // N3 diabaikan oleh level bersama
+
+  try {
+    if (code === 'N3')
+      localStorage.setItem(REFERENCE_LEVEL_KEY, 'N3')
+    else
+      localStorage.removeItem(REFERENCE_LEVEL_KEY)
+  }
+  catch {
+    // abaikan
+  }
+}
 
 // Teks dua bahasa untuk data N4: { id, en }
 const tr = text => (locale.value === 'en' ? text.en : text.id)
@@ -31,7 +67,16 @@ const SECTIONS_N4 = [
   { value: 'n4g-vocab', label: 'lampiran.section_n4_g_vocab', icon: 'tabler-school' },
 ]
 
-const sections = computed(() => (level.value === 'N4' ? SECTIONS_N4 : SECTIONS_N5))
+const SECTIONS_N3 = [
+  { value: 'n3g-patterns', label: 'lampiran.section_n3_g_patterns', icon: 'tabler-list-details' },
+  { value: 'n3g-compare', label: 'lampiran.section_n3_g_compare', icon: 'tabler-arrows-diff' },
+  { value: 'n3g-forms', label: 'lampiran.section_n3_g_forms', icon: 'tabler-abc' },
+  { value: 'n3g-phrases', label: 'lampiran.section_n3_g_phrases', icon: 'tabler-bow' },
+]
+
+const SECTIONS_BY_LEVEL = { N5: SECTIONS_N5, N4: SECTIONS_N4, N3: SECTIONS_N3 }
+
+const sections = computed(() => SECTIONS_BY_LEVEL[level.value] ?? SECTIONS_N5)
 const section = ref(sections.value[0].value)
 
 watch(level, () => {
@@ -2750,11 +2795,15 @@ const addressRows = [
           {{ t('lampiran.title') }}
         </h4>
         <p class="text-body-2 text-medium-emphasis mb-0">
-          {{ level === 'N4' ? t('lampiran.subtitle_n4') : t('lampiran.subtitle') }}
+          {{ level === 'N5' ? t('lampiran.subtitle') : t(`lampiran.subtitle_${level.toLowerCase()}`) }}
         </p>
       </div>
       <div class="d-flex align-center flex-wrap ga-2">
-        <LevelSwitch />
+        <LevelSwitch
+          :levels="REFERENCE_LEVELS"
+          :model-value="level"
+          @update:model-value="chooseLevel"
+        />
         <VChip color="primary" variant="tonal" prepend-icon="tabler-certificate">
           {{ level }}
         </VChip>
@@ -5294,6 +5343,20 @@ const addressRows = [
         </VCard>
       </VWindowItem>
 
+
+      <!-- N3 · Pelajaran 1–12 -->
+      <VWindowItem value="n3g-patterns">
+        <N3Reference part="patterns" />
+      </VWindowItem>
+      <VWindowItem value="n3g-compare">
+        <N3Reference part="compare" />
+      </VWindowItem>
+      <VWindowItem value="n3g-forms">
+        <N3Reference part="forms" />
+      </VWindowItem>
+      <VWindowItem value="n3g-phrases">
+        <N3Reference part="phrases" />
+      </VWindowItem>
     </VWindow>
   </div>
 </template>

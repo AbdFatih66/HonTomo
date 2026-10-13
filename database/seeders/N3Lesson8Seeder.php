@@ -87,6 +87,31 @@ class N3Lesson8Seeder extends N3LessonSeeder
             ['テーマ', 'テーマ', 'teema', 'tema', 'topic'],
             ['述べる', 'のべる', 'noberu', 'menyatakan, mengemukakan', 'to state, to speak'],
 
+            // Tambahan dari lembar latihan (tata bahasa, bicara-dengar, baca-tulis, soal)
+            ['日本中', 'にほんじゅう', 'nihonjuu', 'seluruh Jepang', 'all over Japan'],
+            ['違い', 'ちがい', 'chigai', 'perbedaan', 'difference'],
+            ['時と場合', 'ときとばあい', 'toki to baai', 'waktu dan keadaan', 'time and occasion'],
+            ['履く[スカートを〜]', 'はく[スカートを〜]', 'haku', 'memakai [rok, celana, sepatu]', 'to wear [skirt, trousers, shoes]'],
+            ['かぶる[帽子を〜]', 'かぶる[ぼうしを〜]', 'kaburu', 'memakai [topi]', 'to wear [a hat]'],
+            ['捜す', 'さがす', 'sagasu', 'mencari (barang atau orang yang hilang)', 'to search for (something lost)'],
+            ['いなくなる', 'いなくなる', 'inakunaru', 'menghilang, tidak ada lagi', 'to go missing'],
+            ['イントネーション', 'イントネーション', 'intoneeshon', 'intonasi', 'intonation'],
+            ['イメージ', 'イメージ', 'imeeji', 'citra, kesan', 'image'],
+            ['科学技術', 'かがくぎじゅつ', 'kagaku gijutsu', 'sains dan teknologi', 'science and technology'],
+            ['夕刊', 'ゆうかん', 'yuukan', 'koran sore', 'evening paper'],
+            ['一部', 'いちぶ', 'ichibu', 'sebagian, satu bagian', 'a part, one copy'],
+            ['改変する', 'かいへんする', 'kaihen suru', 'mengubah, merevisi', 'to alter'],
+            ['掲載する', 'けいさいする', 'keisai suru', 'memuat (di media)', 'to publish, to carry (an article)'],
+            ['預かる', 'あずかる', 'azukaru', 'menitipkan, dititipi', 'to look after, to keep'],
+            ['左手', 'ひだりて', 'hidarite', 'tangan kiri', 'left hand'],
+            ['交通事故', 'こうつうじこ', 'koutsuu jiko', 'kecelakaan lalu lintas', 'traffic accident'],
+            ['ふだん', 'ふだん', 'fudan', 'biasanya, sehari-hari', 'usually, ordinarily'],
+            ['健康的[な]', 'けんこうてき[な]', 'kenkouteki', 'sehat', 'healthy'],
+            ['人間関係', 'にんげんかんけい', 'ningen kankei', 'hubungan antar manusia', 'human relations'],
+            ['理想的[な]', 'りそうてき[な]', 'risouteki', 'ideal', 'ideal'],
+            ['外国人', 'がいこくじん', 'gaikokujin', 'orang asing', 'foreigner'],
+            ['考え方', 'かんがえかた', 'kangaekata', 'cara berpikir', 'way of thinking'],
+
             // Ungkapan
             ['確か、〜たと思います。', 'たしか、〜たとおもいます。', 'tashika ta to omoimasu', 'Seingat saya, ~.', 'I am pretty sure... was...'],
         ];

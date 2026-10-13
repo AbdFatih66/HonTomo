@@ -18,6 +18,7 @@
     "chokai": "Listening Practice",
     "jlpt_test": "JLPT Test",
     "kaite_oboeru": "Writing Practice",
+    "membaca": "Reading",
     "kaiwa": "Conversation Practice"
   },
   "common": {
@@ -119,6 +120,7 @@
       "chokai": "Train your ear: listen to the audio, then answer the question.",
       "kaiwa": "Practise speaking: simulated real-life dialogues with a conversation partner.",
       "kaite_oboeru": "Write answers by hand so the words stick in memory.",
+      "membaca": "Read a short text per lesson, then answer comprehension questions.",
       "lampiran": "Quick reference: numbers, time, counters, conjugation.",
       "jlpt_test": "A full JLPT exam simulation with timers and a score recap."
     },
@@ -131,6 +133,7 @@
       "chokai": "{done} of {total} listening sets completed",
       "kaiwa": "{done} of {total} conversation scenarios completed",
       "kaite_oboeru": "{done} of {total} writing lessons completed",
+      "membaca": "{done} of {total} readings completed",
       "lampiran": "",
       "jlpt_test": "{done} tests completed"
     },
@@ -144,6 +147,7 @@
       "chokai_completed": "Listening practice completed",
       "kaiwa_completed": "Conversation practice completed",
       "kaite_oboeru_completed": "Writing practice completed",
+      "membaca_completed": "Reading practice completed",
       "jlpt_test_completed": "JLPT test completed",
       "other": "XP earned"
     },
@@ -189,6 +193,11 @@
         "title": "Write by hand",
         "body": "Writing answers yourself makes your brain work harder than picking an option, so words last longer.",
         "cta": "Writing Practice"
+      },
+      "read": {
+        "title": "Get used to reading whole texts",
+        "body": "Reading full paragraphs trains you to grasp the gist without translating word by word, which is the heart of exam reading questions.",
+        "cta": "Reading Practice"
       },
       "listen": {
         "title": "Train your ear",
@@ -1014,7 +1023,12 @@
     "section_n4_g_expressions": "Expressions",
     "section_n4_g_keigo": "Honorific Speech & Letters",
     "section_n4_g_daily": "Daily Life",
-    "section_n4_g_vocab": "Themed Vocabulary"
+    "section_n4_g_vocab": "Themed Vocabulary",
+    "section_n3_g_patterns": "Pattern Summary",
+    "section_n3_g_compare": "Comparisons",
+    "section_n3_g_forms": "How to Form",
+    "section_n3_g_phrases": "Phrases & Demonstratives",
+    "subtitle_n3": "Pattern summaries, comparisons and expressions for N3, Lessons 1–12."
   },
   "vocabulary": {
     "title": "Vocabulary by Lesson",
@@ -1038,6 +1052,7 @@
     "title": "Practice Questions",
     "subtitle": "A practice quiz per lesson, 1–25, plus review sets — multiple choice and sentence building, using kanji with furigana.",
     "subtitle_n4": "N4 practice quiz per lesson — multiple choice and sentence building, using kanji with furigana.",
+    "subtitle_n3": "N3 practice quiz per lesson — multiple choice and sentence building, using kanji with furigana.",
     "lessons_label": "Choose a Lesson",
     "reviews_label": "Review Sets",
     "lesson_label": "Lesson {n}",
@@ -1377,6 +1392,7 @@
     "title": "Listening Practice",
     "subtitle": "Listening practice (chōkai) per lesson — listen to the audio, then answer the question.",
     "subtitle_n4": "N4 listening practice (chōkai) per lesson — listen to the audio, then answer the question.",
+    "subtitle_n3": "N3 listening practice (chōkai) per lesson — listen to the audio, then answer the question.",
     "lesson_label": "Lesson {n}",
     "coming_soon": "Coming soon",
     "kaiwa_title": "Dialogue",
@@ -1414,6 +1430,7 @@
     "title": "Writing Practice",
     "subtitle": "Handwriting practice — write your own answer below, then check it against the key.",
     "subtitle_n4": "N4 kana writing practice per lesson — write the requested word one character at a time.",
+    "subtitle_n3": "N3 kana writing practice per lesson — write the requested word one character at a time.",
     "question_count": "{n} questions",
     "lesson_badge": "Lesson {n}",
     "quiz_back": "Back",
@@ -1434,6 +1451,38 @@
     "crown_hint": "There were still some wrong answers — finish with none wrong to earn the crown.",
     "done_title": "Practice complete!",
     "retry": "Retry This Set"
+  },
+  "membaca": {
+    "title": "Reading",
+    "subtitle": "Read a short text for each lesson (N5, N4, N3), then answer comprehension questions. Furigana and translation can be switched on at any time.",
+    "lesson_label": "Lesson {n}",
+    "coming_soon": "Coming soon",
+    "covers": "Covers Lessons {range}",
+    "back_to_list": "Back to list",
+    "before_reading": "Before you read",
+    "focus_label": "Focus",
+    "furigana": "Furigana",
+    "translation": "Translation",
+    "tap_hint": "Tap a paragraph to see its translation.",
+    "vocab_title": "Key words",
+    "start_questions": "Start questions",
+    "question_of": "Question {n}/{total}",
+    "type_mc": "Multiple choice",
+    "type_tf": "True / False (○×)",
+    "show_passage": "View the text again",
+    "true_label": "True (○)",
+    "false_label": "False (×)",
+    "correct": "Correct!",
+    "incorrect": "Not quite.",
+    "next": "Next question",
+    "finish": "Finish",
+    "done_title": "Reading complete!",
+    "score": "Score: {score}/{total}",
+    "crown_earned": "Perfect! You earned a crown 👑",
+    "crown_hint": "Some answers were wrong — finish with no mistakes to earn a crown.",
+    "challenge": "Challenge",
+    "retry": "Retry questions",
+    "read_again": "Read again"
   },
   "search": {
     "trigger": "Search",

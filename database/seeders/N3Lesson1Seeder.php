@@ -73,6 +73,23 @@ class N3Lesson1Seeder extends N3LessonSeeder
             ['小学生', 'しょうがくせい', 'shougakusei', 'murid sekolah dasar', 'primary school student'],
             ['日常生活', 'にちじょうせいかつ', 'nichijou seikatsu', 'kehidupan sehari-hari', 'daily life'],
 
+            // Tambahan dari lembar latihan, bacaan, dan percakapan
+            ['重ねる', 'かさねる', 'kasaneru', 'menumpuk, menyusun bertumpuk', 'to pile up, to stack'],
+            ['たたむ', 'たたむ', 'tatamu', 'melipat', 'to fold'],
+            ['板張り', 'いたばり', 'itabari', 'berlantai papan', 'board flooring'],
+            ['素足', 'すあし', 'suashi', 'kaki telanjang (tanpa kaus kaki)', 'bare feet'],
+            ['お住まい', 'おすまい', 'osumai', 'tempat tinggal (bentuk hormat)', 'residence (honorific)'],
+            ['推薦状', 'すいせんじょう', 'suisenjou', 'surat rekomendasi', 'letter of recommendation'],
+            ['奨学金', 'しょうがくきん', 'shougakukin', 'beasiswa', 'scholarship'],
+            ['頑張る', 'がんばる', 'ganbaru', 'berusaha keras', 'to try hard'],
+            ['降ろす', 'おろす', 'orosu', 'menurunkan (barang)', 'to unload, to take down'],
+            ['手伝う', 'てつだう', 'tetsudau', 'membantu', 'to help'],
+            ['市民会館', 'しみんかいかん', 'shimin kaikan', 'gedung serbaguna warga', 'civic hall'],
+            ['ヘルメット', 'ヘルメット', 'herumetto', 'helm', 'helmet'],
+            ['へび', 'へび', 'hebi', 'ular', 'snake'],
+            ['お土産', 'おみやげ', 'omiyage', 'oleh-oleh', 'souvenir'],
+            ['ホチキス', 'ホチキス', 'hochikisu', 'stapler (alat penjilid)', 'stapler'],
+
             // Ungkapan
             ['あのう、〜ていただけないでしょうか。', 'あのう、〜ていただけないでしょうか。', 'anou teitadakenai deshouka', 'Permisi, apakah kiranya Anda berkenan ~?', 'Excuse me, I wonder if you could possibly...?'],
             ['何とかお願いできないでしょうか。', 'なんとかおねがいできないでしょうか。', 'nantoka onegai dekinai deshouka', 'Bisakah kiranya Anda mengusahakannya?', 'Could you possibly find some way to help me?'],

@@ -20,6 +20,8 @@ import json, re, sys, glob, os
 # N4 (file lesson-n4-{n}.json, id "n4-{n}", id soal n4l{n}-q{i}): jumlah soal per pelajaran N4.
 EXPECTED_N4 = {n: 10 for n in range(1, 26)}
 EXPECTED_N4[19] = 9
+# N3 (file lesson-n3-{n}.json, id "n3-{n}", id soal n3l{n}-q{i}): 10 soal per pelajaran.
+EXPECTED_N3 = {1: 10, 2: 10, 3: 10, 4: 10, 5: 10, 6: 10, 7: 10, 8: 10, 9: 10, 10: 10, 11: 10, 12: 10}
 EXPECTED = {1: 10, 2: 10, 3: 10, 4: 18, 5: 10, 6: 10, 7: 10, 8: 10,
             9: 10, 10: 10, 11: 10, 12: 10, 13: 10, 14: 10, 15: 10,
             16: 10, 17: 10, 18: 10, 19: 9, 20: 10, 21: 10, 22: 10,
@@ -41,16 +43,17 @@ def main():
     folder = sys.argv[1] if len(sys.argv) > 1 else 'public/data/chokai'
     errors, warns = [], []
     files = sorted(glob.glob(os.path.join(folder, 'lesson-*.json')),
-                   key=lambda p: (1 if 'lesson-n4-' in p else 0,
-                                  int(re.search(r'lesson-(?:n4-)?(\d+)', p).group(1))))
+                   key=lambda p: (2 if 'lesson-n3-' in p else 1 if 'lesson-n4-' in p else 0,
+                                  int(re.search(r'lesson-(?:n[34]-)?(\d+)', p).group(1))))
     for path in files:
         d = json.load(open(path, encoding='utf-8'))
         raw = d['id']
         n4 = isinstance(raw, str) and raw.startswith('n4-')
-        # L dipakai sebagai awalan id: N5 -> 'l{n}', N4 -> 'n4l{n}'
-        n = int(raw.split('-')[1]) if n4 else raw
-        prefix = f'n4l{n}' if n4 else f'l{raw}'
-        expected = EXPECTED_N4 if n4 else EXPECTED
+        n3 = isinstance(raw, str) and raw.startswith('n3-')
+        # L dipakai sebagai awalan id: N5 -> 'l{n}', N4 -> 'n4l{n}', N3 -> 'n3l{n}'
+        n = int(raw.split('-')[1]) if (n4 or n3) else raw
+        prefix = f'n3l{n}' if n3 else f'n4l{n}' if n4 else f'l{raw}'
+        expected = EXPECTED_N3 if n3 else EXPECTED_N4 if n4 else EXPECTED
         qs = d['questions']
         if n in expected and len(qs) != expected[n]:
             errors.append(f'L{raw}: {len(qs)} soal, seharusnya {expected[n]}')

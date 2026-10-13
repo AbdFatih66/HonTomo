@@ -52,17 +52,29 @@ class DatabaseSeeder extends Seeder
             N4Lesson24Seeder::class, // N4 Pelajaran 24: bunpou, kosakata, kuis
             N4Lesson25Seeder::class, // N4 Pelajaran 25: 謙譲語 (merendahkan diri); bunpou + kosakata + kuis
             N3Lesson1Seeder::class, // N3 Pelajaran 1: kosakata, kuis
+            N3Lesson1BunpouSeeder::class, // N3 Pelajaran 1: tata bahasa (bunpou)
             N3Lesson2Seeder::class, // N3 Pelajaran 2: kosakata, kuis
+            N3Lesson2BunpouSeeder::class, // N3 Pelajaran 2: tata bahasa (bunpou)
             N3Lesson3Seeder::class, // N3 Pelajaran 3: kosakata, kuis
+            N3Lesson3BunpouSeeder::class, // N3 Pelajaran 3: tata bahasa (bunpou)
             N3Lesson4Seeder::class, // N3 Pelajaran 4: kosakata, kuis
+            N3Lesson4BunpouSeeder::class, // N3 Pelajaran 4: tata bahasa (bunpou)
             N3Lesson5Seeder::class, // N3 Pelajaran 5: kosakata, kuis
+            N3Lesson5BunpouSeeder::class, // N3 Pelajaran 5: tata bahasa (bunpou)
             N3Lesson6Seeder::class, // N3 Pelajaran 6: kosakata, kuis
+            N3Lesson6BunpouSeeder::class, // N3 Pelajaran 6: tata bahasa (bunpou)
             N3Lesson7Seeder::class, // N3 Pelajaran 7: kosakata, kuis
+            N3Lesson7BunpouSeeder::class, // N3 Pelajaran 7: tata bahasa (bunpou)
             N3Lesson8Seeder::class, // N3 Pelajaran 8: kosakata, kuis
+            N3Lesson8BunpouSeeder::class, // N3 Pelajaran 8: tata bahasa (bunpou)
             N3Lesson9Seeder::class, // N3 Pelajaran 9: kosakata, kuis
+            N3Lesson9BunpouSeeder::class, // N3 Pelajaran 9: tata bahasa (bunpou)
             N3Lesson10Seeder::class, // N3 Pelajaran 10: kosakata, kuis
+            N3Lesson10BunpouSeeder::class, // N3 Pelajaran 10: tata bahasa (bunpou)
             N3Lesson11Seeder::class, // N3 Pelajaran 11: kosakata, kuis
+            N3Lesson11BunpouSeeder::class, // N3 Pelajaran 11: tata bahasa (bunpou)
             N3Lesson12Seeder::class, // N3 Pelajaran 12: kosakata, kuis
+            N3Lesson12BunpouSeeder::class, // N3 Pelajaran 12: tata bahasa (bunpou)
             KanjiSeeder::class,
             KanaSeeder::class, // Hiragana & Katakana chart, stroke order, dakuten/handakuten
             AchievementSeeder::class,

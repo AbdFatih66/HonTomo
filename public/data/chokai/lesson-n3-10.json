@@ -1,0 +1,348 @@
+{
+    "id": "n3-10",
+    "level": "N3",
+    "focus": "N3 Pelajaran 10 — …はずだ, …はずが／は ない, …はずだった, …ことが／も ある, Vた結果・Nの結果, V出す, V始める・終わる・続ける, V忘れる・合う・換える, …と いう ことに なる",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "すみません、プリンターが 動かないんです。"
+            },
+            {
+                "speaker": "male",
+                "text": "電源は 入って いますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい、入って いますが、何も 出て きません。"
+            },
+            {
+                "speaker": "male",
+                "text": "マニュアルを 見ましたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいえ、まだ 見て いません。"
+            },
+            {
+                "speaker": "male",
+                "text": "マニュアルを 見れば、わかる はずですよ。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-10/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l10-kq1",
+                "prompt": "プリンターは どう なって いますか。",
+                "choices": [
+                    "電源《でんげん》が 入《はい》らない",
+                    "電源《でんげん》は 入《はい》って いるが 動《うご》かない",
+                    "紙《かみ》が ない"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Bagaimana keadaan printer? — Menyala tetapi tidak bekerja.",
+                    "en": "What is wrong with the printer? — It is on but does not work."
+                }
+            },
+            {
+                "id": "n3l10-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なに》を すすめましたか。",
+                "choices": [
+                    "新《あたら》しい プリンターを 買《か》う",
+                    "修理《しゅうり》に 出《だ》す",
+                    "マニュアルを 見《み》る"
+                ],
+                "answer": 2,
+                "audio": null,
+                "translate": {
+                    "id": "Apa yang disarankan laki-laki itu? — Melihat buku panduan.",
+                    "en": "What did the man suggest? — Look at the manual."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l10-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "山田さん、まだ 来ないね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "十時の 電車に 乗ると 言って いたから、もうすぐ 着く はずだよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "電話して みようか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "移動中の はずだから、少し 待とう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q1.mp3",
+            "prompt": "二人《ふたり》は これから どう しますか。",
+            "choices": [
+                "電話《でんわ》する",
+                "先《さき》に 行《い》く",
+                "少《すこ》し 待《ま》つ"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang akan mereka lakukan? — Menunggu sebentar.",
+                "en": "What will they do next? — Wait a little."
+            }
+        },
+        {
+            "id": "n3l10-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この 財布、鈴木さんのかな。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "鈴木さんは 先週から 出張中だから、会社に ある はずが ないよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうか。じゃあ、受付に 届けよう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q2.mp3",
+            "prompt": "財布《さいふ》を どう しますか。",
+            "choices": [
+                "鈴木《すずき》さんに 返《かえ》す",
+                "受付《うけつけ》に 届《とど》ける",
+                "捨《す》てる"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Dompetnya diapakan? — Diserahkan ke resepsionis.",
+                "en": "What will they do with the wallet? — Hand it in at reception."
+            }
+        },
+        {
+            "id": "n3l10-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日の 試合、見に 行った？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "行く はずだったんだけど、急に 残業に なっちゃって。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それは 残念だったね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "うん。チケットも 買って あったのに。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 試合《しあい》に 行《い》けませんでしたか。",
+            "choices": [
+                "病気《びょうき》だったからです",
+                "チケットが なかったからです",
+                "残業《ざんぎょう》に なったからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa laki-laki itu tidak bisa ke pertandingan? — Karena tiba-tiba lembur.",
+                "en": "Why could the man not go to the match? — He suddenly had to work overtime."
+            }
+        },
+        {
+            "id": "n3l10-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "新しい 機械は どう？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "便利だけど、ときどき 止まる ことが あるんだ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "原因は わかった？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ。動かない ことも あるから、メーカーに 連絡しようと 思って いる。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は これから 何《なに》を しますか。",
+            "choices": [
+                "機械《きかい》を 捨《す》てます",
+                "メーカーに 連絡《れんらく》します",
+                "説明書《せつめいしょ》を 読《よ》みます"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang akan dilakukan laki-laki itu? — Menghubungi pabrikan.",
+                "en": "What will the man do next? — Contact the manufacturer."
+            }
+        },
+        {
+            "id": "n3l10-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "騒音の 調査は どう なりましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "測定した 結果、基準を 超えて いる 場所が ありました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "対策は？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "話し合いの 結果、来月 壁を 増やす ことに なりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q5.mp3",
+            "prompt": "来月《らいげつ》 何《なに》を しますか。",
+            "choices": [
+                "機械《きかい》を 買《か》います",
+                "調査《ちょうさ》を します",
+                "壁《かべ》を 増《ふ》やします"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang dilakukan bulan depan? — Menambah dinding.",
+                "en": "What will they do next month? — Add walls."
+            }
+        },
+        {
+            "id": "n3l10-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あっ、切符を 買い忘れちゃった。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "切符《きっぷ》は 高《たか》いです。",
+                "今《いま》なら まだ 間《ま》に 合《あ》うよ。",
+                "忘《わす》れました。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Aduh, lupa membeli tiket. — Sekarang masih sempat.",
+                "en": "Oh no, I forgot to buy a ticket. — You can still make it now."
+            }
+        },
+        {
+            "id": "n3l10-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "山田さんは どうして 来ないんだろう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "電車《でんしゃ》が 遅《おく》れて いる はずだよ。",
+                "山田《やまだ》さんは 来《き》ました。",
+                "山田《やまだ》さんの 電話番号《でんわばんごう》です。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Mengapa Yamada belum datang? — Mungkin keretanya terlambat.",
+                "en": "Why has Yamada not come? — His train must be delayed."
+            }
+        },
+        {
+            "id": "n3l10-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "外、見て。雨が 降り出したよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "本当だ。傘、持って きた？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ううん、持って きて いない。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q8.mp3",
+            "prompt": "二人《ふたり》は 傘《かさ》を 持《も》って います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Keduanya membawa payung. → ×",
+                "en": "They both have umbrellas. → ×"
+            }
+        },
+        {
+            "id": "n3l10-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "レポートは もう 書き終わりましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、まだ 書き始めた ところです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q9.mp3",
+            "prompt": "女《おんな》の 人《ひと》は レポートを 書《か》き始《はじ》めた ところです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu baru mulai menulis laporan. → ○",
+                "en": "The woman has just started writing the report. → ○"
+            }
+        },
+        {
+            "id": "n3l10-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "部長が 戻るのは 金曜日で、会議は 木曜日ですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ。ということは、部長は 会議に 出られないと いう ことに なりますね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-10/n3l10-q10.mp3",
+            "prompt": "部長《ぶちょう》は 会議《かいぎ》に 出《で》られます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kepala bagian bisa hadir di rapat. → ×",
+                "en": "The department head can attend the meeting. → ×"
+            }
+        }
+    ]
+}

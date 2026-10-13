@@ -13,6 +13,7 @@ use App\Models\UserJlptTestAttempt;
 use App\Models\UserKaiteOboeruProgress;
 use App\Models\UserKaiwaProgress;
 use App\Models\UserKanjiProgress;
+use App\Models\UserMembacaProgress;
 use App\Models\UserMondaishuuProgress;
 use App\Models\UserVocabulary;
 use App\Models\Vocabulary;
@@ -27,10 +28,12 @@ class DashboardController extends Controller
 {
     // Jumlah set latihan. Bank soalnya ada di file Vue (bukan di database),
     // jadi totalnya dicatat di sini — samakan bila set latihan bertambah.
-    // Total di bawah hanya untuk materi N5; progres N4 (set_key berawalan 'n4') dihitung terpisah dan tidak ikut.
+    // Total di bawah hanya untuk materi N5; progres N4 / N3 (set_key berawalan 'n4' / 'n3') dihitung terpisah dan tidak ikut.
     private const MONDAISHUU_SETS = 29; // pelajaran 1–25 + 4 set rangkuman
     private const CHOKAI_SETS = 25;
     private const KAITE_OBOERU_SETS = 25;
+    // Membaca: total tahap roadmap = bacaan N5 yang sudah ada (MembacaController::AVAILABLE_KEYS, kunci 'n5l{n}'),
+    // bukan 12 rencana pelajaran, supaya tahap ini bisa selesai dan tidak menahan tahap berikutnya.
 
     // Kanji hari ini: jumlah kanji per hari & contoh kata per kanji.
     private const KANJI_OF_DAY_COUNT = 5;
@@ -164,6 +167,8 @@ class DashboardController extends Controller
         $kaiwaDone = $kaiwaIds === [] ? 0 : UserKaiwaProgress::where('user_id', $user->id)
             ->where('done', true)->whereIn('set_key', $kaiwaIds)->count();
 
+        $membacaN5Keys = array_values(array_filter(MembacaController::AVAILABLE_KEYS, fn (string $k) => str_starts_with($k, 'n5l')));
+
         $jlptDone = UserJlptTestAttempt::where('user_id', $user->id)
             ->where('status', UserJlptTestAttempt::STATUS_COMPLETED)->count();
 
@@ -173,12 +178,14 @@ class DashboardController extends Controller
             ['key' => 'vocabulary', 'route' => 'kosakata', 'icon' => 'tabler-notebook', 'done' => $vocabMastered, 'total' => $vocabTotal],
             ['key' => 'kanji', 'route' => 'kanji', 'icon' => 'tabler-writing', 'done' => $kanjiMastered, 'total' => $kanjiTotal],
             ['key' => 'mondaishuu', 'route' => 'mondaishuu', 'icon' => 'tabler-pencil-check',
-                'done' => UserMondaishuuProgress::where('user_id', $user->id)->where('done', true)->where('set_key', 'not like', 'n4%')->count(), 'total' => self::MONDAISHUU_SETS],
+                'done' => UserMondaishuuProgress::where('user_id', $user->id)->where('done', true)->where('set_key', 'not like', 'n4%')->where('set_key', 'not like', 'n3%')->count(), 'total' => self::MONDAISHUU_SETS],
             ['key' => 'chokai', 'route' => 'chokai', 'icon' => 'tabler-headphones',
-                'done' => UserChokaiProgress::where('user_id', $user->id)->where('done', true)->where('set_key', 'not like', 'n4%')->count(), 'total' => self::CHOKAI_SETS],
+                'done' => UserChokaiProgress::where('user_id', $user->id)->where('done', true)->where('set_key', 'not like', 'n4%')->where('set_key', 'not like', 'n3%')->count(), 'total' => self::CHOKAI_SETS],
             ['key' => 'kaiwa', 'route' => 'kaiwa', 'icon' => 'tabler-messages', 'done' => $kaiwaDone, 'total' => count($kaiwaIds)],
             ['key' => 'kaite_oboeru', 'route' => 'kaite-oboeru', 'icon' => 'tabler-writing-sign',
-                'done' => UserKaiteOboeruProgress::where('user_id', $user->id)->where('done', true)->where('set_key', 'not like', 'n4%')->count(), 'total' => self::KAITE_OBOERU_SETS],
+                'done' => UserKaiteOboeruProgress::where('user_id', $user->id)->where('done', true)->where('set_key', 'not like', 'n4%')->where('set_key', 'not like', 'n3%')->count(), 'total' => self::KAITE_OBOERU_SETS],
+            ['key' => 'membaca', 'route' => 'membaca', 'icon' => 'tabler-book-2',
+                'done' => UserMembacaProgress::where('user_id', $user->id)->where('done', true)->whereIn('set_key', $membacaN5Keys)->count(), 'total' => count($membacaN5Keys)],
             ['key' => 'lampiran', 'route' => 'lampiran', 'icon' => 'tabler-clipboard-list', 'done' => null, 'total' => null],
             ['key' => 'jlpt_test', 'route' => 'jlpt-test', 'icon' => 'tabler-certificate', 'done' => $jlptDone, 'total' => null],
         ];
@@ -250,7 +257,8 @@ class DashboardController extends Controller
         return UserMondaishuuProgress::where('user_id', $user->id)->where('crown', true)->count()
             + UserChokaiProgress::where('user_id', $user->id)->where('crown', true)->count()
             + UserKaiwaProgress::where('user_id', $user->id)->where('crown', true)->count()
-            + UserKaiteOboeruProgress::where('user_id', $user->id)->where('crown', true)->count();
+            + UserKaiteOboeruProgress::where('user_id', $user->id)->where('crown', true)->count()
+            + UserMembacaProgress::where('user_id', $user->id)->where('crown', true)->count();
     }
 
     /**

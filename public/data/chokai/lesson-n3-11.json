@@ -1,0 +1,348 @@
+{
+    "id": "n3-11",
+    "level": "N3",
+    "focus": "N3 Pelajaran 11 — 〜て くる・〜て いく, 〜たら どう？, …より…ほうが…, Nらしい, …らしい, Nとして, 〜ず(に), 〜ず、…, 〜て いる(経験), Nなんか どう？",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ツアーは パックツアーと 個人旅行と、どちらが いいですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "パックツアーは 安くて 便利ですが、自由行動が 少ないです。"
+            },
+            {
+                "speaker": "female",
+                "text": "個人旅行は 自由ですが、計画が 大変ですね。"
+            },
+            {
+                "speaker": "male",
+                "text": "両方 考えて みましたが、個人旅行の ほうが いいと 思います。"
+            },
+            {
+                "speaker": "female",
+                "text": "じゃあ、個人旅行に しましょう。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、お願いします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-11/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l11-kq1",
+                "prompt": "パックツアーの いい 点《てん》は 何《なん》ですか。",
+                "choices": [
+                    "自由行動《じゆうこうどう》が 多《おお》い こと",
+                    "安《やす》くて 便利《べんり》な こと",
+                    "計画《けいかく》が 簡単《かんたん》な こと"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Apa kelebihan tur paket? — Murah dan praktis.",
+                    "en": "What is good about a package tour? — It is cheap and convenient."
+                }
+            },
+            {
+                "id": "n3l11-kq2",
+                "prompt": "二人《ふたり》は どちらに しますか。",
+                "choices": [
+                    "パックツアー",
+                    "まだ 決《き》めて いない",
+                    "個人旅行《こじんりょこう》"
+                ],
+                "answer": 2,
+                "audio": null,
+                "translate": {
+                    "id": "Mana yang mereka pilih? — Perjalanan perorangan.",
+                    "en": "Which do they choose? — An individual trip."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l11-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "最近、朝は 寒く なって きたね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "もう 十月だからね。これから もっと 寒く なって いくよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "コートを 出さなきゃ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "風邪を ひかないように、早めに 準備した ほうが いいよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q1.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なん》と 言《い》いましたか。",
+            "choices": [
+                "コートは いらない",
+                "今《いま》は まだ 寒《さむ》くない",
+                "早《はや》めに コートを 準備《じゅんび》した ほうが いい"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa kata perempuan itu? — Sebaiknya segera menyiapkan mantel.",
+                "en": "What did the woman say? — That he should prepare a coat early."
+            }
+        },
+        {
+            "id": "n3l11-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "最近、よく 眠れないんだ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "寝る 前に スマホを 見ないように したら どう？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうだね。やって みる。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あと、軽い 運動を して みたら？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q2.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なに》を すすめましたか。",
+            "choices": [
+                "薬《くすり》を 飲《の》む こと",
+                "寝《ね》る 前《まえ》に スマホを 見《み》ない こと",
+                "もっと 長《なが》く 寝《ね》る こと"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang disarankan perempuan itu? — Tidak melihat ponsel sebelum tidur.",
+                "en": "What did the woman recommend? — Not looking at the phone before bed."
+            }
+        },
+        {
+            "id": "n3l11-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "会議は 対面と オンラインと、どちらが いいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "移動する 時間を 考えると、行くより オンラインの ほうが 楽ですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "でも、大事な 話は 画面で 話すより 会って 話した ほうが いいと 思います。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "たしかに、そうですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q3.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 大事《だいじ》な 話《はなし》を どう した ほうが いいと 思《おも》って いますか。",
+            "choices": [
+                "オンラインで 話《はな》す",
+                "メールで 伝《つた》える",
+                "会《あ》って 話《はな》す"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Bagaimana sebaiknya membicarakan hal penting menurut perempuan itu? — Bertemu langsung.",
+                "en": "How does the woman think important matters should be discussed? — In person."
+            }
+        },
+        {
+            "id": "n3l11-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "新しい 先生は どんな 人？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "先生らしい 落ち着いた 人だよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "授業は おもしろい？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "うん。子どもらしい 質問にも 丁寧に 答えて くれるよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q4.mp3",
+            "prompt": "新《あたら》しい 先生《せんせい》は どんな 先生《せんせい》ですか。",
+            "choices": [
+                "派手《はで》な 先生《せんせい》",
+                "おもしろくない 先生《せんせい》",
+                "落《お》ち着《つ》いた 先生《せんせい》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Guru baru seperti apa? — Guru yang tenang.",
+                "en": "What kind of teacher is the new teacher? — A calm one."
+            }
+        },
+        {
+            "id": "n3l11-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "田中さん、会社を 辞める らしいよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "えっ、本当？ だれから 聞いたの？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "鈴木さんが 言って いたの。故郷に 帰る らしい。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "寂しく なるね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q5.mp3",
+            "prompt": "田中《たなか》さんは どう する らしいですか。",
+            "choices": [
+                "外国《がいこく》へ 行《い》く",
+                "会社《かいしゃ》を 続《つづ》ける",
+                "故郷《ふるさと》に 帰《かえ》る"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Katanya Tanaka akan bagaimana? — Pulang ke kampung halaman.",
+                "en": "What is Tanaka said to be doing? — Going back to his hometown."
+            }
+        },
+        {
+            "id": "n3l11-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "今度の 飲み会、どこに する？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "駅前《えきまえ》の 居酒屋《いざかや》なんか どう？",
+                "昨日《きのう》 行《い》きました。",
+                "飲《の》み会《かい》は 楽《たの》しかった。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pesta minum berikutnya di mana? — Bagaimana kalau izakaya depan stasiun?",
+                "en": "Where shall we hold the next drinking party? — How about the izakaya in front of the station?"
+            }
+        },
+        {
+            "id": "n3l11-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "最近、よく 眠れないんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "よく 眠《ねむ》れました。",
+                "寝《ね》る 前《まえ》に スマホを 見《み》ないように したら どうですか。",
+                "寝《ね》る 時間《じかん》は 十時《じゅうじ》です。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Akhir-akhir ini saya susah tidur. — Bagaimana kalau tidak melihat ponsel sebelum tidur?",
+                "en": "I cannot sleep well lately. — How about not looking at your phone before bed?"
+            }
+        },
+        {
+            "id": "n3l11-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "昨日は 傘を 持たずに 出かけて、濡れて しまいました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "天気予報を 見なかったんですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q8.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 傘《かさ》を 持《も》って 出《で》かけました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu membawa payung. → ×",
+                "en": "The man took an umbrella with him. → ×"
+            }
+        },
+        {
+            "id": "n3l11-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "山田さんは エンジニアとして 工場で 働いて います。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q9.mp3",
+            "prompt": "山田《やまだ》さんは 工場《こうじょう》で 働《はたら》いて います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Yamada bekerja di pabrik. → ○",
+                "en": "Yamada works at a factory. → ○"
+            }
+        },
+        {
+            "id": "n3l11-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この 町は 十年間 大きな 地震は 起こって いません。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "でも、備えは 大切ですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-11/n3l11-q10.mp3",
+            "prompt": "この 町《まち》では 最近《さいきん》 大《おお》きな 地震《じしん》が ありました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Di kota ini baru-baru ini ada gempa besar. → ×",
+                "en": "This town had a big earthquake recently. → ×"
+            }
+        }
+    ]
+}

@@ -1,0 +1,344 @@
+{
+    "id": "n3-12",
+    "level": "N3",
+    "focus": "N3 Pelajaran 12 — …もの／もんだから, 〜(ら)れる(間接受身), 〜たり〜たり, 〜っぱなし, …おかげで, …せいで, …みたいです, どちらかと言えば〜ほうだ, 〜ますように, 〜とは",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "夜遅くまで 音楽が うるさくて、眠れませんでした。"
+            },
+            {
+                "speaker": "male",
+                "text": "すみません。壁が こんなに うすいとは 気が 付きませんでした。"
+            },
+            {
+                "speaker": "female",
+                "text": "苦情を 言いたくは ないんですが、お願いします。"
+            },
+            {
+                "speaker": "male",
+                "text": "これからは 気を つけます。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。"
+            },
+            {
+                "speaker": "male",
+                "text": "こちらこそ、迷惑を かけて すみませんでした。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-12/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l12-kq1",
+                "prompt": "女《おんな》の 人《ひと》は どうして 眠《ねむ》れませんでしたか。",
+                "choices": [
+                    "仕事《しごと》が 忙《いそが》しかったからです",
+                    "隣《となり》の 音楽《おんがく》が うるさかったからです",
+                    "熱《ねつ》が あったからです"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Mengapa perempuan itu tidak bisa tidur? — Musik tetangga berisik.",
+                    "en": "Why could the woman not sleep? — The neighbor's music was loud."
+                }
+            },
+            {
+                "id": "n3l12-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なん》と 言《い》いましたか。",
+                "choices": [
+                    "もう 音楽《おんがく》を 聞《き》かない",
+                    "引《ひ》っ越《こ》す",
+                    "これからは 気《き》を つける"
+                ],
+                "answer": 2,
+                "audio": null,
+                "translate": {
+                    "id": "Apa kata laki-laki itu? — Mulai sekarang akan lebih berhati-hati.",
+                    "en": "What did the man say? — That he will be careful from now on."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l12-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "どうして 宿題を 出して いないの？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません、昨日 熱が あったものですから。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そう。じゃあ、明日まで 待ちます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 宿題《しゅくだい》を 出《だ》して いませんか。",
+            "choices": [
+                "忘《わす》れたからです",
+                "時間《じかん》が なかったからです",
+                "熱《ねつ》が あったからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa laki-laki itu belum mengumpulkan PR? — Karena demam.",
+                "en": "Why has the man not handed in his homework? — He had a fever."
+            }
+        },
+        {
+            "id": "n3l12-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日、どうして 寝られなかったの？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "隣の 部屋の 人に 夜中まで 騒がれたんだ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それは 大変だったね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "その うえ、帰り道で 雨にも 降られたし。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q2.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 昨日《きのう》 何《なに》に 困《こま》りましたか。",
+            "choices": [
+                "仕事《しごと》と 雨《あめ》",
+                "隣《となり》の 人《ひと》の 騒音《そうおん》と 雨《あめ》",
+                "熱《ねつ》と 雨《あめ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang menyusahkan laki-laki itu kemarin? — Keributan tetangga dan hujan.",
+                "en": "What troubled the man yesterday? — The neighbor's noise and the rain."
+            }
+        },
+        {
+            "id": "n3l12-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "顔色が 悪いけど、どうしたの？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "朝の 電車で 足を 踏まれて、まだ 痛いんだ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "大丈夫？病院に 行った ほうが いいよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q3.mp3",
+            "prompt": "女《おんな》の 人《ひと》は どうして 顔色《かおいろ》が 悪《わる》いですか。",
+            "choices": [
+                "熱《ねつ》が あるからです",
+                "寝《ね》て いないからです",
+                "足《あし》が 痛《いた》いからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa perempuan itu pucat? — Karena kakinya sakit.",
+                "en": "Why does the woman look pale? — Her foot hurts."
+            }
+        },
+        {
+            "id": "n3l12-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "休みの 日は 何を して いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "料理を 作ったり、映画を 見たり して います。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "外には 出ませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "天気が よければ、公園を 散歩したり します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 休《やす》みの 日《ひ》に 何《なに》を しますか。",
+            "choices": [
+                "買《か》い物《もの》や 旅行《りょこう》",
+                "料理《りょうり》や 映画《えいが》",
+                "勉強《べんきょう》や 仕事《しごと》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang dilakukan laki-laki itu di hari libur? — Memasak dan menonton film.",
+                "en": "What does the man do on his days off? — Cooks and watches movies."
+            }
+        },
+        {
+            "id": "n3l12-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あれ、窓が 開けっぱなしだよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ごめん、閉め忘れた。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "雨が 降ったら 部屋が 濡れるよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すぐ 閉めて くる。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》は これから 何《なに》を しますか。",
+            "choices": [
+                "傘《かさ》を 買《か》います",
+                "部屋《へや》を 掃除《そうじ》します",
+                "窓《まど》を 閉《し》めます"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang akan dilakukan perempuan itu? — Menutup jendela.",
+                "en": "What will the woman do next? — Close the window."
+            }
+        },
+        {
+            "id": "n3l12-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日本語の 試験、合格したそうですね。おめでとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "先生《せんせい》の おかげです。ありがとうございます。",
+                "合格《ごうかく》しませんでした。",
+                "試験《しけん》は 難《むずか》しいです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Selamat atas kelulusan ujian bahasa Jepang. — Berkat guru, terima kasih.",
+                "en": "Congratulations on passing the Japanese exam. — Thanks to my teacher."
+            }
+        },
+        {
+            "id": "n3l12-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "顔が 赤いけど、熱が あるの？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "うん、お酒《さけ》は おいしいよ。",
+                "ううん、昨日《きのう》 お酒《さけ》を 飲《の》みすぎた せいだよ。",
+                "いいえ、顔《かお》は 白《しろ》いです。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Wajahmu merah, demam ya? — Bukan, gara-gara kemarin minum kebanyakan.",
+                "en": "Your face is red; do you have a fever? — No, it is because I drank too much yesterday."
+            }
+        },
+        {
+            "id": "n3l12-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "隣の 部屋、静かだね。電気も 消えて いるし、出かけた みたいだね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "旅行かな。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q8.mp3",
+            "prompt": "隣《となり》の 人《ひと》は 出《で》かけた みたいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Tetangga sepertinya sedang pergi. → ○",
+                "en": "The neighbor seems to have gone out. → ○"
+            }
+        },
+        {
+            "id": "n3l12-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "「家族が みんな 元気で いられますように」って 短冊に 書いたよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q9.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 試験《しけん》の ことを 短冊《たんざく》に 書《か》きました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu menulis tentang ujian di tanzaku. → ×",
+                "en": "The woman wrote about her exam on the tanzaku. → ×"
+            }
+        },
+        {
+            "id": "n3l12-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "音が 下まで 聞こえるとは 思いませんでした。すみません。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "これから 気を つけて くださいね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-12/n3l12-q10.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 音《おと》が 下《した》まで 聞《き》こえると 思《おも》いませんでした。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu tidak menyangka suaranya terdengar sampai bawah. → ○",
+                "en": "The man did not think the sound would carry downstairs. → ○"
+            }
+        }
+    ]
+}

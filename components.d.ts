@@ -82,6 +82,7 @@ declare module 'vue' {
     ModeSwitch: typeof import('./resources/js/components/learning/ModeSwitch.vue')['default']
     MoreBtn: typeof import('./resources/js/@core/components/MoreBtn.vue')['default']
     MultipleChoiceQuestion: typeof import('./resources/js/components/learning/MultipleChoiceQuestion.vue')['default']
+    N3Reference: typeof import('./resources/js/components/lampiran/N3Reference.vue')['default']
     Notifications: typeof import('./resources/js/@core/components/Notifications.vue')['default']
     PaymentProvidersDialog: typeof import('./resources/js/components/dialogs/PaymentProvidersDialog.vue')['default']
     PricingPlanDialog: typeof import('./resources/js/components/dialogs/PricingPlanDialog.vue')['default']

@@ -11,14 +11,14 @@
 // masing-masing) — tinggal diisi begitu transkrip/kunci jawabannya ada.
 import RubyText from '@/components/learning/RubyText.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
-import { useLevelChoice } from '@/composables/useLevelChoice'
+import { PRACTICE_LEVEL_CODES, usePracticeLevel } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
 import { $api } from '@/utils/api'
 
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
 const authStore = useAuthStore()
-const { level: levelChoice } = useLevelChoice()
+const { level: levelChoice, setLevel: setPracticeLevel } = usePracticeLevel()
 
 // Some fields are plain Indonesian strings and some are { id, en } — same
 // convention as Mondaishuu, so this can be filled in gradually.
@@ -44,11 +44,15 @@ const LESSONS = Array.from({ length: 25 }, (_, i) => ({ id: i + 1 }))
 // Tambah nomor pelajaran N4 baru di sini.
 const N4_LESSON_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
 
-// 'l3' → { level: 'N5', n: 3 }, 'n4l1' → { level: 'N4', n: 1 }
-function parseKey(key) {
-  const m = /^(n4)?l(\d+)$/.exec(key ?? '')
+// N3: skrip di public/data/chokai/lesson-n3-{n}.json (id soal `n3l{n}-q{i}`, audio
+// /audio/chokai/lesson-n3-{n}/...). Kunci progres N3 = `n3l{n}`. Tambah nomor pelajaran N3 baru di sini.
+const N3_LESSON_IDS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
-  return m ? { level: m[1] ? 'N4' : 'N5', n: Number(m[2]) } : null
+// 'l3' → { level: 'N5', n: 3 }, 'n4l1' → { level: 'N4', n: 1 }, 'n3l1' → { level: 'N3', n: 1 }
+function parseKey(key) {
+  const m = /^(n[34])?l(\d+)$/.exec(key ?? '')
+
+  return m ? { level: m[1] ? m[1].toUpperCase() : 'N5', n: Number(m[2]) } : null
 }
 
 const loadedLessons = reactive({}) // dikunci per kunci progres ('l3', 'n4l1')
@@ -63,7 +67,7 @@ async function fetchLesson(key) {
   if (!info)
     throw new Error(`lesson ${key}: kunci tidak dikenal`)
 
-  const file = info.level === 'N4' ? `lesson-n4-${info.n}.json` : `lesson-${info.n}.json`
+  const file = info.level === 'N5' ? `lesson-${info.n}.json` : `lesson-${info.level.toLowerCase()}-${info.n}.json`
   const res = await fetch(`/data/chokai/${file}`, { cache: 'no-cache' })
   if (!res.ok)
     throw new Error(`lesson ${key}: HTTP ${res.status}`)
@@ -147,14 +151,19 @@ function statusFor(key) {
   return 'available'
 }
 
-const pathLessons = computed(() => levelChoice.value === 'N4'
-  ? N4_LESSON_IDS.map(n => ({ id: `n4l${n}`, n, ready: true, status: statusFor(`n4l${n}`) }))
-  : LESSONS.map(l => ({
-      id: `l${l.id}`,
-      n: l.id,
-      ready: AVAILABLE_LESSON_IDS.includes(l.id),
-      status: statusFor(`l${l.id}`),
-    })))
+const pathLessons = computed(() => {
+  if (levelChoice.value === 'N3')
+    return N3_LESSON_IDS.map(n => ({ id: `n3l${n}`, n, ready: true, status: statusFor(`n3l${n}`) }))
+  if (levelChoice.value === 'N4')
+    return N4_LESSON_IDS.map(n => ({ id: `n4l${n}`, n, ready: true, status: statusFor(`n4l${n}`) }))
+
+  return LESSONS.map(l => ({
+    id: `l${l.id}`,
+    n: l.id,
+    ready: AVAILABLE_LESSON_IDS.includes(l.id),
+    status: statusFor(`l${l.id}`),
+  }))
+})
 
 const activeKey = ref(null)
 const active = computed(() => (parseKey(activeKey.value) ? loadedLessons[activeKey.value] ?? null : null))
@@ -170,6 +179,8 @@ const nextLessonId = computed(() => {
   // N4: pelajaran berikutnya di daftar (nomornya boleh melompat, mis. 1 → 16).
   if (info.level === 'N4')
     return N4_LESSON_IDS[N4_LESSON_IDS.indexOf(info.n) + 1] ?? null
+  if (info.level === 'N3')
+    return N3_LESSON_IDS[N3_LESSON_IDS.indexOf(info.n) + 1] ?? null
 
   const n = info.n + 1
 
@@ -460,7 +471,7 @@ function restartQuiz() {
 // balik ke kartu pemilihan pelajaran dulu.
 function goToNextLesson() {
   if (nextLessonId.value)
-    startTab(`${parseKey(activeKey.value)?.level === 'N4' ? 'n4l' : 'l'}${nextLessonId.value}`)
+    startTab(`${{ N3: 'n3l', N4: 'n4l' }[parseKey(activeKey.value)?.level] ?? 'l'}${nextLessonId.value}`)
 }
 
 function backToSetup() {
@@ -484,10 +495,14 @@ onBeforeUnmount(clearAdvanceTimer)
       <h4 class="text-h4 mb-0">
         {{ t('chokai.title') }}
       </h4>
-      <LevelSwitch />
+      <LevelSwitch
+        :levels="PRACTICE_LEVEL_CODES"
+        :model-value="levelChoice"
+        @update:model-value="setPracticeLevel"
+      />
     </div>
     <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ levelChoice === 'N4' ? t('chokai.subtitle_n4') : t('chokai.subtitle') }}
+      {{ levelChoice === 'N3' ? t('chokai.subtitle_n3') : levelChoice === 'N4' ? t('chokai.subtitle_n4') : t('chokai.subtitle') }}
     </p>
 
     <div

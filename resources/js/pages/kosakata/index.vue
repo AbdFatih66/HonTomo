@@ -1,6 +1,8 @@
 <script setup>
 import { $api } from '@/utils/api'
 import { useLevelChoice } from '@/composables/useLevelChoice'
+import { toFurigana } from '@/utils/furigana'
+import RubyText from '@/components/learning/RubyText.vue'
 
 const { t, locale } = useI18n()
 const { level: sharedLevel, setLevel } = useLevelChoice()
@@ -244,17 +246,15 @@ onMounted(async () => {
             <thead>
               <tr>
                 <th>{{ t('vocabulary.col_japanese') }}</th>
-                <th>{{ t('vocabulary.col_hiragana') }}</th>
                 <th>{{ t('vocabulary.col_romaji') }}</th>
                 <th>{{ t('vocabulary.col_meaning') }}</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="w in filteredWords" :key="w.id">
-                <td class="text-h6 font-weight-medium">
-                  {{ w.japanese }}
+                <td class="text-h6 font-weight-medium kosakata-japanese">
+                  <RubyText :text="toFurigana(w.japanese, w.hiragana)" />
                 </td>
-                <td>{{ w.hiragana }}</td>
                 <td class="text-medium-emphasis">
                   {{ w.romaji }}
                 </td>
@@ -269,6 +269,11 @@ onMounted(async () => {
 </template>
 
 <style scoped>
+/* Beri ruang agar furigana di atas kanji tidak menabrak baris di atasnya. */
+.kosakata-japanese {
+  line-height: 2;
+}
+
 /* ---------- chapter selector — same visual language as kana/kanji ---------- */
 .kosakata-chapter-tabs {
   display: flex;

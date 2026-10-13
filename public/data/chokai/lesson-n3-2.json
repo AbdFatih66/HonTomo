@@ -1,0 +1,320 @@
+{
+    "id": "n3-2",
+    "level": "N3",
+    "focus": "N3 Pelajaran 2 — Vたら、〜た, Nというのは〜ことだ, …という〜, 〜ように 言う／注意する／頼む, Nみたいだ／みたいな／みたいに, お忙しい ところ",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "山本さん、お忙しいところ、すみません。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、何ですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "「アポ」というのは どういう 意味ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "人に 会う 約束の ことですよ。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。部長に 明日 来るように 言われました。"
+            },
+            {
+                "speaker": "male",
+                "text": "じゃ、アポを 取りましょう。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-2/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l2-kq1",
+                "prompt": "女《おんな》の 人《ひと》は 何《なに》を 聞《き》きましたか。",
+                "choices": [
+                    "部長《ぶちょう》の 名前《なまえ》",
+                    "「アポ」の 意味《いみ》",
+                    "明日《あした》の 天気《てんき》"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Apa yang ditanyakan perempuan itu? — Arti kata \"apo\".",
+                    "en": "What did the woman ask? — The meaning of \"apo\"."
+                }
+            },
+            {
+                "id": "n3l2-kq2",
+                "prompt": "「アポ」は どういう 意味《いみ》ですか。",
+                "choices": [
+                    "人《ひと》に 会《あ》う 約束《やくそく》",
+                    "長《なが》い 時間《じかん》",
+                    "会議室《かいぎしつ》"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Apa arti \"apo\"? — Janji bertemu orang.",
+                    "en": "What does \"apo\" mean? — An appointment to meet someone."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l2-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "薬を 飲んだら、頭痛は どうなりましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すぐに 楽に なりました。でも、会社に 着いて かばんを 開けたら、財布が なかったんです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それは 大変でしたね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》が かばんを 開《あ》けたら、どうでしたか。",
+            "choices": [
+                "薬《くすり》が ありました",
+                "頭痛《ずつう》が なおりました",
+                "財布《さいふ》が ありませんでした"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang terjadi saat laki-laki itu membuka tas? — Dompetnya tidak ada.",
+                "en": "What happened when the man opened his bag? — His wallet was not there."
+            }
+        },
+        {
+            "id": "n3l2-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "「定時」って 何ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "会社が 決めた 終わりの 時間の ことですよ。たとえば 五時です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q2.mp3",
+            "prompt": "「定時《ていじ》」は 何《なん》ですか。",
+            "choices": [
+                "長《なが》く 働《はたら》く 時間《じかん》",
+                "朝《あさ》の 時間《じかん》",
+                "会社《かいしゃ》が 決《き》めた 終《お》わりの 時間《じかん》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "\"Teiji\" itu apa? — Waktu berakhir yang ditetapkan perusahaan.",
+                "en": "What is \"teiji\"? — The closing time set by the company."
+            }
+        },
+        {
+            "id": "n3l2-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "駅の 前に 新しい デパートが できるという 話を 聞きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、来年 オープンするといううわさですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "楽しみですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q3.mp3",
+            "prompt": "デパートは いつ できますか。",
+            "choices": [
+                "今年《ことし》",
+                "来年《らいねん》",
+                "来月《らいげつ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kapan departemen store itu dibuka? — Tahun depan.",
+                "en": "When will the department store open? — Next year."
+            }
+        },
+        {
+            "id": "n3l2-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "部長は 何と おっしゃっていましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "明日までに 報告書を 出すように 言われました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 部長《ぶちょう》に 何《なに》を 言《い》われましたか。",
+            "choices": [
+                "資料《しりょう》を 読《よ》むように",
+                "報告書《ほうこくしょ》を 出《だ》すように",
+                "早《はや》く 帰《かえ》るように"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang dikatakan kepala bagian kepada perempuan itu? — Agar menyerahkan laporan.",
+                "en": "What did the department head tell the woman? — To submit the report."
+            }
+        },
+        {
+            "id": "n3l2-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "このジュース、飲んでみて。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "わあ、本物の 果物みたいな 味だね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "でしょう？水みたいに 軽くて、飲みやすいよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q5.mp3",
+            "prompt": "ジュースは どんな 味《あじ》ですか。",
+            "choices": [
+                "甘《あま》すぎます",
+                "本物《ほんもの》の 果物《くだもの》みたいな 味《あじ》です",
+                "水《みず》みたいに 重《おも》いです"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Bagaimana rasa jusnya? — Seperti buah asli.",
+                "en": "How does the juice taste? — Like real fruit."
+            }
+        },
+        {
+            "id": "n3l2-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "お忙しいところ、すみません。少し よろしいでしょうか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "いいえ、よろしいです。",
+                "はい、忙《いそが》しいです。",
+                "はい、何《なん》でしょうか。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Maaf mengganggu, bolehkah sebentar? — Ya, ada apa?",
+                "en": "Sorry to trouble you, may I have a moment? — Yes, what is it?"
+            }
+        },
+        {
+            "id": "n3l2-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "部屋に 入ったら、友達が 寝て いたんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "そうですか。寝《ね》て ください。",
+                "そうですか。入《はい》って ください。",
+                "そうですか。びっくりしましたね。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Saat masuk kamar, ternyata teman saya sedang tidur. — Begitu, pasti kaget, ya.",
+                "en": "When I entered the room, my friend was asleep. — I see, that must have been a surprise."
+            }
+        },
+        {
+            "id": "n3l2-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ドアを 開けたら、荷物が 届いて いたんです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "よかったですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q8.mp3",
+            "prompt": "荷物《にもつ》は もう 届《とど》いて いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Paket sudah sampai. → ○",
+                "en": "The package had already arrived. → ○"
+            }
+        },
+        {
+            "id": "n3l2-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先生に 教室で 食べないように 注意されました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "大変でしたね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q9.mp3",
+            "prompt": "先生《せんせい》は 教室《きょうしつ》で 食《た》べても いいと 言《い》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Guru bilang boleh makan di kelas. → ×",
+                "en": "The teacher said it is fine to eat in the classroom. → ×"
+            }
+        },
+        {
+            "id": "n3l2-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来週 台風が 来るというニュースを 見ました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "本当ですか。じゃ、旅行は 中止ですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-2/n3l2-q10.mp3",
+            "prompt": "台風《たいふう》は もう 来《き》ました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Topan sudah datang. → ×",
+                "en": "The typhoon has already come. → ×"
+            }
+        }
+    ]
+}

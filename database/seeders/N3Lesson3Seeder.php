@@ -88,6 +88,14 @@ class N3Lesson3Seeder extends N3LessonSeeder
             ['危険', 'きけん', 'kiken', 'bahaya', 'danger'],
             ['寝顔', 'ねがお', 'negao', 'wajah orang yang sedang tidur', 'face of a sleeping person'],
 
+            // Tambahan dari lembar latihan, bacaan, dan percakapan
+            ['迎える', 'むかえる', 'mukaeru', 'menjemput, menyambut', 'to meet, to welcome'],
+            ['調べる', 'しらべる', 'shiraberu', 'memeriksa, menyelidiki', 'to look into, to investigate'],
+            ['植える', 'うえる', 'ueru', 'menanam', 'to plant'],
+            ['悔しい', 'くやしい', 'kuyashii', 'kesal, penasaran', 'frustrating, vexing'],
+            ['止まる', 'とまる', 'tomaru', 'berhenti', 'to stop'],
+            ['終わる', 'おわる', 'owaru', 'selesai, berakhir', 'to end, to finish'],
+
             // Ungkapan
             ['お電話、代わりました。', 'おでんわ、かわりました。', 'odenwa kawarimashita', 'Halo, ini [nama] (telepon sudah dialihkan).', 'Hello, this is [name] speaking'],
             ['どうかしましたか。', 'どうかしましたか。', 'dou ka shimashita ka', 'Ada apa?', 'Is something the matter?'],

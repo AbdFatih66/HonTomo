@@ -3,7 +3,7 @@
 //
 // Urutan item MENGIKUTI ROADMAP BELAJAR, dari dasar sampai ujian:
 //   Dasbor → Kana → Tata Bahasa → Referensi Tata Bahasa → Kosakata → Kanji
-//   → Latihan Soal → Latihan Menulis → Latihan Menyimak → Percakapan → Tes JLPT
+//   → Latihan Soal → Latihan Menulis → Membaca → Latihan Menyimak → Percakapan → Tes JLPT
 // Menu admin selalu di paling bawah.
 export default [
   {
@@ -45,6 +45,11 @@ export default [
     title: 'nav.kaite_oboeru',
     to: { name: 'kaite-oboeru' },
     icon: { icon: 'tabler-writing-sign' },
+  },
+  {
+    title: 'nav.membaca',
+    to: { name: 'membaca' },
+    icon: { icon: 'tabler-book-2' },
   },
   {
     title: 'nav.chokai',

@@ -13,16 +13,17 @@
 // self-report step — same as Kana/Kanji, not like Mondaishuu's tap-to-check.
 import KaiteOboekuWritingCanvas from '@/components/learning/KaiteOboekuWritingCanvas.vue'
 import { useAutoNext } from '@/composables/useAutoNext'
-import { useLevelChoice } from '@/composables/useLevelChoice'
+import { PRACTICE_LEVEL_CODES, usePracticeLevel } from '@/composables/useLevelChoice'
 import { useAuthStore } from '@/stores/auth'
 import kanaStrokes from '@/data/kana-strokes.json'
+import { LESSONS_N3 } from '@/data/practice/kaiteOboeruN3'
 import { LESSONS_N4 } from '@/data/practice/kaiteOboeruN4'
 import { $api } from '@/utils/api'
 
 const { t, locale } = useI18n()
 const autoNext = useAutoNext()
 const authStore = useAuthStore()
-const { level: levelChoice } = useLevelChoice()
+const { level: levelChoice, setLevel: setPracticeLevel } = usePracticeLevel()
 
 // Every learner-facing string below is bilingual ({ id, en }); pick the
 // active one from the current UI locale instead of hardcoding Indonesian.
@@ -813,10 +814,10 @@ function statusFor(key) {
 
 const activeLesson = ref(null)
 
-// Daftar pelajaran sesuai selektor level. Kunci progres: N5 `l{id}`, N4 `n4l{id}`
-// (bank soal N4 ada di data/practice/kaiteOboeruN4.js).
-const lessons = computed(() => (levelChoice.value === 'N4' ? LESSONS_N4 : LESSONS))
-const keyOf = lesson => `${levelChoice.value === 'N4' ? 'n4l' : 'l'}${lesson.id}`
+// Daftar pelajaran sesuai selektor level. Kunci progres: N5 `l{id}`, N4 `n4l{id}`, N3 `n3l{id}`
+// (bank soal N4/N3 ada di data/practice/kaiteOboeruN4.js / kaiteOboeruN3.js).
+const lessons = computed(() => (levelChoice.value === 'N3' ? LESSONS_N3 : levelChoice.value === 'N4' ? LESSONS_N4 : LESSONS))
+const keyOf = lesson => `${levelChoice.value === 'N3' ? 'n3l' : levelChoice.value === 'N4' ? 'n4l' : 'l'}${lesson.id}`
 
 const STAGE_SETUP = 'setup'
 const STAGE_QUIZ = 'quiz'
@@ -1010,10 +1011,14 @@ onBeforeUnmount(clearAdvanceTimer)
       <h4 class="text-h4 mb-0">
         {{ t('kaite_oboeru.title') }}
       </h4>
-      <LevelSwitch />
+      <LevelSwitch
+        :levels="PRACTICE_LEVEL_CODES"
+        :model-value="levelChoice"
+        @update:model-value="setPracticeLevel"
+      />
     </div>
     <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ levelChoice === 'N4' ? t('kaite_oboeru.subtitle_n4') : t('kaite_oboeru.subtitle') }}
+      {{ levelChoice === 'N3' ? t('kaite_oboeru.subtitle_n3') : levelChoice === 'N4' ? t('kaite_oboeru.subtitle_n4') : t('kaite_oboeru.subtitle') }}
     </p>
 
     <!-- Ditunggu sampai progres selesai dimuat (progressLoaded) sebelum
