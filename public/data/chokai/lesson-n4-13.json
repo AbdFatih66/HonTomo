@@ -1,0 +1,310 @@
+{
+    "id": "n4-13",
+    "level": "N4",
+    "focus": "の sebagai pembentuk kata benda: Vのは／のが 〜です, Vのを 忘れました, 〜のを 知っていますか, 〜のは Ｎ です",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "ヌルさん、しゅみは 何ですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "しゃしんを とるのが 好きです。ブディさんは？"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしは りょうりを つくるのが 好きですが、毎日 つくるのは たいへんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですね。ときどき つくるのが たのしいですね。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、そう 思います。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-13/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l13-kq1",
+                "prompt": "女《おんな》の 人《ひと》は 何《なに》が 好《す》きですか。",
+                "choices": [
+                    "写真《しゃしん》を 撮《と》る",
+                    "料理《りょうり》を 作《つく》る",
+                    "絵《え》を かく"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang disukai wanita itu? — Memotret.",
+                    "en": "What does the woman like? — Taking photos."
+                }
+            },
+            {
+                "id": "n4l13-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なに》が たいへんだと 言《い》って いますか。",
+                "choices": [
+                    "毎日《まいにち》 料理《りょうり》を 作《つく》る",
+                    "写真《しゃしん》を 撮《と》る",
+                    "日本語《にほんご》を 話《はな》す"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang berat menurut pria itu? — Memasak setiap hari.",
+                    "en": "What does the man find hard? — Cooking every day."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l13-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ラニさん、泳ぐのが 好きですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、泳ぐのは 楽しいです。でも、わたしは 走るのが きらいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なに》が きらいですか。",
+            "choices": [
+                "走《はし》る こと",
+                "泳《およ》ぐ こと",
+                "歌《うた》う こと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang tidak disukai pria itu? — Berlari.",
+                "en": "What does the man dislike? — Running."
+            }
+        },
+        {
+            "id": "n4l13-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ヌルさん、うたは じょうずですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、うたうのは へたです。でも、聞くのは すきです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q2.mp3",
+            "prompt": "女《おんな》の 人《ひと》が 下手《へた》な ことは どれですか。",
+            "choices": [
+                "歌《うた》う こと",
+                "聞《き》く こと",
+                "料理《りょうり》を 作《つく》る こと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang tidak dikuasai wanita itu? — Menyanyi.",
+                "en": "What is the woman bad at? — Singing."
+            }
+        },
+        {
+            "id": "n4l13-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、かぎを かけましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あ、いけない！ かけるのを 忘れました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なに》を 忘《わす》れましたか。",
+            "choices": [
+                "かぎを かける こと",
+                "かぎを 持《も》つ こと",
+                "窓《まど》を 閉《し》める こと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang dilupakan pria itu? — Mengunci.",
+                "en": "What did the man forget? — To lock up."
+            }
+        },
+        {
+            "id": "n4l13-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした 工場が 休みなのを 知って いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、知りませんでした。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 工場《こうじょう》が 休《やす》みなのを 知《し》って いましたか。",
+            "choices": [
+                "いいえ、知《し》りませんでした",
+                "はい、前《まえ》から 知《し》って いました",
+                "工場《こうじょう》は 休《やす》みでは ありません"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apakah wanita itu tahu pabrik libur? — Tidak, baru tahu.",
+                "en": "Did the woman know the factory was closed? — No, she did not."
+            }
+        },
+        {
+            "id": "n4l13-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは どこで 生まれましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "生まれたのは 小さい 村です。ジャカルタに 来たのは 十年前です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q5.mp3",
+            "prompt": "男《おとこ》の 人《ひと》が ジャカルタに 来《き》たのは いつですか。",
+            "choices": [
+                "十年前《じゅうねんまえ》",
+                "一年前《いちねんまえ》",
+                "三年前《さんねんまえ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan pria itu datang ke Jakarta? — Sepuluh tahun lalu.",
+                "en": "When did the man come to Jakarta? — Ten years ago."
+            }
+        },
+        {
+            "id": "n4l13-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この 本を 読むのは むずかしいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、読むのは やさしいですが、全部 読むのは たいへんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q6.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なに》が たいへんだと 言《い》って いますか。",
+            "choices": [
+                "全部《ぜんぶ》 読《よ》む こと",
+                "本《ほん》を 買《か》う こと",
+                "漢字《かんじ》を 書《か》く こと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang berat menurut wanita itu? — Membaca semuanya.",
+                "en": "What does the woman find hard? — Reading all of it."
+            }
+        },
+        {
+            "id": "n4l13-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは 大阪で 生まれたんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、生まれたのは 京都です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q7.mp3",
+            "prompt": "男《おとこ》の 人《ひと》が 生《う》まれたのは どこですか。",
+            "choices": [
+                "京都《きょうと》",
+                "大阪《おおさか》",
+                "東京《とうきょう》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Di mana pria itu lahir? — Kyoto.",
+                "en": "Where was the man born? — Kyoto."
+            }
+        },
+        {
+            "id": "n4l13-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ヌルさん、日記を 書くのは 好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい。毎日 書くのは たいへんですが、書くのは 好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q8.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 日記《にっき》を 書《か》くのが 好《す》きです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Wanita itu suka menulis buku harian. — Benar (○).",
+                "en": "The woman likes writing a diary. — True (○)."
+            }
+        },
+        {
+            "id": "n4l13-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "けさ、でんきを けしましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、けすのを わすれました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 電気《でんき》を 消《け》しました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pria itu mematikan lampu. — Salah (×), dia lupa.",
+                "en": "The man turned off the light. — False (×); he forgot."
+            }
+        },
+        {
+            "id": "n4l13-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日本語で 話すのは 上手ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、話すのは 下手ですが、読むのは 好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-13/n4l13-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 日本語《にほんご》を 話《はな》すのが 上手《じょうず》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Wanita itu pandai berbicara bahasa Jepang. — Salah (×).",
+                "en": "The woman is good at speaking Japanese. — False (×)."
+            }
+        }
+    ]
+}

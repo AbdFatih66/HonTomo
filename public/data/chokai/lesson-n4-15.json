@@ -1,0 +1,302 @@
+{
+    "id": "n4-15",
+    "level": "N4",
+    "focus": "疑問詞《ぎもんし》＋か、〜かどうか、〜てみます、〜さ、〜でしょうか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "リナさん、あしたの会議が何時に始まるか、知っていますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいえ、わかりません。課長に聞いてみます。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとうございます。会議室がどこか、確かめてください。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい。三階かどうか、行ってみます。"
+            },
+            {
+                "speaker": "male",
+                "text": "お願いします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-15/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l15-kq1",
+                "prompt": "リナさんは だれに 聞《き》いて みますか。",
+                "choices": [
+                    "課長《かちょう》",
+                    "部長《ぶちょう》",
+                    "先生《せんせい》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Rina akan bertanya kepada kepala seksi.",
+                    "en": "Rina will ask the section chief."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l15-kq2",
+                "prompt": "リナさんは 何《なに》を 確《たし》かめに 行《い》きますか。",
+                "choices": [
+                    "会議室《かいぎしつ》が 三階《さんがい》か どうか",
+                    "会議《かいぎ》が 何時《なんじ》か",
+                    "課長《かちょう》が いるか どうか"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Rina akan mengecek apakah ruang rapat ada di lantai tiga.",
+                    "en": "Rina will go and check whether the meeting room is on the third floor."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l15-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この川の長さは、四百キロです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q1.mp3",
+            "prompt": "この 川《かわ》の 長《なが》さは どのくらいですか。",
+            "choices": [
+                "400キロ",
+                "300キロ",
+                "500キロ"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Panjang sungai ini 400 kilometer.",
+                "en": "This river is 400 kilometres long."
+            }
+        },
+        {
+            "id": "n4l15-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、この荷物の重さは、どのくらいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "二キロです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q2.mp3",
+            "prompt": "荷物《にもつ》の 重《おも》さは どのくらいですか。",
+            "choices": [
+                "2キロ",
+                "3キロ",
+                "12キロ"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Berat paket ini dua kilogram.",
+                "en": "The package weighs two kilograms."
+            }
+        },
+        {
+            "id": "n4l15-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、新幹線は何時に東京に到着しますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "午後三時に到着する予定です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q3.mp3",
+            "prompt": "新幹線《しんかんせん》は 何時《なんじ》に 到着《とうちゃく》しますか。",
+            "choices": [
+                "午後《ごご》三時《さんじ》",
+                "午後《ごご》二時《にじ》",
+                "午前《ごぜん》三時《さんじ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Shinkansen tiba pukul tiga sore.",
+                "en": "The Shinkansen arrives at three in the afternoon."
+            }
+        },
+        {
+            "id": "n4l15-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この靴、はいてみてもいいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、どうぞ。サイズが合うかどうか、見てください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なに》を 見《み》て ください と 言《い》いましたか。",
+            "choices": [
+                "サイズが 合《あ》うか どうか",
+                "色《いろ》が いいか どうか",
+                "値段《ねだん》が 高《たか》いか どうか"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia meminta agar dicek apakah ukurannya cocok.",
+                "en": "She asked him to check whether the size fits."
+            }
+        },
+        {
+            "id": "n4l15-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "忘年会に来るかどうか、二十日までに返事をください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、二十日までにメールします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q5.mp3",
+            "prompt": "忘年会《ぼうねんかい》の 返事《へんじ》は いつまでですか。",
+            "choices": [
+                "二十日《はつか》",
+                "十二日《じゅうににち》",
+                "二日《ふつか》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jawaban untuk pesta akhir tahun paling lambat tanggal 20.",
+                "en": "The reply for the year-end party is due by the 20th."
+            }
+        },
+        {
+            "id": "n4l15-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、この魚が新しいかどうか、わかりますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、わかりません。店の人に聞いてみます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q6.mp3",
+            "prompt": "ケンさんは この 魚《さかな》が 新《あたら》しいか どうか わかります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Salah. Ken tidak tahu dan akan bertanya kepada penjual.",
+                "en": "False. Ken does not know and will ask the shop staff."
+            }
+        },
+        {
+            "id": "n4l15-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさん、山の高さは、どうやって測りますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "インターネットで調べてみます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q7.mp3",
+            "prompt": "リナさんは インターネットで 調《しら》べて みます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar. Rina akan mencari tahu lewat internet.",
+                "en": "True. Rina will look it up on the internet."
+            }
+        },
+        {
+            "id": "n4l15-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "部長、会議は何時に始まるか、確かめましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、三時に始まります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q8.mp3",
+            "prompt": "会議《かいぎ》は 三時《さんじ》に 始《はじ》まります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar. Rapat dimulai pukul tiga.",
+                "en": "True. The meeting starts at three."
+            }
+        },
+        {
+            "id": "n4l15-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きのうの忘年会で、お酒を飲んで酔いました。何を話したか、覚えていません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は きのう 何《なに》を 話《はな》したか 覚《おぼ》えて います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Salah. Ia mabuk dan tidak ingat apa yang dibicarakan.",
+                "en": "False. He got drunk and does not remember what he said."
+            }
+        },
+        {
+            "id": "n4l15-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この辞書の大きさは、どのくらいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "長さが二十センチです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-15/n4l15-q10.mp3",
+            "prompt": "辞書《じしょ》の 長《なが》さは 20センチです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar. Panjang kamus itu 20 sentimeter.",
+                "en": "True. The dictionary is 20 centimetres long."
+            }
+        }
+    ]
+}

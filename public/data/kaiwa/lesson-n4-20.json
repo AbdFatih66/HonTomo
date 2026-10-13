@@ -1,0 +1,390 @@
+{
+    "id": 20,
+    "level": "N4",
+    "title_id": "Pelajaran 20: Bagaimana Caranya Jika Salah Jalur?",
+    "title_en": "Lesson 20: What If I Take the Wrong Route?",
+    "scenarios": [
+        {
+            "id": "n4l20-s1",
+            "title_id": "Aturan di acara jalan sehat",
+            "title_en": "Rules at a walking event",
+            "setting_id": "Petugas menjelaskan aturan sebelum acara jalan sehat.",
+            "setting_en": "A staff member explains the rules before a walking event.",
+            "goal_id": "Bertanya apa yang harus dilakukan dengan 〜場合は.",
+            "goal_en": "Ask what to do using 〜場合は.",
+            "patterns": [
+                "〜場合は、〜て ください"
+            ],
+            "partner": {
+                "name": "いのうえ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l20-s1-t1",
+                    "who": "partner",
+                    "ja": "これから ウォーキングを 始《はじ》めます。気分《きぶん》が 悪《わる》い 場合《ばあい》は、係員《かかりいん》に 言《い》って ください。",
+                    "speak": "これから ウォーキングを はじめます。きぶんが わるい ばあいは、かかりいんに いって ください。",
+                    "id_text": "Acara jalan sehat dimulai. Kalau kurang enak badan, katakan kepada petugas.",
+                    "en_text": "The walk is about to start. If you feel unwell, tell a staff member.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l20-s1-t2",
+                    "who": "you",
+                    "ja": "はい、わかりました。道《みち》に 迷《まよ》った 場合《ばあい》は、どう すれば いいですか。",
+                    "speak": "はい、わかりました。みちに まよった ばあいは、どう すれば いいですか。",
+                    "id_text": "Baik. Kalau tersesat, bagaimana sebaiknya?",
+                    "en_text": "Yes, understood. If I get lost, what should I do?",
+                    "accept": [
+                        "はい、わかりました。道に迷った場合は、どうすればいいですか。",
+                        "はい、わかりました。みちにまよったばあいは、どうすればいいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l20-s1-t3",
+                    "who": "partner",
+                    "ja": "迷《まよ》った 場合《ばあい》は、さっきの 所《ところ》に 戻《もど》って ください。",
+                    "speak": "まよった ばあいは、さっきの ところに もどって ください。",
+                    "id_text": "Kalau tersesat, kembalilah ke tempat tadi.",
+                    "en_text": "If you get lost, please go back to the place from before.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l20-s1-t4",
+                    "who": "you",
+                    "ja": "途中《とちゅう》で やめたい 場合《ばあい》は？",
+                    "speak": "とちゅうで やめたい ばあいは？",
+                    "id_text": "Kalau ingin berhenti di tengah jalan?",
+                    "en_text": "And if I want to stop halfway?",
+                    "accept": [
+                        "途中でやめたい場合は？",
+                        "とちゅうでやめたいばあいは？"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l20-s1-t5",
+                    "who": "partner",
+                    "ja": "その 場合《ばあい》は、近《ちか》くの 係員《かかりいん》に 名前《なまえ》を 言《い》ってから、帰《かえ》って ください。",
+                    "speak": "その ばあいは、ちかくの かかりいんに なまえを いってから、かえって ください。",
+                    "id_text": "Dalam hal itu, sebutkan nama kepada petugas terdekat, lalu pulanglah.",
+                    "en_text": "In that case, tell the nearest staff member your name, then go home.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l20-s1-t6",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Saya mengerti. Terima kasih.",
+                    "en_text": "Understood. Thank you.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l20-s1-t7",
+                    "who": "partner",
+                    "ja": "では、スタートしましょう。",
+                    "speak": "では、スタートしましょう。",
+                    "id_text": "Baiklah, mari kita mulai.",
+                    "en_text": "Well then, let us start.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l20-s2",
+            "title_id": "Garansi dan kuitansi",
+            "title_en": "Warranty and receipt",
+            "setting_id": "Kamu membeli komputer di toko elektronik.",
+            "setting_en": "You buy a computer at an electronics shop.",
+            "goal_id": "Memahami petunjuk 〜場合は dan meminta kuitansi.",
+            "goal_en": "Understand 〜場合は instructions and ask for a receipt.",
+            "patterns": [
+                "〜場合は、〜て ください"
+            ],
+            "partner": {
+                "name": "ゴメス",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l20-s2-t1",
+                    "who": "partner",
+                    "ja": "お買《か》い上《あ》げ ありがとうございます。パソコンの 調子《ちょうし》が 悪《わる》い 場合《ばあい》は、この 保証書《ほしょうしょ》を 持《も》って 来《き》て ください。",
+                    "speak": "おかいあげ ありがとうございます。パソコンの ちょうしが わるい ばあいは、この ほしょうしょを もって きて ください。",
+                    "id_text": "Terima kasih telah membeli. Kalau kondisi komputer kurang baik, bawa surat garansi ini.",
+                    "en_text": "Thank you for your purchase. If the computer is not working well, please bring this warranty card.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l20-s2-t2",
+                    "who": "you",
+                    "ja": "ありがとうございます。領収書《りょうしゅうしょ》も もらえますか。",
+                    "speak": "ありがとうございます。りょうしゅうしょも もらえますか。",
+                    "id_text": "Terima kasih. Bolehkah saya minta kuitansi juga?",
+                    "en_text": "Thank you. Could I also have a receipt?",
+                    "accept": [
+                        "ありがとうございます。領収書ももらえますか。",
+                        "ありがとうございます。りょうしゅうしょももらえますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l20-s2-t3",
+                    "who": "partner",
+                    "ja": "はい。お名前《なまえ》を 教《おし》えて ください。",
+                    "speak": "はい。おなまえを おしえて ください。",
+                    "id_text": "Baik. Tolong beri tahu nama Anda.",
+                    "en_text": "Yes. Please tell me your name.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l20-s2-t4",
+                    "who": "you",
+                    "ja": "ブディです。",
+                    "speak": "ブディです。",
+                    "id_text": "Budi.",
+                    "en_text": "It is Budi.",
+                    "accept": [
+                        "ブディです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l20-s2-t5",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。領収書《りょうしゅうしょ》が もう 一枚《いちまい》 必要《ひつよう》な 場合《ばあい》は、言《い》って ください。",
+                    "speak": "はい、どうぞ。りょうしゅうしょが もう いちまい ひつような ばあいは、いって ください。",
+                    "id_text": "Silakan. Kalau perlu satu kuitansi lagi, katakan saja.",
+                    "en_text": "Here you are. If you need another receipt, please say so.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l20-s2-t6",
+                    "who": "you",
+                    "ja": "わかりました。",
+                    "speak": "わかりました。",
+                    "id_text": "Saya mengerti.",
+                    "en_text": "Understood.",
+                    "accept": [
+                        "わかりました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l20-s2-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございました。",
+                    "speak": "ありがとうございました。",
+                    "id_text": "Terima kasih banyak.",
+                    "en_text": "Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l20-s3",
+            "title_id": "Kecewa karena weker",
+            "title_en": "Disappointed about the alarm",
+            "setting_id": "Temanmu melihat kamu tampak lesu.",
+            "setting_en": "Your friend sees that you look tired.",
+            "goal_id": "Mengungkapkan rasa kecewa dengan 〜のに.",
+            "goal_en": "Express disappointment with 〜のに.",
+            "patterns": [
+                "〜のに、〜"
+            ],
+            "partner": {
+                "name": "ハンナ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l20-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、元気《げんき》が ないですね。どう しましたか。",
+                    "speak": "ブディさん、げんきが ないですね。どう しましたか。",
+                    "id_text": "Budi, kamu tampak lesu. Ada apa?",
+                    "en_text": "Budi, you look down. What is wrong?",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l20-s3-t2",
+                    "who": "you",
+                    "ja": "目覚《めざ》ましを セットしたのに、起《お》きられませんでした。",
+                    "speak": "めざましを セットしたのに、おきられませんでした。",
+                    "id_text": "Padahal sudah memasang weker, saya tidak bisa bangun.",
+                    "en_text": "I set the alarm clock, but I could not get up.",
+                    "accept": [
+                        "目覚ましをセットしたのに、起きられませんでした。",
+                        "めざましをセットしたのに、おきられませんでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l20-s3-t3",
+                    "who": "partner",
+                    "ja": "目覚《めざ》ましは 鳴《な》らなかったんですか。",
+                    "speak": "めざましは ならなかったんですか。",
+                    "id_text": "Apakah wekernya tidak berbunyi?",
+                    "en_text": "Did the alarm not ring?",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l20-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、鳴《な》ったのに、聞《き》こえなかったんです。",
+                    "speak": "いいえ、なったのに、きこえなかったんです。",
+                    "id_text": "Tidak, padahal berbunyi, saya tidak mendengarnya.",
+                    "en_text": "No, it rang, yet I did not hear it.",
+                    "accept": [
+                        "いいえ、鳴ったのに、聞こえなかったんです。",
+                        "いいえ、なったのに、きこえなかったんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l20-s3-t5",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》でしたね。",
+                    "speak": "それは たいへんでしたね。",
+                    "id_text": "Wah, itu repot sekali, ya.",
+                    "en_text": "That must have been tough.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l20-s3-t6",
+                    "who": "you",
+                    "ja": "昨日《きのう》は 早《はや》く 寝《ね》たのに、まだ 眠《ねむ》いです。",
+                    "speak": "きのうは はやく ねたのに、まだ ねむいです。",
+                    "id_text": "Kemarin padahal tidur lebih awal, saya masih mengantuk.",
+                    "en_text": "Even though I went to bed early yesterday, I am still sleepy.",
+                    "accept": [
+                        "昨日は早く寝たのに、まだ眠いです。",
+                        "きのうははやくねたのに、まだねむいです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l20-s3-t7",
+                    "who": "partner",
+                    "ja": "ゆっくり 休《やす》んで ください。",
+                    "speak": "ゆっくり やすんで ください。",
+                    "id_text": "Istirahatlah dengan tenang.",
+                    "en_text": "Please rest well.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l20-s4",
+            "title_id": "Hasil lomba lari",
+            "title_en": "Race result",
+            "setting_id": "Temanmu bertanya tentang lomba lari kemarin.",
+            "setting_en": "Your friend asks about yesterday race.",
+            "goal_id": "Menceritakan hasil dengan のに dan berharap lain kali.",
+            "goal_en": "Tell the result with のに and express hope for next time.",
+            "patterns": [
+                "〜のに、〜",
+                "〜たいです"
+            ],
+            "partner": {
+                "name": "もり",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l20-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、マラソンは どうでしたか。",
+                    "speak": "ブディさん、マラソンは どうでしたか。",
+                    "id_text": "Budi, bagaimana lomba lari kemarin?",
+                    "en_text": "Budi, how was the marathon?",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l20-s4-t2",
+                    "who": "you",
+                    "ja": "二位《にい》でした。",
+                    "speak": "にいでした。",
+                    "id_text": "Juara dua.",
+                    "en_text": "I came second.",
+                    "accept": [
+                        "二位でした。",
+                        "にいでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l20-s4-t3",
+                    "who": "partner",
+                    "ja": "二位《にい》ですか。すごいですね。",
+                    "speak": "にいですか。すごいですね。",
+                    "id_text": "Juara dua? Hebat!",
+                    "en_text": "Second place? That is great.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l20-s4-t4",
+                    "who": "you",
+                    "ja": "たくさん 練習《れんしゅう》したのに、一位《いちい》じゃ ありませんでした。",
+                    "speak": "たくさん れんしゅうしたのに、いちいじゃ ありませんでした。",
+                    "id_text": "Padahal sudah banyak berlatih, saya tidak juara satu.",
+                    "en_text": "Although I practised a lot, I was not first.",
+                    "accept": [
+                        "たくさん練習したのに、一位じゃありませんでした。",
+                        "たくさんれんしゅうしたのに、いちいじゃありませんでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l20-s4-t5",
+                    "who": "partner",
+                    "ja": "でも、来年《らいねん》も 機会《きかい》が ありますよ。",
+                    "speak": "でも、らいねんも きかいが ありますよ。",
+                    "id_text": "Tapi tahun depan masih ada kesempatan.",
+                    "en_text": "But there will be another chance next year.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l20-s4-t6",
+                    "who": "you",
+                    "ja": "そうですね。来年《らいねん》は 優勝《ゆうしょう》したいです。",
+                    "speak": "そうですね。らいねんは ゆうしょうしたいです。",
+                    "id_text": "Benar. Tahun depan saya ingin menang.",
+                    "en_text": "You are right. Next year I want to win.",
+                    "accept": [
+                        "そうですね。来年は優勝したいです。",
+                        "そうですね。らいねんはゆうしょうしたいです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l20-s4-t7",
+                    "who": "partner",
+                    "ja": "がんばって ください。",
+                    "speak": "がんばって ください。",
+                    "id_text": "Semangat, ya.",
+                    "en_text": "Do your best.",
+                    "audio": "/audio/kaiwa/lesson-n4-20/n4l20-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

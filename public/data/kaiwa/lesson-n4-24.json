@@ -1,0 +1,348 @@
+{
+    "id": 24,
+    "level": "N4",
+    "title_id": "Bahasa Hormat",
+    "title_en": "Honorific Language",
+    "scenarios": [
+        {
+            "id": "n4l24-s1",
+            "title_id": "Di meja resepsionis",
+            "title_en": "At the reception desk",
+            "setting_id": "Kantor tamu di perusahaan.",
+            "setting_en": "A visitor reception desk.",
+            "goal_id": "Menanyakan atasan dengan いらっしゃいますか dan お〜ください.",
+            "goal_en": "Ask for a superior with irasshaimasu ka and o~kudasai.",
+            "patterns": [
+                "いらっしゃいます",
+                "お Ｖます形 ください"
+            ],
+            "partner": {
+                "name": "受付",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l24-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。 どちらさまでしょうか。",
+                    "speak": "いらっしゃいませ。 どちらさまでしょうか。",
+                    "id_text": "Selamat datang. Dengan siapa, ya?",
+                    "en_text": "Welcome. May I ask who you are?",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l24-s1-t2",
+                    "who": "you",
+                    "ja": "ブディです。 営業部《えいぎょうぶ》の 山田部長《やまだぶちょう》は いらっしゃいますか。",
+                    "speak": "ブディです。 えいぎょうぶの やまだぶちょうは いらっしゃいますか。",
+                    "id_text": "Saya Budi. Apakah Kepala Bagian Yamada dari bagian penjualan ada?",
+                    "en_text": "I'm Budi. Is Manager Yamada of Sales in?",
+                    "accept": [
+                        "ブディです。営業部の山田部長はいらっしゃいますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l24-s1-t3",
+                    "who": "partner",
+                    "ja": "はい、いらっしゃいます。 こちらで お待《ま》ち ください。",
+                    "speak": "はい、いらっしゃいます。 こちらで おまち ください。",
+                    "id_text": "Ya, beliau ada. Silakan menunggu di sini.",
+                    "en_text": "Yes, he is in. Please wait here.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l24-s1-t4",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l24-s1-t5",
+                    "who": "partner",
+                    "ja": "部長《ぶちょう》は ただいま 電話中《でんわちゅう》です。 どうぞ お掛《か》け ください。",
+                    "speak": "ぶちょうは ただいま でんわちゅうです。 どうぞ おかけ ください。",
+                    "id_text": "Beliau sedang menelepon. Silakan duduk.",
+                    "en_text": "He is on the phone now. Please have a seat.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l24-s1-t6",
+                    "who": "you",
+                    "ja": "はい、失礼《しつれい》します。",
+                    "speak": "はい、しつれいします。",
+                    "id_text": "Baik, permisi.",
+                    "en_text": "Yes, excuse me.",
+                    "accept": [
+                        "はい、失礼します。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l24-s2",
+            "title_id": "Mempersilakan guru",
+            "title_en": "Offering tea to a teacher",
+            "setting_id": "Di ruang tamu rumah, guru berkunjung.",
+            "setting_en": "In a living room, a teacher visits.",
+            "goal_id": "Memakai 召し上がります untuk menawarkan makanan/minuman.",
+            "goal_en": "Use meshiagarimasu to offer food and drink.",
+            "patterns": [
+                "召《め》し上《あ》がります"
+            ],
+            "partner": {
+                "name": "先生",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l24-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、おはようございます。",
+                    "speak": "ブディさん、おはようございます。",
+                    "id_text": "Budi, selamat pagi.",
+                    "en_text": "Good morning, Budi.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l24-s2-t2",
+                    "who": "you",
+                    "ja": "おはようございます。 先生《せんせい》、お茶《ちゃ》を 召《め》し上《あ》がりますか。",
+                    "speak": "おはようございます。 せんせい、おちゃを めしあがりますか。",
+                    "id_text": "Selamat pagi. Guru, apakah mau minum teh?",
+                    "en_text": "Good morning. Teacher, would you like some tea?",
+                    "accept": [
+                        "おはようございます。先生、お茶を召し上がりますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l24-s2-t3",
+                    "who": "partner",
+                    "ja": "ええ、いただきます。",
+                    "speak": "ええ、いただきます。",
+                    "id_text": "Ya, terima kasih.",
+                    "en_text": "Yes, thank you.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l24-s2-t4",
+                    "who": "you",
+                    "ja": "どうぞ 召《め》し上《あ》がって ください。",
+                    "speak": "どうぞ めしあがって ください。",
+                    "id_text": "Silakan diminum.",
+                    "en_text": "Please, help yourself.",
+                    "accept": [
+                        "どうぞ召し上がってください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l24-s2-t5",
+                    "who": "partner",
+                    "ja": "ありがとう。 おいしいですね。",
+                    "speak": "ありがとう。 おいしいですね。",
+                    "id_text": "Terima kasih. Enak ya.",
+                    "en_text": "Thank you. It's delicious.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l24-s2-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih kembali.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l24-s3",
+            "title_id": "Menanyakan kabar direktur",
+            "title_en": "Asking about the president",
+            "setting_id": "Di kantor, bersama rekan kerja senior.",
+            "setting_en": "At the office with a senior coworker.",
+            "goal_id": "Memakai Ｖれる dan お〜に なります untuk atasan.",
+            "goal_en": "Use V-reru and o~ni narimasu for a superior.",
+            "patterns": [
+                "Ｖれます",
+                "お Ｖます形 に なります"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l24-s3-t1",
+                    "who": "partner",
+                    "ja": "社長《しゃちょう》は きのう どこへ いらっしゃいましたか。",
+                    "speak": "しゃちょうは きのう どこへ いらっしゃいましたか。",
+                    "id_text": "Direktur utama kemarin pergi ke mana?",
+                    "en_text": "Where did the president go yesterday?",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l24-s3-t2",
+                    "who": "you",
+                    "ja": "大阪《おおさか》へ 行《い》かれました。",
+                    "speak": "おおさかへ いかれました。",
+                    "id_text": "Beliau pergi ke Osaka.",
+                    "en_text": "He went to Osaka.",
+                    "accept": [
+                        "大阪へ行かれました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l24-s3-t3",
+                    "who": "partner",
+                    "ja": "いつ お帰《かえ》りに なりますか。",
+                    "speak": "いつ おかえりに なりますか。",
+                    "id_text": "Kapan beliau pulang?",
+                    "en_text": "When will he be back?",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l24-s3-t4",
+                    "who": "you",
+                    "ja": "あしたの 夕方《ゆうがた》 お帰《かえ》りに なります。",
+                    "speak": "あしたの ゆうがた おかえりに なります。",
+                    "id_text": "Beliau pulang besok sore.",
+                    "en_text": "He will be back tomorrow evening.",
+                    "accept": [
+                        "あしたの夕方お帰りになります。",
+                        "明日の夕方お帰りになります。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l24-s3-t5",
+                    "who": "partner",
+                    "ja": "そうですか。 ありがとう。",
+                    "speak": "そうですか。 ありがとう。",
+                    "id_text": "Begitu ya. Terima kasih.",
+                    "en_text": "I see. Thank you.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l24-s3-t6",
+                    "who": "you",
+                    "ja": "いいえ、どういたしまして。",
+                    "speak": "いいえ、どういたしまして。",
+                    "id_text": "Sama-sama.",
+                    "en_text": "Not at all.",
+                    "accept": [
+                        "いいえ、どういたしまして。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l24-s4",
+            "title_id": "Menelepon sekolah",
+            "title_en": "Phoning the school",
+            "setting_id": "Menelepon sekolah anak.",
+            "setting_en": "Calling a child's school.",
+            "goal_id": "Memakai 〜まして／〜ますので dan よろしく お伝え ください.",
+            "goal_en": "Use ~mashite / ~masu node and yoroshiku otsutae kudasai.",
+            "patterns": [
+                "〜まして",
+                "〜ますので"
+            ],
+            "partner": {
+                "name": "先生",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l24-s4-t1",
+                    "who": "partner",
+                    "ja": "はい、さくら小学校《しょうがっこう》です。",
+                    "speak": "はい、さくらしょうがっこうです。",
+                    "id_text": "Ya, Sekolah Dasar Sakura.",
+                    "en_text": "Hello, Sakura Elementary School.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l24-s4-t2",
+                    "who": "you",
+                    "ja": "もしもし、ブディです。 きのう 風邪《かぜ》を ひきまして、むすめが 学校《がっこう》を 休《やす》みました。",
+                    "speak": "もしもし、ブディです。 きのう かぜを ひきまして、むすめが がっこうを やすみました。",
+                    "id_text": "Halo, saya Budi. Kemarin putri saya terkena flu sehingga tidak masuk sekolah.",
+                    "en_text": "Hello, this is Budi. My daughter caught a cold yesterday and missed school.",
+                    "accept": [
+                        "もしもし、ブディです。きのう風邪をひきまして、娘が学校を休みました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l24-s4-t3",
+                    "who": "partner",
+                    "ja": "それは いけませんね。 もう 元気《げんき》ですか。",
+                    "speak": "それは いけませんね。 もう げんきですか。",
+                    "id_text": "Aduh. Apakah sekarang sudah sehat?",
+                    "en_text": "Oh dear. Is she well now?",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l24-s4-t4",
+                    "who": "you",
+                    "ja": "はい、きょうは 元気《げんき》です。 先生《せんせい》に よろしく お伝《つた》え ください。",
+                    "speak": "はい、きょうは げんきです。 せんせいに よろしく おつたえ ください。",
+                    "id_text": "Ya, hari ini sudah sehat. Tolong sampaikan salam saya kepada guru.",
+                    "en_text": "Yes, she is fine today. Please give my regards to her teacher.",
+                    "accept": [
+                        "はい、今日は元気です。先生によろしくお伝えください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l24-s4-t5",
+                    "who": "partner",
+                    "ja": "わかりました。",
+                    "speak": "わかりました。",
+                    "id_text": "Baik.",
+                    "en_text": "Understood.",
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l24-s4-t6",
+                    "who": "you",
+                    "ja": "失礼《しつれい》いたします。",
+                    "speak": "しつれいいたします。",
+                    "id_text": "Permisi.",
+                    "en_text": "Goodbye.",
+                    "accept": [
+                        "失礼いたします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-24/n4l24-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

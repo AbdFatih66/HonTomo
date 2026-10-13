@@ -1,0 +1,349 @@
+{
+    "id": 2,
+    "level": "N4",
+    "title_id": "Kata Kerja Potensial",
+    "title_en": "Potential Verbs",
+    "scenarios": [
+        {
+            "id": "n4l2-s1",
+            "title_id": "Bisa main piano?",
+            "title_en": "Can you play the piano?",
+            "setting_id": "Di ruang musik kantor, bersama rekan kerja.",
+            "setting_en": "In the office music room with a coworker.",
+            "goal_id": "Menanyakan dan menjawab kemampuan memakai bentuk potensial.",
+            "goal_en": "Ask and answer about ability with the potential form.",
+            "patterns": [
+                "Ｖ(potensial)ます／ません"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l2-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは ピアノが ひけますか。",
+                    "speak": "ブディさんは ピアノが ひけますか。",
+                    "id_text": "Budi, apakah kamu bisa main piano?",
+                    "en_text": "Budi, can you play the piano?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l2-s1-t2",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し ひけます。",
+                    "speak": "はい、すこし ひけます。",
+                    "id_text": "Ya, saya bisa sedikit.",
+                    "en_text": "Yes, I can play a little.",
+                    "accept": [
+                        "はい、少し弾けます。",
+                        "はい、すこし弾けます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l2-s1-t3",
+                    "who": "partner",
+                    "ja": "すごいですね。 日本語《にほんご》の 歌《うた》も ひけますか。",
+                    "speak": "すごいですね。 にほんごの うたも ひけますか。",
+                    "id_text": "Hebat ya. Lagu berbahasa Jepang juga bisa?",
+                    "en_text": "Great. Can you play Japanese songs too?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l2-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、まだ ひけません。",
+                    "speak": "いいえ、まだ ひけません。",
+                    "id_text": "Belum, saya belum bisa.",
+                    "en_text": "No, I can't yet.",
+                    "accept": [
+                        "いいえ、まだ弾けません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l2-s1-t5",
+                    "who": "partner",
+                    "ja": "じゃ、いっしょに 練習《れんしゅう》しましょう。",
+                    "speak": "じゃ、いっしょに れんしゅうしましょう。",
+                    "id_text": "Kalau begitu, ayo berlatih bersama.",
+                    "en_text": "Then let's practice together.",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l2-s1-t6",
+                    "who": "you",
+                    "ja": "はい、おねがいします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, mohon bantuannya.",
+                    "en_text": "Yes, please.",
+                    "accept": [
+                        "はい、お願いします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l2-s2",
+            "title_id": "Pemandangan dan suara",
+            "title_en": "Scenery and sounds",
+            "setting_id": "Di atap gedung apartemen.",
+            "setting_en": "On the roof of an apartment building.",
+            "goal_id": "Memakai 見えます dan 聞こえます untuk hal yang terlihat/terdengar dengan sendirinya.",
+            "goal_en": "Use miemasu and kikoemasu for things seen/heard naturally.",
+            "patterns": [
+                "Ｎが 見えます",
+                "Ｎが 聞こえます"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l2-s2-t1",
+                    "who": "partner",
+                    "ja": "ここから 富士山《ふじさん》が 見《み》えますか。",
+                    "speak": "ここから ふじさんが みえますか。",
+                    "id_text": "Apakah Gunung Fuji terlihat dari sini?",
+                    "en_text": "Can you see Mt. Fuji from here?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l2-s2-t2",
+                    "who": "you",
+                    "ja": "はい、よく 見《み》えます。",
+                    "speak": "はい、よく みえます。",
+                    "id_text": "Ya, terlihat jelas.",
+                    "en_text": "Yes, I can see it well.",
+                    "accept": [
+                        "はい、よく見えます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l2-s2-t3",
+                    "who": "partner",
+                    "ja": "あそこの 公園《こうえん》から 歌《うた》が 聞《き》こえますね。",
+                    "speak": "あそこの こうえんから うたが きこえますね。",
+                    "id_text": "Dari taman di sana terdengar nyanyian ya.",
+                    "en_text": "I can hear singing from that park.",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l2-s2-t4",
+                    "who": "you",
+                    "ja": "ええ、よく 聞《き》こえます。",
+                    "speak": "ええ、よく きこえます。",
+                    "id_text": "Ya, terdengar jelas.",
+                    "en_text": "Yes, I can hear it well.",
+                    "accept": [
+                        "ええ、よく聞こえます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l2-s2-t5",
+                    "who": "partner",
+                    "ja": "ブディさんの 部屋《へや》から 何《なに》が 見《み》えますか。",
+                    "speak": "ブディさんの へやから なにが みえますか。",
+                    "id_text": "Dari kamar Budi, apa yang terlihat?",
+                    "en_text": "What can you see from your room?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l2-s2-t6",
+                    "who": "you",
+                    "ja": "海《うみ》が 見《み》えます。",
+                    "speak": "うみが みえます。",
+                    "id_text": "Laut terlihat.",
+                    "en_text": "I can see the sea.",
+                    "accept": [
+                        "海が見えます。",
+                        "うみが見えます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l2-s3",
+            "title_id": "Hanya segini",
+            "title_en": "Only this much",
+            "setting_id": "Di kantin saat jam makan siang.",
+            "setting_en": "In the cafeteria at lunchtime.",
+            "goal_id": "Memakai しか + bentuk negatif untuk menyatakan 'hanya'.",
+            "goal_en": "Use shika + negative to mean 'only'.",
+            "patterns": [
+                "Ｎしか Ｖません"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l2-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きょうは 何《なに》を 食《た》べましたか。",
+                    "speak": "ブディさん、きょうは なにを たべましたか。",
+                    "id_text": "Budi, hari ini kamu makan apa?",
+                    "en_text": "Budi, what did you eat today?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l2-s3-t2",
+                    "who": "you",
+                    "ja": "パンしか 食《た》べませんでした。",
+                    "speak": "パンしか たべませんでした。",
+                    "id_text": "Saya hanya makan roti.",
+                    "en_text": "I only ate bread.",
+                    "accept": [
+                        "パンしか食べませんでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l2-s3-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。 お金《かね》が ありませんか。",
+                    "speak": "それは たいへんですね。 おかねが ありませんか。",
+                    "id_text": "Wah, repot ya. Kamu tidak punya uang?",
+                    "en_text": "That's hard. Don't you have money?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l2-s3-t4",
+                    "who": "you",
+                    "ja": "はい、百円《ひゃくえん》しか ありません。",
+                    "speak": "はい、ひゃくえんしか ありません。",
+                    "id_text": "Ya, saya hanya punya seratus yen.",
+                    "en_text": "Yes, I only have 100 yen.",
+                    "accept": [
+                        "はい、100円しかありません。",
+                        "はい、百円しかありません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l2-s3-t5",
+                    "who": "partner",
+                    "ja": "では、いっしょに 昼《ひる》ごはんを 食《た》べましょう。",
+                    "speak": "では、いっしょに ひるごはんを たべましょう。",
+                    "id_text": "Kalau begitu, ayo makan siang bersama.",
+                    "en_text": "Then let's have lunch together.",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l2-s3-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l2-s4",
+            "title_id": "Bisa dan tidak bisa",
+            "title_en": "What I can and can't do",
+            "setting_id": "Di pesta perkenalan, mengobrol dengan teman baru.",
+            "setting_en": "At a welcome party, chatting with a new friend.",
+            "goal_id": "Membandingkan dengan は: bisa ～ tetapi tidak bisa ～.",
+            "goal_en": "Contrast with wa: can do X but can't do Y.",
+            "patterns": [
+                "Ｎは Ｖ(potensial)が、Ｎは Ｖ(potensial)ません"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l2-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 日本語《にほんご》が 話《はな》せますか。",
+                    "speak": "ブディさんは にほんごが はなせますか。",
+                    "id_text": "Budi, apakah kamu bisa berbicara bahasa Jepang?",
+                    "en_text": "Budi, can you speak Japanese?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l2-s4-t2",
+                    "who": "you",
+                    "ja": "はい、話《はな》せます。 でも、漢字《かんじ》は 読《よ》めません。",
+                    "speak": "はい、はなせます。 でも、かんじは よめません。",
+                    "id_text": "Ya, bisa. Tetapi kanji tidak bisa dibaca.",
+                    "en_text": "Yes, I can. But I can't read kanji.",
+                    "accept": [
+                        "はい、話せます。でも、漢字は読めません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l2-s4-t3",
+                    "who": "partner",
+                    "ja": "そうですか。 魚《さかな》は 食《た》べられますか。",
+                    "speak": "そうですか。 さかなは たべられますか。",
+                    "id_text": "Begitu ya. Kalau ikan, bisa makan?",
+                    "en_text": "I see. Can you eat fish?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l2-s4-t4",
+                    "who": "you",
+                    "ja": "魚《さかな》は 食《た》べられますが、肉《にく》は 食《た》べられません。",
+                    "speak": "さかなは たべられますが、にくは たべられません。",
+                    "id_text": "Ikan bisa, tetapi daging tidak bisa.",
+                    "en_text": "I can eat fish, but not meat.",
+                    "accept": [
+                        "魚は食べられますが、肉は食べられません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l2-s4-t5",
+                    "who": "partner",
+                    "ja": "あしたの パーティーに 来《こ》られますか。",
+                    "speak": "あしたの パーティーに こられますか。",
+                    "id_text": "Apakah besok kamu bisa datang ke pesta?",
+                    "en_text": "Can you come to tomorrow's party?",
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l2-s4-t6",
+                    "who": "you",
+                    "ja": "はい、六時《ろくじ》に 来《こ》られます。",
+                    "speak": "はい、ろくじに こられます。",
+                    "id_text": "Ya, saya bisa datang jam enam.",
+                    "en_text": "Yes, I can come at six.",
+                    "accept": [
+                        "はい、6時に来られます。",
+                        "はい、六時に来られます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-2/n4l2-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

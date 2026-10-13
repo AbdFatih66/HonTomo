@@ -1,0 +1,410 @@
+{
+    "id": 6,
+    "level": "N5",
+    "title_id": "Pelajaran 6 — Aktivitas & Makanan",
+    "title_en": "Lesson 6 — Activities & Food",
+    "scenarios": [
+        {
+            "id": "l6-s1",
+            "title_id": "Sarapan pagi",
+            "title_en": "Breakfast",
+            "setting_id": "Di ruang istirahat, Tanaka bertanya tentang sarapanmu.",
+            "setting_en": "In the break room, Tanaka asks about your breakfast.",
+            "goal_id": "Memakai 〜を 食べます／飲みます dan 何を.",
+            "goal_en": "Use ~o tabemasu / nomimasu and nani o.",
+            "patterns": [
+                "KBを KK",
+                "何を KK か",
+                "毎朝"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l6-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、毎朝《まいあさ》 何《なに》を 食《た》べますか。",
+                    "speak": "ブディさん、まいあさ なにを たべますか。",
+                    "id_text": "Budi, setiap pagi kamu makan apa?",
+                    "en_text": "Budi, what do you eat every morning?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t1.mp3"
+                },
+                {
+                    "id": "l6-s1-t2",
+                    "who": "you",
+                    "ja": "毎朝《まいあさ》 パンを 食《た》べます。",
+                    "speak": "まいあさ パンを たべます。",
+                    "id_text": "Setiap pagi aku makan roti.",
+                    "accept": [
+                        "毎朝 パンを 食べます。",
+                        "毎朝パンを食べます。"
+                    ],
+                    "en_text": "I eat bread every morning.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t2.mp3"
+                },
+                {
+                    "id": "l6-s1-t3",
+                    "who": "partner",
+                    "ja": "何《なに》を 飲《の》みますか。",
+                    "speak": "なにを のみますか。",
+                    "id_text": "Minum apa?",
+                    "en_text": "What do you drink?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t3.mp3"
+                },
+                {
+                    "id": "l6-s1-t4",
+                    "who": "you",
+                    "ja": "牛乳《ぎゅうにゅう》を 飲《の》みます。",
+                    "speak": "ぎゅうにゅうを のみます。",
+                    "id_text": "Aku minum susu.",
+                    "accept": [
+                        "牛乳を 飲みます。",
+                        "ぎゅうにゅうを 飲みます。"
+                    ],
+                    "en_text": "I drink milk.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t4.mp3"
+                },
+                {
+                    "id": "l6-s1-t5",
+                    "who": "partner",
+                    "ja": "お茶《ちゃ》も 飲《の》みますか。",
+                    "speak": "おちゃも のみますか。",
+                    "id_text": "Teh juga diminum?",
+                    "en_text": "Do you drink tea too?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t5.mp3"
+                },
+                {
+                    "id": "l6-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ、お茶《ちゃ》は 飲《の》みません。",
+                    "speak": "いいえ、おちゃは のみません。",
+                    "id_text": "Tidak, aku tidak minum teh.",
+                    "accept": [
+                        "いいえ、お茶は 飲みません。",
+                        "いいえ、お茶は飲みません。"
+                    ],
+                    "en_text": "No, I do not drink tea.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t6.mp3"
+                },
+                {
+                    "id": "l6-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l6-s2",
+            "title_id": "Makan siang di mana?",
+            "title_en": "Where do you eat lunch?",
+            "setting_id": "Suzuki bertanya di mana kamu biasa makan siang.",
+            "setting_en": "Suzuki asks where you usually eat lunch.",
+            "goal_id": "Memakai 〜で (tempat kegiatan) dengan 食べます.",
+            "goal_en": "Use ~de (place of action) with tabemasu.",
+            "patterns": [
+                "(場所)で KK",
+                "KBを KK",
+                "どこで"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l6-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、昼《ひる》ごはんは どこで 食《た》べますか。",
+                    "speak": "ブディさん、ひるごはんは どこで たべますか。",
+                    "id_text": "Budi, makan siang di mana?",
+                    "en_text": "Budi, where do you eat lunch?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t1.mp3"
+                },
+                {
+                    "id": "l6-s2-t2",
+                    "who": "you",
+                    "ja": "食堂《しょくどう》で 食《た》べます。",
+                    "speak": "しょくどうで たべます。",
+                    "id_text": "Aku makan di kantin.",
+                    "accept": [
+                        "食堂で 食べます。",
+                        "食堂で食べます。"
+                    ],
+                    "en_text": "I eat at the cafeteria.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t2.mp3"
+                },
+                {
+                    "id": "l6-s2-t3",
+                    "who": "partner",
+                    "ja": "食堂《しょくどう》で 何《なに》を 食《た》べますか。",
+                    "speak": "しょくどうで なにを たべますか。",
+                    "id_text": "Di kantin makan apa?",
+                    "en_text": "What do you eat there?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t3.mp3"
+                },
+                {
+                    "id": "l6-s2-t4",
+                    "who": "you",
+                    "ja": "魚《さかな》を 食《た》べます。",
+                    "speak": "さかなを たべます。",
+                    "id_text": "Aku makan ikan.",
+                    "accept": [
+                        "魚を 食べます。",
+                        "さかなを 食べます。"
+                    ],
+                    "en_text": "I eat fish.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t4.mp3"
+                },
+                {
+                    "id": "l6-s2-t5",
+                    "who": "partner",
+                    "ja": "毎日《まいにち》 食堂《しょくどう》ですか。",
+                    "speak": "まいにち しょくどうですか。",
+                    "id_text": "Setiap hari di kantin?",
+                    "en_text": "Every day at the cafeteria?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t5.mp3"
+                },
+                {
+                    "id": "l6-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、日曜日《にちようび》は うちで 食《た》べます。",
+                    "speak": "いいえ、にちようびは うちで たべます。",
+                    "id_text": "Bukan, hari Minggu aku makan di rumah.",
+                    "accept": [
+                        "いいえ、日曜日は うちで 食べます。",
+                        "いいえ、日曜日はうちで食べます。"
+                    ],
+                    "en_text": "No, on Sundays I eat at home.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t6.mp3"
+                },
+                {
+                    "id": "l6-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l6-s3",
+            "title_id": "Mengajak nonton film",
+            "title_en": "Inviting someone to a movie",
+            "setting_id": "Suzuki mengajakmu nonton film besok.",
+            "setting_en": "Suzuki invites you to a movie tomorrow.",
+            "goal_id": "Mengajak dengan 〜ませんか／〜ましょう dan menolak halus dengan ちょっと….",
+            "goal_en": "Invite with ~masen ka / ~mashou and decline politely with chotto….",
+            "patterns": [
+                "〜ませんか",
+                "〜ましょう",
+                "すみません、ちょっと…"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l6-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あした いっしょに 映画《えいが》を 見《み》ませんか。",
+                    "speak": "ブディさん、あした いっしょに えいがを みませんか。",
+                    "id_text": "Budi, besok nonton film bersama?",
+                    "en_text": "Budi, shall we watch a movie together tomorrow?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t1.mp3"
+                },
+                {
+                    "id": "l6-s3-t2",
+                    "who": "you",
+                    "ja": "ええ、いいですね。",
+                    "speak": "ええ、いいですね。",
+                    "id_text": "Ya, boleh.",
+                    "accept": [
+                        "はい、いいですね。"
+                    ],
+                    "en_text": "Yes, that sounds good.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t2.mp3"
+                },
+                {
+                    "id": "l6-s3-t3",
+                    "who": "partner",
+                    "ja": "じゃ、六時《ろくじ》に 駅《えき》で 会《あ》いましょう。",
+                    "speak": "じゃ、ろくじに えきで あいましょう。",
+                    "id_text": "Kalau begitu, ayo bertemu di stasiun jam 6.",
+                    "en_text": "Then let's meet at the station at 6.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t3.mp3"
+                },
+                {
+                    "id": "l6-s3-t4",
+                    "who": "you",
+                    "ja": "はい、六時《ろくじ》に 駅《えき》で 会《あ》いましょう。",
+                    "speak": "はい、ろくじに えきで あいましょう。",
+                    "id_text": "Ya, ayo bertemu di stasiun jam 6.",
+                    "accept": [
+                        "はい、6時に 駅で 会いましょう。",
+                        "はい、六時に駅で会いましょう。"
+                    ],
+                    "en_text": "Yes, let's meet at the station at 6.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t4.mp3"
+                },
+                {
+                    "id": "l6-s3-t5",
+                    "who": "partner",
+                    "ja": "晩《ばん》ごはんも いっしょに 食《た》べませんか。",
+                    "speak": "ばんごはんも いっしょに たべませんか。",
+                    "id_text": "Makan malam juga bersama?",
+                    "en_text": "Shall we eat dinner together too?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t5.mp3"
+                },
+                {
+                    "id": "l6-s3-t6",
+                    "who": "you",
+                    "ja": "すみません、晩《ばん》ごはんは ちょっと…。",
+                    "speak": "すみません、ばんごはんは ちょっと…。",
+                    "id_text": "Maaf, makan malam agak…",
+                    "accept": [
+                        "すみません、晩ごはんは ちょっと。",
+                        "すみません、晩ごはんはちょっと…。"
+                    ],
+                    "en_text": "Sorry, dinner is a bit…",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t6.mp3"
+                },
+                {
+                    "id": "l6-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。じゃ、また あした。",
+                    "speak": "そうですか。じゃ、また あした。",
+                    "id_text": "Oh begitu. Sampai besok.",
+                    "en_text": "I see. See you tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t7.mp3"
+                },
+                {
+                    "id": "l6-s3-t8",
+                    "who": "you",
+                    "ja": "はい、また あした。",
+                    "speak": "はい、また あした。",
+                    "id_text": "Ya, sampai besok.",
+                    "accept": [
+                        "はい、じゃ、また あした。"
+                    ],
+                    "en_text": "Yes, see you tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l6-s4",
+            "title_id": "Kemarin di rumah",
+            "title_en": "Yesterday at home",
+            "setting_id": "Tanaka bertanya apa yang kamu lakukan kemarin.",
+            "setting_en": "Tanaka asks what you did yesterday.",
+            "goal_id": "Memakai 〜を 〜ました dan 〜で untuk kegiatan kemarin.",
+            "goal_en": "Use ~o ~mashita and ~de for yesterday's activities.",
+            "patterns": [
+                "何を しましたか",
+                "(場所)で KK",
+                "KBを KKました"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l6-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きのう 何《なに》を しましたか。",
+                    "speak": "ブディさん、きのう なにを しましたか。",
+                    "id_text": "Budi, kemarin kamu melakukan apa?",
+                    "en_text": "Budi, what did you do yesterday?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t1.mp3"
+                },
+                {
+                    "id": "l6-s4-t2",
+                    "who": "you",
+                    "ja": "うちで 日本語《にほんご》を 勉強《べんきょう》しました。",
+                    "speak": "うちで にほんごを べんきょうしました。",
+                    "id_text": "Aku belajar bahasa Jepang di rumah.",
+                    "accept": [
+                        "うちで 日本語を 勉強しました。",
+                        "うちで日本語を勉強しました。"
+                    ],
+                    "en_text": "I studied Japanese at home.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t2.mp3"
+                },
+                {
+                    "id": "l6-s4-t3",
+                    "who": "partner",
+                    "ja": "そうですか。手紙《てがみ》も 書《か》きましたか。",
+                    "speak": "そうですか。てがみも かきましたか。",
+                    "id_text": "Oh begitu. Kamu juga menulis surat?",
+                    "en_text": "I see. Did you write a letter too?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t3.mp3"
+                },
+                {
+                    "id": "l6-s4-t4",
+                    "who": "you",
+                    "ja": "はい、友達《ともだち》に 手紙《てがみ》を 書《か》きました。",
+                    "speak": "はい、ともだちに てがみを かきました。",
+                    "id_text": "Ya, aku menulis surat untuk teman.",
+                    "accept": [
+                        "はい、友達に 手紙を 書きました。",
+                        "はい、ともだちに手紙を書きました。"
+                    ],
+                    "en_text": "Yes, I wrote a letter to a friend.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t4.mp3"
+                },
+                {
+                    "id": "l6-s4-t5",
+                    "who": "partner",
+                    "ja": "昼《ひる》ごはんは どこで 食《た》べましたか。",
+                    "speak": "ひるごはんは どこで たべましたか。",
+                    "id_text": "Makan siang di mana?",
+                    "en_text": "Where did you eat lunch?",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t5.mp3"
+                },
+                {
+                    "id": "l6-s4-t6",
+                    "who": "you",
+                    "ja": "うちで 食《た》べました。",
+                    "speak": "うちで たべました。",
+                    "id_text": "Aku makan di rumah.",
+                    "accept": [
+                        "うちで 食べました。"
+                    ],
+                    "en_text": "I ate at home.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t6.mp3"
+                },
+                {
+                    "id": "l6-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-6/l6-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

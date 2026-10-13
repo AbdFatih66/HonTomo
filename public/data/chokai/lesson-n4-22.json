@@ -1,0 +1,320 @@
+{
+    "id": "n4-22",
+    "level": "N4",
+    "focus": "ふつうけい そうです (katanya), 〜に よると, ふつうけい ようです, 声／音／においが します",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "ヌルさん、ニュースを 見ましたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいえ。何か ありましたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ニュースに よると、あした 台風が 来るそうです。"
+            },
+            {
+                "speaker": "female",
+                "text": "えっ、本当ですか。じゃ、水を 買って おきます。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしも そうします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-22/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l22-kq1",
+                "audio": null,
+                "prompt": "あした 何《なに》が 来《く》ると 言《い》って いますか。",
+                "choices": [
+                    "台風《たいふう》",
+                    "雪《ゆき》",
+                    "地震《じしん》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang katanya datang besok? — Topan.",
+                    "en": "What is said to be coming tomorrow? — A typhoon."
+                }
+            },
+            {
+                "id": "n4l22-kq2",
+                "audio": null,
+                "prompt": "女《おんな》の 人《ひと》は 何《なに》を して おきますか。",
+                "choices": [
+                    "水《みず》を 買《か》う",
+                    "部屋《へや》を 飾《かざ》る",
+                    "かぎを かける"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang disiapkan wanita itu? — Membeli air.",
+                    "en": "What will the woman do in advance? — Buy water."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l22-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "となりの へやから おんがくが きこえますね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どうも パーティーを して いるようですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q1.mp3",
+            "prompt": "隣《となり》の 部屋《へや》で 何《なに》を して いるようですか。",
+            "choices": [
+                "パーティー",
+                "会議《かいぎ》",
+                "勉強《べんきょう》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sedang apa di kamar sebelah? — Berpesta.",
+                "en": "What seems to be going on next door? — A party."
+            }
+        },
+        {
+            "id": "n4l22-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした 天気は どうですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "天気予報に よると、あしたは 寒く なるそうです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q2.mp3",
+            "prompt": "あしたの 天気《てんき》は どう なりますか。",
+            "choices": [
+                "寒《さむ》く なる",
+                "暑《あつ》く なる",
+                "雨《あめ》が 降《ふ》る"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana cuaca besok? — Menjadi dingin.",
+                "en": "What will the weather be tomorrow? — It will get cold."
+            }
+        },
+        {
+            "id": "n4l22-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この ケーキ、おいしいそうですよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "へえ、だれに 聞きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ラニさんが 言って いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q3.mp3",
+            "prompt": "「ケーキは おいしい」と 言《い》ったのは だれですか。",
+            "choices": [
+                "ラニさん",
+                "ヌルさん",
+                "女《おんな》の 人《ひと》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Siapa yang bilang kue itu enak? — Rani.",
+                "en": "Who said the cake is good? — Rani."
+            }
+        },
+        {
+            "id": "n4l22-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "台所から においが しますね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あ、さかなを 焼いて いるんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q4.mp3",
+            "prompt": "台所《だいどころ》から 何《なん》の においが しますか。",
+            "choices": [
+                "魚《さかな》の におい",
+                "お茶《ちゃ》の におい",
+                "花《はな》の におい"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bau apa dari dapur? — Ikan.",
+                "en": "What smell comes from the kitchen? — Fish."
+            }
+        },
+        {
+            "id": "n4l22-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あそこに 人が たくさん 集まって いますね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "パトカーと 救急車が 来て います。事故のようですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q5.mp3",
+            "prompt": "人《ひと》が 集《あつ》まって いる 理由《りゆう》は 何《なに》のようですか。",
+            "choices": [
+                "事故《じこ》",
+                "お祭《まつ》り",
+                "試合《しあい》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang tampaknya terjadi? — Kecelakaan.",
+                "en": "What seems to have happened? — An accident."
+            }
+        },
+        {
+            "id": "n4l22-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ワヒュさんは 厳しい 先生だそうですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ。でも、じゅぎょうは とても おもしろいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 先生《せんせい》の 授業《じゅぎょう》を どう 言《い》って いますか。",
+            "choices": [
+                "とても おもしろい",
+                "つまらない",
+                "むずかしすぎる"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana pria itu menilai pelajarannya? — Sangat menarik.",
+                "en": "How does the man describe the lessons? — Very interesting."
+            }
+        },
+        {
+            "id": "n4l22-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "スリさんは 結婚したそうですよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "えっ、知りませんでした。いつですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "先月だそうです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q7.mp3",
+            "prompt": "スリさんは いつ 結婚《けっこん》しましたか。",
+            "choices": [
+                "先月《せんげつ》",
+                "来月《らいげつ》",
+                "去年《きょねん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan Suri menikah? — Bulan lalu.",
+                "en": "When did Suri get married? — Last month."
+            }
+        },
+        {
+            "id": "n4l22-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "天気予報に よると、あさっては 雨だそうです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。かさを もって いきます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q8.mp3",
+            "prompt": "天気予報《てんきよほう》に よると、あさっては 雨《あめ》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Menurut prakiraan cuaca, lusa hujan. — Benar (○).",
+                "en": "According to the forecast, it will rain the day after tomorrow. — True (○)."
+            }
+        },
+        {
+            "id": "n4l22-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの 店の パンは おいしそうですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、でも、まだ 食べた ことが ありません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q9.mp3",
+            "prompt": "女《おんな》の 人《ひと》は あの 店《みせ》の パンを 食《た》べた ことが あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Wanita itu pernah makan roti toko itu. — Salah (×).",
+                "en": "The woman has eaten bread from that shop. — False (×)."
+            }
+        },
+        {
+            "id": "n4l22-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "部屋の 電気が 消えて いますね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "だれも いないようです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-22/n4l22-q10.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 部屋《へや》に だれも いないと 思《おも》って います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pria itu mengira tidak ada orang di kamar. — Benar (○).",
+                "en": "The man thinks nobody is in the room. — True (○)."
+            }
+        }
+    ]
+}

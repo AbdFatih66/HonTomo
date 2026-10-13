@@ -1,0 +1,392 @@
+{
+    "id": 4,
+    "level": "N4",
+    "title_id": "Barang Saya Tertinggal",
+    "title_en": "I Left Something Behind",
+    "scenarios": [
+        {
+            "id": "n4l4-s1",
+            "title_id": "Payung tertinggal di kereta",
+            "title_en": "Umbrella left on the train",
+            "setting_id": "Kantor stasiun, setelah turun dari kereta.",
+            "setting_en": "The station office, after getting off the train.",
+            "goal_id": "Melaporkan barang yang tertinggal dan mendengar bahwa barang itu ditemukan.",
+            "goal_en": "Report a lost item and hear that it has been found.",
+            "patterns": [
+                "〜て しまいました",
+                "ありました"
+            ],
+            "partner": {
+                "name": "えきいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l4-s1-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What happened?",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l4-s1-t2",
+                    "who": "you",
+                    "ja": "電車《でんしゃ》の 中《なか》に 傘《かさ》を 忘《わす》れて しまいました。",
+                    "speak": "でんしゃの なかに かさを わすれて しまいました。",
+                    "id_text": "Payung saya tertinggal di dalam kereta.",
+                    "en_text": "I left my umbrella on the train.",
+                    "accept": [
+                        "電車の 中に 傘を 忘れて しまいました。",
+                        "電車の中に傘を忘れました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l4-s1-t3",
+                    "who": "partner",
+                    "ja": "どんな 傘《かさ》ですか。",
+                    "speak": "どんな かさですか。",
+                    "id_text": "Payung yang bagaimana?",
+                    "en_text": "What kind of umbrella is it?",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l4-s1-t4",
+                    "who": "you",
+                    "ja": "青《あお》い 傘《かさ》です。",
+                    "speak": "あおい かさです。",
+                    "id_text": "Payung biru.",
+                    "en_text": "It is a blue umbrella.",
+                    "accept": [
+                        "青い 傘です。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l4-s1-t5",
+                    "who": "partner",
+                    "ja": "網棚《あみだな》の 上《うえ》に ありましたよ。",
+                    "speak": "あみだなの うえに ありましたよ。",
+                    "id_text": "Ada di atas rak bagasi.",
+                    "en_text": "It was on the luggage rack.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l4-s1-t6",
+                    "who": "you",
+                    "ja": "ああ、よかった。ありがとう ございます。",
+                    "speak": "ああ、よかった。ありがとう ございます。",
+                    "id_text": "Syukurlah. Terima kasih.",
+                    "en_text": "Oh, thank goodness. Thank you.",
+                    "accept": [
+                        "ああ、よかった。ありがとう ございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l4-s1-t7",
+                    "who": "partner",
+                    "ja": "駅《えき》の 事務所《じむしょ》に あります。取《と》りに 来《き》て ください。",
+                    "speak": "えきの じむしょに あります。とりに きて ください。",
+                    "id_text": "Sekarang ada di kantor stasiun. Silakan datang mengambilnya.",
+                    "en_text": "It is at the station office now. Please come and pick it up.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l4-s2",
+            "title_id": "Ruang rapat terkunci",
+            "title_en": "The locked meeting room",
+            "setting_id": "Di depan ruang rapat setelah jam kerja.",
+            "setting_en": "In front of the meeting room after work.",
+            "goal_id": "Menggambarkan keadaan pintu dan lampu dengan 〜て います.",
+            "goal_en": "Describe the state of a door and a light with 〜て います.",
+            "patterns": [
+                "〜て います",
+                "〜て しまいました"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l4-s2-t1",
+                    "who": "partner",
+                    "ja": "会議室《かいぎしつ》の ドアが 閉《し》まって いますね。",
+                    "speak": "かいぎしつの ドアが しまって いますね。",
+                    "id_text": "Pintu ruang rapat tertutup, ya.",
+                    "en_text": "The meeting room door is closed.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l4-s2-t2",
+                    "who": "you",
+                    "ja": "鍵《かぎ》が かかって いますか。",
+                    "speak": "かぎが かかって いますか。",
+                    "id_text": "Apakah terkunci?",
+                    "en_text": "Is it locked?",
+                    "accept": [
+                        "鍵が かかって いますか。",
+                        "かぎがかかっていますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l4-s2-t3",
+                    "who": "partner",
+                    "ja": "ええ、かかって います。受付《うけつけ》で 聞《き》きましょう。",
+                    "speak": "ええ、かかって います。うけつけで ききましょう。",
+                    "id_text": "Ya, terkunci. Mari kita tanya di resepsionis.",
+                    "en_text": "Yes, it is locked. Let us ask at the reception desk.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l4-s2-t4",
+                    "who": "you",
+                    "ja": "はい、わかりました。",
+                    "speak": "はい、わかりました。",
+                    "id_text": "Baik, saya mengerti.",
+                    "en_text": "Yes, understood.",
+                    "accept": [
+                        "はい、わかりました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l4-s2-t5",
+                    "who": "partner",
+                    "ja": "電気《でんき》も 消《き》えて いますね。",
+                    "speak": "でんきも きえて いますね。",
+                    "id_text": "Lampunya juga padam, ya.",
+                    "en_text": "The light is off too.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l4-s2-t6",
+                    "who": "you",
+                    "ja": "みんな もう 帰《かえ》って しまったんですね。",
+                    "speak": "みんな もう かえって しまったんですね。",
+                    "id_text": "Semuanya sudah pulang, ya.",
+                    "en_text": "Everyone has already gone home, I see.",
+                    "accept": [
+                        "みんな もう 帰って しまったんですね。",
+                        "みんなもう帰ってしまったんですね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l4-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですね。じゃ、あした 来《き》ましょう。",
+                    "speak": "そうですね。じゃ、あした きましょう。",
+                    "id_text": "Benar. Kalau begitu, mari kita datang besok.",
+                    "en_text": "That is right. Then let us come tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l4-s3",
+            "title_id": "Gelas pecah",
+            "title_en": "A broken glass",
+            "setting_id": "Di dapur rumah teman.",
+            "setting_en": "In a friend's kitchen.",
+            "goal_id": "Meminta maaf karena tidak sengaja merusak sesuatu dengan 〜て しまいました.",
+            "goal_en": "Apologise for accidentally breaking something with 〜て しまいました.",
+            "patterns": [
+                "〜て しまいました",
+                "ありました"
+            ],
+            "partner": {
+                "name": "スリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l4-s3-t1",
+                    "who": "partner",
+                    "ja": "あっ、コップが 割《わ》れて います。",
+                    "speak": "あっ、コップが われて います。",
+                    "id_text": "Aduh, gelasnya pecah.",
+                    "en_text": "Oh, the glass is broken.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l4-s3-t2",
+                    "who": "you",
+                    "ja": "すみません、わたしが 落《お》として しまいました。",
+                    "speak": "すみません、わたしが おとして しまいました。",
+                    "id_text": "Maaf, saya yang menjatuhkannya.",
+                    "en_text": "I am sorry, I dropped it.",
+                    "accept": [
+                        "すみません、わたしが 落として しまいました。",
+                        "すみません、私が落としてしまいました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l4-s3-t3",
+                    "who": "partner",
+                    "ja": "だいじょうぶですか。けがは ありませんか。",
+                    "speak": "だいじょうぶですか。けがは ありませんか。",
+                    "id_text": "Tidak apa-apa? Apakah Anda terluka?",
+                    "en_text": "Are you all right? Are you hurt?",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l4-s3-t4",
+                    "who": "you",
+                    "ja": "だいじょうぶです。片《かた》づけます。",
+                    "speak": "だいじょうぶです。かたづけます。",
+                    "id_text": "Tidak apa-apa. Saya akan membereskannya.",
+                    "en_text": "I am fine. I will clean it up.",
+                    "accept": [
+                        "だいじょうぶです。片づけます。",
+                        "大丈夫です。片づけます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l4-s3-t5",
+                    "who": "partner",
+                    "ja": "ありがとう。ふくろは そこに ありますよ。",
+                    "speak": "ありがとう。ふくろは そこに ありますよ。",
+                    "id_text": "Terima kasih. Kantongnya ada di situ.",
+                    "en_text": "Thank you. The bag is right there.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l4-s3-t6",
+                    "who": "you",
+                    "ja": "はい。ありました。",
+                    "speak": "はい。ありました。",
+                    "id_text": "Ya. Ketemu.",
+                    "en_text": "Yes. I found it.",
+                    "accept": [
+                        "はい。ありました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l4-s3-t7",
+                    "who": "partner",
+                    "ja": "じゃ、お願《ねが》いします。",
+                    "speak": "じゃ、おねがいします。",
+                    "id_text": "Kalau begitu, tolong ya.",
+                    "en_text": "Then, please go ahead.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l4-s4",
+            "title_id": "Dompet hilang",
+            "title_en": "A lost wallet",
+            "setting_id": "Di pos polisi dekat stasiun.",
+            "setting_en": "At the police box near the station.",
+            "goal_id": "Melaporkan dompet yang hilang dengan どこかで dan 〜て しまいました.",
+            "goal_en": "Report a lost wallet using どこかで and 〜て しまいました.",
+            "patterns": [
+                "どこかで",
+                "〜て しまいました"
+            ],
+            "partner": {
+                "name": "おまわりさん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l4-s4-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What happened?",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l4-s4-t2",
+                    "who": "you",
+                    "ja": "どこかで 財布《さいふ》を 落《お》として しまいました。",
+                    "speak": "どこかで さいふを おとして しまいました。",
+                    "id_text": "Entah di mana, dompet saya terjatuh.",
+                    "en_text": "I dropped my wallet somewhere.",
+                    "accept": [
+                        "どこかで 財布を 落として しまいました。",
+                        "どこかで財布を落としてしまいました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l4-s4-t3",
+                    "who": "partner",
+                    "ja": "どんな 財布《さいふ》ですか。",
+                    "speak": "どんな さいふですか。",
+                    "id_text": "Dompet yang bagaimana?",
+                    "en_text": "What kind of wallet is it?",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l4-s4-t4",
+                    "who": "you",
+                    "ja": "黒《くろ》い 財布《さいふ》です。ポケットが ついて います。",
+                    "speak": "くろい さいふです。ポケットが ついて います。",
+                    "id_text": "Dompet hitam. Ada sakunya.",
+                    "en_text": "It is a black wallet. It has a pocket.",
+                    "accept": [
+                        "黒い 財布です。ポケットが ついて います。",
+                        "黒い財布です。ポケットがついています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l4-s4-t5",
+                    "who": "partner",
+                    "ja": "中《なか》に 何《なに》が ありますか。",
+                    "speak": "なかに なにが ありますか。",
+                    "id_text": "Di dalamnya ada apa?",
+                    "en_text": "What is inside?",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l4-s4-t6",
+                    "who": "you",
+                    "ja": "カードと お金《かね》が あります。",
+                    "speak": "カードと おかねが あります。",
+                    "id_text": "Ada kartu dan uang.",
+                    "en_text": "There are cards and money.",
+                    "accept": [
+                        "カードと お金が あります。",
+                        "カードとお金があります。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l4-s4-t7",
+                    "who": "partner",
+                    "ja": "わかりました。ありましたら、電話《でんわ》します。",
+                    "speak": "わかりました。ありましたら、でんわします。",
+                    "id_text": "Baik. Kalau ketemu, saya telepon.",
+                    "en_text": "Understood. If it turns up, I will call you.",
+                    "audio": "/audio/kaiwa/lesson-n4-4/n4l4-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

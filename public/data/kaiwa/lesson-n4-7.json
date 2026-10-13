@@ -1,0 +1,384 @@
+{
+    "id": 7,
+    "level": "N4",
+    "title_id": "Pelajaran 7: Lebih Baik Jangan Memaksakan Diri",
+    "title_en": "Lesson 7: You Had Better Not Push Yourself",
+    "scenarios": [
+        {
+            "id": "n4l7-s1",
+            "title_id": "Tidak enak badan",
+            "title_en": "Not feeling well",
+            "setting_id": "Di kantor, rekan kerja melihatmu lesu.",
+            "setting_en": "At the office, a colleague sees you looking down.",
+            "goal_id": "Memberi dan menerima saran dengan 〜ほうがいい.",
+            "goal_en": "Give and receive advice with 〜ほうがいい.",
+            "patterns": [
+                "Vた／Vない ほうが いいです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l7-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、元気《げんき》が ありませんね。",
+                    "speak": "ブディさん、げんきがありませんね。",
+                    "id_text": "Budi, kamu tampak lesu.",
+                    "en_text": "Budi, you look down.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l7-s1-t2",
+                    "who": "you",
+                    "ja": "きのうから 頭《あたま》が 痛《いた》いんです。",
+                    "speak": "きのうからあたまがいたいんです。",
+                    "id_text": "Sejak kemarin kepala saya sakit.",
+                    "en_text": "My head has hurt since yesterday.",
+                    "accept": [
+                        "きのうから頭が痛いんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l7-s1-t3",
+                    "who": "partner",
+                    "ja": "それは いけませんね。熱《ねつ》は ありますか。",
+                    "speak": "それはいけませんね。ねつはありますか。",
+                    "id_text": "Itu tidak baik. Apakah ada demam?",
+                    "en_text": "That is not good. Do you have a fever?",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l7-s1-t4",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し あります。",
+                    "speak": "はい、すこしあります。",
+                    "id_text": "Ya, sedikit.",
+                    "en_text": "Yes, a little.",
+                    "accept": [
+                        "はい、少しあります。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l7-s1-t5",
+                    "who": "partner",
+                    "ja": "無理《むり》を しない ほうが いいですよ。きょうは 早《はや》く 帰《かえ》った ほうが いいです。",
+                    "speak": "むりをしないほうがいいですよ。きょうははやくかえったほうがいいです。",
+                    "id_text": "Jangan memaksakan diri. Sebaiknya hari ini pulang lebih awal.",
+                    "en_text": "Do not push yourself. You had better go home early today.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l7-s1-t6",
+                    "who": "you",
+                    "ja": "そうします。ありがとうございます。",
+                    "speak": "そうします。ありがとうございます。",
+                    "id_text": "Baik, akan saya lakukan. Terima kasih.",
+                    "en_text": "I will. Thank you.",
+                    "accept": [
+                        "そうします。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l7-s1-t7",
+                    "who": "partner",
+                    "ja": "ゆっくり 休《やす》んで ください。",
+                    "speak": "ゆっくりやすんでください。",
+                    "id_text": "Silakan istirahat dengan tenang.",
+                    "en_text": "Please take a good rest.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l7-s2",
+            "title_id": "Cuaca besok",
+            "title_en": "Tomorrow weather",
+            "setting_id": "Merencanakan piknik bersama teman.",
+            "setting_en": "Planning a picnic with a friend.",
+            "goal_id": "Menduga dengan 〜でしょう dan 〜かもしれません, lalu mengusulkan dengan 〜ましょう.",
+            "goal_en": "Guess with 〜でしょう and 〜かもしれません, then propose with 〜ましょう.",
+            "patterns": [
+                "〜でしょう",
+                "〜かもしれません",
+                "Vましょう"
+            ],
+            "partner": {
+                "name": "リナ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l7-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あしたの 天気《てんき》は どうでしょうか。",
+                    "speak": "ブディさん、あしたのてんきはどうでしょうか。",
+                    "id_text": "Budi, bagaimana cuaca besok, ya?",
+                    "en_text": "Budi, I wonder what the weather will be like tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l7-s2-t2",
+                    "who": "you",
+                    "ja": "午後《ごご》から 雨《あめ》が 降《ふ》るでしょう。",
+                    "speak": "ごごからあめがふるでしょう。",
+                    "id_text": "Mulai siang mungkin hujan.",
+                    "en_text": "It will probably rain from the afternoon.",
+                    "accept": [
+                        "午後から雨が降るでしょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l7-s2-t3",
+                    "who": "partner",
+                    "ja": "そうですか。じゃ、ピクニックは やめましょうか。",
+                    "speak": "そうですか。じゃ、ピクニックはやめましょうか。",
+                    "id_text": "Begitu, ya. Kalau begitu, batalkan saja pikniknya?",
+                    "en_text": "I see. Shall we cancel the picnic, then?",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l7-s2-t4",
+                    "who": "you",
+                    "ja": "朝《あさ》は 晴《は》れるかもしれません。",
+                    "speak": "あさははれるかもしれません。",
+                    "id_text": "Paginya mungkin cerah.",
+                    "en_text": "The morning might be sunny.",
+                    "accept": [
+                        "朝は晴れるかもしれません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l7-s2-t5",
+                    "who": "partner",
+                    "ja": "では、朝《あさ》 早《はや》く 出《で》かけましょう。",
+                    "speak": "では、あさはやくでかけましょう。",
+                    "id_text": "Kalau begitu, mari berangkat pagi-pagi.",
+                    "en_text": "Then let us set out early in the morning.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l7-s2-t6",
+                    "who": "you",
+                    "ja": "はい、そうしましょう。かさも 持《も》って 行《い》った ほうが いいですね。",
+                    "speak": "はい、そうしましょう。かさももっていったほうがいいですね。",
+                    "id_text": "Ya, mari. Sebaiknya bawa payung juga.",
+                    "en_text": "Yes, let us. We had better take an umbrella too.",
+                    "accept": [
+                        "はい、そうしましょう。かさも持って行ったほうがいいですね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l7-s2-t7",
+                    "who": "partner",
+                    "ja": "ええ、そうですね。",
+                    "speak": "ええ、そうですね。",
+                    "id_text": "Ya, benar.",
+                    "en_text": "Yes, you are right.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l7-s3",
+            "title_id": "Makan siang",
+            "title_en": "Lunch",
+            "setting_id": "Memilih tempat makan siang bersama rekan kerja.",
+            "setting_en": "Choosing a lunch place with a colleague.",
+            "goal_id": "Mengajak dengan 〜ましょう dan menanyakan waktu／harga dengan bilangan＋で.",
+            "goal_en": "Invite with 〜ましょう and ask about time or price with quantity＋で.",
+            "patterns": [
+                "Vましょう",
+                "Bilangan ＋ で"
+            ],
+            "partner": {
+                "name": "ニコ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l7-s3-t1",
+                    "who": "partner",
+                    "ja": "もう 十二時《じゅうにじ》ですね。昼《ひる》ごはんを 食《た》べに 行《い》きましょう。",
+                    "speak": "もうじゅうにじですね。ひるごはんをたべにいきましょう。",
+                    "id_text": "Sudah jam dua belas. Mari makan siang.",
+                    "en_text": "It is already twelve. Let us go for lunch.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l7-s3-t2",
+                    "who": "you",
+                    "ja": "はい。どこへ 行《い》きましょうか。",
+                    "speak": "はい。どこへいきましょうか。",
+                    "id_text": "Baik. Kita ke mana?",
+                    "en_text": "Yes. Where shall we go?",
+                    "accept": [
+                        "はい。どこへ行きましょうか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l7-s3-t3",
+                    "who": "partner",
+                    "ja": "駅《えき》の 前《まえ》の 店《みせ》は ランチが 千円《せんえん》です。",
+                    "speak": "えきのまえのみせはランチがせんえんです。",
+                    "id_text": "Toko di depan stasiun menjual makan siang seribu yen.",
+                    "en_text": "The shop in front of the station has lunch for one thousand yen.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l7-s3-t4",
+                    "who": "you",
+                    "ja": "ここから 歩《ある》いて 何分《なんぷん》で 着《つ》きますか。",
+                    "speak": "ここからあるいてなんぷんでつきますか。",
+                    "id_text": "Berapa menit sampai ke sana kalau jalan kaki dari sini?",
+                    "en_text": "How many minutes does it take to get there on foot from here?",
+                    "accept": [
+                        "ここから歩いて何分で着きますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l7-s3-t5",
+                    "who": "partner",
+                    "ja": "五分《ごふん》で 着《つ》きますよ。",
+                    "speak": "ごふんでつきますよ。",
+                    "id_text": "Sampai dalam lima menit.",
+                    "en_text": "You get there in five minutes.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l7-s3-t6",
+                    "who": "you",
+                    "ja": "じゃ、その 店《みせ》に しましょう。",
+                    "speak": "じゃ、そのみせにしましょう。",
+                    "id_text": "Kalau begitu, kita pilih toko itu.",
+                    "en_text": "Then let us choose that shop.",
+                    "accept": [
+                        "じゃ、その店にしましょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l7-s3-t7",
+                    "who": "partner",
+                    "ja": "ええ、行《い》きましょう。",
+                    "speak": "ええ、いきましょう。",
+                    "id_text": "Ya, ayo.",
+                    "en_text": "Yes, let us go.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l7-s4",
+            "title_id": "Di ruang periksa",
+            "title_en": "At the clinic",
+            "setting_id": "Memeriksakan batuk yang tidak kunjung reda.",
+            "setting_en": "Seeing a doctor about a persistent cough.",
+            "goal_id": "Menjelaskan keluhan dan menerima saran dokter.",
+            "goal_en": "Describe your symptoms and receive the doctor advice.",
+            "patterns": [
+                "何か ＋ 〜な こと",
+                "〜ほうが いいです"
+            ],
+            "partner": {
+                "name": "先生",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l7-s4-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada keluhan apa?",
+                    "en_text": "What seems to be the problem?",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l7-s4-t2",
+                    "who": "you",
+                    "ja": "最近《さいきん》、よく せきが 出《で》るんです。",
+                    "speak": "さいきん、よくせきがでるんです。",
+                    "id_text": "Akhir-akhir ini saya sering batuk.",
+                    "en_text": "Lately I often cough.",
+                    "accept": [
+                        "最近、よくせきが出るんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l7-s4-t3",
+                    "who": "partner",
+                    "ja": "何《なに》か ストレスに なる ことが ありますか。",
+                    "speak": "なにかストレスになることがありますか。",
+                    "id_text": "Adakah sesuatu yang membuat Anda stres?",
+                    "en_text": "Is there anything stressing you?",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l7-s4-t4",
+                    "who": "you",
+                    "ja": "はい、仕事《しごと》が 忙《いそが》しいんです。",
+                    "speak": "はい、しごとがいそがしいんです。",
+                    "id_text": "Ya, pekerjaan saya sibuk.",
+                    "en_text": "Yes, work is busy.",
+                    "accept": [
+                        "はい、仕事が忙しいんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l7-s4-t5",
+                    "who": "partner",
+                    "ja": "そうですか。お酒《さけ》は 飲《の》まない ほうが いいですよ。",
+                    "speak": "そうですか。おさけはのまないほうがいいですよ。",
+                    "id_text": "Begitu, ya. Sebaiknya jangan minum sake.",
+                    "en_text": "I see. You had better not drink alcohol.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l7-s4-t6",
+                    "who": "you",
+                    "ja": "わかりました。あした また 来《き》ましょうか。",
+                    "speak": "わかりました。あしたまたきましょうか。",
+                    "id_text": "Baik. Apakah saya datang lagi besok?",
+                    "en_text": "I understand. Shall I come again tomorrow?",
+                    "accept": [
+                        "わかりました。あしたまた来ましょうか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l7-s4-t7",
+                    "who": "partner",
+                    "ja": "いいえ、来週《らいしゅう》 もう 一度《いちど》 来《き》て ください。",
+                    "speak": "いいえ、らいしゅうもういちどきてください。",
+                    "id_text": "Tidak, silakan datang sekali lagi minggu depan.",
+                    "en_text": "No, please come once more next week.",
+                    "audio": "/audio/kaiwa/lesson-n4-7/n4l7-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

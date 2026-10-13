@@ -1,0 +1,394 @@
+{
+    "id": 4,
+    "level": "N5",
+    "title_id": "Waktu & Kegiatan Harian",
+    "title_en": "Time & Daily Routine",
+    "scenarios": [
+        {
+            "id": "l4-s1",
+            "title_id": "Jam buka",
+            "title_en": "Opening hours",
+            "setting_id": "Kamu bertanya jam dan jam buka bank serta kantor pos pada seorang kenalan.",
+            "setting_en": "You ask an acquaintance for the time and the opening hours of the bank and the post office.",
+            "goal_id": "Menanyakan waktu dengan 何時 dan jam buka dengan 〜から 〜まで.",
+            "goal_en": "Ask the time with nanji and opening hours with ~kara ~made.",
+            "patterns": [
+                "今 〜時〜分です",
+                "〜から 〜まで",
+                "〜は 何時から 何時までですか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l4-s1-t1",
+                    "who": "you",
+                    "ja": "すみません、今《いま》 何時《なんじ》ですか。",
+                    "speak": "すみません、いま なんじですか。",
+                    "id_text": "Permisi, sekarang jam berapa?",
+                    "en_text": "Excuse me, what time is it now?",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t1.mp3"
+                },
+                {
+                    "id": "l4-s1-t2",
+                    "who": "partner",
+                    "ja": "今《いま》 九時《くじ》半《はん》です。",
+                    "speak": "いま くじはんです。",
+                    "id_text": "Sekarang pukul 9.30.",
+                    "en_text": "It is 9:30 now.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t2.mp3"
+                },
+                {
+                    "id": "l4-s1-t3",
+                    "who": "you",
+                    "ja": "ありがとうございます。銀行《ぎんこう》は 何時《なんじ》から 何時《なんじ》までですか。",
+                    "speak": "ありがとうございます。ぎんこうは なんじから なんじまでですか。",
+                    "id_text": "Terima kasih. Bank buka dari jam berapa sampai jam berapa?",
+                    "en_text": "Thank you. What are the bank's hours?",
+                    "accept": [
+                        "ありがとうございます。銀行は何時から何時までですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t3.mp3"
+                },
+                {
+                    "id": "l4-s1-t4",
+                    "who": "partner",
+                    "ja": "九時《くじ》から 三時《さんじ》までです。",
+                    "speak": "くじから さんじまでです。",
+                    "id_text": "Dari jam 9 sampai jam 3.",
+                    "en_text": "From 9 to 3.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t4.mp3"
+                },
+                {
+                    "id": "l4-s1-t5",
+                    "who": "you",
+                    "ja": "郵便局《ゆうびんきょく》も 九時《くじ》から 三時《さんじ》までですか。",
+                    "speak": "ゆうびんきょくも くじから さんじまでですか。",
+                    "id_text": "Apakah kantor pos juga dari jam 9 sampai jam 3?",
+                    "en_text": "Is the post office open from 9 to 3 too?",
+                    "accept": [
+                        "郵便局も 9時から 3時までですか。",
+                        "郵便局も九時から三時までですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t5.mp3"
+                },
+                {
+                    "id": "l4-s1-t6",
+                    "who": "partner",
+                    "ja": "いいえ、郵便局《ゆうびんきょく》は 九時《くじ》から 五時《ごじ》までです。",
+                    "speak": "いいえ、ゆうびんきょくは くじから ごじまでです。",
+                    "id_text": "Bukan, kantor pos dari jam 9 sampai jam 5.",
+                    "en_text": "No, the post office is open from 9 to 5.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t6.mp3"
+                },
+                {
+                    "id": "l4-s1-t7",
+                    "who": "you",
+                    "ja": "そうですか。どうも ありがとうございます。",
+                    "speak": "そうですか。どうも ありがとうございます。",
+                    "id_text": "Oh begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "accept": [
+                        "そうですか。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l4-s2",
+            "title_id": "Kegiatan setiap hari",
+            "title_en": "Every day",
+            "setting_id": "Rekan kerja bertanya tentang rutinitas harianmu.",
+            "setting_en": "A colleague asks about your daily routine.",
+            "goal_id": "Menyebut kegiatan dengan 〜ます／〜ません dan waktu dengan に.",
+            "goal_en": "Describe activities with ~masu / ~masen and times with ni.",
+            "patterns": [
+                "KB(時) に 〜ます",
+                "〜ます・〜ません",
+                "毎朝・毎晩"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l4-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、毎朝《まいあさ》 何時《なんじ》に 起《お》きますか。",
+                    "speak": "ブディさん、まいあさ なんじに おきますか。",
+                    "id_text": "Budi, setiap pagi kamu bangun jam berapa?",
+                    "en_text": "Budi, what time do you get up every morning?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t1.mp3"
+                },
+                {
+                    "id": "l4-s2-t2",
+                    "who": "you",
+                    "ja": "毎朝《まいあさ》 六時《ろくじ》に 起《お》きます。",
+                    "speak": "まいあさ ろくじに おきます。",
+                    "id_text": "Setiap pagi aku bangun jam 6.",
+                    "en_text": "I get up at 6 every morning.",
+                    "accept": [
+                        "毎朝 6時に 起きます。",
+                        "毎朝六時に起きます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t2.mp3"
+                },
+                {
+                    "id": "l4-s2-t3",
+                    "who": "partner",
+                    "ja": "そうですか。毎晩《まいばん》 何時《なんじ》に 寝《ね》ますか。",
+                    "speak": "そうですか。まいばん なんじに ねますか。",
+                    "id_text": "Oh begitu. Setiap malam tidur jam berapa?",
+                    "en_text": "I see. What time do you go to bed every night?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t3.mp3"
+                },
+                {
+                    "id": "l4-s2-t4",
+                    "who": "you",
+                    "ja": "毎晩《まいばん》 十一時《じゅういちじ》に 寝《ね》ます。",
+                    "speak": "まいばん じゅういちじに ねます。",
+                    "id_text": "Setiap malam aku tidur jam 11.",
+                    "en_text": "I go to bed at 11 every night.",
+                    "accept": [
+                        "毎晩 11時に 寝ます。",
+                        "毎晩十一時に寝ます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t4.mp3"
+                },
+                {
+                    "id": "l4-s2-t5",
+                    "who": "partner",
+                    "ja": "土曜日《どようび》も 働《はたら》きますか。",
+                    "speak": "どようびも はたらきますか。",
+                    "id_text": "Hari Sabtu juga bekerja?",
+                    "en_text": "Do you work on Saturdays too?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t5.mp3"
+                },
+                {
+                    "id": "l4-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、働《はたら》きません。土曜日《どようび》は 休《やす》みます。",
+                    "speak": "いいえ、はたらきません。どようびは やすみます。",
+                    "id_text": "Tidak, aku tidak bekerja. Hari Sabtu aku libur.",
+                    "en_text": "No, I do not work. I take Saturdays off.",
+                    "accept": [
+                        "いいえ、働きません。土曜日は休みます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t6.mp3"
+                },
+                {
+                    "id": "l4-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l4-s3",
+            "title_id": "Kemarin",
+            "title_en": "Yesterday",
+            "setting_id": "Teman bertanya apa yang kamu lakukan kemarin.",
+            "setting_en": "A friend asks what you did yesterday.",
+            "goal_id": "Memakai bentuk lampau 〜ました／〜ませんでした, 〜から 〜まで (hari), dan 〜ね.",
+            "goal_en": "Use the past forms ~mashita / ~masen deshita, ~kara ~made with days, and ~ne.",
+            "patterns": [
+                "〜ました・〜ませんでした",
+                "〜から 〜まで",
+                "〜ですね。"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l4-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、きのう 勉強《べんきょう》しましたか。",
+                    "speak": "ブディさん、きのう べんきょうしましたか。",
+                    "id_text": "Budi, kemarin kamu belajar?",
+                    "en_text": "Budi, did you study yesterday?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t1.mp3"
+                },
+                {
+                    "id": "l4-s3-t2",
+                    "who": "you",
+                    "ja": "はい、勉強《べんきょう》しました。",
+                    "speak": "はい、べんきょうしました。",
+                    "id_text": "Ya, aku belajar.",
+                    "en_text": "Yes, I studied.",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t2.mp3"
+                },
+                {
+                    "id": "l4-s3-t3",
+                    "who": "partner",
+                    "ja": "何時《なんじ》から 何時《なんじ》までですか。",
+                    "speak": "なんじから なんじまでですか。",
+                    "id_text": "Dari jam berapa sampai jam berapa?",
+                    "en_text": "From what time to what time?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t3.mp3"
+                },
+                {
+                    "id": "l4-s3-t4",
+                    "who": "you",
+                    "ja": "晩《ばん》 七時《しちじ》から 九時《くじ》までです。",
+                    "speak": "ばん しちじから くじまでです。",
+                    "id_text": "Malam, dari jam 7 sampai jam 9.",
+                    "en_text": "In the evening, from 7 to 9.",
+                    "accept": [
+                        "晩 7時から 9時までです。",
+                        "晩七時から九時までです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t4.mp3"
+                },
+                {
+                    "id": "l4-s3-t5",
+                    "who": "partner",
+                    "ja": "そうですか。きのうは 休《やす》みましたか。",
+                    "speak": "そうですか。きのうは やすみましたか。",
+                    "id_text": "Oh begitu. Kemarin kamu libur?",
+                    "en_text": "I see. Did you take the day off yesterday?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t5.mp3"
+                },
+                {
+                    "id": "l4-s3-t6",
+                    "who": "you",
+                    "ja": "いいえ、休《やす》みませんでした。月曜日《げつようび》から 金曜日《きんようび》まで 働《はたら》きました。",
+                    "speak": "いいえ、やすみませんでした。げつようびから きんようびまで はたらきました。",
+                    "id_text": "Tidak, aku tidak libur. Aku bekerja dari Senin sampai Jumat.",
+                    "en_text": "No, I did not. I worked from Monday to Friday.",
+                    "accept": [
+                        "いいえ、休みませんでした。月曜日から金曜日まで働きました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t6.mp3"
+                },
+                {
+                    "id": "l4-s3-t7",
+                    "who": "partner",
+                    "ja": "大変《たいへん》ですね。",
+                    "speak": "たいへんですね。",
+                    "id_text": "Wah, berat ya.",
+                    "en_text": "That sounds hard, doesn't it?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l4-s4",
+            "title_id": "Pagi ini dan malam ini",
+            "title_en": "This morning and tonight",
+            "setting_id": "Di ruang istirahat, Suzuki bertanya tentang pagi dan malam harimu.",
+            "setting_en": "In the break room, Suzuki asks about your morning and your evening.",
+            "goal_id": "Memakai 〜ました dengan けさ, 〜に 終わります, dan 〜から 〜まで untuk waktu.",
+            "goal_en": "Use ~mashita with kesa, ~ni owarimasu, and ~kara ~made with times.",
+            "patterns": [
+                "けさ 〜時に 〜ました",
+                "〜時に 終わります",
+                "〜から 〜まで"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l4-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、今朝《けさ》 何時《なんじ》に 起《お》きましたか。",
+                    "speak": "ブディさん、けさ なんじに おきましたか。",
+                    "id_text": "Budi, pagi ini kamu bangun jam berapa?",
+                    "en_text": "Budi, what time did you get up this morning?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t1.mp3"
+                },
+                {
+                    "id": "l4-s4-t2",
+                    "who": "you",
+                    "ja": "今朝《けさ》 五時半《ごじはん》に 起《お》きました。",
+                    "speak": "けさ ごじはんに おきました。",
+                    "id_text": "Pagi ini aku bangun jam 5.30.",
+                    "accept": [
+                        "今朝 5時半に 起きました。",
+                        "今朝五時半に起きました。"
+                    ],
+                    "en_text": "I got up at 5:30 this morning.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t2.mp3"
+                },
+                {
+                    "id": "l4-s4-t3",
+                    "who": "partner",
+                    "ja": "そうですか。会社《かいしゃ》は 何時《なんじ》に 終《お》わりますか。",
+                    "speak": "そうですか。かいしゃは なんじに おわりますか。",
+                    "id_text": "Oh begitu. Kantor selesai jam berapa?",
+                    "en_text": "I see. What time does work end?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t3.mp3"
+                },
+                {
+                    "id": "l4-s4-t4",
+                    "who": "you",
+                    "ja": "午後《ごご》 五時《ごじ》に 終《お》わります。",
+                    "speak": "ごご ごじに おわります。",
+                    "id_text": "Selesai jam 5 sore.",
+                    "accept": [
+                        "午後 5時に 終わります。",
+                        "午後五時に終わります。"
+                    ],
+                    "en_text": "It ends at 5 p.m.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t4.mp3"
+                },
+                {
+                    "id": "l4-s4-t5",
+                    "who": "partner",
+                    "ja": "晩《ばん》も 勉強《べんきょう》しますか。",
+                    "speak": "ばんも べんきょうしますか。",
+                    "id_text": "Malam juga belajar?",
+                    "en_text": "Do you study in the evening too?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t5.mp3"
+                },
+                {
+                    "id": "l4-s4-t6",
+                    "who": "you",
+                    "ja": "はい、晩《ばん》 七時《しちじ》から 九時《くじ》まで 勉強《べんきょう》します。",
+                    "speak": "はい、ばん しちじから くじまで べんきょうします。",
+                    "id_text": "Ya, malam aku belajar dari jam 7 sampai jam 9.",
+                    "accept": [
+                        "はい、晩 7時から 9時まで 勉強します。",
+                        "はい、晩七時から九時まで勉強します。"
+                    ],
+                    "en_text": "Yes, I study from 7 to 9 in the evening.",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t6.mp3"
+                },
+                {
+                    "id": "l4-s4-t7",
+                    "who": "partner",
+                    "ja": "たいへんですね。",
+                    "speak": "たいへんですね。",
+                    "id_text": "Wah, berat ya.",
+                    "en_text": "That sounds hard, doesn't it?",
+                    "audio": "/audio/kaiwa/lesson-4/l4-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

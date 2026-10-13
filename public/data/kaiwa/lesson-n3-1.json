@@ -1,0 +1,572 @@
+{
+    "id": 1,
+    "level": "N3",
+    "title_id": "Pelajaran 1 (N3): Rumah, Hobi, dan Permintaan Sopan",
+    "title_en": "N3 Lesson 1: Home, Hobbies and Polite Requests",
+    "scenarios": [
+        {
+            "id": "n3l1-s1",
+            "title_id": "Meminta bantuan dengan sangat sopan",
+            "title_en": "Asking for help very politely",
+            "setting_id": "Di kantor. Kamu perlu memindahkan kardus dan meminta bantuan senior.",
+            "setting_en": "At the office. You need to move boxes and ask a senior colleague for help.",
+            "goal_id": "Meminta tolong dengan 〜て いただけませんか.",
+            "goal_en": "Ask politely with ~te itadakemasen ka.",
+            "patterns": [
+                "Vて もらえませんか",
+                "Vて いただけませんか"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l1-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、どうしたんですか。",
+                    "speak": "ブディさん、どうしたんですか。",
+                    "id_text": "Budi, ada apa?",
+                    "en_text": "Budi, what is the matter?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s1-t1.mp3"
+                },
+                {
+                    "id": "n3l1-s1-t2",
+                    "who": "you",
+                    "ja": "すみません、この 荷物《にもつ》を 二階《にかい》まで 運《はこ》んで いただけませんか。",
+                    "speak": "すみません、この にもつを にかいまで はこんで いただけませんか。",
+                    "id_text": "Maaf, bisakah Anda membawa barang ini sampai lantai dua?",
+                    "en_text": "Excuse me, could you carry this luggage up to the second floor?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s1-t2.mp3",
+                    "accept": [
+                        "すみません、この 荷物を 二階まで 運んで いただけませんか。",
+                        "すみません、この荷物を二階まで運んでいただけませんか。",
+                        "すみません、この にもつを にかいまで はこんで いただけませんか。",
+                        "すみません、このにもつをにかいまではこんでいただけませんか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s1-t3",
+                    "who": "partner",
+                    "ja": "いいですよ。何《なに》を すれば いいですか。",
+                    "speak": "いいですよ。なにを すれば いいですか。",
+                    "id_text": "Boleh. Apa yang harus saya lakukan?",
+                    "en_text": "Sure. What should I do?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s1-t3.mp3"
+                },
+                {
+                    "id": "n3l1-s1-t4",
+                    "who": "you",
+                    "ja": "この 箱《はこ》を 持《も》って いただけませんか。",
+                    "speak": "この はこを もって いただけませんか。",
+                    "id_text": "Bisakah Anda memegang kotak ini?",
+                    "en_text": "Could you hold this box?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s1-t4.mp3",
+                    "accept": [
+                        "この 箱を 持って いただけませんか。",
+                        "この箱を持っていただけませんか。",
+                        "この はこを もって いただけませんか。",
+                        "このはこをもっていただけませんか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s1-t5",
+                    "who": "partner",
+                    "ja": "わかりました。ほかにも ありますか。",
+                    "speak": "わかりました。ほかにも ありますか。",
+                    "id_text": "Baik. Apakah ada yang lain juga?",
+                    "en_text": "All right. Is there anything else?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s1-t5.mp3"
+                },
+                {
+                    "id": "n3l1-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ、これだけです。ありがとうございます。",
+                    "speak": "いいえ、これだけです。ありがとうございます。",
+                    "id_text": "Tidak, hanya ini. Terima kasih.",
+                    "en_text": "No, that is all. Thank you.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s1-t6.mp3",
+                    "accept": [
+                        "いいえ、これだけです。ありがとうございます。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l1-s2",
+            "title_id": "Kantor baru seperti hotel",
+            "title_en": "A new office like a hotel",
+            "setting_id": "Siang hari. Teman kantor bertanya kesan kamu tentang kantor baru.",
+            "setting_en": "Daytime. A colleague asks what you think of the new office.",
+            "goal_id": "Membuat perumpamaan dengan Nの ようです／ような／ように.",
+            "goal_en": "Make comparisons with N no you desu / you na / you ni.",
+            "patterns": [
+                "Nの ようだ",
+                "Nの ような N",
+                "Nの ように V"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l1-s2-t1",
+                    "who": "partner",
+                    "ja": "新《あたら》しい 事務所《じむしょ》は どうですか。",
+                    "speak": "あたらしい じむしょは どうですか。",
+                    "id_text": "Bagaimana kantor yang baru?",
+                    "en_text": "How is the new office?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s2-t1.mp3"
+                },
+                {
+                    "id": "n3l1-s2-t2",
+                    "who": "you",
+                    "ja": "広《ひろ》くて、まるで ホテルのようです。",
+                    "speak": "ひろくて、まるで ホテルのようです。",
+                    "id_text": "Luas, persis seperti hotel.",
+                    "en_text": "It is spacious, just like a hotel.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s2-t2.mp3",
+                    "accept": [
+                        "広くて、まるで ホテルのようです。",
+                        "広くて、まるでホテルのようです。",
+                        "ひろくて、まるで ホテルのようです。",
+                        "ひろくて、まるでホテルのようです。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s2-t3",
+                    "who": "partner",
+                    "ja": "社長《しゃちょう》の 部屋《へや》も 見《み》ましたか。",
+                    "speak": "しゃちょうの へやも みましたか。",
+                    "id_text": "Apakah Anda sudah melihat ruang direktur juga?",
+                    "en_text": "Did you see the president's room too?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s2-t3.mp3"
+                },
+                {
+                    "id": "n3l1-s2-t4",
+                    "who": "you",
+                    "ja": "はい、美術館《びじゅつかん》のような 雰囲気《ふんいき》でした。",
+                    "speak": "はい、びじゅつかんのような ふんいきでした。",
+                    "id_text": "Ya, suasananya seperti museum.",
+                    "en_text": "Yes, it had an atmosphere like a museum.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s2-t4.mp3",
+                    "accept": [
+                        "はい、美術館のような 雰囲気でした。",
+                        "はい、美術館のような雰囲気でした。",
+                        "はい、びじゅつかんのような ふんいきでした。",
+                        "はい、びじゅつかんのようなふんいきでした。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s2-t5",
+                    "who": "partner",
+                    "ja": "みんな 夢《ゆめ》のように 喜《よろこ》んで いますよ。",
+                    "speak": "みんな ゆめのように よろこんで いますよ。",
+                    "id_text": "Semua orang senang sekali, seperti dalam mimpi.",
+                    "en_text": "Everyone is delighted, as if in a dream.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s2-t5.mp3"
+                },
+                {
+                    "id": "n3l1-s2-t6",
+                    "who": "you",
+                    "ja": "私《わたし》も うれしいです。",
+                    "speak": "わたしも うれしいです。",
+                    "id_text": "Saya juga senang.",
+                    "en_text": "I am happy too.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s2-t6.mp3",
+                    "accept": [
+                        "私も うれしいです。",
+                        "私もうれしいです。",
+                        "わたしも うれしいです。",
+                        "わたしもうれしいです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l1-s3",
+            "title_id": "Hobi: memotret dan memasak",
+            "title_en": "Hobbies: photography and cooking",
+            "setting_id": "Istirahat makan siang. Rekan kerja menanyakan hobi kamu.",
+            "setting_en": "Lunch break. A colleague asks about your hobbies.",
+            "goal_id": "Menyebut hobi dengan Vる ことが 好きです／ことです.",
+            "goal_en": "State hobbies with V-ru koto ga suki desu / koto desu.",
+            "patterns": [
+                "Vる ことです",
+                "Vる ことが 好きだ",
+                "Vる ことは 〜"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l1-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの ご趣味《しゅみ》は 何《なん》ですか。",
+                    "speak": "ブディさんの ごしゅみは なんですか。",
+                    "id_text": "Apa hobi Budi?",
+                    "en_text": "What is your hobby, Budi?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s3-t1.mp3"
+                },
+                {
+                    "id": "n3l1-s3-t2",
+                    "who": "you",
+                    "ja": "写真《しゃしん》を 撮《と》る ことです。",
+                    "speak": "しゃしんを とる ことです。",
+                    "id_text": "Memotret.",
+                    "en_text": "Taking photos.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s3-t2.mp3",
+                    "accept": [
+                        "写真を 撮る ことです。",
+                        "写真を撮ることです。",
+                        "しゃしんを とる ことです。",
+                        "しゃしんをとることです。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s3-t3",
+                    "who": "partner",
+                    "ja": "いいですね。どんな 写真《しゃしん》を 撮《と》りますか。",
+                    "speak": "いいですね。どんな しゃしんを とりますか。",
+                    "id_text": "Bagus. Foto seperti apa yang Anda ambil?",
+                    "en_text": "Nice. What kind of photos do you take?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s3-t3.mp3"
+                },
+                {
+                    "id": "n3l1-s3-t4",
+                    "who": "you",
+                    "ja": "散歩《さんぽ》しながら 撮《と》る ことが 好《す》きなんです。",
+                    "speak": "さんぽしながら とる ことが すきなんです。",
+                    "id_text": "Saya suka memotret sambil berjalan-jalan.",
+                    "en_text": "I like taking them while I walk.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s3-t4.mp3",
+                    "accept": [
+                        "散歩しながら 撮る ことが 好きなんです。",
+                        "散歩しながら撮ることが好きなんです。",
+                        "さんぽしながら とる ことが すきなんです。",
+                        "さんぽしながらとることがすきなんです。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s3-t5",
+                    "who": "partner",
+                    "ja": "私《わたし》は 料理《りょうり》を 作《つく》る ことが 好《す》きです。",
+                    "speak": "わたしは りょうりを つくる ことが すきです。",
+                    "id_text": "Saya suka memasak.",
+                    "en_text": "I like cooking.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s3-t5.mp3"
+                },
+                {
+                    "id": "n3l1-s3-t6",
+                    "who": "you",
+                    "ja": "料理《りょうり》が できる ことは すてきですね。",
+                    "speak": "りょうりが できる ことは すてきですね。",
+                    "id_text": "Bisa memasak itu keren, ya.",
+                    "en_text": "Being able to cook is wonderful.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s3-t6.mp3",
+                    "accept": [
+                        "料理が できる ことは すてきですね。",
+                        "料理ができることはすてきですね。",
+                        "りょうりが できる ことは すてきですね。",
+                        "りょうりができることはすてきですね。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l1-s4",
+            "title_id": "Makanan Tahun Baru",
+            "title_en": "New Year food",
+            "setting_id": "Awal Januari di kantor. Rekan kerja membawa kotak makanan Tahun Baru.",
+            "setting_en": "Early January at the office. A colleague brings a box of New Year food.",
+            "goal_id": "Menyebut nama dengan Nを Nと 言う／Nという N.",
+            "goal_en": "Name things with N o N to iu / N toiu N.",
+            "patterns": [
+                "N１を N２と 言う",
+                "N１という N２"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l1-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、これを どうぞ。",
+                    "speak": "ブディさん、これを どうぞ。",
+                    "id_text": "Budi, silakan ini.",
+                    "en_text": "Budi, please have some of this.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s4-t1.mp3"
+                },
+                {
+                    "id": "n3l1-s4-t2",
+                    "who": "you",
+                    "ja": "ありがとうございます。これは 何《なん》と 言《い》いますか。",
+                    "speak": "ありがとうございます。これは なんと いいますか。",
+                    "id_text": "Terima kasih. Ini disebut apa?",
+                    "en_text": "Thank you. What is this called?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s4-t2.mp3",
+                    "accept": [
+                        "ありがとうございます。これは 何と 言いますか。",
+                        "ありがとうございます。これは何と言いますか。",
+                        "ありがとうございます。これは なんと いいますか。",
+                        "ありがとうございます。これはなんといいますか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s4-t3",
+                    "who": "partner",
+                    "ja": "おせち料理《りょうり》と 言《い》います。お正月《しょうがつ》に 食《た》べる 料理《りょうり》です。",
+                    "speak": "おせちりょうりと いいます。おしょうがつに たべる りょうりです。",
+                    "id_text": "Namanya osechi ryouri. Masakan yang dimakan saat Tahun Baru.",
+                    "en_text": "It is called osechi ryouri. It is food eaten at New Year.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s4-t3.mp3"
+                },
+                {
+                    "id": "n3l1-s4-t4",
+                    "who": "you",
+                    "ja": "この 箱《はこ》も 名前《なまえ》が あるんですか。",
+                    "speak": "この はこも なまえが あるんですか。",
+                    "id_text": "Apakah kotak ini juga punya nama?",
+                    "en_text": "Does this box have a name too?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s4-t4.mp3",
+                    "accept": [
+                        "この 箱も 名前が あるんですか。",
+                        "この箱も名前があるんですか。",
+                        "この はこも なまえが あるんですか。",
+                        "このはこもなまえがあるんですか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s4-t5",
+                    "who": "partner",
+                    "ja": "ええ、お重《じゅう》という 箱《はこ》です。",
+                    "speak": "ええ、おじゅうという はこです。",
+                    "id_text": "Ya, kotak yang bernama ojuu.",
+                    "en_text": "Yes, it is a box called ojuu.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s4-t5.mp3"
+                },
+                {
+                    "id": "n3l1-s4-t6",
+                    "who": "you",
+                    "ja": "そうですか。勉強《べんきょう》に なりました。",
+                    "speak": "そうですか。べんきょうに なりました。",
+                    "id_text": "Begitu. Saya jadi belajar sesuatu.",
+                    "en_text": "I see. I learned something.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s4-t6.mp3",
+                    "accept": [
+                        "そうですか。勉強に なりました。",
+                        "そうですか。勉強になりました。",
+                        "そうですか。べんきょうに なりました。",
+                        "そうですか。べんきょうになりました。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l1-s5",
+            "title_id": "Pertandingan tetap jalan meski hujan",
+            "title_en": "The match goes on even in rain",
+            "setting_id": "Hari Jumat sore. Kamu bertanya soal pertandingan sepak bola perusahaan besok.",
+            "setting_en": "Friday afternoon. You ask about tomorrow's company soccer match.",
+            "goal_id": "Mengatakan \"meskipun\" dengan 〜ても.",
+            "goal_en": "Say \"even if\" with ~temo.",
+            "patterns": [
+                "〜ても",
+                "どんなに 〜ても",
+                "いつ／どこ／何 〜ても"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l1-s5-t1",
+                    "who": "you",
+                    "ja": "明日《あした》は 雨《あめ》が 降《ふ》っても、試合《しあい》が ありますか。",
+                    "speak": "あしたは あめが ふっても、しあいが ありますか。",
+                    "id_text": "Besok, meski hujan, apakah pertandingan tetap ada?",
+                    "en_text": "Will the match go ahead tomorrow even if it rains?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s5-t1.mp3",
+                    "accept": [
+                        "明日は 雨が 降っても、試合が ありますか。",
+                        "明日は雨が降っても、試合がありますか。",
+                        "あしたは あめが ふっても、しあいが ありますか。",
+                        "あしたはあめがふっても、しあいがありますか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s5-t2",
+                    "who": "partner",
+                    "ja": "ええ、雨《あめ》が 降《ふ》っても 行《おこな》います。",
+                    "speak": "ええ、あめが ふっても おこないます。",
+                    "id_text": "Ya, meski hujan tetap diadakan.",
+                    "en_text": "Yes, it is held even if it rains.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s5-t2.mp3"
+                },
+                {
+                    "id": "n3l1-s5-t3",
+                    "who": "you",
+                    "ja": "どんなに 寒《さむ》くても ですか。",
+                    "speak": "どんなに さむくても ですか。",
+                    "id_text": "Sedingin apa pun?",
+                    "en_text": "No matter how cold?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s5-t3.mp3",
+                    "accept": [
+                        "どんなに 寒くても ですか。",
+                        "どんなに寒くてもですか。",
+                        "どんなに さむくても ですか。",
+                        "どんなにさむくてもですか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s5-t4",
+                    "who": "partner",
+                    "ja": "はい、寒《さむ》くても 中止《ちゅうし》には なりません。",
+                    "speak": "はい、さむくても ちゅうしには なりません。",
+                    "id_text": "Ya, sedingin apa pun tidak dibatalkan.",
+                    "en_text": "Yes, it will not be cancelled even if it is cold.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s5-t4.mp3"
+                },
+                {
+                    "id": "n3l1-s5-t5",
+                    "who": "you",
+                    "ja": "わかりました。だれが 来《き》ても いいですか。",
+                    "speak": "わかりました。だれが きても いいですか。",
+                    "id_text": "Baik. Siapa pun boleh datang?",
+                    "en_text": "Understood. Can anyone come?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s5-t5.mp3",
+                    "accept": [
+                        "わかりました。だれが 来ても いいですか。",
+                        "わかりました。だれが来てもいいですか。",
+                        "わかりました。だれが きても いいですか。",
+                        "わかりました。だれがきてもいいですか。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s5-t6",
+                    "who": "partner",
+                    "ja": "もちろん、だれでも 大歓迎《だいかんげい》ですよ。",
+                    "speak": "もちろん、だれでも だいかんげいですよ。",
+                    "id_text": "Tentu saja, siapa pun sangat diterima.",
+                    "en_text": "Of course, everyone is welcome.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s5-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l1-s6",
+            "title_id": "Bukan daging, tapi ikan",
+            "title_en": "Not meat, but fish",
+            "setting_id": "Malam hari. Kamu dan teman kantor memilih tempat makan.",
+            "setting_en": "Evening. You and a colleague choose a place to eat.",
+            "goal_id": "Mengoreksi dengan N１じゃなくて N２ dan menjelaskan alasan dengan 〜のです.",
+            "goal_en": "Correct with N1 janakute N2 and explain with ~no desu.",
+            "patterns": [
+                "N１じゃなくて、N２",
+                "〜のです／〜のではありません"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l1-s6-t1",
+                    "who": "partner",
+                    "ja": "今夜《こんや》は 肉《にく》を 食《た》べに 行《い》きませんか。",
+                    "speak": "こんやは にくを たべに いきませんか。",
+                    "id_text": "Malam ini mau makan daging?",
+                    "en_text": "Shall we go for meat tonight?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s6-t1.mp3"
+                },
+                {
+                    "id": "n3l1-s6-t2",
+                    "who": "you",
+                    "ja": "肉《にく》じゃなくて、魚《さかな》が いいです。",
+                    "speak": "にくじゃなくて、さかなが いいです。",
+                    "id_text": "Bukan daging, saya mau ikan.",
+                    "en_text": "Not meat, I would like fish.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s6-t2.mp3",
+                    "accept": [
+                        "肉じゃなくて、魚が いいです。",
+                        "肉じゃなくて、魚がいいです。",
+                        "にくじゃなくて、さかなが いいです。",
+                        "にくじゃなくて、さかながいいです。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s6-t3",
+                    "who": "partner",
+                    "ja": "どうして ですか。",
+                    "speak": "どうして ですか。",
+                    "id_text": "Kenapa?",
+                    "en_text": "Why?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s6-t3.mp3"
+                },
+                {
+                    "id": "n3l1-s6-t4",
+                    "who": "you",
+                    "ja": "昨日《きのう》も 肉《にく》を 食《た》べたのです。",
+                    "speak": "きのうも にくを たべたのです。",
+                    "id_text": "Kemarin saya juga makan daging.",
+                    "en_text": "I ate meat yesterday too.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s6-t4.mp3",
+                    "accept": [
+                        "昨日も 肉を 食べたのです。",
+                        "昨日も肉を食べたのです。",
+                        "きのうも にくを たべたのです。",
+                        "きのうもにくをたべたのです。"
+                    ]
+                },
+                {
+                    "id": "n3l1-s6-t5",
+                    "who": "partner",
+                    "ja": "じゃ、寿司《すし》に しましょうか。",
+                    "speak": "じゃ、すしに しましょうか。",
+                    "id_text": "Kalau begitu, bagaimana kalau sushi?",
+                    "en_text": "Then how about sushi?",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s6-t5.mp3"
+                },
+                {
+                    "id": "n3l1-s6-t6",
+                    "who": "you",
+                    "ja": "はい、回《まわ》る 寿司《ずし》じゃなくて、カウンターの お店《みせ》が いいです。",
+                    "speak": "はい、まわる ずしじゃなくて、カウンターの おみせが いいです。",
+                    "id_text": "Ya, bukan sushi berputar, tapi kedai yang ada meja konternya.",
+                    "en_text": "Yes, not conveyor-belt sushi, but a counter place.",
+                    "audio": "/audio/kaiwa/lesson-n3-1/n3l1-s6-t6.mp3",
+                    "accept": [
+                        "はい、回る 寿司じゃなくて、カウンターの お店が いいです。",
+                        "はい、回る寿司じゃなくて、カウンターのお店がいいです。",
+                        "はい、まわる ずしじゃなくて、カウンターの おみせが いいです。",
+                        "はい、まわるずしじゃなくて、カウンターのおみせがいいです。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,300 @@
+{
+    "id": "n4-18",
+    "level": "N4",
+    "focus": "〜そうです (gejala dan kesan), 〜て来ます, 〜てくれませんか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "あっ、たぐちさん、そらが くらいですね。"
+            },
+            {
+                "speaker": "female",
+                "text": "ええ、いまにも あめが ふりそうです。"
+            },
+            {
+                "speaker": "male",
+                "text": "かさを かって きます。"
+            },
+            {
+                "speaker": "female",
+                "text": "あ、ついでに わたしの ぶんも かって きて くれませんか。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-18/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l18-kq1",
+                "prompt": "女《おんな》の 人《ひと》が 買《か》って 来《き》て 欲《ほ》しい 物《もの》は どれですか。",
+                "choices": [
+                    "自分《じぶん》の 傘《かさ》",
+                    "新聞《しんぶん》",
+                    "コーヒー"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Perempuan itu meminta dibelikan payung juga.",
+                    "en": "The woman asked him to buy an umbrella for her too."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l18-kq2",
+                "prompt": "天気《てんき》は どうですか。",
+                "choices": [
+                    "今《いま》にも 雨《あめ》が 降《ふ》りそうです",
+                    "雪《ゆき》が 降《ふ》って います",
+                    "とても いい 天気《てんき》です"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Sepertinya sebentar lagi hujan.",
+                    "en": "It looks like it will rain any moment."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l18-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この ケーキ、おいしそうですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、スリさんが つくりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q1.mp3",
+            "prompt": "ケーキは どうですか。",
+            "choices": [
+                "まずそうです",
+                "つまらなそうです",
+                "おいしそうです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Kue itu kelihatannya enak.",
+                "en": "The cake looks delicious."
+            }
+        },
+        {
+            "id": "n4l18-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、ボタンが とれそうですよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あ、ほんとうだ。ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q2.mp3",
+            "prompt": "何《なに》が 取《と》れそうですか。",
+            "choices": [
+                "時計《とけい》",
+                "ボタン",
+                "かばん"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kancing hampir terlepas.",
+                "en": "A button is about to come off."
+            }
+        },
+        {
+            "id": "n4l18-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ちょっと ぎんこうへ いって きます。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いってらっしゃい。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どこへ 行《い》きますか。",
+            "choices": [
+                "郵便局《ゆうびんきょく》",
+                "銀行《ぎんこう》",
+                "駅《えき》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu pergi ke bank.",
+                "en": "The man is going to the bank."
+            }
+        },
+        {
+            "id": "n4l18-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、ガソリンが なくなりそうです。つぎの スタンドで とめて ください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q4.mp3",
+            "prompt": "ガソリンは どうですか。",
+            "choices": [
+                "たくさん あります",
+                "なくなりそうです",
+                "もう ありません"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Bensin hampir habis.",
+                "en": "The petrol is about to run out."
+            }
+        },
+        {
+            "id": "n4l18-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "コンビニで なにを かって きましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "おべんとうを おねがいします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なに》が 欲《ほ》しいですか。",
+            "choices": [
+                "飲《の》み物《もの》",
+                "新聞《しんぶん》",
+                "お弁当《べんとう》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Perempuan itu ingin bekal.",
+                "en": "The woman wants a boxed lunch."
+            }
+        },
+        {
+            "id": "n4l18-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、この にもつを はこんで くれませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なん》と 答《こた》えますか。",
+            "choices": [
+                "いいですよ。どこへ 運《はこ》びますか。",
+                "はい、運《はこ》んで くれません。",
+                "運《はこ》んで 来《き》ました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Maaf, bisa tolong bawakan barang ini? ...Boleh. Dibawa ke mana?",
+                "en": "Excuse me, could you carry this luggage? ...Sure. Where to?"
+            }
+        },
+        {
+            "id": "n4l18-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの ひとは、とても たのしそうですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、きょうは たんじょうびですから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q7.mp3",
+            "prompt": "その 人《ひと》は どうして 楽《たの》しそうですか。",
+            "choices": [
+                "休《やす》みだから",
+                "誕生日《たんじょうび》だから",
+                "お金《かね》が あるから"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Dia kelihatan senang karena hari ini ulang tahunnya.",
+                "en": "She looks happy because it is her birthday."
+            }
+        },
+        {
+            "id": "n4l18-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヌルさん、ちょっと でかけて きます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、いってらっしゃい。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q8.mp3",
+            "prompt": "女《おんな》の 人《ひと》が 出《で》かけます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu keluar. ...Benar (○).",
+                "en": "The woman goes out. ...True (○)."
+            }
+        },
+        {
+            "id": "n4l18-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この かばんは じょうぶそうですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、でも ちょっと おもいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q9.mp3",
+            "prompt": "かばんは 重《おも》くないです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Tas itu tidak berat. ...Salah (×).",
+                "en": "The bag is not heavy. ...False (×)."
+            }
+        },
+        {
+            "id": "n4l18-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "コーヒーを いれて きます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ありがとう。さとうも もって きて くれませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-18/n4l18-q10.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 砂糖《さとう》も お願《ねが》いしました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu juga meminta gula. ...Benar (○).",
+                "en": "The man also asked for sugar. ...True (○)."
+            }
+        }
+    ]
+}

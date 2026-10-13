@@ -1,0 +1,1262 @@
+{
+    "id": "restoran",
+    "track": "situation",
+    "level": "N5",
+    "rounds": 1,
+    "title_id": "Restoran",
+    "title_en": "Restaurant",
+    "note_id": "Kalimat pelayan memakai bahasa sopan toko (mis. ご注文は お決まりですか, かしこまりました). Kamu cukup mengerti dan menjawab sederhana. Menu, jumlah, jam, dan nama di jawaban contoh hanya contoh; di skenario 3 pantangan makanan hanyalah peran.",
+    "note_en": "Server lines use polite shop language (e.g. ご注文は お決まりですか, かしこまりました). You only need to understand and answer simply. Menu items, numbers, times and names in the sample answers are examples; the food restriction in scenario 3 is just a role.",
+    "scenarios": [
+        {
+            "id": "restoran-s1",
+            "title_id": "Masuk & mendapat meja",
+            "title_en": "Entering and getting a table",
+            "setting_id": "Kamu masuk restoran bersama seorang teman. Pelayan menanyakan jumlah orang dan tempat duduk.",
+            "setting_en": "You enter a restaurant with a friend. The server asks how many people and which seats.",
+            "goal_id": "Menjawab 何名様ですか dengan 〜人です, memilih 禁煙席 / 喫煙席, dan mengikuti petunjuk tempat duduk.",
+            "goal_en": "Answer 何名様ですか with 〜人です, choose non-smoking / smoking seats, and follow the seating directions.",
+            "patterns": [
+                "何名様ですか",
+                "〜人です",
+                "禁煙席で お願いします"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pelayan hampir selalu bertanya jumlah orang: 何名様ですか. Jawab dengan 〜人です: 一人, 二人, 三人.",
+                "Pilihan tempat duduk: 禁煙席 (bebas rokok) atau 喫煙席 (boleh merokok). Pilih salah satu dengan 〜で お願いします.",
+                "こちらへ どうぞ = \"Silakan lewat sini\". Cukup jawab はい atau ありがとうございます."
+            ],
+            "tips_en": [
+                "Staff almost always ask the number of people: 何名様ですか. Answer 〜人です: 一人, 二人, 三人.",
+                "Seat choice: 禁煙席 (non-smoking) or 喫煙席 (smoking). Pick with 〜で お願いします.",
+                "こちらへ どうぞ = \"This way, please\". Just answer はい or ありがとうございます."
+            ],
+            "words": [
+                {
+                    "ja": "何名様《なんめいさま》",
+                    "id": "berapa orang (sopan)",
+                    "en": "how many people (polite)"
+                },
+                {
+                    "ja": "禁煙席《きんえんせき》",
+                    "id": "tempat duduk bebas rokok",
+                    "en": "non-smoking seat"
+                },
+                {
+                    "ja": "喫煙席《きつえんせき》",
+                    "id": "tempat duduk merokok",
+                    "en": "smoking seat"
+                },
+                {
+                    "ja": "席《せき》",
+                    "id": "kursi / tempat duduk",
+                    "en": "seat"
+                },
+                {
+                    "ja": "こちら",
+                    "id": "sebelah sini (sopan)",
+                    "en": "this way (polite)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "三人《さんにん》です。",
+                    "id": "Kami bertiga.",
+                    "en": "Three people."
+                },
+                {
+                    "ja": "カウンター席《せき》でも いいです。",
+                    "id": "Kursi konter juga tidak apa-apa.",
+                    "en": "A counter seat is fine too."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。何名様《なんめいさま》ですか。",
+                    "speak": "いらっしゃいませ。なんめいさまですか。",
+                    "id_text": "Selamat datang. Berapa orang?",
+                    "en_text": "Welcome. How many people?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t1.mp3"
+                },
+                {
+                    "id": "restoran-s1-t2",
+                    "who": "you",
+                    "ja": "二人《ふたり》です。",
+                    "speak": "ふたりです。",
+                    "id_text": "Berdua.",
+                    "accept": [
+                        "二人です。"
+                    ],
+                    "en_text": "Two people.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t2.mp3"
+                },
+                {
+                    "id": "restoran-s1-t3",
+                    "who": "partner",
+                    "ja": "おタバコは 吸《す》いますか。",
+                    "speak": "おタバコは すいますか。",
+                    "id_text": "Apakah Anda merokok?",
+                    "en_text": "Do you smoke?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t3.mp3"
+                },
+                {
+                    "id": "restoran-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、吸《す》いません。禁煙席《きんえんせき》で お願《ねが》いします。",
+                    "speak": "いいえ、すいません。きんえんせきで おねがいします。",
+                    "id_text": "Tidak, saya tidak merokok. Tolong tempat bebas rokok.",
+                    "accept": [
+                        "いいえ、吸いません。禁煙席で お願いします。",
+                        "いいえ、吸いません。禁煙席でお願いします。"
+                    ],
+                    "en_text": "No, I do not smoke. A non-smoking seat, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t4.mp3"
+                },
+                {
+                    "id": "restoran-s1-t5",
+                    "who": "partner",
+                    "ja": "かしこまりました。こちらへ どうぞ。",
+                    "speak": "かしこまりました。こちらへ どうぞ。",
+                    "id_text": "Baik. Silakan lewat sini.",
+                    "en_text": "Certainly. This way, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t5.mp3"
+                },
+                {
+                    "id": "restoran-s1-t6",
+                    "who": "you",
+                    "ja": "はい、ありがとうございます。",
+                    "speak": "はい、ありがとうございます。",
+                    "id_text": "Ya, terima kasih.",
+                    "accept": [
+                        "はい、ありがとうございます。"
+                    ],
+                    "en_text": "Yes, thank you.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t6.mp3"
+                },
+                {
+                    "id": "restoran-s1-t7",
+                    "who": "partner",
+                    "ja": "こちらの 席《せき》で よろしいですか。",
+                    "speak": "こちらの せきで よろしいですか。",
+                    "id_text": "Apakah tempat duduk ini cukup?",
+                    "en_text": "Is this seat all right?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t7.mp3"
+                },
+                {
+                    "id": "restoran-s1-t8",
+                    "who": "you",
+                    "ja": "はい、ここで いいです。",
+                    "speak": "はい、ここで いいです。",
+                    "id_text": "Ya, di sini tidak apa-apa.",
+                    "accept": [
+                        "はい、ここで いいです。",
+                        "はい、ここでいいです。"
+                    ],
+                    "en_text": "Yes, here is fine.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s2",
+            "title_id": "Memesan makanan",
+            "title_en": "Ordering food",
+            "setting_id": "Kamu sudah duduk. Pelayan datang membawa menu dan mencatat pesananmu.",
+            "setting_en": "You are seated. The server brings the menu and takes your order.",
+            "goal_id": "Memesan dengan 〜を 一つ お願いします, memilih セット, dan memesan minuman.",
+            "goal_en": "Order with 〜を 一つ お願いします, choose a set, and order a drink.",
+            "patterns": [
+                "〜を 一つ お願いします",
+                "セットに します",
+                "〜を ください"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pola inti memesan: 〜を (jumlah) お願いします / ください. Satu = 一つ《ひとつ》, dua = 二つ《ふたつ》.",
+                "セット = paket (makanan utama + nasi + sup / minuman). Pelayan sering menawarkannya: セットに なさいますか.",
+                "Minuman: お茶 (teh), お水 (air), コーヒー. Katakan 〜を お願いします."
+            ],
+            "tips_en": [
+                "Core ordering pattern: 〜を (number) お願いします / ください. One = 一つ, two = 二つ.",
+                "セット = set meal (main + rice + soup / drink). Staff often offer it: セットに なさいますか.",
+                "Drinks: お茶 (tea), お水 (water), コーヒー. Say 〜を お願いします."
+            ],
+            "words": [
+                {
+                    "ja": "注文《ちゅうもん》",
+                    "id": "pesanan",
+                    "en": "order"
+                },
+                {
+                    "ja": "定食《ていしょく》",
+                    "id": "menu paket nasi",
+                    "en": "set meal"
+                },
+                {
+                    "ja": "ラーメン",
+                    "id": "ramen",
+                    "en": "ramen"
+                },
+                {
+                    "ja": "餃子《ぎょうざ》",
+                    "id": "pangsit goreng",
+                    "en": "gyoza"
+                },
+                {
+                    "ja": "飲《の》み物《もの》",
+                    "id": "minuman",
+                    "en": "drink"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "すみません、注文《ちゅうもん》 お願《ねが》いします。",
+                    "id": "Maaf, saya mau memesan.",
+                    "en": "Excuse me, I would like to order."
+                },
+                {
+                    "ja": "これを 二《ふた》つ ください。",
+                    "id": "Tolong dua yang ini.",
+                    "en": "Two of these, please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s2-t1",
+                    "who": "partner",
+                    "ja": "ご注文《ちゅうもん》は お決《き》まりですか。",
+                    "speak": "ごちゅうもんは おきまりですか。",
+                    "id_text": "Apakah sudah memutuskan pesanannya?",
+                    "en_text": "Have you decided on your order?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t1.mp3"
+                },
+                {
+                    "id": "restoran-s2-t2",
+                    "who": "you",
+                    "ja": "ラーメンを 一《ひと》つ お願《ねが》いします。",
+                    "speak": "ラーメンを ひとつ おねがいします。",
+                    "id_text": "Tolong satu ramen.",
+                    "accept": [
+                        "ラーメンを 一つ お願いします。",
+                        "ラーメンを一つお願いします。"
+                    ],
+                    "en_text": "One ramen, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t2.mp3"
+                },
+                {
+                    "id": "restoran-s2-t3",
+                    "who": "partner",
+                    "ja": "セットに なさいますか。餃子《ぎょうざ》と ごはんが つきます。",
+                    "speak": "セットに なさいますか。ぎょうざと ごはんが つきます。",
+                    "id_text": "Mau dijadikan paket? Dapat pangsit dan nasi.",
+                    "en_text": "Would you like the set? It comes with gyoza and rice.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t3.mp3"
+                },
+                {
+                    "id": "restoran-s2-t4",
+                    "who": "you",
+                    "ja": "はい、セットに します。",
+                    "speak": "はい、セットに します。",
+                    "id_text": "Ya, saya pilih paket.",
+                    "accept": [
+                        "はい、セットに します。",
+                        "はい、セットにします。"
+                    ],
+                    "en_text": "Yes, I will take the set.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t4.mp3"
+                },
+                {
+                    "id": "restoran-s2-t5",
+                    "who": "partner",
+                    "ja": "お飲《の》み物《もの》は いかがですか。",
+                    "speak": "おのみものは いかがですか。",
+                    "id_text": "Minumannya bagaimana?",
+                    "en_text": "Would you like a drink?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t5.mp3"
+                },
+                {
+                    "id": "restoran-s2-t6",
+                    "who": "you",
+                    "ja": "お茶《ちゃ》を お願《ねが》いします。",
+                    "speak": "おちゃを おねがいします。",
+                    "id_text": "Tolong teh.",
+                    "accept": [
+                        "お茶を お願いします。",
+                        "お茶をお願いします。"
+                    ],
+                    "en_text": "Tea, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t6.mp3"
+                },
+                {
+                    "id": "restoran-s2-t7",
+                    "who": "partner",
+                    "ja": "かしこまりました。少々《しょうしょう》 お待《ま》ちください。",
+                    "speak": "かしこまりました。しょうしょう おまちください。",
+                    "id_text": "Baik. Mohon tunggu sebentar.",
+                    "en_text": "Certainly. Please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t7.mp3"
+                },
+                {
+                    "id": "restoran-s2-t8",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, terima kasih.",
+                    "accept": [
+                        "はい、お願いします。"
+                    ],
+                    "en_text": "Yes, thank you.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s3",
+            "title_id": "Makanan yang tidak boleh dimakan",
+            "title_en": "Foods you cannot eat",
+            "setting_id": "Kamu tidak makan daging babi. Kamu bertanya pada pelayan bahan apa saja yang ada di hidangan.",
+            "setting_en": "You do not eat pork. You ask the server what is in the dishes.",
+            "goal_id": "Menjelaskan 豚肉は 食べられません dan bertanya 〜は 入っていますか.",
+            "goal_en": "Explain 豚肉は 食べられません and ask 〜は 入っていますか.",
+            "patterns": [
+                "〜は 食べられません",
+                "〜は 入っていますか",
+                "〜を お願いします"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Katakan pantanganmu dengan 〜は 食べられません (tidak bisa/tidak boleh makan). Bisa untuk alasan agama atau alergi.",
+                "Tanyakan bahan: これは 豚肉が 入っていますか. 入っています = ada isinya.",
+                "Dalam kaldu dan saus sering ada daging babi juga. Tanyakan スープも dan ソースも agar yakin."
+            ],
+            "tips_en": [
+                "State restrictions with 〜は 食べられません (cannot eat). Works for religion or allergies.",
+                "Ask about ingredients: これは 豚肉が 入っていますか. 入っています = it contains.",
+                "Pork is often in broth and sauces too. Ask about スープ and ソース to be sure."
+            ],
+            "words": [
+                {
+                    "ja": "豚肉《ぶたにく》",
+                    "id": "daging babi",
+                    "en": "pork"
+                },
+                {
+                    "ja": "鶏肉《とりにく》",
+                    "id": "daging ayam",
+                    "en": "chicken"
+                },
+                {
+                    "ja": "入《はい》っています",
+                    "id": "mengandung / ada isinya",
+                    "en": "contains"
+                },
+                {
+                    "ja": "食《た》べられません",
+                    "id": "tidak bisa / tidak boleh makan",
+                    "en": "cannot eat"
+                },
+                {
+                    "ja": "アレルギー",
+                    "id": "alergi",
+                    "en": "allergy"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "エビの アレルギーが あります。",
+                    "id": "Saya alergi udang.",
+                    "en": "I have a shrimp allergy."
+                },
+                {
+                    "ja": "スープにも 豚肉《ぶたにく》が 入《はい》っていますか。",
+                    "id": "Apakah di kuahnya juga ada daging babi?",
+                    "en": "Is there pork in the soup too?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s3-t1",
+                    "who": "partner",
+                    "ja": "ご注文《ちゅうもん》は お決《き》まりですか。",
+                    "speak": "ごちゅうもんは おきまりですか。",
+                    "id_text": "Sudah memutuskan pesanannya?",
+                    "en_text": "Have you decided?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t1.mp3"
+                },
+                {
+                    "id": "restoran-s3-t2",
+                    "who": "you",
+                    "ja": "すみません、豚肉《ぶたにく》は 食《た》べられません。",
+                    "speak": "すみません、ぶたにくは たべられません。",
+                    "id_text": "Maaf, saya tidak bisa makan daging babi.",
+                    "accept": [
+                        "すみません、豚肉は 食べられません。",
+                        "すみません、豚肉は食べられません。"
+                    ],
+                    "en_text": "Sorry, I cannot eat pork.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t2.mp3"
+                },
+                {
+                    "id": "restoran-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。こちらの カレーは 鶏肉《とりにく》です。",
+                    "speak": "そうですか。こちらの カレーは とりにくです。",
+                    "id_text": "Begitu. Kari ini berisi ayam.",
+                    "en_text": "I see. This curry has chicken.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t3.mp3"
+                },
+                {
+                    "id": "restoran-s3-t4",
+                    "who": "you",
+                    "ja": "この カレーに 豚肉《ぶたにく》は 入《はい》っていますか。",
+                    "speak": "この カレーに ぶたにくは はいっていますか。",
+                    "id_text": "Apakah kari ini mengandung daging babi?",
+                    "accept": [
+                        "この カレーに 豚肉は 入っていますか。",
+                        "このカレーに豚肉は入っていますか。"
+                    ],
+                    "en_text": "Does this curry contain pork?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t4.mp3"
+                },
+                {
+                    "id": "restoran-s3-t5",
+                    "who": "partner",
+                    "ja": "いいえ、入《はい》っていません。",
+                    "speak": "いいえ、はいっていません。",
+                    "id_text": "Tidak, tidak ada.",
+                    "en_text": "No, it does not.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t5.mp3"
+                },
+                {
+                    "id": "restoran-s3-t6",
+                    "who": "you",
+                    "ja": "じゃ、カレーを お願《ねが》いします。",
+                    "speak": "じゃ、カレーを おねがいします。",
+                    "id_text": "Kalau begitu, tolong kari ini.",
+                    "accept": [
+                        "じゃ、カレーを お願いします。",
+                        "じゃ、カレーをお願いします。"
+                    ],
+                    "en_text": "Then the curry, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t6.mp3"
+                },
+                {
+                    "id": "restoran-s3-t7",
+                    "who": "partner",
+                    "ja": "かしこまりました。",
+                    "speak": "かしこまりました。",
+                    "id_text": "Baik.",
+                    "en_text": "Certainly.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s4",
+            "title_id": "Pesanan salah & minta tambahan",
+            "title_en": "Wrong order and extra requests",
+            "setting_id": "Hidangan yang datang tidak sesuai pesananmu, lalu kamu meminta sumpit dan air.",
+            "setting_en": "The dish that arrives is not what you ordered, then you ask for chopsticks and water.",
+            "goal_id": "Menyampaikan 〜を 頼《たの》みました dan meminta 〜を ください dengan sopan.",
+            "goal_en": "Say 〜を 頼みました and politely ask for things with 〜を ください.",
+            "patterns": [
+                "これは 頼んで いません",
+                "〜を 頼みました",
+                "〜を ください"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pesanan salah: katakan これは 頼んで いません (ini tidak saya pesan), lalu sebut pesananmu: 〜を 頼みました.",
+                "Mulailah dengan すみません agar tidak terdengar marah. Pelayan biasanya langsung minta maaf: 申し訳ありません.",
+                "Minta tambahan: お水を ください, お箸を もう 一つ ください."
+            ],
+            "tips_en": [
+                "Wrong order: これは 頼んで いません (I did not order this), then state yours: 〜を 頼みました.",
+                "Start with すみません so you do not sound angry. Staff usually apologise: 申し訳ありません.",
+                "Extra requests: お水を ください, お箸を もう 一つ ください."
+            ],
+            "words": [
+                {
+                    "ja": "頼《たの》む",
+                    "id": "memesan / meminta",
+                    "en": "to order / request"
+                },
+                {
+                    "ja": "申《もう》し訳《わけ》ありません",
+                    "id": "mohon maaf (sopan)",
+                    "en": "I apologise (formal)"
+                },
+                {
+                    "ja": "お箸《はし》",
+                    "id": "sumpit",
+                    "en": "chopsticks"
+                },
+                {
+                    "ja": "お水《みず》",
+                    "id": "air putih",
+                    "en": "water"
+                },
+                {
+                    "ja": "もう 一《ひと》つ",
+                    "id": "satu lagi",
+                    "en": "one more"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "スプーンを ください。",
+                    "id": "Tolong sendok.",
+                    "en": "A spoon, please."
+                },
+                {
+                    "ja": "これは 私《わたし》の じゃ ありません。",
+                    "id": "Ini bukan punya saya.",
+                    "en": "This is not mine."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s4-t1",
+                    "who": "partner",
+                    "ja": "お待《ま》たせしました。ラーメンです。",
+                    "speak": "おまたせしました。ラーメンです。",
+                    "id_text": "Maaf menunggu. Ini ramennya.",
+                    "en_text": "Sorry to keep you waiting. Here is your ramen.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t1.mp3"
+                },
+                {
+                    "id": "restoran-s4-t2",
+                    "who": "you",
+                    "ja": "すみません、これは 頼《たの》んで いません。",
+                    "speak": "すみません、これは たのんで いません。",
+                    "id_text": "Maaf, ini tidak saya pesan.",
+                    "accept": [
+                        "すみません、これは 頼んで いません。",
+                        "すみません、これは頼んでいません。"
+                    ],
+                    "en_text": "Excuse me, I did not order this.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t2.mp3"
+                },
+                {
+                    "id": "restoran-s4-t3",
+                    "who": "partner",
+                    "ja": "えっ、そうですか。何《なに》を ご注文《ちゅうもん》でしたか。",
+                    "speak": "えっ、そうですか。なにを ごちゅうもんでしたか。",
+                    "id_text": "Oh, begitu? Apa pesanan Anda?",
+                    "en_text": "Oh, is that so? What did you order?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t3.mp3"
+                },
+                {
+                    "id": "restoran-s4-t4",
+                    "who": "you",
+                    "ja": "カレーを 頼《たの》みました。",
+                    "speak": "カレーを たのみました。",
+                    "id_text": "Saya pesan kari.",
+                    "accept": [
+                        "カレーを 頼みました。",
+                        "カレーを頼みました。"
+                    ],
+                    "en_text": "I ordered curry.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t4.mp3"
+                },
+                {
+                    "id": "restoran-s4-t5",
+                    "who": "partner",
+                    "ja": "申《もう》し訳《わけ》ありません。すぐ お持《も》ちします。",
+                    "speak": "もうしわけありません。すぐ おもちします。",
+                    "id_text": "Mohon maaf. Segera saya bawakan.",
+                    "en_text": "I am very sorry. I will bring it right away.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t5.mp3"
+                },
+                {
+                    "id": "restoran-s4-t6",
+                    "who": "you",
+                    "ja": "あの、お水《みず》も ください。",
+                    "speak": "あの、おみずも ください。",
+                    "id_text": "Oh ya, air putih juga, tolong.",
+                    "accept": [
+                        "あの、お水も ください。",
+                        "あの、お水もください。"
+                    ],
+                    "en_text": "Also, some water, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t6.mp3"
+                },
+                {
+                    "id": "restoran-s4-t7",
+                    "who": "partner",
+                    "ja": "はい、かしこまりました。",
+                    "speak": "はい、かしこまりました。",
+                    "id_text": "Baik.",
+                    "en_text": "Certainly.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t7.mp3"
+                },
+                {
+                    "id": "restoran-s4-t8",
+                    "who": "you",
+                    "ja": "お箸《はし》も もう 一《ひと》つ ください。",
+                    "speak": "おはしも もう ひとつ ください。",
+                    "id_text": "Sumpitnya juga tambah satu lagi.",
+                    "accept": [
+                        "お箸も もう 一つ ください。",
+                        "お箸ももう一つください。"
+                    ],
+                    "en_text": "One more pair of chopsticks too, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s4-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s5",
+            "title_id": "Menanyakan menu rekomendasi",
+            "title_en": "Asking for recommendations",
+            "setting_id": "Kamu belum pernah makan di restoran ini dan bertanya pada pelayan makanan apa yang enak dan tidak pedas.",
+            "setting_en": "It is your first time here. You ask the server what is good and not spicy.",
+            "goal_id": "Bertanya おすすめは 何ですか dan 辛《から》いですか, lalu memutuskan pesanan.",
+            "goal_en": "Ask おすすめは 何ですか and 辛いですか, then decide.",
+            "patterns": [
+                "おすすめは 何ですか",
+                "辛いですか",
+                "〜に します"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "おすすめ = rekomendasi. Tanyakan: おすすめは 何ですか.",
+                "Pedas: 辛い. Tidak pedas: 辛くないです. Tanya dulu: 辛いですか.",
+                "Memutuskan: 〜に します (saya pilih 〜). Sangat berguna saat memesan."
+            ],
+            "tips_en": [
+                "おすすめ = recommendation. Ask: おすすめは 何ですか.",
+                "Spicy: 辛い. Not spicy: 辛くないです. Ask first: 辛いですか.",
+                "Deciding: 〜に します (I will have 〜). Very handy when ordering."
+            ],
+            "words": [
+                {
+                    "ja": "おすすめ",
+                    "id": "rekomendasi",
+                    "en": "recommendation"
+                },
+                {
+                    "ja": "辛《から》い",
+                    "id": "pedas",
+                    "en": "spicy"
+                },
+                {
+                    "ja": "甘《あま》い",
+                    "id": "manis",
+                    "en": "sweet"
+                },
+                {
+                    "ja": "人気《にんき》",
+                    "id": "populer",
+                    "en": "popular"
+                },
+                {
+                    "ja": "初《はじ》めて",
+                    "id": "pertama kali",
+                    "en": "first time"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "人気《にんき》の 料理《りょうり》は 何《なん》ですか。",
+                    "id": "Apa masakan yang populer?",
+                    "en": "What is the popular dish?"
+                },
+                {
+                    "ja": "辛《から》くない 料理《りょうり》は ありますか。",
+                    "id": "Apakah ada masakan yang tidak pedas?",
+                    "en": "Is there any dish that is not spicy?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s5-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。メニューです。",
+                    "speak": "いらっしゃいませ。メニューです。",
+                    "id_text": "Selamat datang. Ini menunya.",
+                    "en_text": "Welcome. Here is the menu.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t1.mp3"
+                },
+                {
+                    "id": "restoran-s5-t2",
+                    "who": "you",
+                    "ja": "すみません、おすすめは 何《なん》ですか。",
+                    "speak": "すみません、おすすめは なんですか。",
+                    "id_text": "Maaf, apa yang direkomendasikan?",
+                    "accept": [
+                        "すみません、おすすめは 何ですか。",
+                        "すみません、おすすめは何ですか。"
+                    ],
+                    "en_text": "Excuse me, what do you recommend?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t2.mp3"
+                },
+                {
+                    "id": "restoran-s5-t3",
+                    "who": "partner",
+                    "ja": "こちらの 焼《や》きそばが 人気《にんき》です。",
+                    "speak": "こちらの やきそばが にんきです。",
+                    "id_text": "Yakisoba ini populer.",
+                    "en_text": "The yakisoba is popular.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t3.mp3"
+                },
+                {
+                    "id": "restoran-s5-t4",
+                    "who": "you",
+                    "ja": "それは 辛《から》いですか。",
+                    "speak": "それは からいですか。",
+                    "id_text": "Apakah itu pedas?",
+                    "accept": [
+                        "それは 辛いですか。",
+                        "それは辛いですか。"
+                    ],
+                    "en_text": "Is it spicy?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t4.mp3"
+                },
+                {
+                    "id": "restoran-s5-t5",
+                    "who": "partner",
+                    "ja": "いいえ、辛《から》くないです。少《すこ》し 甘《あま》いです。",
+                    "speak": "いいえ、からくないです。すこし あまいです。",
+                    "id_text": "Tidak, tidak pedas. Agak manis.",
+                    "en_text": "No, it is not spicy. It is a little sweet.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t5.mp3"
+                },
+                {
+                    "id": "restoran-s5-t6",
+                    "who": "you",
+                    "ja": "じゃ、焼《や》きそばに します。",
+                    "speak": "じゃ、やきそばに します。",
+                    "id_text": "Kalau begitu, saya pilih yakisoba.",
+                    "accept": [
+                        "じゃ、焼きそばに します。",
+                        "じゃ、焼きそばにします。"
+                    ],
+                    "en_text": "Then I will have the yakisoba.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t6.mp3"
+                },
+                {
+                    "id": "restoran-s5-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s5-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s6",
+            "title_id": "Membayar di kasir",
+            "title_en": "Paying at the register",
+            "setting_id": "Kamu selesai makan dan pergi ke kasir untuk membayar bersama temanmu.",
+            "setting_en": "You finish eating and go to the register to pay with your friend.",
+            "goal_id": "Meminta お会計《かいけい》, memilih 別々《べつべつ》 / 一緒《いっしょ》, dan menanyakan cara bayar.",
+            "goal_en": "Ask for お会計, choose 別々 / 一緒, and ask about payment methods.",
+            "patterns": [
+                "お会計 お願いします",
+                "別々で お願いします",
+                "カードは 使えますか"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Minta bon: すみません、お会計 お願いします.",
+                "Bayar sendiri-sendiri: 別々で お願いします. Bayar bersama: 一緒で お願いします.",
+                "Tanyakan dulu apakah kartu bisa dipakai: カードは 使えますか. Restoran kecil sering hanya menerima tunai."
+            ],
+            "tips_en": [
+                "Ask for the bill: すみません、お会計 お願いします.",
+                "Pay separately: 別々で お願いします. Together: 一緒で お願いします.",
+                "Check if cards work: カードは 使えますか. Small restaurants often take cash only."
+            ],
+            "words": [
+                {
+                    "ja": "お会計《かいけい》",
+                    "id": "bon / pembayaran",
+                    "en": "the bill"
+                },
+                {
+                    "ja": "別々《べつべつ》",
+                    "id": "terpisah",
+                    "en": "separately"
+                },
+                {
+                    "ja": "一緒《いっしょ》",
+                    "id": "bersama",
+                    "en": "together"
+                },
+                {
+                    "ja": "現金《げんきん》",
+                    "id": "tunai",
+                    "en": "cash"
+                },
+                {
+                    "ja": "領収書《りょうしゅうしょ》",
+                    "id": "kuitansi",
+                    "en": "receipt (invoice)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "領収書《りょうしゅうしょ》を お願《ねが》いします。",
+                    "id": "Tolong kuitansinya.",
+                    "en": "A receipt, please."
+                },
+                {
+                    "ja": "現金《げんきん》で お願《ねが》いします。",
+                    "id": "Tunai, tolong.",
+                    "en": "Cash, please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s6-t1",
+                    "who": "partner",
+                    "ja": "ありがとうございます。お会計《かいけい》は こちらです。",
+                    "speak": "ありがとうございます。おかいけいは こちらです。",
+                    "id_text": "Terima kasih. Pembayarannya di sini.",
+                    "en_text": "Thank you. Please pay here.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t1.mp3"
+                },
+                {
+                    "id": "restoran-s6-t2",
+                    "who": "you",
+                    "ja": "お会計《かいけい》 お願《ねが》いします。",
+                    "speak": "おかいけい おねがいします。",
+                    "id_text": "Tolong hitung tagihannya.",
+                    "accept": [
+                        "お会計 お願いします。",
+                        "お会計お願いします。"
+                    ],
+                    "en_text": "The bill, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t2.mp3"
+                },
+                {
+                    "id": "restoran-s6-t3",
+                    "who": "partner",
+                    "ja": "ご一緒《いっしょ》ですか。",
+                    "speak": "ごいっしょですか。",
+                    "id_text": "Apakah bayar bersama?",
+                    "en_text": "Together?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t3.mp3"
+                },
+                {
+                    "id": "restoran-s6-t4",
+                    "who": "you",
+                    "ja": "いいえ、別々《べつべつ》で お願《ねが》いします。",
+                    "speak": "いいえ、べつべつで おねがいします。",
+                    "id_text": "Tidak, terpisah, tolong.",
+                    "accept": [
+                        "いいえ、別々で お願いします。",
+                        "いいえ、別々でお願いします。"
+                    ],
+                    "en_text": "No, separately, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t4.mp3"
+                },
+                {
+                    "id": "restoran-s6-t5",
+                    "who": "partner",
+                    "ja": "はい。千二百円《せんにひゃくえん》です。",
+                    "speak": "はい。せんにひゃくえんです。",
+                    "id_text": "Baik. Seribu dua ratus yen.",
+                    "en_text": "Yes. That is 1,200 yen.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t5.mp3"
+                },
+                {
+                    "id": "restoran-s6-t6",
+                    "who": "you",
+                    "ja": "カードは 使《つか》えますか。",
+                    "speak": "カードは つかえますか。",
+                    "id_text": "Apakah bisa pakai kartu?",
+                    "accept": [
+                        "カードは 使えますか。",
+                        "カードは使えますか。"
+                    ],
+                    "en_text": "Can I use a card?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t6.mp3"
+                },
+                {
+                    "id": "restoran-s6-t7",
+                    "who": "partner",
+                    "ja": "すみません、現金《げんきん》だけです。",
+                    "speak": "すみません、げんきんだけです。",
+                    "id_text": "Maaf, hanya tunai.",
+                    "en_text": "Sorry, cash only.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t7.mp3"
+                },
+                {
+                    "id": "restoran-s6-t8",
+                    "who": "you",
+                    "ja": "じゃ、現金《げんきん》で お願《ねが》いします。",
+                    "speak": "じゃ、げんきんで おねがいします。",
+                    "id_text": "Kalau begitu, tunai saja.",
+                    "accept": [
+                        "じゃ、現金で お願いします。",
+                        "じゃ、現金でお願いします。"
+                    ],
+                    "en_text": "Then cash, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s6-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s7",
+            "title_id": "Reservasi lewat telepon",
+            "title_en": "Booking by phone",
+            "setting_id": "Kamu menelepon restoran untuk memesan tempat besok malam.",
+            "setting_en": "You phone the restaurant to book a table for tomorrow evening.",
+            "goal_id": "Menyebut 予約《よやく》, tanggal, jam, jumlah orang, dan nama.",
+            "goal_en": "State the reservation, day, time, number of people and name.",
+            "patterns": [
+                "予約を お願いします",
+                "〜時に 〜人です",
+                "〜と 申します"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Mulai dengan もしもし, lalu tujuanmu: 予約を お願いします (mau reservasi).",
+                "Staf menanyakan hari, jam, jumlah orang, dan nama. Siapkan: 明日, 七時, 三人, 〜と 申します.",
+                "Mengulang kembali (確認) itu lazim. Cukup jawab はい、お願いします."
+            ],
+            "tips_en": [
+                "Start with もしもし, then your purpose: 予約を お願いします (I would like to book).",
+                "Staff ask for day, time, people and name. Prepare: 明日, 七時, 三人, 〜と 申します.",
+                "Repeating details back (確認) is normal. Just answer はい、お願いします."
+            ],
+            "words": [
+                {
+                    "ja": "予約《よやく》",
+                    "id": "reservasi",
+                    "en": "reservation"
+                },
+                {
+                    "ja": "明日《あした》",
+                    "id": "besok",
+                    "en": "tomorrow"
+                },
+                {
+                    "ja": "申《もう》します",
+                    "id": "bernama (sopan)",
+                    "en": "am called (humble)"
+                },
+                {
+                    "ja": "確認《かくにん》",
+                    "id": "konfirmasi",
+                    "en": "confirmation"
+                },
+                {
+                    "ja": "お待《ま》ちして おります",
+                    "id": "kami tunggu kedatangan Anda",
+                    "en": "we look forward to seeing you"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "今日《きょう》の 夜《よる》は ありますか。",
+                    "id": "Apakah ada tempat malam ini?",
+                    "en": "Do you have a table tonight?"
+                },
+                {
+                    "ja": "予約《よやく》を 変《か》えたいです。",
+                    "id": "Saya ingin mengubah reservasi.",
+                    "en": "I would like to change my reservation."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s7-t1",
+                    "who": "partner",
+                    "ja": "はい、レストラン さくらです。",
+                    "speak": "はい、レストラン さくらです。",
+                    "id_text": "Ya, Restoran Sakura.",
+                    "en_text": "Hello, this is Restaurant Sakura.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t1.mp3"
+                },
+                {
+                    "id": "restoran-s7-t2",
+                    "who": "you",
+                    "ja": "もしもし、予約《よやく》を お願《ねが》いします。",
+                    "speak": "もしもし、よやくを おねがいします。",
+                    "id_text": "Halo, saya mau reservasi.",
+                    "accept": [
+                        "もしもし、予約を お願いします。",
+                        "もしもし、予約をお願いします。"
+                    ],
+                    "en_text": "Hello, I would like to make a reservation.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t2.mp3"
+                },
+                {
+                    "id": "restoran-s7-t3",
+                    "who": "partner",
+                    "ja": "ありがとうございます。いつですか。",
+                    "speak": "ありがとうございます。いつですか。",
+                    "id_text": "Terima kasih. Kapan?",
+                    "en_text": "Thank you. When?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t3.mp3"
+                },
+                {
+                    "id": "restoran-s7-t4",
+                    "who": "you",
+                    "ja": "明日《あした》の 夜《よる》 七時《しちじ》に 三人《さんにん》です。",
+                    "speak": "あしたの よる しちじに さんにんです。",
+                    "id_text": "Besok malam jam tujuh, bertiga.",
+                    "accept": [
+                        "明日の 夜 七時に 三人です。",
+                        "明日の夜七時に三人です。"
+                    ],
+                    "en_text": "Tomorrow evening at seven, three people.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t4.mp3"
+                },
+                {
+                    "id": "restoran-s7-t5",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》を お願《ねが》いします。",
+                    "speak": "おなまえを おねがいします。",
+                    "id_text": "Mohon nama Anda.",
+                    "en_text": "May I have your name?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t5.mp3"
+                },
+                {
+                    "id": "restoran-s7-t6",
+                    "who": "you",
+                    "ja": "ブディと 申《もう》します。",
+                    "speak": "ブディと もうします。",
+                    "id_text": "Nama saya Budi.",
+                    "accept": [
+                        "ブディと 申します。",
+                        "ブディと申します。"
+                    ],
+                    "en_text": "My name is Budi.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t6.mp3"
+                },
+                {
+                    "id": "restoran-s7-t7",
+                    "who": "partner",
+                    "ja": "明日《あした》 七時《しちじ》、三名様《さんめいさま》、ブディ様《さま》ですね。お待《ま》ちして おります。",
+                    "speak": "あした しちじ、さんめいさま、ブディさまですね。おまちして おります。",
+                    "id_text": "Besok jam tujuh, tiga orang, atas nama Budi. Kami tunggu.",
+                    "en_text": "Tomorrow at seven, three people, Mr. Budi. We look forward to seeing you.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t7.mp3"
+                },
+                {
+                    "id": "restoran-s7-t8",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, terima kasih.",
+                    "accept": [
+                        "はい、お願いします。"
+                    ],
+                    "en_text": "Yes, thank you.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s7-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "restoran-s8",
+            "title_id": "Restoran cepat saji & bawa pulang",
+            "title_en": "Fast food and takeout",
+            "setting_id": "Kamu memesan di konter restoran cepat saji. Kasir menanyakan apakah makan di tempat atau dibawa pulang.",
+            "setting_en": "You order at a fast-food counter. The cashier asks whether you eat in or take out.",
+            "goal_id": "Memesan セット, memilih 店内《てんない》 / 持《も》ち帰《かえ》り, dan menjawab サイズ.",
+            "goal_en": "Order a set, choose eat-in / takeout, and answer about size.",
+            "patterns": [
+                "〜を お願いします",
+                "持ち帰りで お願いします",
+                "〜に します"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Di konter, sebutkan menu + jumlah: ハンバーガーセットを 一つ お願いします.",
+                "店内で = makan di tempat; 持ち帰りで = dibawa pulang (juga お持ち帰り).",
+                "Ukuran: エス (S), エム (M), エル (L). Pilih dengan 〜に します. Minuman: コーラ, お茶, ジュース."
+            ],
+            "tips_en": [
+                "At the counter, state menu + number: ハンバーガーセットを 一つ お願いします.",
+                "店内で = eat in; 持ち帰りで = takeout (also お持ち帰り).",
+                "Sizes: S, M, L. Choose with 〜に します. Drinks: コーラ, お茶, ジュース."
+            ],
+            "words": [
+                {
+                    "ja": "店内《てんない》",
+                    "id": "di dalam toko",
+                    "en": "eat in"
+                },
+                {
+                    "ja": "持《も》ち帰《かえ》り",
+                    "id": "bawa pulang",
+                    "en": "takeout"
+                },
+                {
+                    "ja": "ハンバーガー",
+                    "id": "hamburger",
+                    "en": "hamburger"
+                },
+                {
+                    "ja": "サイズ",
+                    "id": "ukuran",
+                    "en": "size"
+                },
+                {
+                    "ja": "ポテト",
+                    "id": "kentang goreng",
+                    "en": "fries"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "店内《てんない》で お願《ねが》いします。",
+                    "id": "Makan di sini, tolong.",
+                    "en": "For here, please."
+                },
+                {
+                    "ja": "ポテトも ください。",
+                    "id": "Kentang gorengnya juga, tolong.",
+                    "en": "Fries too, please."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "restoran-s8-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。ご注文《ちゅうもん》を どうぞ。",
+                    "speak": "いらっしゃいませ。ごちゅうもんを どうぞ。",
+                    "id_text": "Selamat datang. Silakan pesan.",
+                    "en_text": "Welcome. Your order, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t1.mp3"
+                },
+                {
+                    "id": "restoran-s8-t2",
+                    "who": "you",
+                    "ja": "ハンバーガーセットを 一《ひと》つ お願《ねが》いします。",
+                    "speak": "ハンバーガーセットを ひとつ おねがいします。",
+                    "id_text": "Satu paket hamburger, tolong.",
+                    "accept": [
+                        "ハンバーガーセットを 一つ お願いします。",
+                        "ハンバーガーセットを一つお願いします。"
+                    ],
+                    "en_text": "One hamburger set, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t2.mp3"
+                },
+                {
+                    "id": "restoran-s8-t3",
+                    "who": "partner",
+                    "ja": "お飲《の》み物《もの》は 何《なに》に なさいますか。",
+                    "speak": "おのみものは なにに なさいますか。",
+                    "id_text": "Minumannya mau apa?",
+                    "en_text": "What would you like to drink?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t3.mp3"
+                },
+                {
+                    "id": "restoran-s8-t4",
+                    "who": "you",
+                    "ja": "コーラに します。",
+                    "speak": "コーラに します。",
+                    "id_text": "Saya pilih cola.",
+                    "accept": [
+                        "コーラに します。",
+                        "コーラにします。"
+                    ],
+                    "en_text": "I will have a cola.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t4.mp3"
+                },
+                {
+                    "id": "restoran-s8-t5",
+                    "who": "partner",
+                    "ja": "サイズは いかがですか。",
+                    "speak": "サイズは いかがですか。",
+                    "id_text": "Ukurannya bagaimana?",
+                    "en_text": "What size would you like?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t5.mp3"
+                },
+                {
+                    "id": "restoran-s8-t6",
+                    "who": "you",
+                    "ja": "エムサイズで お願《ねが》いします。",
+                    "speak": "エムサイズで おねがいします。",
+                    "id_text": "Ukuran M, tolong.",
+                    "accept": [
+                        "エムサイズで お願いします。",
+                        "エムサイズでお願いします。"
+                    ],
+                    "en_text": "Medium, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t6.mp3"
+                },
+                {
+                    "id": "restoran-s8-t7",
+                    "who": "partner",
+                    "ja": "店内《てんない》で お召《め》し上《あ》がりですか。",
+                    "speak": "てんないで おめしあがりですか。",
+                    "id_text": "Makan di sini?",
+                    "en_text": "Will you eat here?",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t7.mp3"
+                },
+                {
+                    "id": "restoran-s8-t8",
+                    "who": "you",
+                    "ja": "いいえ、持《も》ち帰《かえ》りで お願《ねが》いします。",
+                    "speak": "いいえ、もちかえりで おねがいします。",
+                    "id_text": "Tidak, bawa pulang, tolong.",
+                    "accept": [
+                        "いいえ、持ち帰りで お願いします。",
+                        "いいえ、持ち帰りでお願いします。"
+                    ],
+                    "en_text": "No, takeout, please.",
+                    "audio": "/audio/kaiwa/situation-restoran/restoran-s8-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

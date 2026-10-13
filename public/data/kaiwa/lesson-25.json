@@ -1,0 +1,399 @@
+{
+    "id": 25,
+    "level": "N5",
+    "title_id": "Pelajaran 25 — Pengandaian & Perpisahan",
+    "title_en": "Lesson 25 — Conditions & Farewells",
+    "scenarios": [
+        {
+            "id": "l25-s1",
+            "title_id": "Kalau ada waktu",
+            "title_en": "If I had time",
+            "setting_id": "Rekan kerja bertanya apa yang akan kamu lakukan jika punya waktu dan uang.",
+            "setting_en": "A colleague asks what you would do if you had time and money.",
+            "goal_id": "Memakai 〜たら (pengandaian) dengan bentuk lampau.",
+            "goal_en": "Use ~tara (condition) with the past form.",
+            "patterns": [
+                "V(た形)ら、〜",
+                "〜かったら、〜",
+                "お金が あったら"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l25-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、来年《らいねん》、時間《じかん》が あったら、何《なに》を したいですか。",
+                    "speak": "ブディさん、らいねん、じかんが あったら、なにを したいですか。",
+                    "id_text": "Budi, kalau tahun depan punya waktu, ingin melakukan apa?",
+                    "en_text": "Budi, if you had time next year, what would you like to do?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t1.mp3"
+                },
+                {
+                    "id": "l25-s1-t2",
+                    "who": "you",
+                    "ja": "時間《じかん》が あったら、日本《にほん》の 田舎《いなか》を 旅行《りょこう》したいです。",
+                    "speak": "じかんが あったら、にほんの いなかを りょこうしたいです。",
+                    "id_text": "Kalau ada waktu, saya ingin berwisata ke pedesaan Jepang.",
+                    "accept": [
+                        "時間が あったら、日本の 田舎を 旅行したいです。",
+                        "時間があったら、日本の田舎を旅行したいです。"
+                    ],
+                    "en_text": "If I had time, I'd like to travel in the Japanese countryside.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t2.mp3"
+                },
+                {
+                    "id": "l25-s1-t3",
+                    "who": "partner",
+                    "ja": "いいですね。お金《かね》が あったら、何《なに》を しますか。",
+                    "speak": "いいですね。おかねが あったら、なにを しますか。",
+                    "id_text": "Bagus. Kalau ada uang, mau melakukan apa?",
+                    "en_text": "Nice. If you had money, what would you do?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t3.mp3"
+                },
+                {
+                    "id": "l25-s1-t4",
+                    "who": "you",
+                    "ja": "お金《かね》が あったら、大《おお》きい うちを 買《か》いたいです。",
+                    "speak": "おかねが あったら、おおきい うちを かいたいです。",
+                    "id_text": "Kalau ada uang, saya ingin membeli rumah besar.",
+                    "accept": [
+                        "お金が あったら、大きい うちを 買いたいです。",
+                        "お金があったら、大きいうちを買いたいです。"
+                    ],
+                    "en_text": "If I had money, I'd like to buy a big house.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t4.mp3"
+                },
+                {
+                    "id": "l25-s1-t5",
+                    "who": "partner",
+                    "ja": "私《わたし》は 会社《かいしゃ》を やめたら、世界《せかい》を 旅行《りょこう》したいです。",
+                    "speak": "わたしは かいしゃを やめたら、せかいを りょこうしたいです。",
+                    "id_text": "Kalau saya berhenti kerja, saya ingin keliling dunia.",
+                    "en_text": "If I quit my job, I'd like to travel the world.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t5.mp3"
+                },
+                {
+                    "id": "l25-s1-t6",
+                    "who": "you",
+                    "ja": "私《わたし》は 日本語《にほんご》が 上手《じょうず》に なったら、日本《にほん》の 会社《かいしゃ》で 働《はたら》きたいです。",
+                    "speak": "わたしは にほんごが じょうずに なったら、にほんの かいしゃで はたらきたいです。",
+                    "id_text": "Kalau bahasa Jepang saya sudah pandai, saya ingin bekerja di perusahaan Jepang.",
+                    "accept": [
+                        "私は 日本語が 上手に なったら、日本の 会社で 働きたいです。",
+                        "私は日本語が上手になったら、日本の会社で働きたいです。"
+                    ],
+                    "en_text": "When my Japanese gets good, I'd like to work at a Japanese company.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t6.mp3"
+                },
+                {
+                    "id": "l25-s1-t7",
+                    "who": "partner",
+                    "ja": "ブディさんは きっと できますよ。",
+                    "speak": "ブディさんは きっと できますよ。",
+                    "id_text": "Budi pasti bisa.",
+                    "en_text": "I'm sure you can do it, Budi.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l25-s2",
+            "title_id": "Telepon setelah kerja",
+            "title_en": "A phone call after work",
+            "setting_id": "Teman menelepon dan mengajakmu makan setelah pekerjaan selesai.",
+            "setting_en": "A friend calls and invites you to eat after work.",
+            "goal_id": "Memakai 〜たら untuk urutan: 終わったら／着いたら.",
+            "goal_en": "Use ~tara for sequence: owattara / tsuitara.",
+            "patterns": [
+                "V(た形)ら、V",
+                "もしもし",
+                "すぐ"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l25-s2-t1",
+                    "who": "partner",
+                    "ja": "もしもし、すずきです。ブディさんですか。",
+                    "speak": "もしもし、すずきです。ブディさんですか。",
+                    "id_text": "Halo, ini Suzuki. Apakah ini Budi?",
+                    "en_text": "Hello, this is Suzuki. Is this Budi?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t1.mp3"
+                },
+                {
+                    "id": "l25-s2-t2",
+                    "who": "you",
+                    "ja": "はい、ブディです。すずきさん、こんにちは。",
+                    "speak": "はい、ブディです。すずきさん、こんにちは。",
+                    "id_text": "Ya, ini Budi. Halo, Ibu Suzuki.",
+                    "accept": [
+                        "はい、ブディです。すずきさん、こんにちは。"
+                    ],
+                    "en_text": "Yes, this is Budi. Hello, Ms. Suzuki.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t2.mp3"
+                },
+                {
+                    "id": "l25-s2-t3",
+                    "who": "partner",
+                    "ja": "今《いま》、忙《いそが》しいですか。仕事《しごと》が 終《お》わったら、食事《しょくじ》に 行《い》きませんか。",
+                    "speak": "いま、いそがしいですか。しごとが おわったら、しょくじに いきませんか。",
+                    "id_text": "Sekarang sibuk? Kalau pekerjaan sudah selesai, mau pergi makan?",
+                    "en_text": "Are you busy now? Shall we go eat when work is over?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t3.mp3"
+                },
+                {
+                    "id": "l25-s2-t4",
+                    "who": "you",
+                    "ja": "ええ、いいですね。六時《ろくじ》に 仕事《しごと》が 終《お》わったら、駅《えき》へ 行《い》きます。",
+                    "speak": "ええ、いいですね。ろくじに しごとが おわったら、えきへ いきます。",
+                    "id_text": "Ya, bagus. Kalau pekerjaan selesai jam enam, saya ke stasiun.",
+                    "accept": [
+                        "ええ、いいですね。六時に 仕事が 終わったら、駅へ 行きます。",
+                        "ええ、いいですね。六時に仕事が終わったら、駅へ行きます。"
+                    ],
+                    "en_text": "Sure. When work ends at six, I'll go to the station.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t4.mp3"
+                },
+                {
+                    "id": "l25-s2-t5",
+                    "who": "partner",
+                    "ja": "駅《えき》に ついたら、電話《でんわ》を してください。",
+                    "speak": "えきに ついたら、でんわを してください。",
+                    "id_text": "Kalau sudah sampai di stasiun, tolong telepon.",
+                    "en_text": "When you get to the station, please call me.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t5.mp3"
+                },
+                {
+                    "id": "l25-s2-t6",
+                    "who": "you",
+                    "ja": "はい。駅《えき》に ついたら、すぐ 電話《でんわ》します。",
+                    "speak": "はい。えきに ついたら、すぐ でんわします。",
+                    "id_text": "Baik. Begitu sampai di stasiun, saya langsung menelepon.",
+                    "accept": [
+                        "はい。駅に ついたら、すぐ 電話します。",
+                        "はい。駅についたら、すぐ電話します。"
+                    ],
+                    "en_text": "Okay. As soon as I get to the station, I'll call.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t6.mp3"
+                },
+                {
+                    "id": "l25-s2-t7",
+                    "who": "partner",
+                    "ja": "はい、待《ま》っていますね。",
+                    "speak": "はい、まっていますね。",
+                    "id_text": "Ya, saya tunggu ya.",
+                    "en_text": "Yes, I'll be waiting.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l25-s3",
+            "title_id": "Tetap pergi walau hujan",
+            "title_en": "Going even if it rains",
+            "setting_id": "Rekan kerja menanyakan rencanamu meskipun cuaca buruk.",
+            "setting_en": "A colleague asks about your plans even if the weather is bad.",
+            "goal_id": "Memakai 〜ても (walaupun) dan もし.",
+            "goal_en": "Use ~temo (even if) and moshi.",
+            "patterns": [
+                "Vても、〜",
+                "Adj(〜くても)、〜",
+                "もし 〜たら"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l25-s3-t1",
+                    "who": "partner",
+                    "ja": "明日《あした》、雨《あめ》が ふっても、行《い》きますか。",
+                    "speak": "あした、あめが ふっても、いきますか。",
+                    "id_text": "Besok, walaupun hujan, apakah akan pergi?",
+                    "en_text": "Will you go tomorrow even if it rains?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t1.mp3"
+                },
+                {
+                    "id": "l25-s3-t2",
+                    "who": "you",
+                    "ja": "はい、雨《あめ》が ふっても、行《い》きます。約束《やくそく》ですから。",
+                    "speak": "はい、あめが ふっても、いきます。やくそくですから。",
+                    "id_text": "Ya, walaupun hujan, saya akan pergi. Karena sudah janji.",
+                    "accept": [
+                        "はい、雨が ふっても、行きます。約束ですから。",
+                        "はい、雨がふっても、行きます。約束ですから。"
+                    ],
+                    "en_text": "Yes, even if it rains, I'll go. It's a promise.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t2.mp3"
+                },
+                {
+                    "id": "l25-s3-t3",
+                    "who": "partner",
+                    "ja": "寒《さむ》くても、行《い》きますか。",
+                    "speak": "さむくても、いきますか。",
+                    "id_text": "Walaupun dingin, pergi juga?",
+                    "en_text": "Even if it's cold, will you go?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t3.mp3"
+                },
+                {
+                    "id": "l25-s3-t4",
+                    "who": "you",
+                    "ja": "ええ、寒《さむ》くても、行《い》きます。山《やま》は きれいですから。",
+                    "speak": "ええ、さむくても、いきます。やまは きれいですから。",
+                    "id_text": "Ya, walaupun dingin, saya pergi. Karena gunungnya indah.",
+                    "accept": [
+                        "ええ、寒くても、行きます。山は きれいですから。",
+                        "ええ、寒くても、行きます。山はきれいですから。"
+                    ],
+                    "en_text": "Yes, even if it's cold, I'll go. The mountain is beautiful.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t4.mp3"
+                },
+                {
+                    "id": "l25-s3-t5",
+                    "who": "partner",
+                    "ja": "もし 病気《びょうき》に なったら、どう しますか。",
+                    "speak": "もし びょうきに なったら、どう しますか。",
+                    "id_text": "Kalau seandainya sakit, bagaimana?",
+                    "en_text": "If you got sick, what would you do?",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t5.mp3"
+                },
+                {
+                    "id": "l25-s3-t6",
+                    "who": "you",
+                    "ja": "もし 病気《びょうき》に なったら、薬《くすり》を 飲《の》んで、寝《ね》ます。",
+                    "speak": "もし びょうきに なったら、くすりを のんで、ねます。",
+                    "id_text": "Kalau sakit, saya minum obat lalu tidur.",
+                    "accept": [
+                        "もし 病気に なったら、薬を 飲んで、寝ます。",
+                        "もし病気になったら、薬を飲んで、寝ます。"
+                    ],
+                    "en_text": "If I got sick, I'd take medicine and sleep.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t6.mp3"
+                },
+                {
+                    "id": "l25-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですね。大丈夫《だいじょうぶ》ですよ。",
+                    "speak": "そうですね。だいじょうぶですよ。",
+                    "id_text": "Benar. Pasti tidak apa-apa.",
+                    "en_text": "That's right. It'll be fine.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l25-s4",
+            "title_id": "Perpisahan karena pindah tugas",
+            "title_en": "Farewell before a transfer",
+            "setting_id": "Rekan kerjamu akan pindah ke kantor cabang dan kalian berpamitan.",
+            "setting_en": "A coworker is transferring to another branch and you say goodbye.",
+            "goal_id": "Memakai お世話に なりました, 頑張ります, dan お元気で.",
+            "goal_en": "Use osewa ni narimashita, ganbarimasu, and ogenki de.",
+            "patterns": [
+                "お世話に なりました",
+                "頑張ります",
+                "どうぞ お元気で"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l25-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、来月《らいげつ》 大阪《おおさか》へ 転勤《てんきん》します。",
+                    "speak": "ブディさん、らいげつ おおさかへ てんきんします。",
+                    "id_text": "Budi, bulan depan saya pindah tugas ke Osaka.",
+                    "en_text": "Budi, I'm being transferred to Osaka next month.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t1.mp3"
+                },
+                {
+                    "id": "l25-s4-t2",
+                    "who": "you",
+                    "ja": "ほんとうですか。寂《さび》しく なりますね。",
+                    "speak": "ほんとうですか。さびしく なりますね。",
+                    "id_text": "Benarkah? Jadi sepi ya.",
+                    "accept": [
+                        "ほんとうですか。寂しく なりますね。",
+                        "ほんとうですか。寂しくなりますね。"
+                    ],
+                    "en_text": "Really? It'll feel lonely.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t2.mp3"
+                },
+                {
+                    "id": "l25-s4-t3",
+                    "who": "partner",
+                    "ja": "ありがとうございます。いろいろ お世話《せわ》に なりました。",
+                    "speak": "ありがとうございます。いろいろ おせわに なりました。",
+                    "id_text": "Terima kasih. Terima kasih atas segala bantuannya.",
+                    "en_text": "Thank you. Thank you for everything.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t3.mp3"
+                },
+                {
+                    "id": "l25-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ。大阪《おおさか》へ ついたら、電話《でんわ》を してください。",
+                    "speak": "いいえ。おおさかへ ついたら、でんわを してください。",
+                    "id_text": "Sama-sama. Kalau sudah sampai di Osaka, tolong telepon.",
+                    "accept": [
+                        "いいえ。大阪へ ついたら、電話を してください。",
+                        "いいえ。大阪へついたら、電話をしてください。"
+                    ],
+                    "en_text": "Not at all. When you arrive in Osaka, please call.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t4.mp3"
+                },
+                {
+                    "id": "l25-s4-t5",
+                    "who": "partner",
+                    "ja": "はい。暇《ひま》な ときは、メールを 書《か》きます。ブディさんも 頑張《がんば》ってください。",
+                    "speak": "はい。ひまな ときは、メールを かきます。ブディさんも がんばってください。",
+                    "id_text": "Ya. Kalau senggang saya kirim e-mail. Budi juga semangat ya.",
+                    "en_text": "Yes. When I'm free I'll write an e-mail. You do your best too, Budi.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t5.mp3"
+                },
+                {
+                    "id": "l25-s4-t6",
+                    "who": "you",
+                    "ja": "はい、頑張《がんば》ります。すずきさんも どうぞ お元気《げんき》で。",
+                    "speak": "はい、がんばります。すずきさんも どうぞ おげんきで。",
+                    "id_text": "Ya, saya akan berusaha. Ibu Suzuki juga semoga sehat selalu.",
+                    "accept": [
+                        "はい、頑張ります。すずきさんも どうぞ お元気で。",
+                        "はい、頑張ります。すずきさんもどうぞお元気で。"
+                    ],
+                    "en_text": "Yes, I will do my best. Please take care, Ms. Suzuki.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t6.mp3"
+                },
+                {
+                    "id": "l25-s4-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。また 会《あ》いましょう。",
+                    "speak": "ありがとうございます。また あいましょう。",
+                    "id_text": "Terima kasih. Mari bertemu lagi.",
+                    "en_text": "Thank you. Let's meet again.",
+                    "audio": "/audio/kaiwa/lesson-25/l25-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

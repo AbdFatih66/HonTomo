@@ -1,0 +1,319 @@
+{
+    "id": 12,
+    "focus": "Lampau kata sifat dan perbandingan — 〜でした・〜かったです、〜より、〜と〜とどちらが、〜がいちばん",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、先週の日曜日は、どうでしたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "忙しかったです。友達のうちで、料理をしました。"
+            },
+            {
+                "speaker": "male",
+                "text": "そうですか。料理は、どうでしたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "おもしろかったです。でも、ちょっと難しかったです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-12/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l12-kq1",
+                "prompt": "田口《たぐち》さんの　先週《せんしゅう》の　日曜日《にちようび》は　どうでしたか。",
+                "choices": [
+                    "暇《ひま》でした",
+                    "忙《いそが》しかったです",
+                    "つまらなかったです"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Taguchi bilang minggu lalu hari Minggu sibuk karena memasak di rumah teman. Jawaban: sibuk.",
+                    "en": "Taguchi says last Sunday was busy because she cooked at a friend's house. Answer: busy."
+                }
+            },
+            {
+                "id": "l12-kq2",
+                "prompt": "料理《りょうり》は　どうでしたか。",
+                "choices": [
+                    "簡単《かんたん》でした",
+                    "おもしろかったですが、難《むずか》しかったです",
+                    "つまらなかったです"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Memasaknya menarik tetapi agak sulit. Jawaban: menarik tapi agak sulit.",
+                    "en": "Cooking was interesting but a bit difficult. Answer: interesting but a bit difficult."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l12-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "旅行は、どうでしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "楽しかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q1.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　旅行《りょこう》は　どうでしたか。",
+            "choices": [
+                "忙《いそが》しかったです",
+                "高《たか》かったです",
+                "楽《たの》しかったです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Bagaimana perjalanannya?' 'Menyenangkan.' Jawaban: menyenangkan.",
+                "en": "Audio: 'How was the trip?' 'It was fun.' Answer: fun."
+            }
+        },
+        {
+            "id": "l12-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日本語の試験は、簡単でしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、簡単じゃありませんでした。難しかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q2.mp3",
+            "prompt": "試験《しけん》は　どうでしたか。",
+            "choices": [
+                "簡単《かんたん》でした",
+                "難《むずか》しかったです",
+                "おもしろかったです"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Apakah ujian bahasa Jepangnya mudah?' 'Tidak, tidak mudah. Sulit.' Jawaban: sulit.",
+                "en": "Audio: 'Was the Japanese exam easy?' 'No, it wasn't easy. It was difficult.' Answer: difficult."
+            }
+        },
+        {
+            "id": "l12-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "新幹線と飛行機と、どちらが高いですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "飛行機のほうが高いです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q3.mp3",
+            "prompt": "高《たか》いのは　どちらですか。",
+            "choices": [
+                "新幹線《しんかんせん》",
+                "飛行機《ひこうき》",
+                "バス"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Mana yang lebih mahal, shinkansen atau pesawat?' 'Pesawat lebih mahal.' Jawaban: pesawat.",
+                "en": "Audio: 'Which is more expensive, the shinkansen or the plane?' 'The plane is more expensive.' Answer: the plane."
+            }
+        },
+        {
+            "id": "l12-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "果物で、何がいちばん好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "みかんがいちばん好きです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q4.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　果物《くだもの》で　何《なに》が　いちばん　好《す》きですか。",
+            "choices": [
+                "りんご",
+                "みかん",
+                "バナナ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Di antara buah, kamu paling suka apa?' 'Saya paling suka jeruk.' Jawaban: jeruk.",
+                "en": "Audio: 'Which fruit do you like best?' 'I like mandarins best.' Answer: mandarins."
+            }
+        },
+        {
+            "id": "l12-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "先週は、今週より忙しかったですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、先週のほうが忙しかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q5.mp3",
+            "prompt": "忙《いそが》しかったのは　いつですか。",
+            "choices": [
+                "今週《こんしゅう》",
+                "先月《せんげつ》",
+                "先週《せんしゅう》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Apakah minggu lalu lebih sibuk daripada minggu ini?' 'Ya, minggu lalu lebih sibuk.' Jawaban: minggu lalu.",
+                "en": "Audio: 'Was last week busier than this week?' 'Yes, last week was busier.' Answer: last week."
+            }
+        },
+        {
+            "id": "l12-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、日本のうちは、どうですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "国のうちより、小さいです。でも、便利です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q6.mp3",
+            "prompt": "日本《にほん》の　うちは　国《くに》の　うちより　小《ちい》さいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Rumah di Jepang lebih kecil daripada rumah di negara asalnya. Jawaban: Benar (○).",
+                "en": "Houses in Japan are smaller than houses in his country. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l12-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さん、電車とバスと、どちらが好きですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "電車のほうが好きです。速いですから。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わたしは、バスのほうが好きです。安いですから。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　バスのほうが　好《す》きです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Si perempuan lebih suka bus. Jawaban: Salah (×) — dia lebih suka kereta.",
+                "en": "The woman prefers the bus. Answer: False (×) — she prefers the train."
+            }
+        },
+        {
+            "id": "l12-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "大阪は、東京より、人が多いですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、東京のほうが、人が多いです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q8.mp3",
+            "prompt": "大阪《おおさか》は　東京《とうきょう》より　人《ひと》が　多《おお》いです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Osaka penduduknya lebih banyak daripada Tokyo. Jawaban: Salah (×) — Tokyo lebih banyak.",
+                "en": "Osaka has more people than Tokyo. Answer: False (×) — Tokyo has more."
+            }
+        },
+        {
+            "id": "l12-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きのうのサッカーは、どうでしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "おもしろかったです。でも、寒かったです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "人は、多かったですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、あまり多くなかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q9.mp3",
+            "prompt": "サッカーは　おもしろかったです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sepak bolanya menarik. Jawaban: Benar (○).",
+                "en": "The soccer game was interesting. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l12-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きのう、日本の映画を見ました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どうでしたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "難しかったです。あまり、おもしろくなかったです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-12/l12-q10.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　映画《えいが》が　おもしろかったです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Si perempuan merasa filmnya menarik. Jawaban: Salah (×) — kurang menarik.",
+                "en": "The woman found the movie interesting. Answer: False (×) — not very interesting."
+            }
+        }
+    ]
+}

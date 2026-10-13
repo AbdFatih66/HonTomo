@@ -1,0 +1,372 @@
+{
+ "level": "N1",
+ "section": "mojigoi",
+ "title": "言語知識（文字・語彙）",
+ "minutes": 25,
+ "mondai": {
+  "1": {
+   "instruction": "＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ\n選びなさい。"
+  },
+  "2": {
+   "instruction": "（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。"
+  },
+  "3": {
+   "instruction": "＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。"
+  },
+  "4": {
+   "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。"
+  }
+ },
+ "questions": [
+  {
+   "id": "v1-1",
+   "no": 1,
+   "mondai": 1,
+   "stem": "環境への影響を⟦懸念⟧する声が上がっている。",
+   "choices": [
+    "かいねん",
+    "けねん",
+    "けんねん",
+    "かんねん"
+   ],
+   "answer": 2,
+   "exp": "懸念 = けねん (kekhawatiran). Jebakan: けんねん/かんねん; 懸 dibaca け (bukan けん) di sini."
+  },
+  {
+   "id": "v1-2",
+   "no": 2,
+   "mondai": 1,
+   "stem": "長年の努力がようやく⟦実った⟧。",
+   "choices": [
+    "いのった",
+    "さとった",
+    "ねらった",
+    "みのった"
+   ],
+   "answer": 4,
+   "exp": "実る = みのる (berbuah, membuahkan hasil). 祈る = いのる, 悟る = さとる."
+  },
+  {
+   "id": "v1-3",
+   "no": 3,
+   "mondai": 1,
+   "stem": "予算が限られているので、食費は自分のアルバイト代で⟦賄う⟧つもりだ。",
+   "choices": [
+    "まかなう",
+    "あざなう",
+    "つくろう",
+    "うかがう"
+   ],
+   "answer": 1,
+   "exp": "賄う = まかなう (menanggung/memenuhi kebutuhan dengan dana tertentu)."
+  },
+  {
+   "id": "v1-4",
+   "no": 4,
+   "mondai": 1,
+   "stem": "彼は事件への関与を⟦頑なに⟧否定した。",
+   "choices": [
+    "がんなに",
+    "かたなに",
+    "かたくなに",
+    "かたくに"
+   ],
+   "answer": 3,
+   "exp": "頑な = かたくな (keras kepala). Okurigana な + に → かたくなに."
+  },
+  {
+   "id": "v1-5",
+   "no": 5,
+   "mondai": 1,
+   "stem": "この橋は古くて⟦脆く⟧、大型車は通れない。",
+   "choices": [
+    "はかなく",
+    "ぬるく",
+    "ひどく",
+    "もろく"
+   ],
+   "answer": 4,
+   "exp": "脆い = もろい (rapuh). 儚い = はかない (fana), 温い = ぬるい, 酷い = ひどい."
+  },
+  {
+   "id": "v1-6",
+   "no": 6,
+   "mondai": 1,
+   "stem": "友人の言葉に⟦励まされて⟧、もう一度挑戦する決心をした。",
+   "choices": [
+    "いましめられて",
+    "はげまされて",
+    "うながされて",
+    "ほめられて"
+   ],
+   "answer": 2,
+   "exp": "励ます = はげます (menyemangati). 戒める = いましめる, 促す = うながす."
+  },
+  {
+   "id": "v2-7",
+   "no": 7,
+   "mondai": 2,
+   "stem": "この店のラーメンは、有名店（　　）の味だと評判だ。",
+   "choices": [
+    "沿い",
+    "越し",
+    "並み",
+    "抜き"
+   ],
+   "answer": 3,
+   "exp": "〜並み = setara dengan (有名店並み = setingkat toko terkenal). 沿い (di sepanjang), 越し (melalui), 抜き (tanpa) tidak cocok."
+  },
+  {
+   "id": "v2-8",
+   "no": 8,
+   "mondai": 2,
+   "stem": "新しい店の開店に向けて、準備を（　　）進めている。",
+   "choices": [
+    "しきりに",
+    "着々と",
+    "やみくもに",
+    "いたずらに"
+   ],
+   "answer": 2,
+   "exp": "着々と = selangkah demi selangkah, mantap. しきりに = berulang kali; やみくもに = asal-asalan; いたずらに = sia-sia."
+  },
+  {
+   "id": "v2-9",
+   "no": 9,
+   "mondai": 2,
+   "stem": "若手の山田《やまだ》さんが、プロジェクトのリーダーに（　　）された。",
+   "choices": [
+    "採択",
+    "指摘",
+    "排除",
+    "抜擢"
+   ],
+   "answer": 4,
+   "exp": "抜擢 = dipilih/dipromosikan dari banyak orang. 採択 = adopsi (usulan), 指摘 = menunjukkan, 排除 = menyingkirkan."
+  },
+  {
+   "id": "v2-10",
+   "no": 10,
+   "mondai": 2,
+   "stem": "彼の無責任な発言は、遺族の（　　）を逆なでした。",
+   "choices": [
+    "神経",
+    "気配",
+    "本能",
+    "心境"
+   ],
+   "answer": 1,
+   "exp": "神経を逆なでする = menyinggung perasaan. Kolokasi tetap."
+  },
+  {
+   "id": "v2-11",
+   "no": 11,
+   "mondai": 2,
+   "stem": "上司に計画の甘さを（　　）、彼は言葉に詰まった。",
+   "choices": [
+    "叩かれて",
+    "突かれて",
+    "刺されて",
+    "打たれて"
+   ],
+   "answer": 2,
+   "exp": "弱点・甘さを突く = menyerang titik lemah. Kolokasi: 突かれる."
+  },
+  {
+   "id": "v2-12",
+   "no": 12,
+   "mondai": 2,
+   "stem": "年々増える顧客の（　　）に応えるため、新しいサービスを始めた。",
+   "choices": [
+    "ノルマ",
+    "ルーツ",
+    "ニーズ",
+    "タイミング"
+   ],
+   "answer": 3,
+   "exp": "ニーズ = kebutuhan (needs). ノルマ = target kerja, ルーツ = asal-usul."
+  },
+  {
+   "id": "v2-13",
+   "no": 13,
+   "mondai": 2,
+   "stem": "長年の経験に（　　）された彼の判断は、いつも的確だ。",
+   "choices": [
+    "下敷き",
+    "後押し",
+    "手引き",
+    "裏打ち"
+   ],
+   "answer": 4,
+   "exp": "経験に裏打ちされる = didukung/dibuktikan oleh pengalaman. 下敷き = acuan/alas, 後押し = dukungan."
+  },
+  {
+   "id": "v3-14",
+   "no": 14,
+   "mondai": 3,
+   "stem": "彼の発言はあまりにも⟦唐突⟧だった。",
+   "choices": [
+    "冷たくて失礼だった",
+    "あまりに急で、前触れがなかった",
+    "矛盾していて分かりにくかった",
+    "具体的で説得力があった"
+   ],
+   "answer": 2,
+   "exp": "唐突 = tiba-tiba tanpa pendahuluan, mendadak."
+  },
+  {
+   "id": "v3-15",
+   "no": 15,
+   "mondai": 3,
+   "stem": "この仕事は思ったより⟦手間取った⟧。",
+   "choices": [
+    "時間がかかった",
+    "費用がかかった",
+    "責任が重かった",
+    "人数が必要だった"
+   ],
+   "answer": 1,
+   "exp": "手間取る = memakan waktu lebih lama dari perkiraan."
+  },
+  {
+   "id": "v3-16",
+   "no": 16,
+   "mondai": 3,
+   "stem": "彼女は⟦ひたむきに⟧ピアノの練習を続けている。",
+   "choices": [
+    "楽しみながら気楽に",
+    "人に見られないように静かに",
+    "失敗を恐れて慎重に",
+    "一つのことに一心に打ち込んで"
+   ],
+   "answer": 4,
+   "exp": "ひたむき = tekun sepenuh hati pada satu hal."
+  },
+  {
+   "id": "v3-17",
+   "no": 17,
+   "mondai": 3,
+   "stem": "三年間の⟦ブランク⟧があるので、仕事に慣れるまで時間がかかりそうだ。",
+   "choices": [
+    "失敗の経験",
+    "悩みの種",
+    "空白の期間",
+    "準備の段階"
+   ],
+   "answer": 3,
+   "exp": "ブランク (blank) = masa kosong/jeda tanpa aktivitas."
+  },
+  {
+   "id": "v3-18",
+   "no": 18,
+   "mondai": 3,
+   "stem": "田中《たなか》さんは⟦おおらかな⟧性格で、小さなことは気にしない。",
+   "choices": [
+    "細かいことにこだわらない",
+    "周囲に気を使いすぎる",
+    "自信にあふれている",
+    "物事に慎重である"
+   ],
+   "answer": 1,
+   "exp": "おおらか = lapang dada, tidak mempermasalahkan hal kecil."
+  },
+  {
+   "id": "v3-19",
+   "no": 19,
+   "mondai": 3,
+   "stem": "大雪の影響で、工事が⟦滞って⟧いる。",
+   "choices": [
+    "中止されて",
+    "急がされて",
+    "進まなくなって",
+    "見直されて"
+   ],
+   "answer": 3,
+   "exp": "滞る = tersendat/terhambat, tidak maju."
+  },
+  {
+   "id": "v4-20",
+   "no": 20,
+   "mondai": 4,
+   "stem": "手際",
+   "choices": [
+    "台風が近づいているので、家の⟦手際⟧を点検しておいた。",
+    "この荷物を運ぶには、あと二人⟦手際⟧が必要だ。",
+    "彼女は⟦手際⟧よく料理を作り、あっという間に五品も並べた。",
+    "彼は⟦手際⟧に任せて、よく考えずに契約を結んでしまった。"
+   ],
+   "answer": 3,
+   "exp": "手際 = cara kerja/kecekatan. Opsi lain: 周り, 人手, 勢い."
+  },
+  {
+   "id": "v4-21",
+   "no": 21,
+   "mondai": 4,
+   "stem": "見込み",
+   "choices": [
+    "来週には工事が終わる⟦見込み⟧だと、業者から連絡があった。",
+    "この店は⟦見込み⟧があまりにも小さくて、荷物が入らない。",
+    "彼は人を疑わず、他人の⟦見込み⟧をすぐに信じてしまう。",
+    "毎朝、駅まで走る⟦見込み⟧で体力をつけた。"
+   ],
+   "answer": 1,
+   "exp": "見込み = perkiraan/prospek. 見込みだ dipakai untuk perkiraan ke depan."
+  },
+  {
+   "id": "v4-22",
+   "no": 22,
+   "mondai": 4,
+   "stem": "偏る",
+   "choices": [
+    "試験が近いので、毎晩遅くまで勉強に⟦偏って⟧いる。",
+    "台風の風で、庭の木が⟦偏って⟧道をふさいでしまった。",
+    "彼の意見は私の考えと少しも⟦偏って⟧いない。",
+    "野菜をあまり食べず、食事が肉ばかりに⟦偏って⟧いる。"
+   ],
+   "answer": 4,
+   "exp": "偏る = berat sebelah/tidak seimbang. Opsi lain seharusnya: 打ち込んで, 倒れて, ずれて."
+  },
+  {
+   "id": "v4-23",
+   "no": 23,
+   "mondai": 4,
+   "stem": "取り締まる",
+   "choices": [
+    "外出する前に、ガスの元栓をしっかり⟦取り締まった⟧。",
+    "警察は、駅前の違法駐車を厳しく⟦取り締まって⟧いる。",
+    "試合の前、選手たちは気持ちを⟦取り締まって⟧集中した。",
+    "友人との約束を忘れないように、手帳に⟦取り締まった⟧。"
+   ],
+   "answer": 2,
+   "exp": "取り締まる = menindak/mengawasi pelanggaran. Opsi lain: 閉める, 引き締める, 書き留める."
+  },
+  {
+   "id": "v4-24",
+   "no": 24,
+   "mondai": 4,
+   "stem": "軽率",
+   "choices": [
+    "彼は事情もよく調べずに⟦軽率⟧な発言をして、周囲を困らせた。",
+    "この荷物は⟦軽率⟧なので、女性一人でも簡単に運べる。",
+    "彼女は⟦軽率⟧な性格で、いつも約束の時間より早く着いている。",
+    "風邪をひいたせいか、体が⟦軽率⟧で動きにくい。"
+   ],
+   "answer": 1,
+   "exp": "軽率 = ceroboh, gegabah (tanpa pikir panjang). Bukan berat badan (軽い) maupun tubuh lesu."
+  },
+  {
+   "id": "v4-25",
+   "no": 25,
+   "mondai": 4,
+   "stem": "兼ねる",
+   "choices": [
+    "彼は会社を辞めて、実家の農業を⟦兼ねる⟧ことにした。",
+    "寒いので、コートの下にセーターを⟦兼ねて⟧着ていった。",
+    "この部屋は居間と食堂を⟦兼ねて⟧いて、とても広く使える。",
+    "来月の旅行のために、お金を毎月少しずつ⟦兼ねて⟧いる。"
+   ],
+   "answer": 3,
+   "exp": "兼ねる = merangkap dua fungsi. Opsi lain seharusnya: 継ぐ, 重ねて, 貯めて."
+  }
+ ]
+}

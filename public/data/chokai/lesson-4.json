@@ -1,0 +1,503 @@
+{
+    "id": 4,
+    "focus": "Jam, jadwal harian, hari — 〜時〜分、〜から〜まで、〜に、〜ます／〜ました",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さんは、毎朝、何時に起きますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "六時に起きます。ブディさんは。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしは七時に起きます。会社は、九時から六時までです。"
+            },
+            {
+                "speaker": "female",
+                "text": "土曜日も、働きますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、土曜日は休みです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-4/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l4-kq1",
+                "prompt": "田口《たぐち》さんは、毎朝《まいあさ》、何時《なんじ》に　起《お》きますか。",
+                "choices": [
+                    "六時《ろくじ》",
+                    "七時《しちじ》",
+                    "九時《くじ》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Di kaiwa, Taguchi berkata dia bangun jam 6 tiap pagi. Jawaban: jam 6.",
+                    "en": "In the kaiwa, Taguchi says she wakes up at 6 every morning. Answer: 6 o'clock."
+                },
+                "audio": null
+            },
+            {
+                "id": "l4-kq2",
+                "prompt": "ブディさんの　会社《かいしゃ》は、土曜日《どようび》も、働《はたら》きますか。",
+                "choices": [
+                    "はい、働《はたら》きます。",
+                    "いいえ、休《やす》みです。",
+                    "わかりません。"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa, Budi berkata hari Sabtu adalah hari libur. Jawaban: tidak, libur.",
+                    "en": "In the kaiwa, Budi says Saturday is a day off. Answer: no, it's a day off."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l4-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "銀行は、何時から何時までですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "九時から三時までです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q1.mp3",
+            "prompt": "銀行《ぎんこう》は　何時《なんじ》から　何時《なんじ》までですか。",
+            "choices": [
+                "9:00~5:00",
+                "9:00~3:00",
+                "8:00~3:00"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Bank buka dari jam berapa sampai jam berapa?' 'Jam 9 sampai jam 3.' Jawaban: 9:00~3:00.",
+                "en": "Audio: 'What are the bank's hours?' 'From 9 to 3.' Answer: 9:00~3:00."
+            }
+        },
+        {
+            "id": "l4-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "図書館の休みは、何曜日ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "水曜日です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q2.mp3",
+            "prompt": "図書館《としょかん》の　休《やす》みは　何曜日《なんようび》ですか。",
+            "choices": [
+                "火曜日《かようび》",
+                "水曜日《すいようび》",
+                "木曜日《もくようび》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Perpustakaan libur hari apa?' 'Hari Rabu.' Jawaban: Rabu.",
+                "en": "Audio: 'Which day is the library closed?' 'Wednesday.' Answer: Wednesday."
+            }
+        },
+        {
+            "id": "l4-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ニコさん、きのう、何時まで働きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "八時まで働きました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q3.mp3",
+            "prompt": "ニコさんは　きのう　何時《なんじ》まで　働《はたら》きましたか。",
+            "choices": [
+                "6:00",
+                "10:00",
+                "8:00"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Niko, kemarin sampai jam berapa bekerja?' 'Sampai jam 8.' Jawaban: 8:00.",
+                "en": "Audio: 'Niko, until what time did you work yesterday?' 'Until 8.' Answer: 8:00."
+            }
+        },
+        {
+            "id": "l4-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ヌルさん、毎朝、何時に起きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "五時半に起きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q4.mp3",
+            "prompt": "ヌルさんは　毎朝《まいあさ》　何時《なんじ》に　起《お》きますか。",
+            "choices": [
+                "5:30",
+                "5:00",
+                "6:30"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Nur, jam berapa Anda bangun tiap pagi?' 'Jam 5.30.' Jawaban: 5:30.",
+                "en": "Audio: 'Nur, what time do you get up every morning?' 'At 5:30.' Answer: 5:30."
+            }
+        },
+        {
+            "id": "l4-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさん、土曜日も学校ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、土曜日は休みです。月曜日から金曜日まで、勉強します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q5.mp3",
+            "prompt": "リナさんは　何曜日《なんようび》から　何曜日《なんようび》まで　勉強《べんきょう》しますか。",
+            "choices": [
+                "月曜日《げつようび》から　土曜日《どようび》まで",
+                "月曜日《げつようび》から　金曜日《きんようび》まで",
+                "火曜日《かようび》から　金曜日《きんようび》まで"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Rina, hari Sabtu juga sekolah?' 'Tidak, Sabtu libur. Saya belajar Senin sampai Jumat.' Jawaban: Senin–Jumat.",
+                "en": "Audio: 'Rina, do you go to school on Saturday too?' 'No, Saturday is a day off. I study Monday to Friday.' Answer: Monday to Friday."
+            }
+        },
+        {
+            "id": "l4-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "いま、何時ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "十時十五分です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q6.mp3",
+            "prompt": "今《いま》　何時《なんじ》ですか。",
+            "choices": [
+                "10:15",
+                "10:50",
+                "9:15"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sekarang jam berapa? Jawaban: 10:15.",
+                "en": "What time is it now? Answer: 10:15."
+            }
+        },
+        {
+            "id": "l4-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きのう、何時に寝ましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "十一時に寝ました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "けさは、何時に起きましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "五時半に起きました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　きのう　何時《なんじ》に　寝《ね》ましたか。",
+            "choices": [
+                "11:00",
+                "5:30",
+                "12:00"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Si perempuan tidur kemarin jam berapa? Jawaban: jam 11.",
+                "en": "What time did the woman go to bed yesterday? Answer: 11:00."
+            }
+        },
+        {
+            "id": "l4-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "スリさん、会社は、何時から何時までですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "八時から五時までです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "土曜日も、働きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、土曜日は休みです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q8.mp3",
+            "prompt": "スリさんは　土曜日《どようび》も　働《はたら》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Suri juga bekerja hari Sabtu. Jawaban: Salah (×) — hari Sabtu libur.",
+                "en": "Suri also works on Saturdays. Answer: False (×) — Saturday is her day off."
+            }
+        },
+        {
+            "id": "l4-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません。銀行の休みは、何曜日ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "土曜日と日曜日は休みです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q9.mp3",
+            "prompt": "銀行《ぎんこう》は　日曜日《にちようび》も　休《やす》みです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bank juga libur hari Minggu. Jawaban: Benar (○).",
+                "en": "The bank is also closed on Sundays. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l4-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ゲイリーさんは、毎朝、何時に起きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "六時に起きます。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "何時から働きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "八時半から働きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q10.mp3",
+            "prompt": "ゲイリーさんは　八時半《はちじはん》から　働《はたら》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Gary mulai bekerja jam 8.30. Jawaban: Benar (○).",
+                "en": "Gary starts work at 8:30. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l4-q11",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "けさ、六時半に起きました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q11.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "6:30",
+                "6:13",
+                "7:30"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalimat: 'Tadi pagi saya bangun jam 6.30.' Angka: 6:30.",
+                "en": "Sentence: 'I got up at 6:30 this morning.' Number: 6:30."
+            }
+        },
+        {
+            "id": "l4-q12",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "会社は、朝八時四十分からです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q12.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "8:40",
+                "8:14",
+                "9:40"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalimat: 'Kantor mulai jam 8.40 pagi.' Angka: 8:40.",
+                "en": "Sentence: 'The office starts at 8:40 in the morning.' Number: 8:40."
+            }
+        },
+        {
+            "id": "l4-q13",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "毎日、十時から七時まで働きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q13.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "10:00~7:00",
+                "9:00~7:00",
+                "10:00~6:00"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalimat: 'Setiap hari bekerja jam 10 sampai jam 7.' Angka: 10:00~7:00.",
+                "en": "Sentence: 'I work from 10 to 7 every day.' Number: 10:00~7:00."
+            }
+        },
+        {
+            "id": "l4-q14",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昼休みは、十二時半から一時半までです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q14.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "12:30~1:30",
+                "12:15~1:15",
+                "12:30~2:30"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalimat: 'Istirahat siang jam 12.30 sampai 1.30.' Angka: 12:30~1:30.",
+                "en": "Sentence: 'Lunch break is 12:30 to 1:30.' Number: 12:30~1:30."
+            }
+        },
+        {
+            "id": "l4-q15",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "吉川さんのうちの電話番号は、さん、よん、はち、の、ご、なな、きゅう、よん、です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q15.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "348-5794",
+                "348-5749",
+                "384-5794"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Nomor telepon rumah Yoshikawa: 348-5794.",
+                "en": "Yoshikawa's home phone number: 348-5794."
+            }
+        },
+        {
+            "id": "l4-q16",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "文化センターの電話番号は、ぜろ、ろく、の、きゅう、いち、さん、の、なな、よん、いち、に、です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q16.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "06-913-7412",
+                "06-931-7412",
+                "06-913-7421"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Nomor telepon pusat budaya: 06-913-7412.",
+                "en": "Culture center phone number: 06-913-7412."
+            }
+        },
+        {
+            "id": "l4-q17",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "このかばんは、二千八百円です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q17.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "二千八百円《にせんはっぴゃくえん》",
+                "二千八十円《にせんはちじゅうえん》",
+                "二万八千円《にまんはっせんえん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalimat: 'Tas ini 2.800 yen.' Angka: 2,800円.",
+                "en": "Sentence: 'This bag is 2,800 yen.' Number: ¥2,800."
+            }
+        },
+        {
+            "id": "l4-q18",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "このコンピューターは、十五万八千円です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-4/l4-q18.mp3",
+            "prompt": "数字《すうじ》は　どれですか。",
+            "choices": [
+                "十五万八千円《じゅうごまんはっせんえん》",
+                "一万五千八百円《いちまんごせんはっぴゃくえん》",
+                "十八万五千円《じゅうはちまんごせんえん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalimat: 'Komputer ini 158.000 yen.' Angka: 158,000円.",
+                "en": "Sentence: 'This computer is 158,000 yen.' Number: ¥158,000."
+            }
+        }
+    ]
+}

@@ -1,0 +1,308 @@
+{
+    "id": "n4-17",
+    "level": "N4",
+    "focus": "N4 Pelajaran 17 — 〜ために／〜ように (tujuan), Nのために, 〜のに (kegunaan), bilangan + は／も, 〜によって",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、毎月 お金を 銀行に 入れて いますね。何の ために 入れて いるんですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "日本へ 留学するために、毎月 二万円ずつ 入れて います。"
+            },
+            {
+                "speaker": "female",
+                "text": "えらいですね。毎日 勉強も して いますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい。三時間も 勉強する 日も あります。"
+            },
+            {
+                "speaker": "female",
+                "text": "大変ですね。体に 気を つけて ください。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとうございます。がんばります。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-17/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l17-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なん》の ために 銀行《ぎんこう》に お金《かね》を 入《い》れて いますか。",
+                "choices": [
+                    "日本《にほん》へ 留学《りゅうがく》する ために",
+                    "車《くるま》を 買《か》う ために",
+                    "家《いえ》を 買《か》う ために"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Laki-laki itu menabung untuk belajar ke Jepang.",
+                    "en": "The man is saving to study in Japan."
+                }
+            },
+            {
+                "id": "n4l17-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は 毎月《まいつき》 いくら 入《い》れますか。",
+                "choices": [
+                    "二万円《にまんえん》",
+                    "十万円《じゅうまんえん》",
+                    "五千円《ごせんえん》"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Ia menabung dua puluh ribu yen setiap bulan.",
+                    "en": "He puts in 20,000 yen every month."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l17-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは どうして 日本語を 勉強して いるんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "日本で 働くために 勉強して います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q1.mp3",
+            "prompt": "ブディさんは 何《なん》の ために 日本語《にほんご》を 勉強《べんきょう》していますか。",
+            "choices": [
+                "日本《にほん》で 働《はたら》く ために",
+                "旅行《りょこう》の ために",
+                "試験《しけん》の ために"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Budi belajar bahasa Jepang untuk bekerja di Jepang.",
+                "en": "Budi studies Japanese in order to work in Japan."
+            }
+        },
+        {
+            "id": "n4l17-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "毎朝 走って いますね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、健康の ために 走って います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q2.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なん》の ために 走《はし》っていますか。",
+            "choices": [
+                "健康《けんこう》の ために",
+                "友達《ともだち》に 会《あ》う ために",
+                "仕事《しごと》の ために"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu berlari demi kesehatan.",
+                "en": "The woman runs for her health."
+            }
+        },
+        {
+            "id": "n4l17-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この 缶切りは 何に 使いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "缶詰を 開けるのに 使います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q3.mp3",
+            "prompt": "缶切《かんき》りは 何《なに》に 使《つか》いますか。",
+            "choices": [
+                "缶詰《かんづめ》を 開《あ》けるのに 使《つか》います",
+                "お湯《ゆ》を 沸《わ》かすのに 使《つか》います",
+                "熱《ねつ》を はかるのに 使《つか》います"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pembuka kaleng dipakai untuk membuka makanan kaleng.",
+                "en": "A can opener is used to open canned food."
+            }
+        },
+        {
+            "id": "n4l17-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "きのう どのくらい 勉強しましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "五時間も 勉強しました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は きのう 何時間《なんじかん》 勉強《べんきょう》しましたか。",
+            "choices": [
+                "五時間《ごじかん》",
+                "二時間《にじかん》",
+                "八時間《はちじかん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu belajar sampai lima jam kemarin.",
+                "en": "The woman studied for as long as five hours yesterday."
+            }
+        },
+        {
+            "id": "n4l17-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この 歌は だれが 作ったんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "有名な 音楽家によって 作られたんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q5.mp3",
+            "prompt": "この 歌《うた》は だれによって 作《つく》られましたか。",
+            "choices": [
+                "有名《ゆうめい》な 音楽家《おんがくか》",
+                "先生《せんせい》",
+                "子《こ》どもたち"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Lagu itu dibuat oleh musisi terkenal.",
+                "en": "The song was written by a famous musician."
+            }
+        },
+        {
+            "id": "n4l17-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの、日本語が 上手に なる ために、何を したら いいですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "毎日《まいにち》 話《はな》したら いいですよ。",
+                "はい、上手《じょうず》です。",
+                "日本語《にほんご》の 先生《せんせい》です。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang sebaiknya dilakukan agar pandai bahasa Jepang? — Bicara setiap hari.",
+                "en": "What should I do to get good at Japanese? — Talk every day."
+            }
+        },
+        {
+            "id": "n4l17-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "論文を 書くために、図書館へ 行きます。いっしょに 行きませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "ええ、行《い》きましょう。",
+                "いいえ、書《か》きました。",
+                "図書館《としょかん》は 大《おお》きいです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ke perpustakaan untuk menulis makalah, mau ikut? — Ya, ayo.",
+                "en": "I am going to the library to write my paper. Want to come? — Yes, let us go."
+            }
+        },
+        {
+            "id": "n4l17-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、旅行は どうでしたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "三日も 休みを とりました。でも、毎日 雨でした。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q8.mp3",
+            "prompt": "ブディさんは 三日《みっか》 休《やす》みました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Budi libur sampai tiga hari. → ○",
+                "en": "Budi took as many as three days off. → ○"
+            }
+        },
+        {
+            "id": "n4l17-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "会社まで どのくらい かかりますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "電車で 一時間も かかります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q9.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 会社《かいしゃ》まで 三十分《さんじゅっぷん》ぐらい かかります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perjalanan memakan waktu satu jam, bukan tiga puluh menit. → ×",
+                "en": "It takes an hour, not thirty minutes. → ×"
+            }
+        },
+        {
+            "id": "n4l17-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "健康の ために、毎朝 歩いて います。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "毎日 ですか。すごいですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-17/n4l17-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 健康《けんこう》の ために 毎朝《まいあさ》 歩《ある》いて います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu berjalan setiap pagi demi kesehatan. → ○",
+                "en": "The woman walks every morning for her health. → ○"
+            }
+        }
+    ]
+}

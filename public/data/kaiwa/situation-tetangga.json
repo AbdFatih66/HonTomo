@@ -1,0 +1,1352 @@
+{
+    "id": "tetangga",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Tetangga & Asrama",
+    "title_en": "Neighbors & Dormitory",
+    "note_id": "Aturan buang sampah (hari, jam, jenis), nama, jam, dan biaya di jawaban contoh hanya contoh: tiap kota dan asrama punya aturan sendiri, jadi cek kalender sampah dan papan pengumuman asramamu. Saat menegur atau minta maaf, bicaralah pelan dan sopan; hubungan baik dengan tetangga lebih penting daripada menang berdebat.",
+    "note_en": "Garbage rules (days, times, categories), names, hours and fees in the sample answers are examples only: every city and dorm has its own rules, so check your garbage calendar and dorm notice board. When complaining or apologizing, speak slowly and politely; a good relationship with your neighbors matters more than winning an argument.",
+    "scenarios": [
+        {
+            "id": "tetangga-s1",
+            "title_id": "Menyapa tetangga baru",
+            "title_en": "Greeting a new neighbor",
+            "setting_id": "Kamu baru pindah ke asrama. Kamu mengetuk pintu tetangga sebelah untuk memperkenalkan diri.",
+            "setting_en": "You have just moved into the dormitory. You knock on your next-door neighbor's door to introduce yourself.",
+            "goal_id": "Memperkenalkan diri dengan 〜に 引っ越して きました, menyerahkan hadiah kecil, dan menutup dengan よろしく お願いします.",
+            "goal_en": "Introduce yourself with 〜に 引っ越して きました, hand over a small gift, and close with よろしく お願いします.",
+            "patterns": [
+                "隣の 部屋に 引っ越して きました",
+                "よろしく お願いします",
+                "これから お世話に なります"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Sapaan tetangga baru: 隣の 部屋に 引っ越して きた 〜です. Lakukan di hari-hari pertama, sore hari, dan jangan terlalu malam.",
+                "Di Jepang biasa memberi hadiah kecil (タオル, お菓子) sambil berkata これ、つまらない ものですが (ini hanya hal kecil). Itu bentuk rendah hati, bukan berarti hadiahnya jelek.",
+                "Tutup dengan これから お世話に なります atau よろしく お願いします. Dua frasa ini aman dipakai kepada siapa saja."
+            ],
+            "tips_en": [
+                "Greeting a new neighbor: 隣の 部屋に 引っ越して きた 〜です. Do it in your first days, in the afternoon, and not too late.",
+                "It is common to give a small gift (a towel, sweets) saying これ、つまらない ものですが (this is just a trifle). It is a humble phrase, not a sign the gift is poor.",
+                "Close with これから お世話に なります or よろしく お願いします. Both are safe with anyone."
+            ],
+            "words": [
+                {
+                    "ja": "隣《となり》",
+                    "id": "sebelah / tetangga",
+                    "en": "next door"
+                },
+                {
+                    "ja": "引《ひ》っ越《こ》す",
+                    "id": "pindah rumah",
+                    "en": "to move (house)"
+                },
+                {
+                    "ja": "寮《りょう》",
+                    "id": "asrama",
+                    "en": "dormitory"
+                },
+                {
+                    "ja": "お世話《せわ》に なる",
+                    "id": "dibantu / merepotkan",
+                    "en": "to be looked after"
+                },
+                {
+                    "ja": "つまらない もの",
+                    "id": "hadiah kecil (rendah hati)",
+                    "en": "a small gift (humble)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "初《はじ》めまして。",
+                    "id": "Salam kenal.",
+                    "en": "Nice to meet you."
+                },
+                {
+                    "ja": "わからない ことが あったら、聞《き》いて ください。",
+                    "id": "Kalau ada yang tidak dimengerti, silakan tanya.",
+                    "en": "If there is anything you do not understand, please ask."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s1-t1",
+                    "who": "partner",
+                    "ja": "はい。どなたですか。",
+                    "speak": "はい。どなたですか。",
+                    "id_text": "Ya. Siapa?",
+                    "en_text": "Yes. Who is it?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t2",
+                    "who": "you",
+                    "ja": "隣《となり》の 部屋《へや》に 引《ひ》っ越《こ》して きた ブディです。",
+                    "speak": "となりの へやに ひっこして きた ブディです。",
+                    "id_text": "Saya Budi, yang baru pindah ke kamar sebelah.",
+                    "accept": [
+                        "隣の 部屋に 引っ越して きた ブディです。",
+                        "隣の部屋に引っ越してきたブディです。"
+                    ],
+                    "en_text": "I'm Budi, I just moved into the room next door.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t3",
+                    "who": "partner",
+                    "ja": "ああ、はじめまして。田中《たなか》です。どうぞ よろしく。",
+                    "speak": "ああ、はじめまして。たなかです。どうぞ よろしく。",
+                    "id_text": "Oh, salam kenal. Saya Tanaka. Mohon bantuannya.",
+                    "en_text": "Oh, nice to meet you. I'm Tanaka. Pleased to meet you.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t4",
+                    "who": "you",
+                    "ja": "こちらこそ、よろしく お願《ねが》いします。これ、つまらない ものですが。",
+                    "speak": "こちらこそ、よろしく おねがいします。これ、つまらない ものですが。",
+                    "id_text": "Saya juga, mohon bantuannya. Ini hanya hal kecil.",
+                    "accept": [
+                        "こちらこそ、よろしく お願いします。これ、つまらない ものですが。",
+                        "こちらこそ、よろしくお願いします。これ、つまらないものですが。"
+                    ],
+                    "en_text": "Likewise, please take care of me. This is just a small thing.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t5",
+                    "who": "partner",
+                    "ja": "ありがとうございます。ブディさんは どこの 国《くに》の 人《ひと》ですか。",
+                    "speak": "ありがとうございます。ブディさんは どこの くにの ひとですか。",
+                    "id_text": "Terima kasih. Budi berasal dari negara mana?",
+                    "en_text": "Thank you. Which country are you from, Budi?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t6",
+                    "who": "you",
+                    "ja": "インドネシアから 来《き》ました。日本《にほん》に 来《き》て 二《に》か月《げつ》です。",
+                    "speak": "インドネシアから きました。にほんに きて にかげつです。",
+                    "id_text": "Saya dari Indonesia. Sudah dua bulan di Jepang.",
+                    "accept": [
+                        "インドネシアから 来ました。日本に 来て 二か月です。",
+                        "インドネシアから来ました。日本に来て二か月です。"
+                    ],
+                    "en_text": "I'm from Indonesia. It has been two months since I came to Japan.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですか。わからない ことが あったら、いつでも 聞《き》いて ください。",
+                    "speak": "そうですか。わからない ことが あったら、いつでも きいて ください。",
+                    "id_text": "Begitu ya. Kalau ada yang tidak dimengerti, tanya saja kapan pun.",
+                    "en_text": "I see. If there is anything you don't understand, ask me anytime.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s1-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。これから お世話《せわ》に なります。",
+                    "speak": "ありがとうございます。これから おせわに なります。",
+                    "id_text": "Terima kasih. Mulai sekarang mohon bantuannya.",
+                    "accept": [
+                        "ありがとうございます。これから お世話に なります。",
+                        "ありがとうございます。これからお世話になります。"
+                    ],
+                    "en_text": "Thank you. I'll be in your care from now on.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s2",
+            "title_id": "Hari buang sampah",
+            "title_en": "Garbage collection days",
+            "setting_id": "Pagi pertamamu di asrama. Kamu bertemu tetangga di dekat tempat sampah dan menanyakan hari dan jam buang sampah.",
+            "setting_en": "Your first morning in the dormitory. You meet a neighbor by the garbage area and ask which day and what time to put the garbage out.",
+            "goal_id": "Menanyakan hari dengan 〜は 何曜日ですか, jam batas dengan 何時までに 出しますか, dan meminta izin dengan 〜ても いいですか.",
+            "goal_en": "Ask the day with 〜は 何曜日ですか, the deadline with 何時までに 出しますか, and ask permission with 〜ても いいですか.",
+            "patterns": [
+                "燃える ごみは 何曜日ですか",
+                "何時までに 出しますか",
+                "夜に 出しても いいですか"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tanya hari dengan 〜は 何曜日ですか. Contoh jawaban: 月曜日と 木曜日です (Senin dan Kamis). Hari dan jam di sini hanya contoh; tiap kota dan asrama berbeda.",
+                "Sampah harus keluar pada pagi hari pengambilan, sebelum jam batas: 朝 八時までに 出して ください. Jangan taruh malam sebelumnya kecuali boleh, karena gagak dan kucing bisa mengacak.",
+                "Kalau ragu, lihat ごみの カレンダー (kalender sampah) dari kantor kelurahan atau papan pengumuman asrama."
+            ],
+            "tips_en": [
+                "Ask the day with 〜は 何曜日ですか. A sample answer: 月曜日と 木曜日です (Monday and Thursday). The days and times here are only examples; every city and dorm differs.",
+                "Garbage goes out on the morning of collection, before the deadline: 朝 八時までに 出して ください. Do not put it out the night before unless allowed, because crows and cats may tear it open.",
+                "When unsure, check the ごみの カレンダー (garbage calendar) from the ward office or the dorm notice board."
+            ],
+            "words": [
+                {
+                    "ja": "燃《も》える ごみ",
+                    "id": "sampah yang bisa dibakar",
+                    "en": "burnable garbage"
+                },
+                {
+                    "ja": "何曜日《なんようび》",
+                    "id": "hari apa",
+                    "en": "what day of the week"
+                },
+                {
+                    "ja": "出《だ》す",
+                    "id": "mengeluarkan / membuang keluar",
+                    "en": "to put out"
+                },
+                {
+                    "ja": "朝《あさ》",
+                    "id": "pagi",
+                    "en": "morning"
+                },
+                {
+                    "ja": "夜《よる》",
+                    "id": "malam",
+                    "en": "night"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "次《つぎ》の 回収《かいしゅう》は いつですか。",
+                    "id": "Pengambilan berikutnya kapan?",
+                    "en": "When is the next collection?"
+                },
+                {
+                    "ja": "ごみ捨《す》て場《ば》は どこですか。",
+                    "id": "Di mana tempat pembuangan sampah?",
+                    "en": "Where is the garbage area?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s2-t1",
+                    "who": "partner",
+                    "ja": "おはようございます。どうしましたか。",
+                    "speak": "おはようございます。どうしましたか。",
+                    "id_text": "Selamat pagi. Ada apa?",
+                    "en_text": "Good morning. Is something wrong?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t2",
+                    "who": "you",
+                    "ja": "おはようございます。燃《も》える ごみは 何曜日《なんようび》ですか。",
+                    "speak": "おはようございます。もえる ごみは なんようびですか。",
+                    "id_text": "Selamat pagi. Sampah yang bisa dibakar hari apa?",
+                    "accept": [
+                        "おはようございます。燃える ごみは 何曜日ですか。",
+                        "おはようございます。燃えるごみは何曜日ですか。"
+                    ],
+                    "en_text": "Good morning. What day is the burnable garbage?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t3",
+                    "who": "partner",
+                    "ja": "月曜日《げつようび》と 木曜日《もくようび》です。",
+                    "speak": "げつようびと もくようびです。",
+                    "id_text": "Senin dan Kamis.",
+                    "en_text": "Monday and Thursday.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t4",
+                    "who": "you",
+                    "ja": "何時《なんじ》までに 出《だ》しますか。",
+                    "speak": "なんじまでに だしますか。",
+                    "id_text": "Harus dikeluarkan sebelum jam berapa?",
+                    "accept": [
+                        "何時までに 出しますか。",
+                        "何時までに出しますか。"
+                    ],
+                    "en_text": "By what time do I put it out?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t5",
+                    "who": "partner",
+                    "ja": "朝《あさ》 八時《はちじ》までに 出《だ》して ください。",
+                    "speak": "あさ はちじまでに だして ください。",
+                    "id_text": "Tolong keluarkan sebelum jam delapan pagi.",
+                    "en_text": "Please put it out by eight in the morning.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t6",
+                    "who": "you",
+                    "ja": "夜《よる》に 出《だ》しても いいですか。",
+                    "speak": "よるに だしても いいですか。",
+                    "id_text": "Bolehkah dikeluarkan malam hari?",
+                    "accept": [
+                        "夜に 出しても いいですか。",
+                        "夜に出してもいいですか。"
+                    ],
+                    "en_text": "May I put it out at night?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t7",
+                    "who": "partner",
+                    "ja": "いいえ、だめです。カラスが 来《く》るからです。",
+                    "speak": "いいえ、だめです。カラスが くるからです。",
+                    "id_text": "Tidak, tidak boleh. Karena nanti gagak datang.",
+                    "en_text": "No, you can't. Because crows will come.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s2-t8",
+                    "who": "you",
+                    "ja": "わかりました。朝《あさ》 八時《はちじ》までに 出《だ》します。",
+                    "speak": "わかりました。あさ はちじまでに だします。",
+                    "id_text": "Baik. Saya keluarkan sebelum jam delapan pagi.",
+                    "accept": [
+                        "わかりました。朝 八時までに 出します。",
+                        "わかりました。朝八時までに出します。"
+                    ],
+                    "en_text": "I understand. I'll put it out by eight in the morning.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s3",
+            "title_id": "Memilah jenis sampah",
+            "title_en": "Sorting the garbage",
+            "setting_id": "Kamu memegang botol plastik, kaleng, dan kantong plastik. Kamu bertanya kepada pengelola asrama di mana dan bagaimana membuangnya.",
+            "setting_en": "You are holding a plastic bottle, a can, and a plastic bag. You ask the dorm manager where and how to throw each one away.",
+            "goal_id": "Menanyakan tempat dengan 〜は どこに 捨てますか dan jenis dengan 〜は 燃える ごみですか, lalu memahami aturan memilah.",
+            "goal_en": "Ask where with 〜は どこに 捨てますか and the category with 〜は 燃える ごみですか, then understand the sorting rules.",
+            "patterns": [
+                "〜は どこに 捨てますか",
+                "〜も 同じですか",
+                "燃える ごみですか、燃えない ごみですか"
+            ],
+            "partner": {
+                "name": "かんりにん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tanya tempat dengan 〜は どこに 捨てますか. Botol plastik biasanya dibuang terpisah: lepas tutup dan label, bilas, lalu masuk ke tempat khusus ペットボトル.",
+                "Sampah dipilah: 燃える ごみ (bisa dibakar), 燃えない ごみ (tidak bisa dibakar), ペットボトル, 缶 (kaleng), dan 資源ごみ. Kalau tidak yakin, tanya 〜は 燃える ごみですか.",
+                "Cuci bagian dalam kaleng dan botol sebelum dibuang. Aturan ini hanya contoh, selalu ikuti kalender sampah asramamu."
+            ],
+            "tips_en": [
+                "Ask where with 〜は どこに 捨てますか. Plastic bottles are usually separate: remove the cap and label, rinse, then use the ペットボトル bin.",
+                "Garbage is sorted: 燃える ごみ (burnable), 燃えない ごみ (non-burnable), ペットボトル, 缶 (cans), and 資源ごみ. If unsure, ask 〜は 燃える ごみですか.",
+                "Rinse the inside of cans and bottles before throwing them out. These rules are only examples; always follow your dorm's garbage calendar."
+            ],
+            "words": [
+                {
+                    "ja": "捨《す》てる",
+                    "id": "membuang",
+                    "en": "to throw away"
+                },
+                {
+                    "ja": "缶《かん》",
+                    "id": "kaleng",
+                    "en": "can"
+                },
+                {
+                    "ja": "袋《ふくろ》",
+                    "id": "kantong",
+                    "en": "bag"
+                },
+                {
+                    "ja": "洗《あら》う",
+                    "id": "mencuci",
+                    "en": "to wash"
+                },
+                {
+                    "ja": "種類《しゅるい》",
+                    "id": "jenis",
+                    "en": "type / kind"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この 箱《はこ》は どこに 捨《す》てますか。",
+                    "id": "Kotak ini dibuang di mana?",
+                    "en": "Where do I throw away this box?"
+                },
+                {
+                    "ja": "大《おお》きい ごみは どうしますか。",
+                    "id": "Sampah besar bagaimana?",
+                    "en": "What do I do with large items?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s3-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。どうしましたか。",
+                    "speak": "こんにちは。どうしましたか。",
+                    "id_text": "Selamat siang. Ada apa?",
+                    "en_text": "Hello. What's the matter?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t2",
+                    "who": "you",
+                    "ja": "この ペットボトルは どこに 捨《す》てますか。",
+                    "speak": "この ペットボトルは どこに すてますか。",
+                    "id_text": "Botol plastik ini dibuang di mana?",
+                    "accept": [
+                        "この ペットボトルは どこに 捨てますか。",
+                        "このペットボトルはどこに捨てますか。"
+                    ],
+                    "en_text": "Where do I throw away this plastic bottle?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t3",
+                    "who": "partner",
+                    "ja": "キャップと ラベルを はずして、ペットボトルの かごに 入《い》れて ください。",
+                    "speak": "キャップと ラベルを はずして、ペットボトルの かごに いれて ください。",
+                    "id_text": "Lepas tutup dan labelnya, lalu masukkan ke keranjang botol plastik.",
+                    "en_text": "Remove the cap and the label, and put it in the plastic bottle basket.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t4",
+                    "who": "you",
+                    "ja": "缶《かん》も 同《おな》じですか。",
+                    "speak": "かんも おなじですか。",
+                    "id_text": "Kaleng juga sama?",
+                    "accept": [
+                        "缶も 同じですか。",
+                        "缶も同じですか。"
+                    ],
+                    "en_text": "Is it the same for cans?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t5",
+                    "who": "partner",
+                    "ja": "いいえ、缶《かん》は 別《べつ》です。中《なか》を 洗《あら》って、缶《かん》の 箱《はこ》に 入《い》れます。",
+                    "speak": "いいえ、かんは べつです。なかを あらって、かんの はこに いれます。",
+                    "id_text": "Tidak, kaleng terpisah. Cuci bagian dalamnya, lalu masukkan ke kotak kaleng.",
+                    "en_text": "No, cans are separate. Wash the inside and put them in the can box.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t6",
+                    "who": "you",
+                    "ja": "この ビニールの 袋《ふくろ》は 燃《も》える ごみですか、燃《も》えない ごみですか。",
+                    "speak": "この ビニールの ふくろは もえる ごみですか、もえない ごみですか。",
+                    "id_text": "Kantong plastik ini sampah yang bisa dibakar atau tidak?",
+                    "accept": [
+                        "この ビニールの 袋は 燃える ごみですか、燃えない ごみですか。",
+                        "このビニールの袋は燃えるごみですか、燃えないごみですか。"
+                    ],
+                    "en_text": "Is this plastic bag burnable or non-burnable garbage?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t7",
+                    "who": "partner",
+                    "ja": "燃《も》える ごみです。袋《ふくろ》に 入《い》れて 出《だ》して ください。",
+                    "speak": "もえる ごみです。ふくろに いれて だして ください。",
+                    "id_text": "Itu sampah yang bisa dibakar. Tolong masukkan ke kantong lalu keluarkan.",
+                    "en_text": "It's burnable garbage. Please put it in a bag and put it out.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t8",
+                    "who": "you",
+                    "ja": "日本《にほん》の ごみは 種類《しゅるい》が 多《おお》いですね。",
+                    "speak": "にほんの ごみは しゅるいが おおいですね。",
+                    "id_text": "Jenis sampah di Jepang banyak ya.",
+                    "accept": [
+                        "日本の ごみは 種類が 多いですね。",
+                        "日本のごみは種類が多いですね。"
+                    ],
+                    "en_text": "There are a lot of types of garbage in Japan.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t8.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t9",
+                    "who": "partner",
+                    "ja": "ごみの カレンダーが あります。どうぞ。",
+                    "speak": "ごみの カレンダーが あります。どうぞ。",
+                    "id_text": "Ada kalender sampah. Silakan.",
+                    "en_text": "We have a garbage calendar. Here you are.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t9.mp3"
+                },
+                {
+                    "id": "tetangga-s3-t10",
+                    "who": "you",
+                    "ja": "ありがとうございます。部屋《へや》で 見《み》ます。",
+                    "speak": "ありがとうございます。へやで みます。",
+                    "id_text": "Terima kasih. Saya lihat di kamar.",
+                    "accept": [
+                        "ありがとうございます。部屋で 見ます。",
+                        "ありがとうございます。部屋で見ます。"
+                    ],
+                    "en_text": "Thank you. I'll look at it in my room.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s3-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s4",
+            "title_id": "Minta maaf karena berisik",
+            "title_en": "Apologizing for the noise",
+            "setting_id": "Tadi malam kamu dan temanmu berbicara keras. Tetangga sebelah datang ke pintumu untuk mengeluh.",
+            "setting_en": "Last night you and your friend talked loudly. Your next-door neighbor comes to your door to complain.",
+            "goal_id": "Minta maaf dengan すみませんでした / 申し訳ありません, menyebut sebabnya, dan berjanji dengan 気を つけます.",
+            "goal_en": "Apologize with すみませんでした / 申し訳ありません, give the reason, and promise with 気を つけます.",
+            "patterns": [
+                "すみませんでした",
+                "申し訳ありませんでした",
+                "これから 気を つけます"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Saat ditegur, langsung minta maaf: すみませんでした. Lebih sopan lagi: 申し訳ありませんでした. Jangan membantah lebih dulu.",
+                "Sebut sebabnya singkat (友達と 話して いました), lalu janji: これから 気を つけます (mulai sekarang saya akan berhati-hati).",
+                "Tetangga Jepang biasanya menegur dengan halus. Kalau dia datang, itu sudah cukup mengganggu. Tanggapi dengan serius dan jangan mengulang."
+            ],
+            "tips_en": [
+                "When told off, apologize right away: すみませんでした. More polite: 申し訳ありませんでした. Do not argue first.",
+                "Give the reason briefly (友達と 話して いました), then promise: これから 気を つけます (I will be careful from now on).",
+                "Japanese neighbors usually complain gently. If one comes to your door, it was already bothering them. Take it seriously and do not repeat it."
+            ],
+            "words": [
+                {
+                    "ja": "音《おと》",
+                    "id": "bunyi",
+                    "en": "sound / noise"
+                },
+                {
+                    "ja": "寝《ね》る",
+                    "id": "tidur",
+                    "en": "to sleep"
+                },
+                {
+                    "ja": "声《こえ》",
+                    "id": "suara (orang)",
+                    "en": "voice"
+                },
+                {
+                    "ja": "静《しず》かに",
+                    "id": "dengan tenang",
+                    "en": "quietly"
+                },
+                {
+                    "ja": "申《もう》し訳《わけ》ありません",
+                    "id": "mohon maaf (sopan)",
+                    "en": "I'm very sorry (polite)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "うるさくて、すみません。",
+                    "id": "Maaf, berisik sekali.",
+                    "en": "Sorry for the noise."
+                },
+                {
+                    "ja": "もう 夜《よる》は 静《しず》かに します。",
+                    "id": "Mulai sekarang malam hari saya akan tenang.",
+                    "en": "I will keep quiet at night from now on."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s4-t1",
+                    "who": "partner",
+                    "ja": "こんばんは。隣《となり》の 田中《たなか》です。ちょっと いいですか。",
+                    "speak": "こんばんは。となりの たなかです。ちょっと いいですか。",
+                    "id_text": "Selamat malam. Saya Tanaka di sebelah. Boleh sebentar?",
+                    "en_text": "Good evening. I'm Tanaka from next door. Do you have a moment?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t2",
+                    "who": "you",
+                    "ja": "はい。何《なん》ですか。",
+                    "speak": "はい。なんですか。",
+                    "id_text": "Ya. Ada apa?",
+                    "accept": [
+                        "はい。何ですか。"
+                    ],
+                    "en_text": "Yes. What is it?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t3",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の 夜《よる》、音《おと》が 大《おお》きくて、寝《ね》られませんでした。",
+                    "speak": "きのうの よる、おとが おおきくて、ねられませんでした。",
+                    "id_text": "Tadi malam suaranya keras, saya tidak bisa tidur.",
+                    "en_text": "Last night the noise was loud and I couldn't sleep.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t4",
+                    "who": "you",
+                    "ja": "すみませんでした。友達《ともだち》と 大《おお》きい 声《こえ》で 話《はな》して いました。",
+                    "speak": "すみませんでした。ともだちと おおきい こえで はなして いました。",
+                    "id_text": "Maaf. Saya mengobrol dengan teman dengan suara keras.",
+                    "accept": [
+                        "すみませんでした。友達と 大きい 声で 話して いました。",
+                        "すみませんでした。友達と大きい声で話していました。"
+                    ],
+                    "en_text": "I'm sorry. I was talking loudly with a friend.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t5",
+                    "who": "partner",
+                    "ja": "夜《よる》は 十時《じゅうじ》ごろから 静《しず》かに して ください。",
+                    "speak": "よるは じゅうじごろから しずかに して ください。",
+                    "id_text": "Malam hari, tolong tenang mulai sekitar jam sepuluh.",
+                    "en_text": "At night, please keep quiet from around ten o'clock.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t6",
+                    "who": "you",
+                    "ja": "はい、これから 気《き》を つけます。申《もう》し訳《わけ》ありませんでした。",
+                    "speak": "はい、これから きを つけます。もうしわけありませんでした。",
+                    "id_text": "Ya, mulai sekarang saya akan berhati-hati. Mohon maaf.",
+                    "accept": [
+                        "はい、これから 気を つけます。申し訳ありませんでした。",
+                        "はい、これから気をつけます。申し訳ありませんでした。"
+                    ],
+                    "en_text": "Yes, I'll be careful from now on. I'm very sorry.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。よろしく お願《ねが》いします。",
+                    "speak": "ありがとうございます。よろしく おねがいします。",
+                    "id_text": "Terima kasih. Mohon kerja samanya.",
+                    "en_text": "Thank you. I appreciate it.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s4-t8",
+                    "who": "you",
+                    "ja": "はい。おやすみなさい。失礼《しつれい》します。",
+                    "speak": "はい。おやすみなさい。しつれいします。",
+                    "id_text": "Ya. Selamat tidur. Permisi.",
+                    "accept": [
+                        "はい。おやすみなさい。失礼します。"
+                    ],
+                    "en_text": "Yes. Good night. Excuse me.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s4-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s5",
+            "title_id": "Menegur dengan sopan",
+            "title_en": "Politely asking a neighbor to be quieter",
+            "setting_id": "Malam hari, tetangga sebelah memutar musik keras dan kamu tidak bisa tidur. Kamu mengetuk pintunya dan menegur dengan sopan.",
+            "setting_en": "At night your next-door neighbor is playing loud music and you cannot sleep. You knock on the door and ask politely.",
+            "goal_id": "Membuka dengan 夜遅くに すみません, menyampaikan masalah dengan 〜が 大きいです, dan meminta dengan 〜て もらえませんか.",
+            "goal_en": "Open with 夜遅くに すみません, state the problem with 〜が 大きいです, and request with 〜て もらえませんか.",
+            "patterns": [
+                "夜遅くに すみません",
+                "音が 少し 大きいです",
+                "小さく して もらえませんか"
+            ],
+            "partner": {
+                "name": "やまもと",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Mulai dengan permintaan maaf karena mengganggu: 夜遅くに すみません. Ini melunakkan teguran.",
+                "Jangan menuduh. Sampaikan faktanya: 音が 少し 大きいです (suaranya agak keras), 寝られません (saya tidak bisa tidur).",
+                "Minta dengan 〜て もらえませんか (bisakah Anda ...). Lebih halus daripada perintah 〜て ください. Akhiri dengan terima kasih."
+            ],
+            "tips_en": [
+                "Start by apologizing for the bother: 夜遅くに すみません. It softens the complaint.",
+                "Do not accuse. State the facts: 音が 少し 大きいです (the sound is a bit loud), 寝られません (I cannot sleep).",
+                "Ask with 〜て もらえませんか (could you ...). It is gentler than the command 〜て ください. End with thanks."
+            ],
+            "words": [
+                {
+                    "ja": "夜遅《よるおそ》く",
+                    "id": "larut malam",
+                    "en": "late at night"
+                },
+                {
+                    "ja": "音楽《おんがく》",
+                    "id": "musik",
+                    "en": "music"
+                },
+                {
+                    "ja": "少《すこ》し",
+                    "id": "sedikit",
+                    "en": "a little"
+                },
+                {
+                    "ja": "小《ちい》さい",
+                    "id": "kecil / pelan",
+                    "en": "small / low"
+                },
+                {
+                    "ja": "助《たす》かります",
+                    "id": "sangat membantu",
+                    "en": "that helps me out"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "すみません、テレビの 音《おと》を 小《ちい》さく して もらえませんか。",
+                    "id": "Maaf, bisakah suara TV dikecilkan?",
+                    "en": "Excuse me, could you turn the TV down?"
+                },
+                {
+                    "ja": "明日《あした》 朝《あさ》が 早《はや》いんです。",
+                    "id": "Besok saya harus bangun pagi.",
+                    "en": "I have to get up early tomorrow."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s5-t1",
+                    "who": "partner",
+                    "ja": "あ、こんばんは。どうしましたか。",
+                    "speak": "あ、こんばんは。どうしましたか。",
+                    "id_text": "Oh, selamat malam. Ada apa?",
+                    "en_text": "Oh, good evening. What's the matter?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t2",
+                    "who": "you",
+                    "ja": "こんばんは。夜《よる》 遅《おそ》くに すみません。隣《となり》の ブディです。",
+                    "speak": "こんばんは。よる おそくに すみません。となりの ブディです。",
+                    "id_text": "Selamat malam. Maaf larut malam begini. Saya Budi di sebelah.",
+                    "accept": [
+                        "こんばんは。夜 遅くに すみません。隣の ブディです。",
+                        "こんばんは。夜遅くにすみません。隣のブディです。"
+                    ],
+                    "en_text": "Good evening. Sorry to bother you so late. I'm Budi from next door.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t3",
+                    "who": "partner",
+                    "ja": "ああ、ブディさん。何《なに》か ありましたか。",
+                    "speak": "ああ、ブディさん。なにか ありましたか。",
+                    "id_text": "Oh, Budi. Ada sesuatu?",
+                    "en_text": "Oh, Budi. Did something happen?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t4",
+                    "who": "you",
+                    "ja": "あの、音楽《おんがく》の 音《おと》が 少《すこ》し 大《おお》きいです。寝《ね》られません。",
+                    "speak": "あの、おんがくの おとが すこし おおきいです。ねられません。",
+                    "id_text": "Anu, suara musiknya agak keras. Saya tidak bisa tidur.",
+                    "accept": [
+                        "あの、音楽の 音が 少し 大きいです。寝られません。",
+                        "あの、音楽の音が少し大きいです。寝られません。"
+                    ],
+                    "en_text": "Um, the music is a little loud. I can't sleep.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t5",
+                    "who": "partner",
+                    "ja": "あ、すみません。うるさかったですか。",
+                    "speak": "あ、すみません。うるさかったですか。",
+                    "id_text": "Oh, maaf. Apakah berisik?",
+                    "en_text": "Oh, sorry. Was it noisy?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t6",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し。もう 少《すこ》し 小《ちい》さく して もらえませんか。",
+                    "speak": "はい、すこし。もう すこし ちいさく して もらえませんか。",
+                    "id_text": "Ya, sedikit. Bisakah dikecilkan sedikit lagi?",
+                    "accept": [
+                        "はい、少し。もう 少し 小さく して もらえませんか。",
+                        "はい、少し。もう少し小さくしてもらえませんか。"
+                    ],
+                    "en_text": "Yes, a little. Could you turn it down a bit more?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t7",
+                    "who": "partner",
+                    "ja": "わかりました。すぐ 小《ちい》さく します。",
+                    "speak": "わかりました。すぐ ちいさく します。",
+                    "id_text": "Baik. Segera saya kecilkan.",
+                    "en_text": "Understood. I'll turn it down right away.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。助《たす》かります。",
+                    "speak": "ありがとうございます。たすかります。",
+                    "id_text": "Terima kasih. Sangat membantu.",
+                    "accept": [
+                        "ありがとうございます。助かります。"
+                    ],
+                    "en_text": "Thank you. That helps a lot.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t8.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t9",
+                    "who": "partner",
+                    "ja": "いえいえ。こちらこそ、すみませんでした。",
+                    "speak": "いえいえ。こちらこそ、すみませんでした。",
+                    "id_text": "Tidak apa-apa. Saya yang minta maaf.",
+                    "en_text": "Not at all. I'm the one who's sorry.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t9.mp3"
+                },
+                {
+                    "id": "tetangga-s5-t10",
+                    "who": "you",
+                    "ja": "では、失礼《しつれい》します。おやすみなさい。",
+                    "speak": "では、しつれいします。おやすみなさい。",
+                    "id_text": "Kalau begitu, permisi. Selamat tidur.",
+                    "accept": [
+                        "では、失礼します。おやすみなさい。"
+                    ],
+                    "en_text": "Well then, excuse me. Good night.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s5-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s6",
+            "title_id": "Kunci kamar hilang",
+            "title_en": "Lost room key",
+            "setting_id": "Sepulang kerja kamu sadar kunci kamarmu hilang. Kamu pergi ke ruang pengelola asrama dan melapor.",
+            "setting_en": "After work you realize your room key is gone. You go to the dorm manager's office and report it.",
+            "goal_id": "Melapor dengan 鍵を 無くしました, menjawab pertanyaan kapan terakhir memegangnya, dan meminjam kunci cadangan.",
+            "goal_en": "Report with 鍵を 無くしました, answer when you last had it, and borrow the spare key.",
+            "patterns": [
+                "鍵を 無くしました",
+                "〜まで 持って いました",
+                "スペアキーを 貸して ください"
+            ],
+            "partner": {
+                "name": "かんりにん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Langsung sebut masalahnya: 部屋の 鍵を 無くしました. Jangan menunda; lapor di hari yang sama demi keamanan.",
+                "Pengelola akan bertanya kapan dan di mana terakhir kali. Jawab dengan 〜まで 持って いました, lalu katakan apa yang akan kamu cari: 会社に 聞いて みます.",
+                "Biasanya kamu dipinjami スペアキー sementara dan harus mengembalikannya. Kunci pengganti bisa berbayar; tanyakan ke pengelolamu."
+            ],
+            "tips_en": [
+                "State the problem at once: 部屋の 鍵を 無くしました. Do not wait; report it the same day for security.",
+                "The manager will ask when and where you last had it. Answer with 〜まで 持って いました, then say what you will check: 会社に 聞いて みます.",
+                "You are usually lent a スペアキー temporarily and must return it. A replacement key may cost money; ask your manager."
+            ],
+            "words": [
+                {
+                    "ja": "鍵《かぎ》",
+                    "id": "kunci",
+                    "en": "key"
+                },
+                {
+                    "ja": "無《な》くす",
+                    "id": "menghilangkan",
+                    "en": "to lose"
+                },
+                {
+                    "ja": "持《も》つ",
+                    "id": "membawa / memegang",
+                    "en": "to have / hold"
+                },
+                {
+                    "ja": "貸《か》す",
+                    "id": "meminjamkan",
+                    "en": "to lend"
+                },
+                {
+                    "ja": "返《かえ》す",
+                    "id": "mengembalikan",
+                    "en": "to return"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "財布《さいふ》を 無《な》くしました。",
+                    "id": "Dompet saya hilang.",
+                    "en": "I lost my wallet."
+                },
+                {
+                    "ja": "見《み》つかったら、連絡《れんらく》します。",
+                    "id": "Kalau ketemu, saya kabari.",
+                    "en": "If I find it, I will let you know."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s6-t1",
+                    "who": "partner",
+                    "ja": "こんばんは。どうしましたか。",
+                    "speak": "こんばんは。どうしましたか。",
+                    "id_text": "Selamat malam. Ada apa?",
+                    "en_text": "Good evening. What's the matter?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t2",
+                    "who": "you",
+                    "ja": "部屋《へや》の 鍵《かぎ》を 無《な》くしました。",
+                    "speak": "へやの かぎを なくしました。",
+                    "id_text": "Kunci kamar saya hilang.",
+                    "accept": [
+                        "部屋の 鍵を 無くしました。",
+                        "部屋の鍵を無くしました。"
+                    ],
+                    "en_text": "I lost my room key.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。いつまで 持《も》って いましたか。",
+                    "speak": "それは たいへんですね。いつまで もって いましたか。",
+                    "id_text": "Wah, gawat. Sampai kapan Anda memegangnya?",
+                    "en_text": "That's serious. Until when did you have it?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t4",
+                    "who": "you",
+                    "ja": "朝《あさ》、会社《かいしゃ》に 行《い》く とき、持《も》って いました。",
+                    "speak": "あさ、かいしゃに いく とき、もって いました。",
+                    "id_text": "Pagi tadi saat berangkat ke perusahaan, saya masih membawanya.",
+                    "accept": [
+                        "朝、会社に 行く とき、持って いました。",
+                        "朝、会社に行くとき、持っていました。"
+                    ],
+                    "en_text": "I had it this morning when I went to the company.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t5",
+                    "who": "partner",
+                    "ja": "会社《かいしゃ》や 駅《えき》に 聞《き》きましたか。",
+                    "speak": "かいしゃや えきに ききましたか。",
+                    "id_text": "Sudah tanya ke perusahaan atau stasiun?",
+                    "en_text": "Have you asked the company or the station?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t6",
+                    "who": "you",
+                    "ja": "まだです。会社《かいしゃ》に 聞《き》いて みます。",
+                    "speak": "まだです。かいしゃに きいて みます。",
+                    "id_text": "Belum. Saya akan coba tanya ke perusahaan.",
+                    "accept": [
+                        "まだです。会社に 聞いて みます。",
+                        "まだです。会社に聞いてみます。"
+                    ],
+                    "en_text": "Not yet. I'll try asking the company.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t7",
+                    "who": "partner",
+                    "ja": "今夜《こんや》は スペアキーを 貸《か》します。部屋《へや》に 入《はい》って ください。",
+                    "speak": "こんやは スペアキーを かします。へやに はいって ください。",
+                    "id_text": "Malam ini saya pinjamkan kunci cadangan. Silakan masuk ke kamar.",
+                    "en_text": "Tonight I'll lend you the spare key. Please go into your room.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。いつまでに 返《かえ》しますか。",
+                    "speak": "ありがとうございます。いつまでに かえしますか。",
+                    "id_text": "Terima kasih. Harus dikembalikan sebelum kapan?",
+                    "accept": [
+                        "ありがとうございます。いつまでに 返しますか。",
+                        "ありがとうございます。いつまでに返しますか。"
+                    ],
+                    "en_text": "Thank you. By when should I return it?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t8.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t9",
+                    "who": "partner",
+                    "ja": "明日《あした》の 夜《よる》までに 返《かえ》して ください。見《み》つからなかったら、また 教《おし》えて ください。",
+                    "speak": "あしたの よるまでに かえして ください。みつからなかったら、また おしえて ください。",
+                    "id_text": "Tolong kembalikan sebelum besok malam. Kalau tidak ketemu, kabari saya lagi.",
+                    "en_text": "Please return it by tomorrow night. If you can't find it, tell me again.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t9.mp3"
+                },
+                {
+                    "id": "tetangga-s6-t10",
+                    "who": "you",
+                    "ja": "はい、わかりました。ありがとうございました。",
+                    "speak": "はい、わかりました。ありがとうございました。",
+                    "id_text": "Ya, saya mengerti. Terima kasih.",
+                    "accept": [
+                        "はい、わかりました。ありがとうございました。"
+                    ],
+                    "en_text": "Yes, I understand. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s6-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s7",
+            "title_id": "Terkunci di luar kamar",
+            "title_en": "Locked out of your room",
+            "setting_id": "Kamu keluar membuang sampah dan pintu terkunci otomatis, sementara kuncimu tertinggal di dalam. Kamu minta tolong pengelola.",
+            "setting_en": "You went out with the garbage and the door locked behind you, with your key still inside. You ask the dorm manager for help.",
+            "goal_id": "Menjelaskan dengan 鍵を 忘れました / ドアが 開きません, meminta tolong dengan お願いします, dan memahami biaya.",
+            "goal_en": "Explain with 鍵を 忘れました / ドアが 開きません, ask for help with お願いします, and understand the fee.",
+            "patterns": [
+                "部屋の 中に 鍵を 忘れました",
+                "ドアが 開きません",
+                "お願いします"
+            ],
+            "partner": {
+                "name": "かんりにん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Banyak pintu asrama terkunci otomatis. Jelaskan: 部屋の 中に 鍵を 忘れました. ドアが 開きません (pintu tidak terbuka).",
+                "Pengelola punya マスターキー (kunci induk) untuk membukakan. Jawab dengan お願いします, lalu ikut ke pintu.",
+                "Kadang ada biaya kalau terulang (di sini 千円 hanya contoh). Dengarkan angkanya dengan teliti: 千円ですね、わかりました."
+            ],
+            "tips_en": [
+                "Many dorm doors lock automatically. Explain: 部屋の 中に 鍵を 忘れました. ドアが 開きません (the door will not open).",
+                "The manager has a マスターキー (master key) to open it. Answer with お願いします, then go with them to the door.",
+                "There may be a fee if it happens again (the 千円 here is just an example). Listen carefully to the amount: 千円ですね、わかりました."
+            ],
+            "words": [
+                {
+                    "ja": "忘《わす》れる",
+                    "id": "lupa / tertinggal",
+                    "en": "to forget / leave behind"
+                },
+                {
+                    "ja": "開《あ》く",
+                    "id": "terbuka",
+                    "en": "to open (by itself)"
+                },
+                {
+                    "ja": "大変《たいへん》",
+                    "id": "gawat / repot",
+                    "en": "serious / tough"
+                },
+                {
+                    "ja": "一緒《いっしょ》に",
+                    "id": "bersama",
+                    "en": "together"
+                },
+                {
+                    "ja": "千円《せんえん》",
+                    "id": "seribu yen",
+                    "en": "1,000 yen"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ドアが 閉《し》まりました。",
+                    "id": "Pintunya tertutup (terkunci).",
+                    "en": "The door closed (locked)."
+                },
+                {
+                    "ja": "鍵《かぎ》を 開《あ》けて ください。",
+                    "id": "Tolong bukakan kuncinya.",
+                    "en": "Please unlock it."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s7-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What's wrong?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t2",
+                    "who": "you",
+                    "ja": "部屋《へや》の 中《なか》に 鍵《かぎ》を 忘《わす》れました。ドアが 開《あ》きません。",
+                    "speak": "へやの なかに かぎを わすれました。ドアが あきません。",
+                    "id_text": "Kunci saya tertinggal di dalam kamar. Pintunya tidak terbuka.",
+                    "accept": [
+                        "部屋の 中に 鍵を 忘れました。ドアが 開きません。",
+                        "部屋の中に鍵を忘れました。ドアが開きません。"
+                    ],
+                    "en_text": "I left my key inside my room. The door won't open.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。マスターキーで 開《あ》けましょう。",
+                    "speak": "それは たいへんですね。マスターキーで あけましょう。",
+                    "id_text": "Wah, repot ya. Kita buka dengan kunci induk.",
+                    "en_text": "That's trouble. Let's open it with the master key.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t4",
+                    "who": "you",
+                    "ja": "お願《ねが》いします。一緒《いっしょ》に 行《い》きましょう。",
+                    "speak": "おねがいします。いっしょに いきましょう。",
+                    "id_text": "Tolong ya. Mari kita pergi bersama.",
+                    "accept": [
+                        "お願いします。一緒に 行きましょう。",
+                        "お願いします。一緒に行きましょう。"
+                    ],
+                    "en_text": "Please do. Let's go together.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t5",
+                    "who": "partner",
+                    "ja": "開《あ》きました。次《つぎ》からは 鍵《かぎ》を 忘《わす》れないで ください。",
+                    "speak": "あきました。つぎからは かぎを わすれないで ください。",
+                    "id_text": "Sudah terbuka. Lain kali jangan lupa kuncinya.",
+                    "en_text": "It's open. Next time, please don't forget your key.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t6",
+                    "who": "you",
+                    "ja": "はい、気《き》を つけます。",
+                    "speak": "はい、きを つけます。",
+                    "id_text": "Ya, saya akan berhati-hati.",
+                    "accept": [
+                        "はい、気を つけます。",
+                        "はい、気をつけます。"
+                    ],
+                    "en_text": "Yes, I'll be careful.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t7",
+                    "who": "partner",
+                    "ja": "もう 一度《いちど》 忘《わす》れたら、千円《せんえん》 かかります。",
+                    "speak": "もう いちど わすれたら、せんえん かかります。",
+                    "id_text": "Kalau lupa sekali lagi, kena biaya seribu yen.",
+                    "en_text": "If you forget it one more time, it will cost a thousand yen.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s7-t8",
+                    "who": "you",
+                    "ja": "千円《せんえん》ですね。わかりました。ありがとうございました。",
+                    "speak": "せんえんですね。わかりました。ありがとうございました。",
+                    "id_text": "Seribu yen ya. Saya mengerti. Terima kasih banyak.",
+                    "accept": [
+                        "千円ですね。わかりました。ありがとうございました。"
+                    ],
+                    "en_text": "A thousand yen, I see. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s7-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "tetangga-s8",
+            "title_id": "Mesin cuci bersama",
+            "title_en": "The shared washing machine",
+            "setting_id": "Mesin cuci di asrama dipakai bersama. Kamu bertanya kepada penghuni lain apakah mesin sedang dipakai dan sampai jam berapa boleh mencuci.",
+            "setting_en": "The dorm washing machine is shared. You ask another resident whether it is in use and until what time you may do laundry.",
+            "goal_id": "Menanyakan pemakaian dengan 〜は 使って いますか, meminta giliran dengan 〜ても いいですか, dan menanyakan batas jam.",
+            "goal_en": "Ask if it is in use with 〜は 使って いますか, ask for your turn with 〜ても いいですか, and ask the time limit.",
+            "patterns": [
+                "この 洗濯機は 使って いますか",
+                "終わったら 使っても いいですか",
+                "何時まで できますか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tanya dulu sebelum memakai peralatan bersama: 〜は 使って いますか. Lalu minta giliran dengan 〜ても いいですか.",
+                "Setelah selesai, bersihkan filter (フィルター) dan ambil cucianmu cepat supaya tidak menghalangi orang lain.",
+                "Ada batas jam malam untuk mesin cuci karena bunyinya. Tanyakan 何時まで できますか dan taati jamnya (jam di sini hanya contoh)."
+            ],
+            "tips_en": [
+                "Ask before using shared equipment: 〜は 使って いますか. Then ask for your turn with 〜ても いいですか.",
+                "When you finish, clean the filter (フィルター) and take your laundry out quickly so you do not block others.",
+                "There is a night limit for washing machines because of the noise. Ask 何時まで できますか and follow it (the hours here are only an example)."
+            ],
+            "words": [
+                {
+                    "ja": "洗濯機《せんたくき》",
+                    "id": "mesin cuci",
+                    "en": "washing machine"
+                },
+                {
+                    "ja": "使《つか》う",
+                    "id": "memakai",
+                    "en": "to use"
+                },
+                {
+                    "ja": "終《お》わる",
+                    "id": "selesai",
+                    "en": "to finish"
+                },
+                {
+                    "ja": "後《あと》で",
+                    "id": "setelah itu",
+                    "en": "afterwards"
+                },
+                {
+                    "ja": "洗濯《せんたく》",
+                    "id": "mencuci pakaian",
+                    "en": "laundry"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "乾燥機《かんそうき》は どこですか。",
+                    "id": "Di mana mesin pengering?",
+                    "en": "Where is the dryer?"
+                },
+                {
+                    "ja": "洗《あら》った 後《あと》、すぐ 取《と》って ください。",
+                    "id": "Setelah mencuci, segera ambil cucianmu.",
+                    "en": "After washing, please take your clothes out right away."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "tetangga-s8-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。",
+                    "speak": "こんにちは。",
+                    "id_text": "Selamat siang.",
+                    "en_text": "Hello.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t1.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t2",
+                    "who": "you",
+                    "ja": "こんにちは。この 洗濯機《せんたくき》は 使《つか》って いますか。",
+                    "speak": "こんにちは。この せんたくきは つかって いますか。",
+                    "id_text": "Selamat siang. Apakah mesin cuci ini sedang dipakai?",
+                    "accept": [
+                        "こんにちは。この 洗濯機は 使って いますか。",
+                        "こんにちは。この洗濯機は使っていますか。"
+                    ],
+                    "en_text": "Hello. Are you using this washing machine?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t2.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t3",
+                    "who": "partner",
+                    "ja": "はい、あと 二十分《にじゅっぷん》ぐらいで 終《お》わります。",
+                    "speak": "はい、あと にじゅっぷんぐらいで おわります。",
+                    "id_text": "Ya, sekitar dua puluh menit lagi selesai.",
+                    "en_text": "Yes, it will finish in about twenty minutes.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t3.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t4",
+                    "who": "you",
+                    "ja": "じゃ、終《お》わったら 使《つか》っても いいですか。",
+                    "speak": "じゃ、おわったら つかっても いいですか。",
+                    "id_text": "Kalau begitu, boleh saya pakai setelah selesai?",
+                    "accept": [
+                        "じゃ、終わったら 使っても いいですか。",
+                        "じゃ、終わったら使ってもいいですか。"
+                    ],
+                    "en_text": "Then, may I use it when it finishes?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t4.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t5",
+                    "who": "partner",
+                    "ja": "どうぞ。使《つか》った 後《あと》で、フィルターを きれいに して ください。",
+                    "speak": "どうぞ。つかった あとで、フィルターを きれいに して ください。",
+                    "id_text": "Silakan. Setelah memakai, tolong bersihkan filternya.",
+                    "en_text": "Go ahead. After using it, please clean the filter.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t5.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t6",
+                    "who": "you",
+                    "ja": "わかりました。洗濯《せんたく》は 何時《なんじ》まで できますか。",
+                    "speak": "わかりました。せんたくは なんじまで できますか。",
+                    "id_text": "Baik. Mencuci boleh sampai jam berapa?",
+                    "accept": [
+                        "わかりました。洗濯は 何時まで できますか。",
+                        "わかりました。洗濯は何時までできますか。"
+                    ],
+                    "en_text": "Understood. Until what time can I do laundry?",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t6.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t7",
+                    "who": "partner",
+                    "ja": "夜《よる》 九時《くじ》までです。音《おと》が うるさいですから。",
+                    "speak": "よる くじまでです。おとが うるさいですから。",
+                    "id_text": "Sampai jam sembilan malam. Karena bunyinya berisik.",
+                    "en_text": "Until nine at night. Because it's noisy.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t7.mp3"
+                },
+                {
+                    "id": "tetangga-s8-t8",
+                    "who": "you",
+                    "ja": "そうですか。じゃ、八時《はちじ》ごろに 使《つか》います。",
+                    "speak": "そうですか。じゃ、はちじごろに つかいます。",
+                    "id_text": "Begitu ya. Kalau begitu saya pakai sekitar jam delapan.",
+                    "accept": [
+                        "そうですか。じゃ、八時ごろに 使います。",
+                        "そうですか。じゃ、八時ごろに使います。"
+                    ],
+                    "en_text": "I see. Then I'll use it around eight.",
+                    "audio": "/audio/kaiwa/situation-tetangga/tetangga-s8-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

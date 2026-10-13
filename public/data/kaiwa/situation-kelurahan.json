@@ -1,0 +1,1858 @@
+{
+    "id": "kelurahan",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Kelurahan & Imigrasi",
+    "title_en": "City Hall & Immigration",
+    "note_id": "Nama, alamat, tanggal, dan angka di jawaban contoh hanyalah contoh: ganti dengan keadaanmu sendiri. Aturan, dokumen, dan biaya berbeda menurut status tinggal, kota, dan kantor, serta bisa berubah (biaya perpanjangan naik sejak 1 Okt 2026). Latihan ini bukan nasihat hukum: untuk urusan sungguhan, cek situs resmi Imigrasi (ISA) atau tanya loket, dan jangan tanda tangan sebelum paham.",
+    "note_en": "Names, addresses, dates, and numbers in the sample answers are examples: replace them with your own situation. Rules, documents, and fees differ by status, city, and office, and can change (renewal fees went up on 1 Oct 2026). This practice is not legal advice: for real procedures, check the official Immigration Services Agency (ISA) site or ask at the counter, and never sign before you understand.",
+    "scenarios": [
+        {
+            "id": "kelurahan-s1",
+            "title_id": "Mencari loket di kantor kelurahan (区役所)",
+            "title_en": "Finding the right counter at the ward office",
+            "setting_id": "Kamu baru pindah rumah dan datang ke kantor kelurahan/pemerintah kota (区役所). Kamu bertanya di meja informasi dan mengambil nomor antrean.",
+            "setting_en": "You have just moved and come to the ward office (区役所). You ask at the information desk and take a queue number.",
+            "goal_id": "Menyebut keperluan dengan 〜を したいです, menunjukkan 在留カード, dan menanyakan lokasi loket dengan 〜は どこですか.",
+            "goal_en": "State your errand with 〜を したいです, show your 在留カード, and ask where a counter is with 〜は どこですか.",
+            "patterns": [
+                "〜を したいです",
+                "〜は どこですか",
+                "〜を お願いします"
+            ],
+            "partner": {
+                "name": "あんないの ひと",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Urusan alamat dan 住民票 biasanya ada di bagian 市民課 / 住民課 / 戸籍住民課 (namanya berbeda tiap kota). Kalau bingung, tanya di 総合案内 (meja informasi).",
+                "Bawa 在留カード: itu identitas utamamu. Bawa juga パスポート dan dokumen pindah bila ada.",
+                "番号札 = kertas nomor antrean. Tunggu sampai nomormu dipanggil atau muncul di layar, lalu menuju loket yang ditunjuk."
+            ],
+            "tips_en": [
+                "Address changes and 住民票 are usually handled by the 市民課 / 住民課 / 戸籍住民課 (the name differs by city). If unsure, ask at the 総合案内 (information desk).",
+                "Bring your 在留カード: it is your main ID. Also bring your passport and any moving documents.",
+                "番号札 = queue ticket. Wait until your number is called or shown on the screen, then go to the counter indicated."
+            ],
+            "words": [
+                {
+                    "ja": "区役所《くやくしょ》",
+                    "id": "kantor kelurahan/kecamatan di kota besar (kota kecil: 市役所)",
+                    "en": "ward office (市役所 = city hall)"
+                },
+                {
+                    "ja": "市民課《しみんか》",
+                    "id": "bagian layanan warga",
+                    "en": "residents' services section"
+                },
+                {
+                    "ja": "番号札《ばんごうふだ》",
+                    "id": "kertas nomor antrean",
+                    "en": "queue number ticket"
+                },
+                {
+                    "ja": "窓口《まどぐち》",
+                    "id": "loket",
+                    "en": "service counter"
+                },
+                {
+                    "ja": "手続《てつづ》き",
+                    "id": "urusan / prosedur",
+                    "en": "procedure"
+                },
+                {
+                    "ja": "引《ひ》っ越《こ》し",
+                    "id": "pindah rumah",
+                    "en": "moving house"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "住民票《じゅうみんひょう》を もらいたいです。",
+                    "id": "Saya ingin mengambil 住民票.",
+                    "en": "I would like to get a 住民票."
+                },
+                {
+                    "ja": "外国人《がいこくじん》の 窓口《まどぐち》は ありますか。",
+                    "id": "Apakah ada loket untuk warga asing?",
+                    "en": "Is there a counter for foreign residents?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。どんな 手続《てつづ》きですか。",
+                    "speak": "いらっしゃいませ。どんな てつづきですか。",
+                    "id_text": "Selamat datang. Urusan apa yang ingin diurus?",
+                    "en_text": "Welcome. What kind of procedure is it?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t2",
+                    "who": "you",
+                    "ja": "引《ひ》っ越《こ》しを しました。住所《じゅうしょ》の 手続《てつづ》きを したいです。",
+                    "speak": "ひっこしを しました。じゅうしょの てつづきを したいです。",
+                    "id_text": "Saya sudah pindah rumah. Saya ingin mengurus alamat.",
+                    "accept": [
+                        "引っ越しを しました。住所の 手続きを したいです。",
+                        "引っ越しをしました。住所の手続きをしたいです。"
+                    ],
+                    "en_text": "I moved house. I would like to do the address procedure.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。在留《ざいりゅう》カードは お持《も》ちですか。",
+                    "speak": "そうですか。ざいりゅうカードは おもちですか。",
+                    "id_text": "Begitu. Apakah Anda membawa 在留カード?",
+                    "en_text": "I see. Do you have your 在留カード?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t4",
+                    "who": "you",
+                    "ja": "はい、持《も》って います。これです。どうぞ。",
+                    "speak": "はい、もって います。これです。どうぞ。",
+                    "id_text": "Ya, saya bawa. Ini. Silakan.",
+                    "accept": [
+                        "はい、持って います。これです。どうぞ。",
+                        "はい、持っています。これです。どうぞ。"
+                    ],
+                    "en_text": "Yes, I have it. Here it is.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t5",
+                    "who": "partner",
+                    "ja": "ありがとうございます。この 番号札《ばんごうふだ》を とって、市民課《しみんか》の 前《まえ》で お待《ま》ちください。",
+                    "speak": "ありがとうございます。この ばんごうふだを とって、しみんかの まえで おまちください。",
+                    "id_text": "Terima kasih. Ambil nomor antrean ini dan tunggu di depan 市民課.",
+                    "en_text": "Thank you. Take this ticket and wait in front of the 市民課.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t6",
+                    "who": "you",
+                    "ja": "すみません、市民課《しみんか》は どこですか。",
+                    "speak": "すみません、しみんかは どこですか。",
+                    "id_text": "Permisi, di mana 市民課?",
+                    "accept": [
+                        "すみません、市民課は どこですか。",
+                        "すみません、市民課はどこですか。"
+                    ],
+                    "en_text": "Excuse me, where is the 市民課?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t7",
+                    "who": "partner",
+                    "ja": "二階《にかい》です。あの エレベーターで 上《あ》がって ください。",
+                    "speak": "にかいです。あの エレベーターで あがって ください。",
+                    "id_text": "Di lantai dua. Naiklah dengan lift itu.",
+                    "en_text": "It is on the second floor. Please go up in that elevator.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s1-t8",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Saya mengerti. Terima kasih.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "en_text": "I understand. Thank you.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s2",
+            "title_id": "Lapor alamat baru (転入届)",
+            "title_en": "Registering a new address (転入届)",
+            "setting_id": "Kamu pindah dari kota lain. Di loket 市民課 kamu menyerahkan 転出証明書 dan 在留カード, lalu staf menuliskan alamat baru di belakang kartu.",
+            "setting_en": "You moved from another city. At the 市民課 counter you hand over your 転出証明書 and 在留カード, and the staff write the new address on the back of the card.",
+            "goal_id": "Memakai 〜から 〜て きました, menyebut tanggal pindah, dan memeriksa alamat yang ditulis (〜は 合って います).",
+            "goal_en": "Use 〜から 〜て きました, give your moving date, and check the address written on your card (〜は 合って います).",
+            "patterns": [
+                "〜から 〜て きました",
+                "〜を お願いします",
+                "〜は 合って います"
+            ],
+            "partner": {
+                "name": "しょくいん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pindah ke kota lain: urus 転出届 di kota lama (kamu dapat 転出証明書), lalu 転入届 di kota baru. Alamat baru wajib dilaporkan paling lambat 14 hari setelah pindah.",
+                "Staf menulis alamat baru di bagian belakang 在留カード. Cek sebelum pergi: nama gedung dan nomor kamar harus lengkap dan benar.",
+                "Pindah di dalam kota yang sama = 転居届 (bukan 転入届). Tiba dari luar negeri = 転入届 tanpa 転出証明書. Terlambat atau tidak melapor bisa dikenai sanksi dan berdampak pada status tinggal."
+            ],
+            "tips_en": [
+                "Moving to another city: file a 転出届 in the old city (you receive a 転出証明書), then a 転入届 in the new one. The new address must be reported within 14 days of moving.",
+                "The staff write the new address on the back of your 在留カード. Check before leaving: the building name and room number must be complete and correct.",
+                "Moving within the same city = 転居届 (not 転入届). Arriving from abroad = 転入届 without a 転出証明書. Late or missing reports can lead to penalties and affect your status."
+            ],
+            "words": [
+                {
+                    "ja": "転入届《てんにゅうとどけ》",
+                    "id": "laporan pindah masuk (ke kota baru)",
+                    "en": "move-in notification"
+                },
+                {
+                    "ja": "転出証明書《てんしゅつしょうめいしょ》",
+                    "id": "surat keterangan pindah keluar dari kota lama",
+                    "en": "move-out certificate"
+                },
+                {
+                    "ja": "届出書《とどけでしょ》",
+                    "id": "formulir laporan",
+                    "en": "notification form"
+                },
+                {
+                    "ja": "裏《うら》",
+                    "id": "bagian belakang",
+                    "en": "back (of a card)"
+                },
+                {
+                    "ja": "確認《かくにん》",
+                    "id": "memeriksa / konfirmasi",
+                    "en": "check, confirmation"
+                },
+                {
+                    "ja": "間違《まちが》い",
+                    "id": "kesalahan",
+                    "en": "mistake"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "世帯主《せたいぬし》は 私《わたし》です。",
+                    "id": "Kepala rumah tangga adalah saya.",
+                    "en": "I am the head of the household."
+                },
+                {
+                    "ja": "アパートの 名前《なまえ》と 部屋《へや》の 番号《ばんごう》も 書《か》いて ください。",
+                    "id": "Tolong tulis juga nama apartemen dan nomor kamarnya.",
+                    "en": "Please also write the apartment name and room number."
+                },
+                {
+                    "ja": "前《まえ》の 住所《じゅうしょ》は どこですか。",
+                    "id": "Di mana alamat sebelumnya?",
+                    "en": "What was your previous address?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s2-t1",
+                    "who": "partner",
+                    "ja": "お待《ま》たせしました。どうぞ おかけください。どんな 手続《てつづ》きですか。",
+                    "speak": "おまたせしました。どうぞ おかけください。どんな てつづきですか。",
+                    "id_text": "Maaf menunggu. Silakan duduk. Urusan apa yang ingin diurus?",
+                    "en_text": "Sorry to keep you waiting. Please sit down. What is it about?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t2",
+                    "who": "you",
+                    "ja": "別《べつ》の 市《し》から 引《ひ》っ越《こ》して きました。転入届《てんにゅうとどけ》を お願《ねが》いします。",
+                    "speak": "べつの しから ひっこして きました。てんにゅうとどけを おねがいします。",
+                    "id_text": "Saya pindah dari kota lain. Mohon proses 転入届.",
+                    "accept": [
+                        "別の 市から 引っ越して きました。転入届を お願いします。",
+                        "別の市から引っ越してきました。転入届をお願いします。"
+                    ],
+                    "en_text": "I moved here from another city. A 転入届, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t3",
+                    "who": "partner",
+                    "ja": "前《まえ》の 市《し》で もらった 転出証明書《てんしゅつしょうめいしょ》は ありますか。",
+                    "speak": "まえの しで もらった てんしゅつしょうめいしょは ありますか。",
+                    "id_text": "Apakah Anda punya 転出証明書 dari kota sebelumnya?",
+                    "en_text": "Do you have the 転出証明書 from your previous city?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t4",
+                    "who": "you",
+                    "ja": "はい、これです。在留《ざいりゅう》カードも どうぞ。",
+                    "speak": "はい、これです。ざいりゅうカードも どうぞ。",
+                    "id_text": "Ya, ini. 在留カード juga, silakan.",
+                    "accept": [
+                        "はい、これです。在留カードも どうぞ。",
+                        "はい、これです。在留カードもどうぞ。"
+                    ],
+                    "en_text": "Yes, here it is. And my 在留カード, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t5",
+                    "who": "partner",
+                    "ja": "ありがとうございます。この 届出書《とどけでしょ》に 新《あたら》しい 住所《じゅうしょ》を 書《か》いて ください。引《ひ》っ越《こ》しは いつでしたか。",
+                    "speak": "ありがとうございます。この とどけでしょに あたらしい じゅうしょを かいて ください。ひっこしは いつでしたか。",
+                    "id_text": "Terima kasih. Tulis alamat baru di formulir ini. Kapan Anda pindah?",
+                    "en_text": "Thank you. Please write your new address on this form. When did you move?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t6",
+                    "who": "you",
+                    "ja": "先週《せんしゅう》の 土曜日《どようび》に 引《ひ》っ越《こ》しました。",
+                    "speak": "せんしゅうの どようびに ひっこしました。",
+                    "id_text": "Saya pindah hari Sabtu minggu lalu.",
+                    "accept": [
+                        "先週の 土曜日に 引っ越しました。",
+                        "先週の土曜日に引っ越しました。"
+                    ],
+                    "en_text": "I moved last Saturday.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t7",
+                    "who": "partner",
+                    "ja": "わかりました。新《あたら》しい 住所《じゅうしょ》は、在留《ざいりゅう》カードの 裏《うら》に 書《か》きます。少《すこ》し お待《ま》ちください。",
+                    "speak": "わかりました。あたらしい じゅうしょは、ざいりゅうカードの うらに かきます。すこし おまちください。",
+                    "id_text": "Baik. Alamat baru akan kami tulis di belakang 在留カード. Mohon tunggu sebentar.",
+                    "en_text": "Understood. We will write the new address on the back of your 在留カード. Please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t8",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, silakan.",
+                    "accept": [
+                        "はい、お願いします。"
+                    ],
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t9",
+                    "who": "partner",
+                    "ja": "できました。住所《じゅうしょ》を 確認《かくにん》して ください。間違《まちが》いは ありませんか。",
+                    "speak": "できました。じゅうしょを かくにんして ください。まちがいは ありませんか。",
+                    "id_text": "Sudah selesai. Tolong periksa alamatnya. Apakah ada yang salah?",
+                    "en_text": "It is done. Please check the address. Is there any mistake?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s2-t10",
+                    "who": "you",
+                    "ja": "はい、合《あ》って います。ありがとうございます。",
+                    "speak": "はい、あって います。ありがとうございます。",
+                    "id_text": "Ya, sudah benar. Terima kasih.",
+                    "accept": [
+                        "はい、合って います。ありがとうございます。",
+                        "はい、合っています。ありがとうございます。"
+                    ],
+                    "en_text": "Yes, it is correct. Thank you.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s2-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s3",
+            "title_id": "Meminta 住民票 (surat keterangan domisili)",
+            "title_en": "Requesting a 住民票 (residence certificate)",
+            "setting_id": "Perusahaan memintamu menyerahkan 住民票. Di loket 市民課 kamu menjelaskan jenis, tujuan, dan jumlah lembar yang kamu perlukan.",
+            "setting_en": "Your company asks you to submit a 住民票. At the 市民課 counter you explain the type, purpose, and number of copies you need.",
+            "goal_id": "Memakai 〜だけです, 〜を 書かないで ください, menyebut jumlah (〜枚), dan memastikan total biaya.",
+            "goal_en": "Use 〜だけです, 〜を 書かないで ください, state a number of copies (〜枚), and confirm the total fee.",
+            "patterns": [
+                "〜を もらいたいです",
+                "〜を 書かないで ください",
+                "〜枚 お願いします"
+            ],
+            "partner": {
+                "name": "しょくいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "住民票の写し = salinan catatan domisili. Perusahaan, bank, atau asuransi sering memintanya. Bawa 在留カード untuk verifikasi identitas.",
+                "Pilihan penting: 本人のみ (hanya kamu) atau 世帯全員 (seluruh anggota rumah tangga); dengan atau tanpa マイナンバー; berapa lembar. Tanyakan dulu kepada pihak yang meminta dokumen. Kalau tidak diminta jelas, biasanya tanpa マイナンバー.",
+                "Biaya dan jam layanan berbeda tiap kota (contoh: sekitar 300 yen per lembar). Dengan マイナンバーカード, banyak kota juga menyediakan layanan di konbini."
+            ],
+            "tips_en": [
+                "住民票の写し = a copy of your residence record. Companies, banks, and insurers often ask for it. Bring your 在留カード as ID.",
+                "Choices to make: 本人のみ (only you) or 世帯全員 (the whole household); with or without マイナンバー; how many copies. Ask the party requesting it first. Unless clearly required, it is usually issued without マイナンバー.",
+                "Fees and opening hours differ by city (example: about 300 yen per copy). With a マイナンバーカード, many cities also offer it at convenience stores."
+            ],
+            "words": [
+                {
+                    "ja": "住民票《じゅうみんひょう》",
+                    "id": "surat keterangan domisili",
+                    "en": "residence certificate"
+                },
+                {
+                    "ja": "世帯全員《せたいぜんいん》",
+                    "id": "seluruh anggota rumah tangga",
+                    "en": "whole household"
+                },
+                {
+                    "ja": "本人《ほんにん》",
+                    "id": "orang yang bersangkutan",
+                    "en": "the person himself/herself"
+                },
+                {
+                    "ja": "手数料《てすうりょう》",
+                    "id": "biaya administrasi",
+                    "en": "handling fee"
+                },
+                {
+                    "ja": "何枚《なんまい》",
+                    "id": "berapa lembar",
+                    "en": "how many sheets"
+                },
+                {
+                    "ja": "払《はら》う",
+                    "id": "membayar",
+                    "en": "to pay"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "世帯全員《せたいぜんいん》の 住民票《じゅうみんひょう》を お願《ねが》いします。",
+                    "id": "Mohon 住民票 seluruh anggota rumah tangga.",
+                    "en": "A 住民票 for the whole household, please."
+                },
+                {
+                    "ja": "マイナンバーは 書《か》いて ください。",
+                    "id": "Tolong cantumkan マイナンバー.",
+                    "en": "Please include the My Number."
+                },
+                {
+                    "ja": "手数料《てすうりょう》は いくらですか。",
+                    "id": "Berapa biayanya?",
+                    "en": "How much is the fee?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s3-t1",
+                    "who": "partner",
+                    "ja": "お待《ま》たせしました。どんな ご用《よう》ですか。",
+                    "speak": "おまたせしました。どんな ごようですか。",
+                    "id_text": "Maaf menunggu. Ada keperluan apa?",
+                    "en_text": "Sorry to keep you waiting. How can I help?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t2",
+                    "who": "you",
+                    "ja": "住民票《じゅうみんひょう》の 写《うつ》しを もらいたいです。",
+                    "speak": "じゅうみんひょうの うつしを もらいたいです。",
+                    "id_text": "Saya ingin mengambil salinan 住民票.",
+                    "accept": [
+                        "住民票の 写しを もらいたいです。",
+                        "住民票の写しをもらいたいです。"
+                    ],
+                    "en_text": "I would like to get a copy of my 住民票.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t3",
+                    "who": "partner",
+                    "ja": "世帯全員《せたいぜんいん》ですか。本人《ほんにん》だけですか。",
+                    "speak": "せたいぜんいんですか。ほんにんだけですか。",
+                    "id_text": "Seluruh rumah tangga atau hanya yang bersangkutan?",
+                    "en_text": "The whole household, or only you?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t4",
+                    "who": "you",
+                    "ja": "私《わたし》だけです。一人《ひとり》で 住《す》んで います。",
+                    "speak": "わたしだけです。ひとりで すんで います。",
+                    "id_text": "Hanya saya. Saya tinggal sendiri.",
+                    "accept": [
+                        "私だけです。一人で 住んで います。",
+                        "私だけです。一人で住んでいます。"
+                    ],
+                    "en_text": "Only me. I live alone.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t5",
+                    "who": "partner",
+                    "ja": "在留《ざいりゅう》カードを 見《み》せて ください。何《なに》に 使《つか》いますか。",
+                    "speak": "ざいりゅうカードを みせて ください。なにに つかいますか。",
+                    "id_text": "Tolong tunjukkan 在留カード. Untuk apa dokumennya?",
+                    "en_text": "Please show your 在留カード. What will you use it for?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t6",
+                    "who": "you",
+                    "ja": "はい、どうぞ。会社《かいしゃ》に 出《だ》します。マイナンバーは 書《か》かないで ください。",
+                    "speak": "はい、どうぞ。かいしゃに だします。マイナンバーは かかないで ください。",
+                    "id_text": "Ya, silakan. Untuk diserahkan ke perusahaan. Tolong jangan cantumkan マイナンバー.",
+                    "accept": [
+                        "はい、どうぞ。会社に 出します。マイナンバーは 書かないで ください。",
+                        "はい、どうぞ。会社に出します。マイナンバーは書かないでください。"
+                    ],
+                    "en_text": "Here you are. I will submit it to my company. Please do not include the My Number.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t7",
+                    "who": "partner",
+                    "ja": "わかりました。何枚《なんまい》に しますか。",
+                    "speak": "わかりました。なんまいに しますか。",
+                    "id_text": "Baik. Berapa lembar?",
+                    "en_text": "Understood. How many copies?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t8",
+                    "who": "you",
+                    "ja": "二枚《にまい》お願《ねが》いします。",
+                    "speak": "にまいおねがいします。",
+                    "id_text": "Dua lembar, tolong.",
+                    "accept": [
+                        "二枚お願いします。"
+                    ],
+                    "en_text": "Two copies, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t9",
+                    "who": "partner",
+                    "ja": "手数料《てすうりょう》は 一枚《いちまい》 三百円《さんびゃくえん》です。先《さき》に 払《はら》って ください。",
+                    "speak": "てすうりょうは いちまい さんびゃくえんです。さきに はらって ください。",
+                    "id_text": "Biayanya 300 yen per lembar. Silakan bayar lebih dulu.",
+                    "en_text": "The fee is 300 yen per copy. Please pay first.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s3-t10",
+                    "who": "you",
+                    "ja": "二枚《にまい》で 六百円《ろっぴゃくえん》ですね。わかりました。",
+                    "speak": "にまいで ろっぴゃくえんですね。わかりました。",
+                    "id_text": "Dua lembar jadi 600 yen, ya. Saya mengerti.",
+                    "accept": [
+                        "二枚で 六百円ですね。わかりました。",
+                        "二枚で六百円ですね。わかりました。"
+                    ],
+                    "en_text": "Two copies, so 600 yen. I understand.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s3-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s4",
+            "title_id": "Mengisi formulir (申請書)",
+            "title_en": "Filling in an application form (申請書)",
+            "setting_id": "Kamu mengisi formulir di meja pengisian dan bertanya kepada staf cara menulis nama, tanggal lahir, alamat, dan tanda tangan.",
+            "setting_en": "You fill in a form at the writing desk and ask the staff how to write your name, birth date, address, and signature.",
+            "goal_id": "Bertanya cara menulis dengan 〜で いいですか / 〜ても いいですか dan memastikan isian sebelum diserahkan.",
+            "goal_en": "Ask how to write things with 〜で いいですか / 〜ても いいですか and have the form checked before handing it in.",
+            "patterns": [
+                "〜で いいですか",
+                "〜ても いいですか",
+                "〜を お願いします"
+            ],
+            "partner": {
+                "name": "しょくいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tulis nama persis seperti di 在留カード (huruf Latin). Kalau ada kolom フリガナ, isi dengan katakana. Jangan menebak: kalau ragu, tanya dulu sebelum menulis.",
+                "Tanggal lahir: kalau kolom meminta 昭和/平成/令和, tanyakan apakah boleh 西暦 (Masehi). Alamat: tulis lengkap sampai nama gedung dan nomor kamar.",
+                "Banyak formulir pemerintah kini cukup dengan サイン (tanda tangan), tetapi bank dan beberapa perusahaan masih meminta ハンコ. Salah tulis? Minta kertas baru, jangan dicoret. Isian palsu atau tidak sesuai fakta bisa berdampak pada status tinggal."
+            ],
+            "tips_en": [
+                "Write your name exactly as on your 在留カード (Latin letters). If there is a フリガナ field, use katakana. Do not guess: if unsure, ask before writing.",
+                "Birth date: if the form asks for 昭和/平成/令和, ask whether 西暦 (Western calendar) is allowed. Address: write it in full, down to the building name and room number.",
+                "Many government forms now accept a サイン (signature), but banks and some companies still ask for a ハンコ (seal). Made a mistake? Ask for a new sheet instead of crossing out. False or inaccurate entries can affect your status."
+            ],
+            "words": [
+                {
+                    "ja": "申請書《しんせいしょ》",
+                    "id": "formulir permohonan",
+                    "en": "application form"
+                },
+                {
+                    "ja": "生年月日《せいねんがっぴ》",
+                    "id": "tanggal lahir",
+                    "en": "date of birth"
+                },
+                {
+                    "ja": "西暦《せいれき》",
+                    "id": "tahun Masehi",
+                    "en": "Western calendar"
+                },
+                {
+                    "ja": "部屋《へや》の 番号《ばんごう》",
+                    "id": "nomor kamar",
+                    "en": "room number"
+                },
+                {
+                    "ja": "携帯《けいたい》",
+                    "id": "ponsel",
+                    "en": "mobile phone"
+                },
+                {
+                    "ja": "ハンコ",
+                    "id": "cap/stempel nama",
+                    "en": "name seal"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "ここに 何《なに》を 書《か》きますか。",
+                    "id": "Apa yang harus saya tulis di sini?",
+                    "en": "What should I write here?"
+                },
+                {
+                    "ja": "間違《まちが》えました。新《あたら》しい 紙《かみ》を もらえますか。",
+                    "id": "Saya salah tulis. Boleh minta kertas baru?",
+                    "en": "I made a mistake. Could I have a new sheet?"
+                },
+                {
+                    "ja": "名前《なまえ》は カタカナで 書《か》きますか。",
+                    "id": "Apakah nama ditulis dengan katakana?",
+                    "en": "Do I write my name in katakana?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s4-t1",
+                    "who": "partner",
+                    "ja": "申請書《しんせいしょ》は ここで 書《か》いて ください。ペンは これを 使《つか》って ください。",
+                    "speak": "しんせいしょは ここで かいて ください。ペンは これを つかって ください。",
+                    "id_text": "Silakan isi formulir di sini. Pakai pulpen ini.",
+                    "en_text": "Please fill in the form here. Use this pen.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t2",
+                    "who": "you",
+                    "ja": "ありがとうございます。名前《なまえ》は ローマ字《じ》で いいですか。",
+                    "speak": "ありがとうございます。なまえは ローマじで いいですか。",
+                    "id_text": "Terima kasih. Bolehkah nama ditulis dengan huruf Latin?",
+                    "accept": [
+                        "ありがとうございます。名前は ローマ字で いいですか。",
+                        "ありがとうございます。名前はローマ字でいいですか。"
+                    ],
+                    "en_text": "Thank you. Is it all right to write my name in Roman letters?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t3",
+                    "who": "partner",
+                    "ja": "はい。在留《ざいりゅう》カードと 同《おな》じ 書《か》き方《かた》で 書《か》いて ください。",
+                    "speak": "はい。ざいりゅうカードと おなじ かきかたで かいて ください。",
+                    "id_text": "Ya. Tulis sama seperti di 在留カード.",
+                    "en_text": "Yes. Please write it the same way as on your 在留カード.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t4",
+                    "who": "you",
+                    "ja": "生年月日《せいねんがっぴ》は 西暦《せいれき》で 書《か》いても いいですか。",
+                    "speak": "せいねんがっぴは せいれきで かいても いいですか。",
+                    "id_text": "Bolehkah tanggal lahir ditulis dengan tahun Masehi?",
+                    "accept": [
+                        "生年月日は 西暦で 書いても いいですか。",
+                        "生年月日は西暦で書いてもいいですか。"
+                    ],
+                    "en_text": "May I write my date of birth in the Western calendar?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t5",
+                    "who": "partner",
+                    "ja": "はい、西暦《せいれき》で 大丈夫《だいじょうぶ》です。住所《じゅうしょ》は アパートの 名前《なまえ》と 部屋《へや》の 番号《ばんごう》まで 書《か》いて ください。",
+                    "speak": "はい、せいれきで だいじょうぶです。じゅうしょは アパートの なまえと へやの ばんごうまで かいて ください。",
+                    "id_text": "Ya, tahun Masehi tidak apa-apa. Tulis alamat sampai nama apartemen dan nomor kamar.",
+                    "en_text": "Yes, the Western calendar is fine. Write the address down to the apartment name and room number.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t6",
+                    "who": "you",
+                    "ja": "わかりました。部屋《へや》の 番号《ばんごう》まで 書《か》きます。電話《でんわ》は 携帯《けいたい》で いいですか。",
+                    "speak": "わかりました。へやの ばんごうまで かきます。でんわは けいたいで いいですか。",
+                    "id_text": "Baik. Saya tulis sampai nomor kamar. Untuk telepon, boleh nomor ponsel?",
+                    "accept": [
+                        "わかりました。部屋の 番号まで 書きます。電話は 携帯で いいですか。",
+                        "わかりました。部屋の番号まで書きます。電話は携帯でいいですか。"
+                    ],
+                    "en_text": "Understood. I will write down to the room number. Is a mobile number fine for the phone?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t7",
+                    "who": "partner",
+                    "ja": "はい、携帯《けいたい》で 大丈夫《だいじょうぶ》です。それから、一番《いちばん》下《した》に 名前《なまえ》の サインを お願《ねが》いします。",
+                    "speak": "はい、けいたいで だいじょうぶです。それから、いちばんしたに なまえの サインを おねがいします。",
+                    "id_text": "Ya, ponsel tidak apa-apa. Lalu, mohon tanda tangan nama di bagian paling bawah.",
+                    "en_text": "Yes, a mobile number is fine. Then please sign your name at the very bottom.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t8",
+                    "who": "you",
+                    "ja": "ハンコは ありません。サインで いいですか。",
+                    "speak": "ハンコは ありません。サインで いいですか。",
+                    "id_text": "Saya tidak punya cap. Boleh dengan tanda tangan?",
+                    "accept": [
+                        "ハンコは ありません。サインで いいですか。",
+                        "ハンコはありません。サインでいいですか。"
+                    ],
+                    "en_text": "I do not have a seal. Is a signature all right?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t9",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》です。書《か》いたら、見《み》せて ください。確認《かくにん》します。",
+                    "speak": "だいじょうぶです。かいたら、みせて ください。かくにんします。",
+                    "id_text": "Tidak apa-apa. Kalau sudah selesai, tunjukkan. Kami akan memeriksanya.",
+                    "en_text": "That is fine. When you finish, show it to me. I will check it.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s4-t10",
+                    "who": "you",
+                    "ja": "はい、書《か》きました。確認《かくにん》を お願《ねが》いします。",
+                    "speak": "はい、かきました。かくにんを おねがいします。",
+                    "id_text": "Ya, sudah saya tulis. Mohon diperiksa.",
+                    "accept": [
+                        "はい、書きました。確認を お願いします。",
+                        "はい、書きました。確認をお願いします。"
+                    ],
+                    "en_text": "Yes, I have written it. Please check it.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s4-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s5",
+            "title_id": "Kartu hilang: lapor ke 交番 (pos polisi)",
+            "title_en": "Lost card: reporting at the 交番 (police box)",
+            "setting_id": "Kamu sadar 在留カード hilang. Kamu pergi ke 交番 (pos polisi) untuk membuat laporan kehilangan dan mendapat nomor penerimaan (受理番号).",
+            "setting_en": "You realize your 在留カード is lost. You go to the 交番 (police box) to file a loss report and get a receipt number (受理番号).",
+            "goal_id": "Memakai 〜を なくしました, menjelaskan kapan dan di mana (〜と 思います), dan mengulang batas 14 hari serta 受理番号.",
+            "goal_en": "Use 〜を なくしました, explain when and where (〜と 思います), and repeat the 14-day limit and the 受理番号.",
+            "patterns": [
+                "〜を なくしました",
+                "〜と 思います",
+                "〜以内に 〜ます"
+            ],
+            "partner": {
+                "name": "おまわりさん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Kartu hilang atau dicuri: lapor ke polisi (交番/警察署) dan minta 受理番号 (nomor penerimaan laporan). Catat atau foto nomornya.",
+                "Setelah itu, ajukan 再交付 (penerbitan ulang) di kantor Imigrasi paling lambat 14 hari sejak kamu tahu kartu hilang. Jangan ditunda.",
+                "Kalau kartu lama ditemukan setelah penerbitan ulang, kembalikan ke Imigrasi. Jangan memakai dua kartu."
+            ],
+            "tips_en": [
+                "If your card is lost or stolen, report it to the police (交番/警察署) and ask for the 受理番号 (report receipt number). Write it down or take a photo.",
+                "Then apply for 再交付 (reissue) at the immigration office within 14 days of learning the card is gone. Do not delay.",
+                "If the old card is found after reissue, return it to Immigration. Do not use two cards."
+            ],
+            "words": [
+                {
+                    "ja": "交番《こうばん》",
+                    "id": "pos polisi kecil",
+                    "en": "police box"
+                },
+                {
+                    "ja": "なくす",
+                    "id": "menghilangkan",
+                    "en": "to lose"
+                },
+                {
+                    "ja": "受理番号《じゅりばんごう》",
+                    "id": "nomor penerimaan laporan",
+                    "en": "receipt number"
+                },
+                {
+                    "ja": "再交付《さいこうふ》",
+                    "id": "penerbitan ulang",
+                    "en": "reissue"
+                },
+                {
+                    "ja": "入管《にゅうかん》",
+                    "id": "imigrasi (singkatan 入国管理)",
+                    "en": "immigration (short for 入国管理)"
+                },
+                {
+                    "ja": "以内《いない》",
+                    "id": "dalam / paling lambat",
+                    "en": "within"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "財布《さいふ》も なくしました。",
+                    "id": "Dompet saya juga hilang.",
+                    "en": "I also lost my wallet."
+                },
+                {
+                    "ja": "盗《ぬす》まれました。",
+                    "id": "Barang saya dicuri.",
+                    "en": "It was stolen."
+                },
+                {
+                    "ja": "見《み》つかったら、どう しますか。",
+                    "id": "Kalau ditemukan, apa yang harus saya lakukan?",
+                    "en": "What should I do if it is found?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s5-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。どう しましたか。",
+                    "speak": "こんにちは。どう しましたか。",
+                    "id_text": "Selamat siang. Ada apa?",
+                    "en_text": "Hello. What happened?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t2",
+                    "who": "you",
+                    "ja": "在留《ざいりゅう》カードを なくしました。",
+                    "speak": "ざいりゅうカードを なくしました。",
+                    "id_text": "Saya menghilangkan 在留カード.",
+                    "accept": [
+                        "在留カードを なくしました。",
+                        "在留カードをなくしました。"
+                    ],
+                    "en_text": "I lost my 在留カード.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。いつ、どこで なくしましたか。",
+                    "speak": "それは たいへんですね。いつ、どこで なくしましたか。",
+                    "id_text": "Wah, itu repot. Kapan dan di mana hilangnya?",
+                    "en_text": "That is serious. When and where did you lose it?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t4",
+                    "who": "you",
+                    "ja": "昨日《きのう》の 夜《よる》、駅《えき》の 近《ちか》くで なくしたと 思《おも》います。",
+                    "speak": "きのうの よる、えきの ちかくで なくしたと おもいます。",
+                    "id_text": "Kemarin malam, sepertinya hilang di dekat stasiun.",
+                    "accept": [
+                        "昨日の 夜、駅の 近くで なくしたと 思います。",
+                        "昨日の夜、駅の近くでなくしたと思います。"
+                    ],
+                    "en_text": "I think I lost it near the station last night.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t5",
+                    "who": "partner",
+                    "ja": "わかりました。この 紙《かみ》に 名前《なまえ》と 住所《じゅうしょ》を 書《か》いて ください。",
+                    "speak": "わかりました。この かみに なまえと じゅうしょを かいて ください。",
+                    "id_text": "Baik. Tolong tulis nama dan alamat di kertas ini.",
+                    "en_text": "Understood. Please write your name and address on this paper.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t6",
+                    "who": "you",
+                    "ja": "はい、書《か》きました。これで いいですか。",
+                    "speak": "はい、かきました。これで いいですか。",
+                    "id_text": "Ya, sudah saya tulis. Begini sudah benar?",
+                    "accept": [
+                        "はい、書きました。これで いいですか。",
+                        "はい、書きました。これでいいですか。"
+                    ],
+                    "en_text": "Yes, I wrote it. Is this all right?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t7",
+                    "who": "partner",
+                    "ja": "はい、いいです。届《とど》けを 受《う》け付《つ》けました。これが 受理番号《じゅりばんごう》です。十四日《じゅうよっか》以内《いない》に 入管《にゅうかん》で 再交付《さいこうふ》の 手続《てつづ》きを して ください。",
+                    "speak": "はい、いいです。とどけを うけつけました。これが じゅりばんごうです。じゅうよっかいないに にゅうかんで さいこうふの てつづきを して ください。",
+                    "id_text": "Ya, sudah. Laporan diterima. Ini nomor penerimaannya. Dalam 14 hari, urus penerbitan ulang di imigrasi.",
+                    "en_text": "Yes, that is fine. Your report is accepted. This is the receipt number. Please do the reissue procedure at Immigration within 14 days.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s5-t8",
+                    "who": "you",
+                    "ja": "はい、十四日《じゅうよっか》以内《いない》ですね。受理番号《じゅりばんごう》を メモします。ありがとうございます。",
+                    "speak": "はい、じゅうよっかいないですね。じゅりばんごうを メモします。ありがとうございます。",
+                    "id_text": "Ya, dalam 14 hari ya. Saya catat nomor penerimaannya. Terima kasih.",
+                    "accept": [
+                        "はい、十四日以内ですね。受理番号を メモします。ありがとうございます。",
+                        "はい、十四日以内ですね。受理番号をメモします。ありがとうございます。"
+                    ],
+                    "en_text": "Yes, within 14 days. I will note down the receipt number. Thank you.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s5-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s6",
+            "title_id": "Penerbitan ulang 在留カード di Imigrasi",
+            "title_en": "Reissuing your 在留カード at Immigration",
+            "setting_id": "Kamu datang ke kantor Imigrasi dengan 受理番号 dari polisi untuk mengajukan penerbitan ulang 在留カード yang hilang.",
+            "setting_en": "You go to the immigration office with the police 受理番号 to apply for a reissue of your lost 在留カード.",
+            "goal_id": "Menyebut keperluan (再交付を お願いします), menyerahkan 受理番号, dokumen, dan foto, serta menanyakan kapan kartu baru bisa diterima.",
+            "goal_en": "State your errand (再交付を お願いします), hand over the 受理番号, documents, and photo, and ask when you can get the new card.",
+            "patterns": [
+                "〜を お願いします",
+                "〜は ありますか",
+                "〜ますか (もらえますか)"
+            ],
+            "partner": {
+                "name": "にゅうかんの ひと",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Ajukan paling lambat 14 hari sejak kamu tahu kartu hilang. Bawa 受理番号 dari polisi, パスポート, dan satu foto sesuai ukuran. Syarat dokumen bisa berbeda per kantor: cek situs ISA atau tanya di loket.",
+                "Staf bisa meminta 陳述書 (surat pernyataan) yang berisi 受理番号. Isi dengan jujur dan teliti: kesalahan di dokumen status tinggal bisa berdampak serius.",
+                "Pada prinsipnya kartu baru bisa diterbitkan hari itu juga jika dokumen beres, tetapi bila ada keraguan, kamu bisa diminta dokumen tambahan. Jika kartu lama ditemukan, kembalikan ke Imigrasi."
+            ],
+            "tips_en": [
+                "Apply within 14 days of learning the card is gone. Bring the police 受理番号, your passport, and one photo of the required size. Required documents can differ by office: check the ISA site or ask at the counter.",
+                "The staff may ask for a 陳述書 (statement) that includes the 受理番号. Fill it in honestly and carefully: errors in status documents can have serious consequences.",
+                "In principle the new card can be issued the same day if the documents are in order, but if there are doubts you may be asked for more documents. If the old card turns up, return it to Immigration."
+            ],
+            "words": [
+                {
+                    "ja": "再交付《さいこうふ》",
+                    "id": "penerbitan ulang",
+                    "en": "reissue"
+                },
+                {
+                    "ja": "受理番号《じゅりばんごう》",
+                    "id": "nomor penerimaan laporan polisi",
+                    "en": "receipt number"
+                },
+                {
+                    "ja": "陳述書《ちんじゅつしょ》",
+                    "id": "surat pernyataan",
+                    "en": "statement form"
+                },
+                {
+                    "ja": "写真《しゃしん》",
+                    "id": "foto",
+                    "en": "photo"
+                },
+                {
+                    "ja": "書類《しょるい》",
+                    "id": "dokumen",
+                    "en": "documents"
+                },
+                {
+                    "ja": "返《かえ》す",
+                    "id": "mengembalikan",
+                    "en": "to return"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "写真《しゃしん》は ここで 撮《と》れますか。",
+                    "id": "Apakah foto bisa dibuat di sini?",
+                    "en": "Can I have a photo taken here?"
+                },
+                {
+                    "ja": "書類《しょるい》に 問題《もんだい》は ありませんか。",
+                    "id": "Apakah ada masalah dengan dokumennya?",
+                    "en": "Is there any problem with the documents?"
+                },
+                {
+                    "ja": "友《とも》だちに 取《と》りに 来《き》て もらっても いいですか。",
+                    "id": "Bolehkah teman saya mengambilnya?",
+                    "en": "May a friend come to pick it up for me?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s6-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。どんな ご用《よう》ですか。",
+                    "speak": "こんにちは。どんな ごようですか。",
+                    "id_text": "Selamat siang. Ada keperluan apa?",
+                    "en_text": "Hello. How can I help?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t2",
+                    "who": "you",
+                    "ja": "在留《ざいりゅう》カードを なくしました。再交付《さいこうふ》を お願《ねが》いします。",
+                    "speak": "ざいりゅうカードを なくしました。さいこうふを おねがいします。",
+                    "id_text": "Saya menghilangkan 在留カード. Mohon penerbitan ulang.",
+                    "accept": [
+                        "在留カードを なくしました。再交付を お願いします。",
+                        "在留カードをなくしました。再交付をお願いします。"
+                    ],
+                    "en_text": "I lost my 在留カード. A reissue, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t3",
+                    "who": "partner",
+                    "ja": "警察《けいさつ》に 届《とど》けましたか。受理番号《じゅりばんごう》は ありますか。",
+                    "speak": "けいさつに とどけましたか。じゅりばんごうは ありますか。",
+                    "id_text": "Apakah sudah lapor polisi? Apakah ada nomor penerimaannya?",
+                    "en_text": "Did you report it to the police? Do you have the receipt number?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t4",
+                    "who": "you",
+                    "ja": "はい、届《とど》けました。受理番号《じゅりばんごう》は これです。",
+                    "speak": "はい、とどけました。じゅりばんごうは これです。",
+                    "id_text": "Ya, sudah. Nomor penerimaannya ini.",
+                    "accept": [
+                        "はい、届けました。受理番号は これです。",
+                        "はい、届けました。受理番号はこれです。"
+                    ],
+                    "en_text": "Yes, I did. This is the receipt number.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t5",
+                    "who": "partner",
+                    "ja": "ありがとうございます。この 申請書《しんせいしょ》と 陳述書《ちんじゅつしょ》に 書《か》いて ください。パスポートと 写真《しゃしん》も 出《だ》して ください。",
+                    "speak": "ありがとうございます。この しんせいしょと ちんじゅつしょに かいて ください。パスポートと しゃしんも だして ください。",
+                    "id_text": "Terima kasih. Isi formulir permohonan dan surat pernyataan ini. Serahkan juga paspor dan foto.",
+                    "en_text": "Thank you. Please fill in this application and statement. Please also hand over your passport and photo.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t6",
+                    "who": "you",
+                    "ja": "はい、ここに あります。今日《きょう》、新《あたら》しい カードを もらえますか。",
+                    "speak": "はい、ここに あります。きょう、あたらしい カードを もらえますか。",
+                    "id_text": "Ya, ini. Apakah saya bisa menerima kartu baru hari ini?",
+                    "accept": [
+                        "はい、ここに あります。今日、新しい カードを もらえますか。",
+                        "はい、ここにあります。今日、新しいカードをもらえますか。"
+                    ],
+                    "en_text": "Yes, here they are. Can I receive the new card today?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t7",
+                    "who": "partner",
+                    "ja": "書類《しょるい》に 問題《もんだい》が なければ、今日《きょう》渡《わた》せます。もし なくした カードが 見《み》つかったら、入管《にゅうかん》に 返《かえ》して ください。",
+                    "speak": "しょるいに もんだいが なければ、きょうわたせます。もし なくした カードが みつかったら、にゅうかんに かえして ください。",
+                    "id_text": "Kalau dokumen tidak bermasalah, bisa hari ini. Kalau kartu yang hilang ditemukan, kembalikan ke imigrasi.",
+                    "en_text": "If there is no problem with the documents, I can give it to you today. If the lost card is found, please return it to Immigration.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s6-t8",
+                    "who": "you",
+                    "ja": "わかりました。見《み》つかったら、入管《にゅうかん》に 返《かえ》します。",
+                    "speak": "わかりました。みつかったら、にゅうかんに かえします。",
+                    "id_text": "Saya mengerti. Kalau ditemukan, saya kembalikan ke imigrasi.",
+                    "accept": [
+                        "わかりました。見つかったら、入管に 返します。",
+                        "わかりました。見つかったら、入管に返します。"
+                    ],
+                    "en_text": "I understand. If it is found, I will return it to Immigration.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s6-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s7",
+            "title_id": "Mengajukan perpanjangan masa tinggal (在留期間更新)",
+            "title_en": "Applying to extend your period of stay (在留期間更新)",
+            "setting_id": "Masa tinggalmu tinggal dua bulan. Di loket Imigrasi kamu mengajukan perpanjangan dan bertanya apa yang boleh dilakukan setelah tanggal berakhir.",
+            "setting_en": "Your period of stay has two months left. At the immigration counter you apply for an extension and ask what is allowed after the expiry date.",
+            "goal_id": "Memakai 〜を 申請したいです, menyebut sisa masa tinggal (あと 〜か月), dan memahami 特例期間 serta pemberitahuan hasil lewat ハガキ.",
+            "goal_en": "Use 〜を 申請したいです, state the time left (あと 〜か月), and understand the 特例期間 and notification of the result by ハガキ.",
+            "patterns": [
+                "〜を 申請したいです",
+                "あと 〜か月です",
+                "〜ても いいですか"
+            ],
+            "partner": {
+                "name": "にゅうかんの ひと",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Perpanjangan (在留期間更新) bisa diajukan sejak sekitar 3 bulan sebelum masa tinggal habis (umumnya untuk masa tinggal 6 bulan ke atas). Jangan menunggu sampai hari terakhir: lewat tanggal berakhir tanpa mengajukan = overstay (不法残留).",
+                "Dokumen umum: 申請書, 写真 (4 cm × 3 cm), パスポート, 在留カード, dokumen dari perusahaan (mis. 在職証明書) dan sering 住民税の証明書. Daftar pastinya tergantung status tinggalmu: cek halaman ISA untuk statusmu.",
+                "Jika kamu mengajukan sebelum tanggal berakhir, kamu boleh tetap tinggal sampai ada keputusan atau sampai 2 bulan setelah tanggal berakhir (mana yang lebih dulu): inilah 特例期間. Hasil diberitahukan lewat ハガキ. Biaya dibayar saat izin keluar, bukan saat mengajukan, dan sejak 1 Okt 2026 jumlahnya tergantung lama masa tinggal yang diberikan (contoh di loket: 1 tahun = 33.000 yen, 5 tahun ke atas = 75.000 yen). Cek jumlah terbaru di situs ISA."
+            ],
+            "tips_en": [
+                "You can apply for an extension (在留期間更新) from about 3 months before expiry (generally for stays of 6 months or more). Do not wait for the last day: passing the expiry date without applying = overstay (不法残留).",
+                "Common documents: 申請書, photo (4 cm × 3 cm), passport, 在留カード, company documents (e.g. 在職証明書) and often a 住民税 certificate. The exact list depends on your status: check the ISA page for yours.",
+                "If you apply before the expiry date, you may stay until a decision or until 2 months after expiry, whichever comes first: this is the 特例期間. The result is sent by ハガキ. The fee is paid when permission is granted, not when applying, and since 1 Oct 2026 it depends on the length of stay granted (counter examples: 1 year = 33,000 yen, 5 years or more = 75,000 yen). Check the latest amounts on the ISA site."
+            ],
+            "words": [
+                {
+                    "ja": "在留期間《ざいりゅうきかん》",
+                    "id": "masa tinggal",
+                    "en": "period of stay"
+                },
+                {
+                    "ja": "更新《こうしん》",
+                    "id": "perpanjangan",
+                    "en": "renewal"
+                },
+                {
+                    "ja": "申請《しんせい》",
+                    "id": "pengajuan",
+                    "en": "application"
+                },
+                {
+                    "ja": "期限《きげん》",
+                    "id": "batas waktu / tanggal berakhir",
+                    "en": "deadline, expiry"
+                },
+                {
+                    "ja": "結果《けっか》",
+                    "id": "hasil",
+                    "en": "result"
+                },
+                {
+                    "ja": "そろって いる",
+                    "id": "lengkap",
+                    "en": "complete"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "書類《しょるい》が 足《た》りません。",
+                    "id": "Dokumen saya kurang.",
+                    "en": "My documents are not complete."
+                },
+                {
+                    "ja": "会社《かいしゃ》の 書類《しょるい》は まだ もらって いません。",
+                    "id": "Saya belum menerima dokumen dari perusahaan.",
+                    "en": "I have not received the company documents yet."
+                },
+                {
+                    "ja": "結果《けっか》は いつ わかりますか。",
+                    "id": "Kapan hasilnya diketahui?",
+                    "en": "When will I know the result?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s7-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。どんな ご用《よう》ですか。",
+                    "speak": "こんにちは。どんな ごようですか。",
+                    "id_text": "Selamat siang. Ada keperluan apa?",
+                    "en_text": "Hello. How can I help?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t2",
+                    "who": "you",
+                    "ja": "在留期間《ざいりゅうきかん》の 更新《こうしん》を 申請《しんせい》したいです。",
+                    "speak": "ざいりゅうきかんの こうしんを しんせいしたいです。",
+                    "id_text": "Saya ingin mengajukan perpanjangan masa tinggal.",
+                    "accept": [
+                        "在留期間の 更新を 申請したいです。",
+                        "在留期間の更新を申請したいです。"
+                    ],
+                    "en_text": "I would like to apply to extend my period of stay.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t3",
+                    "who": "partner",
+                    "ja": "在留《ざいりゅう》カードと パスポートを 見《み》せて ください。在留期間《ざいりゅうきかん》は いつまでですか。",
+                    "speak": "ざいりゅうカードと パスポートを みせて ください。ざいりゅうきかんは いつまでですか。",
+                    "id_text": "Tolong tunjukkan 在留カード dan paspor. Masa tinggal Anda sampai kapan?",
+                    "en_text": "Please show your 在留カード and passport. Until when is your period of stay?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t4",
+                    "who": "you",
+                    "ja": "はい、どうぞ。あと 二《に》か月《げつ》です。",
+                    "speak": "はい、どうぞ。あと にかげつです。",
+                    "id_text": "Ya, silakan. Tinggal dua bulan lagi.",
+                    "accept": [
+                        "はい、どうぞ。あと 二か月です。",
+                        "はい、どうぞ。あと二か月です。"
+                    ],
+                    "en_text": "Here you are. There are two months left.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t5",
+                    "who": "partner",
+                    "ja": "二《に》か月《げつ》ですね。まだ 大丈夫《だいじょうぶ》です。申請書《しんせいしょ》と 写真《しゃしん》と 会社《かいしゃ》の 書類《しょるい》は ありますか。",
+                    "speak": "にかげつですね。まだ だいじょうぶです。しんせいしょと しゃしんと かいしゃの しょるいは ありますか。",
+                    "id_text": "Dua bulan ya. Masih aman. Apakah ada formulir, foto, dan dokumen perusahaan?",
+                    "en_text": "Two months, I see. That is still fine. Do you have the application, photo, and company documents?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t6",
+                    "who": "you",
+                    "ja": "はい、全部《ぜんぶ》 持《も》って きました。これです。",
+                    "speak": "はい、ぜんぶ もって きました。これです。",
+                    "id_text": "Ya, semuanya saya bawa. Ini.",
+                    "accept": [
+                        "はい、全部 持って きました。これです。",
+                        "はい、全部持ってきました。これです。"
+                    ],
+                    "en_text": "Yes, I brought everything. Here.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t7",
+                    "who": "partner",
+                    "ja": "確認《かくにん》します。はい、書類《しょるい》は そろって います。申請《しんせい》を 受《う》け付《つ》けました。",
+                    "speak": "かくにんします。はい、しょるいは そろって います。しんせいを うけつけました。",
+                    "id_text": "Saya periksa. Ya, dokumen lengkap. Pengajuan diterima.",
+                    "en_text": "Let me check. Yes, the documents are complete. Your application is accepted.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t8",
+                    "who": "you",
+                    "ja": "期限《きげん》の あとも、日本《にほん》に いても いいですか。",
+                    "speak": "きげんの あとも、にほんに いても いいですか。",
+                    "id_text": "Bolehkah saya tetap di Jepang setelah tanggal berakhir?",
+                    "accept": [
+                        "期限の あとも、日本に いても いいですか。",
+                        "期限のあとも、日本にいてもいいですか。"
+                    ],
+                    "en_text": "May I stay in Japan after the expiry date?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t9",
+                    "who": "partner",
+                    "ja": "期限《きげん》の 前《まえ》に 申請《しんせい》しましたから、大丈夫《だいじょうぶ》です。結果《けっか》が 出《で》る まで、最大《さいだい》で 二《に》か月《げつ》 日本《にほん》に いる ことが できます。結果《けっか》は ハガキで 知《し》らせます。",
+                    "speak": "きげんの まえに しんせいしましたから、だいじょうぶです。けっかが でる まで、さいだいで にかげつ にほんに いる ことが できます。けっかは ハガキで しらせます。",
+                    "id_text": "Karena sudah mengajukan sebelum batas waktu, tidak apa-apa. Sampai hasil keluar, paling lama dua bulan Anda boleh tinggal. Hasil diberitahukan lewat kartu pos.",
+                    "en_text": "Because you applied before the deadline, it is fine. Until the result comes out, you can stay up to two months. We will notify you of the result by postcard.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s7-t10",
+                    "who": "you",
+                    "ja": "わかりました。ハガキが 来《き》たら、また 来《き》ます。",
+                    "speak": "わかりました。ハガキが きたら、また きます。",
+                    "id_text": "Saya mengerti. Kalau kartu pos datang, saya datang lagi.",
+                    "accept": [
+                        "わかりました。ハガキが 来たら、また 来ます。",
+                        "わかりました。ハガキが来たら、また来ます。"
+                    ],
+                    "en_text": "I understand. When the postcard arrives, I will come again.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s7-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s8",
+            "title_id": "Menerima 在留カード baru setelah perpanjangan",
+            "title_en": "Receiving the new 在留カード after the extension",
+            "setting_id": "ハガキ dari Imigrasi sudah tiba. Kamu datang mengambil 在留カード baru, membayar biaya dengan 収入印紙, dan memeriksa isi kartu.",
+            "setting_en": "The postcard from Immigration has arrived. You come to pick up your new 在留カード, pay the fee with a 収入印紙, and check the card.",
+            "goal_id": "Menanyakan tempat (どこで 買えますか), mengikuti instruksi, dan memeriksa nama serta masa tinggal sebelum meninggalkan loket.",
+            "goal_en": "Ask where to buy something (どこで 買えますか), follow instructions, and check the name and period of stay before leaving the counter.",
+            "patterns": [
+                "〜は どこで 買えますか",
+                "〜を 確認して ください",
+                "〜ですね"
+            ],
+            "partner": {
+                "name": "にゅうかんの ひと",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Bawa ハガキ, パスポート, dan 在留カード lama. Perpanjangan dikeluarkan atas nama pemohon: orang lain (mis. staf perusahaan) umumnya tidak bisa mengambilnya kecuali sebagai 取次者 resmi.",
+                "Cara membayar bisa berubah: ikuti petunjuk di ハガキ dan loket. Di loket biasanya memakai 収入印紙 (materai khusus) yang dijual di tempat yang ditunjuk. Pembayaran online sejak 1 Okt 2026 lewat konbini/transfer bank; waspada email penipuan, ikuti hanya petunjuk resmi ISA.",
+                "Sebelum pergi, periksa kartu baru: nama, 在留資格, 在留期間, dan batas kerja. Kalau ada kesalahan, sampaikan saat itu juga di loket. Hitung ulang jadwal: pengajuan berikutnya sekitar 3 bulan sebelum masa tinggal habis."
+            ],
+            "tips_en": [
+                "Bring the ハガキ, your passport, and your old 在留カード. The extension is issued to the applicant: others (e.g. company staff) generally cannot collect it unless they are an official 取次者.",
+                "Payment methods can change: follow the instructions on the ハガキ and at the counter. At the counter it is usually a 収入印紙 (revenue stamp) sold at a designated place. Online payment since 1 Oct 2026 is by convenience store/bank transfer; beware of scam emails and follow official ISA instructions only.",
+                "Before leaving, check the new card: name, 在留資格, 在留期間, and work restrictions. If anything is wrong, say so right there at the counter. Plan ahead: the next application is about 3 months before expiry."
+            ],
+            "words": [
+                {
+                    "ja": "許可《きょか》",
+                    "id": "izin (dikabulkan)",
+                    "en": "permission, approval"
+                },
+                {
+                    "ja": "収入印紙《しゅうにゅういんし》",
+                    "id": "materai pembayaran biaya negara",
+                    "en": "revenue stamp"
+                },
+                {
+                    "ja": "貼《は》る",
+                    "id": "menempel",
+                    "en": "to stick/paste"
+                },
+                {
+                    "ja": "売《う》り場《ば》",
+                    "id": "tempat penjualan",
+                    "en": "sales counter"
+                },
+                {
+                    "ja": "在留資格《ざいりゅうしかく》",
+                    "id": "status tinggal",
+                    "en": "status of residence"
+                },
+                {
+                    "ja": "次《つぎ》",
+                    "id": "berikutnya",
+                    "en": "next"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "手数料《てすうりょう》は いくらですか。",
+                    "id": "Berapa biayanya?",
+                    "en": "How much is the fee?"
+                },
+                {
+                    "ja": "名前《なまえ》の 字《じ》が 違《ちが》います。",
+                    "id": "Ejaan nama saya berbeda.",
+                    "en": "The spelling of my name is different."
+                },
+                {
+                    "ja": "古《ふる》い カードは どう しますか。",
+                    "id": "Kartu lama saya bagaimana?",
+                    "en": "What do I do with the old card?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s8-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。ハガキは お持《も》ちですか。",
+                    "speak": "こんにちは。ハガキは おもちですか。",
+                    "id_text": "Selamat siang. Apakah Anda membawa kartu pos?",
+                    "en_text": "Hello. Do you have the postcard?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t2",
+                    "who": "you",
+                    "ja": "はい、これです。パスポートと 在留《ざいりゅう》カードも どうぞ。",
+                    "speak": "はい、これです。パスポートと ざいりゅうカードも どうぞ。",
+                    "id_text": "Ya, ini. Paspor dan 在留カード juga, silakan.",
+                    "accept": [
+                        "はい、これです。パスポートと 在留カードも どうぞ。",
+                        "はい、これです。パスポートと在留カードもどうぞ。"
+                    ],
+                    "en_text": "Yes, here it is. My passport and 在留カード too, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t3",
+                    "who": "partner",
+                    "ja": "ありがとうございます。許可《きょか》が 出《で》ました。手数料《てすうりょう》の 収入印紙《しゅうにゅういんし》を 買《か》って、この 紙《かみ》に 貼《は》って ください。",
+                    "speak": "ありがとうございます。きょかが でました。てすうりょうの しゅうにゅういんしを かって、この かみに はって ください。",
+                    "id_text": "Terima kasih. Izin sudah keluar. Beli 収入印紙 untuk biayanya dan tempelkan di kertas ini.",
+                    "en_text": "Thank you. Your permission has been granted. Please buy a 収入印紙 for the fee and stick it on this paper.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t4",
+                    "who": "you",
+                    "ja": "すみません、収入印紙《しゅうにゅういんし》は どこで 買《か》えますか。",
+                    "speak": "すみません、しゅうにゅういんしは どこで かえますか。",
+                    "id_text": "Permisi, di mana saya bisa membeli 収入印紙?",
+                    "accept": [
+                        "すみません、収入印紙は どこで 買えますか。",
+                        "すみません、収入印紙はどこで買えますか。"
+                    ],
+                    "en_text": "Excuse me, where can I buy a 収入印紙?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t5",
+                    "who": "partner",
+                    "ja": "一階《いっかい》の 売《う》り場《ば》で 買《か》えます。買《か》ったら、また ここに 来《き》て ください。",
+                    "speak": "いっかいの うりばで かえます。かったら、また ここに きて ください。",
+                    "id_text": "Bisa dibeli di tempat penjualan lantai satu. Setelah membeli, datang lagi ke sini.",
+                    "en_text": "You can buy it at the sales counter on the first floor. After buying it, please come back here.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t6",
+                    "who": "you",
+                    "ja": "わかりました。すぐに 買《か》って きます。",
+                    "speak": "わかりました。すぐに かって きます。",
+                    "id_text": "Saya mengerti. Saya akan segera membelinya.",
+                    "accept": [
+                        "わかりました。すぐに 買って きます。",
+                        "わかりました。すぐに買ってきます。"
+                    ],
+                    "en_text": "I understand. I will go and buy it right away.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t7",
+                    "who": "partner",
+                    "ja": "新《あたら》しい 在留《ざいりゅう》カードです。名前《なまえ》と 在留期間《ざいりゅうきかん》を 確認《かくにん》して ください。間違《まちが》いが あったら、ここで 言《い》って ください。",
+                    "speak": "あたらしい ざいりゅうカードです。なまえと ざいりゅうきかんを かくにんして ください。まちがいが あったら、ここで いって ください。",
+                    "id_text": "Ini 在留カード baru. Tolong periksa nama dan masa tinggalnya. Kalau ada kesalahan, katakan di sini.",
+                    "en_text": "This is your new 在留カード. Please check the name and period of stay. If there is a mistake, tell me here.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t8",
+                    "who": "you",
+                    "ja": "はい、確認《かくにん》しました。在留期間《ざいりゅうきかん》は 三年《さんねん》ですね。",
+                    "speak": "はい、かくにんしました。ざいりゅうきかんは さんねんですね。",
+                    "id_text": "Ya, sudah saya periksa. Masa tinggalnya tiga tahun, ya.",
+                    "accept": [
+                        "はい、確認しました。在留期間は 三年ですね。",
+                        "はい、確認しました。在留期間は三年ですね。"
+                    ],
+                    "en_text": "Yes, I checked it. The period of stay is three years, right?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t9",
+                    "who": "partner",
+                    "ja": "はい、そうです。次《つぎ》の 更新《こうしん》は、期限《きげん》の 三《さん》か月《げつ》前《まえ》から できます。",
+                    "speak": "はい、そうです。つぎの こうしんは、きげんの さんかげつまえから できます。",
+                    "id_text": "Ya, betul. Perpanjangan berikutnya bisa diajukan mulai tiga bulan sebelum batas waktu.",
+                    "en_text": "Yes, that is right. You can apply for the next extension from three months before the expiry.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s8-t10",
+                    "who": "you",
+                    "ja": "ありがとうございました。次《つぎ》も 期限《きげん》の 前《まえ》に 申請《しんせい》します。",
+                    "speak": "ありがとうございました。つぎも きげんの まえに しんせいします。",
+                    "id_text": "Terima kasih banyak. Berikutnya juga akan saya ajukan sebelum batas waktu.",
+                    "accept": [
+                        "ありがとうございました。次も 期限の 前に 申請します。",
+                        "ありがとうございました。次も期限の前に申請します。"
+                    ],
+                    "en_text": "Thank you very much. Next time I will also apply before the deadline.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s8-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s9",
+            "title_id": "Pindah kerja: lapor ke Imigrasi (所属機関の届出)",
+            "title_en": "Changing employer: notifying Immigration (所属機関の届出)",
+            "setting_id": "Kamu pindah ke perusahaan baru. Di Imigrasi kamu mengurus laporan pemberitahuan dan bertanya cara memastikan pekerjaan baru sesuai status tinggalmu.",
+            "setting_en": "You have changed to a new company. At Immigration you file the notification and ask how to confirm that the new job fits your status.",
+            "goal_id": "Memakai 〜を 変えました, menyebut waktu (先週の 月曜日), memahami batas 14 hari, dan bertanya 〜は どう 調べますか.",
+            "goal_en": "Use 〜を 変えました, give a time (先週の 月曜日), understand the 14-day limit, and ask 〜は どう 調べますか.",
+            "patterns": [
+                "〜を 変えました",
+                "〜以内に 届ける",
+                "〜て みます"
+            ],
+            "partner": {
+                "name": "にゅうかんの ひと",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Bagi banyak status kerja/belajar, pergantian atau berakhirnya hubungan dengan perusahaan/sekolah wajib dilaporkan ke Imigrasi paling lambat 14 hari (所属機関等に関する届出). Bisa lewat loket, pos, atau online. Terlambat bisa dikenai sanksi.",
+                "Laporan hanya PEMBERITAHUAN, bukan izin. Apakah pekerjaan baru boleh dilakukan dengan statusmu tergantung jenis status dan isi pekerjaan: untuk sebagian status perlu 在留資格変更許可 atau tidak boleh pindah bebas.",
+                "Kalau ragu, tanyakan sebelum pindah kerja: loket 相談 di Imigrasi atau Pusat Informasi Terpadu Residen Asing (外国人在留総合インフォメーションセンター, 0570-013904; jam layanan hari kerja, cek situs ISA)."
+            ],
+            "tips_en": [
+                "For many work/study statuses, a change or end of affiliation with your company/school must be reported to Immigration within 14 days (所属機関等に関する届出). Counter, mail, or online. Late reports can lead to penalties.",
+                "The notification is only a REPORT, not a permission. Whether the new job is allowed with your status depends on the status and the job content: for some statuses you need a 在留資格変更許可 or may not switch freely.",
+                "If unsure, ask before changing jobs: the 相談 counter at Immigration or the Foreign Residents Support Information Center (外国人在留総合インフォメーションセンター, 0570-013904; weekday hours, check the ISA site)."
+            ],
+            "words": [
+                {
+                    "ja": "届出《とどけで》",
+                    "id": "laporan / pemberitahuan",
+                    "en": "notification"
+                },
+                {
+                    "ja": "変《か》える",
+                    "id": "mengganti",
+                    "en": "to change"
+                },
+                {
+                    "ja": "十四日《じゅうよっか》",
+                    "id": "empat belas hari",
+                    "en": "fourteen days"
+                },
+                {
+                    "ja": "在留資格《ざいりゅうしかく》",
+                    "id": "status tinggal",
+                    "en": "status of residence"
+                },
+                {
+                    "ja": "相談《そうだん》",
+                    "id": "konsultasi",
+                    "en": "consultation"
+                },
+                {
+                    "ja": "調《しら》べる",
+                    "id": "memeriksa / mencari tahu",
+                    "en": "to look into"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "会社《かいしゃ》を やめました。",
+                    "id": "Saya berhenti dari perusahaan.",
+                    "en": "I left my company."
+                },
+                {
+                    "ja": "オンラインでも 届出《とどけで》が できますか。",
+                    "id": "Apakah laporan bisa dilakukan secara online?",
+                    "en": "Can I submit the notification online too?"
+                },
+                {
+                    "ja": "新《あたら》しい 会社《かいしゃ》の 住所《じゅうしょ》は ここです。",
+                    "id": "Alamat perusahaan baru saya di sini.",
+                    "en": "This is the new company's address."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s9-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。どんな ご用《よう》ですか。",
+                    "speak": "こんにちは。どんな ごようですか。",
+                    "id_text": "Selamat siang. Ada keperluan apa?",
+                    "en_text": "Hello. How can I help?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t2",
+                    "who": "you",
+                    "ja": "会社《かいしゃ》を 変《か》えました。届出《とどけで》を したいです。",
+                    "speak": "かいしゃを かえました。とどけでを したいです。",
+                    "id_text": "Saya ganti perusahaan. Saya ingin membuat laporan.",
+                    "accept": [
+                        "会社を 変えました。届出を したいです。",
+                        "会社を変えました。届出をしたいです。"
+                    ],
+                    "en_text": "I changed my company. I would like to file a notification.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t3",
+                    "who": "partner",
+                    "ja": "いつ 変《か》えましたか。",
+                    "speak": "いつ かえましたか。",
+                    "id_text": "Kapan Anda menggantinya?",
+                    "en_text": "When did you change?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t4",
+                    "who": "you",
+                    "ja": "先週《せんしゅう》の 月曜日《げつようび》に 変《か》えました。",
+                    "speak": "せんしゅうの げつようびに かえました。",
+                    "id_text": "Hari Senin minggu lalu.",
+                    "accept": [
+                        "先週の 月曜日に 変えました。",
+                        "先週の月曜日に変えました。"
+                    ],
+                    "en_text": "Last Monday.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t5",
+                    "who": "partner",
+                    "ja": "この 届出書《とどけでしょ》に 新《あたら》しい 会社《かいしゃ》の 名前《なまえ》と 住所《じゅうしょ》を 書《か》いて ください。十四日《じゅうよっか》以内《いない》に 届《とど》ける ことに なって います。",
+                    "speak": "この とどけでしょに あたらしい かいしゃの なまえと じゅうしょを かいて ください。じゅうよっかいないに とどける ことに なって います。",
+                    "id_text": "Tulis nama dan alamat perusahaan baru di formulir ini. Laporan harus disampaikan dalam 14 hari.",
+                    "en_text": "Please write the new company's name and address on this form. It must be submitted within 14 days.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t6",
+                    "who": "you",
+                    "ja": "十四日《じゅうよっか》以内《いない》ですね。今日《きょう》は 大丈夫《だいじょうぶ》ですか。",
+                    "speak": "じゅうよっかいないですね。きょうは だいじょうぶですか。",
+                    "id_text": "Dalam 14 hari ya. Apakah hari ini masih aman?",
+                    "accept": [
+                        "十四日以内ですね。今日は 大丈夫ですか。",
+                        "十四日以内ですね。今日は大丈夫ですか。"
+                    ],
+                    "en_text": "Within 14 days, right. Is today all right?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t7",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。でも、この 届出《とどけで》は 知《し》らせる だけです。新《あたら》しい 仕事《しごと》が 在留資格《ざいりゅうしかく》に 合《あ》って いるか どうかは、別《べつ》に 確認《かくにん》して ください。",
+                    "speak": "はい、だいじょうぶです。でも、この とどけでは しらせる だけです。あたらしい しごとが ざいりゅうしかくに あって いるか どうかは、べつに かくにんして ください。",
+                    "id_text": "Ya, aman. Tapi laporan ini hanya pemberitahuan. Apakah pekerjaan baru sesuai status tinggal, harap dipastikan secara terpisah.",
+                    "en_text": "Yes, it is fine. But this notification is only a report. Whether the new job matches your status of residence, please check separately.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t8",
+                    "who": "you",
+                    "ja": "仕事《しごと》が 合《あ》って いるか、どう 調《しら》べますか。",
+                    "speak": "しごとが あって いるか、どう しらべますか。",
+                    "id_text": "Bagaimana cara memeriksa apakah pekerjaan sesuai?",
+                    "accept": [
+                        "仕事が 合って いるか、どう 調べますか。",
+                        "仕事が合っているか、どう調べますか。"
+                    ],
+                    "en_text": "How do I check whether the job matches?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t9",
+                    "who": "partner",
+                    "ja": "入管《にゅうかん》の 相談《そうだん》窓口《まどぐち》に 聞《き》いて ください。電話《でんわ》でも 大丈夫《だいじょうぶ》です。",
+                    "speak": "にゅうかんの そうだんまどぐちに きいて ください。でんわでも だいじょうぶです。",
+                    "id_text": "Tanyakan ke loket konsultasi imigrasi. Lewat telepon juga bisa.",
+                    "en_text": "Please ask at the immigration consultation counter. A phone call is also fine.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s9-t10",
+                    "who": "you",
+                    "ja": "わかりました。相談《そうだん》して みます。",
+                    "speak": "わかりました。そうだんして みます。",
+                    "id_text": "Saya mengerti. Saya akan mencoba berkonsultasi.",
+                    "accept": [
+                        "わかりました。相談して みます。",
+                        "わかりました。相談してみます。"
+                    ],
+                    "en_text": "I understand. I will try consulting them.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s9-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "kelurahan-s10",
+            "title_id": "Belum paham? Minta penjelasan sebelum tanda tangan",
+            "title_en": "Not sure? Ask for an explanation before signing",
+            "setting_id": "Staf memintamu menandatangani dokumen, tetapi kamu belum paham isinya. Kamu meminta penjelasan dan baru menandatangani setelah mengerti.",
+            "setting_en": "The staff ask you to sign a document, but you do not fully understand it. You ask for an explanation and sign only after you understand.",
+            "goal_id": "Memakai 〜が わかりません, ゆっくり お願いします, やさしい 日本語, dan 〜てから、〜ます untuk menahan tanda tangan sampai paham.",
+            "goal_en": "Use 〜が わかりません, ゆっくり お願いします, やさしい 日本語, and 〜てから、〜ます to hold off signing until you understand.",
+            "patterns": [
+                "〜が わかりません",
+                "ゆっくり お願いします",
+                "〜てから、〜ます"
+            ],
+            "partner": {
+                "name": "しょくいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Jangan menandatangani atau mengisi dokumen yang belum kamu pahami. Tanda tangan berarti kamu setuju, dan kesalahan pada dokumen status tinggal bisa berdampak serius.",
+                "Kalimat penyelamat: もう 一度 お願いします / ゆっくり お願いします / 意味が わかりません / やさしい 日本語で お願いします / 書いて ください / 通訳は いますか.",
+                "Minta penjelasan tertulis atau contoh isian, tanyakan apakah ada panduan bahasa lain atau interpreter telepon, dan bawa teman atau staf perusahaan kalau perlu. Untuk pertanyaan status tinggal: Pusat Informasi Terpadu Residen Asing, 0570-013904 (cek jam layanan di situs ISA)."
+            ],
+            "tips_en": [
+                "Never sign or fill in a document you do not understand. A signature means you agree, and mistakes on status-related documents can have serious consequences.",
+                "Lifesaver phrases: もう 一度 お願いします / ゆっくり お願いします / 意味が わかりません / やさしい 日本語で お願いします / 書いて ください / 通訳は いますか.",
+                "Ask for a written explanation or a sample, ask whether guides in other languages or phone interpreting are available, and bring a friend or company staff if needed. For status questions: Foreign Residents Support Information Center, 0570-013904 (check hours on the ISA site)."
+            ],
+            "words": [
+                {
+                    "ja": "意味《いみ》",
+                    "id": "arti",
+                    "en": "meaning"
+                },
+                {
+                    "ja": "説明《せつめい》",
+                    "id": "penjelasan",
+                    "en": "explanation"
+                },
+                {
+                    "ja": "通訳《つうやく》",
+                    "id": "penerjemah lisan",
+                    "en": "interpreter"
+                },
+                {
+                    "ja": "質問《しつもん》",
+                    "id": "pertanyaan",
+                    "en": "question"
+                },
+                {
+                    "ja": "内容《ないよう》",
+                    "id": "isi",
+                    "en": "contents"
+                },
+                {
+                    "ja": "サイン",
+                    "id": "tanda tangan",
+                    "en": "signature"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "もう 一度《いちど》 お願《ねが》いします。",
+                    "id": "Tolong sekali lagi.",
+                    "en": "One more time, please."
+                },
+                {
+                    "ja": "書《か》いて ください。",
+                    "id": "Tolong tuliskan.",
+                    "en": "Please write it down."
+                },
+                {
+                    "ja": "通訳《つうやく》の 人《ひと》は いますか。",
+                    "id": "Apakah ada penerjemah?",
+                    "en": "Is there an interpreter?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "kelurahan-s10-t1",
+                    "who": "partner",
+                    "ja": "この 書類《しょるい》に サインして ください。内容《ないよう》は ここに 書《か》いて あります。",
+                    "speak": "この しょるいに サインして ください。ないようは ここに かいて あります。",
+                    "id_text": "Tolong tanda tangani dokumen ini. Isinya tertulis di sini.",
+                    "en_text": "Please sign this document. The contents are written here.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t1.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t2",
+                    "who": "you",
+                    "ja": "すみません、まだ 少《すこ》ししか わかりません。ゆっくり お願《ねが》いします。",
+                    "speak": "すみません、まだ すこししか わかりません。ゆっくり おねがいします。",
+                    "id_text": "Maaf, saya baru sedikit mengerti. Tolong pelan-pelan.",
+                    "accept": [
+                        "すみません、まだ 少ししか わかりません。ゆっくり お願いします。",
+                        "すみません、まだ少ししかわかりません。ゆっくりお願いします。"
+                    ],
+                    "en_text": "Sorry, I only understand a little. Slowly, please.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t2.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t3",
+                    "who": "partner",
+                    "ja": "はい。この 書類《しょるい》は 手続《てつづ》きの 確認《かくにん》です。間違《まちが》いが なければ、サインを お願《ねが》いします。",
+                    "speak": "はい。この しょるいは てつづきの かくにんです。まちがいが なければ、サインを おねがいします。",
+                    "id_text": "Baik. Dokumen ini konfirmasi prosedur. Kalau tidak ada kesalahan, mohon tanda tangan.",
+                    "en_text": "Yes. This document is a confirmation of the procedure. If there are no mistakes, please sign.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t3.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t4",
+                    "who": "you",
+                    "ja": "すみません、意味《いみ》が わかりません。やさしい 日本語《にほんご》で お願《ねが》いします。",
+                    "speak": "すみません、いみが わかりません。やさしい にほんごで おねがいします。",
+                    "id_text": "Maaf, saya tidak mengerti artinya. Tolong dengan bahasa Jepang yang mudah.",
+                    "accept": [
+                        "すみません、意味が わかりません。やさしい 日本語で お願いします。",
+                        "すみません、意味がわかりません。やさしい日本語でお願いします。"
+                    ],
+                    "en_text": "Sorry, I do not understand the meaning. Please use easy Japanese.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t4.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t5",
+                    "who": "partner",
+                    "ja": "これは 住所《じゅうしょ》の 書類《しょるい》です。住所《じゅうしょ》は 合《あ》って いますか。合《あ》って いたら、ここに サインして ください。",
+                    "speak": "これは じゅうしょの しょるいです。じゅうしょは あって いますか。あって いたら、ここに サインして ください。",
+                    "id_text": "Ini dokumen tentang alamat. Apakah alamatnya benar? Kalau benar, tanda tangan di sini.",
+                    "en_text": "This is a document about your address. Is the address correct? If it is, please sign here.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t5.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t6",
+                    "who": "you",
+                    "ja": "住所《じゅうしょ》は 合《あ》って います。でも、全部《ぜんぶ》は まだ わかりません。",
+                    "speak": "じゅうしょは あって います。でも、ぜんぶは まだ わかりません。",
+                    "id_text": "Alamatnya benar. Tetapi saya belum paham semuanya.",
+                    "accept": [
+                        "住所は 合って います。でも、全部は まだ わかりません。",
+                        "住所は合っています。でも、全部はまだわかりません。"
+                    ],
+                    "en_text": "The address is correct. But I do not understand everything yet.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t6.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t7",
+                    "who": "partner",
+                    "ja": "英語《えいご》の 説明《せつめい》が あります。どうぞ。電話《でんわ》の 通訳《つうやく》も 使《つか》えます。",
+                    "speak": "えいごの せつめいが あります。どうぞ。でんわの つうやくも つかえます。",
+                    "id_text": "Ada penjelasan dalam bahasa Inggris. Silakan. Penerjemah lewat telepon juga bisa dipakai.",
+                    "en_text": "There is an English explanation. Here you are. A phone interpreter is also available.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t7.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。読《よ》んで から、サインしても いいですか。",
+                    "speak": "ありがとうございます。よんで から、サインしても いいですか。",
+                    "id_text": "Terima kasih. Bolehkah saya tanda tangan setelah membacanya?",
+                    "accept": [
+                        "ありがとうございます。読んで から、サインしても いいですか。",
+                        "ありがとうございます。読んでから、サインしてもいいですか。"
+                    ],
+                    "en_text": "Thank you. May I sign after I read it?",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t8.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t9",
+                    "who": "partner",
+                    "ja": "はい、もちろんです。ゆっくり 読《よ》んで ください。質問《しつもん》が あったら、聞《き》いて ください。",
+                    "speak": "はい、もちろんです。ゆっくり よんで ください。しつもんが あったら、きいて ください。",
+                    "id_text": "Ya, tentu. Silakan baca pelan-pelan. Kalau ada pertanyaan, tanyakan.",
+                    "en_text": "Yes, of course. Please read slowly. If you have questions, please ask.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t9.mp3"
+                },
+                {
+                    "id": "kelurahan-s10-t10",
+                    "who": "you",
+                    "ja": "はい。分《わ》かって から、サインします。ありがとうございます。",
+                    "speak": "はい。わかって から、サインします。ありがとうございます。",
+                    "id_text": "Ya. Setelah paham, saya tanda tangan. Terima kasih.",
+                    "accept": [
+                        "はい。分かって から、サインします。ありがとうございます。",
+                        "はい。分かってから、サインします。ありがとうございます。"
+                    ],
+                    "en_text": "Yes. I will sign after I understand. Thank you.",
+                    "audio": "/audio/kaiwa/situation-kelurahan/kelurahan-s10-t10.mp3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,369 @@
+{
+    "id": 5,
+    "level": "N4",
+    "title_id": "Pelajaran 5 (N4)",
+    "title_en": "N4 Lesson 5",
+    "scenarios": [
+        {
+            "id": "n4l5-s1",
+            "title_id": "Di kamar teman",
+            "title_en": "At a friend's room",
+            "setting_id": "Kamu berkunjung ke kamar teman yang sudah dihias.",
+            "setting_en": "You visit a friend's room that has been decorated.",
+            "goal_id": "Menyebut keadaan benda dengan 〜て あります.",
+            "goal_en": "Describe the state of things with 〜て あります.",
+            "patterns": [
+                "Ｎ１に Ｎ２が Vて あります",
+                "Vて おきます"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l5-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、いらっしゃい。どうぞ 入《はい》って ください。",
+                    "speak": "ブディさん、いらっしゃい。どうぞ はいって ください。",
+                    "id_text": "Budi, selamat datang. Silakan masuk.",
+                    "en_text": "Budi, welcome. Please come in.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l5-s1-t2",
+                    "who": "you",
+                    "ja": "おじゃまします。きれいな 部屋《へや》ですね。",
+                    "speak": "おじゃまします。きれいな へやですね。",
+                    "id_text": "Permisi. Kamarnya bagus, ya.",
+                    "en_text": "Excuse me. What a nice room.",
+                    "accept": [
+                        "おじゃまします。きれいな 部屋ですね。",
+                        "おじゃまします。きれいな へやですね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l5-s1-t3",
+                    "who": "partner",
+                    "ja": "ありがとう。ブディさんが 来《く》るので、花《はな》を 飾《かざ》って おきました。",
+                    "speak": "ありがとう。ブディさんが くるので、はなを かざって おきました。",
+                    "id_text": "Terima kasih. Karena Budi datang, saya menghias dengan bunga lebih dulu.",
+                    "en_text": "Thank you. Since you were coming, I decorated with flowers beforehand.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l5-s1-t4",
+                    "who": "you",
+                    "ja": "壁《かべ》にも きれいな 絵《え》が 掛《か》けて ありますね。",
+                    "speak": "かべにも きれいな えが かけて ありますね。",
+                    "id_text": "Di dinding juga tergantung lukisan yang bagus, ya.",
+                    "en_text": "There is a nice picture hanging on the wall too.",
+                    "accept": [
+                        "壁にも きれいな 絵が 掛けて ありますね。",
+                        "かべにも きれいな えが かけて ありますね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l5-s1-t5",
+                    "who": "partner",
+                    "ja": "それは 友達《ともだち》が くれた 絵《え》です。ジュースも 冷蔵庫《れいぞうこ》に 入《い》れて あります。",
+                    "speak": "それは ともだちが くれた えです。ジュースも れいぞうこに いれて あります。",
+                    "id_text": "Itu lukisan pemberian teman. Jusnya juga sudah dimasukkan ke kulkas.",
+                    "en_text": "A friend gave me that picture. There is juice in the fridge too.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l5-s1-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。いただきます。",
+                    "speak": "ありがとうございます。いただきます。",
+                    "id_text": "Terima kasih. Saya minum.",
+                    "en_text": "Thank you. I will have some.",
+                    "accept": [
+                        "ありがとうございます。いただきます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l5-s2",
+            "title_id": "Persiapan rapat",
+            "title_en": "Preparing for a meeting",
+            "setting_id": "Atasanmu memberi tahu apa yang harus disiapkan sebelum rapat.",
+            "setting_en": "Your boss tells you what to prepare before a meeting.",
+            "goal_id": "Bertanya dan menjawab persiapan dengan 〜て おきます.",
+            "goal_en": "Ask and answer about preparations with 〜て おきます.",
+            "patterns": [
+                "Vて おきます",
+                "何を して おいたら いいですか"
+            ],
+            "partner": {
+                "name": "森",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l5-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あしたは ミーティングが ありますね。",
+                    "speak": "ブディさん、あしたは ミーティングが ありますね。",
+                    "id_text": "Budi, besok ada rapat, ya.",
+                    "en_text": "Budi, there is a meeting tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l5-s2-t2",
+                    "who": "you",
+                    "ja": "はい。何《なに》を して おいたら いいですか。",
+                    "speak": "はい。なにを して おいたら いいですか。",
+                    "id_text": "Ya. Apa yang sebaiknya saya siapkan?",
+                    "en_text": "Yes. What should I do in advance?",
+                    "accept": [
+                        "はい。何を して おいたら いいですか。",
+                        "はい。何を しておいたら いいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l5-s2-t3",
+                    "who": "partner",
+                    "ja": "この お知《し》らせを 読《よ》んで おいて ください。",
+                    "speak": "この おしらせを よんで おいて ください。",
+                    "id_text": "Tolong baca pengumuman ini lebih dulu.",
+                    "en_text": "Please read this notice beforehand.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l5-s2-t4",
+                    "who": "you",
+                    "ja": "はい、読《よ》んで おきます。ほかに ありますか。",
+                    "speak": "はい、よんで おきます。ほかに ありますか。",
+                    "id_text": "Baik, akan saya baca. Ada yang lain?",
+                    "en_text": "Yes, I will. Is there anything else?",
+                    "accept": [
+                        "はい、読んで おきます。ほかに ありますか。",
+                        "はい、読んでおきます。ほかに ありますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l5-s2-t5",
+                    "who": "partner",
+                    "ja": "会議室《かいぎしつ》の いすを 並《なら》べて おいて ください。",
+                    "speak": "かいぎしつの いすを ならべて おいて ください。",
+                    "id_text": "Tolong tata kursi di ruang rapat lebih dulu.",
+                    "en_text": "Please line up the chairs in the meeting room.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l5-s2-t6",
+                    "who": "you",
+                    "ja": "わかりました。並《なら》べて おきます。",
+                    "speak": "わかりました。ならべて おきます。",
+                    "id_text": "Baik. Akan saya tata.",
+                    "en_text": "Understood. I will do it.",
+                    "accept": [
+                        "わかりました。並べて おきます。",
+                        "わかりました。ならべておきます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l5-s3",
+            "title_id": "Setelah kelas",
+            "title_en": "After class",
+            "setting_id": "Kelas selesai dan guru memberi petunjuk membereskan ruangan.",
+            "setting_en": "Class is over and the teacher gives instructions for tidying up.",
+            "goal_id": "Memahami そのままに して おいて ください dan まだ.",
+            "goal_en": "Understand そのままに して おいて ください and まだ.",
+            "patterns": [
+                "そのままに して おきます",
+                "まだ ＋ 〜て います"
+            ],
+            "partner": {
+                "name": "井上",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l5-s3-t1",
+                    "who": "partner",
+                    "ja": "授業《じゅぎょう》が 終《お》わりました。ポスターは そのままに して おいて ください。",
+                    "speak": "じゅぎょうが おわりました。ポスターは そのままに して おいて ください。",
+                    "id_text": "Kelas sudah selesai. Posternya tolong biarkan begitu saja.",
+                    "en_text": "Class is over. Please leave the poster as it is.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l5-s3-t2",
+                    "who": "you",
+                    "ja": "はい。ごみ箱《ばこ》は どう しましょうか。",
+                    "speak": "はい。ごみばこは どう しましょうか。",
+                    "id_text": "Baik. Bagaimana dengan tong sampahnya?",
+                    "en_text": "Yes. What shall I do about the trash can?",
+                    "accept": [
+                        "はい。ごみ箱は どう しましょうか。",
+                        "はい。ごみばこは どうしましょうか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l5-s3-t3",
+                    "who": "partner",
+                    "ja": "ごみ箱《ばこ》の ごみは 捨《す》てて おいて ください。",
+                    "speak": "ごみばこの ごみは すてて おいて ください。",
+                    "id_text": "Tolong buang dulu sampah di tong sampah.",
+                    "en_text": "Please empty the trash can.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l5-s3-t4",
+                    "who": "you",
+                    "ja": "わかりました。この 机《つくえ》も 片《かた》づけましょうか。",
+                    "speak": "わかりました。この つくえも かたづけましょうか。",
+                    "id_text": "Baik. Meja ini juga saya bereskan?",
+                    "en_text": "Understood. Shall I tidy this desk too?",
+                    "accept": [
+                        "わかりました。この 机も 片づけましょうか。",
+                        "わかりました。このつくえも かたづけましょうか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l5-s3-t5",
+                    "who": "partner",
+                    "ja": "まだ 使《つか》って いますから、そのままに して おいて ください。",
+                    "speak": "まだ つかって いますから、そのままに して おいて ください。",
+                    "id_text": "Masih saya pakai, jadi tolong biarkan begitu saja.",
+                    "en_text": "I am still using it, so please leave it as it is.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l5-s3-t6",
+                    "who": "you",
+                    "ja": "はい、わかりました。お先《さき》に 失礼《しつれい》します。",
+                    "speak": "はい、わかりました。おさきに しつれいします。",
+                    "id_text": "Baik. Permisi, saya pulang duluan.",
+                    "en_text": "Yes, understood. Excuse me for leaving first.",
+                    "accept": [
+                        "はい、わかりました。お先に 失礼します。",
+                        "はい、わかりました。おさきに しつれいします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l5-s4",
+            "title_id": "Hobi dan akhir pekan",
+            "title_en": "Hobbies and the weekend",
+            "setting_id": "Kamu mengobrol dengan teman tentang hari libur.",
+            "setting_en": "You chat with a friend about your days off.",
+            "goal_id": "Menyebut contoh dengan とか dan menolak dengan どこへも.",
+            "goal_en": "Give examples with とか and answer with どこへも.",
+            "patterns": [
+                "Ｎ とか Ｎ とか",
+                "どこ[へ]も 〜ません"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l5-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、休《やす》みの 日《ひ》は 何《なに》を して いますか。",
+                    "speak": "ブディさん、やすみの ひは なにを して いますか。",
+                    "id_text": "Budi, di hari libur kamu melakukan apa?",
+                    "en_text": "Budi, what do you do on your days off?",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l5-s4-t2",
+                    "who": "you",
+                    "ja": "そうですね。掃除《そうじ》とか 洗濯《せんたく》とか して います。",
+                    "speak": "そうですね。そうじとか せんたくとか して います。",
+                    "id_text": "Apa ya. Bersih-bersih, mencuci, dan sebagainya.",
+                    "en_text": "Let me see. Cleaning, laundry, and so on.",
+                    "accept": [
+                        "そうですね。掃除とか 洗濯とか して います。",
+                        "そうですね。そうじとか せんたくとか しています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l5-s4-t3",
+                    "who": "partner",
+                    "ja": "スポーツは しませんか。",
+                    "speak": "スポーツは しませんか。",
+                    "id_text": "Tidak berolahraga?",
+                    "en_text": "Do you not play sports?",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l5-s4-t4",
+                    "who": "you",
+                    "ja": "サッカーとか 水泳《すいえい》とか します。",
+                    "speak": "サッカーとか すいえいとか します。",
+                    "id_text": "Saya main sepak bola atau berenang.",
+                    "en_text": "I play soccer or go swimming.",
+                    "accept": [
+                        "サッカーとか 水泳とか します。",
+                        "サッカーとか すいえいとか します。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l5-s4-t5",
+                    "who": "partner",
+                    "ja": "きのうの 日曜日《にちようび》は どこかへ 行《い》きましたか。",
+                    "speak": "きのうの にちようびは どこかへ いきましたか。",
+                    "id_text": "Hari Minggu kemarin kamu pergi ke suatu tempat?",
+                    "en_text": "Did you go somewhere on Sunday?",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l5-s4-t6",
+                    "who": "you",
+                    "ja": "いいえ、どこへも 行《い》きませんでした。",
+                    "speak": "いいえ、どこへも いきませんでした。",
+                    "id_text": "Tidak, saya tidak pergi ke mana-mana.",
+                    "en_text": "No, I did not go anywhere.",
+                    "accept": [
+                        "いいえ、どこへも 行きませんでした。",
+                        "いいえ、どこも 行きませんでした。",
+                        "いいえ、どこへも いきませんでした。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l5-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。じゃ、今度《こんど》 いっしょに 行《い》きましょう。",
+                    "speak": "そうですか。じゃ、こんど いっしょに いきましょう。",
+                    "id_text": "Begitu. Kalau begitu, lain kali mari pergi bersama.",
+                    "en_text": "I see. Then let us go together next time.",
+                    "audio": "/audio/kaiwa/lesson-n4-5/n4l5-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

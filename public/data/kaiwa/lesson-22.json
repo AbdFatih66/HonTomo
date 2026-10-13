@@ -1,0 +1,398 @@
+{
+    "id": 22,
+    "level": "N5",
+    "title_id": "Pelajaran 22 — Menjelaskan Benda & Orang",
+    "title_en": "Lesson 22 — Describing Things & People",
+    "scenarios": [
+        {
+            "id": "l22-s1",
+            "title_id": "Membeli setelan",
+            "title_en": "Buying a suit",
+            "setting_id": "Di toko pakaian, kamu mencari setelan dan sweater.",
+            "setting_en": "At a clothing store, you look for a suit and a sweater.",
+            "goal_id": "Memakai anak kalimat penerang benda (Vの N) dan では.",
+            "goal_en": "Use relative clauses before nouns and dewa.",
+            "patterns": [
+                "V(普通形) N",
+                "お探しですか",
+                "では、〜を ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l22-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。何《なに》か お探《さが》しですか。",
+                    "speak": "いらっしゃいませ。なにか おさがしですか。",
+                    "id_text": "Selamat datang. Anda mencari sesuatu?",
+                    "en_text": "Welcome. Are you looking for something?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t1.mp3"
+                },
+                {
+                    "id": "l22-s1-t2",
+                    "who": "you",
+                    "ja": "はい、会社《かいしゃ》へ 着《き》て 行《い》く スーツが 欲《ほ》しいです。",
+                    "speak": "はい、かいしゃへ きて いく スーツが ほしいです。",
+                    "id_text": "Ya, saya ingin setelan yang dipakai ke kantor.",
+                    "accept": [
+                        "はい、会社へ 着て 行く スーツが 欲しいです。",
+                        "はい、会社へ着て行くスーツが欲しいです。"
+                    ],
+                    "en_text": "Yes, I want a suit to wear to the office.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t2.mp3"
+                },
+                {
+                    "id": "l22-s1-t3",
+                    "who": "partner",
+                    "ja": "あそこの 黒《くろ》い スーツは どうですか。",
+                    "speak": "あそこの くろい スーツは どうですか。",
+                    "id_text": "Bagaimana dengan setelan hitam di sana?",
+                    "en_text": "How about the black suit over there?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t3.mp3"
+                },
+                {
+                    "id": "l22-s1-t4",
+                    "who": "you",
+                    "ja": "いいですね。青《あお》い セーターも ありますか。",
+                    "speak": "いいですね。あおい セーターも ありますか。",
+                    "id_text": "Bagus. Apakah ada sweater biru juga?",
+                    "accept": [
+                        "いいですね。青い セーターも ありますか。",
+                        "いいですね。青いセーターもありますか。"
+                    ],
+                    "en_text": "Nice. Do you have a blue sweater too?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t4.mp3"
+                },
+                {
+                    "id": "l22-s1-t5",
+                    "who": "partner",
+                    "ja": "はい。去年《きょねん》の セーターは 安《やす》いですよ。",
+                    "speak": "はい。きょねんの セーターは やすいですよ。",
+                    "id_text": "Ada. Sweater tahun lalu murah lho.",
+                    "en_text": "Yes. Last year's sweaters are cheap.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t5.mp3"
+                },
+                {
+                    "id": "l22-s1-t6",
+                    "who": "you",
+                    "ja": "では、この スーツと 青《あお》い セーターを ください。",
+                    "speak": "では、この スーツと あおい セーターを ください。",
+                    "id_text": "Kalau begitu, tolong setelan ini dan sweater biru.",
+                    "accept": [
+                        "では、この スーツと 青い セーターを ください。",
+                        "では、このスーツと青いセーターをください。"
+                    ],
+                    "en_text": "Then I'll take this suit and the blue sweater, please.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t6.mp3"
+                },
+                {
+                    "id": "l22-s1-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。全部《ぜんぶ》で 九千円《きゅうせんえん》です。",
+                    "speak": "ありがとうございます。ぜんぶで きゅうせんえんです。",
+                    "id_text": "Terima kasih. Semuanya sembilan ribu yen.",
+                    "en_text": "Thank you. That's nine thousand yen in total.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l22-s2",
+            "title_id": "Mengenali orang di pesta",
+            "title_en": "Recognizing people at a party",
+            "setting_id": "Di pesta, kamu bertanya siapa orang-orang itu.",
+            "setting_en": "At a party, you ask who various people are.",
+            "goal_id": "Memakai anak kalimat: 〜て いる 人, 〜が 作った ケーキ.",
+            "goal_en": "Use relative clauses: ~te iru hito, ~ga tsukutta keeki.",
+            "patterns": [
+                "V(普通形) 人",
+                "Nが V(普通形) N",
+                "どれ"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l22-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あそこに 帽子《ぼうし》を かぶって いる 人《ひと》が いますね。",
+                    "speak": "ブディさん、あそこに ぼうしを かぶって いる ひとが いますね。",
+                    "id_text": "Budi, di sana ada orang yang memakai topi.",
+                    "en_text": "Budi, there's a person over there wearing a hat.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t1.mp3"
+                },
+                {
+                    "id": "l22-s2-t2",
+                    "who": "you",
+                    "ja": "ええ。あの 人《ひと》は だれですか。",
+                    "speak": "ええ。あの ひとは だれですか。",
+                    "id_text": "Ya. Orang itu siapa?",
+                    "accept": [
+                        "ええ。あの 人は だれですか。",
+                        "ええ。あの人はだれですか。"
+                    ],
+                    "en_text": "Yes. Who is that person?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t2.mp3"
+                },
+                {
+                    "id": "l22-s2-t3",
+                    "who": "partner",
+                    "ja": "ミラーさんの 友達《ともだち》です。眼鏡《めがね》を かけて いる 人《ひと》が ミラーさんです。",
+                    "speak": "ミラーさんの ともだちです。めがねを かけて いる ひとが ミラーさんです。",
+                    "id_text": "Teman Pak Miller. Yang memakai kacamata itu Pak Miller.",
+                    "en_text": "He's Mr. Miller's friend. The person wearing glasses is Mr. Miller.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t3.mp3"
+                },
+                {
+                    "id": "l22-s2-t4",
+                    "who": "you",
+                    "ja": "ああ、背《せ》が 高《たか》くて、髪《かみ》が 短《みじか》い 人《ひと》ですね。",
+                    "speak": "ああ、せが たかくて、かみが みじかい ひとですね。",
+                    "id_text": "Oh, orang yang tinggi dan rambutnya pendek itu ya.",
+                    "accept": [
+                        "ああ、背が 高くて、髪が 短い 人ですね。",
+                        "ああ、背が高くて、髪が短い人ですね。"
+                    ],
+                    "en_text": "Ah, the tall person with short hair.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t4.mp3"
+                },
+                {
+                    "id": "l22-s2-t5",
+                    "who": "partner",
+                    "ja": "そうです。ミラーさんが 作《つく》った ケーキを 食《た》べましたか。",
+                    "speak": "そうです。ミラーさんが つくった ケーキを たべましたか。",
+                    "id_text": "Benar. Sudahkah kamu makan kue buatan Pak Miller?",
+                    "en_text": "That's right. Have you eaten the cake Mr. Miller made?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t5.mp3"
+                },
+                {
+                    "id": "l22-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、まだです。どれですか。",
+                    "speak": "いいえ、まだです。どれですか。",
+                    "id_text": "Belum. Yang mana?",
+                    "accept": [
+                        "いいえ、まだです。どれですか。"
+                    ],
+                    "en_text": "No, not yet. Which one is it?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t6.mp3"
+                },
+                {
+                    "id": "l22-s2-t7",
+                    "who": "partner",
+                    "ja": "あの 白《しろ》い テーブルに ありますよ。",
+                    "speak": "あの しろい テーブルに ありますよ。",
+                    "id_text": "Ada di meja putih itu.",
+                    "en_text": "It's on that white table.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l22-s3",
+            "title_id": "Menolak ajakan dengan sopan",
+            "title_en": "Politely declining an invitation",
+            "setting_id": "Kamu diajak makan malam, tetapi punya janji dan keperluan lain.",
+            "setting_en": "You are invited to dinner but have other plans and errands.",
+            "goal_id": "Memakai V(kamus) 約束／用事／時間 dan 都合が 悪い.",
+            "goal_en": "Use V(dictionary) yakusoku / youji / jikan and tsugou ga warui.",
+            "patterns": [
+                "V(辞書形) 約束／用事／時間",
+                "都合が 悪いです"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l22-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、今日《きょう》の 晩《ばん》、いっしょに 食事《しょくじ》しませんか。",
+                    "speak": "ブディさん、きょうの ばん、いっしょに しょくじしませんか。",
+                    "id_text": "Budi, malam ini mau makan bersama?",
+                    "en_text": "Budi, would you like to have dinner together tonight?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t1.mp3"
+                },
+                {
+                    "id": "l22-s3-t2",
+                    "who": "you",
+                    "ja": "すみません、今晩《こんばん》は 友達《ともだち》と 会《あ》う 約束《やくそく》が あります。",
+                    "speak": "すみません、こんばんは ともだちと あう やくそくが あります。",
+                    "id_text": "Maaf, malam ini saya ada janji bertemu teman.",
+                    "accept": [
+                        "すみません、今晩は 友達と 会う 約束が あります。",
+                        "すみません、今晩は友達と会う約束があります。"
+                    ],
+                    "en_text": "I'm sorry, tonight I have an appointment to meet a friend.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t2.mp3"
+                },
+                {
+                    "id": "l22-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。明日《あした》は どうですか。",
+                    "speak": "そうですか。あしたは どうですか。",
+                    "id_text": "Begitu ya. Bagaimana dengan besok?",
+                    "en_text": "I see. How about tomorrow?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t3.mp3"
+                },
+                {
+                    "id": "l22-s3-t4",
+                    "who": "you",
+                    "ja": "明日《あした》は 都合《つごう》が 悪《わる》いです。銀行《ぎんこう》へ 行《い》く 用事《ようじ》が あります。",
+                    "speak": "あしたは つごうが わるいです。ぎんこうへ いく ようじが あります。",
+                    "id_text": "Besok kurang cocok. Saya ada keperluan pergi ke bank.",
+                    "accept": [
+                        "明日は 都合が 悪いです。銀行へ 行く 用事が あります。",
+                        "明日は都合が悪いです。銀行へ行く用事があります。"
+                    ],
+                    "en_text": "Tomorrow isn't convenient. I have an errand to go to the bank.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t4.mp3"
+                },
+                {
+                    "id": "l22-s3-t5",
+                    "who": "partner",
+                    "ja": "そうですか。来週《らいしゅう》の 土曜日《どようび》は 時間《じかん》が ありますか。",
+                    "speak": "そうですか。らいしゅうの どようびは じかんが ありますか。",
+                    "id_text": "Begitu ya. Apakah Sabtu minggu depan ada waktu?",
+                    "en_text": "I see. Do you have time next Saturday?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t5.mp3"
+                },
+                {
+                    "id": "l22-s3-t6",
+                    "who": "you",
+                    "ja": "はい、土曜日《どようび》は 暇《ひま》です。いっしょに 食事《しょくじ》しましょう。",
+                    "speak": "はい、どようびは ひまです。いっしょに しょくじしましょう。",
+                    "id_text": "Ya, hari Sabtu saya senggang. Mari kita makan bersama.",
+                    "accept": [
+                        "はい、土曜日は 暇です。いっしょに 食事しましょう。",
+                        "はい、土曜日は暇です。いっしょに食事しましょう。"
+                    ],
+                    "en_text": "Yes, I'm free on Saturday. Let's have a meal together.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t6.mp3"
+                },
+                {
+                    "id": "l22-s3-t7",
+                    "who": "partner",
+                    "ja": "いいですね。そうしましょう。",
+                    "speak": "いいですね。そうしましょう。",
+                    "id_text": "Bagus. Mari kita lakukan begitu.",
+                    "en_text": "Great. Let's do that.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l22-s4",
+            "title_id": "Melihat kamar",
+            "title_en": "Viewing a room",
+            "setting_id": "Kamu melihat kamar yang akan kamu tinggali bersama orang dari kantor.",
+            "setting_en": "You look at the room you will live in with a person from the company.",
+            "goal_id": "Memakai anak kalimat, 〜ましょうか, dan 〜なければなりません.",
+            "goal_en": "Use relative clauses, ~mashou ka, and ~nakereba narimasen.",
+            "patterns": [
+                "Nが V(普通形) N",
+                "Vましょうか",
+                "Vなくてもいいです"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l22-s4-t1",
+                    "who": "partner",
+                    "ja": "ここが ブディさんが 住《す》む 部屋《へや》ですよ。どうぞ。",
+                    "speak": "ここが ブディさんが すむ へやですよ。どうぞ。",
+                    "id_text": "Ini kamar yang akan Budi tinggali. Silakan.",
+                    "en_text": "This is the room you'll live in, Budi. Here you go.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t1.mp3"
+                },
+                {
+                    "id": "l22-s4-t2",
+                    "who": "you",
+                    "ja": "ありがとうございます。広《ひろ》い ダイニングキッチンですね。",
+                    "speak": "ありがとうございます。ひろい ダイニングキッチンですね。",
+                    "id_text": "Terima kasih. Ruang makan dengan dapurnya luas ya.",
+                    "accept": [
+                        "ありがとうございます。広い ダイニングキッチンですね。",
+                        "ありがとうございます。広いダイニングキッチンですね。"
+                    ],
+                    "en_text": "Thank you. It's a spacious dining kitchen.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t2.mp3"
+                },
+                {
+                    "id": "l22-s4-t3",
+                    "who": "partner",
+                    "ja": "ええ。和室《わしつ》も ありますよ。押《お》し入《い》れも あります。",
+                    "speak": "ええ。わしつも ありますよ。おしいれも あります。",
+                    "id_text": "Ya. Ada juga kamar ala Jepang. Ada juga lemari dinding.",
+                    "en_text": "Yes. There's a Japanese-style room too. And a closet.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t3.mp3"
+                },
+                {
+                    "id": "l22-s4-t4",
+                    "who": "you",
+                    "ja": "押《お》し入《い》れに 布団《ふとん》を 入《い》れても いいですか。",
+                    "speak": "おしいれに ふとんを いれても いいですか。",
+                    "id_text": "Bolehkah saya menaruh kasur futon di lemari dinding?",
+                    "accept": [
+                        "押し入れに 布団を 入れても いいですか。",
+                        "押し入れに布団を入れてもいいですか。"
+                    ],
+                    "en_text": "May I put my futon in the closet?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t4.mp3"
+                },
+                {
+                    "id": "l22-s4-t5",
+                    "who": "partner",
+                    "ja": "ええ、いいですよ。窓《まど》を 開《あ》けましょうか。",
+                    "speak": "ええ、いいですよ。まどを あけましょうか。",
+                    "id_text": "Ya, boleh. Mau saya bukakan jendela?",
+                    "en_text": "Yes, of course. Shall I open the window?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t5.mp3"
+                },
+                {
+                    "id": "l22-s4-t6",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。家賃《やちん》は 私《わたし》が 払《はら》わなければなりませんか。",
+                    "speak": "はい、おねがいします。やちんは わたしが はらわなければなりませんか。",
+                    "id_text": "Ya, tolong. Apakah uang sewa harus saya yang bayar?",
+                    "accept": [
+                        "はい、お願いします。家賃は 私が 払わなければなりませんか。",
+                        "はい、お願いします。家賃は私が払わなければなりませんか。"
+                    ],
+                    "en_text": "Yes, please. Do I have to pay the rent?",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t6.mp3"
+                },
+                {
+                    "id": "l22-s4-t7",
+                    "who": "partner",
+                    "ja": "いいえ、会社《かいしゃ》が 払《はら》いますから、払《はら》わなくてもいいですよ。",
+                    "speak": "いいえ、かいしゃが はらいますから、はらわなくてもいいですよ。",
+                    "id_text": "Tidak, karena perusahaan yang membayar, Anda tidak perlu membayar.",
+                    "en_text": "No, the company pays it, so you don't have to.",
+                    "audio": "/audio/kaiwa/lesson-22/l22-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

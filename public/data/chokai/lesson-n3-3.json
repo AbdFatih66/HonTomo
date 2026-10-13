@@ -1,0 +1,332 @@
+{
+    "id": "n3-3",
+    "level": "N3",
+    "focus": "N3 Pelajaran 3 — V(さ)せて もらえませんか／いただけませんか, Vる／Vない ことに する・している, ことに なる・なっている, Vて ほしい／Vないで ほしい, Vそうだ／Aそうだ, なさそう／Vそうも ない, Vた あと",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "山田です。明日の 研修の ことで お電話しました。"
+            },
+            {
+                "speaker": "female",
+                "text": "お電話、代わりました。どうかしましたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "急用が できて、明日 休ませて いただけないでしょうか。"
+            },
+            {
+                "speaker": "female",
+                "text": "困りましたね。でも、わかりました。"
+            },
+            {
+                "speaker": "male",
+                "text": "申し訳ありません。"
+            },
+            {
+                "speaker": "female",
+                "text": "気に しないで ください。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-3/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l3-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なん》の ことで 電話《でんわ》しましたか。",
+                "choices": [
+                    "新製品《しんせいひん》",
+                    "研修《けんしゅう》",
+                    "引《ひ》っ越《こ》し"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Tentang apa laki-laki itu menelepon? — Pelatihan.",
+                    "en": "What did the man call about? — The training."
+                }
+            },
+            {
+                "id": "n3l3-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は どう したいですか。",
+                "choices": [
+                    "明日《あした》 休《やす》みたいです",
+                    "明日《あした》 早《はや》く 来《き》たいです",
+                    "来週《らいしゅう》 休《やす》みたいです"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Apa yang ingin dilakukan laki-laki itu? — Ingin libur besok.",
+                    "en": "What does the man want? — To take tomorrow off."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l3-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "明日、早く 帰らせて もらえませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "どうしたんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "子どもの 学校で 面談が あるんです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "わかりました。いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 早《はや》く 帰《かえ》りたいですか。",
+            "choices": [
+                "病院《びょういん》に 行《い》くからです",
+                "子《こ》どもの 面談《めんだん》が あるからです",
+                "会議《かいぎ》が あるからです"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Mengapa laki-laki itu ingin pulang cepat? — Ada pertemuan orang tua di sekolah anaknya.",
+                "en": "Why does the man want to leave early? — He has a meeting at his child's school."
+            }
+        },
+        {
+            "id": "n3l3-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "来月から 毎朝 走る ことに しました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すごいですね。夜は 何か 食べない ことに していますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、甘い ものは 食べない ことに しています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q2.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 夜《よる》 何《なに》を 食《た》べない ことに して いますか。",
+            "choices": [
+                "甘《あま》い もの",
+                "肉《にく》",
+                "パン"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang tidak dimakan perempuan itu pada malam hari? — Makanan manis.",
+                "en": "What does the woman not eat at night? — Sweet things."
+            }
+        },
+        {
+            "id": "n3l3-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来月 大阪へ 転勤する ことに なりました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "えっ、本当ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ。会社では 三年ごとに 転勤する ことに なっているんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 転勤《てんきん》しますか。",
+            "choices": [
+                "自分《じぶん》で 決《き》めたからです",
+                "家《いえ》が 遠《とお》いからです",
+                "会社《かいしゃ》の きまりだからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa laki-laki itu dimutasi? — Karena aturan perusahaan.",
+                "en": "Why is the man being transferred? — It is a company rule."
+            }
+        },
+        {
+            "id": "n3l3-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "息子には もっと 勉強して ほしいんです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ゲームを よく しますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ。ゲームばかり しないで ほしいんですが。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 息子《むすこ》に 何《なに》を して ほしいですか。",
+            "choices": [
+                "ゲームを して ほしいです",
+                "勉強《べんきょう》して ほしいです",
+                "早《はや》く 寝《ね》て ほしいです"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa harapan perempuan itu pada putranya? — Agar belajar.",
+                "en": "What does the woman want her son to do? — Study."
+            }
+        },
+        {
+            "id": "n3l3-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あの 映画、見に 行きませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あまり おもしろくなさそうですね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃ、今日は 雨も やみそうも ありませんし、うちで DVDを 見ましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q5.mp3",
+            "prompt": "二人《ふたり》は 今日《きょう》 何《なに》を しますか。",
+            "choices": [
+                "映画館《えいがかん》で 映画《えいが》を 見《み》ます",
+                "家《いえ》で DVDを 見《み》ます",
+                "雨《あめ》の 中《なか》を 出《で》かけます"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang akan mereka lakukan hari ini? — Menonton DVD di rumah.",
+                "en": "What will they do today? — Watch a DVD at home."
+            }
+        },
+        {
+            "id": "n3l3-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "明日 早く 帰らせて いただけませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、帰《かえ》って いただきます。",
+                "いいえ、帰《かえ》りました。",
+                "はい、いいですよ。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Bolehkah saya pulang cepat besok? — Ya, boleh.",
+                "en": "May I leave early tomorrow? — Yes, that is fine."
+            }
+        },
+        {
+            "id": "n3l3-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "会議が 終わった あと、少し 時間 ありますか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、会議《かいぎ》の 前《まえ》です。",
+                "ええ、大丈夫《だいじょうぶ》です。",
+                "いいえ、終《お》わりました。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Setelah rapat, ada waktu? — Ya, tidak masalah.",
+                "en": "Do you have time after the meeting? — Yes, that is fine."
+            }
+        },
+        {
+            "id": "n3l3-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "見て！あの 皿、落ちそうですよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あっ、本当だ。ありがとう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q8.mp3",
+            "prompt": "皿《さら》は もう 落《お》ちました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Piringnya sudah jatuh. → ×",
+                "en": "The plate has already fallen. → ×"
+            }
+        },
+        {
+            "id": "n3l3-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "うちの 会社では 三年ごとに 転勤する ことに なっています。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "大変ですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 会社《かいしゃ》は 三年《さんねん》ごとに 転勤《てんきん》が あります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perusahaan laki-laki itu ada mutasi tiap tiga tahun. → ○",
+                "en": "The man's company has transfers every three years. → ○"
+            }
+        },
+        {
+            "id": "n3l3-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昼ごはんを 食べた あと、一緒に 資料を 確認しませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-3/n3l3-q10.mp3",
+            "prompt": "二人《ふたり》は 昼《ひる》ごはんの 前《まえ》に 資料《しりょう》を 確認《かくにん》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Mereka memeriksa materi sebelum makan siang. → ×",
+                "en": "They will check the materials before lunch. → ×"
+            }
+        }
+    ]
+}

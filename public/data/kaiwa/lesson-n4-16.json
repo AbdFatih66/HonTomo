@@ -1,0 +1,360 @@
+{
+    "id": 16,
+    "level": "N4",
+    "title_id": "Pelajaran 16 (N4): Selamat Menempuh Hidup Baru!",
+    "title_en": "N4 Lesson 16: Congratulations on Your New Life!",
+    "scenarios": [
+        {
+            "id": "n4l16-s1",
+            "title_id": "Menerima hadiah dari atasan",
+            "title_en": "A gift from your boss",
+            "setting_id": "Rekan kerja memuji tasmu. Kamu bercerita bahwa itu hadiah dari kepala bagian.",
+            "setting_en": "A colleague admires your bag. You say it was a gift from your department head.",
+            "goal_id": "Memakai いただきます dan くださいます dengan benar.",
+            "goal_en": "Use いただきます and くださいます correctly.",
+            "patterns": [
+                "いただきます",
+                "くださいます"
+            ],
+            "partner": {
+                "name": "田口",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l16-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、その かばん、いいですね。どこで 買《か》いましたか。",
+                    "speak": "ブディさん、その かばん、いいですね。どこで かいましたか。",
+                    "id_text": "Budi, tasmu bagus. Beli di mana?",
+                    "en_text": "Budi, that bag is nice. Where did you buy it?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l16-s1-t2",
+                    "who": "you",
+                    "ja": "いいえ、部長《ぶちょう》に いただいたんです。",
+                    "speak": "いいえ、ぶちょうに いただいたんです。",
+                    "id_text": "Bukan beli. Saya menerimanya dari kepala bagian.",
+                    "en_text": "No, I received it from my department head.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s1-t2.mp3",
+                    "accept": [
+                        "いいえ、部長に いただいたんです。",
+                        "いいえ、ぶちょうに いただいたんです。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。いつ いただきましたか。",
+                    "speak": "そうですか。いつ いただきましたか。",
+                    "id_text": "Begitu. Kapan Anda menerimanya?",
+                    "en_text": "I see. When did you receive it?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l16-s1-t4",
+                    "who": "you",
+                    "ja": "先週《せんしゅう》の 誕生日《たんじょうび》に 部長《ぶちょう》が くださいました。",
+                    "speak": "せんしゅうの たんじょうびに ぶちょうが くださいました。",
+                    "id_text": "Pada ulang tahun saya minggu lalu, kepala bagian memberikannya.",
+                    "en_text": "The department head gave it to me on my birthday last week.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s1-t4.mp3",
+                    "accept": [
+                        "先週の 誕生日に 部長が くださいました。",
+                        "せんしゅうの たんじょうびに ぶちょうが くださいました。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s1-t5",
+                    "who": "partner",
+                    "ja": "いい 部長《ぶちょう》ですね。",
+                    "speak": "いい ぶちょうですね。",
+                    "id_text": "Kepala bagian yang baik, ya.",
+                    "en_text": "What a good department head.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l16-s1-t6",
+                    "who": "you",
+                    "ja": "はい。毎日《まいにち》 使《つか》います。",
+                    "speak": "はい。まいにち つかいます。",
+                    "id_text": "Ya. Saya memakainya setiap hari.",
+                    "en_text": "Yes. I use it every day.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s1-t6.mp3",
+                    "accept": [
+                        "はい。毎日 使います。",
+                        "はい。まいにち つかいます。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l16-s2",
+            "title_id": "Merawat anjing",
+            "title_en": "Taking care of a dog",
+            "setting_id": "Teman kerja bertanya tentang anjingmu di rumah. Kamu bercerita tentang memberi makan dan mengajaknya jalan.",
+            "setting_en": "A coworker asks about your dog at home. You talk about feeding and walking it.",
+            "goal_id": "Memakai やります dan 〜て あげます.",
+            "goal_en": "Use やります and 〜て あげます.",
+            "patterns": [
+                "やります",
+                "Vて あげます／やります"
+            ],
+            "partner": {
+                "name": "ケン",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l16-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの うちに 犬《いぬ》が いますか。",
+                    "speak": "ブディさんの うちに いぬが いますか。",
+                    "id_text": "Apakah di rumah Budi ada anjing?",
+                    "en_text": "Do you have a dog at home, Budi?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l16-s2-t2",
+                    "who": "you",
+                    "ja": "はい、います。毎朝《まいあさ》 えさを やります。",
+                    "speak": "はい、います。まいあさ えさを やります。",
+                    "id_text": "Ya, ada. Setiap pagi saya memberinya makan.",
+                    "en_text": "Yes, I do. I feed it every morning.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s2-t2.mp3",
+                    "accept": [
+                        "はい、います。毎朝 えさを やります。",
+                        "はい、います。まいあさ えさを やります。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s2-t3",
+                    "who": "partner",
+                    "ja": "散歩《さんぽ》も しますか。",
+                    "speak": "さんぽも しますか。",
+                    "id_text": "Apakah Anda juga mengajaknya jalan-jalan?",
+                    "en_text": "Do you walk it too?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l16-s2-t4",
+                    "who": "you",
+                    "ja": "はい。毎晩《まいばん》 散歩《さんぽ》に 連《つ》れて 行《い》って あげます。",
+                    "speak": "はい。まいばん さんぽに つれて いって あげます。",
+                    "id_text": "Ya. Setiap malam saya mengajaknya jalan-jalan.",
+                    "en_text": "Yes. I take it for a walk every evening.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s2-t4.mp3",
+                    "accept": [
+                        "はい。毎晩 散歩に 連れて 行って あげます。",
+                        "はい。まいばん さんぽに つれて いって あげます。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s2-t5",
+                    "who": "partner",
+                    "ja": "大変《たいへん》ですね。",
+                    "speak": "たいへんですね。",
+                    "id_text": "Repot, ya.",
+                    "en_text": "That sounds hard.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l16-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、犬《いぬ》が 好《す》きですから、楽《たの》しいです。",
+                    "speak": "いいえ、いぬが すきですから、たのしいです。",
+                    "id_text": "Tidak, saya suka anjing, jadi menyenangkan.",
+                    "en_text": "No, I like dogs, so it is fun.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s2-t6.mp3",
+                    "accept": [
+                        "いいえ、犬が 好きですから、楽しいです。",
+                        "いいえ、いぬが すきですから、たのしいです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l16-s3",
+            "title_id": "Meminta tolong kepada penjaga apartemen",
+            "title_en": "Asking the apartment manager for help",
+            "setting_id": "Pemanas di kamarmu tidak menyala. Kamu meminta penjaga apartemen untuk melihatnya.",
+            "setting_en": "The heater in your room will not turn on. You ask the apartment manager to take a look.",
+            "goal_id": "Meminta dengan sopan memakai 〜て くださいませんか.",
+            "goal_en": "Ask politely with 〜て くださいませんか.",
+            "patterns": [
+                "〜んですが",
+                "Vて くださいませんか"
+            ],
+            "partner": {
+                "name": "井上",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l16-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、どうしましたか。",
+                    "speak": "ブディさん、どうしましたか。",
+                    "id_text": "Budi, ada apa?",
+                    "en_text": "Budi, what is the matter?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l16-s3-t2",
+                    "who": "you",
+                    "ja": "すみません。部屋《へや》の 暖房《だんぼう》が つかないんですが、見《み》て くださいませんか。",
+                    "speak": "すみません。へやの だんぼうが つかないんですが、みて くださいませんか。",
+                    "id_text": "Maaf. Pemanas kamar saya tidak menyala. Bisakah Anda melihatnya?",
+                    "en_text": "Sorry. The heater in my room will not turn on. Would you take a look?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s3-t2.mp3",
+                    "accept": [
+                        "すみません。部屋の 暖房が つかないんですが、見て くださいませんか。",
+                        "すみません。へやの だんぼうが つかないんですが、みて くださいませんか。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s3-t3",
+                    "who": "partner",
+                    "ja": "ええ、いいですよ。いつが いいですか。",
+                    "speak": "ええ、いいですよ。いつが いいですか。",
+                    "id_text": "Ya, boleh. Kapan waktunya yang cocok?",
+                    "en_text": "Sure. When is good for you?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l16-s3-t4",
+                    "who": "you",
+                    "ja": "今晩《こんばん》は どうですか。",
+                    "speak": "こんばんは どうですか。",
+                    "id_text": "Bagaimana kalau malam ini?",
+                    "en_text": "How about tonight?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s3-t4.mp3",
+                    "accept": [
+                        "今晩は どうですか。",
+                        "こんばんは どうですか。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s3-t5",
+                    "who": "partner",
+                    "ja": "はい、七時《しちじ》に 行《い》きます。",
+                    "speak": "はい、しちじに いきます。",
+                    "id_text": "Baik, saya datang jam tujuh.",
+                    "en_text": "All right, I will come at seven.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l16-s3-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。お願《ねが》いします。",
+                    "speak": "ありがとうございます。おねがいします。",
+                    "id_text": "Terima kasih. Mohon bantuannya.",
+                    "en_text": "Thank you. I appreciate it.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s3-t6.mp3",
+                    "accept": [
+                        "ありがとうございます。お願いします。",
+                        "ありがとうございます。おねがいします。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n4l16-s4",
+            "title_id": "Hadiah pernikahan",
+            "title_en": "A wedding gift",
+            "setting_id": "Temanmu akan menikah. Kamu berdiskusi dengan rekan tentang hadiahnya.",
+            "setting_en": "A friend is getting married. You discuss the gift with a colleague.",
+            "goal_id": "Memakai N に sebagai tanda perayaan (お祝いに).",
+            "goal_en": "Use N に for an occasion (お祝いに).",
+            "patterns": [
+                "お祝いに",
+                "あげます"
+            ],
+            "partner": {
+                "name": "森",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l16-s4-t1",
+                    "who": "partner",
+                    "ja": "来週《らいしゅう》、田口《たぐち》さんの 結婚式《けっこんしき》に 行《い》きますね。",
+                    "speak": "らいしゅう、たぐちさんの けっこんしきに いきますね。",
+                    "id_text": "Minggu depan Anda akan datang ke pernikahan Bu Taguchi, ya.",
+                    "en_text": "You are going to Ms. Taguchi wedding next week, right?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l16-s4-t2",
+                    "who": "you",
+                    "ja": "はい。お祝《いわ》いに 何《なに》を あげたら いいですか。",
+                    "speak": "はい。おいわいに なにを あげたら いいですか。",
+                    "id_text": "Ya. Sebaiknya saya memberi apa sebagai hadiah?",
+                    "en_text": "Yes. What should I give as a gift?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s4-t2.mp3",
+                    "accept": [
+                        "はい。お祝いに 何を あげたら いいですか。",
+                        "はい。おいわいに なにを あげたら いいですか。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s4-t3",
+                    "who": "partner",
+                    "ja": "きれいな お皿《さら》は どうですか。",
+                    "speak": "きれいな おさらは どうですか。",
+                    "id_text": "Bagaimana kalau piring yang cantik?",
+                    "en_text": "How about some pretty plates?",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l16-s4-t4",
+                    "who": "you",
+                    "ja": "いいですね。じゃ、お皿《さら》を あげます。",
+                    "speak": "いいですね。じゃ、おさらを あげます。",
+                    "id_text": "Bagus. Kalau begitu, saya akan memberi piring.",
+                    "en_text": "Good idea. Then I will give plates.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s4-t4.mp3",
+                    "accept": [
+                        "いいですね。じゃ、お皿を あげます。",
+                        "いいですね。じゃ、おさらを あげます。"
+                    ]
+                },
+                {
+                    "id": "n4l16-s4-t5",
+                    "who": "partner",
+                    "ja": "わたしも いっしょに あげます。",
+                    "speak": "わたしも いっしょに あげます。",
+                    "id_text": "Saya juga ikut memberikannya.",
+                    "en_text": "I will give them together with you.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l16-s4-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。「どうぞ お幸《しあわ》せに」と 言《い》いましょう。",
+                    "speak": "ありがとうございます。「どうぞ おしあわせに」と いいましょう。",
+                    "id_text": "Terima kasih. Mari kita ucapkan selamat berbahagia.",
+                    "en_text": "Thank you. Let us say congratulations.",
+                    "audio": "/audio/kaiwa/lesson-n4-16/n4l16-s4-t6.mp3",
+                    "accept": [
+                        "ありがとうございます。「どうぞ お幸せに」と 言いましょう。",
+                        "ありがとうございます。「どうぞ おしあわせに」と いいましょう。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

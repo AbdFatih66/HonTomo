@@ -1,0 +1,288 @@
+{
+    "id": "n4-25",
+    "level": "N4",
+    "focus": "謙譲語 (お〜します, ご〜します, 申します, 参ります, いたします)",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、おまたせしました。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、いま まいった ところです。"
+            },
+            {
+                "speaker": "female",
+                "text": "きょうは あんない します。こちらへ どうぞ。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、よろしく おねがいします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-25/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l25-kq1",
+                "audio": null,
+                "prompt": "男《おとこ》の 人《ひと》は いつ 来《き》ましたか。",
+                "choices": [
+                    "たった今《いま》",
+                    "昨日《きのう》",
+                    "一時間《いちじかん》 前《まえ》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Laki-laki itu baru saja tiba.",
+                    "en": "The man has only just arrived."
+                }
+            },
+            {
+                "id": "n4l25-kq2",
+                "audio": null,
+                "prompt": "女《おんな》の 人《ひと》は 何《なに》を しますか。",
+                "choices": [
+                    "案内《あんない》する",
+                    "食《た》べる",
+                    "帰《かえ》る"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Perempuan itu akan memandu.",
+                    "en": "The woman will guide him."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l25-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あしたの さんじに うかがいます。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、おまちして おります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は いつ 行《い》きますか。",
+            "choices": [
+                "今日《きょう》の 三時《さんじ》",
+                "明日《あした》の 三時《さんじ》",
+                "明日《あした》の 二時《にじ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu berkunjung besok jam tiga.",
+                "en": "The man will visit at three tomorrow."
+            }
+        },
+        {
+            "id": "n4l25-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "はじめまして。ブディと もうします。インドネシアから まいりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q2.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どこから 来《き》ましたか。",
+            "choices": [
+                "日本《にほん》",
+                "インドネシア",
+                "アメリカ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu datang dari Indonesia.",
+                "en": "The man comes from Indonesia."
+            }
+        },
+        {
+            "id": "n4l25-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この しりょうは、きのう はいけんしました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いかがでしたか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q3.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 資料《しりょう》を いつ 見《み》ましたか。",
+            "choices": [
+                "昨日《きのう》",
+                "今日《きょう》",
+                "明日《あした》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu melihat materi kemarin.",
+                "en": "The woman looked at the materials yesterday."
+            }
+        },
+        {
+            "id": "n4l25-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "かいぎの しりょうを おおくりします。メールアドレスを おしえて ください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なに》を 送《おく》りますか。",
+            "choices": [
+                "写真《しゃしん》",
+                "地図《ちず》",
+                "会議《かいぎ》の 資料《しりょう》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Perempuan itu mengirim materi rapat.",
+                "en": "The woman will send the meeting materials."
+            }
+        },
+        {
+            "id": "n4l25-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした、くうこうまで おむかえに まいります。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q5.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なに》を しますか。",
+            "choices": [
+                "空港《くうこう》へ 迎《むか》えに 行《い》く",
+                "空港《くうこう》で 待《ま》つ",
+                "空港《くうこう》から 電話《でんわ》する"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu menjemput di bandara besok.",
+                "en": "The man will go to the airport to meet her tomorrow."
+            }
+        },
+        {
+            "id": "n4l25-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この にもつを おもちしましょうか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なん》と 答《こた》えますか。",
+            "choices": [
+                "はい、持《も》ちます。",
+                "いいえ、持《も》って いません。",
+                "ありがとうございます。お願《ねが》いします。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Maukah saya bawakan barang ini? ...Terima kasih, tolong ya.",
+                "en": "Shall I carry this luggage? ...Thank you, please do."
+            }
+        },
+        {
+            "id": "n4l25-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ちょうど いま、ブディさんに おでんわしようと おもって おりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q7.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 何《なに》を しようと して いましたか。",
+            "choices": [
+                "電話《でんわ》を する",
+                "メールを 送《おく》る",
+                "会《あ》いに 行《い》く"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu hendak menelepon Budi.",
+                "en": "The woman was about to phone Budi."
+            }
+        },
+        {
+            "id": "n4l25-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした、わたしが ごあんないします。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q8.mp3",
+            "prompt": "男《おとこ》の 人《ひと》が 案内《あんない》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu yang memandu. ...Benar (○).",
+                "en": "The man will be the guide. ...True (○)."
+            }
+        },
+        {
+            "id": "n4l25-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは、にほんごを べんきょうして おります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q9.mp3",
+            "prompt": "ブディさんは 日本語《にほんご》を 勉強《べんきょう》して いません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Budi tidak belajar bahasa Jepang. ...Salah (×).",
+                "en": "Budi is not studying Japanese. ...False (×)."
+            }
+        },
+        {
+            "id": "n4l25-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あとで おでんわします。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "おまちして おります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-25/n4l25-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》が 電話《でんわ》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu yang menelepon. ...Salah (×).",
+                "en": "The woman will phone. ...False (×)."
+            }
+        }
+    ]
+}

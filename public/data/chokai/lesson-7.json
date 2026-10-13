@@ -1,0 +1,329 @@
+{
+    "id": 7,
+    "focus": "Memberi, menerima, meminjam — あげます・もらいます・貸します・借ります、〜で（alat/bahasa）、もう・まだ",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、そのペン、いいですね。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。姉にもらいました。"
+            },
+            {
+                "speaker": "male",
+                "text": "そうですか。田口さんは、お姉さんに何をあげましたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "本をあげました。ブディさんは、日本の友達に何をあげますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "国のお茶をあげます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-7/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l7-kq1",
+                "prompt": "田口《たぐち》さんは　だれに　ペンを　もらいましたか。",
+                "choices": [
+                    "姉《あね》にもらいました",
+                    "父《ちち》にもらいました",
+                    "友達《ともだち》にもらいました"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Taguchi bilang pena itu dia dapat dari kakak perempuannya. Jawaban: dari kakak perempuan.",
+                    "en": "Taguchi says she got the pen from her older sister. Answer: from her older sister."
+                }
+            },
+            {
+                "id": "l7-kq2",
+                "prompt": "ブディさんは　日本《にほん》の　友達《ともだち》に　何《なに》を　あげますか。",
+                "choices": [
+                    "国《くに》のお茶《ちゃ》をあげます",
+                    "本《ほん》をあげます",
+                    "花《はな》をあげます"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi menjawab akan memberi teh dari negaranya. Jawaban: teh dari negaranya.",
+                    "en": "Budi says he will give tea from his country. Answer: tea from his country."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l7-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさん、もう、レポートを書きましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、まだです。あした、書きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q1.mp3",
+            "prompt": "ハンさんは　いつ　レポートを　書《か》きますか。",
+            "choices": [
+                "きょう",
+                "あした",
+                "あさって"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Han, apakah laporan sudah kamu tulis?' 'Belum. Besok saya tulis.' Jawaban: besok.",
+                "en": "Audio: 'Han, have you written the report yet?' 'Not yet. I will write it tomorrow.' Answer: tomorrow."
+            }
+        },
+        {
+            "id": "l7-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ロペスさん、何で紙を切りますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はさみで切ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q2.mp3",
+            "prompt": "ロペスさんは　何《なに》で　紙《かみ》を　切《き》りますか。",
+            "choices": [
+                "ナイフ",
+                "はさみ",
+                "ペン"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Lopez, memotong kertas pakai apa?' 'Pakai gunting.' Jawaban: gunting.",
+                "en": "Audio: 'Lopez, what do you cut paper with?' 'I cut it with scissors.' Answer: scissors."
+            }
+        },
+        {
+            "id": "l7-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "だれにその時計をもらいましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "兄にもらいました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q3.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　だれに　時計《とけい》を　もらいましたか。",
+            "choices": [
+                "姉《あね》",
+                "父《ちち》",
+                "兄《あに》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Dari siapa kamu mendapat jam itu?' 'Dari kakak laki-laki saya.' Jawaban: kakak laki-laki.",
+                "en": "Audio: 'Who gave you that watch?' 'I got it from my older brother.' Answer: her older brother."
+            }
+        },
+        {
+            "id": "l7-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ダニさん、友達の誕生日に、何をあげますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "シャツをあげます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q4.mp3",
+            "prompt": "ダニさんは　友達《ともだち》の　誕生日《たんじょうび》に　何《なに》を　あげますか。",
+            "choices": [
+                "かさ",
+                "シャツ",
+                "花《はな》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Dani, untuk ulang tahun teman kamu memberi apa?' 'Saya memberi kemeja.' Jawaban: kemeja.",
+                "en": "Audio: 'Dani, what will you give your friend for their birthday?' 'I will give a shirt.' Answer: a shirt."
+            }
+        },
+        {
+            "id": "l7-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさんは、日本語で手紙を書きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、英語で書きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　何《なに》で　手紙《てがみ》を　書《か》きますか。",
+            "choices": [
+                "日本語《にほんご》",
+                "英語《えいご》",
+                "インドネシア語《ご》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Han, apakah kamu menulis surat dalam bahasa Jepang?' 'Tidak, saya menulis dalam bahasa Inggris.' Jawaban: bahasa Inggris.",
+                "en": "Audio: 'Han, do you write letters in Japanese?' 'No, I write them in English.' Answer: English."
+            }
+        },
+        {
+            "id": "l7-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、もう、切符を買いましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、まだです。きょうの午後、買います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　いつ　切符《きっぷ》を　買《か》いますか。",
+            "choices": [
+                "あしたの　朝《あさ》",
+                "きょうの　午後《ごご》",
+                "きのうの　晩《ばん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kapan si perempuan membeli tiket? Jawaban: sore ini (belum, akan beli).",
+                "en": "When will the woman buy the ticket? Answer: this afternoon (not yet)."
+            }
+        },
+        {
+            "id": "l7-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、きのう、ゲイリーさんに何を借りましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "かさを借りました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q7.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　何《なに》を　借《か》りましたか。",
+            "choices": [
+                "辞書《じしょ》",
+                "かぎ",
+                "かさ"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Si laki-laki meminjam apa? Jawaban: payung.",
+                "en": "What did the man borrow? Answer: an umbrella."
+            }
+        },
+        {
+            "id": "l7-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "スリさん、その荷物は、どこへ送りますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "国の家族に送ります。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "何で送りますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "船で送ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q8.mp3",
+            "prompt": "スリさんは　荷物《にもつ》を　飛行機《ひこうき》で　送《おく》ります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Suri mengirim paket dengan pesawat. Jawaban: Salah (×) — dengan kapal.",
+                "en": "Suri sends the package by plane. Answer: False (×) — by ship."
+            }
+        },
+        {
+            "id": "l7-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさん、パソコンで、レポートを書きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ。でも、そのパソコンは、友達に借りました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　パソコンを　友達《ともだち》に　借《か》りました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Si laki-laki meminjam komputer dari temannya. Jawaban: Benar (○).",
+                "en": "The man borrowed the computer from a friend. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l7-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、日本の友達に、プレゼントをもらいましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、先月、時計をもらいました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは、何をあげましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "日本語の辞書をあげました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-7/l7-q10.mp3",
+            "prompt": "ブディさんは　友達《ともだち》に　時計《とけい》を　あげました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Budi memberi jam kepada temannya. Jawaban: Salah (×) — dia menerima jam, dan memberi kamus.",
+                "en": "Budi gave his friend a watch. Answer: False (×) — he received the watch and gave a dictionary."
+            }
+        }
+    ]
+}

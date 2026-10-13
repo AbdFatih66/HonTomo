@@ -1,0 +1,83 @@
+# Laravel
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+
+# Environment files
+.env*
+!.env.example
+
+# Laravel / PHPUnit
+.phpactor.json
+.phpunit.result.cache
+
+# Laravel Homestead
+Homestead.json
+Homestead.yaml
+
+# Authentication
+/auth.json
+
+# Package managers / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE / Editor
+/.fleet
+/.idea
+/.nova
+/.zed
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/*.code-snippets
+!.vscode/tours
+
+# Other IDE files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Yarn
+.yarn
+
+# Logs
+logs
+*.log
+
+# Frontend build
+dist
+dist-ssr
+*.local
+
+# OS
+.DS_Store
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Iconify dist files
+resources/js/plugins/iconify/icons.css
+
+# MSW script
+public/mockServiceWorker.js
+
+# Local backup archives
+*.zip
+
+# Vite cache
+/.vite
+
+# Documentation
+/docs

@@ -1,0 +1,436 @@
+{
+    "id": 9,
+    "level": "N5",
+    "title_id": "Pelajaran 9 — Kesukaan & Kemampuan",
+    "title_en": "Lesson 9 — Likes & Abilities",
+    "scenarios": [
+        {
+            "id": "l9-s1",
+            "title_id": "Musik kesukaan",
+            "title_en": "Favorite music",
+            "setting_id": "Suzuki mengobrol soal selera musikmu.",
+            "setting_en": "Suzuki chats about your taste in music.",
+            "goal_id": "Memakai 〜が 好きです, どんな, よく／あまり, dan から.",
+            "goal_en": "Use ~ga suki desu, donna, yoku / amari, and kara.",
+            "patterns": [
+                "どんな KBが 好きですか",
+                "KBが 好きです",
+                "〜から、〜"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l9-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは どんな 音楽《おんがく》が 好《す》きですか。",
+                    "speak": "ブディさんは どんな おんがくが すきですか。",
+                    "id_text": "Budi, kamu suka musik seperti apa?",
+                    "en_text": "Budi, what kind of music do you like?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t1.mp3"
+                },
+                {
+                    "id": "l9-s1-t2",
+                    "who": "you",
+                    "ja": "ジャズが 好《す》きです。",
+                    "speak": "ジャズが すきです。",
+                    "id_text": "Aku suka jazz.",
+                    "accept": [
+                        "ジャズが 好きです。",
+                        "ジャズが好きです。"
+                    ],
+                    "en_text": "I like jazz.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t2.mp3"
+                },
+                {
+                    "id": "l9-s1-t3",
+                    "who": "partner",
+                    "ja": "そうですか。クラシックも 好《す》きですか。",
+                    "speak": "そうですか。クラシックも すきですか。",
+                    "id_text": "Oh begitu. Klasik juga suka?",
+                    "en_text": "I see. Do you like classical too?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t3.mp3"
+                },
+                {
+                    "id": "l9-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、あまり 好《す》きじゃ ありません。",
+                    "speak": "いいえ、あまり すきじゃ ありません。",
+                    "id_text": "Tidak, kurang suka.",
+                    "accept": [
+                        "いいえ、あまり 好きじゃ ありません。",
+                        "いいえ、あまり好きではありません。"
+                    ],
+                    "en_text": "No, I do not like it very much.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t4.mp3"
+                },
+                {
+                    "id": "l9-s1-t5",
+                    "who": "partner",
+                    "ja": "コンサートへ よく 行《い》きますか。",
+                    "speak": "コンサートへ よく いきますか。",
+                    "id_text": "Apakah sering pergi ke konser?",
+                    "en_text": "Do you often go to concerts?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t5.mp3"
+                },
+                {
+                    "id": "l9-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ、あまり 行《い》きません。",
+                    "speak": "いいえ、あまり いきません。",
+                    "id_text": "Tidak, jarang pergi.",
+                    "accept": [
+                        "いいえ、あまり 行きません。",
+                        "いいえ、あまり行きません。"
+                    ],
+                    "en_text": "No, I do not go much.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t6.mp3"
+                },
+                {
+                    "id": "l9-s1-t7",
+                    "who": "partner",
+                    "ja": "どうして ですか。",
+                    "speak": "どうして ですか。",
+                    "id_text": "Kenapa?",
+                    "en_text": "Why?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t7.mp3"
+                },
+                {
+                    "id": "l9-s1-t8",
+                    "who": "you",
+                    "ja": "お金《かね》が ありませんから。",
+                    "speak": "おかねが ありませんから。",
+                    "id_text": "Karena aku tidak punya uang.",
+                    "accept": [
+                        "お金が ありませんから。",
+                        "お金がありませんから。"
+                    ],
+                    "en_text": "Because I have no money.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l9-s2",
+            "title_id": "Alasan tidak bisa ikut",
+            "title_en": "Why you can't come",
+            "setting_id": "Suzuki mengajakmu karaoke, tetapi kamu punya urusan.",
+            "setting_en": "Suzuki invites you to karaoke, but you have something to do.",
+            "goal_id": "Memakai どうして dan 〜から untuk alasan.",
+            "goal_en": "Use doushite and ~kara for reasons.",
+            "patterns": [
+                "どうして 〜か",
+                "〜から、〜",
+                "〜ませんか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l9-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あした いっしょに カラオケへ 行《い》きませんか。",
+                    "speak": "ブディさん、あした いっしょに カラオケへ いきませんか。",
+                    "id_text": "Budi, besok pergi karaoke bersama?",
+                    "en_text": "Budi, shall we go to karaoke together tomorrow?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t1.mp3"
+                },
+                {
+                    "id": "l9-s2-t2",
+                    "who": "you",
+                    "ja": "すみません、あしたは ちょっと…。",
+                    "speak": "すみません、あしたは ちょっと…。",
+                    "id_text": "Maaf, besok agak…",
+                    "accept": [
+                        "すみません、あしたは ちょっと。"
+                    ],
+                    "en_text": "Sorry, tomorrow is a bit…",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t2.mp3"
+                },
+                {
+                    "id": "l9-s2-t3",
+                    "who": "partner",
+                    "ja": "どうして ですか。",
+                    "speak": "どうして ですか。",
+                    "id_text": "Kenapa?",
+                    "en_text": "Why?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t3.mp3"
+                },
+                {
+                    "id": "l9-s2-t4",
+                    "who": "you",
+                    "ja": "用事《ようじ》が ありますから。",
+                    "speak": "ようじが ありますから。",
+                    "id_text": "Karena aku ada urusan.",
+                    "accept": [
+                        "用事が ありますから。",
+                        "用事がありますから。"
+                    ],
+                    "en_text": "Because I have something to do.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t4.mp3"
+                },
+                {
+                    "id": "l9-s2-t5",
+                    "who": "partner",
+                    "ja": "そうですか。じゃ、あさっては どうですか。",
+                    "speak": "そうですか。じゃ、あさっては どうですか。",
+                    "id_text": "Oh begitu. Kalau lusa bagaimana?",
+                    "en_text": "I see. How about the day after tomorrow?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t5.mp3"
+                },
+                {
+                    "id": "l9-s2-t6",
+                    "who": "you",
+                    "ja": "あさっては 時間《じかん》が ありますから、行《い》きます。",
+                    "speak": "あさっては じかんが ありますから、いきます。",
+                    "id_text": "Lusa aku punya waktu, jadi aku ikut.",
+                    "accept": [
+                        "あさっては 時間が ありますから、行きます。",
+                        "あさっては時間がありますから、行きます。"
+                    ],
+                    "en_text": "I have time the day after tomorrow, so I will go.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t6.mp3"
+                },
+                {
+                    "id": "l9-s2-t7",
+                    "who": "partner",
+                    "ja": "じゃ、あさって 行《い》きましょう。",
+                    "speak": "じゃ、あさって いきましょう。",
+                    "id_text": "Kalau begitu, ayo pergi lusa.",
+                    "en_text": "Then let's go the day after tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t7.mp3"
+                },
+                {
+                    "id": "l9-s2-t8",
+                    "who": "you",
+                    "ja": "はい、あさって 行《い》きましょう。",
+                    "speak": "はい、あさって いきましょう。",
+                    "id_text": "Ya, ayo pergi lusa.",
+                    "accept": [
+                        "はい、あさって 行きましょう。",
+                        "はい、あさって行きましょう。"
+                    ],
+                    "en_text": "Yes, let's go the day after tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l9-s3",
+            "title_id": "Paham huruf Jepang?",
+            "title_en": "Do you understand Japanese writing?",
+            "setting_id": "Suzuki bertanya seberapa paham kamu pada tulisan Jepang.",
+            "setting_en": "Suzuki asks how well you understand Japanese writing.",
+            "goal_id": "Memakai 〜が わかります dengan よく／だいたい／少し／あまり.",
+            "goal_en": "Use ~ga wakarimasu with yoku / daitai / sukoshi / amari.",
+            "patterns": [
+                "KBが わかります",
+                "よく／だいたい／少し わかります",
+                "あまり わかりません"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l9-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 日本語《にほんご》が わかりますか。",
+                    "speak": "ブディさんは にほんごが わかりますか。",
+                    "id_text": "Budi, apakah kamu paham bahasa Jepang?",
+                    "en_text": "Budi, do you understand Japanese?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t1.mp3"
+                },
+                {
+                    "id": "l9-s3-t2",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し わかります。",
+                    "speak": "はい、すこし わかります。",
+                    "id_text": "Ya, sedikit paham.",
+                    "accept": [
+                        "はい、少し わかります。",
+                        "はい、少しわかります。"
+                    ],
+                    "en_text": "Yes, I understand a little.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t2.mp3"
+                },
+                {
+                    "id": "l9-s3-t3",
+                    "who": "partner",
+                    "ja": "漢字《かんじ》も わかりますか。",
+                    "speak": "かんじも わかりますか。",
+                    "id_text": "Kanji juga paham?",
+                    "en_text": "Do you understand kanji too?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t3.mp3"
+                },
+                {
+                    "id": "l9-s3-t4",
+                    "who": "you",
+                    "ja": "いいえ、あまり わかりません。",
+                    "speak": "いいえ、あまり わかりません。",
+                    "id_text": "Tidak, kurang paham.",
+                    "accept": [
+                        "いいえ、あまりわかりません。"
+                    ],
+                    "en_text": "No, not very well.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t4.mp3"
+                },
+                {
+                    "id": "l9-s3-t5",
+                    "who": "partner",
+                    "ja": "ひらがなは どうですか。",
+                    "speak": "ひらがなは どうですか。",
+                    "id_text": "Kalau hiragana?",
+                    "en_text": "What about hiragana?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t5.mp3"
+                },
+                {
+                    "id": "l9-s3-t6",
+                    "who": "you",
+                    "ja": "ひらがなは よく わかります。",
+                    "speak": "ひらがなは よく わかります。",
+                    "id_text": "Hiragana aku paham betul.",
+                    "accept": [
+                        "ひらがなは よくわかります。"
+                    ],
+                    "en_text": "I understand hiragana well.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t6.mp3"
+                },
+                {
+                    "id": "l9-s3-t7",
+                    "who": "partner",
+                    "ja": "かたかなは どうですか。",
+                    "speak": "かたかなは どうですか。",
+                    "id_text": "Kalau katakana?",
+                    "en_text": "And katakana?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t7.mp3"
+                },
+                {
+                    "id": "l9-s3-t8",
+                    "who": "you",
+                    "ja": "かたかなは だいたい わかります。",
+                    "speak": "かたかなは だいたい わかります。",
+                    "id_text": "Katakana aku paham kurang lebih.",
+                    "accept": [
+                        "かたかなは だいたいわかります。",
+                        "カタカナは だいたい わかります。"
+                    ],
+                    "en_text": "I understand katakana more or less.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l9-s4",
+            "title_id": "Olahraga dan masakan",
+            "title_en": "Sports and cooking",
+            "setting_id": "Tanaka bertanya tentang hobi dan keahlianmu.",
+            "setting_en": "Tanaka asks about your hobbies and skills.",
+            "goal_id": "Memakai 好き／上手／下手 dengan が.",
+            "goal_en": "Use suki / jouzu / heta with ga.",
+            "patterns": [
+                "KBが 好きです",
+                "KBが 上手／下手です",
+                "〜ですが、〜"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l9-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは スポーツが 好《す》きですか。",
+                    "speak": "ブディさんは スポーツが すきですか。",
+                    "id_text": "Budi, apakah kamu suka olahraga?",
+                    "en_text": "Budi, do you like sports?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t1.mp3"
+                },
+                {
+                    "id": "l9-s4-t2",
+                    "who": "you",
+                    "ja": "はい、サッカーが 好《す》きです。",
+                    "speak": "はい、サッカーが すきです。",
+                    "id_text": "Ya, aku suka sepak bola.",
+                    "accept": [
+                        "はい、サッカーが 好きです。",
+                        "はい、サッカーが好きです。"
+                    ],
+                    "en_text": "Yes, I like soccer.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t2.mp3"
+                },
+                {
+                    "id": "l9-s4-t3",
+                    "who": "partner",
+                    "ja": "サッカーは 上手《じょうず》ですか。",
+                    "speak": "サッカーは じょうずですか。",
+                    "id_text": "Apakah kamu pandai bermain sepak bola?",
+                    "en_text": "Are you good at soccer?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t3.mp3"
+                },
+                {
+                    "id": "l9-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ、あまり 上手《じょうず》じゃ ありません。",
+                    "speak": "いいえ、あまり じょうずじゃ ありません。",
+                    "id_text": "Tidak, tidak terlalu pandai.",
+                    "accept": [
+                        "いいえ、あまり 上手じゃ ありません。",
+                        "いいえ、あまり上手ではありません。"
+                    ],
+                    "en_text": "No, I am not very good.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t4.mp3"
+                },
+                {
+                    "id": "l9-s4-t5",
+                    "who": "partner",
+                    "ja": "料理《りょうり》は どうですか。",
+                    "speak": "りょうりは どうですか。",
+                    "id_text": "Kalau memasak?",
+                    "en_text": "What about cooking?",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t5.mp3"
+                },
+                {
+                    "id": "l9-s4-t6",
+                    "who": "you",
+                    "ja": "料理《りょうり》は 下手《へた》ですが、好《す》きです。",
+                    "speak": "りょうりは へたですが、すきです。",
+                    "id_text": "Memasak aku kurang pandai, tetapi suka.",
+                    "accept": [
+                        "料理は 下手ですが、好きです。",
+                        "料理は下手ですが、好きです。"
+                    ],
+                    "en_text": "I am bad at cooking, but I like it.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t6.mp3"
+                },
+                {
+                    "id": "l9-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-9/l9-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

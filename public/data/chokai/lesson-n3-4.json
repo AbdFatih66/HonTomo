@@ -1,0 +1,344 @@
+{
+    "id": "n3-4",
+    "level": "N3",
+    "focus": "N3 Pelajaran 4 — …ということだ, …の／…の？, 〜ちゃう・〜とく・〜てる, 〜(さ)せられる, 〜である, 連用形, …こと・…ということ, N１の N２, Vましたら・Vまして",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "お電話、ありがとうございます。ただいま 来客中です。"
+            },
+            {
+                "speaker": "male",
+                "text": "恐れ入りますが、田中部長は いらっしゃいますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "あいにく、ただいま 来客中です。"
+            },
+            {
+                "speaker": "male",
+                "text": "では、伝言を お願いします。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい、お受けします。"
+            },
+            {
+                "speaker": "male",
+                "text": "会議が 終わりましたら、お電話を いただけませんか。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-4/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l4-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は 何《なに》を 頼《たの》みましたか。",
+                "choices": [
+                    "注文《ちゅうもん》",
+                    "予約《よやく》",
+                    "伝言《でんごん》"
+                ],
+                "answer": 2,
+                "audio": null,
+                "translate": {
+                    "id": "Apa yang diminta laki-laki itu? — Menitip pesan.",
+                    "en": "What did the man ask for? — To leave a message."
+                }
+            },
+            {
+                "id": "n3l4-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は 部長《ぶちょう》に 何《なに》を して ほしいですか。",
+                "choices": [
+                    "会議《かいぎ》が 終《お》わったら 電話《でんわ》して ほしいです",
+                    "会議《かいぎ》に 出《で》て ほしいです",
+                    "会《あ》いに 来《き》て ほしいです"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Apa yang diinginkan laki-laki itu dari kepala bagian? — Menelepon setelah rapat.",
+                    "en": "What does the man want the department head to do? — Call after the meeting."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l4-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "山田さんから 電話が ありました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "何と 言っていましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "電車が 遅れていて、少し 遅れるということです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q1.mp3",
+            "prompt": "山田《やまだ》さんは どう しますか。",
+            "choices": [
+                "早《はや》く 来《き》ます",
+                "少《すこ》し 遅《おく》れて 来《き》ます",
+                "休《やす》みます"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang akan dilakukan Yamada? — Datang sedikit terlambat.",
+                "en": "What will Yamada do? — Come a little late."
+            }
+        },
+        {
+            "id": "n3l4-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "どこへ 行くの？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ちょっと 図書館へ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "何を 借りるの？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "日本語の 本。明日 試験なの。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q2.mp3",
+            "prompt": "女《おんな》の 人《ひと》は どうして 図書館《としょかん》へ 行《い》きますか。",
+            "choices": [
+                "友達《ともだち》に 会《あ》うからです",
+                "本《ほん》を 返《かえ》すからです",
+                "試験《しけん》が あるからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa perempuan itu pergi ke perpustakaan? — Karena besok ada ujian.",
+                "en": "Why is the woman going to the library? — She has an exam tomorrow."
+            }
+        },
+        {
+            "id": "n3l4-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あ、また 財布を 忘れちゃった。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "取りに 行く？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ううん、友達が 待ってるから、このまま 行っちゃう。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃあ、お金を 貸しとくよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q3.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なに》を しますか。",
+            "choices": [
+                "財布《さいふ》を 取《と》りに 行《い》きます",
+                "お金《かね》を 貸《か》します",
+                "友達《ともだち》を 待《ま》ちます"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang dilakukan laki-laki itu? — Meminjamkan uang.",
+                "en": "What does the man do? — He lends her money."
+            }
+        },
+        {
+            "id": "n3l4-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日の 飲み会、どうだった？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "疲れたよ。上司に 歌を 歌わされたんだ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それは 大変だったね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "その うえ、最後まで 付き合わされたよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 昨日《きのう》 上司《じょうし》に 何《なに》を させられましたか。",
+            "choices": [
+                "歌《うた》を 歌《うた》う こと",
+                "料理《りょうり》を 作《つく》る こと",
+                "運転《うんてん》する こと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang dipaksakan atasan kepada laki-laki itu? — Menyanyi.",
+                "en": "What did the boss make the man do? — Sing."
+            }
+        },
+        {
+            "id": "n3l4-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "息子さんは 最近 どうですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "新しい ゲームを 欲しがっているんです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "友達が 持っているからですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ。でも 私が 買わないので、悔しがっています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q5.mp3",
+            "prompt": "息子《むすこ》さんは どうして 悔《くや》しがって いますか。",
+            "choices": [
+                "友達《ともだち》が いないからです",
+                "試験《しけん》に 落《お》ちたからです",
+                "親《おや》が ゲームを 買《か》わないからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa putranya kesal? — Karena orang tua tidak membelikan game.",
+                "en": "Why is the son frustrated? — His parent will not buy him the game."
+            }
+        },
+        {
+            "id": "n3l4-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "どこへ 行くの？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、行《い》きます。",
+                "きのう 行《い》きました。",
+                "ちょっと 図書館《としょかん》へ。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mau ke mana? — Sebentar ke perpustakaan.",
+                "en": "Where are you going? — Just to the library."
+            }
+        },
+        {
+            "id": "n3l4-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "会議が 終わりましたら、お電話させて いただきます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "ありがとうございます。お待《ま》ちして おります。",
+                "いいえ、終《お》わりました。",
+                "はい、電話《でんわ》しました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Setelah rapat selesai, kami akan menelepon. — Terima kasih, kami tunggu.",
+                "en": "We will call you once the meeting ends. — Thank you, we will be waiting."
+            }
+        },
+        {
+            "id": "n3l4-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田中さんが 結婚した ことを 知って いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、聞きました。相手は 有名な 歌手だそうです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q8.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 田中《たなか》さんが 結婚《けっこん》した ことを 知《し》って います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu tahu Tanaka sudah menikah. → ○",
+                "en": "The woman knows Tanaka got married. → ○"
+            }
+        },
+        {
+            "id": "n3l4-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "これは 論文ですから、「である」で 書いて ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わかりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q9.mp3",
+            "prompt": "論文《ろんぶん》では 「だ」を 使《つか》います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Dalam makalah dipakai \"da\". → ×",
+                "en": "In a thesis, \"da\" is used. → ×"
+            }
+        },
+        {
+            "id": "n3l4-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "朝は 起きて、顔を 洗い、お茶を 飲み、新聞を 読みます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "忙しいですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-4/n3l4-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 朝《あさ》 コーヒーを 飲《の》みます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu minum kopi di pagi hari. → ×",
+                "en": "The woman drinks coffee in the morning. → ×"
+            }
+        }
+    ]
+}

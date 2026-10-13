@@ -1,0 +1,453 @@
+{
+  "level": "N5",
+  "section": "chokai",
+  "title": "聴解",
+  "minutes": 30,
+  "mondai": {
+    "1": {
+      "instruction": "はじめに しつもんを きいて ください。それから はなしを きいて、もんだいようしの 1から 4の なかから、いちばん いい ものを ひとつ えらんで ください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n5-test-1/l1-ex.mp3",
+        "answer": 2,
+        "choices": [
+          "電話《でんわ》を かける",
+          "手紙《てがみ》を 出《で》す",
+          "会議《かいぎ》に 出《で》る",
+          "コピーを する"
+        ],
+        "script": "れい。会社で 男の 人と 女の 人が 話して います。女の 人は、これから 何を しますか。\nM：田口さん、この 手紙を 出して くれませんか。\nF：はい。あ、でも、その 前に 電話を かけますね。\nM：ああ、電話は あとで いいですよ。手紙を お願いします。\nF：わかりました。\n女の 人は、これから 何を しますか。"
+      }
+    },
+    "2": {
+      "instruction": "はじめに しつもんを きいて ください。それから はなしを きいて、もんだいようしの 1から 4の なかから、いちばん いい ものを ひとつ えらんで ください。",
+      "answer_seconds": 10,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n5-test-1/l2-ex.mp3",
+        "answer": 3,
+        "choices": [
+          "電車《でんしゃ》",
+          "自転車《じてんしゃ》",
+          "バス",
+          "タクシー"
+        ],
+        "script": "れい。男の 人と 女の 人が 話して います。女の 人は、いつも 何で 会社へ 行きますか。\nM：田口さんは いつも 電車で 会社へ 行きますか。\nF：いいえ、電車は 人が 多いですから、バスで 行きます。\nM：そうですか。\n女の 人は、いつも 何で 会社へ 行きますか。"
+      }
+    },
+    "3": {
+      "instruction": "えを 見《み》ながら しつもんを きいて ください。やじるし（➡）の 人《ひと》は なんと いいますか。1から 3の なかから、いちばん いい ものを ひとつ えらんで ください。",
+      "answer_seconds": 6,
+      "audio": "/audio/jlpt-mock/n5-test-1/l3-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n5-test-1/l3-ex.mp3",
+        "answer": 2,
+        "choice_count": 3,
+        "image": {
+          "image": "/images/jlpt-mock/n5-test-1/l3-ex.png",
+          "alt": "Siswa bertemu guru di lorong sekolah pada pagi hari"
+        },
+        "arrow": {
+          "x": 50,
+          "y": 9
+        },
+        "script": "れい。朝、学校で 先生に 会いました。何と 言いますか。\nF：1。おやすみなさい。\nF：2。おはようございます。\nF：3。さようなら。"
+      }
+    },
+    "4": {
+      "instruction": "えなどが ありません。ぶんを きいて、1から 3の なかから、いちばん いい ものを ひとつ えらんで ください。",
+      "answer_seconds": 5,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-intro.mp3",
+      "example": {
+        "audio": "/audio/jlpt-mock/n5-test-1/l4-ex.mp3",
+        "answer": 1,
+        "choice_count": 3,
+        "script": "れい。\nF：今日は いい 天気ですね。\nM：1。そうですね。\nM：2。はい、いいです。\nM：3。いいえ、いません。"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "l1-1",
+      "no": 1,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-1.mp3",
+      "answer": 3,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-1-c1.png",
+          "alt": "Payung PANJANG hitam dengan garis putih"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-1-c2.png",
+          "alt": "Payung PENDEK hitam polos"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-1-c3.png",
+          "alt": "Payung PANJANG hitam polos"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-1-c4.png",
+          "alt": "Payung PENDEK hitam dengan garis putih"
+        }
+      ],
+      "script": "いちばん。店で 男の 人と 店の 人が 話して います。男の 人は、どの かさを 買いますか。\nM：すみません、かさを 買いたいです。\nF：はい。長い かさと 短い かさが ありますよ。\nM：長いのを ください。\nF：はい。黒い かさは、白い 線が 入って いるのと、黒だけのが ありますよ。\nM：線が ないのが いいです。\nF：はい、これですね。\n男の 人は、どの かさを 買いますか。",
+      "exp": "Pilih yang panjang (長い) dan tanpa garis (線が ない) → payung panjang hitam polos."
+    },
+    {
+      "id": "l1-2",
+      "no": 2,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-2.mp3",
+      "answer": 4,
+      "choices": [
+        "十《じゅう》二《に》時《じ》半《はん》",
+        "二《に》時《じ》",
+        "十《じゅう》二《に》時《じ》",
+        "一《いち》時《じ》"
+      ],
+      "script": "にばん。大学で 女の 学生と 男の 学生が 話して います。男の 学生は、今日、何時に 図書館へ 行きますか。\nF：ポールさん、今日は 図書館へ 行きますか。\nM：はい。二時から クラスが ありますから、その 一時間 前に 行きます。\nF：そうですか。じゃあ、わたしも 一緒に 行きます。\n男の 学生は、今日、何時に 図書館へ 行きますか。",
+      "exp": "Kelas pukul 2, pergi 1 jam sebelumnya → pukul 1."
+    },
+    {
+      "id": "l1-3",
+      "no": 3,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-3.mp3",
+      "answer": 4,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-3-c1.png",
+          "alt": "Sandwich saja"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-3-c2.png",
+          "alt": "Jus + sandwich"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-3-c3.png",
+          "alt": "Kue + jus"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-3-c4.png",
+          "alt": "Kue saja"
+        }
+      ],
+      "script": "さんばん。会社で 男の 人と 女の 人が 話して います。女の 人は、パーティーに 何を 持って 行きますか。\nM：土曜日の パーティー、何を 持って 行きましょうか。\nF：わたしは ケーキを 買って 行きます。ハンさんは?\nM：ぼくは サンドイッチを 作ります。\nF：飲み物は?\nM：それは ヌルさんが 持って 来ますよ。\nF：そうですか。じゃあ、わたしは ケーキだけ 持って 行きます。\n女の 人は、パーティーに 何を 持って 行きますか。",
+      "exp": "Wanita bilang: \"ケーキだけ\" (hanya kue)."
+    },
+    {
+      "id": "l1-4",
+      "no": 4,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-4.mp3",
+      "answer": 4,
+      "choices": [
+        "三《さん》番《ばん》線《せん》",
+        "一《いち》番《ばん》線《せん》",
+        "四《よん》番《ばん》線《せん》",
+        "二《に》番《ばん》線《せん》"
+      ],
+      "script": "よんばん。駅で 女の 人と 駅の 人が 話して います。女の 人は、何番線の 電車に 乗りますか。\nF：すみません、空港へ 行く 電車は 何番線ですか。\nM：一番線と 二番線です。でも、一番線は 今 工事で 止まって います。\nF：じゃあ、二番線ですね。\nM：はい、そうです。\n女の 人は、何番線の 電車に 乗りますか。",
+      "exp": "1番線 sedang berhenti (工事) → 2番線."
+    },
+    {
+      "id": "l1-5",
+      "no": 5,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-5.mp3",
+      "answer": 2,
+      "choices": [
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-5-c1.png",
+          "alt": "Makan sarapan"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-5-c2.png",
+          "alt": "Menyikat gigi"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-5-c3.png",
+          "alt": "Memeriksa isi tas"
+        },
+        {
+          "image": "/images/jlpt-mock/n5-test-1/l1-5-c4.png",
+          "alt": "Memakai sepatu"
+        }
+      ],
+      "script": "ごばん。家で 女の 人と 男の 学生が 話して います。男の 学生は、まず 何を しますか。\nF：もう 八時ですよ。朝ごはんは 食べましたか。\nM：はい、食べました。\nF：歯は みがきましたか。\nM：あ、まだです。\nF：早く みがいて、それから かばんの 中を 見て ください。\nM：はい、わかりました。\n男の 学生は、まず 何を しますか。",
+      "exp": "Sarapan sudah; gigi belum → menyikat gigi dulu, baru cek tas."
+    },
+    {
+      "id": "l1-6",
+      "no": 6,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-6.mp3",
+      "answer": 4,
+      "choices": [
+        "パンと たまご",
+        "たまごと 牛乳《ぎゅうにゅう》",
+        "パンと たまごと 牛乳《ぎゅうにゅう》",
+        "パンと 牛乳《ぎゅうにゅう》"
+      ],
+      "script": "ろくばん。男の 人と 女の 人が 話して います。二人は、何を 買いますか。\nF：スーパーで 何を 買いましょうか。\nM：パンと たまごと 牛乳が ありません。\nF：たまごは きのう 買いましたよ。\nM：あ、そうですか。じゃあ、パンと 牛乳ですね。\n二人は、何を 買いますか。",
+      "exp": "Telur sudah dibeli kemarin → hanya roti dan susu."
+    },
+    {
+      "id": "l1-7",
+      "no": 7,
+      "mondai": 1,
+      "audio": "/audio/jlpt-mock/n5-test-1/l1-7.mp3",
+      "answer": 4,
+      "choices": [
+        "月曜日《げつようび》",
+        "火曜日《かようび》",
+        "水曜日《すいようび》",
+        "木曜日《もくようび》"
+      ],
+      "script": "ななばん。会社で 男の 人と 女の 人が 話して います。会議は、何曜日ですか。\nF：会議は 火曜日ですか。\nM：いいえ、火曜日は 社長が いませんから、水曜日に なりました。\nF：水曜日は わたしが 休みです。\nM：じゃあ、木曜日は どうですか。\nF：木曜日は 大丈夫です。\n会議は、何曜日ですか。",
+      "exp": "Selasa (direktur tidak ada) → Rabu (wanita libur) → akhirnya Kamis."
+    },
+    {
+      "id": "l2-1",
+      "no": 1,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-1.mp3",
+      "answer": 2,
+      "choices": [
+        "四《よん》時《じ》",
+        "五《ご》時《じ》",
+        "六《ろく》時《じ》",
+        "七《なな》時《じ》"
+      ],
+      "script": "いちばん。電話で 男の 人と 女の 人が 話して います。女の 人は、何時に 行きますか。\nF：パーティーは 何時からですか。\nM：六時からです。でも、じゅんびが ありますから、一時間 早く 来て ください。\nF：わかりました。\n女の 人は、何時に 行きますか。",
+      "exp": "Mulai pukul 6, datang 1 jam lebih awal → pukul 5."
+    },
+    {
+      "id": "l2-2",
+      "no": 2,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-2.mp3",
+      "answer": 3,
+      "choices": [
+        "千円《せんえん》",
+        "二《に》千円《せんえん》",
+        "三《さん》千円《せんえん》",
+        "四《よん》千円《せんえん》"
+      ],
+      "script": "にばん。店で 男の 人と 店の 人が 話して います。男の 人が 買う ものは、全部で いくらですか。\nM：この Tシャツは いくらですか。\nF：二千円です。今日は 二枚 買うと、二枚目は 千円です。\nM：じゃあ、二枚 ください。\n男の 人が 買う ものは、全部で いくらですか。",
+      "exp": "2000 + 1000 = 3000 yen."
+    },
+    {
+      "id": "l2-3",
+      "no": 3,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-3.mp3",
+      "answer": 4,
+      "choices": [
+        "雨《あめ》",
+        "くもり",
+        "雪《ゆき》",
+        "はれ"
+      ],
+      "script": "さんばん。男の 人と 女の 人が 話して います。あしたの 午後の 天気は どうですか。\nF：あした、天気は どうですか。\nM：朝は 雨ですが、午後は はれます。\nF：夜は?\nM：夜は くもりです。\nあしたの 午後の 天気は どうですか。",
+      "exp": "Pertanyaan tentang SIANG hari (午後) → はれ."
+    },
+    {
+      "id": "l2-4",
+      "no": 4,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-4.mp3",
+      "answer": 1,
+      "choices": [
+        "熱《あつ》い コーヒー",
+        "冷《つめ》たい コーヒー",
+        "熱《あつ》い 紅茶《こうちゃ》",
+        "冷《つめ》たい 紅茶《こうちゃ》"
+      ],
+      "script": "よんばん。喫茶店で 男の 人と 女の 人が 話して います。女の 人は、何を 飲みますか。\nM：何を 飲みますか。今日は 暑いですから、冷たいのが いいですね。\nF：わたしは 熱いのが 好きです。\nM：紅茶も ありますよ。\nF：いいえ、コーヒーに します。\n女の 人は、何を 飲みますか。",
+      "exp": "Wanita suka yang panas dan memilih kopi."
+    },
+    {
+      "id": "l2-5",
+      "no": 5,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-5.mp3",
+      "answer": 2,
+      "choices": [
+        "くつと 飲《の》み物《もの》",
+        "くつと タオル",
+        "タオルと 飲《の》み物《もの》",
+        "くつと タオルと 飲《の》み物《もの》"
+      ],
+      "script": "ごばん。学校で 先生が 話して います。あした、学生は 何を 持って 来ますか。\nF：あしたは 体育館で 運動します。運動の くつと タオルを 持って 来て ください。飲み物は 学校に ありますから、いりません。\nあした、学生は 何を 持って 来ますか。",
+      "exp": "Bawa sepatu olahraga dan handuk; minuman tidak perlu."
+    },
+    {
+      "id": "l2-6",
+      "no": 6,
+      "mondai": 2,
+      "audio": "/audio/jlpt-mock/n5-test-1/l2-6.mp3",
+      "answer": 3,
+      "choices": [
+        "四《よん》時《じ》半《はん》",
+        "五《ご》時《じ》",
+        "五《ご》時《じ》半《はん》",
+        "六《ろく》時《じ》"
+      ],
+      "script": "ろくばん。男の 人と 女の 人が 話して います。女の 人は、あした 何時に 起きますか。\nM：あした、早い 電車に 乗りますか。\nF：ええ、六時の 電車ですから、五時半に 起きます。\nM：大変ですね。\n女の 人は、あした 何時に 起きますか。",
+      "exp": "Kereta pukul 6, bangun pukul 5.30."
+    },
+    {
+      "id": "l3-1",
+      "no": 1,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n5-test-1/l3-1.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n5-test-1/l3-1.png",
+        "alt": "Dua siswa duduk berdampingan; teman memegang buku"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "いちばん。友達の 本を 借りたいです。何と 言いますか。\nM：1。この 本を 貸しましょうか。\nM：2。この 本を 借りても いいですか。\nM：3。この 本を 借りて ください。",
+      "exp": "Meminta izin meminjam: 〜ても いいですか."
+    },
+    {
+      "id": "l3-2",
+      "no": 2,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n5-test-1/l3-2.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n5-test-1/l3-2.png",
+        "alt": "Seseorang berdiri di depan pintu rumah temannya"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "にばん。友達の 家に 着きました。ドアの 前で 何と 言いますか。\nF：1。ごめんください。\nF：2。いらっしゃいませ。\nF：3。ありがとうございました。",
+      "exp": "Ucapan saat bertamu di depan pintu: ごめんください."
+    },
+    {
+      "id": "l3-3",
+      "no": 3,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n5-test-1/l3-3.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n5-test-1/l3-3.png",
+        "alt": "Seseorang menerima kotak hadiah dari temannya"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "さんばん。友達に プレゼントを もらいました。何と 言いますか。\nF：1。どういたしまして。\nF：2。おめでとう。\nF：3。どうも ありがとう。",
+      "exp": "Menerima hadiah → どうも ありがとう."
+    },
+    {
+      "id": "l3-4",
+      "no": 4,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n5-test-1/l3-4.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n5-test-1/l3-4.png",
+        "alt": "Seseorang berbicara di telepon dengan wajah kesulitan mendengar"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "よんばん。電話で 友達の 声が 小さくて 聞こえません。何と 言いますか。\nM：1。もう 少し 小さい 声で 話して ください。\nM：2。もう 少し 大きい 声で 話して ください。\nM：3。もう 少し ゆっくり 歩いて ください。",
+      "exp": "Suara kecil → minta bicara dengan suara lebih besar."
+    },
+    {
+      "id": "l3-5",
+      "no": 5,
+      "mondai": 3,
+      "audio": "/audio/jlpt-mock/n5-test-1/l3-5.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "image": {
+        "image": "/images/jlpt-mock/n5-test-1/l3-5.png",
+        "alt": "Siswa di kelas mengangkat tangan, guru di papan tulis"
+      },
+      "arrow": {
+        "x": 50,
+        "y": 9
+      },
+      "script": "ごばん。先生の 話が わかりませんでした。もう 一度 聞きたいです。何と 言いますか。\nF：1。もう 一度 言って ください。\nF：2。もう 一度 言いましょう。\nF：3。もう 一度 聞きました。",
+      "exp": "Meminta pengulangan: もう 一度 言って ください."
+    },
+    {
+      "id": "l4-1",
+      "no": 1,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-1.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "いちばん。\nM：この りんごは いくらですか。\nF：1。二個です。\nF：2。百円です。\nF：3。あそこです。",
+      "exp": "Ditanya harga → 百円です."
+    },
+    {
+      "id": "l4-2",
+      "no": 2,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-2.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "にばん。\nF：お仕事は 何ですか。\nM：1。毎日 忙しいです。\nM：2。会社の 近くです。\nM：3。先生です。",
+      "exp": "Ditanya pekerjaan → 先生です."
+    },
+    {
+      "id": "l4-3",
+      "no": 3,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-3.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "さんばん。\nM：先週の 日曜日、何を しましたか。\nF：1。友達と 映画を 見ました。\nF：2。来週 見ます。\nF：3。映画は 好きです。",
+      "exp": "Ditanya apa yang dilakukan minggu lalu (lampau)."
+    },
+    {
+      "id": "l4-4",
+      "no": 4,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-4.mp3",
+      "answer": 2,
+      "choice_count": 3,
+      "script": "よんばん。\nF：日本語は 難しいですか。\nM：1。日本語の 本です。\nM：2。はい、ちょっと 難しいです。\nM：3。はい、勉強します。",
+      "exp": "Pertanyaan ya/tidak tentang sifat → はい、ちょっと 難しいです."
+    },
+    {
+      "id": "l4-5",
+      "no": 5,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-5.mp3",
+      "answer": 3,
+      "choice_count": 3,
+      "script": "ごばん。\nM：いつ 日本へ 来ましたか。\nF：1。飛行機で 来ました。\nF：2。友達と 来ます。\nF：3。去年の 四月です。",
+      "exp": "いつ = kapan → 去年の 四月です."
+    },
+    {
+      "id": "l4-6",
+      "no": 6,
+      "mondai": 4,
+      "audio": "/audio/jlpt-mock/n5-test-1/l4-6.mp3",
+      "answer": 1,
+      "choice_count": 3,
+      "script": "ろくばん。\nF：お先に 失礼します。\nM：1。お疲れさまでした。\nM：2。いらっしゃいませ。\nM：3。はじめまして。",
+      "exp": "Balasan untuk orang yang pulang duluan: お疲れさまでした."
+    }
+  ]
+}

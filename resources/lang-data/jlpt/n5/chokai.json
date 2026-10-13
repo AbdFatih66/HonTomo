@@ -1,0 +1,464 @@
+{
+  "level": "N5",
+  "section": "chokai",
+  "title": "聴解",
+  "minutes": 30,
+  "audio": {
+    "intro": 1,
+    "outro": 35
+  },
+  "mondai": {
+    "1": {
+      "instruction": "もんだい1では、はじめに しつもんを きいて ください。それから\nはなしを きいて、もんだいようしの 1から4の なかから、いちばん\nいい ものを ひとつ えらんで ください。",
+      "audio": 2,
+      "answer_seconds": 10,
+      "example": {
+        "choice_art": "book",
+        "choice_count": 4,
+        "answer": 3,
+        "audio": 3,
+        "script": "クラスで先生が話しています。学生は、今日家で、どこを勉強しますか。\nF：では、今日は20ページまで終わりましたから、21ページは宿題ですね。\nM：全部ですか。\nF：いえ、21ページの1番です。2番は、クラスでします。\n学生は、今日家で、どこを勉強しますか。"
+      }
+    },
+    "2": {
+      "instruction": "もんだい2では、はじめに しつもんを きいて ください。それから\nはなしを きいて、もんだいようしの 1から4の なかから、いちばん\nいい ものを ひとつ えらんで ください。",
+      "audio": 11,
+      "answer_seconds": 10,
+      "example": {
+        "choices": [
+          "としょかん",
+          "えき",
+          "デパート",
+          "レストラン"
+        ],
+        "answer": 3,
+        "audio": 12,
+        "script": "男の人と女の人が話しています。男の人は昨日、どこへ行きましたか。男の人です。\nM：山田さん、昨日どこかへ行きましたか。\nF：図書館へ行きました。\nM：駅のそばの図書館ですか。\nF：はい。\nM：僕は山川デパートへ行って、買い物をしました。\nF：え、私も昨日の夜、山川デパートのレストランへ行きましたよ。\nM：そうですか。\n男の人は昨日、どこへ行きましたか。"
+      }
+    },
+    "3": {
+      "instruction": "もんだい3では、えを みながら しつもんを きいて ください。\n➡（やじるし）の ひとは なんと いいますか。1から3の なかから、\nいちばん いい ものを ひとつ えらんで ください。",
+      "audio_before": 19,
+      "audio": 20,
+      "answer_seconds": 6,
+      "example": {
+        "image": {
+          "image": "/images/jlpt/n5/l3-ex.png",
+          "alt": "Restoran: pelanggan memanggil pelayan"
+        },
+        "choice_count": 3,
+        "answer": 3,
+        "audio": 21,
+        "script": "レストランでお店の人を呼びます。何と言いますか。\nF：1．いらっしゃいませ。\n　　2．失礼しました。\n　　3．すみません。",
+        "arrow": {
+          "x": 50,
+          "y": 9
+        }
+      }
+    },
+    "4": {
+      "instruction": "もんだい4は、えなどが ありません。ぶんを きいて、1から3の\nなかから、いちばん いい ものを ひとつ えらんで ください。",
+      "audio": 27,
+      "answer_seconds": 6,
+      "memo": true,
+      "example": {
+        "choice_count": 3,
+        "answer": 2,
+        "audio": 28,
+        "script": "F：お国はどちらですか。\nM：1．あちらです。\n　　2．アメリカです。\n　　3．部屋です。"
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "1-1",
+      "mondai": 1,
+      "no": 1,
+      "audio": 4,
+      "answer": 2,
+      "script": "靴下の店で、女の人と店の人が話しています。女の人は、どの靴下を買いますか。\nF：子供の靴下、ありますか。\nM：はい。長いのですか、短いのですか。\nF：長いのです。\nM：はい。果物の絵と動物の絵があります。どちらがいいですか。\nF：そうですね、動物のを下さい。\n女の人は、どの靴下を買いますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-1-c1.png",
+          "alt": "Kaus kaki PANJANG dengan gambar buah"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-1-c2.png",
+          "alt": "Kaus kaki PANJANG dengan gambar hewan (kucing dan anjing)"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-1-c3.png",
+          "alt": "Kaus kaki PENDEK dengan gambar buah"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-1-c4.png",
+          "alt": "Kaus kaki PENDEK dengan gambar hewan (kucing dan anjing)"
+        }
+      ]
+    },
+    {
+      "id": "1-2",
+      "mondai": 1,
+      "no": 2,
+      "audio": 5,
+      "answer": 2,
+      "choices": [
+        "1かい",
+        "2かい",
+        "3かい",
+        "4かい"
+      ],
+      "script": "病院で、医者と女の人が話しています。女の人は、一日に何回薬を飲みますか。\nM：この薬は、朝と夜、ご飯を食べたあとで飲んでください。\nF：昼ご飯のあとは？\nM：昼は飲まないでください。\nF：はい。\nM：4日間飲んでくださいね。\nF：分かりました。\n女の人は、一日に何回薬を飲みますか。"
+    },
+    {
+      "id": "1-3",
+      "mondai": 1,
+      "no": 3,
+      "audio": 6,
+      "answer": 3,
+      "image": {
+        "image": "/images/jlpt/n5/l1-3.png",
+        "alt": "Rak toko tas: empat tas bergantung berjajar (1 kecil terang, 2 besar terang, 3 besar hitam di atas, 4 kecil hitam di bawah)"
+      },
+      "choice_count": 4,
+      "script": "デパートで、女の人と店の人が話しています。店の人は、どのかばんを取りますか。\nF：すみません、その上の黒いかばんを取ってください。\nM：どちらですか。この小さいのですか。\nF：いいえ。大きいのです。\nM：はい。\n店の人は、どのかばんを取りますか。",
+      "marks": [
+        {
+          "x": 19,
+          "y": 7,
+          "text": "1"
+        },
+        {
+          "x": 42,
+          "y": 7,
+          "text": "2"
+        },
+        {
+          "x": 63,
+          "y": 7,
+          "text": "3"
+        },
+        {
+          "x": 85,
+          "y": 7,
+          "text": "4"
+        }
+      ]
+    },
+    {
+      "id": "1-4",
+      "mondai": 1,
+      "no": 4,
+      "audio": 7,
+      "answer": 3,
+      "script": "教室で、先生が話しています。学生は、机の上に何を置きますか。\nM：今からテストをします。このテストでは、辞書を使う問題がありますから、机の上に辞書を出してください。鉛筆と消しゴムも出してください。時計は、かばんの中に入れてください。\nF：先生、ノートはどうしますか。\nM：ノートもかばんの中に入れてください。\n学生は、机の上に何を置きますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-4-c1.png",
+          "alt": "Hanya dua pensil dan satu penghapus di atas meja"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-4-c2.png",
+          "alt": "Buku catatan + dua pensil + penghapus"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-4-c3.png",
+          "alt": "Kamus tebal + dua pensil + penghapus"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-4-c4.png",
+          "alt": "Jam tangan + dua pensil + penghapus"
+        }
+      ]
+    },
+    {
+      "id": "1-5",
+      "mondai": 1,
+      "no": 5,
+      "audio": 8,
+      "answer": 1,
+      "script": "バスの中で、旅行会社の人が学生に話しています。学生は、始めに何をしますか。\nF：皆さん、ホテルに着きました。今から1階のレストランで晩ご飯を食べます。晩ご飯は7時からです。今6時50分ですから、すぐに行ってください。皆さんの荷物は、ホテルの人が部屋に持っていきます。晩ご飯のあとは、テレビを見たり、買い物をしたりしてください。\n学生は、始めに何をしますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-5-c1.png",
+          "alt": "Dua orang makan malam di meja restoran"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-5-c2.png",
+          "alt": "Seorang wanita membawa koper masuk ke pintu kamar hotel"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-5-c3.png",
+          "alt": "Dua orang duduk di sofa menonton TV"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-5-c4.png",
+          "alt": "Seorang wanita berbelanja di toko oleh-oleh"
+        }
+      ]
+    },
+    {
+      "id": "1-6",
+      "mondai": 1,
+      "no": 6,
+      "audio": 9,
+      "answer": 4,
+      "script": "男の人と女の人が話しています。男の人は、何を持っていきますか。\nM：来週の日曜日、海へ行きますね。何を持っていきましょうか。\nF：私はおにぎりを持っていきます。\nM：じゃあ僕は。\nF：飲み物とお菓子をお願いします。\nM：はい。飲み物とお菓子ですね。\nF：あ、飲み物は重いですね。海に着いてから買いましょう。\nM：そうですね。\n男の人は、何を持っていきますか。",
+      "choices": [
+        {
+          "image": "/images/jlpt/n5/l1-6-c1.png",
+          "alt": "Empat onigiri"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-6-c2.png",
+          "alt": "Tiga botol minuman"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-6-c3.png",
+          "alt": "Minuman + camilan"
+        },
+        {
+          "image": "/images/jlpt/n5/l1-6-c4.png",
+          "alt": "Camilan saja (tanpa minuman)"
+        }
+      ]
+    },
+    {
+      "id": "1-7",
+      "mondai": 1,
+      "no": 7,
+      "audio": 10,
+      "answer": 4,
+      "choices": [
+        "1ばん",
+        "3ばん",
+        "5ばん",
+        "7ばん"
+      ],
+      "script": "バス停で、女の人とバス会社の人が話しています。女の人は、何番のバスに乗りますか。\nF：すみません、1番のバスはみどり駅に行きますか。\nM：いいえ、みどり駅に行くバスは3番と5番と7番ですよ。\nF：そうですか。\nM：あ、でも、今日は日曜日ですから、5番のバスはありません。\nF：そうですか。\nM：それから、3番は朝と夕方のバスですから、今の時間は7番ですね。\nF：分かりました。ありがとうございます。\n女の人は、何番のバスに乗りますか。"
+    },
+    {
+      "id": "2-1",
+      "mondai": 2,
+      "no": 1,
+      "audio": 13,
+      "answer": 4,
+      "choices": [
+        "1じかん",
+        "2じかん",
+        "3じかん",
+        "4じかん"
+      ],
+      "script": "大学で、男の学生と女の学生が話しています。女の学生は、今日、何時間勉強しますか。\nM：山田さんはいつも何時間ぐらい勉強しますか。\nF：うーん、毎日3時間ぐらいです。\nM：えっ、私は毎日1時間です。\nF：あ、でも、明日はテストがありますから、今日は4時間勉強します。\nM：そうですか。\n女の学生は、今日、何時間勉強しますか。"
+    },
+    {
+      "id": "2-2",
+      "mondai": 2,
+      "no": 2,
+      "audio": 14,
+      "answer": 3,
+      "choices": [
+        "512-7733",
+        "512-7734",
+        "512-7743",
+        "512-7744"
+      ],
+      "script": "男の人と女の人が話しています。女の人の電話番号は何番ですか。\nM：あのう、山田さんの電話番号は、512-7734ですね？\nF：いいえ、7734じゃなくて7743です。\nM：え、ちょっと待ってください。メモします。512の。\nF：7743です。\nM：はい。ありがとうございました。\n女の人の電話番号は何番ですか。"
+    },
+    {
+      "id": "2-3",
+      "mondai": 2,
+      "no": 3,
+      "audio": 15,
+      "answer": 2,
+      "choices": [
+        "りょうしん",
+        "あね",
+        "いもうと",
+        "おとうと"
+      ],
+      "script": "女の学生と男の学生が話しています。男の学生は、だれと住んでいますか。\nF：山田さんは、お父さんとお母さんと、一緒に住んでいますか。\nM：いえ、両親は遠くに住んでいます。\nF：そうですか。\nM：いま、姉と一緒に住んでいます。\nF：兄弟は一人ですか。\nM：あ、弟もいますよ。弟は両親と一緒です。\n男の学生は、だれと住んでいますか。"
+    },
+    {
+      "id": "2-4",
+      "mondai": 2,
+      "no": 4,
+      "audio": 16,
+      "answer": 4,
+      "choices": [
+        "しょくどう",
+        "きっさてん",
+        "パンや",
+        "きょうしつ"
+      ],
+      "script": "学校で男の学生と女の学生が話しています。二人はどこで昼ご飯を食べますか。\nM：もう1時ですね。何か食べませんか。\nF：そうですね。でも今日は土曜日だから、学校の、食堂や喫茶店は休みですよ。\nM：じゃ、パン屋でパンを買って、教室で食べましょうか。\nF：そうですね。\n二人はどこで昼ご飯を食べますか。"
+    },
+    {
+      "id": "2-5",
+      "mondai": 2,
+      "no": 5,
+      "audio": 17,
+      "answer": 1,
+      "choices": [
+        "くろい ボールペン",
+        "あかい ボールペン",
+        "くろい えんぴつ",
+        "あかい えんぴつ"
+      ],
+      "script": "教室で、先生が学生に話しています。学生は何で名前を書きますか。\nF：はい、じゃあちょっと聞いてください。えー、来月のバス旅行に行きたい人は、この紙に、ボールペンで名前を書いてください。鉛筆じゃなくて、ボールペンですよ。黒で書いてください。赤で書かないでくださいね。\n学生は何で名前を書きますか。"
+    },
+    {
+      "id": "2-6",
+      "mondai": 2,
+      "no": 6,
+      "audio": 18,
+      "answer": 3,
+      "choices": [
+        "こうえん",
+        "えき",
+        "きっさてん",
+        "レストラン"
+      ],
+      "script": "女の学生と男の学生が話しています。二人は明日どこで会いますか。\nF：明日の夜、一緒にサッカーを見に行きませんか。\nM：いいですね。どこで会いましょうか。\nF：5時に駅で会いませんか。\nM：駅は人が多いですよ。\nF：そうですね。じゃあ、駅の前の喫茶店はどうですか。\nM：はい、そうしましょう。あ、サッカーを見てから近くのレストランで晩ご飯を食べませんか。\nF：ええ。じゃ、明日5時に会いましょう。\n二人は明日どこで会いますか。"
+    },
+    {
+      "id": "3-1",
+      "mondai": 3,
+      "no": 1,
+      "audio": 22,
+      "answer": 1,
+      "image": {
+        "image": "/images/jlpt/n5/l3-1.png",
+        "alt": "Dua orang di meja makan setelah selesai makan"
+      },
+      "choice_count": 3,
+      "script": "ご飯を食べました。何と言いますか。\nF：1．ごちそうさまでした。\n　　2．いただきます。\n　　3．どういたしまして。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
+    },
+    {
+      "id": "3-2",
+      "mondai": 3,
+      "no": 2,
+      "audio": 23,
+      "answer": 3,
+      "image": {
+        "image": "/images/jlpt/n5/l3-2.png",
+        "alt": "Di kereta: orang duduk, seorang wanita berdiri di depannya"
+      },
+      "choice_count": 3,
+      "script": "電車の中です。女の人が来ました。何と言いますか。\nM：1．どうもありがとう。\n　　2．初めまして。\n　　3．ここ、どうぞ。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
+    },
+    {
+      "id": "3-3",
+      "mondai": 3,
+      "no": 3,
+      "audio": 24,
+      "answer": 2,
+      "image": {
+        "image": "/images/jlpt/n5/l3-3.png",
+        "alt": "Siswa di gerbang sekolah hendak pulang, melambai ke teman"
+      },
+      "choice_count": 3,
+      "script": "家へ帰ります。友達に何と言いますか。\nM：1．いってきます。\n　　2．じゃ、また。\n　　3．ただいま。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
+    },
+    {
+      "id": "3-4",
+      "mondai": 3,
+      "no": 4,
+      "audio": 25,
+      "answer": 3,
+      "image": {
+        "image": "/images/jlpt/n5/l3-4.png",
+        "alt": "Di kantor pos: pelanggan di depan loket petugas"
+      },
+      "choice_count": 3,
+      "script": "郵便局で切手を買います。何と言いますか。\nM：1．切手を買いませんか。\n　　2．切手をどうぞ。\n　　3．切手を下さい。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
+    },
+    {
+      "id": "3-5",
+      "mondai": 3,
+      "no": 5,
+      "audio": 26,
+      "answer": 2,
+      "image": {
+        "image": "/images/jlpt/n5/l3-5.png",
+        "alt": "Dua siswa di bangku; teman tidak punya pensil"
+      },
+      "choice_count": 3,
+      "script": "友達は鉛筆がありません。友達に何と言いますか。\nF：1．鉛筆、借りましょうか。\n　　2．鉛筆、使いますか。\n　　3．鉛筆、貸してください。",
+      "arrow": {
+        "x": 50,
+        "y": 9
+      }
+    },
+    {
+      "id": "4-1",
+      "mondai": 4,
+      "no": 1,
+      "audio": 29,
+      "answer": 1,
+      "choice_count": 3,
+      "script": "F：今日は何日ですか。\nM：1．三日です。\n　　2．3週間です。\n　　3．3時です。"
+    },
+    {
+      "id": "4-2",
+      "mondai": 4,
+      "no": 2,
+      "audio": 30,
+      "answer": 1,
+      "choice_count": 3,
+      "script": "M：すみません、図書館はどこですか。\nF：1．あそこです。\n　　2．6時までです。\n　　3．本を借ります。"
+    },
+    {
+      "id": "4-3",
+      "mondai": 4,
+      "no": 3,
+      "audio": 31,
+      "answer": 2,
+      "choice_count": 3,
+      "script": "F：明日、何時に学校に来ますか。\nM：1．バスで来ます。\n　　2．9時半です。\n　　3．6人です。"
+    },
+    {
+      "id": "4-4",
+      "mondai": 4,
+      "no": 4,
+      "audio": 32,
+      "answer": 3,
+      "choice_count": 3,
+      "script": "M：田中さん、その荷物を持ちましょうか。\nF：1．どういたしまして。\n　　2．持ちませんでした。\n　　3．ありがとうございます。"
+    },
+    {
+      "id": "4-5",
+      "mondai": 4,
+      "no": 5,
+      "audio": 33,
+      "answer": 3,
+      "choice_count": 3,
+      "script": "M：ちょっと休みませんか。\nF：1．日曜日です。\n　　2．お元気ですか。\n　　3．そうしましょう。"
+    },
+    {
+      "id": "4-6",
+      "mondai": 4,
+      "no": 6,
+      "audio": 34,
+      "answer": 1,
+      "choice_count": 3,
+      "script": "M：それは、何の本ですか。\nF：1．料理の本です。\n　　2．私の本です。\n　　3．はい、そうです。"
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+    "id": 5,
+    "focus": "Pergi, datang, pulang — 〜へ、〜で（alat）、〜と、いつ、tanggal dan hari",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、日曜日、どこへ行きましたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "横浜へ行きました。"
+            },
+            {
+                "speaker": "male",
+                "text": "だれと行きましたか。"
+            },
+            {
+                "speaker": "female",
+                "text": "友達と行きました。電車で行きました。ブディさんは。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしは、どこも行きませんでした。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-5/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l5-kq1",
+                "prompt": "田口《たぐち》さんは、日曜日《にちようび》、どこへ　行《い》きましたか。",
+                "choices": [
+                    "横浜《よこはま》",
+                    "名古屋《なごや》",
+                    "京都《きょうと》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Di kaiwa, Taguchi berkata dia pergi ke Yokohama hari Minggu. Jawaban: Yokohama.",
+                    "en": "In the kaiwa, Taguchi says she went to Yokohama on Sunday. Answer: Yokohama."
+                },
+                "audio": null
+            },
+            {
+                "id": "l5-kq2",
+                "prompt": "田口《たぐち》さんは、だれと　行《い》きましたか。",
+                "choices": [
+                    "家族《かぞく》と",
+                    "友達《ともだち》と",
+                    "一人《ひとり》で"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa, Taguchi berkata dia pergi dengan teman naik kereta. Jawaban: dengan teman.",
+                    "en": "In the kaiwa, Taguchi says she went with a friend, by train. Answer: with a friend."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l5-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、あした、どこへ行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "名古屋へ行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q1.mp3",
+            "prompt": "ケンさんは　あした　どこへ　行《い》きますか。",
+            "choices": [
+                "京都《きょうと》",
+                "神戸《こうべ》",
+                "名古屋《なごや》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Ken, besok pergi ke mana?' 'Ke Nagoya.' Jawaban: Nagoya.",
+                "en": "Audio: 'Ken, where are you going tomorrow?' 'To Nagoya.' Answer: Nagoya."
+            }
+        },
+        {
+            "id": "l5-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "何で空港へ行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "タクシーで行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q2.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　何《なん》で　空港《くうこう》へ　行《い》きますか。",
+            "choices": [
+                "バス",
+                "タクシー",
+                "電車《でんしゃ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Naik apa ke bandara?' 'Naik taksi.' Jawaban: taksi.",
+                "en": "Audio: 'How do you go to the airport?' 'By taxi.' Answer: taxi."
+            }
+        },
+        {
+            "id": "l5-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "日曜日、だれとデパートへ行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "家族と行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q3.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　だれと　デパートへ　行《い》きますか。",
+            "choices": [
+                "家族《かぞく》と",
+                "友達《ともだち》と",
+                "一人《ひとり》で"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Hari Minggu pergi ke mal dengan siapa?' 'Dengan keluarga.' Jawaban: dengan keluarga.",
+                "en": "Audio: 'Who are you going to the department store with on Sunday?' 'With my family.' Answer: with family."
+            }
+        },
+        {
+            "id": "l5-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヨンさんは、いつ日本へ来ましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "去年の十二月に来ました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q4.mp3",
+            "prompt": "ヨンさんは　いつ　日本《にほん》へ　来《き》ましたか。",
+            "choices": [
+                "去年《きょねん》の　二月《にがつ》",
+                "今年《ことし》の　十二月《じゅうにがつ》",
+                "去年《きょねん》の　十二月《じゅうにがつ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Yong, kapan datang ke Jepang?' 'Desember tahun lalu.' Jawaban: Desember tahun lalu.",
+                "en": "Audio: 'Yong, when did you come to Japan?' 'Last December.' Answer: last December."
+            }
+        },
+        {
+            "id": "l5-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ニコさんの誕生日は、何月何日ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "さんがつ、とおかです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q5.mp3",
+            "prompt": "ニコさんの　誕生日《たんじょうび》は　何月何日《なんがつなんにち》ですか。",
+            "choices": [
+                "三月《さんがつ》二十日《はつか》",
+                "十月《じゅうがつ》三日《みっか》",
+                "三月《さんがつ》十日《とおか》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Kapan ulang tahun Niko?' '10 Maret.' Jawaban: 10 Maret.",
+                "en": "Audio: 'When is Niko's birthday?' 'March 10th.' Answer: March 10."
+            }
+        },
+        {
+            "id": "l5-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "スリさん、あした、どこへ行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "大阪へ行きます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "何で行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "電車で行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q6.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　何《なに》で　行《い》きますか。",
+            "choices": [
+                "電車《でんしゃ》",
+                "バス",
+                "自動車《じどうしゃ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Si perempuan pergi naik apa? Jawaban: kereta.",
+                "en": "How will the woman go? Answer: by train."
+            }
+        },
+        {
+            "id": "l5-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "パーティーは、何日ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "六月十四日です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "何曜日ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "金曜日です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q7.mp3",
+            "prompt": "パーティーは　いつですか。",
+            "choices": [
+                "六月《ろくがつ》十四日《じゅうよっか》　金曜日《きんようび》",
+                "六月《ろくがつ》四日《よっか》　金曜日《きんようび》",
+                "六月《ろくがつ》十四日《じゅうよっか》　木曜日《もくようび》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan pestanya? Jawaban: 14 Juni, hari Jumat.",
+                "en": "When is the party? Answer: Friday, June 14th."
+            }
+        },
+        {
+            "id": "l5-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさん、いつ国へ帰りますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "来月の三日に帰ります。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ひとりで帰りますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、家族と帰ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q8.mp3",
+            "prompt": "ハンさんは　来月《らいげつ》の　三日《みっか》に　国《くに》へ　帰《かえ》ります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Han pulang ke negaranya tanggal 3 bulan depan. Jawaban: Benar (○).",
+                "en": "Han goes back to his country on the 3rd of next month. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l5-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "毎日、何で会社へ行きますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "うちから駅まで歩いて行きます。それから電車で行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q9.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　駅《えき》まで　バスで　行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Si perempuan ke stasiun naik bus. Jawaban: Salah (×) — berjalan kaki.",
+                "en": "The woman goes to the station by bus. Answer: False (×) — she walks."
+            }
+        },
+        {
+            "id": "l5-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさんは、いつ学校へ来ますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "月曜日と水曜日に来ます。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "金曜日も来ますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、来ません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-5/l5-q10.mp3",
+            "prompt": "リナさんは　金曜日《きんようび》も　学校《がっこう》へ　来《き》ます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Rina juga datang ke sekolah hari Jumat. Jawaban: Salah (×).",
+                "en": "Rina also comes to school on Fridays. Answer: False (×)."
+            }
+        }
+    ]
+}

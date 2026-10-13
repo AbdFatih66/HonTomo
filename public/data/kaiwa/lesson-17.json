@@ -1,0 +1,400 @@
+{
+    "id": 17,
+    "level": "N5",
+    "title_id": "Pelajaran 17 — Larangan & Kewajiban",
+    "title_en": "Lesson 17 — Prohibitions & Obligations",
+    "scenarios": [
+        {
+            "id": "l17-s1",
+            "title_id": "Di dokter",
+            "title_en": "At the doctor's",
+            "setting_id": "Kamu demam dan sakit tenggorokan, lalu bertanya apa yang boleh dan tidak boleh dilakukan.",
+            "setting_en": "You have a fever and a sore throat and ask what you may and may not do.",
+            "goal_id": "Memakai 〜ないでください dan 〜なければなりません.",
+            "goal_en": "Use ~naide kudasai and ~nakereba narimasen.",
+            "patterns": [
+                "Vないでください",
+                "Vなければなりません",
+                "Vてもいいですか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l17-s1-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada masalah apa?",
+                    "en_text": "What seems to be the problem?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t1.mp3"
+                },
+                {
+                    "id": "l17-s1-t2",
+                    "who": "you",
+                    "ja": "熱《ねつ》が あります。そして、のどが 痛《いた》いです。",
+                    "speak": "ねつが あります。そして、のどが いたいです。",
+                    "id_text": "Saya demam. Dan tenggorokan saya sakit.",
+                    "accept": [
+                        "熱が あります。そして、のどが 痛いです。",
+                        "熱があります。そして、のどが痛いです。"
+                    ],
+                    "en_text": "I have a fever. And my throat hurts.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t2.mp3"
+                },
+                {
+                    "id": "l17-s1-t3",
+                    "who": "partner",
+                    "ja": "かぜですね。薬《くすり》を 飲《の》んでください。",
+                    "speak": "かぜですね。くすりを のんでください。",
+                    "id_text": "Masuk angin ya. Tolong minum obat.",
+                    "en_text": "It's a cold. Please take medicine.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t3.mp3"
+                },
+                {
+                    "id": "l17-s1-t4",
+                    "who": "you",
+                    "ja": "今晩《こんばん》、お風呂《ふろ》に 入《はい》ってもいいですか。",
+                    "speak": "こんばん、おふろに はいってもいいですか。",
+                    "id_text": "Malam ini, bolehkah saya mandi berendam?",
+                    "accept": [
+                        "今晩、お風呂に 入ってもいいですか。",
+                        "今晩、お風呂に入ってもいいですか。"
+                    ],
+                    "en_text": "May I take a bath tonight?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t4.mp3"
+                },
+                {
+                    "id": "l17-s1-t5",
+                    "who": "partner",
+                    "ja": "いいえ、お風呂《ふろ》に 入《はい》らないでください。",
+                    "speak": "いいえ、おふろに はいらないでください。",
+                    "id_text": "Tidak, tolong jangan mandi berendam.",
+                    "en_text": "No, please don't take a bath.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t5.mp3"
+                },
+                {
+                    "id": "l17-s1-t6",
+                    "who": "you",
+                    "ja": "会社《かいしゃ》を 休《やす》まなければなりませんか。",
+                    "speak": "かいしゃを やすまなければなりませんか。",
+                    "id_text": "Apakah saya harus libur kerja?",
+                    "accept": [
+                        "会社を 休まなければなりませんか。",
+                        "会社を休まなければなりませんか。"
+                    ],
+                    "en_text": "Do I have to take time off work?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t6.mp3"
+                },
+                {
+                    "id": "l17-s1-t7",
+                    "who": "partner",
+                    "ja": "ええ、二《に》、三日《さんにち》 休《やす》んでください。お大事《だいじ》に。",
+                    "speak": "ええ、にさんにち やすんでください。おだいじに。",
+                    "id_text": "Ya, istirahatlah dua tiga hari. Semoga lekas sembuh.",
+                    "en_text": "Yes, please rest for two or three days. Take care.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l17-s2",
+            "title_id": "Lembur dan dinas",
+            "title_en": "Overtime and business trips",
+            "setting_id": "Rekan kerja menanyakan kewajibanmu hari ini dan besok.",
+            "setting_en": "A colleague asks what you have to do today and tomorrow.",
+            "goal_id": "Memakai 〜なければなりません, 〜なくてもいいです, dan 〜までに.",
+            "goal_en": "Use ~nakereba narimasen, ~nakutemo ii desu, and ~made ni.",
+            "patterns": [
+                "Vなければなりません",
+                "Vなくてもいいです",
+                "N(waktu)までに V"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l17-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、今日《きょう》は 残業《ざんぎょう》しなければなりませんか。",
+                    "speak": "ブディさん、きょうは ざんぎょうしなければなりませんか。",
+                    "id_text": "Budi, hari ini harus lembur?",
+                    "en_text": "Budi, do you have to work overtime today?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t1.mp3"
+                },
+                {
+                    "id": "l17-s2-t2",
+                    "who": "you",
+                    "ja": "はい、会議《かいぎ》の 資料《しりょう》を 作《つく》らなければなりません。",
+                    "speak": "はい、かいぎの しりょうを つくらなければなりません。",
+                    "id_text": "Ya, saya harus membuat bahan rapat.",
+                    "accept": [
+                        "はい、会議の 資料を 作らなければなりません。",
+                        "はい、会議の資料を作らなければなりません。"
+                    ],
+                    "en_text": "Yes, I have to make the materials for the meeting.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t2.mp3"
+                },
+                {
+                    "id": "l17-s2-t3",
+                    "who": "partner",
+                    "ja": "そうですか。明日《あした》も 来《こ》なければなりませんか。",
+                    "speak": "そうですか。あしたも こなければなりませんか。",
+                    "id_text": "Begitu ya. Besok juga harus datang?",
+                    "en_text": "I see. Do you have to come in tomorrow too?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t3.mp3"
+                },
+                {
+                    "id": "l17-s2-t4",
+                    "who": "you",
+                    "ja": "いいえ、明日《あした》は 来《こ》なくてもいいです。休《やす》みです。",
+                    "speak": "いいえ、あしたは こなくてもいいです。やすみです。",
+                    "id_text": "Tidak, besok tidak perlu datang. Libur.",
+                    "accept": [
+                        "いいえ、明日は 来なくてもいいです。休みです。",
+                        "いいえ、明日は来なくてもいいです。休みです。"
+                    ],
+                    "en_text": "No, I don't have to come tomorrow. It's a day off.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t4.mp3"
+                },
+                {
+                    "id": "l17-s2-t5",
+                    "who": "partner",
+                    "ja": "いいですね。私《わたし》は 出張《しゅっちょう》しなければなりません。",
+                    "speak": "いいですね。わたしは しゅっちょうしなければなりません。",
+                    "id_text": "Enak ya. Saya harus dinas luar.",
+                    "en_text": "Lucky you. I have to go on a business trip.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t5.mp3"
+                },
+                {
+                    "id": "l17-s2-t6",
+                    "who": "you",
+                    "ja": "大変《たいへん》ですね。何時《なんじ》までに 空港《くうこう》へ 行《い》かなければなりませんか。",
+                    "speak": "たいへんですね。なんじまでに くうこうへ いかなければなりませんか。",
+                    "id_text": "Repot ya. Jam berapa harus sampai di bandara?",
+                    "accept": [
+                        "大変ですね。何時までに 空港へ 行かなければなりませんか。",
+                        "大変ですね。何時までに空港へ行かなければなりませんか。"
+                    ],
+                    "en_text": "That's tough. By what time do you have to get to the airport?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t6.mp3"
+                },
+                {
+                    "id": "l17-s2-t7",
+                    "who": "partner",
+                    "ja": "九時《くじ》までに 行《い》かなければなりません。",
+                    "speak": "くじまでに いかなければなりません。",
+                    "id_text": "Harus pergi sebelum jam sembilan.",
+                    "en_text": "I have to be there by nine.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l17-s3",
+            "title_id": "Dilarang merokok",
+            "title_en": "No smoking",
+            "setting_id": "Petugas menegur karena kamu mau merokok di tempat terlarang.",
+            "setting_en": "A staff member stops you from smoking in a no-smoking area.",
+            "goal_id": "Memakai 〜ないでください, 〜てもいいですか, dan 危ない／禁煙.",
+            "goal_en": "Use ~naide kudasai, ~temo ii desu ka, and abunai / kinen.",
+            "patterns": [
+                "Vないでください",
+                "Vてもいいですか",
+                "ここは 禁煙です"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l17-s3-t1",
+                    "who": "partner",
+                    "ja": "すみません、ここは 禁煙《きんえん》です。たばこを 吸《す》わないでください。",
+                    "speak": "すみません、ここは きんえんです。たばこを すわないでください。",
+                    "id_text": "Maaf, di sini dilarang merokok. Tolong jangan merokok.",
+                    "en_text": "Excuse me, this is a no-smoking area. Please don't smoke.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t1.mp3"
+                },
+                {
+                    "id": "l17-s3-t2",
+                    "who": "you",
+                    "ja": "すみません。どこで 吸《す》ってもいいですか。",
+                    "speak": "すみません。どこで すってもいいですか。",
+                    "id_text": "Maaf. Di mana saya boleh merokok?",
+                    "accept": [
+                        "すみません。どこで 吸ってもいいですか。",
+                        "すみません。どこで吸ってもいいですか。"
+                    ],
+                    "en_text": "Sorry. Where may I smoke?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t2.mp3"
+                },
+                {
+                    "id": "l17-s3-t3",
+                    "who": "partner",
+                    "ja": "公園《こうえん》で 吸《す》ってください。ここは 危《あぶ》ないです。",
+                    "speak": "こうえんで すってください。ここは あぶないです。",
+                    "id_text": "Silakan merokok di taman. Di sini berbahaya.",
+                    "en_text": "Please smoke in the park. It's dangerous here.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t3.mp3"
+                },
+                {
+                    "id": "l17-s3-t4",
+                    "who": "you",
+                    "ja": "わかりました。荷物《にもつ》は ここに 置《お》いてもいいですか。",
+                    "speak": "わかりました。にもつは ここに おいてもいいですか。",
+                    "id_text": "Baik. Bolehkah saya menaruh barang di sini?",
+                    "accept": [
+                        "わかりました。荷物は ここに 置いてもいいですか。",
+                        "わかりました。荷物はここに置いてもいいですか。"
+                    ],
+                    "en_text": "I see. May I leave my luggage here?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t4.mp3"
+                },
+                {
+                    "id": "l17-s3-t5",
+                    "who": "partner",
+                    "ja": "ええ。でも、大切《たいせつ》な 物《もの》は 忘《わす》れないでください。",
+                    "speak": "ええ。でも、たいせつな ものは わすれないでください。",
+                    "id_text": "Ya. Tapi tolong jangan lupa barang yang penting.",
+                    "en_text": "Yes. But please don't forget anything important.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t5.mp3"
+                },
+                {
+                    "id": "l17-s3-t6",
+                    "who": "you",
+                    "ja": "はい。ケータイと パスポートを 持《も》って 行《い》きます。",
+                    "speak": "はい。ケータイと パスポートを もって いきます。",
+                    "id_text": "Ya. Saya akan membawa ponsel dan paspor.",
+                    "accept": [
+                        "はい。ケータイと パスポートを 持って 行きます。",
+                        "はい。ケータイとパスポートを持って行きます。"
+                    ],
+                    "en_text": "Yes. I'll take my phone and passport with me.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t6.mp3"
+                },
+                {
+                    "id": "l17-s3-t7",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》です。いってらっしゃい。",
+                    "speak": "だいじょうぶです。いってらっしゃい。",
+                    "id_text": "Tidak apa-apa. Hati-hati di jalan.",
+                    "en_text": "That's fine. Have a good trip.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l17-s4",
+            "title_id": "Mengembalikan buku",
+            "title_en": "Returning a book",
+            "setting_id": "Di perpustakaan, kamu mengaku telah menghilangkan buku.",
+            "setting_en": "At the library, you admit you have lost a book.",
+            "goal_id": "Memakai 〜までに, 〜なければなりません, dan 〜なくてもいいです.",
+            "goal_en": "Use ~made ni, ~nakereba narimasen, and ~nakutemo ii desu.",
+            "patterns": [
+                "N(waktu)までに V",
+                "Vなければなりません",
+                "Vなくてもいいです"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l17-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、この 本《ほん》は 金曜日《きんようび》までに 返《かえ》してください。",
+                    "speak": "ブディさん、この ほんは きんようびまでに かえしてください。",
+                    "id_text": "Budi, tolong kembalikan buku ini paling lambat hari Jumat.",
+                    "en_text": "Budi, please return this book by Friday.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t1.mp3"
+                },
+                {
+                    "id": "l17-s4-t2",
+                    "who": "you",
+                    "ja": "はい。金曜日《きんようび》までに 返《かえ》さなければなりませんか。",
+                    "speak": "はい。きんようびまでに かえさなければなりませんか。",
+                    "id_text": "Baik. Apakah harus dikembalikan sebelum Jumat?",
+                    "accept": [
+                        "はい。金曜日までに 返さなければなりませんか。",
+                        "はい。金曜日までに返さなければなりませんか。"
+                    ],
+                    "en_text": "Okay. Do I have to return it by Friday?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t2.mp3"
+                },
+                {
+                    "id": "l17-s4-t3",
+                    "who": "partner",
+                    "ja": "ええ。忘《わす》れないでください。",
+                    "speak": "ええ。わすれないでください。",
+                    "id_text": "Ya. Jangan sampai lupa.",
+                    "en_text": "Yes. Please don't forget.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t3.mp3"
+                },
+                {
+                    "id": "l17-s4-t4",
+                    "who": "you",
+                    "ja": "すみません、先週《せんしゅう》の 本《ほん》を なくしました。",
+                    "speak": "すみません、せんしゅうの ほんを なくしました。",
+                    "id_text": "Maaf, buku minggu lalu saya hilangkan.",
+                    "accept": [
+                        "すみません、先週の 本を なくしました。",
+                        "すみません、先週の本をなくしました。"
+                    ],
+                    "en_text": "I'm sorry, I lost last week's book.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t4.mp3"
+                },
+                {
+                    "id": "l17-s4-t5",
+                    "who": "partner",
+                    "ja": "あ、そうですか。お金《かね》を 払《はら》わなければなりません。",
+                    "speak": "あ、そうですか。おかねを はらわなければなりません。",
+                    "id_text": "Oh, begitu. Anda harus membayar.",
+                    "en_text": "Oh, I see. You will have to pay.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t5.mp3"
+                },
+                {
+                    "id": "l17-s4-t6",
+                    "who": "you",
+                    "ja": "いくらですか。今《いま》 払《はら》わなければなりませんか。",
+                    "speak": "いくらですか。いま はらわなければなりませんか。",
+                    "id_text": "Berapa? Apakah harus bayar sekarang?",
+                    "accept": [
+                        "いくらですか。今 払わなければなりませんか。",
+                        "いくらですか。今払わなければなりませんか。"
+                    ],
+                    "en_text": "How much is it? Do I have to pay now?",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t6.mp3"
+                },
+                {
+                    "id": "l17-s4-t7",
+                    "who": "partner",
+                    "ja": "いいえ、今日《きょう》は 払《はら》わなくてもいいです。来週《らいしゅう》までに 払《はら》ってください。",
+                    "speak": "いいえ、きょうは はらわなくてもいいです。らいしゅうまでに はらってください。",
+                    "id_text": "Tidak, hari ini tidak perlu bayar. Tolong bayar sebelum minggu depan.",
+                    "en_text": "No, you don't have to pay today. Please pay by next week.",
+                    "audio": "/audio/kaiwa/lesson-17/l17-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

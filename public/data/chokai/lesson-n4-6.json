@@ -1,0 +1,302 @@
+{
+    "id": "n4-6",
+    "level": "N4",
+    "focus": "意向形《いこうけい》、〜ようと 思《おも》っています、〜つもりです、〜予定《よてい》です、まだ〜ていません",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "リナさん、来月の連休は、どうしますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "友達と山に登ろうと思っています。ブディさんは。"
+            },
+            {
+                "speaker": "male",
+                "text": "ぼくは、国へ帰る予定です。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいですね。もう、飛行機の切符を買いましたか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、まだ買っていません。あしたの昼、買うつもりです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-6/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l6-kq1",
+                "prompt": "リナさんは 連休《れんきゅう》に 何《なに》を しようと 思《おも》っていますか。",
+                "choices": [
+                    "山《やま》に 登《のぼ》る",
+                    "国《くに》へ 帰《かえ》る",
+                    "切符《きっぷ》を 買《か》う"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Rina berpikir untuk mendaki gunung saat libur panjang.",
+                    "en": "Rina is thinking of climbing a mountain during the long holiday."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l6-kq2",
+                "prompt": "ブディさんは もう 切符《きっぷ》を 買《か》いましたか。",
+                "choices": [
+                    "まだ 買《か》って いません",
+                    "もう 買《か》いました",
+                    "買《か》わない つもりです"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Budi belum membeli tiket; ia berniat membelinya besok siang.",
+                    "en": "Budi has not bought the ticket yet; he intends to buy it tomorrow at noon."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l6-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "来週の日曜日は、友達と映画を見に行こうと思っています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q1.mp3",
+            "prompt": "日曜日《にちようび》に 何《なに》を しようと 思《おも》っていますか。",
+            "choices": [
+                "映画《えいが》を 見《み》に 行《い》く",
+                "買《か》い物《もの》に 行《い》く",
+                "家《いえ》で 休《やす》む"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hari Minggu ia berpikir untuk pergi menonton film.",
+                "en": "On Sunday she is thinking of going to see a film."
+            }
+        },
+        {
+            "id": "n4l6-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、夏休みは、国へ帰りますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、今年は帰らないつもりです。日本で仕事をします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q2.mp3",
+            "prompt": "ハンナさんは 夏休《なつやす》みに 何《なに》を する つもりですか。",
+            "choices": [
+                "日本《にほん》で 仕事《しごと》を する",
+                "国《くに》へ 帰《かえ》る",
+                "旅行《りょこう》に 行《い》く"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hanna bermaksud bekerja di Jepang saat libur musim panas.",
+                "en": "Hanna intends to work in Japan during the summer holiday."
+            }
+        },
+        {
+            "id": "n4l6-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "部長、出張は、いつからですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あさって、出発する予定です。金曜日に帰ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q3.mp3",
+            "prompt": "部長《ぶちょう》は いつ 出発《しゅっぱつ》する 予定《よてい》ですか。",
+            "choices": [
+                "あさって",
+                "あした",
+                "金曜日《きんようび》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kepala bagian dijadwalkan berangkat lusa.",
+                "en": "The department head is scheduled to leave the day after tomorrow."
+            }
+        },
+        {
+            "id": "n4l6-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ニコさん、レポートは、もう書きましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、まだ書いていません。木曜日までに出す予定です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q4.mp3",
+            "prompt": "ニコさんは いつまでに レポートを 出《だ》す 予定《よてい》ですか。",
+            "choices": [
+                "木曜日《もくようび》",
+                "水曜日《すいようび》",
+                "金曜日《きんようび》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Niko berencana mengumpulkan laporan paling lambat hari Kamis.",
+                "en": "Niko plans to hand in the report by Thursday."
+            }
+        },
+        {
+            "id": "n4l6-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ぼくの帰りの電車は、いつも込んでいます。だから、今日は、一時間遅く帰ろうと思います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q5.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 今日《きょう》、どう しようと 思《おも》っていますか。",
+            "choices": [
+                "一時間《いちじかん》 遅《おそ》く 帰《かえ》る",
+                "一時間《いちじかん》 早《はや》く 帰《かえ》る",
+                "電車《でんしゃ》で 帰《かえ》らない"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hari ini ia berpikir untuk pulang satu jam lebih lambat.",
+                "en": "Today he is thinking of going home an hour later."
+            }
+        },
+        {
+            "id": "n4l6-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、来月、大阪へ行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、会議があるので、三日間の予定です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q6.mp3",
+            "prompt": "ケンさんは 大阪《おおさか》に 三日間《みっかかん》 行《い》く 予定《よてい》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar. Ken dijadwalkan ke Osaka selama tiga hari.",
+                "en": "True. Ken is scheduled to go to Osaka for three days."
+            }
+        },
+        {
+            "id": "n4l6-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさん、お昼ごはんは、もう食べましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、まだ食べていません。今から食べようと思っています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q7.mp3",
+            "prompt": "リナさんは もう 昼《ひる》ごはんを 食《た》べました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Salah. Rina belum makan siang.",
+                "en": "False. Rina has not had lunch yet."
+            }
+        },
+        {
+            "id": "n4l6-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "スリさん、たばこをやめましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、先月やめました。もう吸わないつもりです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q8.mp3",
+            "prompt": "スリさんは これから たばこを 吸《す》わない つもりです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar. Sri bermaksud tidak merokok lagi.",
+                "en": "True. Sri intends not to smoke any more."
+            }
+        },
+        {
+            "id": "n4l6-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンさん、あしたの会議は何時からですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "二時から一時間の予定です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q9.mp3",
+            "prompt": "会議《かいぎ》は 三時《さんじ》からです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Salah. Rapat dijadwalkan mulai pukul dua selama satu jam.",
+                "en": "False. The meeting is scheduled for one hour from two o'clock."
+            }
+        },
+        {
+            "id": "n4l6-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ポールさん、銀行は、もう開いていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、まだ開いていません。九時から開きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-6/n4l6-q10.mp3",
+            "prompt": "銀行《ぎんこう》は 九時《くじ》から 開《あ》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Benar. Bank buka mulai pukul sembilan, dan belum buka sekarang.",
+                "en": "True. The bank opens at nine and is not open yet."
+            }
+        }
+    ]
+}

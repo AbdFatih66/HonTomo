@@ -1,0 +1,442 @@
+{
+    "id": 15,
+    "level": "N4",
+    "title_id": "Mengecek dan Mencoba",
+    "title_en": "Checking and Trying",
+    "scenarios": [
+        {
+            "id": "n4l15-s1",
+            "title_id": "Menanyakan Jadwal Rapat",
+            "title_en": "Asking About the Meeting",
+            "setting_id": "Di kantor, sehari sebelum rapat.",
+            "setting_en": "At the office, the day before a meeting.",
+            "goal_id": "Memakai kalimat tanya sisipan (kata tanya + か).",
+            "goal_en": "Use embedded questions (question word + か).",
+            "patterns": [
+                "Ｆ＋か、〜 (kata tanya)"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l15-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、あしたの 会議《かいぎ》は 何時《なんじ》に 始《はじ》まるか、知《し》って いますか。",
+                    "speak": "ブディさん、あしたの かいぎは なんじに はじまるか、しって いますか。",
+                    "id_text": "Budi, tahukah kamu rapat besok mulai pukul berapa?",
+                    "en_text": "Budi, do you know what time tomorrow meeting starts?",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t2",
+                    "who": "you",
+                    "ja": "いいえ、わかりません。課長《かちょう》に 聞《き》いて みます。",
+                    "speak": "いいえ、わかりません。かちょうに きいて みます。",
+                    "id_text": "Tidak, saya tidak tahu. Saya coba tanya kepala seksi.",
+                    "en_text": "No, I do not know. I will try asking the section chief.",
+                    "accept": [
+                        "いいえ、わかりません。課長に 聞いて みます。",
+                        "いいえ、わかりません。かちょうに きいて みます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t3",
+                    "who": "partner",
+                    "ja": "お願《ねが》いします。会議室《かいぎしつ》は どこか、教《おし》えて ください。",
+                    "speak": "おねがいします。かいぎしつは どこか、おしえて ください。",
+                    "id_text": "Tolong. Beri tahu juga ruang rapatnya di mana.",
+                    "en_text": "Please do. And tell me where the meeting room is.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t4",
+                    "who": "you",
+                    "ja": "はい、わかりました。三階《さんがい》の 会議室《かいぎしつ》だと 思《おも》います。",
+                    "speak": "はい、わかりました。さんがいの かいぎしつだと おもいます。",
+                    "id_text": "Baik. Saya kira ruang rapat di lantai tiga.",
+                    "en_text": "Understood. I think it is the meeting room on the third floor.",
+                    "accept": [
+                        "はい、わかりました。三階の 会議室だと 思います。",
+                        "はい、わかりました。さんがいの かいぎしつだと おもいます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですか。どうも ありがとう。",
+                    "speak": "そうですか。どうも ありがとう。",
+                    "id_text": "Begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t6",
+                    "who": "you",
+                    "ja": "いいえ。ほかに 確《たし》かめる ことは ありますか。",
+                    "speak": "いいえ。ほかに たしかめる ことは ありますか。",
+                    "id_text": "Sama-sama. Adakah hal lain yang perlu dicek?",
+                    "en_text": "Not at all. Is there anything else to check?",
+                    "accept": [
+                        "いいえ。ほかに 確かめる ことは ありますか。",
+                        "いいえ。ほかに たしかめる ことは ありますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t7",
+                    "who": "partner",
+                    "ja": "いいえ、大丈夫《だいじょうぶ》です。",
+                    "speak": "いいえ、だいじょうぶです。",
+                    "id_text": "Tidak, sudah cukup.",
+                    "en_text": "No, that is fine.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t7.mp3"
+                },
+                {
+                    "id": "n4l15-s1-t8",
+                    "who": "you",
+                    "ja": "はい。では、失礼《しつれい》します。",
+                    "speak": "はい。では、しつれいします。",
+                    "id_text": "Baik. Kalau begitu, permisi.",
+                    "en_text": "All right. Then, excuse me.",
+                    "accept": [
+                        "はい。では、失礼します。",
+                        "はい。では、しつれいします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l15-s2",
+            "title_id": "Pesta Tahun Baru",
+            "title_en": "The New Year Party",
+            "setting_id": "Di kantor, menjawab undangan pesta.",
+            "setting_en": "At the office, replying to a party invitation.",
+            "goal_id": "Memakai 〜か どうか.",
+            "goal_en": "Use 〜か どうか.",
+            "patterns": [
+                "Ｆ＋か どうか、〜"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l15-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、新年会《しんねんかい》に 来《く》るか どうか、金曜日《きんようび》までに 教《おし》えて ください。",
+                    "speak": "ブディさん、しんねんかいに くるか どうか、きんようびまでに おしえて ください。",
+                    "id_text": "Budi, tolong beri tahu sebelum Jumat apakah kamu datang ke pesta tahun baru.",
+                    "en_text": "Budi, please tell me by Friday whether you are coming to the New Year party.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t2",
+                    "who": "you",
+                    "ja": "はい、わかりました。行《い》くか どうか、あした 返事《へんじ》を します。",
+                    "speak": "はい、わかりました。いくか どうか、あした へんじを します。",
+                    "id_text": "Baik. Besok saya beri jawaban apakah saya pergi atau tidak.",
+                    "en_text": "Understood. I will reply tomorrow on whether I am going.",
+                    "accept": [
+                        "はい、わかりました。行くか どうか、あした 返事を します。",
+                        "はい、わかりました。いくか どうか、あした へんじを します。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t3",
+                    "who": "partner",
+                    "ja": "二次会《にじかい》も ありますが、どう しますか。",
+                    "speak": "にじかいも ありますが、どう しますか。",
+                    "id_text": "Ada juga pesta lanjutan. Bagaimana?",
+                    "en_text": "There is also an after-party. What will you do?",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t4",
+                    "who": "you",
+                    "ja": "二次会《にじかい》は 行《い》くか どうか、まだ わかりません。",
+                    "speak": "にじかいは いくか どうか、まだ わかりません。",
+                    "id_text": "Soal pesta lanjutan, saya belum tahu apakah akan ikut.",
+                    "en_text": "I do not yet know whether I will go to the after-party.",
+                    "accept": [
+                        "二次会は 行くか どうか、まだ わかりません。",
+                        "にじかいは いくか どうか、まだ わかりません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t5",
+                    "who": "partner",
+                    "ja": "わかりました。決《き》まったら 教《おし》えて ください。",
+                    "speak": "わかりました。きまったら おしえて ください。",
+                    "id_text": "Baik. Kalau sudah diputuskan, tolong kabari.",
+                    "en_text": "I see. Please let me know once you decide.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t6",
+                    "who": "you",
+                    "ja": "はい。お酒《さけ》を 飲《の》むと 酔《よ》いますから、早《はや》く 帰《かえ》る つもりです。",
+                    "speak": "はい。おさけを のむと よいますから、はやく かえる つもりです。",
+                    "id_text": "Ya. Kalau minum saya mabuk, jadi saya bermaksud pulang lebih awal.",
+                    "en_text": "Yes. I get drunk when I drink, so I intend to go home early.",
+                    "accept": [
+                        "はい。お酒を 飲むと 酔いますから、早く 帰る つもりです。",
+                        "はい。おさけを のむと よいますから、はやく かえる つもりです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t7",
+                    "who": "partner",
+                    "ja": "そうですか。わかりました。",
+                    "speak": "そうですか。わかりました。",
+                    "id_text": "Begitu. Baik.",
+                    "en_text": "I see. Understood.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t7.mp3"
+                },
+                {
+                    "id": "n4l15-s2-t8",
+                    "who": "you",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l15-s3",
+            "title_id": "Mencoba Celana",
+            "title_en": "Trying on Trousers",
+            "setting_id": "Di toko pakaian.",
+            "setting_en": "At a clothes shop.",
+            "goal_id": "Memakai 〜てみます.",
+            "goal_en": "Use 〜てみます.",
+            "patterns": [
+                "Ｖて みます"
+            ],
+            "partner": {
+                "name": "てんいん",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l15-s3-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t2",
+                    "who": "you",
+                    "ja": "この ズボンを はいて みても いいですか。",
+                    "speak": "この ズボンを はいて みても いいですか。",
+                    "id_text": "Bolehkah saya mencoba celana ini?",
+                    "en_text": "May I try these trousers on?",
+                    "accept": [
+                        "この ズボンを はいて みても いいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t3",
+                    "who": "partner",
+                    "ja": "はい、どうぞ。あちらで はいて みて ください。",
+                    "speak": "はい、どうぞ。あちらで はいて みて ください。",
+                    "id_text": "Silakan. Coba pakai di sebelah sana.",
+                    "en_text": "Please. Try them on over there.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t4",
+                    "who": "you",
+                    "ja": "サイズが 合《あ》いませんでした。もっと 大《おお》きい サイズは ありますか。",
+                    "speak": "サイズが あいませんでした。もっと おおきい サイズは ありますか。",
+                    "id_text": "Ukurannya tidak cocok. Apakah ada ukuran yang lebih besar?",
+                    "en_text": "The size did not fit. Do you have a bigger size?",
+                    "accept": [
+                        "サイズが 合いませんでした。もっと 大きい サイズは ありますか。",
+                        "サイズが あいませんでした。もっと おおきい サイズは ありますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t5",
+                    "who": "partner",
+                    "ja": "はい、ちょっと 待《ま》って ください。",
+                    "speak": "はい、ちょっと まって ください。",
+                    "id_text": "Ya, tunggu sebentar.",
+                    "en_text": "Yes, please wait a moment.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t6",
+                    "who": "you",
+                    "ja": "これは 合《あ》いました。これを ください。",
+                    "speak": "これは あいました。これを ください。",
+                    "id_text": "Yang ini cocok. Saya ambil yang ini.",
+                    "en_text": "This one fits. I will take it.",
+                    "accept": [
+                        "これは 合いました。これを ください。",
+                        "これは あいました。これを ください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t7",
+                    "who": "partner",
+                    "ja": "よかったです。三千円《さんぜんえん》です。",
+                    "speak": "よかったです。さんぜんえんです。",
+                    "id_text": "Syukurlah. Harganya tiga ribu yen.",
+                    "en_text": "I am glad. It is three thousand yen.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t7.mp3"
+                },
+                {
+                    "id": "n4l15-s3-t8",
+                    "who": "you",
+                    "ja": "はい、どうぞ。",
+                    "speak": "はい、どうぞ。",
+                    "id_text": "Ini, silakan.",
+                    "en_text": "Here you are.",
+                    "accept": [
+                        "はい、どうぞ。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l15-s4",
+            "title_id": "Mengirim Paket",
+            "title_en": "Sending a Package",
+            "setting_id": "Di kantor pos.",
+            "setting_en": "At the post office.",
+            "goal_id": "Memakai nomina 〜さ dan 〜てみましょうか.",
+            "goal_en": "Use the 〜さ noun and 〜てみましょうか.",
+            "patterns": [
+                "Ａい → Ａさ",
+                "Ｖて みましょうか"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l15-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、荷物《にもつ》の 大《おお》きさと 重《おも》さを 測《はか》りますね。",
+                    "speak": "ブディさん、にもつの おおきさと おもさを はかりますね。",
+                    "id_text": "Budi, saya ukur besar dan berat paketnya, ya.",
+                    "en_text": "Budi, I will measure the size and weight of the package.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t2",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, please.",
+                    "accept": [
+                        "はい、お願いします。",
+                        "はい、おねがいします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t3",
+                    "who": "partner",
+                    "ja": "重《おも》さは 三《さん》キロです。",
+                    "speak": "おもさは さんキロです。",
+                    "id_text": "Beratnya tiga kilogram.",
+                    "en_text": "The weight is three kilograms.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t4",
+                    "who": "you",
+                    "ja": "長《なが》さは どのくらいですか。",
+                    "speak": "ながさは どのくらいですか。",
+                    "id_text": "Panjangnya berapa?",
+                    "en_text": "How long is it?",
+                    "accept": [
+                        "長さは どのくらいですか。",
+                        "ながさは どのくらいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t5",
+                    "who": "partner",
+                    "ja": "四十《よんじゅう》センチです。国《くに》まで 何日《なんにち》ぐらい かかるか、調《しら》べて みましょうか。",
+                    "speak": "よんじゅうセンチです。くにまで なんにちぐらい かかるか、しらべて みましょうか。",
+                    "id_text": "Empat puluh sentimeter. Mau saya coba cek berapa hari sampai ke negaramu?",
+                    "en_text": "Forty centimetres. Shall I try checking how many days it takes to your country?",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t6",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。いくらか、確《たし》かめて ください。",
+                    "speak": "はい、おねがいします。いくらか、たしかめて ください。",
+                    "id_text": "Ya, tolong. Cek juga biayanya.",
+                    "en_text": "Yes, please. And please check how much it costs.",
+                    "accept": [
+                        "はい、お願いします。いくらか、確かめて ください。",
+                        "はい、おねがいします。いくらか、たしかめて ください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t7",
+                    "who": "partner",
+                    "ja": "五日《いつか》ぐらいで、四千円《よんせんえん》です。",
+                    "speak": "いつかぐらいで、よんせんえんです。",
+                    "id_text": "Sekitar lima hari, harganya empat ribu yen.",
+                    "en_text": "About five days, and it costs four thousand yen.",
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t7.mp3"
+                },
+                {
+                    "id": "n4l15-s4-t8",
+                    "who": "you",
+                    "ja": "わかりました。それで お願《ねが》いします。",
+                    "speak": "わかりました。それで おねがいします。",
+                    "id_text": "Baik. Dengan itu saja, tolong.",
+                    "en_text": "Understood. Please send it that way.",
+                    "accept": [
+                        "わかりました。それで お願いします。",
+                        "わかりました。それで おねがいします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-15/n4l15-s4-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

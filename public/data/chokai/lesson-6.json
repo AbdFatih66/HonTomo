@@ -1,0 +1,343 @@
+{
+    "id": 6,
+    "focus": "Kegiatan sehari-hari — 〜を〜ます、〜で（tempat）、〜ませんか・〜ましょう",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、あした、何をしますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "友達と映画を見ます。ブディさんは。"
+            },
+            {
+                "speaker": "male",
+                "text": "わたしは、うちでテレビを見ます。"
+            },
+            {
+                "speaker": "female",
+                "text": "いっしょに映画を見ませんか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ええ、いいですね。"
+            },
+            {
+                "speaker": "female",
+                "text": "じゃ、駅の前で会いましょう。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-6/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l6-kq1",
+                "prompt": "田口《たぐち》さんと　ブディさんは　あした　何《なに》を　しますか。",
+                "choices": [
+                    "いっしょに　映画《えいが》を　見《み》ます",
+                    "いっしょに　テレビを　見《み》ます",
+                    "いっしょに　買《か》い物《もの》をします"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Sesuai kaiwa, besok Taguchi dan Budi sepakat nonton film bersama. Jawaban: menonton film bersama.",
+                    "en": "Per the kaiwa, Taguchi and Budi agree to watch a movie together tomorrow. Answer: watching a movie together."
+                }
+            },
+            {
+                "id": "l6-kq2",
+                "prompt": "二人《ふたり》は　どこで　会《あ》いますか。",
+                "choices": [
+                    "駅《えき》の　前《まえ》",
+                    "公園《こうえん》の　前《まえ》",
+                    "図書館《としょかん》の　前《まえ》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Mereka sepakat bertemu di depan stasiun. Jawaban: depan stasiun.",
+                    "en": "They agree to meet in front of the station. Answer: in front of the station."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l6-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さん、けさ、何を食べましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ごはんと魚を食べました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q1.mp3",
+            "prompt": "田口《たぐち》さんは　けさ　何《なに》を　食《た》べましたか。",
+            "choices": [
+                "ごはんと　魚《さかな》",
+                "パンと　魚《さかな》",
+                "ごはんと　肉《にく》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Bu Taguchi, tadi pagi makan apa?' 'Saya makan nasi dan ikan.' Jawaban: nasi dan ikan.",
+                "en": "Audio: 'Ms. Taguchi, what did you eat this morning?' 'I ate rice and fish.' Answer: rice and fish."
+            }
+        },
+        {
+            "id": "l6-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、きのう、どこで晩ごはんを食べましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "レストランで食べました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q2.mp3",
+            "prompt": "ブディさんは　きのう　どこで　晩《ばん》ごはんを　食《た》べましたか。",
+            "choices": [
+                "うち",
+                "レストラン",
+                "喫茶店《きっさてん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Budi, kemarin makan malam di mana?' 'Di restoran.' Jawaban: restoran.",
+                "en": "Audio: 'Budi, where did you have dinner yesterday?' 'At a restaurant.' Answer: a restaurant."
+            }
+        },
+        {
+            "id": "l6-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、日曜日、何を見ましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "サッカーを見ました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q3.mp3",
+            "prompt": "ハンナさんは　日曜日《にちようび》　何《なに》を　見《み》ましたか。",
+            "choices": [
+                "映画《えいが》",
+                "テレビ",
+                "サッカー"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Hanna, hari Minggu kamu menonton apa?' 'Saya menonton sepak bola.' Jawaban: sepak bola.",
+                "en": "Audio: 'Hanna, what did you watch on Sunday?' 'I watched soccer.' Answer: soccer."
+            }
+        },
+        {
+            "id": "l6-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ニコさん、毎晩、何をしますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "日本語の勉強をします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q4.mp3",
+            "prompt": "ニコさんは　毎晩《まいばん》　何《なに》を　しますか。",
+            "choices": [
+                "買《か》い物《もの》",
+                "日本語《にほんご》の　勉強《べんきょう》",
+                "テレビ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Niko, setiap malam kamu melakukan apa?' 'Belajar bahasa Jepang.' Jawaban: belajar bahasa Jepang.",
+                "en": "Audio: 'Niko, what do you do every evening?' 'I study Japanese.' Answer: studying Japanese."
+            }
+        },
+        {
+            "id": "l6-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日曜日、いっしょに映画を見ませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すみません。日曜日は、友達と公園で写真を撮ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q5.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　日曜日《にちようび》　どこで　写真《しゃしん》を　撮《と》りますか。",
+            "choices": [
+                "駅《えき》",
+                "図書館《としょかん》",
+                "公園《こうえん》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Hari Minggu, nonton film bersama yuk?' 'Maaf. Hari Minggu saya memotret di taman bersama teman.' Jawaban: di taman.",
+                "en": "Audio: 'Shall we see a movie together on Sunday?' 'Sorry. On Sunday I take photos in the park with a friend.' Answer: the park."
+            }
+        },
+        {
+            "id": "l6-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ロペスさん、毎朝、新聞を読みますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、読みません。テレビを見ます。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "晩は。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "晩は、本を読みます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q6.mp3",
+            "prompt": "ロペスさんは　毎朝《まいあさ》　新聞《しんぶん》を　読《よ》みます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Lopez tiap pagi membaca koran. Jawaban: Salah (×) — dia menonton TV.",
+                "en": "Lopez reads the newspaper every morning. Answer: False (×) — he watches TV."
+            }
+        },
+        {
+            "id": "l6-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヨンさん、きのう、何を買いましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "本と雑誌を買いました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "どこで買いましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "駅の前の店で買いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q7.mp3",
+            "prompt": "ヨンさんは　駅《えき》の　前《まえ》の　店《みせ》で　本《ほん》と　雑誌《ざっし》を　買《か》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Yong membeli buku dan majalah di toko depan stasiun. Jawaban: Benar (○).",
+                "en": "Yong bought a book and a magazine at the shop in front of the station. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l6-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、日曜日は、何をしましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達と公園で写真を撮りました。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それから。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "晩は、うちでビデオを見ました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q8.mp3",
+            "prompt": "ケンさんは　日曜日《にちようび》の　晩《ばん》　うちで　ビデオを　見《み》ました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ken menonton video di rumah pada malam hari Minggu. Jawaban: Benar (○).",
+                "en": "Ken watched a video at home on Sunday evening. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l6-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "スリさん、きのうの晩、何をしましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ビデオを見ました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達と見ましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ひとりで見ました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q9.mp3",
+            "prompt": "スリさんは　きのうの　晩《ばん》　友達《ともだち》と　ビデオを　見《み》ました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Suri menonton video bersama teman. Jawaban: Salah (×) — sendirian.",
+                "en": "Suri watched a video with a friend. Answer: False (×) — alone."
+            }
+        },
+        {
+            "id": "l6-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、あした、いっしょに買い物をしませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すみません。あしたは、ちょっと……。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-6/l6-q10.mp3",
+            "prompt": "ハンナさんは　あした　いっしょに　買《か》い物《もの》を　します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Hanna akan berbelanja bersama besok. Jawaban: Salah (×) — ia menolak.",
+                "en": "Hanna will go shopping together tomorrow. Answer: False (×) — she declines."
+            }
+        }
+    ]
+}

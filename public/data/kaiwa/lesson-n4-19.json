@@ -1,0 +1,404 @@
+{
+    "id": 19,
+    "level": "N4",
+    "title_id": "N4 Pelajaran 19: Tolong Buat Seperti Foto Ini",
+    "title_en": "N4 Lesson 19: Please Make It Like This Photo",
+    "scenarios": [
+        {
+            "id": "n4l19-s1",
+            "title_id": "Di salon: potong rambut",
+            "title_en": "At the salon: a haircut",
+            "setting_id": "Kamu datang ke salon dan meminta potongan rambut.",
+            "setting_en": "You visit a hair salon and ask for a cut.",
+            "goal_id": "Meminta model dengan 〜く して ください dan 〜くらいに.",
+            "goal_en": "Ask for a style with 〜く して ください and 〜くらいに.",
+            "patterns": [
+                "Ｎを 〜く します",
+                "〜くらいに"
+            ],
+            "partner": {
+                "name": "よしかわ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l19-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。きょうは どう なさいますか。",
+                    "speak": "いらっしゃいませ。きょうは どう なさいますか。",
+                    "id_text": "Selamat datang. Hari ini mau dibuat bagaimana?",
+                    "en_text": "Welcome. What would you like today?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t2",
+                    "who": "you",
+                    "ja": "髪《かみ》を 短《みじか》く して ください。",
+                    "speak": "かみを みじかく して ください。",
+                    "id_text": "Tolong pendekkan rambut saya.",
+                    "en_text": "Please make my hair shorter.",
+                    "accept": [
+                        "かみを みじかく して ください。",
+                        "髪を 短く して ください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t3",
+                    "who": "partner",
+                    "ja": "どのくらい 短《みじか》く しますか。",
+                    "speak": "どのくらい みじかく しますか。",
+                    "id_text": "Seberapa pendek?",
+                    "en_text": "How short shall I make it?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t4",
+                    "who": "you",
+                    "ja": "耳《みみ》が 見《み》える くらいに お願《ねが》いします。",
+                    "speak": "みみが みえる くらいに おねがいします。",
+                    "id_text": "Tolong sampai telinga terlihat.",
+                    "en_text": "Please cut it so that the ears show.",
+                    "accept": [
+                        "みみが みえる くらいに おねがいします。",
+                        "耳が 見える くらいに お願いします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t5",
+                    "who": "partner",
+                    "ja": "わかりました。シャンプーを した あとで、カットを します。",
+                    "speak": "わかりました。シャンプーを した あとで、カットを します。",
+                    "id_text": "Baik. Setelah keramas, saya potong.",
+                    "en_text": "Understood. After the shampoo, I will cut it.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t6",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, please.",
+                    "accept": [
+                        "はい、おねがいします。",
+                        "はい、お願いします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t7",
+                    "who": "partner",
+                    "ja": "できました。これで よろしいでしょうか。",
+                    "speak": "できました。これで よろしいでしょうか。",
+                    "id_text": "Sudah selesai. Apakah begini sudah baik?",
+                    "en_text": "It is done. Is this all right?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t7.mp3"
+                },
+                {
+                    "id": "n4l19-s1-t8",
+                    "who": "you",
+                    "ja": "はい、ありがとうございます。",
+                    "speak": "はい、ありがとうございます。",
+                    "id_text": "Ya, terima kasih.",
+                    "en_text": "Yes, thank you.",
+                    "accept": [
+                        "はい、ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l19-s2",
+            "title_id": "Memilih kamar hotel",
+            "title_en": "Choosing a hotel room",
+            "setting_id": "Di meja resepsionis hotel, kamu memilih kamar dan sarapan.",
+            "setting_en": "At a hotel front desk, you choose a room and breakfast.",
+            "goal_id": "Menyatakan pilihan dengan Ｎに します.",
+            "goal_en": "State your choice with Ｎに します.",
+            "patterns": [
+                "Ｎに します"
+            ],
+            "partner": {
+                "name": "ハンナ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l19-s2-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。お部屋《へや》は シングルに しますか、ツインに しますか。",
+                    "speak": "いらっしゃいませ。おへやは シングルに しますか、ツインに しますか。",
+                    "id_text": "Selamat datang. Kamarnya single atau twin?",
+                    "en_text": "Welcome. Would you like a single or a twin room?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l19-s2-t2",
+                    "who": "you",
+                    "ja": "シングルに します。",
+                    "speak": "シングルに します。",
+                    "id_text": "Saya pilih single.",
+                    "en_text": "I will take a single.",
+                    "accept": [
+                        "シングルに します。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l19-s2-t3",
+                    "who": "partner",
+                    "ja": "わかりました。朝《あさ》ごはんは 和食《わしょく》に しますか、洋食《ようしょく》に しますか。",
+                    "speak": "わかりました。あさごはんは わしょくに しますか、ようしょくに しますか。",
+                    "id_text": "Baik. Sarapannya makanan Jepang atau Barat?",
+                    "en_text": "Understood. Would you like Japanese or Western breakfast?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l19-s2-t4",
+                    "who": "you",
+                    "ja": "和食《わしょく》に します。",
+                    "speak": "わしょくに します。",
+                    "id_text": "Saya pilih makanan Jepang.",
+                    "en_text": "I will have Japanese.",
+                    "accept": [
+                        "わしょくに します。",
+                        "和食に します。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l19-s2-t5",
+                    "who": "partner",
+                    "ja": "わかりました。ほかに ありますか。",
+                    "speak": "わかりました。ほかに ありますか。",
+                    "id_text": "Baik. Ada lagi?",
+                    "en_text": "Understood. Anything else?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l19-s2-t6",
+                    "who": "you",
+                    "ja": "エアコンの 温度《おんど》を 調節《ちょうせつ》できますか。",
+                    "speak": "エアコンの おんどを ちょうせつできますか。",
+                    "id_text": "Apakah suhu AC bisa diatur?",
+                    "en_text": "Can I adjust the air conditioner temperature?",
+                    "accept": [
+                        "エアコンの おんどを ちょうせつできますか。",
+                        "エアコンの 温度を 調節できますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l19-s2-t7",
+                    "who": "partner",
+                    "ja": "はい、できます。この ボタンで 調節《ちょうせつ》して ください。",
+                    "speak": "はい、できます。この ボタンで ちょうせつして ください。",
+                    "id_text": "Bisa. Silakan atur dengan tombol ini.",
+                    "en_text": "Yes, you can. Please adjust it with this button.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l19-s3",
+            "title_id": "Sup terlalu asin",
+            "title_en": "The soup is too salty",
+            "setting_id": "Makan siang bersama rekan kerja; supnya terasa terlalu asin.",
+            "setting_en": "Lunch with a coworker; the soup tastes too salty.",
+            "goal_id": "Memakai 〜すぎます dan 〜やすく なります.",
+            "goal_en": "Use 〜すぎます and 〜やすく なります.",
+            "patterns": [
+                "〜すぎます",
+                "〜やすい"
+            ],
+            "partner": {
+                "name": "ケン",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l19-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、この スープは どうですか。",
+                    "speak": "ブディさん、この スープは どうですか。",
+                    "id_text": "Budi, bagaimana sup ini?",
+                    "en_text": "Budi, how is this soup?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l19-s3-t2",
+                    "who": "you",
+                    "ja": "ちょっと 塩《しお》が 多《おお》すぎます。",
+                    "speak": "ちょっと しおが おおすぎます。",
+                    "id_text": "Garamnya agak terlalu banyak.",
+                    "en_text": "It has a little too much salt.",
+                    "accept": [
+                        "ちょっと しおが おおすぎます。",
+                        "ちょっと 塩が 多すぎます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l19-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。じゃ、お湯《ゆ》を 入《い》れましょうか。",
+                    "speak": "そうですか。じゃ、おゆを いれましょうか。",
+                    "id_text": "Begitu. Mau saya tambah air panas?",
+                    "en_text": "I see. Shall I add some hot water?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l19-s3-t4",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。",
+                    "speak": "はい、おねがいします。",
+                    "id_text": "Ya, tolong.",
+                    "en_text": "Yes, please.",
+                    "accept": [
+                        "はい、おねがいします。",
+                        "はい、お願いします。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l19-s3-t5",
+                    "who": "partner",
+                    "ja": "どうですか。",
+                    "speak": "どうですか。",
+                    "id_text": "Bagaimana sekarang?",
+                    "en_text": "How is it now?",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l19-s3-t6",
+                    "who": "you",
+                    "ja": "ちょうど いいです。飲《の》みやすく なりました。",
+                    "speak": "ちょうど いいです。のみやすく なりました。",
+                    "id_text": "Pas sekali. Jadi mudah diminum.",
+                    "en_text": "It is just right. It has become easy to drink.",
+                    "accept": [
+                        "ちょうど いいです。のみやすく なりました。",
+                        "ちょうど いいです。飲みやすく なりました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l19-s3-t7",
+                    "who": "partner",
+                    "ja": "よかったですね。",
+                    "speak": "よかったですね。",
+                    "id_text": "Syukurlah.",
+                    "en_text": "I am glad.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l19-s4",
+            "title_id": "Mengatur AC",
+            "title_en": "Adjusting the air conditioner",
+            "setting_id": "Ruangan terasa terlalu panas dan kamu mengatur AC bersama rekan.",
+            "setting_en": "The room feels too hot and you adjust the AC with a coworker.",
+            "goal_id": "Mengubah keadaan dengan Ｎを 〜く します.",
+            "goal_en": "Change a state with Ｎを 〜く します.",
+            "patterns": [
+                "〜すぎます",
+                "Ｎを 〜く します"
+            ],
+            "partner": {
+                "name": "スリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l19-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、この 部屋《へや》は ちょっと 暑《あつ》すぎますね。",
+                    "speak": "ブディさん、この へやは ちょっと あつすぎますね。",
+                    "id_text": "Budi, ruangan ini agak terlalu panas, ya.",
+                    "en_text": "Budi, this room is a little too hot.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l19-s4-t2",
+                    "who": "you",
+                    "ja": "そうですね。エアコンの 温度《おんど》を 低《ひく》く しましょうか。",
+                    "speak": "そうですね。エアコンの おんどを ひくく しましょうか。",
+                    "id_text": "Benar. Mau kita turunkan suhu AC?",
+                    "en_text": "True. Shall we lower the AC temperature?",
+                    "accept": [
+                        "そうですね。エアコンの おんどを ひくく しましょうか。",
+                        "そうですね。エアコンの 温度を 低く しましょうか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l19-s4-t3",
+                    "who": "partner",
+                    "ja": "ええ、お願《ねが》いします。",
+                    "speak": "ええ、おねがいします。",
+                    "id_text": "Ya, tolong.",
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l19-s4-t4",
+                    "who": "you",
+                    "ja": "これで いいですか。",
+                    "speak": "これで いいですか。",
+                    "id_text": "Boleh begini?",
+                    "en_text": "Is this all right?",
+                    "accept": [
+                        "これで いいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l19-s4-t5",
+                    "who": "partner",
+                    "ja": "まだ 暑《あつ》いです。もう 少《すこ》し 低《ひく》く して ください。",
+                    "speak": "まだ あついです。もう すこし ひくく して ください。",
+                    "id_text": "Masih panas. Turunkan sedikit lagi.",
+                    "en_text": "It is still hot. Please lower it a little more.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l19-s4-t6",
+                    "who": "you",
+                    "ja": "はい。……どうですか。",
+                    "speak": "はい。……どうですか。",
+                    "id_text": "Baik. ……Bagaimana?",
+                    "en_text": "Okay. ...How is it?",
+                    "accept": [
+                        "はい。……どうですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l19-s4-t7",
+                    "who": "partner",
+                    "ja": "ちょうど いいです。ありがとう。",
+                    "speak": "ちょうど いいです。ありがとう。",
+                    "id_text": "Pas. Terima kasih.",
+                    "en_text": "Just right. Thank you.",
+                    "audio": "/audio/kaiwa/lesson-n4-19/n4l19-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

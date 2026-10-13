@@ -1,0 +1,1342 @@
+{
+    "id": "keitai",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Ponsel & Internet (携帯・契約)",
+    "title_en": "Phone & Internet (携帯・契約)",
+    "note_id": "Harga, tanggal, dan aturan denda di jawaban contoh hanya contoh: tiap operator dan kontrak berbeda, dan aturannya bisa berubah. Bawa dokumen aslimu, baca syarat kontrak, dan tanyakan langsung jika belum jelas. Banyak istilah di sini (契約, 請求, 解約, 違约金) tidak ada di kurikulum; hafalkan lewat kartu kata tiap skenario.",
+    "note_en": "Prices, dates and penalty rules in the sample answers are only examples: each carrier and contract differs, and rules can change. Bring your original documents, read the contract terms, and ask directly if anything is unclear. Many terms here (契約, 請求, 解約, 違約金) are outside the curriculum; learn them from each scenario's word cards.",
+    "scenarios": [
+        {
+            "id": "keitai-s1",
+            "title_id": "Mulai kontrak ponsel (契約)",
+            "title_en": "Starting a phone contract (契約)",
+            "setting_id": "Kamu datang ke toko operator untuk membuat kontrak ponsel pertamamu di Jepang. Staf meminta dokumen dan data alamat.",
+            "setting_en": "You visit a carrier shop to sign your first phone contract in Japan. The staff ask for documents and your address.",
+            "goal_id": "Menyatakan keinginan dengan 〜たいです, menyerahkan dokumen (見せて ください), dan minta bantuan menulis formulir (手伝って ください).",
+            "goal_en": "State what you want with 〜たいです, show your documents (見せて ください), and ask for help with the form (手伝って ください).",
+            "patterns": [
+                "〜を 契約したいです",
+                "〜は 初めてですか",
+                "〜て ください",
+                "手伝って ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Kontrak ponsel butuh dokumen identitas (本人確認書類): kartu 在留カード dan cara bayar (kartu bank/kredit). Bawa keduanya.",
+                "Katakan keperluan dengan 〜を 契約したいです. Formulir (申込書) meminta nama, alamat, dan nomor kamar; jangan sungkan minta 手伝って ください.",
+                "Dokumen yang diminta bisa berbeda tiap operator dan toko. Tanyakan lebih dulu lewat telepon atau situs resmi."
+            ],
+            "tips_en": [
+                "A phone contract needs ID (本人確認書類): your 在留カード and a payment method (bank or credit card). Bring both.",
+                "Say what you want with 〜を 契約したいです. The application form (申込書) asks for name, address and room number; do not hesitate to ask 手伝って ください.",
+                "Required documents can differ by carrier and shop. Ask first by phone or on the official website."
+            ],
+            "words": [
+                {
+                    "ja": "契約《けいやく》",
+                    "id": "kontrak",
+                    "en": "contract"
+                },
+                {
+                    "ja": "在留《ざいりゅう》カード",
+                    "id": "kartu izin tinggal",
+                    "en": "residence card"
+                },
+                {
+                    "ja": "住所《じゅうしょ》",
+                    "id": "alamat",
+                    "en": "address"
+                },
+                {
+                    "ja": "番号《ばんごう》",
+                    "id": "nomor",
+                    "en": "number"
+                },
+                {
+                    "ja": "用件《ようけん》",
+                    "id": "keperluan",
+                    "en": "business / purpose"
+                },
+                {
+                    "ja": "初《はじ》めて",
+                    "id": "pertama kali",
+                    "en": "for the first time"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "身分証《みぶんしょう》は ありますか。",
+                    "id": "Apakah ada kartu identitas?",
+                    "en": "Do you have photo ID?"
+                },
+                {
+                    "ja": "ここに 名前《なまえ》を 書《か》きますか。",
+                    "id": "Apakah saya tulis nama di sini?",
+                    "en": "Do I write my name here?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。どんな ご用件《ようけん》ですか。",
+                    "speak": "いらっしゃいませ。どんな ごようけんですか。",
+                    "id_text": "Selamat datang. Ada keperluan apa?",
+                    "en_text": "Welcome. How may I help you?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t1.mp3"
+                },
+                {
+                    "id": "keitai-s1-t2",
+                    "who": "you",
+                    "ja": "すみません。スマホを 契約《けいやく》したいです。ブディです。",
+                    "speak": "すみません。スマホを けいやくしたいです。ブディです。",
+                    "id_text": "Permisi. Saya ingin kontrak ponsel. Nama saya Budi.",
+                    "accept": [
+                        "すみません。スマホを 契約したいです。ブディです。",
+                        "すみません。スマホを契約したいです。ブディです。"
+                    ],
+                    "en_text": "Excuse me. I want to sign a phone contract. I am Budi.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t2.mp3"
+                },
+                {
+                    "id": "keitai-s1-t3",
+                    "who": "partner",
+                    "ja": "ありがとうございます。日本《にほん》の 携帯電話《けいたいでんわ》は 初《はじ》めてですか。",
+                    "speak": "ありがとうございます。にほんの けいたいでんわは はじめてですか。",
+                    "id_text": "Terima kasih. Apakah ini ponsel Jepang pertamamu?",
+                    "en_text": "Thank you. Is this your first Japanese mobile phone?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t3.mp3"
+                },
+                {
+                    "id": "keitai-s1-t4",
+                    "who": "you",
+                    "ja": "はい、初《はじ》めてです。去年《きょねん》、日本《にほん》に 来《き》ました。",
+                    "speak": "はい、はじめてです。きょねん、にほんに きました。",
+                    "id_text": "Ya, pertama kali. Saya datang ke Jepang tahun lalu.",
+                    "accept": [
+                        "はい、初めてです。去年、日本に 来ました。",
+                        "はい、初めてです。去年、日本に来ました。"
+                    ],
+                    "en_text": "Yes, the first time. I came to Japan last year.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t4.mp3"
+                },
+                {
+                    "id": "keitai-s1-t5",
+                    "who": "partner",
+                    "ja": "では、在留《ざいりゅう》カードと 銀行《ぎんこう》の カードを 見《み》せて ください。",
+                    "speak": "では、ざいりゅうカードと ぎんこうの カードを みせて ください。",
+                    "id_text": "Kalau begitu, tolong tunjukkan kartu izin tinggal dan kartu bank.",
+                    "en_text": "Then please show me your residence card and your bank card.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t5.mp3"
+                },
+                {
+                    "id": "keitai-s1-t6",
+                    "who": "you",
+                    "ja": "はい、どうぞ。在留《ざいりゅう》カードと 銀行《ぎんこう》の カードです。",
+                    "speak": "はい、どうぞ。ざいりゅうカードと ぎんこうの カードです。",
+                    "id_text": "Ya, silakan. Ini kartu izin tinggal dan kartu bank.",
+                    "accept": [
+                        "はい、どうぞ。在留カードと 銀行の カードです。",
+                        "はい、どうぞ。在留カードと銀行のカードです。"
+                    ],
+                    "en_text": "Yes, here you are. This is my residence card and bank card.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t6.mp3"
+                },
+                {
+                    "id": "keitai-s1-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。住所《じゅうしょ》は 寮《りょう》ですね。寮《りょう》の 名前《なまえ》と 部屋《へや》の 番号《ばんごう》を 書《か》いて ください。",
+                    "speak": "ありがとうございます。じゅうしょは りょうですね。りょうの なまえと へやの ばんごうを かいて ください。",
+                    "id_text": "Terima kasih. Alamatnya asrama, ya. Tolong tulis nama asrama dan nomor kamar.",
+                    "en_text": "Thank you. Your address is the dormitory. Please write the dorm name and room number.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t7.mp3"
+                },
+                {
+                    "id": "keitai-s1-t8",
+                    "who": "you",
+                    "ja": "はい、書《か》きます。漢字《かんじ》が 難《むずか》しいです。手伝《てつだ》って ください。",
+                    "speak": "はい、かきます。かんじが むずかしいです。てつだって ください。",
+                    "id_text": "Baik, saya tulis. Kanjinya sulit. Tolong bantu saya.",
+                    "accept": [
+                        "はい、書きます。漢字が 難しいです。手伝って ください。",
+                        "はい、書きます。漢字が難しいです。手伝ってください。"
+                    ],
+                    "en_text": "Yes, I will write it. The kanji is difficult. Please help me.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s1-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s2",
+            "title_id": "Memilih paket (料金プラン)",
+            "title_en": "Choosing a plan (料金プラン)",
+            "setting_id": "Staf menjelaskan dua paket: kecil dan besar. Kamu menyebut kebutuhanmu (menonton video, jarang menelepon) lalu memilih.",
+            "setting_en": "The staff explain two plans: small and large. You describe your needs (watching videos, few calls) and choose.",
+            "goal_id": "Bertanya isi paket (どのぐらい ありますか), menyatakan kebiasaan pakai, dan memutuskan dengan 〜に します.",
+            "goal_en": "Ask what a plan includes (どのぐらい ありますか), describe your usage, and decide with 〜に します.",
+            "patterns": [
+                "〜は いくらですか",
+                "どのぐらい ありますか",
+                "〜に します",
+                "〜は いりません"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Paket ponsel dihitung per bulan (月々). Dua hal utama: harga bulanan (料金) dan jumlah data (データ, satuan ギガ).",
+                "Sebut kebiasaanmu: 動画を よく 見ます (sering nonton video) berarti butuh data besar; 電話は あまり かけません berarti かけ放題 tidak perlu.",
+                "Putuskan dengan 〜に します. Harga dan isi paket di jawaban contoh hanya contoh; operator tiap bulan bisa mengubahnya."
+            ],
+            "tips_en": [
+                "Phone plans are counted per month (月々). Two main points: the monthly price (料金) and the amount of data (データ, in ギガ).",
+                "Describe your habits: 動画を よく 見ます (I watch videos often) means you need a lot of data; 電話は あまり かけません means かけ放題 (unlimited calls) is unnecessary.",
+                "Decide with 〜に します. Prices and plan contents in the sample answers are only examples; carriers change them."
+            ],
+            "words": [
+                {
+                    "ja": "料金《りょうきん》",
+                    "id": "tarif / biaya",
+                    "en": "fee / rate"
+                },
+                {
+                    "ja": "月々《つきづき》",
+                    "id": "tiap bulan",
+                    "en": "every month"
+                },
+                {
+                    "ja": "動画《どうが》",
+                    "id": "video",
+                    "en": "video"
+                },
+                {
+                    "ja": "通話《つうわ》",
+                    "id": "panggilan telepon",
+                    "en": "phone calls"
+                },
+                {
+                    "ja": "かけ放題《ほうだい》",
+                    "id": "telepon sepuasnya",
+                    "en": "unlimited calls"
+                },
+                {
+                    "ja": "必要《ひつよう》",
+                    "id": "perlu",
+                    "en": "necessary"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "データが 足《た》りません。",
+                    "id": "Datanya kurang.",
+                    "en": "I do not have enough data."
+                },
+                {
+                    "ja": "もっと 安《やす》い プランは ありますか。",
+                    "id": "Adakah paket yang lebih murah?",
+                    "en": "Is there a cheaper plan?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s2-t1",
+                    "who": "partner",
+                    "ja": "料金《りょうきん》プランは 二《ふた》つ あります。小《ちい》さい プランは 月々《つきづき》 三千円《さんぜんえん》で、大《おお》きい プランは 五千円《ごせんえん》です。",
+                    "speak": "りょうきんプランは ふたつ あります。ちいさい プランは つきづき さんぜんえんで、おおきい プランは ごせんえんです。",
+                    "id_text": "Ada dua paket. Paket kecil 3.000 yen per bulan, paket besar 5.000 yen.",
+                    "en_text": "There are two plans. The small plan is 3,000 yen a month and the large plan is 5,000 yen.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t1.mp3"
+                },
+                {
+                    "id": "keitai-s2-t2",
+                    "who": "you",
+                    "ja": "大《おお》きい プランは データが どのぐらい ありますか。",
+                    "speak": "おおきい プランは データが どのぐらい ありますか。",
+                    "id_text": "Paket besar datanya berapa banyak?",
+                    "accept": [
+                        "大きい プランは データが どのぐらい ありますか。",
+                        "大きいプランはデータがどのぐらいありますか。"
+                    ],
+                    "en_text": "How much data does the large plan have?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t2.mp3"
+                },
+                {
+                    "id": "keitai-s2-t3",
+                    "who": "partner",
+                    "ja": "三十《さんじゅう》ギガです。動画《どうが》を よく 見《み》ますか。",
+                    "speak": "さんじゅうギガです。どうがを よく みますか。",
+                    "id_text": "Tiga puluh giga. Apakah kamu sering menonton video?",
+                    "en_text": "Thirty gigabytes. Do you watch videos often?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t3.mp3"
+                },
+                {
+                    "id": "keitai-s2-t4",
+                    "who": "you",
+                    "ja": "はい、毎日《まいにち》、動画《どうが》を 見《み》ます。データが 必要《ひつよう》です。",
+                    "speak": "はい、まいにち、どうがを みます。データが ひつようです。",
+                    "id_text": "Ya, setiap hari saya menonton video. Saya butuh data.",
+                    "accept": [
+                        "はい、毎日、動画を 見ます。データが 必要です。",
+                        "はい、毎日、動画を見ます。データが必要です。"
+                    ],
+                    "en_text": "Yes, I watch videos every day. I need data.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t4.mp3"
+                },
+                {
+                    "id": "keitai-s2-t5",
+                    "who": "partner",
+                    "ja": "電話《でんわ》は よく かけますか。かけ放題《ほうだい》の オプションも ありますよ。",
+                    "speak": "でんわは よく かけますか。かけほうだいの オプションも ありますよ。",
+                    "id_text": "Apakah sering menelepon? Ada juga opsi telepon sepuasnya.",
+                    "en_text": "Do you call often? There is also an unlimited-calls option.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t5.mp3"
+                },
+                {
+                    "id": "keitai-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、あまり かけません。アプリで 家族《かぞく》と 話《はな》します。",
+                    "speak": "いいえ、あまり かけません。アプリで かぞくと はなします。",
+                    "id_text": "Tidak, jarang. Saya bicara dengan keluarga lewat aplikasi.",
+                    "accept": [
+                        "いいえ、あまり かけません。アプリで 家族と 話します。",
+                        "いいえ、あまりかけません。アプリで家族と話します。"
+                    ],
+                    "en_text": "No, not much. I talk with my family on an app.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t6.mp3"
+                },
+                {
+                    "id": "keitai-s2-t7",
+                    "who": "partner",
+                    "ja": "では、かけ放題《ほうだい》は いりませんね。大《おお》きい プランで よろしいですか。",
+                    "speak": "では、かけほうだいは いりませんね。おおきい プランで よろしいですか。",
+                    "id_text": "Kalau begitu, telepon sepuasnya tidak perlu, ya. Apakah paket besar sudah cukup?",
+                    "en_text": "Then you do not need unlimited calls. Is the large plan all right?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t7.mp3"
+                },
+                {
+                    "id": "keitai-s2-t8",
+                    "who": "you",
+                    "ja": "はい、大《おお》きい プランに します。月々《つきづき》 五千円《ごせんえん》ですね。",
+                    "speak": "はい、おおきい プランに します。つきづき ごせんえんですね。",
+                    "id_text": "Ya, saya pilih paket besar. 5.000 yen per bulan, ya.",
+                    "accept": [
+                        "はい、大きい プランに します。月々 五千円ですね。",
+                        "はい、大きいプランにします。月々五千円ですね。"
+                    ],
+                    "en_text": "Yes, I will take the large plan. That is 5,000 yen a month, right?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s2-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s3",
+            "title_id": "SIM card & ponsel sendiri",
+            "title_en": "SIM card & your own phone",
+            "setting_id": "Kamu membawa ponsel dari negaramu dan hanya ingin SIM. Staf memeriksa apakah ponselmu bisa dipakai (SIMフリー).",
+            "setting_en": "You brought a phone from your country and only want a SIM. The staff check whether your phone can be used (SIMフリー).",
+            "goal_id": "Menyatakan 〜を 使いたいです, minta pengecekan (確認して ください), dan menanyakan kapan bisa dipakai (いつから 使えますか).",
+            "goal_en": "Say 〜を 使いたいです, ask for a check (確認して ください), and ask when it can be used (いつから 使えますか).",
+            "patterns": [
+                "〜を 使いたいです",
+                "〜か 確認して ください",
+                "いつから 使えますか",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "SIM = kartu kecil berisi kontrak nomor telepon. 「SIMだけ」 (SIMのみ) = kontrak tanpa membeli ponsel baru.",
+                "SIMフリー = ponsel tidak terkunci ke satu operator. Ponsel dari luar negeri belum tentu cocok dengan jaringan Jepang; minta 確認して ください.",
+                "Setelah SIM dipasang, biasanya ada langkah pengaturan (設定) lewat Wi-Fi. Tanyakan tanggal mulai pemakaian: いつから 使えますか。"
+            ],
+            "tips_en": [
+                "SIM = the small card that carries your phone contract. 「SIMだけ」 (SIMのみ) = a contract without buying a new phone.",
+                "SIMフリー = a phone not locked to one carrier. A phone from abroad may not suit Japanese networks; ask 確認して ください.",
+                "After inserting the SIM there is usually a setup step (設定) over Wi-Fi. Ask the start date: いつから 使えますか。"
+            ],
+            "words": [
+                {
+                    "ja": "SIMカード",
+                    "id": "kartu SIM",
+                    "en": "SIM card"
+                },
+                {
+                    "ja": "SIMフリー",
+                    "id": "ponsel tanpa kunci operator",
+                    "en": "unlocked phone"
+                },
+                {
+                    "ja": "確認《かくにん》",
+                    "id": "pengecekan",
+                    "en": "check / confirmation"
+                },
+                {
+                    "ja": "設定《せってい》",
+                    "id": "pengaturan",
+                    "en": "settings / setup"
+                },
+                {
+                    "ja": "入《い》れる",
+                    "id": "memasukkan",
+                    "en": "to put in"
+                },
+                {
+                    "ja": "夕方《ゆうがた》",
+                    "id": "sore hari",
+                    "en": "evening"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この スマホは 使《つか》えますか。",
+                    "id": "Apakah ponsel ini bisa dipakai?",
+                    "en": "Can this phone be used?"
+                },
+                {
+                    "ja": "設定《せってい》が 分《わ》かりません。",
+                    "id": "Saya tidak paham pengaturannya.",
+                    "en": "I do not understand the setup."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s3-t1",
+                    "who": "partner",
+                    "ja": "持《も》って いる スマホを 使《つか》いますか。それとも、新《あたら》しい スマホを 買《か》いますか。",
+                    "speak": "もって いる スマホを つかいますか。それとも、あたらしい スマホを かいますか。",
+                    "id_text": "Mau pakai ponsel yang kamu punya, atau beli ponsel baru?",
+                    "en_text": "Will you use your current phone, or buy a new one?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t1.mp3"
+                },
+                {
+                    "id": "keitai-s3-t2",
+                    "who": "you",
+                    "ja": "国《くに》から 持《も》って きた スマホを 使《つか》いたいです。",
+                    "speak": "くにから もって きた スマホを つかいたいです。",
+                    "id_text": "Saya ingin memakai ponsel yang saya bawa dari negara saya.",
+                    "accept": [
+                        "国から 持って きた スマホを 使いたいです。",
+                        "国から持ってきたスマホを使いたいです。"
+                    ],
+                    "en_text": "I want to use the phone I brought from my country.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t2.mp3"
+                },
+                {
+                    "id": "keitai-s3-t3",
+                    "who": "partner",
+                    "ja": "では、SIMカードだけの 契約《けいやく》ですね。その スマホは SIMフリーですか。",
+                    "speak": "では、SIMカードだけの けいやくですね。その スマホは SIMフリーですか。",
+                    "id_text": "Kalau begitu, kontrak SIM saja, ya. Apakah ponselnya SIMフリー?",
+                    "en_text": "Then it is a SIM-only contract. Is that phone SIM-free?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t3.mp3"
+                },
+                {
+                    "id": "keitai-s3-t4",
+                    "who": "you",
+                    "ja": "分《わ》かりません。確認《かくにん》して ください。",
+                    "speak": "わかりません。かくにんして ください。",
+                    "id_text": "Saya tidak tahu. Tolong dicek.",
+                    "accept": [
+                        "分かりません。確認して ください。",
+                        "分かりません。確認してください。"
+                    ],
+                    "en_text": "I do not know. Please check.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t4.mp3"
+                },
+                {
+                    "id": "keitai-s3-t5",
+                    "who": "partner",
+                    "ja": "確認《かくにん》しました。使《つか》えます。この SIMカードを スマホに 入《い》れて ください。",
+                    "speak": "かくにんしました。つかえます。この SIMカードを スマホに いれて ください。",
+                    "id_text": "Sudah saya cek. Bisa dipakai. Tolong masukkan SIM ini ke ponsel.",
+                    "en_text": "I checked. It can be used. Please put this SIM card into the phone.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t5.mp3"
+                },
+                {
+                    "id": "keitai-s3-t6",
+                    "who": "you",
+                    "ja": "はい、入《い》れました。電話《でんわ》は いつから 使《つか》えますか。",
+                    "speak": "はい、いれました。でんわは いつから つかえますか。",
+                    "id_text": "Ya, sudah saya masukkan. Teleponnya bisa dipakai mulai kapan?",
+                    "accept": [
+                        "はい、入れました。電話は いつから 使えますか。",
+                        "はい、入れました。電話はいつから使えますか。"
+                    ],
+                    "en_text": "Yes, I put it in. From when can I use the phone?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t6.mp3"
+                },
+                {
+                    "id": "keitai-s3-t7",
+                    "who": "partner",
+                    "ja": "今日《きょう》の 夕方《ゆうがた》から 使《つか》えます。先《さき》に Wi-Fiで 設定《せってい》して ください。",
+                    "speak": "きょうの ゆうがたから つかえます。さきに Wi-Fiで せっていして ください。",
+                    "id_text": "Bisa dipakai mulai sore ini. Lakukan pengaturan dulu lewat Wi-Fi.",
+                    "en_text": "You can use it from this evening. Please do the setup over Wi-Fi first.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t7.mp3"
+                },
+                {
+                    "id": "keitai-s3-t8",
+                    "who": "you",
+                    "ja": "はい、寮《りょう》の Wi-Fiで 設定《せってい》します。ありがとうございます。",
+                    "speak": "はい、りょうの Wi-Fiで せっていします。ありがとうございます。",
+                    "id_text": "Baik, saya atur lewat Wi-Fi asrama. Terima kasih.",
+                    "accept": [
+                        "はい、寮の Wi-Fiで 設定します。ありがとうございます。",
+                        "はい、寮のWi-Fiで設定します。ありがとうございます。",
+                        "はい、寮の ワイファイで 設定します。ありがとうございます。",
+                        "はい、寮のワイファイで設定します。ありがとうございます。"
+                    ],
+                    "en_text": "Yes, I will set it up on the dorm Wi-Fi. Thank you.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s3-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s4",
+            "title_id": "Cara bayar (支払い)",
+            "title_en": "Payment method (支払い)",
+            "setting_id": "Kamu tidak punya kartu kredit, jadi memilih pembayaran otomatis dari rekening bank. Staf menjelaskan tanggal penarikan.",
+            "setting_en": "You have no credit card, so you choose automatic payment from your bank account. The staff explain the withdrawal date.",
+            "goal_id": "Menjelaskan cara bayar yang kamu pilih, memahami 引き落とし (penarikan otomatis), dan berjanji menyiapkan saldo.",
+            "goal_en": "Explain the payment method you choose, understand 引き落とし (automatic withdrawal), and promise to keep funds in the account.",
+            "patterns": [
+                "〜で 払います",
+                "〜ないと、〜",
+                "〜とき、〜",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Dua cara umum: クレジットカード atau 口座振替 (penarikan otomatis dari rekening). Sebut pilihanmu: 口座で 払います。",
+                "引き落とし = uang ditarik otomatis tiap bulan pada tanggal tertentu. Jika saldo (残高) kurang, pembayaran gagal dan layanan bisa berhenti.",
+                "Jika tidak bisa bayar, segera hubungi operator: 払えない ときは、すぐ 電話します。"
+            ],
+            "tips_en": [
+                "Two common ways: クレジットカード or 口座振替 (automatic bank debit). State your choice: 口座で 払います。",
+                "引き落とし = money is withdrawn automatically each month on a set date. If the balance (残高) is short, payment fails and service may stop.",
+                "If you cannot pay, contact the carrier right away: 払えない ときは、すぐ 電話します。"
+            ],
+            "words": [
+                {
+                    "ja": "支払《しはら》い",
+                    "id": "pembayaran",
+                    "en": "payment"
+                },
+                {
+                    "ja": "口座《こうざ》",
+                    "id": "rekening bank",
+                    "en": "bank account"
+                },
+                {
+                    "ja": "引《ひ》き落《お》とし",
+                    "id": "penarikan otomatis",
+                    "en": "automatic withdrawal"
+                },
+                {
+                    "ja": "残高《ざんだか》",
+                    "id": "saldo",
+                    "en": "balance"
+                },
+                {
+                    "ja": "毎月《まいつき》",
+                    "id": "tiap bulan",
+                    "en": "every month"
+                },
+                {
+                    "ja": "払《はら》う",
+                    "id": "membayar",
+                    "en": "to pay"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "今月《こんげつ》の 支払《しはら》いは いつですか。",
+                    "id": "Pembayaran bulan ini kapan?",
+                    "en": "When is this month's payment?"
+                },
+                {
+                    "ja": "払《はら》い方《かた》を 変《か》えたいです。",
+                    "id": "Saya ingin mengganti cara bayar.",
+                    "en": "I want to change my payment method."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s4-t1",
+                    "who": "partner",
+                    "ja": "支払《しはら》い方法《ほうほう》は どう しますか。クレジットカードか、銀行《ぎんこう》の 口座《こうざ》から ですか。",
+                    "speak": "しはらいほうほうは どう しますか。クレジットカードか、ぎんこうの こうざから ですか。",
+                    "id_text": "Cara bayarnya bagaimana? Kartu kredit, atau dari rekening bank?",
+                    "en_text": "How will you pay? By credit card, or from a bank account?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t1.mp3"
+                },
+                {
+                    "id": "keitai-s4-t2",
+                    "who": "you",
+                    "ja": "クレジットカードは 持《も》って いません。銀行《ぎんこう》の 口座《こうざ》で 払《はら》います。",
+                    "speak": "クレジットカードは もって いません。ぎんこうの こうざで はらいます。",
+                    "id_text": "Saya tidak punya kartu kredit. Saya bayar dari rekening bank.",
+                    "accept": [
+                        "クレジットカードは 持って いません。銀行の 口座で 払います。",
+                        "クレジットカードは持っていません。銀行の口座で払います。"
+                    ],
+                    "en_text": "I do not have a credit card. I will pay from my bank account.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t2.mp3"
+                },
+                {
+                    "id": "keitai-s4-t3",
+                    "who": "partner",
+                    "ja": "口座《こうざ》の キャッシュカードは ありますか。",
+                    "speak": "こうざの キャッシュカードは ありますか。",
+                    "id_text": "Apakah ada kartu ATM rekeningnya?",
+                    "en_text": "Do you have the cash card for the account?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t3.mp3"
+                },
+                {
+                    "id": "keitai-s4-t4",
+                    "who": "you",
+                    "ja": "はい、これです。名前《なまえ》は 口座《こうざ》の 名前《なまえ》と 同《おな》じです。",
+                    "speak": "はい、これです。なまえは こうざの なまえと おなじです。",
+                    "id_text": "Ya, ini. Namanya sama dengan nama rekening.",
+                    "accept": [
+                        "はい、これです。名前は 口座の 名前と 同じです。",
+                        "はい、これです。名前は口座の名前と同じです。"
+                    ],
+                    "en_text": "Yes, here it is. The name is the same as the account name.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t4.mp3"
+                },
+                {
+                    "id": "keitai-s4-t5",
+                    "who": "partner",
+                    "ja": "ありがとうございます。引《ひ》き落《お》としは 毎月《まいつき》 二十七日《にじゅうしちにち》です。残高《ざんだか》が 足《た》りないと、払《はら》えません。",
+                    "speak": "ありがとうございます。ひきおとしは まいつき にじゅうしちにちです。ざんだかが たりないと、はらえません。",
+                    "id_text": "Terima kasih. Penarikan tiap bulan tanggal 27. Kalau saldo kurang, tidak bisa terbayar.",
+                    "en_text": "Thank you. The withdrawal is on the 27th each month. If the balance is short, the payment will fail.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t5.mp3"
+                },
+                {
+                    "id": "keitai-s4-t6",
+                    "who": "you",
+                    "ja": "はい、毎月《まいつき》、銀行《ぎんこう》に お金《かね》を 入《い》れます。",
+                    "speak": "はい、まいつき、ぎんこうに おかねを いれます。",
+                    "id_text": "Ya, tiap bulan saya akan memasukkan uang ke bank.",
+                    "accept": [
+                        "はい、毎月、銀行に お金を 入れます。",
+                        "はい、毎月、銀行にお金を入れます。"
+                    ],
+                    "en_text": "Yes, every month I will put money in the bank.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t6.mp3"
+                },
+                {
+                    "id": "keitai-s4-t7",
+                    "who": "partner",
+                    "ja": "もし 払《はら》えない ときは、すぐ 電話《でんわ》して ください。払《はら》わないと、電話《でんわ》が 止《と》まります。",
+                    "speak": "もし はらえない ときは、すぐ でんわして ください。はらわないと、でんわが とまります。",
+                    "id_text": "Kalau tidak bisa bayar, segera telepon. Kalau tidak dibayar, telepon akan berhenti.",
+                    "en_text": "If you cannot pay, call us right away. If you do not pay, your phone will stop working.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t7.mp3"
+                },
+                {
+                    "id": "keitai-s4-t8",
+                    "who": "you",
+                    "ja": "はい、分《わ》かりました。払《はら》えない ときは、すぐ 電話《でんわ》します。",
+                    "speak": "はい、わかりました。はらえない ときは、すぐ でんわします。",
+                    "id_text": "Baik, saya mengerti. Kalau tidak bisa bayar, saya segera telepon.",
+                    "accept": [
+                        "はい、分かりました。払えない ときは、すぐ 電話します。",
+                        "はい、分かりました。払えないときは、すぐ電話します。"
+                    ],
+                    "en_text": "Yes, I understand. If I cannot pay, I will call right away.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s4-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s5",
+            "title_id": "Bertanya tagihan (請求)",
+            "title_en": "Asking about a bill (請求)",
+            "setting_id": "Tagihan bulan ini jauh lebih mahal dari biasanya. Kamu datang ke toko, menunjukkan tagihan, dan minta rincian.",
+            "setting_en": "This month's bill is much higher than usual. You go to the shop, show the bill and ask for the breakdown.",
+            "goal_id": "Melaporkan masalah (〜が 高いです), minta rincian (内訳を 教えて ください), dan memahami penyebab tagihan.",
+            "goal_en": "Report a problem (〜が 高いです), ask for the breakdown (内訳を 教えて ください), and understand what caused the bill.",
+            "patterns": [
+                "〜が 高いです",
+                "〜を 教えて ください",
+                "〜を 見せて ください",
+                "〜と 安く なります"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Tagihan = 請求 (dokumen: 請求書). Rincian biaya = 内訳. Kalimat kunci: 今月の 請求が 高いです。内訳を 教えて ください。",
+                "Komponen umum: 基本料金 (biaya dasar), 通話料 (biaya telepon), 通信料 (biaya data). Telepon internasional (国際電話) biasanya mahal.",
+                "Banyak operator menyediakan aplikasi untuk melihat tagihan. Tanyakan juga cara membuat tagihan lebih murah."
+            ],
+            "tips_en": [
+                "Bill = 請求 (document: 請求書). Breakdown = 内訳. Key sentence: 今月の 請求が 高いです。内訳を 教えて ください。",
+                "Common parts: 基本料金 (base fee), 通話料 (call charges), 通信料 (data charges). International calls (国際電話) are usually expensive.",
+                "Many carriers have an app to view bills. Also ask how to make the bill cheaper."
+            ],
+            "words": [
+                {
+                    "ja": "請求《せいきゅう》",
+                    "id": "tagihan",
+                    "en": "billing / charge"
+                },
+                {
+                    "ja": "内訳《うちわけ》",
+                    "id": "rincian",
+                    "en": "breakdown"
+                },
+                {
+                    "ja": "基本料金《きほんりょうきん》",
+                    "id": "biaya dasar",
+                    "en": "base fee"
+                },
+                {
+                    "ja": "通話料《つうわりょう》",
+                    "id": "biaya telepon",
+                    "en": "call charges"
+                },
+                {
+                    "ja": "国際電話《こくさいでんわ》",
+                    "id": "telepon internasional",
+                    "en": "international call"
+                },
+                {
+                    "ja": "無料《むりょう》",
+                    "id": "gratis",
+                    "en": "free of charge"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "先月《せんげつ》は 五千円《ごせんえん》でした。",
+                    "id": "Bulan lalu 5.000 yen.",
+                    "en": "Last month it was 5,000 yen."
+                },
+                {
+                    "ja": "来月《らいげつ》の 請求《せいきゅう》を 確認《かくにん》します。",
+                    "id": "Saya akan cek tagihan bulan depan.",
+                    "en": "I will check next month's bill."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s5-t1",
+                    "who": "partner",
+                    "ja": "こんにちは。どう されましたか。",
+                    "speak": "こんにちは。どう されましたか。",
+                    "id_text": "Selamat siang. Ada apa?",
+                    "en_text": "Hello. What seems to be the problem?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t1.mp3"
+                },
+                {
+                    "id": "keitai-s5-t2",
+                    "who": "you",
+                    "ja": "今月《こんげつ》の 請求《せいきゅう》が 高《たか》いです。いつもは 五千円《ごせんえん》ですが、今月《こんげつ》は 八千円《はっせんえん》です。",
+                    "speak": "こんげつの せいきゅうが たかいです。いつもは ごせんえんですが、こんげつは はっせんえんです。",
+                    "id_text": "Tagihan bulan ini mahal. Biasanya 5.000 yen, bulan ini 8.000 yen.",
+                    "accept": [
+                        "今月の 請求が 高いです。いつもは 五千円ですが、今月は 八千円です。",
+                        "今月の請求が高いです。いつもは五千円ですが、今月は八千円です。"
+                    ],
+                    "en_text": "This month's bill is high. It is usually 5,000 yen, but this month it is 8,000 yen.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t2.mp3"
+                },
+                {
+                    "id": "keitai-s5-t3",
+                    "who": "partner",
+                    "ja": "請求書《せいきゅうしょ》か アプリの 画面《がめん》を 見《み》せて ください。",
+                    "speak": "せいきゅうしょか アプリの がめんを みせて ください。",
+                    "id_text": "Tolong tunjukkan tagihan atau layar aplikasinya.",
+                    "en_text": "Please show me the bill or the app screen.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t3.mp3"
+                },
+                {
+                    "id": "keitai-s5-t4",
+                    "who": "you",
+                    "ja": "はい、これです。内訳《うちわけ》を 教《おし》えて ください。",
+                    "speak": "はい、これです。うちわけを おしえて ください。",
+                    "id_text": "Ya, ini. Tolong jelaskan rinciannya.",
+                    "accept": [
+                        "はい、これです。内訳を 教えて ください。",
+                        "はい、これです。内訳を教えてください。"
+                    ],
+                    "en_text": "Yes, here it is. Please tell me the breakdown.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t4.mp3"
+                },
+                {
+                    "id": "keitai-s5-t5",
+                    "who": "partner",
+                    "ja": "基本料金《きほんりょうきん》が 五千円《ごせんえん》です。そして、通話料《つうわりょう》が 三千円《さんぜんえん》です。国際電話《こくさいでんわ》を かけましたね。",
+                    "speak": "きほんりょうきんが ごせんえんです。そして、つうわりょうが さんぜんえんです。こくさいでんわを かけましたね。",
+                    "id_text": "Biaya dasar 5.000 yen. Lalu biaya telepon 3.000 yen. Anda menelepon ke luar negeri, ya.",
+                    "en_text": "The base fee is 5,000 yen, and call charges are 3,000 yen. You made an international call.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t5.mp3"
+                },
+                {
+                    "id": "keitai-s5-t6",
+                    "who": "you",
+                    "ja": "あ、国《くに》の 家族《かぞく》に 電話《でんわ》しました。知《し》りませんでした。",
+                    "speak": "あ、くにの かぞくに でんわしました。しりませんでした。",
+                    "id_text": "Ah, saya menelepon keluarga di negara saya. Saya tidak tahu.",
+                    "accept": [
+                        "あ、国の 家族に 電話しました。知りませんでした。",
+                        "あ、国の家族に電話しました。知りませんでした。"
+                    ],
+                    "en_text": "Ah, I called my family back home. I did not know.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t6.mp3"
+                },
+                {
+                    "id": "keitai-s5-t7",
+                    "who": "partner",
+                    "ja": "国際電話《こくさいでんわ》は 高《たか》いです。無料《むりょう》の アプリを 使《つか》うと、安《やす》く なりますよ。",
+                    "speak": "こくさいでんわは たかいです。むりょうの アプリを つかうと、やすく なりますよ。",
+                    "id_text": "Telepon internasional mahal. Kalau pakai aplikasi gratis, jadi lebih murah.",
+                    "en_text": "International calls are expensive. If you use a free app, it will be cheaper.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t7.mp3"
+                },
+                {
+                    "id": "keitai-s5-t8",
+                    "who": "you",
+                    "ja": "分《わ》かりました。これから アプリを 使《つか》います。来月《らいげつ》の 請求《せいきゅう》は 確認《かくにん》します。",
+                    "speak": "わかりました。これから アプリを つかいます。らいげつの せいきゅうは かくにんします。",
+                    "id_text": "Saya mengerti. Mulai sekarang saya pakai aplikasi. Tagihan bulan depan akan saya cek.",
+                    "accept": [
+                        "分かりました。これから アプリを 使います。来月の 請求は 確認します。",
+                        "分かりました。これからアプリを使います。来月の請求は確認します。"
+                    ],
+                    "en_text": "I understand. From now on I will use the app. I will check next month's bill.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s5-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s6",
+            "title_id": "Internet di apartemen (光回線)",
+            "title_en": "Home internet (光回線)",
+            "setting_id": "Kamu akan pindah ke apartemen dan ingin internet di rumah. Staf menjelaskan 光回線 yang butuh pemasangan.",
+            "setting_en": "You are moving to an apartment and want home internet. The staff explain 光回線 (fibre), which needs installation.",
+            "goal_id": "Menjelaskan rencana pindah, bertanya soal pemasangan (工事), dan membuat janji hari dengan 〜は います / 〜は 仕事です.",
+            "goal_en": "Explain your move, ask about installation (工事), and arrange a day with 〜は います / 〜は 仕事です.",
+            "patterns": [
+                "〜なければ なりませんか",
+                "〜から 〜が 来ます",
+                "〜に しましょう",
+                "〜は 〜です"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "光回線 = internet kabel serat optik di rumah: cepat tetapi butuh 工事 (pemasangan). ポケットWi-Fi = router portabel tanpa pemasangan.",
+                "Saat 工事, kadang kamu harus ada di rumah. Tanyakan: 私は 部屋に いなければ なりませんか。",
+                "Di asrama atau apartemen sewaan, izin pemilik/pengelola (大家さん・管理人さん) sering diperlukan sebelum pemasangan. Tanyakan lebih dulu."
+            ],
+            "tips_en": [
+                "光回線 = fibre-optic home internet: fast but needs 工事 (installation). ポケットWi-Fi = portable router with no installation.",
+                "During 工事 you may need to be home. Ask: 私は 部屋に いなければ なりませんか。",
+                "In a dorm or rented flat, the landlord or manager (大家さん・管理人さん) often must approve installation. Ask beforehand."
+            ],
+            "words": [
+                {
+                    "ja": "光回線《ひかりかいせん》",
+                    "id": "internet serat optik",
+                    "en": "fibre internet line"
+                },
+                {
+                    "ja": "工事《こうじ》",
+                    "id": "pemasangan / pekerjaan konstruksi",
+                    "en": "installation work"
+                },
+                {
+                    "ja": "引《ひ》っ越《こ》す",
+                    "id": "pindah rumah",
+                    "en": "to move house"
+                },
+                {
+                    "ja": "速《はや》い",
+                    "id": "cepat",
+                    "en": "fast"
+                },
+                {
+                    "ja": "午前《ごぜん》",
+                    "id": "pagi (sebelum siang)",
+                    "en": "morning (a.m.)"
+                },
+                {
+                    "ja": "午後《ごご》",
+                    "id": "siang-sore (setelah siang)",
+                    "en": "afternoon (p.m.)"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "申《もう》し込《こ》みを したいです。",
+                    "id": "Saya ingin mendaftar.",
+                    "en": "I would like to apply."
+                },
+                {
+                    "ja": "管理人《かんりにん》さんに 聞《き》いて みます。",
+                    "id": "Saya akan bertanya ke pengelola.",
+                    "en": "I will ask the manager."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s6-t1",
+                    "who": "partner",
+                    "ja": "インターネットの お申《もう》し込《こ》みですね。住《す》んで いる ところは アパートですか、マンションですか。",
+                    "speak": "インターネットの おもうしこみですね。すんで いる ところは アパートですか、マンションですか。",
+                    "id_text": "Pendaftaran internet, ya. Tempat tinggal Anda apartemen kecil atau apartemen besar?",
+                    "en_text": "An internet application. Do you live in an apartment or a condominium?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t1.mp3"
+                },
+                {
+                    "id": "keitai-s6-t2",
+                    "who": "you",
+                    "ja": "アパートです。来月《らいげつ》、引《ひ》っ越《こ》します。新《あたら》しい 部屋《へや》で インターネットを 使《つか》いたいです。",
+                    "speak": "アパートです。らいげつ、ひっこします。あたらしい へやで インターネットを つかいたいです。",
+                    "id_text": "Apartemen. Bulan depan saya pindah. Di kamar baru saya ingin pakai internet.",
+                    "accept": [
+                        "アパートです。来月、引っ越します。新しい 部屋で インターネットを 使いたいです。",
+                        "アパートです。来月、引っ越します。新しい部屋でインターネットを使いたいです。"
+                    ],
+                    "en_text": "An apartment. I am moving next month. I want to use the internet in my new room.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t2.mp3"
+                },
+                {
+                    "id": "keitai-s6-t3",
+                    "who": "partner",
+                    "ja": "光回線《ひかりかいせん》は 速《はや》いですが、工事《こうじ》が 必要《ひつよう》です。ポケットWi-Fiは 工事《こうじ》が いりません。",
+                    "speak": "ひかりかいせんは はやいですが、こうじが ひつようです。ポケットWi-Fiは こうじが いりません。",
+                    "id_text": "Fibre itu cepat, tetapi perlu pemasangan. Pocket Wi-Fi tidak perlu pemasangan.",
+                    "en_text": "Fibre is fast but needs installation. Pocket Wi-Fi needs no installation.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t3.mp3"
+                },
+                {
+                    "id": "keitai-s6-t4",
+                    "who": "you",
+                    "ja": "光回線《ひかりかいせん》が いいです。工事《こうじ》の とき、私《わたし》は 部屋《へや》に いなければ なりませんか。",
+                    "speak": "ひかりかいせんが いいです。こうじの とき、わたしは へやに いなければ なりませんか。",
+                    "id_text": "Saya mau serat optik. Saat pemasangan, apakah saya harus ada di kamar?",
+                    "accept": [
+                        "光回線が いいです。工事の とき、私は 部屋に いなければ なりませんか。",
+                        "光回線がいいです。工事のとき、私は部屋にいなければなりませんか。"
+                    ],
+                    "en_text": "I would like fibre. During the installation, do I have to be in the room?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t4.mp3"
+                },
+                {
+                    "id": "keitai-s6-t5",
+                    "who": "partner",
+                    "ja": "はい、工事《こうじ》の 人《ひと》が 家《いえ》に 来《き》ますから、部屋《へや》に いて ください。時間《じかん》は 一時間《いちじかん》ぐらいです。",
+                    "speak": "はい、こうじの ひとが いえに きますから、へやに いて ください。じかんは いちじかんぐらいです。",
+                    "id_text": "Ya, petugas pemasangan akan datang, jadi tolong ada di kamar. Sekitar satu jam.",
+                    "en_text": "Yes, the installer comes to your home, so please be in the room. It takes about an hour.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t5.mp3"
+                },
+                {
+                    "id": "keitai-s6-t6",
+                    "who": "you",
+                    "ja": "土曜日《どようび》の 午前《ごぜん》は います。でも、午後《ごご》は 仕事《しごと》です。",
+                    "speak": "どようびの ごぜんは います。でも、ごごは しごとです。",
+                    "id_text": "Sabtu pagi saya ada. Tetapi siang-sorenya saya kerja.",
+                    "accept": [
+                        "土曜日の 午前は います。でも、午後は 仕事です。",
+                        "土曜日の午前はいます。でも、午後は仕事です。"
+                    ],
+                    "en_text": "I am in on Saturday morning. But in the afternoon I work.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t6.mp3"
+                },
+                {
+                    "id": "keitai-s6-t7",
+                    "who": "partner",
+                    "ja": "では、土曜日《どようび》の 午前《ごぜん》に しましょう。月々《つきづき》 四千円《よんせんえん》です。",
+                    "speak": "では、どようびの ごぜんに しましょう。つきづき よんせんえんです。",
+                    "id_text": "Kalau begitu, kita pilih Sabtu pagi. Biayanya 4.000 yen per bulan.",
+                    "en_text": "Then let us do Saturday morning. It is 4,000 yen a month.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t7.mp3"
+                },
+                {
+                    "id": "keitai-s6-t8",
+                    "who": "you",
+                    "ja": "はい、お願《ねが》いします。月々《つきづき》 四千円《よんせんえん》ですね。",
+                    "speak": "はい、おねがいします。つきづき よんせんえんですね。",
+                    "id_text": "Ya, mohon bantuannya. 4.000 yen per bulan, ya.",
+                    "accept": [
+                        "はい、お願いします。月々 四千円ですね。",
+                        "はい、お願いします。月々四千円ですね。"
+                    ],
+                    "en_text": "Yes, please. That is 4,000 yen a month, right?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s6-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s7",
+            "title_id": "Ponsel hilang (紛失)",
+            "title_en": "Lost phone (紛失)",
+            "setting_id": "Kamu kehilangan ponsel di kereta dan menelepon pusat layanan untuk menghentikan layanan (利用停止).",
+            "setting_en": "You lost your phone on a train and call customer service to suspend the line (利用停止).",
+            "goal_id": "Melaporkan kehilangan (なくしました), menjawab data identitas, dan memahami langkah lanjutan (交番に 届けを 出す).",
+            "goal_en": "Report the loss (なくしました), answer identity questions, and understand the next steps (交番に 届けを 出す).",
+            "patterns": [
+                "〜を なくしました",
+                "〜と 思います",
+                "〜てから、〜",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Kalimat darurat: スマホを なくしました。Minta penghentian layanan agar tidak ada yang memakai nomormu: 利用停止.",
+                "Laporkan juga ke 交番 (pos polisi): 届けを 出す. Beberapa operator meminta nomor laporan itu untuk mengganti SIM atau ponsel.",
+                "Setelah itu, operator bisa mengirim SIM baru. Rinciannya berbeda tiap operator; ikuti petunjuk di telepon."
+            ],
+            "tips_en": [
+                "Emergency phrase: スマホを なくしました。Ask for 利用停止 (line suspension) so nobody can use your number.",
+                "Also report to the 交番 (police box): 届けを 出す. Some carriers ask for that report number when replacing a SIM or phone.",
+                "After that the carrier can send a new SIM. Details differ by carrier; follow the instructions on the phone."
+            ],
+            "words": [
+                {
+                    "ja": "紛失《ふんしつ》",
+                    "id": "kehilangan",
+                    "en": "loss"
+                },
+                {
+                    "ja": "利用停止《りようていし》",
+                    "id": "penghentian layanan",
+                    "en": "service suspension"
+                },
+                {
+                    "ja": "交番《こうばん》",
+                    "id": "pos polisi",
+                    "en": "police box"
+                },
+                {
+                    "ja": "届《とど》け",
+                    "id": "laporan",
+                    "en": "report / notification"
+                },
+                {
+                    "ja": "最後《さいご》",
+                    "id": "terakhir",
+                    "en": "last"
+                },
+                {
+                    "ja": "送《おく》る",
+                    "id": "mengirim",
+                    "en": "to send"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "スマホが 見《み》つかりません。",
+                    "id": "Ponsel saya tidak ditemukan.",
+                    "en": "I cannot find my phone."
+                },
+                {
+                    "ja": "落《お》とし物《もの》を しました。",
+                    "id": "Saya menjatuhkan/kehilangan barang.",
+                    "en": "I lost something."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s7-t1",
+                    "who": "partner",
+                    "ja": "お電話《でんわ》ありがとうございます。サクラモバイルの すずきです。",
+                    "speak": "おでんわありがとうございます。サクラモバイルの すずきです。",
+                    "id_text": "Terima kasih telah menelepon. Saya Suzuki dari Sakura Mobile.",
+                    "en_text": "Thank you for calling. This is Suzuki of Sakura Mobile.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t1.mp3"
+                },
+                {
+                    "id": "keitai-s7-t2",
+                    "who": "you",
+                    "ja": "もしもし。ブディです。スマホを なくしました。",
+                    "speak": "もしもし。ブディです。スマホを なくしました。",
+                    "id_text": "Halo. Saya Budi. Saya kehilangan ponsel.",
+                    "accept": [
+                        "もしもし。ブディです。スマホを なくしました。",
+                        "もしもし。ブディです。スマホをなくしました。"
+                    ],
+                    "en_text": "Hello. This is Budi. I lost my phone.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t2.mp3"
+                },
+                {
+                    "id": "keitai-s7-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》ですね。すぐ 利用停止《りようていし》を します。名前《なまえ》と 住所《じゅうしょ》を 教《おし》えて ください。",
+                    "speak": "それは たいへんですね。すぐ りようていしを します。なまえと じゅうしょを おしえて ください。",
+                    "id_text": "Itu merepotkan sekali. Layanan segera kami hentikan. Tolong sebutkan nama dan alamat.",
+                    "en_text": "That is terrible. We will suspend the line right away. Please tell me your name and address.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t3.mp3"
+                },
+                {
+                    "id": "keitai-s7-t4",
+                    "who": "you",
+                    "ja": "名前《なまえ》は ブディです。寮《りょう》に 住《す》んで います。",
+                    "speak": "なまえは ブディです。りょうに すんで います。",
+                    "id_text": "Nama saya Budi. Saya tinggal di asrama.",
+                    "accept": [
+                        "名前は ブディです。寮に 住んで います。",
+                        "名前はブディです。寮に住んでいます。"
+                    ],
+                    "en_text": "My name is Budi. I live in a dormitory.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t4.mp3"
+                },
+                {
+                    "id": "keitai-s7-t5",
+                    "who": "partner",
+                    "ja": "確認《かくにん》しました。利用停止《りようていし》しました。交番《こうばん》にも 届《とど》けを 出《だ》して ください。",
+                    "speak": "かくにんしました。りようていししました。こうばんにも とどけを だして ください。",
+                    "id_text": "Sudah dikonfirmasi. Layanan sudah dihentikan. Tolong buat laporan juga di pos polisi.",
+                    "en_text": "Confirmed. The line is suspended. Please also file a report at the police box.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t5.mp3"
+                },
+                {
+                    "id": "keitai-s7-t6",
+                    "who": "you",
+                    "ja": "昨日《きのう》、電車《でんしゃ》の 中《なか》で なくしたと 思《おも》います。",
+                    "speak": "きのう、でんしゃの なかで なくしたと おもいます。",
+                    "id_text": "Saya kira saya kehilangannya kemarin di dalam kereta.",
+                    "accept": [
+                        "昨日、電車の 中で なくしたと 思います。",
+                        "昨日、電車の中でなくしたと思います。"
+                    ],
+                    "en_text": "I think I lost it on the train yesterday.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t6.mp3"
+                },
+                {
+                    "id": "keitai-s7-t7",
+                    "who": "partner",
+                    "ja": "交番《こうばん》の 届《とど》けが 終《お》わったら、もう 一度《いちど》、電話《でんわ》して ください。そして、新《あたら》しい SIMカードを 送《おく》ります。",
+                    "speak": "こうばんの とどけが おわったら、もう いちど、でんわして ください。そして、あたらしい SIMカードを おくります。",
+                    "id_text": "Setelah laporan di pos polisi selesai, tolong telepon sekali lagi. Lalu kami kirim SIM baru.",
+                    "en_text": "When the police report is done, please call once more. Then we will send a new SIM card.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t7.mp3"
+                },
+                {
+                    "id": "keitai-s7-t8",
+                    "who": "you",
+                    "ja": "はい、分《わ》かりました。届《とど》けを 出《だ》してから、また 電話《でんわ》します。",
+                    "speak": "はい、わかりました。とどけを だしてから、また でんわします。",
+                    "id_text": "Baik, saya mengerti. Setelah membuat laporan, saya telepon lagi.",
+                    "accept": [
+                        "はい、分かりました。届けを 出してから、また 電話します。",
+                        "はい、分かりました。届けを出してから、また電話します。"
+                    ],
+                    "en_text": "Yes, I understand. After I file the report, I will call again.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s7-t8.mp3"
+                }
+            ]
+        },
+        {
+            "id": "keitai-s8",
+            "title_id": "Berhenti langganan (解約)",
+            "title_en": "Cancelling the contract (解約)",
+            "setting_id": "Kamu akan pulang ke negaramu bulan depan dan ingin menghentikan kontrak. Staf menjelaskan biaya dan tagihan terakhir.",
+            "setting_en": "You are going home next month and want to cancel your contract. The staff explain fees and the final bill.",
+            "goal_id": "Menyatakan alasan dan keinginan (〜ので、〜たいです), menanyakan biaya (いくらですか), dan memahami tagihan terakhir.",
+            "goal_en": "State your reason and wish (〜ので、〜たいです), ask about fees (いくらですか), and understand the final bill.",
+            "patterns": [
+                "〜ので、〜たいです",
+                "〜が かかります",
+                "〜に します",
+                "〜を ください"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "解約 = membatalkan kontrak. Alasan dengan 〜ので: 国に 帰るので、解約したいです。",
+                "Jika dibatalkan sebelum masa kontrak habis, mungkin ada 違約金 (denda). Aturannya berbeda tiap kontrak; tanyakan jumlahnya: 違約金は いくらですか。",
+                "Tagihan terakhir tetap ditarik dari rekening. Sisakan uang di rekening sampai penarikan terakhir selesai (残して ください)."
+            ],
+            "tips_en": [
+                "解約 = cancelling a contract. Give the reason with 〜ので: 国に 帰るので、解約したいです。",
+                "Cancelling before the contract term ends may bring a 違約金 (penalty). Rules differ by contract; ask the amount: 違約金は いくらですか。",
+                "The final bill is still withdrawn from your account. Leave money in the account until the last withdrawal is done (残して ください)."
+            ],
+            "words": [
+                {
+                    "ja": "解約《かいやく》",
+                    "id": "pembatalan kontrak",
+                    "en": "cancellation"
+                },
+                {
+                    "ja": "違約金《いやくきん》",
+                    "id": "denda pembatalan",
+                    "en": "cancellation fee"
+                },
+                {
+                    "ja": "途中《とちゅう》",
+                    "id": "di tengah-tengah",
+                    "en": "partway"
+                },
+                {
+                    "ja": "書類《しょるい》",
+                    "id": "dokumen",
+                    "en": "documents"
+                },
+                {
+                    "ja": "残《のこ》す",
+                    "id": "menyisakan",
+                    "en": "to leave (behind)"
+                },
+                {
+                    "ja": "帰《かえ》る",
+                    "id": "pulang",
+                    "en": "to return home"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "帰国《きこく》する 日《ひ》が 決《き》まりました。",
+                    "id": "Tanggal kepulangan sudah ditentukan.",
+                    "en": "My return date has been decided."
+                },
+                {
+                    "ja": "解約《かいやく》の 書類《しょるい》は どこで もらいますか。",
+                    "id": "Dokumen pembatalan diambil di mana?",
+                    "en": "Where do I get the cancellation form?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "keitai-s8-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。ご用件《ようけん》を どうぞ。",
+                    "speak": "いらっしゃいませ。ごようけんを どうぞ。",
+                    "id_text": "Selamat datang. Silakan, ada keperluan apa?",
+                    "en_text": "Welcome. How may I help you?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t1.mp3"
+                },
+                {
+                    "id": "keitai-s8-t2",
+                    "who": "you",
+                    "ja": "来月《らいげつ》、国《くに》に 帰《かえ》ります。契約《けいやく》を 解約《かいやく》したいです。",
+                    "speak": "らいげつ、くにに かえります。けいやくを かいやくしたいです。",
+                    "id_text": "Bulan depan saya pulang ke negara saya. Saya ingin membatalkan kontrak.",
+                    "accept": [
+                        "来月、国に 帰ります。契約を 解約したいです。",
+                        "来月、国に帰ります。契約を解約したいです。"
+                    ],
+                    "en_text": "I am going home next month. I want to cancel my contract.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t2.mp3"
+                },
+                {
+                    "id": "keitai-s8-t3",
+                    "who": "partner",
+                    "ja": "解約《かいやく》ですね。契約《けいやく》は 一年《いちねん》ですが、まだ 半年《はんとし》です。途中《とちゅう》で 解約《かいやく》すると、違約金《いやくきん》が かかる ことが あります。",
+                    "speak": "かいやくですね。けいやくは いちねんですが、まだ はんとしです。とちゅうで かいやくすると、いやくきんが かかる ことが あります。",
+                    "id_text": "Pembatalan, ya. Kontraknya satu tahun, tetapi baru setengah tahun. Kalau dibatalkan di tengah, bisa ada denda.",
+                    "en_text": "Cancellation. The contract is one year, but only half a year has passed. If you cancel partway, a penalty may apply.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t3.mp3"
+                },
+                {
+                    "id": "keitai-s8-t4",
+                    "who": "you",
+                    "ja": "違約金《いやくきん》は いくらですか。",
+                    "speak": "いやくきんは いくらですか。",
+                    "id_text": "Dendanya berapa?",
+                    "accept": [
+                        "違約金は いくらですか。",
+                        "違約金はいくらですか。"
+                    ],
+                    "en_text": "How much is the penalty?",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t4.mp3"
+                },
+                {
+                    "id": "keitai-s8-t5",
+                    "who": "partner",
+                    "ja": "千円《せんえん》です。解約《かいやく》の 日《ひ》は いつに しますか。月《つき》の 終《お》わりの 日《ひ》が いいですよ。",
+                    "speak": "せんえんです。かいやくの ひは いつに しますか。つきの おわりの ひが いいですよ。",
+                    "id_text": "1.000 yen. Mau membatalkan di tanggal berapa? Akhir bulan lebih baik.",
+                    "en_text": "1,000 yen. When would you like to cancel? The end of the month is best.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t5.mp3"
+                },
+                {
+                    "id": "keitai-s8-t6",
+                    "who": "you",
+                    "ja": "月《つき》の 終《お》わりに します。その 日《ひ》まで 使《つか》いたいです。",
+                    "speak": "つきの おわりに します。その ひまで つかいたいです。",
+                    "id_text": "Akhir bulan saja. Saya ingin memakainya sampai hari itu.",
+                    "accept": [
+                        "月の 終わりに します。その 日まで 使いたいです。",
+                        "月の終わりにします。その日まで使いたいです。"
+                    ],
+                    "en_text": "The end of the month, please. I want to use it until that day.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t6.mp3"
+                },
+                {
+                    "id": "keitai-s8-t7",
+                    "who": "partner",
+                    "ja": "最後《さいご》の 請求《せいきゅう》も 口座《こうざ》から 引《ひ》き落《お》としに なります。口座《こうざ》に お金《かね》を 残《のこ》して ください。",
+                    "speak": "さいごの せいきゅうも こうざから ひきおとしに なります。こうざに おかねを のこして ください。",
+                    "id_text": "Tagihan terakhir juga ditarik dari rekening. Tolong sisakan uang di rekening.",
+                    "en_text": "The final bill will also be withdrawn from your account. Please leave money in the account.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t7.mp3"
+                },
+                {
+                    "id": "keitai-s8-t8",
+                    "who": "you",
+                    "ja": "はい、残《のこ》します。解約《かいやく》の 書類《しょるい》を ください。",
+                    "speak": "はい、のこします。かいやくの しょるいを ください。",
+                    "id_text": "Ya, saya sisakan. Tolong berikan dokumen pembatalan.",
+                    "accept": [
+                        "はい、残します。解約の 書類を ください。",
+                        "はい、残します。解約の書類をください。"
+                    ],
+                    "en_text": "Yes, I will leave it. Please give me the cancellation form.",
+                    "audio": "/audio/kaiwa/situation-keitai/keitai-s8-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

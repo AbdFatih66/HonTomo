@@ -1,0 +1,340 @@
+{
+    "id": "n3-6",
+    "level": "N3",
+    "focus": "N3 Pelajaran 6 — …て／…って, Xって…, Vる つもりは ない, つもりだった, Vた／Vている つもり, Vて ばかり いる／Nばかり, …とか…とか, Vて くる／いく, こ〜",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ビジネスマナーの セミナーの 案内が 来ましたよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "費用は いくらですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "全額 会社が 出して くれます。"
+            },
+            {
+                "speaker": "male",
+                "text": "それは いいですね。日時は？"
+            },
+            {
+                "speaker": "female",
+                "text": "来月の 十日です。"
+            },
+            {
+                "speaker": "male",
+                "text": "ぜひ 参加したいです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-6/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l6-kq1",
+                "prompt": "セミナーの 費用《ひよう》は だれが 出《だ》しますか。",
+                "choices": [
+                    "自分《じぶん》",
+                    "会社《かいしゃ》",
+                    "先生《せんせい》"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Siapa yang membayar biaya seminar? — Perusahaan.",
+                    "en": "Who pays for the seminar? — The company."
+                }
+            },
+            {
+                "id": "n3l6-kq2",
+                "prompt": "セミナーは いつですか。",
+                "choices": [
+                    "来月《らいげつ》の 十日《とおか》",
+                    "来週《らいしゅう》",
+                    "今月《こんげつ》の 十日《とおか》"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Kapan seminarnya? — Tanggal 10 bulan depan.",
+                    "en": "When is the seminar? — The 10th of next month."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l6-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "田中さんは 何て 言ってた？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "今日は 早く 帰るって。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "理由は？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "子どもが 熱を 出したって 言っていたよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q1.mp3",
+            "prompt": "田中《たなか》さんは どうして 早《はや》く 帰《かえ》りますか。",
+            "choices": [
+                "旅行《りょこう》に 行《い》くからです",
+                "子《こ》どもが 熱《ねつ》を 出《だ》したからです",
+                "会議《かいぎ》が 終《お》わったからです"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Mengapa Tanaka pulang cepat? — Karena anaknya demam.",
+                "en": "Why is Tanaka going home early? — His child has a fever."
+            }
+        },
+        {
+            "id": "n3l6-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "札幌って、どんな 町？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "冬は 雪が 多くて、食べ物が おいしい 町だよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "行った ことが あるの？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "うん、去年 行った。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q2.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 札幌《さっぽろ》に 行《い》った ことが ありますか。",
+            "choices": [
+                "去年《きょねん》 行《い》きました",
+                "行《い》った ことが ありません",
+                "来年《らいねん》 行《い》きます"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apakah laki-laki itu pernah ke Sapporo? — Pernah, tahun lalu.",
+                "en": "Has the man been to Sapporo? — Yes, last year."
+            }
+        },
+        {
+            "id": "n3l6-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来月の 同窓会、行く？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ううん、行く つもりは ないよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どうして？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "仕事が 忙しいし、あまり 気が 進まないんだ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q3.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 同窓会《どうそうかい》に 行《い》きますか。",
+            "choices": [
+                "行《い》きます",
+                "まだ わかりません",
+                "行《い》きません"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apakah perempuan itu pergi ke reuni? — Tidak.",
+                "en": "Is the woman going to the reunion? — No."
+            }
+        },
+        {
+            "id": "n3l6-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日の 会議、なぜ 来なかったの？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません、行く つもりだったんですが、お客さんが 来て しまって。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "連絡して ほしかったな。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 会議《かいぎ》に 行《い》きませんでしたか。",
+            "choices": [
+                "お客《きゃく》さんが 来《き》たからです",
+                "病気《びょうき》だったからです",
+                "忘《わす》れたからです"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Mengapa laki-laki itu tidak ke rapat? — Karena ada tamu datang.",
+                "en": "Why did the man not go to the meeting? — A customer came."
+            }
+        },
+        {
+            "id": "n3l6-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "最近、うちの 子は スマホばかり 見て いるんです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "宿題は して いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それも 忘れて、遊んで ばかり いて…。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q5.mp3",
+            "prompt": "子《こ》どもは 何《なに》を して いますか。",
+            "choices": [
+                "宿題《しゅくだい》を して います",
+                "本《ほん》を 読《よ》んで います",
+                "スマホばかり 見《み》て 遊《あそ》んで います"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang dilakukan anak itu? — Hanya main ponsel dan bermain.",
+                "en": "What is the child doing? — Just looking at the phone and playing."
+            }
+        },
+        {
+            "id": "n3l6-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "窓、閉めた？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "窓《まど》は 大《おお》きいです。",
+                "閉《し》めた つもりだけど…。",
+                "閉《し》めて ください。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jendelanya sudah ditutup? — Rasanya sudah...",
+                "en": "Did you close the window? — I thought I did..."
+            }
+        },
+        {
+            "id": "n3l6-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "夏休みは 何を する 予定？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "海《うみ》へ 行《い》くとか、山《やま》に 登《のぼ》るとか 考《かんが》えて いるよ。",
+                "去年《きょねん》 海《うみ》へ 行《い》きました。",
+                "夏休《なつやす》みは 暑《あつ》いです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Rencana libur musim panas? — Ke laut atau naik gunung, begitu.",
+                "en": "What are your summer plans? — Maybe the sea, maybe mountain climbing."
+            }
+        },
+        {
+            "id": "n3l6-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あれ、だんだん 暗く なって きたね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "本当だ。雨が 降って くるかも しれない。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q8.mp3",
+            "prompt": "これから 雨《あめ》が 降《ふ》るかも しれません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Mungkin sebentar lagi hujan. → ○",
+                "en": "It might rain soon. → ○"
+            }
+        },
+        {
+            "id": "n3l6-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "田中さんは どこ？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "さっき 資料を 持って 出て いきましたよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q9.mp3",
+            "prompt": "田中《たなか》さんは 今《いま》 ここに います。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Tanaka sekarang ada di sini. → ×",
+                "en": "Tanaka is here now. → ×"
+            }
+        },
+        {
+            "id": "n3l6-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "昨日の ニュースで、こんな 話を 聞きました。この 町に 大きな 図書館が できるそうです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "それは いい ニュースですね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-6/n3l6-q10.mp3",
+            "prompt": "町《まち》に 病院《びょういん》が できる ニュースを 聞《き》きました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia mendengar berita akan ada rumah sakit di kota. → ×",
+                "en": "He heard news that a hospital will be built in the town. → ×"
+            }
+        }
+    ]
+}

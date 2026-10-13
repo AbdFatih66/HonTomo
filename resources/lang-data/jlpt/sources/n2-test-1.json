@@ -1,0 +1,3474 @@
+{
+    "id": "n2-test-1",
+    "level": "N2",
+    "title": {
+        "id": "Simulasi JLPT N2 — Paket 1",
+        "en": "JLPT N2 Mock Test — Set 1"
+    },
+    "pass": {
+        "total": 90,
+        "language": 38,
+        "listening": 19
+    },
+    "scale": {
+        "language": 120,
+        "listening": 60,
+        "total": 180
+    },
+    "sections": [
+        {
+            "key": "listening",
+            "kind": "listening",
+            "minutes": 50,
+            "jp": "聴解",
+            "title": {
+                "id": "Mendengar (聴解)",
+                "en": "Listening (聴解)"
+            },
+            "intro": {
+                "id": "l-intro",
+                "audio_text": [
+                    {
+                        "speaker": "narrator",
+                        "text": "ちょうかいの しけんを はじめます。もんだいようしの ページを ひらいて ください。もんだいは ぜんぶで いつつ あります。はなしは いちどだけ ながれます。はなしを ききながら、メモを とっても かまいません。",
+                        "pause": 2
+                    }
+                ],
+                "audio": "/audio/jlpt-mock/n2-test-1/l-intro.mp3"
+            },
+            "outro": {
+                "id": "l-outro",
+                "audio_text": [
+                    {
+                        "speaker": "narrator",
+                        "text": "これで ちょうかいの しけんを おわります。",
+                        "pause": 1
+                    }
+                ],
+                "audio": "/audio/jlpt-mock/n2-test-1/l-outro.mp3"
+            },
+            "mondai": [
+                {
+                    "id": "l1",
+                    "label": "問題１",
+                    "instruction": "問題《もんだい》1では、まず質問《しつもん》を聞《き》いてください。それから話《はなし》を聞《き》いて、問題用紙《もんだいようし》の1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l1-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい いち。もんだい いち では、まず しつもんを きいて ください。それから はなしを きいて、もんだいようしの いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l1-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l1-ex",
+                        "type": "listening",
+                        "audio": "/audio/jlpt-mock/n2-test-1/l1-ex.mp3",
+                        "choices": [
+                            "ホテルを予約《よやく》する",
+                            "新幹線《しんかんせん》の切符《きっぷ》を取《と》る",
+                            "出張届《しゅっちょうとどけ》を出《だ》す",
+                            "取引先《とりひきさき》に連絡《れんらく》する"
+                        ],
+                        "answer": 2,
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。かいしゃで、かちょうと ぶかが はなしています。ぶかは、このあと まず なにを しますか。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "来週の出張の件だけど、ホテルはもう取ってくれた？"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "はい、先週のうちに予約しました。あとは新幹線の切符だけです。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "切符は総務課で手配してくれるから、君は出張届を出しておいて。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "出張届ですね。承知しました。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "あ、それから、取引先に訪問の時間を知らせておいてくれるとありがたいな。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "それは、届を出してからにします。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "うん、頼むよ。"
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "ぶかは、このあと まず なにを しますか。"
+                            }
+                        ]
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l1-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。だいがくの まどぐちで、おんなの がくせいと しょくいんが はなしています。がくせいは、このあと まず なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "すみません、奨学金の申請をしたいんですが。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "はい。申請書は書いてありますか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "はい、ここに。それから、先生の推薦書ももらってきました。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ありがとうございます。あ、成績証明書は？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あ、それは学部の事務室で出してもらうんですよね。まだです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ええ、それは発行に二日ぐらいかかりますから、今日のうちに申し込んでおいたほうがいいですよ。締め切りは金曜日ですから。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、先にそちらへ行ってきます。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "印鑑は、もういりません。サインで大丈夫です。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "わかりました。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "がくせいは、このあと まず なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l1-1.mp3",
+                                    "choices": [
+                                        "成績証明書《せいせきしょうめいしょ》の発行《はっこう》を申《もう》し込《こ》む",
+                                        "推薦書《すいせんしょ》をもらう",
+                                        "申請書《しんせいしょ》を書《か》く",
+                                        "印鑑《いんかん》を用意《ようい》する"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Pengajuan surat keterangan nilai butuh ±2 hari dan batas akhir Jumat, jadi dikerjakan lebih dulu (先にそちらへ). Surat rekomendasi dan formulir sudah ada; stempel tidak diperlukan."
+                                },
+                                {
+                                    "id": "l1-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。かいしゃで、おんなの ひとと おとこの ひとが、あしたの かいぎの じゅんびに ついて はなしています。おとこの ひとは、このあと なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "明日の会議、会議室の予約は取れた？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "はい、三階の大きいほうを押さえました。プロジェクターも使えるように、総務に頼んであります。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ありがとう。資料は？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "人数分、コピーしました。ただ、部長の分はまだ印刷してなくて。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "部長のは、データで送ってくれればいいって言ってたよ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あ、そうなんですか。じゃあ、メールで送っておきます。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "うん。それより、お茶の用意って、誰かに頼んである？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あ、それはまだです。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "外部のお客さんも来るから、そっちを先に手配して。メールは、そのあとでいいから。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "わかりました。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの ひとは、このあと なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l1-2.mp3",
+                                    "choices": [
+                                        "会議室《かいぎしつ》を予約《よやく》する",
+                                        "資料《しりょう》をコピーする",
+                                        "部長《ぶちょう》にメールを送《おく》る",
+                                        "お茶《ちゃ》の用意《ようい》を頼《たの》む"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Reservasi ruang dan fotokopi sudah beres. Pesanan teh untuk tamu luar belum dilakukan dan disuruh lebih dulu; email ke direktur baru setelahnya."
+                                },
+                                {
+                                    "id": "l1-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。ひっこしを する おんなの ひとと おとこの ひとが はなしています。おんなの ひとは、まず なにを しなければ なりませんか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "来週の引っ越し、準備は進んでる？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "荷物はだいぶ箱に詰めたよ。でも、手続きがいろいろあって。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "電気とガスは？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "電気はネットで済んだんだけど、ガスは立ち会いが必要なんだって。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "じゃあ、日にちを決めて、会社に電話しなきゃね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "うん。でもそれより先に、今の部屋を解約するって連絡しないと、来月の家賃がかかっちゃうのよ。それは今日の夕方までなんだ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ああ、それは急いだほうがいいね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "不動産屋に電話するね。ガスはそのあとにする。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "郵便局の転居届は？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "それは来週でいいって。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは、まず なにを しなければ なりませんか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l1-3.mp3",
+                                    "choices": [
+                                        "電気《でんき》の手続《てつづ》きをする",
+                                        "不動産屋《ふどうさんや》に解約《かいやく》を連絡《れんらく》する",
+                                        "ガス会社《がいしゃ》に電話《でんわ》する",
+                                        "郵便局《ゆうびんきょく》に転居届《てんきょとどけ》を出《だ》す"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Pembatalan kontrak kamar lama harus dikabari sampai sore ini agar sewa bulan depan tidak ditagih → ke agen properti dulu. Listrik sudah selesai, gas menyusul, surat pindah minggu depan."
+                                },
+                                {
+                                    "id": "l1-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。だいがくで、せんせいと おとこの がくせいが はなしています。がくせいは、はっぴょうの まえに、まず なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "来週の発表の原稿、読ませてもらったわ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ありがとうございます。どうでしょうか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "内容はよくまとまってる。ただ、グラフの数字が本文と合っていないところが二か所あるわね。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "あ、すみません。直します。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "それと、時間は十五分だけど、原稿だと二十分はかかりそう。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "削ったほうがいいですか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ううん、まず数字を直して、それから実際に声に出して時間を測ってみて。長ければ、そのとき削ればいいから。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "わかりました。スライドは、そのあとでいいですか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ええ。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "がくせいは、はっぴょうの まえに、まず なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l1-4.mp3",
+                                    "choices": [
+                                        "原稿《げんこう》を短《みじか》くする",
+                                        "スライドを作《つく》り直《なお》す",
+                                        "グラフの数字《すうじ》を直《なお》す",
+                                        "時間《じかん》を測《はか》って練習《れんしゅう》する"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Urutan dari dosen: (1) perbaiki angka grafik → (2) baca dengan suara & ukur waktu → (3) baru pangkas bila terlalu panjang; slide terakhir."
+                                },
+                                {
+                                    "id": "l1-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。でんわで、おんなの ひとと みせの おとこの ひとが はなしています。おんなの ひとは、このあと まず なにを しますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あの、先週そちらで買った本棚のことなんですが、側面の板にひびが入っていて。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "申し訳ございません。商品の写真を送っていただけますか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "写真ですか。はい、スマホで撮れます。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ありがとうございます。それから、注文番号を教えていただけますか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "えっと、メールに書いてあったと思うんですが、探してから、あとでかけ直します。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "いえ、メールでお送りいただくのが一番確実です。写真と一緒に、注文番号と、お名前もお書きください。交換品は確認してから手配いたします。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "わかりました。すぐ送ります。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは、このあと まず なにを しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l1-5.mp3",
+                                    "choices": [
+                                        "写真《しゃしん》を撮《と》ってメールで送《おく》る",
+                                        "注文番号《ちゅうもんばんごう》を探《さが》して電話《でんわ》する",
+                                        "店《みせ》に本棚《ほんだな》を返《かえ》しに行《い》く",
+                                        "新《あたら》しい本棚《ほんだな》を注文《ちゅうもん》する"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Penjual meminta foto + nomor pesanan + nama lewat email (paling pasti), jadi ia memotret lalu mengirim email. Menelepon ulang tidak diminta; penggantian diurus setelah dicek."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l2",
+                    "label": "問題２",
+                    "instruction": "問題《もんだい》2では、まず質問《しつもん》を聞《き》いてください。そのあと、問題用紙《もんだいようし》のせんたくしを読《よ》んでください。読《よ》む時間《じかん》があります。それから話《はなし》を聞《き》いて、問題用紙《もんだいようし》の1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l2-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい に。もんだい に では、まず しつもんを きいて ください。そのあと、もんだいようしの せんたくしを よんで ください。よむ じかんが あります。それから はなしを きいて、もんだいようしの いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l2-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l2-ex",
+                        "type": "listening",
+                        "audio": "/audio/jlpt-mock/n2-test-1/l2-ex.mp3",
+                        "choices": [
+                            "給料《きゅうりょう》が安《やす》いから",
+                            "職場《しょくば》の人《ひと》と合《あ》わないから",
+                            "勉強《べんきょう》する時間《じかん》が足《た》りなくなったから",
+                            "朝《あさ》起《お》きられなくなったから"
+                        ],
+                        "answer": 2,
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。おとこの がくせいと おんなの がくせいが はなしています。おとこの がくせいは、どうして アルバイトを やめますか。",
+                                "pause": 6
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "来月からバイト、やめることにしたんだ。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "え、どうして？ 時給、悪くないって言ってたじゃない。"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "うん、給料はいいんだけど、閉店が遅くて、帰りが十二時すぎになるんだよ。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "それは大変ね。授業に影響が出てる？"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "朝は起きられるから、それは大丈夫。ただ、レポートを書く時間がなくなってきて。"
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "人間関係は？"
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "そっちは問題ない。いい人ばかりだよ。"
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "おとこの がくせいは、どうして アルバイトを やめますか。"
+                            }
+                        ]
+                    },
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l2-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。ふうふが なつやすみの りょこうに ついて はなしています。ふたりは、どうして ことしは こくないりょこうに しますか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "今年の夏休み、やっぱりハワイにしない？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "俺も行きたいけど、円安で、航空券もホテルもかなり高くなってるんだよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうか。でも、国内だって夏は混むでしょ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "まあ、値段はなんとかなるんだ。それより、去年、旅行先で子どもが熱を出しただろ。海外だと病院も言葉も心配で。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ああ、そうだったね。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "車で行ける場所なら、何かあってもすぐ帰れるし。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "うん、それは安心ね。じゃあ、国内で探そう。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ふたりは、どうして ことしは こくないりょこうに しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l2-1.mp3",
+                                    "choices": [
+                                        "費用《ひよう》が高《たか》いから",
+                                        "子《こ》どもの体調《たいちょう》が心配《しんぱい》だから",
+                                        "休《やす》みが短《みじか》いから",
+                                        "車《くるま》で行《い》きたいから"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Biaya disebut \"bisa diatur\" (なんとかなる); alasan yang menentukan adalah anak pernah demam di perjalanan dan kekhawatiran soal rumah sakit/bahasa di luar negeri."
+                                },
+                                {
+                                    "id": "l2-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。おとこの ひとと おんなの ひとが、スポーツジムに ついて はなしています。おとこの ひとは、どうして かわぞいの ジムに しますか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "駅前のジムと、川沿いのジム、どっちに入会するの？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "川沿いのほうにしようと思って。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "え、駅から遠いのに。駅前のほうが便利でしょ。月会費も安いし。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "うん、でも駅前のは、仕事帰りの人で夜はすごく混むって聞いたんだ。マシンを待つのが嫌でさ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "川沿いは空いてるの？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "会員の数を制限してるらしくて、いつ行ってもすいてるって。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "プールもあるんでしょ？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "うん、でも泳がないから、それは関係ないな。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの ひとは、どうして かわぞいの ジムに しますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l2-2.mp3",
+                                    "choices": [
+                                        "すいているから",
+                                        "会費《かいひ》が安《やす》いから",
+                                        "駅《えき》から近《ちか》いから",
+                                        "プールがあるから"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Gym tepi sungai lebih jauh dan lebih mahal; alasannya jumlah anggota dibatasi sehingga selalu sepi (tidak menunggu mesin). Kolam renang tidak dipakai."
+                                },
+                                {
+                                    "id": "l2-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。かいしゃで、おんなの ひとと おとこの ひとが はなしています。しんしょうひんの うりあげが のびなかった いちばんの りゆうは なんですか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "先月出した新しいシャンプー、思ったほど売れなかったね。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "値段が高かったかな。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "競合の商品と比べて、千円ぐらいしか違わないから、値段じゃないと思う。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "香りは評判がよかったよね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "うん。アンケートでも香りはいい結果。それより、どこで売ってるのか分からないって声が多かったの。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ああ、ドラッグストアでは目立たない棚に置かれてたからね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "広告もあまり出せなかったし、次は置き場所を考えないと。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "しんしょうひんの うりあげが のびなかった いちばんの りゆうは なんですか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l2-3.mp3",
+                                    "choices": [
+                                        "値段《ねだん》が高《たか》すぎたから",
+                                        "香《かお》りの評判《ひょうばん》が悪《わる》かったから",
+                                        "広告《こうこく》が多《おお》すぎたから",
+                                        "商品《しょうひん》が見《み》つけにくかったから"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Harga hampir sama dengan pesaing dan aroma bagus; keluhan terbanyak: tidak tahu di mana produk dijual karena rak tersembunyi."
+                                },
+                                {
+                                    "id": "l2-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。おんなの こと おとこの ひとが はなしています。おんなの こは、どうして ぶかつを やめたいと いっていますか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "最近、部活の帰りが遅いな。何かあったのか？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "うん……あのさ、バスケ部、やめようかなと思って。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "え？ あんなに好きだったのに。先輩とうまくいってないのか？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ううん、先輩はみんな優しいよ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "じゃあ、試合に出られないのが嫌なのか？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "それもあるけど、それは仕方ないと思ってる。実は、塾に行くことになったでしょ。練習のある日は、塾に間に合わなくて、先生に怒られちゃうの。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "そうか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "両方は無理かなって。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの こは、どうして ぶかつを やめたいと いっていますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l2-4.mp3",
+                                    "choices": [
+                                        "先輩《せんぱい》と合《あ》わないから",
+                                        "試合《しあい》に出《で》られないから",
+                                        "塾《じゅく》に間《ま》に合《あ》わないから",
+                                        "練習《れんしゅう》がきついから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Hubungan dengan senior baik; tidak ikut pertandingan \"tidak masalah\". Masalah nyata: latihan membuat ia terlambat ke bimbel."
+                                },
+                                {
+                                    "id": "l2-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。かいしゃで、おんなの ひとと おとこの ひとが はなしています。おとこの ひとは、どうして らいしゅうの しゅっちょうを やめましたか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "来週の大阪出張、行かないことにしたんだって？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "うん。先方と相談して、オンラインでやることになった。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "交通費の節約？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "それもあるけど、本当は、先方の担当者が急に入院して、代わりの人が打ち合わせに出られなくなったんだ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうなんだ。大丈夫なの？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "軽い病気みたい。来週は代わりの人とオンラインで資料の確認だけすることにした。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、出張はまたの機会ね。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの ひとは、どうして らいしゅうの しゅっちょうを やめましたか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l2-5.mp3",
+                                    "choices": [
+                                        "自分《じぶん》が病気《びょうき》になったから",
+                                        "相手《あいて》の担当者《たんとうしゃ》が出《で》られなくなったから",
+                                        "出張《しゅっちょう》の費用《ひよう》を減《へ》らしたいから",
+                                        "会議《かいぎ》が中止《ちゅうし》になったから"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Biaya hanya alasan sampingan; sebenarnya penanggung jawab pihak klien dirawat di rumah sakit dan penggantinya tak bisa hadir."
+                                },
+                                {
+                                    "id": "l2-6",
+                                    "no": 6,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ろくばん。としょかんで、おんなの ししょと おとこの がくせいが はなしています。おとこの がくせいは、どうして この ほんを かりられませんか。",
+                                            "pause": 6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "すみません、この本を借りたいんですが。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "学生証を貸していただけますか。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "はい。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あ、これは貸し出しできない本ですね。参考図書のコーナーのものは、館内で読むだけなんです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "そうなんですか。でも、レポートの締め切りが明日なんです。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "コピーなら、一部だけできますよ。それから、同じ内容の新版が、あちらの棚にありますので、そちらなら貸し出せます。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "じゃあ、新版を借ります。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おとこの がくせいは、どうして この ほんを かりられませんか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l2-6.mp3",
+                                    "choices": [
+                                        "館内《かんない》で読《よ》む本《ほん》だから",
+                                        "学生証《がくせいしょう》を忘《わす》れたから",
+                                        "すでに誰《だれ》かが借《か》りているから",
+                                        "返却期限《へんきゃくきげん》が過《す》ぎているから"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Buku di sudut referensi hanya boleh dibaca di dalam perpustakaan (tidak dipinjamkan). Kartu mahasiswa sudah diserahkan; edisi baru bisa dipinjam."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l3",
+                    "label": "問題３",
+                    "instruction": "問題《もんだい》3では、問題用紙《もんだいようし》に何《なに》もいんさつされていません。この問題《もんだい》は、全体《ぜんたい》としてどんな内容《ないよう》かを聞《き》く問題《もんだい》です。話《はなし》の前《まえ》に質問《しつもん》はありません。まず話《はなし》を聞《き》いてください。それから、質問《しつもん》とせんたくしを聞《き》いて、1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l3-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい さん。もんだい さん では、もんだいようしに なにも いんさつされて いません。この もんだいは、ぜんたいとして どんな ないようかを きく もんだいです。はなしの まえに しつもんは ありません。まず はなしを きいて ください。それから、しつもんと せんたくしを きいて、いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l3-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l3-ex",
+                        "no": 0,
+                        "type": "listening",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。ラジオで アナウンサーが はなしています。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "最近、駅や公園で、ごみ箱を見かけなくなったと思いませんか。実は、ごみ箱が減っているのは、ごみを捨てる人が増えたからではありません。家庭のごみまで捨てていく人が多く、片づける人の負担が大きくなったためなんです。そこで、ある町では、ごみは持ち帰りましょうと、ポスターで呼びかけることにしました。",
+                                "pause": 1.2
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "ごみ箱が減っているのは、なぜですか。",
+                                "pause": 1
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "1。ごみを捨てる人が減ったから",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "2。ごみ箱を置く場所がないから",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "3。家庭のごみを捨てる人が多いから",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "narrator",
+                                "text": "4。ごみ箱を作る費用が高いから"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l3-ex.mp3",
+                        "choices": [
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "answer": 2,
+                        "hidden_choices": true
+                    },
+                    "memo": true,
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l3-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。るすばんでんわの メッセージを きいています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "もしもし、さくら歯科の佐藤です。山田さんの今度の予約、木曜日の午後三時でしたが、先生が学会で出られなくなりまして、その日は診察ができなくなりました。申し訳ありません。代わりに、金曜日の午前なら空いておりますので、ご都合がよろしければ、お電話ください。お急ぎでなければ、来週以降でも結構です。お電話お待ちしております。",
+                                            "pause": 1.2
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "この でんわは、なんの ために かけましたか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。ちりょうの けっかを しらせるため",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。あたらしい せんせいを しょうかいするため",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。しんさつの りょうきんが かわったことを しらせるため",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。よやくの へんこうを おねがいするため"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l3-1.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Pesan dari klinik gigi: dokter tidak bisa praktik hari Kamis, sehingga pasien diminta mengubah jadwal (tujuan telepon = meminta perubahan reservasi).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l3-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。だいがくの じゅぎょうで、せんせいが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "皆さんは、買い物をするとき、店の人に話しかけられるのと、自分で自由に見て回るのと、どちらが好きですか。最近の調査では、半数以上の人が、話しかけられるのは苦手だと答えています。これを受けて、ある衣料品の店では、買い物かごの色を二種類にしました。店員に相談したい人は赤いかごを、一人でゆっくり見たい人は青いかごを持って店に入る仕組みです。この店では、お客様の満足度が上がったそうです。",
+                                            "pause": 1.2
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "せんせいは、なにに ついて はなしていますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。かいものかごの いろで きゃくの きぼうを つたえる みせの くふう",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。いりょうひんの うりあげが のびた りゆう",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。てんいんの はなしかたの くんれんほうほう",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。かいものきゃくの ねんれいに よる このみの ちがい"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l3-2.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Inti: toko pakaian membedakan keranjang merah/biru agar pelanggan bisa menyatakan keinginan dilayani atau tidak. Bukan tentang penjualan, pelatihan, atau usia.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l3-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。かいしゃで、ぶちょうが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "皆さん、来月から在宅勤務の日数を、週三日から週二日に変更します。これは、在宅勤務が悪いということではありません。むしろ、成果は出ています。ただ、新入社員から、先輩に質問しにくい、仕事の進め方が分かりにくいという声が出ておりまして、顔を合わせて話す機会を増やしたいと考えました。この点について、ご意見がある方は、今週中に私までお知らせください。",
+                                            "pause": 1.2
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ぶちょうが いちばん つたえたいことは なんですか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。ざいたくきんむの せいかが でていないこと",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。しんにゅうしゃいんが やめたがっていること",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。せんぱいが しつもんしにくいこと",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。ざいたくきんむの にっすうを へらすこと"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l3-3.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Pengumuman utama: hari kerja dari rumah dikurangi dari 3 menjadi 2 hari per minggu. Kesulitan karyawan baru hanya alasannya; hasil kerja justru bagus.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l3-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。まちの ほうそうで、おんなの ひとが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "町民の皆様にお知らせします。毎年開催しております夏祭りですが、今年は猛暑が予想されるため、開始時間を午後四時から午後六時に遅らせて行います。また、出店の数は去年の半分に減らし、代わりに休憩できる日陰のスペースを広げます。屋台の数が減りますので、ご不便をおかけいたしますが、ご理解のほど、よろしくお願いいたします。",
+                                            "pause": 1.2
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "この ほうそうは、なにに ついての おしらせですか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。なつまつりの ないようの へんこう",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。なつまつりの ちゅうし",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。なつまつりの さんかしゃの ぼしゅう",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。なつまつりの ばしょの へんこう"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l3-4.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Festival tetap diadakan, tetapi isinya diubah: mulai lebih malam, kios dikurangi separuh, area teduh diperluas.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l3-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。ラジオで ねむりの せんもんかが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "眠れないときに、早く寝なければと焦るほど、目が冴えてしまった経験はありませんか。実は、眠れない夜に大切なのは、眠ろうと頑張らないことです。眠くなるまで、いったん布団から出て、暗い部屋で静かな音楽を聞いたり、本を読んだりして過ごしてみてください。ただし、スマートフォンは明るい画面が脳を刺激するので、避けたほうがいいでしょう。",
+                                            "pause": 1.2
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "せんもんかは、ねむれないとき、どうすると いいと いっていますか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。スマートフォンで おんがくを きく",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。ねむくなるまで ふとんから でて しずかに すごす",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。ふとんの なかで じっと している",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。あかるい へやで ほんを よむ"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l3-5.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Saran: jangan memaksa tidur; keluar dari kasur sampai mengantuk, di ruang redup, dengan musik tenang/buku. Layar ponsel dihindari.",
+                                    "hidden_choices": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l4",
+                    "label": "問題４",
+                    "instruction": "問題《もんだい》4では、問題用紙《もんだいようし》に何《なに》もいんさつされていません。まず文《ぶん》を聞《き》いてください。それから、それに対《たい》する返事《へんじ》を聞《き》いて、1から3の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+                    "gap": 6,
+                    "intro": {
+                        "id": "l4-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい よん。もんだい よん では、もんだいようしに なにも いんさつされて いません。まず ぶんを きいて ください。それから、それに たいする へんじを きいて、いちから さんの なかから、いちばん いい ものを ひとつ えらんで ください。では、れいを きいて ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l4-intro.mp3"
+                    },
+                    "example": {
+                        "id": "l4-ex",
+                        "no": 0,
+                        "type": "listening",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "れい。",
+                                "pause": 0.6
+                            },
+                            {
+                                "speaker": "female",
+                                "text": "あの、この書類、来週までに出してもらえますか。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "1。はい、分かりました。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "2。いいえ、来週は暇でした。",
+                                "pause": 0.8
+                            },
+                            {
+                                "speaker": "male",
+                                "text": "3。ええ、出してもらいました。"
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l4-ex.mp3",
+                        "choices": [
+                            "",
+                            "",
+                            ""
+                        ],
+                        "answer": 0,
+                        "hidden_choices": true
+                    },
+                    "memo": true,
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l4-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "先月の売り上げ、思ったより伸びなかったね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。ええ、予想以上でしたね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。ええ、もっと頑張らなければなりませんね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いいえ、まだ伸びていませんよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-1.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Menanggapi kabar penjualan kurang bagus dengan sikap prihatin & bertekad (頑張らなければ). Jawaban lain bertentangan dengan isi.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ちょっとお願いがあるんだけど、この荷物、運ぶの手伝ってくれない？",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。うん、運んでくれてありがとう。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。手伝わせていただきます、いつでも。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。ごめん、今ちょっと手が離せなくて。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-2.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Permintaan bantuan; tanggapan yang wajar adalah menolak halus/menunda (手が離せない = sedang sibuk).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "先生、昨日のレポートですが、提出が遅れてしまって、申し訳ありません。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。それは、早く出してくれてありがとう。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。次からは気をつけてくださいね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。遅れても、何も言いませんよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-3.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Guru menerima permintaan maaf dan mengingatkan agar lain kali berhati-hati (気をつけてください).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "よんばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "部長、明日の会議、私が司会をやってもよろしいでしょうか。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。ええ、君が司会をしてくれると言ったね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。うん、ぜひやってもらいたいな。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。司会は会議のあとだよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-4.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Meminta izin menjadi pembawa acara → atasan menyetujui dengan positif (ぜひ〜てもらいたい).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-5",
+                                    "no": 5,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ごばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "この店、料理はおいしいけど、ちょっと値段が高めだね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。ええ、でも、それだけの価値はあると思います。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。ええ、もっと高いのを頼めばよかったですね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いいえ、安いのでびっくりしました。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-5.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Menyetujui bahwa mahal, sambil menambahkan sudut pandang (それだけの価値). Pilihan lain tidak nyambung dengan \"mahal\".",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-6",
+                                    "no": 6,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ろくばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あれ、佐藤さんまだ来ていないの？ いつもなら、もう着いている時間なのに。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。ええ、さっき着いたばかりですよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。いつもは、もうすぐ着くところです。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。電車が遅れているのかもしれませんね。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-6.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Menduga penyebab keterlambatan (かもしれません). Jawaban lain menyatakan ia sudah tiba, bertentangan dengan あれ、まだ来ていない.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-7",
+                                    "no": 7,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ななばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "お忙しいところ恐れ入りますが、少しお時間をいただけませんか。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。ええ、どういたしまして。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。ええ、五分ぐらいなら大丈夫ですよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。いいえ、私こそ恐れ入ります。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-7.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Permintaan waktu → persetujuan bersyarat. どういたしまして dipakai untuk menjawab terima kasih, bukan permintaan.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-8",
+                                    "no": 8,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "はちばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "こんなに遅くなるまで仕事をしていると、体を壊しかねないよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。そうだね、もっと遅くまでやるつもりだよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。いや、体は壊れていないよ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。ありがとう。今日は早く帰るよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-8.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "〜かねない = \"bisa jadi\". Tanggapan wajar: terima kasih atas perhatian dan berjanji pulang lebih awal.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-9",
+                                    "no": 9,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "きゅうばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "田中さん、新しい部署での仕事は、いかがですか。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "1。おかげさまで、少しずつ慣れてきました。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "2。ええ、どうぞいらっしゃってください。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "3。はい、来月から異動します。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-9.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Ditanya kabar di departemen baru → menjawab sudah mulai terbiasa (おかげさまで).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-10",
+                                    "no": 10,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "じゅうばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "このデータ、まだ確認していないのに、勝手に送っちゃったの？",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。ええ、勝手に確認してくれました。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。すみません、急いでいたもので。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。いいえ、あとで送るつもりです。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-10.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Ditegur karena mengirim sebelum dicek → meminta maaf dan memberi alasan. \"あとで送る\" bertentangan karena sudah terkirim.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l4-11",
+                                    "no": 11,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "じゅういちばん。",
+                                            "pause": 0.6
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あなたがいなかったら、このプロジェクトは成功しなかったわ。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "1。ええ、私がいなくてもできましたね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "2。そうですか、成功しなくて残念でしたね。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "3。いえ、皆さんのおかげですよ。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l4-11.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Dipuji → merendah dan memuji tim (皆さんのおかげ).",
+                                    "hidden_choices": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l5",
+                    "label": "問題５",
+                    "instruction": "問題《もんだい》5では、長《なが》めの話《はなし》を聞《き》きます。この問題《もんだい》には練習《れんしゅう》はありません。\nメモをとってもかまいません。\n1番《ばん》、2番《ばん》　問題用紙《もんだいようし》に何《なに》もいんさつされていません。まず話《はなし》を聞《き》いてください。それから、質問《しつもん》とせんたくしを聞《き》いて、1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。\n3番《ばん》　まず話《はなし》を聞《き》いてください。それから、二《ふた》つの質問《しつもん》を聞《き》いて、それぞれ問題用紙《もんだいようし》の1から4の中《なか》から、最《もっと》もよいものを一《ひと》つ選《えら》んでください。",
+                    "gap": 10,
+                    "intro": {
+                        "id": "l5-intro",
+                        "audio_text": [
+                            {
+                                "speaker": "narrator",
+                                "text": "もんだい ご。もんだい ご では、ながめの はなしを ききます。この もんだいには れんしゅうは ありません。メモを とっても かまいません。いちばん、にばんは、もんだいようしに なにも いんさつされて いません。まず はなしを きいて ください。それから、しつもんと せんたくしを きいて、いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。さんばんは、まず はなしを きいて ください。それから、ふたつの しつもんを きいて、それぞれ もんだいようしの いちから よんの なかから、いちばん いい ものを ひとつ えらんで ください。",
+                                "pause": 1
+                            }
+                        ],
+                        "audio": "/audio/jlpt-mock/n2-test-1/l5-intro.mp3"
+                    },
+                    "memo": true,
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "l5-1",
+                                    "no": 1,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "いちばん。りょこうがいしゃで、おんなの おきゃくと みせの おとこの ひとが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "あの、来月、友達と二人で、温泉に行きたいんですが、あまり高くなくて、ゆっくりできるところがいいんです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "かしこまりました。こちらに四つのプランがございます。一番は、都心から近い日帰りの温泉施設の入場券と昼食のセットで、五千円です。二番は、温泉街の旅館に一泊二日で、食事なしの素泊まりで、一万二千円です。三番は、山の中の一軒宿で、一泊二日、お部屋に専用の温泉がついて、三万円です。四番は、同じ温泉街の旅館で、夕食と朝食がつく一泊二日で、二万円です。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ええと、泊まりで行きたいんです。予算は、一人二万円までなんですけど、お金は旅行先で使いたいので、宿はできるだけ安くしたいんです。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "食事は、お付けしなくてよろしいですか。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "はい、外で食べるのも楽しみなので。温泉街を歩けるといいな。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "それでしたら、旅館が温泉街の中にございますので、ちょうどよろしいかと。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、それにします。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "おんなの ひとは、どの プランに しましたか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。いちばんの プラン。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。にばんの プラン。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。さんばんの プラン。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。よんばんの プラン。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l5-1.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Syarat: menginap, anggaran ≤ 20.000 yen, hemat untuk penginapan, tanpa makan, dekat kota onsen → plan no. 2 (penginapan di kota onsen, tanpa makan, 12.000 yen).",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-2",
+                                    "no": 2,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "にばん。ふうふが、こどもの ならいごとに ついて はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "隼人が、サッカーを習いたいって言ってたね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ええ。友達がみんなやってるからって。でも、教室まではバスで三十分もかかるのよ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "通うのは、君が車で送ることになるだろう？ 今は仕事が忙しいから、毎週は難しいよね。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうなの。サッカーは土曜日の午前だけど、その日は私も用事が多くて。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "水泳はどうかな。この前、学校のプールで、ちょっと得意になったって言ってたよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "水泳なら、駅前のスポーツクラブで、平日の夕方にあるから、一人でも通えるわね。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "夏の間に水泳を習って、体力をつけて、秋になったら、サッカーを始めたらどうだろう。秋なら、君も少し楽になるだろう？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうね、それならいいと思う。隼人にもそう話してみましょう。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "ふたりは、どうすることに しましたか。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "1。なつは すいえいを ならい、あきから サッカーを はじめる。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "2。すぐに サッカーを はじめる。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "3。すいえいも サッカーも ならわせない。",
+                                            "pause": 0.8
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "4。ピアノを ならわせる。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l5-2.mp3",
+                                    "choices": [
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Kesimpulan: musim panas ikut renang (bisa pergi sendiri di sore hari), mulai sepak bola di musim gugur ketika ibu lebih longgar.",
+                                    "hidden_choices": true
+                                },
+                                {
+                                    "id": "l5-3",
+                                    "no": 3,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "さんばん。しみんセンターの パンフレットを みながら、おんなの ひとと おとこの ひとが はなしています。",
+                                            "pause": 1
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ねえ、市民センターの秋の講座、一緒に何か申し込まない？"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "いいね。どんなのがあるの？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "一番は、ヨガ。夜の八時からで、仕事帰りに通えるよ。二番は、料理教室。季節の野菜を使った料理を、毎回違う先生が教えてくれるんだって。三番は、写真教室で、土曜日の午後に、町を歩きながら撮影の練習をするの。四番は、英会話。少人数のクラスで、外国人の先生が教えてくれるって。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "ヨガか。最近、肩こりがひどいから、やってみたいけど、夜は残業で行けない日が多いんだ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "そうなんだ。私は毎日同じ時間に帰れるから、夜でも大丈夫。でも、体を動かすのは続かないし、英語は、仕事で使うかもしれないから、役に立つかなと思って。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "英会話か、いいね。ただ、僕は発音が苦手で、人前で話すのが恥ずかしいんだよな。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "少人数だから、大丈夫よ。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "うーん、でも僕はやっぱり、体のためになるものがいいな。夜は無理だけど、土曜日にやっているものはない？"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "ええと、写真教室は土曜の午後で、歩くから運動にもなるって書いてある。"
+                                        },
+                                        {
+                                            "speaker": "male",
+                                            "text": "歩くのか。それなら続けられそう。それにするよ。"
+                                        },
+                                        {
+                                            "speaker": "female",
+                                            "text": "じゃあ、私は、英語にする。"
+                                        },
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "しつもん いち。おんなの ひとは、どの こうざに もうしこみたいと いっていますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l5-3.mp3",
+                                    "choices": [
+                                        "1番《ばん》の講座《こうざ》",
+                                        "2番《ばん》の講座《こうざ》",
+                                        "3番《ばん》の講座《こうざ》",
+                                        "4番《ばん》の講座《こうざ》"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Pertanyaan 1 (perempuan): ia tidak suka olahraga yang tak bertahan lama dan ingin bahasa Inggris yang berguna untuk pekerjaan → no. 4 (percakapan Inggris).",
+                                    "label": "3ばん 質問1"
+                                },
+                                {
+                                    "id": "l5-4",
+                                    "no": 4,
+                                    "type": "listening",
+                                    "audio_text": [
+                                        {
+                                            "speaker": "narrator",
+                                            "text": "しつもん に。おとこの ひとは、どの こうざに もうしこみたいと いっていますか。"
+                                        }
+                                    ],
+                                    "audio": "/audio/jlpt-mock/n2-test-1/l5-4.mp3",
+                                    "choices": [
+                                        "1番《ばん》の講座《こうざ》",
+                                        "2番《ばん》の講座《こうざ》",
+                                        "3番《ばん》の講座《こうざ》",
+                                        "4番《ばん》の講座《こうざ》"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Pertanyaan 2 (laki-laki): malam hari ia lembur, ingin yang baik untuk tubuh dan ada hari Sabtu → no. 3 (kelas fotografi sambil berjalan, Sabtu siang).",
+                                    "label": "3ばん 質問2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "vocab",
+            "kind": "reading",
+            "minutes": 30,
+            "jp": "言語知識（文字・語彙）",
+            "title": {
+                "id": "Pengetahuan Bahasa (Huruf & Kosakata)",
+                "en": "Language Knowledge (Vocabulary)"
+            },
+            "mondai": [
+                {
+                    "id": "v1",
+                    "label": "問題１",
+                    "instruction": "＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ\n選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v1-1",
+                                    "no": 1,
+                                    "type": "choice",
+                                    "stem": "彼は会議で、自分の意見を強く__主張__した。",
+                                    "choices": [
+                                        "しゅうちょう",
+                                        "しゅちょ",
+                                        "しゅちょう",
+                                        "しゅうちょ"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "主張 = しゅちょう (mengemukakan/bersikeras). 主 dibaca しゅ (pendek), 張 dibaca ちょう."
+                                },
+                                {
+                                    "id": "v1-2",
+                                    "no": 2,
+                                    "type": "choice",
+                                    "stem": "事故のため、この道路は午後まで__封鎖__されている。",
+                                    "choices": [
+                                        "ふうさ",
+                                        "ほうさ",
+                                        "ふさ",
+                                        "ほさ"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "封鎖 = ふうさ (menutup/blokade). 封 dibaca ふう (vokal panjang), bukan ほう."
+                                },
+                                {
+                                    "id": "v1-3",
+                                    "no": 3,
+                                    "type": "choice",
+                                    "stem": "最近、若い人の間に野菜を食べない__傾向__がある。",
+                                    "choices": [
+                                        "けいごう",
+                                        "けんこう",
+                                        "けいこ",
+                                        "けいこう"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "傾向 = けいこう (kecenderungan). Awas けんこう (健康)."
+                                },
+                                {
+                                    "id": "v1-4",
+                                    "no": 4,
+                                    "type": "choice",
+                                    "stem": "年をとって、体力が__衰えた__と感じる。",
+                                    "choices": [
+                                        "おとえた",
+                                        "おとろえた",
+                                        "おとらえた",
+                                        "おとろいた"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "衰える = おとろえる (melemah/merosot)."
+                                },
+                                {
+                                    "id": "v1-5",
+                                    "no": 5,
+                                    "type": "choice",
+                                    "stem": "まず、会社の現状を正確に__把握__する必要がある。",
+                                    "choices": [
+                                        "はわく",
+                                        "ばあく",
+                                        "はあく",
+                                        "はやく"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "把握 = はあく (memahami dengan tepat). 把 = は, 握 = あく."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v2",
+                    "label": "問題２",
+                    "instruction": "＿＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ\n選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v2-6",
+                                    "no": 6,
+                                    "type": "choice",
+                                    "stem": "毎日の練習のおかげで、英語の成績が__のびた__。",
+                                    "choices": [
+                                        "延びた",
+                                        "伸びた",
+                                        "仲びた",
+                                        "申びた"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "成績が伸びる = nilai/kemampuan meningkat. 延びる = tertunda/memanjang (waktu), 仲 dan 申 bukan kata ini."
+                                },
+                                {
+                                    "id": "v2-7",
+                                    "no": 7,
+                                    "type": "choice",
+                                    "stem": "失敗を__かくご__の上で、新しい仕事に挑戦した。",
+                                    "choices": [
+                                        "覚語",
+                                        "確悟",
+                                        "確語",
+                                        "覚悟"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "かくご = 覚悟 (tekad/siap menanggung risiko). 覚 + 悟 (menyadari)."
+                                },
+                                {
+                                    "id": "v2-8",
+                                    "no": 8,
+                                    "type": "choice",
+                                    "stem": "この装置で、星の動きを__かんそく__している。",
+                                    "choices": [
+                                        "観測",
+                                        "観則",
+                                        "勧測",
+                                        "勧則"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "かんそく = 観測 (mengamati/mengukur). 観 (mengamati) + 測 (mengukur). 勧 berarti \"menganjurkan\"."
+                                },
+                                {
+                                    "id": "v2-9",
+                                    "no": 9,
+                                    "type": "choice",
+                                    "stem": "計画の内容を、みんなで詳しく__けんとう__した。",
+                                    "choices": [
+                                        "険討",
+                                        "検計",
+                                        "検討",
+                                        "険計"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "けんとう = 検討 (mengkaji/mempertimbangkan). 検 (memeriksa) + 討 (membahas)."
+                                },
+                                {
+                                    "id": "v2-10",
+                                    "no": 10,
+                                    "type": "choice",
+                                    "stem": "このダムは、川の水量を__ちょうせつ__する役目を持っている。",
+                                    "choices": [
+                                        "調説",
+                                        "訓節",
+                                        "訓説",
+                                        "調節"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "ちょうせつ = 調節 (mengatur/menyesuaikan). 調 + 節 (ruas/batas). Awas 調整 (ちょうせい)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v3",
+                    "label": "問題３",
+                    "instruction": "（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v3-11",
+                                    "no": 11,
+                                    "type": "choice",
+                                    "stem": "この町の（　　）人口は、十年前より約二割増えたそうだ。",
+                                    "choices": [
+                                        "総",
+                                        "全",
+                                        "満",
+                                        "皆"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "総人口 = jumlah seluruh penduduk. 総 = total/keseluruhan."
+                                },
+                                {
+                                    "id": "v3-12",
+                                    "no": 12,
+                                    "type": "choice",
+                                    "stem": "会社が、出張にかかる交通（　　）をすべて払ってくれた。",
+                                    "choices": [
+                                        "料",
+                                        "費",
+                                        "金",
+                                        "賃"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "交通費 = ongkos transportasi. Akhiran 費 = biaya."
+                                },
+                                {
+                                    "id": "v3-13",
+                                    "no": 13,
+                                    "type": "choice",
+                                    "stem": "彼の話には説得（　　）があって、反対していた人も納得した。",
+                                    "choices": [
+                                        "感",
+                                        "量",
+                                        "率",
+                                        "力"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "説得力 = daya bujuk. Akhiran 力 = kemampuan/daya."
+                                },
+                                {
+                                    "id": "v3-14",
+                                    "no": 14,
+                                    "type": "choice",
+                                    "stem": "休日の動物園は（　　）満員で、入るまでに一時間もかかった。",
+                                    "choices": [
+                                        "準",
+                                        "副",
+                                        "超",
+                                        "反"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "超満員 = penuh sesak. Awalan 超 = melampaui/super."
+                                },
+                                {
+                                    "id": "v3-15",
+                                    "no": 15,
+                                    "type": "choice",
+                                    "stem": "相手の意見を聞かない一方（　　）な話し方では、話し合いにならない。",
+                                    "choices": [
+                                        "的",
+                                        "性",
+                                        "化",
+                                        "風"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "一方的 = sepihak. Akhiran 的 membentuk kata sifat-na."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v4",
+                    "label": "問題４",
+                    "instruction": "（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v4-16",
+                                    "no": 16,
+                                    "type": "choice",
+                                    "stem": "彼女は新しい環境にすぐ（　　）して、友達もたくさんできた。",
+                                    "choices": [
+                                        "適用",
+                                        "適応",
+                                        "適当",
+                                        "適度"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "環境に適応する = menyesuaikan diri dengan lingkungan. 適用 = diberlakukan (aturan), 適当 = cocok/asal-asalan."
+                                },
+                                {
+                                    "id": "v4-17",
+                                    "no": 17,
+                                    "type": "choice",
+                                    "stem": "新しい店は駅から近いので、（　　）がいい。",
+                                    "choices": [
+                                        "プロセス",
+                                        "ストレス",
+                                        "リスク",
+                                        "アクセス"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "アクセスがいい = akses (transportasi) mudah. プロセス = proses, ストレス = stres, リスク = risiko."
+                                },
+                                {
+                                    "id": "v4-18",
+                                    "no": 18,
+                                    "type": "choice",
+                                    "stem": "彼は何度注意されても、自分のミスを（　　）認めようとしない。",
+                                    "choices": [
+                                        "かたくなに",
+                                        "ひそかに",
+                                        "ささやかに",
+                                        "ひたむきに"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "かたくなに + 〜ない = bersikeras tidak mau. ひたむき = tekun/sepenuh hati (positif), ひそか = diam-diam."
+                                },
+                                {
+                                    "id": "v4-19",
+                                    "no": 19,
+                                    "type": "choice",
+                                    "stem": "長年の努力が（　　）、ようやく夢が実現した。",
+                                    "choices": [
+                                        "満ちて",
+                                        "積もって",
+                                        "実って",
+                                        "育って"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "努力が実る = usaha membuahkan hasil. 夢が叶う adalah kolokasi lain; 満ちる/積もる/育つ tidak berpasangan dengan 努力."
+                                },
+                                {
+                                    "id": "v4-20",
+                                    "no": 20,
+                                    "type": "choice",
+                                    "stem": "この商品はデザインもよいが、（　　）の面でも優れている。",
+                                    "choices": [
+                                        "機会",
+                                        "機関",
+                                        "機嫌",
+                                        "機能"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "機能 = fungsi. 機会 = kesempatan, 機関 = lembaga/mesin, 機嫌 = suasana hati (kanji mirip)."
+                                },
+                                {
+                                    "id": "v4-21",
+                                    "no": 21,
+                                    "type": "choice",
+                                    "stem": "子どものころ住んでいた町の様子が、今でも（　　）と思い出される。",
+                                    "choices": [
+                                        "ぎりぎりと",
+                                        "ありありと",
+                                        "ぞろぞろと",
+                                        "うろうろと"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "ありありと = jelas sekali (tergambar). ぞろぞろ = berbondong-bondong, うろうろ = mondar-mandir."
+                                },
+                                {
+                                    "id": "v4-22",
+                                    "no": 22,
+                                    "type": "choice",
+                                    "stem": "発表の前は、いつも（　　）して、落ち着かない。",
+                                    "choices": [
+                                        "そわそわ",
+                                        "ぺらぺら",
+                                        "のろのろ",
+                                        "ぴかぴか"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "そわそわ = gelisah/tidak tenang. ぺらぺら = lancar berbicara, のろのろ = lamban, ぴかぴか = mengilap."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v5",
+                    "label": "問題５",
+                    "instruction": "＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v5-23",
+                                    "no": 23,
+                                    "type": "choice",
+                                    "stem": "彼は__まれ__な才能の持ち主だと言われている。",
+                                    "choices": [
+                                        "だれにもある",
+                                        "少しだけの",
+                                        "めったにない",
+                                        "昔からの"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "まれ = jarang/langka = めったにない."
+                                },
+                                {
+                                    "id": "v5-24",
+                                    "no": 24,
+                                    "type": "choice",
+                                    "stem": "この仕事は__たやすい__ことではない。",
+                                    "choices": [
+                                        "簡単な",
+                                        "大切な",
+                                        "退屈な",
+                                        "危険な"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "たやすい = mudah = 簡単な."
+                                },
+                                {
+                                    "id": "v5-25",
+                                    "no": 25,
+                                    "type": "choice",
+                                    "stem": "ホテルの予約を__キャンセル__した。",
+                                    "choices": [
+                                        "変更した",
+                                        "確認した",
+                                        "延長した",
+                                        "取り消した"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "キャンセル = membatalkan = 取り消す."
+                                },
+                                {
+                                    "id": "v5-26",
+                                    "no": 26,
+                                    "type": "choice",
+                                    "stem": "今日は仕事が__はかどった__。",
+                                    "choices": [
+                                        "予定より多かった",
+                                        "順調に進んだ",
+                                        "急に増えた",
+                                        "いつもより遅れた"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "仕事がはかどる = pekerjaan maju lancar = 順調に進む."
+                                },
+                                {
+                                    "id": "v5-27",
+                                    "no": 27,
+                                    "type": "choice",
+                                    "stem": "彼の返事は__あいまい__だった。",
+                                    "choices": [
+                                        "とても冷たかった",
+                                        "少し遅かった",
+                                        "はっきりしなかった",
+                                        "少し変わっていた"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "あいまい = tidak jelas = はっきりしない."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "v6",
+                    "label": "問題６",
+                    "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "v6-28",
+                                    "no": 28,
+                                    "type": "choice",
+                                    "stem": "配慮《はいりょ》",
+                                    "choices": [
+                                        "地図を見て、明日の登山の__配慮《はいりょ》__を立てた。",
+                                        "長い間考えた結果、出かける__配慮《はいりょ》__を決めた。",
+                                        "彼は食事の__配慮《はいりょ》__が大好きで、毎日、料理をしている。",
+                                        "先生は、新入生が早くなじめるように、いろいろ__配慮《はいりょ》__してくれた。"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "配慮 = perhatian/pertimbangan terhadap orang lain. Pengecoh memakainya seolah 計画 (rencana), 決心 (tekad), 準備 (persiapan)."
+                                },
+                                {
+                                    "id": "v6-29",
+                                    "no": 29,
+                                    "type": "choice",
+                                    "stem": "一斉《いっせい》に",
+                                    "choices": [
+                                        "彼女はこの町にいる友達の中で、__一斉《いっせい》に__古い友人だ。",
+                                        "開始の合図で、選手たちが__一斉《いっせい》に__走り出した。",
+                                        "今日は忙しくて、__一斉《いっせい》に__昼ごはんを食べる時間もなかった。",
+                                        "私は買い物をするとき、いつも__一斉《いっせい》に__安い店を選ぶ。"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "一斉に = serentak/bersamaan. Pengecoh menukarnya dengan 一番 (paling), まったく (sama sekali), dan まず (pertama)."
+                                },
+                                {
+                                    "id": "v6-30",
+                                    "no": 30,
+                                    "type": "choice",
+                                    "stem": "ぎっしり",
+                                    "choices": [
+                                        "本棚には、古い小説が__ぎっしり__と詰まっていた。",
+                                        "親友の結婚式で、彼は__ぎっしり__と泣いていた。",
+                                        "駅前の広場で、雨が__ぎっしり__と降っている。",
+                                        "彼女は何時間も__ぎっしり__とテレビを見ていた。"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "ぎっしり = padat penuh (tidak ada celah). Tidak dipakai untuk menangis, hujan, atau menonton."
+                                },
+                                {
+                                    "id": "v6-31",
+                                    "no": 31,
+                                    "type": "choice",
+                                    "stem": "著《いちじる》しい",
+                                    "choices": [
+                                        "彼女は、__著《いちじる》しい__服装で会社に来た。",
+                                        "道が__著《いちじる》しく__せまくて、車が通れない。",
+                                        "この町は、この十年で人口が__著《いちじる》しく__増えた。",
+                                        "私の趣味は、__著《いちじる》しい__映画を見ることだ。"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "著しい = nyata/mencolok (perubahan, perbedaan). Pengecoh memakainya untuk \"mencolok (派手)\", \"sangat (とても)\", dan \"terkenal (有名な)\"."
+                                },
+                                {
+                                    "id": "v6-32",
+                                    "no": 32,
+                                    "type": "choice",
+                                    "stem": "こだわる",
+                                    "choices": [
+                                        "友達と約束した時間に__こだわって__しまった。",
+                                        "彼は服の色に__こだわって__、何時間も店を回った。",
+                                        "父はどんなときでも__こだわって__笑顔を見せる。",
+                                        "旅行の荷物を__こだわって__家に忘れてきた。"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "こだわる = terpaku/ngotot pada hal tertentu. Pengecoh memakainya seperti 遅れる (terlambat), 必ず (selalu), dan うっかり (lupa)."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "grammar",
+            "kind": "reading",
+            "minutes": 75,
+            "mondai_start": 7,
+            "jp": "言語知識（文法）・読解",
+            "title": {
+                "id": "Pengetahuan Bahasa (Tata Bahasa) & Membaca",
+                "en": "Language Knowledge (Grammar) & Reading"
+            },
+            "mondai": [
+                {
+                    "id": "g7",
+                    "label": "問題７",
+                    "instruction": "次の文の（　　）に入れるのに最もよいものを、1・2・3・4から一つ\n選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g7-33",
+                                    "no": 33,
+                                    "type": "choice",
+                                    "stem": "A「来週の試験、自信ある？」\nB「全然。勉強しないで合格できる（　　）、だれも苦労しないよ。」",
+                                    "choices": [
+                                        "ものか",
+                                        "ものなら",
+                                        "ものだ",
+                                        "ものの"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "〜ものなら = andaikan bisa (jarang terjadi), \"kalau bisa lulus tanpa belajar, tak seorang pun susah\". ものの = meskipun."
+                                },
+                                {
+                                    "id": "g7-34",
+                                    "no": 34,
+                                    "type": "choice",
+                                    "stem": "技術的な問題が見つかった（　　）、新製品の発売は来月に延期された。",
+                                    "choices": [
+                                        "ことなく",
+                                        "ことには",
+                                        "ことのない",
+                                        "ことから"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "〜ことから = karena/berdasarkan fakta bahwa (alasan). ことなく = tanpa melakukan."
+                                },
+                                {
+                                    "id": "g7-35",
+                                    "no": 35,
+                                    "type": "choice",
+                                    "stem": "彼は、体調が悪い（　　）、毎日欠かさず練習に来ている。",
+                                    "choices": [
+                                        "にもかかわらず",
+                                        "ばかりに",
+                                        "ゆえに",
+                                        "ことだし"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "〜にもかかわらず = meskipun (hasil berlawanan). ゆえに/ことだし = sebab-akibat, ばかりに = gara-gara (hasil buruk)."
+                                },
+                                {
+                                    "id": "g7-36",
+                                    "no": 36,
+                                    "type": "choice",
+                                    "stem": "急に雨が降ってきた（　　）、洗濯物が全部ぬれてしまった。",
+                                    "choices": [
+                                        "ものなら",
+                                        "ものの",
+                                        "ものだから",
+                                        "ものか"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "〜ものだから = karena (alasan/pembelaan diri). ものなら = andai bisa, ものか = tidak mungkin."
+                                },
+                                {
+                                    "id": "g7-37",
+                                    "no": 37,
+                                    "type": "choice",
+                                    "stem": "社員「部長、明日の会議の資料は、のちほど私が（　　）。」",
+                                    "choices": [
+                                        "お届けになります",
+                                        "お届けくださいます",
+                                        "お届けされます",
+                                        "お届けいたします"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Pembicara (saya) melakukan untuk atasan → kenjōgo お〜いたす/お〜する. お〜になる dan 〜れる adalah sonkeigo untuk orang lain."
+                                },
+                                {
+                                    "id": "g7-38",
+                                    "no": 38,
+                                    "type": "choice",
+                                    "stem": "彼女は、仕事の（　　）、ボランティア活動にも参加している。",
+                                    "choices": [
+                                        "かたわら",
+                                        "さなか",
+                                        "ついでに",
+                                        "あまり"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "N のかたわら = di samping (pekerjaan utama) juga melakukan kegiatan lain. さなか = tepat di tengah-tengah."
+                                },
+                                {
+                                    "id": "g7-39",
+                                    "no": 39,
+                                    "type": "choice",
+                                    "stem": "社長（　　）、さすがに話し方が堂々としている。",
+                                    "choices": [
+                                        "ともすると",
+                                        "としても",
+                                        "ともなると",
+                                        "というより"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "N ともなると = begitu sudah (berstatus/tingkat) N, wajar jadi demikian. ともすると = cenderung."
+                                },
+                                {
+                                    "id": "g7-40",
+                                    "no": 40,
+                                    "type": "choice",
+                                    "stem": "おいしそうなケーキを前にして、つい手を伸ばさ（　　）。",
+                                    "choices": [
+                                        "ずにはおかなかった",
+                                        "ずにはいられなかった",
+                                        "ずじまいだった",
+                                        "ずにすんだ"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "〜ずにはいられない = tak bisa menahan diri. 〜ずにはおかない = pasti akan menimbulkan (efek pada orang lain)."
+                                },
+                                {
+                                    "id": "g7-41",
+                                    "no": 41,
+                                    "type": "choice",
+                                    "stem": "申し訳ありませんが、そのご要望にはお応えし（　　）。",
+                                    "choices": [
+                                        "かねません",
+                                        "かけます",
+                                        "きれます",
+                                        "かねます"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "〜かねる = tidak bisa/sulit (menolak sopan). 〜かねない = bisa saja terjadi (hal buruk)."
+                                },
+                                {
+                                    "id": "g7-42",
+                                    "no": 42,
+                                    "type": "choice",
+                                    "stem": "彼は怒り（　　）人で、すぐに大きな声を出す。",
+                                    "choices": [
+                                        "ぎみの",
+                                        "だらけの",
+                                        "っぽい",
+                                        "めいた"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "怒りっぽい = mudah marah (sifat). だらけ = penuh (kotoran), めいた = bernuansa."
+                                },
+                                {
+                                    "id": "g7-43",
+                                    "no": 43,
+                                    "type": "choice",
+                                    "stem": "彼女の歌声は、聞く人の心を（　　）ずにはおかない。",
+                                    "choices": [
+                                        "動かさ",
+                                        "動かし",
+                                        "動かせ",
+                                        "動かす"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "〜ずにはおかない menempel pada bentuk ない-tanpa-ない: 動かさ(ない) → 動かさずにはおかない."
+                                },
+                                {
+                                    "id": "g7-44",
+                                    "no": 44,
+                                    "type": "choice",
+                                    "stem": "もう少しで電車に乗り遅れる（　　）。",
+                                    "choices": [
+                                        "ことだった",
+                                        "ところだった",
+                                        "ものだった",
+                                        "わけだった"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "〜ところだった = hampir saja (tapi tidak jadi)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g8",
+                    "label": "問題８",
+                    "instruction": "次の文の⟦★⟧に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "questions": [
+                                {
+                                    "id": "g8-45",
+                                    "no": 45,
+                                    "type": "star",
+                                    "prefix": "あの選手は、",
+                                    "suffix": " 好成績を収めた。",
+                                    "words": [
+                                        "大会",
+                                        "落ち着いた走りで",
+                                        "にしては",
+                                        "初めての"
+                                    ],
+                                    "order": [
+                                        3,
+                                        0,
+                                        2,
+                                        1
+                                    ],
+                                    "choices": [
+                                        "大会",
+                                        "落ち着いた走りで",
+                                        "にしては",
+                                        "初めての"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "初めての 大会 ★にしては 落ち着いた走りで 好成績を収めた。 〜にしては = untuk ukuran (ternyata di luar dugaan). ★ = にしては"
+                                },
+                                {
+                                    "id": "g8-46",
+                                    "no": 46,
+                                    "type": "star",
+                                    "prefix": "この店は、",
+                                    "suffix": "。",
+                                    "words": [
+                                        "週末",
+                                        "に限らず",
+                                        "平日",
+                                        "もいつも混んでいる"
+                                    ],
+                                    "order": [
+                                        2,
+                                        1,
+                                        0,
+                                        3
+                                    ],
+                                    "choices": [
+                                        "週末",
+                                        "に限らず",
+                                        "平日",
+                                        "もいつも混んでいる"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "平日 に限らず ★週末 もいつも混んでいる。 〜に限らず = tidak terbatas pada. ★ = 週末"
+                                },
+                                {
+                                    "id": "g8-47",
+                                    "no": 47,
+                                    "type": "star",
+                                    "prefix": "約束した以上、",
+                                    "suffix": "。",
+                                    "words": [
+                                        "忙しくても",
+                                        "どんなに",
+                                        "わけにはいかない",
+                                        "参加しない"
+                                    ],
+                                    "order": [
+                                        1,
+                                        0,
+                                        3,
+                                        2
+                                    ],
+                                    "choices": [
+                                        "忙しくても",
+                                        "どんなに",
+                                        "わけにはいかない",
+                                        "参加しない"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "どんなに 忙しくても ★参加しない わけにはいかない。 〜ないわけにはいかない = tidak boleh tidak (harus). ★ = 参加しない"
+                                },
+                                {
+                                    "id": "g8-48",
+                                    "no": 48,
+                                    "type": "star",
+                                    "prefix": "この祭りには、地元の",
+                                    "suffix": " 集まる。",
+                                    "words": [
+                                        "大勢の観光客が",
+                                        "全国から",
+                                        "をはじめ",
+                                        "人々"
+                                    ],
+                                    "order": [
+                                        3,
+                                        2,
+                                        1,
+                                        0
+                                    ],
+                                    "choices": [
+                                        "大勢の観光客が",
+                                        "全国から",
+                                        "をはじめ",
+                                        "人々"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "人々 をはじめ ★全国から 大勢の観光客が 集まる。 〜をはじめ = mulai dari ... dan lainnya. ★ = 全国から"
+                                },
+                                {
+                                    "id": "g8-49",
+                                    "no": 49,
+                                    "type": "star",
+                                    "prefix": "A「あの映画、どうだった？」\nB「",
+                                    "suffix": " よ。」",
+                                    "words": [
+                                        "おもしろくなかった",
+                                        "期待",
+                                        "ほど",
+                                        "していた"
+                                    ],
+                                    "order": [
+                                        1,
+                                        3,
+                                        2,
+                                        0
+                                    ],
+                                    "choices": [
+                                        "おもしろくなかった",
+                                        "期待",
+                                        "ほど",
+                                        "していた"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "期待 していた ★ほど おもしろくなかった よ。 〜ほど〜ない = tidak sebegitu. ★ = ほど"
+                                }
+                            ]
+                        }
+                    ],
+                    "example": {
+                        "label": "（問題例）",
+                        "type": "star",
+                        "prefix": "机の ",
+                        "suffix": " あります。",
+                        "choices": [
+                            "本",
+                            "に",
+                            "上",
+                            "が"
+                        ],
+                        "answer": 0,
+                        "howto": {
+                            "title": "（解答のしかた）",
+                            "step1": "1．正しい文はこうです。",
+                            "figure": {
+                                "stem": "机の ⟦　⟧ ⟦　⟧ ⟦★⟧ ⟦　⟧ あります。",
+                                "order": "3 上　2 に　1 本　4 が"
+                            },
+                            "step2": "2．⟦★⟧に入る番号を解答用紙にマークします。"
+                        }
+                    }
+                },
+                {
+                    "id": "g9",
+                    "label": "問題９",
+                    "instruction": "次の文章を読んで、文章全体の内容を考えて、［50］から［54］の中に\n入る最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "boxed": true,
+                                "label": "",
+                                "title": "手書きの良さ",
+                                "text": "　最近、手紙を書くことが少なくなった。連絡は、メールやメッセージアプリで［50］という人が増えている。用件だけなら、そのほうが早くて便利なのは確かだ。\n　ところが先日、友人から一枚のはがきが届いた。きれいとは言えない字で、近況《きんきょう》が短く書かれているだけだったが、読んでいるうちに、不思議と気持ちが温かくなった。字の形や筆圧《ひつあつ》には、その人の［51］が表れるからだろう。\n　手書きには、書き直す手間がかかる。［52］、その手間があるからこそ、相手のことを思い浮かべながら言葉を選ぶことになる。メールのように、考える前に送ってしまうことは［53］。\n　便利さを手放す必要はない。［54］、年に一度でも、大切な人に手書きの便りを出してみてはどうだろうか。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g9-50",
+                                    "no": 50,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "十分だ",
+                                        "十分だと",
+                                        "十分に",
+                                        "十分な"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "で十分だ + という人 = orang yang bilang \"cukup begitu\". 十分だと + という → ダブル と; 十分に/十分な tidak cocok sebelum という."
+                                },
+                                {
+                                    "id": "g9-51",
+                                    "no": 51,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "人間",
+                                        "人物",
+                                        "人柄",
+                                        "人気"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "人柄 = watak/kepribadian; huruf tangan menunjukkan 人柄. 人物・人間・人気 tidak natural dengan が表れる."
+                                },
+                                {
+                                    "id": "g9-52",
+                                    "no": 52,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "だから",
+                                        "しかし",
+                                        "たとえば",
+                                        "すなわち"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "Kalimat sebelum: repot; sesudah: justru karena repot itu → pertentangan/koreksi → しかし."
+                                },
+                                {
+                                    "id": "g9-53",
+                                    "no": 53,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "よくある",
+                                        "少なくない",
+                                        "避けられない",
+                                        "まずない"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "Perbandingan dengan メール yang terkirim sebelum berpikir; tulisan tangan \"hampir tidak pernah\" begitu → まずない."
+                                },
+                                {
+                                    "id": "g9-54",
+                                    "no": 54,
+                                    "type": "choice",
+                                    "stem": "",
+                                    "choices": [
+                                        "そこで",
+                                        "ところが",
+                                        "なぜなら",
+                                        "それにしても"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "Dari kesimpulan paragraf sebelumnya, penulis mengusulkan tindakan → そこで (maka/karena itu)."
+                                }
+                            ]
+                        }
+                    ],
+                    "lead": "以下は、雑誌のコラムである。"
+                },
+                {
+                    "id": "g10",
+                    "label": "問題10",
+                    "instruction": "次の(1)から(5)の文章を読んで、後の問いに対する答えとして最もよいものを、\n1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　人は、待たされることを嫌う。電車が数分遅れただけで不満を言い、返信が遅いメッセージに苛立《いらだ》つ。しかし、待つ時間が無駄だとは限らない。待っているあいだに、人は相手のことや、これから起こることを想像する。その想像が、出会いや再会の喜びを大きくしてくれるのである。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g10-55",
+                                    "no": 55,
+                                    "type": "choice",
+                                    "stem": "筆者は、待つことをどのようにとらえているか。",
+                                    "choices": [
+                                        "苛立ちを生むだけの無駄な時間",
+                                        "喜びを大きくする心の準備になる時間",
+                                        "相手への不満を忘れさせる時間",
+                                        "次にすることを計画するための時間"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "待つあいだの想像が、再会などの喜びを大きくする → 準備になる時間."
+                                }
+                            ]
+                        },
+                        {
+                            "passage": {
+                                "kind": "memo",
+                                "variant": "mail",
+                                "lead": "以下は、ある図書館から利用者に届いたメールである。",
+                                "to": "利用者のみなさまへ",
+                                "text": "いつも市立中央図書館をご利用いただき、ありがとうございます。\n館内の設備点検のため、10月14日（月）は臨時休館とさせていただきます。この日が返却期限の本は、翌日の15日（火）までにご返却ください。延滞《えんたい》の扱いにはなりませんので、ご安心ください。\nなお、出入口の横にある返却ポストは、休館日もご利用いただけます。",
+                                "from": ""
+                            },
+                            "questions": [
+                                {
+                                    "id": "g10-56",
+                                    "no": 56,
+                                    "type": "choice",
+                                    "stem": "このメールの内容と合っているものはどれか。",
+                                    "choices": [
+                                        "14日は返却ポストも使えない。",
+                                        "15日も点検のため休館になる。",
+                                        "14日の返却は、ほかの図書館でもできる。",
+                                        "14日が期限の本は、15日に返しても延滞にならない。"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "14日が期限 → 翌15日までに返せば延滞の扱いにならない. 返却ポストは休館日も利用可."
+                                }
+                            ]
+                        },
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　最近、スマートフォンの画面を寝る直前まで見ている人が多い。ところが、画面から出る強い光は、眠りを促す物質の分泌《ぶんぴつ》を抑えてしまうことが知られている。そのため、寝つきが悪くなるだけでなく、眠りも浅くなりやすい。寝る一時間前から画面を見るのをやめるだけで、睡眠の質はかなり改善されるという。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g10-57",
+                                    "no": 57,
+                                    "type": "choice",
+                                    "stem": "筆者が最も言いたいことは何か。",
+                                    "choices": [
+                                        "スマートフォンの光は目に悪いので長時間使うべきではない",
+                                        "眠りを促す物質は画面の光を浴びると増える",
+                                        "寝る前の画面は睡眠を妨げるので、一時間前から見るのをやめたほうがよい",
+                                        "睡眠の質を改善するには、スマートフォンを手放すべきだ"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "光 → 眠りを促す物質が抑えられる → 寝る一時間前から見ないだけで改善. 目への害や「手放す」は述べていない."
+                                }
+                            ]
+                        },
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　新しい職場に慣れるまでには、思ったより時間がかかる。仕事の内容より、むしろ「聞きたいことを、いつ、どう聞けばいいのか」がわからず、一人で悩んでしまうことが多いからだ。先輩が忙しそうだと、声をかけるのもためらわれる。だが、小さな疑問を放っておくと、あとで大きなミスにつながりかねない。わからないことは、早めに短く質問する。それが、結局は自分も周りも助けることになる。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g10-58",
+                                    "no": 58,
+                                    "type": "choice",
+                                    "stem": "筆者は、新しい職場で何が大切だと考えているか。",
+                                    "choices": [
+                                        "疑問を一人で抱えず、早めに質問すること",
+                                        "先輩が忙しいときは質問を控えること",
+                                        "仕事の内容を早く覚えること",
+                                        "質問をする前に自分で十分調べること"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "最後の2文: わからないことは早めに短く質問 → 自分も周りも助かる."
+                                }
+                            ]
+                        },
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　私の町には、毎年冬になると白鳥《はくちょう》が飛んでくる池がある。以前は、観光客が増えるように、パンを与えることが奨励《しょうれい》されていたが、今では__禁止されている__①。パンを食べ過ぎた白鳥は、健康を損ない、池の水も汚れてしまうからだ。観察を楽しむだけにして、自然のままの姿を守る。それが今の町の方針である。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g10-59",
+                                    "no": 59,
+                                    "type": "choice",
+                                    "stem": "①__禁止されている__のはなぜか。",
+                                    "choices": [
+                                        "白鳥が人に慣れすぎるから",
+                                        "白鳥の健康と池の環境に悪いから",
+                                        "観光客が減ってしまうから",
+                                        "パンが手に入りにくくなったから"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "理由: パンの食べ過ぎで白鳥が健康を損ない、池の水も汚れる."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g11",
+                    "label": "問題11",
+                    "instruction": "次の(1)から(3)の文章を読んで、後の問いに対する答えとして最もよいものを、\n1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　「若者の言葉の乱れ」は、昔から繰り返し言われてきた話題である。しかし、言葉は、使う人々の暮らしに合わせて少しずつ変わっていくものだ。かつては新しい言い方とされた表現が、今では__辞書にも載るほど__①ふつうに使われていることも珍しくない。\n　もちろん、変化のすべてを歓迎する必要はない。相手に誤解を与えたり、不快な思いをさせたりする言葉づかいは、場面に応じて避けるべきだろう。大切なのは、新しい言い方を一律に「乱れ」と決めつけず、__その言い方が生まれた背景__②に目を向けることではないだろうか。そうすれば、世代の違う人同士でも、互いの言葉を理解しやすくなるはずだ。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g11-60",
+                                    "no": 60,
+                                    "type": "choice",
+                                    "stem": "①__辞書にも載るほど__とは、どういうことか。",
+                                    "choices": [
+                                        "辞書の編集の仕方が変わったということ",
+                                        "昔の言い方が使われなくなったということ",
+                                        "新しい言い方が一般に広く使われるようになったということ",
+                                        "若者が辞書をよく使うようになったということ"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "辞書に載る = 広く定着した. 前の文の「新しい言い方とされた表現」が今はふつうに使われている."
+                                },
+                                {
+                                    "id": "g11-61",
+                                    "no": 61,
+                                    "type": "choice",
+                                    "stem": "②__その言い方が生まれた背景__に目を向けると、どうなると筆者は考えているか。",
+                                    "choices": [
+                                        "世代の違う人同士が互いの言葉を理解しやすくなる",
+                                        "若者が正しい言葉づかいを覚える",
+                                        "辞書に新しい言い方が載りやすくなる",
+                                        "誤解を与える言葉づかいがなくなる"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "直後の文: そうすれば、世代の違う人同士でも互いの言葉を理解しやすくなる."
+                                },
+                                {
+                                    "id": "g11-62",
+                                    "no": 62,
+                                    "type": "choice",
+                                    "stem": "言葉の変化について、筆者の考えに合うのはどれか。",
+                                    "choices": [
+                                        "変化はすべて避けるべきだ",
+                                        "新しい言い方は場面を問わず使ってよい",
+                                        "昔の言い方を守ることが最も大切だ",
+                                        "場面によっては避けるべき言葉づかいもあるが、すべてを乱れと決めつけるべきではない"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "「変化のすべてを歓迎する必要はない」+「一律に乱れと決めつけず」 → 両面の態度."
+                                }
+                            ]
+                        },
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　テレワークが広まり、自宅で仕事をする人が増えた。通勤の時間がなくなり、自分のペースで働けるという利点がある一方で、__新たな悩み__①も生まれている。その一つが、仕事と生活の境目があいまいになることだ。家にいると、終業時間を過ぎても、つい仕事を続けてしまう。反対に、仕事中に家事が気になって、集中できなくなる人もいる。\n　ある会社では、この問題への対策として、勤務の前後に「始業」と「終業」の連絡を必ず入れる決まりを作った。形だけのように思えるが、この小さな習慣が、気持ちを切り替えるきっかけになっているという。__こうした工夫__②は、働く場所が変わっても、人が仕事を続けていくうえで欠かせないものなのかもしれない。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g11-63",
+                                    "no": 63,
+                                    "type": "choice",
+                                    "stem": "①__新たな悩み__とあるが、どのような悩みか。",
+                                    "choices": [
+                                        "通勤に時間がかかりすぎること",
+                                        "仕事と生活の切り替えが難しいこと",
+                                        "自分のペースで働けないこと",
+                                        "会社の人と連絡が取れないこと"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "直後: その一つが、仕事と生活の境目があいまいになること."
+                                },
+                                {
+                                    "id": "g11-64",
+                                    "no": 64,
+                                    "type": "choice",
+                                    "stem": "ある会社が作った決まりは、どんな効果をもたらしたか。",
+                                    "choices": [
+                                        "終業時間が早くなった",
+                                        "家事をする時間が増えた",
+                                        "気持ちを切り替えやすくなった",
+                                        "連絡の回数が減った"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "始業・終業の連絡 → 気持ちを切り替えるきっかけになっている."
+                                },
+                                {
+                                    "id": "g11-65",
+                                    "no": 65,
+                                    "type": "choice",
+                                    "stem": "②__こうした工夫__について、筆者はどう考えているか。",
+                                    "choices": [
+                                        "働く場所が変わっても必要なものかもしれないと考えている",
+                                        "形だけで意味はないと考えている",
+                                        "テレワークでしか役に立たないと考えている",
+                                        "出社する人には必要ないと考えている"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "最後の文: 働く場所が変わっても、仕事を続けていくうえで欠かせないものかもしれない."
+                                }
+                            ]
+                        },
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　渡り鳥《わたりどり》は、季節に合わせて何千キロもの距離を移動する。しかも、地図もコンパスも持たないのに、毎年ほぼ同じ場所に帰ってくる。この能力は、長いあいだ謎《なぞ》とされてきた。\n　近年の研究で、鳥の体内には、地球の磁気《じき》（注）を感じ取る仕組みがあるらしいことがわかってきた。ところが、__磁気だけでは説明できない点__①も多い。曇りの夜でも道を間違えない鳥がいる一方で、強い光を当てると、方向を見失う鳥もいるからだ。\n　このことから、鳥は磁気に加えて、星の位置や太陽の動き、景色の記憶などを組み合わせて、進む方向を決めているのではないかと考えられている。__ひとつの感覚に頼らない__②ことが、長い旅を確かなものにしているのかもしれない。\n\n（注）磁気《じき》：方位磁石を北に向けさせる、地球がもつ力"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g11-66",
+                                    "no": 66,
+                                    "type": "choice",
+                                    "stem": "①__磁気だけでは説明できない点__の例として、本文で挙げられているのはどれか。",
+                                    "choices": [
+                                        "曇りの夜でも道を間違えない鳥がいること",
+                                        "毎年ほぼ同じ場所に帰ってくること",
+                                        "地図もコンパスも持っていないこと",
+                                        "強い光を当てると方向を見失う鳥がいること"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "曇りの夜でも迷わない(磁気で説明可) ↔ 強い光で方向を見失う(磁気では説明できない)."
+                                },
+                                {
+                                    "id": "g11-67",
+                                    "no": 67,
+                                    "type": "choice",
+                                    "stem": "筆者は、鳥がどのように方向を決めていると考えているか。",
+                                    "choices": [
+                                        "磁気だけを頼りにしている",
+                                        "星の位置や太陽の動き、景色の記憶などを組み合わせている",
+                                        "仲間の鳥の後について飛んでいる",
+                                        "強い光の方向に向かって飛んでいる"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "磁気に加えて、星・太陽・景色の記憶を組み合わせている."
+                                },
+                                {
+                                    "id": "g11-68",
+                                    "no": 68,
+                                    "type": "choice",
+                                    "stem": "②__ひとつの感覚に頼らない__ことが、どうなるのかもしれないと筆者は述べているか。",
+                                    "choices": [
+                                        "渡り鳥の数が増える",
+                                        "研究が早く進む",
+                                        "長い旅が確かなものになる",
+                                        "曇りの日に飛ばなくなる"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "同じ文の後半: 長い旅を確かなものにしているのかもしれない."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g12",
+                    "label": "問題12",
+                    "instruction": "次のAとBはそれぞれ、本の読み方について書かれた文章である。二つの\n文章を読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から\n一つ選びなさい。",
+                    "groups": [
+                        {
+                            "passage": {
+                                "kind": "pair",
+                                "items": [
+                                    {
+                                        "label": "A",
+                                        "text": "　電子書籍は、一台の端末に何百冊もの本を入れて持ち歩ける。文字の大きさを変えられるので、高齢者にも読みやすい。また、本屋に行かなくても、買ったその場で読み始められる。こうした便利さから、今後ますます利用者が増え、紙の本を読む人は少数になっていくだろう。"
+                                    },
+                                    {
+                                        "label": "B",
+                                        "text": "　紙の本には、電子書籍にはない良さがある。ページをめくる手の感触や、本棚に並ぶ背表紙《せびょうし》を眺める楽しさは、画面の上では味わえない。また、紙の本は、読んだ場所や時期の記憶と結びつきやすいという。便利さだけで選ぶのではなく、本の楽しみ方に合わせて使い分けていく人が、これからも多いのではないか。"
+                                    }
+                                ]
+                            },
+                            "questions": [
+                                {
+                                    "id": "g12-69",
+                                    "no": 69,
+                                    "type": "choice",
+                                    "stem": "紙の本について、AとBはどのように述べているか。",
+                                    "choices": [
+                                        "Aは紙の本の良さを認め、Bは紙の本の値段の高さを問題にしている。",
+                                        "Aは紙の本を読む人が少なくなると予想し、Bは紙の本にしかない良さがあると述べている。",
+                                        "Aは紙の本が手軽に買えると述べ、Bは紙の本は重くて持ち歩けないと述べている。",
+                                        "Aは紙の本のほうが読みやすいと述べ、Bは電子書籍のほうが記憶に残ると述べている。"
+                                    ],
+                                    "answer": 1,
+                                    "exp": "A: 紙の本を読む人は少数になる. B: 手触りや記憶との結びつきなど紙の本ならではの良さがある."
+                                },
+                                {
+                                    "id": "g12-70",
+                                    "no": 70,
+                                    "type": "choice",
+                                    "stem": "本の選び方について、AとBの筆者はどのように考えているか。",
+                                    "choices": [
+                                        "Aは本の値段を重視する人が増えると考え、Bは本の大きさで選ぶ人が多いと考えている。",
+                                        "Aは楽しみ方を重視する人が増えると考え、Bは便利さだけで選ぶ人が多いと考えている。",
+                                        "AもBも、便利さだけを理由に電子書籍を選ぶ人が増えると考えている。",
+                                        "Aは便利さを重視する人が増えると考え、Bは便利さだけでなく楽しみ方も考えて選ぶ人が多いと考えている。"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "A: 便利さから電子書籍の利用者が増える. B: 便利さだけでなく本の楽しみ方に合わせて使い分ける."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g13",
+                    "label": "問題13",
+                    "instruction": "次の文章を読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から\n一つ選びなさい。",
+                    "groups": [
+                        {
+                            "passage": {
+                                "kind": "text",
+                                "text": "　ある和食の店で、若い料理人が師匠《ししょう》に叱られる場面を見たことがある。彼が作ったのは、見た目も味も申し分のない煮物だった。ところが、師匠は一口食べると、静かに言った。「これは、おまえが作りたい味だ。お客さんが食べたい味ではない。」\n　その料理人は、腕には自信があった。教わった通りに作れば、間違いはないと思っていた。だが、師匠が言いたかったのは、技術の話ではなかった。料理は、食べる人がいて初めて完成する。どんなに丁寧に作っても、__相手の顔を思い浮かべていなければ__①、それは自分のための料理にすぎないのだ、と。\n　これは、料理に限った話ではないだろう。文章を書く人も、ものを売る人も、自分の考えを伝えることに夢中になるあまり、受け取る側のことを忘れてしまう。私自身、原稿を書いていて、読者に何を届けたいのかよりも、自分がどれだけ詳しく書けるかを示したくなることがある。そのたびに、あの師匠の言葉を思い出すのである。\n　もちろん、技術を磨くことは大切だ。しかし、技術は、誰かのために使われて初めて意味を持つ。__そのこと__②を忘れない限り、人は仕事のなかで、ずっと成長を続けていけるのではないだろうか。"
+                            },
+                            "questions": [
+                                {
+                                    "id": "g13-71",
+                                    "no": 71,
+                                    "type": "choice",
+                                    "stem": "師匠は、なぜ煮物をほめなかったのか。",
+                                    "choices": [
+                                        "見た目が悪く、味も薄かったから",
+                                        "教わった通りに作っていなかったから",
+                                        "食べる人のことを考えずに作った味だったから",
+                                        "時間をかけて作っていなかったから"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "師匠: 「おまえが作りたい味だ。お客さんが食べたい味ではない」. 見た目・味は申し分なし."
+                                },
+                                {
+                                    "id": "g13-72",
+                                    "no": 72,
+                                    "type": "choice",
+                                    "stem": "①__相手の顔を思い浮かべていなければ__、どうなると筆者は述べているか。",
+                                    "choices": [
+                                        "自分のための料理にすぎなくなる",
+                                        "技術が上達しなくなる",
+                                        "店の客が減ってしまう",
+                                        "師匠に叱られてしまう"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "直後: それは自分のための料理にすぎない."
+                                },
+                                {
+                                    "id": "g13-73",
+                                    "no": 73,
+                                    "type": "choice",
+                                    "stem": "②__そのこと__とは、何か。",
+                                    "choices": [
+                                        "技術を磨き続けることが大切だということ",
+                                        "師匠の言葉は料理にしか当てはまらないということ",
+                                        "読者に自分の知識を示すことが大切だということ",
+                                        "技術は誰かのために使われて初めて意味を持つということ"
+                                    ],
+                                    "answer": 3,
+                                    "exp": "直前の文: 技術は、誰かのために使われて初めて意味を持つ."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "g14",
+                    "label": "問題14",
+                    "instruction": "右のページは、A社とB社のパソコン教室の案内である。下の問いに対する\n答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "groups": [
+                        {
+                            "passage": {
+                                "kind": "plans",
+                                "data": {
+                                    "a": {
+                                        "title": "A社　パソコン教室　コース比較",
+                                        "groups": [
+                                            {
+                                                "headers": [
+                                                    "コース①",
+                                                    "コース②"
+                                                ],
+                                                "rows": [
+                                                    {
+                                                        "label": "こんな方に",
+                                                        "cells": [
+                                                            "・パソコンを初めて使う方\n・基本からゆっくり学びたい方",
+                                                            "・仕事で資料を作る方\n・短期間で身につけたい方"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "内容",
+                                                        "cells": [
+                                                            "基本操作と文字入力",
+                                                            "表計算と資料作成"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "回数",
+                                                        "cells": [
+                                                            "全10回（1回90分）",
+                                                            "全5回（1回90分）"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "授業料",
+                                                        "cells": [
+                                                            "1回 2,500円",
+                                                            "1回 3,500円"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "headers": [
+                                                    "コース③",
+                                                    "コース④"
+                                                ],
+                                                "rows": [
+                                                    {
+                                                        "label": "こんな方に",
+                                                        "cells": [
+                                                            "・自分の都合のよい時間に学びたい方\n・先生に直接質問したい方",
+                                                            "・通う時間がない方\n・インターネットで学びたい方"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "内容",
+                                                        "cells": [
+                                                            "コース①②の内容から選べます",
+                                                            "コース①②の内容から選べます"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "回数",
+                                                        "cells": [
+                                                            "1回から受講可能（1回60分）",
+                                                            "受講期間3か月（回数の制限なし）"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "label": "授業料",
+                                                        "cells": [
+                                                            "1回 4,000円",
+                                                            "一括 12,000円"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "notes": [
+                                            "教材費は授業料に含まれます。",
+                                            "コース①②は、決まった曜日と時間に開講します。",
+                                            "コース④のみ、教室に通うことはできません。"
+                                        ]
+                                    },
+                                    "b": {
+                                        "title": "B社　パソコン教室　コース診断",
+                                        "intro": [
+                                            "ご希望に合わせて、最適なコースをご案内します。",
+                                            "（以下はすべて、教室に通って受講するコースです。）"
+                                        ],
+                                        "steps": [
+                                            {
+                                                "options": [
+                                                    {
+                                                        "key": "a",
+                                                        "text": "パソコンを使うのは初めて",
+                                                        "result": "コースⅠ"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "text": "少し使ったことがある"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "options": [
+                                                    {
+                                                        "key": "a",
+                                                        "text": "仕事で使う資料を作りたい",
+                                                        "result": "コースⅡ"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "text": "趣味で使いたい"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "question": "教室に通いたいのは",
+                                                "options": [
+                                                    {
+                                                        "key": "a",
+                                                        "text": "平日の夜",
+                                                        "result": "コースⅢ"
+                                                    },
+                                                    {
+                                                        "key": "b",
+                                                        "text": "土日",
+                                                        "result": "コースⅣ"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "notes": [
+                                            "以上の診断結果だけではなく、各コースの詳しい内容をご確認のうえ、お申し込みください。",
+                                            "コースⅢ、Ⅳをお申し込みのお客様には、無料体験授業をプレゼントします。"
+                                        ]
+                                    }
+                                }
+                            },
+                            "questions": [
+                                {
+                                    "id": "g14-74",
+                                    "no": 74,
+                                    "type": "choice",
+                                    "stem": "会社員の林さんは、仕事が不規則で、決まった曜日に教室へ通うことができない。それでも、先生に直接質問しながら、パソコンの基本操作を学びたいと思っている。林さんは、A社のどのコースを選べばよいか。",
+                                    "choices": [
+                                        "コース①",
+                                        "コース②",
+                                        "コース③",
+                                        "コース④"
+                                    ],
+                                    "answer": 2,
+                                    "exp": "Tidak bisa jadwal tetap → ①② (jadwal tetap) tidak cocok; ingin bertanya langsung → ④ (online) tidak cocok. ③ = waktu fleksibel + tatap muka."
+                                },
+                                {
+                                    "id": "g14-75",
+                                    "no": 75,
+                                    "type": "choice",
+                                    "stem": "主婦の田中さんは、パソコンを使うのは初めてで、決まった曜日に通って、基本から順番にゆっくり学びたい。教室に通うことはできる。田中さんが検討できるのは、A社とB社のどのコースか。",
+                                    "choices": [
+                                        "A社のコース①とB社のコースⅠ",
+                                        "A社のコース①とB社のコースⅢ",
+                                        "A社のコース③とB社のコースⅠ",
+                                        "A社のコース③とB社のコースⅢ"
+                                    ],
+                                    "answer": 0,
+                                    "exp": "A: 初めて+基本からゆっくり+決まった曜日 → ①. B: 診断1で「初めて」→ コースⅠ."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

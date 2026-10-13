@@ -1,0 +1,316 @@
+{
+    "id": "n4-2",
+    "level": "N4",
+    "focus": "Kata kerja potensial (可能形), 見えます／聞こえます, できます, 〜しか, は (perbandingan)",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさんの新しい部屋は、どうですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "とてもいいです。窓から海が見えます。"
+            },
+            {
+                "speaker": "female",
+                "text": "いいですね。夜は静かですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい。でも、隣の部屋からピアノの音が聞こえます。"
+            },
+            {
+                "speaker": "female",
+                "text": "ピアノですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ええ。でも、きれいな音ですから、好きです。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-2/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l2-kq1",
+                "prompt": "部屋《へや》の 窓《まど》から 何《なに》が 見《み》えますか。",
+                "choices": [
+                    "海《うみ》",
+                    "山《やま》",
+                    "公園《こうえん》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Dari jendela kamar terlihat apa? Laut.",
+                    "en": "What can be seen from the window? The sea."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l2-kq2",
+                "prompt": "隣《となり》の 部屋《へや》から 何《なに》が 聞《き》こえますか。",
+                "choices": [
+                    "ピアノの 音《おと》",
+                    "犬《いぬ》の 声《こえ》",
+                    "テレビの 音《おと》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Dari kamar sebelah terdengar apa? Suara piano.",
+                    "en": "What can be heard from the next room? A piano."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l2-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、何語が話せますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "インドネシア語と日本語と、英語が少し話せます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》が 少《すこ》し 話《はな》せるのは どれですか。",
+            "choices": [
+                "英語《えいご》",
+                "中国語《ちゅうごくご》",
+                "韓国語《かんこくご》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bahasa apa yang bisa dibicarakan sedikit oleh pria itu? Bahasa Inggris.",
+                "en": "Which language can the man speak a little? English."
+            }
+        },
+        {
+            "id": "n4l2-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この図書館では、本が何冊借りられますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "一人五冊まで借りられます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q2.mp3",
+            "prompt": "一人《ひとり》 何冊《なんさつ》 借《か》りられますか。",
+            "choices": [
+                "五冊《ごさつ》",
+                "三冊《さんさつ》",
+                "十冊《じっさつ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Satu orang bisa meminjam berapa buku? Lima buku.",
+                "en": "How many books can one person borrow? Five."
+            }
+        },
+        {
+            "id": "n4l2-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "駅の前に新しい本屋ができました。二階にカフェもあります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q3.mp3",
+            "prompt": "駅《えき》の 前《まえ》に 何《なに》が できましたか。",
+            "choices": [
+                "本屋《ほんや》",
+                "銀行《ぎんこう》",
+                "学校《がっこう》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa yang berdiri di depan stasiun? Toko buku.",
+                "en": "What has been built in front of the station? A bookshop."
+            }
+        },
+        {
+            "id": "n4l2-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "財布にいくらありますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "三百円しかありません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 財布《さいふ》に いくら ありますか。",
+            "choices": [
+                "300円《えん》",
+                "500円《えん》",
+                "800円《えん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Berapa yang ada di dompet pria itu? 300 yen.",
+                "en": "How much is in the man's wallet? 300 yen."
+            }
+        },
+        {
+            "id": "n4l2-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "靴の修理は、いつできますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "あさっての午後できます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q5.mp3",
+            "prompt": "靴《くつ》の 修理《しゅうり》は いつ できますか。",
+            "choices": [
+                "あさっての 午後《ごご》",
+                "あしたの 朝《あさ》",
+                "今日《きょう》の 夕方《ゆうがた》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan perbaikan sepatu selesai? Lusa sore.",
+                "en": "When will the shoe repair be done? The day after tomorrow in the afternoon."
+            }
+        },
+        {
+            "id": "n4l2-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この窓から、山が見えますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、山は見えませんが、海は見えます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q6.mp3",
+            "prompt": "女《おんな》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "山《やま》は 見《み》えませんが、海《うみ》は 見《み》えます。",
+                "山《やま》も 海《うみ》も 見《み》えます。",
+                "山《やま》は 見《み》えますが、海《うみ》は 見《み》えません。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jawaban wanita: Gunung tidak terlihat, tetapi laut terlihat.",
+                "en": "The woman's answer: the mountain cannot be seen, but the sea can."
+            }
+        },
+        {
+            "id": "n4l2-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ここで写真が撮れますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ここでは撮れませんが、あの部屋では撮れますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q7.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "あの 部屋《へや》では 撮《と》れます。",
+                "どこでも 撮《と》れます。",
+                "ここでは 撮《と》れますが、あの 部屋《へや》では 撮《と》れません。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jawaban pria: Di sini tidak bisa, tetapi di kamar itu bisa memotret.",
+                "en": "The man's answer: not here, but you can take photos in that room."
+            }
+        },
+        {
+            "id": "n4l2-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは、料理はできますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、料理はできますが、お菓子は作れません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q8.mp3",
+            "prompt": "ブディさんは お菓子《かし》が 作《つく》れます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Budi bisa membuat kue. (×) Dia bisa memasak, tetapi tidak bisa membuat kue.",
+                "en": "Budi can make sweets. (×) He can cook, but cannot make sweets."
+            }
+        },
+        {
+            "id": "n4l2-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この家は静かですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ。朝は、鳥の声が聞こえますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q9.mp3",
+            "prompt": "朝《あさ》は 鳥《とり》の 声《こえ》が 聞《き》こえます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pada pagi hari suara burung terdengar. (○)",
+                "en": "In the morning you can hear birds. (○)"
+            }
+        },
+        {
+            "id": "n4l2-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この店は、現金でしか払えません。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "カードは使えませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、使えません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-2/n4l2-q10.mp3",
+            "prompt": "この 店《みせ》では カードが 使《つか》えます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Di toko ini kartu bisa dipakai. (×) Hanya bisa bayar tunai.",
+                "en": "You can use a card at this shop. (×) Only cash is accepted."
+            }
+        }
+    ]
+}

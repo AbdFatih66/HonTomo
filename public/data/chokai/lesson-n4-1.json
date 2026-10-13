@@ -1,0 +1,308 @@
+{
+    "id": "n4-1",
+    "level": "N4",
+    "focus": "N4 Pelajaran 1 — 〜んですか／〜んです (alasan), 〜んですが、〜ていただけませんか, kata tanya + 〜たらいいですか, N は 好きです",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、顔色が よく ないですね。どうしたんですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ちょっと 頭が 痛いんです。きのう おそくまで 勉強したんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "それは 大変ですね。今日は 早く 帰ったら いいですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとうございます。部長に 話して いただけませんか。"
+            },
+            {
+                "speaker": "female",
+                "text": "ええ、いいですよ。わたしが 話しますから、だいじょうぶですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "すみません。お願いします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-1/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l1-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は どうして 早《はや》く 帰《かえ》りますか。",
+                "choices": [
+                    "頭《あたま》が 痛《いた》いからです",
+                    "仕事《しごと》が ないからです",
+                    "友達《ともだち》に 会《あ》うからです"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Mengapa laki-laki itu pulang lebih awal? — Karena kepalanya sakit.",
+                    "en": "Why is the man going home early? — Because he has a headache."
+                }
+            },
+            {
+                "id": "n4l1-kq2",
+                "prompt": "女《おんな》の 人《ひと》は 何《なに》を しますか。",
+                "choices": [
+                    "部長《ぶちょう》に 話《はな》します",
+                    "男《おとこ》の 人《ひと》を 送《おく》ります",
+                    "薬《くすり》を 買《か》います"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Apa yang akan dilakukan perempuan itu? — Berbicara kepada kepala bagian.",
+                    "en": "What will the woman do? — Talk to the department head."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l1-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "森さん、きのうは どうして 会社を 休んだんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "子どもが 熱を 出したんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q1.mp3",
+            "prompt": "森《もり》さんは どうして 会社《かいしゃ》を 休《やす》みましたか。",
+            "choices": [
+                "子《こ》どもが 熱《ねつ》を 出《だ》したからです",
+                "自分《じぶん》が 病気《びょうき》だったからです",
+                "旅行《りょこう》に 行《い》ったからです"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Mengapa Pak Mori tidak masuk kerja? — Karena anaknya demam.",
+                "en": "Why did Mr. Mori take a day off? — Because his child had a fever."
+            }
+        },
+        {
+            "id": "n4l1-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは 日曜日に どこへ 行ったんですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "友達と 会社の 運動会を 見に 行ったんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q2.mp3",
+            "prompt": "ブディさんは 日曜日《にちようび》に 何《なに》を 見《み》に 行《い》きましたか。",
+            "choices": [
+                "運動会《うんどうかい》",
+                "映画《えいが》",
+                "お祭《まつ》り"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Budi pergi melihat apa pada hari Minggu? — Lomba olahraga.",
+                "en": "What did Budi go to see on Sunday? — A sports day."
+            }
+        },
+        {
+            "id": "n4l1-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "切符は どこで 買ったら いいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あの 自動販売機で 買ったら いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q3.mp3",
+            "prompt": "切符《きっぷ》は どこで 買《か》いますか。",
+            "choices": [
+                "自動販売機《じどうはんばいき》で 買《か》います",
+                "駅《えき》の 人《ひと》に 買《か》って もらいます",
+                "バスの 中《なか》で 買《か》います"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Di mana membeli tiket? — Di mesin penjual otomatis.",
+                "en": "Where do you buy the ticket? — At the vending machine."
+            }
+        },
+        {
+            "id": "n4l1-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、びんは いつ 出したら いいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "土曜日の 朝ですよ。ごみ置き場は あの 建物の 横です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q4.mp3",
+            "prompt": "びんは いつ 出《だ》しますか。",
+            "choices": [
+                "土曜日《どようび》の 朝《あさ》",
+                "月曜日《げつようび》の 朝《あさ》",
+                "水曜日《すいようび》の 夜《よる》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kapan botol dibuang? — Sabtu pagi.",
+                "en": "When are bottles put out? — Saturday morning."
+            }
+        },
+        {
+            "id": "n4l1-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "今度の 休みに 友達と 海へ 行くんですが、ブディさんも 行きませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません、その 日は 仕事なんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q5.mp3",
+            "prompt": "ブディさんは どうして 行《い》きませんか。",
+            "choices": [
+                "仕事《しごと》が あるからです",
+                "お金《かね》が ないからです",
+                "海《うみ》が 好《す》きじゃ ないからです"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Mengapa Budi tidak ikut? — Karena ada pekerjaan.",
+                "en": "Why will Budi not go? — Because he has work."
+            }
+        },
+        {
+            "id": "n4l1-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、この 漢字の 読み方を 教えて いただけませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、いいですよ。",
+                "はい、教《おし》えて いただきます。",
+                "いいえ、読《よ》みました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bisakah Anda mengajari saya cara membaca kanji ini? — Ya, boleh.",
+                "en": "Could you teach me how to read this kanji? — Yes, of course."
+            }
+        },
+        {
+            "id": "n4l1-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "どこで 傘を 買ったら いいですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "駅《えき》の 前《まえ》の 店《みせ》で 買《か》ったら いいですよ。",
+                "はい、買《か》いました。",
+                "きのう 買《か》いました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sebaiknya beli payung di mana? — Beli di toko depan stasiun.",
+                "en": "Where should I buy an umbrella? — You should buy one at the shop in front of the station."
+            }
+        },
+        {
+            "id": "n4l1-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、朝ごはんを 食べましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、食べなかったんです。時間が なかったんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q8.mp3",
+            "prompt": "ブディさんは 朝《あさ》ごはんを 食《た》べました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Budi tidak sarapan karena tidak ada waktu. → ×",
+                "en": "Budi did not eat breakfast because he had no time. → ×"
+            }
+        },
+        {
+            "id": "n4l1-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来週、会社の 運動会が あるんですが、田口さんも 来ませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q9.mp3",
+            "prompt": "田口《たぐち》さんは 運動会《うんどうかい》に 行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bu Taguchi akan ikut lomba olahraga. → ○",
+                "en": "Ms. Taguchi will go to the sports day. → ○"
+            }
+        },
+        {
+            "id": "n4l1-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ごみは 何曜日に 出したら いいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "燃えるごみは 月曜日と 木曜日ですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-1/n4l1-q10.mp3",
+            "prompt": "燃《も》えるごみは 水曜日《すいようび》に 出《だ》します。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Sampah organik dibuang Senin dan Kamis, bukan Rabu. → ×",
+                "en": "Burnable garbage goes out on Monday and Thursday, not Wednesday. → ×"
+            }
+        }
+    ]
+}

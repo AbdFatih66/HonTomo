@@ -1,0 +1,476 @@
+{
+  "level": "N2",
+  "section": "mojigoi",
+  "title": "言語知識（文字・語彙）",
+  "minutes": 30,
+  "mondai": {
+    "1": {
+      "instruction": "＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ\n選びなさい。"
+    },
+    "2": {
+      "instruction": "＿＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ\n選びなさい。"
+    },
+    "3": {
+      "instruction": "（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。"
+    },
+    "4": {
+      "instruction": "（　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。"
+    },
+    "5": {
+      "instruction": "＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。"
+    },
+    "6": {
+      "instruction": "次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。"
+    }
+  },
+  "questions": [
+    {
+      "id": "v1-1",
+      "no": 1,
+      "mondai": 1,
+      "stem": "彼は会議で、自分の意見を強く⟦主張⟧した。",
+      "choices": [
+        "しゅうちょう",
+        "しゅちょ",
+        "しゅちょう",
+        "しゅうちょ"
+      ],
+      "answer": 3,
+      "exp": "主張 = しゅちょう (mengemukakan/bersikeras). 主 dibaca しゅ (pendek), 張 dibaca ちょう."
+    },
+    {
+      "id": "v1-2",
+      "no": 2,
+      "mondai": 1,
+      "stem": "事故のため、この道路は午後まで⟦封鎖⟧されている。",
+      "choices": [
+        "ふうさ",
+        "ほうさ",
+        "ふさ",
+        "ほさ"
+      ],
+      "answer": 1,
+      "exp": "封鎖 = ふうさ (menutup/blokade). 封 dibaca ふう (vokal panjang), bukan ほう."
+    },
+    {
+      "id": "v1-3",
+      "no": 3,
+      "mondai": 1,
+      "stem": "最近、若い人の間に野菜を食べない⟦傾向⟧がある。",
+      "choices": [
+        "けいごう",
+        "けんこう",
+        "けいこ",
+        "けいこう"
+      ],
+      "answer": 4,
+      "exp": "傾向 = けいこう (kecenderungan). Awas けんこう (健康)."
+    },
+    {
+      "id": "v1-4",
+      "no": 4,
+      "mondai": 1,
+      "stem": "年をとって、体力が⟦衰えた⟧と感じる。",
+      "choices": [
+        "おとえた",
+        "おとろえた",
+        "おとらえた",
+        "おとろいた"
+      ],
+      "answer": 2,
+      "exp": "衰える = おとろえる (melemah/merosot)."
+    },
+    {
+      "id": "v1-5",
+      "no": 5,
+      "mondai": 1,
+      "stem": "まず、会社の現状を正確に⟦把握⟧する必要がある。",
+      "choices": [
+        "はわく",
+        "ばあく",
+        "はあく",
+        "はやく"
+      ],
+      "answer": 3,
+      "exp": "把握 = はあく (memahami dengan tepat). 把 = は, 握 = あく."
+    },
+    {
+      "id": "v2-6",
+      "no": 6,
+      "mondai": 2,
+      "stem": "毎日の練習のおかげで、英語の成績が⟦のびた⟧。",
+      "choices": [
+        "延びた",
+        "伸びた",
+        "仲びた",
+        "申びた"
+      ],
+      "answer": 2,
+      "exp": "成績が伸びる = nilai/kemampuan meningkat. 延びる = tertunda/memanjang (waktu), 仲 dan 申 bukan kata ini."
+    },
+    {
+      "id": "v2-7",
+      "no": 7,
+      "mondai": 2,
+      "stem": "失敗を⟦かくご⟧の上で、新しい仕事に挑戦した。",
+      "choices": [
+        "覚語",
+        "確悟",
+        "確語",
+        "覚悟"
+      ],
+      "answer": 4,
+      "exp": "かくご = 覚悟 (tekad/siap menanggung risiko). 覚 + 悟 (menyadari)."
+    },
+    {
+      "id": "v2-8",
+      "no": 8,
+      "mondai": 2,
+      "stem": "この装置で、星の動きを⟦かんそく⟧している。",
+      "choices": [
+        "観測",
+        "観則",
+        "勧測",
+        "勧則"
+      ],
+      "answer": 1,
+      "exp": "かんそく = 観測 (mengamati/mengukur). 観 (mengamati) + 測 (mengukur). 勧 berarti \"menganjurkan\"."
+    },
+    {
+      "id": "v2-9",
+      "no": 9,
+      "mondai": 2,
+      "stem": "計画の内容を、みんなで詳しく⟦けんとう⟧した。",
+      "choices": [
+        "険討",
+        "検計",
+        "検討",
+        "険計"
+      ],
+      "answer": 3,
+      "exp": "けんとう = 検討 (mengkaji/mempertimbangkan). 検 (memeriksa) + 討 (membahas)."
+    },
+    {
+      "id": "v2-10",
+      "no": 10,
+      "mondai": 2,
+      "stem": "このダムは、川の水量を⟦ちょうせつ⟧する役目を持っている。",
+      "choices": [
+        "調説",
+        "訓節",
+        "訓説",
+        "調節"
+      ],
+      "answer": 4,
+      "exp": "ちょうせつ = 調節 (mengatur/menyesuaikan). 調 + 節 (ruas/batas). Awas 調整 (ちょうせい)."
+    },
+    {
+      "id": "v3-11",
+      "no": 11,
+      "mondai": 3,
+      "stem": "この町の（　　）人口は、十年前より約二割増えたそうだ。",
+      "choices": [
+        "総",
+        "全",
+        "満",
+        "皆"
+      ],
+      "answer": 1,
+      "exp": "総人口 = jumlah seluruh penduduk. 総 = total/keseluruhan."
+    },
+    {
+      "id": "v3-12",
+      "no": 12,
+      "mondai": 3,
+      "stem": "会社が、出張にかかる交通（　　）をすべて払ってくれた。",
+      "choices": [
+        "料",
+        "費",
+        "金",
+        "賃"
+      ],
+      "answer": 2,
+      "exp": "交通費 = ongkos transportasi. Akhiran 費 = biaya."
+    },
+    {
+      "id": "v3-13",
+      "no": 13,
+      "mondai": 3,
+      "stem": "彼の話には説得（　　）があって、反対していた人も納得した。",
+      "choices": [
+        "感",
+        "量",
+        "率",
+        "力"
+      ],
+      "answer": 4,
+      "exp": "説得力 = daya bujuk. Akhiran 力 = kemampuan/daya."
+    },
+    {
+      "id": "v3-14",
+      "no": 14,
+      "mondai": 3,
+      "stem": "休日の動物園は（　　）満員で、入るまでに一時間もかかった。",
+      "choices": [
+        "準",
+        "副",
+        "超",
+        "反"
+      ],
+      "answer": 3,
+      "exp": "超満員 = penuh sesak. Awalan 超 = melampaui/super."
+    },
+    {
+      "id": "v3-15",
+      "no": 15,
+      "mondai": 3,
+      "stem": "相手の意見を聞かない一方（　　）な話し方では、話し合いにならない。",
+      "choices": [
+        "的",
+        "性",
+        "化",
+        "風"
+      ],
+      "answer": 1,
+      "exp": "一方的 = sepihak. Akhiran 的 membentuk kata sifat-na."
+    },
+    {
+      "id": "v4-16",
+      "no": 16,
+      "mondai": 4,
+      "stem": "彼女は新しい環境にすぐ（　　）して、友達もたくさんできた。",
+      "choices": [
+        "適用",
+        "適応",
+        "適当",
+        "適度"
+      ],
+      "answer": 2,
+      "exp": "環境に適応する = menyesuaikan diri dengan lingkungan. 適用 = diberlakukan (aturan), 適当 = cocok/asal-asalan."
+    },
+    {
+      "id": "v4-17",
+      "no": 17,
+      "mondai": 4,
+      "stem": "新しい店は駅から近いので、（　　）がいい。",
+      "choices": [
+        "プロセス",
+        "ストレス",
+        "リスク",
+        "アクセス"
+      ],
+      "answer": 4,
+      "exp": "アクセスがいい = akses (transportasi) mudah. プロセス = proses, ストレス = stres, リスク = risiko."
+    },
+    {
+      "id": "v4-18",
+      "no": 18,
+      "mondai": 4,
+      "stem": "彼は何度注意されても、自分のミスを（　　）認めようとしない。",
+      "choices": [
+        "かたくなに",
+        "ひそかに",
+        "ささやかに",
+        "ひたむきに"
+      ],
+      "answer": 1,
+      "exp": "かたくなに + 〜ない = bersikeras tidak mau. ひたむき = tekun/sepenuh hati (positif), ひそか = diam-diam."
+    },
+    {
+      "id": "v4-19",
+      "no": 19,
+      "mondai": 4,
+      "stem": "長年の努力が（　　）、ようやく夢が実現した。",
+      "choices": [
+        "満ちて",
+        "積もって",
+        "実って",
+        "育って"
+      ],
+      "answer": 3,
+      "exp": "努力が実る = usaha membuahkan hasil. 夢が叶う adalah kolokasi lain; 満ちる/積もる/育つ tidak berpasangan dengan 努力."
+    },
+    {
+      "id": "v4-20",
+      "no": 20,
+      "mondai": 4,
+      "stem": "この商品はデザインもよいが、（　　）の面でも優れている。",
+      "choices": [
+        "機会",
+        "機関",
+        "機嫌",
+        "機能"
+      ],
+      "answer": 4,
+      "exp": "機能 = fungsi. 機会 = kesempatan, 機関 = lembaga/mesin, 機嫌 = suasana hati (kanji mirip)."
+    },
+    {
+      "id": "v4-21",
+      "no": 21,
+      "mondai": 4,
+      "stem": "子どものころ住んでいた町の様子が、今でも（　　）と思い出される。",
+      "choices": [
+        "ぎりぎりと",
+        "ありありと",
+        "ぞろぞろと",
+        "うろうろと"
+      ],
+      "answer": 2,
+      "exp": "ありありと = jelas sekali (tergambar). ぞろぞろ = berbondong-bondong, うろうろ = mondar-mandir."
+    },
+    {
+      "id": "v4-22",
+      "no": 22,
+      "mondai": 4,
+      "stem": "発表の前は、いつも（　　）して、落ち着かない。",
+      "choices": [
+        "そわそわ",
+        "ぺらぺら",
+        "のろのろ",
+        "ぴかぴか"
+      ],
+      "answer": 1,
+      "exp": "そわそわ = gelisah/tidak tenang. ぺらぺら = lancar berbicara, のろのろ = lamban, ぴかぴか = mengilap."
+    },
+    {
+      "id": "v5-23",
+      "no": 23,
+      "mondai": 5,
+      "stem": "彼は⟦まれ⟧な才能の持ち主だと言われている。",
+      "choices": [
+        "だれにもある",
+        "少しだけの",
+        "めったにない",
+        "昔からの"
+      ],
+      "answer": 3,
+      "exp": "まれ = jarang/langka = めったにない."
+    },
+    {
+      "id": "v5-24",
+      "no": 24,
+      "mondai": 5,
+      "stem": "この仕事は⟦たやすい⟧ことではない。",
+      "choices": [
+        "簡単な",
+        "大切な",
+        "退屈な",
+        "危険な"
+      ],
+      "answer": 1,
+      "exp": "たやすい = mudah = 簡単な."
+    },
+    {
+      "id": "v5-25",
+      "no": 25,
+      "mondai": 5,
+      "stem": "ホテルの予約を⟦キャンセル⟧した。",
+      "choices": [
+        "変更した",
+        "確認した",
+        "延長した",
+        "取り消した"
+      ],
+      "answer": 4,
+      "exp": "キャンセル = membatalkan = 取り消す."
+    },
+    {
+      "id": "v5-26",
+      "no": 26,
+      "mondai": 5,
+      "stem": "今日は仕事が⟦はかどった⟧。",
+      "choices": [
+        "予定より多かった",
+        "順調に進んだ",
+        "急に増えた",
+        "いつもより遅れた"
+      ],
+      "answer": 2,
+      "exp": "仕事がはかどる = pekerjaan maju lancar = 順調に進む."
+    },
+    {
+      "id": "v5-27",
+      "no": 27,
+      "mondai": 5,
+      "stem": "彼の返事は⟦あいまい⟧だった。",
+      "choices": [
+        "とても冷たかった",
+        "少し遅かった",
+        "はっきりしなかった",
+        "少し変わっていた"
+      ],
+      "answer": 3,
+      "exp": "あいまい = tidak jelas = はっきりしない."
+    },
+    {
+      "id": "v6-28",
+      "no": 28,
+      "mondai": 6,
+      "stem": "配慮《はいりょ》",
+      "choices": [
+        "地図を見て、明日の登山の⟦配慮《はいりょ》⟧を立てた。",
+        "長い間考えた結果、出かける⟦配慮《はいりょ》⟧を決めた。",
+        "彼は食事の⟦配慮《はいりょ》⟧が大好きで、毎日、料理をしている。",
+        "先生は、新入生が早くなじめるように、いろいろ⟦配慮《はいりょ》⟧してくれた。"
+      ],
+      "answer": 4,
+      "exp": "配慮 = perhatian/pertimbangan terhadap orang lain. Pengecoh memakainya seolah 計画 (rencana), 決心 (tekad), 準備 (persiapan)."
+    },
+    {
+      "id": "v6-29",
+      "no": 29,
+      "mondai": 6,
+      "stem": "一斉《いっせい》に",
+      "choices": [
+        "彼女はこの町にいる友達の中で、⟦一斉《いっせい》に⟧古い友人だ。",
+        "開始の合図で、選手たちが⟦一斉《いっせい》に⟧走り出した。",
+        "今日は忙しくて、⟦一斉《いっせい》に⟧昼ごはんを食べる時間もなかった。",
+        "私は買い物をするとき、いつも⟦一斉《いっせい》に⟧安い店を選ぶ。"
+      ],
+      "answer": 2,
+      "exp": "一斉に = serentak/bersamaan. Pengecoh menukarnya dengan 一番 (paling), まったく (sama sekali), dan まず (pertama)."
+    },
+    {
+      "id": "v6-30",
+      "no": 30,
+      "mondai": 6,
+      "stem": "ぎっしり",
+      "choices": [
+        "本棚には、古い小説が⟦ぎっしり⟧と詰まっていた。",
+        "親友の結婚式で、彼は⟦ぎっしり⟧と泣いていた。",
+        "駅前の広場で、雨が⟦ぎっしり⟧と降っている。",
+        "彼女は何時間も⟦ぎっしり⟧とテレビを見ていた。"
+      ],
+      "answer": 1,
+      "exp": "ぎっしり = padat penuh (tidak ada celah). Tidak dipakai untuk menangis, hujan, atau menonton."
+    },
+    {
+      "id": "v6-31",
+      "no": 31,
+      "mondai": 6,
+      "stem": "著《いちじる》しい",
+      "choices": [
+        "彼女は、⟦著《いちじる》しい⟧服装で会社に来た。",
+        "道が⟦著《いちじる》しく⟧せまくて、車が通れない。",
+        "この町は、この十年で人口が⟦著《いちじる》しく⟧増えた。",
+        "私の趣味は、⟦著《いちじる》しい⟧映画を見ることだ。"
+      ],
+      "answer": 3,
+      "exp": "著しい = nyata/mencolok (perubahan, perbedaan). Pengecoh memakainya untuk \"mencolok (派手)\", \"sangat (とても)\", dan \"terkenal (有名な)\"."
+    },
+    {
+      "id": "v6-32",
+      "no": 32,
+      "mondai": 6,
+      "stem": "こだわる",
+      "choices": [
+        "友達と約束した時間に⟦こだわって⟧しまった。",
+        "彼は服の色に⟦こだわって⟧、何時間も店を回った。",
+        "父はどんなときでも⟦こだわって⟧笑顔を見せる。",
+        "旅行の荷物を⟦こだわって⟧家に忘れてきた。"
+      ],
+      "answer": 2,
+      "exp": "こだわる = terpaku/ngotot pada hal tertentu. Pengecoh memakainya seperti 遅れる (terlambat), 必ず (selalu), dan うっかり (lupa)."
+    }
+  ]
+}

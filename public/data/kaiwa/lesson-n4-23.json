@@ -1,0 +1,393 @@
+{
+    "id": 23,
+    "level": "N4",
+    "title_id": "Boleh Saya Mengambil Cuti?",
+    "title_en": "May I Take Some Leave?",
+    "scenarios": [
+        {
+            "id": "n4l23-s1",
+            "title_id": "Meminta cuti",
+            "title_en": "Asking for leave",
+            "setting_id": "Di ruang kerja, saat atasan tidak terlalu sibuk.",
+            "setting_en": "At the office when your boss is not too busy.",
+            "goal_id": "Meminta izin cuti dengan 〜させて いただけませんか.",
+            "goal_en": "Ask permission to take leave with 〜させて いただけませんか.",
+            "patterns": [
+                "〜させて いただけませんか"
+            ],
+            "partner": {
+                "name": "ぶちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l23-s1-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What is it?",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l23-s1-t2",
+                    "who": "you",
+                    "ja": "実《じつ》は、お願《ねが》いが あるんですが……。",
+                    "speak": "じつは、おねがいが あるんですが……。",
+                    "id_text": "Sebenarnya ada yang ingin saya mohon...",
+                    "en_text": "Actually, I have a request...",
+                    "accept": [
+                        "実は、お願いが あるんですが……。",
+                        "実は、お願いがあるんですが。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l23-s1-t3",
+                    "who": "partner",
+                    "ja": "何《なん》ですか。",
+                    "speak": "なんですか。",
+                    "id_text": "Apa itu?",
+                    "en_text": "What is it?",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l23-s1-t4",
+                    "who": "you",
+                    "ja": "来月《らいげつ》、五日間《いつかかん》 休《やす》ませて いただけませんか。",
+                    "speak": "らいげつ、いつかかん やすませて いただけませんか。",
+                    "id_text": "Bulan depan, bolehkah saya cuti lima hari?",
+                    "en_text": "May I take five days off next month?",
+                    "accept": [
+                        "来月、五日間 休ませて いただけませんか。",
+                        "来月、五日間休ませていただけませんか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l23-s1-t5",
+                    "who": "partner",
+                    "ja": "五日間《いつかかん》ですか。",
+                    "speak": "いつかかんですか。",
+                    "id_text": "Lima hari?",
+                    "en_text": "Five days?",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l23-s1-t6",
+                    "who": "you",
+                    "ja": "はい、国《くに》の 家族《かぞく》が 日本《にほん》へ 来《く》るんです。",
+                    "speak": "はい、くにの かぞくが にほんへ くるんです。",
+                    "id_text": "Ya, keluarga dari kampung halaman akan datang ke Jepang.",
+                    "en_text": "Yes, my family from home is coming to Japan.",
+                    "accept": [
+                        "はい、国の 家族が 日本へ 来るんです。",
+                        "はい、国の家族が日本へ来るんです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l23-s1-t7",
+                    "who": "partner",
+                    "ja": "わかりました。それまでに 仕事《しごと》を 片《かた》づけて ください。",
+                    "speak": "わかりました。それまでに しごとを かたづけて ください。",
+                    "id_text": "Baik. Selesaikan pekerjaanmu sebelum itu.",
+                    "en_text": "All right. Please finish your work by then.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l23-s2",
+            "title_id": "Memarkir mobil",
+            "title_en": "Parking a car",
+            "setting_id": "Di depan sebuah toko kecil.",
+            "setting_en": "In front of a small shop.",
+            "goal_id": "Meminta izin dengan sopan untuk memarkir mobil.",
+            "goal_en": "Politely ask permission to park a car.",
+            "patterns": [
+                "〜させて いただけませんか"
+            ],
+            "partner": {
+                "name": "みせの ひと",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l23-s2-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l23-s2-t2",
+                    "who": "you",
+                    "ja": "すみません、ここに 車《くるま》を 止《と》めさせて いただけませんか。",
+                    "speak": "すみません、ここに くるまを とめさせて いただけませんか。",
+                    "id_text": "Maaf, bolehkah saya memarkir mobil di sini?",
+                    "en_text": "Excuse me, may I park my car here?",
+                    "accept": [
+                        "すみません、ここに 車を 止めさせて いただけませんか。",
+                        "すみません、ここに車を止めさせていただけませんか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l23-s2-t3",
+                    "who": "partner",
+                    "ja": "どのくらいですか。",
+                    "speak": "どのくらいですか。",
+                    "id_text": "Berapa lama?",
+                    "en_text": "For how long?",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l23-s2-t4",
+                    "who": "you",
+                    "ja": "三十分《さんじゅっぷん》ぐらいです。",
+                    "speak": "さんじゅっぷんぐらいです。",
+                    "id_text": "Sekitar tiga puluh menit.",
+                    "en_text": "About thirty minutes.",
+                    "accept": [
+                        "三十分ぐらいです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l23-s2-t5",
+                    "who": "partner",
+                    "ja": "いいですよ。どうぞ。",
+                    "speak": "いいですよ。どうぞ。",
+                    "id_text": "Boleh. Silakan.",
+                    "en_text": "Sure. Go ahead.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l23-s2-t6",
+                    "who": "you",
+                    "ja": "ありがとう ございます。",
+                    "speak": "ありがとう ございます。",
+                    "id_text": "Terima kasih.",
+                    "en_text": "Thank you.",
+                    "accept": [
+                        "ありがとう ございます。",
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l23-s2-t7",
+                    "who": "partner",
+                    "ja": "いってらっしゃい。",
+                    "speak": "いってらっしゃい。",
+                    "id_text": "Hati-hati di jalan.",
+                    "en_text": "Have a good time.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l23-s3",
+            "title_id": "Tugas rumah untuk anak",
+            "title_en": "Chores for the children",
+            "setting_id": "Mengobrol dengan tetangga di taman.",
+            "setting_en": "Chatting with a neighbour in the park.",
+            "goal_id": "Menceritakan hal yang disuruhkan kepada anak dengan bentuk kausatif.",
+            "goal_en": "Describe what you have your child do using the causative.",
+            "patterns": [
+                "〜させます",
+                "〜て います"
+            ],
+            "partner": {
+                "name": "サリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l23-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、お子《こ》さんに 家《いえ》の 仕事《しごと》を させて いますか。",
+                    "speak": "ブディさん、おこさんに いえの しごとを させて いますか。",
+                    "id_text": "Budi, apakah anak Anda diberi tugas rumah?",
+                    "en_text": "Budi, do you give your child chores at home?",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l23-s3-t2",
+                    "who": "you",
+                    "ja": "はい、毎晩《まいばん》 皿《さら》を 洗《あら》わせて います。",
+                    "speak": "はい、まいばん さらを あらわせて います。",
+                    "id_text": "Ya, setiap malam saya menyuruhnya mencuci piring.",
+                    "en_text": "Yes, I have him wash the dishes every night.",
+                    "accept": [
+                        "はい、毎晩 皿を 洗わせて います。",
+                        "はい、毎晩皿を洗わせています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l23-s3-t3",
+                    "who": "partner",
+                    "ja": "いい ことですね。うちは 掃除《そうじ》を 手伝《てつだ》わせて います。",
+                    "speak": "いい ことですね。うちは そうじを てつだわせて います。",
+                    "id_text": "Bagus, ya. Di rumah kami, anak disuruh membantu membersihkan.",
+                    "en_text": "That is good. At our house, the kids help with cleaning.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l23-s3-t4",
+                    "who": "you",
+                    "ja": "小《ちい》さい 弟《おとうと》の 世話《せわ》も させて います。",
+                    "speak": "ちいさい おとうとの せわも させて います。",
+                    "id_text": "Dia juga saya suruh menjaga adiknya yang kecil.",
+                    "en_text": "I also have him look after his little brother.",
+                    "accept": [
+                        "小さい 弟の 世話も させて います。",
+                        "小さい弟の世話もさせています。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l23-s3-t5",
+                    "who": "partner",
+                    "ja": "えらいですね。",
+                    "speak": "えらいですね。",
+                    "id_text": "Hebat, ya.",
+                    "en_text": "That is admirable.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l23-s3-t6",
+                    "who": "you",
+                    "ja": "でも、勉強《べんきょう》も ありますから、毎日《まいにち》は させません。",
+                    "speak": "でも、べんきょうも ありますから、まいにちは させません。",
+                    "id_text": "Tapi karena ada belajar juga, tidak setiap hari saya suruh.",
+                    "en_text": "But he has homework too, so I do not make him do it every day.",
+                    "accept": [
+                        "でも、勉強も ありますから、毎日は させません。",
+                        "でも、勉強もありますから、毎日はさせません。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l23-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですね。たいへんですね。",
+                    "speak": "そうですね。たいへんですね。",
+                    "id_text": "Benar. Repot juga, ya.",
+                    "en_text": "That is true. It is a lot.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l23-s4",
+            "title_id": "Mengantar dokumen",
+            "title_en": "Delivering documents",
+            "setting_id": "Di kantor, atasan memberi tugas.",
+            "setting_en": "At the office, your boss gives you a task.",
+            "goal_id": "Menerima tugas dan meminta izin menyalin dokumen dulu.",
+            "goal_en": "Accept a task and ask permission to copy a document first.",
+            "patterns": [
+                "〜させて いただけませんか",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "かちょう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l23-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、この ファイルを 営業《えいぎょう》の 部長《ぶちょう》に 届《とど》けて ください。",
+                    "speak": "ブディさん、この ファイルを えいぎょうの ぶちょうに とどけて ください。",
+                    "id_text": "Budi, tolong antarkan map ini ke kepala bagian penjualan.",
+                    "en_text": "Budi, please deliver this file to the head of sales.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l23-s4-t2",
+                    "who": "you",
+                    "ja": "はい、わかりました。いつまでに 届《とど》けますか。",
+                    "speak": "はい、わかりました。いつまでに とどけますか。",
+                    "id_text": "Baik. Sampai kapan harus diantar?",
+                    "en_text": "Yes, understood. By when should I deliver it?",
+                    "accept": [
+                        "はい、わかりました。いつまでに 届けますか。",
+                        "はい、わかりました。いつまでに届けますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l23-s4-t3",
+                    "who": "partner",
+                    "ja": "三時《さんじ》までに お願《ねが》いします。",
+                    "speak": "さんじまでに おねがいします。",
+                    "id_text": "Mohon sebelum jam tiga.",
+                    "en_text": "By three, please.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l23-s4-t4",
+                    "who": "you",
+                    "ja": "その 前《まえ》に、この 書類《しょるい》を コピーさせて いただけませんか。",
+                    "speak": "その まえに、この しょるいを コピーさせて いただけませんか。",
+                    "id_text": "Sebelum itu, bolehkah saya memfotokopi dokumen ini?",
+                    "en_text": "Before that, may I copy this document?",
+                    "accept": [
+                        "その 前に、この 書類を コピーさせて いただけませんか。",
+                        "その前に、この書類をコピーさせていただけませんか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l23-s4-t5",
+                    "who": "partner",
+                    "ja": "ええ、どうぞ。",
+                    "speak": "ええ、どうぞ。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, go ahead.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l23-s4-t6",
+                    "who": "you",
+                    "ja": "ありがとう ございます。すぐ 行《い》って きます。",
+                    "speak": "ありがとう ございます。すぐ いって きます。",
+                    "id_text": "Terima kasih. Saya segera berangkat.",
+                    "en_text": "Thank you. I will go right away.",
+                    "accept": [
+                        "ありがとう ございます。すぐ 行って きます。",
+                        "ありがとうございます。すぐ行ってきます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l23-s4-t7",
+                    "who": "partner",
+                    "ja": "お願《ねが》いします。",
+                    "speak": "おねがいします。",
+                    "id_text": "Mohon bantuannya.",
+                    "en_text": "Please do.",
+                    "audio": "/audio/kaiwa/lesson-n4-23/n4l23-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

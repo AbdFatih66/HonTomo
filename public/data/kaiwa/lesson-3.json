@@ -1,0 +1,390 @@
+{
+    "id": 3,
+    "level": "N5",
+    "title_id": "Tempat & Berbelanja",
+    "title_en": "Places & Shopping",
+    "scenarios": [
+        {
+            "id": "l3-s1",
+            "title_id": "Mencari ruangan",
+            "title_en": "Finding rooms",
+            "setting_id": "Hari pertama di kantor baru. Kamu bertanya letak ruangan pada petugas resepsionis; ia mengantarmu sampai pintu ruang rapat.",
+            "setting_en": "Your first day at a new office. You ask the receptionist where rooms are; she walks you to the meeting room door.",
+            "goal_id": "Menanyakan tempat dengan どこ／どちら dan menunjuk dengan ここ・そこ・あそこ／こちら・あちら.",
+            "goal_en": "Ask for places with doko / dochira and point with koko / soko / asoko / kochira / achira.",
+            "patterns": [
+                "ここ・そこ・あそこは 〜です",
+                "〜は どこですか",
+                "〜は どちらですか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l3-s1-t1",
+                    "who": "you",
+                    "ja": "すみません、トイレは どこですか。",
+                    "speak": "すみません、トイレは どこですか。",
+                    "id_text": "Permisi, toiletnya di mana?",
+                    "en_text": "Excuse me, where is the toilet?",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t1.mp3"
+                },
+                {
+                    "id": "l3-s1-t2",
+                    "who": "partner",
+                    "ja": "トイレは あそこです。",
+                    "speak": "トイレは あそこです。",
+                    "id_text": "Toilet ada di sana.",
+                    "en_text": "The toilet is over there.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t2.mp3"
+                },
+                {
+                    "id": "l3-s1-t3",
+                    "who": "you",
+                    "ja": "ありがとうございます。食堂《しょくどう》も あそこですか。",
+                    "speak": "ありがとうございます。しょくどうも あそこですか。",
+                    "id_text": "Terima kasih. Apakah kantin juga di sana?",
+                    "en_text": "Thank you. Is the cafeteria over there too?",
+                    "accept": [
+                        "ありがとうございます。食堂もあそこですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t3.mp3"
+                },
+                {
+                    "id": "l3-s1-t4",
+                    "who": "partner",
+                    "ja": "いいえ、食堂《しょくどう》は あちらです。",
+                    "speak": "いいえ、しょくどうは あちらです。",
+                    "id_text": "Bukan, kantin ada di arah sana.",
+                    "en_text": "No, the cafeteria is over that way.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t4.mp3"
+                },
+                {
+                    "id": "l3-s1-t5",
+                    "who": "you",
+                    "ja": "そうですか。会議室《かいぎしつ》は どちらですか。",
+                    "speak": "そうですか。かいぎしつは どちらですか。",
+                    "id_text": "Oh begitu. Ruang rapat di sebelah mana?",
+                    "en_text": "I see. Which way is the meeting room?",
+                    "accept": [
+                        "そうですか。会議室はどちらですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t5.mp3"
+                },
+                {
+                    "id": "l3-s1-t6",
+                    "who": "partner",
+                    "ja": "会議室《かいぎしつ》は ここです。",
+                    "speak": "かいぎしつは ここです。",
+                    "id_text": "Ruang rapat di sini.",
+                    "en_text": "The meeting room is here.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t6.mp3"
+                },
+                {
+                    "id": "l3-s1-t7",
+                    "who": "you",
+                    "ja": "どうも ありがとうございます。",
+                    "speak": "どうも ありがとうございます。",
+                    "id_text": "Terima kasih banyak.",
+                    "en_text": "Thank you very much.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l3-s2",
+            "title_id": "Membeli dasi",
+            "title_en": "Buying a tie",
+            "setting_id": "Di toserba, kamu ingin membeli dasi dan menanyakan harganya pada pramuniaga.",
+            "setting_en": "At a department store, you want to buy a tie and ask the clerk for the price.",
+            "goal_id": "Menanyakan harga dengan いくら dan meminta barang dengan 〜を ください.",
+            "goal_en": "Ask the price with ikura and request an item with ~ o kudasai.",
+            "patterns": [
+                "〜は いくらですか",
+                "この・その・あの＋KB",
+                "〜を ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l3-s2-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t1.mp3"
+                },
+                {
+                    "id": "l3-s2-t2",
+                    "who": "you",
+                    "ja": "この ネクタイは いくらですか。",
+                    "speak": "この ネクタイは いくらですか。",
+                    "id_text": "Dasi ini harganya berapa?",
+                    "en_text": "How much is this tie?",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t2.mp3"
+                },
+                {
+                    "id": "l3-s2-t3",
+                    "who": "partner",
+                    "ja": "それは 二千円《にせんえん》です。",
+                    "speak": "それは にせんえんです。",
+                    "id_text": "Itu dua ribu yen.",
+                    "en_text": "That one is 2,000 yen.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t3.mp3"
+                },
+                {
+                    "id": "l3-s2-t4",
+                    "who": "you",
+                    "ja": "あの ネクタイは いくらですか。",
+                    "speak": "あの ネクタイは いくらですか。",
+                    "id_text": "Kalau dasi itu berapa?",
+                    "en_text": "And how much is that tie over there?",
+                    "accept": [],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t4.mp3"
+                },
+                {
+                    "id": "l3-s2-t5",
+                    "who": "partner",
+                    "ja": "あれは 千円《せんえん》です。",
+                    "speak": "あれは せんえんです。",
+                    "id_text": "Itu seribu yen.",
+                    "en_text": "That one is 1,000 yen.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t5.mp3"
+                },
+                {
+                    "id": "l3-s2-t6",
+                    "who": "you",
+                    "ja": "じゃ、あれを ください。",
+                    "speak": "じゃ、あれを ください。",
+                    "id_text": "Kalau begitu, tolong beri saya yang itu.",
+                    "en_text": "Then I will take that one, please.",
+                    "accept": [
+                        "じゃあれをください。",
+                        "じゃあ、あれをください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t6.mp3"
+                },
+                {
+                    "id": "l3-s2-t7",
+                    "who": "partner",
+                    "ja": "ありがとうございます。",
+                    "speak": "ありがとうございます。",
+                    "id_text": "Terima kasih banyak.",
+                    "en_text": "Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l3-s3",
+            "title_id": "Mobil dan jam dari mana?",
+            "title_en": "Where is it from?",
+            "setting_id": "Di pameran perusahaan, rekan kerja menjelaskan barang-barang buatan berbagai negara.",
+            "setting_en": "At a company exhibition, a colleague explains products made in different countries.",
+            "goal_id": "Menyebut asal barang dengan (negara) の ＋ benda dan bertanya どこの.",
+            "goal_en": "State where something comes from with (country) no + noun and ask doko no.",
+            "patterns": [
+                "(国・会社)の KB",
+                "どこの KB ですか",
+                "こ・そ・あ・ど"
+            ],
+            "partner": {
+                "name": "ミラー",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l3-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、これは 日本《にほん》の 車《くるま》です。",
+                    "speak": "ブディさん、これは にほんの くるまです。",
+                    "id_text": "Budi, ini mobil buatan Jepang.",
+                    "en_text": "Budi, this is a Japanese car.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s3-t1.mp3"
+                },
+                {
+                    "id": "l3-s3-t2",
+                    "who": "you",
+                    "ja": "そうですか。あれも 日本《にほん》の 車《くるま》ですか。",
+                    "speak": "そうですか。あれも にほんの くるまですか。",
+                    "id_text": "Oh begitu. Apakah yang itu juga mobil Jepang?",
+                    "en_text": "I see. Is that one a Japanese car too?",
+                    "accept": [
+                        "そうですか。あれも日本の車ですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s3-t2.mp3"
+                },
+                {
+                    "id": "l3-s3-t3",
+                    "who": "partner",
+                    "ja": "いいえ、あれは ドイツの 車《くるま》です。",
+                    "speak": "いいえ、あれは ドイツの くるまです。",
+                    "id_text": "Bukan, itu mobil Jerman.",
+                    "en_text": "No, that one is a German car.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s3-t3.mp3"
+                },
+                {
+                    "id": "l3-s3-t4",
+                    "who": "you",
+                    "ja": "そうですか。この 時計《とけい》は どこの 時計《とけい》ですか。",
+                    "speak": "そうですか。この とけいは どこの とけいですか。",
+                    "id_text": "Oh begitu. Jam ini buatan mana?",
+                    "en_text": "I see. Where is this watch from?",
+                    "accept": [
+                        "そうですか。この時計はどこの時計ですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s3-t4.mp3"
+                },
+                {
+                    "id": "l3-s3-t5",
+                    "who": "partner",
+                    "ja": "それは スイスの 時計《とけい》です。",
+                    "speak": "それは スイスの とけいです。",
+                    "id_text": "Itu jam buatan Swiss.",
+                    "en_text": "That is a Swiss watch.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s3-t5.mp3"
+                },
+                {
+                    "id": "l3-s3-t6",
+                    "who": "you",
+                    "ja": "そうですか。どうも ありがとうございます。",
+                    "speak": "そうですか。どうも ありがとうございます。",
+                    "id_text": "Oh begitu. Terima kasih banyak.",
+                    "en_text": "I see. Thank you very much.",
+                    "accept": [
+                        "そうですか。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-3/l3-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l3-s4",
+            "title_id": "Mencari bagian toserba",
+            "title_en": "Finding departments in a store",
+            "setting_id": "Di toserba, kamu bertanya letak bagian sepatu, dasi, dan lift pada petugas informasi.",
+            "setting_en": "At a department store, you ask the information desk where the shoe, tie, and elevator sections are.",
+            "goal_id": "Menanyakan letak dengan どこ dan menyebut lantai dengan 〜階.",
+            "goal_en": "Ask where things are with doko and state floors with ~kai.",
+            "patterns": [
+                "〜は どこですか",
+                "〜は ～階です",
+                "〜売り場"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l3-s4-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t1.mp3"
+                },
+                {
+                    "id": "l3-s4-t2",
+                    "who": "you",
+                    "ja": "すみません、靴《くつ》の 売《う》り場《ば》は どこですか。",
+                    "speak": "すみません、くつの うりばは どこですか。",
+                    "id_text": "Permisi, bagian sepatu di mana?",
+                    "accept": [
+                        "すみません、靴の売り場はどこですか。"
+                    ],
+                    "en_text": "Excuse me, where is the shoe department?",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t2.mp3"
+                },
+                {
+                    "id": "l3-s4-t3",
+                    "who": "partner",
+                    "ja": "靴《くつ》の 売《う》り場《ば》は 二階《にかい》です。",
+                    "speak": "くつの うりばは にかいです。",
+                    "id_text": "Bagian sepatu ada di lantai dua.",
+                    "en_text": "The shoe department is on the 2nd floor.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t3.mp3"
+                },
+                {
+                    "id": "l3-s4-t4",
+                    "who": "you",
+                    "ja": "ありがとうございます。ネクタイの 売《う》り場《ば》も 二階《にかい》ですか。",
+                    "speak": "ありがとうございます。ネクタイの うりばも にかいですか。",
+                    "id_text": "Terima kasih. Apakah bagian dasi juga di lantai dua?",
+                    "accept": [
+                        "ありがとうございます。ネクタイの売り場も二階ですか。",
+                        "ありがとうございます。ネクタイの売り場も2階ですか。"
+                    ],
+                    "en_text": "Thank you. Is the tie department on the 2nd floor too?",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t4.mp3"
+                },
+                {
+                    "id": "l3-s4-t5",
+                    "who": "partner",
+                    "ja": "いいえ、ネクタイの 売《う》り場《ば》は 一階《いっかい》です。",
+                    "speak": "いいえ、ネクタイの うりばは いっかいです。",
+                    "id_text": "Bukan, bagian dasi ada di lantai satu.",
+                    "en_text": "No, the tie department is on the 1st floor.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t5.mp3"
+                },
+                {
+                    "id": "l3-s4-t6",
+                    "who": "you",
+                    "ja": "そうですか。エレベーターは どこですか。",
+                    "speak": "そうですか。エレベーターは どこですか。",
+                    "id_text": "Oh begitu. Liftnya di mana?",
+                    "accept": [
+                        "そうですか。エレベーターはどこですか。"
+                    ],
+                    "en_text": "I see. Where is the elevator?",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t6.mp3"
+                },
+                {
+                    "id": "l3-s4-t7",
+                    "who": "partner",
+                    "ja": "エレベーターは あちらです。",
+                    "speak": "エレベーターは あちらです。",
+                    "id_text": "Lift ada di arah sana.",
+                    "en_text": "The elevator is over that way.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t7.mp3"
+                },
+                {
+                    "id": "l3-s4-t8",
+                    "who": "you",
+                    "ja": "どうも ありがとうございます。",
+                    "speak": "どうも ありがとうございます。",
+                    "id_text": "Terima kasih banyak.",
+                    "accept": [
+                        "ありがとうございます。"
+                    ],
+                    "en_text": "Thank you very much.",
+                    "audio": "/audio/kaiwa/lesson-3/l3-s4-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

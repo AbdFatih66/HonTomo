@@ -1,0 +1,569 @@
+{
+    "id": 12,
+    "level": "N3",
+    "title_id": "Pelajaran 12 (N3): Alasan, Tetangga, dan Harapan",
+    "title_en": "N3 Lesson 12: Excuses, Neighbors and Wishes",
+    "scenarios": [
+        {
+            "id": "n3l12-s1",
+            "title_id": "Alasan belum mengumpulkan PR",
+            "title_en": "Why the homework is late",
+            "setting_id": "Di kelas. Guru menanyakan kenapa PR-mu belum dikumpulkan.",
+            "setting_en": "In class. The teacher asks why your homework is not in.",
+            "goal_id": "Menyampaikan alasan dengan 〜ものですから.",
+            "goal_en": "Give a reason with ~mono desu kara.",
+            "patterns": [
+                "…もの／もんだから"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l12-s1-t1",
+                    "who": "partner",
+                    "ja": "どうして 宿題《しゅくだい》を 出《だ》して いないの？",
+                    "speak": "どうして しゅくだいを だして いないの？",
+                    "id_text": "Mengapa PR-nya belum dikumpulkan?",
+                    "en_text": "Why have you not handed in your homework?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s1-t1.mp3"
+                },
+                {
+                    "id": "n3l12-s1-t2",
+                    "who": "you",
+                    "ja": "すみません、昨日《きのう》 熱《ねつ》が あったものですから。",
+                    "speak": "すみません、きのう ねつが あったものですから。",
+                    "id_text": "Maaf, kemarin saya demam.",
+                    "en_text": "I am sorry, I had a fever yesterday.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s1-t2.mp3",
+                    "accept": [
+                        "すみません、昨日 熱が あったものですから。",
+                        "すみません、昨日熱があったものですから。",
+                        "すみません、きのう ねつが あったものですから。",
+                        "すみません、きのうねつがあったものですから。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s1-t3",
+                    "who": "partner",
+                    "ja": "そう。じゃあ、明日《あした》まで 待《ま》ちます。",
+                    "speak": "そう。じゃあ、あしたまで まちます。",
+                    "id_text": "Begitu. Kalau begitu, saya tunggu sampai besok.",
+                    "en_text": "I see. Then I will wait until tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s1-t3.mp3"
+                },
+                {
+                    "id": "n3l12-s1-t4",
+                    "who": "you",
+                    "ja": "ありがとうございます。明日《あした》は 必《かなら》ず 出《だ》します。",
+                    "speak": "ありがとうございます。あしたは かならず だします。",
+                    "id_text": "Terima kasih. Besok pasti saya kumpulkan.",
+                    "en_text": "Thank you. I will definitely hand it in tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s1-t4.mp3",
+                    "accept": [
+                        "ありがとうございます。明日は 必ず 出します。",
+                        "ありがとうございます。明日は必ず出します。",
+                        "ありがとうございます。あしたは かならず だします。",
+                        "ありがとうございます。あしたはかならずだします。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s1-t5",
+                    "who": "partner",
+                    "ja": "体《からだ》の 調子《ちょうし》は どう？",
+                    "speak": "からだの ちょうしは どう？",
+                    "id_text": "Bagaimana kondisi tubuhmu?",
+                    "en_text": "How are you feeling?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s1-t5.mp3"
+                },
+                {
+                    "id": "n3l12-s1-t6",
+                    "who": "you",
+                    "ja": "もう 大丈夫《だいじょうぶ》です。薬《くすり》を 飲《の》んだものですから。",
+                    "speak": "もう だいじょうぶです。くすりを のんだものですから。",
+                    "id_text": "Sudah baik. Karena saya sudah minum obat.",
+                    "en_text": "I am fine now, since I took medicine.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s1-t6.mp3",
+                    "accept": [
+                        "もう 大丈夫です。薬を 飲んだものですから。",
+                        "もう大丈夫です。薬を飲んだものですから。",
+                        "もう だいじょうぶです。くすりを のんだものですから。",
+                        "もうだいじょうぶです。くすりをのんだものですから。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l12-s2",
+            "title_id": "Gara-gara tetangga ribut",
+            "title_en": "The noisy neighbor",
+            "setting_id": "Pagi hari. Teman menanyakan kenapa kamu tampak lelah.",
+            "setting_en": "Morning. A friend asks why you look tired.",
+            "goal_id": "Memakai pasif tak langsung (intransitif) 〜(ら)れる.",
+            "goal_en": "Use the indirect passive (intransitive) ~(ra)reru.",
+            "patterns": [
+                "〜(ら)れる(自動詞)"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l12-s2-t1",
+                    "who": "partner",
+                    "ja": "昨日《きのう》、どうして 寝《ね》られなかったの？",
+                    "speak": "きのう、どうして ねられなかったの？",
+                    "id_text": "Kenapa kemarin kamu tidak bisa tidur?",
+                    "en_text": "Why could you not sleep yesterday?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s2-t1.mp3"
+                },
+                {
+                    "id": "n3l12-s2-t2",
+                    "who": "you",
+                    "ja": "隣《となり》の 部屋《へや》の 人《ひと》に 夜中《よなか》まで 騒《さわ》がれたんだ。",
+                    "speak": "となりの へやの ひとに よなかまで さわがれたんだ。",
+                    "id_text": "Tetangga di sebelah ribut sampai tengah malam.",
+                    "en_text": "The person next door made noise until midnight.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s2-t2.mp3",
+                    "accept": [
+                        "隣の 部屋の 人に 夜中まで 騒がれたんだ。",
+                        "隣の部屋の人に夜中まで騒がれたんだ。",
+                        "となりの へやの ひとに よなかまで さわがれたんだ。",
+                        "となりのへやのひとによなかまでさわがれたんだ。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s2-t3",
+                    "who": "partner",
+                    "ja": "それは 大変《たいへん》だったね。",
+                    "speak": "それは たいへんだったね。",
+                    "id_text": "Wah, repot ya.",
+                    "en_text": "That must have been rough.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s2-t3.mp3"
+                },
+                {
+                    "id": "n3l12-s2-t4",
+                    "who": "you",
+                    "ja": "その うえ、帰《かえ》り道《みち》で 雨《あめ》にも 降《ふ》られたし。",
+                    "speak": "その うえ、かえりみちで あめにも ふられたし。",
+                    "id_text": "Apalagi di jalan pulang kehujanan.",
+                    "en_text": "On top of that, I got rained on on the way home.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s2-t4.mp3",
+                    "accept": [
+                        "その うえ、帰り道で 雨にも 降られたし。",
+                        "そのうえ、帰り道で雨にも降られたし。",
+                        "その うえ、かえりみちで あめにも ふられたし。",
+                        "そのうえ、かえりみちであめにもふられたし。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s2-t5",
+                    "who": "partner",
+                    "ja": "苦情《くじょう》は 言《い》った？",
+                    "speak": "くじょうは いった？",
+                    "id_text": "Sudah mengajukan keluhan?",
+                    "en_text": "Did you complain?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s2-t5.mp3"
+                },
+                {
+                    "id": "n3l12-s2-t6",
+                    "who": "you",
+                    "ja": "ううん、言《い》って いない。管理人《かんりにん》に 相談《そうだん》して みる。",
+                    "speak": "ううん、いって いない。かんりにんに そうだんして みる。",
+                    "id_text": "Belum. Aku mau konsultasi ke pengelola.",
+                    "en_text": "No, not yet. I will talk to the manager.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s2-t6.mp3",
+                    "accept": [
+                        "ううん、言って いない。管理人に 相談して みる。",
+                        "ううん、言っていない。管理人に相談してみる。",
+                        "ううん、いって いない。かんりにんに そうだんして みる。",
+                        "ううん、いっていない。かんりにんにそうだんしてみる。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l12-s3",
+            "title_id": "Kaki terinjak di kereta",
+            "title_en": "Stepped on in the train",
+            "setting_id": "Di kantor. Teman melihat wajahmu pucat.",
+            "setting_en": "At the office. A friend notices you look pale.",
+            "goal_id": "Memakai pasif transitif 〜を 踏まれる dan 〜たり〜たり.",
+            "goal_en": "Use the transitive passive o fumareru and ~tari ~tari.",
+            "patterns": [
+                "〜(ら)れる(他動詞)",
+                "〜たり〜たり"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l12-s3-t1",
+                    "who": "partner",
+                    "ja": "顔色《かおいろ》が 悪《わる》いけど、どうしたの？",
+                    "speak": "かおいろが わるいけど、どうしたの？",
+                    "id_text": "Wajahmu pucat, kenapa?",
+                    "en_text": "You look pale. What is wrong?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s3-t1.mp3"
+                },
+                {
+                    "id": "n3l12-s3-t2",
+                    "who": "you",
+                    "ja": "朝《あさ》の 電車《でんしゃ》で 足《あし》を 踏《ふ》まれて、まだ 痛《いた》いんだ。",
+                    "speak": "あさの でんしゃで あしを ふまれて、まだ いたいんだ。",
+                    "id_text": "Di kereta pagi kakiku terinjak dan masih sakit.",
+                    "en_text": "My foot was stepped on in the morning train and it still hurts.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s3-t2.mp3",
+                    "accept": [
+                        "朝の 電車で 足を 踏まれて、まだ 痛いんだ。",
+                        "朝の電車で足を踏まれて、まだ痛いんだ。",
+                        "あさの でんしゃで あしを ふまれて、まだ いたいんだ。",
+                        "あさのでんしゃであしをふまれて、まだいたいんだ。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s3-t3",
+                    "who": "partner",
+                    "ja": "大丈夫《だいじょうぶ》？ 病院《びょういん》に 行《い》った ほうが いいよ。",
+                    "speak": "だいじょうぶ？ びょういんに いった ほうが いいよ。",
+                    "id_text": "Tidak apa-apa? Sebaiknya ke rumah sakit.",
+                    "en_text": "Are you okay? You should go to the hospital.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s3-t3.mp3"
+                },
+                {
+                    "id": "n3l12-s3-t4",
+                    "who": "you",
+                    "ja": "うん、ありがとう。休《やす》みの 日《ひ》に 行《い》って みる。",
+                    "speak": "うん、ありがとう。やすみの ひに いって みる。",
+                    "id_text": "Iya, terima kasih. Hari libur aku coba pergi.",
+                    "en_text": "Yes, thanks. I will try going on my day off.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s3-t4.mp3",
+                    "accept": [
+                        "うん、ありがとう。休みの 日に 行って みる。",
+                        "うん、ありがとう。休みの日に行ってみる。",
+                        "うん、ありがとう。やすみの ひに いって みる。",
+                        "うん、ありがとう。やすみのひにいってみる。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s3-t5",
+                    "who": "partner",
+                    "ja": "休《やす》みの 日《ひ》は 何《なに》を して いるの？",
+                    "speak": "やすみの ひは なにを して いるの？",
+                    "id_text": "Hari libur biasanya melakukan apa?",
+                    "en_text": "What do you do on your days off?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s3-t5.mp3"
+                },
+                {
+                    "id": "n3l12-s3-t6",
+                    "who": "you",
+                    "ja": "料理《りょうり》を 作《つく》ったり、映画《えいが》を 見《み》たり して いるよ。",
+                    "speak": "りょうりを つくったり、えいがを みたり して いるよ。",
+                    "id_text": "Memasak, menonton film, dan sebagainya.",
+                    "en_text": "I cook, watch movies and things like that.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s3-t6.mp3",
+                    "accept": [
+                        "料理を 作ったり、映画を 見たり して いるよ。",
+                        "料理を作ったり、映画を見たりしているよ。",
+                        "りょうりを つくったり、えいがを みたり して いるよ。",
+                        "りょうりをつくったり、えいがをみたりしているよ。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l12-s4",
+            "title_id": "Jendela terbuka dan berkat guru",
+            "title_en": "An open window and thanks to my teacher",
+            "setting_id": "Di rumah. Teman menegur jendela terbuka lalu menyinggung ujianmu.",
+            "setting_en": "At home. A friend points out an open window, then mentions your exam.",
+            "goal_id": "Memakai 〜っぱなし dan …おかげだ.",
+            "goal_en": "Use ~ppanashi and ...okage da.",
+            "patterns": [
+                "〜っぱなし",
+                "…おかげで／おかげだ"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l12-s4-t1",
+                    "who": "partner",
+                    "ja": "あれ、窓《まど》が 開《あ》けっぱなしだよ。",
+                    "speak": "あれ、まどが あけっぱなしだよ。",
+                    "id_text": "Lho, jendelanya dibiarkan terbuka.",
+                    "en_text": "Hey, the window has been left open.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s4-t1.mp3"
+                },
+                {
+                    "id": "n3l12-s4-t2",
+                    "who": "you",
+                    "ja": "ごめん、閉《し》め忘《わす》れた。",
+                    "speak": "ごめん、しめわすれた。",
+                    "id_text": "Maaf, lupa menutup.",
+                    "en_text": "Sorry, I forgot to close it.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s4-t2.mp3",
+                    "accept": [
+                        "ごめん、閉め忘れた。",
+                        "ごめん、しめわすれた。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s4-t3",
+                    "who": "partner",
+                    "ja": "雨《あめ》が 降《ふ》ったら 部屋《へや》が 濡《ぬ》れるよ。",
+                    "speak": "あめが ふったら へやが ぬれるよ。",
+                    "id_text": "Kalau hujan, kamarnya basah.",
+                    "en_text": "If it rains, the room will get wet.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s4-t3.mp3"
+                },
+                {
+                    "id": "n3l12-s4-t4",
+                    "who": "you",
+                    "ja": "すぐ 閉《し》めて くる。",
+                    "speak": "すぐ しめて くる。",
+                    "id_text": "Segera kututup.",
+                    "en_text": "I will close it right away.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s4-t4.mp3",
+                    "accept": [
+                        "すぐ 閉めて くる。",
+                        "すぐ閉めてくる。",
+                        "すぐ しめて くる。",
+                        "すぐしめてくる。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s4-t5",
+                    "who": "partner",
+                    "ja": "日本語《にほんご》の 試験《しけん》、合格《ごうかく》したそうだね。",
+                    "speak": "にほんごの しけん、ごうかくしたそうだね。",
+                    "id_text": "Katanya kamu lulus ujian bahasa Jepang.",
+                    "en_text": "I heard you passed the Japanese exam.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s4-t5.mp3"
+                },
+                {
+                    "id": "n3l12-s4-t6",
+                    "who": "you",
+                    "ja": "先生《せんせい》が 毎週《まいしゅう》 練習《れんしゅう》に つき合《あ》って くださった おかげだよ。",
+                    "speak": "せんせいが まいしゅう れんしゅうに つきあって くださった おかげだよ。",
+                    "id_text": "Berkat guru yang menemani latihan tiap minggu.",
+                    "en_text": "It is thanks to my teacher accompanying my practice every week.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s4-t6.mp3",
+                    "accept": [
+                        "先生が 毎週 練習に つき合って くださった おかげだよ。",
+                        "先生が毎週練習につき合ってくださったおかげだよ。",
+                        "せんせいが まいしゅう れんしゅうに つきあって くださった おかげだよ。",
+                        "せんせいがまいしゅうれんしゅうにつきあってくださったおかげだよ。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l12-s5",
+            "title_id": "Wajah merah dan tetangga sepi",
+            "title_en": "A red face and a quiet neighbor",
+            "setting_id": "Pagi hari. Teman melihat wajahmu merah, lalu membicarakan tetangga.",
+            "setting_en": "Morning. A friend sees your red face, then talks about the neighbor.",
+            "goal_id": "Memakai …せいだ, …みたいだ, dan どちらかと言えば〜ほうだ.",
+            "goal_en": "Use ...sei da, ...mitai da and dochira ka to ieba ~ hou da.",
+            "patterns": [
+                "…せいで／せいだ",
+                "…みたいです",
+                "どちらかと 言えば〜ほうだ"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l12-s5-t1",
+                    "who": "partner",
+                    "ja": "顔《かお》が 赤《あか》いけど、熱《ねつ》が あるの？",
+                    "speak": "かおが あかいけど、ねつが あるの？",
+                    "id_text": "Wajahmu merah, demam?",
+                    "en_text": "Your face is red. Do you have a fever?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s5-t1.mp3"
+                },
+                {
+                    "id": "n3l12-s5-t2",
+                    "who": "you",
+                    "ja": "ううん、昨日《きのう》 お酒《さけ》を 飲《の》みすぎた せいだよ。",
+                    "speak": "ううん、きのう おさけを のみすぎた せいだよ。",
+                    "id_text": "Bukan, gara-gara kemarin minum kebanyakan.",
+                    "en_text": "No, it is because I drank too much yesterday.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s5-t2.mp3",
+                    "accept": [
+                        "ううん、昨日 お酒を 飲みすぎた せいだよ。",
+                        "ううん、昨日お酒を飲みすぎたせいだよ。",
+                        "ううん、きのう おさけを のみすぎた せいだよ。",
+                        "ううん、きのうおさけをのみすぎたせいだよ。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s5-t3",
+                    "who": "partner",
+                    "ja": "隣《となり》の 部屋《へや》、静《しず》かだね。",
+                    "speak": "となりの へや、しずかだね。",
+                    "id_text": "Kamar sebelah sepi ya.",
+                    "en_text": "The room next door is quiet.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s5-t3.mp3"
+                },
+                {
+                    "id": "n3l12-s5-t4",
+                    "who": "you",
+                    "ja": "電気《でんき》も 消《き》えて いるし、出《で》かけた みたいだね。",
+                    "speak": "でんきも きえて いるし、でかけた みたいだね。",
+                    "id_text": "Lampu juga mati, sepertinya pergi.",
+                    "en_text": "The lights are off too, so they seem to have gone out.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s5-t4.mp3",
+                    "accept": [
+                        "電気も 消えて いるし、出かけた みたいだね。",
+                        "電気も消えているし、出かけたみたいだね。",
+                        "でんきも きえて いるし、でかけた みたいだね。",
+                        "でんきもきえているし、でかけたみたいだね。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s5-t5",
+                    "who": "partner",
+                    "ja": "お酒《さけ》は よく 飲《の》みますか。",
+                    "speak": "おさけは よく のみますか。",
+                    "id_text": "Apakah sering minum alkohol?",
+                    "en_text": "Do you drink often?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s5-t5.mp3"
+                },
+                {
+                    "id": "n3l12-s5-t6",
+                    "who": "you",
+                    "ja": "どちらかと 言《い》えば、飲《の》まない ほうです。",
+                    "speak": "どちらかと いえば、のまない ほうです。",
+                    "id_text": "Kalau boleh dibilang, saya termasuk yang tidak minum.",
+                    "en_text": "If anything, I am on the side of not drinking.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s5-t6.mp3",
+                    "accept": [
+                        "どちらかと 言えば、飲まない ほうです。",
+                        "どちらかと言えば、飲まないほうです。",
+                        "どちらかと いえば、のまない ほうです。",
+                        "どちらかといえば、のまないほうです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l12-s6",
+            "title_id": "Menulis harapan di tanzaku",
+            "title_en": "Wishes on a tanzaku",
+            "setting_id": "Festival Tanabata di kantor. Rekan bertanya apa yang kamu tulis.",
+            "setting_en": "Tanabata festival at the office. A colleague asks what you wrote.",
+            "goal_id": "Menulis harapan dengan 〜ますように dan menyatakan kaget dengan 〜とは.",
+            "goal_en": "Write wishes with ~masu you ni and express surprise with ~to wa.",
+            "patterns": [
+                "〜ますように",
+                "〜とは"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l12-s6-t1",
+                    "who": "partner",
+                    "ja": "七夕《たなばた》の 短冊《たんざく》に 何《なに》を 書《か》いた？",
+                    "speak": "たなばたの たんざくに なにを かいた？",
+                    "id_text": "Kamu menulis apa di tanzaku Tanabata?",
+                    "en_text": "What did you write on your Tanabata tanzaku?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s6-t1.mp3"
+                },
+                {
+                    "id": "n3l12-s6-t2",
+                    "who": "you",
+                    "ja": "「家族《かぞく》が みんな 元気《げんき》で いられますように」って 書《か》いたよ。",
+                    "speak": "「かぞくが みんな げんきで いられますように」って かいたよ。",
+                    "id_text": "Aku menulis \"semoga seluruh keluarga sehat\".",
+                    "en_text": "I wrote, \"May my whole family stay healthy.\"",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s6-t2.mp3",
+                    "accept": [
+                        "「家族が みんな 元気で いられますように」って 書いたよ。",
+                        "「家族がみんな元気でいられますように」って書いたよ。",
+                        "「かぞくが みんな げんきで いられますように」って かいたよ。",
+                        "「かぞくがみんなげんきでいられますように」ってかいたよ。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s6-t3",
+                    "who": "partner",
+                    "ja": "いいね。私《わたし》は 「試験《しけん》に 合格《ごうかく》できますように」と 書《か》いたよ。",
+                    "speak": "いいね。わたしは 「しけんに ごうかくできますように」と かいたよ。",
+                    "id_text": "Bagus. Aku menulis \"semoga lulus ujian\".",
+                    "en_text": "Nice. I wrote, \"May I pass the exam.\"",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s6-t3.mp3"
+                },
+                {
+                    "id": "n3l12-s6-t4",
+                    "who": "you",
+                    "ja": "叶《かな》うと いいね。",
+                    "speak": "かなうと いいね。",
+                    "id_text": "Semoga terkabul.",
+                    "en_text": "I hope it comes true.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s6-t4.mp3",
+                    "accept": [
+                        "叶うと いいね。",
+                        "叶うといいね。",
+                        "かなうと いいね。",
+                        "かなうといいね。"
+                    ]
+                },
+                {
+                    "id": "n3l12-s6-t5",
+                    "who": "partner",
+                    "ja": "昨日《きのう》は 音《おと》が 下《した》まで 聞《き》こえて いたでしょう？",
+                    "speak": "きのうは おとが したまで きこえて いたでしょう？",
+                    "id_text": "Kemarin suaranya terdengar sampai bawah, kan?",
+                    "en_text": "Yesterday the sound carried all the way downstairs, did it not?",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s6-t5.mp3"
+                },
+                {
+                    "id": "n3l12-s6-t6",
+                    "who": "you",
+                    "ja": "ええ、音《おと》が 聞《き》こえるとは 思《おも》いませんでした。",
+                    "speak": "ええ、おとが きこえるとは おもいませんでした。",
+                    "id_text": "Ya, saya tidak menyangka suaranya terdengar.",
+                    "en_text": "Yes, I never expected the sound to be heard.",
+                    "audio": "/audio/kaiwa/lesson-n3-12/n3l12-s6-t6.mp3",
+                    "accept": [
+                        "ええ、音が 聞こえるとは 思いませんでした。",
+                        "ええ、音が聞こえるとは思いませんでした。",
+                        "ええ、おとが きこえるとは おもいませんでした。",
+                        "ええ、おとがきこえるとはおもいませんでした。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

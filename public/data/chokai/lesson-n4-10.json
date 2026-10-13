@@ -1,0 +1,309 @@
+{
+    "id": "n4-10",
+    "level": "N4",
+    "focus": "Bentuk syarat 〜ば／〜なら, どう Vば いいですか, 〜は ありませんか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "リナさん、来週の 休み、どこか いい 所は ありませんか。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですね。山なら、涼しくて いいですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "どう 行けば いいですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "バスに 乗れば、二時間で 着きます。"
+            },
+            {
+                "speaker": "male",
+                "text": "切符は どこで 買えば いいですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "駅の 窓口で 買えば いいですよ。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-10/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l10-kq1",
+                "prompt": "女《おんな》の 人《ひと》は どこを すすめましたか。",
+                "choices": [
+                    "山《やま》",
+                    "海《うみ》",
+                    "島《しま》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Dia menyarankan gunung. → Gunung.",
+                    "en": "She recommended the mountains. → Mountains."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l10-kq2",
+                "prompt": "バスで 何時間《なんじかん》 かかりますか。",
+                "choices": [
+                    "二時間《にじかん》",
+                    "三時間《さんじかん》",
+                    "一時間《いちじかん》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Naik bus, sampai dalam dua jam. → Dua jam.",
+                    "en": "By bus it takes two hours. → Two hours."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l10-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、おいしい ラーメンを 食べたいんですが。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ラーメンなら、駅の 前の 店が おいしいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q1.mp3",
+            "prompt": "おすすめの 店《みせ》は どこに ありますか。",
+            "choices": [
+                "駅《えき》の 前《まえ》",
+                "大学《だいがく》の 近《ちか》く",
+                "公園《こうえん》の 横《よこ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ingin makan ramen enak? Kalau ramen, toko di depan stasiun enak. → Di depan stasiun.",
+                "en": "Wants good ramen? If it is ramen, the shop in front of the station is good. → In front of the station."
+            }
+        },
+        {
+            "id": "n4l10-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、日本語が 上手に なりたいんですが、どう すれば いいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "毎日 少しずつ 話せば いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q2.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なに》を すすめましたか。",
+            "choices": [
+                "毎日《まいにち》 少《すこ》しずつ 話《はな》す こと",
+                "毎晩《まいばん》 テレビを 見《み》る こと",
+                "週末《しゅうまつ》に 本《ほん》を 読《よ》む こと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana agar pandai bahasa Jepang? Bicaralah sedikit demi sedikit setiap hari. → Berbicara sedikit demi sedikit setiap hari.",
+                "en": "How can I get good at Japanese? Speak a little every day. → Speaking a little every day."
+            }
+        },
+        {
+            "id": "n4l10-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あした 天気が よければ、山に 登りますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、登ります。でも、雨なら、うちで 勉強します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q3.mp3",
+            "prompt": "雨《あめ》なら、女《おんな》の 人《ひと》は 何《なに》を しますか。",
+            "choices": [
+                "うちで 勉強《べんきょう》します",
+                "山《やま》に 登《のぼ》ります",
+                "友達《ともだち》に 会《あ》います"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalau hujan, saya belajar di rumah. → Belajar di rumah.",
+                "en": "If it rains, I will study at home. → Study at home."
+            }
+        },
+        {
+            "id": "n4l10-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "安い ホテルは ありませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "駅の 近くに 一つ ありますよ。一泊 五千円です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q4.mp3",
+            "prompt": "ホテルは 一泊《いっぱく》 いくらですか。",
+            "choices": [
+                "5,000円《えん》",
+                "3,000円《えん》",
+                "8,000円《えん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ada hotel murah? Ada satu dekat stasiun, 5.000 yen per malam. → 5.000 yen.",
+                "en": "Is there a cheap hotel? There is one near the station, 5,000 yen a night. → 5,000 yen."
+            }
+        },
+        {
+            "id": "n4l10-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "日本語の 練習が できる 所は ありませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あおぞら大学の 図書館なら、いつでも 使えますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》は どこを すすめましたか。",
+            "choices": [
+                "あおぞら大学《だいがく》の 図書館《としょかん》",
+                "みなと大学《だいがく》の 食堂《しょくどう》",
+                "文化《ぶんか》センターの 受付《うけつけ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Adakah tempat berlatih bahasa Jepang? Kalau perpustakaan Universitas Aozora, bisa dipakai kapan saja. → Perpustakaan Universitas Aozora.",
+                "en": "Is there a place to practise Japanese? The Aozora University library can be used any time. → The Aozora University library."
+            }
+        },
+        {
+            "id": "n4l10-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、駅へ 行きたいんですが、どう 行けば いいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "この 道を まっすぐ 行けば、右に ありますよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q6.mp3",
+            "prompt": "駅《えき》は どこに ありますか。",
+            "choices": [
+                "まっすぐ 行《い》って 右《みぎ》",
+                "まっすぐ 行《い》って 左《ひだり》",
+                "あの 角《かど》を 曲《ま》がって 右《みぎ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kalau lurus di jalan ini, stasiun ada di kanan. → Lurus lalu kanan.",
+                "en": "If you go straight along this road, it is on the right. → Straight, then on the right."
+            }
+        },
+        {
+            "id": "n4l10-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "申し込みは いつまでに 出せば いいですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "金曜日《きんようび》までに 出《だ》せば いいです。",
+                "金曜日《きんようび》に 出《だ》しました。",
+                "はい、出《だ》せば いいです。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pertanyaan: pendaftaran sebaiknya diserahkan kapan? Jawaban: Serahkan paling lambat hari Jumat.",
+                "en": "Question: By when should the application be handed in? Answer: Hand it in by Friday."
+            }
+        },
+        {
+            "id": "n4l10-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "いい 病院は ありませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q8.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、駅《えき》の 前《まえ》に ありますよ。",
+                "はい、いい 病院《びょういん》でした。",
+                "いいえ、行《い》きました。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Pertanyaan: adakah rumah sakit yang bagus? Jawaban: Ada, di depan stasiun.",
+                "en": "Question: Is there a good hospital? Answer: Yes, there is one in front of the station."
+            }
+        },
+        {
+            "id": "n4l10-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、あしたは 晴れれば 海へ 行きますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、晴れれば 行きます。雨なら 行きません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q9.mp3",
+            "prompt": "ケンさんは 雨《あめ》の 日《ひ》も 海《うみ》へ 行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Kalau cerah, dia pergi ke laut; kalau hujan, tidak. → × (salah)",
+                "en": "If it is sunny he goes to the sea; if it rains he does not. → × (false)"
+            }
+        },
+        {
+            "id": "n4l10-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンさん、旅行社で 聞けば、安い バスが わかりますよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "そうですか。じゃ、今日 聞きに 行きます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-10/n4l10-q10.mp3",
+            "prompt": "ハンさんは 今日《きょう》、旅行社《りょこうしゃ》へ 行《い》きます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Dia akan bertanya di agen perjalanan hari ini. → ○ (benar)",
+                "en": "She will go to the travel agency today to ask. → ○ (true)"
+            }
+        }
+    ]
+}

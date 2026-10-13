@@ -1,0 +1,399 @@
+{
+    "id": 18,
+    "level": "N5",
+    "title_id": "Pelajaran 18 — Kemampuan & Hobi",
+    "title_en": "Lesson 18 — Abilities & Hobbies",
+    "scenarios": [
+        {
+            "id": "l18-s1",
+            "title_id": "Hobi",
+            "title_en": "Hobbies",
+            "setting_id": "Rekan kerja bertanya apa hobimu.",
+            "setting_en": "A colleague asks what your hobby is.",
+            "goal_id": "Memakai 趣味は 〜ことです (bentuk kamus).",
+            "goal_en": "Use shumi wa ~koto desu with the dictionary form.",
+            "patterns": [
+                "趣味は V(辞書形)ことです",
+                "特に 〜",
+                "それは おもしろいですね"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l18-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの 趣味《しゅみ》は 何《なん》ですか。",
+                    "speak": "ブディさんの しゅみは なんですか。",
+                    "id_text": "Hobi Budi apa?",
+                    "en_text": "Budi, what is your hobby?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t1.mp3"
+                },
+                {
+                    "id": "l18-s1-t2",
+                    "who": "you",
+                    "ja": "私《わたし》の 趣味《しゅみ》は 写真《しゃしん》を 撮《と》る ことです。",
+                    "speak": "わたしの しゅみは しゃしんを とる ことです。",
+                    "id_text": "Hobi saya memotret.",
+                    "accept": [
+                        "私の 趣味は 写真を 撮る ことです。",
+                        "私の趣味は写真を撮ることです。"
+                    ],
+                    "en_text": "My hobby is taking photos.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t2.mp3"
+                },
+                {
+                    "id": "l18-s1-t3",
+                    "who": "partner",
+                    "ja": "へえ、それは おもしろいですね。特《とく》に 何《なに》を 撮《と》りますか。",
+                    "speak": "へえ、それは おもしろいですね。とくに なにを とりますか。",
+                    "id_text": "Wah, itu menarik. Terutama memotret apa?",
+                    "en_text": "Oh, that's interesting. What do you photograph especially?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t3.mp3"
+                },
+                {
+                    "id": "l18-s1-t4",
+                    "who": "you",
+                    "ja": "山《やま》や 海《うみ》を 撮《と》ります。",
+                    "speak": "やまや うみを とります。",
+                    "id_text": "Saya memotret gunung dan laut.",
+                    "accept": [
+                        "山や 海を 撮ります。",
+                        "山や海を撮ります。"
+                    ],
+                    "en_text": "I photograph mountains and the sea.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t4.mp3"
+                },
+                {
+                    "id": "l18-s1-t5",
+                    "who": "partner",
+                    "ja": "そうですか。私《わたし》の 趣味《しゅみ》は 映画《えいが》を 見《み》る ことです。",
+                    "speak": "そうですか。わたしの しゅみは えいがを みる ことです。",
+                    "id_text": "Begitu ya. Hobi saya menonton film.",
+                    "en_text": "I see. My hobby is watching movies.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t5.mp3"
+                },
+                {
+                    "id": "l18-s1-t6",
+                    "who": "you",
+                    "ja": "いい 趣味《しゅみ》ですね。どんな 映画《えいが》が 好《す》きですか。",
+                    "speak": "いい しゅみですね。どんな えいがが すきですか。",
+                    "id_text": "Hobi yang bagus. Film seperti apa yang kamu suka?",
+                    "accept": [
+                        "いい 趣味ですね。どんな 映画が 好きですか。",
+                        "いい趣味ですね。どんな映画が好きですか。"
+                    ],
+                    "en_text": "That's a good hobby. What kind of movies do you like?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t6.mp3"
+                },
+                {
+                    "id": "l18-s1-t7",
+                    "who": "partner",
+                    "ja": "面白《おもしろ》い 映画《えいが》が 好《す》きです。",
+                    "speak": "おもしろい えいがが すきです。",
+                    "id_text": "Saya suka film yang lucu/menarik.",
+                    "en_text": "I like interesting movies.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l18-s2",
+            "title_id": "Apa yang bisa kamu lakukan?",
+            "title_en": "What can you do?",
+            "setting_id": "Di pesta kecil, temanmu menanyakan kemampuanmu.",
+            "setting_en": "At a small party, a friend asks what you can do.",
+            "goal_id": "Memakai 〜ことができます／できません.",
+            "goal_en": "Use ~koto ga dekimasu / dekimasen.",
+            "patterns": [
+                "V(辞書形)ことが できます",
+                "V(辞書形)ことが できません",
+                "まだまだです"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l18-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 料理《りょうり》が 上手《じょうず》ですね。",
+                    "speak": "ブディさんは りょうりが じょうずですね。",
+                    "id_text": "Budi pandai memasak ya.",
+                    "en_text": "Budi, you're good at cooking.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t1.mp3"
+                },
+                {
+                    "id": "l18-s2-t2",
+                    "who": "you",
+                    "ja": "いいえ、まだまだです。でも、カレーを 作《つく》る ことが できます。",
+                    "speak": "いいえ、まだまだです。でも、カレーを つくる ことが できます。",
+                    "id_text": "Tidak, belum seberapa. Tapi saya bisa membuat kari.",
+                    "accept": [
+                        "いいえ、まだまだです。でも、カレーを 作る ことが できます。",
+                        "いいえ、まだまだです。でも、カレーを作ることができます。"
+                    ],
+                    "en_text": "No, not yet. But I can make curry.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t2.mp3"
+                },
+                {
+                    "id": "l18-s2-t3",
+                    "who": "partner",
+                    "ja": "すごいですね。車《くるま》を 運転《うんてん》する ことが できますか。",
+                    "speak": "すごいですね。くるまを うんてんする ことが できますか。",
+                    "id_text": "Hebat. Bisakah kamu menyetir mobil?",
+                    "en_text": "That's great. Can you drive a car?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t3.mp3"
+                },
+                {
+                    "id": "l18-s2-t4",
+                    "who": "you",
+                    "ja": "はい。運転《うんてん》する ことが できます。毎日《まいにち》 車《くるま》で 会社《かいしゃ》へ 行《い》きます。",
+                    "speak": "はい。うんてんする ことが できます。まいにち くるまで かいしゃへ いきます。",
+                    "id_text": "Ya, bisa. Setiap hari saya ke kantor naik mobil.",
+                    "accept": [
+                        "はい。運転する ことが できます。毎日 車で 会社へ 行きます。",
+                        "はい。運転することができます。毎日車で会社へ行きます。"
+                    ],
+                    "en_text": "Yes, I can. I go to the office by car every day.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t4.mp3"
+                },
+                {
+                    "id": "l18-s2-t5",
+                    "who": "partner",
+                    "ja": "ピアノを 弾《ひ》く ことが できますか。",
+                    "speak": "ピアノを ひく ことが できますか。",
+                    "id_text": "Bisakah kamu bermain piano?",
+                    "en_text": "Can you play the piano?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t5.mp3"
+                },
+                {
+                    "id": "l18-s2-t6",
+                    "who": "you",
+                    "ja": "いいえ、弾《ひ》く ことが できません。でも、歌《うた》を 歌《うた》う ことが できます。",
+                    "speak": "いいえ、ひく ことが できません。でも、うたを うたう ことが できます。",
+                    "id_text": "Tidak, saya tidak bisa bermain piano. Tapi saya bisa menyanyi.",
+                    "accept": [
+                        "いいえ、弾く ことが できません。でも、歌を 歌う ことが できます。",
+                        "いいえ、弾くことができません。でも、歌を歌うことができます。"
+                    ],
+                    "en_text": "No, I can't play. But I can sing songs.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t6.mp3"
+                },
+                {
+                    "id": "l18-s2-t7",
+                    "who": "partner",
+                    "ja": "いいですね。ぜひ 歌《うた》ってください。",
+                    "speak": "いいですね。ぜひ うたってください。",
+                    "id_text": "Bagus. Tolong menyanyilah.",
+                    "en_text": "Nice. Please do sing for us.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l18-s3",
+            "title_id": "Sebelum tidur",
+            "title_en": "Before going to bed",
+            "setting_id": "Rekan kerja bertanya kebiasaanmu sebelum tidur.",
+            "setting_en": "A colleague asks about your habits before bed.",
+            "goal_id": "Memakai 〜まえに (V kamus／N の).",
+            "goal_en": "Use ~mae ni (dictionary form / N no).",
+            "patterns": [
+                "V(辞書形)まえに、V",
+                "Nの まえに、V"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l18-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんは 寝《ね》る まえに、何《なに》を しますか。",
+                    "speak": "ブディさんは ねる まえに、なにを しますか。",
+                    "id_text": "Sebelum tidur, Budi melakukan apa?",
+                    "en_text": "Budi, what do you do before you go to bed?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t1.mp3"
+                },
+                {
+                    "id": "l18-s3-t2",
+                    "who": "you",
+                    "ja": "寝《ね》る まえに、日記《にっき》を 書《か》きます。",
+                    "speak": "ねる まえに、にっきを かきます。",
+                    "id_text": "Sebelum tidur, saya menulis buku harian.",
+                    "accept": [
+                        "寝る まえに、日記を 書きます。",
+                        "寝るまえに、日記を書きます。"
+                    ],
+                    "en_text": "Before I sleep, I write in my diary.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t2.mp3"
+                },
+                {
+                    "id": "l18-s3-t3",
+                    "who": "partner",
+                    "ja": "毎晩《まいばん》ですか。",
+                    "speak": "まいばんですか。",
+                    "id_text": "Setiap malam?",
+                    "en_text": "Every night?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t3.mp3"
+                },
+                {
+                    "id": "l18-s3-t4",
+                    "who": "you",
+                    "ja": "はい、毎晩《まいばん》です。そして、寝《ね》る まえに、お祈《いの》りも します。",
+                    "speak": "はい、まいばんです。そして、ねる まえに、おいのりも します。",
+                    "id_text": "Ya, setiap malam. Dan sebelum tidur saya juga berdoa.",
+                    "accept": [
+                        "はい、毎晩です。そして、寝る まえに、お祈りも します。",
+                        "はい、毎晩です。そして、寝るまえに、お祈りもします。"
+                    ],
+                    "en_text": "Yes, every night. And before sleeping I also pray.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t4.mp3"
+                },
+                {
+                    "id": "l18-s3-t5",
+                    "who": "partner",
+                    "ja": "そうですか。私《わたし》は 食事《しょくじ》の まえに、手《て》を 洗《あら》います。",
+                    "speak": "そうですか。わたしは しょくじの まえに、てを あらいます。",
+                    "id_text": "Begitu ya. Saya mencuci tangan sebelum makan.",
+                    "en_text": "I see. I wash my hands before meals.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t5.mp3"
+                },
+                {
+                    "id": "l18-s3-t6",
+                    "who": "you",
+                    "ja": "インドネシアを 出《で》る まえに、日本語《にほんご》を 勉強《べんきょう》しました。",
+                    "speak": "インドネシアを でる まえに、にほんごを べんきょうしました。",
+                    "id_text": "Sebelum meninggalkan Indonesia, saya belajar bahasa Jepang.",
+                    "accept": [
+                        "インドネシアを 出る まえに、日本語を 勉強しました。",
+                        "インドネシアを出るまえに、日本語を勉強しました。"
+                    ],
+                    "en_text": "Before leaving Indonesia, I studied Japanese.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t6.mp3"
+                },
+                {
+                    "id": "l18-s3-t7",
+                    "who": "partner",
+                    "ja": "日本語《にほんご》が 上手《じょうず》ですね。",
+                    "speak": "にほんごが じょうずですね。",
+                    "id_text": "Bahasa Jepangmu bagus ya.",
+                    "en_text": "Your Japanese is good.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l18-s4",
+            "title_id": "Mengajak ke konser",
+            "title_en": "Inviting someone to a concert",
+            "setting_id": "Temanmu mengajak ke konser, tetapi tiket sulit dipesan.",
+            "setting_en": "A friend invites you to a concert, but tickets are hard to book.",
+            "goal_id": "Memakai なかなか 〜ません, ぜひ, dan ことができます.",
+            "goal_en": "Use nakanaka ~masen, zehi, and ~koto ga dekimasu.",
+            "patterns": [
+                "なかなか 〜ません",
+                "ぜひ 〜",
+                "V(辞書形)ことが できます"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l18-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、来週《らいしゅう》の コンサートに 行《い》きませんか。",
+                    "speak": "ブディさん、らいしゅうの コンサートに いきませんか。",
+                    "id_text": "Budi, mau pergi ke konser minggu depan?",
+                    "en_text": "Budi, would you like to go to the concert next week?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t1.mp3"
+                },
+                {
+                    "id": "l18-s4-t2",
+                    "who": "you",
+                    "ja": "いいですね。ぜひ 行《い》きたいです。チケットは ありますか。",
+                    "speak": "いいですね。ぜひ いきたいです。チケットは ありますか。",
+                    "id_text": "Bagus. Saya ingin sekali pergi. Apakah tiketnya ada?",
+                    "accept": [
+                        "いいですね。ぜひ 行きたいです。チケットは ありますか。",
+                        "いいですね。ぜひ行きたいです。チケットはありますか。"
+                    ],
+                    "en_text": "Sounds good. I'd really like to go. Do we have tickets?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t2.mp3"
+                },
+                {
+                    "id": "l18-s4-t3",
+                    "who": "partner",
+                    "ja": "まだです。でも、なかなか チケットを 予約《よやく》する ことが できません。",
+                    "speak": "まだです。でも、なかなか チケットを よやくする ことが できません。",
+                    "id_text": "Belum. Tapi tiketnya tidak mudah dipesan.",
+                    "en_text": "Not yet. But it's not easy to book tickets.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t3.mp3"
+                },
+                {
+                    "id": "l18-s4-t4",
+                    "who": "you",
+                    "ja": "インターネットで 予約《よやく》する ことが できますか。",
+                    "speak": "インターネットで よやくする ことが できますか。",
+                    "id_text": "Bisakah memesannya lewat internet?",
+                    "accept": [
+                        "インターネットで 予約する ことが できますか。",
+                        "インターネットで予約することができますか。"
+                    ],
+                    "en_text": "Can we book them on the internet?",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t4.mp3"
+                },
+                {
+                    "id": "l18-s4-t5",
+                    "who": "partner",
+                    "ja": "ええ。予約《よやく》してから、コンビニで 現金《げんきん》で 払《はら》わなければなりません。",
+                    "speak": "ええ。よやくしてから、コンビニで げんきんで はらわなければなりません。",
+                    "id_text": "Ya. Setelah memesan, harus membayar tunai di minimarket.",
+                    "en_text": "Yes. After booking, you have to pay in cash at a convenience store.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t5.mp3"
+                },
+                {
+                    "id": "l18-s4-t6",
+                    "who": "you",
+                    "ja": "現金《げんきん》ですね。銀行《ぎんこう》で お金《かね》を 下《お》ろしてから、行《い》きます。",
+                    "speak": "げんきんですね。ぎんこうで おかねを おろしてから、いきます。",
+                    "id_text": "Tunai ya. Setelah menarik uang di bank, saya akan pergi.",
+                    "accept": [
+                        "現金ですね。銀行で お金を 下ろしてから、行きます。",
+                        "現金ですね。銀行でお金を下ろしてから、行きます。"
+                    ],
+                    "en_text": "Cash, I see. I'll withdraw money at the bank and then go.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t6.mp3"
+                },
+                {
+                    "id": "l18-s4-t7",
+                    "who": "partner",
+                    "ja": "ありがとう。ぜひ いっしょに 行《い》きましょう。",
+                    "speak": "ありがとう。ぜひ いっしょに いきましょう。",
+                    "id_text": "Terima kasih. Mari kita pergi bersama.",
+                    "en_text": "Thanks. Let's definitely go together.",
+                    "audio": "/audio/kaiwa/lesson-18/l18-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

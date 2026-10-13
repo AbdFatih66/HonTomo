@@ -1,0 +1,345 @@
+{
+    "id": 11,
+    "focus": "Menghitung dan lamanya — 〜人・〜つ・〜枚・〜台・〜回、〜時間・〜週間・〜か月、どのくらい・かかります・〜だけ",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ハンさんは、何人家族ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "五人です。父と母と、姉と、弟がいます。"
+            },
+            {
+                "speaker": "female",
+                "text": "お姉さんも、日本にいますか。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ、みんな、国にいます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-11/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l11-kq1",
+                "prompt": "ハンさんの　お姉《ねえ》さんは　いま　どこに　いますか。",
+                "choices": [
+                    "日本《にほん》にいます",
+                    "国《くに》にいます",
+                    "わかりません"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Han bilang seluruh keluarganya (termasuk kakak perempuan) ada di negaranya, bukan di Jepang. Jawaban: di negara asal.",
+                    "en": "Han says his whole family, including his older sister, is in his home country, not Japan. Answer: in his home country."
+                }
+            },
+            {
+                "id": "l11-kq2",
+                "prompt": "ハンさんの　家族《かぞく》は　何人《なんにん》ですか。",
+                "choices": [
+                    "三人《さんにん》",
+                    "四人《よにん》",
+                    "五人《ごにん》"
+                ],
+                "answer": 2,
+                "translate": {
+                    "id": "Han bilang keluarganya berjumlah lima orang. Jawaban: 5 orang.",
+                    "en": "Han says his family has five people. Answer: five people."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l11-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさんの学校に、学生が何人いますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "二十人います。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q1.mp3",
+            "prompt": "ケンさんの　学校《がっこう》に　学生《がくせい》は　何人《なんにん》　いますか。",
+            "choices": [
+                "十人《じゅうにん》",
+                "十二人《じゅうににん》",
+                "二十人《にじゅうにん》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Di sekolah Ken ada berapa siswa?' 'Ada dua puluh orang.' Jawaban: 20 orang.",
+                "en": "Audio: 'How many students are at Ken's school?' 'Twenty.' Answer: 20 people."
+            }
+        },
+        {
+            "id": "l11-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "みかんを、いくつ買いましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "やっつ買いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q2.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　みかんを　いくつ　買《か》いましたか。",
+            "choices": [
+                "六《むっ》つ",
+                "八《やっ》つ",
+                "九《ここの》つ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Kamu beli jeruk berapa?' 'Saya beli delapan.' Jawaban: 8 buah.",
+                "en": "Audio: 'How many mandarins did you buy?' 'Eight.' Answer: eight."
+            }
+        },
+        {
+            "id": "l11-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "いらっしゃいませ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すみません。封筒を五枚ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "五枚ですね。ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q3.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　封筒《ふうとう》を　何枚《なんまい》　買《か》いますか。",
+            "choices": [
+                "三枚《さんまい》",
+                "十枚《じゅうまい》",
+                "五枚《ごまい》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Selamat datang.' 'Permisi, saya minta lima amplop.' Jawaban: 5 lembar.",
+                "en": "Audio: 'Welcome.' 'Excuse me, five envelopes, please.' Answer: five."
+            }
+        },
+        {
+            "id": "l11-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あなたのうちに、テレビが何台ありますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "二台あります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q4.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　うちに　テレビは　何台《なんだい》　ありますか。",
+            "choices": [
+                "一台《いちだい》",
+                "二台《にだい》",
+                "三台《さんだい》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Di rumah Anda ada berapa TV?' 'Ada dua.' Jawaban: 2 unit.",
+                "en": "Audio: 'How many TVs do you have at home?' 'Two.' Answer: two."
+            }
+        },
+        {
+            "id": "l11-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "東京から大阪まで、新幹線で何時間かかりますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "二時間半ぐらいかかります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q5.mp3",
+            "prompt": "新幹線《しんかんせん》で　どのくらい　かかりますか。",
+            "choices": [
+                "三時間《さんじかん》",
+                "一時間半《いちじかんはん》",
+                "二時間半《にじかんはん》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Dari Tokyo ke Osaka naik shinkansen berapa jam?' 'Sekitar dua setengah jam.' Jawaban: 2,5 jam.",
+                "en": "Audio: 'How many hours from Tokyo to Osaka by shinkansen?' 'About two and a half hours.' Answer: 2.5 hours."
+            }
+        },
+        {
+            "id": "l11-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさんは、何人家族ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "四人です。父と母と妹と、わたしです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "妹さんは、学生ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、会社員です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q6.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　家族《かぞく》は　何人《なんにん》ですか。",
+            "choices": [
+                "三人《さんにん》",
+                "五人《ごにん》",
+                "四人《よにん》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Berapa orang anggota keluarga si laki-laki? Jawaban: 4 orang.",
+                "en": "How many people are in the man's family? Answer: four."
+            }
+        },
+        {
+            "id": "l11-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません。はがきを四枚ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。四枚で、二百四十円です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい、どうぞ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q7.mp3",
+            "prompt": "はがきは　全部《ぜんぶ》で　いくらですか。",
+            "choices": [
+                "百四十円《ひゃくよんじゅうえん》",
+                "二百四十円《にひゃくよんじゅうえん》",
+                "三百四十円《さんびゃくよんじゅうえん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Berapa total harga kartu pos? Jawaban: 240 yen.",
+                "en": "How much are the postcards in total? Answer: 240 yen."
+            }
+        },
+        {
+            "id": "l11-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "このシャツを、三枚ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。三枚で、四千五百円です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "高いですね。じゃ、二枚ください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q8.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　シャツを　三枚《さんまい》　買《か》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Si perempuan membeli tiga kemeja. Jawaban: Salah (×) — dia membeli dua.",
+                "en": "The woman bought three shirts. Answer: False (×) — she bought two."
+            }
+        },
+        {
+            "id": "l11-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "うちから駅まで、歩いて何分かかりますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "十五分です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "バスは。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "バスは、五分です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q9.mp3",
+            "prompt": "バスで　駅《えき》まで　五分《ごふん》　かかります。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Naik bus ke stasiun 5 menit. Jawaban: Benar (○).",
+                "en": "It takes five minutes to the station by bus. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l11-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、日本語を、どのくらい勉強しましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はちかげつです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "毎日、勉強しましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、一週間に、四日だけです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-11/l11-q10.mp3",
+            "prompt": "ハンナさんは　日本語《にほんご》を　八《はち》か月《げつ》　勉強《べんきょう》しました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hanna belajar bahasa Jepang selama delapan bulan. Jawaban: Benar (○).",
+                "en": "Hanna studied Japanese for eight months. Answer: True (○)."
+            }
+        }
+    ]
+}

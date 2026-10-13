@@ -1,0 +1,328 @@
+{
+    "id": "n3-1",
+    "level": "N3",
+    "focus": "N3 Pelajaran 1 — Vて もらえませんか／いただけませんか, Nの ようだ／ような／ように, Vる こと, N１を N２と 言う, N１という N２, 〜ても, N１じゃなくて N２, 〜のだ, 何人も・何回も・何枚も",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさん、いらっしゃい。どうぞ、上がって ください。"
+            },
+            {
+                "speaker": "male",
+                "text": "おじゃまします。この 部屋は 畳ですね。"
+            },
+            {
+                "speaker": "female",
+                "text": "ええ。座布団を 敷きますから、ここに 座って ください。"
+            },
+            {
+                "speaker": "male",
+                "text": "正座は ちょっと 苦手なんですが、楽に しても いいですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "もちろん。足を 伸ばしても いいですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとうございます。畳の においが いいですね。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-1/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l1-kq1",
+                "prompt": "二人《ふたり》は どこに いますか。",
+                "choices": [
+                    "畳《たたみ》の 部屋《へや》",
+                    "会社《かいしゃ》",
+                    "病院《びょういん》"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Di mana mereka berada? — Di ruangan bertatami.",
+                    "en": "Where are they? — In a tatami room."
+                }
+            },
+            {
+                "id": "n3l1-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は どうして 楽《らく》に しても いいか 聞《き》きましたか。",
+                "choices": [
+                    "正座《せいざ》が 苦手《にがて》だからです",
+                    "座布団《ざぶとん》が ないからです",
+                    "畳《たたみ》が 古《ふる》いからです"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Mengapa ia bertanya apakah boleh duduk santai? — Karena kurang bisa duduk bersimpuh.",
+                    "en": "Why did he ask if he could relax? — Because he is not good at kneeling formally."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l1-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません、この 荷物を 二階まで 運んで いただけませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、いいですよ。この 箱だけですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、あそこの 青い かばんも お願いします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 何《なに》を 運《はこ》びますか。",
+            "choices": [
+                "箱《はこ》だけ",
+                "箱《はこ》と 青《あお》い かばん",
+                "青《あお》い かばんだけ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa yang akan dibawa laki-laki itu? — Kotak dan tas biru.",
+                "en": "What will the man carry? — The box and the blue bag."
+            }
+        },
+        {
+            "id": "n3l1-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "新しい 事務所は どうですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "広くて、ホテルのようですよ。でも、机が 少し 古いんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q2.mp3",
+            "prompt": "新《あたら》しい 事務所《じむしょ》は どんな 事務所《じむしょ》ですか。",
+            "choices": [
+                "小《ちい》さくて 古《ふる》いです",
+                "机《つくえ》が 新《あたら》しいです",
+                "ホテルのように 広《ひろ》いです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Kantor baru itu seperti apa? — Luas seperti hotel.",
+                "en": "What is the new office like? — Spacious, like a hotel."
+            }
+        },
+        {
+            "id": "n3l1-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ご趣味は 何ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "散歩しながら 写真を 撮る ことです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいですね。私は 料理を 作る ことが 好きなんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q3.mp3",
+            "prompt": "女《おんな》の 人《ひと》の 趣味《しゅみ》は 何《なん》ですか。",
+            "choices": [
+                "料理《りょうり》を 作《つく》る こと",
+                "写真《しゃしん》を 撮《と》る こと",
+                "散歩《さんぽ》の 本《ほん》を 読《よ》む こと"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apa hobi perempuan itu? — Memotret.",
+                "en": "What is the woman's hobby? — Taking photos."
+            }
+        },
+        {
+            "id": "n3l1-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日、田中という 人が 来ましたよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どこの 会社の 人ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "青空商事という 会社の 方だそうです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q4.mp3",
+            "prompt": "田中《たなか》さんは どこの 人《ひと》ですか。",
+            "choices": [
+                "大空《おおぞら》商事《しょうじ》",
+                "青空《あおぞら》商事《しょうじ》",
+                "田中《たなか》商事《しょうじ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pak Tanaka dari mana? — Dari Aozora Shoji.",
+                "en": "Where is Mr. Tanaka from? — Aozora Shoji."
+            }
+        },
+        {
+            "id": "n3l1-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "明日は 雨が 降っても、試合を しますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、どんなに 寒くても やります。でも、雪が たくさん 降ったら 中止です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q5.mp3",
+            "prompt": "明日《あした》、雨《あめ》が 降《ふ》ったら 試合《しあい》は どうなりますか。",
+            "choices": [
+                "中止《ちゅうし》に なります",
+                "来週《らいしゅう》に なります",
+                "試合《しあい》を します"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Jika besok hujan, pertandingannya bagaimana? — Tetap diadakan.",
+                "en": "If it rains tomorrow, what happens to the match? — It is held."
+            }
+        },
+        {
+            "id": "n3l1-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、写真を 撮って もらえませんか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、撮《と》って もらいます。",
+                "いいえ、撮《と》りました。",
+                "はい、いいですよ。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Maukah Anda memotretkan saya? — Ya, boleh.",
+                "en": "Could you take a photo for me? — Yes, of course."
+            }
+        },
+        {
+            "id": "n3l1-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "お正月に 食べる この 料理は 何と 言いますか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "おせち料理《りょうり》と 言《い》います。",
+                "おせち料理《りょうり》に 言《い》いました。",
+                "おせち料理《りょうり》を 言《い》います。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Masakan Tahun Baru ini disebut apa? — Disebut osechi ryouri.",
+                "en": "What is this New Year food called? — It is called osechi ryouri."
+            }
+        },
+        {
+            "id": "n3l1-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "昨日の 夜は ほとんど 寝て いないのです。隣の 部屋が うるさかったのです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "大変でしたね。今日は 早く 休んで ください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q8.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 昨日《きのう》 よく 寝《ね》ました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu tidur nyenyak semalam. → ×",
+                "en": "The man slept well last night. → ×"
+            }
+        },
+        {
+            "id": "n3l1-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日の セールは すごかったですよ。店の 前に 人が 何十人も 並んで いました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "買えましたか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "二時間も 待って、やっと 買えました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q9.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 二時間《にじかん》 待《ま》ちました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan itu menunggu dua jam. → ○",
+                "en": "The woman waited two hours. → ○"
+            }
+        },
+        {
+            "id": "n3l1-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "今夜は 肉を 食べに 行きませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "肉じゃなくて、魚が いいなあ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃ、寿司に しましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-1/n3l1-q10.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 肉《にく》が 食《た》べたいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu ingin makan daging. → ×",
+                "en": "The woman wants to eat meat. → ×"
+            }
+        }
+    ]
+}

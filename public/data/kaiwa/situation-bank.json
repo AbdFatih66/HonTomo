@@ -1,0 +1,1437 @@
+{
+    "id": "bank",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Bank & Kirim Uang",
+    "title_en": "Bank & Sending Money",
+    "note_id": "Nama bank (Bank Midori), jumlah, kurs, biaya, dan hari di jawaban contoh hanya contoh: ganti dengan keadaanmu sendiri. Biaya dan syarat berbeda tiap bank, jadi tanyakan 手数料 dan レート lebih dulu. Jangan pernah mengucapkan nomor PIN keras-keras di loket.",
+    "note_en": "The bank name (Midori Bank), amounts, rates, fees and days in the sample answers are examples: replace them with your own situation. Fees and conditions differ by bank, so ask about the 手数料 and レート first. Never say your PIN out loud at the counter.",
+    "scenarios": [
+        {
+            "id": "bank-s1",
+            "title_id": "Membuka rekening",
+            "title_en": "Opening an account",
+            "setting_id": "Kamu datang ke loket bank untuk membuka rekening pertamamu di Jepang.",
+            "setting_en": "You come to a bank counter to open your first account in Japan.",
+            "goal_id": "Menyatakan keperluan dengan 〜たいです, menyerahkan dokumen, dan meminta bantuan menulis formulir.",
+            "goal_en": "State your purpose with 〜たいです, hand over documents, and ask for help filling in the form.",
+            "patterns": [
+                "口座を 開きたいです",
+                "〜を 見せて ください",
+                "〜て ください"
+            ],
+            "partner": {
+                "name": "まどぐち",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Katakan keperluan dulu: 口座を 開きたいです (saya ingin membuka rekening).",
+                "Dokumen yang biasanya diminta: 在留カード dan パスポート. Bawa keduanya, plus stempel/tanda tangan bila diminta.",
+                "Bila perlu pulpen: ボールペンを 貸して ください. Jika ada kata yang tidak paham, minta ulang: もう 一度 お願いします."
+            ],
+            "tips_en": [
+                "Say your purpose first: 口座を 開きたいです (I would like to open an account).",
+                "Documents usually requested: 在留カード and パスポート. Bring both, plus a seal/signature if asked.",
+                "If you need a pen: ボールペンを 貸して ください. If you miss a word, ask again: もう 一度 お願いします."
+            ],
+            "words": [
+                {
+                    "ja": "口座《こうざ》",
+                    "id": "rekening bank",
+                    "en": "bank account"
+                },
+                {
+                    "ja": "在留《ざいりゅう》カード",
+                    "id": "kartu izin tinggal",
+                    "en": "residence card"
+                },
+                {
+                    "ja": "住所《じゅうしょ》",
+                    "id": "alamat",
+                    "en": "address"
+                },
+                {
+                    "ja": "書《か》く",
+                    "id": "menulis",
+                    "en": "to write"
+                },
+                {
+                    "ja": "貸《か》す",
+                    "id": "meminjamkan",
+                    "en": "to lend"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "口座《こうざ》を 開《ひら》くには 何《なに》が いりますか。",
+                    "id": "Apa yang diperlukan untuk membuka rekening?",
+                    "en": "What do I need to open an account?"
+                },
+                {
+                    "ja": "印鑑《いんかん》は いりますか。",
+                    "id": "Apakah perlu stempel?",
+                    "en": "Do I need a seal?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。ご用件《ようけん》は 何《なん》でしょうか。",
+                    "speak": "いらっしゃいませ。ごようけんは なんでしょうか。",
+                    "id_text": "Selamat datang. Ada keperluan apa?",
+                    "en_text": "Welcome. How may I help you?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t1.mp3"
+                },
+                {
+                    "id": "bank-s1-t2",
+                    "who": "you",
+                    "ja": "口座《こうざ》を 開《ひら》きたいです。",
+                    "speak": "こうざを ひらきたいです。",
+                    "id_text": "Saya ingin membuka rekening.",
+                    "accept": [
+                        "口座を 開きたいです。",
+                        "口座を開きたいです。"
+                    ],
+                    "en_text": "I would like to open an account.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t2.mp3"
+                },
+                {
+                    "id": "bank-s1-t3",
+                    "who": "partner",
+                    "ja": "はい。在留《ざいりゅう》カードは お持《も》ちですか。",
+                    "speak": "はい。ざいりゅうカードは おもちですか。",
+                    "id_text": "Baik. Apakah Anda punya kartu izin tinggal?",
+                    "en_text": "Certainly. Do you have your residence card?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t3.mp3"
+                },
+                {
+                    "id": "bank-s1-t4",
+                    "who": "you",
+                    "ja": "はい、持《も》って います。これです。",
+                    "speak": "はい、もって います。これです。",
+                    "id_text": "Ya, saya punya. Ini.",
+                    "accept": [
+                        "はい、持って います。これです。",
+                        "はい、持っています。これです。"
+                    ],
+                    "en_text": "Yes, I have it. Here it is.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t4.mp3"
+                },
+                {
+                    "id": "bank-s1-t5",
+                    "who": "partner",
+                    "ja": "ありがとうございます。パスポートも 見《み》せて ください。",
+                    "speak": "ありがとうございます。パスポートも みせて ください。",
+                    "id_text": "Terima kasih. Tolong tunjukkan paspor juga.",
+                    "en_text": "Thank you. Please show your passport too.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t5.mp3"
+                },
+                {
+                    "id": "bank-s1-t6",
+                    "who": "you",
+                    "ja": "はい、どうぞ。パスポートも あります。",
+                    "speak": "はい、どうぞ。パスポートも あります。",
+                    "id_text": "Ya, silakan. Paspor juga ada.",
+                    "accept": [
+                        "はい、どうぞ。パスポートも あります。",
+                        "はい、どうぞ。パスポートもあります。"
+                    ],
+                    "en_text": "Here you are. I have my passport too.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t6.mp3"
+                },
+                {
+                    "id": "bank-s1-t7",
+                    "who": "partner",
+                    "ja": "確認《かくにん》しました。この 紙《かみ》に 名前《なまえ》と 住所《じゅうしょ》を 書《か》いて ください。",
+                    "speak": "かくにんしました。この かみに なまえと じゅうしょを かいて ください。",
+                    "id_text": "Sudah saya periksa. Tolong tulis nama dan alamat di kertas ini.",
+                    "en_text": "I have checked them. Please write your name and address on this form.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t7.mp3"
+                },
+                {
+                    "id": "bank-s1-t8",
+                    "who": "you",
+                    "ja": "はい。ボールペンを 貸《か》して ください。",
+                    "speak": "はい。ボールペンを かして ください。",
+                    "id_text": "Baik. Tolong pinjamkan pulpen.",
+                    "accept": [
+                        "はい。ボールペンを 貸して ください。",
+                        "はい。ボールペンを貸してください。"
+                    ],
+                    "en_text": "Yes. Please lend me a ballpoint pen.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t8.mp3"
+                },
+                {
+                    "id": "bank-s1-t9",
+                    "who": "partner",
+                    "ja": "どうぞ。書《か》いたら、呼《よ》んで ください。",
+                    "speak": "どうぞ。かいたら、よんで ください。",
+                    "id_text": "Silakan. Kalau sudah menulis, tolong panggil saya.",
+                    "en_text": "Here you go. When you have finished writing, please call me.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t9.mp3"
+                },
+                {
+                    "id": "bank-s1-t10",
+                    "who": "you",
+                    "ja": "わかりました。書《か》きました。お願《ねが》いします。",
+                    "speak": "わかりました。かきました。おねがいします。",
+                    "id_text": "Mengerti. Sudah saya tulis. Mohon diproses.",
+                    "accept": [
+                        "わかりました。書きました。お願いします。"
+                    ],
+                    "en_text": "Understood. I have written it. Please go ahead.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s1-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s2",
+            "title_id": "Kartu, PIN, dan buku tabungan",
+            "title_en": "Card, PIN and passbook",
+            "setting_id": "Formulir sudah selesai. Petugas menjelaskan PIN, kartu ATM, dan buku tabungan.",
+            "setting_en": "The form is done. The clerk explains the PIN, the ATM card and the passbook.",
+            "goal_id": "Bertanya dengan 〜ですか, memakai 〜ません (tidak akan), dan 〜もらえますか.",
+            "goal_en": "Ask questions with 〜ですか, use 〜ません (will not), and 〜もらえますか.",
+            "patterns": [
+                "何桁ですか",
+                "〜もらえますか",
+                "〜ても いいですか"
+            ],
+            "partner": {
+                "name": "ぎんこういん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "暗証番号 (PIN) biasanya 4 angka. Jangan pakai tanggal lahir dan jangan beri tahu siapa pun.",
+                "Kartu ATM biasanya dikirim ke rumah beberapa hari kemudian. Buku tabungan (通帳) sering bisa langsung dibawa pulang.",
+                "Ingin menyetor uang hari itu juga? Tanyakan: 〜ても いいですか."
+            ],
+            "tips_en": [
+                "A PIN (暗証番号) is usually 4 digits. Do not use your birthday and never tell anyone.",
+                "The ATM card is usually mailed to your home a few days later. The passbook (通帳) can often be taken home right away.",
+                "Want to deposit money the same day? Ask: 〜ても いいですか."
+            ],
+            "words": [
+                {
+                    "ja": "暗証番号《あんしょうばんごう》",
+                    "id": "PIN",
+                    "en": "PIN"
+                },
+                {
+                    "ja": "通帳《つうちょう》",
+                    "id": "buku tabungan",
+                    "en": "passbook"
+                },
+                {
+                    "ja": "桁《けた》",
+                    "id": "digit",
+                    "en": "digit"
+                },
+                {
+                    "ja": "届《とど》く",
+                    "id": "sampai / tiba",
+                    "en": "to arrive"
+                },
+                {
+                    "ja": "教《おし》える",
+                    "id": "memberi tahu",
+                    "en": "to tell"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "カードは いつ 届《とど》きますか。",
+                    "id": "Kapan kartunya tiba?",
+                    "en": "When will the card arrive?"
+                },
+                {
+                    "ja": "インターネットバンキングも 使《つか》えますか。",
+                    "id": "Apakah bisa internet banking?",
+                    "en": "Can I use internet banking too?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s2-t1",
+                    "who": "partner",
+                    "ja": "次《つぎ》に、暗証番号《あんしょうばんごう》を 決《き》めて ください。",
+                    "speak": "つぎに、あんしょうばんごうを きめて ください。",
+                    "id_text": "Selanjutnya, tolong tentukan PIN.",
+                    "en_text": "Next, please decide on a PIN.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t1.mp3"
+                },
+                {
+                    "id": "bank-s2-t2",
+                    "who": "you",
+                    "ja": "暗証番号《あんしょうばんごう》は 何桁《なんけた》ですか。",
+                    "speak": "あんしょうばんごうは なんけたですか。",
+                    "id_text": "PIN itu berapa digit?",
+                    "accept": [
+                        "暗証番号は 何桁ですか。",
+                        "暗証番号は何桁ですか。"
+                    ],
+                    "en_text": "How many digits is the PIN?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t2.mp3"
+                },
+                {
+                    "id": "bank-s2-t3",
+                    "who": "partner",
+                    "ja": "四桁《よんけた》の 数字《すうじ》です。誕生日《たんじょうび》は 使《つか》わないで ください。",
+                    "speak": "よんけたの すうじです。たんじょうびは つかわないで ください。",
+                    "id_text": "Angka empat digit. Jangan pakai tanggal lahir.",
+                    "en_text": "It is four digits. Please do not use your birthday.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t3.mp3"
+                },
+                {
+                    "id": "bank-s2-t4",
+                    "who": "you",
+                    "ja": "わかりました。ほかの 人《ひと》に 教《おし》えません。",
+                    "speak": "わかりました。ほかの ひとに おしえません。",
+                    "id_text": "Mengerti. Saya tidak akan memberi tahu orang lain.",
+                    "accept": [
+                        "わかりました。ほかの 人に 教えません。",
+                        "わかりました。ほかの人に教えません。"
+                    ],
+                    "en_text": "Understood. I will not tell anyone else.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t4.mp3"
+                },
+                {
+                    "id": "bank-s2-t5",
+                    "who": "partner",
+                    "ja": "そうです。カードは 一週間《いっしゅうかん》ぐらいで 家《いえ》に 届《とど》きます。",
+                    "speak": "そうです。カードは いっしゅうかんぐらいで いえに とどきます。",
+                    "id_text": "Benar. Kartu akan sampai di rumah dalam sekitar seminggu.",
+                    "en_text": "That is right. The card will arrive at your home in about a week.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t5.mp3"
+                },
+                {
+                    "id": "bank-s2-t6",
+                    "who": "you",
+                    "ja": "通帳《つうちょう》は 今日《きょう》 もらえますか。",
+                    "speak": "つうちょうは きょう もらえますか。",
+                    "id_text": "Apakah buku tabungan bisa saya terima hari ini?",
+                    "accept": [
+                        "通帳は 今日 もらえますか。",
+                        "通帳は今日もらえますか。"
+                    ],
+                    "en_text": "Can I get the passbook today?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t6.mp3"
+                },
+                {
+                    "id": "bank-s2-t7",
+                    "who": "partner",
+                    "ja": "はい。通帳《つうちょう》は 今日《きょう》 お渡《わた》しします。",
+                    "speak": "はい。つうちょうは きょう おわたしします。",
+                    "id_text": "Ya. Buku tabungan kami serahkan hari ini.",
+                    "en_text": "Yes. We will hand you the passbook today.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t7.mp3"
+                },
+                {
+                    "id": "bank-s2-t8",
+                    "who": "you",
+                    "ja": "お金《かね》を 入《い》れても いいですか。",
+                    "speak": "おかねを いれても いいですか。",
+                    "id_text": "Boleh saya menyetor uang?",
+                    "accept": [
+                        "お金を 入れても いいですか。",
+                        "お金を入れてもいいですか。"
+                    ],
+                    "en_text": "May I put money in?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t8.mp3"
+                },
+                {
+                    "id": "bank-s2-t9",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。あちらの ATMで どうぞ。",
+                    "speak": "はい、だいじょうぶです。あちらの エーティーエムで どうぞ。",
+                    "id_text": "Ya, boleh. Silakan di ATM sebelah sana.",
+                    "en_text": "Yes, that is fine. Please use the ATM over there.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s2-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s3",
+            "title_id": "Memakai ATM",
+            "title_en": "Using an ATM",
+            "setting_id": "Rekeningmu sudah jadi. Rekan kerja mengajarimu cara menarik uang di ATM.",
+            "setting_en": "Your account is ready. A coworker shows you how to withdraw money at an ATM.",
+            "goal_id": "Memakai 〜た ことが あります / ありません, 〜たいです, dan 〜ないで ください.",
+            "goal_en": "Use 〜た ことが あります / ありません, 〜たいです, and 〜ないで ください.",
+            "patterns": [
+                "〜た ことが ありません",
+                "〜を 教えて ください",
+                "〜ないで ください"
+            ],
+            "partner": {
+                "name": "わたなべ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Urutan ATM: masukkan kartu → tekan PIN → pilih 引き出し (tarik tunai) → tekan jumlah → ambil uang dan kartu.",
+                "Jangan lupa mengambil kartu: カードを 忘れないで ください. ATM di konbini dan bank punya jam layanan dan biaya berbeda.",
+                "Belum pernah? Katakan: まだ ありません, lalu minta ajari dengan 教えて ください."
+            ],
+            "tips_en": [
+                "ATM steps: insert card → enter PIN → choose 引き出し (withdraw) → enter the amount → take cash and card.",
+                "Do not forget your card: カードを 忘れないで ください. ATMs at konbini and banks have different hours and fees.",
+                "Never done it? Say まだ ありません, then ask to be taught with 教えて ください."
+            ],
+            "words": [
+                {
+                    "ja": "引《ひ》き出《だ》し",
+                    "id": "penarikan tunai",
+                    "en": "withdrawal"
+                },
+                {
+                    "ja": "押《お》す",
+                    "id": "menekan",
+                    "en": "to press"
+                },
+                {
+                    "ja": "選《えら》ぶ",
+                    "id": "memilih",
+                    "en": "to choose"
+                },
+                {
+                    "ja": "金額《きんがく》",
+                    "id": "jumlah uang",
+                    "en": "amount of money"
+                },
+                {
+                    "ja": "忘《わす》れる",
+                    "id": "lupa",
+                    "en": "to forget"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "入金《にゅうきん》は どう しますか。",
+                    "id": "Bagaimana cara menyetor?",
+                    "en": "How do I deposit?"
+                },
+                {
+                    "ja": "通帳《つうちょう》に 記帳《きちょう》したいです。",
+                    "id": "Saya ingin mencetak buku tabungan.",
+                    "en": "I want to update my passbook."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、ATMを 使《つか》った ことが ありますか。",
+                    "speak": "ブディさん、エーティーエムを つかった ことが ありますか。",
+                    "id_text": "Budi, apakah kamu pernah memakai ATM?",
+                    "en_text": "Budi, have you ever used an ATM?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t1.mp3"
+                },
+                {
+                    "id": "bank-s3-t2",
+                    "who": "you",
+                    "ja": "いいえ、まだ ありません。使《つか》い方《かた》を 教《おし》えて ください。",
+                    "speak": "いいえ、まだ ありません。つかいかたを おしえて ください。",
+                    "id_text": "Belum pernah. Tolong ajari cara memakainya.",
+                    "accept": [
+                        "いいえ、まだ ありません。使い方を 教えて ください。",
+                        "いいえ、まだありません。使い方を教えてください。"
+                    ],
+                    "en_text": "No, not yet. Please teach me how to use it.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t2.mp3"
+                },
+                {
+                    "id": "bank-s3-t3",
+                    "who": "partner",
+                    "ja": "いいですよ。まず、カードを 入《い》れて ください。",
+                    "speak": "いいですよ。まず、カードを いれて ください。",
+                    "id_text": "Boleh. Pertama, masukkan kartunya.",
+                    "en_text": "Sure. First, please insert the card.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t3.mp3"
+                },
+                {
+                    "id": "bank-s3-t4",
+                    "who": "you",
+                    "ja": "はい、入《い》れました。次《つぎ》は 何《なん》ですか。",
+                    "speak": "はい、いれました。つぎは なんですか。",
+                    "id_text": "Sudah. Selanjutnya apa?",
+                    "accept": [
+                        "はい、入れました。次は 何ですか。",
+                        "はい、入れました。次は何ですか。"
+                    ],
+                    "en_text": "Yes, I put it in. What is next?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t4.mp3"
+                },
+                {
+                    "id": "bank-s3-t5",
+                    "who": "partner",
+                    "ja": "暗証番号《あんしょうばんごう》を 押《お》して ください。それから、「引《ひ》き出《だ》し」を 選《えら》んで ください。",
+                    "speak": "あんしょうばんごうを おして ください。それから、「ひきだし」を えらんで ください。",
+                    "id_text": "Tekan PIN. Lalu pilih \"tarik tunai\".",
+                    "en_text": "Press your PIN. Then choose \"withdrawal\".",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t5.mp3"
+                },
+                {
+                    "id": "bank-s3-t6",
+                    "who": "you",
+                    "ja": "三万円《さんまんえん》を 引《ひ》き出《だ》したいです。",
+                    "speak": "さんまんえんを ひきだしたいです。",
+                    "id_text": "Saya ingin menarik tiga puluh ribu yen.",
+                    "accept": [
+                        "三万円を 引き出したいです。",
+                        "三万円を引き出したいです。"
+                    ],
+                    "en_text": "I would like to withdraw thirty thousand yen.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t6.mp3"
+                },
+                {
+                    "id": "bank-s3-t7",
+                    "who": "partner",
+                    "ja": "金額《きんがく》を 押《お》したら、お金《かね》と カードを 忘《わす》れないで ください。",
+                    "speak": "きんがくを おしたら、おかねと カードを わすれないで ください。",
+                    "id_text": "Setelah menekan jumlahnya, jangan lupa uang dan kartunya.",
+                    "en_text": "After you enter the amount, do not forget the money and the card.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t7.mp3"
+                },
+                {
+                    "id": "bank-s3-t8",
+                    "who": "you",
+                    "ja": "はい、カードを 取《と》りました。お金《かね》も 取《と》りました。",
+                    "speak": "はい、カードを とりました。おかねも とりました。",
+                    "id_text": "Ya, kartunya sudah saya ambil. Uangnya juga.",
+                    "accept": [
+                        "はい、カードを 取りました。お金も 取りました。",
+                        "はい、カードを取りました。お金も取りました。"
+                    ],
+                    "en_text": "Yes, I took the card. I took the money too.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t8.mp3"
+                },
+                {
+                    "id": "bank-s3-t9",
+                    "who": "partner",
+                    "ja": "よかった。ここは 夜《よる》九時《くじ》までですから、気《き》を つけて ください。",
+                    "speak": "よかった。ここは よるくじまでですから、きを つけて ください。",
+                    "id_text": "Bagus. Di sini sampai jam sembilan malam, jadi hati-hati.",
+                    "en_text": "Good. This one is open until nine at night, so be careful.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s3-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s4",
+            "title_id": "Kirim uang ke Indonesia (送金)",
+            "title_en": "Sending money to Indonesia (送金)",
+            "setting_id": "Kamu ingin mengirim uang ke keluarga di Indonesia lewat loket bank (海外送金).",
+            "setting_en": "You want to send money to your family in Indonesia at the bank counter (海外送金).",
+            "goal_id": "Menyatakan keinginan mengirim uang dengan 〜たいです / 〜を 送ります, menyebut jumlah, tujuan, dan penerima.",
+            "goal_en": "State that you want to send money with 〜たいです / 〜を 送ります, and give the amount, purpose and recipient.",
+            "patterns": [
+                "〜へ 送りたいです",
+                "〜に 〜を 送ります",
+                "〜は 〜です"
+            ],
+            "partner": {
+                "name": "まどぐち",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "海外送金 = kirim uang ke luar negeri. Siapkan 在留カード, nama lengkap penerima, nama bank penerima, dan nomor rekening penerima.",
+                "Petugas biasanya bertanya tujuan pengiriman (目的): 生活費 (biaya hidup), 学費 (biaya sekolah), dsb.",
+                "Menulis data penerima di memo lebih aman daripada mengucapkan nomor rekening panjang."
+            ],
+            "tips_en": [
+                "海外送金 = sending money abroad. Prepare your 在留カード, the recipient’s full name, bank name and account number.",
+                "Staff usually ask the purpose (目的): 生活費 (living costs), 学費 (school fees), etc.",
+                "Writing the recipient’s details on a memo is safer than reading out a long account number."
+            ],
+            "words": [
+                {
+                    "ja": "送金《そうきん》",
+                    "id": "kirim uang",
+                    "en": "remittance"
+                },
+                {
+                    "ja": "海外送金《かいがいそうきん》",
+                    "id": "kirim uang ke luar negeri",
+                    "en": "overseas remittance"
+                },
+                {
+                    "ja": "受取人《うけとりにん》",
+                    "id": "penerima",
+                    "en": "recipient"
+                },
+                {
+                    "ja": "生活費《せいかつひ》",
+                    "id": "biaya hidup",
+                    "en": "living expenses"
+                },
+                {
+                    "ja": "口座番号《こうざばんごう》",
+                    "id": "nomor rekening",
+                    "en": "account number"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "送金《そうきん》の 目的《もくてき》は 家族《かぞく》の 学費《がくひ》です。",
+                    "id": "Tujuan kirim uang: biaya sekolah keluarga.",
+                    "en": "The purpose is my family’s school fees."
+                },
+                {
+                    "ja": "ジャカルタの 銀行《ぎんこう》です。",
+                    "id": "Bank di Jakarta.",
+                    "en": "It is a bank in Jakarta."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s4-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。",
+                    "speak": "いらっしゃいませ。",
+                    "id_text": "Selamat datang.",
+                    "en_text": "Welcome.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t1.mp3"
+                },
+                {
+                    "id": "bank-s4-t2",
+                    "who": "you",
+                    "ja": "インドネシアへ お金《かね》を 送《おく》りたいです。",
+                    "speak": "インドネシアへ おかねを おくりたいです。",
+                    "id_text": "Saya ingin mengirim uang ke Indonesia.",
+                    "accept": [
+                        "インドネシアへ お金を 送りたいです。",
+                        "インドネシアへお金を送りたいです。"
+                    ],
+                    "en_text": "I want to send money to Indonesia.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t2.mp3"
+                },
+                {
+                    "id": "bank-s4-t3",
+                    "who": "partner",
+                    "ja": "海外送金《かいがいそうきん》ですね。送《おく》る 金額《きんがく》は いくらですか。",
+                    "speak": "かいがいそうきんですね。おくる きんがくは いくらですか。",
+                    "id_text": "Kirim uang ke luar negeri ya. Berapa jumlahnya?",
+                    "en_text": "An overseas remittance. How much would you like to send?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t3.mp3"
+                },
+                {
+                    "id": "bank-s4-t4",
+                    "who": "you",
+                    "ja": "家族《かぞく》に 十万円《じゅうまんえん》を 送《おく》ります。",
+                    "speak": "かぞくに じゅうまんえんを おくります。",
+                    "id_text": "Saya mengirim seratus ribu yen untuk keluarga.",
+                    "accept": [
+                        "家族に 十万円を 送ります。",
+                        "家族に十万円を送ります。"
+                    ],
+                    "en_text": "I will send one hundred thousand yen to my family.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t4.mp3"
+                },
+                {
+                    "id": "bank-s4-t5",
+                    "who": "partner",
+                    "ja": "送《おく》る 目的《もくてき》は 何《なん》ですか。",
+                    "speak": "おくる もくてきは なんですか。",
+                    "id_text": "Apa tujuan pengirimannya?",
+                    "en_text": "What is the purpose of the transfer?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t5.mp3"
+                },
+                {
+                    "id": "bank-s4-t6",
+                    "who": "you",
+                    "ja": "家族《かぞく》の 生活費《せいかつひ》です。",
+                    "speak": "かぞくの せいかつひです。",
+                    "id_text": "Untuk biaya hidup keluarga.",
+                    "accept": [
+                        "家族の 生活費です。",
+                        "家族の生活費です。"
+                    ],
+                    "en_text": "It is for my family’s living expenses.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t6.mp3"
+                },
+                {
+                    "id": "bank-s4-t7",
+                    "who": "partner",
+                    "ja": "受取人《うけとりにん》の 名前《なまえ》と 口座番号《こうざばんごう》を 教《おし》えて ください。",
+                    "speak": "うけとりにんの なまえと こうざばんごうを おしえて ください。",
+                    "id_text": "Tolong beri tahu nama dan nomor rekening penerima.",
+                    "en_text": "Please tell me the recipient’s name and account number.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t7.mp3"
+                },
+                {
+                    "id": "bank-s4-t8",
+                    "who": "you",
+                    "ja": "受取人《うけとりにん》は 母《はは》です。名前《なまえ》と 口座番号《こうざばんごう》は この メモに 書《か》いて あります。",
+                    "speak": "うけとりにんは ははです。なまえと こうざばんごうは この メモに かいて あります。",
+                    "id_text": "Penerimanya ibu saya. Nama dan nomor rekening sudah saya tulis di memo ini.",
+                    "accept": [
+                        "受取人は 母です。名前と 口座番号は この メモに 書いて あります。",
+                        "受取人は母です。名前と口座番号はこのメモに書いてあります。"
+                    ],
+                    "en_text": "The recipient is my mother. Her name and account number are written on this memo.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t8.mp3"
+                },
+                {
+                    "id": "bank-s4-t9",
+                    "who": "partner",
+                    "ja": "確認《かくにん》します。少《すこ》し お待《ま》ちください。",
+                    "speak": "かくにんします。すこし おまちください。",
+                    "id_text": "Saya periksa dulu. Mohon tunggu sebentar.",
+                    "en_text": "I will check. Please wait a moment.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t9.mp3"
+                },
+                {
+                    "id": "bank-s4-t10",
+                    "who": "you",
+                    "ja": "はい。お願《ねが》いします。",
+                    "speak": "はい。おねがいします。",
+                    "id_text": "Baik. Mohon bantuannya.",
+                    "accept": [
+                        "はい。お願いします。"
+                    ],
+                    "en_text": "Yes. Thank you.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s4-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s5",
+            "title_id": "Menanyakan biaya dan kurs",
+            "title_en": "Asking about fees and the exchange rate",
+            "setting_id": "Sebelum kirim uang, kamu menanyakan biaya (手数料), kurs (レート), dan lama pengiriman.",
+            "setting_en": "Before sending, you ask about the fee (手数料), the exchange rate (レート) and how long it takes.",
+            "goal_id": "Bertanya dengan いくらですか, 何ルピアに なりますか, いつ 着きますか.",
+            "goal_en": "Ask with いくらですか, 何ルピアに なりますか, and いつ 着きますか.",
+            "patterns": [
+                "〜は いくらですか",
+                "〜に なります",
+                "いつ 着きますか"
+            ],
+            "partner": {
+                "name": "ぎんこういん",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Selalu tanyakan 手数料 (biaya) dan レート (kurs) SEBELUM menyetujui. Biaya bisa ada di bank pengirim dan bank penerima.",
+                "Kurs berubah tiap hari, jadi angka di dialog hanya contoh. Tanya: 今日の レートは いくらですか.",
+                "Tanyakan juga lama pengiriman: インドネシアに いつ 着きますか."
+            ],
+            "tips_en": [
+                "Always ask about the 手数料 (fee) and レート (rate) BEFORE agreeing. Fees can apply at both the sending and receiving bank.",
+                "Rates change every day, so the figures in the dialogue are only examples. Ask: 今日の レートは いくらですか.",
+                "Also ask how long it takes: インドネシアに いつ 着きますか."
+            ],
+            "words": [
+                {
+                    "ja": "手数料《てすうりょう》",
+                    "id": "biaya administrasi",
+                    "en": "fee"
+                },
+                {
+                    "ja": "レート",
+                    "id": "kurs",
+                    "en": "exchange rate"
+                },
+                {
+                    "ja": "ルピア",
+                    "id": "rupiah",
+                    "en": "rupiah"
+                },
+                {
+                    "ja": "かかる",
+                    "id": "memakan (biaya/waktu)",
+                    "en": "to cost / to take"
+                },
+                {
+                    "ja": "変《か》わる",
+                    "id": "berubah",
+                    "en": "to change"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "いちばん 安《やす》い 方法《ほうほう》は 何《なん》ですか。",
+                    "id": "Cara apa yang paling murah?",
+                    "en": "What is the cheapest way?"
+                },
+                {
+                    "ja": "レートは どこで 見《み》られますか。",
+                    "id": "Di mana saya bisa melihat kurs?",
+                    "en": "Where can I check the rate?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s5-t1",
+                    "who": "partner",
+                    "ja": "送金《そうきん》の 手続《てつづ》きを します。何《なに》か 質問《しつもん》は ありますか。",
+                    "speak": "そうきんの てつづきを します。なにか しつもんは ありますか。",
+                    "id_text": "Kita mulai proses kirim uang. Ada pertanyaan?",
+                    "en_text": "Let us start the transfer. Do you have any questions?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t1.mp3"
+                },
+                {
+                    "id": "bank-s5-t2",
+                    "who": "you",
+                    "ja": "手数料《てすうりょう》は いくらですか。",
+                    "speak": "てすうりょうは いくらですか。",
+                    "id_text": "Biayanya berapa?",
+                    "accept": [
+                        "手数料は いくらですか。",
+                        "手数料はいくらですか。"
+                    ],
+                    "en_text": "How much is the fee?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t2.mp3"
+                },
+                {
+                    "id": "bank-s5-t3",
+                    "who": "partner",
+                    "ja": "手数料《てすうりょう》は 三千円《さんぜんえん》です。インドネシアの 銀行《ぎんこう》でも 手数料《てすうりょう》が かかる ことが あります。",
+                    "speak": "てすうりょうは さんぜんえんです。インドネシアの ぎんこうでも てすうりょうが かかる ことが あります。",
+                    "id_text": "Biayanya tiga ribu yen. Di bank Indonesia juga mungkin ada biaya.",
+                    "en_text": "The fee is 3,000 yen. The bank in Indonesia may also charge a fee.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t3.mp3"
+                },
+                {
+                    "id": "bank-s5-t4",
+                    "who": "you",
+                    "ja": "今日《きょう》の レートは いくらですか。",
+                    "speak": "きょうの レートは いくらですか。",
+                    "id_text": "Kurs hari ini berapa?",
+                    "accept": [
+                        "今日の レートは いくらですか。",
+                        "今日のレートはいくらですか。"
+                    ],
+                    "en_text": "What is today’s exchange rate?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t4.mp3"
+                },
+                {
+                    "id": "bank-s5-t5",
+                    "who": "partner",
+                    "ja": "一円《いちえん》は 百五《ひゃくご》ルピアぐらいです。レートは 毎日《まいにち》 変《か》わります。",
+                    "speak": "いちえんは ひゃくごルピアぐらいです。レートは まいにち かわります。",
+                    "id_text": "Satu yen sekitar seratus lima rupiah. Kurs berubah setiap hari.",
+                    "en_text": "One yen is about 105 rupiah. The rate changes every day.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t5.mp3"
+                },
+                {
+                    "id": "bank-s5-t6",
+                    "who": "you",
+                    "ja": "十万円《じゅうまんえん》だと、何《なん》ルピアに なりますか。",
+                    "speak": "じゅうまんえんだと、なんルピアに なりますか。",
+                    "id_text": "Kalau seratus ribu yen, jadi berapa rupiah?",
+                    "accept": [
+                        "十万円だと、何ルピアに なりますか。",
+                        "十万円だと、何ルピアになりますか。"
+                    ],
+                    "en_text": "If I send 100,000 yen, how many rupiah is that?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t6.mp3"
+                },
+                {
+                    "id": "bank-s5-t7",
+                    "who": "partner",
+                    "ja": "だいたい 一千万《いっせんまん》ルピアです。",
+                    "speak": "だいたい いっせんまんルピアです。",
+                    "id_text": "Sekitar sepuluh juta rupiah.",
+                    "en_text": "It is roughly ten million rupiah.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t7.mp3"
+                },
+                {
+                    "id": "bank-s5-t8",
+                    "who": "you",
+                    "ja": "インドネシアに いつ 着《つ》きますか。",
+                    "speak": "インドネシアに いつ つきますか。",
+                    "id_text": "Kapan sampai di Indonesia?",
+                    "accept": [
+                        "インドネシアに いつ 着きますか。",
+                        "インドネシアにいつ着きますか。"
+                    ],
+                    "en_text": "When will it arrive in Indonesia?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t8.mp3"
+                },
+                {
+                    "id": "bank-s5-t9",
+                    "who": "partner",
+                    "ja": "だいたい 二日《ふつか》から 四日《よっか》 かかります。",
+                    "speak": "だいたい ふつかから よっか かかります。",
+                    "id_text": "Biasanya butuh dua sampai empat hari.",
+                    "en_text": "It usually takes two to four days.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t9.mp3"
+                },
+                {
+                    "id": "bank-s5-t10",
+                    "who": "you",
+                    "ja": "わかりました。それで お願《ねが》いします。",
+                    "speak": "わかりました。それで おねがいします。",
+                    "id_text": "Mengerti. Tolong dilanjutkan.",
+                    "accept": [
+                        "わかりました。それで お願いします。",
+                        "わかりました。それでお願いします。"
+                    ],
+                    "en_text": "Understood. Please go ahead with that.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s5-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s6",
+            "title_id": "Uang belum sampai",
+            "title_en": "The money has not arrived",
+            "setting_id": "Tiga hari setelah kirim uang, ibumu bilang uangnya belum masuk. Kamu menelepon bank.",
+            "setting_en": "Three days after sending, your mother says the money has not come in. You phone the bank.",
+            "goal_id": "Melaporkan masalah dengan 〜て いません, memakai 〜と 思います, dan 〜たら.",
+            "goal_en": "Report a problem with 〜て いません, use 〜と 思います, and 〜たら.",
+            "patterns": [
+                "まだ 〜て いません",
+                "〜と 思います",
+                "〜かったら、〜ても いいですか"
+            ],
+            "partner": {
+                "name": "でんわの ひと",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Sebut kapan kamu mengirim: 三日前に 送金しました. Lalu masalahnya: まだ 届いて いません.",
+                "Siapkan nama dan hari pengiriman. Bank bisa melacak transfer dengan data itu.",
+                "Transfer luar negeri bisa butuh 1–2 hari lebih lama dari perkiraan. Tanyakan boleh menelepon lagi: また 電話しても いいですか."
+            ],
+            "tips_en": [
+                "Say when you sent it: 三日前に 送金しました. Then the problem: まだ 届いて いません.",
+                "Have your name and the sending day ready. The bank can trace the transfer with them.",
+                "Overseas transfers can take a day or two longer than estimated. Ask if you may call again: また 電話しても いいですか."
+            ],
+            "words": [
+                {
+                    "ja": "届《とど》く",
+                    "id": "sampai",
+                    "en": "to arrive"
+                },
+                {
+                    "ja": "調《しら》べる",
+                    "id": "memeriksa",
+                    "en": "to look into"
+                },
+                {
+                    "ja": "受《う》け取《と》る",
+                    "id": "menerima",
+                    "en": "to receive"
+                },
+                {
+                    "ja": "手続《てつづ》き",
+                    "id": "prosedur",
+                    "en": "procedure"
+                },
+                {
+                    "ja": "先週《せんしゅう》",
+                    "id": "minggu lalu",
+                    "en": "last week"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "送金《そうきん》の 控《ひか》えが あります。",
+                    "id": "Saya punya bukti transfer.",
+                    "en": "I have the transfer receipt."
+                },
+                {
+                    "ja": "いつ 確認《かくにん》できますか。",
+                    "id": "Kapan bisa dipastikan?",
+                    "en": "When can it be confirmed?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s6-t1",
+                    "who": "partner",
+                    "ja": "はい、みどり銀行《ぎんこう》です。",
+                    "speak": "はい、みどりぎんこうです。",
+                    "id_text": "Ya, Bank Midori.",
+                    "en_text": "Hello, Midori Bank.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t1.mp3"
+                },
+                {
+                    "id": "bank-s6-t2",
+                    "who": "you",
+                    "ja": "三日前《みっかまえ》に インドネシアへ 送金《そうきん》しました。まだ 届《とど》いて いません。",
+                    "speak": "みっかまえに インドネシアへ そうきんしました。まだ とどいて いません。",
+                    "id_text": "Tiga hari lalu saya kirim uang ke Indonesia. Belum sampai.",
+                    "accept": [
+                        "三日前に インドネシアへ 送金しました。まだ 届いて いません。",
+                        "三日前にインドネシアへ送金しました。まだ届いていません。"
+                    ],
+                    "en_text": "I sent money to Indonesia three days ago. It has not arrived yet.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t2.mp3"
+                },
+                {
+                    "id": "bank-s6-t3",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》と 送金《そうきん》した 日《ひ》を 教《おし》えて ください。",
+                    "speak": "おなまえと そうきんした ひを おしえて ください。",
+                    "id_text": "Tolong beri tahu nama dan hari Anda mengirim.",
+                    "en_text": "Please tell me your name and the day you sent it.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t3.mp3"
+                },
+                {
+                    "id": "bank-s6-t4",
+                    "who": "you",
+                    "ja": "ブディです。先週《せんしゅう》の 月曜日《げつようび》に 送《おく》りました。",
+                    "speak": "ブディです。せんしゅうの げつようびに おくりました。",
+                    "id_text": "Budi. Saya kirim hari Senin minggu lalu.",
+                    "accept": [
+                        "ブディです。先週の 月曜日に 送りました。",
+                        "ブディです。先週の月曜日に送りました。"
+                    ],
+                    "en_text": "I am Budi. I sent it last Monday.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t4.mp3"
+                },
+                {
+                    "id": "bank-s6-t5",
+                    "who": "partner",
+                    "ja": "調《しら》べますね。…お待《ま》たせしました。インドネシアの 銀行《ぎんこう》に もう 着《つ》いて います。",
+                    "speak": "しらべますね。…おまたせしました。インドネシアの ぎんこうに もう ついて います。",
+                    "id_text": "Saya periksa. ...Maaf menunggu. Sudah sampai di bank Indonesia.",
+                    "en_text": "Let me check. ...Sorry to keep you waiting. It has already reached the bank in Indonesia.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t5.mp3"
+                },
+                {
+                    "id": "bank-s6-t6",
+                    "who": "you",
+                    "ja": "受取人《うけとりにん》は まだ お金《かね》を 受《う》け取《と》って いません。",
+                    "speak": "うけとりにんは まだ おかねを うけとって いません。",
+                    "id_text": "Penerima belum menerima uangnya.",
+                    "accept": [
+                        "受取人は まだ お金を 受け取って いません。",
+                        "受取人はまだお金を受け取っていません。"
+                    ],
+                    "en_text": "The recipient has not received the money yet.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t6.mp3"
+                },
+                {
+                    "id": "bank-s6-t7",
+                    "who": "partner",
+                    "ja": "銀行《ぎんこう》の 手続《てつづ》きに 一日《いちにち》か 二日《ふつか》 かかる ことが あります。今日《きょう》か 明日《あした》 届《とど》くと 思《おも》います。",
+                    "speak": "ぎんこうの てつづきに いちにちか ふつか かかる ことが あります。きょうか あした とどくと おもいます。",
+                    "id_text": "Proses bank bisa butuh satu atau dua hari. Saya kira sampai hari ini atau besok.",
+                    "en_text": "The bank procedure can take a day or two. I think it will arrive today or tomorrow.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t7.mp3"
+                },
+                {
+                    "id": "bank-s6-t8",
+                    "who": "you",
+                    "ja": "明日《あした》も 届《とど》かなかったら、また 電話《でんわ》しても いいですか。",
+                    "speak": "あしたも とどかなかったら、また でんわしても いいですか。",
+                    "id_text": "Kalau besok belum sampai juga, boleh saya telepon lagi?",
+                    "accept": [
+                        "明日も 届かなかったら、また 電話しても いいですか。",
+                        "明日も届かなかったら、また電話してもいいですか。"
+                    ],
+                    "en_text": "If it still has not arrived tomorrow, may I call again?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t8.mp3"
+                },
+                {
+                    "id": "bank-s6-t9",
+                    "who": "partner",
+                    "ja": "はい、いつでも どうぞ。",
+                    "speak": "はい、いつでも どうぞ。",
+                    "id_text": "Ya, silakan kapan saja.",
+                    "en_text": "Yes, please, any time.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t9.mp3"
+                },
+                {
+                    "id": "bank-s6-t10",
+                    "who": "you",
+                    "ja": "ありがとうございました。失礼《しつれい》します。",
+                    "speak": "ありがとうございました。しつれいします。",
+                    "id_text": "Terima kasih. Permisi.",
+                    "accept": [
+                        "ありがとうございました。失礼します。"
+                    ],
+                    "en_text": "Thank you very much. Goodbye.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s6-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s7",
+            "title_id": "Kartu ATM hilang",
+            "title_en": "Lost ATM card",
+            "setting_id": "Kamu sadar kartu ATM hilang. Kamu menelepon bank untuk memblokirnya.",
+            "setting_en": "You realize your ATM card is gone. You phone the bank to block it.",
+            "goal_id": "Melaporkan kehilangan dengan 〜を なくしました, meminta 〜て ください, dan memakai 〜と 思います.",
+            "goal_en": "Report a loss with 〜を なくしました, make requests with 〜て ください, and use 〜と 思います.",
+            "patterns": [
+                "〜を なくしました",
+                "〜て ください",
+                "〜と 思います"
+            ],
+            "partner": {
+                "name": "うけつけ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Hubungi bank SECEPATNYA dan katakan: キャッシュカードを なくしました。すぐ 止めて ください (tolong segera diblokir).",
+                "Petugas akan bertanya kapan dan di mana hilangnya (いつ、どこで) dan apakah PIN pernah diberitahukan ke orang lain.",
+                "Kartu baru dibuat di loket dengan 在留カード dan 通帳. Bila kartu dicuri, laporkan juga ke polisi (110)."
+            ],
+            "tips_en": [
+                "Contact the bank AT ONCE and say: キャッシュカードを なくしました。すぐ 止めて ください (please block it right away).",
+                "Staff will ask when and where you lost it (いつ、どこで) and whether you ever told anyone your PIN.",
+                "A new card is made at the counter with your 在留カード and 通帳. If it was stolen, also report to the police (110)."
+            ],
+            "words": [
+                {
+                    "ja": "なくす",
+                    "id": "menghilangkan",
+                    "en": "to lose"
+                },
+                {
+                    "ja": "止《と》める",
+                    "id": "menghentikan / memblokir",
+                    "en": "to stop / to block"
+                },
+                {
+                    "ja": "受付《うけつけ》",
+                    "id": "bagian penerimaan",
+                    "en": "reception"
+                },
+                {
+                    "ja": "窓口《まどぐち》",
+                    "id": "loket",
+                    "en": "counter"
+                },
+                {
+                    "ja": "新《あたら》しい",
+                    "id": "baru",
+                    "en": "new"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "カードを 盗《ぬす》まれました。",
+                    "id": "Kartu saya dicuri.",
+                    "en": "My card was stolen."
+                },
+                {
+                    "ja": "警察《けいさつ》にも 連絡《れんらく》します。",
+                    "id": "Saya juga akan menghubungi polisi.",
+                    "en": "I will contact the police too."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s7-t1",
+                    "who": "partner",
+                    "ja": "はい、みどり銀行《ぎんこう》 カードの 受付《うけつけ》です。",
+                    "speak": "はい、みどりぎんこう カードの うけつけです。",
+                    "id_text": "Ya, Bank Midori, bagian kartu.",
+                    "en_text": "Hello, Midori Bank card desk.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t1.mp3"
+                },
+                {
+                    "id": "bank-s7-t2",
+                    "who": "you",
+                    "ja": "キャッシュカードを なくしました。すぐ 止《と》めて ください。",
+                    "speak": "キャッシュカードを なくしました。すぐ とめて ください。",
+                    "id_text": "Kartu ATM saya hilang. Tolong segera diblokir.",
+                    "accept": [
+                        "キャッシュカードを なくしました。すぐ 止めて ください。",
+                        "キャッシュカードをなくしました。すぐ止めてください。"
+                    ],
+                    "en_text": "I lost my cash card. Please block it right away.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t2.mp3"
+                },
+                {
+                    "id": "bank-s7-t3",
+                    "who": "partner",
+                    "ja": "わかりました。いつ、どこで なくしましたか。",
+                    "speak": "わかりました。いつ、どこで なくしましたか。",
+                    "id_text": "Baik. Kapan dan di mana hilangnya?",
+                    "en_text": "I understand. When and where did you lose it?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t3.mp3"
+                },
+                {
+                    "id": "bank-s7-t4",
+                    "who": "you",
+                    "ja": "昨日《きのう》の 夜《よる》、駅《えき》で なくしたと 思《おも》います。",
+                    "speak": "きのうの よる、えきで なくしたと おもいます。",
+                    "id_text": "Saya kira hilang tadi malam di stasiun.",
+                    "accept": [
+                        "昨日の 夜、駅で なくしたと 思います。",
+                        "昨日の夜、駅でなくしたと思います。"
+                    ],
+                    "en_text": "I think I lost it last night at the station.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t4.mp3"
+                },
+                {
+                    "id": "bank-s7-t5",
+                    "who": "partner",
+                    "ja": "カードを 止《と》めました。暗証番号《あんしょうばんごう》を ほかの 人《ひと》に 教《おし》えましたか。",
+                    "speak": "カードを とめました。あんしょうばんごうを ほかの ひとに おしえましたか。",
+                    "id_text": "Kartu sudah diblokir. Apakah Anda memberi tahu PIN ke orang lain?",
+                    "en_text": "The card is blocked. Did you tell your PIN to anyone else?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t5.mp3"
+                },
+                {
+                    "id": "bank-s7-t6",
+                    "who": "you",
+                    "ja": "いいえ、教《おし》えて いません。",
+                    "speak": "いいえ、おしえて いません。",
+                    "id_text": "Tidak, saya tidak memberi tahu.",
+                    "accept": [
+                        "いいえ、教えて いません。",
+                        "いいえ、教えていません。"
+                    ],
+                    "en_text": "No, I have not told anyone.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t6.mp3"
+                },
+                {
+                    "id": "bank-s7-t7",
+                    "who": "partner",
+                    "ja": "新《あたら》しい カードを 作《つく》ります。窓口《まどぐち》で 手続《てつづ》きを して ください。",
+                    "speak": "あたらしい カードを つくります。まどぐちで てつづきを して ください。",
+                    "id_text": "Kami buatkan kartu baru. Tolong urus di loket.",
+                    "en_text": "We will make a new card. Please do the procedure at the counter.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t7.mp3"
+                },
+                {
+                    "id": "bank-s7-t8",
+                    "who": "you",
+                    "ja": "何《なに》を 持《も》って いきますか。",
+                    "speak": "なにを もって いきますか。",
+                    "id_text": "Apa yang harus saya bawa?",
+                    "accept": [
+                        "何を 持って いきますか。",
+                        "何を持っていきますか。"
+                    ],
+                    "en_text": "What should I bring?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t8.mp3"
+                },
+                {
+                    "id": "bank-s7-t9",
+                    "who": "partner",
+                    "ja": "在留《ざいりゅう》カードと 通帳《つうちょう》を 持《も》って きて ください。",
+                    "speak": "ざいりゅうカードと つうちょうを もって きて ください。",
+                    "id_text": "Tolong bawa kartu izin tinggal dan buku tabungan.",
+                    "en_text": "Please bring your residence card and passbook.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t9.mp3"
+                },
+                {
+                    "id": "bank-s7-t10",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Mengerti. Terima kasih.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "en_text": "Understood. Thank you.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s7-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "bank-s8",
+            "title_id": "Kartu tertelan ATM & kartu baru",
+            "title_en": "Card stuck in the ATM & a new card",
+            "setting_id": "Kartu tertelan ATM karena salah PIN. Kamu minta bantuan di loket dan mengurus kartu baru (再発行).",
+            "setting_en": "The ATM kept your card after a wrong PIN. You ask at the counter and arrange a new card (再発行).",
+            "goal_id": "Menjelaskan masalah dengan 〜て しまいました, bertanya biaya (〜には いくら かかりますか), dan meminta petunjuk (〜は どう すれば いいですか).",
+            "goal_en": "Explain a problem with 〜て しまいました, ask the cost (〜には いくら かかりますか), and ask what to do (〜は どう すれば いいですか).",
+            "patterns": [
+                "〜て しまいました",
+                "〜には いくら かかりますか",
+                "どう すれば いいですか"
+            ],
+            "partner": {
+                "name": "まどぐち",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "PIN salah 3 kali biasanya mengunci kartu dan ATM menelannya. Itu untuk keamanan, bukan kerusakan.",
+                "Katakan 暗証番号を 忘れて しまいました (saya terlanjur lupa PIN). Kartu baru = 再発行, biasanya ada biaya.",
+                "Tanyakan cara mengambil uang selama menunggu: どう すれば いいですか. Bawa 在留カード dan 通帳."
+            ],
+            "tips_en": [
+                "Three wrong PINs usually lock the card and the ATM keeps it. This is for security, not a fault.",
+                "Say 暗証番号を 忘れて しまいました (I have forgotten my PIN). A new card = 再発行, usually with a fee.",
+                "Ask how to get money while you wait: どう すれば いいですか. Bring your 在留カード and 通帳."
+            ],
+            "words": [
+                {
+                    "ja": "再発行《さいはっこう》",
+                    "id": "penerbitan ulang",
+                    "en": "reissue"
+                },
+                {
+                    "ja": "忘《わす》れる",
+                    "id": "lupa",
+                    "en": "to forget"
+                },
+                {
+                    "ja": "機械《きかい》",
+                    "id": "mesin",
+                    "en": "machine"
+                },
+                {
+                    "ja": "間違《まちが》える",
+                    "id": "salah / keliru",
+                    "en": "to make a mistake"
+                },
+                {
+                    "ja": "その間《あいだ》",
+                    "id": "selama itu",
+                    "en": "in the meantime"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "暗証番号《あんしょうばんごう》を 変《か》えたいです。",
+                    "id": "Saya ingin mengganti PIN.",
+                    "en": "I want to change my PIN."
+                },
+                {
+                    "ja": "カードは 郵便《ゆうびん》で 届《とど》きますか。",
+                    "id": "Apakah kartu dikirim lewat pos?",
+                    "en": "Will the card come by post?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "bank-s8-t1",
+                    "who": "partner",
+                    "ja": "どう しましたか。",
+                    "speak": "どう しましたか。",
+                    "id_text": "Ada apa?",
+                    "en_text": "What is the matter?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t1.mp3"
+                },
+                {
+                    "id": "bank-s8-t2",
+                    "who": "you",
+                    "ja": "ATMで カードが 出《で》て きません。",
+                    "speak": "エーティーエムで カードが でて きません。",
+                    "id_text": "Kartu saya tidak keluar dari ATM.",
+                    "accept": [
+                        "ATMで カードが 出て きません。",
+                        "ATMでカードが出てきません。"
+                    ],
+                    "en_text": "My card will not come out of the ATM.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t2.mp3"
+                },
+                {
+                    "id": "bank-s8-t3",
+                    "who": "partner",
+                    "ja": "暗証番号《あんしょうばんごう》を 三回《さんかい》 間違《まちが》えましたか。",
+                    "speak": "あんしょうばんごうを さんかい まちがえましたか。",
+                    "id_text": "Apakah Anda salah memasukkan PIN tiga kali?",
+                    "en_text": "Did you get the PIN wrong three times?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t3.mp3"
+                },
+                {
+                    "id": "bank-s8-t4",
+                    "who": "you",
+                    "ja": "はい。暗証番号《あんしょうばんごう》を 忘《わす》れて しまいました。",
+                    "speak": "はい。あんしょうばんごうを わすれて しまいました。",
+                    "id_text": "Ya. Saya terlanjur lupa PIN.",
+                    "accept": [
+                        "はい。暗証番号を 忘れて しまいました。",
+                        "はい。暗証番号を忘れてしまいました。"
+                    ],
+                    "en_text": "Yes. I have forgotten my PIN.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t4.mp3"
+                },
+                {
+                    "id": "bank-s8-t5",
+                    "who": "partner",
+                    "ja": "カードは 機械《きかい》の 中《なか》に あります。新《あたら》しい カードを 作《つく》りましょう。",
+                    "speak": "カードは きかいの なかに あります。あたらしい カードを つくりましょう。",
+                    "id_text": "Kartunya ada di dalam mesin. Mari kita buat kartu baru.",
+                    "en_text": "The card is inside the machine. Let us make a new one.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t5.mp3"
+                },
+                {
+                    "id": "bank-s8-t6",
+                    "who": "you",
+                    "ja": "再発行《さいはっこう》には いくら かかりますか。",
+                    "speak": "さいはっこうには いくら かかりますか。",
+                    "id_text": "Berapa biaya penerbitan ulang?",
+                    "accept": [
+                        "再発行には いくら かかりますか。",
+                        "再発行にはいくらかかりますか。"
+                    ],
+                    "en_text": "How much does a reissue cost?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t6.mp3"
+                },
+                {
+                    "id": "bank-s8-t7",
+                    "who": "partner",
+                    "ja": "手数料《てすうりょう》は 千円《せんえん》です。二週間《にしゅうかん》ぐらいで 家《いえ》に 届《とど》きます。",
+                    "speak": "てすうりょうは せんえんです。にしゅうかんぐらいで いえに とどきます。",
+                    "id_text": "Biayanya seribu yen. Sampai di rumah sekitar dua minggu.",
+                    "en_text": "The fee is 1,000 yen. It arrives at your home in about two weeks.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t7.mp3"
+                },
+                {
+                    "id": "bank-s8-t8",
+                    "who": "you",
+                    "ja": "その間《あいだ》、お金《かね》は どう すれば いいですか。",
+                    "speak": "そのあいだ、おかねは どう すれば いいですか。",
+                    "id_text": "Selama itu, bagaimana saya mengambil uang?",
+                    "accept": [
+                        "その間、お金は どう すれば いいですか。",
+                        "その間、お金はどうすればいいですか。"
+                    ],
+                    "en_text": "In the meantime, what should I do about money?",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t8.mp3"
+                },
+                {
+                    "id": "bank-s8-t9",
+                    "who": "partner",
+                    "ja": "窓口《まどぐち》で 通帳《つうちょう》と 在留《ざいりゅう》カードを 見《み》せて ください。お金《かね》を 出《だ》せますよ。",
+                    "speak": "まどぐちで つうちょうと ざいりゅうカードを みせて ください。おかねを だせますよ。",
+                    "id_text": "Tunjukkan buku tabungan dan kartu izin tinggal di loket. Anda bisa mengambil uang.",
+                    "en_text": "Show your passbook and residence card at the counter. You can withdraw money.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t9.mp3"
+                },
+                {
+                    "id": "bank-s8-t10",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Mengerti. Terima kasih.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "en_text": "Understood. Thank you.",
+                    "audio": "/audio/kaiwa/situation-bank/bank-s8-t10.mp3"
+                }
+            ]
+        }
+    ]
+}

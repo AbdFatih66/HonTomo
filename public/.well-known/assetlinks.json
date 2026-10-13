@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "id.my.hontomo.app",
+            "sha256_cert_fingerprints": [
+                "97:37:5F:67:7F:FA:DD:24:8F:98:B2:FD:5E:FE:73:45:C3:BF:4A:2C:71:2B:BE:AA:28:88:51:C3:AA:B5:58:92"
+            ]
+        }
+    }
+]

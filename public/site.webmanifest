@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "HonTomo",
+  "short_name": "HonTomo",
+  "description": "Your Japanese Learning Companion",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0A84F0",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/maskable-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/maskable-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Hiragana & Katakana",
+      "short_name": "Kana",
+      "url": "/kana",
+      "icons": [{ "src": "/maskable-192x192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

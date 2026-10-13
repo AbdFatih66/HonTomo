@@ -1,0 +1,333 @@
+{
+    "id": 3,
+    "focus": "Tempat, negara asal, harga, lantai — ここ・そこ・あそこ・どこ、こちら、いくら、〜階",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "すみません。時計の売り場は、どこですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "時計の売り場は、三階です。"
+            },
+            {
+                "speaker": "male",
+                "text": "この時計は、いくらですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "それは、三万五千円です。"
+            },
+            {
+                "speaker": "male",
+                "text": "そうですか。ありがとうございます。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-3/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l3-kq1",
+                "prompt": "時計《とけい》の　売《う》り場《ば》は、何階《なんがい》ですか。",
+                "choices": [
+                    "二階《にかい》",
+                    "三階《さんがい》",
+                    "五階《ごかい》"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa disebutkan bagian jam ada di lantai 3. Jawaban: lantai 3.",
+                    "en": "In the kaiwa, the watch section is on the 3rd floor. Answer: 3rd floor."
+                },
+                "audio": null
+            },
+            {
+                "id": "l3-kq2",
+                "prompt": "その　時計《とけい》は、いくらですか。",
+                "choices": [
+                    "三千五百円《さんぜんごひゃくえん》",
+                    "三万五千円《さんまんごせんえん》",
+                    "五千円《ごせんえん》"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di kaiwa disebutkan harga jam itu 35.000 yen. Jawaban: 35.000 yen.",
+                    "en": "In the kaiwa, the watch costs 35,000 yen. Answer: 35,000 yen."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l3-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません。食堂は、何階ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "食堂は、二階です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q1.mp3",
+            "prompt": "食堂《しょくどう》は　何階《なんがい》ですか。",
+            "choices": [
+                "一階《いっかい》",
+                "二階《にかい》",
+                "三階《さんがい》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Permisi, kantin di lantai berapa?' 'Di lantai 2.' Jawaban: lantai 2.",
+                "en": "Audio: 'Excuse me, which floor is the cafeteria on?' 'The 2nd floor.' Answer: 2nd floor."
+            }
+        },
+        {
+            "id": "l3-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "そのかばんは、どこのですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "イタリアのです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q2.mp3",
+            "prompt": "かばんは　（　　）のです。",
+            "choices": [
+                "スイス",
+                "イタリア",
+                "ドイツ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Tas itu buatan mana?' 'Buatan Italia.' Jawaban: Italia.",
+                "en": "Audio: 'Where is that bag from?' 'From Italy.' Answer: Italy."
+            }
+        },
+        {
+            "id": "l3-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この時計は、いくらですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "一万二千円です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q3.mp3",
+            "prompt": "時計《とけい》は　いくらですか。",
+            "choices": [
+                "千二百円《せんにひゃくえん》",
+                "一万二千円《いちまんにせんえん》",
+                "十二万円《じゅうにまんえん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Berapa harga jam ini?' '12.000 yen.' Jawaban: 12.000 yen.",
+                "en": "Audio: 'How much is this watch?' '12,000 yen.' Answer: 12,000 yen."
+            }
+        },
+        {
+            "id": "l3-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ロペスさんは、どちらですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ロペスさんは、教室です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q4.mp3",
+            "prompt": "ロペスさんは　どこですか。",
+            "choices": [
+                "事務所《じむしょ》",
+                "教室《きょうしつ》",
+                "食堂《しょくどう》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Di mana Lopez?' 'Lopez ada di ruang kelas.' Jawaban: ruang kelas.",
+                "en": "Audio: 'Where is Lopez?' 'Lopez is in the classroom.' Answer: classroom."
+            }
+        },
+        {
+            "id": "l3-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ゴメスさんの会社は、何の会社ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "自動車の会社です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q5.mp3",
+            "prompt": "ゴメスさんの　会社《かいしゃ》は　何《なん》の　会社《かいしゃ》ですか。",
+            "choices": [
+                "電気《でんき》の　会社《かいしゃ》",
+                "自動車《じどうしゃ》の　会社《かいしゃ》",
+                "コンピューターの　会社《かいしゃ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Perusahaan Gomez bergerak di bidang apa?' 'Perusahaan mobil.' Jawaban: perusahaan mobil.",
+                "en": "Audio: 'What kind of company is Gomez's?' 'A car company.' Answer: a car company."
+            }
+        },
+        {
+            "id": "l3-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "失礼ですが、食堂は、どちらですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "食堂は、あちらです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "会議室は。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "会議室は、こちらです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q6.mp3",
+            "prompt": "食堂《しょくどう》は　あちらです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kantin ada di sebelah sana. Jawaban: Benar (○).",
+                "en": "The cafeteria is over there. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l3-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "森さんは、ロビーですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ロビーじゃありません。事務所です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q7.mp3",
+            "prompt": "森《もり》さんは　ロビーです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pak Mori ada di lobi. Jawaban: Salah (×) — di kantor.",
+                "en": "Mr. Mori is in the lobby. Answer: False (×) — he is in the office."
+            }
+        },
+        {
+            "id": "l3-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "お国は、どちらですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "インドネシアです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "その時計は、インドネシアのですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、スイスのです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　時計《とけい》は　インドネシアのです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Jam si laki-laki buatan Indonesia. Jawaban: Salah (×) — buatan Swiss.",
+                "en": "The man's watch is from Indonesia. Answer: False (×) — it is Swiss."
+            }
+        },
+        {
+            "id": "l3-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この本は、いくらですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "千五百円です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "じゃ、これをください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q9.mp3",
+            "prompt": "この　本《ほん》は　千五百円《せんごひゃくえん》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Buku ini 1.500 yen. Jawaban: Benar (○).",
+                "en": "This book is 1,500 yen. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l3-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。ワインの売り場は、何階ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "地下一階です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "どうも。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-3/l3-q10.mp3",
+            "prompt": "ワインの　売《う》り場《ば》は　三階《さんがい》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Bagian anggur ada di lantai 3. Jawaban: Salah (×) — di basement 1.",
+                "en": "The wine department is on the 3rd floor. Answer: False (×) — it is on B1."
+            }
+        }
+    ]
+}

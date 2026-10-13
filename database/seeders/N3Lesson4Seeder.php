@@ -1,0 +1,135 @@
+<?php
+
+namespace Database\Seeders;
+
+/**
+ * N3 Pelajaran 4: kosakata (keigo, pesan telepon, undangan dan perasaan).
+ *
+ *   php artisan db:seed --class=N3Lesson4Seeder
+ */
+class N3Lesson4Seeder extends N3LessonSeeder
+{
+    protected function unitOrder(): int
+    {
+        return 4;
+    }
+
+    protected function words(): array
+    {
+        return [
+            ['検査する', 'けんさする', 'kensa suru', 'memeriksa, menguji', 'to examine, to inspect'],
+            ['あす', 'あす', 'asu', 'besok', 'tomorrow'],
+            ['能力', 'のうりょく', 'nouryoku', 'kemampuan', 'capability'],
+            ['バザー', 'バザー', 'bazaa', 'bazar', 'bazaar'],
+            ['マスク', 'マスク', 'masuku', 'masker', 'nose and mouth mask'],
+            ['スーツケース', 'スーツケース', 'suutsukeesu', 'koper', 'suitcase'],
+            ['目が覚める', 'めがさめる', 'me ga sameru', 'terbangun, tersadar', 'to wake up, to realize'],
+            ['朝礼', 'ちょうれい', 'chourei', 'apel pagi', 'morning meeting'],
+            ['校歌', 'こうか', 'kouka', 'lagu sekolah', 'school song'],
+            ['敬語', 'けいご', 'keigo', 'bahasa hormat', 'honorific language'],
+            ['感想文', 'かんそうぶん', 'kansoubun', 'karangan kesan (misalnya tentang buku)', 'review of a book one has read'],
+            ['運動場', 'うんどうじょう', 'undoujou', 'lapangan olahraga', 'sports ground'],
+            ['いたずら', 'いたずら', 'itazura', 'keisengan, kejahilan', 'prank'],
+            ['美しい', 'うつくしい', 'utsukushii', 'indah, cantik', 'beautiful'],
+            ['世紀', 'せいき', 'seiki', 'abad', 'century'],
+            ['平和[な]', 'へいわ[な]', 'heiwa', 'damai', 'peaceful'],
+            ['人々', 'ひとびと', 'hitobito', 'orang-orang', 'people'],
+            ['願う', 'ねがう', 'negau', 'mengharapkan, memohon', 'to wish for, to hope for'],
+            ['文', 'ぶん', 'bun', 'kalimat, tulisan', 'sentence, style'],
+            ['書き換える', 'かきかえる', 'kakikaeru', 'menulis ulang', 'to rewrite'],
+            ['合わせる', 'あわせる', 'awaseru', 'menyesuaikan, menggabungkan', 'to combine'],
+            ['もともと', 'もともと', 'motomoto', 'sejak semula', 'originally'],
+            ['若者', 'わかもの', 'wakamono', 'anak muda', 'young person'],
+            ['〜湖', '〜こ', 'ko', 'danau ~', 'lake ~'],
+            ['深い', 'ふかい', 'fukai', 'dalam', 'deep'],
+            ['さまざま[な]', 'さまざま[な]', 'samazama', 'bermacam-macam', 'various'],
+            ['苦しい[生活が〜]', 'くるしい[せいかつが〜]', 'kurushii', 'sulit, menyusahkan [hidup]', 'hard'],
+            ['性格', 'せいかく', 'seikaku', 'watak, karakter', 'character'],
+            ['人気者', 'にんきもの', 'ninkimono', 'orang yang populer', 'popular person'],
+            ['多く', 'おおく', 'ooku', 'banyak', 'many'],
+            ['不安[な]', 'ふあん[な]', 'fuan', 'cemas, gelisah', 'worried'],
+            ['出る[製品が〜]', 'でる[せいひんが〜]', 'deru (seihin ga)', 'muncul di pasaran [produk]', 'to come on sale'],
+            ['雷', 'かみなり', 'kaminari', 'petir, guntur', 'thunder'],
+            ['うち', 'うち', 'uchi', 'kami, kita', 'we, us'],
+            ['残念[な]', 'ざんねん[な]', 'zannen', 'disayangkan, mengecewakan', 'disappointing, regrettable'],
+            ['認める', 'みとめる', 'mitomeru', 'mengakui, menerima', 'to accept'],
+            ['現実', 'げんじつ', 'genjitsu', 'kenyataan', 'fact, reality'],
+            ['愛する', 'あいする', 'aisuru', 'mencintai', 'to love'],
+            ['首都', 'しゅと', 'shuto', 'ibu kota', 'capital city'],
+            ['伝言', 'でんごん', 'dengon', 'pesan (titipan)', 'message'],
+            ['留守番電話', 'るすばんでんわ', 'rusuban denwa', 'mesin penjawab telepon', 'answerphone, voicemail'],
+            ['メッセージ', 'メッセージ', 'messeeji', 'pesan', 'message'],
+            ['受ける[伝言を〜]', 'うける[でんごんを〜]', 'ukeru', 'menerima [pesan]', 'to receive [a message]'],
+            ['入れる[メッセージを〜]', 'いれる[メッセージを〜]', 'ireru', 'meninggalkan [pesan]', 'to leave [a message]'],
+            ['差し上げる[電話を〜]', 'さしあげる[でんわを〜]', 'sashiageru', 'menelepon (bentuk hormat)', 'to give [a call]'],
+            ['そのように', 'そのように', 'sono you ni', 'seperti itu', 'like that'],
+            ['出る[電話に〜]', 'でる[でんわに〜]', 'deru (denwa ni)', 'mengangkat [telepon]', 'to answer [the telephone]'],
+            ['急[な]', 'きゅう[な]', 'kyuu', 'mendadak, mendesak', 'urgent, sudden'],
+            ['入る[仕事が〜]', 'はいる[しごとが〜]', 'hairu', 'masuk [pekerjaan]', '[work] to come in'],
+            ['取り消す', 'とりけす', 'torikesu', 'membatalkan, menghapus', 'to cancel, to erase'],
+            ['来客中', 'らいきゃくちゅう', 'raikyakuchuu', 'sedang ada tamu', 'with a visitor'],
+            ['食パン', 'しょくパン', 'shokupan', 'roti tawar', 'bread'],
+            ['売り切れ', 'うりきれ', 'urikire', 'habis terjual', 'sold out'],
+            ['バーゲンセール', 'バーゲンセール', 'baagen seeru', 'obral', 'bargain sale'],
+            ['案内状', 'あんないじょう', 'annaijou', 'surat undangan', 'written invitation'],
+            ['〜状[招待〜]', '〜じょう[しょうたい〜]', 'jou', 'surat ~ [undangan]', 'letter, note, card'],
+            ['遠い[電話が〜]', 'とおい[でんわが〜]', 'tooi', 'samar, kurang jelas [suara telepon]', 'faint, hard to hear'],
+            ['〜嫌い', '〜ぎらい', 'girai', 'tidak suka ~', 'dislike'],
+            ['時代', 'じだい', 'jidai', 'zaman, era', 'period, era, times'],
+            ['順に', 'じゅんに', 'jun ni', 'berurutan', 'in sequence'],
+            ['失礼[な]', 'しつれい[な]', 'shitsurei', 'tidak sopan', 'rude'],
+            ['勧める', 'すすめる', 'susumeru', 'menyarankan, merekomendasikan', 'to recommend'],
+            ['腹を立てる', 'はらをたてる', 'hara o tateru', 'marah', 'to get angry'],
+            ['味わう', 'あじわう', 'ajiwau', 'merasakan, menikmati', 'to experience, to taste'],
+            ['つなぐ', 'つなぐ', 'tsunagu', 'menggandeng, menyambungkan', 'to hold (hands), to connect'],
+            ['エピソード', 'エピソード', 'episoodo', 'episode, cerita kecil', 'episode'],
+            ['大嫌い', 'だいきらい', 'daikirai', 'sangat benci', 'to hate'],
+            ['大〜[好き/嫌い]', 'だい〜[すき/きらい]', 'dai', 'sangat ~ [suka/benci]', 'greatly [like/dislike]'],
+            ['しつこい', 'しつこい', 'shitsukoi', 'gigih, membandel', 'persistent'],
+            ['全員', 'ぜんいん', 'zenin', 'semua orang', 'everyone'],
+            ['数日', 'すうじつ', 'suujitsu', 'beberapa hari', 'a few days'],
+            ['親せき', 'しんせき', 'shinseki', 'kerabat', 'relative'],
+            ['接続する', 'せつぞくする', 'setsuzoku suru', 'menghubungkan', 'to connect'],
+            ['申し出る', 'もうしでる', 'moushideru', 'menawarkan, mengajukan', 'to offer, to propose'],
+            ['結局', 'けっきょく', 'kekkyoku', 'pada akhirnya', 'in the end'],
+            ['早速', 'さっそく', 'sassoku', 'segera', 'immediately'],
+            ['そば', 'そば', 'soba', 'di samping, dekat', 'beside'],
+            ['取り付ける', 'とりつける', 'toritsukeru', 'memasang', 'to install'],
+            ['出席者', 'しゅっせきしゃ', 'shussekisha', 'peserta, yang hadir', 'attendee'],
+            ['料金', 'りょうきん', 'ryoukin', 'biaya, tarif', 'fee, charge'],
+
+            // Tambahan dari lembar latihan, bacaan, dan percakapan
+            ['残す', 'のこす', 'nokosu', 'meninggalkan, menyisakan', 'to leave behind'],
+            ['残る', 'のこる', 'nokoru', 'tersisa, tertinggal', 'to remain'],
+            ['電気製品', 'でんきせいひん', 'denki seihin', 'produk elektronik', 'electrical appliance'],
+            ['捨てる', 'すてる', 'suteru', 'membuang', 'to throw away'],
+            ['払う', 'はらう', 'harau', 'membayar', 'to pay'],
+            ['続ける', 'つづける', 'tsuzukeru', 'melanjutkan', 'to continue'],
+            ['込む', 'こむ', 'komu', 'padat, ramai', 'to be crowded'],
+            ['覚える', 'おぼえる', 'oboeru', 'mengingat, menghafal', 'to remember, to memorise'],
+            ['走る', 'はしる', 'hashiru', 'berlari', 'to run'],
+            ['運ぶ', 'はこぶ', 'hakobu', 'mengangkut, membawa', 'to carry'],
+            ['疲れる', 'つかれる', 'tsukareru', 'lelah', 'to get tired'],
+            ['集まる', 'あつまる', 'atsumaru', 'berkumpul', 'to gather'],
+            ['育てる', 'そだてる', 'sodateru', 'membesarkan, memelihara', 'to raise, to bring up'],
+            ['壊れる', 'こわれる', 'kowareru', 'rusak, runtuh', 'to break, to collapse'],
+            ['休む', 'やすむ', 'yasumu', 'beristirahat, libur', 'to rest, to take a day off'],
+            ['誘う', 'さそう', 'sasou', 'mengajak, mengundang', 'to invite'],
+            ['便利さ', 'べんりさ', 'benrisa', 'kepraktisan, kenyamanan', 'convenience'],
+            ['環境問題', 'かんきょうもんだい', 'kankyou mondai', 'masalah lingkungan', 'environmental problem'],
+            ['外国語', 'がいこくご', 'gaikokugo', 'bahasa asing', 'foreign language'],
+            ['千円札', 'せんえんさつ', 'sen en satsu', 'uang kertas seribu yen', '1,000-yen note'],
+            ['準備中', 'じゅんびちゅう', 'junbichuu', 'sedang dipersiapkan', 'under preparation'],
+            ['電話機', 'でんわき', 'denwaki', 'pesawat telepon', 'telephone set'],
+            ['日本語能力試験', 'にほんごのうりょくしけん', 'nihongo nouryoku shiken', 'Tes Kemampuan Bahasa Jepang (JLPT)', 'Japanese-Language Proficiency Test'],
+
+            // Ungkapan
+            ['いつもお世話になっております。', 'いつもおせわになっております。', 'itsumo osewa ni natte orimasu', 'Terima kasih atas bantuan Anda selama ini.', 'We are much obliged to you'],
+            ['あいにく……。', 'あいにく……。', 'ainiku', 'Sayangnya...', 'Unfortunately...'],
+            ['恐れ入りますが、……。', 'おそれいりますが、……。', 'osore irimasu ga', 'Maaf merepotkan, tetapi...', 'Excuse me for asking, but...'],
+            ['このままでよろしければ', 'このままでよろしければ', 'kono mama de yoroshikereba', 'Kalau begini saja tidak apa-apa...', 'If it is all right the way it is...'],
+            ['ただいまのメッセージをお預かりしました。', 'ただいまのメッセージをおあずかりしました。', 'tadaima no messeeji o oazukari shimashita', 'Pesan Anda telah kami rekam.', 'Your message has been recorded'],
+            ['ごめん。', 'ごめん。', 'gomen', 'Maaf.', 'Sorry'],
+        ];
+    }
+}

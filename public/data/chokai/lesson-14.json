@@ -1,0 +1,341 @@
+{
+    "id": 14,
+    "focus": "Permintaan dan kegiatan sekarang — 〜てください、〜ています（sedang）、〜ましょうか",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "田口さん、いま、何をしていますか。"
+            },
+            {
+                "speaker": "female",
+                "text": "手紙を書いています。"
+            },
+            {
+                "speaker": "male",
+                "text": "ちょっと、手伝いましょうか。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。じゃ、その封筒をください。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-14/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l14-kq1",
+                "prompt": "田口《たぐち》さんは　いま　何《なに》を　していますか。",
+                "choices": [
+                    "手紙《てがみ》を書《か》いています",
+                    "本《ほん》を読《よ》んでいます",
+                    "料理《りょうり》をしています"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Taguchi sedang menulis surat, dan Budi menawarkan bantuan. Jawaban: menulis surat.",
+                    "en": "Taguchi is writing a letter, and Budi offers to help. Answer: writing a letter."
+                }
+            },
+            {
+                "id": "l14-kq2",
+                "prompt": "田口《たぐち》さんは　ブディさんに　何《なに》を　お願《ねが》いしましたか。",
+                "choices": [
+                    "封筒《ふうとう》をください",
+                    "ペンをください",
+                    "手紙《てがみ》を書《か》いてください"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Taguchi meminta amplop kepada Budi. Jawaban: minta amplop.",
+                    "en": "Taguchi asks Budi for an envelope. Answer: asks for an envelope."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l14-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさん、いま、何をしていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "テレビを見ています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q1.mp3",
+            "prompt": "ハンさんは　いま　何《なに》を　していますか。",
+            "choices": [
+                "勉強《べんきょう》しています",
+                "ごはんを　食《た》べています",
+                "テレビを　見《み》ています"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Han, sekarang sedang apa?' 'Sedang menonton TV.' Jawaban: menonton TV.",
+                "en": "Audio: 'Han, what are you doing now?' 'I am watching TV.' Answer: watching TV."
+            }
+        },
+        {
+            "id": "l14-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あのう、ケンさんは、いま、何をしていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "二階で、ビデオを見ています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q2.mp3",
+            "prompt": "ケンさんは　いま　何《なに》を　していますか。",
+            "choices": [
+                "手紙《てがみ》を　書《か》いています",
+                "ビデオを　見《み》ています",
+                "新聞《しんぶん》を　読《よ》んでいます"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Ken sekarang sedang apa?' 'Di lantai dua, sedang menonton video.' Jawaban: menonton video.",
+                "en": "Audio: 'What is Ken doing now?' 'He is watching a video upstairs.' Answer: watching a video."
+            }
+        },
+        {
+            "id": "l14-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません。ちょっと、待ってください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい。何分ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "じゅっぷんぐらいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q3.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　何分《なんぷん》　待《ま》ちますか。",
+            "choices": [
+                "五分《ごふん》",
+                "十分《じゅっぷん》",
+                "十五分《じゅうごふん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Maaf, tolong tunggu sebentar.' 'Baik. Berapa menit?' 'Sekitar sepuluh menit.' Jawaban: 10 menit.",
+                "en": "Audio: 'Sorry, please wait a moment.' 'Okay. How many minutes?' 'About ten.' Answer: 10 minutes."
+            }
+        },
+        {
+            "id": "l14-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。ここに、住所を書いてください。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "はい。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q4.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　何《なに》を　書《か》きますか。",
+            "choices": [
+                "名前《なまえ》",
+                "電話番号《でんわばんごう》",
+                "住所《じゅうしょ》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Maaf, tolong tulis alamat di sini.' 'Baik.' Jawaban: alamat.",
+                "en": "Audio: 'Excuse me, please write your address here.' 'Okay.' Answer: her address."
+            }
+        },
+        {
+            "id": "l14-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "荷物、持ちましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとうございます。じゃ、その大きいかばんをお願いします。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どの　かばんを　持《も》ちますか。",
+            "choices": [
+                "小《ちい》さい　かばん",
+                "大《おお》きい　かばん",
+                "赤《あか》い　かばん"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Mau saya bawakan barangnya?' 'Terima kasih. Kalau begitu, tas yang besar itu, tolong.' Jawaban: tas yang besar.",
+                "en": "Audio: 'Shall I carry your luggage?' 'Thank you. Then, that big bag, please.' Answer: the big bag."
+            }
+        },
+        {
+            "id": "l14-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、日曜日、うちで料理を作りますから、来てください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ありがとうございます。何時に行きましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "五時に来てください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q6.mp3",
+            "prompt": "何時《なんじ》に　行《い》きますか。",
+            "choices": [
+                "4:00",
+                "6:00",
+                "5:00"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Jam berapa Budi datang? Jawaban: jam 5.",
+                "en": "What time does he go? Answer: 5:00."
+            }
+        },
+        {
+            "id": "l14-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、このレポートを、コピーしてください。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "何枚ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "五枚です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "わかりました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q7.mp3",
+            "prompt": "レポートを　何枚《なんまい》　コピーしますか。",
+            "choices": [
+                "三枚《さんまい》",
+                "五枚《ごまい》",
+                "八枚《はちまい》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laporan difotokopi berapa lembar? Jawaban: 5 lembar.",
+                "en": "How many copies of the report? Answer: five."
+            }
+        },
+        {
+            "id": "l14-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さん、その荷物、持ちましょうか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、けっこうです。軽いですから。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q8.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　荷物《にもつ》を　持《も》ちます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Si laki-laki membawakan barang. Jawaban: Salah (×) — si perempuan menolak karena ringan.",
+                "en": "The man carries the luggage. Answer: False (×) — the woman declines because it is light."
+            }
+        },
+        {
+            "id": "l14-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、いま、何を読んでいますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "日本語の新聞です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "難しいですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、ちょっと難しいです。でも、おもしろいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　いま　日本語《にほんご》の　新聞《しんぶん》を　読《よ》んでいます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Si laki-laki sekarang sedang membaca koran bahasa Jepang. Jawaban: Benar (○).",
+                "en": "The man is reading a Japanese newspaper now. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l14-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田口さん、そのペン、使っていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、使っていません。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃ、ちょっと貸してください。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、どうぞ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-14/l14-q10.mp3",
+            "prompt": "田口《たぐち》さんは　いま　ペンを　使《つか》っていません。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bu Taguchi sekarang tidak memakai pena. Jawaban: Benar (○).",
+                "en": "Ms. Taguchi is not using the pen now. Answer: True (○)."
+            }
+        }
+    ]
+}

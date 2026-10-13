@@ -1,0 +1,335 @@
+{
+    "id": 15,
+    "focus": "Izin, larangan, keadaan — 〜てもいいです、〜てはいけません、〜ています（keadaan：住む・知る・働く・作る・売る）",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "male",
+                "text": "すみません。ここで、ジュースを飲んでもいいですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "はい、いいですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "ここで、ごはんを食べてもいいですか。"
+            },
+            {
+                "speaker": "female",
+                "text": "すみません。ここで食べてはいけません。あちらの食堂でお願いします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-15/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l15-kq1",
+                "prompt": "男《おとこ》の　人《ひと》は　この　店《みせ》で　何《なに》を　食《た》べても　いいですか。",
+                "choices": [
+                    "ここで　食《た》べても　いいです",
+                    "ここで　食《た》べては　いけません、あちらの　食堂《しょくどう》へ",
+                    "何《なに》も　食《た》べては　いけません"
+                ],
+                "answer": 1,
+                "translate": {
+                    "id": "Di sini tidak boleh makan; disuruh ke ruang makan di sana. Jawaban: tidak boleh di sini, pindah ke ruang makan.",
+                    "en": "He may not eat here; he's told to go to the dining area over there. Answer: not here — go to the dining area."
+                }
+            },
+            {
+                "id": "l15-kq2",
+                "prompt": "ここで　ジュースを　飲《の》んでも　いいですか。",
+                "choices": [
+                    "はい、いいです",
+                    "いいえ、いけません",
+                    "わかりません"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Boleh minum jus di sini — dijawab boleh. Jawaban: boleh.",
+                    "en": "May he drink juice here? He is told yes. Answer: yes, it's fine."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l15-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません。ここで、電話をしてもいいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ここで電話をしてはいけません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q1.mp3",
+            "prompt": "ここで　何《なに》を　してはいけませんか。",
+            "choices": [
+                "たばこ",
+                "電話《でんわ》",
+                "写真《しゃしん》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Maaf, boleh menelepon di sini?' 'Tidak, di sini tidak boleh menelepon.' Jawaban: menelepon.",
+                "en": "Audio: 'Excuse me, may I make a phone call here?' 'No, you must not make calls here.' Answer: phone calls."
+            }
+        },
+        {
+            "id": "l15-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ハンナさん、どこに住んでいますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "横浜に住んでいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q2.mp3",
+            "prompt": "ハンナさんは　どこに　住《す》んでいますか。",
+            "choices": [
+                "大阪《おおさか》",
+                "名古屋《なごや》",
+                "横浜《よこはま》"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Hanna, tinggal di mana?' 'Saya tinggal di Yokohama.' Jawaban: Yokohama.",
+                "en": "Audio: 'Hanna, where do you live?' 'I live in Yokohama.' Answer: Yokohama."
+            }
+        },
+        {
+            "id": "l15-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブディさん、ハンさんの誕生日を、知っていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、知っています。九月ここのかです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q3.mp3",
+            "prompt": "ハンさんの　誕生日《たんじょうび》は　いつですか。",
+            "choices": [
+                "九月《くがつ》九日《ここのか》",
+                "九月《くがつ》十九日《じゅうくにち》",
+                "十月《じゅうがつ》九日《ここのか》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Audio: 'Budi, tahu ulang tahun Han?' 'Ya, tahu. Tanggal 9 September.' Jawaban: 9 September.",
+                "en": "Audio: 'Budi, do you know Han's birthday?' 'Yes. It's September 9th.' Answer: September 9."
+            }
+        },
+        {
+            "id": "l15-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさん、どこで働いていますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "スーパーで働いています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q4.mp3",
+            "prompt": "リナさんは　どこで　働《はたら》いていますか。",
+            "choices": [
+                "銀行《ぎんこう》",
+                "病院《びょういん》",
+                "スーパー"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Audio: 'Rina, bekerja di mana?' 'Saya bekerja di supermarket.' Jawaban: supermarket.",
+                "en": "Audio: 'Rina, where do you work?' 'I work at a supermarket.' Answer: a supermarket."
+            }
+        },
+        {
+            "id": "l15-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あの店では、何を売っていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "くつを売っています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q5.mp3",
+            "prompt": "あの　店《みせ》では　何《なに》を　売《う》っていますか。",
+            "choices": [
+                "かばん",
+                "くつ",
+                "かさ"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Audio: 'Toko itu menjual apa?' 'Menjual sepatu.' Jawaban: sepatu.",
+                "en": "Audio: 'What does that shop sell?' 'It sells shoes.' Answer: shoes."
+            }
+        },
+        {
+            "id": "l15-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ここで、昼ごはんを食べてもいいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q6.mp3",
+            "prompt": "ここで　昼《ひる》ごはんを　食《た》べても　いいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Boleh makan siang di sini. Jawaban: Benar (○).",
+                "en": "You may eat lunch here. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l15-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ヨンさん、うちは、どこですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "駅の近くです。ひとりで住んでいます。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ご家族は。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "国にいます。母は病院で働いています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q7.mp3",
+            "prompt": "ヨンさんは　お母《かあ》さんと　いっしょに　住《す》んでいます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Yong tinggal bersama ibunya. Jawaban: Salah (×) — dia tinggal sendiri.",
+                "en": "Yong lives with his mother. Answer: False (×) — he lives alone."
+            }
+        },
+        {
+            "id": "l15-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ジョンさんは、結婚していますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、独身です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ご兄弟は。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "兄がいます。兄は結婚しています。東京に住んでいます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q8.mp3",
+            "prompt": "ジョンさんは　独身《どくしん》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "John masih lajang. Jawaban: Benar (○).",
+                "en": "John is single. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l15-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、あの人を知っていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいえ、知りません。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "新しい日本語の先生です。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "そうですか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q9.mp3",
+            "prompt": "ケンさんは　あの　人《ひと》を　知《し》っています。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ken mengenal orang itu. Jawaban: Salah (×) — dia tidak kenal.",
+                "en": "Ken knows that person. Answer: False (×) — he does not."
+            }
+        },
+        {
+            "id": "l15-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ハンさんは、どこで働いていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "電気の会社で働いています。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "何を作っていますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "テレビを作っています。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-15/l15-q10.mp3",
+            "prompt": "ハンさんの　会社《かいしゃ》は　テレビを　売《う》っています。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perusahaan Han menjual TV. Jawaban: Salah (×) — memproduksi TV.",
+                "en": "Han's company sells TVs. Answer: False (×) — it makes TVs."
+            }
+        }
+    ]
+}

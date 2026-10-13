@@ -1,0 +1,36 @@
+<?php
+
+return [
+    'failed' => 'Email atau kata sandi salah.',
+    'password' => 'Kata sandi yang dimasukkan salah.',
+    'throttle' => 'Terlalu banyak percobaan masuk. Silakan coba lagi dalam :seconds detik.',
+    'logged_out' => 'Anda telah keluar.',
+    'reset_link_sent' => "Jika email tersebut terdaftar, kami telah mengirim tautan reset kata sandi. Silakan periksa kotak masuk (dan folder spam) Anda.",
+    'reset_invalid' => "Tautan reset kata sandi tidak valid atau sudah kedaluwarsa. Silakan minta tautan baru.",
+    'reset_success' => "Kata sandi Anda berhasil diatur ulang. Silakan masuk dengan kata sandi baru.",
+    'current_password_incorrect' => "Kata sandi saat ini yang Anda masukkan salah.",
+    'password_changed' => "Kata sandi Anda berhasil diubah.",
+    'oauth_code_invalid' => "Tautan masuk ini sudah kedaluwarsa. Silakan coba lagi.",
+    'unlink_requires_password' => "Atur kata sandi terlebih dahulu, jika tidak Anda tidak akan bisa masuk ke akun Anda.",
+    'unlinked' => "Akun Google berhasil diputuskan.",
+    'verify_success' => "Email Anda berhasil diverifikasi. Terima kasih!",
+    'verify_already' => "Email Anda sudah terverifikasi.",
+    'verify_invalid' => "Tautan verifikasi ini tidak valid atau sudah kedaluwarsa.",
+    'verify_sent' => "Tautan verifikasi baru telah dikirim ke email Anda.",
+    'session_revoked' => "Sesi berhasil dikeluarkan.",
+    'sessions_revoked' => "Berhasil keluar dari semua perangkat lain.",
+    'device_evicted' => [
+        'device_limit' => "Anda dikeluarkan karena akun Anda mencapai batas maksimal 3 perangkat yang bisa masuk bersamaan.",
+    ],
+    'captcha_failed' => "Verifikasi CAPTCHA gagal. Silakan coba lagi.",
+    'new_device' => [
+        'subject' => "Login baru ke akun HonTomo Anda",
+        'greeting' => "Halo!",
+        'body' => "Akun Anda baru saja login dari perangkat baru: :device, pada :time (IP: :ip).",
+        'not_you' => "Jika ini Anda, tidak perlu tindakan apa pun. Jika Anda tidak mengenali aktivitas ini, segera ganti kata sandi Anda lewat tautan \"Lupa kata sandi\" di halaman login.",
+        'unknown_ip' => "tidak diketahui",
+    ],
+    'webauthn_registered' => "Sidik jari/wajah berhasil didaftarkan. Anda sekarang bisa masuk dengannya.",
+    'webauthn_removed' => "Metode biometrik berhasil dihapus.",
+    'webauthn_failed' => "Masuk dengan biometrik gagal. Silakan coba lagi atau gunakan kata sandi.",
+];

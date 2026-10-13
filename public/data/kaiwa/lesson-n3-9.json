@@ -1,0 +1,565 @@
+{
+    "id": 9,
+    "level": "N3",
+    "title_id": "Pelajaran 9 (N3): Berbelanja, Perbandingan, dan Sebab",
+    "title_en": "N3 Lesson 9: Shopping, Comparison and Causes",
+    "scenarios": [
+        {
+            "id": "n3l9-s1",
+            "title_id": "Mencari hadiah untuk ibu",
+            "title_en": "Looking for a gift for Mom",
+            "setting_id": "Di toko tas. Pegawai menyapamu dengan bahasa sopan.",
+            "setting_en": "In a bag shop. The clerk greets you in polite Japanese.",
+            "goal_id": "Menanggapi bahasa hormat お〜です.",
+            "goal_en": "Respond to honorific o~ desu.",
+            "patterns": [
+                "お〜です"
+            ],
+            "partner": {
+                "name": "中村",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l9-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。何《なに》を お探《さが》しですか。",
+                    "speak": "いらっしゃいませ。なにを おさがしですか。",
+                    "id_text": "Selamat datang. Anda mencari apa?",
+                    "en_text": "Welcome. What are you looking for?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s1-t1.mp3"
+                },
+                {
+                    "id": "n3l9-s1-t2",
+                    "who": "you",
+                    "ja": "母《はは》への 誕生日《たんじょうび》の プレゼントです。",
+                    "speak": "ははへの たんじょうびの プレゼントです。",
+                    "id_text": "Hadiah ulang tahun untuk ibu saya.",
+                    "en_text": "A birthday present for my mother.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s1-t2.mp3",
+                    "accept": [
+                        "母への 誕生日の プレゼントです。",
+                        "母への誕生日のプレゼントです。",
+                        "ははへの たんじょうびの プレゼントです。",
+                        "ははへのたんじょうびのプレゼントです。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s1-t3",
+                    "who": "partner",
+                    "ja": "お母《かあ》さまは 青《あお》い かばんを お持《も》ちですか。",
+                    "speak": "おかあさまは あおい かばんを おもちですか。",
+                    "id_text": "Apakah ibu Anda sudah punya tas biru?",
+                    "en_text": "Does your mother already have a blue bag?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s1-t3.mp3"
+                },
+                {
+                    "id": "n3l9-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、持《も》って いません。",
+                    "speak": "いいえ、もって いません。",
+                    "id_text": "Tidak, belum punya.",
+                    "en_text": "No, she does not.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s1-t4.mp3",
+                    "accept": [
+                        "いいえ、持って いません。",
+                        "いいえ、持っていません。",
+                        "いいえ、もって いません。",
+                        "いいえ、もっていません。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s1-t5",
+                    "who": "partner",
+                    "ja": "それでしたら、こちらは いかがでしょうか。",
+                    "speak": "それでしたら、こちらは いかがでしょうか。",
+                    "id_text": "Kalau begitu, bagaimana yang ini?",
+                    "en_text": "In that case, how about this one?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s1-t5.mp3"
+                },
+                {
+                    "id": "n3l9-s1-t6",
+                    "who": "you",
+                    "ja": "いいですね。それを ください。",
+                    "speak": "いいですね。それを ください。",
+                    "id_text": "Bagus. Saya ambil yang itu.",
+                    "en_text": "Nice. I will take that one.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s1-t6.mp3",
+                    "accept": [
+                        "いいですね。それを ください。",
+                        "いいですね。それをください。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l9-s2",
+            "title_id": "Meminta izin di kereta",
+            "title_en": "Asking permission on the train",
+            "setting_id": "Di kereta. Kamu meminta izin kepada penumpang sebelahmu.",
+            "setting_en": "On a train. You ask the passenger next to you for permission.",
+            "goal_id": "Meminta izin dengan Vても かまいませんか.",
+            "goal_en": "Ask permission with V-te mo kamaimasen ka.",
+            "patterns": [
+                "Vても かまわない"
+            ],
+            "partner": {
+                "name": "佐藤",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l9-s2-t1",
+                    "who": "you",
+                    "ja": "すみません、ここに 座《すわ》っても かまいませんか。",
+                    "speak": "すみません、ここに すわっても かまいませんか。",
+                    "id_text": "Maaf, bolehkah saya duduk di sini?",
+                    "en_text": "Excuse me, may I sit here?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s2-t1.mp3",
+                    "accept": [
+                        "すみません、ここに 座っても かまいませんか。",
+                        "すみません、ここに座ってもかまいませんか。",
+                        "すみません、ここに すわっても かまいませんか。",
+                        "すみません、ここにすわってもかまいませんか。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s2-t2",
+                    "who": "partner",
+                    "ja": "ええ、どうぞ。",
+                    "speak": "ええ、どうぞ。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s2-t2.mp3"
+                },
+                {
+                    "id": "n3l9-s2-t3",
+                    "who": "you",
+                    "ja": "荷物《にもつ》を 隣《となり》に 置《お》いても かまいませんか。",
+                    "speak": "にもつを となりに おいても かまいませんか。",
+                    "id_text": "Bolehkah saya menaruh barang di sebelah?",
+                    "en_text": "May I put my luggage next to me?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s2-t3.mp3",
+                    "accept": [
+                        "荷物を 隣に 置いても かまいませんか。",
+                        "荷物を隣に置いてもかまいませんか。",
+                        "にもつを となりに おいても かまいませんか。",
+                        "にもつをとなりにおいてもかまいませんか。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s2-t4",
+                    "who": "partner",
+                    "ja": "ええ、大丈夫《だいじょうぶ》ですよ。",
+                    "speak": "ええ、だいじょうぶですよ。",
+                    "id_text": "Ya, tidak apa-apa.",
+                    "en_text": "Yes, that is fine.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s2-t4.mp3"
+                },
+                {
+                    "id": "n3l9-s2-t5",
+                    "who": "you",
+                    "ja": "ありがとうございます。窓《まど》を 開《あ》けても かまいませんか。",
+                    "speak": "ありがとうございます。まどを あけても かまいませんか。",
+                    "id_text": "Terima kasih. Bolehkah saya membuka jendela?",
+                    "en_text": "Thank you. May I open the window?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s2-t5.mp3",
+                    "accept": [
+                        "ありがとうございます。窓を 開けても かまいませんか。",
+                        "ありがとうございます。窓を開けてもかまいませんか。",
+                        "ありがとうございます。まどを あけても かまいませんか。",
+                        "ありがとうございます。まどをあけてもかまいませんか。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s2-t6",
+                    "who": "partner",
+                    "ja": "はい、かまいませんよ。",
+                    "speak": "はい、かまいませんよ。",
+                    "id_text": "Ya, silakan.",
+                    "en_text": "Yes, go ahead.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n3l9-s3",
+            "title_id": "Panas hari ini dan kemarin",
+            "title_en": "Today's heat versus yesterday's",
+            "setting_id": "Pagi hari. Rekan kerja membicarakan cuaca.",
+            "setting_en": "Morning. A colleague talks about the weather.",
+            "goal_id": "Membandingkan dengan Bほど〜ない.",
+            "goal_en": "Compare with B hodo ~ nai.",
+            "patterns": [
+                "AはBほど〜ない"
+            ],
+            "partner": {
+                "name": "山田",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l9-s3-t1",
+                    "who": "partner",
+                    "ja": "今日《きょう》は 昨日《きのう》より 暑《あつ》いですね。",
+                    "speak": "きょうは きのうより あついですね。",
+                    "id_text": "Hari ini lebih panas dari kemarin ya.",
+                    "en_text": "It is hotter today than yesterday, is it not?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s3-t1.mp3"
+                },
+                {
+                    "id": "n3l9-s3-t2",
+                    "who": "you",
+                    "ja": "そうですか。昨日《きのう》ほど 暑《あつ》くは ないと 思《おも》いますよ。",
+                    "speak": "そうですか。きのうほど あつくは ないと おもいますよ。",
+                    "id_text": "Begitu? Saya kira tidak sepanas kemarin.",
+                    "en_text": "Is it? I think it is not as hot as yesterday.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s3-t2.mp3",
+                    "accept": [
+                        "そうですか。昨日ほど 暑くは ないと 思いますよ。",
+                        "そうですか。昨日ほど暑くはないと思いますよ。",
+                        "そうですか。きのうほど あつくは ないと おもいますよ。",
+                        "そうですか。きのうほどあつくはないとおもいますよ。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか？",
+                    "speak": "そうですか？",
+                    "id_text": "Benarkah?",
+                    "en_text": "Really?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s3-t3.mp3"
+                },
+                {
+                    "id": "n3l9-s3-t4",
+                    "who": "you",
+                    "ja": "ええ、昨日《きのう》は 本当《ほんとう》に 暑《あつ》かったですから。",
+                    "speak": "ええ、きのうは ほんとうに あつかったですから。",
+                    "id_text": "Ya, kemarin benar-benar panas.",
+                    "en_text": "Yes, yesterday was really hot.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s3-t4.mp3",
+                    "accept": [
+                        "ええ、昨日は 本当に 暑かったですから。",
+                        "ええ、昨日は本当に暑かったですから。",
+                        "ええ、きのうは ほんとうに あつかったですから。",
+                        "ええ、きのうはほんとうにあつかったですから。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s3-t5",
+                    "who": "partner",
+                    "ja": "確《たし》かに。今日《きょう》は 風《かぜ》が ありますね。",
+                    "speak": "たしかに。きょうは かぜが ありますね。",
+                    "id_text": "Benar juga. Hari ini ada angin.",
+                    "en_text": "True. There is a breeze today.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s3-t5.mp3"
+                },
+                {
+                    "id": "n3l9-s3-t6",
+                    "who": "you",
+                    "ja": "ええ、気温《きおん》は 昨日《きのう》ほど 高《たか》くないです。",
+                    "speak": "ええ、きおんは きのうほど たかくないです。",
+                    "id_text": "Ya, suhunya tidak setinggi kemarin.",
+                    "en_text": "Yes, the temperature is not as high as yesterday.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s3-t6.mp3",
+                    "accept": [
+                        "ええ、気温は 昨日ほど 高くないです。",
+                        "ええ、気温は昨日ほど高くないです。",
+                        "ええ、きおんは きのうほど たかくないです。",
+                        "ええ、きおんはきのうほどたかくないです。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l9-s4",
+            "title_id": "Gunung paling indah",
+            "title_en": "The most beautiful mountain",
+            "setting_id": "Istirahat siang. Rekan kerja bertanya tempat favoritmu di Jepang.",
+            "setting_en": "Lunch break. A colleague asks your favorite place in Japan.",
+            "goal_id": "Menyatakan yang terbaik dengan Nほど〜はない.",
+            "goal_en": "State the best with N hodo ~ wa nai.",
+            "patterns": [
+                "Nほど〜は ない"
+            ],
+            "partner": {
+                "name": "木村",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l9-s4-t1",
+                    "who": "partner",
+                    "ja": "日本《にほん》で 一番《いちばん》 好《す》きな 場所《ばしょ》は どこですか。",
+                    "speak": "にほんで いちばん すきな ばしょは どこですか。",
+                    "id_text": "Tempat favoritmu di Jepang di mana?",
+                    "en_text": "What is your favorite place in Japan?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s4-t1.mp3"
+                },
+                {
+                    "id": "n3l9-s4-t2",
+                    "who": "you",
+                    "ja": "富士山《ふじさん》ほど 美《うつく》しい 山《やま》は ないと 思《おも》います。",
+                    "speak": "ふじさんほど うつくしい やまは ないと おもいます。",
+                    "id_text": "Saya kira tidak ada gunung seindah Fuji.",
+                    "en_text": "I think there is no mountain as beautiful as Mt. Fuji.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s4-t2.mp3",
+                    "accept": [
+                        "富士山ほど 美しい 山は ないと 思います。",
+                        "富士山ほど美しい山はないと思います。",
+                        "ふじさんほど うつくしい やまは ないと おもいます。",
+                        "ふじさんほどうつくしいやまはないとおもいます。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s4-t3",
+                    "who": "partner",
+                    "ja": "登《のぼ》った ことが ありますか。",
+                    "speak": "のぼった ことが ありますか。",
+                    "id_text": "Pernah mendaki?",
+                    "en_text": "Have you climbed it?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s4-t3.mp3"
+                },
+                {
+                    "id": "n3l9-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ。でも、いつか 登《のぼ》って みたいです。",
+                    "speak": "いいえ。でも、いつか のぼって みたいです。",
+                    "id_text": "Belum. Tapi suatu hari ingin mencoba.",
+                    "en_text": "No. But I would like to climb it someday.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s4-t4.mp3",
+                    "accept": [
+                        "いいえ。でも、いつか 登って みたいです。",
+                        "いいえ。でも、いつか登ってみたいです。",
+                        "いいえ。でも、いつか のぼって みたいです。",
+                        "いいえ。でも、いつかのぼってみたいです。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s4-t5",
+                    "who": "partner",
+                    "ja": "夏《なつ》に 登《のぼ》る 人《ひと》が 多《おお》いですよ。",
+                    "speak": "なつに のぼる ひとが おおいですよ。",
+                    "id_text": "Banyak yang mendaki saat musim panas.",
+                    "en_text": "Many people climb in summer.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s4-t5.mp3"
+                },
+                {
+                    "id": "n3l9-s4-t6",
+                    "who": "you",
+                    "ja": "夏《なつ》ほど 登《のぼ》りやすい 季節《きせつ》は ないでしょうね。",
+                    "speak": "なつほど のぼりやすい きせつは ないでしょうね。",
+                    "id_text": "Tidak ada musim yang lebih mudah untuk mendaki daripada musim panas, ya.",
+                    "en_text": "There is probably no season easier for climbing than summer.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s4-t6.mp3",
+                    "accept": [
+                        "夏ほど 登りやすい 季節は ないでしょうね。",
+                        "夏ほど登りやすい季節はないでしょうね。",
+                        "なつほど のぼりやすい きせつは ないでしょうね。",
+                        "なつほどのぼりやすいきせつはないでしょうね。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l9-s5",
+            "title_id": "Laporan penyebab kerusakan mesin",
+            "title_en": "Report on a machine breakdown",
+            "setting_id": "Pagi di pabrik. Atasan menanyakan kejadian kemarin.",
+            "setting_en": "Morning at the factory. A boss asks about yesterday's incident.",
+            "goal_id": "Menjelaskan sebab dengan ため(に)／ためだ.",
+            "goal_en": "Explain causes with tame (ni) / tame da.",
+            "patterns": [
+                "…ため(に)",
+                "…ためだ"
+            ],
+            "partner": {
+                "name": "高橋",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l9-s5-t1",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の 工場《こうじょう》は どうでしたか。",
+                    "speak": "きのうの こうじょうは どうでしたか。",
+                    "id_text": "Bagaimana pabrik kemarin?",
+                    "en_text": "How was the factory yesterday?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s5-t1.mp3"
+                },
+                {
+                    "id": "n3l9-s5-t2",
+                    "who": "you",
+                    "ja": "機械《きかい》が 故障《こしょう》した ために、午後《ごご》は 作業《さぎょう》が 止《と》まりました。",
+                    "speak": "きかいが こしょうした ために、ごごは さぎょうが とまりました。",
+                    "id_text": "Karena mesin rusak, pekerjaan sore berhenti.",
+                    "en_text": "The machine broke down, so work stopped in the afternoon.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s5-t2.mp3",
+                    "accept": [
+                        "機械が 故障した ために、午後は 作業が 止まりました。",
+                        "機械が故障したために、午後は作業が止まりました。",
+                        "きかいが こしょうした ために、ごごは さぎょうが とまりました。",
+                        "きかいがこしょうしたために、ごごはさぎょうがとまりました。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s5-t3",
+                    "who": "partner",
+                    "ja": "原因《げんいん》は 何《なん》でしたか。",
+                    "speak": "げんいんは なんでしたか。",
+                    "id_text": "Penyebabnya apa?",
+                    "en_text": "What was the cause?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s5-t3.mp3"
+                },
+                {
+                    "id": "n3l9-s5-t4",
+                    "who": "you",
+                    "ja": "部品《ぶひん》が 古《ふる》く なって いた ためです。",
+                    "speak": "ぶひんが ふるく なって いた ためです。",
+                    "id_text": "Karena komponennya sudah tua.",
+                    "en_text": "It was because the parts had grown old.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s5-t4.mp3",
+                    "accept": [
+                        "部品が 古く なって いた ためです。",
+                        "部品が古くなっていたためです。",
+                        "ぶひんが ふるく なって いた ためです。",
+                        "ぶひんがふるくなっていたためです。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s5-t5",
+                    "who": "partner",
+                    "ja": "そうですか。今《いま》は 直《なお》りましたか。",
+                    "speak": "そうですか。いまは なおりましたか。",
+                    "id_text": "Begitu. Sekarang sudah diperbaiki?",
+                    "en_text": "I see. Is it fixed now?",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s5-t5.mp3"
+                },
+                {
+                    "id": "n3l9-s5-t6",
+                    "who": "you",
+                    "ja": "はい、新《あたら》しい 部品《ぶひん》に 取《と》り替《か》えた ために、今《いま》は 動《うご》いて います。",
+                    "speak": "はい、あたらしい ぶひんに とりかえた ために、いまは うごいて います。",
+                    "id_text": "Ya, karena komponen diganti baru, sekarang berjalan.",
+                    "en_text": "Yes, since we replaced the parts with new ones, it is running now.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s5-t6.mp3",
+                    "accept": [
+                        "はい、新しい 部品に 取り替えた ために、今は 動いて います。",
+                        "はい、新しい部品に取り替えたために、今は動いています。",
+                        "はい、あたらしい ぶひんに とりかえた ために、いまは うごいて います。",
+                        "はい、あたらしいぶひんにとりかえたために、いまはうごいています。"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "n3l9-s6",
+            "title_id": "Seandainya saya pergi",
+            "title_en": "If only I had gone",
+            "setting_id": "Pagi di kantor. Teman menanyakan kenapa kamu tidak datang ke pesta.",
+            "setting_en": "Morning at the office. A friend asks why you missed the party.",
+            "goal_id": "Menyatakan penyesalan dengan Vば／Vたら…のに.",
+            "goal_en": "Express regret with V-ba / V-tara ... noni.",
+            "patterns": [
+                "Vば／Vたら、…た(のに)"
+            ],
+            "partner": {
+                "name": "鈴木",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n3l9-s6-t1",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の パーティー、来《こ》なかったね。",
+                    "speak": "きのうの パーティー、こなかったね。",
+                    "id_text": "Kamu tidak datang ke pesta kemarin.",
+                    "en_text": "You did not come to yesterday's party.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s6-t1.mp3"
+                },
+                {
+                    "id": "n3l9-s6-t2",
+                    "who": "you",
+                    "ja": "仕事《しごと》が 終《お》わらなかったんだ。早《はや》く 終《お》わって いれば、行《い》けたのに。",
+                    "speak": "しごとが おわらなかったんだ。はやく おわって いれば、いけたのに。",
+                    "id_text": "Pekerjaanku belum selesai. Kalau selesai lebih awal, aku bisa datang.",
+                    "en_text": "My work did not get done. If I had finished early, I could have gone.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s6-t2.mp3",
+                    "accept": [
+                        "仕事が 終わらなかったんだ。早く 終わって いれば、行けたのに。",
+                        "仕事が終わらなかったんだ。早く終わっていれば、行けたのに。",
+                        "しごとが おわらなかったんだ。はやく おわって いれば、いけたのに。",
+                        "しごとがおわらなかったんだ。はやくおわっていれば、いけたのに。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s6-t3",
+                    "who": "partner",
+                    "ja": "みんな 楽《たの》しんで いたよ。",
+                    "speak": "みんな たのしんで いたよ。",
+                    "id_text": "Semua bersenang-senang.",
+                    "en_text": "Everyone was having fun.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s6-t3.mp3"
+                },
+                {
+                    "id": "n3l9-s6-t4",
+                    "who": "you",
+                    "ja": "行《い》けば よかったなあ。",
+                    "speak": "いけば よかったなあ。",
+                    "id_text": "Andai saja aku pergi.",
+                    "en_text": "I wish I had gone.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s6-t4.mp3",
+                    "accept": [
+                        "行けば よかったなあ。",
+                        "行けばよかったなあ。",
+                        "いけば よかったなあ。",
+                        "いけばよかったなあ。"
+                    ]
+                },
+                {
+                    "id": "n3l9-s6-t5",
+                    "who": "partner",
+                    "ja": "来月《らいげつ》も あるよ。",
+                    "speak": "らいげつも あるよ。",
+                    "id_text": "Bulan depan ada lagi.",
+                    "en_text": "There is another next month.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s6-t5.mp3"
+                },
+                {
+                    "id": "n3l9-s6-t6",
+                    "who": "you",
+                    "ja": "じゃあ、今度《こんど》は 必《かなら》ず 行《い》く。",
+                    "speak": "じゃあ、こんどは かならず いく。",
+                    "id_text": "Kalau begitu, lain kali aku pasti datang.",
+                    "en_text": "Then I will definitely go next time.",
+                    "audio": "/audio/kaiwa/lesson-n3-9/n3l9-s6-t6.mp3",
+                    "accept": [
+                        "じゃあ、今度は 必ず 行く。",
+                        "じゃあ、今度は必ず行く。",
+                        "じゃあ、こんどは かならず いく。",
+                        "じゃあ、こんどはかならずいく。"
+                    ]
+                }
+            ]
+        }
+    ]
+}

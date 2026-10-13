@@ -1,0 +1,394 @@
+{
+    "id": 7,
+    "level": "N5",
+    "title_id": "Pelajaran 7 — Memberi & Menerima",
+    "title_en": "Lesson 7 — Giving & Receiving",
+    "scenarios": [
+        {
+            "id": "l7-s1",
+            "title_id": "Menulis dengan apa?",
+            "title_en": "What do you write with?",
+            "setting_id": "Tanaka bertanya alat apa yang kamu pakai untuk menulis.",
+            "setting_en": "Tanaka asks what you use to write.",
+            "goal_id": "Memakai 〜で untuk alat (何で, パソコンで, 日本語で).",
+            "goal_en": "Use ~de for tools and languages (nande, pasokon de, nihongo de).",
+            "patterns": [
+                "(道具)で KK",
+                "何で KK か",
+                "(言語)で KK"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l7-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、レポートは 何《なん》で 書《か》きますか。",
+                    "speak": "ブディさん、レポートは なんで かきますか。",
+                    "id_text": "Budi, laporan ditulis pakai apa?",
+                    "en_text": "Budi, what do you write reports with?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t1.mp3"
+                },
+                {
+                    "id": "l7-s1-t2",
+                    "who": "you",
+                    "ja": "パソコンで 書《か》きます。",
+                    "speak": "パソコンで かきます。",
+                    "id_text": "Aku menulis pakai komputer.",
+                    "accept": [
+                        "パソコンで書きます。"
+                    ],
+                    "en_text": "I write them on a computer.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t2.mp3"
+                },
+                {
+                    "id": "l7-s1-t3",
+                    "who": "partner",
+                    "ja": "日本語《にほんご》で 書《か》きますか。",
+                    "speak": "にほんごで かきますか。",
+                    "id_text": "Apakah menulis dalam bahasa Jepang?",
+                    "en_text": "Do you write in Japanese?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t3.mp3"
+                },
+                {
+                    "id": "l7-s1-t4",
+                    "who": "you",
+                    "ja": "いいえ、英語《えいご》で 書《か》きます。",
+                    "speak": "いいえ、えいごで かきます。",
+                    "id_text": "Bukan, aku menulis dalam bahasa Inggris.",
+                    "accept": [
+                        "いいえ、英語で 書きます。",
+                        "いいえ、英語で書きます。"
+                    ],
+                    "en_text": "No, I write in English.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t4.mp3"
+                },
+                {
+                    "id": "l7-s1-t5",
+                    "who": "partner",
+                    "ja": "手紙《てがみ》は 何《なん》で 書《か》きますか。",
+                    "speak": "てがみは なんで かきますか。",
+                    "id_text": "Kalau surat, ditulis pakai apa?",
+                    "en_text": "And what do you write letters with?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t5.mp3"
+                },
+                {
+                    "id": "l7-s1-t6",
+                    "who": "you",
+                    "ja": "手紙《てがみ》は ボールペンで 書《か》きます。",
+                    "speak": "てがみは ボールペンで かきます。",
+                    "id_text": "Surat aku tulis pakai bolpoin.",
+                    "accept": [
+                        "手紙は ボールペンで 書きます。",
+                        "手紙はボールペンで書きます。"
+                    ],
+                    "en_text": "I write letters with a ballpoint pen.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t6.mp3"
+                },
+                {
+                    "id": "l7-s1-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l7-s2",
+            "title_id": "Bahasa Inggrisnya apa?",
+            "title_en": "What is it in English?",
+            "setting_id": "Suzuki menguji kosakata bahasa Inggris denganmu.",
+            "setting_en": "Suzuki quizzes you on English words.",
+            "goal_id": "Memakai 〜は 〜語《ご》で 何《なん》ですか.",
+            "goal_en": "Use ~wa ~go de nan desu ka.",
+            "patterns": [
+                "「〜」は 〜語で 何ですか",
+                "〜です"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l7-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、「ありがとう」は 英語《えいご》で 何《なん》ですか。",
+                    "speak": "ブディさん、「ありがとう」は えいごで なんですか。",
+                    "id_text": "Budi, 'arigatou' dalam bahasa Inggris apa?",
+                    "en_text": "Budi, what is 'arigatou' in English?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t1.mp3"
+                },
+                {
+                    "id": "l7-s2-t2",
+                    "who": "you",
+                    "ja": "「サンキュー」です。",
+                    "speak": "「サンキュー」です。",
+                    "id_text": "'Thank you'.",
+                    "accept": [
+                        "サンキューです。"
+                    ],
+                    "en_text": "It is 'thank you'.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t2.mp3"
+                },
+                {
+                    "id": "l7-s2-t3",
+                    "who": "partner",
+                    "ja": "「ふね」は 英語《えいご》で 何《なん》ですか。",
+                    "speak": "「ふね」は えいごで なんですか。",
+                    "id_text": "'Fune' dalam bahasa Inggris apa?",
+                    "en_text": "What is 'fune' in English?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t3.mp3"
+                },
+                {
+                    "id": "l7-s2-t4",
+                    "who": "you",
+                    "ja": "「ボート」です。",
+                    "speak": "「ボート」です。",
+                    "id_text": "'Boat'.",
+                    "accept": [
+                        "ボートです。"
+                    ],
+                    "en_text": "It is 'boat'.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t4.mp3"
+                },
+                {
+                    "id": "l7-s2-t5",
+                    "who": "partner",
+                    "ja": "「でんしゃ」は 英語《えいご》で 何《なん》ですか。",
+                    "speak": "「でんしゃ」は えいごで なんですか。",
+                    "id_text": "'Densha' dalam bahasa Inggris apa?",
+                    "en_text": "What is 'densha' in English?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t5.mp3"
+                },
+                {
+                    "id": "l7-s2-t6",
+                    "who": "you",
+                    "ja": "「トレイン」です。",
+                    "speak": "「トレイン」です。",
+                    "id_text": "'Train'.",
+                    "accept": [
+                        "トレインです。"
+                    ],
+                    "en_text": "It is 'train'.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t6.mp3"
+                },
+                {
+                    "id": "l7-s2-t7",
+                    "who": "partner",
+                    "ja": "そうです。いいですね。",
+                    "speak": "そうです。いいですね。",
+                    "id_text": "Benar. Bagus ya.",
+                    "en_text": "That's right. Nice.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l7-s3",
+            "title_id": "Hadiah dari siapa?",
+            "title_en": "A gift from whom?",
+            "setting_id": "Di kantor, Suzuki bertanya tentang hadiah yang kamu terima dan berikan.",
+            "setting_en": "At the office, Suzuki asks about gifts you received and gave.",
+            "goal_id": "Memakai 〜に もらいます／あげます.",
+            "goal_en": "Use ~ni moraimasu / agemasu.",
+            "patterns": [
+                "(人)に 〜を もらいます",
+                "(人)に 〜を あげます"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l7-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、その シャツは だれに もらいましたか。",
+                    "speak": "ブディさん、その シャツは だれに もらいましたか。",
+                    "id_text": "Budi, kemeja itu dapat dari siapa?",
+                    "en_text": "Budi, who gave you that shirt?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t1.mp3"
+                },
+                {
+                    "id": "l7-s3-t2",
+                    "who": "you",
+                    "ja": "母《はは》に もらいました。",
+                    "speak": "ははに もらいました。",
+                    "id_text": "Aku dapat dari ibu.",
+                    "accept": [
+                        "母に もらいました。",
+                        "母にもらいました。"
+                    ],
+                    "en_text": "I got it from my mother.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t2.mp3"
+                },
+                {
+                    "id": "l7-s3-t3",
+                    "who": "partner",
+                    "ja": "そうですか。クリスマスに だれに プレゼントを あげましたか。",
+                    "speak": "そうですか。クリスマスに だれに プレゼントを あげましたか。",
+                    "id_text": "Oh begitu. Natal kemarin kamu memberi hadiah kepada siapa?",
+                    "en_text": "I see. Who did you give a present to at Christmas?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t3.mp3"
+                },
+                {
+                    "id": "l7-s3-t4",
+                    "who": "you",
+                    "ja": "友達《ともだち》に 花《はな》を あげました。",
+                    "speak": "ともだちに はなを あげました。",
+                    "id_text": "Aku memberi bunga kepada teman.",
+                    "accept": [
+                        "友達に 花を あげました。",
+                        "友達に花をあげました。"
+                    ],
+                    "en_text": "I gave flowers to a friend.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t4.mp3"
+                },
+                {
+                    "id": "l7-s3-t5",
+                    "who": "partner",
+                    "ja": "お父《とう》さんに 何《なに》を あげましたか。",
+                    "speak": "おとうさんに なにを あげましたか。",
+                    "id_text": "Kepada ayah kamu memberi apa?",
+                    "en_text": "What did you give your father?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t5.mp3"
+                },
+                {
+                    "id": "l7-s3-t6",
+                    "who": "you",
+                    "ja": "父《ちち》に とけいを あげました。",
+                    "speak": "ちちに とけいを あげました。",
+                    "id_text": "Aku memberi jam kepada ayah.",
+                    "accept": [
+                        "父に 時計を あげました。",
+                        "父に時計をあげました。"
+                    ],
+                    "en_text": "I gave my father a watch.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t6.mp3"
+                },
+                {
+                    "id": "l7-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。いいですね。",
+                    "speak": "そうですか。いいですね。",
+                    "id_text": "Oh begitu. Bagus ya.",
+                    "en_text": "I see. That's nice.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l7-s4",
+            "title_id": "Sudah atau belum?",
+            "title_en": "Already or not yet?",
+            "setting_id": "Tanaka menanyakan pekerjaan yang sudah kamu selesaikan.",
+            "setting_en": "Tanaka asks which tasks you have already finished.",
+            "goal_id": "Memakai もう 〜ました dan まだです.",
+            "goal_en": "Use mou ~mashita and mada desu.",
+            "patterns": [
+                "もう 〜ました",
+                "いいえ、まだです",
+                "これから 〜ます"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l7-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、もう 昼《ひる》ごはんを 食《た》べましたか。",
+                    "speak": "ブディさん、もう ひるごはんを たべましたか。",
+                    "id_text": "Budi, sudah makan siang?",
+                    "en_text": "Budi, have you already eaten lunch?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t1.mp3"
+                },
+                {
+                    "id": "l7-s4-t2",
+                    "who": "you",
+                    "ja": "はい、もう 食《た》べました。",
+                    "speak": "はい、もう たべました。",
+                    "id_text": "Ya, sudah makan.",
+                    "accept": [
+                        "はい、もう 食べました。",
+                        "はい、もう食べました。"
+                    ],
+                    "en_text": "Yes, I have already eaten.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t2.mp3"
+                },
+                {
+                    "id": "l7-s4-t3",
+                    "who": "partner",
+                    "ja": "レポートも もう 送《おく》りましたか。",
+                    "speak": "レポートも もう おくりましたか。",
+                    "id_text": "Laporan juga sudah dikirim?",
+                    "en_text": "Have you already sent the report too?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t3.mp3"
+                },
+                {
+                    "id": "l7-s4-t4",
+                    "who": "you",
+                    "ja": "いいえ、まだです。これから 送《おく》ります。",
+                    "speak": "いいえ、まだです。これから おくります。",
+                    "id_text": "Belum. Sekarang aku akan mengirimnya.",
+                    "accept": [
+                        "いいえ、まだです。これから 送ります。",
+                        "いいえ、まだです。これから送ります。"
+                    ],
+                    "en_text": "No, not yet. I will send it now.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t4.mp3"
+                },
+                {
+                    "id": "l7-s4-t5",
+                    "who": "partner",
+                    "ja": "手紙《てがみ》も もう 書《か》きましたか。",
+                    "speak": "てがみも もう かきましたか。",
+                    "id_text": "Surat juga sudah ditulis?",
+                    "en_text": "Have you already written the letter too?",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t5.mp3"
+                },
+                {
+                    "id": "l7-s4-t6",
+                    "who": "you",
+                    "ja": "はい、もう 書《か》きました。",
+                    "speak": "はい、もう かきました。",
+                    "id_text": "Ya, sudah ditulis.",
+                    "accept": [
+                        "はい、もう 書きました。",
+                        "はい、もう書きました。"
+                    ],
+                    "en_text": "Yes, I have already written it.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t6.mp3"
+                },
+                {
+                    "id": "l7-s4-t7",
+                    "who": "partner",
+                    "ja": "そうですか。",
+                    "speak": "そうですか。",
+                    "id_text": "Oh begitu.",
+                    "en_text": "I see.",
+                    "audio": "/audio/kaiwa/lesson-7/l7-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,357 @@
+{
+    "id": 22,
+    "level": "N4",
+    "title_id": "Pelajaran 22: Katanya dan Sepertinya",
+    "title_en": "Lesson 22: Hearsay and Appearances",
+    "scenarios": [
+        {
+            "id": "n4l22-s1",
+            "title_id": "Berita topan",
+            "title_en": "Typhoon news",
+            "setting_id": "Rekan kerja memberi tahu berita dari televisi.",
+            "setting_en": "A coworker tells you news from TV.",
+            "goal_id": "Menyampaikan kabar dengan 〜に よると 〜そうです.",
+            "goal_en": "Report news with 〜に よると 〜そうです.",
+            "patterns": [
+                "〜に よると 〜そうです"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l22-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、ニュースを 見《み》ましたか。",
+                    "speak": "ブディさん、ニュースを みましたか。",
+                    "id_text": "Budi, sudah lihat berita?",
+                    "en_text": "Budi, did you see the news?",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l22-s1-t2",
+                    "who": "you",
+                    "ja": "いいえ、まだ 見《み》て いません。何《なに》か ありましたか。",
+                    "speak": "いいえ、まだ みて いません。なにか ありましたか。",
+                    "id_text": "Belum. Ada apa?",
+                    "en_text": "Not yet. Did something happen?",
+                    "accept": [
+                        "いいえ、まだ 見て いません。何か ありましたか。",
+                        "いいえ、まだ みて いません。なにか ありましたか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l22-s1-t3",
+                    "who": "partner",
+                    "ja": "ニュースに よると、あした 台風《たいふう》が 来《く》るそうです。",
+                    "speak": "ニュースに よると、あした たいふうが くるそうです。",
+                    "id_text": "Menurut berita, besok topan akan datang.",
+                    "en_text": "According to the news, a typhoon is coming tomorrow.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l22-s1-t4",
+                    "who": "you",
+                    "ja": "えっ、本当《ほんとう》ですか。電車《でんしゃ》は 止《と》まりますか。",
+                    "speak": "えっ、ほんとうですか。でんしゃは とまりますか。",
+                    "id_text": "Eh, benarkah? Apakah kereta berhenti?",
+                    "en_text": "Really? Will the trains stop?",
+                    "accept": [
+                        "えっ、本当ですか。電車は 止まりますか。",
+                        "えっ、ほんとうですか。でんしゃは とまりますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l22-s1-t5",
+                    "who": "partner",
+                    "ja": "止《と》まるそうです。今日《きょう》の うちに 水《みず》を 買《か》って おいて ください。",
+                    "speak": "とまるそうです。きょうの うちに みずを かって おいて ください。",
+                    "id_text": "Katanya berhenti. Tolong beli air hari ini dulu.",
+                    "en_text": "I hear they will. Please buy water today in advance.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l22-s1-t6",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Baik. Terima kasih.",
+                    "en_text": "Understood. Thank you.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s1-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l22-s2",
+            "title_id": "Kabar dari teman",
+            "title_en": "News from a friend",
+            "setting_id": "Teman menceritakan kabar rekan kerja.",
+            "setting_en": "A friend tells you news about a coworker.",
+            "goal_id": "Menyampaikan kabar dan sumber dengan そうです／と 言って いました.",
+            "goal_en": "Pass on news and sources with そうです／と 言って いました.",
+            "patterns": [
+                "ふつうけい そうです",
+                "〜と 言って いました"
+            ],
+            "partner": {
+                "name": "ラニ",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l22-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、スリさんが 結婚《けっこん》した そうですよ。",
+                    "speak": "ブディさん、スリさんが けっこんした そうですよ。",
+                    "id_text": "Budi, katanya Suri sudah menikah.",
+                    "en_text": "Budi, I hear Suri got married.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l22-s2-t2",
+                    "who": "you",
+                    "ja": "えっ、知《し》りませんでした。いつですか。",
+                    "speak": "えっ、しりませんでした。いつですか。",
+                    "id_text": "Eh, saya tidak tahu. Kapan?",
+                    "en_text": "Oh, I did not know. When?",
+                    "accept": [
+                        "えっ、知りませんでした。いつですか。",
+                        "えっ、しりませんでした。いつですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l22-s2-t3",
+                    "who": "partner",
+                    "ja": "先月《せんげつ》だそうです。",
+                    "speak": "せんげつだそうです。",
+                    "id_text": "Katanya bulan lalu.",
+                    "en_text": "I hear it was last month.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l22-s2-t4",
+                    "who": "you",
+                    "ja": "そうですか。相手《あいて》は どんな 人《ひと》ですか。",
+                    "speak": "そうですか。あいては どんな ひとですか。",
+                    "id_text": "Begitu. Pasangannya orang yang seperti apa?",
+                    "en_text": "I see. What kind of person is the partner?",
+                    "accept": [
+                        "そうですか。相手は どんな 人ですか。",
+                        "そうですか。あいては どんな ひとですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l22-s2-t5",
+                    "who": "partner",
+                    "ja": "会社《かいしゃ》の 人《ひと》だそうです。パーティーで 知《し》り合《あ》ったと 言《い》って いました。",
+                    "speak": "かいしゃの ひとだそうです。パーティーで しりあったと いって いました。",
+                    "id_text": "Katanya orang kantor. Dia bilang berkenalan di pesta.",
+                    "en_text": "I hear it is someone from the company. She said they met at a party.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l22-s2-t6",
+                    "who": "you",
+                    "ja": "そうですか。おめでとうと 伝《つた》えて ください。",
+                    "speak": "そうですか。おめでとうと つたえて ください。",
+                    "id_text": "Begitu. Tolong sampaikan selamat.",
+                    "en_text": "I see. Please pass on my congratulations.",
+                    "accept": [
+                        "そうですか。おめでとうと 伝えて ください。",
+                        "そうですか。おめでとうと つたえて ください。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s2-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l22-s3",
+            "title_id": "Suara dari kamar sebelah",
+            "title_en": "Noise next door",
+            "setting_id": "Terdengar musik dari kamar sebelah.",
+            "setting_en": "You hear music from the next room.",
+            "goal_id": "Menyatakan dugaan dengan 〜ようです.",
+            "goal_en": "Make guesses with 〜ようです.",
+            "patterns": [
+                "ふつうけい ようです",
+                "声／音が します"
+            ],
+            "partner": {
+                "name": "ヌル",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l22-s3-t1",
+                    "who": "partner",
+                    "ja": "隣《となり》の 部屋《へや》から 音楽《おんがく》が 聞《き》こえますね。",
+                    "speak": "となりの へやから おんがくが きこえますね。",
+                    "id_text": "Dari kamar sebelah terdengar musik, ya.",
+                    "en_text": "You can hear music from the next room.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l22-s3-t2",
+                    "who": "you",
+                    "ja": "どうも パーティーを して いるようですね。",
+                    "speak": "どうも パーティーを して いるようですね。",
+                    "id_text": "Sepertinya sedang berpesta.",
+                    "en_text": "It seems they are having a party.",
+                    "accept": [
+                        "どうも パーティーを して いるようですね。",
+                        "どうも パーティーを している ようですね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l22-s3-t3",
+                    "who": "partner",
+                    "ja": "人《ひと》も たくさん 集《あつ》まって いるようです。",
+                    "speak": "ひとも たくさん あつまって いるようです。",
+                    "id_text": "Rupanya orangnya juga banyak berkumpul.",
+                    "en_text": "It seems many people have gathered too.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l22-s3-t4",
+                    "who": "you",
+                    "ja": "ええ、にぎやかな 声《こえ》が しますね。",
+                    "speak": "ええ、にぎやかな こえが しますね。",
+                    "id_text": "Ya, terdengar suara yang ramai, ya.",
+                    "en_text": "Yes, I hear lively voices.",
+                    "accept": [
+                        "ええ、にぎやかな 声が しますね。",
+                        "ええ、にぎやかな こえが しますね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l22-s3-t5",
+                    "who": "partner",
+                    "ja": "うるさいですが、今日《きょう》は 土曜日《どようび》ですから。",
+                    "speak": "うるさいですが、きょうは どようびですから。",
+                    "id_text": "Berisik, tapi hari ini hari Sabtu.",
+                    "en_text": "It is noisy, but today is Saturday.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l22-s3-t6",
+                    "who": "you",
+                    "ja": "そうですね。しかたが ありませんね。",
+                    "speak": "そうですね。しかたが ありませんね。",
+                    "id_text": "Benar. Mau bagaimana lagi.",
+                    "en_text": "Right. It cannot be helped.",
+                    "accept": [
+                        "そうですね。しかたが ありませんね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s3-t6.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l22-s4",
+            "title_id": "Bau dari dapur",
+            "title_en": "A smell from the kitchen",
+            "setting_id": "Tercium bau sesuatu terbakar.",
+            "setting_en": "You smell something burning.",
+            "goal_id": "Menyatakan indra dengan においが します／音が します.",
+            "goal_en": "Report what you sense with においが します／音が します.",
+            "patterns": [
+                "においが します",
+                "音が します"
+            ],
+            "partner": {
+                "name": "井上",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l22-s4-t1",
+                    "who": "partner",
+                    "ja": "あれ、何《なに》か 燃《も》えるにおいが しませんか。",
+                    "speak": "あれ、なにか もえるにおいが しませんか。",
+                    "id_text": "Lho, tidak tercium bau sesuatu terbakar?",
+                    "en_text": "Hey, do you not smell something burning?",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l22-s4-t2",
+                    "who": "you",
+                    "ja": "します。台所《だいどころ》から 音《おと》も しますね。",
+                    "speak": "します。だいどころから おとも しますね。",
+                    "id_text": "Tercium. Dari dapur juga terdengar bunyi.",
+                    "en_text": "I do. I hear a noise from the kitchen too.",
+                    "accept": [
+                        "します。台所から 音も しますね。",
+                        "します。だいどころから おとも しますね。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l22-s4-t3",
+                    "who": "partner",
+                    "ja": "見《み》に 行《い》きましょう。",
+                    "speak": "みに いきましょう。",
+                    "id_text": "Mari kita lihat.",
+                    "en_text": "Let us go and look.",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l22-s4-t4",
+                    "who": "you",
+                    "ja": "あ、いけない！ 火《ひ》を 消《け》すのを 忘《わす》れました。",
+                    "speak": "あ、いけない！ ひを けすのを わすれました。",
+                    "id_text": "Aduh! Saya lupa mematikan api.",
+                    "en_text": "Oh no! I forgot to turn off the flame.",
+                    "accept": [
+                        "あ、いけない！ 火を 消すのを 忘れました。",
+                        "あ、いけない！ ひを けすのを わすれました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l22-s4-t5",
+                    "who": "partner",
+                    "ja": "だいじょうぶですか。",
+                    "speak": "だいじょうぶですか。",
+                    "id_text": "Tidak apa-apa?",
+                    "en_text": "Are you all right?",
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l22-s4-t6",
+                    "who": "you",
+                    "ja": "はい、だいじょうぶです。もう 消《け》しました。",
+                    "speak": "はい、だいじょうぶです。もう けしました。",
+                    "id_text": "Ya, tidak apa-apa. Sudah saya matikan.",
+                    "en_text": "Yes, I am fine. I have turned it off.",
+                    "accept": [
+                        "はい、だいじょうぶです。もう 消しました。",
+                        "はい、だいじょうぶです。もう けしました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-22/n4l22-s4-t6.mp3"
+                }
+            ]
+        }
+    ]
+}

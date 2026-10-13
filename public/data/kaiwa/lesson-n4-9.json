@@ -1,0 +1,403 @@
+{
+    "id": 9,
+    "level": "N4",
+    "title_id": "N4 Pelajaran 9: Lakukan Seperti yang Saya Lakukan",
+    "title_en": "N4 Lesson 9: Do It the Way I Do",
+    "scenarios": [
+        {
+            "id": "n4l9-s1",
+            "title_id": "Meniru cara memakai mesin",
+            "title_en": "Copying how to use a machine",
+            "setting_id": "Senior menunjukkan cara memakai mesin baru di tempat kerja.",
+            "setting_en": "A senior shows how to use a new machine at work.",
+            "goal_id": "Meniru gerakan dan mengikuti petunjuk dengan とおりに.",
+            "goal_en": "Copy movements and follow instructions with とおりに.",
+            "patterns": [
+                "Vた とおりに",
+                "Ｎの とおりに"
+            ],
+            "partner": {
+                "name": "もり",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l9-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、わたしが やった とおりに、やって みて ください。",
+                    "speak": "ブディさん、わたしが やった とおりに、やって みて ください。",
+                    "id_text": "Budi, coba lakukan seperti yang saya lakukan.",
+                    "en_text": "Budi, please try doing it the way I did.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t1.mp3"
+                },
+                {
+                    "id": "n4l9-s1-t2",
+                    "who": "you",
+                    "ja": "はい。この ボタンを 押《お》して、ドアを 開《あ》けますか。",
+                    "speak": "はい。この ボタンを おして、ドアを あけますか。",
+                    "id_text": "Baik. Apakah saya tekan tombol ini lalu buka pintunya?",
+                    "en_text": "Okay. Do I press this button and then open the door?",
+                    "accept": [
+                        "はい。この ボタンを おして、ドアを あけますか。",
+                        "はい。この ボタンを 押して、ドアを 開けますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t2.mp3"
+                },
+                {
+                    "id": "n4l9-s1-t3",
+                    "who": "partner",
+                    "ja": "ええ、その とおりです。つぎは 説明書《せつめいしょ》の とおりに、数字《すうじ》を 入《い》れて ください。",
+                    "speak": "ええ、その とおりです。つぎは せつめいしょの とおりに、すうじを いれて ください。",
+                    "id_text": "Ya, tepat begitu. Selanjutnya, masukkan angkanya sesuai petunjuk.",
+                    "en_text": "Yes, exactly. Next, enter the numbers according to the manual.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t3.mp3"
+                },
+                {
+                    "id": "n4l9-s1-t4",
+                    "who": "you",
+                    "ja": "はい、説明書《せつめいしょ》の とおりに 入《い》れます。",
+                    "speak": "はい、せつめいしょの とおりに いれます。",
+                    "id_text": "Baik, saya masukkan sesuai petunjuk.",
+                    "en_text": "Okay, I will enter them according to the manual.",
+                    "accept": [
+                        "はい、せつめいしょの とおりに いれます。",
+                        "はい、説明書の とおりに 入れます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t4.mp3"
+                },
+                {
+                    "id": "n4l9-s1-t5",
+                    "who": "partner",
+                    "ja": "できましたか。",
+                    "speak": "できましたか。",
+                    "id_text": "Sudah selesai?",
+                    "en_text": "Are you done?",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t5.mp3"
+                },
+                {
+                    "id": "n4l9-s1-t6",
+                    "who": "you",
+                    "ja": "はい、できました。これで いいですか。",
+                    "speak": "はい、できました。これで いいですか。",
+                    "id_text": "Ya, sudah. Boleh begini?",
+                    "en_text": "Yes, I am done. Is this all right?",
+                    "accept": [
+                        "はい、できました。これで いいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t6.mp3"
+                },
+                {
+                    "id": "n4l9-s1-t7",
+                    "who": "partner",
+                    "ja": "ええ、いいですよ。上手《じょうず》ですね。",
+                    "speak": "ええ、いいですよ。じょうずですね。",
+                    "id_text": "Ya, bagus. Kamu pandai.",
+                    "en_text": "Yes, that is fine. You are good at this.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l9-s2",
+            "title_id": "Janji setelah rapat",
+            "title_en": "Meeting up after a meeting",
+            "setting_id": "Rekan kerja ingin bertanya sesuatu setelah rapat.",
+            "setting_en": "A coworker wants to ask something after the meeting.",
+            "goal_id": "Mengatur waktu dengan あとで.",
+            "goal_en": "Set a time using あとで.",
+            "patterns": [
+                "Ｎの あとで",
+                "Vた あとで"
+            ],
+            "partner": {
+                "name": "スリ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l9-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、会議《かいぎ》の あとで、少《すこ》し 時間《じかん》が ありますか。",
+                    "speak": "ブディさん、かいぎの あとで、すこし じかんが ありますか。",
+                    "id_text": "Budi, setelah rapat, apakah kamu ada waktu sebentar?",
+                    "en_text": "Budi, do you have a little time after the meeting?",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t1.mp3"
+                },
+                {
+                    "id": "n4l9-s2-t2",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し あります。どうしたんですか。",
+                    "speak": "はい、すこし あります。どうしたんですか。",
+                    "id_text": "Ya, sedikit. Ada apa?",
+                    "en_text": "Yes, a little. What is it?",
+                    "accept": [
+                        "はい、すこし あります。どうしたんですか。",
+                        "はい、少し あります。どうしたんですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t2.mp3"
+                },
+                {
+                    "id": "n4l9-s2-t3",
+                    "who": "partner",
+                    "ja": "質問《しつもん》が あるんです。お昼《ひる》ごはんを 食《た》べた あとで、いいですか。",
+                    "speak": "しつもんが あるんです。おひるごはんを たべた あとで、いいですか。",
+                    "id_text": "Ada yang ingin saya tanyakan. Setelah makan siang, bolehkah?",
+                    "en_text": "I have a question. Is it all right after we eat lunch?",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t3.mp3"
+                },
+                {
+                    "id": "n4l9-s2-t4",
+                    "who": "you",
+                    "ja": "はい、いいですよ。何《なに》を 食《た》べますか。",
+                    "speak": "はい、いいですよ。なにを たべますか。",
+                    "id_text": "Ya, boleh. Mau makan apa?",
+                    "en_text": "Sure. What shall we eat?",
+                    "accept": [
+                        "はい、いいですよ。なにを たべますか。",
+                        "はい、いいですよ。何を 食べますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t4.mp3"
+                },
+                {
+                    "id": "n4l9-s2-t5",
+                    "who": "partner",
+                    "ja": "カレーは どうですか。",
+                    "speak": "カレーは どうですか。",
+                    "id_text": "Bagaimana kalau kari?",
+                    "en_text": "How about curry?",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t5.mp3"
+                },
+                {
+                    "id": "n4l9-s2-t6",
+                    "who": "you",
+                    "ja": "いいですね。そう しましょう。",
+                    "speak": "いいですね。そう しましょう。",
+                    "id_text": "Boleh. Mari kita lakukan begitu.",
+                    "en_text": "Sounds good. Let us do that.",
+                    "accept": [
+                        "いいですね。そう しましょう。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t6.mp3"
+                },
+                {
+                    "id": "n4l9-s2-t7",
+                    "who": "partner",
+                    "ja": "じゃ、会議《かいぎ》の あとで、いっしょに 行《い》きましょう。",
+                    "speak": "じゃ、かいぎの あとで、いっしょに いきましょう。",
+                    "id_text": "Kalau begitu, setelah rapat mari kita pergi bersama.",
+                    "en_text": "Then let us go together after the meeting.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l9-s3",
+            "title_id": "Cara makan tonkatsu",
+            "title_en": "How to eat tonkatsu",
+            "setting_id": "Makan siang bersama rekan kerja di kantin.",
+            "setting_en": "Having lunch with a coworker in the canteen.",
+            "goal_id": "Menyatakan cara makan dengan Vて dan Vないで.",
+            "goal_en": "Say how you eat something with Vて and Vないで.",
+            "patterns": [
+                "Vて、V",
+                "Vないで、V"
+            ],
+            "partner": {
+                "name": "ケン",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l9-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、とんかつは ソースを つけて 食《た》べますか。",
+                    "speak": "ブディさん、とんかつは ソースを つけて たべますか。",
+                    "id_text": "Budi, apakah kamu makan tonkatsu dengan saus?",
+                    "en_text": "Budi, do you eat tonkatsu with sauce?",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t1.mp3"
+                },
+                {
+                    "id": "n4l9-s3-t2",
+                    "who": "you",
+                    "ja": "はい、ソースを つけて 食《た》べます。",
+                    "speak": "はい、ソースを つけて たべます。",
+                    "id_text": "Ya, saya makan dengan saus.",
+                    "en_text": "Yes, I eat it with sauce.",
+                    "accept": [
+                        "はい、ソースを つけて たべます。",
+                        "はい、ソースを つけて 食べます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t2.mp3"
+                },
+                {
+                    "id": "n4l9-s3-t3",
+                    "who": "partner",
+                    "ja": "わたしは なにも つけないで 食《た》べます。",
+                    "speak": "わたしは なにも つけないで たべます。",
+                    "id_text": "Saya makan tanpa membubuhkan apa pun.",
+                    "en_text": "I eat it without putting anything on.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t3.mp3"
+                },
+                {
+                    "id": "n4l9-s3-t4",
+                    "who": "you",
+                    "ja": "そうですか。おいしいですか。",
+                    "speak": "そうですか。おいしいですか。",
+                    "id_text": "Begitu, ya. Apakah enak?",
+                    "en_text": "I see. Is it delicious?",
+                    "accept": [
+                        "そうですか。おいしいですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t4.mp3"
+                },
+                {
+                    "id": "n4l9-s3-t5",
+                    "who": "partner",
+                    "ja": "ええ、おいしいですよ。ブディさんも 食《た》べて みて ください。",
+                    "speak": "ええ、おいしいですよ。ブディさんも たべて みて ください。",
+                    "id_text": "Ya, enak. Budi, coba makan juga.",
+                    "en_text": "Yes, it is. Budi, please try it too.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t5.mp3"
+                },
+                {
+                    "id": "n4l9-s3-t6",
+                    "who": "you",
+                    "ja": "はい、いただきます。……ソースを つけた ほうが おいしいです。",
+                    "speak": "はい、いただきます。……ソースを つけた ほうが おいしいです。",
+                    "id_text": "Baik, selamat makan. ……Lebih enak dengan saus.",
+                    "en_text": "Okay, let me eat. ...It tastes better with sauce.",
+                    "accept": [
+                        "はい、いただきます。……ソースを つけた ほうが おいしいです。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t6.mp3"
+                },
+                {
+                    "id": "n4l9-s3-t7",
+                    "who": "partner",
+                    "ja": "そうですか。じゃ、ソースを どうぞ。",
+                    "speak": "そうですか。じゃ、ソースを どうぞ。",
+                    "id_text": "Begitu, ya. Kalau begitu, silakan sausnya.",
+                    "en_text": "I see. Then please have the sauce.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "n4l9-s4",
+            "title_id": "Melipat kertas",
+            "title_en": "Folding paper",
+            "setting_id": "Belajar melipat kertas dengan mengikuti gambar.",
+            "setting_en": "Learning to fold paper by following a diagram.",
+            "goal_id": "Mengikuti garis dan gambar dengan とおりに.",
+            "goal_en": "Follow lines and diagrams with とおりに.",
+            "patterns": [
+                "Vた とおりに",
+                "Ｎの とおりに"
+            ],
+            "partner": {
+                "name": "ハンナ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "n4l9-s4-t1",
+                    "who": "partner",
+                    "ja": "きょうは 紙《かみ》を 折《お》ります。わたしが 折《お》った とおりに、折《お》って ください。",
+                    "speak": "きょうは かみを おります。わたしが おった とおりに、おって ください。",
+                    "id_text": "Hari ini kita melipat kertas. Lipatlah seperti yang saya lipat.",
+                    "en_text": "Today we fold paper. Please fold it the way I did.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t1.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t2",
+                    "who": "you",
+                    "ja": "はい。この 線《せん》の とおりに 折《お》りますか。",
+                    "speak": "はい。この せんの とおりに おりますか。",
+                    "id_text": "Baik. Apakah saya lipat sesuai garis ini?",
+                    "en_text": "Okay. Do I fold along this line?",
+                    "accept": [
+                        "はい。この せんの とおりに おりますか。",
+                        "はい。この 線の とおりに 折りますか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t2.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t3",
+                    "who": "partner",
+                    "ja": "ええ、その とおりに 折《お》って ください。",
+                    "speak": "ええ、その とおりに おって ください。",
+                    "id_text": "Ya, lipat seperti itu.",
+                    "en_text": "Yes, please fold it just like that.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t3.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t4",
+                    "who": "you",
+                    "ja": "こう ですか。",
+                    "speak": "こう ですか。",
+                    "id_text": "Begini?",
+                    "en_text": "Like this?",
+                    "accept": [
+                        "こう ですか。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t4.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t5",
+                    "who": "partner",
+                    "ja": "はい。つぎは 図《ず》を 見《み》て ください。矢印《やじるし》の とおりに 折《お》ります。",
+                    "speak": "はい。つぎは ずを みて ください。やじるしの とおりに おります。",
+                    "id_text": "Ya. Selanjutnya lihat gambar. Kita lipat sesuai tanda panah.",
+                    "en_text": "Yes. Next, look at the diagram. We fold following the arrows.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t5.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t6",
+                    "who": "you",
+                    "ja": "図《ず》の 矢印《やじるし》の とおりに 折《お》ります。……できました。",
+                    "speak": "ずの やじるしの とおりに おります。……できました。",
+                    "id_text": "Saya lipat sesuai tanda panah di gambar. ……Sudah jadi.",
+                    "en_text": "I fold following the arrows in the diagram. ...It is done.",
+                    "accept": [
+                        "ずの やじるしの とおりに おります。……できました。",
+                        "図の 矢印の とおりに 折ります。……できました。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t6.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t7",
+                    "who": "partner",
+                    "ja": "すてきですね。もう 一度《いちど》 やって みましょう。",
+                    "speak": "すてきですね。もう いちど やって みましょう。",
+                    "id_text": "Bagus sekali. Mari kita coba sekali lagi.",
+                    "en_text": "Lovely. Let us try once more.",
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t7.mp3"
+                },
+                {
+                    "id": "n4l9-s4-t8",
+                    "who": "you",
+                    "ja": "はい、やって みます。",
+                    "speak": "はい、やって みます。",
+                    "id_text": "Baik, saya coba.",
+                    "en_text": "Yes, I will try.",
+                    "accept": [
+                        "はい、やって みます。"
+                    ],
+                    "audio": "/audio/kaiwa/lesson-n4-9/n4l9-s4-t8.mp3"
+                }
+            ]
+        }
+    ]
+}

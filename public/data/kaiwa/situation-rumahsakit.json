@@ -1,0 +1,1432 @@
+{
+    "id": "rumahsakit",
+    "track": "situation",
+    "level": "N4",
+    "rounds": 1,
+    "title_id": "Rumah Sakit",
+    "title_en": "Hospital",
+    "note_id": "Gejala, hari, suhu, dan obat di jawaban contoh hanya contoh: ganti dengan keadaanmu sendiri saat benar-benar berobat. Latihan ini bukan nasihat medis. Dalam keadaan darurat sungguhan, hubungi 119 (ambulans) dan sebutkan tempatmu lebih dulu.",
+    "note_en": "Symptoms, days, temperatures and medicines in the sample answers are examples: replace them with your own situation when you really visit a doctor. This practice is not medical advice. In a real emergency, call 119 (ambulance) and give your location first.",
+    "scenarios": [
+        {
+            "id": "rumahsakit-s1",
+            "title_id": "Mendaftar di resepsi",
+            "title_en": "Registering at reception",
+            "setting_id": "Kamu pertama kali datang ke rumah sakit karena demam. Kamu mendaftar di resepsi.",
+            "setting_en": "It is your first visit to the hospital because of a fever. You register at reception.",
+            "goal_id": "Menjawab 初《はじ》めてです, menyerahkan 保険証, dan mengisi 問診票《もんしんひょう》.",
+            "goal_en": "Answer 初めてです, hand over the 保険証, and fill in the 問診票.",
+            "patterns": [
+                "初めてです",
+                "〜を お願いします",
+                "〜が あります"
+            ],
+            "partner": {
+                "name": "うけつけ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Pasien baru: 初めてです. Pasien lama biasanya membawa 診察券 (kartu pasien).",
+                "保険証 (kartu asuransi kesehatan) selalu diminta di resepsi. Tanpa kartu, biayanya jauh lebih mahal.",
+                "問診票 = formulir gejala. Tanya bila perlu: 日本語で 書いても いいですか."
+            ],
+            "tips_en": [
+                "New patient: 初めてです. Returning patients bring a 診察券 (patient card).",
+                "The 保険証 (health insurance card) is always requested at reception. Without it the cost is much higher.",
+                "問診票 = symptom form. Ask if needed: 日本語で 書いても いいですか."
+            ],
+            "words": [
+                {
+                    "ja": "受付《うけつけ》",
+                    "id": "resepsi",
+                    "en": "reception"
+                },
+                {
+                    "ja": "保険証《ほけんしょう》",
+                    "id": "kartu asuransi kesehatan",
+                    "en": "health insurance card"
+                },
+                {
+                    "ja": "問診票《もんしんひょう》",
+                    "id": "formulir gejala",
+                    "en": "medical questionnaire"
+                },
+                {
+                    "ja": "内科《ないか》",
+                    "id": "poli penyakit dalam",
+                    "en": "internal medicine"
+                },
+                {
+                    "ja": "診察券《しんさつけん》",
+                    "id": "kartu pasien",
+                    "en": "patient card"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "診察券《しんさつけん》は ありません。",
+                    "id": "Saya tidak punya kartu pasien.",
+                    "en": "I do not have a patient card."
+                },
+                {
+                    "ja": "病院《びょういん》は 初《はじ》めてです。",
+                    "id": "Ini pertama kalinya saya ke rumah sakit ini.",
+                    "en": "This is my first time at this hospital."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s1-t1",
+                    "who": "partner",
+                    "ja": "いらっしゃいませ。こちらは 初《はじ》めてですか。",
+                    "speak": "いらっしゃいませ。こちらは はじめてですか。",
+                    "id_text": "Selamat datang. Apakah ini kunjungan pertama?",
+                    "en_text": "Welcome. Is this your first visit?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t2",
+                    "who": "you",
+                    "ja": "はい、初《はじ》めてです。",
+                    "speak": "はい、はじめてです。",
+                    "id_text": "Ya, pertama kali.",
+                    "accept": [
+                        "はい、初めてです。"
+                    ],
+                    "en_text": "Yes, it is my first time.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t3",
+                    "who": "partner",
+                    "ja": "保険証《ほけんしょう》を お願《ねが》いします。",
+                    "speak": "ほけんしょうを おねがいします。",
+                    "id_text": "Mohon kartu asuransinya.",
+                    "en_text": "Your insurance card, please.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t4",
+                    "who": "you",
+                    "ja": "はい、これです。どうぞ。",
+                    "speak": "はい、これです。どうぞ。",
+                    "id_text": "Ya, ini. Silakan.",
+                    "accept": [
+                        "はい、これです。どうぞ。"
+                    ],
+                    "en_text": "Yes, here it is.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t5",
+                    "who": "partner",
+                    "ja": "この 問診票《もんしんひょう》に 書《か》いて ください。",
+                    "speak": "この もんしんひょうに かいて ください。",
+                    "id_text": "Tolong isi formulir gejala ini.",
+                    "en_text": "Please fill in this questionnaire.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t6",
+                    "who": "you",
+                    "ja": "日本語《にほんご》で 書《か》いても いいですか。",
+                    "speak": "にほんごで かいても いいですか。",
+                    "id_text": "Bolehkah saya menulis dengan bahasa Jepang?",
+                    "accept": [
+                        "日本語で 書いても いいですか。",
+                        "日本語で書いてもいいですか。"
+                    ],
+                    "en_text": "May I write it in Japanese?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t7",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。今日《きょう》は どうしましたか。",
+                    "speak": "はい、だいじょうぶです。きょうは どうしましたか。",
+                    "id_text": "Ya, tidak apa-apa. Hari ini ada keluhan apa?",
+                    "en_text": "Yes, that is fine. What is the problem today?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t8",
+                    "who": "you",
+                    "ja": "熱《ねつ》が あります。",
+                    "speak": "ねつが あります。",
+                    "id_text": "Saya demam.",
+                    "accept": [
+                        "熱が あります。",
+                        "熱があります。"
+                    ],
+                    "en_text": "I have a fever.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s1-t9",
+                    "who": "partner",
+                    "ja": "内科《ないか》ですね。あちらで お待《ま》ちください。",
+                    "speak": "ないかですね。あちらで おまちください。",
+                    "id_text": "Poli penyakit dalam ya. Silakan tunggu di sana.",
+                    "en_text": "Internal medicine, then. Please wait over there.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s1-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s2",
+            "title_id": "Demam dan batuk",
+            "title_en": "Fever and cough",
+            "setting_id": "Di ruang periksa, dokter menanyakan gejala demam dan batukmu.",
+            "setting_en": "In the examination room, the doctor asks about your fever and cough.",
+            "goal_id": "Menjelaskan gejala dengan 〜が あります / 〜が 出《で》ます, 〜から, dan suhu badan.",
+            "goal_en": "Describe symptoms with 〜が あります / 〜が 出ます, 〜から, and body temperature.",
+            "patterns": [
+                "〜が あります",
+                "〜から です",
+                "〜度 でした"
+            ],
+            "partner": {
+                "name": "せんせい",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Gejala: 熱が あります (demam), 咳が 出ます (batuk), のどが 痛いです (sakit tenggorokan).",
+                "Sejak kapan: 〜から. Contoh: 三日前からです (sejak tiga hari lalu), 昨日からです, 今朝からです.",
+                "Suhu badan: 三十八度 (38 derajat). Dokter hampir selalu menanyakan 熱は 何度ですか."
+            ],
+            "tips_en": [
+                "Symptoms: 熱が あります (fever), 咳が 出ます (cough), のどが 痛いです (sore throat).",
+                "Since when: 〜から. E.g. 三日前からです (since three days ago), 昨日からです, 今朝からです.",
+                "Body temperature: 三十八度 (38 degrees). Doctors nearly always ask 熱は 何度ですか."
+            ],
+            "words": [
+                {
+                    "ja": "熱《ねつ》",
+                    "id": "demam",
+                    "en": "fever"
+                },
+                {
+                    "ja": "咳《せき》",
+                    "id": "batuk",
+                    "en": "cough"
+                },
+                {
+                    "ja": "のど",
+                    "id": "tenggorokan",
+                    "en": "throat"
+                },
+                {
+                    "ja": "風邪《かぜ》",
+                    "id": "masuk angin / flu",
+                    "en": "cold"
+                },
+                {
+                    "ja": "何度《なんど》",
+                    "id": "berapa derajat",
+                    "en": "what temperature"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "頭《あたま》が 痛《いた》いです。",
+                    "id": "Kepala saya sakit.",
+                    "en": "I have a headache."
+                },
+                {
+                    "ja": "昨日《きのう》から 寒気《さむけ》が します。",
+                    "id": "Sejak kemarin saya menggigil.",
+                    "en": "I have had chills since yesterday."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s2-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada keluhan apa?",
+                    "en_text": "What seems to be the problem?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t2",
+                    "who": "you",
+                    "ja": "熱《ねつ》が あります。咳《せき》も 出《で》ます。",
+                    "speak": "ねつが あります。せきも でます。",
+                    "id_text": "Saya demam. Saya juga batuk.",
+                    "accept": [
+                        "熱が あります。咳も 出ます。",
+                        "熱があります。咳も出ます。"
+                    ],
+                    "en_text": "I have a fever. I also have a cough.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t3",
+                    "who": "partner",
+                    "ja": "いつからですか。",
+                    "speak": "いつからですか。",
+                    "id_text": "Sejak kapan?",
+                    "en_text": "Since when?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t4",
+                    "who": "you",
+                    "ja": "三日前《みっかまえ》からです。",
+                    "speak": "みっかまえからです。",
+                    "id_text": "Sejak tiga hari lalu.",
+                    "accept": [
+                        "三日前からです。"
+                    ],
+                    "en_text": "Since three days ago.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t5",
+                    "who": "partner",
+                    "ja": "熱《ねつ》は 何度《なんど》ですか。",
+                    "speak": "ねつは なんどですか。",
+                    "id_text": "Demamnya berapa derajat?",
+                    "en_text": "What is your temperature?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t6",
+                    "who": "you",
+                    "ja": "昨日《きのう》は 三十八度《さんじゅうはちど》でした。",
+                    "speak": "きのうは さんじゅうはちどでした。",
+                    "id_text": "Kemarin 38 derajat.",
+                    "accept": [
+                        "昨日は 三十八度でした。",
+                        "昨日は三十八度でした。"
+                    ],
+                    "en_text": "It was 38 degrees yesterday.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t7",
+                    "who": "partner",
+                    "ja": "のどは 痛《いた》いですか。",
+                    "speak": "のどは いたいですか。",
+                    "id_text": "Apakah tenggorokan sakit?",
+                    "en_text": "Is your throat sore?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t8",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し 痛《いた》いです。",
+                    "speak": "はい、すこし いたいです。",
+                    "id_text": "Ya, agak sakit.",
+                    "accept": [
+                        "はい、少し 痛いです。",
+                        "はい、少し痛いです。"
+                    ],
+                    "en_text": "Yes, it is a little sore.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s2-t9",
+                    "who": "partner",
+                    "ja": "風邪《かぜ》ですね。お薬《くすり》を 出《だ》します。",
+                    "speak": "かぜですね。おくすりを だします。",
+                    "id_text": "Flu biasa ya. Saya berikan obat.",
+                    "en_text": "It is a cold. I will give you medicine.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s2-t9.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s3",
+            "title_id": "Sakit perut",
+            "title_en": "Stomach ache",
+            "setting_id": "Perutmu sakit sejak pagi. Kamu menjelaskan gejalanya pada dokter.",
+            "setting_en": "Your stomach has hurt since morning. You describe the symptoms to the doctor.",
+            "goal_id": "Memakai 〜が 痛いです, 〜が します, dan menjawab pertanyaan tentang makanan semalam.",
+            "goal_en": "Use 〜が 痛いです, 〜が します, and answer questions about last night's food.",
+            "patterns": [
+                "お腹が 痛いです",
+                "吐き気が します",
+                "〜は ありません"
+            ],
+            "partner": {
+                "name": "せんせい",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Bagian tubuh + が 痛いです: お腹 (perut), 頭 (kepala), 歯 (gigi), 背中 (punggung).",
+                "吐き気が します = mual. 下痢 = diare. Menyangkal: 〜は ありません.",
+                "Dokter sering bertanya apa yang kamu makan: 何を 食べましたか. Jawab 〜を 食べました."
+            ],
+            "tips_en": [
+                "Body part + が 痛いです: お腹 (stomach), 頭 (head), 歯 (tooth), 背中 (back).",
+                "吐き気が します = nauseous. 下痢 = diarrhea. To deny: 〜は ありません.",
+                "Doctors often ask what you ate: 何を 食べましたか. Answer 〜を 食べました."
+            ],
+            "words": [
+                {
+                    "ja": "お腹《なか》",
+                    "id": "perut",
+                    "en": "stomach / belly"
+                },
+                {
+                    "ja": "吐《は》き気《け》",
+                    "id": "mual",
+                    "en": "nausea"
+                },
+                {
+                    "ja": "下痢《げり》",
+                    "id": "diare",
+                    "en": "diarrhea"
+                },
+                {
+                    "ja": "今朝《けさ》",
+                    "id": "pagi ini",
+                    "en": "this morning"
+                },
+                {
+                    "ja": "食《た》べ物《もの》",
+                    "id": "makanan",
+                    "en": "food"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "頭《あたま》が 痛《いた》いです。",
+                    "id": "Kepala saya sakit.",
+                    "en": "I have a headache."
+                },
+                {
+                    "ja": "下痢《げり》が 続《つづ》いています。",
+                    "id": "Diare saya berlanjut.",
+                    "en": "The diarrhea keeps going."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s3-t1",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Ada keluhan apa?",
+                    "en_text": "What seems to be the problem?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t2",
+                    "who": "you",
+                    "ja": "お腹《なか》が 痛《いた》いです。",
+                    "speak": "おなかが いたいです。",
+                    "id_text": "Perut saya sakit.",
+                    "accept": [
+                        "お腹が 痛いです。",
+                        "お腹が痛いです。"
+                    ],
+                    "en_text": "My stomach hurts.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t3",
+                    "who": "partner",
+                    "ja": "いつから 痛《いた》いですか。",
+                    "speak": "いつから いたいですか。",
+                    "id_text": "Sejak kapan sakitnya?",
+                    "en_text": "Since when does it hurt?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t4",
+                    "who": "you",
+                    "ja": "今朝《けさ》からです。",
+                    "speak": "けさからです。",
+                    "id_text": "Sejak pagi tadi.",
+                    "accept": [
+                        "今朝からです。"
+                    ],
+                    "en_text": "Since this morning.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t5",
+                    "who": "partner",
+                    "ja": "昨日《きのう》の 夜《よる》、何《なに》を 食《た》べましたか。",
+                    "speak": "きのうの よる、なにを たべましたか。",
+                    "id_text": "Tadi malam makan apa?",
+                    "en_text": "What did you eat last night?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t6",
+                    "who": "you",
+                    "ja": "魚《さかな》と ごはんを 食《た》べました。",
+                    "speak": "さかなと ごはんを たべました。",
+                    "id_text": "Saya makan ikan dan nasi.",
+                    "accept": [
+                        "魚と ごはんを 食べました。",
+                        "魚とごはんを食べました。"
+                    ],
+                    "en_text": "I ate fish and rice.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t7",
+                    "who": "partner",
+                    "ja": "吐《は》き気《け》は ありますか。",
+                    "speak": "はきけは ありますか。",
+                    "id_text": "Apakah mual?",
+                    "en_text": "Do you feel nauseous?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t8",
+                    "who": "you",
+                    "ja": "はい、少《すこ》し 吐《は》き気《け》が します。",
+                    "speak": "はい、すこし はきけが します。",
+                    "id_text": "Ya, agak mual.",
+                    "accept": [
+                        "はい、少し 吐き気が します。",
+                        "はい、少し吐き気がします。"
+                    ],
+                    "en_text": "Yes, I feel a little nauseous.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t9",
+                    "who": "partner",
+                    "ja": "下痢《げり》も ありますか。",
+                    "speak": "げりも ありますか。",
+                    "id_text": "Apakah ada diare juga?",
+                    "en_text": "Do you have diarrhea too?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t9.mp3"
+                },
+                {
+                    "id": "rumahsakit-s3-t10",
+                    "who": "you",
+                    "ja": "いいえ、下痢《げり》は ありません。",
+                    "speak": "いいえ、げりは ありません。",
+                    "id_text": "Tidak, tidak ada diare.",
+                    "accept": [
+                        "いいえ、下痢は ありません。",
+                        "いいえ、下痢はありません。"
+                    ],
+                    "en_text": "No, I do not have diarrhea.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s3-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s4",
+            "title_id": "Alergi dan pemeriksaan",
+            "title_en": "Allergies and tests",
+            "setting_id": "Dokter menanyakan alergi obat dan menjelaskan pemeriksaan yang akan dilakukan.",
+            "setting_en": "The doctor asks about drug allergies and explains the tests.",
+            "goal_id": "Menjawab アレルギーは ありますか dan bertanya 〜は 痛いですか / いつ わかりますか.",
+            "goal_en": "Answer アレルギーは ありますか and ask 〜は 痛いですか / いつ わかりますか.",
+            "patterns": [
+                "アレルギーは ありません",
+                "〜は 痛いですか",
+                "いつ わかりますか"
+            ],
+            "partner": {
+                "name": "せんせい",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Dokter selalu menanyakan 薬の アレルギー. Jawab ありません atau 〜の アレルギーが あります (mis. ペニシリン).",
+                "Pemeriksaan umum: レントゲン (rontgen), 血液検査 (tes darah), 注射 (suntik).",
+                "Tanya hasil: 結果は いつ わかりますか. Tanya rasa sakit: 〜は 痛いですか."
+            ],
+            "tips_en": [
+                "Doctors always ask about drug allergies. Answer ありません or 〜の アレルギーが あります (e.g. penicillin).",
+                "Common tests: レントゲン (X-ray), 血液検査 (blood test), 注射 (injection).",
+                "Ask about results: 結果は いつ わかりますか. Ask about pain: 〜は 痛いですか."
+            ],
+            "words": [
+                {
+                    "ja": "アレルギー",
+                    "id": "alergi",
+                    "en": "allergy"
+                },
+                {
+                    "ja": "レントゲン",
+                    "id": "rontgen",
+                    "en": "X-ray"
+                },
+                {
+                    "ja": "注射《ちゅうしゃ》",
+                    "id": "suntikan",
+                    "en": "injection"
+                },
+                {
+                    "ja": "結果《けっか》",
+                    "id": "hasil",
+                    "en": "result"
+                },
+                {
+                    "ja": "待合室《まちあいしつ》",
+                    "id": "ruang tunggu",
+                    "en": "waiting room"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "卵《たまご》の アレルギーが あります。",
+                    "id": "Saya alergi telur.",
+                    "en": "I am allergic to eggs."
+                },
+                {
+                    "ja": "検査《けんさ》は どのくらい かかりますか。",
+                    "id": "Pemeriksaannya butuh waktu berapa lama?",
+                    "en": "How long does the test take?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s4-t1",
+                    "who": "partner",
+                    "ja": "薬《くすり》の アレルギーは ありますか。",
+                    "speak": "くすりの アレルギーは ありますか。",
+                    "id_text": "Apakah Anda alergi obat?",
+                    "en_text": "Are you allergic to any medicine?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t2",
+                    "who": "you",
+                    "ja": "いいえ、ありません。",
+                    "speak": "いいえ、ありません。",
+                    "id_text": "Tidak, tidak ada.",
+                    "accept": [
+                        "いいえ、ありません。"
+                    ],
+                    "en_text": "No, I am not.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t3",
+                    "who": "partner",
+                    "ja": "レントゲンを 撮《と》りますので、こちらへ どうぞ。",
+                    "speak": "レントゲンを とりますので、こちらへ どうぞ。",
+                    "id_text": "Kita akan rontgen, silakan lewat sini.",
+                    "en_text": "We will take an X-ray. This way, please.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t4",
+                    "who": "you",
+                    "ja": "はい。レントゲンは 痛《いた》いですか。",
+                    "speak": "はい。レントゲンは いたいですか。",
+                    "id_text": "Baik. Apakah rontgen sakit?",
+                    "accept": [
+                        "はい。レントゲンは 痛いですか。",
+                        "はい。レントゲンは痛いですか。"
+                    ],
+                    "en_text": "Yes. Does an X-ray hurt?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t5",
+                    "who": "partner",
+                    "ja": "いいえ、痛《いた》くないです。すぐ 終《お》わります。",
+                    "speak": "いいえ、いたくないです。すぐ おわります。",
+                    "id_text": "Tidak, tidak sakit. Sebentar saja.",
+                    "en_text": "No, it does not hurt. It will be over soon.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t6",
+                    "who": "you",
+                    "ja": "注射《ちゅうしゃ》も しますか。",
+                    "speak": "ちゅうしゃも しますか。",
+                    "id_text": "Apakah akan disuntik juga?",
+                    "accept": [
+                        "注射も しますか。",
+                        "注射もしますか。"
+                    ],
+                    "en_text": "Will I get an injection too?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t7",
+                    "who": "partner",
+                    "ja": "今日《きょう》は 注射《ちゅうしゃ》は しません。",
+                    "speak": "きょうは ちゅうしゃは しません。",
+                    "id_text": "Hari ini tidak ada suntikan.",
+                    "en_text": "No injection today.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t8",
+                    "who": "you",
+                    "ja": "よかったです。結果《けっか》は いつ わかりますか。",
+                    "speak": "よかったです。けっかは いつ わかりますか。",
+                    "id_text": "Syukurlah. Kapan hasilnya diketahui?",
+                    "accept": [
+                        "よかったです。結果は いつ わかりますか。",
+                        "よかったです。結果はいつわかりますか。"
+                    ],
+                    "en_text": "Good. When will I know the result?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t9",
+                    "who": "partner",
+                    "ja": "三十分《さんじゅっぷん》ぐらい かかります。",
+                    "speak": "さんじゅっぷんぐらい かかります。",
+                    "id_text": "Sekitar tiga puluh menit.",
+                    "en_text": "It takes about thirty minutes.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t9.mp3"
+                },
+                {
+                    "id": "rumahsakit-s4-t10",
+                    "who": "you",
+                    "ja": "では、待合室《まちあいしつ》で 待《ま》ちます。",
+                    "speak": "では、まちあいしつで まちます。",
+                    "id_text": "Kalau begitu, saya menunggu di ruang tunggu.",
+                    "accept": [
+                        "では、待合室で 待ちます。",
+                        "では、待合室で待ちます。"
+                    ],
+                    "en_text": "Then I will wait in the waiting room.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s4-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s5",
+            "title_id": "Menebus obat di apotek",
+            "title_en": "Getting medicine at the pharmacy",
+            "setting_id": "Kamu membawa resep dokter ke apotek dan apoteker menjelaskan cara minum obat.",
+            "setting_en": "You take the prescription to the pharmacy and the pharmacist explains how to take the medicine.",
+            "goal_id": "Memahami 一日《いちにち》 〜回, 食後《しょくご》, dan bertanya 〜ても いいですか.",
+            "goal_en": "Understand 一日 〜回, 食後, and ask 〜ても いいですか.",
+            "patterns": [
+                "食後ですね",
+                "〜ても いいですか",
+                "一回に いくつ"
+            ],
+            "partner": {
+                "name": "やくざいし",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Resep disebut 処方箋. Serahkan dengan: これを お願いします.",
+                "Waktu minum: 食前 (sebelum makan), 食後 (setelah makan), 寝る前 (sebelum tidur). 一日 三回 = tiga kali sehari.",
+                "Ulangi instruksi untuk memastikan: 食後ですね. Tanya larangan: 〜ても いいですか."
+            ],
+            "tips_en": [
+                "A prescription is a 処方箋. Hand it over with: これを お願いします.",
+                "When to take it: 食前 (before meals), 食後 (after meals), 寝る前 (before bed). 一日 三回 = three times a day.",
+                "Repeat to confirm: 食後ですね. Ask about restrictions: 〜ても いいですか."
+            ],
+            "words": [
+                {
+                    "ja": "処方箋《しょほうせん》",
+                    "id": "resep dokter",
+                    "en": "prescription"
+                },
+                {
+                    "ja": "食後《しょくご》",
+                    "id": "setelah makan",
+                    "en": "after meals"
+                },
+                {
+                    "ja": "寝《ね》る前《まえ》",
+                    "id": "sebelum tidur",
+                    "en": "before bed"
+                },
+                {
+                    "ja": "運転《うんてん》",
+                    "id": "mengemudi",
+                    "en": "driving"
+                },
+                {
+                    "ja": "お大事《だいじ》に",
+                    "id": "semoga cepat sembuh",
+                    "en": "take care"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "この 薬《くすり》は 何《なん》の 薬《くすり》ですか。",
+                    "id": "Obat ini untuk apa?",
+                    "en": "What is this medicine for?"
+                },
+                {
+                    "ja": "食前《しょくぜん》ですか、食後《しょくご》ですか。",
+                    "id": "Sebelum atau sesudah makan?",
+                    "en": "Before or after meals?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s5-t1",
+                    "who": "partner",
+                    "ja": "処方箋《しょほうせん》を お願《ねが》いします。",
+                    "speak": "しょほうせんを おねがいします。",
+                    "id_text": "Mohon resepnya.",
+                    "en_text": "Your prescription, please.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t2",
+                    "who": "you",
+                    "ja": "はい、これです。お願《ねが》いします。",
+                    "speak": "はい、これです。おねがいします。",
+                    "id_text": "Ya, ini. Tolong ya.",
+                    "accept": [
+                        "はい、これです。お願いします。"
+                    ],
+                    "en_text": "Yes, here. Please.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t3",
+                    "who": "partner",
+                    "ja": "この 薬《くすり》は 一日《いちにち》 三回《さんかい》、食後《しょくご》に 飲《の》んで ください。",
+                    "speak": "この くすりは いちにち さんかい、しょくごに のんで ください。",
+                    "id_text": "Obat ini diminum tiga kali sehari, setelah makan.",
+                    "en_text": "Please take this medicine three times a day, after meals.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t4",
+                    "who": "you",
+                    "ja": "食後《しょくご》ですね。一回《いっかい》に いくつ 飲《の》みますか。",
+                    "speak": "しょくごですね。いっかいに いくつ のみますか。",
+                    "id_text": "Setelah makan ya. Sekali minum berapa butir?",
+                    "accept": [
+                        "食後ですね。一回に いくつ 飲みますか。",
+                        "食後ですね。一回にいくつ飲みますか。"
+                    ],
+                    "en_text": "After meals, right. How many do I take each time?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t5",
+                    "who": "partner",
+                    "ja": "一回《いっかい》に 二《ふた》つです。",
+                    "speak": "いっかいに ふたつです。",
+                    "id_text": "Dua butir sekali minum.",
+                    "en_text": "Two each time.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t6",
+                    "who": "you",
+                    "ja": "寝《ね》る前《まえ》にも 飲《の》みますか。",
+                    "speak": "ねるまえにも のみますか。",
+                    "id_text": "Apakah diminum sebelum tidur juga?",
+                    "accept": [
+                        "寝る前にも 飲みますか。",
+                        "寝る前にも飲みますか。"
+                    ],
+                    "en_text": "Do I take it before bed too?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t7",
+                    "who": "partner",
+                    "ja": "いいえ、寝《ね》る前《まえ》は 飲《の》みません。",
+                    "speak": "いいえ、ねるまえは のみません。",
+                    "id_text": "Tidak, sebelum tidur tidak diminum.",
+                    "en_text": "No, not before bed.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t8",
+                    "who": "you",
+                    "ja": "車《くるま》を 運転《うんてん》しても いいですか。",
+                    "speak": "くるまを うんてんしても いいですか。",
+                    "id_text": "Bolehkah saya mengemudi?",
+                    "accept": [
+                        "車を 運転しても いいですか。",
+                        "車を運転してもいいですか。"
+                    ],
+                    "en_text": "May I drive?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t9",
+                    "who": "partner",
+                    "ja": "眠《ねむ》く なりますから、運転《うんてん》は だめです。",
+                    "speak": "ねむく なりますから、うんてんは だめです。",
+                    "id_text": "Obatnya bikin mengantuk, jadi tidak boleh mengemudi.",
+                    "en_text": "It makes you sleepy, so no driving.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t9.mp3"
+                },
+                {
+                    "id": "rumahsakit-s5-t10",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございます。",
+                    "speak": "わかりました。ありがとうございます。",
+                    "id_text": "Mengerti. Terima kasih.",
+                    "accept": [
+                        "わかりました。ありがとうございます。"
+                    ],
+                    "en_text": "I understand. Thank you.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s5-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s6",
+            "title_id": "Mengubah jadwal periksa",
+            "title_en": "Changing an appointment",
+            "setting_id": "Kamu menelepon rumah sakit karena tidak bisa datang pada jadwal periksamu besok.",
+            "setting_en": "You phone the hospital because you cannot come to tomorrow's appointment.",
+            "goal_id": "Memakai 予約《よやく》を 変《か》えたいです dan mengusulkan hari/jam lain.",
+            "goal_en": "Use 予約を 変えたいです and propose another day and time.",
+            "patterns": [
+                "予約を 変えたいです",
+                "〜は 仕事が あります",
+                "〜は どうですか"
+            ],
+            "partner": {
+                "name": "うけつけ",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "Mulai dengan もしもし, lalu 予約を 変えたいです (ingin mengubah jadwal). Sebut nama: 〜と 申します.",
+                "Alasan: 明日は 仕事が あります. Usul: 金曜日の 午後は どうですか.",
+                "Ulangi hari dan jam di akhir untuk memastikan; bila ragu minta ulang: もう 一度 お願いします."
+            ],
+            "tips_en": [
+                "Start with もしもし, then 予約を 変えたいです (I want to change my appointment). Give your name: 〜と 申します.",
+                "Reason: 明日は 仕事が あります. Suggest: 金曜日の 午後は どうですか.",
+                "Repeat day and time at the end to be sure; if unsure ask again: もう 一度 お願いします."
+            ],
+            "words": [
+                {
+                    "ja": "予約《よやく》",
+                    "id": "janji / reservasi",
+                    "en": "appointment"
+                },
+                {
+                    "ja": "変《か》える",
+                    "id": "mengubah",
+                    "en": "to change"
+                },
+                {
+                    "ja": "午後《ごご》",
+                    "id": "sore (setelah tengah hari)",
+                    "en": "afternoon"
+                },
+                {
+                    "ja": "金曜日《きんようび》",
+                    "id": "hari Jumat",
+                    "en": "Friday"
+                },
+                {
+                    "ja": "仕事《しごと》",
+                    "id": "pekerjaan",
+                    "en": "work"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "予約《よやく》を キャンセルしたいです。",
+                    "id": "Saya ingin membatalkan janji.",
+                    "en": "I would like to cancel my appointment."
+                },
+                {
+                    "ja": "午前《ごぜん》の ほうが いいです。",
+                    "id": "Pagi hari lebih baik.",
+                    "en": "The morning is better."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s6-t1",
+                    "who": "partner",
+                    "ja": "はい、さくら病院《びょういん》です。",
+                    "speak": "はい、さくらびょういんです。",
+                    "id_text": "Ya, Rumah Sakit Sakura.",
+                    "en_text": "Hello, Sakura Hospital.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t2",
+                    "who": "you",
+                    "ja": "もしもし、予約《よやく》を 変《か》えたいです。",
+                    "speak": "もしもし、よやくを かえたいです。",
+                    "id_text": "Halo, saya ingin mengubah jadwal.",
+                    "accept": [
+                        "もしもし、予約を 変えたいです。",
+                        "もしもし、予約を変えたいです。"
+                    ],
+                    "en_text": "Hello, I would like to change my appointment.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t3",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》を お願《ねが》いします。",
+                    "speak": "おなまえを おねがいします。",
+                    "id_text": "Mohon nama Anda.",
+                    "en_text": "May I have your name?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t4",
+                    "who": "you",
+                    "ja": "ブディと 申《もう》します。",
+                    "speak": "ブディと もうします。",
+                    "id_text": "Nama saya Budi.",
+                    "accept": [
+                        "ブディと 申します。",
+                        "ブディと申します。"
+                    ],
+                    "en_text": "My name is Budi.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t5",
+                    "who": "partner",
+                    "ja": "ブディさん、明日《あした》の 十時《じゅうじ》ですね。",
+                    "speak": "ブディさん、あしたの じゅうじですね。",
+                    "id_text": "Pak Budi, besok jam sepuluh ya.",
+                    "en_text": "Mr. Budi, tomorrow at ten, correct?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t6",
+                    "who": "you",
+                    "ja": "すみません、明日《あした》は 仕事《しごと》が あります。",
+                    "speak": "すみません、あしたは しごとが あります。",
+                    "id_text": "Maaf, besok saya ada pekerjaan.",
+                    "accept": [
+                        "すみません、明日は 仕事が あります。",
+                        "すみません、明日は仕事があります。"
+                    ],
+                    "en_text": "Sorry, I have work tomorrow.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t7",
+                    "who": "partner",
+                    "ja": "いつなら いいですか。",
+                    "speak": "いつなら いいですか。",
+                    "id_text": "Kapan yang cocok?",
+                    "en_text": "When would be good?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t8",
+                    "who": "you",
+                    "ja": "金曜日《きんようび》の 午後《ごご》は どうですか。",
+                    "speak": "きんようびの ごごは どうですか。",
+                    "id_text": "Bagaimana Jumat sore?",
+                    "accept": [
+                        "金曜日の 午後は どうですか。",
+                        "金曜日の午後はどうですか。"
+                    ],
+                    "en_text": "How about Friday afternoon?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t9",
+                    "who": "partner",
+                    "ja": "はい、大丈夫《だいじょうぶ》です。金曜日《きんようび》の 三時《さんじ》ですね。",
+                    "speak": "はい、だいじょうぶです。きんようびの さんじですね。",
+                    "id_text": "Baik. Jumat jam tiga ya.",
+                    "en_text": "Yes, that is fine. Friday at three.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t9.mp3"
+                },
+                {
+                    "id": "rumahsakit-s6-t10",
+                    "who": "you",
+                    "ja": "わかりました。よろしく お願《ねが》いします。",
+                    "speak": "わかりました。よろしく おねがいします。",
+                    "id_text": "Mengerti. Mohon bantuannya.",
+                    "accept": [
+                        "わかりました。よろしく お願いします。",
+                        "わかりました。よろしくお願いします。"
+                    ],
+                    "en_text": "Understood. Thank you.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s6-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s7",
+            "title_id": "Memanggil ambulans",
+            "title_en": "Calling an ambulance",
+            "setting_id": "Temanmu tiba-tiba pingsan di jalan. Kamu menelepon 119.",
+            "setting_en": "Your friend suddenly collapses on the street. You call 119.",
+            "goal_id": "Menjawab 火事《かじ》ですか、救急《きゅうきゅう》ですか, menyebut keadaan, tempat, dan namamu.",
+            "goal_en": "Answer 火事ですか、救急ですか, then state the situation, the place and your name.",
+            "patterns": [
+                "救急です",
+                "〜が 倒れました",
+                "〜の 前です"
+            ],
+            "partner": {
+                "name": "しょうぼう",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "119 untuk ambulans dan pemadam kebakaran (polisi: 110). Operator bertanya dulu: 火事ですか、救急ですか. Jawab 救急です.",
+                "Sebut keadaan dengan kalimat pendek: 友達が 倒れました (teman saya pingsan).",
+                "Tempat adalah informasi terpenting: 〜駅の 前です. Bicaralah pelan dan jelas, lalu tunggu di tempat sampai ambulans datang."
+            ],
+            "tips_en": [
+                "119 is for ambulance and fire (police: 110). The operator first asks: 火事ですか、救急ですか. Answer 救急です.",
+                "Describe the situation in a short sentence: 友達が 倒れました (my friend collapsed).",
+                "The place is the most important information: 〜駅の 前です. Speak slowly and clearly, then wait where you are until the ambulance arrives."
+            ],
+            "words": [
+                {
+                    "ja": "救急車《きゅうきゅうしゃ》",
+                    "id": "ambulans",
+                    "en": "ambulance"
+                },
+                {
+                    "ja": "倒《たお》れる",
+                    "id": "pingsan / roboh",
+                    "en": "to collapse"
+                },
+                {
+                    "ja": "場所《ばしょ》",
+                    "id": "tempat",
+                    "en": "place"
+                },
+                {
+                    "ja": "返事《へんじ》",
+                    "id": "jawaban / respons",
+                    "en": "response"
+                },
+                {
+                    "ja": "火事《かじ》",
+                    "id": "kebakaran",
+                    "en": "fire"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "救急車《きゅうきゅうしゃ》を お願《ねが》いします。",
+                    "id": "Tolong kirim ambulans.",
+                    "en": "An ambulance, please."
+                },
+                {
+                    "ja": "ここは さくら駅《えき》の 近《ちか》くです。",
+                    "id": "Ini dekat Stasiun Sakura.",
+                    "en": "This is near Sakura Station."
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s7-t1",
+                    "who": "partner",
+                    "ja": "一一九番《ひゃくじゅうきゅうばん》です。火事《かじ》ですか、救急《きゅうきゅう》ですか。",
+                    "speak": "ひゃくじゅうきゅうばんです。かじですか、きゅうきゅうですか。",
+                    "id_text": "Ini 119. Kebakaran atau darurat medis?",
+                    "en_text": "This is 119. Fire or ambulance?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t2",
+                    "who": "you",
+                    "ja": "救急《きゅうきゅう》です。",
+                    "speak": "きゅうきゅうです。",
+                    "id_text": "Darurat medis.",
+                    "accept": [
+                        "救急です。"
+                    ],
+                    "en_text": "An ambulance.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t3",
+                    "who": "partner",
+                    "ja": "どうしましたか。",
+                    "speak": "どうしましたか。",
+                    "id_text": "Apa yang terjadi?",
+                    "en_text": "What happened?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t4",
+                    "who": "you",
+                    "ja": "友達《ともだち》が 倒《たお》れました。",
+                    "speak": "ともだちが たおれました。",
+                    "id_text": "Teman saya pingsan.",
+                    "accept": [
+                        "友達が 倒れました。",
+                        "友達が倒れました。"
+                    ],
+                    "en_text": "My friend collapsed.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t5",
+                    "who": "partner",
+                    "ja": "返事《へんじ》は しますか。",
+                    "speak": "へんじは しますか。",
+                    "id_text": "Apakah dia merespons?",
+                    "en_text": "Does he respond?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t6",
+                    "who": "you",
+                    "ja": "はい、返事《へんじ》を します。",
+                    "speak": "はい、へんじを します。",
+                    "id_text": "Ya, dia merespons.",
+                    "accept": [
+                        "はい、返事を します。",
+                        "はい、返事をします。"
+                    ],
+                    "en_text": "Yes, he responds.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t7",
+                    "who": "partner",
+                    "ja": "場所《ばしょ》は どこですか。",
+                    "speak": "ばしょは どこですか。",
+                    "id_text": "Di mana tempatnya?",
+                    "en_text": "Where are you?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t8",
+                    "who": "you",
+                    "ja": "さくら駅《えき》の 前《まえ》です。",
+                    "speak": "さくらえきの まえです。",
+                    "id_text": "Di depan Stasiun Sakura.",
+                    "accept": [
+                        "さくら駅の 前です。",
+                        "さくら駅の前です。"
+                    ],
+                    "en_text": "In front of Sakura Station.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t9",
+                    "who": "partner",
+                    "ja": "お名前《なまえ》を お願《ねが》いします。",
+                    "speak": "おなまえを おねがいします。",
+                    "id_text": "Mohon nama Anda.",
+                    "en_text": "Your name, please.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t9.mp3"
+                },
+                {
+                    "id": "rumahsakit-s7-t10",
+                    "who": "you",
+                    "ja": "ブディです。",
+                    "speak": "ブディです。",
+                    "id_text": "Saya Budi.",
+                    "accept": [
+                        "ブディです。"
+                    ],
+                    "en_text": "I am Budi.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s7-t10.mp3"
+                }
+            ]
+        },
+        {
+            "id": "rumahsakit-s8",
+            "title_id": "Meminta surat dokter",
+            "title_en": "Asking for a doctor's note",
+            "setting_id": "Kamu harus istirahat dari pekerjaan dan meminta surat keterangan dokter untuk perusahaan.",
+            "setting_en": "You need time off work and ask the doctor for a note for your company.",
+            "goal_id": "Meminta 診断書《しんだんしょ》を お願いします, menyebut lama istirahat, dan menanyakan biaya.",
+            "goal_en": "Ask for a 診断書を お願いします, state the days off, and ask the cost.",
+            "patterns": [
+                "診断書を お願いします",
+                "〜日 休みます",
+                "〜は いくらですか"
+            ],
+            "partner": {
+                "name": "せんせい",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "tips_id": [
+                "診断書 = surat keterangan dokter. Banyak perusahaan memintanya setelah sakit beberapa hari: 会社に 出します.",
+                "Lama istirahat: 三日 休みます (istirahat tiga hari). Dokter yang menentukan: 〜ほうが いいです.",
+                "Surat dokter biasanya berbayar dan diambil di 会計 (kasir). Tanya: いくらですか, いつ もらえますか."
+            ],
+            "tips_en": [
+                "診断書 = doctor's certificate. Many companies ask for one after several days of illness: 会社に 出します.",
+                "Days off: 三日 休みます (rest for three days). The doctor decides: 〜ほうが いいです.",
+                "The note usually costs money and is collected at 会計 (the cashier). Ask: いくらですか, いつ もらえますか."
+            ],
+            "words": [
+                {
+                    "ja": "診断書《しんだんしょ》",
+                    "id": "surat keterangan dokter",
+                    "en": "doctor's certificate"
+                },
+                {
+                    "ja": "休《やす》む",
+                    "id": "istirahat / libur",
+                    "en": "to rest / be off"
+                },
+                {
+                    "ja": "下《さ》がる",
+                    "id": "turun (demam)",
+                    "en": "to go down"
+                },
+                {
+                    "ja": "会計《かいけい》",
+                    "id": "kasir / pembayaran",
+                    "en": "payment counter"
+                },
+                {
+                    "ja": "渡《わた》す",
+                    "id": "menyerahkan",
+                    "en": "to hand over"
+                }
+            ],
+            "related": [
+                {
+                    "ja": "会社《かいしゃ》に 出《だ》します。",
+                    "id": "Saya akan menyerahkannya ke perusahaan.",
+                    "en": "I will submit it to my company."
+                },
+                {
+                    "ja": "何日分《なんにちぶん》の 薬《くすり》ですか。",
+                    "id": "Obat untuk berapa hari?",
+                    "en": "How many days' worth of medicine is it?"
+                }
+            ],
+            "turns": [
+                {
+                    "id": "rumahsakit-s8-t1",
+                    "who": "partner",
+                    "ja": "今日《きょう》は お薬《くすり》を 出《だ》します。何《なに》か ありますか。",
+                    "speak": "きょうは おくすりを だします。なにか ありますか。",
+                    "id_text": "Hari ini saya berikan obat. Ada yang ingin ditanyakan?",
+                    "en_text": "I will prescribe medicine today. Is there anything else?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t1.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t2",
+                    "who": "you",
+                    "ja": "会社《かいしゃ》に 出《だ》す 診断書《しんだんしょ》を お願《ねが》いします。",
+                    "speak": "かいしゃに だす しんだんしょを おねがいします。",
+                    "id_text": "Tolong surat keterangan dokter untuk perusahaan.",
+                    "accept": [
+                        "会社に 出す 診断書を お願いします。",
+                        "会社に出す診断書をお願いします。"
+                    ],
+                    "en_text": "A doctor's note for my company, please.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t2.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t3",
+                    "who": "partner",
+                    "ja": "わかりました。何日《なんにち》 休《やす》みますか。",
+                    "speak": "わかりました。なんにち やすみますか。",
+                    "id_text": "Baik. Berapa hari Anda istirahat?",
+                    "en_text": "All right. How many days will you rest?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t3.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t4",
+                    "who": "you",
+                    "ja": "三日《みっか》 休《やす》みます。",
+                    "speak": "みっか やすみます。",
+                    "id_text": "Saya istirahat tiga hari.",
+                    "accept": [
+                        "三日 休みます。",
+                        "三日休みます。"
+                    ],
+                    "en_text": "I will rest for three days.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t4.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t5",
+                    "who": "partner",
+                    "ja": "熱《ねつ》が 下《さ》がるまで、休《やす》んだ ほうが いいですね。",
+                    "speak": "ねつが さがるまで、やすんだ ほうが いいですね。",
+                    "id_text": "Sebaiknya istirahat sampai demamnya turun.",
+                    "en_text": "You should rest until the fever goes down.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t5.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t6",
+                    "who": "you",
+                    "ja": "はい、わかりました。診断書《しんだんしょ》は いつ もらえますか。",
+                    "speak": "はい、わかりました。しんだんしょは いつ もらえますか。",
+                    "id_text": "Baik. Kapan saya bisa menerima suratnya?",
+                    "accept": [
+                        "はい、わかりました。診断書は いつ もらえますか。",
+                        "はい、わかりました。診断書はいつもらえますか。"
+                    ],
+                    "en_text": "Yes. When can I get the note?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t6.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t7",
+                    "who": "partner",
+                    "ja": "会計《かいけい》で お渡《わた》しします。",
+                    "speak": "かいけいで おわたしします。",
+                    "id_text": "Akan diberikan di kasir.",
+                    "en_text": "We will hand it to you at the cashier.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t7.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t8",
+                    "who": "you",
+                    "ja": "診断書《しんだんしょ》は いくらですか。",
+                    "speak": "しんだんしょは いくらですか。",
+                    "id_text": "Berapa biaya suratnya?",
+                    "accept": [
+                        "診断書は いくらですか。",
+                        "診断書はいくらですか。"
+                    ],
+                    "en_text": "How much is the note?",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t8.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t9",
+                    "who": "partner",
+                    "ja": "三千円《さんぜんえん》です。",
+                    "speak": "さんぜんえんです。",
+                    "id_text": "Tiga ribu yen.",
+                    "en_text": "It is 3,000 yen.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t9.mp3"
+                },
+                {
+                    "id": "rumahsakit-s8-t10",
+                    "who": "you",
+                    "ja": "わかりました。ありがとうございました。",
+                    "speak": "わかりました。ありがとうございました。",
+                    "id_text": "Mengerti. Terima kasih banyak.",
+                    "accept": [
+                        "わかりました。ありがとうございました。"
+                    ],
+                    "en_text": "Understood. Thank you very much.",
+                    "audio": "/audio/kaiwa/situation-rumahsakit/rumahsakit-s8-t10.mp3"
+                }
+            ]
+        }
+    ]
+}

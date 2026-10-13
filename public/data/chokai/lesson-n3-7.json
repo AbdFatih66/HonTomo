@@ -1,0 +1,348 @@
+{
+    "id": "n3-7",
+    "level": "N3",
+    "focus": "N3 Pelajaran 7 — Vなくては ならない／いけない・Vなくても かまわない, Vなくちゃ／Vなきゃ, Nだけだ／Vるだけでいい, …かな, Nなんか, …なんて, Vi(さ)せる, Vi(さ)せられる, …なら, Vて くれ",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "来週の 送別会、行きますか？"
+            },
+            {
+                "speaker": "male",
+                "text": "せっかく 誘って いただいたのに、申し訳ありません。今回は 遠慮させて ください。"
+            },
+            {
+                "speaker": "female",
+                "text": "何か 予定が あるんですか？"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、国から 友達が 来るんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "そうですか。わかりました。"
+            },
+            {
+                "speaker": "male",
+                "text": "すみません、また 誘って ください。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-7/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l7-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は 送別会《そうべつかい》に 行《い》きますか。",
+                "choices": [
+                    "行《い》きます",
+                    "まだ わかりません",
+                    "行《い》きません"
+                ],
+                "answer": 2,
+                "audio": null,
+                "translate": {
+                    "id": "Apakah laki-laki itu ke pesta perpisahan? — Tidak.",
+                    "en": "Is the man going to the farewell party? — No."
+                }
+            },
+            {
+                "id": "n3l7-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は どうして 行《い》けませんか。",
+                "choices": [
+                    "国《くに》から 友達《ともだち》が 来《く》るからです",
+                    "仕事《しごと》が 忙《いそが》しいからです",
+                    "病気《びょうき》だからです"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Mengapa ia tidak bisa pergi? — Karena teman dari kampung halamannya datang.",
+                    "en": "Why can he not go? — A friend is coming from his home country."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l7-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "明日の 会議、私も 出なくては いけませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "部長は 全員 出席しなくては ならないと 言って いましたよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "資料は 準備しなくても かまいませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、資料は 私が 用意します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q1.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 資料《しりょう》を 準備《じゅんび》しなくては いけませんか。",
+            "choices": [
+                "準備《じゅんび》しなくては いけません",
+                "準備《じゅんび》しなくても いいです",
+                "まだ わかりません"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Apakah laki-laki itu harus menyiapkan materi? — Tidak perlu.",
+                "en": "Does the man have to prepare the materials? — No, he does not."
+            }
+        },
+        {
+            "id": "n3l7-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "そろそろ 行かなくちゃ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "えっ、もう？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "うん、五時までに 銀行に 行かなきゃ いけないの。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "じゃ、また 今度ね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q2.mp3",
+            "prompt": "女《おんな》の 人《ひと》は どうして もう 行《い》きますか。",
+            "choices": [
+                "友達《ともだち》に 会《あ》うからです",
+                "会議《かいぎ》が あるからです",
+                "銀行《ぎんこう》に 行《い》かなければ ならないからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa perempuan itu pergi sekarang? — Karena harus ke bank.",
+                "en": "Why is the woman leaving now? — She has to go to the bank."
+            }
+        },
+        {
+            "id": "n3l7-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この 書類、どう 書けば いいですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "名前と 住所を 書くだけで いいですよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ほかの 欄は？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "空けて おくだけで 大丈夫です。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q3.mp3",
+            "prompt": "ほかの 欄《らん》は どう しますか。",
+            "choices": [
+                "空《あ》けて おきます",
+                "書《か》きます",
+                "消《け》します"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Kolom lain diapakan? — Dibiarkan kosong.",
+                "en": "What should be done with the other fields? — Leave them blank."
+            }
+        },
+        {
+            "id": "n3l7-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "母の 誕生日に 何を あげようかな。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "花は どうかな。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいね。あ、花屋まで 一緒に 来て くれないかな。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いいよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q4.mp3",
+            "prompt": "二人《ふたり》は これから どこへ 行《い》きますか。",
+            "choices": [
+                "銀行《ぎんこう》",
+                "花屋《はなや》",
+                "会社《かいしゃ》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ke mana mereka akan pergi? — Ke toko bunga.",
+                "en": "Where will they go next? — The flower shop."
+            }
+        },
+        {
+            "id": "n3l7-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田中さんの 絵、とても 上手ですね。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いえ、私の 絵なんか、まだまだです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "展覧会に 出して みませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "私なんかが 出しても いいんでしょうか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 自分《じぶん》の 絵《え》に ついて どう 思《おも》って いますか。",
+            "choices": [
+                "とても 上手《じょうず》だと 思《おも》って います",
+                "展覧会《てんらんかい》に 出《だ》したいと 思《おも》って います",
+                "まだまだだと 思《おも》って います"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Bagaimana perempuan itu menilai lukisannya? — Masih jauh dari bagus.",
+                "en": "How does the woman see her own paintings? — As still far from good."
+            }
+        },
+        {
+            "id": "n3l7-q6",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "聞きました？佐藤さんが 来月 結婚するそうですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "はい、結婚《けっこん》しました。",
+                "えっ、結婚《けっこん》するなんて 全然《ぜんぜん》 知《し》りませんでした。",
+                "いいえ、来月《らいげつ》です。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Dengar tidak? Sato akan menikah bulan depan. — Eh, saya sama sekali tidak tahu.",
+                "en": "Did you hear Sato is getting married next month? — What, I had no idea."
+            }
+        },
+        {
+            "id": "n3l7-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "北海道へ 旅行に 行く 予定なんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "北海道《ほっかいどう》なら、海《うみ》の 幸《さち》が おいしいですよ。",
+                "北海道《ほっかいどう》へ 行《い》きました。",
+                "予定《よてい》は ありません。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Saya berencana ke Hokkaido. — Kalau Hokkaido, hasil lautnya enak.",
+                "en": "I am planning a trip to Hokkaido. — If it is Hokkaido, the seafood is great."
+            }
+        },
+        {
+            "id": "n3l7-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "昨日の 試験、満点を 取って、先生を びっくりさせたよ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "すごい！"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q8.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 試験《しけん》で 満点《まんてん》を 取《と》りました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu mendapat nilai penuh. → ○",
+                "en": "The man got a perfect score on the test. → ○"
+            }
+        },
+        {
+            "id": "n3l7-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "昨日の 映画には 感動させられました。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "私は 泣かされましたよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q9.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は この 映画《えいが》が きらいです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Laki-laki itu tidak suka film ini. → ×",
+                "en": "The man dislikes this movie. → ×"
+            }
+        },
+        {
+            "id": "n3l7-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "部長に 明日の 資料を 今日中に コピーして くれと 言われた。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "大変だね。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-7/n3l7-q10.mp3",
+            "prompt": "資料《しりょう》は 明日《あした》 コピーします。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Materi disalin besok. → ×",
+                "en": "The materials will be copied tomorrow. → ×"
+            }
+        }
+    ]
+}

@@ -1,0 +1,309 @@
+{
+    "id": 18,
+    "focus": "Kemampuan dan hobi — bentuk kamus、〜ことができます、趣味は〜ことです、〜まえに",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ブディさんの趣味は、何ですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "ピアノを弾くことです。田口さんは。"
+            },
+            {
+                "speaker": "female",
+                "text": "わたしは、歌を歌うことです。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいですね。今度、いっしょにしませんか。"
+            },
+            {
+                "speaker": "female",
+                "text": "ええ。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-18/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "l18-kq1",
+                "prompt": "ブディさんの　趣味《しゅみ》は、何《なん》ですか。",
+                "choices": [
+                    "ピアノを　弾《ひ》くことです。",
+                    "歌《うた》を　歌《うた》うことです。",
+                    "絵《え》を　かくことです。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Hobi Budi bermain piano.",
+                    "en": "Budi's hobby is playing the piano."
+                },
+                "audio": null
+            },
+            {
+                "id": "l18-kq2",
+                "prompt": "田口《たぐち》さんの　趣味《しゅみ》は、何《なん》ですか。",
+                "choices": [
+                    "歌《うた》を　歌《うた》うことです。",
+                    "ピアノを　弾《ひ》くことです。",
+                    "写真《しゃしん》を　撮《と》ることです。"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Hobi Taguchi bernyanyi.",
+                    "en": "Taguchi's hobby is singing."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "l18-q1",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "ラニさんは、スポーツができますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "泳ぐことができます。でも、スキーやテニスはできません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q1.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　何《なに》が　できますか。",
+            "choices": [
+                "泳《およ》ぐことが　できます。",
+                "テニスを　することが　できます。",
+                "スキーを　することが　できます。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Ia bisa berenang, tetapi tidak bisa ski dan tenis.",
+                "en": "She can swim, but cannot ski or play tennis."
+            }
+        },
+        {
+            "id": "l18-q2",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ブラウンさんの趣味は、何ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "写真を撮ることです。休みの日は、いろいろな所へ行って、撮ります。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q2.mp3",
+            "prompt": "男《おとこ》の　人《ひと》の　趣味《しゅみ》は　何《なん》ですか。",
+            "choices": [
+                "写真《しゃしん》を　撮《と》ること",
+                "料理《りょうり》を　作《つく》ること",
+                "音楽《おんがく》を　聞《き》くこと"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Hobinya mengambil foto.",
+                "en": "His hobby is taking photographs."
+            }
+        },
+        {
+            "id": "l18-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "晩ごはんを食べるまえに、いつも何をしますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "いつも三十分ぐらい散歩します。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q3.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　晩《ばん》ごはんを　食《た》べるまえに　何《なに》を　しますか。",
+            "choices": [
+                "シャワーを　浴《あ》びます。",
+                "散歩《さんぽ》を　します。",
+                "新聞《しんぶん》を　読《よ》みます。"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Sebelum makan malam ia berjalan-jalan sekitar 30 menit.",
+                "en": "Before dinner he takes a walk."
+            }
+        },
+        {
+            "id": "l18-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この図書館で、本を何冊借りることができますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "一人五冊まで借りることができます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q4.mp3",
+            "prompt": "本《ほん》を　何冊《なんさつ》まで　借《か》りることが　できますか。",
+            "choices": [
+                "五冊《ごさつ》",
+                "三冊《さんさつ》",
+                "十冊《じゅっさつ》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Boleh meminjam sampai 5 buku per orang.",
+                "en": "You can borrow up to five books."
+            }
+        },
+        {
+            "id": "l18-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "あした、いっしょにテニスをしませんか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません。友達が来ますから、テニスをすることができません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q5.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　どうして　テニスを　することが　できませんか。",
+            "choices": [
+                "お金《かね》が　ないから",
+                "仕事《しごと》が　あるから",
+                "友達《ともだち》が　来《く》るから"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Ia tidak bisa main tenis karena temannya akan datang.",
+                "en": "He can't play tennis because a friend is coming."
+            }
+        },
+        {
+            "id": "l18-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "すみません。この電車の中で、ジュースを飲むことができますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ええ、飲んでもいいですよ。でも、サンドイッチは食べることができません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q6.mp3",
+            "prompt": "電車《でんしゃ》の　中《なか》で　ジュースを　飲《の》むことが　できます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Jus boleh diminum di kereta. Jawaban: Benar (○).",
+                "en": "You can drink juice on the train. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l18-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "趣味は何ですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "歌を歌うことです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q7.mp3",
+            "prompt": "女《おんな》の　人《ひと》の　趣味《しゅみ》は　歌《うた》を　聞《き》くことです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Hobinya menyanyi, bukan mendengarkan lagu. Jawaban: Salah (×).",
+                "en": "Her hobby is singing, not listening to songs. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l18-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "毎朝、会社へ行くまえに、何をしますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "新聞を読んで、コーヒーを飲みます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q8.mp3",
+            "prompt": "女《おんな》の　人《ひと》は　会社《かいしゃ》へ　行《い》くまえに、新聞《しんぶん》を　読《よ》みます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sebelum ke kantor ia membaca koran. Jawaban: Benar (○).",
+                "en": "She reads the newspaper before going to work. Answer: True (○)."
+            }
+        },
+        {
+            "id": "l18-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "来週のパーティーに来ることができますか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "すみません。仕事がありますから、行くことができません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q9.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　来週《らいしゅう》の　パーティーに　来《く》ることが　できます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Ia tidak bisa datang karena ada pekerjaan. Jawaban: Salah (×).",
+                "en": "He cannot come to the party. Answer: False (×)."
+            }
+        },
+        {
+            "id": "l18-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "この本は、うちへ持って行くことができますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいえ、ここで読んでください。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-18/l18-q10.mp3",
+            "prompt": "男《おとこ》の　人《ひと》は　この　本《ほん》を　持《も》って　行《い》くことが　できます。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Buku tidak boleh dibawa pulang. Jawaban: Salah (×).",
+                "en": "He can't take the book home. Answer: False (×)."
+            }
+        }
+    ]
+}

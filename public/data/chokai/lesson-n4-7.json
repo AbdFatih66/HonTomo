@@ -1,0 +1,300 @@
+{
+    "id": "n4-7",
+    "level": "N4",
+    "focus": "Saran (〜ほうがいい), dugaan (〜でしょう／〜かもしれません), ajakan 〜ましょう, bilangan＋で, kosakata cuaca dan kesehatan",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "ケンさん、げんきが ありませんね。"
+            },
+            {
+                "speaker": "male",
+                "text": "ええ、きのうから 頭が 痛いんです。"
+            },
+            {
+                "speaker": "female",
+                "text": "それは いけませんね。無理を しない ほうが いいですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "ありがとう。きょうは 早く 帰ります。"
+            },
+            {
+                "speaker": "female",
+                "text": "薬も 飲んだ ほうが いいですよ。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい、そうします。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n4-7/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n4l7-kq1",
+                "prompt": "男《おとこ》の 人《ひと》は どこが 痛《いた》いですか。",
+                "choices": [
+                    "頭《あたま》",
+                    "胃《い》",
+                    "歯《は》"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Bagian mana yang sakit pada laki-laki itu? ...Kepalanya.",
+                    "en": "Where does the man hurt? ...His head."
+                },
+                "audio": null
+            },
+            {
+                "id": "n4l7-kq2",
+                "prompt": "男《おとこ》の 人《ひと》は きょう どうしますか。",
+                "choices": [
+                    "早《はや》く 帰《かえ》ります",
+                    "会議《かいぎ》に 出《で》ます",
+                    "買《か》い物《もの》に 行《い》きます"
+                ],
+                "answer": 0,
+                "translate": {
+                    "id": "Apa yang akan dilakukan laki-laki itu hari ini? ...Pulang lebih awal.",
+                    "en": "What will the man do today? ...Go home early."
+                },
+                "audio": null
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n4l7-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "ケンさん、あしたの 天気は どうでしょうか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "午後から 雨が 降るでしょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q1.mp3",
+            "prompt": "天気《てんき》は どうなりますか。",
+            "choices": [
+                "午後《ごご》から 雨《あめ》が 降《ふ》る",
+                "一日中《いちにちじゅう》 晴《は》れる",
+                "夕方《ゆうがた》から 雪《ゆき》が 降《ふ》る"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana cuaca besok? ...Mulai siang hujan.",
+                "en": "What will the weather be like? ...It will rain from the afternoon."
+            }
+        },
+        {
+            "id": "n4l7-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "わたしは、ストレスで 胃が 痛くなりました。病院で 薬を もらいました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q2.mp3",
+            "prompt": "どこが 痛《いた》くなりましたか。",
+            "choices": [
+                "胃《い》",
+                "頭《あたま》",
+                "足《あし》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagian mana yang sakit? ...Lambung.",
+                "en": "Where did it start to hurt? ...The stomach."
+            }
+        },
+        {
+            "id": "n4l7-q3",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "駅から 会社まで、バスで 何分ですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "バスで 十分です。歩くと 三十分ぐらいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q3.mp3",
+            "prompt": "バスで 何分《なんぷん》ですか。",
+            "choices": [
+                "10分《ぷん》",
+                "30分《ぷん》",
+                "20分《ぷん》"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Naik bus berapa menit? ...Sepuluh menit.",
+                "en": "How many minutes by bus? ...Ten minutes."
+            }
+        },
+        {
+            "id": "n4l7-q4",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "リナさん、こんや、星を 見に 行きませんか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "いいですね。でも、曇るかも しれません。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q4.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 天気《てんき》の ことを どう 言《い》っていますか。",
+            "choices": [
+                "曇《くも》るかもしれません",
+                "雨《あめ》が 降《ふ》るでしょう",
+                "きっと 晴《は》れます"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana perempuan itu menyebut cuaca? ...Mungkin berawan.",
+                "en": "What does the woman say about the weather? ...It might be cloudy."
+            }
+        },
+        {
+            "id": "n4l7-q5",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "どうしましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "きのうの 夜から 熱が 出て、せきも 出ます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q5.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は いつから 熱《ねつ》が ありますか。",
+            "choices": [
+                "きのうの 夜《よる》から",
+                "けさから",
+                "おとといから"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Sejak kapan laki-laki itu demam? ...Sejak tadi malam.",
+                "en": "Since when does the man have a fever? ...Since last night."
+            }
+        },
+        {
+            "id": "n4l7-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "きょうは 少し 熱が あるんです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q6.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "それは いけませんね。早《はや》く 帰《かえ》った ほうが いいですよ。",
+                "それは いいですね。いっしょに 行《い》きましょう。",
+                "いいえ、わたしは 学生《がくせい》です。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan: Hari ini saya agak demam. Laki-laki: Itu tidak baik. Sebaiknya pulang lebih awal.",
+                "en": "Woman: I have a slight fever today. Man: That is not good. You had better go home early."
+            }
+        },
+        {
+            "id": "n4l7-q7",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "雨が やみましたね。出かけましょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q7.mp3",
+            "prompt": "男《おとこ》の 人《ひと》の 答《こた》えは どれですか。",
+            "choices": [
+                "ええ、そうしましょう。",
+                "いいえ、行《い》きませんでした。",
+                "はい、雨《あめ》が 降《ふ》るでしょう。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Perempuan: Hujannya sudah berhenti. Mari berangkat. Laki-laki: Ya, mari.",
+                "en": "Woman: The rain has stopped. Let us go out. Man: Yes, let us."
+            }
+        },
+        {
+            "id": "n4l7-q8",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この レストランの 昼ごはんは、いくらですか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "千円です。夜は 二千円ですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q8.mp3",
+            "prompt": "夜《よる》の ごはんは 千円《せんえん》です。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Makan malam seharga seribu yen. ...Salah, dua ribu yen.",
+                "en": "Dinner costs one thousand yen. ...False, it is two thousand yen."
+            }
+        },
+        {
+            "id": "n4l7-q9",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "あしたは、午後から 晴れるでしょう。朝は 曇りです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q9.mp3",
+            "prompt": "朝《あさ》は 曇《くも》りです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Paginya berawan. ...Benar.",
+                "en": "The morning is cloudy. ...True."
+            }
+        },
+        {
+            "id": "n4l7-q10",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "先生、胃が 痛いんです。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ストレスかも しれませんね。お酒は 飲まない ほうが いいですよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n4-7/n4l7-q10.mp3",
+            "prompt": "先生《せんせい》は お酒《さけ》を 飲《の》んだ ほうが いいと 言《い》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Dokter berkata sebaiknya minum sake. ...Salah, justru sebaiknya tidak minum.",
+                "en": "The doctor said you had better drink sake. ...False, he said you had better not."
+            }
+        }
+    ]
+}

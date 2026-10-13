@@ -1,0 +1,399 @@
+{
+    "id": 24,
+    "level": "N5",
+    "title_id": "Pelajaran 24 — Memberi & Menolong",
+    "title_en": "Lesson 24 — Giving & Helping",
+    "scenarios": [
+        {
+            "id": "l24-s1",
+            "title_id": "Oleh-oleh dari teman",
+            "title_en": "A souvenir from a friend",
+            "setting_id": "Kamu dan rekan kerja membicarakan oleh-oleh dan hadiah.",
+            "setting_en": "You and a coworker talk about souvenirs and gifts.",
+            "goal_id": "Memakai くれます, あげます, dan 〜て くれます.",
+            "goal_en": "Use kuremasu, agemasu, and ~te kuremasu.",
+            "patterns": [
+                "Nに Nを くれます",
+                "Nに Nを あげます",
+                "Vて くれます"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l24-s1-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、この お菓子《かし》は おいしいですね。だれに もらいましたか。",
+                    "speak": "ブディさん、この おかしは おいしいですね。だれに もらいましたか。",
+                    "id_text": "Budi, kue ini enak ya. Dapat dari siapa?",
+                    "en_text": "Budi, this snack is delicious. Who gave it to you?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t1.mp3"
+                },
+                {
+                    "id": "l24-s1-t2",
+                    "who": "you",
+                    "ja": "ミラーさんが くれました。先週《せんしゅう》、旅行《りょこう》に 行《い》きました。",
+                    "speak": "ミラーさんが くれました。せんしゅう、りょこうに いきました。",
+                    "id_text": "Pak Miller memberikannya kepada saya. Minggu lalu dia bepergian.",
+                    "accept": [
+                        "ミラーさんが くれました。先週、旅行に 行きました。",
+                        "ミラーさんがくれました。先週、旅行に行きました。"
+                    ],
+                    "en_text": "Mr. Miller gave it to me. He went on a trip last week.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t2.mp3"
+                },
+                {
+                    "id": "l24-s1-t3",
+                    "who": "partner",
+                    "ja": "ミラーさんは 私《わたし》にも お菓子《かし》を くれました。",
+                    "speak": "ミラーさんは わたしにも おかしを くれました。",
+                    "id_text": "Pak Miller juga memberi saya kue.",
+                    "en_text": "Mr. Miller gave me a snack too.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t3.mp3"
+                },
+                {
+                    "id": "l24-s1-t4",
+                    "who": "you",
+                    "ja": "そうですか。私《わたし》は ミラーさんに 日本《にほん》の 地図《ちず》を あげました。",
+                    "speak": "そうですか。わたしは ミラーさんに にほんの ちずを あげました。",
+                    "id_text": "Begitu ya. Saya memberi Pak Miller peta Jepang.",
+                    "accept": [
+                        "そうですか。私は ミラーさんに 日本の 地図を あげました。",
+                        "そうですか。私はミラーさんに日本の地図をあげました。"
+                    ],
+                    "en_text": "I see. I gave Mr. Miller a map of Japan.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t4.mp3"
+                },
+                {
+                    "id": "l24-s1-t5",
+                    "who": "partner",
+                    "ja": "ブディさんは 親切《しんせつ》ですね。",
+                    "speak": "ブディさんは しんせつですね。",
+                    "id_text": "Budi baik hati ya.",
+                    "en_text": "Budi, you're kind.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t5.mp3"
+                },
+                {
+                    "id": "l24-s1-t6",
+                    "who": "you",
+                    "ja": "ミラーさんは 私《わたし》に 日本語《にほんご》を 教《おし》えて くれました。",
+                    "speak": "ミラーさんは わたしに にほんごを おしえて くれました。",
+                    "id_text": "Pak Miller mengajari saya bahasa Jepang.",
+                    "accept": [
+                        "ミラーさんは 私に 日本語を 教えて くれました。",
+                        "ミラーさんは私に日本語を教えてくれました。"
+                    ],
+                    "en_text": "Mr. Miller taught me Japanese.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t6.mp3"
+                },
+                {
+                    "id": "l24-s1-t7",
+                    "who": "partner",
+                    "ja": "いい 友達《ともだち》ですね。",
+                    "speak": "いい ともだちですね。",
+                    "id_text": "Teman yang baik ya.",
+                    "en_text": "He's a good friend.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s1-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l24-s2",
+            "title_id": "Membantu pindahan",
+            "title_en": "Helping with a move",
+            "setting_id": "Temanmu akan pindah rumah dan kamu menawarkan bantuan.",
+            "setting_en": "A friend is moving and you offer to help.",
+            "goal_id": "Memakai 〜て あげます dan 〜ましょうか.",
+            "goal_en": "Use ~te agemasu and ~mashou ka.",
+            "patterns": [
+                "Vて あげます",
+                "Vて くれますか",
+                "Vましょうか"
+            ],
+            "partner": {
+                "name": "たなか",
+                "voice": "male"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l24-s2-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、来週《らいしゅう》の 日曜日《にちようび》は 引《ひ》っ越《こ》しを します。",
+                    "speak": "ブディさん、らいしゅうの にちようびは ひっこしを します。",
+                    "id_text": "Budi, hari Minggu minggu depan saya pindah rumah.",
+                    "en_text": "Budi, I'm moving next Sunday.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t1.mp3"
+                },
+                {
+                    "id": "l24-s2-t2",
+                    "who": "you",
+                    "ja": "ほんとうですか。手伝《てつだ》いましょうか。",
+                    "speak": "ほんとうですか。てつだいましょうか。",
+                    "id_text": "Benarkah? Mau saya bantu?",
+                    "accept": [
+                        "ほんとうですか。手伝いましょうか。"
+                    ],
+                    "en_text": "Really? Shall I help?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t2.mp3"
+                },
+                {
+                    "id": "l24-s2-t3",
+                    "who": "partner",
+                    "ja": "ありがとう。荷物《にもつ》を 持《も》って くれますか。",
+                    "speak": "ありがとう。にもつを もって くれますか。",
+                    "id_text": "Terima kasih. Maukah kamu membawakan barang-barang?",
+                    "en_text": "Thanks. Could you carry my luggage?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t3.mp3"
+                },
+                {
+                    "id": "l24-s2-t4",
+                    "who": "you",
+                    "ja": "ええ、持《も》って あげますよ。車《くるま》も 運転《うんてん》して あげます。",
+                    "speak": "ええ、もって あげますよ。くるまも うんてんして あげます。",
+                    "id_text": "Ya, akan saya bawakan. Mobilnya juga akan saya setirkan.",
+                    "accept": [
+                        "ええ、持って あげますよ。車も 運転して あげます。",
+                        "ええ、持ってあげますよ。車も運転してあげます。"
+                    ],
+                    "en_text": "Sure, I'll carry it for you. I'll drive the car too.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t4.mp3"
+                },
+                {
+                    "id": "l24-s2-t5",
+                    "who": "partner",
+                    "ja": "ありがとう。ブディさんは ほんとうに いい 人《ひと》ですね。",
+                    "speak": "ありがとう。ブディさんは ほんとうに いい ひとですね。",
+                    "id_text": "Terima kasih. Budi sungguh orang baik.",
+                    "en_text": "Thank you. You're a really good person, Budi.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t5.mp3"
+                },
+                {
+                    "id": "l24-s2-t6",
+                    "who": "you",
+                    "ja": "準備《じゅんび》は もう できましたか。",
+                    "speak": "じゅんびは もう できましたか。",
+                    "id_text": "Persiapannya sudah selesai?",
+                    "accept": [
+                        "準備は もう できましたか。",
+                        "準備はもうできましたか。"
+                    ],
+                    "en_text": "Are the preparations done yet?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t6.mp3"
+                },
+                {
+                    "id": "l24-s2-t7",
+                    "who": "partner",
+                    "ja": "ええ、全部《ぜんぶ》 自分《じぶん》で しました。",
+                    "speak": "ええ、ぜんぶ じぶんで しました。",
+                    "id_text": "Ya, semuanya saya kerjakan sendiri.",
+                    "en_text": "Yes, I did everything myself.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s2-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l24-s3",
+            "title_id": "Dikoreksi teman",
+            "title_en": "Being helped with Japanese",
+            "setting_id": "Kamu bercerita bahwa rekan kerja membantu mengoreksi bahasa Jepangmu.",
+            "setting_en": "You say that a coworker helps correct your Japanese.",
+            "goal_id": "Memakai 〜て もらいます dan 〜て くれます.",
+            "goal_en": "Use ~te moraimasu and ~te kuremasu.",
+            "patterns": [
+                "Nに Vて もらいます",
+                "Nが Vて くれます",
+                "Vて あげて ください"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l24-s3-t1",
+                    "who": "partner",
+                    "ja": "ブディさんの 日記《にっき》は 日本語《にほんご》ですね。",
+                    "speak": "ブディさんの にっきは にほんごですね。",
+                    "id_text": "Buku harian Budi berbahasa Jepang ya.",
+                    "en_text": "Budi, your diary is in Japanese.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t1.mp3"
+                },
+                {
+                    "id": "l24-s3-t2",
+                    "who": "you",
+                    "ja": "はい。会社《かいしゃ》の 人《ひと》に 日本語《にほんご》を 直《なお》して もらいます。",
+                    "speak": "はい。かいしゃの ひとに にほんごを なおして もらいます。",
+                    "id_text": "Ya. Bahasa Jepangnya dikoreksi oleh orang kantor.",
+                    "accept": [
+                        "はい。会社の 人に 日本語を 直して もらいます。",
+                        "はい。会社の人に日本語を直してもらいます。"
+                    ],
+                    "en_text": "Yes. I have someone at the company correct my Japanese.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t2.mp3"
+                },
+                {
+                    "id": "l24-s3-t3",
+                    "who": "partner",
+                    "ja": "だれが 直《なお》して くれますか。",
+                    "speak": "だれが なおして くれますか。",
+                    "id_text": "Siapa yang mengoreksikannya untukmu?",
+                    "en_text": "Who corrects it for you?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t3.mp3"
+                },
+                {
+                    "id": "l24-s3-t4",
+                    "who": "you",
+                    "ja": "たなかさんが 直《なお》して くれます。きのうも 説明《せつめい》して くれました。",
+                    "speak": "たなかさんが なおして くれます。きのうも せつめいして くれました。",
+                    "id_text": "Pak Tanaka yang mengoreksikannya. Kemarin juga beliau menjelaskan.",
+                    "accept": [
+                        "たなかさんが 直して くれます。きのうも 説明して くれました。",
+                        "たなかさんが直してくれます。きのうも説明してくれました。"
+                    ],
+                    "en_text": "Mr. Tanaka does. He explained things for me yesterday too.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t4.mp3"
+                },
+                {
+                    "id": "l24-s3-t5",
+                    "who": "partner",
+                    "ja": "いい 人《ひと》ですね。私《わたし》も たなかさんに 日本語《にほんご》を 教《おし》えて もらいました。",
+                    "speak": "いい ひとですね。わたしも たなかさんに にほんごを おしえて もらいました。",
+                    "id_text": "Orang yang baik ya. Saya juga diajari bahasa Jepang oleh Pak Tanaka.",
+                    "en_text": "He's a good person. I also had Mr. Tanaka teach me Japanese.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t5.mp3"
+                },
+                {
+                    "id": "l24-s3-t6",
+                    "who": "you",
+                    "ja": "すずきさんも ですか。たなかさんは 親切《しんせつ》ですね。",
+                    "speak": "すずきさんも ですか。たなかさんは しんせつですね。",
+                    "id_text": "Ibu Suzuki juga? Pak Tanaka baik hati ya.",
+                    "accept": [
+                        "すずきさんも ですか。たなかさんは 親切ですね。",
+                        "すずきさんもですか。たなかさんは親切ですね。"
+                    ],
+                    "en_text": "You too, Ms. Suzuki? Mr. Tanaka is kind.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t6.mp3"
+                },
+                {
+                    "id": "l24-s3-t7",
+                    "who": "partner",
+                    "ja": "ええ。ブディさんも ほかの 人《ひと》に 教《おし》えて あげてください。",
+                    "speak": "ええ。ブディさんも ほかの ひとに おしえて あげてください。",
+                    "id_text": "Ya. Budi juga tolong ajari orang lain.",
+                    "en_text": "Yes. Budi, please teach other people too.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s3-t7.mp3"
+                }
+            ]
+        },
+        {
+            "id": "l24-s4",
+            "title_id": "Teman datang ke rumah",
+            "title_en": "A friend visits your host home",
+            "setting_id": "Kamu tinggal di homestay dan bercerita tentang temanmu yang akan datang.",
+            "setting_en": "You live in a homestay and talk about a friend who is coming.",
+            "goal_id": "Memakai 紹介します／案内します／連れて 行きます dan 〜て あげましょうか.",
+            "goal_en": "Use shoukai shimasu / annai shimasu / tsurete ikimasu and ~te agemashou ka.",
+            "patterns": [
+                "Vて あげます",
+                "連れて 行きます",
+                "Vて あげましょうか"
+            ],
+            "partner": {
+                "name": "すずき",
+                "voice": "female"
+            },
+            "you": {
+                "name": "ブディ"
+            },
+            "turns": [
+                {
+                    "id": "l24-s4-t1",
+                    "who": "partner",
+                    "ja": "ブディさん、明日《あした》 友達《ともだち》が ホームステイの うちに 来《き》ますか。",
+                    "speak": "ブディさん、あした ともだちが ホームステイの うちに きますか。",
+                    "id_text": "Budi, besok temanmu datang ke rumah homestay?",
+                    "en_text": "Budi, is your friend coming to the homestay tomorrow?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t1.mp3"
+                },
+                {
+                    "id": "l24-s4-t2",
+                    "who": "you",
+                    "ja": "はい。友達《ともだち》を おばあさんに 紹介《しょうかい》します。",
+                    "speak": "はい。ともだちを おばあさんに しょうかいします。",
+                    "id_text": "Ya. Saya akan memperkenalkan teman saya kepada nenek.",
+                    "accept": [
+                        "はい。友達を おばあさんに 紹介します。",
+                        "はい。友達をおばあさんに紹介します。"
+                    ],
+                    "en_text": "Yes. I'll introduce my friend to grandmother.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t2.mp3"
+                },
+                {
+                    "id": "l24-s4-t3",
+                    "who": "partner",
+                    "ja": "いいですね。町《まち》を 案内《あんない》して あげますか。",
+                    "speak": "いいですね。まちを あんないして あげますか。",
+                    "id_text": "Bagus. Apakah akan memandu keliling kota?",
+                    "en_text": "Nice. Will you show him around town?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t3.mp3"
+                },
+                {
+                    "id": "l24-s4-t4",
+                    "who": "you",
+                    "ja": "はい、公園《こうえん》や お寺《てら》へ 連《つ》れて 行《い》きます。",
+                    "speak": "はい、こうえんや おてらへ つれて いきます。",
+                    "id_text": "Ya, saya akan mengajaknya ke taman dan kuil.",
+                    "accept": [
+                        "はい、公園や お寺へ 連れて 行きます。",
+                        "はい、公園やお寺へ連れて行きます。"
+                    ],
+                    "en_text": "Yes, I'll take him to the park and the temple.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t4.mp3"
+                },
+                {
+                    "id": "l24-s4-t5",
+                    "who": "partner",
+                    "ja": "私《わたし》が 車《くるま》で 送《おく》って あげましょうか。",
+                    "speak": "わたしが くるまで おくって あげましょうか。",
+                    "id_text": "Mau saya antarkan dengan mobil?",
+                    "en_text": "Shall I give you a ride in my car?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t5.mp3"
+                },
+                {
+                    "id": "l24-s4-t6",
+                    "who": "you",
+                    "ja": "ありがとうございます。ぜひ お願《ねが》いします。",
+                    "speak": "ありがとうございます。ぜひ おねがいします。",
+                    "id_text": "Terima kasih. Mohon bantuannya.",
+                    "accept": [
+                        "ありがとうございます。ぜひ お願いします。",
+                        "ありがとうございます。ぜひお願いします。"
+                    ],
+                    "en_text": "Thank you. Yes, please.",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t6.mp3"
+                },
+                {
+                    "id": "l24-s4-t7",
+                    "who": "partner",
+                    "ja": "いいですよ。ほかに 何《なに》か ありますか。",
+                    "speak": "いいですよ。ほかに なにか ありますか。",
+                    "id_text": "Boleh. Ada hal lain?",
+                    "en_text": "Of course. Is there anything else?",
+                    "audio": "/audio/kaiwa/lesson-24/l24-s4-t7.mp3"
+                }
+            ]
+        }
+    ]
+}

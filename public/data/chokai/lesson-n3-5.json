@@ -1,0 +1,344 @@
+{
+    "id": "n3-5",
+    "level": "N3",
+    "focus": "N3 Pelajaran 5 — あ〜・そ〜, …んじゃない？, Vた ところに／で, Vよう(意向形)と する, …のだろうか, Nとの／での／からの／までの／への N, …だろう・…だろうと思う, …から、〜てください, が／の",
+    "kaiwa": {
+        "id": "kaiwa",
+        "audio_text": [
+            {
+                "speaker": "female",
+                "text": "すみません、図書館は どこですか。"
+            },
+            {
+                "speaker": "male",
+                "text": "この 道を まっすぐ 行って、大通りに 出たら 右へ 曲がって ください。"
+            },
+            {
+                "speaker": "female",
+                "text": "大通りに 出たら、右ですね。"
+            },
+            {
+                "speaker": "male",
+                "text": "はい。横断歩道を 渡った ところに ありますよ。"
+            },
+            {
+                "speaker": "female",
+                "text": "ありがとうございます。"
+            },
+            {
+                "speaker": "male",
+                "text": "いいえ。"
+            }
+        ],
+        "audio": "/audio/chokai/lesson-n3-5/kaiwa.mp3",
+        "questions": [
+            {
+                "id": "n3l5-kq1",
+                "prompt": "大通《おおどお》りに 出《で》たら、どちらへ 曲《ま》がりますか。",
+                "choices": [
+                    "左《ひだり》",
+                    "右《みぎ》",
+                    "まっすぐ"
+                ],
+                "answer": 1,
+                "audio": null,
+                "translate": {
+                    "id": "Setelah tiba di jalan raya, belok ke mana? — Kanan.",
+                    "en": "Which way do you turn after reaching the main street? — Right."
+                }
+            },
+            {
+                "id": "n3l5-kq2",
+                "prompt": "図書館《としょかん》は どこに ありますか。",
+                "choices": [
+                    "横断歩道《おうだんほどう》を 渡《わた》った ところ",
+                    "駅《えき》の 前《まえ》",
+                    "大通《おおどお》りの 左《ひだり》"
+                ],
+                "answer": 0,
+                "audio": null,
+                "translate": {
+                    "id": "Di mana perpustakaan? — Di tempat setelah menyeberang zebra cross.",
+                    "en": "Where is the library? — Just after crossing the crosswalk."
+                }
+            }
+        ]
+    },
+    "questions": [
+        {
+            "id": "n3l5-q1",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "先週 行った あの レストラン、おいしかったね。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "うん、あそこの パスタは 最高だった。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "今度は 友達も 連れて 行こうよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q1.mp3",
+            "prompt": "二人《ふたり》は 何《なに》に ついて 話《はな》して いますか。",
+            "choices": [
+                "来週《らいしゅう》の 旅行《りょこう》",
+                "新《あたら》しい 映画《えいが》",
+                "先週《せんしゅう》 行《い》った レストラン"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Apa yang mereka bicarakan? — Restoran yang didatangi minggu lalu.",
+                "en": "What are they talking about? — The restaurant they went to last week."
+            }
+        },
+        {
+            "id": "n3l5-q2",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "元気が ないね。何か あったんじゃない？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "うん、実は 仕事が 忙しくて。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "少し 休んだ ほうが いいんじゃない？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q2.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 女《おんな》の 人《ひと》に 何《なん》と 言《い》いましたか。",
+            "choices": [
+                "少《すこ》し 休《やす》んだ ほうが いい",
+                "もっと 働《はたら》いた ほうが いい",
+                "家《いえ》に 帰《かえ》らない ほうが いい"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Apa kata laki-laki itu? — Sebaiknya istirahat sebentar.",
+                "en": "What did the man say? — That she should rest a little."
+            }
+        },
+        {
+            "id": "n3l5-q3",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "すみません、郵便局は どこですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "あの 信号を 右へ 曲がった ところに ありますよ。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "駅から 近いですか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ええ、歩いて 五分ぐらいです。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q3.mp3",
+            "prompt": "郵便局《ゆうびんきょく》は どこに ありますか。",
+            "choices": [
+                "駅《えき》の 中《なか》",
+                "信号《しんごう》を 右《みぎ》へ 曲《ま》がった ところ",
+                "信号《しんごう》の 左《ひだり》"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Di mana kantor pos? — Di tempat setelah belok kanan di lampu.",
+                "en": "Where is the post office? — Just after turning right at the light."
+            }
+        },
+        {
+            "id": "n3l5-q4",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "もしもし、今 どこ？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "ごめん。ちょうど 家を 出ようと した とき、電話が かかって きたんだ。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "誰から？"
+                },
+                {
+                    "speaker": "male",
+                    "text": "母から。もう すぐ 着くよ。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q4.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は どうして 遅《おく》れましたか。",
+            "choices": [
+                "電車《でんしゃ》が 止《と》まったからです",
+                "寝坊《ねぼう》したからです",
+                "電話《でんわ》が かかって きたからです"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Mengapa laki-laki itu terlambat? — Karena ada telepon masuk.",
+                "en": "Why was the man late? — A phone call came in."
+            }
+        },
+        {
+            "id": "n3l5-q5",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "来年の 景気は どうなると 思いますか。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "少しずつ 良く なるだろうと 思います。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "物価は？"
+                },
+                {
+                    "speaker": "female",
+                    "text": "上がる だろうと 思いますが、給料も 上がるでしょう。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q5.mp3",
+            "prompt": "女《おんな》の 人《ひと》は 物価《ぶっか》は どうなると 思《おも》って いますか。",
+            "choices": [
+                "下《さ》がる",
+                "上《あ》がる",
+                "変《か》わらない"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Bagaimana harga barang menurut perempuan itu? — Akan naik.",
+                "en": "What does the woman think will happen to prices? — They will rise."
+            }
+        },
+        {
+            "id": "n3l5-q6",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "十分ぐらいで 戻って きますから、ここで 待って いて くれますか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q6.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "いいえ、戻《もど》りました。",
+                "はい、待《ま》って いました。",
+                "はい、わかりました。"
+            ],
+            "answer": 2,
+            "translate": {
+                "id": "Saya kembali sepuluh menit lagi, bisa tunggu di sini? — Ya, baik.",
+                "en": "I will be back in ten minutes; could you wait here? — Yes, all right."
+            }
+        },
+        {
+            "id": "n3l5-q7",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "田中さんが 作った ケーキ、どうでしたか。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q7.mp3",
+            "prompt": "答《こた》えは どれですか。",
+            "choices": [
+                "すばらしかったです。",
+                "田中《たなか》さんが 作《つく》りました。",
+                "ケーキを 買《か》います。"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Bagaimana kue buatan Tanaka? — Luar biasa.",
+                "en": "How was the cake Tanaka made? — It was wonderful."
+            }
+        },
+        {
+            "id": "n3l5-q8",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "友達との 旅行だったので、とても 楽しかったです。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "お土産は 買いましたか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "はい、先生への お土産に チョコレートを 買いました。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q8.mp3",
+            "prompt": "男《おとこ》の 人《ひと》は 先生《せんせい》に お土産《みやげ》を 買《か》いました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 0,
+            "translate": {
+                "id": "Laki-laki itu membeli oleh-oleh untuk guru. → ○",
+                "en": "The man bought a souvenir for his teacher. → ○"
+            }
+        },
+        {
+            "id": "n3l5-q9",
+            "audio_text": [
+                {
+                    "speaker": "female",
+                    "text": "この 店、クレジットカードが 使えるのだろうか。"
+                },
+                {
+                    "speaker": "male",
+                    "text": "店員さんに 聞いて みたら？"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q9.mp3",
+            "prompt": "女《おんな》の 人《ひと》は もう 店員《てんいん》さんに 聞《き》きました。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Perempuan itu sudah bertanya ke pelayan. → ×",
+                "en": "The woman has already asked the clerk. → ×"
+            }
+        },
+        {
+            "id": "n3l5-q10",
+            "audio_text": [
+                {
+                    "speaker": "male",
+                    "text": "階段を 下りた ところが 出口です。"
+                },
+                {
+                    "speaker": "female",
+                    "text": "ありがとうございます。"
+                }
+            ],
+            "audio": "/audio/chokai/lesson-n3-5/n3l5-q10.mp3",
+            "prompt": "出口《でぐち》は 階段《かいだん》を 上《あ》がった ところです。",
+            "choices": [
+                "○",
+                "×"
+            ],
+            "answer": 1,
+            "translate": {
+                "id": "Pintu keluar ada di tempat setelah naik tangga. → ×",
+                "en": "The exit is where you go up the stairs. → ×"
+            }
+        }
+    ]
+}
