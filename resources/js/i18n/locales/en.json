@@ -18,7 +18,7 @@
     "chokai": "Listening Practice",
     "jlpt_test": "JLPT Test",
     "kaite_oboeru": "Writing Practice",
-    "membaca": "Reading",
+    "membaca": "Reading Practice",
     "kaiwa": "Conversation Practice"
   },
   "common": {
@@ -1453,7 +1453,7 @@
     "retry": "Retry This Set"
   },
   "membaca": {
-    "title": "Reading",
+    "title": "Reading Practice",
     "subtitle": "Read a short text for each lesson (N5, N4, N3), then answer comprehension questions. Furigana and translation can be switched on at any time.",
     "lesson_label": "Lesson {n}",
     "coming_soon": "Coming soon",

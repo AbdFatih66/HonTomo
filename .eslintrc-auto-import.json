@@ -391,6 +391,8 @@
     "numbersToKana": true,
     "LEVEL_CODES": true,
     "useLevelChoice": true,
-    "toFurigana": true
+    "toFurigana": true,
+    "PRACTICE_LEVEL_CODES": true,
+    "usePracticeLevel": true
   }
 }

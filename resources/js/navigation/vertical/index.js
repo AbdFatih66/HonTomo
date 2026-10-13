@@ -3,7 +3,7 @@
 //
 // Urutan item MENGIKUTI ROADMAP BELAJAR, dari dasar sampai ujian:
 //   Dasbor → Kana → Tata Bahasa → Referensi Tata Bahasa → Kosakata → Kanji
-//   → Latihan Soal → Latihan Menulis → Membaca → Latihan Menyimak → Percakapan → Tes JLPT
+//   → Latihan Soal → Latihan Menulis → Latihan Membaca → Latihan Menyimak → Percakapan → Tes JLPT
 // Menu admin selalu di paling bawah.
 export default [
   {

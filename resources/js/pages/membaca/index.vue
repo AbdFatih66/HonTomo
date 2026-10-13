@@ -1,5 +1,5 @@
 <script setup>
-// Membaca (読解) — latihan membaca per pelajaran untuk N5 / N4 / N3.
+// Latihan Membaca (読解) — latihan membaca per pelajaran untuk N5 / N4 / N3.
 //
 // Alur: pilih level + pelajaran → baca teks (furigana & terjemahan bisa
 // dinyalakan/dimatikan, kata penting ada di samping) → jawab soal pemahaman
@@ -298,145 +298,13 @@ const perfect = computed(() => wrongCount.value === 0)
     </div>
   </div>
 
-  <!-- BACA -->
+  <!-- LATIHAN: mode full layar (setelah pelajaran dipilih), sama seperti
+       Latihan Soal / Latihan Menulis / Kana / Kanji. -->
   <div
-    v-else-if="stage === STAGE_READ && lesson"
-    class="membaca-page"
+    v-else
+    class="kana-fs kana-fs--page"
   >
-    <div class="d-flex align-center gap-2 mb-4 flex-wrap">
-      <VBtn
-        icon="tabler-arrow-left"
-        variant="text"
-        color="secondary"
-        :aria-label="t('membaca.back_to_list')"
-        @click="backToList"
-      />
-      <div>
-        <div class="text-caption text-medium-emphasis">
-          {{ level }} · {{ t('membaca.lesson_label', { n: activeId }) }}
-        </div>
-        <h5 class="text-h5 mb-0">
-          {{ tr(lesson.title) }}
-        </h5>
-      </div>
-    </div>
-
-    <VCard
-      variant="tonal"
-      color="info"
-      class="mb-4"
-    >
-      <VCardText>
-        <div class="text-subtitle-2 mb-1">
-          {{ t('membaca.before_reading') }}
-        </div>
-        <div class="text-body-2">
-          {{ tr(lesson.before) }}
-        </div>
-        <div class="text-caption mt-2 text-medium-emphasis">
-          {{ t('membaca.focus_label') }}: <RubyText :text="tr(lesson.focus)" />
-        </div>
-      </VCardText>
-    </VCard>
-
-    <div class="d-flex flex-wrap gap-2 mb-3">
-      <VBtn
-        size="small"
-        :variant="showFurigana ? 'tonal' : 'outlined'"
-        color="primary"
-        prepend-icon="tabler-language-hiragana"
-        @click="showFurigana = !showFurigana"
-      >
-        {{ t('membaca.furigana') }}
-      </VBtn>
-      <VBtn
-        size="small"
-        :variant="showTranslation ? 'tonal' : 'outlined'"
-        color="primary"
-        prepend-icon="tabler-language"
-        @click="showTranslation = !showTranslation"
-      >
-        {{ t('membaca.translation') }}
-      </VBtn>
-    </div>
-
-    <VCard class="mb-4">
-      <VCardText>
-        <h6 class="membaca-passage__title">
-          <RubyText
-            :text="lesson.passage.title"
-            :show-furigana="showFurigana"
-          />
-        </h6>
-
-        <div
-          v-for="(p, i) in lesson.passage.paragraphs"
-          :key="i"
-          class="membaca-paragraph"
-        >
-          <button
-            type="button"
-            class="membaca-paragraph__ja"
-            :aria-expanded="isTranslated(i)"
-            @click="toggleParagraph(i)"
-          >
-            <RubyText
-              :text="p.ja"
-              :show-furigana="showFurigana"
-            />
-          </button>
-          <p
-            v-if="isTranslated(i)"
-            class="membaca-paragraph__tr"
-          >
-            {{ tr({ id: p.id, en: p.en }) }}
-          </p>
-        </div>
-        <div class="text-caption text-medium-emphasis mt-2">
-          {{ t('membaca.tap_hint') }}
-        </div>
-      </VCardText>
-    </VCard>
-
-    <VCard class="mb-6">
-      <VCardText>
-        <div class="text-subtitle-1 mb-2">
-          {{ t('membaca.vocab_title') }}
-        </div>
-        <div class="membaca-vocab">
-          <div
-            v-for="w in lesson.vocab"
-            :key="w.ja"
-            class="membaca-vocab__item"
-          >
-            <div class="membaca-vocab__ja">
-              <RubyText :text="w.ja === w.reading ? w.ja : `${w.ja}《${w.reading}》`" />
-            </div>
-            <div class="text-body-2 text-medium-emphasis">
-              {{ tr({ id: w.id, en: w.en }) }}
-            </div>
-          </div>
-        </div>
-      </VCardText>
-    </VCard>
-
-    <VBtn
-      color="primary"
-      size="large"
-      block
-      append-icon="tabler-arrow-right"
-      @click="startQuiz"
-    >
-      {{ t('membaca.start_questions') }}
-    </VBtn>
-  </div>
-
-  <!-- SOAL -->
-  <div
-    v-else-if="stage === STAGE_QUIZ && lesson && current"
-    class="membaca-page"
-  >
-    <div class="d-flex align-center gap-2 mb-3">
+    <header class="kana-fs__header">
       <VBtn
         icon="tabler-x"
         variant="text"
@@ -444,173 +312,326 @@ const perfect = computed(() => wrongCount.value === 0)
         :aria-label="t('membaca.back_to_list')"
         @click="backToList"
       />
-      <VProgressLinear
-        :model-value="progressPercent"
-        color="primary"
-        rounded
-        height="10"
-      />
-    </div>
 
-    <div class="text-caption text-medium-emphasis mb-2">
-      {{ t('membaca.question_of', { n: qIndex + 1, total: questions.length }) }}
-      · {{ current.type === 'tf' ? t('membaca.type_tf') : t('membaca.type_mc') }}
-    </div>
+      <div
+        v-if="stage === STAGE_QUIZ"
+        class="lp__bar"
+        role="progressbar"
+        :aria-valuenow="progressPercent"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div
+          class="lp__fill"
+          :style="{ inlineSize: `${progressPercent}%` }"
+        />
+      </div>
+      <div
+        v-else-if="lesson"
+        class="flex-grow-1"
+      >
+        <div class="text-caption text-medium-emphasis">
+          {{ level }} · {{ t('membaca.lesson_label', { n: activeId }) }}
+        </div>
+        <h5 class="text-h6 mb-0">
+          {{ stage === STAGE_READ ? tr(lesson.title) : t('membaca.title') }}
+        </h5>
+      </div>
+    </header>
 
-    <VExpansionPanels class="mb-4">
-      <VExpansionPanel>
-        <VExpansionPanelTitle>
-          <VIcon
-            icon="tabler-book-2"
-            class="me-2"
-          />
-          {{ t('membaca.show_passage') }}
-        </VExpansionPanelTitle>
-        <VExpansionPanelText>
-          <p
-            v-for="(p, i) in lesson.passage.paragraphs"
-            :key="i"
-            class="membaca-paragraph__ja membaca-paragraph__ja--static"
+    <main class="kana-fs__body">
+      <div class="kana-fs__content">
+        <!-- BACA -->
+        <div
+          v-if="stage === STAGE_READ && lesson"
+          class="membaca-page"
+        >
+        <VCard
+          variant="tonal"
+          color="info"
+          class="mb-4"
+        >
+          <VCardText>
+            <div class="text-subtitle-2 mb-1">
+              {{ t('membaca.before_reading') }}
+            </div>
+            <div class="text-body-2">
+              {{ tr(lesson.before) }}
+            </div>
+            <div class="text-caption mt-2 text-medium-emphasis">
+              {{ t('membaca.focus_label') }}: <RubyText :text="tr(lesson.focus)" />
+            </div>
+          </VCardText>
+        </VCard>
+
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <VBtn
+            size="small"
+            :variant="showFurigana ? 'tonal' : 'outlined'"
+            color="primary"
+            prepend-icon="tabler-language-hiragana"
+            @click="showFurigana = !showFurigana"
           >
-            <RubyText :text="p.ja" />
-          </p>
-        </VExpansionPanelText>
-      </VExpansionPanel>
-    </VExpansionPanels>
-
-    <VCard class="mb-4">
-      <VCardText class="membaca-question">
-        <RubyText :text="current.q" />
-      </VCardText>
-    </VCard>
-
-    <div
-      v-if="current.type === 'mc'"
-      class="membaca-choices"
-    >
-      <button
-        v-for="(c, i) in current.choices"
-        :key="i"
-        type="button"
-        class="membaca-choice"
-        :class="`membaca-choice--${choiceState(i)}`"
-        :disabled="answered"
-        @click="choose(i)"
-      >
-        <RubyText :text="c" />
-      </button>
-    </div>
-
-    <div
-      v-else
-      class="membaca-tf"
-    >
-      <button
-        type="button"
-        class="membaca-choice membaca-choice--tf"
-        :class="`membaca-choice--${tfState(true)}`"
-        :disabled="answered"
-        :aria-label="t('membaca.true_label')"
-        @click="choose(true)"
-      >
-        ○
-      </button>
-      <button
-        type="button"
-        class="membaca-choice membaca-choice--tf"
-        :class="`membaca-choice--${tfState(false)}`"
-        :disabled="answered"
-        :aria-label="t('membaca.false_label')"
-        @click="choose(false)"
-      >
-        ×
-      </button>
-    </div>
-
-    <VAlert
-      v-if="answered"
-      :type="isCorrect ? 'success' : 'error'"
-      variant="tonal"
-      class="mt-4"
-    >
-      <div class="font-weight-medium">
-        {{ isCorrect ? t('membaca.correct') : t('membaca.incorrect') }}
-      </div>
-      <div class="text-body-2 mt-1">
-        {{ tr(current.explain) }}
-      </div>
-    </VAlert>
-
-    <VBtn
-      v-if="answered"
-      color="primary"
-      size="large"
-      block
-      class="mt-4"
-      @click="nextQuestion"
-    >
-      {{ qIndex + 1 >= questions.length ? t('membaca.finish') : t('membaca.next') }}
-    </VBtn>
-  </div>
-
-  <!-- HASIL -->
-  <div
-    v-else-if="stage === STAGE_RESULT && lesson"
-    class="membaca-page text-center"
-  >
-    <VIcon
-      :icon="perfect ? 'tabler-crown' : 'tabler-circle-check-filled'"
-      :color="perfect ? 'warning' : 'success'"
-      size="72"
-      class="mb-3"
-    />
-    <h4 class="text-h4 mb-1">
-      {{ t('membaca.done_title') }}
-    </h4>
-    <p class="text-h6 mb-1">
-      {{ t('membaca.score', { score: correctCount, total: questions.length }) }}
-    </p>
-    <p class="text-body-2 text-medium-emphasis mb-6">
-      {{ perfect ? t('membaca.crown_earned') : t('membaca.crown_hint') }}
-    </p>
-
-    <VCard
-      v-if="lesson.challenge"
-      variant="tonal"
-      color="primary"
-      class="text-start mb-6"
-    >
-      <VCardText>
-        <div class="text-subtitle-2 mb-1">
-          {{ t('membaca.challenge') }}
+            {{ t('membaca.furigana') }}
+          </VBtn>
+          <VBtn
+            size="small"
+            :variant="showTranslation ? 'tonal' : 'outlined'"
+            color="primary"
+            prepend-icon="tabler-language"
+            @click="showTranslation = !showTranslation"
+          >
+            {{ t('membaca.translation') }}
+          </VBtn>
         </div>
-        <div class="text-body-2">
-          {{ tr(lesson.challenge) }}
-        </div>
-      </VCardText>
-    </VCard>
 
-    <div class="d-flex flex-column gap-2">
-      <VBtn
-        color="primary"
-        size="large"
-        @click="startQuiz"
-      >
-        {{ t('membaca.retry') }}
-      </VBtn>
-      <VBtn
-        variant="outlined"
-        @click="stage = STAGE_READ"
-      >
-        {{ t('membaca.read_again') }}
-      </VBtn>
-      <VBtn
-        variant="text"
-        @click="backToList"
-      >
-        {{ t('membaca.back_to_list') }}
-      </VBtn>
-    </div>
+        <VCard class="mb-4">
+          <VCardText>
+            <h6 class="membaca-passage__title">
+              <RubyText
+                :text="lesson.passage.title"
+                :show-furigana="showFurigana"
+              />
+            </h6>
+
+            <div
+              v-for="(p, i) in lesson.passage.paragraphs"
+              :key="i"
+              class="membaca-paragraph"
+            >
+              <button
+                type="button"
+                class="membaca-paragraph__ja"
+                :aria-expanded="isTranslated(i)"
+                @click="toggleParagraph(i)"
+              >
+                <RubyText
+                  :text="p.ja"
+                  :show-furigana="showFurigana"
+                />
+              </button>
+              <p
+                v-if="isTranslated(i)"
+                class="membaca-paragraph__tr"
+              >
+                {{ tr({ id: p.id, en: p.en }) }}
+              </p>
+            </div>
+            <div class="text-caption text-medium-emphasis mt-2">
+              {{ t('membaca.tap_hint') }}
+            </div>
+          </VCardText>
+        </VCard>
+
+        <VCard class="mb-2">
+          <VCardText>
+            <div class="text-subtitle-1 mb-2">
+              {{ t('membaca.vocab_title') }}
+            </div>
+            <div class="membaca-vocab">
+              <div
+                v-for="w in lesson.vocab"
+                :key="w.ja"
+                class="membaca-vocab__item"
+              >
+                <div class="membaca-vocab__ja">
+                  <RubyText :text="w.ja === w.reading ? w.ja : `${w.ja}《${w.reading}》`" />
+                </div>
+                <div class="text-body-2 text-medium-emphasis">
+                  {{ tr({ id: w.id, en: w.en }) }}
+                </div>
+              </div>
+            </div>
+          </VCardText>
+        </VCard>
+
+        </div>
+
+        <!-- SOAL -->
+        <div
+          v-else-if="stage === STAGE_QUIZ && lesson && current"
+          class="membaca-page"
+        >
+        <div class="text-caption text-medium-emphasis mb-2">
+          {{ t('membaca.question_of', { n: qIndex + 1, total: questions.length }) }}
+          · {{ current.type === 'tf' ? t('membaca.type_tf') : t('membaca.type_mc') }}
+        </div>
+
+        <VExpansionPanels class="mb-4">
+          <VExpansionPanel>
+            <VExpansionPanelTitle>
+              <VIcon
+                icon="tabler-book-2"
+                class="me-2"
+              />
+              {{ t('membaca.show_passage') }}
+            </VExpansionPanelTitle>
+            <VExpansionPanelText>
+              <p
+                v-for="(p, i) in lesson.passage.paragraphs"
+                :key="i"
+                class="membaca-paragraph__ja membaca-paragraph__ja--static"
+              >
+                <RubyText :text="p.ja" />
+              </p>
+            </VExpansionPanelText>
+          </VExpansionPanel>
+        </VExpansionPanels>
+
+        <VCard class="mb-4">
+          <VCardText class="membaca-question">
+            <RubyText :text="current.q" />
+          </VCardText>
+        </VCard>
+
+        <div
+          v-if="current.type === 'mc'"
+          class="membaca-choices"
+        >
+          <button
+            v-for="(c, i) in current.choices"
+            :key="i"
+            type="button"
+            class="membaca-choice"
+            :class="`membaca-choice--${choiceState(i)}`"
+            :disabled="answered"
+            @click="choose(i)"
+          >
+            <RubyText :text="c" />
+          </button>
+        </div>
+
+        <div
+          v-else
+          class="membaca-tf"
+        >
+          <button
+            type="button"
+            class="membaca-choice membaca-choice--tf"
+            :class="`membaca-choice--${tfState(true)}`"
+            :disabled="answered"
+            :aria-label="t('membaca.true_label')"
+            @click="choose(true)"
+          >
+            ○
+          </button>
+          <button
+            type="button"
+            class="membaca-choice membaca-choice--tf"
+            :class="`membaca-choice--${tfState(false)}`"
+            :disabled="answered"
+            :aria-label="t('membaca.false_label')"
+            @click="choose(false)"
+          >
+            ×
+          </button>
+        </div>
+
+        <VAlert
+          v-if="answered"
+          :type="isCorrect ? 'success' : 'error'"
+          variant="tonal"
+          class="mt-4"
+        >
+          <div class="font-weight-medium">
+            {{ isCorrect ? t('membaca.correct') : t('membaca.incorrect') }}
+          </div>
+          <div class="text-body-2 mt-1">
+            {{ tr(current.explain) }}
+          </div>
+        </VAlert>
+
+        </div>
+
+        <!-- HASIL -->
+        <div
+          v-else-if="stage === STAGE_RESULT && lesson"
+          class="membaca-page text-center"
+        >
+        <VIcon
+          :icon="perfect ? 'tabler-crown' : 'tabler-circle-check-filled'"
+          :color="perfect ? 'warning' : 'success'"
+          size="72"
+          class="mb-3"
+        />
+        <h4 class="text-h4 mb-1">
+          {{ t('membaca.done_title') }}
+        </h4>
+        <p class="text-h6 mb-1">
+          {{ t('membaca.score', { score: correctCount, total: questions.length }) }}
+        </p>
+        <p class="text-body-2 text-medium-emphasis mb-6">
+          {{ perfect ? t('membaca.crown_earned') : t('membaca.crown_hint') }}
+        </p>
+
+        <VCard
+          v-if="lesson.challenge"
+          variant="tonal"
+          color="primary"
+          class="text-start mb-6"
+        >
+          <VCardText>
+            <div class="text-subtitle-2 mb-1">
+              {{ t('membaca.challenge') }}
+            </div>
+            <div class="text-body-2">
+              {{ tr(lesson.challenge) }}
+            </div>
+          </VCardText>
+        </VCard>
+
+        <div class="d-flex flex-column gap-2">
+          <VBtn
+            color="primary"
+            size="large"
+            @click="startQuiz"
+          >
+            {{ t('membaca.retry') }}
+          </VBtn>
+          <VBtn
+            variant="outlined"
+            @click="stage = STAGE_READ"
+          >
+            {{ t('membaca.read_again') }}
+          </VBtn>
+          <VBtn
+            variant="text"
+            @click="backToList"
+          >
+            {{ t('membaca.back_to_list') }}
+          </VBtn>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      v-if="stage === STAGE_READ || (stage === STAGE_QUIZ && answered)"
+      class="kana-fs__footer"
+      :class="stage === STAGE_QUIZ ? (isCorrect ? 'is-correct' : 'is-incorrect') : ''"
+    >
+      <div class="kana-fs__footer-inner">
+        <VBtn
+          v-if="stage === STAGE_READ"
+          color="primary"
+          size="large"
+          block
+          append-icon="tabler-arrow-right"
+          @click="startQuiz"
+        >
+          {{ t('membaca.start_questions') }}
+        </VBtn>
+        <VBtn
+          v-else
+          color="primary"
+          size="large"
+          block
+          @click="nextQuestion"
+        >
+          {{ qIndex + 1 >= questions.length ? t('membaca.finish') : t('membaca.next') }}
+        </VBtn>
+      </div>
+    </footer>
   </div>
 </template>
 

@@ -18,7 +18,7 @@
     "chokai": "Latihan Menyimak",
     "jlpt_test": "Tes JLPT",
     "kaite_oboeru": "Latihan Menulis",
-    "membaca": "Membaca",
+    "membaca": "Latihan Membaca",
     "kaiwa": "Latihan Percakapan"
   },
   "common": {
@@ -1453,7 +1453,7 @@
     "retry": "Ulangi Latihan Ini"
   },
   "membaca": {
-    "title": "Membaca",
+    "title": "Latihan Membaca",
     "subtitle": "Baca teks pendek per pelajaran (N5, N4, N3), lalu jawab soal pemahamannya. Furigana dan terjemahan bisa dinyalakan kapan saja.",
     "lesson_label": "Pelajaran {n}",
     "coming_soon": "Segera hadir",
